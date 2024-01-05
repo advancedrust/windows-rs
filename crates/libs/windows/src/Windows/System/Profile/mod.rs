@@ -257,7 +257,7 @@ impl AnalyticsVersionInfo {
         }
     }
     pub fn ProductName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAnalyticsVersionInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAnalyticsVersionInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ProductName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -269,9 +269,7 @@ impl ::windows_core::RuntimeType for AnalyticsVersionInfo {
 }
 unsafe impl ::windows_core::Interface for AnalyticsVersionInfo {
     type Vtable = IAnalyticsVersionInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AnalyticsVersionInfo {
-    const IID: ::windows_core::GUID = <IAnalyticsVersionInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAnalyticsVersionInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AnalyticsVersionInfo {
     const NAME: &'static str = "Windows.System.Profile.AnalyticsVersionInfo";
@@ -377,9 +375,7 @@ impl ::windows_core::RuntimeType for HardwareToken {
 }
 unsafe impl ::windows_core::Interface for HardwareToken {
     type Vtable = IHardwareToken_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HardwareToken {
-    const IID: ::windows_core::GUID = <IHardwareToken as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHardwareToken as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HardwareToken {
     const NAME: &'static str = "Windows.System.Profile.HardwareToken";
@@ -699,9 +695,7 @@ impl ::windows_core::RuntimeType for SystemIdentificationInfo {
 }
 unsafe impl ::windows_core::Interface for SystemIdentificationInfo {
     type Vtable = ISystemIdentificationInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemIdentificationInfo {
-    const IID: ::windows_core::GUID = <ISystemIdentificationInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemIdentificationInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemIdentificationInfo {
     const NAME: &'static str = "Windows.System.Profile.SystemIdentificationInfo";
@@ -762,9 +756,7 @@ impl ::windows_core::RuntimeType for UnsupportedAppRequirement {
 }
 unsafe impl ::windows_core::Interface for UnsupportedAppRequirement {
     type Vtable = IUnsupportedAppRequirement_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UnsupportedAppRequirement {
-    const IID: ::windows_core::GUID = <IUnsupportedAppRequirement as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUnsupportedAppRequirement as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UnsupportedAppRequirement {
     const NAME: &'static str = "Windows.System.Profile.UnsupportedAppRequirement";

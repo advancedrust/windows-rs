@@ -226,9 +226,7 @@ impl ::windows_core::RuntimeType for DiagnosticActionResult {
 }
 unsafe impl ::windows_core::Interface for DiagnosticActionResult {
     type Vtable = IDiagnosticActionResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DiagnosticActionResult {
-    const IID: ::windows_core::GUID = <IDiagnosticActionResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDiagnosticActionResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DiagnosticActionResult {
     const NAME: &'static str = "Windows.System.Diagnostics.DiagnosticActionResult";
@@ -253,7 +251,7 @@ impl DiagnosticInvoker {
         }
     }
     pub fn RunDiagnosticActionFromStringAsync(&self, context: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperationWithProgress<DiagnosticActionResult, DiagnosticActionState>> {
-        let this = &::windows_core::ComInterface::cast::<IDiagnosticInvoker2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDiagnosticInvoker2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RunDiagnosticActionFromStringAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(context), &mut result__).from_abi(result__)
@@ -291,9 +289,7 @@ impl ::windows_core::RuntimeType for DiagnosticInvoker {
 }
 unsafe impl ::windows_core::Interface for DiagnosticInvoker {
     type Vtable = IDiagnosticInvoker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DiagnosticInvoker {
-    const IID: ::windows_core::GUID = <IDiagnosticInvoker as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDiagnosticInvoker as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DiagnosticInvoker {
     const NAME: &'static str = "Windows.System.Diagnostics.DiagnosticInvoker";
@@ -318,9 +314,7 @@ impl ::windows_core::RuntimeType for ProcessCpuUsage {
 }
 unsafe impl ::windows_core::Interface for ProcessCpuUsage {
     type Vtable = IProcessCpuUsage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProcessCpuUsage {
-    const IID: ::windows_core::GUID = <IProcessCpuUsage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProcessCpuUsage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProcessCpuUsage {
     const NAME: &'static str = "Windows.System.Diagnostics.ProcessCpuUsage";
@@ -352,9 +346,7 @@ impl ::windows_core::RuntimeType for ProcessCpuUsageReport {
 }
 unsafe impl ::windows_core::Interface for ProcessCpuUsageReport {
     type Vtable = IProcessCpuUsageReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProcessCpuUsageReport {
-    const IID: ::windows_core::GUID = <IProcessCpuUsageReport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProcessCpuUsageReport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProcessCpuUsageReport {
     const NAME: &'static str = "Windows.System.Diagnostics.ProcessCpuUsageReport";
@@ -418,14 +410,14 @@ impl ProcessDiagnosticInfo {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetAppDiagnosticInfos(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<super::AppDiagnosticInfo>> {
-        let this = &::windows_core::ComInterface::cast::<IProcessDiagnosticInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IProcessDiagnosticInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetAppDiagnosticInfos)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsPackaged(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IProcessDiagnosticInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IProcessDiagnosticInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsPackaged)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -467,9 +459,7 @@ impl ::windows_core::RuntimeType for ProcessDiagnosticInfo {
 }
 unsafe impl ::windows_core::Interface for ProcessDiagnosticInfo {
     type Vtable = IProcessDiagnosticInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProcessDiagnosticInfo {
-    const IID: ::windows_core::GUID = <IProcessDiagnosticInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProcessDiagnosticInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProcessDiagnosticInfo {
     const NAME: &'static str = "Windows.System.Diagnostics.ProcessDiagnosticInfo";
@@ -494,9 +484,7 @@ impl ::windows_core::RuntimeType for ProcessDiskUsage {
 }
 unsafe impl ::windows_core::Interface for ProcessDiskUsage {
     type Vtable = IProcessDiskUsage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProcessDiskUsage {
-    const IID: ::windows_core::GUID = <IProcessDiskUsage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProcessDiskUsage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProcessDiskUsage {
     const NAME: &'static str = "Windows.System.Diagnostics.ProcessDiskUsage";
@@ -556,9 +544,7 @@ impl ::windows_core::RuntimeType for ProcessDiskUsageReport {
 }
 unsafe impl ::windows_core::Interface for ProcessDiskUsageReport {
     type Vtable = IProcessDiskUsageReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProcessDiskUsageReport {
-    const IID: ::windows_core::GUID = <IProcessDiskUsageReport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProcessDiskUsageReport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProcessDiskUsageReport {
     const NAME: &'static str = "Windows.System.Diagnostics.ProcessDiskUsageReport";
@@ -583,9 +569,7 @@ impl ::windows_core::RuntimeType for ProcessMemoryUsage {
 }
 unsafe impl ::windows_core::Interface for ProcessMemoryUsage {
     type Vtable = IProcessMemoryUsage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProcessMemoryUsage {
-    const IID: ::windows_core::GUID = <IProcessMemoryUsage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProcessMemoryUsage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProcessMemoryUsage {
     const NAME: &'static str = "Windows.System.Diagnostics.ProcessMemoryUsage";
@@ -687,9 +671,7 @@ impl ::windows_core::RuntimeType for ProcessMemoryUsageReport {
 }
 unsafe impl ::windows_core::Interface for ProcessMemoryUsageReport {
     type Vtable = IProcessMemoryUsageReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProcessMemoryUsageReport {
-    const IID: ::windows_core::GUID = <IProcessMemoryUsageReport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProcessMemoryUsageReport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProcessMemoryUsageReport {
     const NAME: &'static str = "Windows.System.Diagnostics.ProcessMemoryUsageReport";
@@ -714,9 +696,7 @@ impl ::windows_core::RuntimeType for SystemCpuUsage {
 }
 unsafe impl ::windows_core::Interface for SystemCpuUsage {
     type Vtable = ISystemCpuUsage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemCpuUsage {
-    const IID: ::windows_core::GUID = <ISystemCpuUsage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemCpuUsage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemCpuUsage {
     const NAME: &'static str = "Windows.System.Diagnostics.SystemCpuUsage";
@@ -755,9 +735,7 @@ impl ::windows_core::RuntimeType for SystemCpuUsageReport {
 }
 unsafe impl ::windows_core::Interface for SystemCpuUsageReport {
     type Vtable = ISystemCpuUsageReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemCpuUsageReport {
-    const IID: ::windows_core::GUID = <ISystemCpuUsageReport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemCpuUsageReport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemCpuUsageReport {
     const NAME: &'static str = "Windows.System.Diagnostics.SystemCpuUsageReport";
@@ -817,9 +795,7 @@ impl ::windows_core::RuntimeType for SystemDiagnosticInfo {
 }
 unsafe impl ::windows_core::Interface for SystemDiagnosticInfo {
     type Vtable = ISystemDiagnosticInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemDiagnosticInfo {
-    const IID: ::windows_core::GUID = <ISystemDiagnosticInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemDiagnosticInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemDiagnosticInfo {
     const NAME: &'static str = "Windows.System.Diagnostics.SystemDiagnosticInfo";
@@ -844,9 +820,7 @@ impl ::windows_core::RuntimeType for SystemMemoryUsage {
 }
 unsafe impl ::windows_core::Interface for SystemMemoryUsage {
     type Vtable = ISystemMemoryUsage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemMemoryUsage {
-    const IID: ::windows_core::GUID = <ISystemMemoryUsage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemMemoryUsage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemMemoryUsage {
     const NAME: &'static str = "Windows.System.Diagnostics.SystemMemoryUsage";
@@ -885,9 +859,7 @@ impl ::windows_core::RuntimeType for SystemMemoryUsageReport {
 }
 unsafe impl ::windows_core::Interface for SystemMemoryUsageReport {
     type Vtable = ISystemMemoryUsageReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemMemoryUsageReport {
-    const IID: ::windows_core::GUID = <ISystemMemoryUsageReport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemMemoryUsageReport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemMemoryUsageReport {
     const NAME: &'static str = "Windows.System.Diagnostics.SystemMemoryUsageReport";

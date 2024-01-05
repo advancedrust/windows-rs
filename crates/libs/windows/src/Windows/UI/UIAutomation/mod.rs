@@ -63,9 +63,7 @@ impl ::windows_core::RuntimeType for AutomationConnection {
 }
 unsafe impl ::windows_core::Interface for AutomationConnection {
     type Vtable = IAutomationConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AutomationConnection {
-    const IID: ::windows_core::GUID = <IAutomationConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAutomationConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AutomationConnection {
     const NAME: &'static str = "Windows.UI.UIAutomation.AutomationConnection";
@@ -90,9 +88,7 @@ impl ::windows_core::RuntimeType for AutomationConnectionBoundObject {
 }
 unsafe impl ::windows_core::Interface for AutomationConnectionBoundObject {
     type Vtable = IAutomationConnectionBoundObject_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AutomationConnectionBoundObject {
-    const IID: ::windows_core::GUID = <IAutomationConnectionBoundObject as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAutomationConnectionBoundObject as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AutomationConnectionBoundObject {
     const NAME: &'static str = "Windows.UI.UIAutomation.AutomationConnectionBoundObject";
@@ -131,9 +127,7 @@ impl ::windows_core::RuntimeType for AutomationElement {
 }
 unsafe impl ::windows_core::Interface for AutomationElement {
     type Vtable = IAutomationElement_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AutomationElement {
-    const IID: ::windows_core::GUID = <IAutomationElement as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAutomationElement as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AutomationElement {
     const NAME: &'static str = "Windows.UI.UIAutomation.AutomationElement";
@@ -150,9 +144,7 @@ impl ::windows_core::RuntimeType for AutomationTextRange {
 }
 unsafe impl ::windows_core::Interface for AutomationTextRange {
     type Vtable = IAutomationTextRange_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AutomationTextRange {
-    const IID: ::windows_core::GUID = <IAutomationTextRange as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAutomationTextRange as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AutomationTextRange {
     const NAME: &'static str = "Windows.UI.UIAutomation.AutomationTextRange";

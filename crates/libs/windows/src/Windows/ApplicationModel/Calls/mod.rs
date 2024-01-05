@@ -622,9 +622,7 @@ impl ::windows_core::RuntimeType for CallAnswerEventArgs {
 }
 unsafe impl ::windows_core::Interface for CallAnswerEventArgs {
     type Vtable = ICallAnswerEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CallAnswerEventArgs {
-    const IID: ::windows_core::GUID = <ICallAnswerEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICallAnswerEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CallAnswerEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.CallAnswerEventArgs";
@@ -649,9 +647,7 @@ impl ::windows_core::RuntimeType for CallRejectEventArgs {
 }
 unsafe impl ::windows_core::Interface for CallRejectEventArgs {
     type Vtable = ICallRejectEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CallRejectEventArgs {
-    const IID: ::windows_core::GUID = <ICallRejectEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICallRejectEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CallRejectEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.CallRejectEventArgs";
@@ -676,9 +672,7 @@ impl ::windows_core::RuntimeType for CallStateChangeEventArgs {
 }
 unsafe impl ::windows_core::Interface for CallStateChangeEventArgs {
     type Vtable = ICallStateChangeEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CallStateChangeEventArgs {
-    const IID: ::windows_core::GUID = <ICallStateChangeEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICallStateChangeEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CallStateChangeEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.CallStateChangeEventArgs";
@@ -700,9 +694,7 @@ impl ::windows_core::RuntimeType for LockScreenCallEndCallDeferral {
 }
 unsafe impl ::windows_core::Interface for LockScreenCallEndCallDeferral {
     type Vtable = ILockScreenCallEndCallDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LockScreenCallEndCallDeferral {
-    const IID: ::windows_core::GUID = <ILockScreenCallEndCallDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILockScreenCallEndCallDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LockScreenCallEndCallDeferral {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.LockScreenCallEndCallDeferral";
@@ -734,9 +726,7 @@ impl ::windows_core::RuntimeType for LockScreenCallEndRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for LockScreenCallEndRequestedEventArgs {
     type Vtable = ILockScreenCallEndRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LockScreenCallEndRequestedEventArgs {
-    const IID: ::windows_core::GUID = <ILockScreenCallEndRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILockScreenCallEndRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LockScreenCallEndRequestedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.LockScreenCallEndRequestedEventArgs";
@@ -797,9 +787,7 @@ impl ::windows_core::RuntimeType for LockScreenCallUI {
 }
 unsafe impl ::windows_core::Interface for LockScreenCallUI {
     type Vtable = ILockScreenCallUI_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LockScreenCallUI {
-    const IID: ::windows_core::GUID = <ILockScreenCallUI as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILockScreenCallUI as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LockScreenCallUI {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.LockScreenCallUI";
@@ -824,9 +812,7 @@ impl ::windows_core::RuntimeType for MuteChangeEventArgs {
 }
 unsafe impl ::windows_core::Interface for MuteChangeEventArgs {
     type Vtable = IMuteChangeEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MuteChangeEventArgs {
-    const IID: ::windows_core::GUID = <IMuteChangeEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMuteChangeEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MuteChangeEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.MuteChangeEventArgs";
@@ -1065,9 +1051,7 @@ impl ::windows_core::RuntimeType for PhoneCall {
 }
 unsafe impl ::windows_core::Interface for PhoneCall {
     type Vtable = IPhoneCall_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneCall {
-    const IID: ::windows_core::GUID = <IPhoneCall as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCall as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneCall {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneCall";
@@ -1328,9 +1312,7 @@ impl ::windows_core::RuntimeType for PhoneCallHistoryEntry {
 }
 unsafe impl ::windows_core::Interface for PhoneCallHistoryEntry {
     type Vtable = IPhoneCallHistoryEntry_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneCallHistoryEntry {
-    const IID: ::windows_core::GUID = <IPhoneCallHistoryEntry as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCallHistoryEntry as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneCallHistoryEntry {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneCallHistoryEntry";
@@ -1410,9 +1392,7 @@ impl ::windows_core::RuntimeType for PhoneCallHistoryEntryAddress {
 }
 unsafe impl ::windows_core::Interface for PhoneCallHistoryEntryAddress {
     type Vtable = IPhoneCallHistoryEntryAddress_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneCallHistoryEntryAddress {
-    const IID: ::windows_core::GUID = <IPhoneCallHistoryEntryAddress as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCallHistoryEntryAddress as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneCallHistoryEntryAddress {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneCallHistoryEntryAddress";
@@ -1457,9 +1437,7 @@ impl ::windows_core::RuntimeType for PhoneCallHistoryEntryQueryOptions {
 }
 unsafe impl ::windows_core::Interface for PhoneCallHistoryEntryQueryOptions {
     type Vtable = IPhoneCallHistoryEntryQueryOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneCallHistoryEntryQueryOptions {
-    const IID: ::windows_core::GUID = <IPhoneCallHistoryEntryQueryOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCallHistoryEntryQueryOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneCallHistoryEntryQueryOptions {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneCallHistoryEntryQueryOptions";
@@ -1486,9 +1464,7 @@ impl ::windows_core::RuntimeType for PhoneCallHistoryEntryReader {
 }
 unsafe impl ::windows_core::Interface for PhoneCallHistoryEntryReader {
     type Vtable = IPhoneCallHistoryEntryReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneCallHistoryEntryReader {
-    const IID: ::windows_core::GUID = <IPhoneCallHistoryEntryReader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCallHistoryEntryReader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneCallHistoryEntryReader {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneCallHistoryEntryReader";
@@ -1555,9 +1531,7 @@ impl ::windows_core::RuntimeType for PhoneCallHistoryManagerForUser {
 }
 unsafe impl ::windows_core::Interface for PhoneCallHistoryManagerForUser {
     type Vtable = IPhoneCallHistoryManagerForUser_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneCallHistoryManagerForUser {
-    const IID: ::windows_core::GUID = <IPhoneCallHistoryManagerForUser as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCallHistoryManagerForUser as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneCallHistoryManagerForUser {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneCallHistoryManagerForUser";
@@ -1691,9 +1665,7 @@ impl ::windows_core::RuntimeType for PhoneCallHistoryStore {
 }
 unsafe impl ::windows_core::Interface for PhoneCallHistoryStore {
     type Vtable = IPhoneCallHistoryStore_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneCallHistoryStore {
-    const IID: ::windows_core::GUID = <IPhoneCallHistoryStore as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCallHistoryStore as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneCallHistoryStore {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneCallHistoryStore";
@@ -1753,9 +1725,7 @@ impl ::windows_core::RuntimeType for PhoneCallInfo {
 }
 unsafe impl ::windows_core::Interface for PhoneCallInfo {
     type Vtable = IPhoneCallInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneCallInfo {
-    const IID: ::windows_core::GUID = <IPhoneCallInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCallInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneCallInfo {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneCallInfo";
@@ -1846,9 +1816,7 @@ impl ::windows_core::RuntimeType for PhoneCallStore {
 }
 unsafe impl ::windows_core::Interface for PhoneCallStore {
     type Vtable = IPhoneCallStore_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneCallStore {
-    const IID: ::windows_core::GUID = <IPhoneCallStore as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCallStore as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneCallStore {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneCallStore";
@@ -1873,9 +1841,7 @@ impl ::windows_core::RuntimeType for PhoneCallVideoCapabilities {
 }
 unsafe impl ::windows_core::Interface for PhoneCallVideoCapabilities {
     type Vtable = IPhoneCallVideoCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneCallVideoCapabilities {
-    const IID: ::windows_core::GUID = <IPhoneCallVideoCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCallVideoCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneCallVideoCapabilities {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneCallVideoCapabilities";
@@ -1926,9 +1892,7 @@ impl ::windows_core::RuntimeType for PhoneCallsResult {
 }
 unsafe impl ::windows_core::Interface for PhoneCallsResult {
     type Vtable = IPhoneCallsResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneCallsResult {
-    const IID: ::windows_core::GUID = <IPhoneCallsResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCallsResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneCallsResult {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneCallsResult";
@@ -2033,9 +1997,7 @@ impl ::windows_core::RuntimeType for PhoneDialOptions {
 }
 unsafe impl ::windows_core::Interface for PhoneDialOptions {
     type Vtable = IPhoneDialOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneDialOptions {
-    const IID: ::windows_core::GUID = <IPhoneDialOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneDialOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneDialOptions {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneDialOptions";
@@ -2168,39 +2130,39 @@ impl PhoneLine {
     #[doc = "Required features: `\"deprecated\"`"]
     #[cfg(feature = "deprecated")]
     pub fn EnableTextReply(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLine2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLine2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).EnableTextReply)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn TransportDeviceId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLine2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLine2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TransportDeviceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn DialWithResult(&self, number: &::windows_core::HSTRING, displayname: &::windows_core::HSTRING) -> ::windows_core::Result<PhoneLineDialResult> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLine3>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLine3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DialWithResult)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(number), ::core::mem::transmute_copy(displayname), &mut result__).from_abi(result__)
         }
     }
     pub fn DialWithResultAsync(&self, number: &::windows_core::HSTRING, displayname: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<PhoneLineDialResult>> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLine3>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLine3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DialWithResultAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(number), ::core::mem::transmute_copy(displayname), &mut result__).from_abi(result__)
         }
     }
     pub fn GetAllActivePhoneCalls(&self) -> ::windows_core::Result<PhoneCallsResult> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLine3>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLine3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetAllActivePhoneCalls)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetAllActivePhoneCallsAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<PhoneCallsResult>> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLine3>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLine3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetAllActivePhoneCallsAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2223,9 +2185,7 @@ impl ::windows_core::RuntimeType for PhoneLine {
 }
 unsafe impl ::windows_core::Interface for PhoneLine {
     type Vtable = IPhoneLine_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneLine {
-    const IID: ::windows_core::GUID = <IPhoneLine as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneLine as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneLine {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneLine";
@@ -2278,9 +2238,7 @@ impl ::windows_core::RuntimeType for PhoneLineCellularDetails {
 }
 unsafe impl ::windows_core::Interface for PhoneLineCellularDetails {
     type Vtable = IPhoneLineCellularDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneLineCellularDetails {
-    const IID: ::windows_core::GUID = <IPhoneLineCellularDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneLineCellularDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneLineCellularDetails {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneLineCellularDetails";
@@ -2314,9 +2272,7 @@ impl ::windows_core::RuntimeType for PhoneLineConfiguration {
 }
 unsafe impl ::windows_core::Interface for PhoneLineConfiguration {
     type Vtable = IPhoneLineConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneLineConfiguration {
-    const IID: ::windows_core::GUID = <IPhoneLineConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneLineConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneLineConfiguration {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneLineConfiguration";
@@ -2348,9 +2304,7 @@ impl ::windows_core::RuntimeType for PhoneLineDialResult {
 }
 unsafe impl ::windows_core::Interface for PhoneLineDialResult {
     type Vtable = IPhoneLineDialResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneLineDialResult {
-    const IID: ::windows_core::GUID = <IPhoneLineDialResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneLineDialResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneLineDialResult {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneLineDialResult";
@@ -2433,7 +2387,7 @@ impl PhoneLineTransportDevice {
         }
     }
     pub fn AudioRoutingStatus(&self) -> ::windows_core::Result<TransportDeviceAudioRoutingStatus> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLineTransportDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLineTransportDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AudioRoutingStatus)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2443,18 +2397,18 @@ impl PhoneLineTransportDevice {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<PhoneLineTransportDevice, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLineTransportDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLineTransportDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AudioRoutingStatusChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveAudioRoutingStatusChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLineTransportDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLineTransportDevice2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAudioRoutingStatusChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn InBandRingingEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLineTransportDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLineTransportDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).InBandRingingEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2464,14 +2418,14 @@ impl PhoneLineTransportDevice {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<PhoneLineTransportDevice, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLineTransportDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLineTransportDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).InBandRingingEnabledChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveInBandRingingEnabledChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLineTransportDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLineTransportDevice2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveInBandRingingEnabledChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn FromId(id: &::windows_core::HSTRING) -> ::windows_core::Result<PhoneLineTransportDevice> {
@@ -2503,9 +2457,7 @@ impl ::windows_core::RuntimeType for PhoneLineTransportDevice {
 }
 unsafe impl ::windows_core::Interface for PhoneLineTransportDevice {
     type Vtable = IPhoneLineTransportDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneLineTransportDevice {
-    const IID: ::windows_core::GUID = <IPhoneLineTransportDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneLineTransportDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneLineTransportDevice {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneLineTransportDevice";
@@ -2608,9 +2560,7 @@ impl ::windows_core::RuntimeType for PhoneLineWatcher {
 }
 unsafe impl ::windows_core::Interface for PhoneLineWatcher {
     type Vtable = IPhoneLineWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneLineWatcher {
-    const IID: ::windows_core::GUID = <IPhoneLineWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneLineWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneLineWatcher {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneLineWatcher";
@@ -2635,9 +2585,7 @@ impl ::windows_core::RuntimeType for PhoneLineWatcherEventArgs {
 }
 unsafe impl ::windows_core::Interface for PhoneLineWatcherEventArgs {
     type Vtable = IPhoneLineWatcherEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneLineWatcherEventArgs {
-    const IID: ::windows_core::GUID = <IPhoneLineWatcherEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneLineWatcherEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneLineWatcherEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneLineWatcherEventArgs";
@@ -2683,9 +2631,7 @@ impl ::windows_core::RuntimeType for PhoneVoicemail {
 }
 unsafe impl ::windows_core::Interface for PhoneVoicemail {
     type Vtable = IPhoneVoicemail_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneVoicemail {
-    const IID: ::windows_core::GUID = <IPhoneVoicemail as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneVoicemail as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneVoicemail {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.PhoneVoicemail";
@@ -2773,14 +2719,14 @@ impl VoipCallCoordinator {
         unsafe { (::windows_core::Interface::vtable(this).CancelUpgrade)(::windows_core::Interface::as_raw(this), callupgradeguid).ok() }
     }
     pub fn SetupNewAcceptedCall(&self, context: &::windows_core::HSTRING, contactname: &::windows_core::HSTRING, contactnumber: &::windows_core::HSTRING, servicename: &::windows_core::HSTRING, media: VoipPhoneCallMedia) -> ::windows_core::Result<VoipPhoneCall> {
-        let this = &::windows_core::ComInterface::cast::<IVoipCallCoordinator2>(self)?;
+        let this = &::windows_core::Interface::cast::<IVoipCallCoordinator2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SetupNewAcceptedCall)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(context), ::core::mem::transmute_copy(contactname), ::core::mem::transmute_copy(contactnumber), ::core::mem::transmute_copy(servicename), media, &mut result__).from_abi(result__)
         }
     }
     pub fn RequestNewAppInitiatedCall(&self, context: &::windows_core::HSTRING, contactname: &::windows_core::HSTRING, contactnumber: &::windows_core::HSTRING, servicename: &::windows_core::HSTRING, media: VoipPhoneCallMedia) -> ::windows_core::Result<VoipPhoneCall> {
-        let this = &::windows_core::ComInterface::cast::<IVoipCallCoordinator3>(self)?;
+        let this = &::windows_core::Interface::cast::<IVoipCallCoordinator3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestNewAppInitiatedCall)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(context), ::core::mem::transmute_copy(contactname), ::core::mem::transmute_copy(contactnumber), ::core::mem::transmute_copy(servicename), media, &mut result__).from_abi(result__)
@@ -2792,14 +2738,14 @@ impl VoipCallCoordinator {
         P1: ::windows_core::IntoParam<super::super::Foundation::Uri>,
         P2: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IVoipCallCoordinator3>(self)?;
+        let this = &::windows_core::Interface::cast::<IVoipCallCoordinator3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestNewIncomingCallWithContactRemoteId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(context), ::core::mem::transmute_copy(contactname), ::core::mem::transmute_copy(contactnumber), contactimage.into_param().abi(), ::core::mem::transmute_copy(servicename), brandingimage.into_param().abi(), ::core::mem::transmute_copy(calldetails), ringtone.into_param().abi(), media, ringtimeout, ::core::mem::transmute_copy(contactremoteid), &mut result__).from_abi(result__)
         }
     }
     pub fn ReserveOneProcessCallResourcesAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<VoipPhoneCallResourceReservationStatus>> {
-        let this = &::windows_core::ComInterface::cast::<IVoipCallCoordinator4>(self)?;
+        let this = &::windows_core::Interface::cast::<IVoipCallCoordinator4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReserveOneProcessCallResourcesAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2822,9 +2768,7 @@ impl ::windows_core::RuntimeType for VoipCallCoordinator {
 }
 unsafe impl ::windows_core::Interface for VoipCallCoordinator {
     type Vtable = IVoipCallCoordinator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VoipCallCoordinator {
-    const IID: ::windows_core::GUID = <IVoipCallCoordinator as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVoipCallCoordinator as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VoipCallCoordinator {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.VoipCallCoordinator";
@@ -2956,11 +2900,11 @@ impl VoipPhoneCall {
         unsafe { (::windows_core::Interface::vtable(this).NotifyCallReady)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn TryShowAppUI(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IVoipPhoneCall2>(self)?;
+        let this = &::windows_core::Interface::cast::<IVoipPhoneCall2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).TryShowAppUI)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn NotifyCallAccepted(&self, media: VoipPhoneCallMedia) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IVoipPhoneCall3>(self)?;
+        let this = &::windows_core::Interface::cast::<IVoipPhoneCall3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).NotifyCallAccepted)(::windows_core::Interface::as_raw(this), media).ok() }
     }
 }
@@ -2969,9 +2913,7 @@ impl ::windows_core::RuntimeType for VoipPhoneCall {
 }
 unsafe impl ::windows_core::Interface for VoipPhoneCall {
     type Vtable = IVoipPhoneCall_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VoipPhoneCall {
-    const IID: ::windows_core::GUID = <IVoipPhoneCall as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVoipPhoneCall as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VoipPhoneCall {
     const NAME: &'static str = "Windows.ApplicationModel.Calls.VoipPhoneCall";

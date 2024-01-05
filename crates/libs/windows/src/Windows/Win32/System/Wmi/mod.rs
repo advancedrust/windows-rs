@@ -3175,7 +3175,7 @@ impl IWbemClientConnectionTransport {
         P3: ::windows_core::IntoParam<::windows_core::BSTR>,
         P4: ::windows_core::IntoParam<::windows_core::BSTR>,
         P5: ::windows_core::IntoParam<IWbemContext>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Open)(::windows_core::Interface::as_raw(self), straddresstype.into_param().abi(), abbinaryaddress.len().try_into().unwrap(), ::core::mem::transmute(abbinaryaddress.as_ptr()), strobject.into_param().abi(), struser.into_param().abi(), strpassword.into_param().abi(), strlocale.into_param().abi(), lflags, pctx.into_param().abi(), &T::IID, &mut result__, ::core::mem::transmute(pcallres)).from_abi(result__)
@@ -3285,7 +3285,7 @@ impl IWbemConnectorLogin {
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
         P1: ::windows_core::IntoParam<::windows_core::PCWSTR>,
         P2: ::windows_core::IntoParam<IWbemContext>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).ConnectorLogin)(::windows_core::Interface::as_raw(self), wsznetworkresource.into_param().abi(), wszpreferredlocale.into_param().abi(), lflags, pctx.into_param().abi(), &T::IID, &mut result__).from_abi(result__)

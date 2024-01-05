@@ -1397,35 +1397,35 @@ impl ESim {
         unsafe { (::windows_core::Interface::vtable(this).RemoveProfileChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn Discover(&self) -> ::windows_core::Result<ESimDiscoverResult> {
-        let this = &::windows_core::ComInterface::cast::<IESim2>(self)?;
+        let this = &::windows_core::Interface::cast::<IESim2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Discover)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn DiscoverWithServerAddressAndMatchingId(&self, serveraddress: &::windows_core::HSTRING, matchingid: &::windows_core::HSTRING) -> ::windows_core::Result<ESimDiscoverResult> {
-        let this = &::windows_core::ComInterface::cast::<IESim2>(self)?;
+        let this = &::windows_core::Interface::cast::<IESim2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DiscoverWithServerAddressAndMatchingId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(serveraddress), ::core::mem::transmute_copy(matchingid), &mut result__).from_abi(result__)
         }
     }
     pub fn DiscoverAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<ESimDiscoverResult>> {
-        let this = &::windows_core::ComInterface::cast::<IESim2>(self)?;
+        let this = &::windows_core::Interface::cast::<IESim2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DiscoverAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn DiscoverWithServerAddressAndMatchingIdAsync(&self, serveraddress: &::windows_core::HSTRING, matchingid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<ESimDiscoverResult>> {
-        let this = &::windows_core::ComInterface::cast::<IESim2>(self)?;
+        let this = &::windows_core::Interface::cast::<IESim2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DiscoverWithServerAddressAndMatchingIdAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(serveraddress), ::core::mem::transmute_copy(matchingid), &mut result__).from_abi(result__)
         }
     }
     pub fn SlotIndex(&self) -> ::windows_core::Result<super::super::Foundation::IReference<i32>> {
-        let this = &::windows_core::ComInterface::cast::<IESim3>(self)?;
+        let this = &::windows_core::Interface::cast::<IESim3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SlotIndex)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1437,9 +1437,7 @@ impl ::windows_core::RuntimeType for ESim {
 }
 unsafe impl ::windows_core::Interface for ESim {
     type Vtable = IESim_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESim {
-    const IID: ::windows_core::GUID = <IESim as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESim as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESim {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESim";
@@ -1464,9 +1462,7 @@ impl ::windows_core::RuntimeType for ESimAddedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ESimAddedEventArgs {
     type Vtable = IESimAddedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimAddedEventArgs {
-    const IID: ::windows_core::GUID = <IESimAddedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimAddedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimAddedEventArgs {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimAddedEventArgs";
@@ -1498,9 +1494,7 @@ impl ::windows_core::RuntimeType for ESimDiscoverEvent {
 }
 unsafe impl ::windows_core::Interface for ESimDiscoverEvent {
     type Vtable = IESimDiscoverEvent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimDiscoverEvent {
-    const IID: ::windows_core::GUID = <IESimDiscoverEvent as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimDiscoverEvent as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimDiscoverEvent {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimDiscoverEvent";
@@ -1548,9 +1542,7 @@ impl ::windows_core::RuntimeType for ESimDiscoverResult {
 }
 unsafe impl ::windows_core::Interface for ESimDiscoverResult {
     type Vtable = IESimDiscoverResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimDiscoverResult {
-    const IID: ::windows_core::GUID = <IESimDiscoverResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimDiscoverResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimDiscoverResult {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimDiscoverResult";
@@ -1582,9 +1574,7 @@ impl ::windows_core::RuntimeType for ESimDownloadProfileMetadataResult {
 }
 unsafe impl ::windows_core::Interface for ESimDownloadProfileMetadataResult {
     type Vtable = IESimDownloadProfileMetadataResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimDownloadProfileMetadataResult {
-    const IID: ::windows_core::GUID = <IESimDownloadProfileMetadataResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimDownloadProfileMetadataResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimDownloadProfileMetadataResult {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimDownloadProfileMetadataResult";
@@ -1644,9 +1634,7 @@ impl ::windows_core::RuntimeType for ESimOperationResult {
 }
 unsafe impl ::windows_core::Interface for ESimOperationResult {
     type Vtable = IESimOperationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimOperationResult {
-    const IID: ::windows_core::GUID = <IESimOperationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimOperationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimOperationResult {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimOperationResult";
@@ -1671,9 +1659,7 @@ impl ::windows_core::RuntimeType for ESimPolicy {
 }
 unsafe impl ::windows_core::Interface for ESimPolicy {
     type Vtable = IESimPolicy_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimPolicy {
-    const IID: ::windows_core::GUID = <IESimPolicy as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimPolicy as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimPolicy {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimPolicy";
@@ -1770,9 +1756,7 @@ impl ::windows_core::RuntimeType for ESimProfile {
 }
 unsafe impl ::windows_core::Interface for ESimProfile {
     type Vtable = IESimProfile_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimProfile {
-    const IID: ::windows_core::GUID = <IESimProfile as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimProfile as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimProfile {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimProfile";
@@ -1883,9 +1867,7 @@ impl ::windows_core::RuntimeType for ESimProfileMetadata {
 }
 unsafe impl ::windows_core::Interface for ESimProfileMetadata {
     type Vtable = IESimProfileMetadata_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimProfileMetadata {
-    const IID: ::windows_core::GUID = <IESimProfileMetadata as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimProfileMetadata as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimProfileMetadata {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimProfileMetadata";
@@ -1924,9 +1906,7 @@ impl ::windows_core::RuntimeType for ESimProfilePolicy {
 }
 unsafe impl ::windows_core::Interface for ESimProfilePolicy {
     type Vtable = IESimProfilePolicy_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimProfilePolicy {
-    const IID: ::windows_core::GUID = <IESimProfilePolicy as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimProfilePolicy as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimProfilePolicy {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimProfilePolicy";
@@ -1951,9 +1931,7 @@ impl ::windows_core::RuntimeType for ESimRemovedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ESimRemovedEventArgs {
     type Vtable = IESimRemovedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimRemovedEventArgs {
-    const IID: ::windows_core::GUID = <IESimRemovedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimRemovedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimRemovedEventArgs {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimRemovedEventArgs";
@@ -1985,9 +1963,7 @@ impl ::windows_core::RuntimeType for ESimServiceInfo {
 }
 unsafe impl ::windows_core::Interface for ESimServiceInfo {
     type Vtable = IESimServiceInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimServiceInfo {
-    const IID: ::windows_core::GUID = <IESimServiceInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimServiceInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimServiceInfo {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimServiceInfo";
@@ -2012,9 +1988,7 @@ impl ::windows_core::RuntimeType for ESimUpdatedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ESimUpdatedEventArgs {
     type Vtable = IESimUpdatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimUpdatedEventArgs {
-    const IID: ::windows_core::GUID = <IESimUpdatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimUpdatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimUpdatedEventArgs {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimUpdatedEventArgs";
@@ -2117,9 +2091,7 @@ impl ::windows_core::RuntimeType for ESimWatcher {
 }
 unsafe impl ::windows_core::Interface for ESimWatcher {
     type Vtable = IESimWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ESimWatcher {
-    const IID: ::windows_core::GUID = <IESimWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IESimWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ESimWatcher {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ESimWatcher";
@@ -2204,7 +2176,7 @@ impl HotspotAuthenticationContext {
         unsafe { (::windows_core::Interface::vtable(this).TriggerAttentionRequired)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(packagerelativeapplicationid), ::core::mem::transmute_copy(applicationparameters)).ok() }
     }
     pub fn IssueCredentialsAsync(&self, username: &::windows_core::HSTRING, password: &::windows_core::HSTRING, extraparameters: &::windows_core::HSTRING, markasmanualconnectonfailure: bool) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<HotspotCredentialsAuthenticationResult>> {
-        let this = &::windows_core::ComInterface::cast::<IHotspotAuthenticationContext2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHotspotAuthenticationContext2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IssueCredentialsAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(username), ::core::mem::transmute_copy(password), ::core::mem::transmute_copy(extraparameters), markasmanualconnectonfailure, &mut result__).from_abi(result__)
@@ -2227,9 +2199,7 @@ impl ::windows_core::RuntimeType for HotspotAuthenticationContext {
 }
 unsafe impl ::windows_core::Interface for HotspotAuthenticationContext {
     type Vtable = IHotspotAuthenticationContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HotspotAuthenticationContext {
-    const IID: ::windows_core::GUID = <IHotspotAuthenticationContext as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHotspotAuthenticationContext as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HotspotAuthenticationContext {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.HotspotAuthenticationContext";
@@ -2252,9 +2222,7 @@ impl ::windows_core::RuntimeType for HotspotAuthenticationEventDetails {
 }
 unsafe impl ::windows_core::Interface for HotspotAuthenticationEventDetails {
     type Vtable = IHotspotAuthenticationEventDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HotspotAuthenticationEventDetails {
-    const IID: ::windows_core::GUID = <IHotspotAuthenticationEventDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHotspotAuthenticationEventDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HotspotAuthenticationEventDetails {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.HotspotAuthenticationEventDetails";
@@ -2300,9 +2268,7 @@ impl ::windows_core::RuntimeType for HotspotCredentialsAuthenticationResult {
 }
 unsafe impl ::windows_core::Interface for HotspotCredentialsAuthenticationResult {
     type Vtable = IHotspotCredentialsAuthenticationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HotspotCredentialsAuthenticationResult {
-    const IID: ::windows_core::GUID = <IHotspotCredentialsAuthenticationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHotspotCredentialsAuthenticationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HotspotCredentialsAuthenticationResult {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.HotspotCredentialsAuthenticationResult";
@@ -2514,14 +2480,14 @@ impl MobileBroadbandAccount {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Networking_Connectivity\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Networking_Connectivity"))]
     pub fn GetConnectionProfiles(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<super::Connectivity::ConnectionProfile>> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandAccount2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandAccount2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetConnectionProfiles)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AccountExperienceUrl(&self) -> ::windows_core::Result<super::super::Foundation::Uri> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandAccount3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandAccount3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AccountExperienceUrl)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2552,9 +2518,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandAccount {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandAccount {
     type Vtable = IMobileBroadbandAccount_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandAccount {
-    const IID: ::windows_core::GUID = <IMobileBroadbandAccount as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandAccount as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandAccount {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandAccount";
@@ -2577,9 +2541,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandAccountEventArgs {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandAccountEventArgs {
     type Vtable = IMobileBroadbandAccountEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandAccountEventArgs {
-    const IID: ::windows_core::GUID = <IMobileBroadbandAccountEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandAccountEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandAccountEventArgs {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandAccountEventArgs";
@@ -2616,9 +2578,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandAccountUpdatedEventArgs {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandAccountUpdatedEventArgs {
     type Vtable = IMobileBroadbandAccountUpdatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandAccountUpdatedEventArgs {
-    const IID: ::windows_core::GUID = <IMobileBroadbandAccountUpdatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandAccountUpdatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandAccountUpdatedEventArgs {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandAccountUpdatedEventArgs";
@@ -2726,9 +2686,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandAccountWatcher {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandAccountWatcher {
     type Vtable = IMobileBroadbandAccountWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandAccountWatcher {
-    const IID: ::windows_core::GUID = <IMobileBroadbandAccountWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandAccountWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandAccountWatcher {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcher";
@@ -2769,9 +2727,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandAntennaSar {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandAntennaSar {
     type Vtable = IMobileBroadbandAntennaSar_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandAntennaSar {
-    const IID: ::windows_core::GUID = <IMobileBroadbandAntennaSar as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandAntennaSar as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandAntennaSar {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandAntennaSar";
@@ -2845,9 +2801,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandCellCdma {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandCellCdma {
     type Vtable = IMobileBroadbandCellCdma_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandCellCdma {
-    const IID: ::windows_core::GUID = <IMobileBroadbandCellCdma as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandCellCdma as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandCellCdma {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandCellCdma";
@@ -2914,9 +2868,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandCellGsm {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandCellGsm {
     type Vtable = IMobileBroadbandCellGsm_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandCellGsm {
-    const IID: ::windows_core::GUID = <IMobileBroadbandCellGsm as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandCellGsm as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandCellGsm {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandCellGsm";
@@ -2990,9 +2942,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandCellLte {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandCellLte {
     type Vtable = IMobileBroadbandCellLte_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandCellLte {
-    const IID: ::windows_core::GUID = <IMobileBroadbandCellLte as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandCellLte as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandCellLte {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandCellLte";
@@ -3073,9 +3023,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandCellNR {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandCellNR {
     type Vtable = IMobileBroadbandCellNR_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandCellNR {
-    const IID: ::windows_core::GUID = <IMobileBroadbandCellNR as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandCellNR as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandCellNR {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandCellNR";
@@ -3149,9 +3097,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandCellTdscdma {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandCellTdscdma {
     type Vtable = IMobileBroadbandCellTdscdma_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandCellTdscdma {
-    const IID: ::windows_core::GUID = <IMobileBroadbandCellTdscdma as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandCellTdscdma as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandCellTdscdma {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandCellTdscdma";
@@ -3225,9 +3171,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandCellUmts {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandCellUmts {
     type Vtable = IMobileBroadbandCellUmts_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandCellUmts {
-    const IID: ::windows_core::GUID = <IMobileBroadbandCellUmts as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandCellUmts as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandCellUmts {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandCellUmts";
@@ -3332,7 +3276,7 @@ impl MobileBroadbandCellsInfo {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn NeighboringCellsNR(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<MobileBroadbandCellNR>> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandCellsInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandCellsInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).NeighboringCellsNR)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3341,7 +3285,7 @@ impl MobileBroadbandCellsInfo {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn ServingCellsNR(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<MobileBroadbandCellNR>> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandCellsInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandCellsInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ServingCellsNR)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3353,9 +3297,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandCellsInfo {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandCellsInfo {
     type Vtable = IMobileBroadbandCellsInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandCellsInfo {
-    const IID: ::windows_core::GUID = <IMobileBroadbandCellsInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandCellsInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandCellsInfo {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandCellsInfo";
@@ -3380,9 +3322,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandCurrentSlotIndexChangedEvent
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandCurrentSlotIndexChangedEventArgs {
     type Vtable = IMobileBroadbandCurrentSlotIndexChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandCurrentSlotIndexChangedEventArgs {
-    const IID: ::windows_core::GUID = <IMobileBroadbandCurrentSlotIndexChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandCurrentSlotIndexChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandCurrentSlotIndexChangedEventArgs {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandCurrentSlotIndexChangedEventArgs";
@@ -3497,49 +3437,49 @@ impl MobileBroadbandDeviceInformation {
         }
     }
     pub fn PinManager(&self) -> ::windows_core::Result<MobileBroadbandPinManager> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandDeviceInformation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandDeviceInformation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PinManager)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Revision(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandDeviceInformation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandDeviceInformation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Revision)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SerialNumber(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandDeviceInformation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandDeviceInformation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SerialNumber)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SimSpn(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandDeviceInformation3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandDeviceInformation3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SimSpn)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SimPnn(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandDeviceInformation3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandDeviceInformation3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SimPnn)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SimGid1(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandDeviceInformation3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandDeviceInformation3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SimGid1)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SlotManager(&self) -> ::windows_core::Result<MobileBroadbandSlotManager> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandDeviceInformation4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandDeviceInformation4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SlotManager)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3551,9 +3491,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandDeviceInformation {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandDeviceInformation {
     type Vtable = IMobileBroadbandDeviceInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandDeviceInformation {
-    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandDeviceInformation {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandDeviceInformation";
@@ -3599,9 +3537,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandDeviceService {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandDeviceService {
     type Vtable = IMobileBroadbandDeviceService_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandDeviceService {
-    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceService as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceService as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandDeviceService {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandDeviceService";
@@ -3635,9 +3571,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandDeviceServiceCommandResult {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandDeviceServiceCommandResult {
     type Vtable = IMobileBroadbandDeviceServiceCommandResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandDeviceServiceCommandResult {
-    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceServiceCommandResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceServiceCommandResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandDeviceServiceCommandResult {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceCommandResult";
@@ -3683,9 +3617,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandDeviceServiceCommandSession 
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandDeviceServiceCommandSession {
     type Vtable = IMobileBroadbandDeviceServiceCommandSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandDeviceServiceCommandSession {
-    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceServiceCommandSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceServiceCommandSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandDeviceServiceCommandSession {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceCommandSession";
@@ -3712,9 +3644,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandDeviceServiceDataReceivedEve
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandDeviceServiceDataReceivedEventArgs {
     type Vtable = IMobileBroadbandDeviceServiceDataReceivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandDeviceServiceDataReceivedEventArgs {
-    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceServiceDataReceivedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceServiceDataReceivedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandDeviceServiceDataReceivedEventArgs {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceDataReceivedEventArgs";
@@ -3762,9 +3692,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandDeviceServiceDataSession {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandDeviceServiceDataSession {
     type Vtable = IMobileBroadbandDeviceServiceDataSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandDeviceServiceDataSession {
-    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceServiceDataSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceServiceDataSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandDeviceServiceDataSession {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceDataSession";
@@ -3803,9 +3731,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandDeviceServiceInformation {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandDeviceServiceInformation {
     type Vtable = IMobileBroadbandDeviceServiceInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandDeviceServiceInformation {
-    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceServiceInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceServiceInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandDeviceServiceInformation {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceInformation";
@@ -3841,7 +3767,7 @@ impl MobileBroadbandDeviceServiceTriggerDetails {
         }
     }
     pub fn EventId(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandDeviceServiceTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandDeviceServiceTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EventId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3853,9 +3779,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandDeviceServiceTriggerDetails 
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandDeviceServiceTriggerDetails {
     type Vtable = IMobileBroadbandDeviceServiceTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandDeviceServiceTriggerDetails {
-    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceServiceTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandDeviceServiceTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandDeviceServiceTriggerDetails {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandDeviceServiceTriggerDetails";
@@ -3940,28 +3864,28 @@ impl MobileBroadbandModem {
         }
     }
     pub fn GetIsPassthroughEnabledAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandModem2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandModem2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetIsPassthroughEnabledAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsPassthroughEnabledAsync(&self, value: bool) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MobileBroadbandModemStatus>> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandModem2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandModem2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SetIsPassthroughEnabledAsync)(::windows_core::Interface::as_raw(this), value, &mut result__).from_abi(result__)
         }
     }
     pub fn TryGetPcoAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MobileBroadbandPco>> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandModem3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandModem3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryGetPcoAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsInEmergencyCallMode(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandModem3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandModem3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsInEmergencyCallMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3971,39 +3895,39 @@ impl MobileBroadbandModem {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<MobileBroadbandModem, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandModem3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandModem3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsInEmergencyCallModeChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveIsInEmergencyCallModeChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandModem3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandModem3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveIsInEmergencyCallModeChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn SetIsPassthroughEnabledWithSlotIndexAsync(&self, value: bool, slotindex: i32) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MobileBroadbandModemStatus>> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandModem4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandModem4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SetIsPassthroughEnabledWithSlotIndexAsync)(::windows_core::Interface::as_raw(this), value, slotindex, &mut result__).from_abi(result__)
         }
     }
     pub fn GetIsPassthroughEnabledWithSlotIndexAsync(&self, slotindex: i32) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandModem4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandModem4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetIsPassthroughEnabledWithSlotIndexAsync)(::windows_core::Interface::as_raw(this), slotindex, &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsPassthroughEnabledWithSlotIndex(&self, value: bool, slotindex: i32) -> ::windows_core::Result<MobileBroadbandModemStatus> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandModem4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandModem4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SetIsPassthroughEnabledWithSlotIndex)(::windows_core::Interface::as_raw(this), value, slotindex, &mut result__).from_abi(result__)
         }
     }
     pub fn GetIsPassthroughEnabledWithSlotIndex(&self, slotindex: i32) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandModem4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandModem4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetIsPassthroughEnabledWithSlotIndex)(::windows_core::Interface::as_raw(this), slotindex, &mut result__).from_abi(result__)
@@ -4038,9 +3962,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandModem {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandModem {
     type Vtable = IMobileBroadbandModem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandModem {
-    const IID: ::windows_core::GUID = <IMobileBroadbandModem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandModem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandModem {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandModem";
@@ -4074,7 +3996,7 @@ impl MobileBroadbandModemConfiguration {
         }
     }
     pub fn SarManager(&self) -> ::windows_core::Result<MobileBroadbandSarManager> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandModemConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandModemConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SarManager)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4086,9 +4008,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandModemConfiguration {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandModemConfiguration {
     type Vtable = IMobileBroadbandModemConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandModemConfiguration {
-    const IID: ::windows_core::GUID = <IMobileBroadbandModemConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandModemConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandModemConfiguration {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandModemConfiguration";
@@ -4144,9 +4064,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandModemIsolation {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandModemIsolation {
     type Vtable = IMobileBroadbandModemIsolation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandModemIsolation {
-    const IID: ::windows_core::GUID = <IMobileBroadbandModemIsolation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandModemIsolation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandModemIsolation {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandModemIsolation";
@@ -4228,7 +4146,7 @@ impl MobileBroadbandNetwork {
         unsafe { (::windows_core::Interface::vtable(this).ShowConnectionUI)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn GetVoiceCallSupportAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandNetwork2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandNetwork2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetVoiceCallSupportAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4237,14 +4155,14 @@ impl MobileBroadbandNetwork {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn RegistrationUiccApps(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<MobileBroadbandUiccApp>> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandNetwork2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandNetwork2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RegistrationUiccApps)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetCellsInfoAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MobileBroadbandCellsInfo>> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandNetwork3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandNetwork3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetCellsInfoAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4256,9 +4174,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandNetwork {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandNetwork {
     type Vtable = IMobileBroadbandNetwork_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandNetwork {
-    const IID: ::windows_core::GUID = <IMobileBroadbandNetwork as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandNetwork as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandNetwork {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandNetwork";
@@ -4288,9 +4204,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandNetworkRegistrationStateChan
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandNetworkRegistrationStateChange {
     type Vtable = IMobileBroadbandNetworkRegistrationStateChange_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandNetworkRegistrationStateChange {
-    const IID: ::windows_core::GUID = <IMobileBroadbandNetworkRegistrationStateChange as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandNetworkRegistrationStateChange as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandNetworkRegistrationStateChange {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandNetworkRegistrationStateChange";
@@ -4317,9 +4231,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandNetworkRegistrationStateChan
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
     type Vtable = IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
-    const IID: ::windows_core::GUID = <IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandNetworkRegistrationStateChangeTriggerDetails";
@@ -4360,9 +4272,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandPco {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandPco {
     type Vtable = IMobileBroadbandPco_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandPco {
-    const IID: ::windows_core::GUID = <IMobileBroadbandPco as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandPco as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandPco {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandPco";
@@ -4387,9 +4297,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandPcoDataChangeTriggerDetails 
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandPcoDataChangeTriggerDetails {
     type Vtable = IMobileBroadbandPcoDataChangeTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandPcoDataChangeTriggerDetails {
-    const IID: ::windows_core::GUID = <IMobileBroadbandPcoDataChangeTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandPcoDataChangeTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandPcoDataChangeTriggerDetails {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandPcoDataChangeTriggerDetails";
@@ -4491,9 +4399,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandPin {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandPin {
     type Vtable = IMobileBroadbandPin_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandPin {
-    const IID: ::windows_core::GUID = <IMobileBroadbandPin as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandPin as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandPin {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandPin";
@@ -4532,9 +4438,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandPinLockStateChange {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandPinLockStateChange {
     type Vtable = IMobileBroadbandPinLockStateChange_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandPinLockStateChange {
-    const IID: ::windows_core::GUID = <IMobileBroadbandPinLockStateChange as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandPinLockStateChange as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandPinLockStateChange {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandPinLockStateChange";
@@ -4561,9 +4465,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandPinLockStateChangeTriggerDet
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandPinLockStateChangeTriggerDetails {
     type Vtable = IMobileBroadbandPinLockStateChangeTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandPinLockStateChangeTriggerDetails {
-    const IID: ::windows_core::GUID = <IMobileBroadbandPinLockStateChangeTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandPinLockStateChangeTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandPinLockStateChangeTriggerDetails {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandPinLockStateChangeTriggerDetails";
@@ -4597,9 +4499,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandPinManager {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandPinManager {
     type Vtable = IMobileBroadbandPinManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandPinManager {
-    const IID: ::windows_core::GUID = <IMobileBroadbandPinManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandPinManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandPinManager {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandPinManager";
@@ -4631,9 +4531,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandPinOperationResult {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandPinOperationResult {
     type Vtable = IMobileBroadbandPinOperationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandPinOperationResult {
-    const IID: ::windows_core::GUID = <IMobileBroadbandPinOperationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandPinOperationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandPinOperationResult {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandPinOperationResult";
@@ -4665,9 +4563,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandRadioStateChange {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandRadioStateChange {
     type Vtable = IMobileBroadbandRadioStateChange_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandRadioStateChange {
-    const IID: ::windows_core::GUID = <IMobileBroadbandRadioStateChange as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandRadioStateChange as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandRadioStateChange {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandRadioStateChange";
@@ -4694,9 +4590,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandRadioStateChangeTriggerDetai
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandRadioStateChangeTriggerDetails {
     type Vtable = IMobileBroadbandRadioStateChangeTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandRadioStateChangeTriggerDetails {
-    const IID: ::windows_core::GUID = <IMobileBroadbandRadioStateChangeTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandRadioStateChangeTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandRadioStateChangeTriggerDetails {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandRadioStateChangeTriggerDetails";
@@ -4820,9 +4714,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandSarManager {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandSarManager {
     type Vtable = IMobileBroadbandSarManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandSarManager {
-    const IID: ::windows_core::GUID = <IMobileBroadbandSarManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandSarManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandSarManager {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandSarManager";
@@ -4849,7 +4741,7 @@ impl MobileBroadbandSlotInfo {
         }
     }
     pub fn IccId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IMobileBroadbandSlotInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMobileBroadbandSlotInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IccId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4861,9 +4753,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandSlotInfo {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandSlotInfo {
     type Vtable = IMobileBroadbandSlotInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandSlotInfo {
-    const IID: ::windows_core::GUID = <IMobileBroadbandSlotInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandSlotInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandSlotInfo {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandSlotInfo";
@@ -4888,9 +4778,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandSlotInfoChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandSlotInfoChangedEventArgs {
     type Vtable = IMobileBroadbandSlotInfoChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandSlotInfoChangedEventArgs {
-    const IID: ::windows_core::GUID = <IMobileBroadbandSlotInfoChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandSlotInfoChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandSlotInfoChangedEventArgs {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandSlotInfoChangedEventArgs";
@@ -4966,9 +4854,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandSlotManager {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandSlotManager {
     type Vtable = IMobileBroadbandSlotManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandSlotManager {
-    const IID: ::windows_core::GUID = <IMobileBroadbandSlotManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandSlotManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandSlotManager {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandSlotManager";
@@ -4993,9 +4879,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandTransmissionStateChangedEven
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandTransmissionStateChangedEventArgs {
     type Vtable = IMobileBroadbandTransmissionStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandTransmissionStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IMobileBroadbandTransmissionStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandTransmissionStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandTransmissionStateChangedEventArgs {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandTransmissionStateChangedEventArgs";
@@ -5027,9 +4911,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandUicc {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandUicc {
     type Vtable = IMobileBroadbandUicc_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandUicc {
-    const IID: ::windows_core::GUID = <IMobileBroadbandUicc as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandUicc as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandUicc {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandUicc";
@@ -5087,9 +4969,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandUiccApp {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandUiccApp {
     type Vtable = IMobileBroadbandUiccApp_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandUiccApp {
-    const IID: ::windows_core::GUID = <IMobileBroadbandUiccApp as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandUiccApp as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandUiccApp {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandUiccApp";
@@ -5123,9 +5003,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandUiccAppReadRecordResult {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandUiccAppReadRecordResult {
     type Vtable = IMobileBroadbandUiccAppReadRecordResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandUiccAppReadRecordResult {
-    const IID: ::windows_core::GUID = <IMobileBroadbandUiccAppReadRecordResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandUiccAppReadRecordResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandUiccAppReadRecordResult {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandUiccAppReadRecordResult";
@@ -5185,9 +5063,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandUiccAppRecordDetailsResult {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandUiccAppRecordDetailsResult {
     type Vtable = IMobileBroadbandUiccAppRecordDetailsResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandUiccAppRecordDetailsResult {
-    const IID: ::windows_core::GUID = <IMobileBroadbandUiccAppRecordDetailsResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandUiccAppRecordDetailsResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandUiccAppRecordDetailsResult {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandUiccAppRecordDetailsResult";
@@ -5221,9 +5097,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandUiccAppsResult {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandUiccAppsResult {
     type Vtable = IMobileBroadbandUiccAppsResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandUiccAppsResult {
-    const IID: ::windows_core::GUID = <IMobileBroadbandUiccAppsResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMobileBroadbandUiccAppsResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandUiccAppsResult {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.MobileBroadbandUiccAppsResult";
@@ -5248,9 +5122,7 @@ impl ::windows_core::RuntimeType for NetworkOperatorDataUsageTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for NetworkOperatorDataUsageTriggerDetails {
     type Vtable = INetworkOperatorDataUsageTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NetworkOperatorDataUsageTriggerDetails {
-    const IID: ::windows_core::GUID = <INetworkOperatorDataUsageTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INetworkOperatorDataUsageTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NetworkOperatorDataUsageTriggerDetails {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.NetworkOperatorDataUsageTriggerDetails";
@@ -5307,7 +5179,7 @@ impl NetworkOperatorNotificationEventDetails {
         }
     }
     pub fn AuthorizeTethering(&self, allow: bool, entitlementfailurereason: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<INetworkOperatorTetheringEntitlementCheck>(self)?;
+        let this = &::windows_core::Interface::cast::<INetworkOperatorTetheringEntitlementCheck>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AuthorizeTethering)(::windows_core::Interface::as_raw(this), allow, ::core::mem::transmute_copy(entitlementfailurereason)).ok() }
     }
 }
@@ -5316,9 +5188,7 @@ impl ::windows_core::RuntimeType for NetworkOperatorNotificationEventDetails {
 }
 unsafe impl ::windows_core::Interface for NetworkOperatorNotificationEventDetails {
     type Vtable = INetworkOperatorNotificationEventDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NetworkOperatorNotificationEventDetails {
-    const IID: ::windows_core::GUID = <INetworkOperatorNotificationEventDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INetworkOperatorNotificationEventDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NetworkOperatorNotificationEventDetails {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.NetworkOperatorNotificationEventDetails";
@@ -5360,28 +5230,28 @@ impl NetworkOperatorTetheringAccessPointConfiguration {
         unsafe { (::windows_core::Interface::vtable(this).SetPassphrase)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn IsBandSupported(&self, band: TetheringWiFiBand) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<INetworkOperatorTetheringAccessPointConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<INetworkOperatorTetheringAccessPointConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsBandSupported)(::windows_core::Interface::as_raw(this), band, &mut result__).from_abi(result__)
         }
     }
     pub fn IsBandSupportedAsync(&self, band: TetheringWiFiBand) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<INetworkOperatorTetheringAccessPointConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<INetworkOperatorTetheringAccessPointConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsBandSupportedAsync)(::windows_core::Interface::as_raw(this), band, &mut result__).from_abi(result__)
         }
     }
     pub fn Band(&self) -> ::windows_core::Result<TetheringWiFiBand> {
-        let this = &::windows_core::ComInterface::cast::<INetworkOperatorTetheringAccessPointConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<INetworkOperatorTetheringAccessPointConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Band)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetBand(&self, value: TetheringWiFiBand) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<INetworkOperatorTetheringAccessPointConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<INetworkOperatorTetheringAccessPointConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetBand)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -5390,9 +5260,7 @@ impl ::windows_core::RuntimeType for NetworkOperatorTetheringAccessPointConfigur
 }
 unsafe impl ::windows_core::Interface for NetworkOperatorTetheringAccessPointConfiguration {
     type Vtable = INetworkOperatorTetheringAccessPointConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NetworkOperatorTetheringAccessPointConfiguration {
-    const IID: ::windows_core::GUID = <INetworkOperatorTetheringAccessPointConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INetworkOperatorTetheringAccessPointConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NetworkOperatorTetheringAccessPointConfiguration {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.NetworkOperatorTetheringAccessPointConfiguration";
@@ -5426,9 +5294,7 @@ impl ::windows_core::RuntimeType for NetworkOperatorTetheringClient {
 }
 unsafe impl ::windows_core::Interface for NetworkOperatorTetheringClient {
     type Vtable = INetworkOperatorTetheringClient_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NetworkOperatorTetheringClient {
-    const IID: ::windows_core::GUID = <INetworkOperatorTetheringClient as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INetworkOperatorTetheringClient as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NetworkOperatorTetheringClient {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.NetworkOperatorTetheringClient";
@@ -5443,7 +5309,7 @@ impl NetworkOperatorTetheringManager {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetTetheringClients(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<NetworkOperatorTetheringClient>> {
-        let this = &::windows_core::ComInterface::cast::<INetworkOperatorTetheringClientManager>(self)?;
+        let this = &::windows_core::Interface::cast::<INetworkOperatorTetheringClientManager>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetTetheringClients)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5597,9 +5463,7 @@ impl ::windows_core::RuntimeType for NetworkOperatorTetheringManager {
 }
 unsafe impl ::windows_core::Interface for NetworkOperatorTetheringManager {
     type Vtable = INetworkOperatorTetheringManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NetworkOperatorTetheringManager {
-    const IID: ::windows_core::GUID = <INetworkOperatorTetheringManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INetworkOperatorTetheringManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NetworkOperatorTetheringManager {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager";
@@ -5629,9 +5493,7 @@ impl ::windows_core::RuntimeType for NetworkOperatorTetheringOperationResult {
 }
 unsafe impl ::windows_core::Interface for NetworkOperatorTetheringOperationResult {
     type Vtable = INetworkOperatorTetheringOperationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NetworkOperatorTetheringOperationResult {
-    const IID: ::windows_core::GUID = <INetworkOperatorTetheringOperationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INetworkOperatorTetheringOperationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NetworkOperatorTetheringOperationResult {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.NetworkOperatorTetheringOperationResult";
@@ -5661,9 +5523,7 @@ impl ::windows_core::RuntimeType for ProvisionFromXmlDocumentResults {
 }
 unsafe impl ::windows_core::Interface for ProvisionFromXmlDocumentResults {
     type Vtable = IProvisionFromXmlDocumentResults_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProvisionFromXmlDocumentResults {
-    const IID: ::windows_core::GUID = <IProvisionFromXmlDocumentResults as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProvisionFromXmlDocumentResults as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProvisionFromXmlDocumentResults {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ProvisionFromXmlDocumentResults";
@@ -5689,9 +5549,7 @@ impl ::windows_core::RuntimeType for ProvisionedProfile {
 }
 unsafe impl ::windows_core::Interface for ProvisionedProfile {
     type Vtable = IProvisionedProfile_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProvisionedProfile {
-    const IID: ::windows_core::GUID = <IProvisionedProfile as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProvisionedProfile as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProvisionedProfile {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ProvisionedProfile";
@@ -5739,9 +5597,7 @@ impl ::windows_core::RuntimeType for ProvisioningAgent {
 }
 unsafe impl ::windows_core::Interface for ProvisioningAgent {
     type Vtable = IProvisioningAgent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProvisioningAgent {
-    const IID: ::windows_core::GUID = <IProvisioningAgent as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProvisioningAgent as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProvisioningAgent {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.ProvisioningAgent";
@@ -5772,9 +5628,7 @@ impl ::windows_core::RuntimeType for TetheringEntitlementCheckTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for TetheringEntitlementCheckTriggerDetails {
     type Vtable = ITetheringEntitlementCheckTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TetheringEntitlementCheckTriggerDetails {
-    const IID: ::windows_core::GUID = <ITetheringEntitlementCheckTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITetheringEntitlementCheckTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TetheringEntitlementCheckTriggerDetails {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.TetheringEntitlementCheckTriggerDetails";
@@ -5836,9 +5690,7 @@ impl ::windows_core::RuntimeType for UssdMessage {
 }
 unsafe impl ::windows_core::Interface for UssdMessage {
     type Vtable = IUssdMessage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UssdMessage {
-    const IID: ::windows_core::GUID = <IUssdMessage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUssdMessage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UssdMessage {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.UssdMessage";
@@ -5870,9 +5722,7 @@ impl ::windows_core::RuntimeType for UssdReply {
 }
 unsafe impl ::windows_core::Interface for UssdReply {
     type Vtable = IUssdReply_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UssdReply {
-    const IID: ::windows_core::GUID = <IUssdReply as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUssdReply as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UssdReply {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.UssdReply";
@@ -5919,9 +5769,7 @@ impl ::windows_core::RuntimeType for UssdSession {
 }
 unsafe impl ::windows_core::Interface for UssdSession {
     type Vtable = IUssdSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UssdSession {
-    const IID: ::windows_core::GUID = <IUssdSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUssdSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UssdSession {
     const NAME: &'static str = "Windows.Networking.NetworkOperators.UssdSession";

@@ -40,9 +40,7 @@ impl ::windows_core::RuntimeType for ExtendedExecutionRevokedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ExtendedExecutionRevokedEventArgs {
     type Vtable = IExtendedExecutionRevokedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ExtendedExecutionRevokedEventArgs {
-    const IID: ::windows_core::GUID = <IExtendedExecutionRevokedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IExtendedExecutionRevokedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ExtendedExecutionRevokedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionRevokedEventArgs";
@@ -62,7 +60,7 @@ impl ExtendedExecutionSession {
         SHARED.call(callback)
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Reason(&self) -> ::windows_core::Result<ExtendedExecutionReason> {
@@ -125,9 +123,7 @@ impl ::windows_core::RuntimeType for ExtendedExecutionSession {
 }
 unsafe impl ::windows_core::Interface for ExtendedExecutionSession {
     type Vtable = IExtendedExecutionSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ExtendedExecutionSession {
-    const IID: ::windows_core::GUID = <IExtendedExecutionSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IExtendedExecutionSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ExtendedExecutionSession {
     const NAME: &'static str = "Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionSession";

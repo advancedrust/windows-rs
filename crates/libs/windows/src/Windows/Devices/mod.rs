@@ -261,9 +261,7 @@ impl ::windows_core::RuntimeType for LowLevelDevicesAggregateProvider {
 }
 unsafe impl ::windows_core::Interface for LowLevelDevicesAggregateProvider {
     type Vtable = ILowLevelDevicesAggregateProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LowLevelDevicesAggregateProvider {
-    const IID: ::windows_core::GUID = <ILowLevelDevicesAggregateProvider as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILowLevelDevicesAggregateProvider as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LowLevelDevicesAggregateProvider {
     const NAME: &'static str = "Windows.Devices.LowLevelDevicesAggregateProvider";
@@ -299,9 +297,7 @@ impl ::windows_core::RuntimeType for LowLevelDevicesController {
 }
 unsafe impl ::windows_core::Interface for LowLevelDevicesController {
     type Vtable = ILowLevelDevicesController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LowLevelDevicesController {
-    const IID: ::windows_core::GUID = <ILowLevelDevicesController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILowLevelDevicesController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LowLevelDevicesController {
     const NAME: &'static str = "Windows.Devices.LowLevelDevicesController";

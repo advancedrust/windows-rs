@@ -73,9 +73,7 @@ impl ::windows_core::RuntimeType for OemSupportInfo {
 }
 unsafe impl ::windows_core::Interface for OemSupportInfo {
     type Vtable = IOemSupportInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OemSupportInfo {
-    const IID: ::windows_core::GUID = <IOemSupportInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOemSupportInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OemSupportInfo {
     const NAME: &'static str = "Windows.System.Profile.SystemManufacturers.OemSupportInfo";
@@ -159,9 +157,7 @@ impl ::windows_core::RuntimeType for SystemSupportDeviceInfo {
 }
 unsafe impl ::windows_core::Interface for SystemSupportDeviceInfo {
     type Vtable = ISystemSupportDeviceInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemSupportDeviceInfo {
-    const IID: ::windows_core::GUID = <ISystemSupportDeviceInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemSupportDeviceInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemSupportDeviceInfo {
     const NAME: &'static str = "Windows.System.Profile.SystemManufacturers.SystemSupportDeviceInfo";

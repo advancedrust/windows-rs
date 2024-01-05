@@ -386,9 +386,7 @@ impl ::windows_core::RuntimeType for PhotoImportDeleteImportedItemsFromSourceRes
 }
 unsafe impl ::windows_core::Interface for PhotoImportDeleteImportedItemsFromSourceResult {
     type Vtable = IPhotoImportDeleteImportedItemsFromSourceResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoImportDeleteImportedItemsFromSourceResult {
-    const IID: ::windows_core::GUID = <IPhotoImportDeleteImportedItemsFromSourceResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoImportDeleteImportedItemsFromSourceResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoImportDeleteImportedItemsFromSourceResult {
     const NAME: &'static str = "Windows.Media.Import.PhotoImportDeleteImportedItemsFromSourceResult";
@@ -625,7 +623,7 @@ impl PhotoImportFindItemsResult {
         unsafe { (::windows_core::Interface::vtable(this).RemoveItemImported)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn AddItemsInDateRangeToSelection(&self, rangestart: super::super::Foundation::DateTime, rangelength: super::super::Foundation::TimeSpan) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IPhotoImportFindItemsResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhotoImportFindItemsResult2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddItemsInDateRangeToSelection)(::windows_core::Interface::as_raw(this), rangestart, rangelength).ok() }
     }
 }
@@ -634,9 +632,7 @@ impl ::windows_core::RuntimeType for PhotoImportFindItemsResult {
 }
 unsafe impl ::windows_core::Interface for PhotoImportFindItemsResult {
     type Vtable = IPhotoImportFindItemsResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoImportFindItemsResult {
-    const IID: ::windows_core::GUID = <IPhotoImportFindItemsResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoImportFindItemsResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoImportFindItemsResult {
     const NAME: &'static str = "Windows.Media.Import.PhotoImportFindItemsResult";
@@ -754,9 +750,7 @@ impl ::windows_core::RuntimeType for PhotoImportImportItemsResult {
 }
 unsafe impl ::windows_core::Interface for PhotoImportImportItemsResult {
     type Vtable = IPhotoImportImportItemsResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoImportImportItemsResult {
-    const IID: ::windows_core::GUID = <IPhotoImportImportItemsResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoImportImportItemsResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoImportImportItemsResult {
     const NAME: &'static str = "Windows.Media.Import.PhotoImportImportItemsResult";
@@ -867,7 +861,7 @@ impl PhotoImportItem {
         }
     }
     pub fn Path(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IPhotoImportItem2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhotoImportItem2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Path)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -879,9 +873,7 @@ impl ::windows_core::RuntimeType for PhotoImportItem {
 }
 unsafe impl ::windows_core::Interface for PhotoImportItem {
     type Vtable = IPhotoImportItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoImportItem {
-    const IID: ::windows_core::GUID = <IPhotoImportItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoImportItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoImportItem {
     const NAME: &'static str = "Windows.Media.Import.PhotoImportItem";
@@ -906,9 +898,7 @@ impl ::windows_core::RuntimeType for PhotoImportItemImportedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PhotoImportItemImportedEventArgs {
     type Vtable = IPhotoImportItemImportedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoImportItemImportedEventArgs {
-    const IID: ::windows_core::GUID = <IPhotoImportItemImportedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoImportItemImportedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoImportItemImportedEventArgs {
     const NAME: &'static str = "Windows.Media.Import.PhotoImportItemImportedEventArgs";
@@ -994,9 +984,7 @@ impl ::windows_core::RuntimeType for PhotoImportOperation {
 }
 unsafe impl ::windows_core::Interface for PhotoImportOperation {
     type Vtable = IPhotoImportOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoImportOperation {
-    const IID: ::windows_core::GUID = <IPhotoImportOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoImportOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoImportOperation {
     const NAME: &'static str = "Windows.Media.Import.PhotoImportOperation";
@@ -1021,9 +1009,7 @@ impl ::windows_core::RuntimeType for PhotoImportSelectionChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PhotoImportSelectionChangedEventArgs {
     type Vtable = IPhotoImportSelectionChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoImportSelectionChangedEventArgs {
-    const IID: ::windows_core::GUID = <IPhotoImportSelectionChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoImportSelectionChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoImportSelectionChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Import.PhotoImportSelectionChangedEventArgs";
@@ -1036,7 +1022,7 @@ unsafe impl ::core::marker::Sync for PhotoImportSelectionChangedEventArgs {}
 pub struct PhotoImportSession(::windows_core::IUnknown);
 impl PhotoImportSession {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Source(&self) -> ::windows_core::Result<PhotoImportSource> {
@@ -1112,22 +1098,22 @@ impl PhotoImportSession {
         }
     }
     pub fn SetSubfolderDateFormat(&self, value: PhotoImportSubfolderDateFormat) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IPhotoImportSession2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhotoImportSession2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSubfolderDateFormat)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SubfolderDateFormat(&self) -> ::windows_core::Result<PhotoImportSubfolderDateFormat> {
-        let this = &::windows_core::ComInterface::cast::<IPhotoImportSession2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhotoImportSession2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SubfolderDateFormat)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetRememberDeselectedItems(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IPhotoImportSession2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhotoImportSession2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetRememberDeselectedItems)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn RememberDeselectedItems(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IPhotoImportSession2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhotoImportSession2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RememberDeselectedItems)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1139,9 +1125,7 @@ impl ::windows_core::RuntimeType for PhotoImportSession {
 }
 unsafe impl ::windows_core::Interface for PhotoImportSession {
     type Vtable = IPhotoImportSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoImportSession {
-    const IID: ::windows_core::GUID = <IPhotoImportSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoImportSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoImportSession {
     const NAME: &'static str = "Windows.Media.Import.PhotoImportSession";
@@ -1181,9 +1165,7 @@ impl ::windows_core::RuntimeType for PhotoImportSidecar {
 }
 unsafe impl ::windows_core::Interface for PhotoImportSidecar {
     type Vtable = IPhotoImportSidecar_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoImportSidecar {
-    const IID: ::windows_core::GUID = <IPhotoImportSidecar as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoImportSidecar as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoImportSidecar {
     const NAME: &'static str = "Windows.Media.Import.PhotoImportSidecar";
@@ -1346,9 +1328,7 @@ impl ::windows_core::RuntimeType for PhotoImportSource {
 }
 unsafe impl ::windows_core::Interface for PhotoImportSource {
     type Vtable = IPhotoImportSource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoImportSource {
-    const IID: ::windows_core::GUID = <IPhotoImportSource as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoImportSource as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoImportSource {
     const NAME: &'static str = "Windows.Media.Import.PhotoImportSource";
@@ -1419,9 +1399,7 @@ impl ::windows_core::RuntimeType for PhotoImportStorageMedium {
 }
 unsafe impl ::windows_core::Interface for PhotoImportStorageMedium {
     type Vtable = IPhotoImportStorageMedium_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoImportStorageMedium {
-    const IID: ::windows_core::GUID = <IPhotoImportStorageMedium as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoImportStorageMedium as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoImportStorageMedium {
     const NAME: &'static str = "Windows.Media.Import.PhotoImportStorageMedium";
@@ -1476,9 +1454,7 @@ impl ::windows_core::RuntimeType for PhotoImportVideoSegment {
 }
 unsafe impl ::windows_core::Interface for PhotoImportVideoSegment {
     type Vtable = IPhotoImportVideoSegment_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoImportVideoSegment {
-    const IID: ::windows_core::GUID = <IPhotoImportVideoSegment as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoImportVideoSegment as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoImportVideoSegment {
     const NAME: &'static str = "Windows.Media.Import.PhotoImportVideoSegment";

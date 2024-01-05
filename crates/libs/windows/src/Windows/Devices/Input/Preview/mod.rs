@@ -182,9 +182,7 @@ impl ::windows_core::RuntimeType for GazeDevicePreview {
 }
 unsafe impl ::windows_core::Interface for GazeDevicePreview {
     type Vtable = IGazeDevicePreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GazeDevicePreview {
-    const IID: ::windows_core::GUID = <IGazeDevicePreview as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGazeDevicePreview as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GazeDevicePreview {
     const NAME: &'static str = "Windows.Devices.Input.Preview.GazeDevicePreview";
@@ -209,9 +207,7 @@ impl ::windows_core::RuntimeType for GazeDeviceWatcherAddedPreviewEventArgs {
 }
 unsafe impl ::windows_core::Interface for GazeDeviceWatcherAddedPreviewEventArgs {
     type Vtable = IGazeDeviceWatcherAddedPreviewEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GazeDeviceWatcherAddedPreviewEventArgs {
-    const IID: ::windows_core::GUID = <IGazeDeviceWatcherAddedPreviewEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGazeDeviceWatcherAddedPreviewEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GazeDeviceWatcherAddedPreviewEventArgs {
     const NAME: &'static str = "Windows.Devices.Input.Preview.GazeDeviceWatcherAddedPreviewEventArgs";
@@ -293,9 +289,7 @@ impl ::windows_core::RuntimeType for GazeDeviceWatcherPreview {
 }
 unsafe impl ::windows_core::Interface for GazeDeviceWatcherPreview {
     type Vtable = IGazeDeviceWatcherPreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GazeDeviceWatcherPreview {
-    const IID: ::windows_core::GUID = <IGazeDeviceWatcherPreview as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGazeDeviceWatcherPreview as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GazeDeviceWatcherPreview {
     const NAME: &'static str = "Windows.Devices.Input.Preview.GazeDeviceWatcherPreview";
@@ -320,9 +314,7 @@ impl ::windows_core::RuntimeType for GazeDeviceWatcherRemovedPreviewEventArgs {
 }
 unsafe impl ::windows_core::Interface for GazeDeviceWatcherRemovedPreviewEventArgs {
     type Vtable = IGazeDeviceWatcherRemovedPreviewEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GazeDeviceWatcherRemovedPreviewEventArgs {
-    const IID: ::windows_core::GUID = <IGazeDeviceWatcherRemovedPreviewEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGazeDeviceWatcherRemovedPreviewEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GazeDeviceWatcherRemovedPreviewEventArgs {
     const NAME: &'static str = "Windows.Devices.Input.Preview.GazeDeviceWatcherRemovedPreviewEventArgs";
@@ -347,9 +339,7 @@ impl ::windows_core::RuntimeType for GazeDeviceWatcherUpdatedPreviewEventArgs {
 }
 unsafe impl ::windows_core::Interface for GazeDeviceWatcherUpdatedPreviewEventArgs {
     type Vtable = IGazeDeviceWatcherUpdatedPreviewEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GazeDeviceWatcherUpdatedPreviewEventArgs {
-    const IID: ::windows_core::GUID = <IGazeDeviceWatcherUpdatedPreviewEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGazeDeviceWatcherUpdatedPreviewEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GazeDeviceWatcherUpdatedPreviewEventArgs {
     const NAME: &'static str = "Windows.Devices.Input.Preview.GazeDeviceWatcherUpdatedPreviewEventArgs";
@@ -385,9 +375,7 @@ impl ::windows_core::RuntimeType for GazeEnteredPreviewEventArgs {
 }
 unsafe impl ::windows_core::Interface for GazeEnteredPreviewEventArgs {
     type Vtable = IGazeEnteredPreviewEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GazeEnteredPreviewEventArgs {
-    const IID: ::windows_core::GUID = <IGazeEnteredPreviewEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGazeEnteredPreviewEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GazeEnteredPreviewEventArgs {
     const NAME: &'static str = "Windows.Devices.Input.Preview.GazeEnteredPreviewEventArgs";
@@ -423,9 +411,7 @@ impl ::windows_core::RuntimeType for GazeExitedPreviewEventArgs {
 }
 unsafe impl ::windows_core::Interface for GazeExitedPreviewEventArgs {
     type Vtable = IGazeExitedPreviewEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GazeExitedPreviewEventArgs {
-    const IID: ::windows_core::GUID = <IGazeExitedPreviewEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGazeExitedPreviewEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GazeExitedPreviewEventArgs {
     const NAME: &'static str = "Windows.Devices.Input.Preview.GazeExitedPreviewEventArgs";
@@ -502,9 +488,7 @@ impl ::windows_core::RuntimeType for GazeInputSourcePreview {
 }
 unsafe impl ::windows_core::Interface for GazeInputSourcePreview {
     type Vtable = IGazeInputSourcePreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GazeInputSourcePreview {
-    const IID: ::windows_core::GUID = <IGazeInputSourcePreview as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGazeInputSourcePreview as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GazeInputSourcePreview {
     const NAME: &'static str = "Windows.Devices.Input.Preview.GazeInputSourcePreview";
@@ -549,9 +533,7 @@ impl ::windows_core::RuntimeType for GazeMovedPreviewEventArgs {
 }
 unsafe impl ::windows_core::Interface for GazeMovedPreviewEventArgs {
     type Vtable = IGazeMovedPreviewEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GazeMovedPreviewEventArgs {
-    const IID: ::windows_core::GUID = <IGazeMovedPreviewEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGazeMovedPreviewEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GazeMovedPreviewEventArgs {
     const NAME: &'static str = "Windows.Devices.Input.Preview.GazeMovedPreviewEventArgs";
@@ -606,9 +588,7 @@ impl ::windows_core::RuntimeType for GazePointPreview {
 }
 unsafe impl ::windows_core::Interface for GazePointPreview {
     type Vtable = IGazePointPreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GazePointPreview {
-    const IID: ::windows_core::GUID = <IGazePointPreview as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGazePointPreview as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GazePointPreview {
     const NAME: &'static str = "Windows.Devices.Input.Preview.GazePointPreview";

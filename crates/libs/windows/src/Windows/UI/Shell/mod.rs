@@ -308,9 +308,7 @@ impl ::windows_core::RuntimeType for FocusSession {
 }
 unsafe impl ::windows_core::Interface for FocusSession {
     type Vtable = IFocusSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FocusSession {
-    const IID: ::windows_core::GUID = <IFocusSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFocusSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FocusSession {
     const NAME: &'static str = "Windows.UI.Shell.FocusSession";
@@ -391,9 +389,7 @@ impl ::windows_core::RuntimeType for FocusSessionManager {
 }
 unsafe impl ::windows_core::Interface for FocusSessionManager {
     type Vtable = IFocusSessionManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FocusSessionManager {
-    const IID: ::windows_core::GUID = <IFocusSessionManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFocusSessionManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FocusSessionManager {
     const NAME: &'static str = "Windows.UI.Shell.FocusSessionManager";
@@ -439,9 +435,7 @@ impl ::windows_core::RuntimeType for SecurityAppManager {
 }
 unsafe impl ::windows_core::Interface for SecurityAppManager {
     type Vtable = ISecurityAppManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SecurityAppManager {
-    const IID: ::windows_core::GUID = <ISecurityAppManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISecurityAppManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SecurityAppManager {
     const NAME: &'static str = "Windows.UI.Shell.SecurityAppManager";
@@ -477,9 +471,7 @@ impl ::windows_core::RuntimeType for ShareWindowCommandEventArgs {
 }
 unsafe impl ::windows_core::Interface for ShareWindowCommandEventArgs {
     type Vtable = IShareWindowCommandEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ShareWindowCommandEventArgs {
-    const IID: ::windows_core::GUID = <IShareWindowCommandEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IShareWindowCommandEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ShareWindowCommandEventArgs {
     const NAME: &'static str = "Windows.UI.Shell.ShareWindowCommandEventArgs";
@@ -548,9 +540,7 @@ impl ::windows_core::RuntimeType for ShareWindowCommandSource {
 }
 unsafe impl ::windows_core::Interface for ShareWindowCommandSource {
     type Vtable = IShareWindowCommandSource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ShareWindowCommandSource {
-    const IID: ::windows_core::GUID = <IShareWindowCommandSource as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IShareWindowCommandSource as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ShareWindowCommandSource {
     const NAME: &'static str = "Windows.UI.Shell.ShareWindowCommandSource";
@@ -615,7 +605,7 @@ impl TaskbarManager {
         }
     }
     pub fn IsSecondaryTilePinnedAsync(&self, tileid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<ITaskbarManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<ITaskbarManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsSecondaryTilePinnedAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(tileid), &mut result__).from_abi(result__)
@@ -627,14 +617,14 @@ impl TaskbarManager {
     where
         P0: ::windows_core::IntoParam<super::StartScreen::SecondaryTile>,
     {
-        let this = &::windows_core::ComInterface::cast::<ITaskbarManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<ITaskbarManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestPinSecondaryTileAsync)(::windows_core::Interface::as_raw(this), secondarytile.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn TryUnpinSecondaryTileAsync(&self, tileid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<ITaskbarManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<ITaskbarManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryUnpinSecondaryTileAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(tileid), &mut result__).from_abi(result__)
@@ -657,9 +647,7 @@ impl ::windows_core::RuntimeType for TaskbarManager {
 }
 unsafe impl ::windows_core::Interface for TaskbarManager {
     type Vtable = ITaskbarManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TaskbarManager {
-    const IID: ::windows_core::GUID = <ITaskbarManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITaskbarManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TaskbarManager {
     const NAME: &'static str = "Windows.UI.Shell.TaskbarManager";
@@ -752,9 +740,7 @@ impl ::windows_core::RuntimeType for WindowTab {
 }
 unsafe impl ::windows_core::Interface for WindowTab {
     type Vtable = IWindowTab_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowTab {
-    const IID: ::windows_core::GUID = <IWindowTab as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowTab as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowTab {
     const NAME: &'static str = "Windows.UI.Shell.WindowTab";
@@ -779,9 +765,7 @@ impl ::windows_core::RuntimeType for WindowTabCloseRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WindowTabCloseRequestedEventArgs {
     type Vtable = IWindowTabCloseRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowTabCloseRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IWindowTabCloseRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowTabCloseRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowTabCloseRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.Shell.WindowTabCloseRequestedEventArgs";
@@ -796,7 +780,7 @@ impl WindowTabCollection {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterator<WindowTab>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IIterable<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IIterable<WindowTab>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -805,7 +789,7 @@ impl WindowTabCollection {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetAt(&self, index: u32) -> ::windows_core::Result<WindowTab> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetAt)(::windows_core::Interface::as_raw(this), index, &mut result__).from_abi(result__)
@@ -814,7 +798,7 @@ impl WindowTabCollection {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -823,7 +807,7 @@ impl WindowTabCollection {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetView(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<WindowTab>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetView)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -835,7 +819,7 @@ impl WindowTabCollection {
     where
         P0: ::windows_core::IntoParam<WindowTab>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IndexOf)(::windows_core::Interface::as_raw(this), value.into_param().abi(), index, &mut result__).from_abi(result__)
@@ -847,7 +831,7 @@ impl WindowTabCollection {
     where
         P0: ::windows_core::IntoParam<WindowTab>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAt)(::windows_core::Interface::as_raw(this), index, value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -856,13 +840,13 @@ impl WindowTabCollection {
     where
         P0: ::windows_core::IntoParam<WindowTab>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).InsertAt)(::windows_core::Interface::as_raw(this), index, value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn RemoveAt(&self, index: u32) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAt)(::windows_core::Interface::as_raw(this), index).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -871,25 +855,25 @@ impl WindowTabCollection {
     where
         P0: ::windows_core::IntoParam<WindowTab>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Append)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn RemoveAtEnd(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAtEnd)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Clear(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Clear)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetMany(&self, startindex: u32, items: &mut [::core::option::Option<WindowTab>]) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetMany)(::windows_core::Interface::as_raw(this), startindex, items.len().try_into().unwrap(), ::core::mem::transmute_copy(&items), &mut result__).from_abi(result__)
@@ -898,7 +882,7 @@ impl WindowTabCollection {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn ReplaceAll(&self, items: &[::core::option::Option<WindowTab>]) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IVector<WindowTab>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReplaceAll)(::windows_core::Interface::as_raw(this), items.len().try_into().unwrap(), ::core::mem::transmute(items.as_ptr())).ok() }
     }
     pub fn MoveTab<P0>(&self, tab: P0, index: u32) -> ::windows_core::Result<()>
@@ -914,9 +898,7 @@ impl ::windows_core::RuntimeType for WindowTabCollection {
 }
 unsafe impl ::windows_core::Interface for WindowTabCollection {
     type Vtable = IWindowTabCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowTabCollection {
-    const IID: ::windows_core::GUID = <IWindowTabCollection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowTabCollection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowTabCollection {
     const NAME: &'static str = "Windows.UI.Shell.WindowTabCollection";
@@ -934,7 +916,7 @@ impl ::core::iter::IntoIterator for &WindowTabCollection {
     type Item = WindowTab;
     type IntoIter = super::super::Foundation::Collections::VectorIterator<Self::Item>;
     fn into_iter(self) -> Self::IntoIter {
-        super::super::Foundation::Collections::VectorIterator::new(::windows_core::ComInterface::cast(self).ok())
+        super::super::Foundation::Collections::VectorIterator::new(::windows_core::Interface::cast(self).ok())
     }
 }
 ::windows_core::imp::interface_hierarchy!(WindowTabCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
@@ -984,9 +966,7 @@ impl ::windows_core::RuntimeType for WindowTabGroup {
 }
 unsafe impl ::windows_core::Interface for WindowTabGroup {
     type Vtable = IWindowTabGroup_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowTabGroup {
-    const IID: ::windows_core::GUID = <IWindowTabGroup as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowTabGroup as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowTabGroup {
     const NAME: &'static str = "Windows.UI.Shell.WindowTabGroup";
@@ -1035,9 +1015,7 @@ impl ::windows_core::RuntimeType for WindowTabIcon {
 }
 unsafe impl ::windows_core::Interface for WindowTabIcon {
     type Vtable = IWindowTabIcon_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowTabIcon {
-    const IID: ::windows_core::GUID = <IWindowTabIcon as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowTabIcon as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowTabIcon {
     const NAME: &'static str = "Windows.UI.Shell.WindowTabIcon";
@@ -1148,9 +1126,7 @@ impl ::windows_core::RuntimeType for WindowTabManager {
 }
 unsafe impl ::windows_core::Interface for WindowTabManager {
     type Vtable = IWindowTabManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowTabManager {
-    const IID: ::windows_core::GUID = <IWindowTabManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowTabManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowTabManager {
     const NAME: &'static str = "Windows.UI.Shell.WindowTabManager";
@@ -1175,9 +1151,7 @@ impl ::windows_core::RuntimeType for WindowTabSwitchRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WindowTabSwitchRequestedEventArgs {
     type Vtable = IWindowTabSwitchRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowTabSwitchRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IWindowTabSwitchRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowTabSwitchRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowTabSwitchRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.Shell.WindowTabSwitchRequestedEventArgs";
@@ -1220,9 +1194,7 @@ impl ::windows_core::RuntimeType for WindowTabTearOutRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WindowTabTearOutRequestedEventArgs {
     type Vtable = IWindowTabTearOutRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowTabTearOutRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IWindowTabTearOutRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowTabTearOutRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowTabTearOutRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.Shell.WindowTabTearOutRequestedEventArgs";
@@ -1288,9 +1260,7 @@ impl ::windows_core::RuntimeType for WindowTabThumbnailRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WindowTabThumbnailRequestedEventArgs {
     type Vtable = IWindowTabThumbnailRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowTabThumbnailRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IWindowTabThumbnailRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowTabThumbnailRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowTabThumbnailRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.Shell.WindowTabThumbnailRequestedEventArgs";

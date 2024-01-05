@@ -77,7 +77,7 @@ impl ISpiDeviceProvider {
         unsafe { (::windows_core::Interface::vtable(this).TransferFullDuplex)(::windows_core::Interface::as_raw(this), writebuffer.len().try_into().unwrap(), writebuffer.as_ptr(), readbuffer.len().try_into().unwrap(), readbuffer.as_mut_ptr()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -198,9 +198,7 @@ impl ::windows_core::RuntimeType for ProviderSpiConnectionSettings {
 }
 unsafe impl ::windows_core::Interface for ProviderSpiConnectionSettings {
     type Vtable = IProviderSpiConnectionSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProviderSpiConnectionSettings {
-    const IID: ::windows_core::GUID = <IProviderSpiConnectionSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProviderSpiConnectionSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProviderSpiConnectionSettings {
     const NAME: &'static str = "Windows.Devices.Spi.Provider.ProviderSpiConnectionSettings";

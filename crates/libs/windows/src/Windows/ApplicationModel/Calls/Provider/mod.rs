@@ -168,7 +168,7 @@ impl PhoneCallOrigin {
     #[doc = "Required features: `\"deprecated\"`"]
     #[cfg(feature = "deprecated")]
     pub fn DisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneCallOrigin2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneCallOrigin2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -177,13 +177,13 @@ impl PhoneCallOrigin {
     #[doc = "Required features: `\"deprecated\"`"]
     #[cfg(feature = "deprecated")]
     pub fn SetDisplayName(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneCallOrigin2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneCallOrigin2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDisplayName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     #[doc = "Required features: `\"Storage\"`, `\"deprecated\"`"]
     #[cfg(all(feature = "Storage", feature = "deprecated"))]
     pub fn DisplayPicture(&self) -> ::windows_core::Result<super::super::super::Storage::StorageFile> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneCallOrigin3>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneCallOrigin3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DisplayPicture)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -195,7 +195,7 @@ impl PhoneCallOrigin {
     where
         P0: ::windows_core::IntoParam<super::super::super::Storage::StorageFile>,
     {
-        let this = &::windows_core::ComInterface::cast::<IPhoneCallOrigin3>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneCallOrigin3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDisplayPicture)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
@@ -206,10 +206,7 @@ impl ::windows_core::RuntimeType for PhoneCallOrigin {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for PhoneCallOrigin {
     type Vtable = IPhoneCallOrigin_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for PhoneCallOrigin {
-    const IID: ::windows_core::GUID = <IPhoneCallOrigin as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCallOrigin as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for PhoneCallOrigin {

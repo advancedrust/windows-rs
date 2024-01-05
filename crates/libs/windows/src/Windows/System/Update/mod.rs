@@ -123,9 +123,7 @@ impl ::windows_core::RuntimeType for SystemUpdateItem {
 }
 unsafe impl ::windows_core::Interface for SystemUpdateItem {
     type Vtable = ISystemUpdateItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemUpdateItem {
-    const IID: ::windows_core::GUID = <ISystemUpdateItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemUpdateItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemUpdateItem {
     const NAME: &'static str = "Windows.System.Update.SystemUpdateItem";
@@ -164,9 +162,7 @@ impl ::windows_core::RuntimeType for SystemUpdateLastErrorInfo {
 }
 unsafe impl ::windows_core::Interface for SystemUpdateLastErrorInfo {
     type Vtable = ISystemUpdateLastErrorInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemUpdateLastErrorInfo {
-    const IID: ::windows_core::GUID = <ISystemUpdateLastErrorInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemUpdateLastErrorInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemUpdateLastErrorInfo {
     const NAME: &'static str = "Windows.System.Update.SystemUpdateLastErrorInfo";

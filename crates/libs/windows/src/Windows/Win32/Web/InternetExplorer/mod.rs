@@ -1614,7 +1614,7 @@ impl IInternetExplorerManager {
     pub unsafe fn CreateObject<P0, T>(&self, dwconfig: u32, pszurl: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateObject)(::windows_core::Interface::as_raw(self), dwconfig, pszurl.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -2957,7 +2957,7 @@ impl IUrlHistoryStg {
     pub unsafe fn BindToObject<P0, T>(&self, pocsurl: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).BindToObject)(::windows_core::Interface::as_raw(self), pocsurl.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3002,7 +3002,7 @@ impl IUrlHistoryStg2 {
     pub unsafe fn BindToObject<P0, T>(&self, pocsurl: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.BindToObject)(::windows_core::Interface::as_raw(self), pocsurl.into_param().abi(), &T::IID, &mut result__).from_abi(result__)

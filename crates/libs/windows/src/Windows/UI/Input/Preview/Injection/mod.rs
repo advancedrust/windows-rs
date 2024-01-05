@@ -256,9 +256,7 @@ impl ::windows_core::RuntimeType for InjectedInputGamepadInfo {
 }
 unsafe impl ::windows_core::Interface for InjectedInputGamepadInfo {
     type Vtable = IInjectedInputGamepadInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for InjectedInputGamepadInfo {
-    const IID: ::windows_core::GUID = <IInjectedInputGamepadInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IInjectedInputGamepadInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for InjectedInputGamepadInfo {
     const NAME: &'static str = "Windows.UI.Input.Preview.Injection.InjectedInputGamepadInfo";
@@ -314,9 +312,7 @@ impl ::windows_core::RuntimeType for InjectedInputKeyboardInfo {
 }
 unsafe impl ::windows_core::Interface for InjectedInputKeyboardInfo {
     type Vtable = IInjectedInputKeyboardInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for InjectedInputKeyboardInfo {
-    const IID: ::windows_core::GUID = <IInjectedInputKeyboardInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IInjectedInputKeyboardInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for InjectedInputKeyboardInfo {
     const NAME: &'static str = "Windows.UI.Input.Preview.Injection.InjectedInputKeyboardInfo";
@@ -394,9 +390,7 @@ impl ::windows_core::RuntimeType for InjectedInputMouseInfo {
 }
 unsafe impl ::windows_core::Interface for InjectedInputMouseInfo {
     type Vtable = IInjectedInputMouseInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for InjectedInputMouseInfo {
-    const IID: ::windows_core::GUID = <IInjectedInputMouseInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IInjectedInputMouseInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for InjectedInputMouseInfo {
     const NAME: &'static str = "Windows.UI.Input.Preview.Injection.InjectedInputMouseInfo";
@@ -496,9 +490,7 @@ impl ::windows_core::RuntimeType for InjectedInputPenInfo {
 }
 unsafe impl ::windows_core::Interface for InjectedInputPenInfo {
     type Vtable = IInjectedInputPenInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for InjectedInputPenInfo {
-    const IID: ::windows_core::GUID = <IInjectedInputPenInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IInjectedInputPenInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for InjectedInputPenInfo {
     const NAME: &'static str = "Windows.UI.Input.Preview.Injection.InjectedInputPenInfo";
@@ -576,9 +568,7 @@ impl ::windows_core::RuntimeType for InjectedInputTouchInfo {
 }
 unsafe impl ::windows_core::Interface for InjectedInputTouchInfo {
     type Vtable = IInjectedInputTouchInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for InjectedInputTouchInfo {
-    const IID: ::windows_core::GUID = <IInjectedInputTouchInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IInjectedInputTouchInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for InjectedInputTouchInfo {
     const NAME: &'static str = "Windows.UI.Input.Preview.Injection.InjectedInputTouchInfo";
@@ -643,18 +633,18 @@ impl InputInjector {
         unsafe { (::windows_core::Interface::vtable(this).InjectShortcut)(::windows_core::Interface::as_raw(this), shortcut).ok() }
     }
     pub fn InitializeGamepadInjection(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IInputInjector2>(self)?;
+        let this = &::windows_core::Interface::cast::<IInputInjector2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).InitializeGamepadInjection)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn InjectGamepadInput<P0>(&self, input: P0) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<InjectedInputGamepadInfo>,
     {
-        let this = &::windows_core::ComInterface::cast::<IInputInjector2>(self)?;
+        let this = &::windows_core::Interface::cast::<IInputInjector2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).InjectGamepadInput)(::windows_core::Interface::as_raw(this), input.into_param().abi()).ok() }
     }
     pub fn UninitializeGamepadInjection(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IInputInjector2>(self)?;
+        let this = &::windows_core::Interface::cast::<IInputInjector2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).UninitializeGamepadInjection)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn TryCreate() -> ::windows_core::Result<InputInjector> {
@@ -685,9 +675,7 @@ impl ::windows_core::RuntimeType for InputInjector {
 }
 unsafe impl ::windows_core::Interface for InputInjector {
     type Vtable = IInputInjector_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for InputInjector {
-    const IID: ::windows_core::GUID = <IInputInjector as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IInputInjector as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for InputInjector {
     const NAME: &'static str = "Windows.UI.Input.Preview.Injection.InputInjector";

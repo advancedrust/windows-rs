@@ -86,9 +86,7 @@ impl ::windows_core::RuntimeType for AppBroadcastingMonitor {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastingMonitor {
     type Vtable = IAppBroadcastingMonitor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastingMonitor {
-    const IID: ::windows_core::GUID = <IAppBroadcastingMonitor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastingMonitor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastingMonitor {
     const NAME: &'static str = "Windows.Media.AppBroadcasting.AppBroadcastingMonitor";
@@ -120,9 +118,7 @@ impl ::windows_core::RuntimeType for AppBroadcastingStatus {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastingStatus {
     type Vtable = IAppBroadcastingStatus_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastingStatus {
-    const IID: ::windows_core::GUID = <IAppBroadcastingStatus as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastingStatus as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastingStatus {
     const NAME: &'static str = "Windows.Media.AppBroadcasting.AppBroadcastingStatus";
@@ -196,9 +192,7 @@ impl ::windows_core::RuntimeType for AppBroadcastingStatusDetails {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastingStatusDetails {
     type Vtable = IAppBroadcastingStatusDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastingStatusDetails {
-    const IID: ::windows_core::GUID = <IAppBroadcastingStatusDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastingStatusDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastingStatusDetails {
     const NAME: &'static str = "Windows.Media.AppBroadcasting.AppBroadcastingStatusDetails";
@@ -249,9 +243,7 @@ impl ::windows_core::RuntimeType for AppBroadcastingUI {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastingUI {
     type Vtable = IAppBroadcastingUI_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastingUI {
-    const IID: ::windows_core::GUID = <IAppBroadcastingUI as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastingUI as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastingUI {
     const NAME: &'static str = "Windows.Media.AppBroadcasting.AppBroadcastingUI";

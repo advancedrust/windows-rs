@@ -243,9 +243,7 @@ impl ::windows_core::RuntimeType for CoreFrameworkInputView {
 }
 unsafe impl ::windows_core::Interface for CoreFrameworkInputView {
     type Vtable = ICoreFrameworkInputView_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreFrameworkInputView {
-    const IID: ::windows_core::GUID = <ICoreFrameworkInputView as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreFrameworkInputView as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreFrameworkInputView {
     const NAME: &'static str = "Windows.UI.ViewManagement.Core.CoreFrameworkInputView";
@@ -286,9 +284,7 @@ impl ::windows_core::RuntimeType for CoreFrameworkInputViewAnimationStartingEven
 }
 unsafe impl ::windows_core::Interface for CoreFrameworkInputViewAnimationStartingEventArgs {
     type Vtable = ICoreFrameworkInputViewAnimationStartingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreFrameworkInputViewAnimationStartingEventArgs {
-    const IID: ::windows_core::GUID = <ICoreFrameworkInputViewAnimationStartingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreFrameworkInputViewAnimationStartingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreFrameworkInputViewAnimationStartingEventArgs {
     const NAME: &'static str = "Windows.UI.ViewManagement.Core.CoreFrameworkInputViewAnimationStartingEventArgs";
@@ -322,9 +318,7 @@ impl ::windows_core::RuntimeType for CoreFrameworkInputViewOcclusionsChangedEven
 }
 unsafe impl ::windows_core::Interface for CoreFrameworkInputViewOcclusionsChangedEventArgs {
     type Vtable = ICoreFrameworkInputViewOcclusionsChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreFrameworkInputViewOcclusionsChangedEventArgs {
-    const IID: ::windows_core::GUID = <ICoreFrameworkInputViewOcclusionsChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreFrameworkInputViewOcclusionsChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreFrameworkInputViewOcclusionsChangedEventArgs {
     const NAME: &'static str = "Windows.UI.ViewManagement.Core.CoreFrameworkInputViewOcclusionsChangedEventArgs";
@@ -377,53 +371,53 @@ impl CoreInputView {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<CoreInputView, CoreInputViewTransferringXYFocusEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).XYFocusTransferringFromPrimaryView)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveXYFocusTransferringFromPrimaryView(&self, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveXYFocusTransferringFromPrimaryView)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn XYFocusTransferredToPrimaryView<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<CoreInputView, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).XYFocusTransferredToPrimaryView)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveXYFocusTransferredToPrimaryView(&self, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveXYFocusTransferredToPrimaryView)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn TryTransferXYFocusToPrimaryView(&self, origin: super::super::super::Foundation::Rect, direction: CoreInputViewXYFocusTransferDirection) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryTransferXYFocusToPrimaryView)(::windows_core::Interface::as_raw(this), origin, direction, &mut result__).from_abi(result__)
         }
     }
     pub fn TryShow(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryShow)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TryShowWithKind(&self, r#type: CoreInputViewKind) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryShowWithKind)(::windows_core::Interface::as_raw(this), r#type, &mut result__).from_abi(result__)
         }
     }
     pub fn TryHide(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryHide)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -433,32 +427,32 @@ impl CoreInputView {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<CoreInputView, CoreInputViewShowingEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView4>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrimaryViewShowing)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePrimaryViewShowing(&self, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView4>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePrimaryViewShowing)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn PrimaryViewHiding<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<CoreInputView, CoreInputViewHidingEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView4>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrimaryViewHiding)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePrimaryViewHiding(&self, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView4>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePrimaryViewHiding)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn IsKindSupported(&self, r#type: CoreInputViewKind) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView5>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsKindSupported)(::windows_core::Interface::as_raw(this), r#type, &mut result__).from_abi(result__)
@@ -468,28 +462,28 @@ impl CoreInputView {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<CoreInputView, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView5>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SupportedKindsChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveSupportedKindsChanged(&self, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView5>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveSupportedKindsChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn PrimaryViewAnimationStarting<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<CoreInputView, CoreInputViewAnimationStartingEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView5>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrimaryViewAnimationStarting)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePrimaryViewAnimationStarting(&self, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreInputView5>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInputView5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePrimaryViewAnimationStarting)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn GetForCurrentView() -> ::windows_core::Result<CoreInputView> {
@@ -523,9 +517,7 @@ impl ::windows_core::RuntimeType for CoreInputView {
 }
 unsafe impl ::windows_core::Interface for CoreInputView {
     type Vtable = ICoreInputView_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreInputView {
-    const IID: ::windows_core::GUID = <ICoreInputView as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreInputView as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreInputView {
     const NAME: &'static str = "Windows.UI.ViewManagement.Core.CoreInputView";
@@ -570,9 +562,7 @@ impl ::windows_core::RuntimeType for CoreInputViewAnimationStartingEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreInputViewAnimationStartingEventArgs {
     type Vtable = ICoreInputViewAnimationStartingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreInputViewAnimationStartingEventArgs {
-    const IID: ::windows_core::GUID = <ICoreInputViewAnimationStartingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreInputViewAnimationStartingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreInputViewAnimationStartingEventArgs {
     const NAME: &'static str = "Windows.UI.ViewManagement.Core.CoreInputViewAnimationStartingEventArgs";
@@ -597,9 +587,7 @@ impl ::windows_core::RuntimeType for CoreInputViewHidingEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreInputViewHidingEventArgs {
     type Vtable = ICoreInputViewHidingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreInputViewHidingEventArgs {
-    const IID: ::windows_core::GUID = <ICoreInputViewHidingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreInputViewHidingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreInputViewHidingEventArgs {
     const NAME: &'static str = "Windows.UI.ViewManagement.Core.CoreInputViewHidingEventArgs";
@@ -631,9 +619,7 @@ impl ::windows_core::RuntimeType for CoreInputViewOcclusion {
 }
 unsafe impl ::windows_core::Interface for CoreInputViewOcclusion {
     type Vtable = ICoreInputViewOcclusion_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreInputViewOcclusion {
-    const IID: ::windows_core::GUID = <ICoreInputViewOcclusion as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreInputViewOcclusion as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreInputViewOcclusion {
     const NAME: &'static str = "Windows.UI.ViewManagement.Core.CoreInputViewOcclusion";
@@ -671,9 +657,7 @@ impl ::windows_core::RuntimeType for CoreInputViewOcclusionsChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreInputViewOcclusionsChangedEventArgs {
     type Vtable = ICoreInputViewOcclusionsChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreInputViewOcclusionsChangedEventArgs {
-    const IID: ::windows_core::GUID = <ICoreInputViewOcclusionsChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreInputViewOcclusionsChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreInputViewOcclusionsChangedEventArgs {
     const NAME: &'static str = "Windows.UI.ViewManagement.Core.CoreInputViewOcclusionsChangedEventArgs";
@@ -698,9 +682,7 @@ impl ::windows_core::RuntimeType for CoreInputViewShowingEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreInputViewShowingEventArgs {
     type Vtable = ICoreInputViewShowingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreInputViewShowingEventArgs {
-    const IID: ::windows_core::GUID = <ICoreInputViewShowingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreInputViewShowingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreInputViewShowingEventArgs {
     const NAME: &'static str = "Windows.UI.ViewManagement.Core.CoreInputViewShowingEventArgs";
@@ -754,9 +736,7 @@ impl ::windows_core::RuntimeType for CoreInputViewTransferringXYFocusEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreInputViewTransferringXYFocusEventArgs {
     type Vtable = ICoreInputViewTransferringXYFocusEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreInputViewTransferringXYFocusEventArgs {
-    const IID: ::windows_core::GUID = <ICoreInputViewTransferringXYFocusEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreInputViewTransferringXYFocusEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreInputViewTransferringXYFocusEventArgs {
     const NAME: &'static str = "Windows.UI.ViewManagement.Core.CoreInputViewTransferringXYFocusEventArgs";
@@ -805,9 +785,7 @@ impl ::windows_core::RuntimeType for UISettingsController {
 }
 unsafe impl ::windows_core::Interface for UISettingsController {
     type Vtable = IUISettingsController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UISettingsController {
-    const IID: ::windows_core::GUID = <IUISettingsController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUISettingsController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UISettingsController {
     const NAME: &'static str = "Windows.UI.ViewManagement.Core.UISettingsController";

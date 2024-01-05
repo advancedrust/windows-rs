@@ -180,9 +180,7 @@ impl ::windows_core::RuntimeType for ConnectionRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ConnectionRequestedEventArgs {
     type Vtable = IConnectionRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ConnectionRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IConnectionRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IConnectionRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ConnectionRequestedEventArgs {
     const NAME: &'static str = "Windows.Networking.Proximity.ConnectionRequestedEventArgs";
@@ -351,7 +349,7 @@ impl PeerInformation {
         }
     }
     pub fn Id(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IPeerInformation3>(self)?;
+        let this = &::windows_core::Interface::cast::<IPeerInformation3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Id)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -360,21 +358,21 @@ impl PeerInformation {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn DiscoveryData(&self) -> ::windows_core::Result<super::super::Storage::Streams::IBuffer> {
-        let this = &::windows_core::ComInterface::cast::<IPeerInformation3>(self)?;
+        let this = &::windows_core::Interface::cast::<IPeerInformation3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DiscoveryData)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn HostName(&self) -> ::windows_core::Result<super::HostName> {
-        let this = &::windows_core::ComInterface::cast::<IPeerInformationWithHostAndService>(self)?;
+        let this = &::windows_core::Interface::cast::<IPeerInformationWithHostAndService>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HostName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ServiceName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IPeerInformationWithHostAndService>(self)?;
+        let this = &::windows_core::Interface::cast::<IPeerInformationWithHostAndService>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ServiceName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -386,9 +384,7 @@ impl ::windows_core::RuntimeType for PeerInformation {
 }
 unsafe impl ::windows_core::Interface for PeerInformation {
     type Vtable = IPeerInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PeerInformation {
-    const IID: ::windows_core::GUID = <IPeerInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPeerInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PeerInformation {
     const NAME: &'static str = "Windows.Networking.Proximity.PeerInformation";
@@ -491,9 +487,7 @@ impl ::windows_core::RuntimeType for PeerWatcher {
 }
 unsafe impl ::windows_core::Interface for PeerWatcher {
     type Vtable = IPeerWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PeerWatcher {
-    const IID: ::windows_core::GUID = <IPeerWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPeerWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PeerWatcher {
     const NAME: &'static str = "Windows.Networking.Proximity.PeerWatcher";
@@ -664,9 +658,7 @@ impl ::windows_core::RuntimeType for ProximityDevice {
 }
 unsafe impl ::windows_core::Interface for ProximityDevice {
     type Vtable = IProximityDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProximityDevice {
-    const IID: ::windows_core::GUID = <IProximityDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProximityDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProximityDevice {
     const NAME: &'static str = "Windows.Networking.Proximity.ProximityDevice";
@@ -714,9 +706,7 @@ impl ::windows_core::RuntimeType for ProximityMessage {
 }
 unsafe impl ::windows_core::Interface for ProximityMessage {
     type Vtable = IProximityMessage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProximityMessage {
-    const IID: ::windows_core::GUID = <IProximityMessage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProximityMessage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProximityMessage {
     const NAME: &'static str = "Windows.Networking.Proximity.ProximityMessage";
@@ -757,9 +747,7 @@ impl ::windows_core::RuntimeType for TriggeredConnectionStateChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for TriggeredConnectionStateChangedEventArgs {
     type Vtable = ITriggeredConnectionStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TriggeredConnectionStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <ITriggeredConnectionStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITriggeredConnectionStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TriggeredConnectionStateChangedEventArgs {
     const NAME: &'static str = "Windows.Networking.Proximity.TriggeredConnectionStateChangedEventArgs";
@@ -912,7 +900,7 @@ impl<F: FnMut(::core::option::Option<&ProximityDevice>) -> ::windows_core::Resul
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <DeviceArrivedEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <DeviceArrivedEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -976,7 +964,7 @@ impl<F: FnMut(::core::option::Option<&ProximityDevice>) -> ::windows_core::Resul
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <DeviceDepartedEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <DeviceDepartedEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -1041,7 +1029,7 @@ impl<F: FnMut(::core::option::Option<&ProximityDevice>, ::core::option::Option<&
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <MessageReceivedHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <MessageReceivedHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -1105,7 +1093,7 @@ impl<F: FnMut(::core::option::Option<&ProximityDevice>, i64) -> ::windows_core::
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <MessageTransmittedHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <MessageTransmittedHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

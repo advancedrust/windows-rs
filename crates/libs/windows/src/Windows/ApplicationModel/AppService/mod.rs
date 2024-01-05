@@ -179,9 +179,7 @@ impl ::windows_core::RuntimeType for AppServiceClosedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppServiceClosedEventArgs {
     type Vtable = IAppServiceClosedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppServiceClosedEventArgs {
-    const IID: ::windows_core::GUID = <IAppServiceClosedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppServiceClosedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppServiceClosedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.AppService.AppServiceClosedEventArgs";
@@ -275,7 +273,7 @@ impl AppServiceConnection {
     where
         P0: ::windows_core::IntoParam<super::super::System::RemoteSystems::RemoteSystemConnectionRequest>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppServiceConnection2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppServiceConnection2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OpenRemoteAsync)(::windows_core::Interface::as_raw(this), remotesystemconnectionrequest.into_param().abi(), &mut result__).from_abi(result__)
@@ -284,7 +282,7 @@ impl AppServiceConnection {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn User(&self) -> ::windows_core::Result<super::super::System::User> {
-        let this = &::windows_core::ComInterface::cast::<IAppServiceConnection2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppServiceConnection2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -296,7 +294,7 @@ impl AppServiceConnection {
     where
         P0: ::windows_core::IntoParam<super::super::System::User>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppServiceConnection2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppServiceConnection2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetUser)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"System_RemoteSystems\"`"]
@@ -313,7 +311,7 @@ impl AppServiceConnection {
         })
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc(hidden)]
@@ -327,9 +325,7 @@ impl ::windows_core::RuntimeType for AppServiceConnection {
 }
 unsafe impl ::windows_core::Interface for AppServiceConnection {
     type Vtable = IAppServiceConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppServiceConnection {
-    const IID: ::windows_core::GUID = <IAppServiceConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppServiceConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppServiceConnection {
     const NAME: &'static str = "Windows.ApplicationModel.AppService.AppServiceConnection";
@@ -352,9 +348,7 @@ impl ::windows_core::RuntimeType for AppServiceDeferral {
 }
 unsafe impl ::windows_core::Interface for AppServiceDeferral {
     type Vtable = IAppServiceDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppServiceDeferral {
-    const IID: ::windows_core::GUID = <IAppServiceDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppServiceDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppServiceDeferral {
     const NAME: &'static str = "Windows.ApplicationModel.AppService.AppServiceDeferral";
@@ -393,9 +387,7 @@ impl ::windows_core::RuntimeType for AppServiceRequest {
 }
 unsafe impl ::windows_core::Interface for AppServiceRequest {
     type Vtable = IAppServiceRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppServiceRequest {
-    const IID: ::windows_core::GUID = <IAppServiceRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppServiceRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppServiceRequest {
     const NAME: &'static str = "Windows.ApplicationModel.AppService.AppServiceRequest";
@@ -427,9 +419,7 @@ impl ::windows_core::RuntimeType for AppServiceRequestReceivedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppServiceRequestReceivedEventArgs {
     type Vtable = IAppServiceRequestReceivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppServiceRequestReceivedEventArgs {
-    const IID: ::windows_core::GUID = <IAppServiceRequestReceivedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppServiceRequestReceivedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppServiceRequestReceivedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.AppService.AppServiceRequestReceivedEventArgs";
@@ -463,9 +453,7 @@ impl ::windows_core::RuntimeType for AppServiceResponse {
 }
 unsafe impl ::windows_core::Interface for AppServiceResponse {
     type Vtable = IAppServiceResponse_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppServiceResponse {
-    const IID: ::windows_core::GUID = <IAppServiceResponse as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppServiceResponse as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppServiceResponse {
     const NAME: &'static str = "Windows.ApplicationModel.AppService.AppServiceResponse";
@@ -499,21 +487,21 @@ impl AppServiceTriggerDetails {
         }
     }
     pub fn IsRemoteSystemConnection(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppServiceTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppServiceTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsRemoteSystemConnection)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CheckCallerForCapabilityAsync(&self, capabilityname: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IAppServiceTriggerDetails3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppServiceTriggerDetails3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CheckCallerForCapabilityAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(capabilityname), &mut result__).from_abi(result__)
         }
     }
     pub fn CallerRemoteConnectionToken(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAppServiceTriggerDetails4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppServiceTriggerDetails4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CallerRemoteConnectionToken)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -525,9 +513,7 @@ impl ::windows_core::RuntimeType for AppServiceTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for AppServiceTriggerDetails {
     type Vtable = IAppServiceTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppServiceTriggerDetails {
-    const IID: ::windows_core::GUID = <IAppServiceTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppServiceTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppServiceTriggerDetails {
     const NAME: &'static str = "Windows.ApplicationModel.AppService.AppServiceTriggerDetails";
@@ -561,9 +547,7 @@ impl ::windows_core::RuntimeType for StatelessAppServiceResponse {
 }
 unsafe impl ::windows_core::Interface for StatelessAppServiceResponse {
     type Vtable = IStatelessAppServiceResponse_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StatelessAppServiceResponse {
-    const IID: ::windows_core::GUID = <IStatelessAppServiceResponse as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStatelessAppServiceResponse as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StatelessAppServiceResponse {
     const NAME: &'static str = "Windows.ApplicationModel.AppService.StatelessAppServiceResponse";

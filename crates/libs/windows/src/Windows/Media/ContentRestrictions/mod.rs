@@ -91,9 +91,7 @@ impl ::windows_core::RuntimeType for ContentRestrictionsBrowsePolicy {
 }
 unsafe impl ::windows_core::Interface for ContentRestrictionsBrowsePolicy {
     type Vtable = IContentRestrictionsBrowsePolicy_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContentRestrictionsBrowsePolicy {
-    const IID: ::windows_core::GUID = <IContentRestrictionsBrowsePolicy as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContentRestrictionsBrowsePolicy as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContentRestrictionsBrowsePolicy {
     const NAME: &'static str = "Windows.Media.ContentRestrictions.ContentRestrictionsBrowsePolicy";
@@ -191,9 +189,7 @@ impl ::windows_core::RuntimeType for RatedContentDescription {
 }
 unsafe impl ::windows_core::Interface for RatedContentDescription {
     type Vtable = IRatedContentDescription_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RatedContentDescription {
-    const IID: ::windows_core::GUID = <IRatedContentDescription as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRatedContentDescription as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RatedContentDescription {
     const NAME: &'static str = "Windows.Media.ContentRestrictions.RatedContentDescription";
@@ -270,9 +266,7 @@ impl ::windows_core::RuntimeType for RatedContentRestrictions {
 }
 unsafe impl ::windows_core::Interface for RatedContentRestrictions {
     type Vtable = IRatedContentRestrictions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RatedContentRestrictions {
-    const IID: ::windows_core::GUID = <IRatedContentRestrictions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRatedContentRestrictions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RatedContentRestrictions {
     const NAME: &'static str = "Windows.Media.ContentRestrictions.RatedContentRestrictions";

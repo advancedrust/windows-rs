@@ -59,10 +59,6 @@ impl<T: ::windows_core::RuntimeType> ::core::iter::IntoIterator for &IIterable<T
 }
 unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IIterable<T> {
     type Vtable = IIterable_Vtbl<T>;
-}
-unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface
-    for IIterable<T>
-{
     const IID: ::windows_core::GUID =
         ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
@@ -165,10 +161,6 @@ impl<T: ::windows_core::RuntimeType> ::core::iter::Iterator for IIterator<T> {
 }
 unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IIterator<T> {
     type Vtable = IIterator_Vtbl<T>;
-}
-unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface
-    for IIterator<T>
-{
     const IID: ::windows_core::GUID =
         ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
@@ -438,7 +430,7 @@ impl<T: ::windows_core::RuntimeType + 'static> IVectorView<T> {
         }
     }
     pub fn First(&self) -> ::windows_core::Result<IIterator<T>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<T>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(
@@ -511,10 +503,6 @@ impl<T: ::windows_core::RuntimeType> ::core::iter::IntoIterator for &IVectorView
 }
 unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IVectorView<T> {
     type Vtable = IVectorView_Vtbl<T>;
-}
-unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface
-    for IVectorView<T>
-{
     const IID: ::windows_core::GUID =
         ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
@@ -635,7 +623,7 @@ pub struct IWwwFormUrlDecoderRuntimeClassFactory_Vtbl {
 pub struct Uri(::windows_core::IUnknown);
 impl Uri {
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(
@@ -891,7 +879,7 @@ impl Uri {
     }
     pub fn AbsoluteCanonicalUri(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this =
-            &::windows_core::ComInterface::cast::<IUriRuntimeClassWithAbsoluteCanonicalUri>(self)?;
+            &::windows_core::Interface::cast::<IUriRuntimeClassWithAbsoluteCanonicalUri>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AbsoluteCanonicalUri)(
@@ -903,7 +891,7 @@ impl Uri {
     }
     pub fn DisplayIri(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this =
-            &::windows_core::ComInterface::cast::<IUriRuntimeClassWithAbsoluteCanonicalUri>(self)?;
+            &::windows_core::Interface::cast::<IUriRuntimeClassWithAbsoluteCanonicalUri>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DisplayIri)(
@@ -939,9 +927,7 @@ impl ::windows_core::RuntimeType for Uri {
 }
 unsafe impl ::windows_core::Interface for Uri {
     type Vtable = IUriRuntimeClass_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Uri {
-    const IID: ::windows_core::GUID = <IUriRuntimeClass as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUriRuntimeClass as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Uri {
     const NAME: &'static str = "Windows.Foundation.Uri";
@@ -959,7 +945,7 @@ unsafe impl ::core::marker::Sync for Uri {}
 pub struct WwwFormUrlDecoder(::windows_core::IUnknown);
 impl WwwFormUrlDecoder {
     pub fn First(&self) -> ::windows_core::Result<IIterator<IWwwFormUrlDecoderEntry>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<IWwwFormUrlDecoderEntry>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<IWwwFormUrlDecoderEntry>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(
@@ -970,8 +956,7 @@ impl WwwFormUrlDecoder {
         }
     }
     pub fn GetAt(&self, index: u32) -> ::windows_core::Result<IWwwFormUrlDecoderEntry> {
-        let this =
-            &::windows_core::ComInterface::cast::<IVectorView<IWwwFormUrlDecoderEntry>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVectorView<IWwwFormUrlDecoderEntry>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetAt)(
@@ -983,8 +968,7 @@ impl WwwFormUrlDecoder {
         }
     }
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this =
-            &::windows_core::ComInterface::cast::<IVectorView<IWwwFormUrlDecoderEntry>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVectorView<IWwwFormUrlDecoderEntry>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(
@@ -998,8 +982,7 @@ impl WwwFormUrlDecoder {
     where
         P0: ::windows_core::IntoParam<IWwwFormUrlDecoderEntry>,
     {
-        let this =
-            &::windows_core::ComInterface::cast::<IVectorView<IWwwFormUrlDecoderEntry>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVectorView<IWwwFormUrlDecoderEntry>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IndexOf)(
@@ -1016,8 +999,7 @@ impl WwwFormUrlDecoder {
         startindex: u32,
         items: &mut [::core::option::Option<IWwwFormUrlDecoderEntry>],
     ) -> ::windows_core::Result<u32> {
-        let this =
-            &::windows_core::ComInterface::cast::<IVectorView<IWwwFormUrlDecoderEntry>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVectorView<IWwwFormUrlDecoderEntry>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetMany)(
@@ -1078,10 +1060,8 @@ impl ::windows_core::RuntimeType for WwwFormUrlDecoder {
 }
 unsafe impl ::windows_core::Interface for WwwFormUrlDecoder {
     type Vtable = IWwwFormUrlDecoderRuntimeClass_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WwwFormUrlDecoder {
     const IID: ::windows_core::GUID =
-        <IWwwFormUrlDecoderRuntimeClass as ::windows_core::ComInterface>::IID;
+        <IWwwFormUrlDecoderRuntimeClass as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WwwFormUrlDecoder {
     const NAME: &'static str = "Windows.Foundation.WwwFormUrlDecoder";
@@ -1097,7 +1077,7 @@ impl ::core::iter::IntoIterator for &WwwFormUrlDecoder {
     type Item = IWwwFormUrlDecoderEntry;
     type IntoIter = VectorViewIterator<Self::Item>;
     fn into_iter(self) -> Self::IntoIter {
-        VectorViewIterator::new(::windows_core::ComInterface::cast(self).ok())
+        VectorViewIterator::new(::windows_core::Interface::cast(self).ok())
     }
 }
 ::windows_core::imp::interface_hierarchy!(

@@ -198,7 +198,7 @@ impl DisplayMonitor {
         }
     }
     pub fn IsDolbyVisionSupportedInHdrMode(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDisplayMonitor2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayMonitor2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsDolbyVisionSupportedInHdrMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -233,9 +233,7 @@ impl ::windows_core::RuntimeType for DisplayMonitor {
 }
 unsafe impl ::windows_core::Interface for DisplayMonitor {
     type Vtable = IDisplayMonitor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayMonitor {
-    const IID: ::windows_core::GUID = <IDisplayMonitor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayMonitor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayMonitor {
     const NAME: &'static str = "Windows.Devices.Display.DisplayMonitor";

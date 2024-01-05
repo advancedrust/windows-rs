@@ -1370,7 +1370,7 @@ impl IAudioClient {
     }
     pub unsafe fn GetService<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetService)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1438,7 +1438,7 @@ impl IAudioClient2 {
     }
     pub unsafe fn GetService<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetService)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1510,7 +1510,7 @@ impl IAudioClient3 {
     }
     pub unsafe fn GetService<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetService)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -2529,7 +2529,7 @@ impl IMMDevice {
     #[cfg(all(feature = "Win32_System_Com_StructuredStorage", feature = "Win32_System_Variant"))]
     pub unsafe fn Activate<T>(&self, dwclsctx: super::super::System::Com::CLSCTX, pactivationparams: ::core::option::Option<*const super::super::System::Com::StructuredStorage::PROPVARIANT>) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Activate)(::windows_core::Interface::as_raw(self), &T::IID, dwclsctx, ::core::mem::transmute(pactivationparams.unwrap_or(::std::ptr::null())), &mut result__).from_abi(result__)
@@ -2938,7 +2938,7 @@ impl ISpatialAudioClient {
     #[cfg(all(feature = "Win32_System_Com_StructuredStorage", feature = "Win32_System_Variant"))]
     pub unsafe fn ActivateSpatialAudioStream<T>(&self, activationparams: *const super::super::System::Com::StructuredStorage::PROPVARIANT) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).ActivateSpatialAudioStream)(::windows_core::Interface::as_raw(self), activationparams, &T::IID, &mut result__).from_abi(result__)
@@ -2997,7 +2997,7 @@ impl ISpatialAudioClient2 {
     #[cfg(all(feature = "Win32_System_Com_StructuredStorage", feature = "Win32_System_Variant"))]
     pub unsafe fn ActivateSpatialAudioStream<T>(&self, activationparams: *const super::super::System::Com::StructuredStorage::PROPVARIANT) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.ActivateSpatialAudioStream)(::windows_core::Interface::as_raw(self), activationparams, &T::IID, &mut result__).from_abi(result__)
@@ -3362,7 +3362,7 @@ impl ISpatialAudioObjectRenderStream {
     }
     pub unsafe fn GetService<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetService)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3402,7 +3402,7 @@ impl ISpatialAudioObjectRenderStreamBase {
     }
     pub unsafe fn GetService<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetService)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3444,7 +3444,7 @@ impl ISpatialAudioObjectRenderStreamForHrtf {
     }
     pub unsafe fn GetService<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetService)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3484,7 +3484,7 @@ impl ISpatialAudioObjectRenderStreamForMetadata {
     }
     pub unsafe fn GetService<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetService)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)

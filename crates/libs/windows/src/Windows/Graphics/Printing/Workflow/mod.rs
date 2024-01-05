@@ -408,9 +408,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowBackgroundSession {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowBackgroundSession {
     type Vtable = IPrintWorkflowBackgroundSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowBackgroundSession {
-    const IID: ::windows_core::GUID = <IPrintWorkflowBackgroundSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowBackgroundSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowBackgroundSession {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowBackgroundSession";
@@ -455,9 +453,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowBackgroundSetupRequestedEventA
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowBackgroundSetupRequestedEventArgs {
     type Vtable = IPrintWorkflowBackgroundSetupRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowBackgroundSetupRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IPrintWorkflowBackgroundSetupRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowBackgroundSetupRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowBackgroundSetupRequestedEventArgs {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowBackgroundSetupRequestedEventArgs";
@@ -491,7 +487,7 @@ impl PrintWorkflowConfiguration {
         }
     }
     pub fn AbortPrintFlow(&self, reason: PrintWorkflowJobAbortReason) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IPrintWorkflowConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPrintWorkflowConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AbortPrintFlow)(::windows_core::Interface::as_raw(this), reason).ok() }
     }
 }
@@ -500,9 +496,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowConfiguration {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowConfiguration {
     type Vtable = IPrintWorkflowConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowConfiguration {
-    const IID: ::windows_core::GUID = <IPrintWorkflowConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowConfiguration {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowConfiguration";
@@ -559,9 +553,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowForegroundSession {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowForegroundSession {
     type Vtable = IPrintWorkflowForegroundSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowForegroundSession {
-    const IID: ::windows_core::GUID = <IPrintWorkflowForegroundSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowForegroundSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowForegroundSession {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowForegroundSession";
@@ -602,9 +594,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowForegroundSetupRequestedEventA
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowForegroundSetupRequestedEventArgs {
     type Vtable = IPrintWorkflowForegroundSetupRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowForegroundSetupRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IPrintWorkflowForegroundSetupRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowForegroundSetupRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowForegroundSetupRequestedEventArgs {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowForegroundSetupRequestedEventArgs";
@@ -619,7 +609,7 @@ impl PrintWorkflowJobActivatedEventArgs {
     #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
     #[cfg(feature = "ApplicationModel_Activation")]
     pub fn Kind(&self) -> ::windows_core::Result<super::super::super::ApplicationModel::Activation::ActivationKind> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -628,7 +618,7 @@ impl PrintWorkflowJobActivatedEventArgs {
     #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
     #[cfg(feature = "ApplicationModel_Activation")]
     pub fn PreviousExecutionState(&self) -> ::windows_core::Result<super::super::super::ApplicationModel::Activation::ApplicationExecutionState> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PreviousExecutionState)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -637,7 +627,7 @@ impl PrintWorkflowJobActivatedEventArgs {
     #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
     #[cfg(feature = "ApplicationModel_Activation")]
     pub fn SplashScreen(&self) -> ::windows_core::Result<super::super::super::ApplicationModel::Activation::SplashScreen> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SplashScreen)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -646,7 +636,7 @@ impl PrintWorkflowJobActivatedEventArgs {
     #[doc = "Required features: `\"ApplicationModel_Activation\"`, `\"System\"`"]
     #[cfg(all(feature = "ApplicationModel_Activation", feature = "System"))]
     pub fn User(&self) -> ::windows_core::Result<super::super::super::System::User> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -665,9 +655,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowJobActivatedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowJobActivatedEventArgs {
     type Vtable = IPrintWorkflowJobActivatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowJobActivatedEventArgs {
-    const IID: ::windows_core::GUID = <IPrintWorkflowJobActivatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowJobActivatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowJobActivatedEventArgs {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowJobActivatedEventArgs";
@@ -726,9 +714,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowJobBackgroundSession {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowJobBackgroundSession {
     type Vtable = IPrintWorkflowJobBackgroundSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowJobBackgroundSession {
-    const IID: ::windows_core::GUID = <IPrintWorkflowJobBackgroundSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowJobBackgroundSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowJobBackgroundSession {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowJobBackgroundSession";
@@ -767,9 +753,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowJobNotificationEventArgs {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowJobNotificationEventArgs {
     type Vtable = IPrintWorkflowJobNotificationEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowJobNotificationEventArgs {
-    const IID: ::windows_core::GUID = <IPrintWorkflowJobNotificationEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowJobNotificationEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowJobNotificationEventArgs {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowJobNotificationEventArgs";
@@ -814,9 +798,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowJobStartingEventArgs {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowJobStartingEventArgs {
     type Vtable = IPrintWorkflowJobStartingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowJobStartingEventArgs {
-    const IID: ::windows_core::GUID = <IPrintWorkflowJobStartingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowJobStartingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowJobStartingEventArgs {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowJobStartingEventArgs";
@@ -841,9 +823,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowJobTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowJobTriggerDetails {
     type Vtable = IPrintWorkflowJobTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowJobTriggerDetails {
-    const IID: ::windows_core::GUID = <IPrintWorkflowJobTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowJobTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowJobTriggerDetails {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowJobTriggerDetails";
@@ -900,9 +880,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowJobUISession {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowJobUISession {
     type Vtable = IPrintWorkflowJobUISession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowJobUISession {
-    const IID: ::windows_core::GUID = <IPrintWorkflowJobUISession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowJobUISession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowJobUISession {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowJobUISession";
@@ -936,9 +914,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowObjectModelSourceFileContent {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowObjectModelSourceFileContent {
     type Vtable = IPrintWorkflowObjectModelSourceFileContent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowObjectModelSourceFileContent {
-    const IID: ::windows_core::GUID = <IPrintWorkflowObjectModelSourceFileContent as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowObjectModelSourceFileContent as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowObjectModelSourceFileContent {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowObjectModelSourceFileContent";
@@ -955,9 +931,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowObjectModelTargetPackage {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowObjectModelTargetPackage {
     type Vtable = IPrintWorkflowObjectModelTargetPackage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowObjectModelTargetPackage {
-    const IID: ::windows_core::GUID = <IPrintWorkflowObjectModelTargetPackage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowObjectModelTargetPackage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowObjectModelTargetPackage {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowObjectModelTargetPackage";
@@ -991,7 +965,7 @@ impl PrintWorkflowPdlConverter {
         P1: ::windows_core::IntoParam<super::super::super::Storage::Streams::IInputStream>,
         P2: ::windows_core::IntoParam<super::super::super::Storage::Streams::IOutputStream>,
     {
-        let this = &::windows_core::ComInterface::cast::<IPrintWorkflowPdlConverter2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPrintWorkflowPdlConverter2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConvertPdlAsync)(::windows_core::Interface::as_raw(this), printticket.into_param().abi(), inputstream.into_param().abi(), outputstream.into_param().abi(), hostbasedprocessingoperations, &mut result__).from_abi(result__)
@@ -1003,9 +977,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowPdlConverter {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowPdlConverter {
     type Vtable = IPrintWorkflowPdlConverter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowPdlConverter {
-    const IID: ::windows_core::GUID = <IPrintWorkflowPdlConverter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowPdlConverter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowPdlConverter {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowPdlConverter";
@@ -1051,9 +1023,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowPdlDataAvailableEventArgs {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowPdlDataAvailableEventArgs {
     type Vtable = IPrintWorkflowPdlDataAvailableEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowPdlDataAvailableEventArgs {
-    const IID: ::windows_core::GUID = <IPrintWorkflowPdlDataAvailableEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowPdlDataAvailableEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowPdlDataAvailableEventArgs {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowPdlDataAvailableEventArgs";
@@ -1145,7 +1115,7 @@ impl PrintWorkflowPdlModificationRequestedEventArgs {
         P0: ::windows_core::IntoParam<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, super::super::super::Devices::Printers::IppAttributeValue>>>,
         P1: ::windows_core::IntoParam<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, super::super::super::Devices::Printers::IppAttributeValue>>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IPrintWorkflowPdlModificationRequestedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPrintWorkflowPdlModificationRequestedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateJobOnPrinterWithAttributes)(::windows_core::Interface::as_raw(this), jobattributes.into_param().abi(), ::core::mem::transmute_copy(targetcontenttype), operationattributes.into_param().abi(), jobattributesmergepolicy, operationattributesmergepolicy, &mut result__).from_abi(result__)
@@ -1158,7 +1128,7 @@ impl PrintWorkflowPdlModificationRequestedEventArgs {
         P0: ::windows_core::IntoParam<super::super::super::Storage::Streams::IBuffer>,
         P1: ::windows_core::IntoParam<super::super::super::Storage::Streams::IBuffer>,
     {
-        let this = &::windows_core::ComInterface::cast::<IPrintWorkflowPdlModificationRequestedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPrintWorkflowPdlModificationRequestedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateJobOnPrinterWithAttributesBuffer)(::windows_core::Interface::as_raw(this), jobattributesbuffer.into_param().abi(), ::core::mem::transmute_copy(targetcontenttype), operationattributesbuffer.into_param().abi(), jobattributesmergepolicy, operationattributesmergepolicy, &mut result__).from_abi(result__)
@@ -1170,9 +1140,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowPdlModificationRequestedEventA
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowPdlModificationRequestedEventArgs {
     type Vtable = IPrintWorkflowPdlModificationRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowPdlModificationRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IPrintWorkflowPdlModificationRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowPdlModificationRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowPdlModificationRequestedEventArgs {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowPdlModificationRequestedEventArgs";
@@ -1215,9 +1183,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowPdlSourceContent {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowPdlSourceContent {
     type Vtable = IPrintWorkflowPdlSourceContent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowPdlSourceContent {
-    const IID: ::windows_core::GUID = <IPrintWorkflowPdlSourceContent as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowPdlSourceContent as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowPdlSourceContent {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowPdlSourceContent";
@@ -1248,9 +1214,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowPdlTargetStream {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowPdlTargetStream {
     type Vtable = IPrintWorkflowPdlTargetStream_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowPdlTargetStream {
-    const IID: ::windows_core::GUID = <IPrintWorkflowPdlTargetStream as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowPdlTargetStream as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowPdlTargetStream {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowPdlTargetStream";
@@ -1348,9 +1312,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowPrinterJob {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowPrinterJob {
     type Vtable = IPrintWorkflowPrinterJob_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowPrinterJob {
-    const IID: ::windows_core::GUID = <IPrintWorkflowPrinterJob as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowPrinterJob as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowPrinterJob {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowPrinterJob";
@@ -1391,9 +1353,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowSourceContent {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowSourceContent {
     type Vtable = IPrintWorkflowSourceContent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowSourceContent {
-    const IID: ::windows_core::GUID = <IPrintWorkflowSourceContent as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowSourceContent as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowSourceContent {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowSourceContent";
@@ -1420,9 +1380,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowSpoolStreamContent {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowSpoolStreamContent {
     type Vtable = IPrintWorkflowSpoolStreamContent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowSpoolStreamContent {
-    const IID: ::windows_core::GUID = <IPrintWorkflowSpoolStreamContent as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowSpoolStreamContent as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowSpoolStreamContent {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowSpoolStreamContent";
@@ -1449,9 +1407,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowStreamTarget {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowStreamTarget {
     type Vtable = IPrintWorkflowStreamTarget_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowStreamTarget {
-    const IID: ::windows_core::GUID = <IPrintWorkflowStreamTarget as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowStreamTarget as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowStreamTarget {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowStreamTarget";
@@ -1495,9 +1451,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowSubmittedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowSubmittedEventArgs {
     type Vtable = IPrintWorkflowSubmittedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowSubmittedEventArgs {
-    const IID: ::windows_core::GUID = <IPrintWorkflowSubmittedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowSubmittedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowSubmittedEventArgs {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowSubmittedEventArgs";
@@ -1533,9 +1487,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowSubmittedOperation {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowSubmittedOperation {
     type Vtable = IPrintWorkflowSubmittedOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowSubmittedOperation {
-    const IID: ::windows_core::GUID = <IPrintWorkflowSubmittedOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowSubmittedOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowSubmittedOperation {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowSubmittedOperation";
@@ -1567,9 +1519,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowTarget {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowTarget {
     type Vtable = IPrintWorkflowTarget_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowTarget {
-    const IID: ::windows_core::GUID = <IPrintWorkflowTarget as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowTarget as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowTarget {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowTarget";
@@ -1594,9 +1544,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowTriggerDetails {
     type Vtable = IPrintWorkflowTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowTriggerDetails {
-    const IID: ::windows_core::GUID = <IPrintWorkflowTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowTriggerDetails {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowTriggerDetails";
@@ -1611,7 +1559,7 @@ impl PrintWorkflowUIActivatedEventArgs {
     #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
     #[cfg(feature = "ApplicationModel_Activation")]
     pub fn Kind(&self) -> ::windows_core::Result<super::super::super::ApplicationModel::Activation::ActivationKind> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1620,7 +1568,7 @@ impl PrintWorkflowUIActivatedEventArgs {
     #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
     #[cfg(feature = "ApplicationModel_Activation")]
     pub fn PreviousExecutionState(&self) -> ::windows_core::Result<super::super::super::ApplicationModel::Activation::ApplicationExecutionState> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PreviousExecutionState)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1629,7 +1577,7 @@ impl PrintWorkflowUIActivatedEventArgs {
     #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
     #[cfg(feature = "ApplicationModel_Activation")]
     pub fn SplashScreen(&self) -> ::windows_core::Result<super::super::super::ApplicationModel::Activation::SplashScreen> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SplashScreen)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1638,7 +1586,7 @@ impl PrintWorkflowUIActivatedEventArgs {
     #[doc = "Required features: `\"ApplicationModel_Activation\"`, `\"System\"`"]
     #[cfg(all(feature = "ApplicationModel_Activation", feature = "System"))]
     pub fn User(&self) -> ::windows_core::Result<super::super::super::System::User> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1657,9 +1605,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowUIActivatedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowUIActivatedEventArgs {
     type Vtable = IPrintWorkflowUIActivatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowUIActivatedEventArgs {
-    const IID: ::windows_core::GUID = <IPrintWorkflowUIActivatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowUIActivatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowUIActivatedEventArgs {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowUIActivatedEventArgs";
@@ -1693,9 +1639,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowUILauncher {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowUILauncher {
     type Vtable = IPrintWorkflowUILauncher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowUILauncher {
-    const IID: ::windows_core::GUID = <IPrintWorkflowUILauncher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowUILauncher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowUILauncher {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowUILauncher";
@@ -1727,9 +1671,7 @@ impl ::windows_core::RuntimeType for PrintWorkflowXpsDataAvailableEventArgs {
 }
 unsafe impl ::windows_core::Interface for PrintWorkflowXpsDataAvailableEventArgs {
     type Vtable = IPrintWorkflowXpsDataAvailableEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintWorkflowXpsDataAvailableEventArgs {
-    const IID: ::windows_core::GUID = <IPrintWorkflowXpsDataAvailableEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintWorkflowXpsDataAvailableEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintWorkflowXpsDataAvailableEventArgs {
     const NAME: &'static str = "Windows.Graphics.Printing.Workflow.PrintWorkflowXpsDataAvailableEventArgs";

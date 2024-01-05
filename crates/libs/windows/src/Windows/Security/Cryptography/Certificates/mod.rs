@@ -697,63 +697,63 @@ impl Certificate {
         }
     }
     pub fn IsSecurityDeviceBound(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICertificate2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificate2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsSecurityDeviceBound)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn KeyUsages(&self) -> ::windows_core::Result<CertificateKeyUsages> {
-        let this = &::windows_core::ComInterface::cast::<ICertificate2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificate2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).KeyUsages)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn KeyAlgorithmName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICertificate2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificate2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).KeyAlgorithmName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SignatureAlgorithmName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICertificate2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificate2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SignatureAlgorithmName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SignatureHashAlgorithmName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICertificate2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificate2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SignatureHashAlgorithmName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SubjectAlternativeName(&self) -> ::windows_core::Result<SubjectAlternativeNameInfo> {
-        let this = &::windows_core::ComInterface::cast::<ICertificate2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificate2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SubjectAlternativeName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsPerUser(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICertificate3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificate3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsPerUser)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StoreName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICertificate3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificate3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StoreName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn KeyStorageProviderName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICertificate3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificate3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).KeyStorageProviderName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -781,9 +781,7 @@ impl ::windows_core::RuntimeType for Certificate {
 }
 unsafe impl ::windows_core::Interface for Certificate {
     type Vtable = ICertificate_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Certificate {
-    const IID: ::windows_core::GUID = <ICertificate as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICertificate as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Certificate {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.Certificate";
@@ -827,9 +825,7 @@ impl ::windows_core::RuntimeType for CertificateChain {
 }
 unsafe impl ::windows_core::Interface for CertificateChain {
     type Vtable = ICertificateChain_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CertificateChain {
-    const IID: ::windows_core::GUID = <ICertificateChain as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICertificateChain as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CertificateChain {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.CertificateChain";
@@ -954,9 +950,7 @@ impl ::windows_core::RuntimeType for CertificateExtension {
 }
 unsafe impl ::windows_core::Interface for CertificateExtension {
     type Vtable = ICertificateExtension_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CertificateExtension {
-    const IID: ::windows_core::GUID = <ICertificateExtension as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICertificateExtension as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CertificateExtension {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.CertificateExtension";
@@ -1069,9 +1063,7 @@ impl ::windows_core::RuntimeType for CertificateKeyUsages {
 }
 unsafe impl ::windows_core::Interface for CertificateKeyUsages {
     type Vtable = ICertificateKeyUsages_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CertificateKeyUsages {
-    const IID: ::windows_core::GUID = <ICertificateKeyUsages as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICertificateKeyUsages as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CertificateKeyUsages {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.CertificateKeyUsages";
@@ -1144,36 +1136,36 @@ impl CertificateQuery {
         unsafe { (::windows_core::Interface::vtable(this).SetHardwareOnly)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IncludeDuplicates(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateQuery2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateQuery2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IncludeDuplicates)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIncludeDuplicates(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateQuery2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateQuery2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIncludeDuplicates)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IncludeExpiredCertificates(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateQuery2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateQuery2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IncludeExpiredCertificates)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIncludeExpiredCertificates(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateQuery2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateQuery2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIncludeExpiredCertificates)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn StoreName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateQuery2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateQuery2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StoreName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetStoreName(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateQuery2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateQuery2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStoreName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
 }
@@ -1182,9 +1174,7 @@ impl ::windows_core::RuntimeType for CertificateQuery {
 }
 unsafe impl ::windows_core::Interface for CertificateQuery {
     type Vtable = ICertificateQuery_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CertificateQuery {
-    const IID: ::windows_core::GUID = <ICertificateQuery as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICertificateQuery as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CertificateQuery {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.CertificateQuery";
@@ -1303,18 +1293,18 @@ impl CertificateRequestProperties {
         unsafe { (::windows_core::Interface::vtable(this).SetKeyStorageProviderName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn SmartcardReaderName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SmartcardReaderName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetSmartcardReaderName(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSmartcardReaderName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn SigningCertificate(&self) -> ::windows_core::Result<Certificate> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SigningCertificate)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1324,11 +1314,11 @@ impl CertificateRequestProperties {
     where
         P0: ::windows_core::IntoParam<Certificate>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSigningCertificate)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn AttestationCredentialCertificate(&self) -> ::windows_core::Result<Certificate> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AttestationCredentialCertificate)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1338,75 +1328,75 @@ impl CertificateRequestProperties {
     where
         P0: ::windows_core::IntoParam<Certificate>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAttestationCredentialCertificate)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CurveName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CurveName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCurveName(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCurveName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn CurveParameters(&self) -> ::windows_core::Result<::windows_core::Array<u8>> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties3>(self)?;
         unsafe {
             let mut result__ = ::core::mem::MaybeUninit::zeroed();
             (::windows_core::Interface::vtable(this).CurveParameters)(::windows_core::Interface::as_raw(this), ::windows_core::Array::<u8>::set_abi_len(::std::mem::transmute(&mut result__)), result__.as_mut_ptr() as *mut _ as _).and_then(|| result__.assume_init())
         }
     }
     pub fn SetCurveParameters(&self, value: &[u8]) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCurveParameters)(::windows_core::Interface::as_raw(this), value.len().try_into().unwrap(), value.as_ptr()).ok() }
     }
     pub fn ContainerNamePrefix(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContainerNamePrefix)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetContainerNamePrefix(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetContainerNamePrefix)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn ContainerName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContainerName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetContainerName(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetContainerName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn UseExistingKey(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UseExistingKey)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetUseExistingKey(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetUseExistingKey)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn SuppressedDefaults(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVector<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties4>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SuppressedDefaults)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SubjectAlternativeName(&self) -> ::windows_core::Result<SubjectAlternativeNameInfo> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties4>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SubjectAlternativeName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1415,7 +1405,7 @@ impl CertificateRequestProperties {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Extensions(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVector<CertificateExtension>> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateRequestProperties4>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateRequestProperties4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Extensions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1427,9 +1417,7 @@ impl ::windows_core::RuntimeType for CertificateRequestProperties {
 }
 unsafe impl ::windows_core::Interface for CertificateRequestProperties {
     type Vtable = ICertificateRequestProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CertificateRequestProperties {
-    const IID: ::windows_core::GUID = <ICertificateRequestProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICertificateRequestProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CertificateRequestProperties {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.CertificateRequestProperties";
@@ -1456,7 +1444,7 @@ impl CertificateStore {
         unsafe { (::windows_core::Interface::vtable(this).Delete)(::windows_core::Interface::as_raw(this), certificate.into_param().abi()).ok() }
     }
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICertificateStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICertificateStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Name)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1468,9 +1456,7 @@ impl ::windows_core::RuntimeType for CertificateStore {
 }
 unsafe impl ::windows_core::Interface for CertificateStore {
     type Vtable = ICertificateStore_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CertificateStore {
-    const IID: ::windows_core::GUID = <ICertificateStore as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICertificateStore as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CertificateStore {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.CertificateStore";
@@ -1627,9 +1613,7 @@ impl ::windows_core::RuntimeType for ChainBuildingParameters {
 }
 unsafe impl ::windows_core::Interface for ChainBuildingParameters {
     type Vtable = IChainBuildingParameters_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChainBuildingParameters {
-    const IID: ::windows_core::GUID = <IChainBuildingParameters as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChainBuildingParameters as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChainBuildingParameters {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.ChainBuildingParameters";
@@ -1683,9 +1667,7 @@ impl ::windows_core::RuntimeType for ChainValidationParameters {
 }
 unsafe impl ::windows_core::Interface for ChainValidationParameters {
     type Vtable = IChainValidationParameters_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChainValidationParameters {
-    const IID: ::windows_core::GUID = <IChainValidationParameters as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChainValidationParameters as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChainValidationParameters {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.ChainValidationParameters";
@@ -1769,9 +1751,7 @@ impl ::windows_core::RuntimeType for CmsAttachedSignature {
 }
 unsafe impl ::windows_core::Interface for CmsAttachedSignature {
     type Vtable = ICmsAttachedSignature_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CmsAttachedSignature {
-    const IID: ::windows_core::GUID = <ICmsAttachedSignature as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICmsAttachedSignature as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CmsAttachedSignature {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.CmsAttachedSignature";
@@ -1853,9 +1833,7 @@ impl ::windows_core::RuntimeType for CmsDetachedSignature {
 }
 unsafe impl ::windows_core::Interface for CmsDetachedSignature {
     type Vtable = ICmsDetachedSignature_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CmsDetachedSignature {
-    const IID: ::windows_core::GUID = <ICmsDetachedSignature as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICmsDetachedSignature as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CmsDetachedSignature {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.CmsDetachedSignature";
@@ -1912,9 +1890,7 @@ impl ::windows_core::RuntimeType for CmsSignerInfo {
 }
 unsafe impl ::windows_core::Interface for CmsSignerInfo {
     type Vtable = ICmsSignerInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CmsSignerInfo {
-    const IID: ::windows_core::GUID = <ICmsSignerInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICmsSignerInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CmsSignerInfo {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.CmsSignerInfo";
@@ -1955,9 +1931,7 @@ impl ::windows_core::RuntimeType for CmsTimestampInfo {
 }
 unsafe impl ::windows_core::Interface for CmsTimestampInfo {
     type Vtable = ICmsTimestampInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CmsTimestampInfo {
-    const IID: ::windows_core::GUID = <ICmsTimestampInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICmsTimestampInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CmsTimestampInfo {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.CmsTimestampInfo";
@@ -2209,9 +2183,7 @@ impl ::windows_core::RuntimeType for PfxImportParameters {
 }
 unsafe impl ::windows_core::Interface for PfxImportParameters {
     type Vtable = IPfxImportParameters_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PfxImportParameters {
-    const IID: ::windows_core::GUID = <IPfxImportParameters as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPfxImportParameters as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PfxImportParameters {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.PfxImportParameters";
@@ -2316,7 +2288,7 @@ impl SubjectAlternativeNameInfo {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn EmailNames(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVector<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<ISubjectAlternativeNameInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISubjectAlternativeNameInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EmailNames)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2325,7 +2297,7 @@ impl SubjectAlternativeNameInfo {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn IPAddresses(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVector<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<ISubjectAlternativeNameInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISubjectAlternativeNameInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IPAddresses)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2334,7 +2306,7 @@ impl SubjectAlternativeNameInfo {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Urls(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVector<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<ISubjectAlternativeNameInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISubjectAlternativeNameInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Urls)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2343,7 +2315,7 @@ impl SubjectAlternativeNameInfo {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn DnsNames(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVector<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<ISubjectAlternativeNameInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISubjectAlternativeNameInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DnsNames)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2352,7 +2324,7 @@ impl SubjectAlternativeNameInfo {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn DistinguishedNames(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVector<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<ISubjectAlternativeNameInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISubjectAlternativeNameInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DistinguishedNames)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2361,14 +2333,14 @@ impl SubjectAlternativeNameInfo {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn PrincipalNames(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVector<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<ISubjectAlternativeNameInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISubjectAlternativeNameInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrincipalNames)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Extension(&self) -> ::windows_core::Result<CertificateExtension> {
-        let this = &::windows_core::ComInterface::cast::<ISubjectAlternativeNameInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISubjectAlternativeNameInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Extension)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2380,9 +2352,7 @@ impl ::windows_core::RuntimeType for SubjectAlternativeNameInfo {
 }
 unsafe impl ::windows_core::Interface for SubjectAlternativeNameInfo {
     type Vtable = ISubjectAlternativeNameInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SubjectAlternativeNameInfo {
-    const IID: ::windows_core::GUID = <ISubjectAlternativeNameInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISubjectAlternativeNameInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SubjectAlternativeNameInfo {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.SubjectAlternativeNameInfo";
@@ -2429,7 +2399,7 @@ impl UserCertificateEnrollmentManager {
     where
         P0: ::windows_core::IntoParam<PfxImportParameters>,
     {
-        let this = &::windows_core::ComInterface::cast::<IUserCertificateEnrollmentManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserCertificateEnrollmentManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ImportPfxDataToKspWithParametersAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(pfxdata), ::core::mem::transmute_copy(password), pfximportparameters.into_param().abi(), &mut result__).from_abi(result__)
@@ -2441,9 +2411,7 @@ impl ::windows_core::RuntimeType for UserCertificateEnrollmentManager {
 }
 unsafe impl ::windows_core::Interface for UserCertificateEnrollmentManager {
     type Vtable = IUserCertificateEnrollmentManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserCertificateEnrollmentManager {
-    const IID: ::windows_core::GUID = <IUserCertificateEnrollmentManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserCertificateEnrollmentManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserCertificateEnrollmentManager {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.UserCertificateEnrollmentManager";
@@ -2488,9 +2456,7 @@ impl ::windows_core::RuntimeType for UserCertificateStore {
 }
 unsafe impl ::windows_core::Interface for UserCertificateStore {
     type Vtable = IUserCertificateStore_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserCertificateStore {
-    const IID: ::windows_core::GUID = <IUserCertificateStore as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserCertificateStore as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserCertificateStore {
     const NAME: &'static str = "Windows.Security.Cryptography.Certificates.UserCertificateStore";

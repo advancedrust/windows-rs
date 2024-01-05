@@ -278,9 +278,7 @@ impl ::windows_core::RuntimeType for GuidanceAudioNotificationRequestedEventArgs
 }
 unsafe impl ::windows_core::Interface for GuidanceAudioNotificationRequestedEventArgs {
     type Vtable = IGuidanceAudioNotificationRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GuidanceAudioNotificationRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IGuidanceAudioNotificationRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGuidanceAudioNotificationRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GuidanceAudioNotificationRequestedEventArgs {
     const NAME: &'static str = "Windows.Services.Maps.Guidance.GuidanceAudioNotificationRequestedEventArgs";
@@ -312,9 +310,7 @@ impl ::windows_core::RuntimeType for GuidanceLaneInfo {
 }
 unsafe impl ::windows_core::Interface for GuidanceLaneInfo {
     type Vtable = IGuidanceLaneInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GuidanceLaneInfo {
-    const IID: ::windows_core::GUID = <IGuidanceLaneInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGuidanceLaneInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GuidanceLaneInfo {
     const NAME: &'static str = "Windows.Services.Maps.Guidance.GuidanceLaneInfo";
@@ -418,9 +414,7 @@ impl ::windows_core::RuntimeType for GuidanceManeuver {
 }
 unsafe impl ::windows_core::Interface for GuidanceManeuver {
     type Vtable = IGuidanceManeuver_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GuidanceManeuver {
-    const IID: ::windows_core::GUID = <IGuidanceManeuver as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGuidanceManeuver as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GuidanceManeuver {
     const NAME: &'static str = "Windows.Services.Maps.Guidance.GuidanceManeuver";
@@ -475,9 +469,7 @@ impl ::windows_core::RuntimeType for GuidanceMapMatchedCoordinate {
 }
 unsafe impl ::windows_core::Interface for GuidanceMapMatchedCoordinate {
     type Vtable = IGuidanceMapMatchedCoordinate_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GuidanceMapMatchedCoordinate {
-    const IID: ::windows_core::GUID = <IGuidanceMapMatchedCoordinate as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGuidanceMapMatchedCoordinate as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GuidanceMapMatchedCoordinate {
     const NAME: &'static str = "Windows.Services.Maps.Guidance.GuidanceMapMatchedCoordinate";
@@ -669,25 +661,25 @@ impl GuidanceNavigator {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<GuidanceNavigator, GuidanceAudioNotificationRequestedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IGuidanceNavigator2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGuidanceNavigator2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AudioNotificationRequested)(::windows_core::Interface::as_raw(this), value.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveAudioNotificationRequested(&self, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IGuidanceNavigator2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGuidanceNavigator2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAudioNotificationRequested)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn IsGuidanceAudioMuted(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IGuidanceNavigator2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGuidanceNavigator2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsGuidanceAudioMuted)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsGuidanceAudioMuted(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IGuidanceNavigator2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGuidanceNavigator2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsGuidanceAudioMuted)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn GetCurrent() -> ::windows_core::Result<GuidanceNavigator> {
@@ -718,9 +710,7 @@ impl ::windows_core::RuntimeType for GuidanceNavigator {
 }
 unsafe impl ::windows_core::Interface for GuidanceNavigator {
     type Vtable = IGuidanceNavigator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GuidanceNavigator {
-    const IID: ::windows_core::GUID = <IGuidanceNavigator as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGuidanceNavigator as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GuidanceNavigator {
     const NAME: &'static str = "Windows.Services.Maps.Guidance.GuidanceNavigator";
@@ -745,9 +735,7 @@ impl ::windows_core::RuntimeType for GuidanceReroutedEventArgs {
 }
 unsafe impl ::windows_core::Interface for GuidanceReroutedEventArgs {
     type Vtable = IGuidanceReroutedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GuidanceReroutedEventArgs {
-    const IID: ::windows_core::GUID = <IGuidanceReroutedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGuidanceReroutedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GuidanceReroutedEventArgs {
     const NAME: &'static str = "Windows.Services.Maps.Guidance.GuidanceReroutedEventArgs";
@@ -825,7 +813,7 @@ impl GuidanceRoadSegment {
         }
     }
     pub fn IsScenic(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IGuidanceRoadSegment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGuidanceRoadSegment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsScenic)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -837,9 +825,7 @@ impl ::windows_core::RuntimeType for GuidanceRoadSegment {
 }
 unsafe impl ::windows_core::Interface for GuidanceRoadSegment {
     type Vtable = IGuidanceRoadSegment_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GuidanceRoadSegment {
-    const IID: ::windows_core::GUID = <IGuidanceRoadSegment as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGuidanceRoadSegment as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GuidanceRoadSegment {
     const NAME: &'static str = "Windows.Services.Maps.Guidance.GuidanceRoadSegment";
@@ -898,9 +884,7 @@ impl ::windows_core::RuntimeType for GuidanceRoadSignpost {
 }
 unsafe impl ::windows_core::Interface for GuidanceRoadSignpost {
     type Vtable = IGuidanceRoadSignpost_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GuidanceRoadSignpost {
-    const IID: ::windows_core::GUID = <IGuidanceRoadSignpost as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGuidanceRoadSignpost as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GuidanceRoadSignpost {
     const NAME: &'static str = "Windows.Services.Maps.Guidance.GuidanceRoadSignpost";
@@ -998,9 +982,7 @@ impl ::windows_core::RuntimeType for GuidanceRoute {
 }
 unsafe impl ::windows_core::Interface for GuidanceRoute {
     type Vtable = IGuidanceRoute_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GuidanceRoute {
-    const IID: ::windows_core::GUID = <IGuidanceRoute as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGuidanceRoute as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GuidanceRoute {
     const NAME: &'static str = "Windows.Services.Maps.Guidance.GuidanceRoute";
@@ -1066,9 +1048,7 @@ impl ::windows_core::RuntimeType for GuidanceTelemetryCollector {
 }
 unsafe impl ::windows_core::Interface for GuidanceTelemetryCollector {
     type Vtable = IGuidanceTelemetryCollector_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GuidanceTelemetryCollector {
-    const IID: ::windows_core::GUID = <IGuidanceTelemetryCollector as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGuidanceTelemetryCollector as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GuidanceTelemetryCollector {
     const NAME: &'static str = "Windows.Services.Maps.Guidance.GuidanceTelemetryCollector";
@@ -1186,9 +1166,7 @@ impl ::windows_core::RuntimeType for GuidanceUpdatedEventArgs {
 }
 unsafe impl ::windows_core::Interface for GuidanceUpdatedEventArgs {
     type Vtable = IGuidanceUpdatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GuidanceUpdatedEventArgs {
-    const IID: ::windows_core::GUID = <IGuidanceUpdatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGuidanceUpdatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GuidanceUpdatedEventArgs {
     const NAME: &'static str = "Windows.Services.Maps.Guidance.GuidanceUpdatedEventArgs";

@@ -325,14 +325,14 @@ impl BarcodeScannerDisableScannerRequest {
         }
     }
     pub fn ReportFailedWithFailedReasonAsync(&self, reason: i32) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerDisableScannerRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerDisableScannerRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAsync)(::windows_core::Interface::as_raw(this), reason, &mut result__).from_abi(result__)
         }
     }
     pub fn ReportFailedWithFailedReasonAndDescriptionAsync(&self, reason: i32, failedreasondescription: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerDisableScannerRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerDisableScannerRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAndDescriptionAsync)(::windows_core::Interface::as_raw(this), reason, ::core::mem::transmute_copy(failedreasondescription), &mut result__).from_abi(result__)
@@ -344,9 +344,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerDisableScannerRequest {
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerDisableScannerRequest {
     type Vtable = IBarcodeScannerDisableScannerRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerDisableScannerRequest {
-    const IID: ::windows_core::GUID = <IBarcodeScannerDisableScannerRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerDisableScannerRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerDisableScannerRequest {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerDisableScannerRequest";
@@ -378,9 +376,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerDisableScannerRequestEventArg
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerDisableScannerRequestEventArgs {
     type Vtable = IBarcodeScannerDisableScannerRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerDisableScannerRequestEventArgs {
-    const IID: ::windows_core::GUID = <IBarcodeScannerDisableScannerRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerDisableScannerRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerDisableScannerRequestEventArgs {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerDisableScannerRequestEventArgs";
@@ -407,14 +403,14 @@ impl BarcodeScannerEnableScannerRequest {
         }
     }
     pub fn ReportFailedWithFailedReasonAsync(&self, reason: i32) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerEnableScannerRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerEnableScannerRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAsync)(::windows_core::Interface::as_raw(this), reason, &mut result__).from_abi(result__)
         }
     }
     pub fn ReportFailedWithFailedReasonAndDescriptionAsync(&self, reason: i32, failedreasondescription: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerEnableScannerRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerEnableScannerRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAndDescriptionAsync)(::windows_core::Interface::as_raw(this), reason, ::core::mem::transmute_copy(failedreasondescription), &mut result__).from_abi(result__)
@@ -426,9 +422,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerEnableScannerRequest {
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerEnableScannerRequest {
     type Vtable = IBarcodeScannerEnableScannerRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerEnableScannerRequest {
-    const IID: ::windows_core::GUID = <IBarcodeScannerEnableScannerRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerEnableScannerRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerEnableScannerRequest {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerEnableScannerRequest";
@@ -460,9 +454,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerEnableScannerRequestEventArgs
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerEnableScannerRequestEventArgs {
     type Vtable = IBarcodeScannerEnableScannerRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerEnableScannerRequestEventArgs {
-    const IID: ::windows_core::GUID = <IBarcodeScannerEnableScannerRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerEnableScannerRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerEnableScannerRequestEventArgs {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerEnableScannerRequestEventArgs";
@@ -517,7 +509,7 @@ impl BarcodeScannerFrameReader {
         unsafe { (::windows_core::Interface::vtable(this).RemoveFrameArrived)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -526,9 +518,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerFrameReader {
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerFrameReader {
     type Vtable = IBarcodeScannerFrameReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerFrameReader {
-    const IID: ::windows_core::GUID = <IBarcodeScannerFrameReader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerFrameReader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerFrameReader {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerFrameReader";
@@ -554,9 +544,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerFrameReaderFrameArrivedEventA
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerFrameReaderFrameArrivedEventArgs {
     type Vtable = IBarcodeScannerFrameReaderFrameArrivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerFrameReaderFrameArrivedEventArgs {
-    const IID: ::windows_core::GUID = <IBarcodeScannerFrameReaderFrameArrivedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerFrameReaderFrameArrivedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerFrameReaderFrameArrivedEventArgs {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerFrameReaderFrameArrivedEventArgs";
@@ -593,14 +581,14 @@ impl BarcodeScannerGetSymbologyAttributesRequest {
         }
     }
     pub fn ReportFailedWithFailedReasonAsync(&self, reason: i32) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerGetSymbologyAttributesRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerGetSymbologyAttributesRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAsync)(::windows_core::Interface::as_raw(this), reason, &mut result__).from_abi(result__)
         }
     }
     pub fn ReportFailedWithFailedReasonAndDescriptionAsync(&self, reason: i32, failedreasondescription: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerGetSymbologyAttributesRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerGetSymbologyAttributesRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAndDescriptionAsync)(::windows_core::Interface::as_raw(this), reason, ::core::mem::transmute_copy(failedreasondescription), &mut result__).from_abi(result__)
@@ -612,9 +600,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerGetSymbologyAttributesRequest
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerGetSymbologyAttributesRequest {
     type Vtable = IBarcodeScannerGetSymbologyAttributesRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerGetSymbologyAttributesRequest {
-    const IID: ::windows_core::GUID = <IBarcodeScannerGetSymbologyAttributesRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerGetSymbologyAttributesRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerGetSymbologyAttributesRequest {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerGetSymbologyAttributesRequest";
@@ -646,9 +632,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerGetSymbologyAttributesRequest
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerGetSymbologyAttributesRequestEventArgs {
     type Vtable = IBarcodeScannerGetSymbologyAttributesRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerGetSymbologyAttributesRequestEventArgs {
-    const IID: ::windows_core::GUID = <IBarcodeScannerGetSymbologyAttributesRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerGetSymbologyAttributesRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerGetSymbologyAttributesRequestEventArgs {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerGetSymbologyAttributesRequestEventArgs";
@@ -675,14 +659,14 @@ impl BarcodeScannerHideVideoPreviewRequest {
         }
     }
     pub fn ReportFailedWithFailedReasonAsync(&self, reason: i32) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerHideVideoPreviewRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerHideVideoPreviewRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAsync)(::windows_core::Interface::as_raw(this), reason, &mut result__).from_abi(result__)
         }
     }
     pub fn ReportFailedWithFailedReasonAndDescriptionAsync(&self, reason: i32, failedreasondescription: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerHideVideoPreviewRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerHideVideoPreviewRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAndDescriptionAsync)(::windows_core::Interface::as_raw(this), reason, ::core::mem::transmute_copy(failedreasondescription), &mut result__).from_abi(result__)
@@ -694,9 +678,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerHideVideoPreviewRequest {
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerHideVideoPreviewRequest {
     type Vtable = IBarcodeScannerHideVideoPreviewRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerHideVideoPreviewRequest {
-    const IID: ::windows_core::GUID = <IBarcodeScannerHideVideoPreviewRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerHideVideoPreviewRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerHideVideoPreviewRequest {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerHideVideoPreviewRequest";
@@ -728,9 +710,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerHideVideoPreviewRequestEventA
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerHideVideoPreviewRequestEventArgs {
     type Vtable = IBarcodeScannerHideVideoPreviewRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerHideVideoPreviewRequestEventArgs {
-    const IID: ::windows_core::GUID = <IBarcodeScannerHideVideoPreviewRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerHideVideoPreviewRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerHideVideoPreviewRequestEventArgs {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerHideVideoPreviewRequestEventArgs";
@@ -953,7 +933,7 @@ impl BarcodeScannerProviderConnection {
         unsafe { (::windows_core::Interface::vtable(this).RemoveHideVideoPreviewRequested)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn CreateFrameReaderAsync(&self) -> ::windows_core::Result<super::super::super::Foundation::IAsyncOperation<BarcodeScannerFrameReader>> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerProviderConnection2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerProviderConnection2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateFrameReaderAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -962,7 +942,7 @@ impl BarcodeScannerProviderConnection {
     #[doc = "Required features: `\"Graphics_Imaging\"`"]
     #[cfg(feature = "Graphics_Imaging")]
     pub fn CreateFrameReaderWithFormatAsync(&self, preferredformat: super::super::super::Graphics::Imaging::BitmapPixelFormat) -> ::windows_core::Result<super::super::super::Foundation::IAsyncOperation<BarcodeScannerFrameReader>> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerProviderConnection2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerProviderConnection2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateFrameReaderWithFormatAsync)(::windows_core::Interface::as_raw(this), preferredformat, &mut result__).from_abi(result__)
@@ -971,14 +951,14 @@ impl BarcodeScannerProviderConnection {
     #[doc = "Required features: `\"Graphics_Imaging\"`"]
     #[cfg(feature = "Graphics_Imaging")]
     pub fn CreateFrameReaderWithFormatAndSizeAsync(&self, preferredformat: super::super::super::Graphics::Imaging::BitmapPixelFormat, preferredsize: super::super::super::Graphics::Imaging::BitmapSize) -> ::windows_core::Result<super::super::super::Foundation::IAsyncOperation<BarcodeScannerFrameReader>> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerProviderConnection2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerProviderConnection2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateFrameReaderWithFormatAndSizeAsync)(::windows_core::Interface::as_raw(this), preferredformat, preferredsize, &mut result__).from_abi(result__)
         }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -987,9 +967,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerProviderConnection {
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerProviderConnection {
     type Vtable = IBarcodeScannerProviderConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerProviderConnection {
-    const IID: ::windows_core::GUID = <IBarcodeScannerProviderConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerProviderConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerProviderConnection {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerProviderConnection";
@@ -1015,9 +993,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerProviderTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerProviderTriggerDetails {
     type Vtable = IBarcodeScannerProviderTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerProviderTriggerDetails {
-    const IID: ::windows_core::GUID = <IBarcodeScannerProviderTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerProviderTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerProviderTriggerDetails {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerProviderTriggerDetails";
@@ -1053,14 +1029,14 @@ impl BarcodeScannerSetActiveSymbologiesRequest {
         }
     }
     pub fn ReportFailedWithFailedReasonAsync(&self, reason: i32) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerSetActiveSymbologiesRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerSetActiveSymbologiesRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAsync)(::windows_core::Interface::as_raw(this), reason, &mut result__).from_abi(result__)
         }
     }
     pub fn ReportFailedWithFailedReasonAndDescriptionAsync(&self, reason: i32, failedreasondescription: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerSetActiveSymbologiesRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerSetActiveSymbologiesRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAndDescriptionAsync)(::windows_core::Interface::as_raw(this), reason, ::core::mem::transmute_copy(failedreasondescription), &mut result__).from_abi(result__)
@@ -1072,9 +1048,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerSetActiveSymbologiesRequest {
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerSetActiveSymbologiesRequest {
     type Vtable = IBarcodeScannerSetActiveSymbologiesRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerSetActiveSymbologiesRequest {
-    const IID: ::windows_core::GUID = <IBarcodeScannerSetActiveSymbologiesRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerSetActiveSymbologiesRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerSetActiveSymbologiesRequest {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerSetActiveSymbologiesRequest";
@@ -1106,9 +1080,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerSetActiveSymbologiesRequestEv
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerSetActiveSymbologiesRequestEventArgs {
     type Vtable = IBarcodeScannerSetActiveSymbologiesRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerSetActiveSymbologiesRequestEventArgs {
-    const IID: ::windows_core::GUID = <IBarcodeScannerSetActiveSymbologiesRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerSetActiveSymbologiesRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerSetActiveSymbologiesRequestEventArgs {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerSetActiveSymbologiesRequestEventArgs";
@@ -1149,14 +1121,14 @@ impl BarcodeScannerSetSymbologyAttributesRequest {
         }
     }
     pub fn ReportFailedWithFailedReasonAsync(&self, reason: i32) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerSetSymbologyAttributesRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerSetSymbologyAttributesRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAsync)(::windows_core::Interface::as_raw(this), reason, &mut result__).from_abi(result__)
         }
     }
     pub fn ReportFailedWithFailedReasonAndDescriptionAsync(&self, reason: i32, failedreasondescription: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerSetSymbologyAttributesRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerSetSymbologyAttributesRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAndDescriptionAsync)(::windows_core::Interface::as_raw(this), reason, ::core::mem::transmute_copy(failedreasondescription), &mut result__).from_abi(result__)
@@ -1168,9 +1140,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerSetSymbologyAttributesRequest
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerSetSymbologyAttributesRequest {
     type Vtable = IBarcodeScannerSetSymbologyAttributesRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerSetSymbologyAttributesRequest {
-    const IID: ::windows_core::GUID = <IBarcodeScannerSetSymbologyAttributesRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerSetSymbologyAttributesRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerSetSymbologyAttributesRequest {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerSetSymbologyAttributesRequest";
@@ -1202,9 +1172,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerSetSymbologyAttributesRequest
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerSetSymbologyAttributesRequestEventArgs {
     type Vtable = IBarcodeScannerSetSymbologyAttributesRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerSetSymbologyAttributesRequestEventArgs {
-    const IID: ::windows_core::GUID = <IBarcodeScannerSetSymbologyAttributesRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerSetSymbologyAttributesRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerSetSymbologyAttributesRequestEventArgs {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerSetSymbologyAttributesRequestEventArgs";
@@ -1231,14 +1199,14 @@ impl BarcodeScannerStartSoftwareTriggerRequest {
         }
     }
     pub fn ReportFailedWithFailedReasonAsync(&self, reason: i32) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerStartSoftwareTriggerRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerStartSoftwareTriggerRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAsync)(::windows_core::Interface::as_raw(this), reason, &mut result__).from_abi(result__)
         }
     }
     pub fn ReportFailedWithFailedReasonAndDescriptionAsync(&self, reason: i32, failedreasondescription: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerStartSoftwareTriggerRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerStartSoftwareTriggerRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAndDescriptionAsync)(::windows_core::Interface::as_raw(this), reason, ::core::mem::transmute_copy(failedreasondescription), &mut result__).from_abi(result__)
@@ -1250,9 +1218,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerStartSoftwareTriggerRequest {
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerStartSoftwareTriggerRequest {
     type Vtable = IBarcodeScannerStartSoftwareTriggerRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerStartSoftwareTriggerRequest {
-    const IID: ::windows_core::GUID = <IBarcodeScannerStartSoftwareTriggerRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerStartSoftwareTriggerRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerStartSoftwareTriggerRequest {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerStartSoftwareTriggerRequest";
@@ -1284,9 +1250,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerStartSoftwareTriggerRequestEv
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerStartSoftwareTriggerRequestEventArgs {
     type Vtable = IBarcodeScannerStartSoftwareTriggerRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerStartSoftwareTriggerRequestEventArgs {
-    const IID: ::windows_core::GUID = <IBarcodeScannerStartSoftwareTriggerRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerStartSoftwareTriggerRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerStartSoftwareTriggerRequestEventArgs {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerStartSoftwareTriggerRequestEventArgs";
@@ -1313,14 +1277,14 @@ impl BarcodeScannerStopSoftwareTriggerRequest {
         }
     }
     pub fn ReportFailedWithFailedReasonAsync(&self, reason: i32) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerStopSoftwareTriggerRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerStopSoftwareTriggerRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAsync)(::windows_core::Interface::as_raw(this), reason, &mut result__).from_abi(result__)
         }
     }
     pub fn ReportFailedWithFailedReasonAndDescriptionAsync(&self, reason: i32, failedreasondescription: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IBarcodeScannerStopSoftwareTriggerRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBarcodeScannerStopSoftwareTriggerRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportFailedWithFailedReasonAndDescriptionAsync)(::windows_core::Interface::as_raw(this), reason, ::core::mem::transmute_copy(failedreasondescription), &mut result__).from_abi(result__)
@@ -1332,9 +1296,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerStopSoftwareTriggerRequest {
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerStopSoftwareTriggerRequest {
     type Vtable = IBarcodeScannerStopSoftwareTriggerRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerStopSoftwareTriggerRequest {
-    const IID: ::windows_core::GUID = <IBarcodeScannerStopSoftwareTriggerRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerStopSoftwareTriggerRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerStopSoftwareTriggerRequest {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerStopSoftwareTriggerRequest";
@@ -1366,9 +1328,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerStopSoftwareTriggerRequestEve
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerStopSoftwareTriggerRequestEventArgs {
     type Vtable = IBarcodeScannerStopSoftwareTriggerRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerStopSoftwareTriggerRequestEventArgs {
-    const IID: ::windows_core::GUID = <IBarcodeScannerStopSoftwareTriggerRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerStopSoftwareTriggerRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerStopSoftwareTriggerRequestEventArgs {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerStopSoftwareTriggerRequestEventArgs";
@@ -1413,7 +1373,7 @@ impl BarcodeScannerVideoFrame {
         }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -1422,9 +1382,7 @@ impl ::windows_core::RuntimeType for BarcodeScannerVideoFrame {
 }
 unsafe impl ::windows_core::Interface for BarcodeScannerVideoFrame {
     type Vtable = IBarcodeScannerVideoFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeScannerVideoFrame {
-    const IID: ::windows_core::GUID = <IBarcodeScannerVideoFrame as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeScannerVideoFrame as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeScannerVideoFrame {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerVideoFrame";
@@ -1490,9 +1448,7 @@ impl ::windows_core::RuntimeType for BarcodeSymbologyAttributesBuilder {
 }
 unsafe impl ::windows_core::Interface for BarcodeSymbologyAttributesBuilder {
     type Vtable = IBarcodeSymbologyAttributesBuilder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BarcodeSymbologyAttributesBuilder {
-    const IID: ::windows_core::GUID = <IBarcodeSymbologyAttributesBuilder as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBarcodeSymbologyAttributesBuilder as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BarcodeSymbologyAttributesBuilder {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeSymbologyAttributesBuilder";

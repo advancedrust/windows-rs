@@ -184,9 +184,7 @@ impl ::windows_core::RuntimeType for GpioPinProviderValueChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for GpioPinProviderValueChangedEventArgs {
     type Vtable = IGpioPinProviderValueChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GpioPinProviderValueChangedEventArgs {
-    const IID: ::windows_core::GUID = <IGpioPinProviderValueChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGpioPinProviderValueChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GpioPinProviderValueChangedEventArgs {
     const NAME: &'static str = "Windows.Devices.Gpio.Provider.GpioPinProviderValueChangedEventArgs";

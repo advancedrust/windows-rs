@@ -98,7 +98,7 @@ impl DnssdRegistrationResult {
         }
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -110,9 +110,7 @@ impl ::windows_core::RuntimeType for DnssdRegistrationResult {
 }
 unsafe impl ::windows_core::Interface for DnssdRegistrationResult {
     type Vtable = IDnssdRegistrationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DnssdRegistrationResult {
-    const IID: ::windows_core::GUID = <IDnssdRegistrationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDnssdRegistrationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DnssdRegistrationResult {
     const NAME: &'static str = "Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationResult";
@@ -252,7 +250,7 @@ impl DnssdServiceInstance {
         })
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -269,9 +267,7 @@ impl ::windows_core::RuntimeType for DnssdServiceInstance {
 }
 unsafe impl ::windows_core::Interface for DnssdServiceInstance {
     type Vtable = IDnssdServiceInstance_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DnssdServiceInstance {
-    const IID: ::windows_core::GUID = <IDnssdServiceInstance as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDnssdServiceInstance as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DnssdServiceInstance {
     const NAME: &'static str = "Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance";
@@ -290,7 +286,7 @@ impl DnssdServiceInstanceCollection {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IIterator<DnssdServiceInstance>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IIterable<DnssdServiceInstance>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IIterable<DnssdServiceInstance>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -343,10 +339,7 @@ impl ::windows_core::RuntimeType for DnssdServiceInstanceCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for DnssdServiceInstanceCollection {
     type Vtable = super::super::super::Foundation::Collections::IVectorView_Vtbl<DnssdServiceInstance>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for DnssdServiceInstanceCollection {
-    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IVectorView<DnssdServiceInstance> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IVectorView<DnssdServiceInstance> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for DnssdServiceInstanceCollection {
@@ -365,7 +358,7 @@ impl ::core::iter::IntoIterator for &DnssdServiceInstanceCollection {
     type Item = DnssdServiceInstance;
     type IntoIter = super::super::super::Foundation::Collections::VectorViewIterator<Self::Item>;
     fn into_iter(self) -> Self::IntoIter {
-        super::super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::ComInterface::cast(self).ok())
+        super::super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::Interface::cast(self).ok())
     }
 }
 #[cfg(feature = "Foundation_Collections")]
@@ -443,9 +436,7 @@ impl ::windows_core::RuntimeType for DnssdServiceWatcher {
 }
 unsafe impl ::windows_core::Interface for DnssdServiceWatcher {
     type Vtable = IDnssdServiceWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DnssdServiceWatcher {
-    const IID: ::windows_core::GUID = <IDnssdServiceWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDnssdServiceWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DnssdServiceWatcher {
     const NAME: &'static str = "Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceWatcher";

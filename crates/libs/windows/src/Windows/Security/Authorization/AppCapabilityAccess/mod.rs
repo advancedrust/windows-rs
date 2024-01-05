@@ -95,14 +95,14 @@ impl AppCapability {
         unsafe { (::windows_core::Interface::vtable(this).RemoveAccessChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn DisplayMessage(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAppCapability2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCapability2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DisplayMessage)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetDisplayMessage(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCapability2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCapability2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDisplayMessage)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -156,9 +156,7 @@ impl ::windows_core::RuntimeType for AppCapability {
 }
 unsafe impl ::windows_core::Interface for AppCapability {
     type Vtable = IAppCapability_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCapability {
-    const IID: ::windows_core::GUID = <IAppCapability as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCapability as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCapability {
     const NAME: &'static str = "Windows.Security.Authorization.AppCapabilityAccess.AppCapability";
@@ -175,9 +173,7 @@ impl ::windows_core::RuntimeType for AppCapabilityAccessChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppCapabilityAccessChangedEventArgs {
     type Vtable = IAppCapabilityAccessChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCapabilityAccessChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAppCapabilityAccessChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCapabilityAccessChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCapabilityAccessChangedEventArgs {
     const NAME: &'static str = "Windows.Security.Authorization.AppCapabilityAccess.AppCapabilityAccessChangedEventArgs";

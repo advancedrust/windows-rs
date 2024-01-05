@@ -2139,7 +2139,7 @@ impl ID3D12VideoDecodeCommandList {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -2318,7 +2318,7 @@ impl ID3D12VideoDecodeCommandList1 {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -2468,7 +2468,7 @@ impl ID3D12VideoDecodeCommandList2 {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -2650,7 +2650,7 @@ impl ID3D12VideoDecodeCommandList3 {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -2829,7 +2829,7 @@ impl ID3D12VideoDecoder {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -2886,7 +2886,7 @@ impl ID3D12VideoDecoder1 {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -2897,7 +2897,7 @@ impl ID3D12VideoDecoder1 {
     }
     pub unsafe fn GetProtectedResourceSession<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).GetProtectedResourceSession)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -2949,7 +2949,7 @@ impl ID3D12VideoDecoderHeap {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -3011,7 +3011,7 @@ impl ID3D12VideoDecoderHeap1 {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -3024,7 +3024,7 @@ impl ID3D12VideoDecoderHeap1 {
     }
     pub unsafe fn GetProtectedResourceSession<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).GetProtectedResourceSession)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -3049,7 +3049,7 @@ impl ID3D12VideoDevice {
     }
     pub unsafe fn CreateVideoDecoder<T>(&self, pdesc: *const D3D12_VIDEO_DECODER_DESC) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateVideoDecoder)(::windows_core::Interface::as_raw(self), pdesc, &T::IID, &mut result__).from_abi(result__)
@@ -3058,7 +3058,7 @@ impl ID3D12VideoDevice {
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
     pub unsafe fn CreateVideoDecoderHeap<T>(&self, pvideodecoderheapdesc: *const D3D12_VIDEO_DECODER_HEAP_DESC) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateVideoDecoderHeap)(::windows_core::Interface::as_raw(self), pvideodecoderheapdesc, &T::IID, &mut result__).from_abi(result__)
@@ -3067,7 +3067,7 @@ impl ID3D12VideoDevice {
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
     pub unsafe fn CreateVideoProcessor<T>(&self, nodemask: u32, poutputstreamdesc: *const D3D12_VIDEO_PROCESS_OUTPUT_STREAM_DESC, pinputstreamdescs: &[D3D12_VIDEO_PROCESS_INPUT_STREAM_DESC]) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateVideoProcessor)(::windows_core::Interface::as_raw(self), nodemask, poutputstreamdesc, pinputstreamdescs.len().try_into().unwrap(), ::core::mem::transmute(pinputstreamdescs.as_ptr()), &T::IID, &mut result__).from_abi(result__)
@@ -3098,7 +3098,7 @@ impl ID3D12VideoDevice1 {
     }
     pub unsafe fn CreateVideoDecoder<T>(&self, pdesc: *const D3D12_VIDEO_DECODER_DESC) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateVideoDecoder)(::windows_core::Interface::as_raw(self), pdesc, &T::IID, &mut result__).from_abi(result__)
@@ -3107,7 +3107,7 @@ impl ID3D12VideoDevice1 {
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
     pub unsafe fn CreateVideoDecoderHeap<T>(&self, pvideodecoderheapdesc: *const D3D12_VIDEO_DECODER_HEAP_DESC) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateVideoDecoderHeap)(::windows_core::Interface::as_raw(self), pvideodecoderheapdesc, &T::IID, &mut result__).from_abi(result__)
@@ -3116,7 +3116,7 @@ impl ID3D12VideoDevice1 {
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
     pub unsafe fn CreateVideoProcessor<T>(&self, nodemask: u32, poutputstreamdesc: *const D3D12_VIDEO_PROCESS_OUTPUT_STREAM_DESC, pinputstreamdescs: &[D3D12_VIDEO_PROCESS_INPUT_STREAM_DESC]) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateVideoProcessor)(::windows_core::Interface::as_raw(self), nodemask, poutputstreamdesc, pinputstreamdescs.len().try_into().unwrap(), ::core::mem::transmute(pinputstreamdescs.as_ptr()), &T::IID, &mut result__).from_abi(result__)
@@ -3126,7 +3126,7 @@ impl ID3D12VideoDevice1 {
     pub unsafe fn CreateVideoMotionEstimator<P0, T>(&self, pdesc: *const D3D12_VIDEO_MOTION_ESTIMATOR_DESC, pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateVideoMotionEstimator)(::windows_core::Interface::as_raw(self), pdesc, pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3136,7 +3136,7 @@ impl ID3D12VideoDevice1 {
     pub unsafe fn CreateVideoMotionVectorHeap<P0, T>(&self, pdesc: *const D3D12_VIDEO_MOTION_VECTOR_HEAP_DESC, pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateVideoMotionVectorHeap)(::windows_core::Interface::as_raw(self), pdesc, pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3165,7 +3165,7 @@ impl ID3D12VideoDevice2 {
     }
     pub unsafe fn CreateVideoDecoder<T>(&self, pdesc: *const D3D12_VIDEO_DECODER_DESC) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.CreateVideoDecoder)(::windows_core::Interface::as_raw(self), pdesc, &T::IID, &mut result__).from_abi(result__)
@@ -3174,7 +3174,7 @@ impl ID3D12VideoDevice2 {
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
     pub unsafe fn CreateVideoDecoderHeap<T>(&self, pvideodecoderheapdesc: *const D3D12_VIDEO_DECODER_HEAP_DESC) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.CreateVideoDecoderHeap)(::windows_core::Interface::as_raw(self), pvideodecoderheapdesc, &T::IID, &mut result__).from_abi(result__)
@@ -3183,7 +3183,7 @@ impl ID3D12VideoDevice2 {
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
     pub unsafe fn CreateVideoProcessor<T>(&self, nodemask: u32, poutputstreamdesc: *const D3D12_VIDEO_PROCESS_OUTPUT_STREAM_DESC, pinputstreamdescs: &[D3D12_VIDEO_PROCESS_INPUT_STREAM_DESC]) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.CreateVideoProcessor)(::windows_core::Interface::as_raw(self), nodemask, poutputstreamdesc, pinputstreamdescs.len().try_into().unwrap(), ::core::mem::transmute(pinputstreamdescs.as_ptr()), &T::IID, &mut result__).from_abi(result__)
@@ -3193,7 +3193,7 @@ impl ID3D12VideoDevice2 {
     pub unsafe fn CreateVideoMotionEstimator<P0, T>(&self, pdesc: *const D3D12_VIDEO_MOTION_ESTIMATOR_DESC, pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateVideoMotionEstimator)(::windows_core::Interface::as_raw(self), pdesc, pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3203,7 +3203,7 @@ impl ID3D12VideoDevice2 {
     pub unsafe fn CreateVideoMotionVectorHeap<P0, T>(&self, pdesc: *const D3D12_VIDEO_MOTION_VECTOR_HEAP_DESC, pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateVideoMotionVectorHeap)(::windows_core::Interface::as_raw(self), pdesc, pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3213,7 +3213,7 @@ impl ID3D12VideoDevice2 {
     pub unsafe fn CreateVideoDecoder1<P0, T>(&self, pdesc: *const D3D12_VIDEO_DECODER_DESC, pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateVideoDecoder1)(::windows_core::Interface::as_raw(self), pdesc, pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3223,7 +3223,7 @@ impl ID3D12VideoDevice2 {
     pub unsafe fn CreateVideoDecoderHeap1<P0, T>(&self, pvideodecoderheapdesc: *const D3D12_VIDEO_DECODER_HEAP_DESC, pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateVideoDecoderHeap1)(::windows_core::Interface::as_raw(self), pvideodecoderheapdesc, pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3233,7 +3233,7 @@ impl ID3D12VideoDevice2 {
     pub unsafe fn CreateVideoProcessor1<P0, T>(&self, nodemask: u32, poutputstreamdesc: *const D3D12_VIDEO_PROCESS_OUTPUT_STREAM_DESC, pinputstreamdescs: &[D3D12_VIDEO_PROCESS_INPUT_STREAM_DESC], pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateVideoProcessor1)(::windows_core::Interface::as_raw(self), nodemask, poutputstreamdesc, pinputstreamdescs.len().try_into().unwrap(), ::core::mem::transmute(pinputstreamdescs.as_ptr()), pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3243,7 +3243,7 @@ impl ID3D12VideoDevice2 {
     pub unsafe fn CreateVideoExtensionCommand<P0, T>(&self, pdesc: *const D3D12_VIDEO_EXTENSION_COMMAND_DESC, pcreationparameters: *const ::core::ffi::c_void, creationparametersdatasizeinbytes: usize, pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateVideoExtensionCommand)(::windows_core::Interface::as_raw(self), pdesc, pcreationparameters, creationparametersdatasizeinbytes, pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3292,7 +3292,7 @@ impl ID3D12VideoDevice3 {
     }
     pub unsafe fn CreateVideoDecoder<T>(&self, pdesc: *const D3D12_VIDEO_DECODER_DESC) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.CreateVideoDecoder)(::windows_core::Interface::as_raw(self), pdesc, &T::IID, &mut result__).from_abi(result__)
@@ -3301,7 +3301,7 @@ impl ID3D12VideoDevice3 {
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
     pub unsafe fn CreateVideoDecoderHeap<T>(&self, pvideodecoderheapdesc: *const D3D12_VIDEO_DECODER_HEAP_DESC) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.CreateVideoDecoderHeap)(::windows_core::Interface::as_raw(self), pvideodecoderheapdesc, &T::IID, &mut result__).from_abi(result__)
@@ -3310,7 +3310,7 @@ impl ID3D12VideoDevice3 {
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
     pub unsafe fn CreateVideoProcessor<T>(&self, nodemask: u32, poutputstreamdesc: *const D3D12_VIDEO_PROCESS_OUTPUT_STREAM_DESC, pinputstreamdescs: &[D3D12_VIDEO_PROCESS_INPUT_STREAM_DESC]) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.CreateVideoProcessor)(::windows_core::Interface::as_raw(self), nodemask, poutputstreamdesc, pinputstreamdescs.len().try_into().unwrap(), ::core::mem::transmute(pinputstreamdescs.as_ptr()), &T::IID, &mut result__).from_abi(result__)
@@ -3320,7 +3320,7 @@ impl ID3D12VideoDevice3 {
     pub unsafe fn CreateVideoMotionEstimator<P0, T>(&self, pdesc: *const D3D12_VIDEO_MOTION_ESTIMATOR_DESC, pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.CreateVideoMotionEstimator)(::windows_core::Interface::as_raw(self), pdesc, pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3330,7 +3330,7 @@ impl ID3D12VideoDevice3 {
     pub unsafe fn CreateVideoMotionVectorHeap<P0, T>(&self, pdesc: *const D3D12_VIDEO_MOTION_VECTOR_HEAP_DESC, pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.CreateVideoMotionVectorHeap)(::windows_core::Interface::as_raw(self), pdesc, pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3340,7 +3340,7 @@ impl ID3D12VideoDevice3 {
     pub unsafe fn CreateVideoDecoder1<P0, T>(&self, pdesc: *const D3D12_VIDEO_DECODER_DESC, pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateVideoDecoder1)(::windows_core::Interface::as_raw(self), pdesc, pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3350,7 +3350,7 @@ impl ID3D12VideoDevice3 {
     pub unsafe fn CreateVideoDecoderHeap1<P0, T>(&self, pvideodecoderheapdesc: *const D3D12_VIDEO_DECODER_HEAP_DESC, pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateVideoDecoderHeap1)(::windows_core::Interface::as_raw(self), pvideodecoderheapdesc, pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3360,7 +3360,7 @@ impl ID3D12VideoDevice3 {
     pub unsafe fn CreateVideoProcessor1<P0, T>(&self, nodemask: u32, poutputstreamdesc: *const D3D12_VIDEO_PROCESS_OUTPUT_STREAM_DESC, pinputstreamdescs: &[D3D12_VIDEO_PROCESS_INPUT_STREAM_DESC], pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateVideoProcessor1)(::windows_core::Interface::as_raw(self), nodemask, poutputstreamdesc, pinputstreamdescs.len().try_into().unwrap(), ::core::mem::transmute(pinputstreamdescs.as_ptr()), pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3370,7 +3370,7 @@ impl ID3D12VideoDevice3 {
     pub unsafe fn CreateVideoExtensionCommand<P0, T>(&self, pdesc: *const D3D12_VIDEO_EXTENSION_COMMAND_DESC, pcreationparameters: *const ::core::ffi::c_void, creationparametersdatasizeinbytes: usize, pprotectedresourcesession: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Graphics::Direct3D12::ID3D12ProtectedResourceSession>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateVideoExtensionCommand)(::windows_core::Interface::as_raw(self), pdesc, pcreationparameters, creationparametersdatasizeinbytes, pprotectedresourcesession.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3387,14 +3387,14 @@ impl ID3D12VideoDevice3 {
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
     pub unsafe fn CreateVideoEncoder<T>(&self, pdesc: *const D3D12_VIDEO_ENCODER_DESC) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateVideoEncoder)(::windows_core::Interface::as_raw(self), pdesc, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn CreateVideoEncoderHeap<T>(&self, pdesc: *const D3D12_VIDEO_ENCODER_HEAP_DESC) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateVideoEncoderHeap)(::windows_core::Interface::as_raw(self), pdesc, &T::IID, &mut result__).from_abi(result__)
@@ -3447,7 +3447,7 @@ impl ID3D12VideoEncodeCommandList {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -3647,7 +3647,7 @@ impl ID3D12VideoEncodeCommandList1 {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -3822,7 +3822,7 @@ impl ID3D12VideoEncodeCommandList2 {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -4011,7 +4011,7 @@ impl ID3D12VideoEncodeCommandList3 {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -4201,7 +4201,7 @@ impl ID3D12VideoEncoder {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -4285,7 +4285,7 @@ impl ID3D12VideoEncoderHeap {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -4364,7 +4364,7 @@ impl ID3D12VideoExtensionCommand {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -4375,7 +4375,7 @@ impl ID3D12VideoExtensionCommand {
     }
     pub unsafe fn GetProtectedResourceSession<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).GetProtectedResourceSession)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -4428,7 +4428,7 @@ impl ID3D12VideoMotionEstimator {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -4441,7 +4441,7 @@ impl ID3D12VideoMotionEstimator {
     }
     pub unsafe fn GetProtectedResourceSession<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).GetProtectedResourceSession)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -4497,7 +4497,7 @@ impl ID3D12VideoMotionVectorHeap {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -4510,7 +4510,7 @@ impl ID3D12VideoMotionVectorHeap {
     }
     pub unsafe fn GetProtectedResourceSession<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).GetProtectedResourceSession)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -4566,7 +4566,7 @@ impl ID3D12VideoProcessCommandList {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -4745,7 +4745,7 @@ impl ID3D12VideoProcessCommandList1 {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -4895,7 +4895,7 @@ impl ID3D12VideoProcessCommandList2 {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -5077,7 +5077,7 @@ impl ID3D12VideoProcessCommandList3 {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -5256,7 +5256,7 @@ impl ID3D12VideoProcessor {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -5335,7 +5335,7 @@ impl ID3D12VideoProcessor1 {
     #[cfg(feature = "Win32_Graphics_Direct3D12")]
     pub unsafe fn GetDevice<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -5359,7 +5359,7 @@ impl ID3D12VideoProcessor1 {
     }
     pub unsafe fn GetProtectedResourceSession<T>(&self, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).GetProtectedResourceSession)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _).ok()
     }
@@ -6534,7 +6534,7 @@ impl IMFASFProfile {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -6805,7 +6805,7 @@ impl IMFASFStreamConfig {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -7091,7 +7091,7 @@ impl IMFActivate {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -7157,7 +7157,7 @@ impl IMFActivate {
     }
     pub unsafe fn ActivateObject<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).ActivateObject)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -7317,7 +7317,7 @@ impl IMFAttributes {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -7492,7 +7492,7 @@ impl IMFAudioMediaType {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -7886,7 +7886,7 @@ impl IMFByteStreamProxyClassFactory {
     where
         P0: ::windows_core::IntoParam<IMFByteStream>,
         P1: ::windows_core::IntoParam<IMFAttributes>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateByteStreamProxy)(::windows_core::Interface::as_raw(self), pbytestream.into_param().abi(), pattributes.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -8037,7 +8037,7 @@ impl IMFCameraControlDefaultsCollection {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -8306,7 +8306,7 @@ pub struct IMFCaptureEngine_Vtbl {
 impl IMFCaptureEngineClassFactory {
     pub unsafe fn CreateInstance<T>(&self, clsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateInstance)(::windows_core::Interface::as_raw(self), clsid, &T::IID, &mut result__).from_abi(result__)
@@ -9767,7 +9767,7 @@ pub struct IMFFinalizableMediaSink_Vtbl {
 impl IMFGetService {
     pub unsafe fn GetService<T>(&self, guidservice: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetService)(::windows_core::Interface::as_raw(self), guidservice, &T::IID, &mut result__).from_abi(result__)
@@ -11216,7 +11216,7 @@ impl IMFMediaEvent {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -12570,7 +12570,7 @@ impl IMFMediaType {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -13194,7 +13194,7 @@ impl IMFOutputPolicy {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -13342,7 +13342,7 @@ impl IMFOutputSchema {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -13491,7 +13491,7 @@ impl IMFPMPHost {
     pub unsafe fn CreateObjectByCLSID<P0, T>(&self, clsid: *const ::windows_core::GUID, pstream: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::System::Com::IStream>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateObjectByCLSID)(::windows_core::Interface::as_raw(self), clsid, pstream.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -13523,7 +13523,7 @@ impl IMFPMPHostApp {
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
         P1: ::windows_core::IntoParam<super::super::System::Com::IStream>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).ActivateClassById)(::windows_core::Interface::as_raw(self), id.into_param().abi(), pstream.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -13551,7 +13551,7 @@ impl IMFPMPServer {
     }
     pub unsafe fn CreateObjectByCLSID<T>(&self, clsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateObjectByCLSID)(::windows_core::Interface::as_raw(self), clsid, &T::IID, &mut result__).from_abi(result__)
@@ -14142,7 +14142,7 @@ impl IMFPresentationDescriptor {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -14477,7 +14477,7 @@ impl IMFReadWriteClassFactory {
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
         P1: ::windows_core::IntoParam<IMFAttributes>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateInstanceFromURL)(::windows_core::Interface::as_raw(self), clsid, pwszurl.into_param().abi(), pattributes.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -14486,7 +14486,7 @@ impl IMFReadWriteClassFactory {
     where
         P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
         P1: ::windows_core::IntoParam<IMFAttributes>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateInstanceFromObject)(::windows_core::Interface::as_raw(self), clsid, punkobject.into_param().abi(), pattributes.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -14793,7 +14793,7 @@ impl IMFSample {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -15566,7 +15566,7 @@ impl IMFSensorStream {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -16554,7 +16554,7 @@ impl IMFSpatialAudioSample {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -16759,7 +16759,7 @@ impl IMFStreamDescriptor {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -17691,7 +17691,7 @@ impl IMFTopology {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -17879,7 +17879,7 @@ impl IMFTopologyNode {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -18544,7 +18544,7 @@ impl IMFVideoMediaType {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)
@@ -19205,7 +19205,7 @@ impl IMFVirtualCamera {
     }
     pub unsafe fn GetUnknown<T>(&self, guidkey: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUnknown)(::windows_core::Interface::as_raw(self), guidkey, &T::IID, &mut result__).from_abi(result__)

@@ -67,7 +67,7 @@ impl AdcChannel {
         }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -76,9 +76,7 @@ impl ::windows_core::RuntimeType for AdcChannel {
 }
 unsafe impl ::windows_core::Interface for AdcChannel {
     type Vtable = IAdcChannel_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdcChannel {
-    const IID: ::windows_core::GUID = <IAdcChannel as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdcChannel as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdcChannel {
     const NAME: &'static str = "Windows.Devices.Adc.AdcChannel";
@@ -177,9 +175,7 @@ impl ::windows_core::RuntimeType for AdcController {
 }
 unsafe impl ::windows_core::Interface for AdcController {
     type Vtable = IAdcController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdcController {
-    const IID: ::windows_core::GUID = <IAdcController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdcController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdcController {
     const NAME: &'static str = "Windows.Devices.Adc.AdcController";

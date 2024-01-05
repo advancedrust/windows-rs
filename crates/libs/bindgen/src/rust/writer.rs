@@ -719,10 +719,7 @@ impl Writer {
                 #features
                 unsafe impl ::windows_core::Interface for #ident {
                     type Vtable = #vtbl;
-                }
-                #features
-                unsafe impl ::windows_core::ComInterface for #ident {
-                    const IID: ::windows_core::GUID = <#default_name as ::windows_core::ComInterface>::IID;
+                    const IID: ::windows_core::GUID = <#default_name as ::windows_core::Interface>::IID;
                 }
             }
         } else {
@@ -752,9 +749,6 @@ quote! {
                     #features
                     unsafe impl<#constraints> ::windows_core::Interface for #ident {
                         type Vtable = #vtbl;
-                    }
-                    #features
-                    unsafe impl<#constraints> ::windows_core::ComInterface for #ident {
                         const IID: ::windows_core::GUID = #guid;
                     }
                     // #features

@@ -392,9 +392,7 @@ impl ::windows_core::RuntimeType for BufferProtectUnprotectResult {
 }
 unsafe impl ::windows_core::Interface for BufferProtectUnprotectResult {
     type Vtable = IBufferProtectUnprotectResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BufferProtectUnprotectResult {
-    const IID: ::windows_core::GUID = <IBufferProtectUnprotectResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBufferProtectUnprotectResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BufferProtectUnprotectResult {
     const NAME: &'static str = "Windows.Security.EnterpriseData.BufferProtectUnprotectResult";
@@ -426,9 +424,7 @@ impl ::windows_core::RuntimeType for DataProtectionInfo {
 }
 unsafe impl ::windows_core::Interface for DataProtectionInfo {
     type Vtable = IDataProtectionInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DataProtectionInfo {
-    const IID: ::windows_core::GUID = <IDataProtectionInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDataProtectionInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DataProtectionInfo {
     const NAME: &'static str = "Windows.Security.EnterpriseData.DataProtectionInfo";
@@ -541,7 +537,7 @@ impl FileProtectionInfo {
         }
     }
     pub fn IsProtectWhileOpenSupported(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IFileProtectionInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileProtectionInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsProtectWhileOpenSupported)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -553,9 +549,7 @@ impl ::windows_core::RuntimeType for FileProtectionInfo {
 }
 unsafe impl ::windows_core::Interface for FileProtectionInfo {
     type Vtable = IFileProtectionInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FileProtectionInfo {
-    const IID: ::windows_core::GUID = <IFileProtectionInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFileProtectionInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FileProtectionInfo {
     const NAME: &'static str = "Windows.Security.EnterpriseData.FileProtectionInfo";
@@ -808,9 +802,7 @@ impl ::windows_core::RuntimeType for FileUnprotectOptions {
 }
 unsafe impl ::windows_core::Interface for FileUnprotectOptions {
     type Vtable = IFileUnprotectOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FileUnprotectOptions {
-    const IID: ::windows_core::GUID = <IFileUnprotectOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFileUnprotectOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FileUnprotectOptions {
     const NAME: &'static str = "Windows.Security.EnterpriseData.FileUnprotectOptions";
@@ -837,9 +829,7 @@ impl ::windows_core::RuntimeType for ProtectedAccessResumedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ProtectedAccessResumedEventArgs {
     type Vtable = IProtectedAccessResumedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProtectedAccessResumedEventArgs {
-    const IID: ::windows_core::GUID = <IProtectedAccessResumedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProtectedAccessResumedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProtectedAccessResumedEventArgs {
     const NAME: &'static str = "Windows.Security.EnterpriseData.ProtectedAccessResumedEventArgs";
@@ -880,9 +870,7 @@ impl ::windows_core::RuntimeType for ProtectedAccessSuspendingEventArgs {
 }
 unsafe impl ::windows_core::Interface for ProtectedAccessSuspendingEventArgs {
     type Vtable = IProtectedAccessSuspendingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProtectedAccessSuspendingEventArgs {
-    const IID: ::windows_core::GUID = <IProtectedAccessSuspendingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProtectedAccessSuspendingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProtectedAccessSuspendingEventArgs {
     const NAME: &'static str = "Windows.Security.EnterpriseData.ProtectedAccessSuspendingEventArgs";
@@ -916,9 +904,7 @@ impl ::windows_core::RuntimeType for ProtectedContainerExportResult {
 }
 unsafe impl ::windows_core::Interface for ProtectedContainerExportResult {
     type Vtable = IProtectedContainerExportResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProtectedContainerExportResult {
-    const IID: ::windows_core::GUID = <IProtectedContainerExportResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProtectedContainerExportResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProtectedContainerExportResult {
     const NAME: &'static str = "Windows.Security.EnterpriseData.ProtectedContainerExportResult";
@@ -952,9 +938,7 @@ impl ::windows_core::RuntimeType for ProtectedContainerImportResult {
 }
 unsafe impl ::windows_core::Interface for ProtectedContainerImportResult {
     type Vtable = IProtectedContainerImportResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProtectedContainerImportResult {
-    const IID: ::windows_core::GUID = <IProtectedContainerImportResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProtectedContainerImportResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProtectedContainerImportResult {
     const NAME: &'static str = "Windows.Security.EnterpriseData.ProtectedContainerImportResult";
@@ -981,9 +965,7 @@ impl ::windows_core::RuntimeType for ProtectedContentRevokedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ProtectedContentRevokedEventArgs {
     type Vtable = IProtectedContentRevokedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProtectedContentRevokedEventArgs {
-    const IID: ::windows_core::GUID = <IProtectedContentRevokedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProtectedContentRevokedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProtectedContentRevokedEventArgs {
     const NAME: &'static str = "Windows.Security.EnterpriseData.ProtectedContentRevokedEventArgs";
@@ -1026,9 +1008,7 @@ impl ::windows_core::RuntimeType for ProtectedFileCreateResult {
 }
 unsafe impl ::windows_core::Interface for ProtectedFileCreateResult {
     type Vtable = IProtectedFileCreateResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProtectedFileCreateResult {
-    const IID: ::windows_core::GUID = <IProtectedFileCreateResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProtectedFileCreateResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProtectedFileCreateResult {
     const NAME: &'static str = "Windows.Security.EnterpriseData.ProtectedFileCreateResult";
@@ -1107,9 +1087,7 @@ impl ::windows_core::RuntimeType for ProtectionPolicyAuditInfo {
 }
 unsafe impl ::windows_core::Interface for ProtectionPolicyAuditInfo {
     type Vtable = IProtectionPolicyAuditInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProtectionPolicyAuditInfo {
-    const IID: ::windows_core::GUID = <IProtectionPolicyAuditInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProtectionPolicyAuditInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProtectionPolicyAuditInfo {
     const NAME: &'static str = "Windows.Security.EnterpriseData.ProtectionPolicyAuditInfo";
@@ -1133,11 +1111,11 @@ impl ProtectionPolicyManager {
         }
     }
     pub fn SetShowEnterpriseIndicator(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IProtectionPolicyManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IProtectionPolicyManager2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetShowEnterpriseIndicator)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ShowEnterpriseIndicator(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IProtectionPolicyManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IProtectionPolicyManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShowEnterpriseIndicator)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1460,9 +1438,7 @@ impl ::windows_core::RuntimeType for ProtectionPolicyManager {
 }
 unsafe impl ::windows_core::Interface for ProtectionPolicyManager {
     type Vtable = IProtectionPolicyManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProtectionPolicyManager {
-    const IID: ::windows_core::GUID = <IProtectionPolicyManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProtectionPolicyManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProtectionPolicyManager {
     const NAME: &'static str = "Windows.Security.EnterpriseData.ProtectionPolicyManager";
@@ -1475,7 +1451,7 @@ unsafe impl ::core::marker::Sync for ProtectionPolicyManager {}
 pub struct ThreadNetworkContext(::windows_core::IUnknown);
 impl ThreadNetworkContext {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -1484,9 +1460,7 @@ impl ::windows_core::RuntimeType for ThreadNetworkContext {
 }
 unsafe impl ::windows_core::Interface for ThreadNetworkContext {
     type Vtable = IThreadNetworkContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ThreadNetworkContext {
-    const IID: ::windows_core::GUID = <IThreadNetworkContext as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IThreadNetworkContext as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ThreadNetworkContext {
     const NAME: &'static str = "Windows.Security.EnterpriseData.ThreadNetworkContext";

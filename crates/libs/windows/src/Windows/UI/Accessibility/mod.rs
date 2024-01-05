@@ -39,9 +39,7 @@ impl ::windows_core::RuntimeType for ScreenReaderPositionChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ScreenReaderPositionChangedEventArgs {
     type Vtable = IScreenReaderPositionChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ScreenReaderPositionChangedEventArgs {
-    const IID: ::windows_core::GUID = <IScreenReaderPositionChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IScreenReaderPositionChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ScreenReaderPositionChangedEventArgs {
     const NAME: &'static str = "Windows.UI.Accessibility.ScreenReaderPositionChangedEventArgs";
@@ -87,9 +85,7 @@ impl ::windows_core::RuntimeType for ScreenReaderService {
 }
 unsafe impl ::windows_core::Interface for ScreenReaderService {
     type Vtable = IScreenReaderService_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ScreenReaderService {
-    const IID: ::windows_core::GUID = <IScreenReaderService as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IScreenReaderService as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ScreenReaderService {
     const NAME: &'static str = "Windows.UI.Accessibility.ScreenReaderService";

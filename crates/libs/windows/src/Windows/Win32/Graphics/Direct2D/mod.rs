@@ -40,7 +40,7 @@ where
 #[inline]
 pub unsafe fn D2D1CreateFactory<T>(factorytype: D2D1_FACTORY_TYPE, pfactoryoptions: ::core::option::Option<*const D2D1_FACTORY_OPTIONS>) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("d2d1.dll" "system" fn D2D1CreateFactory(factorytype : D2D1_FACTORY_TYPE, riid : *const ::windows_core::GUID, pfactoryoptions : *const D2D1_FACTORY_OPTIONS, ppifactory : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -13643,7 +13643,7 @@ impl ID2D1SvgElement {
     pub unsafe fn GetAttributeValue<P0, T>(&self, name: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetAttributeValue)(::windows_core::Interface::as_raw(self), name.into_param().abi(), &T::IID, &mut result__).from_abi(result__)

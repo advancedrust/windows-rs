@@ -672,9 +672,7 @@ impl ::windows_core::RuntimeType for WebViewControlContentLoadingEventArgs {
 }
 unsafe impl ::windows_core::Interface for WebViewControlContentLoadingEventArgs {
     type Vtable = IWebViewControlContentLoadingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlContentLoadingEventArgs {
-    const IID: ::windows_core::GUID = <IWebViewControlContentLoadingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlContentLoadingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlContentLoadingEventArgs {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlContentLoadingEventArgs";
@@ -697,9 +695,7 @@ impl ::windows_core::RuntimeType for WebViewControlDOMContentLoadedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WebViewControlDOMContentLoadedEventArgs {
     type Vtable = IWebViewControlDOMContentLoadedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlDOMContentLoadedEventArgs {
-    const IID: ::windows_core::GUID = <IWebViewControlDOMContentLoadedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlDOMContentLoadedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlDOMContentLoadedEventArgs {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlDOMContentLoadedEventArgs";
@@ -744,9 +740,7 @@ impl ::windows_core::RuntimeType for WebViewControlDeferredPermissionRequest {
 }
 unsafe impl ::windows_core::Interface for WebViewControlDeferredPermissionRequest {
     type Vtable = IWebViewControlDeferredPermissionRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlDeferredPermissionRequest {
-    const IID: ::windows_core::GUID = <IWebViewControlDeferredPermissionRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlDeferredPermissionRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlDeferredPermissionRequest {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlDeferredPermissionRequest";
@@ -780,9 +774,7 @@ impl ::windows_core::RuntimeType for WebViewControlLongRunningScriptDetectedEven
 }
 unsafe impl ::windows_core::Interface for WebViewControlLongRunningScriptDetectedEventArgs {
     type Vtable = IWebViewControlLongRunningScriptDetectedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlLongRunningScriptDetectedEventArgs {
-    const IID: ::windows_core::GUID = <IWebViewControlLongRunningScriptDetectedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlLongRunningScriptDetectedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlLongRunningScriptDetectedEventArgs {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlLongRunningScriptDetectedEventArgs";
@@ -819,9 +811,7 @@ impl ::windows_core::RuntimeType for WebViewControlNavigationCompletedEventArgs 
 }
 unsafe impl ::windows_core::Interface for WebViewControlNavigationCompletedEventArgs {
     type Vtable = IWebViewControlNavigationCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlNavigationCompletedEventArgs {
-    const IID: ::windows_core::GUID = <IWebViewControlNavigationCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlNavigationCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlNavigationCompletedEventArgs {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlNavigationCompletedEventArgs";
@@ -855,9 +845,7 @@ impl ::windows_core::RuntimeType for WebViewControlNavigationStartingEventArgs {
 }
 unsafe impl ::windows_core::Interface for WebViewControlNavigationStartingEventArgs {
     type Vtable = IWebViewControlNavigationStartingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlNavigationStartingEventArgs {
-    const IID: ::windows_core::GUID = <IWebViewControlNavigationStartingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlNavigationStartingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlNavigationStartingEventArgs {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlNavigationStartingEventArgs";
@@ -893,7 +881,7 @@ impl WebViewControlNewWindowRequestedEventArgs {
         unsafe { (::windows_core::Interface::vtable(this).SetHandled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn NewWindow(&self) -> ::windows_core::Result<IWebViewControl> {
-        let this = &::windows_core::ComInterface::cast::<IWebViewControlNewWindowRequestedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebViewControlNewWindowRequestedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).NewWindow)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -903,11 +891,11 @@ impl WebViewControlNewWindowRequestedEventArgs {
     where
         P0: ::windows_core::IntoParam<IWebViewControl>,
     {
-        let this = &::windows_core::ComInterface::cast::<IWebViewControlNewWindowRequestedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebViewControlNewWindowRequestedEventArgs2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetNewWindow)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn GetDeferral(&self) -> ::windows_core::Result<super::super::Foundation::Deferral> {
-        let this = &::windows_core::ComInterface::cast::<IWebViewControlNewWindowRequestedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebViewControlNewWindowRequestedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetDeferral)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -919,9 +907,7 @@ impl ::windows_core::RuntimeType for WebViewControlNewWindowRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WebViewControlNewWindowRequestedEventArgs {
     type Vtable = IWebViewControlNewWindowRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlNewWindowRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IWebViewControlNewWindowRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlNewWindowRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlNewWindowRequestedEventArgs {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlNewWindowRequestedEventArgs";
@@ -977,9 +963,7 @@ impl ::windows_core::RuntimeType for WebViewControlPermissionRequest {
 }
 unsafe impl ::windows_core::Interface for WebViewControlPermissionRequest {
     type Vtable = IWebViewControlPermissionRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlPermissionRequest {
-    const IID: ::windows_core::GUID = <IWebViewControlPermissionRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlPermissionRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlPermissionRequest {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlPermissionRequest";
@@ -1002,9 +986,7 @@ impl ::windows_core::RuntimeType for WebViewControlPermissionRequestedEventArgs 
 }
 unsafe impl ::windows_core::Interface for WebViewControlPermissionRequestedEventArgs {
     type Vtable = IWebViewControlPermissionRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlPermissionRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IWebViewControlPermissionRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlPermissionRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlPermissionRequestedEventArgs {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlPermissionRequestedEventArgs";
@@ -1034,9 +1016,7 @@ impl ::windows_core::RuntimeType for WebViewControlScriptNotifyEventArgs {
 }
 unsafe impl ::windows_core::Interface for WebViewControlScriptNotifyEventArgs {
     type Vtable = IWebViewControlScriptNotifyEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlScriptNotifyEventArgs {
-    const IID: ::windows_core::GUID = <IWebViewControlScriptNotifyEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlScriptNotifyEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlScriptNotifyEventArgs {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlScriptNotifyEventArgs";
@@ -1085,9 +1065,7 @@ impl ::windows_core::RuntimeType for WebViewControlSettings {
 }
 unsafe impl ::windows_core::Interface for WebViewControlSettings {
     type Vtable = IWebViewControlSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlSettings {
-    const IID: ::windows_core::GUID = <IWebViewControlSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlSettings {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlSettings";
@@ -1121,9 +1099,7 @@ impl ::windows_core::RuntimeType for WebViewControlUnsupportedUriSchemeIdentifie
 }
 unsafe impl ::windows_core::Interface for WebViewControlUnsupportedUriSchemeIdentifiedEventArgs {
     type Vtable = IWebViewControlUnsupportedUriSchemeIdentifiedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlUnsupportedUriSchemeIdentifiedEventArgs {
-    const IID: ::windows_core::GUID = <IWebViewControlUnsupportedUriSchemeIdentifiedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlUnsupportedUriSchemeIdentifiedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlUnsupportedUriSchemeIdentifiedEventArgs {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlUnsupportedUriSchemeIdentifiedEventArgs";
@@ -1160,9 +1136,7 @@ impl ::windows_core::RuntimeType for WebViewControlUnviewableContentIdentifiedEv
 }
 unsafe impl ::windows_core::Interface for WebViewControlUnviewableContentIdentifiedEventArgs {
     type Vtable = IWebViewControlUnviewableContentIdentifiedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlUnviewableContentIdentifiedEventArgs {
-    const IID: ::windows_core::GUID = <IWebViewControlUnviewableContentIdentifiedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlUnviewableContentIdentifiedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlUnviewableContentIdentifiedEventArgs {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlUnviewableContentIdentifiedEventArgs";
@@ -1212,9 +1186,7 @@ impl ::windows_core::RuntimeType for WebViewControlWebResourceRequestedEventArgs
 }
 unsafe impl ::windows_core::Interface for WebViewControlWebResourceRequestedEventArgs {
     type Vtable = IWebViewControlWebResourceRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebViewControlWebResourceRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IWebViewControlWebResourceRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebViewControlWebResourceRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebViewControlWebResourceRequestedEventArgs {
     const NAME: &'static str = "Windows.Web.UI.WebViewControlWebResourceRequestedEventArgs";

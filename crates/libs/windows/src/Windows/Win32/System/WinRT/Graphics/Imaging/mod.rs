@@ -2,7 +2,7 @@
 impl ISoftwareBitmapNative {
     pub unsafe fn GetData<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetData)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -23,7 +23,7 @@ impl ISoftwareBitmapNativeFactory {
     where
         P0: ::windows_core::IntoParam<super::super::super::super::Graphics::Imaging::IWICBitmap>,
         P1: ::windows_core::IntoParam<super::super::super::super::Foundation::BOOL>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateFromWICBitmap)(::windows_core::Interface::as_raw(self), data.into_param().abi(), forcereadonly.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -34,7 +34,7 @@ impl ISoftwareBitmapNativeFactory {
     where
         P0: ::windows_core::IntoParam<super::super::super::super::Media::MediaFoundation::IMF2DBuffer2>,
         P1: ::windows_core::IntoParam<super::super::super::super::Foundation::BOOL>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateFromMF2DBuffer2)(::windows_core::Interface::as_raw(self), data.into_param().abi(), subtype, width, height, forcereadonly.into_param().abi(), ::core::mem::transmute(mindisplayaperture.unwrap_or(::std::ptr::null())), &T::IID, &mut result__).from_abi(result__)

@@ -202,9 +202,7 @@ impl ::windows_core::RuntimeType for KeyboardCapabilities {
 }
 unsafe impl ::windows_core::Interface for KeyboardCapabilities {
     type Vtable = IKeyboardCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for KeyboardCapabilities {
-    const IID: ::windows_core::GUID = <IKeyboardCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IKeyboardCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for KeyboardCapabilities {
     const NAME: &'static str = "Windows.Devices.Input.KeyboardCapabilities";
@@ -264,9 +262,7 @@ impl ::windows_core::RuntimeType for MouseCapabilities {
 }
 unsafe impl ::windows_core::Interface for MouseCapabilities {
     type Vtable = IMouseCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MouseCapabilities {
-    const IID: ::windows_core::GUID = <IMouseCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMouseCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MouseCapabilities {
     const NAME: &'static str = "Windows.Devices.Input.MouseCapabilities";
@@ -309,9 +305,7 @@ impl ::windows_core::RuntimeType for MouseDevice {
 }
 unsafe impl ::windows_core::Interface for MouseDevice {
     type Vtable = IMouseDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MouseDevice {
-    const IID: ::windows_core::GUID = <IMouseDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMouseDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MouseDevice {
     const NAME: &'static str = "Windows.Devices.Input.MouseDevice";
@@ -334,9 +328,7 @@ impl ::windows_core::RuntimeType for MouseEventArgs {
 }
 unsafe impl ::windows_core::Interface for MouseEventArgs {
     type Vtable = IMouseEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MouseEventArgs {
-    const IID: ::windows_core::GUID = <IMouseEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMouseEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MouseEventArgs {
     const NAME: &'static str = "Windows.Devices.Input.MouseEventArgs";
@@ -426,9 +418,7 @@ impl ::windows_core::RuntimeType for PenButtonListener {
 }
 unsafe impl ::windows_core::Interface for PenButtonListener {
     type Vtable = IPenButtonListener_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PenButtonListener {
-    const IID: ::windows_core::GUID = <IPenButtonListener as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPenButtonListener as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PenButtonListener {
     const NAME: &'static str = "Windows.Devices.Input.PenButtonListener";
@@ -450,7 +440,7 @@ impl PenDevice {
     #[doc = "Required features: `\"Devices_Haptics\"`"]
     #[cfg(feature = "Devices_Haptics")]
     pub fn SimpleHapticsController(&self) -> ::windows_core::Result<super::Haptics::SimpleHapticsController> {
-        let this = &::windows_core::ComInterface::cast::<IPenDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPenDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SimpleHapticsController)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -473,9 +463,7 @@ impl ::windows_core::RuntimeType for PenDevice {
 }
 unsafe impl ::windows_core::Interface for PenDevice {
     type Vtable = IPenDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PenDevice {
-    const IID: ::windows_core::GUID = <IPenDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPenDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PenDevice {
     const NAME: &'static str = "Windows.Devices.Input.PenDevice";
@@ -553,9 +541,7 @@ impl ::windows_core::RuntimeType for PenDockListener {
 }
 unsafe impl ::windows_core::Interface for PenDockListener {
     type Vtable = IPenDockListener_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PenDockListener {
-    const IID: ::windows_core::GUID = <IPenDockListener as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPenDockListener as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PenDockListener {
     const NAME: &'static str = "Windows.Devices.Input.PenDockListener";
@@ -572,9 +558,7 @@ impl ::windows_core::RuntimeType for PenDockedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PenDockedEventArgs {
     type Vtable = IPenDockedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PenDockedEventArgs {
-    const IID: ::windows_core::GUID = <IPenDockedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPenDockedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PenDockedEventArgs {
     const NAME: &'static str = "Windows.Devices.Input.PenDockedEventArgs";
@@ -591,9 +575,7 @@ impl ::windows_core::RuntimeType for PenTailButtonClickedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PenTailButtonClickedEventArgs {
     type Vtable = IPenTailButtonClickedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PenTailButtonClickedEventArgs {
-    const IID: ::windows_core::GUID = <IPenTailButtonClickedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPenTailButtonClickedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PenTailButtonClickedEventArgs {
     const NAME: &'static str = "Windows.Devices.Input.PenTailButtonClickedEventArgs";
@@ -610,9 +592,7 @@ impl ::windows_core::RuntimeType for PenTailButtonDoubleClickedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PenTailButtonDoubleClickedEventArgs {
     type Vtable = IPenTailButtonDoubleClickedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PenTailButtonDoubleClickedEventArgs {
-    const IID: ::windows_core::GUID = <IPenTailButtonDoubleClickedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPenTailButtonDoubleClickedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PenTailButtonDoubleClickedEventArgs {
     const NAME: &'static str = "Windows.Devices.Input.PenTailButtonDoubleClickedEventArgs";
@@ -629,9 +609,7 @@ impl ::windows_core::RuntimeType for PenTailButtonLongPressedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PenTailButtonLongPressedEventArgs {
     type Vtable = IPenTailButtonLongPressedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PenTailButtonLongPressedEventArgs {
-    const IID: ::windows_core::GUID = <IPenTailButtonLongPressedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPenTailButtonLongPressedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PenTailButtonLongPressedEventArgs {
     const NAME: &'static str = "Windows.Devices.Input.PenTailButtonLongPressedEventArgs";
@@ -648,9 +626,7 @@ impl ::windows_core::RuntimeType for PenUndockedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PenUndockedEventArgs {
     type Vtable = IPenUndockedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PenUndockedEventArgs {
-    const IID: ::windows_core::GUID = <IPenUndockedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPenUndockedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PenUndockedEventArgs {
     const NAME: &'static str = "Windows.Devices.Input.PenUndockedEventArgs";
@@ -707,7 +683,7 @@ impl PointerDevice {
         }
     }
     pub fn MaxPointersWithZDistance(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IPointerDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPointerDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MaxPointersWithZDistance)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -738,9 +714,7 @@ impl ::windows_core::RuntimeType for PointerDevice {
 }
 unsafe impl ::windows_core::Interface for PointerDevice {
     type Vtable = IPointerDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PointerDevice {
-    const IID: ::windows_core::GUID = <IPointerDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPointerDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PointerDevice {
     const NAME: &'static str = "Windows.Devices.Input.PointerDevice";
@@ -777,9 +751,7 @@ impl ::windows_core::RuntimeType for TouchCapabilities {
 }
 unsafe impl ::windows_core::Interface for TouchCapabilities {
     type Vtable = ITouchCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TouchCapabilities {
-    const IID: ::windows_core::GUID = <ITouchCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITouchCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TouchCapabilities {
     const NAME: &'static str = "Windows.Devices.Input.TouchCapabilities";

@@ -158,7 +158,7 @@ impl AppExtension {
         }
     }
     pub fn AppUserModelId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAppExtension2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppExtension2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppUserModelId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -170,9 +170,7 @@ impl ::windows_core::RuntimeType for AppExtension {
 }
 unsafe impl ::windows_core::Interface for AppExtension {
     type Vtable = IAppExtension_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppExtension {
-    const IID: ::windows_core::GUID = <IAppExtension as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppExtension as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppExtension {
     const NAME: &'static str = "Windows.ApplicationModel.AppExtensions.AppExtension";
@@ -287,9 +285,7 @@ impl ::windows_core::RuntimeType for AppExtensionCatalog {
 }
 unsafe impl ::windows_core::Interface for AppExtensionCatalog {
     type Vtable = IAppExtensionCatalog_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppExtensionCatalog {
-    const IID: ::windows_core::GUID = <IAppExtensionCatalog as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppExtensionCatalog as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppExtensionCatalog {
     const NAME: &'static str = "Windows.ApplicationModel.AppExtensions.AppExtensionCatalog";
@@ -328,9 +324,7 @@ impl ::windows_core::RuntimeType for AppExtensionPackageInstalledEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppExtensionPackageInstalledEventArgs {
     type Vtable = IAppExtensionPackageInstalledEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppExtensionPackageInstalledEventArgs {
-    const IID: ::windows_core::GUID = <IAppExtensionPackageInstalledEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppExtensionPackageInstalledEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppExtensionPackageInstalledEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.AppExtensions.AppExtensionPackageInstalledEventArgs";
@@ -362,9 +356,7 @@ impl ::windows_core::RuntimeType for AppExtensionPackageStatusChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppExtensionPackageStatusChangedEventArgs {
     type Vtable = IAppExtensionPackageStatusChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppExtensionPackageStatusChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAppExtensionPackageStatusChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppExtensionPackageStatusChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppExtensionPackageStatusChangedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.AppExtensions.AppExtensionPackageStatusChangedEventArgs";
@@ -396,9 +388,7 @@ impl ::windows_core::RuntimeType for AppExtensionPackageUninstallingEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppExtensionPackageUninstallingEventArgs {
     type Vtable = IAppExtensionPackageUninstallingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppExtensionPackageUninstallingEventArgs {
-    const IID: ::windows_core::GUID = <IAppExtensionPackageUninstallingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppExtensionPackageUninstallingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppExtensionPackageUninstallingEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.AppExtensions.AppExtensionPackageUninstallingEventArgs";
@@ -439,9 +429,7 @@ impl ::windows_core::RuntimeType for AppExtensionPackageUpdatedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppExtensionPackageUpdatedEventArgs {
     type Vtable = IAppExtensionPackageUpdatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppExtensionPackageUpdatedEventArgs {
-    const IID: ::windows_core::GUID = <IAppExtensionPackageUpdatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppExtensionPackageUpdatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppExtensionPackageUpdatedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.AppExtensions.AppExtensionPackageUpdatedEventArgs";
@@ -473,9 +461,7 @@ impl ::windows_core::RuntimeType for AppExtensionPackageUpdatingEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppExtensionPackageUpdatingEventArgs {
     type Vtable = IAppExtensionPackageUpdatingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppExtensionPackageUpdatingEventArgs {
-    const IID: ::windows_core::GUID = <IAppExtensionPackageUpdatingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppExtensionPackageUpdatingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppExtensionPackageUpdatingEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.AppExtensions.AppExtensionPackageUpdatingEventArgs";

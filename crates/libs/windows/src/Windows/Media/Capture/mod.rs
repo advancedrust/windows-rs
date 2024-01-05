@@ -1661,7 +1661,7 @@ impl AdvancedCapturedPhoto {
         }
     }
     pub fn FrameBoundsRelativeToReferencePhoto(&self) -> ::windows_core::Result<super::super::Foundation::IReference<super::super::Foundation::Rect>> {
-        let this = &::windows_core::ComInterface::cast::<IAdvancedCapturedPhoto2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdvancedCapturedPhoto2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FrameBoundsRelativeToReferencePhoto)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1673,9 +1673,7 @@ impl ::windows_core::RuntimeType for AdvancedCapturedPhoto {
 }
 unsafe impl ::windows_core::Interface for AdvancedCapturedPhoto {
     type Vtable = IAdvancedCapturedPhoto_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdvancedCapturedPhoto {
-    const IID: ::windows_core::GUID = <IAdvancedCapturedPhoto as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdvancedCapturedPhoto as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdvancedCapturedPhoto {
     const NAME: &'static str = "Windows.Media.Capture.AdvancedCapturedPhoto";
@@ -1745,9 +1743,7 @@ impl ::windows_core::RuntimeType for AdvancedPhotoCapture {
 }
 unsafe impl ::windows_core::Interface for AdvancedPhotoCapture {
     type Vtable = IAdvancedPhotoCapture_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdvancedPhotoCapture {
-    const IID: ::windows_core::GUID = <IAdvancedPhotoCapture as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdvancedPhotoCapture as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdvancedPhotoCapture {
     const NAME: &'static str = "Windows.Media.Capture.AdvancedPhotoCapture";
@@ -1849,71 +1845,71 @@ impl AppBroadcastBackgroundService {
         }
     }
     pub fn SetBroadcastTitle(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundService2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundService2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetBroadcastTitle)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn BroadcastLanguage(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundService2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundService2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).BroadcastLanguage)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetBroadcastLanguage(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundService2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundService2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetBroadcastLanguage)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn BroadcastChannel(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundService2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundService2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).BroadcastChannel)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetBroadcastChannel(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundService2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundService2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetBroadcastChannel)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn BroadcastTitleChanged<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<AppBroadcastBackgroundService, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundService2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundService2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).BroadcastTitleChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveBroadcastTitleChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundService2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundService2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveBroadcastTitleChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn BroadcastLanguageChanged<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<AppBroadcastBackgroundService, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundService2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundService2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).BroadcastLanguageChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveBroadcastLanguageChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundService2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundService2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveBroadcastLanguageChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn BroadcastChannelChanged<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<AppBroadcastBackgroundService, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundService2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundService2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).BroadcastChannelChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveBroadcastChannelChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundService2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundService2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveBroadcastChannelChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
 }
@@ -1922,9 +1918,7 @@ impl ::windows_core::RuntimeType for AppBroadcastBackgroundService {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastBackgroundService {
     type Vtable = IAppBroadcastBackgroundService_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastBackgroundService {
-    const IID: ::windows_core::GUID = <IAppBroadcastBackgroundService as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastBackgroundService as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastBackgroundService {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastBackgroundService";
@@ -2007,14 +2001,14 @@ impl AppBroadcastBackgroundServiceSignInInfo {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<AppBroadcastBackgroundServiceSignInInfo, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundServiceSignInInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundServiceSignInInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UserNameChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveUserNameChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundServiceSignInInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundServiceSignInInfo2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveUserNameChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
 }
@@ -2023,9 +2017,7 @@ impl ::windows_core::RuntimeType for AppBroadcastBackgroundServiceSignInInfo {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastBackgroundServiceSignInInfo {
     type Vtable = IAppBroadcastBackgroundServiceSignInInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastBackgroundServiceSignInInfo {
-    const IID: ::windows_core::GUID = <IAppBroadcastBackgroundServiceSignInInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastBackgroundServiceSignInInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastBackgroundServiceSignInInfo {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastBackgroundServiceSignInInfo";
@@ -2125,7 +2117,7 @@ impl AppBroadcastBackgroundServiceStreamInfo {
         unsafe { (::windows_core::Interface::vtable(this).RemoveVideoEncodingBitrateChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn ReportProblemWithStream(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppBroadcastBackgroundServiceStreamInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppBroadcastBackgroundServiceStreamInfo2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportProblemWithStream)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -2134,9 +2126,7 @@ impl ::windows_core::RuntimeType for AppBroadcastBackgroundServiceStreamInfo {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastBackgroundServiceStreamInfo {
     type Vtable = IAppBroadcastBackgroundServiceStreamInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastBackgroundServiceStreamInfo {
-    const IID: ::windows_core::GUID = <IAppBroadcastBackgroundServiceStreamInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastBackgroundServiceStreamInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastBackgroundServiceStreamInfo {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastBackgroundServiceStreamInfo";
@@ -2166,9 +2156,7 @@ impl ::windows_core::RuntimeType for AppBroadcastCameraCaptureStateChangedEventA
 }
 unsafe impl ::windows_core::Interface for AppBroadcastCameraCaptureStateChangedEventArgs {
     type Vtable = IAppBroadcastCameraCaptureStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastCameraCaptureStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAppBroadcastCameraCaptureStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastCameraCaptureStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastCameraCaptureStateChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastCameraCaptureStateChangedEventArgs";
@@ -2324,9 +2312,7 @@ impl ::windows_core::RuntimeType for AppBroadcastGlobalSettings {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastGlobalSettings {
     type Vtable = IAppBroadcastGlobalSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastGlobalSettings {
-    const IID: ::windows_core::GUID = <IAppBroadcastGlobalSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastGlobalSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastGlobalSettings {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastGlobalSettings";
@@ -2353,9 +2339,7 @@ impl ::windows_core::RuntimeType for AppBroadcastHeartbeatRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastHeartbeatRequestedEventArgs {
     type Vtable = IAppBroadcastHeartbeatRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastHeartbeatRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IAppBroadcastHeartbeatRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastHeartbeatRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastHeartbeatRequestedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastHeartbeatRequestedEventArgs";
@@ -2420,9 +2404,7 @@ impl ::windows_core::RuntimeType for AppBroadcastMicrophoneCaptureStateChangedEv
 }
 unsafe impl ::windows_core::Interface for AppBroadcastMicrophoneCaptureStateChangedEventArgs {
     type Vtable = IAppBroadcastMicrophoneCaptureStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastMicrophoneCaptureStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAppBroadcastMicrophoneCaptureStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastMicrophoneCaptureStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastMicrophoneCaptureStateChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastMicrophoneCaptureStateChangedEventArgs";
@@ -2470,9 +2452,7 @@ impl ::windows_core::RuntimeType for AppBroadcastPlugIn {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastPlugIn {
     type Vtable = IAppBroadcastPlugIn_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastPlugIn {
-    const IID: ::windows_core::GUID = <IAppBroadcastPlugIn as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastPlugIn as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastPlugIn {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastPlugIn";
@@ -2542,9 +2522,7 @@ impl ::windows_core::RuntimeType for AppBroadcastPlugInManager {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastPlugInManager {
     type Vtable = IAppBroadcastPlugInManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastPlugInManager {
-    const IID: ::windows_core::GUID = <IAppBroadcastPlugInManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastPlugInManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastPlugInManager {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastPlugInManager";
@@ -2569,9 +2547,7 @@ impl ::windows_core::RuntimeType for AppBroadcastPlugInStateChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastPlugInStateChangedEventArgs {
     type Vtable = IAppBroadcastPlugInStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastPlugInStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAppBroadcastPlugInStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastPlugInStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastPlugInStateChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastPlugInStateChangedEventArgs";
@@ -2628,9 +2604,7 @@ impl ::windows_core::RuntimeType for AppBroadcastPreview {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastPreview {
     type Vtable = IAppBroadcastPreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastPreview {
-    const IID: ::windows_core::GUID = <IAppBroadcastPreview as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastPreview as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastPreview {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastPreview";
@@ -2662,9 +2636,7 @@ impl ::windows_core::RuntimeType for AppBroadcastPreviewStateChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastPreviewStateChangedEventArgs {
     type Vtable = IAppBroadcastPreviewStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastPreviewStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAppBroadcastPreviewStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastPreviewStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastPreviewStateChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastPreviewStateChangedEventArgs";
@@ -2742,9 +2714,7 @@ impl ::windows_core::RuntimeType for AppBroadcastPreviewStreamReader {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastPreviewStreamReader {
     type Vtable = IAppBroadcastPreviewStreamReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastPreviewStreamReader {
-    const IID: ::windows_core::GUID = <IAppBroadcastPreviewStreamReader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastPreviewStreamReader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastPreviewStreamReader {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastPreviewStreamReader";
@@ -2778,9 +2748,7 @@ impl ::windows_core::RuntimeType for AppBroadcastPreviewStreamVideoFrame {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastPreviewStreamVideoFrame {
     type Vtable = IAppBroadcastPreviewStreamVideoFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastPreviewStreamVideoFrame {
-    const IID: ::windows_core::GUID = <IAppBroadcastPreviewStreamVideoFrame as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastPreviewStreamVideoFrame as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastPreviewStreamVideoFrame {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastPreviewStreamVideoFrame";
@@ -2826,9 +2794,7 @@ impl ::windows_core::RuntimeType for AppBroadcastPreviewStreamVideoHeader {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastPreviewStreamVideoHeader {
     type Vtable = IAppBroadcastPreviewStreamVideoHeader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastPreviewStreamVideoHeader {
-    const IID: ::windows_core::GUID = <IAppBroadcastPreviewStreamVideoHeader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastPreviewStreamVideoHeader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastPreviewStreamVideoHeader {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastPreviewStreamVideoHeader";
@@ -2923,9 +2889,7 @@ impl ::windows_core::RuntimeType for AppBroadcastProviderSettings {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastProviderSettings {
     type Vtable = IAppBroadcastProviderSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastProviderSettings {
-    const IID: ::windows_core::GUID = <IAppBroadcastProviderSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastProviderSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastProviderSettings {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastProviderSettings";
@@ -3028,9 +2992,7 @@ impl ::windows_core::RuntimeType for AppBroadcastServices {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastServices {
     type Vtable = IAppBroadcastServices_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastServices {
-    const IID: ::windows_core::GUID = <IAppBroadcastServices as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastServices as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastServices {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastServices";
@@ -3062,9 +3024,7 @@ impl ::windows_core::RuntimeType for AppBroadcastSignInStateChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastSignInStateChangedEventArgs {
     type Vtable = IAppBroadcastSignInStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastSignInStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAppBroadcastSignInStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastSignInStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastSignInStateChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastSignInStateChangedEventArgs";
@@ -3314,9 +3274,7 @@ impl ::windows_core::RuntimeType for AppBroadcastState {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastState {
     type Vtable = IAppBroadcastState_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastState {
-    const IID: ::windows_core::GUID = <IAppBroadcastState as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastState as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastState {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastState";
@@ -3350,9 +3308,7 @@ impl ::windows_core::RuntimeType for AppBroadcastStreamAudioFrame {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastStreamAudioFrame {
     type Vtable = IAppBroadcastStreamAudioFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastStreamAudioFrame {
-    const IID: ::windows_core::GUID = <IAppBroadcastStreamAudioFrame as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastStreamAudioFrame as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastStreamAudioFrame {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastStreamAudioFrame";
@@ -3403,9 +3359,7 @@ impl ::windows_core::RuntimeType for AppBroadcastStreamAudioHeader {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastStreamAudioHeader {
     type Vtable = IAppBroadcastStreamAudioHeader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastStreamAudioHeader {
-    const IID: ::windows_core::GUID = <IAppBroadcastStreamAudioHeader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastStreamAudioHeader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastStreamAudioHeader {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastStreamAudioHeader";
@@ -3514,9 +3468,7 @@ impl ::windows_core::RuntimeType for AppBroadcastStreamReader {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastStreamReader {
     type Vtable = IAppBroadcastStreamReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastStreamReader {
-    const IID: ::windows_core::GUID = <IAppBroadcastStreamReader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastStreamReader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastStreamReader {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastStreamReader";
@@ -3539,9 +3491,7 @@ impl ::windows_core::RuntimeType for AppBroadcastStreamStateChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastStreamStateChangedEventArgs {
     type Vtable = IAppBroadcastStreamStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastStreamStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAppBroadcastStreamStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastStreamStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastStreamStateChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastStreamStateChangedEventArgs";
@@ -3573,9 +3523,7 @@ impl ::windows_core::RuntimeType for AppBroadcastStreamVideoFrame {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastStreamVideoFrame {
     type Vtable = IAppBroadcastStreamVideoFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastStreamVideoFrame {
-    const IID: ::windows_core::GUID = <IAppBroadcastStreamVideoFrame as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastStreamVideoFrame as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastStreamVideoFrame {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastStreamVideoFrame";
@@ -3633,9 +3581,7 @@ impl ::windows_core::RuntimeType for AppBroadcastStreamVideoHeader {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastStreamVideoHeader {
     type Vtable = IAppBroadcastStreamVideoHeader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastStreamVideoHeader {
-    const IID: ::windows_core::GUID = <IAppBroadcastStreamVideoHeader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastStreamVideoHeader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastStreamVideoHeader {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastStreamVideoHeader";
@@ -3658,9 +3604,7 @@ impl ::windows_core::RuntimeType for AppBroadcastTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastTriggerDetails {
     type Vtable = IAppBroadcastTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastTriggerDetails {
-    const IID: ::windows_core::GUID = <IAppBroadcastTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastTriggerDetails {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastTriggerDetails";
@@ -3683,9 +3627,7 @@ impl ::windows_core::RuntimeType for AppBroadcastViewerCountChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastViewerCountChangedEventArgs {
     type Vtable = IAppBroadcastViewerCountChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastViewerCountChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAppBroadcastViewerCountChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastViewerCountChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastViewerCountChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.AppBroadcastViewerCountChangedEventArgs";
@@ -3753,9 +3695,7 @@ impl ::windows_core::RuntimeType for AppCapture {
 }
 unsafe impl ::windows_core::Interface for AppCapture {
     type Vtable = IAppCapture_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCapture {
-    const IID: ::windows_core::GUID = <IAppCapture as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCapture as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCapture {
     const NAME: &'static str = "Windows.Media.Capture.AppCapture";
@@ -3918,13 +3858,13 @@ impl AppCaptureAlternateShortcutKeys {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn SetToggleMicrophoneCaptureKey(&self, value: super::super::System::VirtualKey) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureAlternateShortcutKeys2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureAlternateShortcutKeys2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetToggleMicrophoneCaptureKey)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn ToggleMicrophoneCaptureKey(&self) -> ::windows_core::Result<super::super::System::VirtualKey> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureAlternateShortcutKeys2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureAlternateShortcutKeys2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToggleMicrophoneCaptureKey)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3933,13 +3873,13 @@ impl AppCaptureAlternateShortcutKeys {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn SetToggleMicrophoneCaptureKeyModifiers(&self, value: super::super::System::VirtualKeyModifiers) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureAlternateShortcutKeys2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureAlternateShortcutKeys2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetToggleMicrophoneCaptureKeyModifiers)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn ToggleMicrophoneCaptureKeyModifiers(&self) -> ::windows_core::Result<super::super::System::VirtualKeyModifiers> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureAlternateShortcutKeys2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureAlternateShortcutKeys2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToggleMicrophoneCaptureKeyModifiers)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3948,13 +3888,13 @@ impl AppCaptureAlternateShortcutKeys {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn SetToggleCameraCaptureKey(&self, value: super::super::System::VirtualKey) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetToggleCameraCaptureKey)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn ToggleCameraCaptureKey(&self) -> ::windows_core::Result<super::super::System::VirtualKey> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToggleCameraCaptureKey)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3963,13 +3903,13 @@ impl AppCaptureAlternateShortcutKeys {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn SetToggleCameraCaptureKeyModifiers(&self, value: super::super::System::VirtualKeyModifiers) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetToggleCameraCaptureKeyModifiers)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn ToggleCameraCaptureKeyModifiers(&self) -> ::windows_core::Result<super::super::System::VirtualKeyModifiers> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToggleCameraCaptureKeyModifiers)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3978,13 +3918,13 @@ impl AppCaptureAlternateShortcutKeys {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn SetToggleBroadcastKey(&self, value: super::super::System::VirtualKey) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetToggleBroadcastKey)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn ToggleBroadcastKey(&self) -> ::windows_core::Result<super::super::System::VirtualKey> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToggleBroadcastKey)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3993,13 +3933,13 @@ impl AppCaptureAlternateShortcutKeys {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn SetToggleBroadcastKeyModifiers(&self, value: super::super::System::VirtualKeyModifiers) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetToggleBroadcastKeyModifiers)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn ToggleBroadcastKeyModifiers(&self) -> ::windows_core::Result<super::super::System::VirtualKeyModifiers> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureAlternateShortcutKeys3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToggleBroadcastKeyModifiers)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4011,9 +3951,7 @@ impl ::windows_core::RuntimeType for AppCaptureAlternateShortcutKeys {
 }
 unsafe impl ::windows_core::Interface for AppCaptureAlternateShortcutKeys {
     type Vtable = IAppCaptureAlternateShortcutKeys_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCaptureAlternateShortcutKeys {
-    const IID: ::windows_core::GUID = <IAppCaptureAlternateShortcutKeys as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCaptureAlternateShortcutKeys as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCaptureAlternateShortcutKeys {
     const NAME: &'static str = "Windows.Media.Capture.AppCaptureAlternateShortcutKeys";
@@ -4036,9 +3974,7 @@ impl ::windows_core::RuntimeType for AppCaptureDurationGeneratedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppCaptureDurationGeneratedEventArgs {
     type Vtable = IAppCaptureDurationGeneratedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCaptureDurationGeneratedEventArgs {
-    const IID: ::windows_core::GUID = <IAppCaptureDurationGeneratedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCaptureDurationGeneratedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCaptureDurationGeneratedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.AppCaptureDurationGeneratedEventArgs";
@@ -4065,9 +4001,7 @@ impl ::windows_core::RuntimeType for AppCaptureFileGeneratedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppCaptureFileGeneratedEventArgs {
     type Vtable = IAppCaptureFileGeneratedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCaptureFileGeneratedEventArgs {
-    const IID: ::windows_core::GUID = <IAppCaptureFileGeneratedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCaptureFileGeneratedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCaptureFileGeneratedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.AppCaptureFileGeneratedEventArgs";
@@ -4163,7 +4097,7 @@ impl AppCaptureMetadataWriter {
         unsafe { (::windows_core::Interface::vtable(this).RemoveMetadataPurged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -4172,9 +4106,7 @@ impl ::windows_core::RuntimeType for AppCaptureMetadataWriter {
 }
 unsafe impl ::windows_core::Interface for AppCaptureMetadataWriter {
     type Vtable = IAppCaptureMetadataWriter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCaptureMetadataWriter {
-    const IID: ::windows_core::GUID = <IAppCaptureMetadataWriter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCaptureMetadataWriter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCaptureMetadataWriter {
     const NAME: &'static str = "Windows.Media.Capture.AppCaptureMetadataWriter";
@@ -4207,9 +4139,7 @@ impl ::windows_core::RuntimeType for AppCaptureMicrophoneCaptureStateChangedEven
 }
 unsafe impl ::windows_core::Interface for AppCaptureMicrophoneCaptureStateChangedEventArgs {
     type Vtable = IAppCaptureMicrophoneCaptureStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCaptureMicrophoneCaptureStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAppCaptureMicrophoneCaptureStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCaptureMicrophoneCaptureStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCaptureMicrophoneCaptureStateChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.AppCaptureMicrophoneCaptureStateChangedEventArgs";
@@ -4310,9 +4240,7 @@ impl ::windows_core::RuntimeType for AppCaptureRecordOperation {
 }
 unsafe impl ::windows_core::Interface for AppCaptureRecordOperation {
     type Vtable = IAppCaptureRecordOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCaptureRecordOperation {
-    const IID: ::windows_core::GUID = <IAppCaptureRecordOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCaptureRecordOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCaptureRecordOperation {
     const NAME: &'static str = "Windows.Media.Capture.AppCaptureRecordOperation";
@@ -4344,9 +4272,7 @@ impl ::windows_core::RuntimeType for AppCaptureRecordingStateChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppCaptureRecordingStateChangedEventArgs {
     type Vtable = IAppCaptureRecordingStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCaptureRecordingStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAppCaptureRecordingStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCaptureRecordingStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCaptureRecordingStateChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.AppCaptureRecordingStateChangedEventArgs";
@@ -4392,9 +4318,7 @@ impl ::windows_core::RuntimeType for AppCaptureServices {
 }
 unsafe impl ::windows_core::Interface for AppCaptureServices {
     type Vtable = IAppCaptureServices_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCaptureServices {
-    const IID: ::windows_core::GUID = <IAppCaptureServices as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCaptureServices as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCaptureServices {
     const NAME: &'static str = "Windows.Media.Capture.AppCaptureServices";
@@ -4625,91 +4549,91 @@ impl AppCaptureSettings {
         }
     }
     pub fn IsGpuConstrained(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsGpuConstrained)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AlternateShortcutKeys(&self) -> ::windows_core::Result<AppCaptureAlternateShortcutKeys> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AlternateShortcutKeys)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsMicrophoneCaptureEnabled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsMicrophoneCaptureEnabled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsMicrophoneCaptureEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsMicrophoneCaptureEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsMicrophoneCaptureEnabledByDefault(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsMicrophoneCaptureEnabledByDefault)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsMicrophoneCaptureEnabledByDefault(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsMicrophoneCaptureEnabledByDefault)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetSystemAudioGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSystemAudioGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SystemAudioGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SystemAudioGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetMicrophoneGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMicrophoneGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn MicrophoneGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MicrophoneGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetVideoEncodingFrameRateMode(&self, value: AppCaptureVideoEncodingFrameRateMode) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetVideoEncodingFrameRateMode)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn VideoEncodingFrameRateMode(&self) -> ::windows_core::Result<AppCaptureVideoEncodingFrameRateMode> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).VideoEncodingFrameRateMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsEchoCancellationEnabled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsEchoCancellationEnabled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsEchoCancellationEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsEchoCancellationEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsCursorImageCaptureEnabled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsCursorImageCaptureEnabled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsCursorImageCaptureEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppCaptureSettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppCaptureSettings5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsCursorImageCaptureEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4721,9 +4645,7 @@ impl ::windows_core::RuntimeType for AppCaptureSettings {
 }
 unsafe impl ::windows_core::Interface for AppCaptureSettings {
     type Vtable = IAppCaptureSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCaptureSettings {
-    const IID: ::windows_core::GUID = <IAppCaptureSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCaptureSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCaptureSettings {
     const NAME: &'static str = "Windows.Media.Capture.AppCaptureSettings";
@@ -4810,9 +4732,7 @@ impl ::windows_core::RuntimeType for AppCaptureState {
 }
 unsafe impl ::windows_core::Interface for AppCaptureState {
     type Vtable = IAppCaptureState_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppCaptureState {
-    const IID: ::windows_core::GUID = <IAppCaptureState as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppCaptureState as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppCaptureState {
     const NAME: &'static str = "Windows.Media.Capture.AppCaptureState";
@@ -4860,9 +4780,7 @@ impl ::windows_core::RuntimeType for CameraCaptureUI {
 }
 unsafe impl ::windows_core::Interface for CameraCaptureUI {
     type Vtable = ICameraCaptureUI_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CameraCaptureUI {
-    const IID: ::windows_core::GUID = <ICameraCaptureUI as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICameraCaptureUI as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CameraCaptureUI {
     const NAME: &'static str = "Windows.Media.Capture.CameraCaptureUI";
@@ -4933,9 +4851,7 @@ impl ::windows_core::RuntimeType for CameraCaptureUIPhotoCaptureSettings {
 }
 unsafe impl ::windows_core::Interface for CameraCaptureUIPhotoCaptureSettings {
     type Vtable = ICameraCaptureUIPhotoCaptureSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CameraCaptureUIPhotoCaptureSettings {
-    const IID: ::windows_core::GUID = <ICameraCaptureUIPhotoCaptureSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICameraCaptureUIPhotoCaptureSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CameraCaptureUIPhotoCaptureSettings {
     const NAME: &'static str = "Windows.Media.Capture.CameraCaptureUIPhotoCaptureSettings";
@@ -4997,9 +4913,7 @@ impl ::windows_core::RuntimeType for CameraCaptureUIVideoCaptureSettings {
 }
 unsafe impl ::windows_core::Interface for CameraCaptureUIVideoCaptureSettings {
     type Vtable = ICameraCaptureUIVideoCaptureSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CameraCaptureUIVideoCaptureSettings {
-    const IID: ::windows_core::GUID = <ICameraCaptureUIVideoCaptureSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICameraCaptureUIVideoCaptureSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CameraCaptureUIVideoCaptureSettings {
     const NAME: &'static str = "Windows.Media.Capture.CameraCaptureUIVideoCaptureSettings";
@@ -5043,7 +4957,7 @@ impl CapturedFrame {
         }
     }
     pub fn ControlValues(&self) -> ::windows_core::Result<CapturedFrameControlValues> {
-        let this = &::windows_core::ComInterface::cast::<ICapturedFrame2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICapturedFrame2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ControlValues)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5052,7 +4966,7 @@ impl CapturedFrame {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Graphics_Imaging\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Graphics_Imaging"))]
     pub fn BitmapProperties(&self) -> ::windows_core::Result<super::super::Graphics::Imaging::BitmapPropertySet> {
-        let this = &::windows_core::ComInterface::cast::<ICapturedFrame2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICapturedFrame2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).BitmapProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5061,20 +4975,20 @@ impl CapturedFrame {
     #[doc = "Required features: `\"Graphics_Imaging\"`"]
     #[cfg(feature = "Graphics_Imaging")]
     pub fn SoftwareBitmap(&self) -> ::windows_core::Result<super::super::Graphics::Imaging::SoftwareBitmap> {
-        let this = &::windows_core::ComInterface::cast::<ICapturedFrameWithSoftwareBitmap>(self)?;
+        let this = &::windows_core::Interface::cast::<ICapturedFrameWithSoftwareBitmap>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SoftwareBitmap)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn ContentType(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IContentTypeProvider>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IContentTypeProvider>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContentType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5086,7 +5000,7 @@ impl CapturedFrame {
     where
         P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IInputStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IInputStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReadAsync)(::windows_core::Interface::as_raw(this), buffer.into_param().abi(), count, options, &mut result__).from_abi(result__)
@@ -5098,7 +5012,7 @@ impl CapturedFrame {
     where
         P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IOutputStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IOutputStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).WriteAsync)(::windows_core::Interface::as_raw(this), buffer.into_param().abi(), &mut result__).from_abi(result__)
@@ -5107,7 +5021,7 @@ impl CapturedFrame {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn FlushAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IOutputStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IOutputStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FlushAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5116,7 +5030,7 @@ impl CapturedFrame {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn Size(&self) -> ::windows_core::Result<u64> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5125,13 +5039,13 @@ impl CapturedFrame {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn SetSize(&self, value: u64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSize)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn GetInputStreamAt(&self, position: u64) -> ::windows_core::Result<super::super::Storage::Streams::IInputStream> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetInputStreamAt)(::windows_core::Interface::as_raw(this), position, &mut result__).from_abi(result__)
@@ -5140,7 +5054,7 @@ impl CapturedFrame {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn GetOutputStreamAt(&self, position: u64) -> ::windows_core::Result<super::super::Storage::Streams::IOutputStream> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetOutputStreamAt)(::windows_core::Interface::as_raw(this), position, &mut result__).from_abi(result__)
@@ -5149,7 +5063,7 @@ impl CapturedFrame {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn Position(&self) -> ::windows_core::Result<u64> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Position)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5158,13 +5072,13 @@ impl CapturedFrame {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn Seek(&self, position: u64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Seek)(::windows_core::Interface::as_raw(this), position).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn CloneStream(&self) -> ::windows_core::Result<super::super::Storage::Streams::IRandomAccessStream> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CloneStream)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5173,7 +5087,7 @@ impl CapturedFrame {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn CanRead(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanRead)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5182,7 +5096,7 @@ impl CapturedFrame {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn CanWrite(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Storage::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanWrite)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5194,9 +5108,7 @@ impl ::windows_core::RuntimeType for CapturedFrame {
 }
 unsafe impl ::windows_core::Interface for CapturedFrame {
     type Vtable = ICapturedFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CapturedFrame {
-    const IID: ::windows_core::GUID = <ICapturedFrame as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICapturedFrame as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CapturedFrame {
     const NAME: &'static str = "Windows.Media.Capture.CapturedFrame";
@@ -5278,21 +5190,21 @@ impl CapturedFrameControlValues {
     #[doc = "Required features: `\"Media_Devices\"`"]
     #[cfg(feature = "Media_Devices")]
     pub fn FocusState(&self) -> ::windows_core::Result<super::super::Foundation::IReference<super::Devices::MediaCaptureFocusState>> {
-        let this = &::windows_core::ComInterface::cast::<ICapturedFrameControlValues2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICapturedFrameControlValues2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FocusState)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsoDigitalGain(&self) -> ::windows_core::Result<super::super::Foundation::IReference<f64>> {
-        let this = &::windows_core::ComInterface::cast::<ICapturedFrameControlValues2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICapturedFrameControlValues2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsoDigitalGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsoAnalogGain(&self) -> ::windows_core::Result<super::super::Foundation::IReference<f64>> {
-        let this = &::windows_core::ComInterface::cast::<ICapturedFrameControlValues2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICapturedFrameControlValues2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsoAnalogGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5301,14 +5213,14 @@ impl CapturedFrameControlValues {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn SensorFrameRate(&self) -> ::windows_core::Result<super::MediaProperties::MediaRatio> {
-        let this = &::windows_core::ComInterface::cast::<ICapturedFrameControlValues2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICapturedFrameControlValues2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SensorFrameRate)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn WhiteBalanceGain(&self) -> ::windows_core::Result<super::super::Foundation::IReference<WhiteBalanceGain>> {
-        let this = &::windows_core::ComInterface::cast::<ICapturedFrameControlValues2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICapturedFrameControlValues2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).WhiteBalanceGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5320,9 +5232,7 @@ impl ::windows_core::RuntimeType for CapturedFrameControlValues {
 }
 unsafe impl ::windows_core::Interface for CapturedFrameControlValues {
     type Vtable = ICapturedFrameControlValues_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CapturedFrameControlValues {
-    const IID: ::windows_core::GUID = <ICapturedFrameControlValues as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICapturedFrameControlValues as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CapturedFrameControlValues {
     const NAME: &'static str = "Windows.Media.Capture.CapturedFrameControlValues";
@@ -5354,9 +5264,7 @@ impl ::windows_core::RuntimeType for CapturedPhoto {
 }
 unsafe impl ::windows_core::Interface for CapturedPhoto {
     type Vtable = ICapturedPhoto_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CapturedPhoto {
-    const IID: ::windows_core::GUID = <ICapturedPhoto as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICapturedPhoto as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CapturedPhoto {
     const NAME: &'static str = "Windows.Media.Capture.CapturedPhoto";
@@ -5431,9 +5339,7 @@ impl ::windows_core::RuntimeType for GameBarServices {
 }
 unsafe impl ::windows_core::Interface for GameBarServices {
     type Vtable = IGameBarServices_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameBarServices {
-    const IID: ::windows_core::GUID = <IGameBarServices as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameBarServices as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameBarServices {
     const NAME: &'static str = "Windows.Media.Capture.GameBarServices";
@@ -5465,9 +5371,7 @@ impl ::windows_core::RuntimeType for GameBarServicesCommandEventArgs {
 }
 unsafe impl ::windows_core::Interface for GameBarServicesCommandEventArgs {
     type Vtable = IGameBarServicesCommandEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameBarServicesCommandEventArgs {
-    const IID: ::windows_core::GUID = <IGameBarServicesCommandEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameBarServicesCommandEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameBarServicesCommandEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.GameBarServicesCommandEventArgs";
@@ -5510,9 +5414,7 @@ impl ::windows_core::RuntimeType for GameBarServicesManager {
 }
 unsafe impl ::windows_core::Interface for GameBarServicesManager {
     type Vtable = IGameBarServicesManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameBarServicesManager {
-    const IID: ::windows_core::GUID = <IGameBarServicesManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameBarServicesManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameBarServicesManager {
     const NAME: &'static str = "Windows.Media.Capture.GameBarServicesManager";
@@ -5537,9 +5439,7 @@ impl ::windows_core::RuntimeType for GameBarServicesManagerGameBarServicesCreate
 }
 unsafe impl ::windows_core::Interface for GameBarServicesManagerGameBarServicesCreatedEventArgs {
     type Vtable = IGameBarServicesManagerGameBarServicesCreatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameBarServicesManagerGameBarServicesCreatedEventArgs {
-    const IID: ::windows_core::GUID = <IGameBarServicesManagerGameBarServicesCreatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameBarServicesManagerGameBarServicesCreatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameBarServicesManagerGameBarServicesCreatedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.GameBarServicesManagerGameBarServicesCreatedEventArgs";
@@ -5585,9 +5485,7 @@ impl ::windows_core::RuntimeType for GameBarServicesTargetInfo {
 }
 unsafe impl ::windows_core::Interface for GameBarServicesTargetInfo {
     type Vtable = IGameBarServicesTargetInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameBarServicesTargetInfo {
-    const IID: ::windows_core::GUID = <IGameBarServicesTargetInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameBarServicesTargetInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameBarServicesTargetInfo {
     const NAME: &'static str = "Windows.Media.Capture.GameBarServicesTargetInfo";
@@ -5623,14 +5521,14 @@ impl LowLagMediaRecording {
     #[doc = "Required features: `\"Media_Devices\"`"]
     #[cfg(feature = "Media_Devices")]
     pub fn PauseAsync(&self, behavior: super::Devices::MediaCapturePauseBehavior) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<ILowLagMediaRecording2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILowLagMediaRecording2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PauseAsync)(::windows_core::Interface::as_raw(this), behavior, &mut result__).from_abi(result__)
         }
     }
     pub fn ResumeAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<ILowLagMediaRecording2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILowLagMediaRecording2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResumeAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5639,14 +5537,14 @@ impl LowLagMediaRecording {
     #[doc = "Required features: `\"Media_Devices\"`"]
     #[cfg(feature = "Media_Devices")]
     pub fn PauseWithResultAsync(&self, behavior: super::Devices::MediaCapturePauseBehavior) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MediaCapturePauseResult>> {
-        let this = &::windows_core::ComInterface::cast::<ILowLagMediaRecording3>(self)?;
+        let this = &::windows_core::Interface::cast::<ILowLagMediaRecording3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PauseWithResultAsync)(::windows_core::Interface::as_raw(this), behavior, &mut result__).from_abi(result__)
         }
     }
     pub fn StopWithResultAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MediaCaptureStopResult>> {
-        let this = &::windows_core::ComInterface::cast::<ILowLagMediaRecording3>(self)?;
+        let this = &::windows_core::Interface::cast::<ILowLagMediaRecording3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StopWithResultAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -5658,9 +5556,7 @@ impl ::windows_core::RuntimeType for LowLagMediaRecording {
 }
 unsafe impl ::windows_core::Interface for LowLagMediaRecording {
     type Vtable = ILowLagMediaRecording_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LowLagMediaRecording {
-    const IID: ::windows_core::GUID = <ILowLagMediaRecording as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILowLagMediaRecording as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LowLagMediaRecording {
     const NAME: &'static str = "Windows.Media.Capture.LowLagMediaRecording";
@@ -5690,9 +5586,7 @@ impl ::windows_core::RuntimeType for LowLagPhotoCapture {
 }
 unsafe impl ::windows_core::Interface for LowLagPhotoCapture {
     type Vtable = ILowLagPhotoCapture_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LowLagPhotoCapture {
-    const IID: ::windows_core::GUID = <ILowLagPhotoCapture as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILowLagPhotoCapture as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LowLagPhotoCapture {
     const NAME: &'static str = "Windows.Media.Capture.LowLagPhotoCapture";
@@ -5743,9 +5637,7 @@ impl ::windows_core::RuntimeType for LowLagPhotoSequenceCapture {
 }
 unsafe impl ::windows_core::Interface for LowLagPhotoSequenceCapture {
     type Vtable = ILowLagPhotoSequenceCapture_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LowLagPhotoSequenceCapture {
-    const IID: ::windows_core::GUID = <ILowLagPhotoSequenceCapture as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILowLagPhotoSequenceCapture as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LowLagPhotoSequenceCapture {
     const NAME: &'static str = "Windows.Media.Capture.LowLagPhotoSequenceCapture";
@@ -5763,7 +5655,7 @@ impl MediaCapture {
         SHARED.call(callback)
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn InitializeAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
@@ -5994,7 +5886,7 @@ impl MediaCapture {
         P0: ::windows_core::IntoParam<super::MediaProperties::MediaEncodingProfile>,
         P1: ::windows_core::IntoParam<super::super::Storage::IStorageFile>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrepareLowLagRecordToStorageFileAsync)(::windows_core::Interface::as_raw(this), encodingprofile.into_param().abi(), file.into_param().abi(), &mut result__).from_abi(result__)
@@ -6007,7 +5899,7 @@ impl MediaCapture {
         P0: ::windows_core::IntoParam<super::MediaProperties::MediaEncodingProfile>,
         P1: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStream>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrepareLowLagRecordToStreamAsync)(::windows_core::Interface::as_raw(this), encodingprofile.into_param().abi(), stream.into_param().abi(), &mut result__).from_abi(result__)
@@ -6020,7 +5912,7 @@ impl MediaCapture {
         P0: ::windows_core::IntoParam<super::MediaProperties::MediaEncodingProfile>,
         P1: ::windows_core::IntoParam<super::IMediaExtension>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrepareLowLagRecordToCustomSinkAsync)(::windows_core::Interface::as_raw(this), encodingprofile.into_param().abi(), custommediasink.into_param().abi(), &mut result__).from_abi(result__)
@@ -6033,7 +5925,7 @@ impl MediaCapture {
         P0: ::windows_core::IntoParam<super::MediaProperties::MediaEncodingProfile>,
         P1: ::windows_core::IntoParam<super::super::Foundation::Collections::IPropertySet>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrepareLowLagRecordToCustomSinkIdAsync)(::windows_core::Interface::as_raw(this), encodingprofile.into_param().abi(), ::core::mem::transmute_copy(customsinkactivationid), customsinksettings.into_param().abi(), &mut result__).from_abi(result__)
@@ -6045,7 +5937,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::MediaProperties::ImageEncodingProperties>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrepareLowLagPhotoCaptureAsync)(::windows_core::Interface::as_raw(this), r#type.into_param().abi(), &mut result__).from_abi(result__)
@@ -6057,7 +5949,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::MediaProperties::ImageEncodingProperties>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrepareLowLagPhotoSequenceCaptureAsync)(::windows_core::Interface::as_raw(this), r#type.into_param().abi(), &mut result__).from_abi(result__)
@@ -6070,7 +5962,7 @@ impl MediaCapture {
         P0: ::windows_core::IntoParam<super::MediaProperties::IMediaEncodingProperties>,
         P1: ::windows_core::IntoParam<super::MediaProperties::MediaPropertySet>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SetEncodingPropertiesAsync)(::windows_core::Interface::as_raw(this), mediastreamtype, mediaencodingproperties.into_param().abi(), encoderproperties.into_param().abi(), &mut result__).from_abi(result__)
@@ -6082,7 +5974,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::MediaProperties::ImageEncodingProperties>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrepareVariablePhotoSequenceCaptureAsync)(::windows_core::Interface::as_raw(this), r#type.into_param().abi(), &mut result__).from_abi(result__)
@@ -6092,28 +5984,28 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<MediaCapture, MediaCaptureFocusChangedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FocusChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveFocusChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveFocusChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn PhotoConfirmationCaptured<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<MediaCapture, PhotoConfirmationCapturedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PhotoConfirmationCaptured)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePhotoConfirmationCaptured(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePhotoConfirmationCaptured)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -6122,7 +6014,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AddAudioEffectAsync)(::windows_core::Interface::as_raw(this), definition.into_param().abi(), &mut result__).from_abi(result__)
@@ -6134,7 +6026,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::Effects::IVideoEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AddVideoEffectAsync)(::windows_core::Interface::as_raw(this), definition.into_param().abi(), mediastreamtype, &mut result__).from_abi(result__)
@@ -6143,14 +6035,14 @@ impl MediaCapture {
     #[doc = "Required features: `\"Media_Devices\"`"]
     #[cfg(feature = "Media_Devices")]
     pub fn PauseRecordAsync(&self, behavior: super::Devices::MediaCapturePauseBehavior) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PauseRecordAsync)(::windows_core::Interface::as_raw(this), behavior, &mut result__).from_abi(result__)
         }
     }
     pub fn ResumeRecordAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResumeRecordAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6160,27 +6052,27 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<MediaCapture, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CameraStreamStateChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveCameraStreamStateChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveCameraStreamStateChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     #[doc = "Required features: `\"Media_Devices\"`"]
     #[cfg(feature = "Media_Devices")]
     pub fn CameraStreamState(&self) -> ::windows_core::Result<super::Devices::CameraStreamState> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CameraStreamState)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetPreviewFrameAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::VideoFrame>> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetPreviewFrameAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6190,7 +6082,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::VideoFrame>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetPreviewFrameCopyAsync)(::windows_core::Interface::as_raw(this), destination.into_param().abi(), &mut result__).from_abi(result__)
@@ -6200,18 +6092,18 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<MediaCapture, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ThermalStatusChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveThermalStatusChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveThermalStatusChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn ThermalStatus(&self) -> ::windows_core::Result<MediaCaptureThermalStatus> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ThermalStatus)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6223,7 +6115,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::MediaProperties::ImageEncodingProperties>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrepareAdvancedPhotoCaptureAsync)(::windows_core::Interface::as_raw(this), encodingproperties.into_param().abi(), &mut result__).from_abi(result__)
@@ -6233,7 +6125,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::IMediaExtension>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RemoveEffectAsync)(::windows_core::Interface::as_raw(this), effect.into_param().abi(), &mut result__).from_abi(result__)
@@ -6242,14 +6134,14 @@ impl MediaCapture {
     #[doc = "Required features: `\"Media_Devices\"`"]
     #[cfg(feature = "Media_Devices")]
     pub fn PauseRecordWithResultAsync(&self, behavior: super::Devices::MediaCapturePauseBehavior) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MediaCapturePauseResult>> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PauseRecordWithResultAsync)(::windows_core::Interface::as_raw(this), behavior, &mut result__).from_abi(result__)
         }
     }
     pub fn StopRecordWithResultAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MediaCaptureStopResult>> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StopRecordWithResultAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6258,7 +6150,7 @@ impl MediaCapture {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Capture_Frames\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Capture_Frames"))]
     pub fn FrameSources(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, Frames::MediaFrameSource>> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FrameSources)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6270,7 +6162,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<Frames::MediaFrameSource>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateFrameReaderAsync)(::windows_core::Interface::as_raw(this), inputsource.into_param().abi(), &mut result__).from_abi(result__)
@@ -6282,7 +6174,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<Frames::MediaFrameSource>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateFrameReaderWithSubtypeAsync)(::windows_core::Interface::as_raw(this), inputsource.into_param().abi(), ::core::mem::transmute_copy(outputsubtype), &mut result__).from_abi(result__)
@@ -6294,7 +6186,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<Frames::MediaFrameSource>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateFrameReaderWithSubtypeAndSizeAsync)(::windows_core::Interface::as_raw(this), inputsource.into_param().abi(), ::core::mem::transmute_copy(outputsubtype), outputsize, &mut result__).from_abi(result__)
@@ -6304,14 +6196,14 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<MediaCapture, MediaCaptureDeviceExclusiveControlStatusChangedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture6>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CaptureDeviceExclusiveControlStatusChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveCaptureDeviceExclusiveControlStatusChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture6>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture6>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveCaptureDeviceExclusiveControlStatusChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Capture_Frames\"`"]
@@ -6320,7 +6212,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<Frames::MediaFrameSource>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture6>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateMultiSourceFrameReaderAsync)(::windows_core::Interface::as_raw(this), inputsources.into_param().abi(), &mut result__).from_abi(result__)
@@ -6332,7 +6224,7 @@ impl MediaCapture {
     where
         P0: ::windows_core::IntoParam<super::super::UI::WindowManagement::DisplayRegion>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCapture7>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCapture7>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateRelativePanelWatcher)(::windows_core::Interface::as_raw(this), capturemode, displayregion.into_param().abi(), &mut result__).from_abi(result__)
@@ -6369,7 +6261,7 @@ impl MediaCapture {
         })
     }
     pub fn StartPreviewAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureVideoPreview>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureVideoPreview>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartPreviewAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6382,7 +6274,7 @@ impl MediaCapture {
         P0: ::windows_core::IntoParam<super::MediaProperties::MediaEncodingProfile>,
         P1: ::windows_core::IntoParam<super::IMediaExtension>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureVideoPreview>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureVideoPreview>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartPreviewToCustomSinkAsync)(::windows_core::Interface::as_raw(this), encodingprofile.into_param().abi(), custommediasink.into_param().abi(), &mut result__).from_abi(result__)
@@ -6395,14 +6287,14 @@ impl MediaCapture {
         P0: ::windows_core::IntoParam<super::MediaProperties::MediaEncodingProfile>,
         P1: ::windows_core::IntoParam<super::super::Foundation::Collections::IPropertySet>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureVideoPreview>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureVideoPreview>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartPreviewToCustomSinkIdAsync)(::windows_core::Interface::as_raw(this), encodingprofile.into_param().abi(), ::core::mem::transmute_copy(customsinkactivationid), customsinksettings.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn StopPreviewAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureVideoPreview>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureVideoPreview>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StopPreviewAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6419,9 +6311,7 @@ impl ::windows_core::RuntimeType for MediaCapture {
 }
 unsafe impl ::windows_core::Interface for MediaCapture {
     type Vtable = IMediaCapture_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaCapture {
-    const IID: ::windows_core::GUID = <IMediaCapture as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaCapture as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaCapture {
     const NAME: &'static str = "Windows.Media.Capture.MediaCapture";
@@ -6452,9 +6342,7 @@ impl ::windows_core::RuntimeType for MediaCaptureDeviceExclusiveControlStatusCha
 }
 unsafe impl ::windows_core::Interface for MediaCaptureDeviceExclusiveControlStatusChangedEventArgs {
     type Vtable = IMediaCaptureDeviceExclusiveControlStatusChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaCaptureDeviceExclusiveControlStatusChangedEventArgs {
-    const IID: ::windows_core::GUID = <IMediaCaptureDeviceExclusiveControlStatusChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaCaptureDeviceExclusiveControlStatusChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaCaptureDeviceExclusiveControlStatusChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.MediaCaptureDeviceExclusiveControlStatusChangedEventArgs";
@@ -6486,9 +6374,7 @@ impl ::windows_core::RuntimeType for MediaCaptureFailedEventArgs {
 }
 unsafe impl ::windows_core::Interface for MediaCaptureFailedEventArgs {
     type Vtable = IMediaCaptureFailedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaCaptureFailedEventArgs {
-    const IID: ::windows_core::GUID = <IMediaCaptureFailedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaCaptureFailedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaCaptureFailedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.MediaCaptureFailedEventArgs";
@@ -6513,9 +6399,7 @@ impl ::windows_core::RuntimeType for MediaCaptureFocusChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for MediaCaptureFocusChangedEventArgs {
     type Vtable = IMediaCaptureFocusChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaCaptureFocusChangedEventArgs {
-    const IID: ::windows_core::GUID = <IMediaCaptureFocusChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaCaptureFocusChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaCaptureFocusChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.MediaCaptureFocusChangedEventArgs";
@@ -6579,22 +6463,22 @@ impl MediaCaptureInitializationSettings {
         }
     }
     pub fn SetMediaCategory(&self, value: MediaCategory) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMediaCategory)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn MediaCategory(&self) -> ::windows_core::Result<MediaCategory> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MediaCategory)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAudioProcessing(&self, value: super::AudioProcessing) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAudioProcessing)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn AudioProcessing(&self) -> ::windows_core::Result<super::AudioProcessing> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AudioProcessing)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6606,13 +6490,13 @@ impl MediaCaptureInitializationSettings {
     where
         P0: ::windows_core::IntoParam<super::Core::IMediaSource>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAudioSource)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Core\"`"]
     #[cfg(feature = "Media_Core")]
     pub fn AudioSource(&self) -> ::windows_core::Result<super::Core::IMediaSource> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AudioSource)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6624,20 +6508,20 @@ impl MediaCaptureInitializationSettings {
     where
         P0: ::windows_core::IntoParam<super::Core::IMediaSource>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetVideoSource)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Core\"`"]
     #[cfg(feature = "Media_Core")]
     pub fn VideoSource(&self) -> ::windows_core::Result<super::Core::IMediaSource> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).VideoSource)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn VideoProfile(&self) -> ::windows_core::Result<MediaCaptureVideoProfile> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).VideoProfile)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6647,11 +6531,11 @@ impl MediaCaptureInitializationSettings {
     where
         P0: ::windows_core::IntoParam<MediaCaptureVideoProfile>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetVideoProfile)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn PreviewMediaDescription(&self) -> ::windows_core::Result<MediaCaptureVideoProfileMediaDescription> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PreviewMediaDescription)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6661,11 +6545,11 @@ impl MediaCaptureInitializationSettings {
     where
         P0: ::windows_core::IntoParam<MediaCaptureVideoProfileMediaDescription>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPreviewMediaDescription)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn RecordMediaDescription(&self) -> ::windows_core::Result<MediaCaptureVideoProfileMediaDescription> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RecordMediaDescription)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6675,11 +6559,11 @@ impl MediaCaptureInitializationSettings {
     where
         P0: ::windows_core::IntoParam<MediaCaptureVideoProfileMediaDescription>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetRecordMediaDescription)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn PhotoMediaDescription(&self) -> ::windows_core::Result<MediaCaptureVideoProfileMediaDescription> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PhotoMediaDescription)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6689,13 +6573,13 @@ impl MediaCaptureInitializationSettings {
     where
         P0: ::windows_core::IntoParam<MediaCaptureVideoProfileMediaDescription>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPhotoMediaDescription)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Capture_Frames\"`"]
     #[cfg(feature = "Media_Capture_Frames")]
     pub fn SourceGroup(&self) -> ::windows_core::Result<Frames::MediaFrameSourceGroup> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SourceGroup)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6707,46 +6591,46 @@ impl MediaCaptureInitializationSettings {
     where
         P0: ::windows_core::IntoParam<Frames::MediaFrameSourceGroup>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSourceGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn SharingMode(&self) -> ::windows_core::Result<MediaCaptureSharingMode> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SharingMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetSharingMode(&self, value: MediaCaptureSharingMode) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSharingMode)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn MemoryPreference(&self) -> ::windows_core::Result<MediaCaptureMemoryPreference> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MemoryPreference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetMemoryPreference(&self, value: MediaCaptureMemoryPreference) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMemoryPreference)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn AlwaysPlaySystemShutterSound(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings6>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AlwaysPlaySystemShutterSound)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAlwaysPlaySystemShutterSound(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings6>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings6>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAlwaysPlaySystemShutterSound)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Security_Credentials\"`"]
     #[cfg(feature = "Security_Credentials")]
     pub fn DeviceUriPasswordCredential(&self) -> ::windows_core::Result<super::super::Security::Credentials::PasswordCredential> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings7>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings7>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DeviceUriPasswordCredential)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6758,11 +6642,11 @@ impl MediaCaptureInitializationSettings {
     where
         P0: ::windows_core::IntoParam<super::super::Security::Credentials::PasswordCredential>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings7>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings7>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDeviceUriPasswordCredential)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn DeviceUri(&self) -> ::windows_core::Result<super::super::Foundation::Uri> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings7>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings7>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DeviceUri)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6772,7 +6656,7 @@ impl MediaCaptureInitializationSettings {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureInitializationSettings7>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureInitializationSettings7>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDeviceUri)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
@@ -6781,9 +6665,7 @@ impl ::windows_core::RuntimeType for MediaCaptureInitializationSettings {
 }
 unsafe impl ::windows_core::Interface for MediaCaptureInitializationSettings {
     type Vtable = IMediaCaptureInitializationSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaCaptureInitializationSettings {
-    const IID: ::windows_core::GUID = <IMediaCaptureInitializationSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaCaptureInitializationSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaCaptureInitializationSettings {
     const NAME: &'static str = "Windows.Media.Capture.MediaCaptureInitializationSettings";
@@ -6796,7 +6678,7 @@ unsafe impl ::core::marker::Sync for MediaCaptureInitializationSettings {}
 pub struct MediaCapturePauseResult(::windows_core::IUnknown);
 impl MediaCapturePauseResult {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn LastFrame(&self) -> ::windows_core::Result<super::VideoFrame> {
@@ -6819,9 +6701,7 @@ impl ::windows_core::RuntimeType for MediaCapturePauseResult {
 }
 unsafe impl ::windows_core::Interface for MediaCapturePauseResult {
     type Vtable = IMediaCapturePauseResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaCapturePauseResult {
-    const IID: ::windows_core::GUID = <IMediaCapturePauseResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaCapturePauseResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaCapturePauseResult {
     const NAME: &'static str = "Windows.Media.Capture.MediaCapturePauseResult";
@@ -6833,7 +6713,7 @@ impl ::windows_core::RuntimeName for MediaCapturePauseResult {
 pub struct MediaCaptureRelativePanelWatcher(::windows_core::IUnknown);
 impl MediaCaptureRelativePanelWatcher {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Devices_Enumeration\"`"]
@@ -6873,9 +6753,7 @@ impl ::windows_core::RuntimeType for MediaCaptureRelativePanelWatcher {
 }
 unsafe impl ::windows_core::Interface for MediaCaptureRelativePanelWatcher {
     type Vtable = IMediaCaptureRelativePanelWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaCaptureRelativePanelWatcher {
-    const IID: ::windows_core::GUID = <IMediaCaptureRelativePanelWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaCaptureRelativePanelWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaCaptureRelativePanelWatcher {
     const NAME: &'static str = "Windows.Media.Capture.MediaCaptureRelativePanelWatcher";
@@ -6924,56 +6802,56 @@ impl MediaCaptureSettings {
         }
     }
     pub fn ConcurrentRecordAndPhotoSupported(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConcurrentRecordAndPhotoSupported)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConcurrentRecordAndPhotoSequenceSupported(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConcurrentRecordAndPhotoSequenceSupported)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CameraSoundRequiredForRegion(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CameraSoundRequiredForRegion)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Horizontal35mmEquivalentFocalLength(&self) -> ::windows_core::Result<super::super::Foundation::IReference<u32>> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Horizontal35mmEquivalentFocalLength)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PitchOffsetDegrees(&self) -> ::windows_core::Result<super::super::Foundation::IReference<i32>> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PitchOffsetDegrees)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Vertical35mmEquivalentFocalLength(&self) -> ::windows_core::Result<super::super::Foundation::IReference<u32>> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Vertical35mmEquivalentFocalLength)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn MediaCategory(&self) -> ::windows_core::Result<MediaCategory> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MediaCategory)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AudioProcessing(&self) -> ::windows_core::Result<super::AudioProcessing> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AudioProcessing)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6982,7 +6860,7 @@ impl MediaCaptureSettings {
     #[doc = "Required features: `\"Graphics_DirectX_Direct3D11\"`"]
     #[cfg(feature = "Graphics_DirectX_Direct3D11")]
     pub fn Direct3D11Device(&self) -> ::windows_core::Result<super::super::Graphics::DirectX::Direct3D11::IDirect3DDevice> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureSettings3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureSettings3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Direct3D11Device)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -6994,9 +6872,7 @@ impl ::windows_core::RuntimeType for MediaCaptureSettings {
 }
 unsafe impl ::windows_core::Interface for MediaCaptureSettings {
     type Vtable = IMediaCaptureSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaCaptureSettings {
-    const IID: ::windows_core::GUID = <IMediaCaptureSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaCaptureSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaCaptureSettings {
     const NAME: &'static str = "Windows.Media.Capture.MediaCaptureSettings";
@@ -7007,7 +6883,7 @@ impl ::windows_core::RuntimeName for MediaCaptureSettings {
 pub struct MediaCaptureStopResult(::windows_core::IUnknown);
 impl MediaCaptureStopResult {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn LastFrame(&self) -> ::windows_core::Result<super::VideoFrame> {
@@ -7030,9 +6906,7 @@ impl ::windows_core::RuntimeType for MediaCaptureStopResult {
 }
 unsafe impl ::windows_core::Interface for MediaCaptureStopResult {
     type Vtable = IMediaCaptureStopResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaCaptureStopResult {
-    const IID: ::windows_core::GUID = <IMediaCaptureStopResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaCaptureStopResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaCaptureStopResult {
     const NAME: &'static str = "Windows.Media.Capture.MediaCaptureStopResult";
@@ -7096,7 +6970,7 @@ impl MediaCaptureVideoProfile {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Capture_Frames\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Capture_Frames"))]
     pub fn FrameSourceInfos(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<Frames::MediaFrameSourceInfo>> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureVideoProfile2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureVideoProfile2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FrameSourceInfos)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -7105,7 +6979,7 @@ impl MediaCaptureVideoProfile {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Properties(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IMapView<::windows_core::GUID, ::windows_core::IInspectable>> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureVideoProfile2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureVideoProfile2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Properties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -7117,9 +6991,7 @@ impl ::windows_core::RuntimeType for MediaCaptureVideoProfile {
 }
 unsafe impl ::windows_core::Interface for MediaCaptureVideoProfile {
     type Vtable = IMediaCaptureVideoProfile_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaCaptureVideoProfile {
-    const IID: ::windows_core::GUID = <IMediaCaptureVideoProfile as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaCaptureVideoProfile as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaCaptureVideoProfile {
     const NAME: &'static str = "Windows.Media.Capture.MediaCaptureVideoProfile";
@@ -7171,7 +7043,7 @@ impl MediaCaptureVideoProfileMediaDescription {
         }
     }
     pub fn Subtype(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureVideoProfileMediaDescription2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureVideoProfileMediaDescription2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Subtype)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -7180,7 +7052,7 @@ impl MediaCaptureVideoProfileMediaDescription {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Properties(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IMapView<::windows_core::GUID, ::windows_core::IInspectable>> {
-        let this = &::windows_core::ComInterface::cast::<IMediaCaptureVideoProfileMediaDescription2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaCaptureVideoProfileMediaDescription2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Properties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -7192,9 +7064,7 @@ impl ::windows_core::RuntimeType for MediaCaptureVideoProfileMediaDescription {
 }
 unsafe impl ::windows_core::Interface for MediaCaptureVideoProfileMediaDescription {
     type Vtable = IMediaCaptureVideoProfileMediaDescription_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaCaptureVideoProfileMediaDescription {
-    const IID: ::windows_core::GUID = <IMediaCaptureVideoProfileMediaDescription as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaCaptureVideoProfileMediaDescription as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaCaptureVideoProfileMediaDescription {
     const NAME: &'static str = "Windows.Media.Capture.MediaCaptureVideoProfileMediaDescription";
@@ -7226,9 +7096,7 @@ impl ::windows_core::RuntimeType for OptionalReferencePhotoCapturedEventArgs {
 }
 unsafe impl ::windows_core::Interface for OptionalReferencePhotoCapturedEventArgs {
     type Vtable = IOptionalReferencePhotoCapturedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OptionalReferencePhotoCapturedEventArgs {
-    const IID: ::windows_core::GUID = <IOptionalReferencePhotoCapturedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOptionalReferencePhotoCapturedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OptionalReferencePhotoCapturedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.OptionalReferencePhotoCapturedEventArgs";
@@ -7267,9 +7135,7 @@ impl ::windows_core::RuntimeType for PhotoCapturedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PhotoCapturedEventArgs {
     type Vtable = IPhotoCapturedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoCapturedEventArgs {
-    const IID: ::windows_core::GUID = <IPhotoCapturedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoCapturedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoCapturedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.PhotoCapturedEventArgs";
@@ -7301,9 +7167,7 @@ impl ::windows_core::RuntimeType for PhotoConfirmationCapturedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PhotoConfirmationCapturedEventArgs {
     type Vtable = IPhotoConfirmationCapturedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhotoConfirmationCapturedEventArgs {
-    const IID: ::windows_core::GUID = <IPhotoConfirmationCapturedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhotoConfirmationCapturedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhotoConfirmationCapturedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.PhotoConfirmationCapturedEventArgs";
@@ -7378,9 +7242,7 @@ impl ::windows_core::RuntimeType for ScreenCapture {
 }
 unsafe impl ::windows_core::Interface for ScreenCapture {
     type Vtable = IScreenCapture_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ScreenCapture {
-    const IID: ::windows_core::GUID = <IScreenCapture as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IScreenCapture as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ScreenCapture {
     const NAME: &'static str = "Windows.Media.Capture.ScreenCapture";
@@ -7412,9 +7274,7 @@ impl ::windows_core::RuntimeType for SourceSuspensionChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for SourceSuspensionChangedEventArgs {
     type Vtable = ISourceSuspensionChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SourceSuspensionChangedEventArgs {
-    const IID: ::windows_core::GUID = <ISourceSuspensionChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISourceSuspensionChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SourceSuspensionChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.SourceSuspensionChangedEventArgs";
@@ -7450,9 +7310,7 @@ impl ::windows_core::RuntimeType for VideoStreamConfiguration {
 }
 unsafe impl ::windows_core::Interface for VideoStreamConfiguration {
     type Vtable = IVideoStreamConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VideoStreamConfiguration {
-    const IID: ::windows_core::GUID = <IVideoStreamConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVideoStreamConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VideoStreamConfiguration {
     const NAME: &'static str = "Windows.Media.Capture.VideoStreamConfiguration";
@@ -8407,7 +8265,7 @@ impl<F: FnMut(::core::option::Option<&MediaCapture>, ::core::option::Option<&Med
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <MediaCaptureFailedEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <MediaCaptureFailedEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -8471,7 +8329,7 @@ impl<F: FnMut(::core::option::Option<&MediaCapture>) -> ::windows_core::Result<(
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <RecordLimitationExceededEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <RecordLimitationExceededEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

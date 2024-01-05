@@ -137,7 +137,7 @@ pub struct IRfcommServiceProviderStatics_Vtbl {
 pub struct RfcommDeviceService(::windows_core::IUnknown);
 impl RfcommDeviceService {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Networking\"`"]
@@ -200,7 +200,7 @@ impl RfcommDeviceService {
         }
     }
     pub fn Device(&self) -> ::windows_core::Result<super::BluetoothDevice> {
-        let this = &::windows_core::ComInterface::cast::<IRfcommDeviceService2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRfcommDeviceService2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Device)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -209,7 +209,7 @@ impl RfcommDeviceService {
     #[doc = "Required features: `\"Devices_Enumeration\"`"]
     #[cfg(feature = "Devices_Enumeration")]
     pub fn DeviceAccessInformation(&self) -> ::windows_core::Result<super::super::Enumeration::DeviceAccessInformation> {
-        let this = &::windows_core::ComInterface::cast::<IRfcommDeviceService3>(self)?;
+        let this = &::windows_core::Interface::cast::<IRfcommDeviceService3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DeviceAccessInformation)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -218,7 +218,7 @@ impl RfcommDeviceService {
     #[doc = "Required features: `\"Devices_Enumeration\"`"]
     #[cfg(feature = "Devices_Enumeration")]
     pub fn RequestAccessAsync(&self) -> ::windows_core::Result<super::super::super::Foundation::IAsyncOperation<super::super::Enumeration::DeviceAccessStatus>> {
-        let this = &::windows_core::ComInterface::cast::<IRfcommDeviceService3>(self)?;
+        let this = &::windows_core::Interface::cast::<IRfcommDeviceService3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestAccessAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -293,9 +293,7 @@ impl ::windows_core::RuntimeType for RfcommDeviceService {
 }
 unsafe impl ::windows_core::Interface for RfcommDeviceService {
     type Vtable = IRfcommDeviceService_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RfcommDeviceService {
-    const IID: ::windows_core::GUID = <IRfcommDeviceService as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRfcommDeviceService as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RfcommDeviceService {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService";
@@ -330,9 +328,7 @@ impl ::windows_core::RuntimeType for RfcommDeviceServicesResult {
 }
 unsafe impl ::windows_core::Interface for RfcommDeviceServicesResult {
     type Vtable = IRfcommDeviceServicesResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RfcommDeviceServicesResult {
-    const IID: ::windows_core::GUID = <IRfcommDeviceServicesResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRfcommDeviceServicesResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RfcommDeviceServicesResult {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceServicesResult";
@@ -424,9 +420,7 @@ impl ::windows_core::RuntimeType for RfcommServiceId {
 }
 unsafe impl ::windows_core::Interface for RfcommServiceId {
     type Vtable = IRfcommServiceId_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RfcommServiceId {
-    const IID: ::windows_core::GUID = <IRfcommServiceId as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRfcommServiceId as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RfcommServiceId {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId";
@@ -473,7 +467,7 @@ impl RfcommServiceProvider {
     where
         P0: ::windows_core::IntoParam<super::super::super::Networking::Sockets::StreamSocketListener>,
     {
-        let this = &::windows_core::ComInterface::cast::<IRfcommServiceProvider2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRfcommServiceProvider2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).StartAdvertisingWithRadioDiscoverability)(::windows_core::Interface::as_raw(this), listener.into_param().abi(), radiodiscoverable).ok() }
     }
     pub fn CreateAsync<P0>(serviceid: P0) -> ::windows_core::Result<super::super::super::Foundation::IAsyncOperation<RfcommServiceProvider>>
@@ -496,9 +490,7 @@ impl ::windows_core::RuntimeType for RfcommServiceProvider {
 }
 unsafe impl ::windows_core::Interface for RfcommServiceProvider {
     type Vtable = IRfcommServiceProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RfcommServiceProvider {
-    const IID: ::windows_core::GUID = <IRfcommServiceProvider as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRfcommServiceProvider as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RfcommServiceProvider {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider";

@@ -404,9 +404,7 @@ impl ::windows_core::RuntimeType for IppAttributeError {
 }
 unsafe impl ::windows_core::Interface for IppAttributeError {
     type Vtable = IIppAttributeError_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IppAttributeError {
-    const IID: ::windows_core::GUID = <IIppAttributeError as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIppAttributeError as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IppAttributeError {
     const NAME: &'static str = "Windows.Devices.Printers.IppAttributeError";
@@ -947,9 +945,7 @@ impl ::windows_core::RuntimeType for IppAttributeValue {
 }
 unsafe impl ::windows_core::Interface for IppAttributeValue {
     type Vtable = IIppAttributeValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IppAttributeValue {
-    const IID: ::windows_core::GUID = <IIppAttributeValue as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIppAttributeValue as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IppAttributeValue {
     const NAME: &'static str = "Windows.Devices.Printers.IppAttributeValue";
@@ -992,9 +988,7 @@ impl ::windows_core::RuntimeType for IppIntegerRange {
 }
 unsafe impl ::windows_core::Interface for IppIntegerRange {
     type Vtable = IIppIntegerRange_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IppIntegerRange {
-    const IID: ::windows_core::GUID = <IIppIntegerRange as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIppIntegerRange as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IppIntegerRange {
     const NAME: &'static str = "Windows.Devices.Printers.IppIntegerRange";
@@ -1069,28 +1063,28 @@ impl IppPrintDevice {
         }
     }
     pub fn GetMaxSupportedPdfSize(&self) -> ::windows_core::Result<u64> {
-        let this = &::windows_core::ComInterface::cast::<IIppPrintDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IIppPrintDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetMaxSupportedPdfSize)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetMaxSupportedPdfVersion(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IIppPrintDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IIppPrintDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetMaxSupportedPdfVersion)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsPdlPassthroughSupported(&self, pdlcontenttype: &::windows_core::HSTRING) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IIppPrintDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IIppPrintDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsPdlPassthroughSupported)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(pdlcontenttype), &mut result__).from_abi(result__)
         }
     }
     pub fn GetPdlPassthroughProvider(&self) -> ::windows_core::Result<PdlPassthroughProvider> {
-        let this = &::windows_core::ComInterface::cast::<IIppPrintDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IIppPrintDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetPdlPassthroughProvider)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1131,9 +1125,7 @@ impl ::windows_core::RuntimeType for IppPrintDevice {
 }
 unsafe impl ::windows_core::Interface for IppPrintDevice {
     type Vtable = IIppPrintDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IppPrintDevice {
-    const IID: ::windows_core::GUID = <IIppPrintDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIppPrintDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IppPrintDevice {
     const NAME: &'static str = "Windows.Devices.Printers.IppPrintDevice";
@@ -1183,9 +1175,7 @@ impl ::windows_core::RuntimeType for IppResolution {
 }
 unsafe impl ::windows_core::Interface for IppResolution {
     type Vtable = IIppResolution_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IppResolution {
-    const IID: ::windows_core::GUID = <IIppResolution as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIppResolution as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IppResolution {
     const NAME: &'static str = "Windows.Devices.Printers.IppResolution";
@@ -1219,9 +1209,7 @@ impl ::windows_core::RuntimeType for IppSetAttributesResult {
 }
 unsafe impl ::windows_core::Interface for IppSetAttributesResult {
     type Vtable = IIppSetAttributesResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IppSetAttributesResult {
-    const IID: ::windows_core::GUID = <IIppSetAttributesResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIppSetAttributesResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IppSetAttributesResult {
     const NAME: &'static str = "Windows.Devices.Printers.IppSetAttributesResult";
@@ -1264,9 +1252,7 @@ impl ::windows_core::RuntimeType for IppTextWithLanguage {
 }
 unsafe impl ::windows_core::Interface for IppTextWithLanguage {
     type Vtable = IIppTextWithLanguage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IppTextWithLanguage {
-    const IID: ::windows_core::GUID = <IIppTextWithLanguage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIppTextWithLanguage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IppTextWithLanguage {
     const NAME: &'static str = "Windows.Devices.Printers.IppTextWithLanguage";
@@ -1313,9 +1299,7 @@ impl ::windows_core::RuntimeType for PageConfigurationSettings {
 }
 unsafe impl ::windows_core::Interface for PageConfigurationSettings {
     type Vtable = IPageConfigurationSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PageConfigurationSettings {
-    const IID: ::windows_core::GUID = <IPageConfigurationSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPageConfigurationSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PageConfigurationSettings {
     const NAME: &'static str = "Windows.Devices.Printers.PageConfigurationSettings";
@@ -1368,9 +1352,7 @@ impl ::windows_core::RuntimeType for PdlPassthroughProvider {
 }
 unsafe impl ::windows_core::Interface for PdlPassthroughProvider {
     type Vtable = IPdlPassthroughProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PdlPassthroughProvider {
-    const IID: ::windows_core::GUID = <IPdlPassthroughProvider as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPdlPassthroughProvider as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PdlPassthroughProvider {
     const NAME: &'static str = "Windows.Devices.Printers.PdlPassthroughProvider";
@@ -1383,7 +1365,7 @@ unsafe impl ::core::marker::Sync for PdlPassthroughProvider {}
 pub struct PdlPassthroughTarget(::windows_core::IUnknown);
 impl PdlPassthroughTarget {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn PrintJobId(&self) -> ::windows_core::Result<i32> {
@@ -1412,9 +1394,7 @@ impl ::windows_core::RuntimeType for PdlPassthroughTarget {
 }
 unsafe impl ::windows_core::Interface for PdlPassthroughTarget {
     type Vtable = IPdlPassthroughTarget_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PdlPassthroughTarget {
-    const IID: ::windows_core::GUID = <IPdlPassthroughTarget as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPdlPassthroughTarget as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PdlPassthroughTarget {
     const NAME: &'static str = "Windows.Devices.Printers.PdlPassthroughTarget";
@@ -1457,9 +1437,7 @@ impl ::windows_core::RuntimeType for Print3DDevice {
 }
 unsafe impl ::windows_core::Interface for Print3DDevice {
     type Vtable = IPrint3DDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Print3DDevice {
-    const IID: ::windows_core::GUID = <IPrint3DDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrint3DDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Print3DDevice {
     const NAME: &'static str = "Windows.Devices.Printers.Print3DDevice";
@@ -1510,9 +1488,7 @@ impl ::windows_core::RuntimeType for PrintSchema {
 }
 unsafe impl ::windows_core::Interface for PrintSchema {
     type Vtable = IPrintSchema_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintSchema {
-    const IID: ::windows_core::GUID = <IPrintSchema as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintSchema as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintSchema {
     const NAME: &'static str = "Windows.Devices.Printers.PrintSchema";

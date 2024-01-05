@@ -96,7 +96,7 @@ impl ContactPickerUI {
     where
         P0: ::windows_core::IntoParam<super::Contact>,
     {
-        let this = &::windows_core::ComInterface::cast::<IContactPickerUI2>(self)?;
+        let this = &::windows_core::Interface::cast::<IContactPickerUI2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AddContact)(::windows_core::Interface::as_raw(this), contact.into_param().abi(), &mut result__).from_abi(result__)
@@ -105,7 +105,7 @@ impl ContactPickerUI {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn DesiredFieldsWithContactFieldType(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVector<super::ContactFieldType>> {
-        let this = &::windows_core::ComInterface::cast::<IContactPickerUI2>(self)?;
+        let this = &::windows_core::Interface::cast::<IContactPickerUI2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DesiredFieldsWithContactFieldType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -117,9 +117,7 @@ impl ::windows_core::RuntimeType for ContactPickerUI {
 }
 unsafe impl ::windows_core::Interface for ContactPickerUI {
     type Vtable = IContactPickerUI_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactPickerUI {
-    const IID: ::windows_core::GUID = <IContactPickerUI as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactPickerUI as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactPickerUI {
     const NAME: &'static str = "Windows.ApplicationModel.Contacts.Provider.ContactPickerUI";
@@ -142,9 +140,7 @@ impl ::windows_core::RuntimeType for ContactRemovedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ContactRemovedEventArgs {
     type Vtable = IContactRemovedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactRemovedEventArgs {
-    const IID: ::windows_core::GUID = <IContactRemovedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactRemovedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactRemovedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Contacts.Provider.ContactRemovedEventArgs";

@@ -79,9 +79,7 @@ impl ::windows_core::RuntimeType for PaymentAppCanMakePaymentTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for PaymentAppCanMakePaymentTriggerDetails {
     type Vtable = IPaymentAppCanMakePaymentTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentAppCanMakePaymentTriggerDetails {
-    const IID: ::windows_core::GUID = <IPaymentAppCanMakePaymentTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentAppCanMakePaymentTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentAppCanMakePaymentTriggerDetails {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.Provider.PaymentAppCanMakePaymentTriggerDetails";
@@ -129,9 +127,7 @@ impl ::windows_core::RuntimeType for PaymentAppManager {
 }
 unsafe impl ::windows_core::Interface for PaymentAppManager {
     type Vtable = IPaymentAppManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentAppManager {
-    const IID: ::windows_core::GUID = <IPaymentAppManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentAppManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentAppManager {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.Provider.PaymentAppManager";
@@ -234,9 +230,7 @@ impl ::windows_core::RuntimeType for PaymentTransaction {
 }
 unsafe impl ::windows_core::Interface for PaymentTransaction {
     type Vtable = IPaymentTransaction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentTransaction {
-    const IID: ::windows_core::GUID = <IPaymentTransaction as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentTransaction as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentTransaction {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.Provider.PaymentTransaction";
@@ -261,9 +255,7 @@ impl ::windows_core::RuntimeType for PaymentTransactionAcceptResult {
 }
 unsafe impl ::windows_core::Interface for PaymentTransactionAcceptResult {
     type Vtable = IPaymentTransactionAcceptResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentTransactionAcceptResult {
-    const IID: ::windows_core::GUID = <IPaymentTransactionAcceptResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentTransactionAcceptResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentTransactionAcceptResult {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.Provider.PaymentTransactionAcceptResult";

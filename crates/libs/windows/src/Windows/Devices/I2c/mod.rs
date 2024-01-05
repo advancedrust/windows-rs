@@ -145,9 +145,7 @@ impl ::windows_core::RuntimeType for I2cConnectionSettings {
 }
 unsafe impl ::windows_core::Interface for I2cConnectionSettings {
     type Vtable = II2cConnectionSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for I2cConnectionSettings {
-    const IID: ::windows_core::GUID = <II2cConnectionSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <II2cConnectionSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for I2cConnectionSettings {
     const NAME: &'static str = "Windows.Devices.I2c.I2cConnectionSettings";
@@ -197,9 +195,7 @@ impl ::windows_core::RuntimeType for I2cController {
 }
 unsafe impl ::windows_core::Interface for I2cController {
     type Vtable = II2cController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for I2cController {
-    const IID: ::windows_core::GUID = <II2cController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <II2cController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for I2cController {
     const NAME: &'static str = "Windows.Devices.I2c.I2cController";
@@ -212,7 +208,7 @@ unsafe impl ::core::marker::Sync for I2cController {}
 pub struct I2cDevice(::windows_core::IUnknown);
 impl I2cDevice {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn DeviceId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -294,9 +290,7 @@ impl ::windows_core::RuntimeType for I2cDevice {
 }
 unsafe impl ::windows_core::Interface for I2cDevice {
     type Vtable = II2cDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for I2cDevice {
-    const IID: ::windows_core::GUID = <II2cDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <II2cDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for I2cDevice {
     const NAME: &'static str = "Windows.Devices.I2c.I2cDevice";

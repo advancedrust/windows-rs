@@ -393,97 +393,97 @@ impl AppInstallItem {
         unsafe { (::windows_core::Interface::vtable(this).RemoveStatusChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn CancelWithTelemetry(&self, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).CancelWithTelemetry)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(correlationvector)).ok() }
     }
     pub fn PauseWithTelemetry(&self, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).PauseWithTelemetry)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(correlationvector)).ok() }
     }
     pub fn RestartWithTelemetry(&self, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RestartWithTelemetry)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(correlationvector)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Children(&self) -> ::windows_core::Result<super::super::super::super::Foundation::Collections::IVectorView<AppInstallItem>> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Children)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ItemOperationsMightAffectOtherItems(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ItemOperationsMightAffectOtherItems)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn LaunchAfterInstall(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LaunchAfterInstall)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetLaunchAfterInstall(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetLaunchAfterInstall)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn PinToDesktopAfterInstall(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PinToDesktopAfterInstall)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetPinToDesktopAfterInstall(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPinToDesktopAfterInstall)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn PinToStartAfterInstall(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PinToStartAfterInstall)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetPinToStartAfterInstall(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPinToStartAfterInstall)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn PinToTaskbarAfterInstall(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PinToTaskbarAfterInstall)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetPinToTaskbarAfterInstall(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPinToTaskbarAfterInstall)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CompletedInstallToastNotificationMode(&self) -> ::windows_core::Result<AppInstallationToastNotificationMode> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CompletedInstallToastNotificationMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCompletedInstallToastNotificationMode(&self, value: AppInstallationToastNotificationMode) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCompletedInstallToastNotificationMode)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn InstallInProgressToastNotificationMode(&self) -> ::windows_core::Result<AppInstallationToastNotificationMode> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).InstallInProgressToastNotificationMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetInstallInProgressToastNotificationMode(&self, value: AppInstallationToastNotificationMode) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallItem5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallItem5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetInstallInProgressToastNotificationMode)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -492,9 +492,7 @@ impl ::windows_core::RuntimeType for AppInstallItem {
 }
 unsafe impl ::windows_core::Interface for AppInstallItem {
     type Vtable = IAppInstallItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppInstallItem {
-    const IID: ::windows_core::GUID = <IAppInstallItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppInstallItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppInstallItem {
     const NAME: &'static str = "Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallItem";
@@ -636,21 +634,21 @@ impl AppInstallManager {
         }
     }
     pub fn StartAppInstallWithTelemetryAsync(&self, productid: &::windows_core::HSTRING, skuid: &::windows_core::HSTRING, repair: bool, forceuseofnonremovablestorage: bool, catalogid: &::windows_core::HSTRING, bundleid: &::windows_core::HSTRING, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::super::Foundation::IAsyncOperation<AppInstallItem>> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartAppInstallWithTelemetryAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(skuid), repair, forceuseofnonremovablestorage, ::core::mem::transmute_copy(catalogid), ::core::mem::transmute_copy(bundleid), ::core::mem::transmute_copy(correlationvector), &mut result__).from_abi(result__)
         }
     }
     pub fn UpdateAppByPackageFamilyNameWithTelemetryAsync(&self, packagefamilyname: &::windows_core::HSTRING, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::super::Foundation::IAsyncOperation<AppInstallItem>> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UpdateAppByPackageFamilyNameWithTelemetryAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(packagefamilyname), ::core::mem::transmute_copy(correlationvector), &mut result__).from_abi(result__)
         }
     }
     pub fn SearchForUpdatesWithTelemetryAsync(&self, productid: &::windows_core::HSTRING, skuid: &::windows_core::HSTRING, catalogid: &::windows_core::HSTRING, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::super::Foundation::IAsyncOperation<AppInstallItem>> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SearchForUpdatesWithTelemetryAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(skuid), ::core::mem::transmute_copy(catalogid), ::core::mem::transmute_copy(correlationvector), &mut result__).from_abi(result__)
@@ -659,29 +657,29 @@ impl AppInstallManager {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn SearchForAllUpdatesWithTelemetryAsync(&self, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::super::Foundation::IAsyncOperation<super::super::super::super::Foundation::Collections::IVectorView<AppInstallItem>>> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SearchForAllUpdatesWithTelemetryAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(correlationvector), &mut result__).from_abi(result__)
         }
     }
     pub fn GetIsAppAllowedToInstallWithTelemetryAsync(&self, productid: &::windows_core::HSTRING, skuid: &::windows_core::HSTRING, catalogid: &::windows_core::HSTRING, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetIsAppAllowedToInstallWithTelemetryAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(skuid), ::core::mem::transmute_copy(catalogid), ::core::mem::transmute_copy(correlationvector), &mut result__).from_abi(result__)
         }
     }
     pub fn CancelWithTelemetry(&self, productid: &::windows_core::HSTRING, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).CancelWithTelemetry)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(correlationvector)).ok() }
     }
     pub fn PauseWithTelemetry(&self, productid: &::windows_core::HSTRING, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).PauseWithTelemetry)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(correlationvector)).ok() }
     }
     pub fn RestartWithTelemetry(&self, productid: &::windows_core::HSTRING, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RestartWithTelemetry)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(correlationvector)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Management_Deployment\"`"]
@@ -690,7 +688,7 @@ impl AppInstallManager {
     where
         P0: ::windows_core::IntoParam<super::super::super::super::Management::Deployment::PackageVolume>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartProductInstallAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(catalogid), ::core::mem::transmute_copy(flightid), ::core::mem::transmute_copy(clientid), repair, forceuseofnonremovablestorage, ::core::mem::transmute_copy(correlationvector), targetvolume.into_param().abi(), &mut result__).from_abi(result__)
@@ -703,7 +701,7 @@ impl AppInstallManager {
         P0: ::windows_core::IntoParam<super::super::super::super::System::User>,
         P1: ::windows_core::IntoParam<super::super::super::super::Management::Deployment::PackageVolume>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartProductInstallForUserAsync)(::windows_core::Interface::as_raw(this), user.into_param().abi(), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(catalogid), ::core::mem::transmute_copy(flightid), ::core::mem::transmute_copy(clientid), repair, forceuseofnonremovablestorage, ::core::mem::transmute_copy(correlationvector), targetvolume.into_param().abi(), &mut result__).from_abi(result__)
@@ -715,7 +713,7 @@ impl AppInstallManager {
     where
         P0: ::windows_core::IntoParam<super::super::super::super::System::User>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UpdateAppByPackageFamilyNameForUserAsync)(::windows_core::Interface::as_raw(this), user.into_param().abi(), ::core::mem::transmute_copy(packagefamilyname), ::core::mem::transmute_copy(correlationvector), &mut result__).from_abi(result__)
@@ -727,7 +725,7 @@ impl AppInstallManager {
     where
         P0: ::windows_core::IntoParam<super::super::super::super::System::User>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SearchForUpdatesForUserAsync)(::windows_core::Interface::as_raw(this), user.into_param().abi(), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(skuid), ::core::mem::transmute_copy(catalogid), ::core::mem::transmute_copy(correlationvector), &mut result__).from_abi(result__)
@@ -739,7 +737,7 @@ impl AppInstallManager {
     where
         P0: ::windows_core::IntoParam<super::super::super::super::System::User>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SearchForAllUpdatesForUserAsync)(::windows_core::Interface::as_raw(this), user.into_param().abi(), ::core::mem::transmute_copy(correlationvector), &mut result__).from_abi(result__)
@@ -751,7 +749,7 @@ impl AppInstallManager {
     where
         P0: ::windows_core::IntoParam<super::super::super::super::System::User>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetIsAppAllowedToInstallForUserAsync)(::windows_core::Interface::as_raw(this), user.into_param().abi(), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(skuid), ::core::mem::transmute_copy(catalogid), ::core::mem::transmute_copy(correlationvector), &mut result__).from_abi(result__)
@@ -763,18 +761,18 @@ impl AppInstallManager {
     where
         P0: ::windows_core::IntoParam<super::super::super::super::System::User>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetIsApplicableForUserAsync)(::windows_core::Interface::as_raw(this), user.into_param().abi(), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(skuid), &mut result__).from_abi(result__)
         }
     }
     pub fn MoveToFrontOfDownloadQueue(&self, productid: &::windows_core::HSTRING, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).MoveToFrontOfDownloadQueue)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(correlationvector)).ok() }
     }
     pub fn GetFreeUserEntitlementAsync(&self, storeid: &::windows_core::HSTRING, campaignid: &::windows_core::HSTRING, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::super::Foundation::IAsyncOperation<GetEntitlementResult>> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetFreeUserEntitlementAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(storeid), ::core::mem::transmute_copy(campaignid), ::core::mem::transmute_copy(correlationvector), &mut result__).from_abi(result__)
@@ -786,14 +784,14 @@ impl AppInstallManager {
     where
         P0: ::windows_core::IntoParam<super::super::super::super::System::User>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetFreeUserEntitlementForUserAsync)(::windows_core::Interface::as_raw(this), user.into_param().abi(), ::core::mem::transmute_copy(storeid), ::core::mem::transmute_copy(campaignid), ::core::mem::transmute_copy(correlationvector), &mut result__).from_abi(result__)
         }
     }
     pub fn GetFreeDeviceEntitlementAsync(&self, storeid: &::windows_core::HSTRING, campaignid: &::windows_core::HSTRING, correlationvector: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::super::Foundation::IAsyncOperation<GetEntitlementResult>> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetFreeDeviceEntitlementAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(storeid), ::core::mem::transmute_copy(campaignid), ::core::mem::transmute_copy(correlationvector), &mut result__).from_abi(result__)
@@ -802,7 +800,7 @@ impl AppInstallManager {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn AppInstallItemsWithGroupSupport(&self) -> ::windows_core::Result<super::super::super::super::Foundation::Collections::IVectorView<AppInstallItem>> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager5>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppInstallItemsWithGroupSupport)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -814,7 +812,7 @@ impl AppInstallManager {
     where
         P0: ::windows_core::IntoParam<AppUpdateOptions>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager6>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SearchForAllUpdatesWithUpdateOptionsAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(correlationvector), ::core::mem::transmute_copy(clientid), updateoptions.into_param().abi(), &mut result__).from_abi(result__)
@@ -827,7 +825,7 @@ impl AppInstallManager {
         P0: ::windows_core::IntoParam<super::super::super::super::System::User>,
         P1: ::windows_core::IntoParam<AppUpdateOptions>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager6>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SearchForAllUpdatesWithUpdateOptionsForUserAsync)(::windows_core::Interface::as_raw(this), user.into_param().abi(), ::core::mem::transmute_copy(correlationvector), ::core::mem::transmute_copy(clientid), updateoptions.into_param().abi(), &mut result__).from_abi(result__)
@@ -837,7 +835,7 @@ impl AppInstallManager {
     where
         P0: ::windows_core::IntoParam<AppUpdateOptions>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager6>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SearchForUpdatesWithUpdateOptionsAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(skuid), ::core::mem::transmute_copy(correlationvector), ::core::mem::transmute_copy(clientid), updateoptions.into_param().abi(), &mut result__).from_abi(result__)
@@ -850,7 +848,7 @@ impl AppInstallManager {
         P0: ::windows_core::IntoParam<super::super::super::super::System::User>,
         P1: ::windows_core::IntoParam<AppUpdateOptions>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager6>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SearchForUpdatesWithUpdateOptionsForUserAsync)(::windows_core::Interface::as_raw(this), user.into_param().abi(), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(skuid), ::core::mem::transmute_copy(correlationvector), ::core::mem::transmute_copy(clientid), updateoptions.into_param().abi(), &mut result__).from_abi(result__)
@@ -862,7 +860,7 @@ impl AppInstallManager {
     where
         P0: ::windows_core::IntoParam<AppInstallOptions>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager6>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartProductInstallWithOptionsAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(flightid), ::core::mem::transmute_copy(clientid), ::core::mem::transmute_copy(correlationvector), installoptions.into_param().abi(), &mut result__).from_abi(result__)
@@ -875,14 +873,14 @@ impl AppInstallManager {
         P0: ::windows_core::IntoParam<super::super::super::super::System::User>,
         P1: ::windows_core::IntoParam<AppInstallOptions>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager6>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartProductInstallWithOptionsForUserAsync)(::windows_core::Interface::as_raw(this), user.into_param().abi(), ::core::mem::transmute_copy(productid), ::core::mem::transmute_copy(flightid), ::core::mem::transmute_copy(clientid), ::core::mem::transmute_copy(correlationvector), installoptions.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn GetIsPackageIdentityAllowedToInstallAsync(&self, correlationvector: &::windows_core::HSTRING, packageidentityname: &::windows_core::HSTRING, publishercertificatename: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager6>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetIsPackageIdentityAllowedToInstallAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(correlationvector), ::core::mem::transmute_copy(packageidentityname), ::core::mem::transmute_copy(publishercertificatename), &mut result__).from_abi(result__)
@@ -894,14 +892,14 @@ impl AppInstallManager {
     where
         P0: ::windows_core::IntoParam<super::super::super::super::System::User>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager6>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetIsPackageIdentityAllowedToInstallForUserAsync)(::windows_core::Interface::as_raw(this), user.into_param().abi(), ::core::mem::transmute_copy(correlationvector), ::core::mem::transmute_copy(packageidentityname), ::core::mem::transmute_copy(publishercertificatename), &mut result__).from_abi(result__)
         }
     }
     pub fn CanInstallForAllUsers(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallManager7>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallManager7>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanInstallForAllUsers)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -913,9 +911,7 @@ impl ::windows_core::RuntimeType for AppInstallManager {
 }
 unsafe impl ::windows_core::Interface for AppInstallManager {
     type Vtable = IAppInstallManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppInstallManager {
-    const IID: ::windows_core::GUID = <IAppInstallManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppInstallManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppInstallManager {
     const NAME: &'static str = "Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManager";
@@ -940,9 +936,7 @@ impl ::windows_core::RuntimeType for AppInstallManagerItemEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppInstallManagerItemEventArgs {
     type Vtable = IAppInstallManagerItemEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppInstallManagerItemEventArgs {
-    const IID: ::windows_core::GUID = <IAppInstallManagerItemEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppInstallManagerItemEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppInstallManagerItemEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallManagerItemEventArgs";
@@ -1035,102 +1029,102 @@ impl AppInstallOptions {
         unsafe { (::windows_core::Interface::vtable(this).SetLaunchAfterInstall)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn PinToDesktopAfterInstall(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PinToDesktopAfterInstall)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetPinToDesktopAfterInstall(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPinToDesktopAfterInstall)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn PinToStartAfterInstall(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PinToStartAfterInstall)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetPinToStartAfterInstall(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPinToStartAfterInstall)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn PinToTaskbarAfterInstall(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PinToTaskbarAfterInstall)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetPinToTaskbarAfterInstall(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPinToTaskbarAfterInstall)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CompletedInstallToastNotificationMode(&self) -> ::windows_core::Result<AppInstallationToastNotificationMode> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CompletedInstallToastNotificationMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCompletedInstallToastNotificationMode(&self, value: AppInstallationToastNotificationMode) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCompletedInstallToastNotificationMode)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn InstallInProgressToastNotificationMode(&self) -> ::windows_core::Result<AppInstallationToastNotificationMode> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).InstallInProgressToastNotificationMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetInstallInProgressToastNotificationMode(&self, value: AppInstallationToastNotificationMode) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetInstallInProgressToastNotificationMode)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn InstallForAllUsers(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).InstallForAllUsers)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetInstallForAllUsers(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetInstallForAllUsers)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn StageButDoNotInstall(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StageButDoNotInstall)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetStageButDoNotInstall(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStageButDoNotInstall)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CampaignId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CampaignId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCampaignId(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCampaignId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn ExtendedCampaignId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ExtendedCampaignId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetExtendedCampaignId(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetExtendedCampaignId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
 }
@@ -1139,9 +1133,7 @@ impl ::windows_core::RuntimeType for AppInstallOptions {
 }
 unsafe impl ::windows_core::Interface for AppInstallOptions {
     type Vtable = IAppInstallOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppInstallOptions {
-    const IID: ::windows_core::GUID = <IAppInstallOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppInstallOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppInstallOptions {
     const NAME: &'static str = "Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallOptions";
@@ -1191,21 +1183,21 @@ impl AppInstallStatus {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn User(&self) -> ::windows_core::Result<super::super::super::super::System::User> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallStatus2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallStatus2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ReadyForLaunch(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallStatus2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallStatus2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReadyForLaunch)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsStaged(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppInstallStatus3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppInstallStatus3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsStaged)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1217,9 +1209,7 @@ impl ::windows_core::RuntimeType for AppInstallStatus {
 }
 unsafe impl ::windows_core::Interface for AppInstallStatus {
     type Vtable = IAppInstallStatus_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppInstallStatus {
-    const IID: ::windows_core::GUID = <IAppInstallStatus as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppInstallStatus as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppInstallStatus {
     const NAME: &'static str = "Windows.ApplicationModel.Store.Preview.InstallControl.AppInstallStatus";
@@ -1261,14 +1251,14 @@ impl AppUpdateOptions {
         unsafe { (::windows_core::Interface::vtable(this).SetAllowForcedAppRestart)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn AutomaticallyDownloadAndInstallUpdateIfFound(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppUpdateOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppUpdateOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AutomaticallyDownloadAndInstallUpdateIfFound)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAutomaticallyDownloadAndInstallUpdateIfFound(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppUpdateOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppUpdateOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAutomaticallyDownloadAndInstallUpdateIfFound)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -1277,9 +1267,7 @@ impl ::windows_core::RuntimeType for AppUpdateOptions {
 }
 unsafe impl ::windows_core::Interface for AppUpdateOptions {
     type Vtable = IAppUpdateOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppUpdateOptions {
-    const IID: ::windows_core::GUID = <IAppUpdateOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppUpdateOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppUpdateOptions {
     const NAME: &'static str = "Windows.ApplicationModel.Store.Preview.InstallControl.AppUpdateOptions";
@@ -1304,9 +1292,7 @@ impl ::windows_core::RuntimeType for GetEntitlementResult {
 }
 unsafe impl ::windows_core::Interface for GetEntitlementResult {
     type Vtable = IGetEntitlementResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GetEntitlementResult {
-    const IID: ::windows_core::GUID = <IGetEntitlementResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGetEntitlementResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GetEntitlementResult {
     const NAME: &'static str = "Windows.ApplicationModel.Store.Preview.InstallControl.GetEntitlementResult";

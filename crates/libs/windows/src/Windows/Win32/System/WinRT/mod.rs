@@ -52,7 +52,7 @@ pub unsafe fn CoDecodeProxy(dwclientpid: u32, ui64proxyaddress: u64) -> ::window
 #[inline]
 pub unsafe fn CreateControlInput<T>() -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("windows.ui.dll" "cdecl" fn CreateControlInput(riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -62,7 +62,7 @@ where
 pub unsafe fn CreateControlInputEx<P0, T>(pcorewindow: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("windows.ui.dll" "cdecl" fn CreateControlInputEx(pcorewindow : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -80,7 +80,7 @@ pub unsafe fn CreateDispatcherQueueController(options: DispatcherQueueOptions) -
 pub unsafe fn CreateRandomAccessStreamOnFile<P0, T>(filepath: P0, accessmode: u32) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("api-ms-win-shcore-stream-winrt-l1-1-0.dll" "system" fn CreateRandomAccessStreamOnFile(filepath : ::windows_core::PCWSTR, accessmode : u32, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -92,7 +92,7 @@ where
 pub unsafe fn CreateRandomAccessStreamOverStream<P0, T>(stream: P0, options: BSOS_OPTIONS) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<super::Com::IStream>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("api-ms-win-shcore-stream-winrt-l1-1-0.dll" "system" fn CreateRandomAccessStreamOverStream(stream : * mut::core::ffi::c_void, options : BSOS_OPTIONS, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -102,7 +102,7 @@ where
 pub unsafe fn CreateStreamOverRandomAccessStream<P0, T>(randomaccessstream: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("api-ms-win-shcore-stream-winrt-l1-1-0.dll" "system" fn CreateStreamOverRandomAccessStream(randomaccessstream : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -183,7 +183,7 @@ pub unsafe fn RoFailFastWithErrorContext(hrerror: ::windows_core::HRESULT) {
 #[inline]
 pub unsafe fn RoGetActivationFactory<T>(activatableclassid: &::windows_core::HSTRING) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("api-ms-win-core-winrt-l1-1-0.dll" "system" fn RoGetActivationFactory(activatableclassid : ::std::mem::MaybeUninit <::windows_core::HSTRING >, iid : *const ::windows_core::GUID, factory : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -472,7 +472,7 @@ impl IAccountsSettingsPaneInterop {
     pub unsafe fn GetForWindow<P0, T>(&self, appwindow: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetForWindow)(::windows_core::Interface::as_raw(self), appwindow.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -480,7 +480,7 @@ impl IAccountsSettingsPaneInterop {
     pub unsafe fn ShowManageAccountsForWindowAsync<P0, T>(&self, appwindow: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).ShowManageAccountsForWindowAsync)(::windows_core::Interface::as_raw(self), appwindow.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -488,7 +488,7 @@ impl IAccountsSettingsPaneInterop {
     pub unsafe fn ShowAddAccountForWindowAsync<P0, T>(&self, appwindow: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).ShowAddAccountForWindowAsync)(::windows_core::Interface::as_raw(self), appwindow.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -521,7 +521,7 @@ pub struct IActivationFactory_Vtbl {
 impl IAgileReference {
     pub unsafe fn Resolve<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Resolve)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -551,7 +551,7 @@ pub struct IApartmentShutdown_Vtbl {
 impl IAppServiceConnectionExtendedExecution {
     pub unsafe fn OpenForExtendedExecutionAsync<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).OpenForExtendedExecutionAsync)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -812,7 +812,7 @@ impl IDragDropManagerInterop {
     pub unsafe fn GetForWindow<P0, T>(&self, hwnd: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetForWindow)(::windows_core::Interface::as_raw(self), hwnd.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -830,7 +830,7 @@ impl IHolographicSpaceInterop {
     pub unsafe fn CreateForWindow<P0, T>(&self, window: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateForWindow)(::windows_core::Interface::as_raw(self), window.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -848,7 +848,7 @@ impl IInputPaneInterop {
     pub unsafe fn GetForWindow<P0, T>(&self, appwindow: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetForWindow)(::windows_core::Interface::as_raw(self), appwindow.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -963,7 +963,7 @@ impl IPlayToManagerInterop {
     pub unsafe fn GetForWindow<P0, T>(&self, appwindow: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetForWindow)(::windows_core::Interface::as_raw(self), appwindow.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -1022,7 +1022,7 @@ impl IShareWindowCommandSourceInterop {
     pub unsafe fn GetForWindow<P0, T>(&self, appwindow: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetForWindow)(::windows_core::Interface::as_raw(self), appwindow.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -1040,7 +1040,7 @@ impl ISpatialInteractionManagerInterop {
     pub unsafe fn GetForWindow<P0, T>(&self, window: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetForWindow)(::windows_core::Interface::as_raw(self), window.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -1058,7 +1058,7 @@ impl ISystemMediaTransportControlsInterop {
     pub unsafe fn GetForWindow<P0, T>(&self, appwindow: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetForWindow)(::windows_core::Interface::as_raw(self), appwindow.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -1076,7 +1076,7 @@ impl IUIViewSettingsInterop {
     pub unsafe fn GetForWindow<P0, T>(&self, hwnd: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetForWindow)(::windows_core::Interface::as_raw(self), hwnd.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -1094,7 +1094,7 @@ impl IUserActivityInterop {
     pub unsafe fn CreateSessionForWindow<P0, T>(&self, window: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateSessionForWindow)(::windows_core::Interface::as_raw(self), window.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -1112,7 +1112,7 @@ impl IUserActivityRequestManagerInterop {
     pub unsafe fn GetForWindow<P0, T>(&self, window: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetForWindow)(::windows_core::Interface::as_raw(self), window.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -1143,7 +1143,7 @@ impl IUserConsentVerifierInterop {
     pub unsafe fn RequestVerificationForWindowAsync<P0, T>(&self, appwindow: P0, message: &::windows_core::HSTRING) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).RequestVerificationForWindowAsync)(::windows_core::Interface::as_raw(self), appwindow.into_param().abi(), ::core::mem::transmute_copy(message), &T::IID, &mut result__).from_abi(result__)
@@ -1160,7 +1160,7 @@ pub struct IUserConsentVerifierInterop_Vtbl {
 impl IWeakReference {
     pub unsafe fn Resolve<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Resolve)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1193,7 +1193,7 @@ impl IWebAuthenticationCoreManagerInterop {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
         P1: ::windows_core::IntoParam<::windows_core::IInspectable>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).RequestTokenForWindowAsync)(::windows_core::Interface::as_raw(self), appwindow.into_param().abi(), request.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -1203,7 +1203,7 @@ impl IWebAuthenticationCoreManagerInterop {
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
         P1: ::windows_core::IntoParam<::windows_core::IInspectable>,
         P2: ::windows_core::IntoParam<::windows_core::IInspectable>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).RequestTokenWithWebAccountForWindowAsync)(::windows_core::Interface::as_raw(self), appwindow.into_param().abi(), request.into_param().abi(), webaccount.into_param().abi(), &T::IID, &mut result__).from_abi(result__)

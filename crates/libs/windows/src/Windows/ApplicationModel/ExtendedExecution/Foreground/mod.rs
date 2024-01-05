@@ -35,9 +35,7 @@ impl ::windows_core::RuntimeType for ExtendedExecutionForegroundRevokedEventArgs
 }
 unsafe impl ::windows_core::Interface for ExtendedExecutionForegroundRevokedEventArgs {
     type Vtable = IExtendedExecutionForegroundRevokedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ExtendedExecutionForegroundRevokedEventArgs {
-    const IID: ::windows_core::GUID = <IExtendedExecutionForegroundRevokedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IExtendedExecutionForegroundRevokedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ExtendedExecutionForegroundRevokedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundRevokedEventArgs";
@@ -57,7 +55,7 @@ impl ExtendedExecutionForegroundSession {
         SHARED.call(callback)
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Description(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -109,9 +107,7 @@ impl ::windows_core::RuntimeType for ExtendedExecutionForegroundSession {
 }
 unsafe impl ::windows_core::Interface for ExtendedExecutionForegroundSession {
     type Vtable = IExtendedExecutionForegroundSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ExtendedExecutionForegroundSession {
-    const IID: ::windows_core::GUID = <IExtendedExecutionForegroundSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IExtendedExecutionForegroundSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ExtendedExecutionForegroundSession {
     const NAME: &'static str = "Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundSession";

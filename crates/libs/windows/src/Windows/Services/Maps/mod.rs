@@ -469,9 +469,7 @@ impl ::windows_core::RuntimeType for EnhancedWaypoint {
 }
 unsafe impl ::windows_core::Interface for EnhancedWaypoint {
     type Vtable = IEnhancedWaypoint_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EnhancedWaypoint {
-    const IID: ::windows_core::GUID = <IEnhancedWaypoint as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEnhancedWaypoint as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EnhancedWaypoint {
     const NAME: &'static str = "Windows.Services.Maps.EnhancedWaypoint";
@@ -503,9 +501,7 @@ impl ::windows_core::RuntimeType for ManeuverWarning {
 }
 unsafe impl ::windows_core::Interface for ManeuverWarning {
     type Vtable = IManeuverWarning_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ManeuverWarning {
-    const IID: ::windows_core::GUID = <IManeuverWarning as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IManeuverWarning as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ManeuverWarning {
     const NAME: &'static str = "Windows.Services.Maps.ManeuverWarning";
@@ -623,7 +619,7 @@ impl MapAddress {
         }
     }
     pub fn FormattedAddress(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IMapAddress2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapAddress2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FormattedAddress)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -635,9 +631,7 @@ impl ::windows_core::RuntimeType for MapAddress {
 }
 unsafe impl ::windows_core::Interface for MapAddress {
     type Vtable = IMapAddress_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MapAddress {
-    const IID: ::windows_core::GUID = <IMapAddress as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMapAddress as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MapAddress {
     const NAME: &'static str = "Windows.Services.Maps.MapAddress";
@@ -685,9 +679,7 @@ impl ::windows_core::RuntimeType for MapLocation {
 }
 unsafe impl ::windows_core::Interface for MapLocation {
     type Vtable = IMapLocation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MapLocation {
-    const IID: ::windows_core::GUID = <IMapLocation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMapLocation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MapLocation {
     const NAME: &'static str = "Windows.Services.Maps.MapLocation";
@@ -781,9 +773,7 @@ impl ::windows_core::RuntimeType for MapLocationFinderResult {
 }
 unsafe impl ::windows_core::Interface for MapLocationFinderResult {
     type Vtable = IMapLocationFinderResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MapLocationFinderResult {
-    const IID: ::windows_core::GUID = <IMapLocationFinderResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMapLocationFinderResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MapLocationFinderResult {
     const NAME: &'static str = "Windows.Services.Maps.MapLocationFinderResult";
@@ -861,35 +851,35 @@ impl MapRoute {
         }
     }
     pub fn ViolatedRestrictions(&self) -> ::windows_core::Result<MapRouteRestrictions> {
-        let this = &::windows_core::ComInterface::cast::<IMapRoute2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRoute2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ViolatedRestrictions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn HasBlockedRoads(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IMapRoute2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRoute2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasBlockedRoads)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn DurationWithoutTraffic(&self) -> ::windows_core::Result<super::super::Foundation::TimeSpan> {
-        let this = &::windows_core::ComInterface::cast::<IMapRoute3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRoute3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DurationWithoutTraffic)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TrafficCongestion(&self) -> ::windows_core::Result<TrafficCongestion> {
-        let this = &::windows_core::ComInterface::cast::<IMapRoute3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRoute3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TrafficCongestion)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsScenic(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IMapRoute4>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRoute4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsScenic)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -901,9 +891,7 @@ impl ::windows_core::RuntimeType for MapRoute {
 }
 unsafe impl ::windows_core::Interface for MapRoute {
     type Vtable = IMapRoute_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MapRoute {
-    const IID: ::windows_core::GUID = <IMapRoute as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMapRoute as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MapRoute {
     const NAME: &'static str = "Windows.Services.Maps.MapRoute";
@@ -970,7 +958,7 @@ impl MapRouteDrivingOptions {
         unsafe { (::windows_core::Interface::vtable(this).SetRouteRestrictions)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn DepartureTime(&self) -> ::windows_core::Result<super::super::Foundation::IReference<super::super::Foundation::DateTime>> {
-        let this = &::windows_core::ComInterface::cast::<IMapRouteDrivingOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRouteDrivingOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DepartureTime)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -980,7 +968,7 @@ impl MapRouteDrivingOptions {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::DateTime>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMapRouteDrivingOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRouteDrivingOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDepartureTime)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
@@ -989,9 +977,7 @@ impl ::windows_core::RuntimeType for MapRouteDrivingOptions {
 }
 unsafe impl ::windows_core::Interface for MapRouteDrivingOptions {
     type Vtable = IMapRouteDrivingOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MapRouteDrivingOptions {
-    const IID: ::windows_core::GUID = <IMapRouteDrivingOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMapRouteDrivingOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MapRouteDrivingOptions {
     const NAME: &'static str = "Windows.Services.Maps.MapRouteDrivingOptions";
@@ -1192,7 +1178,7 @@ impl MapRouteFinderResult {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn AlternateRoutes(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<MapRoute>> {
-        let this = &::windows_core::ComInterface::cast::<IMapRouteFinderResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRouteFinderResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AlternateRoutes)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1204,9 +1190,7 @@ impl ::windows_core::RuntimeType for MapRouteFinderResult {
 }
 unsafe impl ::windows_core::Interface for MapRouteFinderResult {
     type Vtable = IMapRouteFinderResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MapRouteFinderResult {
-    const IID: ::windows_core::GUID = <IMapRouteFinderResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMapRouteFinderResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MapRouteFinderResult {
     const NAME: &'static str = "Windows.Services.Maps.MapRouteFinderResult";
@@ -1260,14 +1244,14 @@ impl MapRouteLeg {
         }
     }
     pub fn DurationWithoutTraffic(&self) -> ::windows_core::Result<super::super::Foundation::TimeSpan> {
-        let this = &::windows_core::ComInterface::cast::<IMapRouteLeg2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRouteLeg2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DurationWithoutTraffic)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TrafficCongestion(&self) -> ::windows_core::Result<TrafficCongestion> {
-        let this = &::windows_core::ComInterface::cast::<IMapRouteLeg2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRouteLeg2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TrafficCongestion)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1279,9 +1263,7 @@ impl ::windows_core::RuntimeType for MapRouteLeg {
 }
 unsafe impl ::windows_core::Interface for MapRouteLeg {
     type Vtable = IMapRouteLeg_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MapRouteLeg {
-    const IID: ::windows_core::GUID = <IMapRouteLeg as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMapRouteLeg as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MapRouteLeg {
     const NAME: &'static str = "Windows.Services.Maps.MapRouteLeg";
@@ -1338,21 +1320,21 @@ impl MapRouteManeuver {
         }
     }
     pub fn StartHeading(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IMapRouteManeuver2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRouteManeuver2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartHeading)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn EndHeading(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IMapRouteManeuver2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRouteManeuver2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EndHeading)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StreetName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IMapRouteManeuver2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRouteManeuver2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StreetName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1361,7 +1343,7 @@ impl MapRouteManeuver {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Warnings(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<ManeuverWarning>> {
-        let this = &::windows_core::ComInterface::cast::<IMapRouteManeuver3>(self)?;
+        let this = &::windows_core::Interface::cast::<IMapRouteManeuver3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Warnings)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1373,9 +1355,7 @@ impl ::windows_core::RuntimeType for MapRouteManeuver {
 }
 unsafe impl ::windows_core::Interface for MapRouteManeuver {
     type Vtable = IMapRouteManeuver_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MapRouteManeuver {
-    const IID: ::windows_core::GUID = <IMapRouteManeuver as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMapRouteManeuver as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MapRouteManeuver {
     const NAME: &'static str = "Windows.Services.Maps.MapRouteManeuver";
@@ -1567,9 +1547,7 @@ impl ::windows_core::RuntimeType for PlaceInfo {
 }
 unsafe impl ::windows_core::Interface for PlaceInfo {
     type Vtable = IPlaceInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PlaceInfo {
-    const IID: ::windows_core::GUID = <IPlaceInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPlaceInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PlaceInfo {
     const NAME: &'static str = "Windows.Services.Maps.PlaceInfo";
@@ -1616,9 +1594,7 @@ impl ::windows_core::RuntimeType for PlaceInfoCreateOptions {
 }
 unsafe impl ::windows_core::Interface for PlaceInfoCreateOptions {
     type Vtable = IPlaceInfoCreateOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PlaceInfoCreateOptions {
-    const IID: ::windows_core::GUID = <IPlaceInfoCreateOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPlaceInfoCreateOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PlaceInfoCreateOptions {
     const NAME: &'static str = "Windows.Services.Maps.PlaceInfoCreateOptions";

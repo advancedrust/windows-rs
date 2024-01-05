@@ -204,9 +204,7 @@ impl ::windows_core::RuntimeType for MessageDialog {
 }
 unsafe impl ::windows_core::Interface for MessageDialog {
     type Vtable = IMessageDialog_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MessageDialog {
-    const IID: ::windows_core::GUID = <IMessageDialog as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMessageDialog as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MessageDialog {
     const NAME: &'static str = "Windows.UI.Popups.MessageDialog";
@@ -259,9 +257,7 @@ impl ::windows_core::RuntimeType for PopupMenu {
 }
 unsafe impl ::windows_core::Interface for PopupMenu {
     type Vtable = IPopupMenu_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PopupMenu {
-    const IID: ::windows_core::GUID = <IPopupMenu as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPopupMenu as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PopupMenu {
     const NAME: &'static str = "Windows.UI.Popups.PopupMenu";
@@ -353,9 +349,7 @@ impl ::windows_core::RuntimeType for UICommand {
 }
 unsafe impl ::windows_core::Interface for UICommand {
     type Vtable = IUICommand_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UICommand {
-    const IID: ::windows_core::GUID = <IUICommand as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUICommand as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UICommand {
     const NAME: &'static str = "Windows.UI.Popups.UICommand";
@@ -420,9 +414,7 @@ impl ::windows_core::RuntimeType for UICommandSeparator {
 }
 unsafe impl ::windows_core::Interface for UICommandSeparator {
     type Vtable = IUICommand_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UICommandSeparator {
-    const IID: ::windows_core::GUID = <IUICommand as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUICommand as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UICommandSeparator {
     const NAME: &'static str = "Windows.UI.Popups.UICommandSeparator";
@@ -533,7 +525,7 @@ impl<F: FnMut(::core::option::Option<&IUICommand>) -> ::windows_core::Result<()>
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <UICommandInvokedHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <UICommandInvokedHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

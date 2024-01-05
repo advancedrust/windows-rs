@@ -155,9 +155,7 @@ impl ::windows_core::RuntimeType for PwmController {
 }
 unsafe impl ::windows_core::Interface for PwmController {
     type Vtable = IPwmController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PwmController {
-    const IID: ::windows_core::GUID = <IPwmController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPwmController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PwmController {
     const NAME: &'static str = "Windows.Devices.Pwm.PwmController";
@@ -170,7 +168,7 @@ unsafe impl ::core::marker::Sync for PwmController {}
 pub struct PwmPin(::windows_core::IUnknown);
 impl PwmPin {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Controller(&self) -> ::windows_core::Result<PwmController> {
@@ -223,9 +221,7 @@ impl ::windows_core::RuntimeType for PwmPin {
 }
 unsafe impl ::windows_core::Interface for PwmPin {
     type Vtable = IPwmPin_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PwmPin {
-    const IID: ::windows_core::GUID = <IPwmPin as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPwmPin as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PwmPin {
     const NAME: &'static str = "Windows.Devices.Pwm.PwmPin";

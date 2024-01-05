@@ -102,14 +102,14 @@ impl IDirectManipulationContent {
     }
     pub unsafe fn GetViewport<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetViewport)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetTag<T>(&self, id: ::core::option::Option<*mut u32>, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).GetTag)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _, ::core::mem::transmute(id.unwrap_or(::std::ptr::null_mut()))).ok()
     }
@@ -256,7 +256,7 @@ impl IDirectManipulationManager {
     }
     pub unsafe fn GetUpdateManager<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetUpdateManager)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -265,7 +265,7 @@ impl IDirectManipulationManager {
     where
         P0: ::windows_core::IntoParam<IDirectManipulationFrameInfoProvider>,
         P1: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateViewport)(::windows_core::Interface::as_raw(self), frameinfo.into_param().abi(), window.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -273,7 +273,7 @@ impl IDirectManipulationManager {
     pub unsafe fn CreateContent<P0, T>(&self, frameinfo: P0, clsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<IDirectManipulationFrameInfoProvider>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateContent)(::windows_core::Interface::as_raw(self), frameinfo.into_param().abi(), clsid, &T::IID, &mut result__).from_abi(result__)
@@ -324,7 +324,7 @@ impl IDirectManipulationManager2 {
     }
     pub unsafe fn GetUpdateManager<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUpdateManager)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -333,7 +333,7 @@ impl IDirectManipulationManager2 {
     where
         P0: ::windows_core::IntoParam<IDirectManipulationFrameInfoProvider>,
         P1: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateViewport)(::windows_core::Interface::as_raw(self), frameinfo.into_param().abi(), window.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -341,14 +341,14 @@ impl IDirectManipulationManager2 {
     pub unsafe fn CreateContent<P0, T>(&self, frameinfo: P0, clsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<IDirectManipulationFrameInfoProvider>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateContent)(::windows_core::Interface::as_raw(self), frameinfo.into_param().abi(), clsid, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn CreateBehavior<T>(&self, clsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateBehavior)(::windows_core::Interface::as_raw(self), clsid, &T::IID, &mut result__).from_abi(result__)
@@ -390,7 +390,7 @@ impl IDirectManipulationManager3 {
     }
     pub unsafe fn GetUpdateManager<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetUpdateManager)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -399,7 +399,7 @@ impl IDirectManipulationManager3 {
     where
         P0: ::windows_core::IntoParam<IDirectManipulationFrameInfoProvider>,
         P1: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.CreateViewport)(::windows_core::Interface::as_raw(self), frameinfo.into_param().abi(), window.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -407,21 +407,21 @@ impl IDirectManipulationManager3 {
     pub unsafe fn CreateContent<P0, T>(&self, frameinfo: P0, clsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<IDirectManipulationFrameInfoProvider>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.CreateContent)(::windows_core::Interface::as_raw(self), frameinfo.into_param().abi(), clsid, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn CreateBehavior<T>(&self, clsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateBehavior)(::windows_core::Interface::as_raw(self), clsid, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetService<T>(&self, clsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetService)(::windows_core::Interface::as_raw(self), clsid, &T::IID, &mut result__).from_abi(result__)
@@ -544,7 +544,7 @@ impl IDirectManipulationViewport {
     }
     pub unsafe fn GetTag<T>(&self, id: ::core::option::Option<*mut u32>, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).GetTag)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _, ::core::mem::transmute(id.unwrap_or(::std::ptr::null_mut()))).ok()
     }
@@ -575,7 +575,7 @@ impl IDirectManipulationViewport {
     }
     pub unsafe fn GetPrimaryContent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPrimaryContent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -691,7 +691,7 @@ impl IDirectManipulationViewport2 {
     }
     pub unsafe fn GetTag<T>(&self, id: ::core::option::Option<*mut u32>, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).base__.GetTag)(::windows_core::Interface::as_raw(self), &T::IID, result__ as *mut _ as *mut _, ::core::mem::transmute(id.unwrap_or(::std::ptr::null_mut()))).ok()
     }
@@ -722,7 +722,7 @@ impl IDirectManipulationViewport2 {
     }
     pub unsafe fn GetPrimaryContent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetPrimaryContent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)

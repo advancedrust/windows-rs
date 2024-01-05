@@ -21,7 +21,7 @@ pub struct IRemoteTextConnectionFactory_Vtbl {
 pub struct RemoteTextConnection(::windows_core::IUnknown);
 impl RemoteTextConnection {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn IsEnabled(&self) -> ::windows_core::Result<bool> {
@@ -67,9 +67,7 @@ impl ::windows_core::RuntimeType for RemoteTextConnection {
 }
 unsafe impl ::windows_core::Interface for RemoteTextConnection {
     type Vtable = IRemoteTextConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteTextConnection {
-    const IID: ::windows_core::GUID = <IRemoteTextConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteTextConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteTextConnection {
     const NAME: &'static str = "Windows.System.RemoteDesktop.Input.RemoteTextConnection";
@@ -108,7 +106,7 @@ impl<F: FnMut(&[u8]) -> ::windows_core::Result<bool> + ::core::marker::Send + 's
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <RemoteTextConnectionDataHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <RemoteTextConnectionDataHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

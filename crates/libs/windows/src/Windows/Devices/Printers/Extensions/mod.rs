@@ -131,14 +131,14 @@ impl Print3DWorkflow {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<Print3DWorkflow, Print3DWorkflowPrinterChangedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IPrint3DWorkflow2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPrint3DWorkflow2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrinterChanged)(::windows_core::Interface::as_raw(this), eventhandler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePrinterChanged(&self, eventcookie: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IPrint3DWorkflow2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPrint3DWorkflow2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePrinterChanged)(::windows_core::Interface::as_raw(this), eventcookie).ok() }
     }
 }
@@ -147,9 +147,7 @@ impl ::windows_core::RuntimeType for Print3DWorkflow {
 }
 unsafe impl ::windows_core::Interface for Print3DWorkflow {
     type Vtable = IPrint3DWorkflow_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Print3DWorkflow {
-    const IID: ::windows_core::GUID = <IPrint3DWorkflow as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrint3DWorkflow as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Print3DWorkflow {
     const NAME: &'static str = "Windows.Devices.Printers.Extensions.Print3DWorkflow";
@@ -189,9 +187,7 @@ impl ::windows_core::RuntimeType for Print3DWorkflowPrintRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for Print3DWorkflowPrintRequestedEventArgs {
     type Vtable = IPrint3DWorkflowPrintRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Print3DWorkflowPrintRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IPrint3DWorkflowPrintRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrint3DWorkflowPrintRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Print3DWorkflowPrintRequestedEventArgs {
     const NAME: &'static str = "Windows.Devices.Printers.Extensions.Print3DWorkflowPrintRequestedEventArgs";
@@ -216,9 +212,7 @@ impl ::windows_core::RuntimeType for Print3DWorkflowPrinterChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for Print3DWorkflowPrinterChangedEventArgs {
     type Vtable = IPrint3DWorkflowPrinterChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Print3DWorkflowPrinterChangedEventArgs {
-    const IID: ::windows_core::GUID = <IPrint3DWorkflowPrinterChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrint3DWorkflowPrinterChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Print3DWorkflowPrinterChangedEventArgs {
     const NAME: &'static str = "Windows.Devices.Printers.Extensions.Print3DWorkflowPrinterChangedEventArgs";
@@ -271,9 +265,7 @@ impl ::windows_core::RuntimeType for PrintNotificationEventDetails {
 }
 unsafe impl ::windows_core::Interface for PrintNotificationEventDetails {
     type Vtable = IPrintNotificationEventDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintNotificationEventDetails {
-    const IID: ::windows_core::GUID = <IPrintNotificationEventDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintNotificationEventDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintNotificationEventDetails {
     const NAME: &'static str = "Windows.Devices.Printers.Extensions.PrintNotificationEventDetails";
@@ -312,9 +304,7 @@ impl ::windows_core::RuntimeType for PrintTaskConfiguration {
 }
 unsafe impl ::windows_core::Interface for PrintTaskConfiguration {
     type Vtable = IPrintTaskConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintTaskConfiguration {
-    const IID: ::windows_core::GUID = <IPrintTaskConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintTaskConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintTaskConfiguration {
     const NAME: &'static str = "Windows.Devices.Printers.Extensions.PrintTaskConfiguration";
@@ -355,9 +345,7 @@ impl ::windows_core::RuntimeType for PrintTaskConfigurationSaveRequest {
 }
 unsafe impl ::windows_core::Interface for PrintTaskConfigurationSaveRequest {
     type Vtable = IPrintTaskConfigurationSaveRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintTaskConfigurationSaveRequest {
-    const IID: ::windows_core::GUID = <IPrintTaskConfigurationSaveRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintTaskConfigurationSaveRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintTaskConfigurationSaveRequest {
     const NAME: &'static str = "Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequest";
@@ -377,9 +365,7 @@ impl ::windows_core::RuntimeType for PrintTaskConfigurationSaveRequestedDeferral
 }
 unsafe impl ::windows_core::Interface for PrintTaskConfigurationSaveRequestedDeferral {
     type Vtable = IPrintTaskConfigurationSaveRequestedDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintTaskConfigurationSaveRequestedDeferral {
-    const IID: ::windows_core::GUID = <IPrintTaskConfigurationSaveRequestedDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintTaskConfigurationSaveRequestedDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintTaskConfigurationSaveRequestedDeferral {
     const NAME: &'static str = "Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequestedDeferral";
@@ -402,9 +388,7 @@ impl ::windows_core::RuntimeType for PrintTaskConfigurationSaveRequestedEventArg
 }
 unsafe impl ::windows_core::Interface for PrintTaskConfigurationSaveRequestedEventArgs {
     type Vtable = IPrintTaskConfigurationSaveRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrintTaskConfigurationSaveRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IPrintTaskConfigurationSaveRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrintTaskConfigurationSaveRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrintTaskConfigurationSaveRequestedEventArgs {
     const NAME: &'static str = "Windows.Devices.Printers.Extensions.PrintTaskConfigurationSaveRequestedEventArgs";

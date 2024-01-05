@@ -678,7 +678,7 @@ where
 pub unsafe fn SHGetPropertyStoreForWindow<P0, T>(hwnd: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<super::super::super::Foundation::HWND>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHGetPropertyStoreForWindow(hwnd : super::super::super::Foundation:: HWND, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -698,7 +698,7 @@ pub unsafe fn SHGetPropertyStoreFromParsingName<P0, P1, T>(pszpath: P0, pbc: P1,
 where
     P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
     P1: ::windows_core::IntoParam<super::super::super::System::Com::IBindCtx>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHGetPropertyStoreFromParsingName(pszpath : ::windows_core::PCWSTR, pbc : * mut::core::ffi::c_void, flags : GETPROPERTYSTOREFLAGS, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -739,7 +739,7 @@ impl ICreateObject {
     pub unsafe fn CreateObject<P0, T>(&self, clsid: *const ::windows_core::GUID, punkouter: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateObject)(::windows_core::Interface::as_raw(self), clsid, punkouter.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -757,21 +757,21 @@ impl IDelayedPropertyStoreFactory {
     pub unsafe fn GetPropertyStore<P0, T>(&self, flags: GETPROPERTYSTOREFLAGS, punkfactory: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetPropertyStore)(::windows_core::Interface::as_raw(self), flags, punkfactory.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetPropertyStoreForKeys<T>(&self, rgkeys: *const PROPERTYKEY, ckeys: u32, flags: GETPROPERTYSTOREFLAGS) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetPropertyStoreForKeys)(::windows_core::Interface::as_raw(self), rgkeys, ckeys, flags, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDelayedPropertyStore<T>(&self, flags: GETPROPERTYSTOREFLAGS, dwstoreid: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetDelayedPropertyStore)(::windows_core::Interface::as_raw(self), flags, dwstoreid, &T::IID, &mut result__).from_abi(result__)
@@ -969,7 +969,7 @@ impl IPropertyChangeArray {
     }
     pub unsafe fn GetAt<T>(&self, iindex: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetAt)(::windows_core::Interface::as_raw(self), iindex, &T::IID, &mut result__).from_abi(result__)
@@ -1088,7 +1088,7 @@ impl IPropertyDescription {
     }
     pub unsafe fn GetEnumTypeList<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetEnumTypeList)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1228,7 +1228,7 @@ impl IPropertyDescription2 {
     }
     pub unsafe fn GetEnumTypeList<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetEnumTypeList)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1342,7 +1342,7 @@ impl IPropertyDescriptionAliasInfo {
     }
     pub unsafe fn GetEnumTypeList<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetEnumTypeList)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1365,14 +1365,14 @@ impl IPropertyDescriptionAliasInfo {
     }
     pub unsafe fn GetSortByAlias<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetSortByAlias)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetAdditionalSortByAliases<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetAdditionalSortByAliases)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1394,7 +1394,7 @@ impl IPropertyDescriptionList {
     }
     pub unsafe fn GetAt<T>(&self, ielem: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetAt)(::windows_core::Interface::as_raw(self), ielem, &T::IID, &mut result__).from_abi(result__)
@@ -1484,7 +1484,7 @@ impl IPropertyDescriptionRelatedPropertyInfo {
     }
     pub unsafe fn GetEnumTypeList<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetEnumTypeList)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1508,7 +1508,7 @@ impl IPropertyDescriptionRelatedPropertyInfo {
     pub unsafe fn GetRelatedProperty<P0, T>(&self, pszrelationshipname: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetRelatedProperty)(::windows_core::Interface::as_raw(self), pszrelationshipname.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -1597,7 +1597,7 @@ impl IPropertyDescriptionSearchInfo {
     }
     pub unsafe fn GetEnumTypeList<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetEnumTypeList)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1742,14 +1742,14 @@ impl IPropertyEnumTypeList {
     }
     pub unsafe fn GetAt<T>(&self, itype: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetAt)(::windows_core::Interface::as_raw(self), itype, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetConditionAt<T>(&self, nindex: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetConditionAt)(::windows_core::Interface::as_raw(self), nindex, &T::IID, &mut result__).from_abi(result__)
@@ -1890,14 +1890,14 @@ impl IPropertyStoreFactory {
     pub unsafe fn GetPropertyStore<P0, T>(&self, flags: GETPROPERTYSTOREFLAGS, punkfactory: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPropertyStore)(::windows_core::Interface::as_raw(self), flags, punkfactory.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetPropertyStoreForKeys<T>(&self, rgkeys: *const PROPERTYKEY, ckeys: u32, flags: GETPROPERTYSTOREFLAGS) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPropertyStoreForKeys)(::windows_core::Interface::as_raw(self), rgkeys, ckeys, flags, &T::IID, &mut result__).from_abi(result__)
@@ -1915,7 +1915,7 @@ pub struct IPropertyStoreFactory_Vtbl {
 impl IPropertySystem {
     pub unsafe fn GetPropertyDescription<T>(&self, propkey: *const PROPERTYKEY) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPropertyDescription)(::windows_core::Interface::as_raw(self), propkey, &T::IID, &mut result__).from_abi(result__)
@@ -1923,7 +1923,7 @@ impl IPropertySystem {
     pub unsafe fn GetPropertyDescriptionByName<P0, T>(&self, pszcanonicalname: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPropertyDescriptionByName)(::windows_core::Interface::as_raw(self), pszcanonicalname.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -1931,14 +1931,14 @@ impl IPropertySystem {
     pub unsafe fn GetPropertyDescriptionListFromString<P0, T>(&self, pszproplist: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPropertyDescriptionListFromString)(::windows_core::Interface::as_raw(self), pszproplist.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn EnumeratePropertyDescriptions<T>(&self, filteron: PROPDESC_ENUMFILTER) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).EnumeratePropertyDescriptions)(::windows_core::Interface::as_raw(self), filteron, &T::IID, &mut result__).from_abi(result__)

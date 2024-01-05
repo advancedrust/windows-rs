@@ -147,9 +147,7 @@ impl ::windows_core::RuntimeType for LicenseSatisfactionInfo {
 }
 unsafe impl ::windows_core::Interface for LicenseSatisfactionInfo {
     type Vtable = ILicenseSatisfactionInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LicenseSatisfactionInfo {
-    const IID: ::windows_core::GUID = <ILicenseSatisfactionInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILicenseSatisfactionInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LicenseSatisfactionInfo {
     const NAME: &'static str = "Windows.ApplicationModel.Store.LicenseManagement.LicenseSatisfactionInfo";
@@ -183,9 +181,7 @@ impl ::windows_core::RuntimeType for LicenseSatisfactionResult {
 }
 unsafe impl ::windows_core::Interface for LicenseSatisfactionResult {
     type Vtable = ILicenseSatisfactionResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LicenseSatisfactionResult {
-    const IID: ::windows_core::GUID = <ILicenseSatisfactionResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILicenseSatisfactionResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LicenseSatisfactionResult {
     const NAME: &'static str = "Windows.ApplicationModel.Store.LicenseManagement.LicenseSatisfactionResult";

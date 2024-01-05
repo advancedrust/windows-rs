@@ -167,9 +167,7 @@ impl ::windows_core::RuntimeType for CustomDevice {
 }
 unsafe impl ::windows_core::Interface for CustomDevice {
     type Vtable = ICustomDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CustomDevice {
-    const IID: ::windows_core::GUID = <ICustomDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICustomDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CustomDevice {
     const NAME: &'static str = "Windows.Devices.Custom.CustomDevice";
@@ -233,9 +231,7 @@ impl ::windows_core::RuntimeType for IOControlCode {
 }
 unsafe impl ::windows_core::Interface for IOControlCode {
     type Vtable = IIOControlCode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOControlCode {
-    const IID: ::windows_core::GUID = <IIOControlCode as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIOControlCode as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IOControlCode {
     const NAME: &'static str = "Windows.Devices.Custom.IOControlCode";

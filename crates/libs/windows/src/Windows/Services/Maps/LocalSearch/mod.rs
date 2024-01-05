@@ -204,14 +204,14 @@ impl LocalLocation {
         }
     }
     pub fn Category(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ILocalLocation2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILocalLocation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Category)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn RatingInfo(&self) -> ::windows_core::Result<LocalLocationRatingInfo> {
-        let this = &::windows_core::ComInterface::cast::<ILocalLocation2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILocalLocation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RatingInfo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -220,7 +220,7 @@ impl LocalLocation {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn HoursOfOperation(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVectorView<LocalLocationHoursOfOperationItem>> {
-        let this = &::windows_core::ComInterface::cast::<ILocalLocation2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILocalLocation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HoursOfOperation)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -232,9 +232,7 @@ impl ::windows_core::RuntimeType for LocalLocation {
 }
 unsafe impl ::windows_core::Interface for LocalLocation {
     type Vtable = ILocalLocation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LocalLocation {
-    const IID: ::windows_core::GUID = <ILocalLocation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILocalLocation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LocalLocation {
     const NAME: &'static str = "Windows.Services.Maps.LocalSearch.LocalLocation";
@@ -290,9 +288,7 @@ impl ::windows_core::RuntimeType for LocalLocationFinderResult {
 }
 unsafe impl ::windows_core::Interface for LocalLocationFinderResult {
     type Vtable = ILocalLocationFinderResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LocalLocationFinderResult {
-    const IID: ::windows_core::GUID = <ILocalLocationFinderResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILocalLocationFinderResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LocalLocationFinderResult {
     const NAME: &'static str = "Windows.Services.Maps.LocalSearch.LocalLocationFinderResult";
@@ -333,9 +329,7 @@ impl ::windows_core::RuntimeType for LocalLocationHoursOfOperationItem {
 }
 unsafe impl ::windows_core::Interface for LocalLocationHoursOfOperationItem {
     type Vtable = ILocalLocationHoursOfOperationItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LocalLocationHoursOfOperationItem {
-    const IID: ::windows_core::GUID = <ILocalLocationHoursOfOperationItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILocalLocationHoursOfOperationItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LocalLocationHoursOfOperationItem {
     const NAME: &'static str = "Windows.Services.Maps.LocalSearch.LocalLocationHoursOfOperationItem";
@@ -374,9 +368,7 @@ impl ::windows_core::RuntimeType for LocalLocationRatingInfo {
 }
 unsafe impl ::windows_core::Interface for LocalLocationRatingInfo {
     type Vtable = ILocalLocationRatingInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LocalLocationRatingInfo {
-    const IID: ::windows_core::GUID = <ILocalLocationRatingInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILocalLocationRatingInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LocalLocationRatingInfo {
     const NAME: &'static str = "Windows.Services.Maps.LocalSearch.LocalLocationRatingInfo";

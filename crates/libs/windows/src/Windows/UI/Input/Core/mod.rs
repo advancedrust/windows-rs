@@ -52,7 +52,7 @@ impl RadialControllerIndependentInputSource {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn DispatcherQueue(&self) -> ::windows_core::Result<super::super::super::System::DispatcherQueue> {
-        let this = &::windows_core::ComInterface::cast::<IRadialControllerIndependentInputSource2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRadialControllerIndependentInputSource2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DispatcherQueue)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -80,9 +80,7 @@ impl ::windows_core::RuntimeType for RadialControllerIndependentInputSource {
 }
 unsafe impl ::windows_core::Interface for RadialControllerIndependentInputSource {
     type Vtable = IRadialControllerIndependentInputSource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RadialControllerIndependentInputSource {
-    const IID: ::windows_core::GUID = <IRadialControllerIndependentInputSource as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRadialControllerIndependentInputSource as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RadialControllerIndependentInputSource {
     const NAME: &'static str = "Windows.UI.Input.Core.RadialControllerIndependentInputSource";

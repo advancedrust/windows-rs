@@ -84,9 +84,7 @@ impl ::windows_core::RuntimeType for ErrorReceivedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ErrorReceivedEventArgs {
     type Vtable = IErrorReceivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ErrorReceivedEventArgs {
-    const IID: ::windows_core::GUID = <IErrorReceivedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IErrorReceivedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ErrorReceivedEventArgs {
     const NAME: &'static str = "Windows.Devices.SerialCommunication.ErrorReceivedEventArgs";
@@ -111,9 +109,7 @@ impl ::windows_core::RuntimeType for PinChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PinChangedEventArgs {
     type Vtable = IPinChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PinChangedEventArgs {
-    const IID: ::windows_core::GUID = <IPinChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPinChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PinChangedEventArgs {
     const NAME: &'static str = "Windows.Devices.SerialCommunication.PinChangedEventArgs";
@@ -126,7 +122,7 @@ unsafe impl ::core::marker::Sync for PinChangedEventArgs {}
 pub struct SerialDevice(::windows_core::IUnknown);
 impl SerialDevice {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn BaudRate(&self) -> ::windows_core::Result<u32> {
@@ -369,9 +365,7 @@ impl ::windows_core::RuntimeType for SerialDevice {
 }
 unsafe impl ::windows_core::Interface for SerialDevice {
     type Vtable = ISerialDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SerialDevice {
-    const IID: ::windows_core::GUID = <ISerialDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISerialDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SerialDevice {
     const NAME: &'static str = "Windows.Devices.SerialCommunication.SerialDevice";

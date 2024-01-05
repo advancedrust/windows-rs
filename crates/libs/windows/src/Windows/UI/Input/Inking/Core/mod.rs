@@ -208,9 +208,7 @@ impl ::windows_core::RuntimeType for CoreIncrementalInkStroke {
 }
 unsafe impl ::windows_core::Interface for CoreIncrementalInkStroke {
     type Vtable = ICoreIncrementalInkStroke_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreIncrementalInkStroke {
-    const IID: ::windows_core::GUID = <ICoreIncrementalInkStroke as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreIncrementalInkStroke as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreIncrementalInkStroke {
     const NAME: &'static str = "Windows.UI.Input.Inking.Core.CoreIncrementalInkStroke";
@@ -344,7 +342,7 @@ impl CoreInkIndependentInputSource {
     #[doc = "Required features: `\"UI_Core\"`"]
     #[cfg(feature = "UI_Core")]
     pub fn PointerCursor(&self) -> ::windows_core::Result<super::super::super::Core::CoreCursor> {
-        let this = &::windows_core::ComInterface::cast::<ICoreInkIndependentInputSource2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInkIndependentInputSource2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerCursor)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -356,7 +354,7 @@ impl CoreInkIndependentInputSource {
     where
         P0: ::windows_core::IntoParam<super::super::super::Core::CoreCursor>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreInkIndependentInputSource2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreInkIndependentInputSource2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPointerCursor)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Create<P0>(inkpresenter: P0) -> ::windows_core::Result<CoreInkIndependentInputSource>
@@ -379,9 +377,7 @@ impl ::windows_core::RuntimeType for CoreInkIndependentInputSource {
 }
 unsafe impl ::windows_core::Interface for CoreInkIndependentInputSource {
     type Vtable = ICoreInkIndependentInputSource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreInkIndependentInputSource {
-    const IID: ::windows_core::GUID = <ICoreInkIndependentInputSource as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreInkIndependentInputSource as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreInkIndependentInputSource {
     const NAME: &'static str = "Windows.UI.Input.Inking.Core.CoreInkIndependentInputSource";
@@ -431,9 +427,7 @@ impl ::windows_core::RuntimeType for CoreInkPresenterHost {
 }
 unsafe impl ::windows_core::Interface for CoreInkPresenterHost {
     type Vtable = ICoreInkPresenterHost_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreInkPresenterHost {
-    const IID: ::windows_core::GUID = <ICoreInkPresenterHost as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreInkPresenterHost as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreInkPresenterHost {
     const NAME: &'static str = "Windows.UI.Input.Inking.Core.CoreInkPresenterHost";
@@ -478,9 +472,7 @@ impl ::windows_core::RuntimeType for CoreWetStrokeUpdateEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreWetStrokeUpdateEventArgs {
     type Vtable = ICoreWetStrokeUpdateEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreWetStrokeUpdateEventArgs {
-    const IID: ::windows_core::GUID = <ICoreWetStrokeUpdateEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreWetStrokeUpdateEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreWetStrokeUpdateEventArgs {
     const NAME: &'static str = "Windows.UI.Input.Inking.Core.CoreWetStrokeUpdateEventArgs";
@@ -589,9 +581,7 @@ impl ::windows_core::RuntimeType for CoreWetStrokeUpdateSource {
 }
 unsafe impl ::windows_core::Interface for CoreWetStrokeUpdateSource {
     type Vtable = ICoreWetStrokeUpdateSource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreWetStrokeUpdateSource {
-    const IID: ::windows_core::GUID = <ICoreWetStrokeUpdateSource as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreWetStrokeUpdateSource as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreWetStrokeUpdateSource {
     const NAME: &'static str = "Windows.UI.Input.Inking.Core.CoreWetStrokeUpdateSource";

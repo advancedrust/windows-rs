@@ -392,9 +392,7 @@ impl ::windows_core::RuntimeType for JumpList {
 }
 unsafe impl ::windows_core::Interface for JumpList {
     type Vtable = IJumpList_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for JumpList {
-    const IID: ::windows_core::GUID = <IJumpList as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IJumpList as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for JumpList {
     const NAME: &'static str = "Windows.UI.StartScreen.JumpList";
@@ -497,9 +495,7 @@ impl ::windows_core::RuntimeType for JumpListItem {
 }
 unsafe impl ::windows_core::Interface for JumpListItem {
     type Vtable = IJumpListItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for JumpListItem {
-    const IID: ::windows_core::GUID = <IJumpListItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IJumpListItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for JumpListItem {
     const NAME: &'static str = "Windows.UI.StartScreen.JumpListItem";
@@ -758,29 +754,29 @@ impl SecondaryTile {
         }
     }
     pub fn SetPhoneticName(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISecondaryTile2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISecondaryTile2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPhoneticName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn PhoneticName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ISecondaryTile2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISecondaryTile2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PhoneticName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn VisualElements(&self) -> ::windows_core::Result<SecondaryTileVisualElements> {
-        let this = &::windows_core::ComInterface::cast::<ISecondaryTile2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISecondaryTile2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).VisualElements)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetRoamingEnabled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISecondaryTile2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISecondaryTile2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetRoamingEnabled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn RoamingEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ISecondaryTile2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISecondaryTile2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RoamingEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -790,14 +786,14 @@ impl SecondaryTile {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<SecondaryTile, VisualElementsRequestedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ISecondaryTile2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISecondaryTile2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).VisualElementsRequested)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveVisualElementsRequested(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISecondaryTile2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISecondaryTile2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveVisualElementsRequested)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     #[doc = "Required features: `\"deprecated\"`"]
@@ -889,9 +885,7 @@ impl ::windows_core::RuntimeType for SecondaryTile {
 }
 unsafe impl ::windows_core::Interface for SecondaryTile {
     type Vtable = ISecondaryTile_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SecondaryTile {
-    const IID: ::windows_core::GUID = <ISecondaryTile as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISecondaryTile as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SecondaryTile {
     const NAME: &'static str = "Windows.UI.StartScreen.SecondaryTile";
@@ -1040,11 +1034,11 @@ impl SecondaryTileVisualElements {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<ISecondaryTileVisualElements2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISecondaryTileVisualElements2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSquare71x71Logo)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Square71x71Logo(&self) -> ::windows_core::Result<super::super::Foundation::Uri> {
-        let this = &::windows_core::ComInterface::cast::<ISecondaryTileVisualElements2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISecondaryTileVisualElements2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Square71x71Logo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1054,18 +1048,18 @@ impl SecondaryTileVisualElements {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<ISecondaryTileVisualElements3>(self)?;
+        let this = &::windows_core::Interface::cast::<ISecondaryTileVisualElements3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSquare44x44Logo)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Square44x44Logo(&self) -> ::windows_core::Result<super::super::Foundation::Uri> {
-        let this = &::windows_core::ComInterface::cast::<ISecondaryTileVisualElements3>(self)?;
+        let this = &::windows_core::Interface::cast::<ISecondaryTileVisualElements3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Square44x44Logo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn MixedRealityModel(&self) -> ::windows_core::Result<TileMixedRealityModel> {
-        let this = &::windows_core::ComInterface::cast::<ISecondaryTileVisualElements4>(self)?;
+        let this = &::windows_core::Interface::cast::<ISecondaryTileVisualElements4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MixedRealityModel)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1077,9 +1071,7 @@ impl ::windows_core::RuntimeType for SecondaryTileVisualElements {
 }
 unsafe impl ::windows_core::Interface for SecondaryTileVisualElements {
     type Vtable = ISecondaryTileVisualElements_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SecondaryTileVisualElements {
-    const IID: ::windows_core::GUID = <ISecondaryTileVisualElements as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISecondaryTileVisualElements as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SecondaryTileVisualElements {
     const NAME: &'static str = "Windows.UI.StartScreen.SecondaryTileVisualElements";
@@ -1137,14 +1129,14 @@ impl StartScreenManager {
         }
     }
     pub fn ContainsSecondaryTileAsync(&self, tileid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IStartScreenManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStartScreenManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContainsSecondaryTileAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(tileid), &mut result__).from_abi(result__)
         }
     }
     pub fn TryRemoveSecondaryTileAsync(&self, tileid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IStartScreenManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStartScreenManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryRemoveSecondaryTileAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(tileid), &mut result__).from_abi(result__)
@@ -1178,9 +1170,7 @@ impl ::windows_core::RuntimeType for StartScreenManager {
 }
 unsafe impl ::windows_core::Interface for StartScreenManager {
     type Vtable = IStartScreenManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StartScreenManager {
-    const IID: ::windows_core::GUID = <IStartScreenManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStartScreenManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StartScreenManager {
     const NAME: &'static str = "Windows.UI.StartScreen.StartScreenManager";
@@ -1225,11 +1215,11 @@ impl TileMixedRealityModel {
         }
     }
     pub fn SetActivationBehavior(&self, value: TileMixedRealityModelActivationBehavior) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ITileMixedRealityModel2>(self)?;
+        let this = &::windows_core::Interface::cast::<ITileMixedRealityModel2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetActivationBehavior)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ActivationBehavior(&self) -> ::windows_core::Result<TileMixedRealityModelActivationBehavior> {
-        let this = &::windows_core::ComInterface::cast::<ITileMixedRealityModel2>(self)?;
+        let this = &::windows_core::Interface::cast::<ITileMixedRealityModel2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ActivationBehavior)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1241,9 +1231,7 @@ impl ::windows_core::RuntimeType for TileMixedRealityModel {
 }
 unsafe impl ::windows_core::Interface for TileMixedRealityModel {
     type Vtable = ITileMixedRealityModel_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TileMixedRealityModel {
-    const IID: ::windows_core::GUID = <ITileMixedRealityModel as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITileMixedRealityModel as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TileMixedRealityModel {
     const NAME: &'static str = "Windows.UI.StartScreen.TileMixedRealityModel";
@@ -1291,9 +1279,7 @@ impl ::windows_core::RuntimeType for VisualElementsRequest {
 }
 unsafe impl ::windows_core::Interface for VisualElementsRequest {
     type Vtable = IVisualElementsRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VisualElementsRequest {
-    const IID: ::windows_core::GUID = <IVisualElementsRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVisualElementsRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VisualElementsRequest {
     const NAME: &'static str = "Windows.UI.StartScreen.VisualElementsRequest";
@@ -1315,9 +1301,7 @@ impl ::windows_core::RuntimeType for VisualElementsRequestDeferral {
 }
 unsafe impl ::windows_core::Interface for VisualElementsRequestDeferral {
     type Vtable = IVisualElementsRequestDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VisualElementsRequestDeferral {
-    const IID: ::windows_core::GUID = <IVisualElementsRequestDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVisualElementsRequestDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VisualElementsRequestDeferral {
     const NAME: &'static str = "Windows.UI.StartScreen.VisualElementsRequestDeferral";
@@ -1342,9 +1326,7 @@ impl ::windows_core::RuntimeType for VisualElementsRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for VisualElementsRequestedEventArgs {
     type Vtable = IVisualElementsRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VisualElementsRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IVisualElementsRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVisualElementsRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VisualElementsRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.StartScreen.VisualElementsRequestedEventArgs";

@@ -23,7 +23,7 @@ pub mod Urlmon;
 pub unsafe fn BindMoniker<P0, T>(pmk: P0, grfopt: u32) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<IMoniker>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("ole32.dll" "system" fn BindMoniker(pmk : * mut::core::ffi::c_void, grfopt : u32, iidresult : *const ::windows_core::GUID, ppvresult : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -112,7 +112,7 @@ pub unsafe fn CoCreateGuid() -> ::windows_core::Result<::windows_core::GUID> {
 pub unsafe fn CoCreateInstance<P0, T>(rclsid: *const ::windows_core::GUID, punkouter: P0, dwclscontext: CLSCTX) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("ole32.dll" "system" fn CoCreateInstance(rclsid : *const ::windows_core::GUID, punkouter : * mut::core::ffi::c_void, dwclscontext : CLSCTX, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -212,7 +212,7 @@ pub unsafe fn CoGetApartmentType(papttype: *mut APTTYPE, paptqualifier: *mut APT
 #[inline]
 pub unsafe fn CoGetCallContext<T>() -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("ole32.dll" "system" fn CoGetCallContext(riid : *const ::windows_core::GUID, ppinterface : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -227,7 +227,7 @@ pub unsafe fn CoGetCallerTID() -> ::windows_core::Result<u32> {
 #[inline]
 pub unsafe fn CoGetCancelObject<T>(dwthreadid: u32) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("ole32.dll" "system" fn CoGetCancelObject(dwthreadid : u32, iid : *const ::windows_core::GUID, ppunk : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -236,7 +236,7 @@ where
 #[inline]
 pub unsafe fn CoGetClassObject<T>(rclsid: *const ::windows_core::GUID, dwclscontext: CLSCTX, pvreserved: ::core::option::Option<*const ::core::ffi::c_void>) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("ole32.dll" "system" fn CoGetClassObject(rclsid : *const ::windows_core::GUID, dwclscontext : u32, pvreserved : *const ::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -269,7 +269,7 @@ pub unsafe fn CoGetMalloc(dwmemcontext: u32) -> ::windows_core::Result<IMalloc> 
 pub unsafe fn CoGetObject<P0, T>(pszname: P0, pbindoptions: ::core::option::Option<*const BIND_OPTS>) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("ole32.dll" "system" fn CoGetObject(pszname : ::windows_core::PCWSTR, pbindoptions : *const BIND_OPTS, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -278,7 +278,7 @@ where
 #[inline]
 pub unsafe fn CoGetObjectContext<T>() -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("ole32.dll" "system" fn CoGetObjectContext(riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -623,7 +623,7 @@ pub unsafe fn CreateDataAdviseHolder() -> ::windows_core::Result<IDataAdviseHold
 pub unsafe fn CreateDataCache<P0, T>(punkouter: P0, rclsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("ole32.dll" "system" fn CreateDataCache(punkouter : * mut::core::ffi::c_void, rclsid : *const ::windows_core::GUID, iid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -1705,7 +1705,7 @@ pub struct IChannelHook_Vtbl {
 impl IClassActivator {
     pub unsafe fn GetClassObject<T>(&self, rclsid: *const ::windows_core::GUID, dwclasscontext: u32, locale: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetClassObject)(::windows_core::Interface::as_raw(self), rclsid, dwclasscontext, locale, &T::IID, &mut result__).from_abi(result__)
@@ -1723,7 +1723,7 @@ impl IClassFactory {
     pub unsafe fn CreateInstance<P0, T>(&self, punkouter: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateInstance)(::windows_core::Interface::as_raw(self), punkouter.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -2489,7 +2489,7 @@ impl IMachineGlobalObjectTable {
     pub unsafe fn GetObject<P0, T>(&self, clsid: *const ::windows_core::GUID, identifier: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetObject)(::windows_core::Interface::as_raw(self), clsid, identifier.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -2797,7 +2797,7 @@ impl IOplockStorage {
     pub unsafe fn CreateStorageEx<P0, T>(&self, pwcsname: P0, grfmode: u32, stgfmt: u32, grfattrs: u32) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateStorageEx)(::windows_core::Interface::as_raw(self), pwcsname.into_param().abi(), grfmode, stgfmt, grfattrs, &T::IID, &mut result__).from_abi(result__)
@@ -2805,7 +2805,7 @@ impl IOplockStorage {
     pub unsafe fn OpenStorageEx<P0, T>(&self, pwcsname: P0, grfmode: u32, stgfmt: u32, grfattrs: u32) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).OpenStorageEx)(::windows_core::Interface::as_raw(self), pwcsname.into_param().abi(), grfmode, stgfmt, grfattrs, &T::IID, &mut result__).from_abi(result__)
@@ -3520,7 +3520,7 @@ pub struct IServerSecurity_Vtbl {
 impl IServiceProvider {
     pub unsafe fn QueryService<T>(&self, guidservice: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).QueryService)(::windows_core::Interface::as_raw(self), guidservice, &T::IID, &mut result__).from_abi(result__)
@@ -3868,7 +3868,7 @@ impl ITypeInfo {
     pub unsafe fn CreateInstance<P0, T>(&self, punkouter: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateInstance)(::windows_core::Interface::as_raw(self), punkouter.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -4001,7 +4001,7 @@ impl ITypeInfo2 {
     pub unsafe fn CreateInstance<P0, T>(&self, punkouter: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateInstance)(::windows_core::Interface::as_raw(self), punkouter.into_param().abi(), &T::IID, &mut result__).from_abi(result__)

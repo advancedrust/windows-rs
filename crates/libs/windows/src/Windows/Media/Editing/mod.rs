@@ -371,9 +371,7 @@ impl ::windows_core::RuntimeType for BackgroundAudioTrack {
 }
 unsafe impl ::windows_core::Interface for BackgroundAudioTrack {
     type Vtable = IBackgroundAudioTrack_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BackgroundAudioTrack {
-    const IID: ::windows_core::GUID = <IBackgroundAudioTrack as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundAudioTrack as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BackgroundAudioTrack {
     const NAME: &'static str = "Windows.Media.Editing.BackgroundAudioTrack";
@@ -400,9 +398,7 @@ impl ::windows_core::RuntimeType for EmbeddedAudioTrack {
 }
 unsafe impl ::windows_core::Interface for EmbeddedAudioTrack {
     type Vtable = IEmbeddedAudioTrack_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmbeddedAudioTrack {
-    const IID: ::windows_core::GUID = <IEmbeddedAudioTrack as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmbeddedAudioTrack as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmbeddedAudioTrack {
     const NAME: &'static str = "Windows.Media.Editing.EmbeddedAudioTrack";
@@ -595,9 +591,7 @@ impl ::windows_core::RuntimeType for MediaClip {
 }
 unsafe impl ::windows_core::Interface for MediaClip {
     type Vtable = IMediaClip_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaClip {
-    const IID: ::windows_core::GUID = <IMediaClip as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaClip as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaClip {
     const NAME: &'static str = "Windows.Media.Editing.MediaClip";
@@ -769,7 +763,7 @@ impl MediaComposition {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn OverlayLayers(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<MediaOverlayLayer>> {
-        let this = &::windows_core::ComInterface::cast::<IMediaComposition2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaComposition2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OverlayLayers)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -797,9 +791,7 @@ impl ::windows_core::RuntimeType for MediaComposition {
 }
 unsafe impl ::windows_core::Interface for MediaComposition {
     type Vtable = IMediaComposition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaComposition {
-    const IID: ::windows_core::GUID = <IMediaComposition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaComposition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaComposition {
     const NAME: &'static str = "Windows.Media.Editing.MediaComposition";
@@ -898,9 +890,7 @@ impl ::windows_core::RuntimeType for MediaOverlay {
 }
 unsafe impl ::windows_core::Interface for MediaOverlay {
     type Vtable = IMediaOverlay_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaOverlay {
-    const IID: ::windows_core::GUID = <IMediaOverlay as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaOverlay as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaOverlay {
     const NAME: &'static str = "Windows.Media.Editing.MediaOverlay";
@@ -966,9 +956,7 @@ impl ::windows_core::RuntimeType for MediaOverlayLayer {
 }
 unsafe impl ::windows_core::Interface for MediaOverlayLayer {
     type Vtable = IMediaOverlayLayer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaOverlayLayer {
-    const IID: ::windows_core::GUID = <IMediaOverlayLayer as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaOverlayLayer as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaOverlayLayer {
     const NAME: &'static str = "Windows.Media.Editing.MediaOverlayLayer";

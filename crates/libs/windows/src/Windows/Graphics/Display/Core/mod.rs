@@ -134,9 +134,7 @@ impl ::windows_core::RuntimeType for HdmiDisplayInformation {
 }
 unsafe impl ::windows_core::Interface for HdmiDisplayInformation {
     type Vtable = IHdmiDisplayInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HdmiDisplayInformation {
-    const IID: ::windows_core::GUID = <IHdmiDisplayInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHdmiDisplayInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HdmiDisplayInformation {
     const NAME: &'static str = "Windows.Graphics.Display.Core.HdmiDisplayInformation";
@@ -229,7 +227,7 @@ impl HdmiDisplayMode {
         }
     }
     pub fn IsDolbyVisionLowLatencySupported(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IHdmiDisplayMode2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHdmiDisplayMode2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsDolbyVisionLowLatencySupported)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -241,9 +239,7 @@ impl ::windows_core::RuntimeType for HdmiDisplayMode {
 }
 unsafe impl ::windows_core::Interface for HdmiDisplayMode {
     type Vtable = IHdmiDisplayMode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HdmiDisplayMode {
-    const IID: ::windows_core::GUID = <IHdmiDisplayMode as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHdmiDisplayMode as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HdmiDisplayMode {
     const NAME: &'static str = "Windows.Graphics.Display.Core.HdmiDisplayMode";

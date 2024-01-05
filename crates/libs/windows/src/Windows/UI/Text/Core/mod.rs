@@ -253,9 +253,7 @@ impl ::windows_core::RuntimeType for CoreTextCompositionCompletedEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreTextCompositionCompletedEventArgs {
     type Vtable = ICoreTextCompositionCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextCompositionCompletedEventArgs {
-    const IID: ::windows_core::GUID = <ICoreTextCompositionCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextCompositionCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextCompositionCompletedEventArgs {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextCompositionCompletedEventArgs";
@@ -287,9 +285,7 @@ impl ::windows_core::RuntimeType for CoreTextCompositionSegment {
 }
 unsafe impl ::windows_core::Interface for CoreTextCompositionSegment {
     type Vtable = ICoreTextCompositionSegment_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextCompositionSegment {
-    const IID: ::windows_core::GUID = <ICoreTextCompositionSegment as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextCompositionSegment as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextCompositionSegment {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextCompositionSegment";
@@ -321,9 +317,7 @@ impl ::windows_core::RuntimeType for CoreTextCompositionStartedEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreTextCompositionStartedEventArgs {
     type Vtable = ICoreTextCompositionStartedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextCompositionStartedEventArgs {
-    const IID: ::windows_core::GUID = <ICoreTextCompositionStartedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextCompositionStartedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextCompositionStartedEventArgs {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextCompositionStartedEventArgs";
@@ -529,14 +523,14 @@ impl CoreTextEditContext {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<CoreTextEditContext, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreTextEditContext2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreTextEditContext2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).NotifyFocusLeaveCompleted)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveNotifyFocusLeaveCompleted(&self, cookie: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreTextEditContext2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreTextEditContext2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveNotifyFocusLeaveCompleted)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
 }
@@ -545,9 +539,7 @@ impl ::windows_core::RuntimeType for CoreTextEditContext {
 }
 unsafe impl ::windows_core::Interface for CoreTextEditContext {
     type Vtable = ICoreTextEditContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextEditContext {
-    const IID: ::windows_core::GUID = <ICoreTextEditContext as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextEditContext as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextEditContext {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextEditContext";
@@ -638,9 +630,7 @@ impl ::windows_core::RuntimeType for CoreTextFormatUpdatingEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreTextFormatUpdatingEventArgs {
     type Vtable = ICoreTextFormatUpdatingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextFormatUpdatingEventArgs {
-    const IID: ::windows_core::GUID = <ICoreTextFormatUpdatingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextFormatUpdatingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextFormatUpdatingEventArgs {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextFormatUpdatingEventArgs";
@@ -680,9 +670,7 @@ impl ::windows_core::RuntimeType for CoreTextLayoutBounds {
 }
 unsafe impl ::windows_core::Interface for CoreTextLayoutBounds {
     type Vtable = ICoreTextLayoutBounds_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextLayoutBounds {
-    const IID: ::windows_core::GUID = <ICoreTextLayoutBounds as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextLayoutBounds as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextLayoutBounds {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextLayoutBounds";
@@ -723,7 +711,7 @@ impl CoreTextLayoutRequest {
         }
     }
     pub fn LayoutBoundsVisualPixels(&self) -> ::windows_core::Result<CoreTextLayoutBounds> {
-        let this = &::windows_core::ComInterface::cast::<ICoreTextLayoutRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreTextLayoutRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LayoutBoundsVisualPixels)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -735,9 +723,7 @@ impl ::windows_core::RuntimeType for CoreTextLayoutRequest {
 }
 unsafe impl ::windows_core::Interface for CoreTextLayoutRequest {
     type Vtable = ICoreTextLayoutRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextLayoutRequest {
-    const IID: ::windows_core::GUID = <ICoreTextLayoutRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextLayoutRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextLayoutRequest {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextLayoutRequest";
@@ -762,9 +748,7 @@ impl ::windows_core::RuntimeType for CoreTextLayoutRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreTextLayoutRequestedEventArgs {
     type Vtable = ICoreTextLayoutRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextLayoutRequestedEventArgs {
-    const IID: ::windows_core::GUID = <ICoreTextLayoutRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextLayoutRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextLayoutRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextLayoutRequestedEventArgs";
@@ -807,9 +791,7 @@ impl ::windows_core::RuntimeType for CoreTextSelectionRequest {
 }
 unsafe impl ::windows_core::Interface for CoreTextSelectionRequest {
     type Vtable = ICoreTextSelectionRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextSelectionRequest {
-    const IID: ::windows_core::GUID = <ICoreTextSelectionRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextSelectionRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextSelectionRequest {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextSelectionRequest";
@@ -834,9 +816,7 @@ impl ::windows_core::RuntimeType for CoreTextSelectionRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreTextSelectionRequestedEventArgs {
     type Vtable = ICoreTextSelectionRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextSelectionRequestedEventArgs {
-    const IID: ::windows_core::GUID = <ICoreTextSelectionRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextSelectionRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextSelectionRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextSelectionRequestedEventArgs";
@@ -886,9 +866,7 @@ impl ::windows_core::RuntimeType for CoreTextSelectionUpdatingEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreTextSelectionUpdatingEventArgs {
     type Vtable = ICoreTextSelectionUpdatingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextSelectionUpdatingEventArgs {
-    const IID: ::windows_core::GUID = <ICoreTextSelectionUpdatingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextSelectionUpdatingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextSelectionUpdatingEventArgs {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextSelectionUpdatingEventArgs";
@@ -964,9 +942,7 @@ impl ::windows_core::RuntimeType for CoreTextServicesManager {
 }
 unsafe impl ::windows_core::Interface for CoreTextServicesManager {
     type Vtable = ICoreTextServicesManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextServicesManager {
-    const IID: ::windows_core::GUID = <ICoreTextServicesManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextServicesManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextServicesManager {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextServicesManager";
@@ -1016,9 +992,7 @@ impl ::windows_core::RuntimeType for CoreTextTextRequest {
 }
 unsafe impl ::windows_core::Interface for CoreTextTextRequest {
     type Vtable = ICoreTextTextRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextTextRequest {
-    const IID: ::windows_core::GUID = <ICoreTextTextRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextTextRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextTextRequest {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextTextRequest";
@@ -1043,9 +1017,7 @@ impl ::windows_core::RuntimeType for CoreTextTextRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreTextTextRequestedEventArgs {
     type Vtable = ICoreTextTextRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextTextRequestedEventArgs {
-    const IID: ::windows_core::GUID = <ICoreTextTextRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextTextRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextTextRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextTextRequestedEventArgs";
@@ -1118,9 +1090,7 @@ impl ::windows_core::RuntimeType for CoreTextTextUpdatingEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreTextTextUpdatingEventArgs {
     type Vtable = ICoreTextTextUpdatingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreTextTextUpdatingEventArgs {
-    const IID: ::windows_core::GUID = <ICoreTextTextUpdatingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreTextTextUpdatingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreTextTextUpdatingEventArgs {
     const NAME: &'static str = "Windows.UI.Text.Core.CoreTextTextUpdatingEventArgs";

@@ -3,7 +3,7 @@ impl IGraphicsCaptureItemInterop {
     pub unsafe fn CreateForWindow<P0, T>(&self, window: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateForWindow)(::windows_core::Interface::as_raw(self), window.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -13,7 +13,7 @@ impl IGraphicsCaptureItemInterop {
     pub unsafe fn CreateForMonitor<P0, T>(&self, monitor: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::super::super::Graphics::Gdi::HMONITOR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateForMonitor)(::windows_core::Interface::as_raw(self), monitor.into_param().abi(), &T::IID, &mut result__).from_abi(result__)

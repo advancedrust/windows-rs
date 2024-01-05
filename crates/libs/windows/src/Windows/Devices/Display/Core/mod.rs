@@ -584,9 +584,7 @@ impl ::windows_core::RuntimeType for DisplayAdapter {
 }
 unsafe impl ::windows_core::Interface for DisplayAdapter {
     type Vtable = IDisplayAdapter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayAdapter {
-    const IID: ::windows_core::GUID = <IDisplayAdapter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayAdapter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayAdapter {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayAdapter";
@@ -669,7 +667,7 @@ impl DisplayDevice {
         P1: ::windows_core::IntoParam<DisplaySurface>,
         P2: ::windows_core::IntoParam<super::super::super::Foundation::Collections::IIterable<super::super::super::Graphics::RectInt32>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDisplayDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateSimpleScanoutWithDirtyRectsAndOptions)(::windows_core::Interface::as_raw(this), source.into_param().abi(), surface.into_param().abi(), subresourceindex, syncinterval, dirtyrects.into_param().abi(), options, &mut result__).from_abi(result__)
@@ -681,9 +679,7 @@ impl ::windows_core::RuntimeType for DisplayDevice {
 }
 unsafe impl ::windows_core::Interface for DisplayDevice {
     type Vtable = IDisplayDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayDevice {
-    const IID: ::windows_core::GUID = <IDisplayDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayDevice {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayDevice";
@@ -700,9 +696,7 @@ impl ::windows_core::RuntimeType for DisplayFence {
 }
 unsafe impl ::windows_core::Interface for DisplayFence {
     type Vtable = IDisplayFence_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayFence {
-    const IID: ::windows_core::GUID = <IDisplayFence as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayFence as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayFence {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayFence";
@@ -715,7 +709,7 @@ unsafe impl ::core::marker::Sync for DisplayFence {}
 pub struct DisplayManager(::windows_core::IUnknown);
 impl DisplayManager {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -888,9 +882,7 @@ impl ::windows_core::RuntimeType for DisplayManager {
 }
 unsafe impl ::windows_core::Interface for DisplayManager {
     type Vtable = IDisplayManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayManager {
-    const IID: ::windows_core::GUID = <IDisplayManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayManager {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayManager";
@@ -927,9 +919,7 @@ impl ::windows_core::RuntimeType for DisplayManagerChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for DisplayManagerChangedEventArgs {
     type Vtable = IDisplayManagerChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayManagerChangedEventArgs {
-    const IID: ::windows_core::GUID = <IDisplayManagerChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayManagerChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayManagerChangedEventArgs {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayManagerChangedEventArgs";
@@ -965,9 +955,7 @@ impl ::windows_core::RuntimeType for DisplayManagerDisabledEventArgs {
 }
 unsafe impl ::windows_core::Interface for DisplayManagerDisabledEventArgs {
     type Vtable = IDisplayManagerDisabledEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayManagerDisabledEventArgs {
-    const IID: ::windows_core::GUID = <IDisplayManagerDisabledEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayManagerDisabledEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayManagerDisabledEventArgs {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayManagerDisabledEventArgs";
@@ -1003,9 +991,7 @@ impl ::windows_core::RuntimeType for DisplayManagerEnabledEventArgs {
 }
 unsafe impl ::windows_core::Interface for DisplayManagerEnabledEventArgs {
     type Vtable = IDisplayManagerEnabledEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayManagerEnabledEventArgs {
-    const IID: ::windows_core::GUID = <IDisplayManagerEnabledEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayManagerEnabledEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayManagerEnabledEventArgs {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayManagerEnabledEventArgs";
@@ -1041,9 +1027,7 @@ impl ::windows_core::RuntimeType for DisplayManagerPathsFailedOrInvalidatedEvent
 }
 unsafe impl ::windows_core::Interface for DisplayManagerPathsFailedOrInvalidatedEventArgs {
     type Vtable = IDisplayManagerPathsFailedOrInvalidatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayManagerPathsFailedOrInvalidatedEventArgs {
-    const IID: ::windows_core::GUID = <IDisplayManagerPathsFailedOrInvalidatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayManagerPathsFailedOrInvalidatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayManagerPathsFailedOrInvalidatedEventArgs {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayManagerPathsFailedOrInvalidatedEventArgs";
@@ -1082,9 +1066,7 @@ impl ::windows_core::RuntimeType for DisplayManagerResultWithState {
 }
 unsafe impl ::windows_core::Interface for DisplayManagerResultWithState {
     type Vtable = IDisplayManagerResultWithState_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayManagerResultWithState {
-    const IID: ::windows_core::GUID = <IDisplayManagerResultWithState as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayManagerResultWithState as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayManagerResultWithState {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayManagerResultWithState";
@@ -1175,7 +1157,7 @@ impl DisplayModeInfo {
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
     pub fn PhysicalPresentationRate(&self) -> ::windows_core::Result<DisplayPresentationRate> {
-        let this = &::windows_core::ComInterface::cast::<IDisplayModeInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayModeInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PhysicalPresentationRate)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1187,9 +1169,7 @@ impl ::windows_core::RuntimeType for DisplayModeInfo {
 }
 unsafe impl ::windows_core::Interface for DisplayModeInfo {
     type Vtable = IDisplayModeInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayModeInfo {
-    const IID: ::windows_core::GUID = <IDisplayModeInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayModeInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayModeInfo {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayModeInfo";
@@ -1380,7 +1360,7 @@ impl DisplayPath {
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
     pub fn PhysicalPresentationRate(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<DisplayPresentationRate>> {
-        let this = &::windows_core::ComInterface::cast::<IDisplayPath2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayPath2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PhysicalPresentationRate)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1392,7 +1372,7 @@ impl DisplayPath {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<DisplayPresentationRate>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDisplayPath2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayPath2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPhysicalPresentationRate)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
@@ -1401,9 +1381,7 @@ impl ::windows_core::RuntimeType for DisplayPath {
 }
 unsafe impl ::windows_core::Interface for DisplayPath {
     type Vtable = IDisplayPath_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayPath {
-    const IID: ::windows_core::GUID = <IDisplayPath as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayPath as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayPath {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayPath";
@@ -1507,9 +1485,7 @@ impl ::windows_core::RuntimeType for DisplayPrimaryDescription {
 }
 unsafe impl ::windows_core::Interface for DisplayPrimaryDescription {
     type Vtable = IDisplayPrimaryDescription_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayPrimaryDescription {
-    const IID: ::windows_core::GUID = <IDisplayPrimaryDescription as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayPrimaryDescription as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayPrimaryDescription {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayPrimaryDescription";
@@ -1526,9 +1502,7 @@ impl ::windows_core::RuntimeType for DisplayScanout {
 }
 unsafe impl ::windows_core::Interface for DisplayScanout {
     type Vtable = IDisplayScanout_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayScanout {
-    const IID: ::windows_core::GUID = <IDisplayScanout as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayScanout as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayScanout {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayScanout";
@@ -1566,7 +1540,7 @@ impl DisplaySource {
         }
     }
     pub fn Status(&self) -> ::windows_core::Result<DisplaySourceStatus> {
-        let this = &::windows_core::ComInterface::cast::<IDisplaySource2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplaySource2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Status)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1576,14 +1550,14 @@ impl DisplaySource {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<DisplaySource, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDisplaySource2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplaySource2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StatusChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveStatusChanged(&self, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDisplaySource2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplaySource2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveStatusChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
 }
@@ -1592,9 +1566,7 @@ impl ::windows_core::RuntimeType for DisplaySource {
 }
 unsafe impl ::windows_core::Interface for DisplaySource {
     type Vtable = IDisplaySource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplaySource {
-    const IID: ::windows_core::GUID = <IDisplaySource as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplaySource as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplaySource {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplaySource";
@@ -1733,9 +1705,7 @@ impl ::windows_core::RuntimeType for DisplayState {
 }
 unsafe impl ::windows_core::Interface for DisplayState {
     type Vtable = IDisplayState_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayState {
-    const IID: ::windows_core::GUID = <IDisplayState as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayState as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayState {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayState";
@@ -1767,9 +1737,7 @@ impl ::windows_core::RuntimeType for DisplayStateOperationResult {
 }
 unsafe impl ::windows_core::Interface for DisplayStateOperationResult {
     type Vtable = IDisplayStateOperationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayStateOperationResult {
-    const IID: ::windows_core::GUID = <IDisplayStateOperationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayStateOperationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayStateOperationResult {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayStateOperationResult";
@@ -1786,9 +1754,7 @@ impl ::windows_core::RuntimeType for DisplaySurface {
 }
 unsafe impl ::windows_core::Interface for DisplaySurface {
     type Vtable = IDisplaySurface_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplaySurface {
-    const IID: ::windows_core::GUID = <IDisplaySurface as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplaySurface as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplaySurface {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplaySurface";
@@ -1912,9 +1878,7 @@ impl ::windows_core::RuntimeType for DisplayTarget {
 }
 unsafe impl ::windows_core::Interface for DisplayTarget {
     type Vtable = IDisplayTarget_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayTarget {
-    const IID: ::windows_core::GUID = <IDisplayTarget as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayTarget as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayTarget {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayTarget";
@@ -1944,7 +1908,7 @@ impl DisplayTask {
     where
         P0: ::windows_core::IntoParam<DisplayFence>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDisplayTask2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayTask2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSignal)(::windows_core::Interface::as_raw(this), signalkind, fence.into_param().abi()).ok() }
     }
 }
@@ -1953,9 +1917,7 @@ impl ::windows_core::RuntimeType for DisplayTask {
 }
 unsafe impl ::windows_core::Interface for DisplayTask {
     type Vtable = IDisplayTask_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayTask {
-    const IID: ::windows_core::GUID = <IDisplayTask as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayTask as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayTask {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayTask";
@@ -1987,7 +1949,7 @@ impl DisplayTaskPool {
     where
         P0: ::windows_core::IntoParam<DisplayTask>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDisplayTaskPool2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayTaskPool2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryExecuteTask)(::windows_core::Interface::as_raw(this), task.into_param().abi(), &mut result__).from_abi(result__)
@@ -1999,9 +1961,7 @@ impl ::windows_core::RuntimeType for DisplayTaskPool {
 }
 unsafe impl ::windows_core::Interface for DisplayTaskPool {
     type Vtable = IDisplayTaskPool_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayTaskPool {
-    const IID: ::windows_core::GUID = <IDisplayTaskPool as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayTaskPool as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayTaskPool {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayTaskPool";
@@ -2040,9 +2000,7 @@ impl ::windows_core::RuntimeType for DisplayTaskResult {
 }
 unsafe impl ::windows_core::Interface for DisplayTaskResult {
     type Vtable = IDisplayTaskResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayTaskResult {
-    const IID: ::windows_core::GUID = <IDisplayTaskResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayTaskResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayTaskResult {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayTaskResult";
@@ -2103,9 +2061,7 @@ impl ::windows_core::RuntimeType for DisplayView {
 }
 unsafe impl ::windows_core::Interface for DisplayView {
     type Vtable = IDisplayView_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayView {
-    const IID: ::windows_core::GUID = <IDisplayView as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayView as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayView {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayView";
@@ -2194,9 +2150,7 @@ impl ::windows_core::RuntimeType for DisplayWireFormat {
 }
 unsafe impl ::windows_core::Interface for DisplayWireFormat {
     type Vtable = IDisplayWireFormat_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayWireFormat {
-    const IID: ::windows_core::GUID = <IDisplayWireFormat as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayWireFormat as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayWireFormat {
     const NAME: &'static str = "Windows.Devices.Display.Core.DisplayWireFormat";

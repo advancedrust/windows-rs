@@ -195,9 +195,7 @@ impl ::windows_core::RuntimeType for UserDataTaskDataProviderConnection {
 }
 unsafe impl ::windows_core::Interface for UserDataTaskDataProviderConnection {
     type Vtable = IUserDataTaskDataProviderConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataTaskDataProviderConnection {
-    const IID: ::windows_core::GUID = <IUserDataTaskDataProviderConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataTaskDataProviderConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataTaskDataProviderConnection {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskDataProviderConnection";
@@ -222,9 +220,7 @@ impl ::windows_core::RuntimeType for UserDataTaskDataProviderTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for UserDataTaskDataProviderTriggerDetails {
     type Vtable = IUserDataTaskDataProviderTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataTaskDataProviderTriggerDetails {
-    const IID: ::windows_core::GUID = <IUserDataTaskDataProviderTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataTaskDataProviderTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataTaskDataProviderTriggerDetails {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskDataProviderTriggerDetails";
@@ -270,9 +266,7 @@ impl ::windows_core::RuntimeType for UserDataTaskListCompleteTaskRequest {
 }
 unsafe impl ::windows_core::Interface for UserDataTaskListCompleteTaskRequest {
     type Vtable = IUserDataTaskListCompleteTaskRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataTaskListCompleteTaskRequest {
-    const IID: ::windows_core::GUID = <IUserDataTaskListCompleteTaskRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataTaskListCompleteTaskRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataTaskListCompleteTaskRequest {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCompleteTaskRequest";
@@ -304,9 +298,7 @@ impl ::windows_core::RuntimeType for UserDataTaskListCompleteTaskRequestEventArg
 }
 unsafe impl ::windows_core::Interface for UserDataTaskListCompleteTaskRequestEventArgs {
     type Vtable = IUserDataTaskListCompleteTaskRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataTaskListCompleteTaskRequestEventArgs {
-    const IID: ::windows_core::GUID = <IUserDataTaskListCompleteTaskRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataTaskListCompleteTaskRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataTaskListCompleteTaskRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCompleteTaskRequestEventArgs";
@@ -355,9 +347,7 @@ impl ::windows_core::RuntimeType for UserDataTaskListCreateOrUpdateTaskRequest {
 }
 unsafe impl ::windows_core::Interface for UserDataTaskListCreateOrUpdateTaskRequest {
     type Vtable = IUserDataTaskListCreateOrUpdateTaskRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataTaskListCreateOrUpdateTaskRequest {
-    const IID: ::windows_core::GUID = <IUserDataTaskListCreateOrUpdateTaskRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataTaskListCreateOrUpdateTaskRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataTaskListCreateOrUpdateTaskRequest {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCreateOrUpdateTaskRequest";
@@ -389,9 +379,7 @@ impl ::windows_core::RuntimeType for UserDataTaskListCreateOrUpdateTaskRequestEv
 }
 unsafe impl ::windows_core::Interface for UserDataTaskListCreateOrUpdateTaskRequestEventArgs {
     type Vtable = IUserDataTaskListCreateOrUpdateTaskRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataTaskListCreateOrUpdateTaskRequestEventArgs {
-    const IID: ::windows_core::GUID = <IUserDataTaskListCreateOrUpdateTaskRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataTaskListCreateOrUpdateTaskRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataTaskListCreateOrUpdateTaskRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListCreateOrUpdateTaskRequestEventArgs";
@@ -437,9 +425,7 @@ impl ::windows_core::RuntimeType for UserDataTaskListDeleteTaskRequest {
 }
 unsafe impl ::windows_core::Interface for UserDataTaskListDeleteTaskRequest {
     type Vtable = IUserDataTaskListDeleteTaskRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataTaskListDeleteTaskRequest {
-    const IID: ::windows_core::GUID = <IUserDataTaskListDeleteTaskRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataTaskListDeleteTaskRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataTaskListDeleteTaskRequest {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListDeleteTaskRequest";
@@ -471,9 +457,7 @@ impl ::windows_core::RuntimeType for UserDataTaskListDeleteTaskRequestEventArgs 
 }
 unsafe impl ::windows_core::Interface for UserDataTaskListDeleteTaskRequestEventArgs {
     type Vtable = IUserDataTaskListDeleteTaskRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataTaskListDeleteTaskRequestEventArgs {
-    const IID: ::windows_core::GUID = <IUserDataTaskListDeleteTaskRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataTaskListDeleteTaskRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataTaskListDeleteTaskRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListDeleteTaskRequestEventArgs";
@@ -519,9 +503,7 @@ impl ::windows_core::RuntimeType for UserDataTaskListSkipOccurrenceRequest {
 }
 unsafe impl ::windows_core::Interface for UserDataTaskListSkipOccurrenceRequest {
     type Vtable = IUserDataTaskListSkipOccurrenceRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataTaskListSkipOccurrenceRequest {
-    const IID: ::windows_core::GUID = <IUserDataTaskListSkipOccurrenceRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataTaskListSkipOccurrenceRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataTaskListSkipOccurrenceRequest {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListSkipOccurrenceRequest";
@@ -553,9 +535,7 @@ impl ::windows_core::RuntimeType for UserDataTaskListSkipOccurrenceRequestEventA
 }
 unsafe impl ::windows_core::Interface for UserDataTaskListSkipOccurrenceRequestEventArgs {
     type Vtable = IUserDataTaskListSkipOccurrenceRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataTaskListSkipOccurrenceRequestEventArgs {
-    const IID: ::windows_core::GUID = <IUserDataTaskListSkipOccurrenceRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataTaskListSkipOccurrenceRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataTaskListSkipOccurrenceRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListSkipOccurrenceRequestEventArgs";
@@ -594,9 +574,7 @@ impl ::windows_core::RuntimeType for UserDataTaskListSyncManagerSyncRequest {
 }
 unsafe impl ::windows_core::Interface for UserDataTaskListSyncManagerSyncRequest {
     type Vtable = IUserDataTaskListSyncManagerSyncRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataTaskListSyncManagerSyncRequest {
-    const IID: ::windows_core::GUID = <IUserDataTaskListSyncManagerSyncRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataTaskListSyncManagerSyncRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataTaskListSyncManagerSyncRequest {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListSyncManagerSyncRequest";
@@ -628,9 +606,7 @@ impl ::windows_core::RuntimeType for UserDataTaskListSyncManagerSyncRequestEvent
 }
 unsafe impl ::windows_core::Interface for UserDataTaskListSyncManagerSyncRequestEventArgs {
     type Vtable = IUserDataTaskListSyncManagerSyncRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataTaskListSyncManagerSyncRequestEventArgs {
-    const IID: ::windows_core::GUID = <IUserDataTaskListSyncManagerSyncRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataTaskListSyncManagerSyncRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataTaskListSyncManagerSyncRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataTasks.DataProvider.UserDataTaskListSyncManagerSyncRequestEventArgs";

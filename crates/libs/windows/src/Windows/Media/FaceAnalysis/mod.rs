@@ -115,9 +115,7 @@ impl ::windows_core::RuntimeType for DetectedFace {
 }
 unsafe impl ::windows_core::Interface for DetectedFace {
     type Vtable = IDetectedFace_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DetectedFace {
-    const IID: ::windows_core::GUID = <IDetectedFace as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDetectedFace as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DetectedFace {
     const NAME: &'static str = "Windows.Media.FaceAnalysis.DetectedFace";
@@ -222,9 +220,7 @@ impl ::windows_core::RuntimeType for FaceDetector {
 }
 unsafe impl ::windows_core::Interface for FaceDetector {
     type Vtable = IFaceDetector_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FaceDetector {
-    const IID: ::windows_core::GUID = <IFaceDetector as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFaceDetector as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FaceDetector {
     const NAME: &'static str = "Windows.Media.FaceAnalysis.FaceDetector";
@@ -317,9 +313,7 @@ impl ::windows_core::RuntimeType for FaceTracker {
 }
 unsafe impl ::windows_core::Interface for FaceTracker {
     type Vtable = IFaceTracker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FaceTracker {
-    const IID: ::windows_core::GUID = <IFaceTracker as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFaceTracker as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FaceTracker {
     const NAME: &'static str = "Windows.Media.FaceAnalysis.FaceTracker";

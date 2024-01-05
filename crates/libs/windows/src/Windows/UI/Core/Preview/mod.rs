@@ -64,9 +64,7 @@ impl ::windows_core::RuntimeType for CoreAppWindowPreview {
 }
 unsafe impl ::windows_core::Interface for CoreAppWindowPreview {
     type Vtable = ICoreAppWindowPreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreAppWindowPreview {
-    const IID: ::windows_core::GUID = <ICoreAppWindowPreview as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreAppWindowPreview as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreAppWindowPreview {
     const NAME: &'static str = "Windows.UI.Core.Preview.CoreAppWindowPreview";
@@ -102,9 +100,7 @@ impl ::windows_core::RuntimeType for SystemNavigationCloseRequestedPreviewEventA
 }
 unsafe impl ::windows_core::Interface for SystemNavigationCloseRequestedPreviewEventArgs {
     type Vtable = ISystemNavigationCloseRequestedPreviewEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemNavigationCloseRequestedPreviewEventArgs {
-    const IID: ::windows_core::GUID = <ISystemNavigationCloseRequestedPreviewEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemNavigationCloseRequestedPreviewEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemNavigationCloseRequestedPreviewEventArgs {
     const NAME: &'static str = "Windows.UI.Core.Preview.SystemNavigationCloseRequestedPreviewEventArgs";
@@ -147,9 +143,7 @@ impl ::windows_core::RuntimeType for SystemNavigationManagerPreview {
 }
 unsafe impl ::windows_core::Interface for SystemNavigationManagerPreview {
     type Vtable = ISystemNavigationManagerPreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemNavigationManagerPreview {
-    const IID: ::windows_core::GUID = <ISystemNavigationManagerPreview as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemNavigationManagerPreview as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemNavigationManagerPreview {
     const NAME: &'static str = "Windows.UI.Core.Preview.SystemNavigationManagerPreview";

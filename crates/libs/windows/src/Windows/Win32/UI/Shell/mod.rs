@@ -7,7 +7,7 @@ pub mod PropertiesSystem;
 #[inline]
 pub unsafe fn AssocCreate<T>(clsid: ::windows_core::GUID) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shlwapi.dll" "system" fn AssocCreate(clsid : ::windows_core::GUID, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -18,7 +18,7 @@ where
 #[inline]
 pub unsafe fn AssocCreateForClasses<T>(rgclasses: &[ASSOCIATIONELEMENT]) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn AssocCreateForClasses(rgclasses : *const ASSOCIATIONELEMENT, cclasses : u32, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -653,7 +653,7 @@ pub unsafe fn HlinkClone<P0, P1, T>(pihl: P0, pihlsiteforclone: P1, dwsitedata: 
 where
     P0: ::windows_core::IntoParam<IHlink>,
     P1: ::windows_core::IntoParam<IHlinkSite>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("hlink.dll" "system" fn HlinkClone(pihl : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, pihlsiteforclone : * mut::core::ffi::c_void, dwsitedata : u32, ppvobj : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -663,7 +663,7 @@ where
 pub unsafe fn HlinkCreateBrowseContext<P0, T>(piunkouter: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("hlink.dll" "system" fn HlinkCreateBrowseContext(piunkouter : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppvobj : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -677,7 +677,7 @@ where
     P2: ::windows_core::IntoParam<::windows_core::PCWSTR>,
     P3: ::windows_core::IntoParam<::windows_core::PCWSTR>,
     P4: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("hlink.dll" "system" fn HlinkCreateExtensionServices(pwzadditionalheaders : ::windows_core::PCWSTR, phwnd : super::super::Foundation:: HWND, pszusername : ::windows_core::PCWSTR, pszpassword : ::windows_core::PCWSTR, piunkouter : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppvobj : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -691,7 +691,7 @@ where
     P0: ::windows_core::IntoParam<super::super::System::Com::IDataObject>,
     P1: ::windows_core::IntoParam<IHlinkSite>,
     P2: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("hlink.dll" "system" fn HlinkCreateFromData(pidataobj : * mut::core::ffi::c_void, pihlsite : * mut::core::ffi::c_void, dwsitedata : u32, piunkouter : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppvobj : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -707,7 +707,7 @@ where
     P2: ::windows_core::IntoParam<::windows_core::PCWSTR>,
     P3: ::windows_core::IntoParam<IHlinkSite>,
     P4: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("hlink.dll" "system" fn HlinkCreateFromMoniker(pimktrgt : * mut::core::ffi::c_void, pwzlocation : ::windows_core::PCWSTR, pwzfriendlyname : ::windows_core::PCWSTR, pihlsite : * mut::core::ffi::c_void, dwsitedata : u32, piunkouter : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppvobj : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -721,7 +721,7 @@ where
     P2: ::windows_core::IntoParam<::windows_core::PCWSTR>,
     P3: ::windows_core::IntoParam<IHlinkSite>,
     P4: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("hlink.dll" "system" fn HlinkCreateFromString(pwztarget : ::windows_core::PCWSTR, pwzlocation : ::windows_core::PCWSTR, pwzfriendlyname : ::windows_core::PCWSTR, pihlsite : * mut::core::ffi::c_void, dwsitedata : u32, piunkouter : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppvobj : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -1195,7 +1195,7 @@ pub unsafe fn IUnknown_AtomicRelease(ppunk: ::core::option::Option<*mut *mut ::c
 pub unsafe fn IUnknown_GetSite<P0, T>(punk: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shlwapi.dll" "system" fn IUnknown_GetSite(punk : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -1214,7 +1214,7 @@ where
 pub unsafe fn IUnknown_QueryService<P0, T>(punk: P0, guidservice: *const ::windows_core::GUID) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shlwapi.dll" "system" fn IUnknown_QueryService(punk : * mut::core::ffi::c_void, guidservice : *const ::windows_core::GUID, riid : *const ::windows_core::GUID, ppvout : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2461,7 +2461,7 @@ pub unsafe fn PropVariantToStrRet(propvar: *const super::super::System::Com::Str
 #[inline]
 pub unsafe fn QISearch<T>(that: *mut ::core::ffi::c_void, pqit: *const QITAB) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shlwapi.dll" "system" fn QISearch(that : *mut ::core::ffi::c_void, pqit : *const QITAB, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2599,7 +2599,7 @@ where
 pub unsafe fn SHAssocEnumHandlersForProtocolByApplication<P0, T>(protocol: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHAssocEnumHandlersForProtocolByApplication(protocol : ::windows_core::PCWSTR, riid : *const ::windows_core::GUID, enumhandlers : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2619,7 +2619,7 @@ where
 pub unsafe fn SHBindToFolderIDListParent<P0, T>(psfroot: P0, pidl: *const Common::ITEMIDLIST, ppidllast: ::core::option::Option<*mut *mut Common::ITEMIDLIST>) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<IShellFolder>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHBindToFolderIDListParent(psfroot : * mut::core::ffi::c_void, pidl : *const Common:: ITEMIDLIST, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void, ppidllast : *mut *mut Common:: ITEMIDLIST) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2632,7 +2632,7 @@ pub unsafe fn SHBindToFolderIDListParentEx<P0, P1, T>(psfroot: P0, pidl: *const 
 where
     P0: ::windows_core::IntoParam<IShellFolder>,
     P1: ::windows_core::IntoParam<super::super::System::Com::IBindCtx>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHBindToFolderIDListParentEx(psfroot : * mut::core::ffi::c_void, pidl : *const Common:: ITEMIDLIST, ppbc : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void, ppidllast : *mut *mut Common:: ITEMIDLIST) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2645,7 +2645,7 @@ pub unsafe fn SHBindToObject<P0, P1, T>(psf: P0, pidl: *const Common::ITEMIDLIST
 where
     P0: ::windows_core::IntoParam<IShellFolder>,
     P1: ::windows_core::IntoParam<super::super::System::Com::IBindCtx>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHBindToObject(psf : * mut::core::ffi::c_void, pidl : *const Common:: ITEMIDLIST, pbc : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2656,7 +2656,7 @@ where
 #[inline]
 pub unsafe fn SHBindToParent<T>(pidl: *const Common::ITEMIDLIST, ppidllast: ::core::option::Option<*mut *mut Common::ITEMIDLIST>) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHBindToParent(pidl : *const Common:: ITEMIDLIST, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void, ppidllast : *mut *mut Common:: ITEMIDLIST) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2744,7 +2744,7 @@ pub unsafe fn SHCoCreateInstance<P0, P1, T>(pszclsid: P0, pclsid: ::core::option
 where
     P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
     P1: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCoCreateInstance(pszclsid : ::windows_core::PCWSTR, pclsid : *const ::windows_core::GUID, punkouter : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2777,7 +2777,7 @@ where
 #[inline]
 pub unsafe fn SHCreateAssociationRegistration<T>() -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCreateAssociationRegistration(riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2789,7 +2789,7 @@ where
 pub unsafe fn SHCreateDataObject<P0, T>(pidlfolder: ::core::option::Option<*const Common::ITEMIDLIST>, apidl: ::core::option::Option<&[*const Common::ITEMIDLIST]>, pdtinner: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<super::super::System::Com::IDataObject>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCreateDataObject(pidlfolder : *const Common:: ITEMIDLIST, cidl : u32, apidl : *const *const Common:: ITEMIDLIST, pdtinner : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2800,7 +2800,7 @@ where
 #[inline]
 pub unsafe fn SHCreateDefaultContextMenu<T>(pdcm: *const DEFCONTEXTMENU) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCreateDefaultContextMenu(pdcm : *const DEFCONTEXTMENU, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2809,7 +2809,7 @@ where
 #[inline]
 pub unsafe fn SHCreateDefaultExtractIcon<T>() -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCreateDefaultExtractIcon(riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2859,7 +2859,7 @@ where
 pub unsafe fn SHCreateFileExtractIconW<P0, T>(pszfile: P0, dwfileattributes: u32) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCreateFileExtractIconW(pszfile : ::windows_core::PCWSTR, dwfileattributes : u32, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2870,7 +2870,7 @@ where
 #[inline]
 pub unsafe fn SHCreateItemFromIDList<T>(pidl: *const Common::ITEMIDLIST) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCreateItemFromIDList(pidl : *const Common:: ITEMIDLIST, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2883,7 +2883,7 @@ pub unsafe fn SHCreateItemFromParsingName<P0, P1, T>(pszpath: P0, pbc: P1) -> ::
 where
     P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
     P1: ::windows_core::IntoParam<super::super::System::Com::IBindCtx>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCreateItemFromParsingName(pszpath : ::windows_core::PCWSTR, pbc : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2897,7 +2897,7 @@ where
     P0: ::windows_core::IntoParam<IShellItem>,
     P1: ::windows_core::IntoParam<::windows_core::PCWSTR>,
     P2: ::windows_core::IntoParam<super::super::System::Com::IBindCtx>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCreateItemFromRelativeName(psiparent : * mut::core::ffi::c_void, pszname : ::windows_core::PCWSTR, pbc : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2907,7 +2907,7 @@ where
 pub unsafe fn SHCreateItemInKnownFolder<P0, T>(kfid: *const ::windows_core::GUID, dwkfflags: u32, pszitem: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCreateItemInKnownFolder(kfid : *const ::windows_core::GUID, dwkfflags : u32, pszitem : ::windows_core::PCWSTR, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -2919,7 +2919,7 @@ where
 pub unsafe fn SHCreateItemWithParent<P0, T>(pidlparent: ::core::option::Option<*const Common::ITEMIDLIST>, psfparent: P0, pidl: *const Common::ITEMIDLIST) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<IShellFolder>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCreateItemWithParent(pidlparent : *const Common:: ITEMIDLIST, psfparent : * mut::core::ffi::c_void, pidl : *const Common:: ITEMIDLIST, riid : *const ::windows_core::GUID, ppvitem : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -3002,7 +3002,7 @@ where
 pub unsafe fn SHCreateShellItemArrayFromDataObject<P0, T>(pdo: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<super::super::System::Com::IDataObject>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCreateShellItemArrayFromDataObject(pdo : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -3020,7 +3020,7 @@ pub unsafe fn SHCreateShellItemArrayFromIDLists(rgpidl: &[*const Common::ITEMIDL
 pub unsafe fn SHCreateShellItemArrayFromShellItem<P0, T>(psi: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<IShellItem>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHCreateShellItemArrayFromShellItem(psi : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -3516,7 +3516,7 @@ where
 #[inline]
 pub unsafe fn SHGetImageList<T>(iimagelist: i32) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHGetImageList(iimagelist : i32, riid : *const ::windows_core::GUID, ppvobj : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -3539,7 +3539,7 @@ pub unsafe fn SHGetInverseCMAP(pbmap: &mut [u8]) -> ::windows_core::Result<()> {
 pub unsafe fn SHGetItemFromDataObject<P0, T>(pdtobj: P0, dwflags: DATAOBJ_GET_ITEM_FLAGS) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<super::super::System::Com::IDataObject>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHGetItemFromDataObject(pdtobj : * mut::core::ffi::c_void, dwflags : DATAOBJ_GET_ITEM_FLAGS, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -3549,7 +3549,7 @@ where
 pub unsafe fn SHGetItemFromObject<P0, T>(punk: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHGetItemFromObject(punk : * mut::core::ffi::c_void, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -3570,7 +3570,7 @@ where
 pub unsafe fn SHGetKnownFolderItem<P0, T>(rfid: *const ::windows_core::GUID, flags: KNOWN_FOLDER_FLAG, htoken: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<super::super::Foundation::HANDLE>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn SHGetKnownFolderItem(rfid : *const ::windows_core::GUID, flags : KNOWN_FOLDER_FLAG, htoken : super::super::Foundation:: HANDLE, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -3774,7 +3774,7 @@ where
 pub unsafe fn SHGetViewStatePropertyBag<P0, T>(pidl: ::core::option::Option<*const Common::ITEMIDLIST>, pszbagname: P0, dwflags: u32) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shlwapi.dll" "system" fn SHGetViewStatePropertyBag(pidl : *const Common:: ITEMIDLIST, pszbagname : ::windows_core::PCWSTR, dwflags : u32, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -4909,7 +4909,7 @@ pub unsafe fn StgMakeUniqueName<P0, P1, T>(pstgparent: P0, pszfilespec: P1, grfm
 where
     P0: ::windows_core::IntoParam<super::super::System::Com::StructuredStorage::IStorage>,
     P1: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("shell32.dll" "system" fn StgMakeUniqueName(pstgparent : * mut::core::ffi::c_void, pszfilespec : ::windows_core::PCWSTR, grfmode : u32, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -7371,7 +7371,7 @@ impl IApplicationDocumentLists {
     }
     pub unsafe fn GetList<T>(&self, listtype: APPDOCLISTTYPE, citemsdesired: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetList)(::windows_core::Interface::as_raw(self), listtype, citemsdesired, &T::IID, &mut result__).from_abi(result__)
@@ -7626,7 +7626,7 @@ impl IBandHost {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::BOOL>,
         P1: ::windows_core::IntoParam<super::super::Foundation::BOOL>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateBand)(::windows_core::Interface::as_raw(self), rclsidband, favailable.into_param().abi(), fvisible.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -7675,7 +7675,7 @@ impl IBandSite {
     }
     pub unsafe fn GetBandObject<T>(&self, dwbandid: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetBandObject)(::windows_core::Interface::as_raw(self), dwbandid, &T::IID, &mut result__).from_abi(result__)
@@ -9748,7 +9748,7 @@ impl ICategoryProvider {
     }
     pub unsafe fn CreateCategory<T>(&self, pguid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateCategory)(::windows_core::Interface::as_raw(self), pguid, &T::IID, &mut result__).from_abi(result__)
@@ -10989,7 +10989,7 @@ impl ICustomDestinationList {
     }
     pub unsafe fn BeginList<T>(&self, pcminslots: *mut u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).BeginList)(::windows_core::Interface::as_raw(self), pcminslots, &T::IID, &mut result__).from_abi(result__)
@@ -11019,7 +11019,7 @@ impl ICustomDestinationList {
     }
     pub unsafe fn GetRemovedDestinations<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetRemovedDestinations)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -11141,7 +11141,7 @@ impl IDataTransferManagerInterop {
     pub unsafe fn GetForWindow<P0, T>(&self, appwindow: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetForWindow)(::windows_core::Interface::as_raw(self), appwindow.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -12615,7 +12615,7 @@ impl IExplorerBrowser {
     }
     pub unsafe fn GetCurrentView<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetCurrentView)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -12771,14 +12771,14 @@ impl IExplorerCommandProvider {
     pub unsafe fn GetCommands<P0, T>(&self, punksite: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetCommands)(::windows_core::Interface::as_raw(self), punksite.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetCommand<T>(&self, rguidcommandid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetCommand)(::windows_core::Interface::as_raw(self), rguidcommandid, &T::IID, &mut result__).from_abi(result__)
@@ -14500,7 +14500,7 @@ impl IFolderView {
     }
     pub unsafe fn GetFolder<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetFolder)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -14517,7 +14517,7 @@ impl IFolderView {
     }
     pub unsafe fn Items<T>(&self, uflags: _SVGIO) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Items)(::windows_core::Interface::as_raw(self), uflags.0 as _, &T::IID, &mut result__).from_abi(result__)
@@ -14595,7 +14595,7 @@ impl IFolderView2 {
     }
     pub unsafe fn GetFolder<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetFolder)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -14612,7 +14612,7 @@ impl IFolderView2 {
     }
     pub unsafe fn Items<T>(&self, uflags: _SVGIO) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.Items)(::windows_core::Interface::as_raw(self), uflags.0 as _, &T::IID, &mut result__).from_abi(result__)
@@ -14718,7 +14718,7 @@ impl IFolderView2 {
     }
     pub unsafe fn GetItem<T>(&self, iitem: i32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetItem)(::windows_core::Interface::as_raw(self), iitem, &T::IID, &mut result__).from_abi(result__)
@@ -14906,7 +14906,7 @@ pub struct IFolderViewOptions_Vtbl {
 impl IFolderViewSettings {
     pub unsafe fn GetColumnPropertyList<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetColumnPropertyList)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -15964,7 +15964,7 @@ impl IKnownFolder {
     }
     pub unsafe fn GetShellItem<T>(&self, dwflags: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetShellItem)(::windows_core::Interface::as_raw(self), dwflags, &T::IID, &mut result__).from_abi(result__)
@@ -17294,7 +17294,7 @@ pub struct IObjMgr_Vtbl {
 impl IObjectProvider {
     pub unsafe fn QueryObject<T>(&self, guidobject: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).QueryObject)(::windows_core::Interface::as_raw(self), guidobject, &T::IID, &mut result__).from_abi(result__)
@@ -17404,7 +17404,7 @@ impl IObjectWithSelection {
     }
     pub unsafe fn GetSelection<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetSelection)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -17454,7 +17454,7 @@ impl IOpenSearchSource {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
         P1: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetResults)(::windows_core::Interface::as_raw(self), hwnd.into_param().abi(), pszquery.into_param().abi(), dwstartindex, dwcount, &T::IID, &mut result__).from_abi(result__)
@@ -17802,7 +17802,7 @@ impl IParseAndCreateItem {
     }
     pub unsafe fn GetItem<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetItem)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -18770,7 +18770,7 @@ pub struct IScriptErrorList_Vtbl {
 impl ISearchBoxInfo {
     pub unsafe fn GetCondition<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetCondition)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -18865,7 +18865,7 @@ impl ISearchFolderItemFactory {
     }
     pub unsafe fn GetShellItem<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetShellItem)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -20558,7 +20558,7 @@ impl IShellFolder {
     pub unsafe fn BindToObject<P0, T>(&self, pidl: *const Common::ITEMIDLIST, pbc: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::System::Com::IBindCtx>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).BindToObject)(::windows_core::Interface::as_raw(self), pidl, pbc.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -20568,7 +20568,7 @@ impl IShellFolder {
     pub unsafe fn BindToStorage<P0, T>(&self, pidl: *const Common::ITEMIDLIST, pbc: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::System::Com::IBindCtx>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).BindToStorage)(::windows_core::Interface::as_raw(self), pidl, pbc.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -20584,7 +20584,7 @@ impl IShellFolder {
     pub unsafe fn CreateViewObject<P0, T>(&self, hwndowner: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateViewObject)(::windows_core::Interface::as_raw(self), hwndowner.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -20599,7 +20599,7 @@ impl IShellFolder {
     pub unsafe fn GetUIObjectOf<P0, T>(&self, hwndowner: P0, apidl: &[*const Common::ITEMIDLIST], rgfreserved: ::core::option::Option<*const u32>) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetUIObjectOf)(::windows_core::Interface::as_raw(self), hwndowner.into_param().abi(), apidl.len().try_into().unwrap(), ::core::mem::transmute(apidl.as_ptr()), &T::IID, ::core::mem::transmute(rgfreserved.unwrap_or(::std::ptr::null())), &mut result__).from_abi(result__)
@@ -20682,7 +20682,7 @@ impl IShellFolder2 {
     pub unsafe fn BindToObject<P0, T>(&self, pidl: *const Common::ITEMIDLIST, pbc: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::System::Com::IBindCtx>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.BindToObject)(::windows_core::Interface::as_raw(self), pidl, pbc.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -20692,7 +20692,7 @@ impl IShellFolder2 {
     pub unsafe fn BindToStorage<P0, T>(&self, pidl: *const Common::ITEMIDLIST, pbc: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::System::Com::IBindCtx>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.BindToStorage)(::windows_core::Interface::as_raw(self), pidl, pbc.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -20708,7 +20708,7 @@ impl IShellFolder2 {
     pub unsafe fn CreateViewObject<P0, T>(&self, hwndowner: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateViewObject)(::windows_core::Interface::as_raw(self), hwndowner.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -20723,7 +20723,7 @@ impl IShellFolder2 {
     pub unsafe fn GetUIObjectOf<P0, T>(&self, hwndowner: P0, apidl: &[*const Common::ITEMIDLIST], rgfreserved: ::core::option::Option<*const u32>) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::HWND>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetUIObjectOf)(::windows_core::Interface::as_raw(self), hwndowner.into_param().abi(), apidl.len().try_into().unwrap(), ::core::mem::transmute(apidl.as_ptr()), &T::IID, ::core::mem::transmute(rgfreserved.unwrap_or(::std::ptr::null())), &mut result__).from_abi(result__)
@@ -21712,7 +21712,7 @@ impl IShellItem {
     pub unsafe fn BindToHandler<P0, T>(&self, pbc: P0, bhid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::System::Com::IBindCtx>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).BindToHandler)(::windows_core::Interface::as_raw(self), pbc.into_param().abi(), bhid, &T::IID, &mut result__).from_abi(result__)
@@ -21763,7 +21763,7 @@ impl IShellItem2 {
     pub unsafe fn BindToHandler<P0, T>(&self, pbc: P0, bhid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::System::Com::IBindCtx>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.BindToHandler)(::windows_core::Interface::as_raw(self), pbc.into_param().abi(), bhid, &T::IID, &mut result__).from_abi(result__)
@@ -21793,7 +21793,7 @@ impl IShellItem2 {
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
     pub unsafe fn GetPropertyStore<T>(&self, flags: PropertiesSystem::GETPROPERTYSTOREFLAGS) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPropertyStore)(::windows_core::Interface::as_raw(self), flags, &T::IID, &mut result__).from_abi(result__)
@@ -21803,7 +21803,7 @@ impl IShellItem2 {
     pub unsafe fn GetPropertyStoreWithCreateObject<P0, T>(&self, flags: PropertiesSystem::GETPROPERTYSTOREFLAGS, punkcreateobject: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPropertyStoreWithCreateObject)(::windows_core::Interface::as_raw(self), flags, punkcreateobject.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -21812,7 +21812,7 @@ impl IShellItem2 {
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
     pub unsafe fn GetPropertyStoreForKeys<T>(&self, rgkeys: &[PropertiesSystem::PROPERTYKEY], flags: PropertiesSystem::GETPROPERTYSTOREFLAGS) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPropertyStoreForKeys)(::windows_core::Interface::as_raw(self), ::core::mem::transmute(rgkeys.as_ptr()), rgkeys.len().try_into().unwrap(), flags, &T::IID, &mut result__).from_abi(result__)
@@ -21821,7 +21821,7 @@ impl IShellItem2 {
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
     pub unsafe fn GetPropertyDescriptionList<T>(&self, keytype: *const PropertiesSystem::PROPERTYKEY) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPropertyDescriptionList)(::windows_core::Interface::as_raw(self), keytype, &T::IID, &mut result__).from_abi(result__)
@@ -21948,7 +21948,7 @@ impl IShellItemArray {
     pub unsafe fn BindToHandler<P0, T>(&self, pbc: P0, bhid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::System::Com::IBindCtx>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).BindToHandler)(::windows_core::Interface::as_raw(self), pbc.into_param().abi(), bhid, &T::IID, &mut result__).from_abi(result__)
@@ -21957,7 +21957,7 @@ impl IShellItemArray {
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
     pub unsafe fn GetPropertyStore<T>(&self, flags: PropertiesSystem::GETPROPERTYSTOREFLAGS) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPropertyStore)(::windows_core::Interface::as_raw(self), flags, &T::IID, &mut result__).from_abi(result__)
@@ -21966,7 +21966,7 @@ impl IShellItemArray {
     #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
     pub unsafe fn GetPropertyDescriptionList<T>(&self, keytype: *const PropertiesSystem::PROPERTYKEY) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPropertyDescriptionList)(::windows_core::Interface::as_raw(self), keytype, &T::IID, &mut result__).from_abi(result__)
@@ -22087,14 +22087,14 @@ impl IShellItemResources {
     }
     pub unsafe fn OpenResource<T>(&self, pcsir: *const SHELL_ITEM_RESOURCE) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).OpenResource)(::windows_core::Interface::as_raw(self), pcsir, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn CreateResource<T>(&self, pcsir: *const SHELL_ITEM_RESOURCE) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateResource)(::windows_core::Interface::as_raw(self), pcsir, &T::IID, &mut result__).from_abi(result__)
@@ -22144,7 +22144,7 @@ impl IShellLibrary {
     }
     pub unsafe fn GetFolders<T>(&self, lff: LIBRARYFOLDERFILTER) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetFolders)(::windows_core::Interface::as_raw(self), lff, &T::IID, &mut result__).from_abi(result__)
@@ -22152,14 +22152,14 @@ impl IShellLibrary {
     pub unsafe fn ResolveFolder<P0, T>(&self, psifoldertoresolve: P0, dwtimeout: u32) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<IShellItem>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).ResolveFolder)(::windows_core::Interface::as_raw(self), psifoldertoresolve.into_param().abi(), dwtimeout, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDefaultSaveFolder<T>(&self, dsft: DEFAULTSAVEFOLDERTYPE) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetDefaultSaveFolder)(::windows_core::Interface::as_raw(self), dsft, &T::IID, &mut result__).from_abi(result__)
@@ -26581,7 +26581,7 @@ impl IShellView {
     }
     pub unsafe fn GetItemObject<T>(&self, uitem: _SVGIO) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetItemObject)(::windows_core::Interface::as_raw(self), uitem.0 as _, &T::IID, &mut result__).from_abi(result__)
@@ -26688,7 +26688,7 @@ impl IShellView2 {
     }
     pub unsafe fn GetItemObject<T>(&self, uitem: _SVGIO) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetItemObject)(::windows_core::Interface::as_raw(self), uitem.0 as _, &T::IID, &mut result__).from_abi(result__)
@@ -26803,7 +26803,7 @@ impl IShellView3 {
     }
     pub unsafe fn GetItemObject<T>(&self, uitem: _SVGIO) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetItemObject)(::windows_core::Interface::as_raw(self), uitem.0 as _, &T::IID, &mut result__).from_abi(result__)
@@ -27293,7 +27293,7 @@ impl ISyncMgrConflict {
     }
     pub unsafe fn GetResolutionHandler<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetResolutionHandler)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -27453,7 +27453,7 @@ impl ISyncMgrConflictStore {
     #[cfg(feature = "Win32_System_Com")]
     pub unsafe fn BindToConflict<T>(&self, pconflictidinfo: *const SYNCMGR_CONFLICT_ID_INFO) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).BindToConflict)(::windows_core::Interface::as_raw(self), pconflictidinfo, &T::IID, &mut result__).from_abi(result__)
@@ -27771,7 +27771,7 @@ impl ISyncMgrHandler {
     }
     pub unsafe fn GetObject<T>(&self, rguidobjectid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetObject)(::windows_core::Interface::as_raw(self), rguidobjectid, &T::IID, &mut result__).from_abi(result__)
@@ -27830,7 +27830,7 @@ impl ISyncMgrHandlerCollection {
     pub unsafe fn BindToHandler<P0, T>(&self, pszhandlerid: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).BindToHandler)(::windows_core::Interface::as_raw(self), pszhandlerid.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -28092,7 +28092,7 @@ impl ISyncMgrSyncItem {
     }
     pub unsafe fn GetObject<T>(&self, rguidobjectid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetObject)(::windows_core::Interface::as_raw(self), rguidobjectid, &T::IID, &mut result__).from_abi(result__)
@@ -28218,7 +28218,7 @@ impl ISyncMgrSynchronize {
     }
     pub unsafe fn GetItemObject<T>(&self, itemid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetItemObject)(::windows_core::Interface::as_raw(self), itemid, &T::IID, &mut result__).from_abi(result__)
@@ -28804,7 +28804,7 @@ impl IThumbnailHandlerFactory {
     pub unsafe fn GetThumbnailHandler<P0, T>(&self, pidlchild: *const Common::ITEMIDLIST, pbc: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::super::System::Com::IBindCtx>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetThumbnailHandler)(::windows_core::Interface::as_raw(self), pidlchild, pbc.into_param().abi(), &T::IID, &mut result__).from_abi(result__)

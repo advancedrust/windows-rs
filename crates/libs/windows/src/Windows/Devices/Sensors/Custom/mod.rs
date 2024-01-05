@@ -104,18 +104,18 @@ impl CustomSensor {
         unsafe { (::windows_core::Interface::vtable(this).RemoveReadingChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn SetReportLatency(&self, value: u32) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICustomSensor2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICustomSensor2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetReportLatency)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ReportLatency(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<ICustomSensor2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICustomSensor2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReportLatency)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn MaxBatchSize(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<ICustomSensor2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICustomSensor2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MaxBatchSize)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -144,9 +144,7 @@ impl ::windows_core::RuntimeType for CustomSensor {
 }
 unsafe impl ::windows_core::Interface for CustomSensor {
     type Vtable = ICustomSensor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CustomSensor {
-    const IID: ::windows_core::GUID = <ICustomSensor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICustomSensor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CustomSensor {
     const NAME: &'static str = "Windows.Devices.Sensors.Custom.CustomSensor";
@@ -175,7 +173,7 @@ impl CustomSensorReading {
         }
     }
     pub fn PerformanceCount(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
-        let this = &::windows_core::ComInterface::cast::<ICustomSensorReading2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICustomSensorReading2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PerformanceCount)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -187,9 +185,7 @@ impl ::windows_core::RuntimeType for CustomSensorReading {
 }
 unsafe impl ::windows_core::Interface for CustomSensorReading {
     type Vtable = ICustomSensorReading_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CustomSensorReading {
-    const IID: ::windows_core::GUID = <ICustomSensorReading as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICustomSensorReading as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CustomSensorReading {
     const NAME: &'static str = "Windows.Devices.Sensors.Custom.CustomSensorReading";
@@ -214,9 +210,7 @@ impl ::windows_core::RuntimeType for CustomSensorReadingChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for CustomSensorReadingChangedEventArgs {
     type Vtable = ICustomSensorReadingChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CustomSensorReadingChangedEventArgs {
-    const IID: ::windows_core::GUID = <ICustomSensorReadingChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICustomSensorReadingChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CustomSensorReadingChangedEventArgs {
     const NAME: &'static str = "Windows.Devices.Sensors.Custom.CustomSensorReadingChangedEventArgs";

@@ -32,9 +32,7 @@ impl ::windows_core::RuntimeType for WindowManagementPreview {
 }
 unsafe impl ::windows_core::Interface for WindowManagementPreview {
     type Vtable = IWindowManagementPreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowManagementPreview {
-    const IID: ::windows_core::GUID = <IWindowManagementPreview as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowManagementPreview as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowManagementPreview {
     const NAME: &'static str = "Windows.UI.WindowManagement.Preview.WindowManagementPreview";

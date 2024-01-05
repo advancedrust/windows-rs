@@ -157,9 +157,7 @@ impl ::windows_core::RuntimeType for CurrentSessionChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for CurrentSessionChangedEventArgs {
     type Vtable = ICurrentSessionChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CurrentSessionChangedEventArgs {
-    const IID: ::windows_core::GUID = <ICurrentSessionChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICurrentSessionChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CurrentSessionChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Control.CurrentSessionChangedEventArgs";
@@ -352,9 +350,7 @@ impl ::windows_core::RuntimeType for GlobalSystemMediaTransportControlsSession {
 }
 unsafe impl ::windows_core::Interface for GlobalSystemMediaTransportControlsSession {
     type Vtable = IGlobalSystemMediaTransportControlsSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GlobalSystemMediaTransportControlsSession {
-    const IID: ::windows_core::GUID = <IGlobalSystemMediaTransportControlsSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGlobalSystemMediaTransportControlsSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GlobalSystemMediaTransportControlsSession {
     const NAME: &'static str = "Windows.Media.Control.GlobalSystemMediaTransportControlsSession";
@@ -427,9 +423,7 @@ impl ::windows_core::RuntimeType for GlobalSystemMediaTransportControlsSessionMa
 }
 unsafe impl ::windows_core::Interface for GlobalSystemMediaTransportControlsSessionManager {
     type Vtable = IGlobalSystemMediaTransportControlsSessionManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GlobalSystemMediaTransportControlsSessionManager {
-    const IID: ::windows_core::GUID = <IGlobalSystemMediaTransportControlsSessionManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGlobalSystemMediaTransportControlsSessionManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GlobalSystemMediaTransportControlsSessionManager {
     const NAME: &'static str = "Windows.Media.Control.GlobalSystemMediaTransportControlsSessionManager";
@@ -521,9 +515,7 @@ impl ::windows_core::RuntimeType for GlobalSystemMediaTransportControlsSessionMe
 }
 unsafe impl ::windows_core::Interface for GlobalSystemMediaTransportControlsSessionMediaProperties {
     type Vtable = IGlobalSystemMediaTransportControlsSessionMediaProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GlobalSystemMediaTransportControlsSessionMediaProperties {
-    const IID: ::windows_core::GUID = <IGlobalSystemMediaTransportControlsSessionMediaProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGlobalSystemMediaTransportControlsSessionMediaProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GlobalSystemMediaTransportControlsSessionMediaProperties {
     const NAME: &'static str = "Windows.Media.Control.GlobalSystemMediaTransportControlsSessionMediaProperties";
@@ -646,9 +638,7 @@ impl ::windows_core::RuntimeType for GlobalSystemMediaTransportControlsSessionPl
 }
 unsafe impl ::windows_core::Interface for GlobalSystemMediaTransportControlsSessionPlaybackControls {
     type Vtable = IGlobalSystemMediaTransportControlsSessionPlaybackControls_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GlobalSystemMediaTransportControlsSessionPlaybackControls {
-    const IID: ::windows_core::GUID = <IGlobalSystemMediaTransportControlsSessionPlaybackControls as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGlobalSystemMediaTransportControlsSessionPlaybackControls as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GlobalSystemMediaTransportControlsSessionPlaybackControls {
     const NAME: &'static str = "Windows.Media.Control.GlobalSystemMediaTransportControlsSessionPlaybackControls";
@@ -708,9 +698,7 @@ impl ::windows_core::RuntimeType for GlobalSystemMediaTransportControlsSessionPl
 }
 unsafe impl ::windows_core::Interface for GlobalSystemMediaTransportControlsSessionPlaybackInfo {
     type Vtable = IGlobalSystemMediaTransportControlsSessionPlaybackInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GlobalSystemMediaTransportControlsSessionPlaybackInfo {
-    const IID: ::windows_core::GUID = <IGlobalSystemMediaTransportControlsSessionPlaybackInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGlobalSystemMediaTransportControlsSessionPlaybackInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GlobalSystemMediaTransportControlsSessionPlaybackInfo {
     const NAME: &'static str = "Windows.Media.Control.GlobalSystemMediaTransportControlsSessionPlaybackInfo";
@@ -770,9 +758,7 @@ impl ::windows_core::RuntimeType for GlobalSystemMediaTransportControlsSessionTi
 }
 unsafe impl ::windows_core::Interface for GlobalSystemMediaTransportControlsSessionTimelineProperties {
     type Vtable = IGlobalSystemMediaTransportControlsSessionTimelineProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GlobalSystemMediaTransportControlsSessionTimelineProperties {
-    const IID: ::windows_core::GUID = <IGlobalSystemMediaTransportControlsSessionTimelineProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGlobalSystemMediaTransportControlsSessionTimelineProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GlobalSystemMediaTransportControlsSessionTimelineProperties {
     const NAME: &'static str = "Windows.Media.Control.GlobalSystemMediaTransportControlsSessionTimelineProperties";
@@ -789,9 +775,7 @@ impl ::windows_core::RuntimeType for MediaPropertiesChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for MediaPropertiesChangedEventArgs {
     type Vtable = IMediaPropertiesChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaPropertiesChangedEventArgs {
-    const IID: ::windows_core::GUID = <IMediaPropertiesChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaPropertiesChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaPropertiesChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Control.MediaPropertiesChangedEventArgs";
@@ -808,9 +792,7 @@ impl ::windows_core::RuntimeType for PlaybackInfoChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PlaybackInfoChangedEventArgs {
     type Vtable = IPlaybackInfoChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PlaybackInfoChangedEventArgs {
-    const IID: ::windows_core::GUID = <IPlaybackInfoChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPlaybackInfoChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PlaybackInfoChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Control.PlaybackInfoChangedEventArgs";
@@ -827,9 +809,7 @@ impl ::windows_core::RuntimeType for SessionsChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for SessionsChangedEventArgs {
     type Vtable = ISessionsChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SessionsChangedEventArgs {
-    const IID: ::windows_core::GUID = <ISessionsChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISessionsChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SessionsChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Control.SessionsChangedEventArgs";
@@ -846,9 +826,7 @@ impl ::windows_core::RuntimeType for TimelinePropertiesChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for TimelinePropertiesChangedEventArgs {
     type Vtable = ITimelinePropertiesChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TimelinePropertiesChangedEventArgs {
-    const IID: ::windows_core::GUID = <ITimelinePropertiesChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITimelinePropertiesChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TimelinePropertiesChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Control.TimelinePropertiesChangedEventArgs";

@@ -425,29 +425,29 @@ impl ICorePointerInputSource2 {
         }
     }
     pub fn ReleasePointerCapture(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReleasePointerCapture)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn SetPointerCapture(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPointerCapture)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn HasCapture(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasCapture)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PointerPosition(&self) -> ::windows_core::Result<super::super::Foundation::Point> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerPosition)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PointerCursor(&self) -> ::windows_core::Result<CoreCursor> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerCursor)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -457,105 +457,105 @@ impl ICorePointerInputSource2 {
     where
         P0: ::windows_core::IntoParam<CoreCursor>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPointerCursor)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn PointerCaptureLost<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerCaptureLost)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerCaptureLost(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerCaptureLost)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerEntered<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerEntered)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerEntered(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerEntered)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerExited<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerExited)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerExited(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerExited)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerMoved<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerMoved)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerMoved(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerMoved)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerPressed<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerPressed)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerPressed(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerPressed)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerReleased<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerReleased)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerReleased(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerReleased)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerWheelChanged<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerWheelChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerWheelChanged(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerWheelChanged)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
 }
@@ -1406,21 +1406,21 @@ impl AcceleratorKeyEventArgs {
         }
     }
     pub fn DeviceId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAcceleratorKeyEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAcceleratorKeyEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DeviceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Handled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Handled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetHandled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetHandled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -1429,9 +1429,7 @@ impl ::windows_core::RuntimeType for AcceleratorKeyEventArgs {
 }
 unsafe impl ::windows_core::Interface for AcceleratorKeyEventArgs {
     type Vtable = IAcceleratorKeyEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AcceleratorKeyEventArgs {
-    const IID: ::windows_core::GUID = <IAcceleratorKeyEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAcceleratorKeyEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AcceleratorKeyEventArgs {
     const NAME: &'static str = "Windows.UI.Core.AcceleratorKeyEventArgs";
@@ -1459,14 +1457,14 @@ impl AutomationProviderRequestedEventArgs {
         unsafe { (::windows_core::Interface::vtable(this).SetAutomationProvider)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Handled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Handled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetHandled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetHandled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -1475,9 +1473,7 @@ impl ::windows_core::RuntimeType for AutomationProviderRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AutomationProviderRequestedEventArgs {
     type Vtable = IAutomationProviderRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AutomationProviderRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IAutomationProviderRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAutomationProviderRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AutomationProviderRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.Core.AutomationProviderRequestedEventArgs";
@@ -1505,9 +1501,7 @@ impl ::windows_core::RuntimeType for BackRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for BackRequestedEventArgs {
     type Vtable = IBackRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BackRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IBackRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BackRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.Core.BackRequestedEventArgs";
@@ -1534,14 +1528,14 @@ impl CharacterReceivedEventArgs {
         }
     }
     pub fn Handled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Handled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetHandled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetHandled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -1550,9 +1544,7 @@ impl ::windows_core::RuntimeType for CharacterReceivedEventArgs {
 }
 unsafe impl ::windows_core::Interface for CharacterReceivedEventArgs {
     type Vtable = ICharacterReceivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CharacterReceivedEventArgs {
-    const IID: ::windows_core::GUID = <ICharacterReceivedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICharacterReceivedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CharacterReceivedEventArgs {
     const NAME: &'static str = "Windows.UI.Core.CharacterReceivedEventArgs";
@@ -1594,9 +1586,7 @@ impl ::windows_core::RuntimeType for ClosestInteractiveBoundsRequestedEventArgs 
 }
 unsafe impl ::windows_core::Interface for ClosestInteractiveBoundsRequestedEventArgs {
     type Vtable = IClosestInteractiveBoundsRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ClosestInteractiveBoundsRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IClosestInteractiveBoundsRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IClosestInteractiveBoundsRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ClosestInteractiveBoundsRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.Core.ClosestInteractiveBoundsRequestedEventArgs";
@@ -1626,9 +1616,7 @@ impl ::windows_core::RuntimeType for CoreAcceleratorKeys {
 }
 unsafe impl ::windows_core::Interface for CoreAcceleratorKeys {
     type Vtable = ICoreAcceleratorKeys_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreAcceleratorKeys {
-    const IID: ::windows_core::GUID = <ICoreAcceleratorKeys as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreAcceleratorKeys as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreAcceleratorKeys {
     const NAME: &'static str = "Windows.UI.Core.CoreAcceleratorKeys";
@@ -1645,18 +1633,18 @@ impl CoreComponentInputSource {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<CoreComponentInputSource, ClosestInteractiveBoundsRequestedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreClosestInteractiveBoundsRequested>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreClosestInteractiveBoundsRequested>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ClosestInteractiveBoundsRequested)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveClosestInteractiveBoundsRequested(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreClosestInteractiveBoundsRequested>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreClosestInteractiveBoundsRequested>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveClosestInteractiveBoundsRequested)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn HasFocus(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreComponentFocusable>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreComponentFocusable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasFocus)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1666,28 +1654,28 @@ impl CoreComponentInputSource {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, CoreWindowEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreComponentFocusable>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreComponentFocusable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GotFocus)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveGotFocus(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreComponentFocusable>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreComponentFocusable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveGotFocus)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn LostFocus<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, CoreWindowEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreComponentFocusable>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreComponentFocusable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LostFocus)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveLostFocus(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreComponentFocusable>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreComponentFocusable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveLostFocus)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn Dispatcher(&self) -> ::windows_core::Result<CoreDispatcher> {
@@ -1725,7 +1713,7 @@ impl CoreComponentInputSource {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn GetCurrentKeyState(&self, virtualkey: super::super::System::VirtualKey) -> ::windows_core::Result<CoreVirtualKeyStates> {
-        let this = &::windows_core::ComInterface::cast::<ICoreKeyboardInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreKeyboardInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetCurrentKeyState)(::windows_core::Interface::as_raw(this), virtualkey, &mut result__).from_abi(result__)
@@ -1735,75 +1723,75 @@ impl CoreComponentInputSource {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, CharacterReceivedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreKeyboardInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreKeyboardInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CharacterReceived)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveCharacterReceived(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreKeyboardInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreKeyboardInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveCharacterReceived)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn KeyDown<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, KeyEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreKeyboardInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreKeyboardInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).KeyDown)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveKeyDown(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreKeyboardInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreKeyboardInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveKeyDown)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn KeyUp<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, KeyEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreKeyboardInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreKeyboardInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).KeyUp)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveKeyUp(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreKeyboardInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreKeyboardInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveKeyUp)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn GetCurrentKeyEventDeviceId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICoreKeyboardInputSource2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreKeyboardInputSource2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetCurrentKeyEventDeviceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ReleasePointerCapture(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReleasePointerCapture)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn SetPointerCapture(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPointerCapture)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn HasCapture(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasCapture)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PointerPosition(&self) -> ::windows_core::Result<super::super::Foundation::Point> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerPosition)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PointerCursor(&self) -> ::windows_core::Result<CoreCursor> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerCursor)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1813,111 +1801,111 @@ impl CoreComponentInputSource {
     where
         P0: ::windows_core::IntoParam<CoreCursor>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPointerCursor)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn PointerCaptureLost<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerCaptureLost)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerCaptureLost(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerCaptureLost)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerEntered<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerEntered)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerEntered(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerEntered)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerExited<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerExited)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerExited(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerExited)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerMoved<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerMoved)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerMoved(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerMoved)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerPressed<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerPressed)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerPressed(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerPressed)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerReleased<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerReleased)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerReleased(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerReleased)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerWheelChanged<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerWheelChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerWheelChanged(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerWheelChanged)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn DispatcherQueue(&self) -> ::windows_core::Result<super::super::System::DispatcherQueue> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DispatcherQueue)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1927,14 +1915,14 @@ impl CoreComponentInputSource {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, TouchHitTestingEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreTouchHitTesting>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreTouchHitTesting>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TouchHitTesting)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveTouchHitTesting(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreTouchHitTesting>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreTouchHitTesting>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveTouchHitTesting)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
 }
@@ -1943,9 +1931,7 @@ impl ::windows_core::RuntimeType for CoreComponentInputSource {
 }
 unsafe impl ::windows_core::Interface for CoreComponentInputSource {
     type Vtable = ICoreInputSourceBase_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreComponentInputSource {
-    const IID: ::windows_core::GUID = <ICoreInputSourceBase as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreInputSourceBase as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreComponentInputSource {
     const NAME: &'static str = "Windows.UI.Core.CoreComponentInputSource";
@@ -1989,9 +1975,7 @@ impl ::windows_core::RuntimeType for CoreCursor {
 }
 unsafe impl ::windows_core::Interface for CoreCursor {
     type Vtable = ICoreCursor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreCursor {
-    const IID: ::windows_core::GUID = <ICoreCursor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreCursor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreCursor {
     const NAME: &'static str = "Windows.UI.Core.CoreCursor";
@@ -2007,14 +1991,14 @@ impl CoreDispatcher {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<CoreDispatcher, AcceleratorKeyEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreAcceleratorKeys>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreAcceleratorKeys>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AcceleratorKeyActivated)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveAcceleratorKeyActivated(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreAcceleratorKeys>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreAcceleratorKeys>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAcceleratorKeyActivated)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn HasThreadAccess(&self) -> ::windows_core::Result<bool> {
@@ -2052,7 +2036,7 @@ impl CoreDispatcher {
     where
         P0: ::windows_core::IntoParam<DispatchedHandler>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreDispatcher2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreDispatcher2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryRunAsync)(::windows_core::Interface::as_raw(this), priority, agilecallback.into_param().abi(), &mut result__).from_abi(result__)
@@ -2062,39 +2046,39 @@ impl CoreDispatcher {
     where
         P0: ::windows_core::IntoParam<IdleDispatchedHandler>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreDispatcher2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreDispatcher2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryRunIdleAsync)(::windows_core::Interface::as_raw(this), agilecallback.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CurrentPriority(&self) -> ::windows_core::Result<CoreDispatcherPriority> {
-        let this = &::windows_core::ComInterface::cast::<ICoreDispatcherWithTaskPriority>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreDispatcherWithTaskPriority>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CurrentPriority)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCurrentPriority(&self, value: CoreDispatcherPriority) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreDispatcherWithTaskPriority>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreDispatcherWithTaskPriority>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCurrentPriority)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ShouldYield(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreDispatcherWithTaskPriority>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreDispatcherWithTaskPriority>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShouldYield)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ShouldYieldToPriority(&self, priority: CoreDispatcherPriority) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreDispatcherWithTaskPriority>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreDispatcherWithTaskPriority>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShouldYieldToPriority)(::windows_core::Interface::as_raw(this), priority, &mut result__).from_abi(result__)
         }
     }
     pub fn StopProcessEvents(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreDispatcherWithTaskPriority>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreDispatcherWithTaskPriority>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).StopProcessEvents)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -2103,9 +2087,7 @@ impl ::windows_core::RuntimeType for CoreDispatcher {
 }
 unsafe impl ::windows_core::Interface for CoreDispatcher {
     type Vtable = ICoreDispatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreDispatcher {
-    const IID: ::windows_core::GUID = <ICoreDispatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreDispatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreDispatcher {
     const NAME: &'static str = "Windows.UI.Core.CoreDispatcher";
@@ -2151,29 +2133,29 @@ impl CoreIndependentInputSource {
         unsafe { (::windows_core::Interface::vtable(this).RemoveInputEnabled)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn ReleasePointerCapture(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReleasePointerCapture)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn SetPointerCapture(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPointerCapture)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn HasCapture(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasCapture)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PointerPosition(&self) -> ::windows_core::Result<super::super::Foundation::Point> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerPosition)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PointerCursor(&self) -> ::windows_core::Result<CoreCursor> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerCursor)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2183,111 +2165,111 @@ impl CoreIndependentInputSource {
     where
         P0: ::windows_core::IntoParam<CoreCursor>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPointerCursor)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn PointerCaptureLost<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerCaptureLost)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerCaptureLost(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerCaptureLost)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerEntered<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerEntered)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerEntered(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerEntered)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerExited<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerExited)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerExited(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerExited)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerMoved<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerMoved)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerMoved(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerMoved)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerPressed<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerPressed)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerPressed(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerPressed)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerReleased<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerReleased)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerReleased(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerReleased)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerWheelChanged<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<::windows_core::IInspectable, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerWheelChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerWheelChanged(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerWheelChanged)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn DispatcherQueue(&self) -> ::windows_core::Result<super::super::System::DispatcherQueue> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerInputSource2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerInputSource2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DispatcherQueue)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2297,42 +2279,42 @@ impl CoreIndependentInputSource {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<ICorePointerRedirector, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerRedirector>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerRedirector>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerRoutedAway)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerRoutedAway(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerRedirector>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerRedirector>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerRoutedAway)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerRoutedTo<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<ICorePointerRedirector, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerRedirector>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerRedirector>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerRoutedTo)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerRoutedTo(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerRedirector>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerRedirector>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerRoutedTo)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerRoutedReleased<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<ICorePointerRedirector, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerRedirector>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerRedirector>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerRoutedReleased)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerRoutedReleased(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerRedirector>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerRedirector>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerRoutedReleased)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
 }
@@ -2341,9 +2323,7 @@ impl ::windows_core::RuntimeType for CoreIndependentInputSource {
 }
 unsafe impl ::windows_core::Interface for CoreIndependentInputSource {
     type Vtable = ICoreInputSourceBase_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreIndependentInputSource {
-    const IID: ::windows_core::GUID = <ICoreInputSourceBase as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreInputSourceBase as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreIndependentInputSource {
     const NAME: &'static str = "Windows.UI.Core.CoreIndependentInputSource";
@@ -2357,7 +2337,7 @@ unsafe impl ::core::marker::Sync for CoreIndependentInputSource {}
 pub struct CoreIndependentInputSourceController(::windows_core::IUnknown);
 impl CoreIndependentInputSourceController {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn IsTransparentForUncontrolledInput(&self) -> ::windows_core::Result<bool> {
@@ -2430,9 +2410,7 @@ impl ::windows_core::RuntimeType for CoreIndependentInputSourceController {
 }
 unsafe impl ::windows_core::Interface for CoreIndependentInputSourceController {
     type Vtable = ICoreIndependentInputSourceController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreIndependentInputSourceController {
-    const IID: ::windows_core::GUID = <ICoreIndependentInputSourceController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreIndependentInputSourceController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreIndependentInputSourceController {
     const NAME: &'static str = "Windows.UI.Core.CoreIndependentInputSourceController";
@@ -2449,42 +2427,42 @@ impl CoreWindow {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<ICorePointerRedirector, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerRedirector>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerRedirector>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerRoutedAway)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerRoutedAway(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerRedirector>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerRedirector>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerRoutedAway)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerRoutedTo<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<ICorePointerRedirector, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerRedirector>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerRedirector>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerRoutedTo)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerRoutedTo(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerRedirector>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerRedirector>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerRoutedTo)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn PointerRoutedReleased<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<ICorePointerRedirector, PointerEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerRedirector>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerRedirector>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PointerRoutedReleased)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemovePointerRoutedReleased(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICorePointerRedirector>(self)?;
+        let this = &::windows_core::Interface::cast::<ICorePointerRedirector>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemovePointerRoutedReleased)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn AutomationHostProvider(&self) -> ::windows_core::Result<::windows_core::IInspectable> {
@@ -2840,25 +2818,25 @@ impl CoreWindow {
         unsafe { (::windows_core::Interface::vtable(this).RemoveVisibilityChanged)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn SetPointerPosition(&self, value: super::super::Foundation::Point) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindow2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindow2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPointerPosition)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ClosestInteractiveBoundsRequested<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<CoreWindow, ClosestInteractiveBoundsRequestedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindow3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindow3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ClosestInteractiveBoundsRequested)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveClosestInteractiveBoundsRequested(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindow3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindow3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveClosestInteractiveBoundsRequested)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn GetCurrentKeyEventDeviceId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindow3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindow3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetCurrentKeyEventDeviceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2868,41 +2846,41 @@ impl CoreWindow {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<CoreWindow, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindow4>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindow4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResizeStarted)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveResizeStarted(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindow4>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindow4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveResizeStarted)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn ResizeCompleted<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<CoreWindow, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindow4>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindow4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResizeCompleted)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveResizeCompleted(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindow4>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindow4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveResizeCompleted)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn DispatcherQueue(&self) -> ::windows_core::Result<super::super::System::DispatcherQueue> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindow5>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindow5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DispatcherQueue)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ActivationMode(&self) -> ::windows_core::Result<CoreWindowActivationMode> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindow5>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindow5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ActivationMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2915,7 +2893,7 @@ impl CoreWindow {
         })
     }
     pub fn UIContext(&self) -> ::windows_core::Result<super::UIContext> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowWithContext>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowWithContext>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UIContext)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2932,9 +2910,7 @@ impl ::windows_core::RuntimeType for CoreWindow {
 }
 unsafe impl ::windows_core::Interface for CoreWindow {
     type Vtable = ICoreWindow_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreWindow {
-    const IID: ::windows_core::GUID = <ICoreWindow as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreWindow as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreWindow {
     const NAME: &'static str = "Windows.UI.Core.CoreWindow";
@@ -3077,9 +3053,7 @@ impl ::windows_core::RuntimeType for CoreWindowDialog {
 }
 unsafe impl ::windows_core::Interface for CoreWindowDialog {
     type Vtable = ICoreWindowDialog_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreWindowDialog {
-    const IID: ::windows_core::GUID = <ICoreWindowDialog as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreWindowDialog as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreWindowDialog {
     const NAME: &'static str = "Windows.UI.Core.CoreWindowDialog";
@@ -3106,9 +3080,7 @@ impl ::windows_core::RuntimeType for CoreWindowEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreWindowEventArgs {
     type Vtable = ICoreWindowEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreWindowEventArgs {
-    const IID: ::windows_core::GUID = <ICoreWindowEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreWindowEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreWindowEventArgs {
     const NAME: &'static str = "Windows.UI.Core.CoreWindowEventArgs";
@@ -3239,9 +3211,7 @@ impl ::windows_core::RuntimeType for CoreWindowFlyout {
 }
 unsafe impl ::windows_core::Interface for CoreWindowFlyout {
     type Vtable = ICoreWindowFlyout_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreWindowFlyout {
-    const IID: ::windows_core::GUID = <ICoreWindowFlyout as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreWindowFlyout as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreWindowFlyout {
     const NAME: &'static str = "Windows.UI.Core.CoreWindowFlyout";
@@ -3261,9 +3231,7 @@ impl ::windows_core::RuntimeType for CoreWindowPopupShowingEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreWindowPopupShowingEventArgs {
     type Vtable = ICoreWindowPopupShowingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreWindowPopupShowingEventArgs {
-    const IID: ::windows_core::GUID = <ICoreWindowPopupShowingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreWindowPopupShowingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreWindowPopupShowingEventArgs {
     const NAME: &'static str = "Windows.UI.Core.CoreWindowPopupShowingEventArgs";
@@ -3278,11 +3246,11 @@ impl CoreWindowResizeManager {
         unsafe { (::windows_core::Interface::vtable(this).NotifyLayoutCompleted)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn SetShouldWaitForLayoutCompletion(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowResizeManagerLayoutCapability>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowResizeManagerLayoutCapability>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetShouldWaitForLayoutCompletion)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ShouldWaitForLayoutCompletion(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowResizeManagerLayoutCapability>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowResizeManagerLayoutCapability>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShouldWaitForLayoutCompletion)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3305,9 +3273,7 @@ impl ::windows_core::RuntimeType for CoreWindowResizeManager {
 }
 unsafe impl ::windows_core::Interface for CoreWindowResizeManager {
     type Vtable = ICoreWindowResizeManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreWindowResizeManager {
-    const IID: ::windows_core::GUID = <ICoreWindowResizeManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreWindowResizeManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreWindowResizeManager {
     const NAME: &'static str = "Windows.UI.Core.CoreWindowResizeManager";
@@ -3332,9 +3298,7 @@ impl ::windows_core::RuntimeType for IdleDispatchedHandlerArgs {
 }
 unsafe impl ::windows_core::Interface for IdleDispatchedHandlerArgs {
     type Vtable = IIdleDispatchedHandlerArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IdleDispatchedHandlerArgs {
-    const IID: ::windows_core::GUID = <IIdleDispatchedHandlerArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIdleDispatchedHandlerArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IdleDispatchedHandlerArgs {
     const NAME: &'static str = "Windows.UI.Core.IdleDispatchedHandlerArgs";
@@ -3345,14 +3309,14 @@ impl ::windows_core::RuntimeName for IdleDispatchedHandlerArgs {
 pub struct InputEnabledEventArgs(::windows_core::IUnknown);
 impl InputEnabledEventArgs {
     pub fn Handled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Handled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetHandled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetHandled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn InputEnabled(&self) -> ::windows_core::Result<bool> {
@@ -3368,9 +3332,7 @@ impl ::windows_core::RuntimeType for InputEnabledEventArgs {
 }
 unsafe impl ::windows_core::Interface for InputEnabledEventArgs {
     type Vtable = IInputEnabledEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for InputEnabledEventArgs {
-    const IID: ::windows_core::GUID = <IInputEnabledEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IInputEnabledEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for InputEnabledEventArgs {
     const NAME: &'static str = "Windows.UI.Core.InputEnabledEventArgs";
@@ -3382,14 +3344,14 @@ impl ::windows_core::RuntimeName for InputEnabledEventArgs {
 pub struct KeyEventArgs(::windows_core::IUnknown);
 impl KeyEventArgs {
     pub fn Handled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Handled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetHandled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetHandled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
@@ -3409,7 +3371,7 @@ impl KeyEventArgs {
         }
     }
     pub fn DeviceId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IKeyEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IKeyEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DeviceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3421,9 +3383,7 @@ impl ::windows_core::RuntimeType for KeyEventArgs {
 }
 unsafe impl ::windows_core::Interface for KeyEventArgs {
     type Vtable = IKeyEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for KeyEventArgs {
-    const IID: ::windows_core::GUID = <IKeyEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IKeyEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for KeyEventArgs {
     const NAME: &'static str = "Windows.UI.Core.KeyEventArgs";
@@ -3435,14 +3395,14 @@ impl ::windows_core::RuntimeName for KeyEventArgs {
 pub struct PointerEventArgs(::windows_core::IUnknown);
 impl PointerEventArgs {
     pub fn Handled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Handled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetHandled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetHandled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"UI_Input\"`"]
@@ -3478,9 +3438,7 @@ impl ::windows_core::RuntimeType for PointerEventArgs {
 }
 unsafe impl ::windows_core::Interface for PointerEventArgs {
     type Vtable = IPointerEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PointerEventArgs {
-    const IID: ::windows_core::GUID = <IPointerEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPointerEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PointerEventArgs {
     const NAME: &'static str = "Windows.UI.Core.PointerEventArgs";
@@ -3506,14 +3464,14 @@ impl SystemNavigationManager {
         unsafe { (::windows_core::Interface::vtable(this).RemoveBackRequested)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn AppViewBackButtonVisibility(&self) -> ::windows_core::Result<AppViewBackButtonVisibility> {
-        let this = &::windows_core::ComInterface::cast::<ISystemNavigationManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISystemNavigationManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppViewBackButtonVisibility)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAppViewBackButtonVisibility(&self, value: AppViewBackButtonVisibility) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISystemNavigationManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISystemNavigationManager2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAppViewBackButtonVisibility)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn GetForCurrentView() -> ::windows_core::Result<SystemNavigationManager> {
@@ -3533,9 +3491,7 @@ impl ::windows_core::RuntimeType for SystemNavigationManager {
 }
 unsafe impl ::windows_core::Interface for SystemNavigationManager {
     type Vtable = ISystemNavigationManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemNavigationManager {
-    const IID: ::windows_core::GUID = <ISystemNavigationManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemNavigationManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemNavigationManager {
     const NAME: &'static str = "Windows.UI.Core.SystemNavigationManager";
@@ -3548,14 +3504,14 @@ unsafe impl ::core::marker::Sync for SystemNavigationManager {}
 pub struct TouchHitTestingEventArgs(::windows_core::IUnknown);
 impl TouchHitTestingEventArgs {
     pub fn Handled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Handled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetHandled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetHandled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ProximityEvaluation(&self) -> ::windows_core::Result<CoreProximityEvaluation> {
@@ -3603,9 +3559,7 @@ impl ::windows_core::RuntimeType for TouchHitTestingEventArgs {
 }
 unsafe impl ::windows_core::Interface for TouchHitTestingEventArgs {
     type Vtable = ITouchHitTestingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TouchHitTestingEventArgs {
-    const IID: ::windows_core::GUID = <ITouchHitTestingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITouchHitTestingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TouchHitTestingEventArgs {
     const NAME: &'static str = "Windows.UI.Core.TouchHitTestingEventArgs";
@@ -3617,14 +3571,14 @@ impl ::windows_core::RuntimeName for TouchHitTestingEventArgs {
 pub struct VisibilityChangedEventArgs(::windows_core::IUnknown);
 impl VisibilityChangedEventArgs {
     pub fn Handled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Handled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetHandled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetHandled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Visible(&self) -> ::windows_core::Result<bool> {
@@ -3640,9 +3594,7 @@ impl ::windows_core::RuntimeType for VisibilityChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for VisibilityChangedEventArgs {
     type Vtable = IVisibilityChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VisibilityChangedEventArgs {
-    const IID: ::windows_core::GUID = <IVisibilityChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVisibilityChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VisibilityChangedEventArgs {
     const NAME: &'static str = "Windows.UI.Core.VisibilityChangedEventArgs";
@@ -3654,14 +3606,14 @@ impl ::windows_core::RuntimeName for VisibilityChangedEventArgs {
 pub struct WindowActivatedEventArgs(::windows_core::IUnknown);
 impl WindowActivatedEventArgs {
     pub fn Handled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Handled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetHandled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetHandled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn WindowActivationState(&self) -> ::windows_core::Result<CoreWindowActivationState> {
@@ -3677,9 +3629,7 @@ impl ::windows_core::RuntimeType for WindowActivatedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WindowActivatedEventArgs {
     type Vtable = IWindowActivatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowActivatedEventArgs {
-    const IID: ::windows_core::GUID = <IWindowActivatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowActivatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowActivatedEventArgs {
     const NAME: &'static str = "Windows.UI.Core.WindowActivatedEventArgs";
@@ -3691,14 +3641,14 @@ impl ::windows_core::RuntimeName for WindowActivatedEventArgs {
 pub struct WindowSizeChangedEventArgs(::windows_core::IUnknown);
 impl WindowSizeChangedEventArgs {
     pub fn Handled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Handled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetHandled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreWindowEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreWindowEventArgs>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetHandled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Size(&self) -> ::windows_core::Result<super::super::Foundation::Size> {
@@ -3714,9 +3664,7 @@ impl ::windows_core::RuntimeType for WindowSizeChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WindowSizeChangedEventArgs {
     type Vtable = IWindowSizeChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowSizeChangedEventArgs {
-    const IID: ::windows_core::GUID = <IWindowSizeChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowSizeChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowSizeChangedEventArgs {
     const NAME: &'static str = "Windows.UI.Core.WindowSizeChangedEventArgs";
@@ -4171,7 +4119,7 @@ impl<F: FnMut() -> ::windows_core::Result<()> + ::core::marker::Send + 'static> 
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <DispatchedHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <DispatchedHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -4235,7 +4183,7 @@ impl<F: FnMut(::core::option::Option<&IdleDispatchedHandlerArgs>) -> ::windows_c
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <IdleDispatchedHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <IdleDispatchedHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

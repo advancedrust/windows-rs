@@ -64,7 +64,7 @@ impl II2cDeviceProvider {
         }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -165,9 +165,7 @@ impl ::windows_core::RuntimeType for ProviderI2cConnectionSettings {
 }
 unsafe impl ::windows_core::Interface for ProviderI2cConnectionSettings {
     type Vtable = IProviderI2cConnectionSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProviderI2cConnectionSettings {
-    const IID: ::windows_core::GUID = <IProviderI2cConnectionSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProviderI2cConnectionSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProviderI2cConnectionSettings {
     const NAME: &'static str = "Windows.Devices.I2c.Provider.ProviderI2cConnectionSettings";

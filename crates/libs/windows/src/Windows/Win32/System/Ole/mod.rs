@@ -460,7 +460,7 @@ where
 pub unsafe fn OleCreatePictureIndirect<P0, T>(lppictdesc: *const PICTDESC, fown: P0) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<super::super::Foundation::BOOL>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("oleaut32.dll" "system" fn OleCreatePictureIndirect(lppictdesc : *const PICTDESC, riid : *const ::windows_core::GUID, fown : super::super::Foundation:: BOOL, lplpvobj : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -3415,7 +3415,7 @@ impl IClassFactory2 {
     pub unsafe fn CreateInstance<P0, T>(&self, punkouter: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.CreateInstance)(::windows_core::Interface::as_raw(self), punkouter.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -3440,7 +3440,7 @@ impl IClassFactory2 {
         P0: ::windows_core::IntoParam<::windows_core::IUnknown>,
         P1: ::windows_core::IntoParam<::windows_core::IUnknown>,
         P2: ::windows_core::IntoParam<::windows_core::BSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateInstanceLic)(::windows_core::Interface::as_raw(self), punkouter.into_param().abi(), punkreserved.into_param().abi(), &T::IID, bstrkey.into_param().abi(), &mut result__).from_abi(result__)
@@ -4621,7 +4621,7 @@ impl IObjectWithSite {
     }
     pub unsafe fn GetSite<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetSite)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -5751,7 +5751,7 @@ impl IOleItemContainer {
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
         P1: ::windows_core::IntoParam<super::Com::IBindCtx>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetObject)(::windows_core::Interface::as_raw(self), pszitem.into_param().abi(), dwspeedneeded, pbc.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -5762,7 +5762,7 @@ impl IOleItemContainer {
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
         P1: ::windows_core::IntoParam<super::Com::IBindCtx>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetObjectStorage)(::windows_core::Interface::as_raw(self), pszitem.into_param().abi(), pbc.into_param().abi(), &T::IID, &mut result__).from_abi(result__)

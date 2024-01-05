@@ -106,9 +106,7 @@ impl ::windows_core::RuntimeType for Radio {
 }
 unsafe impl ::windows_core::Interface for Radio {
     type Vtable = IRadio_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Radio {
-    const IID: ::windows_core::GUID = <IRadio as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRadio as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Radio {
     const NAME: &'static str = "Windows.Devices.Radios.Radio";

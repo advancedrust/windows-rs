@@ -86,9 +86,7 @@ impl ::windows_core::RuntimeType for UserDataAccountPartnerAccountInfo {
 }
 unsafe impl ::windows_core::Interface for UserDataAccountPartnerAccountInfo {
     type Vtable = IUserDataAccountPartnerAccountInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataAccountPartnerAccountInfo {
-    const IID: ::windows_core::GUID = <IUserDataAccountPartnerAccountInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataAccountPartnerAccountInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataAccountPartnerAccountInfo {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataAccounts.Provider.UserDataAccountPartnerAccountInfo";
@@ -121,7 +119,7 @@ impl UserDataAccountProviderAddAccountOperation {
         unsafe { (::windows_core::Interface::vtable(this).ReportCompleted)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(userdataaccountid)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<UserDataAccountProviderOperationKind> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccountProviderOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccountProviderOperation>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -133,9 +131,7 @@ impl ::windows_core::RuntimeType for UserDataAccountProviderAddAccountOperation 
 }
 unsafe impl ::windows_core::Interface for UserDataAccountProviderAddAccountOperation {
     type Vtable = IUserDataAccountProviderAddAccountOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataAccountProviderAddAccountOperation {
-    const IID: ::windows_core::GUID = <IUserDataAccountProviderAddAccountOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataAccountProviderAddAccountOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataAccountProviderAddAccountOperation {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataAccounts.Provider.UserDataAccountProviderAddAccountOperation";
@@ -149,7 +145,7 @@ unsafe impl ::core::marker::Sync for UserDataAccountProviderAddAccountOperation 
 pub struct UserDataAccountProviderResolveErrorsOperation(::windows_core::IUnknown);
 impl UserDataAccountProviderResolveErrorsOperation {
     pub fn Kind(&self) -> ::windows_core::Result<UserDataAccountProviderOperationKind> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccountProviderOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccountProviderOperation>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -172,9 +168,7 @@ impl ::windows_core::RuntimeType for UserDataAccountProviderResolveErrorsOperati
 }
 unsafe impl ::windows_core::Interface for UserDataAccountProviderResolveErrorsOperation {
     type Vtable = IUserDataAccountProviderResolveErrorsOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataAccountProviderResolveErrorsOperation {
-    const IID: ::windows_core::GUID = <IUserDataAccountProviderResolveErrorsOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataAccountProviderResolveErrorsOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataAccountProviderResolveErrorsOperation {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataAccounts.Provider.UserDataAccountProviderResolveErrorsOperation";
@@ -188,7 +182,7 @@ unsafe impl ::core::marker::Sync for UserDataAccountProviderResolveErrorsOperati
 pub struct UserDataAccountProviderSettingsOperation(::windows_core::IUnknown);
 impl UserDataAccountProviderSettingsOperation {
     pub fn Kind(&self) -> ::windows_core::Result<UserDataAccountProviderOperationKind> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccountProviderOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccountProviderOperation>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -211,9 +205,7 @@ impl ::windows_core::RuntimeType for UserDataAccountProviderSettingsOperation {
 }
 unsafe impl ::windows_core::Interface for UserDataAccountProviderSettingsOperation {
     type Vtable = IUserDataAccountProviderSettingsOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataAccountProviderSettingsOperation {
-    const IID: ::windows_core::GUID = <IUserDataAccountProviderSettingsOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataAccountProviderSettingsOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataAccountProviderSettingsOperation {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataAccounts.Provider.UserDataAccountProviderSettingsOperation";

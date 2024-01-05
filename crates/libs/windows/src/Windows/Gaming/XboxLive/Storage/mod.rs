@@ -167,9 +167,7 @@ impl ::windows_core::RuntimeType for GameSaveBlobGetResult {
 }
 unsafe impl ::windows_core::Interface for GameSaveBlobGetResult {
     type Vtable = IGameSaveBlobGetResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameSaveBlobGetResult {
-    const IID: ::windows_core::GUID = <IGameSaveBlobGetResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameSaveBlobGetResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameSaveBlobGetResult {
     const NAME: &'static str = "Windows.Gaming.XboxLive.Storage.GameSaveBlobGetResult";
@@ -201,9 +199,7 @@ impl ::windows_core::RuntimeType for GameSaveBlobInfo {
 }
 unsafe impl ::windows_core::Interface for GameSaveBlobInfo {
     type Vtable = IGameSaveBlobInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameSaveBlobInfo {
-    const IID: ::windows_core::GUID = <IGameSaveBlobInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameSaveBlobInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameSaveBlobInfo {
     const NAME: &'static str = "Windows.Gaming.XboxLive.Storage.GameSaveBlobInfo";
@@ -237,9 +233,7 @@ impl ::windows_core::RuntimeType for GameSaveBlobInfoGetResult {
 }
 unsafe impl ::windows_core::Interface for GameSaveBlobInfoGetResult {
     type Vtable = IGameSaveBlobInfoGetResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameSaveBlobInfoGetResult {
-    const IID: ::windows_core::GUID = <IGameSaveBlobInfoGetResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameSaveBlobInfoGetResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameSaveBlobInfoGetResult {
     const NAME: &'static str = "Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoGetResult";
@@ -278,9 +272,7 @@ impl ::windows_core::RuntimeType for GameSaveBlobInfoQuery {
 }
 unsafe impl ::windows_core::Interface for GameSaveBlobInfoQuery {
     type Vtable = IGameSaveBlobInfoQuery_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameSaveBlobInfoQuery {
-    const IID: ::windows_core::GUID = <IGameSaveBlobInfoQuery as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameSaveBlobInfoQuery as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameSaveBlobInfoQuery {
     const NAME: &'static str = "Windows.Gaming.XboxLive.Storage.GameSaveBlobInfoQuery";
@@ -369,9 +361,7 @@ impl ::windows_core::RuntimeType for GameSaveContainer {
 }
 unsafe impl ::windows_core::Interface for GameSaveContainer {
     type Vtable = IGameSaveContainer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameSaveContainer {
-    const IID: ::windows_core::GUID = <IGameSaveContainer as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameSaveContainer as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameSaveContainer {
     const NAME: &'static str = "Windows.Gaming.XboxLive.Storage.GameSaveContainer";
@@ -424,9 +414,7 @@ impl ::windows_core::RuntimeType for GameSaveContainerInfo {
 }
 unsafe impl ::windows_core::Interface for GameSaveContainerInfo {
     type Vtable = IGameSaveContainerInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameSaveContainerInfo {
-    const IID: ::windows_core::GUID = <IGameSaveContainerInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameSaveContainerInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameSaveContainerInfo {
     const NAME: &'static str = "Windows.Gaming.XboxLive.Storage.GameSaveContainerInfo";
@@ -460,9 +448,7 @@ impl ::windows_core::RuntimeType for GameSaveContainerInfoGetResult {
 }
 unsafe impl ::windows_core::Interface for GameSaveContainerInfoGetResult {
     type Vtable = IGameSaveContainerInfoGetResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameSaveContainerInfoGetResult {
-    const IID: ::windows_core::GUID = <IGameSaveContainerInfoGetResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameSaveContainerInfoGetResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameSaveContainerInfoGetResult {
     const NAME: &'static str = "Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoGetResult";
@@ -501,9 +487,7 @@ impl ::windows_core::RuntimeType for GameSaveContainerInfoQuery {
 }
 unsafe impl ::windows_core::Interface for GameSaveContainerInfoQuery {
     type Vtable = IGameSaveContainerInfoQuery_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameSaveContainerInfoQuery {
-    const IID: ::windows_core::GUID = <IGameSaveContainerInfoQuery as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameSaveContainerInfoQuery as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameSaveContainerInfoQuery {
     const NAME: &'static str = "Windows.Gaming.XboxLive.Storage.GameSaveContainerInfoQuery";
@@ -528,9 +512,7 @@ impl ::windows_core::RuntimeType for GameSaveOperationResult {
 }
 unsafe impl ::windows_core::Interface for GameSaveOperationResult {
     type Vtable = IGameSaveOperationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameSaveOperationResult {
-    const IID: ::windows_core::GUID = <IGameSaveOperationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameSaveOperationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameSaveOperationResult {
     const NAME: &'static str = "Windows.Gaming.XboxLive.Storage.GameSaveOperationResult";
@@ -628,9 +610,7 @@ impl ::windows_core::RuntimeType for GameSaveProvider {
 }
 unsafe impl ::windows_core::Interface for GameSaveProvider {
     type Vtable = IGameSaveProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameSaveProvider {
-    const IID: ::windows_core::GUID = <IGameSaveProvider as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameSaveProvider as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameSaveProvider {
     const NAME: &'static str = "Windows.Gaming.XboxLive.Storage.GameSaveProvider";
@@ -662,9 +642,7 @@ impl ::windows_core::RuntimeType for GameSaveProviderGetResult {
 }
 unsafe impl ::windows_core::Interface for GameSaveProviderGetResult {
     type Vtable = IGameSaveProviderGetResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameSaveProviderGetResult {
-    const IID: ::windows_core::GUID = <IGameSaveProviderGetResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameSaveProviderGetResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameSaveProviderGetResult {
     const NAME: &'static str = "Windows.Gaming.XboxLive.Storage.GameSaveProviderGetResult";

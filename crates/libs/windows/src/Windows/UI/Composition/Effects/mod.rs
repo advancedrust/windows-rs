@@ -42,7 +42,7 @@ impl SceneLightingEffect {
     #[doc = "Required features: `\"Graphics_Effects\"`"]
     #[cfg(feature = "Graphics_Effects")]
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Graphics::Effects::IGraphicsEffect>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Graphics::Effects::IGraphicsEffect>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Name)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -51,7 +51,7 @@ impl SceneLightingEffect {
     #[doc = "Required features: `\"Graphics_Effects\"`"]
     #[cfg(feature = "Graphics_Effects")]
     pub fn SetName(&self, name: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Graphics::Effects::IGraphicsEffect>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Graphics::Effects::IGraphicsEffect>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(name)).ok() }
     }
     pub fn AmbientAmount(&self) -> ::windows_core::Result<f32> {
@@ -117,14 +117,14 @@ impl SceneLightingEffect {
         unsafe { (::windows_core::Interface::vtable(this).SetSpecularShine)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ReflectanceModel(&self) -> ::windows_core::Result<SceneLightingEffectReflectanceModel> {
-        let this = &::windows_core::ComInterface::cast::<ISceneLightingEffect2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISceneLightingEffect2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReflectanceModel)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetReflectanceModel(&self, value: SceneLightingEffectReflectanceModel) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISceneLightingEffect2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISceneLightingEffect2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetReflectanceModel)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -133,9 +133,7 @@ impl ::windows_core::RuntimeType for SceneLightingEffect {
 }
 unsafe impl ::windows_core::Interface for SceneLightingEffect {
     type Vtable = ISceneLightingEffect_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SceneLightingEffect {
-    const IID: ::windows_core::GUID = <ISceneLightingEffect as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISceneLightingEffect as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SceneLightingEffect {
     const NAME: &'static str = "Windows.UI.Composition.Effects.SceneLightingEffect";

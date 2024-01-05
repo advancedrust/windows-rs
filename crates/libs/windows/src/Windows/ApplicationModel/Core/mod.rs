@@ -328,7 +328,7 @@ impl AppListEntry {
         }
     }
     pub fn AppUserModelId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAppListEntry2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppListEntry2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppUserModelId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -340,14 +340,14 @@ impl AppListEntry {
     where
         P0: ::windows_core::IntoParam<super::super::System::User>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppListEntry3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppListEntry3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LaunchForUserAsync)(::windows_core::Interface::as_raw(this), user.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn AppInfo(&self) -> ::windows_core::Result<super::AppInfo> {
-        let this = &::windows_core::ComInterface::cast::<IAppListEntry4>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppListEntry4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppInfo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -359,9 +359,7 @@ impl ::windows_core::RuntimeType for AppListEntry {
 }
 unsafe impl ::windows_core::Interface for AppListEntry {
     type Vtable = IAppListEntry_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppListEntry {
-    const IID: ::windows_core::GUID = <IAppListEntry as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppListEntry as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppListEntry {
     const NAME: &'static str = "Windows.ApplicationModel.Core.AppListEntry";
@@ -648,21 +646,21 @@ impl CoreApplicationView {
     #[doc = "Required features: `\"UI_Core\"`"]
     #[cfg(feature = "UI_Core")]
     pub fn Dispatcher(&self) -> ::windows_core::Result<super::super::UI::Core::CoreDispatcher> {
-        let this = &::windows_core::ComInterface::cast::<ICoreApplicationView2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreApplicationView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Dispatcher)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsComponent(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ICoreApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreApplicationView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsComponent)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TitleBar(&self) -> ::windows_core::Result<CoreApplicationViewTitleBar> {
-        let this = &::windows_core::ComInterface::cast::<ICoreApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreApplicationView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TitleBar)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -672,20 +670,20 @@ impl CoreApplicationView {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<CoreApplicationView, HostedViewClosingEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreApplicationView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HostedViewClosing)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveHostedViewClosing(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreApplicationView3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveHostedViewClosing)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Properties(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IPropertySet> {
-        let this = &::windows_core::ComInterface::cast::<ICoreApplicationView5>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreApplicationView5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Properties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -694,7 +692,7 @@ impl CoreApplicationView {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn DispatcherQueue(&self) -> ::windows_core::Result<super::super::System::DispatcherQueue> {
-        let this = &::windows_core::ComInterface::cast::<ICoreApplicationView6>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreApplicationView6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DispatcherQueue)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -706,9 +704,7 @@ impl ::windows_core::RuntimeType for CoreApplicationView {
 }
 unsafe impl ::windows_core::Interface for CoreApplicationView {
     type Vtable = ICoreApplicationView_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreApplicationView {
-    const IID: ::windows_core::GUID = <ICoreApplicationView as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreApplicationView as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreApplicationView {
     const NAME: &'static str = "Windows.ApplicationModel.Core.CoreApplicationView";
@@ -791,9 +787,7 @@ impl ::windows_core::RuntimeType for CoreApplicationViewTitleBar {
 }
 unsafe impl ::windows_core::Interface for CoreApplicationViewTitleBar {
     type Vtable = ICoreApplicationViewTitleBar_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreApplicationViewTitleBar {
-    const IID: ::windows_core::GUID = <ICoreApplicationViewTitleBar as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreApplicationViewTitleBar as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreApplicationViewTitleBar {
     const NAME: &'static str = "Windows.ApplicationModel.Core.CoreApplicationViewTitleBar";
@@ -816,9 +810,7 @@ impl ::windows_core::RuntimeType for HostedViewClosingEventArgs {
 }
 unsafe impl ::windows_core::Interface for HostedViewClosingEventArgs {
     type Vtable = IHostedViewClosingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HostedViewClosingEventArgs {
-    const IID: ::windows_core::GUID = <IHostedViewClosingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHostedViewClosingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HostedViewClosingEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Core.HostedViewClosingEventArgs";
@@ -847,9 +839,7 @@ impl ::windows_core::RuntimeType for UnhandledError {
 }
 unsafe impl ::windows_core::Interface for UnhandledError {
     type Vtable = IUnhandledError_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UnhandledError {
-    const IID: ::windows_core::GUID = <IUnhandledError as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUnhandledError as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UnhandledError {
     const NAME: &'static str = "Windows.ApplicationModel.Core.UnhandledError";
@@ -874,9 +864,7 @@ impl ::windows_core::RuntimeType for UnhandledErrorDetectedEventArgs {
 }
 unsafe impl ::windows_core::Interface for UnhandledErrorDetectedEventArgs {
     type Vtable = IUnhandledErrorDetectedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UnhandledErrorDetectedEventArgs {
-    const IID: ::windows_core::GUID = <IUnhandledErrorDetectedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUnhandledErrorDetectedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UnhandledErrorDetectedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Core.UnhandledErrorDetectedEventArgs";

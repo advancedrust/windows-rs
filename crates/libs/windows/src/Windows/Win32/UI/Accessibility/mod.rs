@@ -6041,14 +6041,14 @@ impl IUIAutomationElement {
     }
     pub unsafe fn GetCurrentPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetCurrentPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetCachedPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetCachedPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
@@ -6512,14 +6512,14 @@ impl IUIAutomationElement2 {
     }
     pub unsafe fn GetCurrentPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetCurrentPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetCachedPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetCachedPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
@@ -6916,14 +6916,14 @@ impl IUIAutomationElement3 {
     }
     pub unsafe fn GetCurrentPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetCurrentPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetCachedPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetCachedPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
@@ -7328,14 +7328,14 @@ impl IUIAutomationElement4 {
     }
     pub unsafe fn GetCurrentPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetCurrentPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetCachedPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetCachedPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
@@ -7797,14 +7797,14 @@ impl IUIAutomationElement5 {
     }
     pub unsafe fn GetCurrentPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetCurrentPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetCachedPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetCachedPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
@@ -8270,14 +8270,14 @@ impl IUIAutomationElement6 {
     }
     pub unsafe fn GetCurrentPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.GetCurrentPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetCachedPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.GetCachedPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
@@ -8749,14 +8749,14 @@ impl IUIAutomationElement7 {
     }
     pub unsafe fn GetCurrentPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.GetCurrentPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetCachedPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.GetCachedPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
@@ -9274,14 +9274,14 @@ impl IUIAutomationElement8 {
     }
     pub unsafe fn GetCurrentPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.base__.GetCurrentPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetCachedPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.base__.GetCachedPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
@@ -9801,14 +9801,14 @@ impl IUIAutomationElement9 {
     }
     pub unsafe fn GetCurrentPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.base__.base__.GetCurrentPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetCachedPatternAs<T>(&self, patternid: UIA_PATTERN_ID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.base__.base__.GetCachedPatternAs)(::windows_core::Interface::as_raw(self), patternid, &T::IID, &mut result__).from_abi(result__)

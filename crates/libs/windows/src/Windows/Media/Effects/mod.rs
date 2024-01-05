@@ -163,7 +163,7 @@ impl IBasicAudioEffect {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IPropertySet>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::IMediaExtension>(self)?;
+        let this = &::windows_core::Interface::cast::<super::IMediaExtension>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetProperties)(::windows_core::Interface::as_raw(this), configuration.into_param().abi()).ok() }
     }
 }
@@ -252,7 +252,7 @@ impl IBasicVideoEffect {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IPropertySet>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::IMediaExtension>(self)?;
+        let this = &::windows_core::Interface::cast::<super::IMediaExtension>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetProperties)(::windows_core::Interface::as_raw(this), configuration.into_param().abi()).ok() }
     }
 }
@@ -360,7 +360,7 @@ impl IVideoCompositor {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IPropertySet>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::IMediaExtension>(self)?;
+        let this = &::windows_core::Interface::cast::<super::IMediaExtension>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetProperties)(::windows_core::Interface::as_raw(this), configuration.into_param().abi()).ok() }
     }
 }
@@ -586,9 +586,7 @@ impl ::windows_core::RuntimeType for AudioCaptureEffectsManager {
 }
 unsafe impl ::windows_core::Interface for AudioCaptureEffectsManager {
     type Vtable = IAudioCaptureEffectsManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioCaptureEffectsManager {
-    const IID: ::windows_core::GUID = <IAudioCaptureEffectsManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioCaptureEffectsManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioCaptureEffectsManager {
     const NAME: &'static str = "Windows.Media.Effects.AudioCaptureEffectsManager";
@@ -613,9 +611,7 @@ impl ::windows_core::RuntimeType for AudioEffect {
 }
 unsafe impl ::windows_core::Interface for AudioEffect {
     type Vtable = IAudioEffect_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioEffect {
-    const IID: ::windows_core::GUID = <IAudioEffect as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioEffect as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioEffect {
     const NAME: &'static str = "Windows.Media.Effects.AudioEffect";
@@ -671,9 +667,7 @@ impl ::windows_core::RuntimeType for AudioEffectDefinition {
 }
 unsafe impl ::windows_core::Interface for AudioEffectDefinition {
     type Vtable = IAudioEffectDefinition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioEffectDefinition {
-    const IID: ::windows_core::GUID = <IAudioEffectDefinition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioEffectDefinition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioEffectDefinition {
     const NAME: &'static str = "Windows.Media.Effects.AudioEffectDefinition";
@@ -755,7 +749,7 @@ impl AudioRenderEffectsManager {
     #[doc = "Required features: `\"Storage_Streams\"`, `\"deprecated\"`"]
     #[cfg(all(feature = "Storage_Streams", feature = "deprecated"))]
     pub fn EffectsProviderThumbnail(&self) -> ::windows_core::Result<super::super::Storage::Streams::IRandomAccessStreamWithContentType> {
-        let this = &::windows_core::ComInterface::cast::<IAudioRenderEffectsManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioRenderEffectsManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectsProviderThumbnail)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -764,7 +758,7 @@ impl AudioRenderEffectsManager {
     #[doc = "Required features: `\"deprecated\"`"]
     #[cfg(feature = "deprecated")]
     pub fn EffectsProviderSettingsLabel(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAudioRenderEffectsManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioRenderEffectsManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectsProviderSettingsLabel)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -773,7 +767,7 @@ impl AudioRenderEffectsManager {
     #[doc = "Required features: `\"deprecated\"`"]
     #[cfg(feature = "deprecated")]
     pub fn ShowSettingsUI(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioRenderEffectsManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioRenderEffectsManager2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ShowSettingsUI)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -782,9 +776,7 @@ impl ::windows_core::RuntimeType for AudioRenderEffectsManager {
 }
 unsafe impl ::windows_core::Interface for AudioRenderEffectsManager {
     type Vtable = IAudioRenderEffectsManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioRenderEffectsManager {
-    const IID: ::windows_core::GUID = <IAudioRenderEffectsManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioRenderEffectsManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioRenderEffectsManager {
     const NAME: &'static str = "Windows.Media.Effects.AudioRenderEffectsManager";
@@ -837,9 +829,7 @@ impl ::windows_core::RuntimeType for CompositeVideoFrameContext {
 }
 unsafe impl ::windows_core::Interface for CompositeVideoFrameContext {
     type Vtable = ICompositeVideoFrameContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CompositeVideoFrameContext {
-    const IID: ::windows_core::GUID = <ICompositeVideoFrameContext as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICompositeVideoFrameContext as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CompositeVideoFrameContext {
     const NAME: &'static str = "Windows.Media.Effects.CompositeVideoFrameContext";
@@ -871,9 +861,7 @@ impl ::windows_core::RuntimeType for ProcessAudioFrameContext {
 }
 unsafe impl ::windows_core::Interface for ProcessAudioFrameContext {
     type Vtable = IProcessAudioFrameContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProcessAudioFrameContext {
-    const IID: ::windows_core::GUID = <IProcessAudioFrameContext as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProcessAudioFrameContext as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProcessAudioFrameContext {
     const NAME: &'static str = "Windows.Media.Effects.ProcessAudioFrameContext";
@@ -905,9 +893,7 @@ impl ::windows_core::RuntimeType for ProcessVideoFrameContext {
 }
 unsafe impl ::windows_core::Interface for ProcessVideoFrameContext {
     type Vtable = IProcessVideoFrameContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProcessVideoFrameContext {
-    const IID: ::windows_core::GUID = <IProcessVideoFrameContext as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProcessVideoFrameContext as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProcessVideoFrameContext {
     const NAME: &'static str = "Windows.Media.Effects.ProcessVideoFrameContext";
@@ -938,7 +924,7 @@ impl SlowMotionEffectDefinition {
         unsafe { (::windows_core::Interface::vtable(this).SetTimeStretchRate)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ActivatableClassId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IVideoEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ActivatableClassId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -947,7 +933,7 @@ impl SlowMotionEffectDefinition {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Properties(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IPropertySet> {
-        let this = &::windows_core::ComInterface::cast::<IVideoEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Properties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -959,9 +945,7 @@ impl ::windows_core::RuntimeType for SlowMotionEffectDefinition {
 }
 unsafe impl ::windows_core::Interface for SlowMotionEffectDefinition {
     type Vtable = ISlowMotionEffectDefinition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SlowMotionEffectDefinition {
-    const IID: ::windows_core::GUID = <ISlowMotionEffectDefinition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISlowMotionEffectDefinition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SlowMotionEffectDefinition {
     const NAME: &'static str = "Windows.Media.Effects.SlowMotionEffectDefinition";
@@ -1018,9 +1002,7 @@ impl ::windows_core::RuntimeType for VideoCompositorDefinition {
 }
 unsafe impl ::windows_core::Interface for VideoCompositorDefinition {
     type Vtable = IVideoCompositorDefinition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VideoCompositorDefinition {
-    const IID: ::windows_core::GUID = <IVideoCompositorDefinition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVideoCompositorDefinition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VideoCompositorDefinition {
     const NAME: &'static str = "Windows.Media.Effects.VideoCompositorDefinition";
@@ -1077,9 +1059,7 @@ impl ::windows_core::RuntimeType for VideoEffectDefinition {
 }
 unsafe impl ::windows_core::Interface for VideoEffectDefinition {
     type Vtable = IVideoEffectDefinition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VideoEffectDefinition {
-    const IID: ::windows_core::GUID = <IVideoEffectDefinition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVideoEffectDefinition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VideoEffectDefinition {
     const NAME: &'static str = "Windows.Media.Effects.VideoEffectDefinition";
@@ -1118,7 +1098,7 @@ impl VideoTransformEffectDefinition {
     #[doc = "Required features: `\"UI\"`"]
     #[cfg(feature = "UI")]
     pub fn PaddingColor(&self) -> ::windows_core::Result<super::super::UI::Color> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PaddingColor)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1127,35 +1107,35 @@ impl VideoTransformEffectDefinition {
     #[doc = "Required features: `\"UI\"`"]
     #[cfg(feature = "UI")]
     pub fn SetPaddingColor(&self, value: super::super::UI::Color) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPaddingColor)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutputSize(&self) -> ::windows_core::Result<super::super::Foundation::Size> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutputSize)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutputSize(&self, value: super::super::Foundation::Size) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutputSize)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CropRectangle(&self) -> ::windows_core::Result<super::super::Foundation::Rect> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CropRectangle)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCropRectangle(&self, value: super::super::Foundation::Rect) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCropRectangle)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn Rotation(&self) -> ::windows_core::Result<super::MediaProperties::MediaRotation> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Rotation)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1164,13 +1144,13 @@ impl VideoTransformEffectDefinition {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn SetRotation(&self, value: super::MediaProperties::MediaRotation) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetRotation)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn Mirror(&self) -> ::windows_core::Result<super::MediaProperties::MediaMirroringOptions> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Mirror)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1179,26 +1159,26 @@ impl VideoTransformEffectDefinition {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn SetMirror(&self, value: super::MediaProperties::MediaMirroringOptions) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMirror)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Media_Transcoding\"`"]
     #[cfg(feature = "Media_Transcoding")]
     pub fn SetProcessingAlgorithm(&self, value: super::Transcoding::MediaVideoProcessingAlgorithm) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetProcessingAlgorithm)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Media_Transcoding\"`"]
     #[cfg(feature = "Media_Transcoding")]
     pub fn ProcessingAlgorithm(&self) -> ::windows_core::Result<super::Transcoding::MediaVideoProcessingAlgorithm> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ProcessingAlgorithm)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SphericalProjection(&self) -> ::windows_core::Result<VideoTransformSphericalProjection> {
-        let this = &::windows_core::ComInterface::cast::<IVideoTransformEffectDefinition2>(self)?;
+        let this = &::windows_core::Interface::cast::<IVideoTransformEffectDefinition2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SphericalProjection)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1210,9 +1190,7 @@ impl ::windows_core::RuntimeType for VideoTransformEffectDefinition {
 }
 unsafe impl ::windows_core::Interface for VideoTransformEffectDefinition {
     type Vtable = IVideoEffectDefinition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VideoTransformEffectDefinition {
-    const IID: ::windows_core::GUID = <IVideoEffectDefinition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVideoEffectDefinition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VideoTransformEffectDefinition {
     const NAME: &'static str = "Windows.Media.Effects.VideoTransformEffectDefinition";
@@ -1298,9 +1276,7 @@ impl ::windows_core::RuntimeType for VideoTransformSphericalProjection {
 }
 unsafe impl ::windows_core::Interface for VideoTransformSphericalProjection {
     type Vtable = IVideoTransformSphericalProjection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VideoTransformSphericalProjection {
-    const IID: ::windows_core::GUID = <IVideoTransformSphericalProjection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVideoTransformSphericalProjection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VideoTransformSphericalProjection {
     const NAME: &'static str = "Windows.Media.Effects.VideoTransformSphericalProjection";

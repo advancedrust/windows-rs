@@ -58,9 +58,7 @@ impl ::windows_core::RuntimeType for GeolocationProvider {
 }
 unsafe impl ::windows_core::Interface for GeolocationProvider {
     type Vtable = IGeolocationProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GeolocationProvider {
-    const IID: ::windows_core::GUID = <IGeolocationProvider as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeolocationProvider as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GeolocationProvider {
     const NAME: &'static str = "Windows.Devices.Geolocation.Provider.GeolocationProvider";

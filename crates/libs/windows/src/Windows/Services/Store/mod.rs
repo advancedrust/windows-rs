@@ -600,9 +600,7 @@ impl ::windows_core::RuntimeType for StoreAcquireLicenseResult {
 }
 unsafe impl ::windows_core::Interface for StoreAcquireLicenseResult {
     type Vtable = IStoreAcquireLicenseResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreAcquireLicenseResult {
-    const IID: ::windows_core::GUID = <IStoreAcquireLicenseResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreAcquireLicenseResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreAcquireLicenseResult {
     const NAME: &'static str = "Windows.Services.Store.StoreAcquireLicenseResult";
@@ -680,7 +678,7 @@ impl StoreAppLicense {
         }
     }
     pub fn IsDiscLicense(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IStoreAppLicense2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreAppLicense2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsDiscLicense)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -692,9 +690,7 @@ impl ::windows_core::RuntimeType for StoreAppLicense {
 }
 unsafe impl ::windows_core::Interface for StoreAppLicense {
     type Vtable = IStoreAppLicense_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreAppLicense {
-    const IID: ::windows_core::GUID = <IStoreAppLicense as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreAppLicense as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreAppLicense {
     const NAME: &'static str = "Windows.Services.Store.StoreAppLicense";
@@ -757,9 +753,7 @@ impl ::windows_core::RuntimeType for StoreAvailability {
 }
 unsafe impl ::windows_core::Interface for StoreAvailability {
     type Vtable = IStoreAvailability_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreAvailability {
-    const IID: ::windows_core::GUID = <IStoreAvailability as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreAvailability as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreAvailability {
     const NAME: &'static str = "Windows.Services.Store.StoreAvailability";
@@ -798,9 +792,7 @@ impl ::windows_core::RuntimeType for StoreCanAcquireLicenseResult {
 }
 unsafe impl ::windows_core::Interface for StoreCanAcquireLicenseResult {
     type Vtable = IStoreCanAcquireLicenseResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreCanAcquireLicenseResult {
-    const IID: ::windows_core::GUID = <IStoreCanAcquireLicenseResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreCanAcquireLicenseResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreCanAcquireLicenseResult {
     const NAME: &'static str = "Windows.Services.Store.StoreCanAcquireLicenseResult";
@@ -874,9 +866,7 @@ impl ::windows_core::RuntimeType for StoreCollectionData {
 }
 unsafe impl ::windows_core::Interface for StoreCollectionData {
     type Vtable = IStoreCollectionData_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreCollectionData {
-    const IID: ::windows_core::GUID = <IStoreCollectionData as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreCollectionData as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreCollectionData {
     const NAME: &'static str = "Windows.Services.Store.StoreCollectionData";
@@ -922,9 +912,7 @@ impl ::windows_core::RuntimeType for StoreConsumableResult {
 }
 unsafe impl ::windows_core::Interface for StoreConsumableResult {
     type Vtable = IStoreConsumableResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreConsumableResult {
-    const IID: ::windows_core::GUID = <IStoreConsumableResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreConsumableResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreConsumableResult {
     const NAME: &'static str = "Windows.Services.Store.StoreConsumableResult";
@@ -1143,14 +1131,14 @@ impl StoreContext {
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
         P1: ::windows_core::IntoParam<super::super::ApplicationModel::Package>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FindStoreProductForPackageAsync)(::windows_core::Interface::as_raw(this), productkinds.into_param().abi(), package.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CanSilentlyDownloadStorePackageUpdates(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanSilentlyDownloadStorePackageUpdates)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1162,7 +1150,7 @@ impl StoreContext {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<StorePackageUpdate>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TrySilentDownloadStorePackageUpdatesAsync)(::windows_core::Interface::as_raw(this), storepackageupdates.into_param().abi(), &mut result__).from_abi(result__)
@@ -1174,7 +1162,7 @@ impl StoreContext {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<StorePackageUpdate>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TrySilentDownloadAndInstallStorePackageUpdatesAsync)(::windows_core::Interface::as_raw(this), storepackageupdates.into_param().abi(), &mut result__).from_abi(result__)
@@ -1186,14 +1174,14 @@ impl StoreContext {
     where
         P0: ::windows_core::IntoParam<super::super::ApplicationModel::Package>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanAcquireStoreLicenseForOptionalPackageAsync)(::windows_core::Interface::as_raw(this), optionalpackage.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CanAcquireStoreLicenseAsync(&self, productstoreid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<StoreCanAcquireLicenseResult>> {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanAcquireStoreLicenseAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(productstoreid), &mut result__).from_abi(result__)
@@ -1207,7 +1195,7 @@ impl StoreContext {
         P1: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
         P2: ::windows_core::IntoParam<StoreProductOptions>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetStoreProductsWithOptionsAsync)(::windows_core::Interface::as_raw(this), productkinds.into_param().abi(), storeids.into_param().abi(), storeproductoptions.into_param().abi(), &mut result__).from_abi(result__)
@@ -1216,7 +1204,7 @@ impl StoreContext {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetAssociatedStoreQueueItemsAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Foundation::Collections::IVectorView<StoreQueueItem>>> {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetAssociatedStoreQueueItemsAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1228,7 +1216,7 @@ impl StoreContext {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetStoreQueueItemsAsync)(::windows_core::Interface::as_raw(this), storeids.into_param().abi(), &mut result__).from_abi(result__)
@@ -1241,7 +1229,7 @@ impl StoreContext {
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
         P1: ::windows_core::IntoParam<StorePackageInstallOptions>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestDownloadAndInstallStorePackagesWithInstallOptionsAsync)(::windows_core::Interface::as_raw(this), storeids.into_param().abi(), storepackageinstalloptions.into_param().abi(), &mut result__).from_abi(result__)
@@ -1253,7 +1241,7 @@ impl StoreContext {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DownloadAndInstallStorePackagesAsync)(::windows_core::Interface::as_raw(this), storeids.into_param().abi(), &mut result__).from_abi(result__)
@@ -1265,14 +1253,14 @@ impl StoreContext {
     where
         P0: ::windows_core::IntoParam<super::super::ApplicationModel::Package>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestUninstallStorePackageAsync)(::windows_core::Interface::as_raw(this), package.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RequestUninstallStorePackageByStoreIdAsync(&self, storeid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<StoreUninstallStorePackageResult>> {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestUninstallStorePackageByStoreIdAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(storeid), &mut result__).from_abi(result__)
@@ -1284,21 +1272,21 @@ impl StoreContext {
     where
         P0: ::windows_core::IntoParam<super::super::ApplicationModel::Package>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UninstallStorePackageAsync)(::windows_core::Interface::as_raw(this), package.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn UninstallStorePackageByStoreIdAsync(&self, storeid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<StoreUninstallStorePackageResult>> {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UninstallStorePackageByStoreIdAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(storeid), &mut result__).from_abi(result__)
         }
     }
     pub fn RequestRateAndReviewAppAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<StoreRateAndReviewResult>> {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext4>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestRateAndReviewAppAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1310,7 +1298,7 @@ impl StoreContext {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<StoreQueueItem>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext4>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SetInstallOrderForAssociatedStoreQueueItemsAsync)(::windows_core::Interface::as_raw(this), items.into_param().abi(), &mut result__).from_abi(result__)
@@ -1322,7 +1310,7 @@ impl StoreContext {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext5>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetUserPurchaseHistoryAsync)(::windows_core::Interface::as_raw(this), productkinds.into_param().abi(), &mut result__).from_abi(result__)
@@ -1334,14 +1322,14 @@ impl StoreContext {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext5>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetAssociatedStoreProductsByInAppOfferTokenAsync)(::windows_core::Interface::as_raw(this), inappoffertokens.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RequestPurchaseByInAppOfferTokenAsync(&self, inappoffertoken: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<StorePurchaseResult>> {
-        let this = &::windows_core::ComInterface::cast::<IStoreContext5>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreContext5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestPurchaseByInAppOfferTokenAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(inappoffertoken), &mut result__).from_abi(result__)
@@ -1375,9 +1363,7 @@ impl ::windows_core::RuntimeType for StoreContext {
 }
 unsafe impl ::windows_core::Interface for StoreContext {
     type Vtable = IStoreContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreContext {
-    const IID: ::windows_core::GUID = <IStoreContext as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreContext as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreContext {
     const NAME: &'static str = "Windows.Services.Store.StoreContext";
@@ -1430,9 +1416,7 @@ impl ::windows_core::RuntimeType for StoreImage {
 }
 unsafe impl ::windows_core::Interface for StoreImage {
     type Vtable = IStoreImage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreImage {
-    const IID: ::windows_core::GUID = <IStoreImage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreImage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreImage {
     const NAME: &'static str = "Windows.Services.Store.StoreImage";
@@ -1485,9 +1469,7 @@ impl ::windows_core::RuntimeType for StoreLicense {
 }
 unsafe impl ::windows_core::Interface for StoreLicense {
     type Vtable = IStoreLicense_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreLicense {
-    const IID: ::windows_core::GUID = <IStoreLicense as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreLicense as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreLicense {
     const NAME: &'static str = "Windows.Services.Store.StoreLicense";
@@ -1523,9 +1505,7 @@ impl ::windows_core::RuntimeType for StorePackageInstallOptions {
 }
 unsafe impl ::windows_core::Interface for StorePackageInstallOptions {
     type Vtable = IStorePackageInstallOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorePackageInstallOptions {
-    const IID: ::windows_core::GUID = <IStorePackageInstallOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorePackageInstallOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorePackageInstallOptions {
     const NAME: &'static str = "Windows.Services.Store.StorePackageInstallOptions";
@@ -1538,7 +1518,7 @@ unsafe impl ::core::marker::Sync for StorePackageInstallOptions {}
 pub struct StorePackageLicense(::windows_core::IUnknown);
 impl StorePackageLicense {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn LicenseLost<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
@@ -1581,9 +1561,7 @@ impl ::windows_core::RuntimeType for StorePackageLicense {
 }
 unsafe impl ::windows_core::Interface for StorePackageLicense {
     type Vtable = IStorePackageLicense_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorePackageLicense {
-    const IID: ::windows_core::GUID = <IStorePackageLicense as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorePackageLicense as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorePackageLicense {
     const NAME: &'static str = "Windows.Services.Store.StorePackageLicense";
@@ -1618,9 +1596,7 @@ impl ::windows_core::RuntimeType for StorePackageUpdate {
 }
 unsafe impl ::windows_core::Interface for StorePackageUpdate {
     type Vtable = IStorePackageUpdate_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorePackageUpdate {
-    const IID: ::windows_core::GUID = <IStorePackageUpdate as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorePackageUpdate as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorePackageUpdate {
     const NAME: &'static str = "Windows.Services.Store.StorePackageUpdate";
@@ -1651,7 +1627,7 @@ impl StorePackageUpdateResult {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn StoreQueueItems(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<StoreQueueItem>> {
-        let this = &::windows_core::ComInterface::cast::<IStorePackageUpdateResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorePackageUpdateResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StoreQueueItems)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1663,9 +1639,7 @@ impl ::windows_core::RuntimeType for StorePackageUpdateResult {
 }
 unsafe impl ::windows_core::Interface for StorePackageUpdateResult {
     type Vtable = IStorePackageUpdateResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorePackageUpdateResult {
-    const IID: ::windows_core::GUID = <IStorePackageUpdateResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorePackageUpdateResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorePackageUpdateResult {
     const NAME: &'static str = "Windows.Services.Store.StorePackageUpdateResult";
@@ -1720,21 +1694,21 @@ impl StorePrice {
         }
     }
     pub fn UnformattedBasePrice(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IStorePrice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorePrice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UnformattedBasePrice)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn UnformattedPrice(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IStorePrice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorePrice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UnformattedPrice)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn UnformattedRecurrencePrice(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IStorePrice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorePrice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UnformattedRecurrencePrice)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1746,9 +1720,7 @@ impl ::windows_core::RuntimeType for StorePrice {
 }
 unsafe impl ::windows_core::Interface for StorePrice {
     type Vtable = IStorePrice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorePrice {
-    const IID: ::windows_core::GUID = <IStorePrice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorePrice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorePrice {
     const NAME: &'static str = "Windows.Services.Store.StorePrice";
@@ -1903,9 +1875,7 @@ impl ::windows_core::RuntimeType for StoreProduct {
 }
 unsafe impl ::windows_core::Interface for StoreProduct {
     type Vtable = IStoreProduct_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreProduct {
-    const IID: ::windows_core::GUID = <IStoreProduct as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreProduct as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreProduct {
     const NAME: &'static str = "Windows.Services.Store.StoreProduct";
@@ -1939,9 +1909,7 @@ impl ::windows_core::RuntimeType for StoreProductOptions {
 }
 unsafe impl ::windows_core::Interface for StoreProductOptions {
     type Vtable = IStoreProductOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreProductOptions {
-    const IID: ::windows_core::GUID = <IStoreProductOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreProductOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreProductOptions {
     const NAME: &'static str = "Windows.Services.Store.StoreProductOptions";
@@ -1989,9 +1957,7 @@ impl ::windows_core::RuntimeType for StoreProductPagedQueryResult {
 }
 unsafe impl ::windows_core::Interface for StoreProductPagedQueryResult {
     type Vtable = IStoreProductPagedQueryResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreProductPagedQueryResult {
-    const IID: ::windows_core::GUID = <IStoreProductPagedQueryResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreProductPagedQueryResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreProductPagedQueryResult {
     const NAME: &'static str = "Windows.Services.Store.StoreProductPagedQueryResult";
@@ -2025,9 +1991,7 @@ impl ::windows_core::RuntimeType for StoreProductQueryResult {
 }
 unsafe impl ::windows_core::Interface for StoreProductQueryResult {
     type Vtable = IStoreProductQueryResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreProductQueryResult {
-    const IID: ::windows_core::GUID = <IStoreProductQueryResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreProductQueryResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreProductQueryResult {
     const NAME: &'static str = "Windows.Services.Store.StoreProductQueryResult";
@@ -2059,9 +2023,7 @@ impl ::windows_core::RuntimeType for StoreProductResult {
 }
 unsafe impl ::windows_core::Interface for StoreProductResult {
     type Vtable = IStoreProductResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreProductResult {
-    const IID: ::windows_core::GUID = <IStoreProductResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreProductResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreProductResult {
     const NAME: &'static str = "Windows.Services.Store.StoreProductResult";
@@ -2119,9 +2081,7 @@ impl ::windows_core::RuntimeType for StorePurchaseProperties {
 }
 unsafe impl ::windows_core::Interface for StorePurchaseProperties {
     type Vtable = IStorePurchaseProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorePurchaseProperties {
-    const IID: ::windows_core::GUID = <IStorePurchaseProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorePurchaseProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorePurchaseProperties {
     const NAME: &'static str = "Windows.Services.Store.StorePurchaseProperties";
@@ -2153,9 +2113,7 @@ impl ::windows_core::RuntimeType for StorePurchaseResult {
 }
 unsafe impl ::windows_core::Interface for StorePurchaseResult {
     type Vtable = IStorePurchaseResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorePurchaseResult {
-    const IID: ::windows_core::GUID = <IStorePurchaseResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorePurchaseResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorePurchaseResult {
     const NAME: &'static str = "Windows.Services.Store.StorePurchaseResult";
@@ -2224,21 +2182,21 @@ impl StoreQueueItem {
         unsafe { (::windows_core::Interface::vtable(this).RemoveStatusChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn CancelInstallAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IStoreQueueItem2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreQueueItem2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CancelInstallAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PauseInstallAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IStoreQueueItem2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreQueueItem2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PauseInstallAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ResumeInstallAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IStoreQueueItem2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreQueueItem2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResumeInstallAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2250,9 +2208,7 @@ impl ::windows_core::RuntimeType for StoreQueueItem {
 }
 unsafe impl ::windows_core::Interface for StoreQueueItem {
     type Vtable = IStoreQueueItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreQueueItem {
-    const IID: ::windows_core::GUID = <IStoreQueueItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreQueueItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreQueueItem {
     const NAME: &'static str = "Windows.Services.Store.StoreQueueItem";
@@ -2277,9 +2233,7 @@ impl ::windows_core::RuntimeType for StoreQueueItemCompletedEventArgs {
 }
 unsafe impl ::windows_core::Interface for StoreQueueItemCompletedEventArgs {
     type Vtable = IStoreQueueItemCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreQueueItemCompletedEventArgs {
-    const IID: ::windows_core::GUID = <IStoreQueueItemCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreQueueItemCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreQueueItemCompletedEventArgs {
     const NAME: &'static str = "Windows.Services.Store.StoreQueueItemCompletedEventArgs";
@@ -2325,9 +2279,7 @@ impl ::windows_core::RuntimeType for StoreQueueItemStatus {
 }
 unsafe impl ::windows_core::Interface for StoreQueueItemStatus {
     type Vtable = IStoreQueueItemStatus_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreQueueItemStatus {
-    const IID: ::windows_core::GUID = <IStoreQueueItemStatus as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreQueueItemStatus as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreQueueItemStatus {
     const NAME: &'static str = "Windows.Services.Store.StoreQueueItemStatus";
@@ -2373,9 +2325,7 @@ impl ::windows_core::RuntimeType for StoreRateAndReviewResult {
 }
 unsafe impl ::windows_core::Interface for StoreRateAndReviewResult {
     type Vtable = IStoreRateAndReviewResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreRateAndReviewResult {
-    const IID: ::windows_core::GUID = <IStoreRateAndReviewResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreRateAndReviewResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreRateAndReviewResult {
     const NAME: &'static str = "Windows.Services.Store.StoreRateAndReviewResult";
@@ -2424,7 +2374,7 @@ impl StoreSendRequestResult {
     #[doc = "Required features: `\"Web_Http\"`"]
     #[cfg(feature = "Web_Http")]
     pub fn HttpStatusCode(&self) -> ::windows_core::Result<super::super::Web::Http::HttpStatusCode> {
-        let this = &::windows_core::ComInterface::cast::<IStoreSendRequestResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStoreSendRequestResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HttpStatusCode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2436,9 +2386,7 @@ impl ::windows_core::RuntimeType for StoreSendRequestResult {
 }
 unsafe impl ::windows_core::Interface for StoreSendRequestResult {
     type Vtable = IStoreSendRequestResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreSendRequestResult {
-    const IID: ::windows_core::GUID = <IStoreSendRequestResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreSendRequestResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreSendRequestResult {
     const NAME: &'static str = "Windows.Services.Store.StoreSendRequestResult";
@@ -2600,9 +2548,7 @@ impl ::windows_core::RuntimeType for StoreSku {
 }
 unsafe impl ::windows_core::Interface for StoreSku {
     type Vtable = IStoreSku_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreSku {
-    const IID: ::windows_core::GUID = <IStoreSku as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreSku as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreSku {
     const NAME: &'static str = "Windows.Services.Store.StoreSku";
@@ -2655,9 +2601,7 @@ impl ::windows_core::RuntimeType for StoreSubscriptionInfo {
 }
 unsafe impl ::windows_core::Interface for StoreSubscriptionInfo {
     type Vtable = IStoreSubscriptionInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreSubscriptionInfo {
-    const IID: ::windows_core::GUID = <IStoreSubscriptionInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreSubscriptionInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreSubscriptionInfo {
     const NAME: &'static str = "Windows.Services.Store.StoreSubscriptionInfo";
@@ -2689,9 +2633,7 @@ impl ::windows_core::RuntimeType for StoreUninstallStorePackageResult {
 }
 unsafe impl ::windows_core::Interface for StoreUninstallStorePackageResult {
     type Vtable = IStoreUninstallStorePackageResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreUninstallStorePackageResult {
-    const IID: ::windows_core::GUID = <IStoreUninstallStorePackageResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreUninstallStorePackageResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreUninstallStorePackageResult {
     const NAME: &'static str = "Windows.Services.Store.StoreUninstallStorePackageResult";
@@ -2751,9 +2693,7 @@ impl ::windows_core::RuntimeType for StoreVideo {
 }
 unsafe impl ::windows_core::Interface for StoreVideo {
     type Vtable = IStoreVideo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreVideo {
-    const IID: ::windows_core::GUID = <IStoreVideo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreVideo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreVideo {
     const NAME: &'static str = "Windows.Services.Store.StoreVideo";

@@ -151,7 +151,7 @@ pub struct ILampStatics_Vtbl {
 pub struct Lamp(::windows_core::IUnknown);
 impl Lamp {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn DeviceId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -248,9 +248,7 @@ impl ::windows_core::RuntimeType for Lamp {
 }
 unsafe impl ::windows_core::Interface for Lamp {
     type Vtable = ILamp_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Lamp {
-    const IID: ::windows_core::GUID = <ILamp as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILamp as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Lamp {
     const NAME: &'static str = "Windows.Devices.Lights.Lamp";
@@ -444,7 +442,7 @@ impl LampArray {
         }
     }
     pub fn IsAvailable(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ILampArray2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILampArray2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsAvailable)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -454,14 +452,14 @@ impl LampArray {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<LampArray, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ILampArray2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILampArray2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AvailabilityChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveAvailabilityChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ILampArray2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILampArray2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAvailabilityChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn GetDeviceSelector() -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -487,9 +485,7 @@ impl ::windows_core::RuntimeType for LampArray {
 }
 unsafe impl ::windows_core::Interface for LampArray {
     type Vtable = ILampArray_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LampArray {
-    const IID: ::windows_core::GUID = <ILampArray as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILampArray as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LampArray {
     const NAME: &'static str = "Windows.Devices.Lights.LampArray";
@@ -514,9 +510,7 @@ impl ::windows_core::RuntimeType for LampAvailabilityChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for LampAvailabilityChangedEventArgs {
     type Vtable = ILampAvailabilityChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LampAvailabilityChangedEventArgs {
-    const IID: ::windows_core::GUID = <ILampAvailabilityChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILampAvailabilityChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LampAvailabilityChangedEventArgs {
     const NAME: &'static str = "Windows.Devices.Lights.LampAvailabilityChangedEventArgs";
@@ -610,9 +604,7 @@ impl ::windows_core::RuntimeType for LampInfo {
 }
 unsafe impl ::windows_core::Interface for LampInfo {
     type Vtable = ILampInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LampInfo {
-    const IID: ::windows_core::GUID = <ILampInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILampInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LampInfo {
     const NAME: &'static str = "Windows.Devices.Lights.LampInfo";

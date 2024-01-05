@@ -33,8 +33,6 @@ impl<T: ::windows_core::RuntimeType> ::core::iter::IntoIterator for &IIterable<T
 }
 unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IIterable<T> {
     type Vtable = IIterable_Vtbl<T>;
-}
-unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface for IIterable<T> {
     const IID: ::windows_core::GUID = ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
 #[repr(C)]
@@ -99,8 +97,6 @@ impl<T: ::windows_core::RuntimeType> ::core::iter::Iterator for IIterator<T> {
 }
 unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IIterator<T> {
     type Vtable = IIterator_Vtbl<T>;
-}
-unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface for IIterator<T> {
     const IID: ::windows_core::GUID = ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
 #[repr(C)]
@@ -145,8 +141,6 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
 }
 unsafe impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IKeyValuePair<K, V> {
     type Vtable = IKeyValuePair_Vtbl<K, V>;
-}
-unsafe impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface for IKeyValuePair<K, V> {
     const IID: ::windows_core::GUID = ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
 #[repr(C)]
@@ -226,7 +220,7 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
         unsafe { (::windows_core::Interface::vtable(this).Clear)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn First(&self) -> ::windows_core::Result<IIterator<IKeyValuePair<K, V>>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<IKeyValuePair<K, V>>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<IKeyValuePair<K, V>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -257,8 +251,6 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
 }
 unsafe impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IMap<K, V> {
     type Vtable = IMap_Vtbl<K, V>;
-}
-unsafe impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface for IMap<K, V> {
     const IID: ::windows_core::GUID = ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
 #[repr(C)]
@@ -307,8 +299,6 @@ impl<K: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for I
 }
 unsafe impl<K: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IMapChangedEventArgs<K> {
     type Vtable = IMapChangedEventArgs_Vtbl<K>;
-}
-unsafe impl<K: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface for IMapChangedEventArgs<K> {
     const IID: ::windows_core::GUID = ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
 #[repr(C)]
@@ -361,7 +351,7 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
         unsafe { (::windows_core::Interface::vtable(this).Split)(::windows_core::Interface::as_raw(this), first as *mut _ as _, second as *mut _ as _).ok() }
     }
     pub fn First(&self) -> ::windows_core::Result<IIterator<IKeyValuePair<K, V>>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<IKeyValuePair<K, V>>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<IKeyValuePair<K, V>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -392,8 +382,6 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
 }
 unsafe impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IMapView<K, V> {
     type Vtable = IMapView_Vtbl<K, V>;
-}
-unsafe impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface for IMapView<K, V> {
     const IID: ::windows_core::GUID = ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
 #[repr(C)]
@@ -433,7 +421,7 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
         unsafe { (::windows_core::Interface::vtable(this).RemoveMapChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn First(&self) -> ::windows_core::Result<IIterator<IKeyValuePair<K, V>>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<IKeyValuePair<K, V>>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<IKeyValuePair<K, V>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -443,14 +431,14 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
     where
         P0: ::windows_core::IntoParam<K>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMap<K, V>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<K, V>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Lookup)(::windows_core::Interface::as_raw(this), key.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IMap<K, V>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<K, V>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -460,14 +448,14 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
     where
         P0: ::windows_core::IntoParam<K>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMap<K, V>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<K, V>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasKey)(::windows_core::Interface::as_raw(this), key.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn GetView(&self) -> ::windows_core::Result<IMapView<K, V>> {
-        let this = &::windows_core::ComInterface::cast::<IMap<K, V>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<K, V>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetView)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -478,7 +466,7 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
         P0: ::windows_core::IntoParam<K>,
         P1: ::windows_core::IntoParam<V>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMap<K, V>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<K, V>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Insert)(::windows_core::Interface::as_raw(this), key.into_param().abi(), value.into_param().abi(), &mut result__).from_abi(result__)
@@ -488,11 +476,11 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
     where
         P0: ::windows_core::IntoParam<K>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMap<K, V>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<K, V>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), key.into_param().abi()).ok() }
     }
     pub fn Clear(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMap<K, V>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<K, V>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Clear)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -523,8 +511,6 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
 }
 unsafe impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IObservableMap<K, V> {
     type Vtable = IObservableMap_Vtbl<K, V>;
-}
-unsafe impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface for IObservableMap<K, V> {
     const IID: ::windows_core::GUID = ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
 #[repr(C)]
@@ -561,28 +547,28 @@ impl<T: ::windows_core::RuntimeType + 'static> IObservableVector<T> {
         unsafe { (::windows_core::Interface::vtable(this).RemoveVectorChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn First(&self) -> ::windows_core::Result<IIterator<T>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<T>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetAt(&self, index: u32) -> ::windows_core::Result<T> {
-        let this = &::windows_core::ComInterface::cast::<IVector<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVector<T>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetAt)(::windows_core::Interface::as_raw(this), index, &mut result__).from_abi(result__)
         }
     }
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IVector<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVector<T>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetView(&self) -> ::windows_core::Result<IVectorView<T>> {
-        let this = &::windows_core::ComInterface::cast::<IVector<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVector<T>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetView)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -592,7 +578,7 @@ impl<T: ::windows_core::RuntimeType + 'static> IObservableVector<T> {
     where
         P0: ::windows_core::IntoParam<T>,
     {
-        let this = &::windows_core::ComInterface::cast::<IVector<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVector<T>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IndexOf)(::windows_core::Interface::as_raw(this), value.into_param().abi(), index, &mut result__).from_abi(result__)
@@ -602,44 +588,44 @@ impl<T: ::windows_core::RuntimeType + 'static> IObservableVector<T> {
     where
         P0: ::windows_core::IntoParam<T>,
     {
-        let this = &::windows_core::ComInterface::cast::<IVector<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVector<T>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAt)(::windows_core::Interface::as_raw(this), index, value.into_param().abi()).ok() }
     }
     pub fn InsertAt<P0>(&self, index: u32, value: P0) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<T>,
     {
-        let this = &::windows_core::ComInterface::cast::<IVector<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVector<T>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).InsertAt)(::windows_core::Interface::as_raw(this), index, value.into_param().abi()).ok() }
     }
     pub fn RemoveAt(&self, index: u32) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IVector<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVector<T>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAt)(::windows_core::Interface::as_raw(this), index).ok() }
     }
     pub fn Append<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<T>,
     {
-        let this = &::windows_core::ComInterface::cast::<IVector<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVector<T>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Append)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn RemoveAtEnd(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IVector<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVector<T>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAtEnd)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Clear(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IVector<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVector<T>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Clear)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn GetMany(&self, startindex: u32, items: &mut [<T as ::windows_core::Type<T>>::Default]) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IVector<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVector<T>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetMany)(::windows_core::Interface::as_raw(this), startindex, items.len().try_into().unwrap(), ::core::mem::transmute_copy(&items), &mut result__).from_abi(result__)
         }
     }
     pub fn ReplaceAll(&self, items: &[<T as ::windows_core::Type<T>>::Default]) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IVector<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IVector<T>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReplaceAll)(::windows_core::Interface::as_raw(this), items.len().try_into().unwrap(), ::core::mem::transmute(items.as_ptr())).ok() }
     }
 }
@@ -665,13 +651,11 @@ impl<T: ::windows_core::RuntimeType + 'static> ::core::iter::IntoIterator for &I
     type Item = T;
     type IntoIter = VectorIterator<Self::Item>;
     fn into_iter(self) -> Self::IntoIter {
-        VectorIterator::new(::windows_core::ComInterface::cast(self).ok())
+        VectorIterator::new(::windows_core::Interface::cast(self).ok())
     }
 }
 unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IObservableVector<T> {
     type Vtable = IObservableVector_Vtbl<T>;
-}
-unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface for IObservableVector<T> {
     const IID: ::windows_core::GUID = ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
 #[repr(C)]
@@ -688,35 +672,35 @@ where
 ::windows_core::imp::com_interface!(IPropertySet, IPropertySet_Vtbl, 0x8a43ed9f_f4e6_4421_acf9_1dab2986820c);
 impl IPropertySet {
     pub fn First(&self) -> ::windows_core::Result<IIterator<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Lookup(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<::windows_core::IInspectable> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Lookup)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
         }
     }
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn HasKey(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasKey)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
         }
     }
     pub fn GetView(&self) -> ::windows_core::Result<IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetView)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -726,32 +710,32 @@ impl IPropertySet {
     where
         P0: ::windows_core::IntoParam<::windows_core::IInspectable>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Insert)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), value.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn Remove(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key)).ok() }
     }
     pub fn Clear(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Clear)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn MapChanged<P0>(&self, vhnd: P0) -> ::windows_core::Result<super::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<MapChangedEventHandler<::windows_core::HSTRING, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MapChanged)(::windows_core::Interface::as_raw(this), vhnd.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveMapChanged(&self, token: super::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveMapChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
 }
@@ -861,7 +845,7 @@ impl<T: ::windows_core::RuntimeType + 'static> IVector<T> {
         unsafe { (::windows_core::Interface::vtable(this).ReplaceAll)(::windows_core::Interface::as_raw(this), items.len().try_into().unwrap(), ::core::mem::transmute(items.as_ptr())).ok() }
     }
     pub fn First(&self) -> ::windows_core::Result<IIterator<T>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<T>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -910,8 +894,6 @@ impl<T: ::windows_core::RuntimeType> ::core::iter::IntoIterator for &IVector<T> 
 }
 unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IVector<T> {
     type Vtable = IVector_Vtbl<T>;
-}
-unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface for IVector<T> {
     const IID: ::windows_core::GUID = ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
 #[repr(C)]
@@ -1001,7 +983,7 @@ impl<T: ::windows_core::RuntimeType + 'static> IVectorView<T> {
         }
     }
     pub fn First(&self) -> ::windows_core::Result<IIterator<T>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<T>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1050,8 +1032,6 @@ impl<T: ::windows_core::RuntimeType> ::core::iter::IntoIterator for &IVectorView
 }
 unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IVectorView<T> {
     type Vtable = IVectorView_Vtbl<T>;
-}
-unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface for IVectorView<T> {
     const IID: ::windows_core::GUID = ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
 #[repr(C)]
@@ -1079,35 +1059,35 @@ impl PropertySet {
         SHARED.call(callback)
     }
     pub fn First(&self) -> ::windows_core::Result<IIterator<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Lookup(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<::windows_core::IInspectable> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Lookup)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
         }
     }
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn HasKey(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasKey)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
         }
     }
     pub fn GetView(&self) -> ::windows_core::Result<IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetView)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1117,32 +1097,32 @@ impl PropertySet {
     where
         P0: ::windows_core::IntoParam<::windows_core::IInspectable>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Insert)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), value.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn Remove(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key)).ok() }
     }
     pub fn Clear(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Clear)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn MapChanged<P0>(&self, vhnd: P0) -> ::windows_core::Result<super::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<MapChangedEventHandler<::windows_core::HSTRING, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MapChanged)(::windows_core::Interface::as_raw(this), vhnd.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveMapChanged(&self, token: super::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveMapChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
 }
@@ -1151,9 +1131,7 @@ impl ::windows_core::RuntimeType for PropertySet {
 }
 unsafe impl ::windows_core::Interface for PropertySet {
     type Vtable = IPropertySet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PropertySet {
-    const IID: ::windows_core::GUID = <IPropertySet as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPropertySet as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PropertySet {
     const NAME: &'static str = "Windows.Foundation.Collections.PropertySet";
@@ -1188,7 +1166,7 @@ impl StringMap {
         SHARED.call(callback)
     }
     pub fn First(&self) -> ::windows_core::Result<IIterator<IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1241,14 +1219,14 @@ impl StringMap {
     where
         P0: ::windows_core::IntoParam<MapChangedEventHandler<::windows_core::HSTRING, ::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
+        let this = &::windows_core::Interface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MapChanged)(::windows_core::Interface::as_raw(this), vhnd.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveMapChanged(&self, token: super::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
+        let this = &::windows_core::Interface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveMapChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
 }
@@ -1257,9 +1235,7 @@ impl ::windows_core::RuntimeType for StringMap {
 }
 unsafe impl ::windows_core::Interface for StringMap {
     type Vtable = IMap_Vtbl<::windows_core::HSTRING, ::windows_core::HSTRING>;
-}
-unsafe impl ::windows_core::ComInterface for StringMap {
-    const IID: ::windows_core::GUID = <IMap<::windows_core::HSTRING, ::windows_core::HSTRING> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMap<::windows_core::HSTRING, ::windows_core::HSTRING> as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StringMap {
     const NAME: &'static str = "Windows.Foundation.Collections.StringMap";
@@ -1294,35 +1270,35 @@ impl ValueSet {
         SHARED.call(callback)
     }
     pub fn First(&self) -> ::windows_core::Result<IIterator<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Lookup(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<::windows_core::IInspectable> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Lookup)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
         }
     }
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn HasKey(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasKey)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
         }
     }
     pub fn GetView(&self) -> ::windows_core::Result<IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetView)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1332,32 +1308,32 @@ impl ValueSet {
     where
         P0: ::windows_core::IntoParam<::windows_core::IInspectable>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Insert)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), value.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn Remove(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key)).ok() }
     }
     pub fn Clear(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Clear)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn MapChanged<P0>(&self, vhnd: P0) -> ::windows_core::Result<super::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<MapChangedEventHandler<::windows_core::HSTRING, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MapChanged)(::windows_core::Interface::as_raw(this), vhnd.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveMapChanged(&self, token: super::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveMapChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
 }
@@ -1366,9 +1342,7 @@ impl ::windows_core::RuntimeType for ValueSet {
 }
 unsafe impl ::windows_core::Interface for ValueSet {
     type Vtable = IPropertySet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ValueSet {
-    const IID: ::windows_core::GUID = <IPropertySet as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPropertySet as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ValueSet {
     const NAME: &'static str = "Windows.Foundation.Collections.ValueSet";
@@ -1453,7 +1427,7 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <MapChangedEventHandler<K, V> as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <MapChangedEventHandler<K, V> as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -1480,8 +1454,6 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
 }
 unsafe impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for MapChangedEventHandler<K, V> {
     type Vtable = MapChangedEventHandler_Vtbl<K, V>;
-}
-unsafe impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface for MapChangedEventHandler<K, V> {
     const IID: ::windows_core::GUID = ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
 impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for MapChangedEventHandler<K, V> {
@@ -1538,7 +1510,7 @@ impl<T: ::windows_core::RuntimeType + 'static, F: FnMut(::core::option::Option<&
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <VectorChangedEventHandler<T> as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <VectorChangedEventHandler<T> as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -1565,8 +1537,6 @@ impl<T: ::windows_core::RuntimeType + 'static, F: FnMut(::core::option::Option<&
 }
 unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for VectorChangedEventHandler<T> {
     type Vtable = VectorChangedEventHandler_Vtbl<T>;
-}
-unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface for VectorChangedEventHandler<T> {
     const IID: ::windows_core::GUID = ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for VectorChangedEventHandler<T> {

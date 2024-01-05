@@ -320,7 +320,7 @@ impl DeviceAccountConfiguration {
     #[doc = "Required features: `\"Security_Credentials\"`"]
     #[cfg(feature = "Security_Credentials")]
     pub fn IncomingServerCredential(&self) -> ::windows_core::Result<super::super::super::Security::Credentials::PasswordCredential> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IncomingServerCredential)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -332,13 +332,13 @@ impl DeviceAccountConfiguration {
     where
         P0: ::windows_core::IntoParam<super::super::super::Security::Credentials::PasswordCredential>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIncomingServerCredential)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Security_Credentials\"`"]
     #[cfg(feature = "Security_Credentials")]
     pub fn OutgoingServerCredential(&self) -> ::windows_core::Result<super::super::super::Security::Credentials::PasswordCredential> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingServerCredential)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -350,168 +350,168 @@ impl DeviceAccountConfiguration {
     where
         P0: ::windows_core::IntoParam<super::super::super::Security::Credentials::PasswordCredential>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingServerCredential)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn OAuthRefreshToken(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OAuthRefreshToken)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOAuthRefreshToken(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOAuthRefreshToken)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn IsExternallyManaged(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsExternallyManaged)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsExternallyManaged(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsExternallyManaged)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn AccountIconId(&self) -> ::windows_core::Result<DeviceAccountIconId> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AccountIconId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAccountIconId(&self, value: DeviceAccountIconId) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAccountIconId)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn AuthenticationType(&self) -> ::windows_core::Result<DeviceAccountAuthenticationType> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AuthenticationType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAuthenticationType(&self, value: DeviceAccountAuthenticationType) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAuthenticationType)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsSsoAuthenticationSupported(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsSsoAuthenticationSupported)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SsoAccountId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SsoAccountId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetSsoAccountId(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSsoAccountId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn AlwaysDownloadFullMessage(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AlwaysDownloadFullMessage)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAlwaysDownloadFullMessage(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAlwaysDownloadFullMessage)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn DoesPolicyAllowMailSync(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DoesPolicyAllowMailSync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SyncScheduleKind(&self) -> ::windows_core::Result<DeviceAccountSyncScheduleKind> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SyncScheduleKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetSyncScheduleKind(&self, value: DeviceAccountSyncScheduleKind) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSyncScheduleKind)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn MailAgeFilter(&self) -> ::windows_core::Result<DeviceAccountMailAgeFilter> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MailAgeFilter)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetMailAgeFilter(&self, value: DeviceAccountMailAgeFilter) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMailAgeFilter)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsClientAuthenticationCertificateRequired(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsClientAuthenticationCertificateRequired)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsClientAuthenticationCertificateRequired(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsClientAuthenticationCertificateRequired)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn AutoSelectAuthenticationCertificate(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AutoSelectAuthenticationCertificate)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAutoSelectAuthenticationCertificate(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAutoSelectAuthenticationCertificate)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn AuthenticationCertificateId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AuthenticationCertificateId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAuthenticationCertificateId(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAuthenticationCertificateId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn CardDavSyncScheduleKind(&self) -> ::windows_core::Result<DeviceAccountSyncScheduleKind> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CardDavSyncScheduleKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCardDavSyncScheduleKind(&self, value: DeviceAccountSyncScheduleKind) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCardDavSyncScheduleKind)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CalDavSyncScheduleKind(&self) -> ::windows_core::Result<DeviceAccountSyncScheduleKind> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CalDavSyncScheduleKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCalDavSyncScheduleKind(&self, value: DeviceAccountSyncScheduleKind) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCalDavSyncScheduleKind)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CardDavServerUrl(&self) -> ::windows_core::Result<super::super::super::Foundation::Uri> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CardDavServerUrl)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -521,22 +521,22 @@ impl DeviceAccountConfiguration {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCardDavServerUrl)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CardDavRequiresSsl(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CardDavRequiresSsl)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCardDavRequiresSsl(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCardDavRequiresSsl)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CalDavServerUrl(&self) -> ::windows_core::Result<super::super::super::Foundation::Uri> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CalDavServerUrl)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -546,106 +546,106 @@ impl DeviceAccountConfiguration {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCalDavServerUrl)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CalDavRequiresSsl(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CalDavRequiresSsl)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCalDavRequiresSsl(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCalDavRequiresSsl)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn WasModifiedByUser(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).WasModifiedByUser)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetWasModifiedByUser(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetWasModifiedByUser)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn WasIncomingServerCertificateHashConfirmed(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).WasIncomingServerCertificateHashConfirmed)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetWasIncomingServerCertificateHashConfirmed(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetWasIncomingServerCertificateHashConfirmed)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IncomingServerCertificateHash(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IncomingServerCertificateHash)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIncomingServerCertificateHash(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIncomingServerCertificateHash)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn IsOutgoingServerAuthenticationRequired(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsOutgoingServerAuthenticationRequired)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsOutgoingServerAuthenticationRequired(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsOutgoingServerAuthenticationRequired)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsOutgoingServerAuthenticationEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsOutgoingServerAuthenticationEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsOutgoingServerAuthenticationEnabled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsOutgoingServerAuthenticationEnabled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn WasOutgoingServerCertificateHashConfirmed(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).WasOutgoingServerCertificateHashConfirmed)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetWasOutgoingServerCertificateHashConfirmed(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetWasOutgoingServerCertificateHashConfirmed)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutgoingServerCertificateHash(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingServerCertificateHash)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutgoingServerCertificateHash(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingServerCertificateHash)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn IsSyncScheduleManagedBySystem(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsSyncScheduleManagedBySystem)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsSyncScheduleManagedBySystem(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDeviceAccountConfiguration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDeviceAccountConfiguration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsSyncScheduleManagedBySystem)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -654,9 +654,7 @@ impl ::windows_core::RuntimeType for DeviceAccountConfiguration {
 }
 unsafe impl ::windows_core::Interface for DeviceAccountConfiguration {
     type Vtable = IDeviceAccountConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DeviceAccountConfiguration {
-    const IID: ::windows_core::GUID = <IDeviceAccountConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDeviceAccountConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DeviceAccountConfiguration {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountConfiguration";

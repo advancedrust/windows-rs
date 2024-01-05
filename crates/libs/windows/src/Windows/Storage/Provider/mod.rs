@@ -617,14 +617,14 @@ impl CachedFileUpdaterUI {
         }
     }
     pub fn UpdateRequest(&self) -> ::windows_core::Result<FileUpdateRequest> {
-        let this = &::windows_core::ComInterface::cast::<ICachedFileUpdaterUI2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICachedFileUpdaterUI2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UpdateRequest)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetDeferral(&self) -> ::windows_core::Result<FileUpdateRequestDeferral> {
-        let this = &::windows_core::ComInterface::cast::<ICachedFileUpdaterUI2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICachedFileUpdaterUI2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetDeferral)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -636,9 +636,7 @@ impl ::windows_core::RuntimeType for CachedFileUpdaterUI {
 }
 unsafe impl ::windows_core::Interface for CachedFileUpdaterUI {
     type Vtable = ICachedFileUpdaterUI_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CachedFileUpdaterUI {
-    const IID: ::windows_core::GUID = <ICachedFileUpdaterUI as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICachedFileUpdaterUI as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CachedFileUpdaterUI {
     const NAME: &'static str = "Windows.Storage.Provider.CachedFileUpdaterUI";
@@ -688,14 +686,14 @@ impl FileUpdateRequest {
         unsafe { (::windows_core::Interface::vtable(this).UpdateLocalFile)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn UserInputNeededMessage(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IFileUpdateRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileUpdateRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UserInputNeededMessage)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetUserInputNeededMessage(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IFileUpdateRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileUpdateRequest2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetUserInputNeededMessage)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
 }
@@ -704,9 +702,7 @@ impl ::windows_core::RuntimeType for FileUpdateRequest {
 }
 unsafe impl ::windows_core::Interface for FileUpdateRequest {
     type Vtable = IFileUpdateRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FileUpdateRequest {
-    const IID: ::windows_core::GUID = <IFileUpdateRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFileUpdateRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FileUpdateRequest {
     const NAME: &'static str = "Windows.Storage.Provider.FileUpdateRequest";
@@ -726,9 +722,7 @@ impl ::windows_core::RuntimeType for FileUpdateRequestDeferral {
 }
 unsafe impl ::windows_core::Interface for FileUpdateRequestDeferral {
     type Vtable = IFileUpdateRequestDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FileUpdateRequestDeferral {
-    const IID: ::windows_core::GUID = <IFileUpdateRequestDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFileUpdateRequestDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FileUpdateRequestDeferral {
     const NAME: &'static str = "Windows.Storage.Provider.FileUpdateRequestDeferral";
@@ -751,9 +745,7 @@ impl ::windows_core::RuntimeType for FileUpdateRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for FileUpdateRequestedEventArgs {
     type Vtable = IFileUpdateRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FileUpdateRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IFileUpdateRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFileUpdateRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FileUpdateRequestedEventArgs {
     const NAME: &'static str = "Windows.Storage.Provider.FileUpdateRequestedEventArgs";
@@ -794,9 +786,7 @@ impl ::windows_core::RuntimeType for StorageProviderFileTypeInfo {
 }
 unsafe impl ::windows_core::Interface for StorageProviderFileTypeInfo {
     type Vtable = IStorageProviderFileTypeInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageProviderFileTypeInfo {
-    const IID: ::windows_core::GUID = <IStorageProviderFileTypeInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageProviderFileTypeInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageProviderFileTypeInfo {
     const NAME: &'static str = "Windows.Storage.Provider.StorageProviderFileTypeInfo";
@@ -854,9 +844,7 @@ impl ::windows_core::RuntimeType for StorageProviderGetContentInfoForPathResult 
 }
 unsafe impl ::windows_core::Interface for StorageProviderGetContentInfoForPathResult {
     type Vtable = IStorageProviderGetContentInfoForPathResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageProviderGetContentInfoForPathResult {
-    const IID: ::windows_core::GUID = <IStorageProviderGetContentInfoForPathResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageProviderGetContentInfoForPathResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageProviderGetContentInfoForPathResult {
     const NAME: &'static str = "Windows.Storage.Provider.StorageProviderGetContentInfoForPathResult";
@@ -903,9 +891,7 @@ impl ::windows_core::RuntimeType for StorageProviderGetPathForContentUriResult {
 }
 unsafe impl ::windows_core::Interface for StorageProviderGetPathForContentUriResult {
     type Vtable = IStorageProviderGetPathForContentUriResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageProviderGetPathForContentUriResult {
-    const IID: ::windows_core::GUID = <IStorageProviderGetPathForContentUriResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageProviderGetPathForContentUriResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageProviderGetPathForContentUriResult {
     const NAME: &'static str = "Windows.Storage.Provider.StorageProviderGetPathForContentUriResult";
@@ -986,9 +972,7 @@ impl ::windows_core::RuntimeType for StorageProviderItemProperty {
 }
 unsafe impl ::windows_core::Interface for StorageProviderItemProperty {
     type Vtable = IStorageProviderItemProperty_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageProviderItemProperty {
-    const IID: ::windows_core::GUID = <IStorageProviderItemProperty as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageProviderItemProperty as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageProviderItemProperty {
     const NAME: &'static str = "Windows.Storage.Provider.StorageProviderItemProperty";
@@ -1035,9 +1019,7 @@ impl ::windows_core::RuntimeType for StorageProviderItemPropertyDefinition {
 }
 unsafe impl ::windows_core::Interface for StorageProviderItemPropertyDefinition {
     type Vtable = IStorageProviderItemPropertyDefinition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageProviderItemPropertyDefinition {
-    const IID: ::windows_core::GUID = <IStorageProviderItemPropertyDefinition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageProviderItemPropertyDefinition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageProviderItemPropertyDefinition {
     const NAME: &'static str = "Windows.Storage.Provider.StorageProviderItemPropertyDefinition";
@@ -1084,9 +1066,7 @@ impl ::windows_core::RuntimeType for StorageProviderKnownFolderEntry {
 }
 unsafe impl ::windows_core::Interface for StorageProviderKnownFolderEntry {
     type Vtable = IStorageProviderKnownFolderEntry_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageProviderKnownFolderEntry {
-    const IID: ::windows_core::GUID = <IStorageProviderKnownFolderEntry as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageProviderKnownFolderEntry as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageProviderKnownFolderEntry {
     const NAME: &'static str = "Windows.Storage.Provider.StorageProviderKnownFolderEntry";
@@ -1145,9 +1125,7 @@ impl ::windows_core::RuntimeType for StorageProviderKnownFolderSyncInfo {
 }
 unsafe impl ::windows_core::Interface for StorageProviderKnownFolderSyncInfo {
     type Vtable = IStorageProviderKnownFolderSyncInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageProviderKnownFolderSyncInfo {
-    const IID: ::windows_core::GUID = <IStorageProviderKnownFolderSyncInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageProviderKnownFolderSyncInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageProviderKnownFolderSyncInfo {
     const NAME: &'static str = "Windows.Storage.Provider.StorageProviderKnownFolderSyncInfo";
@@ -1181,9 +1159,7 @@ impl ::windows_core::RuntimeType for StorageProviderKnownFolderSyncRequestArgs {
 }
 unsafe impl ::windows_core::Interface for StorageProviderKnownFolderSyncRequestArgs {
     type Vtable = IStorageProviderKnownFolderSyncRequestArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageProviderKnownFolderSyncRequestArgs {
-    const IID: ::windows_core::GUID = <IStorageProviderKnownFolderSyncRequestArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageProviderKnownFolderSyncRequestArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageProviderKnownFolderSyncRequestArgs {
     const NAME: &'static str = "Windows.Storage.Provider.StorageProviderKnownFolderSyncRequestArgs";
@@ -1233,9 +1209,7 @@ impl ::windows_core::RuntimeType for StorageProviderMoreInfoUI {
 }
 unsafe impl ::windows_core::Interface for StorageProviderMoreInfoUI {
     type Vtable = IStorageProviderMoreInfoUI_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageProviderMoreInfoUI {
-    const IID: ::windows_core::GUID = <IStorageProviderMoreInfoUI as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageProviderMoreInfoUI as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageProviderMoreInfoUI {
     const NAME: &'static str = "Windows.Storage.Provider.StorageProviderMoreInfoUI";
@@ -1311,9 +1285,7 @@ impl ::windows_core::RuntimeType for StorageProviderQuotaUI {
 }
 unsafe impl ::windows_core::Interface for StorageProviderQuotaUI {
     type Vtable = IStorageProviderQuotaUI_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageProviderQuotaUI {
-    const IID: ::windows_core::GUID = <IStorageProviderQuotaUI as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageProviderQuotaUI as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageProviderQuotaUI {
     const NAME: &'static str = "Windows.Storage.Provider.StorageProviderQuotaUI";
@@ -1448,9 +1420,7 @@ impl ::windows_core::RuntimeType for StorageProviderStatusUI {
 }
 unsafe impl ::windows_core::Interface for StorageProviderStatusUI {
     type Vtable = IStorageProviderStatusUI_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageProviderStatusUI {
-    const IID: ::windows_core::GUID = <IStorageProviderStatusUI as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageProviderStatusUI as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageProviderStatusUI {
     const NAME: &'static str = "Windows.Storage.Provider.StorageProviderStatusUI";
@@ -1657,20 +1627,20 @@ impl StorageProviderSyncRootInfo {
         unsafe { (::windows_core::Interface::vtable(this).SetRecycleBinUri)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ProviderId(&self) -> ::windows_core::Result<::windows_core::GUID> {
-        let this = &::windows_core::ComInterface::cast::<IStorageProviderSyncRootInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageProviderSyncRootInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ProviderId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetProviderId(&self, value: ::windows_core::GUID) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IStorageProviderSyncRootInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageProviderSyncRootInfo2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetProviderId)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn FallbackFileTypeInfo(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<StorageProviderFileTypeInfo>> {
-        let this = &::windows_core::ComInterface::cast::<IStorageProviderSyncRootInfo3>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageProviderSyncRootInfo3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FallbackFileTypeInfo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1682,9 +1652,7 @@ impl ::windows_core::RuntimeType for StorageProviderSyncRootInfo {
 }
 unsafe impl ::windows_core::Interface for StorageProviderSyncRootInfo {
     type Vtable = IStorageProviderSyncRootInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageProviderSyncRootInfo {
-    const IID: ::windows_core::GUID = <IStorageProviderSyncRootInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageProviderSyncRootInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageProviderSyncRootInfo {
     const NAME: &'static str = "Windows.Storage.Provider.StorageProviderSyncRootInfo";
@@ -2227,7 +2195,7 @@ impl<F: FnMut(::core::option::Option<&StorageProviderKnownFolderSyncRequestArgs>
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <StorageProviderKnownFolderSyncRequestedHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <StorageProviderKnownFolderSyncRequestedHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

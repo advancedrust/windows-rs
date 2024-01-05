@@ -352,9 +352,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisement {
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisement {
     type Vtable = IBluetoothLEAdvertisement_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisement {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisement as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisement as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisement {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement";
@@ -435,9 +433,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisementBytePattern {
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisementBytePattern {
     type Vtable = IBluetoothLEAdvertisementBytePattern_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisementBytePattern {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementBytePattern as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementBytePattern as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisementBytePattern {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementBytePattern";
@@ -507,9 +503,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisementDataSection {
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisementDataSection {
     type Vtable = IBluetoothLEAdvertisementDataSection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisementDataSection {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementDataSection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementDataSection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisementDataSection {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataSection";
@@ -700,9 +694,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisementFilter {
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisementFilter {
     type Vtable = IBluetoothLEAdvertisementFilter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisementFilter {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementFilter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementFilter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisementFilter {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementFilter";
@@ -758,7 +750,7 @@ impl BluetoothLEAdvertisementPublisher {
         unsafe { (::windows_core::Interface::vtable(this).RemoveStatusChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn PreferredTransmitPowerLevelInDBm(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<i16>> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PreferredTransmitPowerLevelInDBm)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -768,40 +760,40 @@ impl BluetoothLEAdvertisementPublisher {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<i16>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPreferredTransmitPowerLevelInDBm)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn UseExtendedAdvertisement(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UseExtendedAdvertisement)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetUseExtendedAdvertisement(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetUseExtendedAdvertisement)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsAnonymous(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsAnonymous)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsAnonymous(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsAnonymous)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IncludeTransmitPowerLevel(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IncludeTransmitPowerLevel)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIncludeTransmitPowerLevel(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisher2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIncludeTransmitPowerLevel)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Create<P0>(advertisement: P0) -> ::windows_core::Result<BluetoothLEAdvertisementPublisher>
@@ -824,9 +816,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisementPublisher {
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisementPublisher {
     type Vtable = IBluetoothLEAdvertisementPublisher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisementPublisher {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementPublisher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementPublisher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisementPublisher {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisher";
@@ -853,7 +843,7 @@ impl BluetoothLEAdvertisementPublisherStatusChangedEventArgs {
         }
     }
     pub fn SelectedTransmitPowerLevelInDBm(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<i16>> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisherStatusChangedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisherStatusChangedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SelectedTransmitPowerLevelInDBm)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -865,9 +855,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisementPublisherStatusChan
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisementPublisherStatusChangedEventArgs {
     type Vtable = IBluetoothLEAdvertisementPublisherStatusChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisementPublisherStatusChangedEventArgs {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementPublisherStatusChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementPublisherStatusChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisementPublisherStatusChangedEventArgs {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementPublisherStatusChangedEventArgs";
@@ -915,49 +903,49 @@ impl BluetoothLEAdvertisementReceivedEventArgs {
         }
     }
     pub fn BluetoothAddressType(&self) -> ::windows_core::Result<super::BluetoothAddressType> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).BluetoothAddressType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TransmitPowerLevelInDBm(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<i16>> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TransmitPowerLevelInDBm)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsAnonymous(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsAnonymous)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsConnectable(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsConnectable)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsScannable(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsScannable)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsDirected(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsDirected)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsScanResponse(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementReceivedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsScanResponse)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -969,9 +957,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisementReceivedEventArgs {
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisementReceivedEventArgs {
     type Vtable = IBluetoothLEAdvertisementReceivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisementReceivedEventArgs {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementReceivedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementReceivedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisementReceivedEventArgs {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementReceivedEventArgs";
@@ -1101,14 +1087,14 @@ impl BluetoothLEAdvertisementWatcher {
         unsafe { (::windows_core::Interface::vtable(this).RemoveStopped)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn AllowExtendedAdvertisements(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementWatcher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementWatcher2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AllowExtendedAdvertisements)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAllowExtendedAdvertisements(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementWatcher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementWatcher2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAllowExtendedAdvertisements)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Create<P0>(advertisementfilter: P0) -> ::windows_core::Result<BluetoothLEAdvertisementWatcher>
@@ -1131,9 +1117,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisementWatcher {
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisementWatcher {
     type Vtable = IBluetoothLEAdvertisementWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisementWatcher {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisementWatcher {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcher";
@@ -1158,9 +1142,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisementWatcherStoppedEvent
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisementWatcherStoppedEventArgs {
     type Vtable = IBluetoothLEAdvertisementWatcherStoppedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisementWatcherStoppedEventArgs {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementWatcherStoppedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementWatcherStoppedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisementWatcherStoppedEventArgs {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementWatcherStoppedEventArgs";
@@ -1230,9 +1212,7 @@ impl ::windows_core::RuntimeType for BluetoothLEManufacturerData {
 }
 unsafe impl ::windows_core::Interface for BluetoothLEManufacturerData {
     type Vtable = IBluetoothLEManufacturerData_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEManufacturerData {
-    const IID: ::windows_core::GUID = <IBluetoothLEManufacturerData as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEManufacturerData as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEManufacturerData {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Advertisement.BluetoothLEManufacturerData";

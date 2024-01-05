@@ -109,7 +109,7 @@ pub struct IGpioPinValueChangedEventArgs_Vtbl {
 pub struct GpioChangeCounter(::windows_core::IUnknown);
 impl GpioChangeCounter {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn SetPolarity(&self, value: GpioChangePolarity) -> ::windows_core::Result<()> {
@@ -172,9 +172,7 @@ impl ::windows_core::RuntimeType for GpioChangeCounter {
 }
 unsafe impl ::windows_core::Interface for GpioChangeCounter {
     type Vtable = IGpioChangeCounter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GpioChangeCounter {
-    const IID: ::windows_core::GUID = <IGpioChangeCounter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGpioChangeCounter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GpioChangeCounter {
     const NAME: &'static str = "Windows.Devices.Gpio.GpioChangeCounter";
@@ -188,7 +186,7 @@ unsafe impl ::core::marker::Sync for GpioChangeCounter {}
 pub struct GpioChangeReader(::windows_core::IUnknown);
 impl GpioChangeReader {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Capacity(&self) -> ::windows_core::Result<i32> {
@@ -308,9 +306,7 @@ impl ::windows_core::RuntimeType for GpioChangeReader {
 }
 unsafe impl ::windows_core::Interface for GpioChangeReader {
     type Vtable = IGpioChangeReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GpioChangeReader {
-    const IID: ::windows_core::GUID = <IGpioChangeReader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGpioChangeReader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GpioChangeReader {
     const NAME: &'static str = "Windows.Devices.Gpio.GpioChangeReader";
@@ -390,9 +386,7 @@ impl ::windows_core::RuntimeType for GpioController {
 }
 unsafe impl ::windows_core::Interface for GpioController {
     type Vtable = IGpioController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GpioController {
-    const IID: ::windows_core::GUID = <IGpioController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGpioController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GpioController {
     const NAME: &'static str = "Windows.Devices.Gpio.GpioController";
@@ -405,7 +399,7 @@ unsafe impl ::core::marker::Sync for GpioController {}
 pub struct GpioPin(::windows_core::IUnknown);
 impl GpioPin {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn ValueChanged<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
@@ -482,9 +476,7 @@ impl ::windows_core::RuntimeType for GpioPin {
 }
 unsafe impl ::windows_core::Interface for GpioPin {
     type Vtable = IGpioPin_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GpioPin {
-    const IID: ::windows_core::GUID = <IGpioPin as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGpioPin as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GpioPin {
     const NAME: &'static str = "Windows.Devices.Gpio.GpioPin";
@@ -510,9 +502,7 @@ impl ::windows_core::RuntimeType for GpioPinValueChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for GpioPinValueChangedEventArgs {
     type Vtable = IGpioPinValueChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GpioPinValueChangedEventArgs {
-    const IID: ::windows_core::GUID = <IGpioPinValueChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGpioPinValueChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GpioPinValueChangedEventArgs {
     const NAME: &'static str = "Windows.Devices.Gpio.GpioPinValueChangedEventArgs";

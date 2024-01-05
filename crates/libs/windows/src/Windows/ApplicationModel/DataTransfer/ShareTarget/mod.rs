@@ -131,9 +131,7 @@ impl ::windows_core::RuntimeType for QuickLink {
 }
 unsafe impl ::windows_core::Interface for QuickLink {
     type Vtable = IQuickLink_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for QuickLink {
-    const IID: ::windows_core::GUID = <IQuickLink as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IQuickLink as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for QuickLink {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.ShareTarget.QuickLink";
@@ -189,13 +187,13 @@ impl ShareOperation {
         unsafe { (::windows_core::Interface::vtable(this).ReportError)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn DismissUI(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IShareOperation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IShareOperation2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DismissUI)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"ApplicationModel_Contacts\"`, `\"Foundation_Collections\"`"]
     #[cfg(all(feature = "ApplicationModel_Contacts", feature = "Foundation_Collections"))]
     pub fn Contacts(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVectorView<super::super::Contacts::Contact>> {
-        let this = &::windows_core::ComInterface::cast::<IShareOperation3>(self)?;
+        let this = &::windows_core::Interface::cast::<IShareOperation3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Contacts)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -207,9 +205,7 @@ impl ::windows_core::RuntimeType for ShareOperation {
 }
 unsafe impl ::windows_core::Interface for ShareOperation {
     type Vtable = IShareOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ShareOperation {
-    const IID: ::windows_core::GUID = <IShareOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IShareOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ShareOperation {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.ShareTarget.ShareOperation";

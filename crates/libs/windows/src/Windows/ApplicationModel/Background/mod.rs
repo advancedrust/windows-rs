@@ -298,32 +298,32 @@ impl IBackgroundTaskInstance2 {
         }
     }
     pub fn InstanceId(&self) -> ::windows_core::Result<::windows_core::GUID> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).InstanceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Task(&self) -> ::windows_core::Result<BackgroundTaskRegistration> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Task)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Progress(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Progress)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetProgress(&self, value: u32) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetProgress)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn TriggerDetails(&self) -> ::windows_core::Result<::windows_core::IInspectable> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TriggerDetails)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -333,25 +333,25 @@ impl IBackgroundTaskInstance2 {
     where
         P0: ::windows_core::IntoParam<BackgroundTaskCanceledEventHandler>,
     {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Canceled)(::windows_core::Interface::as_raw(this), cancelhandler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveCanceled(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveCanceled)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn SuspendedCount(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SuspendedCount)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetDeferral(&self) -> ::windows_core::Result<BackgroundTaskDeferral> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetDeferral)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -381,32 +381,32 @@ impl IBackgroundTaskInstance4 {
         }
     }
     pub fn InstanceId(&self) -> ::windows_core::Result<::windows_core::GUID> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).InstanceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Task(&self) -> ::windows_core::Result<BackgroundTaskRegistration> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Task)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Progress(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Progress)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetProgress(&self, value: u32) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetProgress)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn TriggerDetails(&self) -> ::windows_core::Result<::windows_core::IInspectable> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TriggerDetails)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -416,25 +416,25 @@ impl IBackgroundTaskInstance4 {
     where
         P0: ::windows_core::IntoParam<BackgroundTaskCanceledEventHandler>,
     {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Canceled)(::windows_core::Interface::as_raw(this), cancelhandler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveCanceled(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveCanceled)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn SuspendedCount(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SuspendedCount)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetDeferral(&self) -> ::windows_core::Result<BackgroundTaskDeferral> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskInstance>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskInstance>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetDeferral)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -538,14 +538,14 @@ impl IBackgroundTaskRegistration2 {
         }
     }
     pub fn TaskId(&self) -> ::windows_core::Result<::windows_core::GUID> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TaskId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Name)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -555,32 +555,32 @@ impl IBackgroundTaskRegistration2 {
     where
         P0: ::windows_core::IntoParam<BackgroundTaskProgressEventHandler>,
     {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Progress)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveProgress(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveProgress)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn Completed<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<BackgroundTaskCompletedEventHandler>,
     {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Completed)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveCompleted(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveCompleted)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn Unregister(&self, canceltask: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Unregister)(::windows_core::Interface::as_raw(this), canceltask).ok() }
     }
 }
@@ -605,14 +605,14 @@ impl IBackgroundTaskRegistration3 {
         }
     }
     pub fn TaskId(&self) -> ::windows_core::Result<::windows_core::GUID> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TaskId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Name)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -622,32 +622,32 @@ impl IBackgroundTaskRegistration3 {
     where
         P0: ::windows_core::IntoParam<BackgroundTaskProgressEventHandler>,
     {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Progress)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveProgress(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveProgress)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn Completed<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<BackgroundTaskCompletedEventHandler>,
     {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Completed)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveCompleted(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveCompleted)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn Unregister(&self, canceltask: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Unregister)(::windows_core::Interface::as_raw(this), canceltask).ok() }
     }
 }
@@ -1360,9 +1360,7 @@ impl ::windows_core::RuntimeType for ActivitySensorTrigger {
 }
 unsafe impl ::windows_core::Interface for ActivitySensorTrigger {
     type Vtable = IActivitySensorTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ActivitySensorTrigger {
-    const IID: ::windows_core::GUID = <IActivitySensorTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IActivitySensorTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ActivitySensorTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ActivitySensorTrigger";
@@ -1429,9 +1427,7 @@ impl ::windows_core::RuntimeType for AppBroadcastTrigger {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastTrigger {
     type Vtable = IAppBroadcastTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastTrigger {
-    const IID: ::windows_core::GUID = <IAppBroadcastTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.AppBroadcastTrigger";
@@ -1516,9 +1512,7 @@ impl ::windows_core::RuntimeType for AppBroadcastTriggerProviderInfo {
 }
 unsafe impl ::windows_core::Interface for AppBroadcastTriggerProviderInfo {
     type Vtable = IAppBroadcastTriggerProviderInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppBroadcastTriggerProviderInfo {
-    const IID: ::windows_core::GUID = <IAppBroadcastTriggerProviderInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppBroadcastTriggerProviderInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppBroadcastTriggerProviderInfo {
     const NAME: &'static str = "Windows.ApplicationModel.Background.AppBroadcastTriggerProviderInfo";
@@ -1562,9 +1556,7 @@ impl ::windows_core::RuntimeType for ApplicationTrigger {
 }
 unsafe impl ::windows_core::Interface for ApplicationTrigger {
     type Vtable = IApplicationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ApplicationTrigger {
-    const IID: ::windows_core::GUID = <IApplicationTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IApplicationTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ApplicationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ApplicationTrigger";
@@ -1592,9 +1584,7 @@ impl ::windows_core::RuntimeType for ApplicationTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for ApplicationTriggerDetails {
     type Vtable = IApplicationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ApplicationTriggerDetails {
-    const IID: ::windows_core::GUID = <IApplicationTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IApplicationTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ApplicationTriggerDetails {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ApplicationTriggerDetails";
@@ -1619,9 +1609,7 @@ impl ::windows_core::RuntimeType for AppointmentStoreNotificationTrigger {
 }
 unsafe impl ::windows_core::Interface for AppointmentStoreNotificationTrigger {
     type Vtable = IAppointmentStoreNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentStoreNotificationTrigger {
-    const IID: ::windows_core::GUID = <IAppointmentStoreNotificationTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentStoreNotificationTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentStoreNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.AppointmentStoreNotificationTrigger";
@@ -1760,29 +1748,29 @@ impl BackgroundTaskBuilder {
         }
     }
     pub fn SetCancelOnConditionLoss(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskBuilder2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskBuilder2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCancelOnConditionLoss)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CancelOnConditionLoss(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskBuilder2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskBuilder2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CancelOnConditionLoss)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsNetworkRequested(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskBuilder3>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskBuilder3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsNetworkRequested)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsNetworkRequested(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskBuilder3>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskBuilder3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsNetworkRequested)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TaskGroup(&self) -> ::windows_core::Result<BackgroundTaskRegistrationGroup> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskBuilder4>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskBuilder4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TaskGroup)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1792,11 +1780,11 @@ impl BackgroundTaskBuilder {
     where
         P0: ::windows_core::IntoParam<BackgroundTaskRegistrationGroup>,
     {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskBuilder4>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskBuilder4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetTaskGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn SetTaskEntryPointClsid(&self, taskentrypoint: ::windows_core::GUID) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskBuilder5>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskBuilder5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetTaskEntryPointClsid)(::windows_core::Interface::as_raw(this), taskentrypoint).ok() }
     }
 }
@@ -1805,9 +1793,7 @@ impl ::windows_core::RuntimeType for BackgroundTaskBuilder {
 }
 unsafe impl ::windows_core::Interface for BackgroundTaskBuilder {
     type Vtable = IBackgroundTaskBuilder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BackgroundTaskBuilder {
-    const IID: ::windows_core::GUID = <IBackgroundTaskBuilder as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTaskBuilder as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BackgroundTaskBuilder {
     const NAME: &'static str = "Windows.ApplicationModel.Background.BackgroundTaskBuilder";
@@ -1834,9 +1820,7 @@ impl ::windows_core::RuntimeType for BackgroundTaskCompletedEventArgs {
 }
 unsafe impl ::windows_core::Interface for BackgroundTaskCompletedEventArgs {
     type Vtable = IBackgroundTaskCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BackgroundTaskCompletedEventArgs {
-    const IID: ::windows_core::GUID = <IBackgroundTaskCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTaskCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BackgroundTaskCompletedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Background.BackgroundTaskCompletedEventArgs";
@@ -1858,9 +1842,7 @@ impl ::windows_core::RuntimeType for BackgroundTaskDeferral {
 }
 unsafe impl ::windows_core::Interface for BackgroundTaskDeferral {
     type Vtable = IBackgroundTaskDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BackgroundTaskDeferral {
-    const IID: ::windows_core::GUID = <IBackgroundTaskDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTaskDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BackgroundTaskDeferral {
     const NAME: &'static str = "Windows.ApplicationModel.Background.BackgroundTaskDeferral";
@@ -1892,9 +1874,7 @@ impl ::windows_core::RuntimeType for BackgroundTaskProgressEventArgs {
 }
 unsafe impl ::windows_core::Interface for BackgroundTaskProgressEventArgs {
     type Vtable = IBackgroundTaskProgressEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BackgroundTaskProgressEventArgs {
-    const IID: ::windows_core::GUID = <IBackgroundTaskProgressEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTaskProgressEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BackgroundTaskProgressEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs";
@@ -1953,14 +1933,14 @@ impl BackgroundTaskRegistration {
         unsafe { (::windows_core::Interface::vtable(this).Unregister)(::windows_core::Interface::as_raw(this), canceltask).ok() }
     }
     pub fn Trigger(&self) -> ::windows_core::Result<IBackgroundTrigger> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Trigger)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TaskGroup(&self) -> ::windows_core::Result<BackgroundTaskRegistrationGroup> {
-        let this = &::windows_core::ComInterface::cast::<IBackgroundTaskRegistration3>(self)?;
+        let this = &::windows_core::Interface::cast::<IBackgroundTaskRegistration3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TaskGroup)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2004,9 +1984,7 @@ impl ::windows_core::RuntimeType for BackgroundTaskRegistration {
 }
 unsafe impl ::windows_core::Interface for BackgroundTaskRegistration {
     type Vtable = IBackgroundTaskRegistration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BackgroundTaskRegistration {
-    const IID: ::windows_core::GUID = <IBackgroundTaskRegistration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTaskRegistration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BackgroundTaskRegistration {
     const NAME: &'static str = "Windows.ApplicationModel.Background.BackgroundTaskRegistration";
@@ -2081,9 +2059,7 @@ impl ::windows_core::RuntimeType for BackgroundTaskRegistrationGroup {
 }
 unsafe impl ::windows_core::Interface for BackgroundTaskRegistrationGroup {
     type Vtable = IBackgroundTaskRegistrationGroup_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BackgroundTaskRegistrationGroup {
-    const IID: ::windows_core::GUID = <IBackgroundTaskRegistrationGroup as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTaskRegistrationGroup as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BackgroundTaskRegistrationGroup {
     const NAME: &'static str = "Windows.ApplicationModel.Background.BackgroundTaskRegistrationGroup";
@@ -2129,7 +2105,7 @@ impl BluetoothLEAdvertisementPublisherTrigger {
         }
     }
     pub fn PreferredTransmitPowerLevelInDBm(&self) -> ::windows_core::Result<super::super::Foundation::IReference<i16>> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PreferredTransmitPowerLevelInDBm)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2139,40 +2115,40 @@ impl BluetoothLEAdvertisementPublisherTrigger {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::IReference<i16>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPreferredTransmitPowerLevelInDBm)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn UseExtendedFormat(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UseExtendedFormat)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetUseExtendedFormat(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetUseExtendedFormat)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsAnonymous(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsAnonymous)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsAnonymous(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsAnonymous)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IncludeTransmitPowerLevel(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IncludeTransmitPowerLevel)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIncludeTransmitPowerLevel(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIncludeTransmitPowerLevel)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -2181,9 +2157,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisementPublisherTrigger {
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisementPublisherTrigger {
     type Vtable = IBluetoothLEAdvertisementPublisherTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisementPublisherTrigger {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementPublisherTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementPublisherTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisementPublisherTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.BluetoothLEAdvertisementPublisherTrigger";
@@ -2268,14 +2242,14 @@ impl BluetoothLEAdvertisementWatcherTrigger {
         unsafe { (::windows_core::Interface::vtable(this).SetAdvertisementFilter)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn AllowExtendedAdvertisements(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementWatcherTrigger2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementWatcherTrigger2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AllowExtendedAdvertisements)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAllowExtendedAdvertisements(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementWatcherTrigger2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementWatcherTrigger2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAllowExtendedAdvertisements)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -2284,9 +2258,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisementWatcherTrigger {
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisementWatcherTrigger {
     type Vtable = IBluetoothLEAdvertisementWatcherTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisementWatcherTrigger {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementWatcherTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementWatcherTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisementWatcherTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.BluetoothLEAdvertisementWatcherTrigger";
@@ -2312,9 +2284,7 @@ impl ::windows_core::RuntimeType for CachedFileUpdaterTrigger {
 }
 unsafe impl ::windows_core::Interface for CachedFileUpdaterTrigger {
     type Vtable = ICachedFileUpdaterTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CachedFileUpdaterTrigger {
-    const IID: ::windows_core::GUID = <ICachedFileUpdaterTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICachedFileUpdaterTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CachedFileUpdaterTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.CachedFileUpdaterTrigger";
@@ -2358,9 +2328,7 @@ impl ::windows_core::RuntimeType for CachedFileUpdaterTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for CachedFileUpdaterTriggerDetails {
     type Vtable = ICachedFileUpdaterTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CachedFileUpdaterTriggerDetails {
-    const IID: ::windows_core::GUID = <ICachedFileUpdaterTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICachedFileUpdaterTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CachedFileUpdaterTriggerDetails {
     const NAME: &'static str = "Windows.ApplicationModel.Background.CachedFileUpdaterTriggerDetails";
@@ -2385,9 +2353,7 @@ impl ::windows_core::RuntimeType for ChatMessageNotificationTrigger {
 }
 unsafe impl ::windows_core::Interface for ChatMessageNotificationTrigger {
     type Vtable = IChatMessageNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageNotificationTrigger {
-    const IID: ::windows_core::GUID = <IChatMessageNotificationTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageNotificationTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ChatMessageNotificationTrigger";
@@ -2413,9 +2379,7 @@ impl ::windows_core::RuntimeType for ChatMessageReceivedNotificationTrigger {
 }
 unsafe impl ::windows_core::Interface for ChatMessageReceivedNotificationTrigger {
     type Vtable = IChatMessageReceivedNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageReceivedNotificationTrigger {
-    const IID: ::windows_core::GUID = <IChatMessageReceivedNotificationTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageReceivedNotificationTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageReceivedNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ChatMessageReceivedNotificationTrigger";
@@ -2441,9 +2405,7 @@ impl ::windows_core::RuntimeType for CommunicationBlockingAppSetAsActiveTrigger 
 }
 unsafe impl ::windows_core::Interface for CommunicationBlockingAppSetAsActiveTrigger {
     type Vtable = ICommunicationBlockingAppSetAsActiveTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CommunicationBlockingAppSetAsActiveTrigger {
-    const IID: ::windows_core::GUID = <ICommunicationBlockingAppSetAsActiveTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICommunicationBlockingAppSetAsActiveTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CommunicationBlockingAppSetAsActiveTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger";
@@ -2469,9 +2431,7 @@ impl ::windows_core::RuntimeType for ContactStoreNotificationTrigger {
 }
 unsafe impl ::windows_core::Interface for ContactStoreNotificationTrigger {
     type Vtable = IContactStoreNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactStoreNotificationTrigger {
-    const IID: ::windows_core::GUID = <IContactStoreNotificationTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactStoreNotificationTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactStoreNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ContactStoreNotificationTrigger";
@@ -2515,9 +2475,7 @@ impl ::windows_core::RuntimeType for ContentPrefetchTrigger {
 }
 unsafe impl ::windows_core::Interface for ContentPrefetchTrigger {
     type Vtable = IContentPrefetchTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContentPrefetchTrigger {
-    const IID: ::windows_core::GUID = <IContentPrefetchTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContentPrefetchTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContentPrefetchTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ContentPrefetchTrigger";
@@ -2541,9 +2499,7 @@ impl ::windows_core::RuntimeType for ConversationalAgentTrigger {
 }
 unsafe impl ::windows_core::Interface for ConversationalAgentTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ConversationalAgentTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ConversationalAgentTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ConversationalAgentTrigger";
@@ -2585,9 +2541,7 @@ impl ::windows_core::RuntimeType for CustomSystemEventTrigger {
 }
 unsafe impl ::windows_core::Interface for CustomSystemEventTrigger {
     type Vtable = ICustomSystemEventTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CustomSystemEventTrigger {
-    const IID: ::windows_core::GUID = <ICustomSystemEventTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICustomSystemEventTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CustomSystemEventTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.CustomSystemEventTrigger";
@@ -2640,9 +2594,7 @@ impl ::windows_core::RuntimeType for DeviceConnectionChangeTrigger {
 }
 unsafe impl ::windows_core::Interface for DeviceConnectionChangeTrigger {
     type Vtable = IDeviceConnectionChangeTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DeviceConnectionChangeTrigger {
-    const IID: ::windows_core::GUID = <IDeviceConnectionChangeTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDeviceConnectionChangeTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DeviceConnectionChangeTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger";
@@ -2698,10 +2650,7 @@ impl ::windows_core::RuntimeType for DeviceManufacturerNotificationTrigger {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for DeviceManufacturerNotificationTrigger {
     type Vtable = IDeviceManufacturerNotificationTrigger_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for DeviceManufacturerNotificationTrigger {
-    const IID: ::windows_core::GUID = <IDeviceManufacturerNotificationTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDeviceManufacturerNotificationTrigger as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for DeviceManufacturerNotificationTrigger {
@@ -2742,9 +2691,7 @@ impl ::windows_core::RuntimeType for DeviceServicingTrigger {
 }
 unsafe impl ::windows_core::Interface for DeviceServicingTrigger {
     type Vtable = IDeviceServicingTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DeviceServicingTrigger {
-    const IID: ::windows_core::GUID = <IDeviceServicingTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDeviceServicingTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DeviceServicingTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.DeviceServicingTrigger";
@@ -2784,9 +2731,7 @@ impl ::windows_core::RuntimeType for DeviceUseTrigger {
 }
 unsafe impl ::windows_core::Interface for DeviceUseTrigger {
     type Vtable = IDeviceUseTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DeviceUseTrigger {
-    const IID: ::windows_core::GUID = <IDeviceUseTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDeviceUseTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DeviceUseTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.DeviceUseTrigger";
@@ -2804,9 +2749,7 @@ impl ::windows_core::RuntimeType for DeviceWatcherTrigger {
 }
 unsafe impl ::windows_core::Interface for DeviceWatcherTrigger {
     type Vtable = IDeviceWatcherTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DeviceWatcherTrigger {
-    const IID: ::windows_core::GUID = <IDeviceWatcherTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDeviceWatcherTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DeviceWatcherTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.DeviceWatcherTrigger";
@@ -2830,9 +2773,7 @@ impl ::windows_core::RuntimeType for EmailStoreNotificationTrigger {
 }
 unsafe impl ::windows_core::Interface for EmailStoreNotificationTrigger {
     type Vtable = IEmailStoreNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailStoreNotificationTrigger {
-    const IID: ::windows_core::GUID = <IEmailStoreNotificationTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailStoreNotificationTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailStoreNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.EmailStoreNotificationTrigger";
@@ -2857,7 +2798,7 @@ impl GattCharacteristicNotificationTrigger {
     #[doc = "Required features: `\"Devices_Bluetooth_Background\"`"]
     #[cfg(feature = "Devices_Bluetooth_Background")]
     pub fn EventTriggeringMode(&self) -> ::windows_core::Result<super::super::Devices::Bluetooth::Background::BluetoothEventTriggeringMode> {
-        let this = &::windows_core::ComInterface::cast::<IGattCharacteristicNotificationTrigger2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGattCharacteristicNotificationTrigger2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EventTriggeringMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2901,9 +2842,7 @@ impl ::windows_core::RuntimeType for GattCharacteristicNotificationTrigger {
 }
 unsafe impl ::windows_core::Interface for GattCharacteristicNotificationTrigger {
     type Vtable = IGattCharacteristicNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GattCharacteristicNotificationTrigger {
-    const IID: ::windows_core::GUID = <IGattCharacteristicNotificationTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGattCharacteristicNotificationTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GattCharacteristicNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.GattCharacteristicNotificationTrigger";
@@ -2967,9 +2906,7 @@ impl ::windows_core::RuntimeType for GattServiceProviderTrigger {
 }
 unsafe impl ::windows_core::Interface for GattServiceProviderTrigger {
     type Vtable = IGattServiceProviderTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GattServiceProviderTrigger {
-    const IID: ::windows_core::GUID = <IGattServiceProviderTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGattServiceProviderTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GattServiceProviderTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.GattServiceProviderTrigger";
@@ -3004,9 +2941,7 @@ impl ::windows_core::RuntimeType for GattServiceProviderTriggerResult {
 }
 unsafe impl ::windows_core::Interface for GattServiceProviderTriggerResult {
     type Vtable = IGattServiceProviderTriggerResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GattServiceProviderTriggerResult {
-    const IID: ::windows_core::GUID = <IGattServiceProviderTriggerResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGattServiceProviderTriggerResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GattServiceProviderTriggerResult {
     const NAME: &'static str = "Windows.ApplicationModel.Background.GattServiceProviderTriggerResult";
@@ -3046,9 +2981,7 @@ impl ::windows_core::RuntimeType for GeovisitTrigger {
 }
 unsafe impl ::windows_core::Interface for GeovisitTrigger {
     type Vtable = IGeovisitTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GeovisitTrigger {
-    const IID: ::windows_core::GUID = <IGeovisitTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeovisitTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GeovisitTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.GeovisitTrigger";
@@ -3085,9 +3018,7 @@ impl ::windows_core::RuntimeType for LocationTrigger {
 }
 unsafe impl ::windows_core::Interface for LocationTrigger {
     type Vtable = ILocationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LocationTrigger {
-    const IID: ::windows_core::GUID = <ILocationTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILocationTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LocationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.LocationTrigger";
@@ -3131,9 +3062,7 @@ impl ::windows_core::RuntimeType for MaintenanceTrigger {
 }
 unsafe impl ::windows_core::Interface for MaintenanceTrigger {
     type Vtable = IMaintenanceTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MaintenanceTrigger {
-    const IID: ::windows_core::GUID = <IMaintenanceTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMaintenanceTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MaintenanceTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.MaintenanceTrigger";
@@ -3176,9 +3105,7 @@ impl ::windows_core::RuntimeType for MediaProcessingTrigger {
 }
 unsafe impl ::windows_core::Interface for MediaProcessingTrigger {
     type Vtable = IMediaProcessingTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaProcessingTrigger {
-    const IID: ::windows_core::GUID = <IMediaProcessingTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaProcessingTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaProcessingTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.MediaProcessingTrigger";
@@ -3202,9 +3129,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandDeviceServiceNotificationTri
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandDeviceServiceNotificationTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandDeviceServiceNotificationTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandDeviceServiceNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.MobileBroadbandDeviceServiceNotificationTrigger";
@@ -3230,9 +3155,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandPcoDataChangeTrigger {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandPcoDataChangeTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandPcoDataChangeTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandPcoDataChangeTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.MobileBroadbandPcoDataChangeTrigger";
@@ -3258,9 +3181,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandPinLockStateChangeTrigger {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandPinLockStateChangeTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandPinLockStateChangeTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandPinLockStateChangeTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.MobileBroadbandPinLockStateChangeTrigger";
@@ -3286,9 +3207,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandRadioStateChangeTrigger {
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandRadioStateChangeTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandRadioStateChangeTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandRadioStateChangeTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.MobileBroadbandRadioStateChangeTrigger";
@@ -3314,9 +3233,7 @@ impl ::windows_core::RuntimeType for MobileBroadbandRegistrationStateChangeTrigg
 }
 unsafe impl ::windows_core::Interface for MobileBroadbandRegistrationStateChangeTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MobileBroadbandRegistrationStateChangeTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MobileBroadbandRegistrationStateChangeTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.MobileBroadbandRegistrationStateChangeTrigger";
@@ -3342,9 +3259,7 @@ impl ::windows_core::RuntimeType for NetworkOperatorDataUsageTrigger {
 }
 unsafe impl ::windows_core::Interface for NetworkOperatorDataUsageTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NetworkOperatorDataUsageTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NetworkOperatorDataUsageTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.NetworkOperatorDataUsageTrigger";
@@ -3370,9 +3285,7 @@ impl ::windows_core::RuntimeType for NetworkOperatorHotspotAuthenticationTrigger
 }
 unsafe impl ::windows_core::Interface for NetworkOperatorHotspotAuthenticationTrigger {
     type Vtable = INetworkOperatorHotspotAuthenticationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NetworkOperatorHotspotAuthenticationTrigger {
-    const IID: ::windows_core::GUID = <INetworkOperatorHotspotAuthenticationTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INetworkOperatorHotspotAuthenticationTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NetworkOperatorHotspotAuthenticationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.NetworkOperatorHotspotAuthenticationTrigger";
@@ -3407,9 +3320,7 @@ impl ::windows_core::RuntimeType for NetworkOperatorNotificationTrigger {
 }
 unsafe impl ::windows_core::Interface for NetworkOperatorNotificationTrigger {
     type Vtable = INetworkOperatorNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NetworkOperatorNotificationTrigger {
-    const IID: ::windows_core::GUID = <INetworkOperatorNotificationTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INetworkOperatorNotificationTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NetworkOperatorNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.NetworkOperatorNotificationTrigger";
@@ -3433,9 +3344,7 @@ impl ::windows_core::RuntimeType for PaymentAppCanMakePaymentTrigger {
 }
 unsafe impl ::windows_core::Interface for PaymentAppCanMakePaymentTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentAppCanMakePaymentTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentAppCanMakePaymentTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.PaymentAppCanMakePaymentTrigger";
@@ -3483,9 +3392,7 @@ impl ::windows_core::RuntimeType for PhoneTrigger {
 }
 unsafe impl ::windows_core::Interface for PhoneTrigger {
     type Vtable = IPhoneTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneTrigger {
-    const IID: ::windows_core::GUID = <IPhoneTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.PhoneTrigger";
@@ -3522,9 +3429,7 @@ impl ::windows_core::RuntimeType for PushNotificationTrigger {
 }
 unsafe impl ::windows_core::Interface for PushNotificationTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PushNotificationTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PushNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.PushNotificationTrigger";
@@ -3550,9 +3455,7 @@ impl ::windows_core::RuntimeType for RcsEndUserMessageAvailableTrigger {
 }
 unsafe impl ::windows_core::Interface for RcsEndUserMessageAvailableTrigger {
     type Vtable = IRcsEndUserMessageAvailableTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RcsEndUserMessageAvailableTrigger {
-    const IID: ::windows_core::GUID = <IRcsEndUserMessageAvailableTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRcsEndUserMessageAvailableTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RcsEndUserMessageAvailableTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.RcsEndUserMessageAvailableTrigger";
@@ -3640,9 +3543,7 @@ impl ::windows_core::RuntimeType for RfcommConnectionTrigger {
 }
 unsafe impl ::windows_core::Interface for RfcommConnectionTrigger {
     type Vtable = IRfcommConnectionTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RfcommConnectionTrigger {
-    const IID: ::windows_core::GUID = <IRfcommConnectionTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRfcommConnectionTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RfcommConnectionTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.RfcommConnectionTrigger";
@@ -3673,10 +3574,7 @@ impl ::windows_core::RuntimeType for SecondaryAuthenticationFactorAuthentication
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for SecondaryAuthenticationFactorAuthenticationTrigger {
     type Vtable = ISecondaryAuthenticationFactorAuthenticationTrigger_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for SecondaryAuthenticationFactorAuthenticationTrigger {
-    const IID: ::windows_core::GUID = <ISecondaryAuthenticationFactorAuthenticationTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISecondaryAuthenticationFactorAuthenticationTrigger as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for SecondaryAuthenticationFactorAuthenticationTrigger {
@@ -3712,9 +3610,7 @@ impl ::windows_core::RuntimeType for SensorDataThresholdTrigger {
 }
 unsafe impl ::windows_core::Interface for SensorDataThresholdTrigger {
     type Vtable = ISensorDataThresholdTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SensorDataThresholdTrigger {
-    const IID: ::windows_core::GUID = <ISensorDataThresholdTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISensorDataThresholdTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SensorDataThresholdTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.SensorDataThresholdTrigger";
@@ -3755,9 +3651,7 @@ impl ::windows_core::RuntimeType for SmartCardTrigger {
 }
 unsafe impl ::windows_core::Interface for SmartCardTrigger {
     type Vtable = ISmartCardTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SmartCardTrigger {
-    const IID: ::windows_core::GUID = <ISmartCardTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISmartCardTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SmartCardTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.SmartCardTrigger";
@@ -3790,9 +3684,7 @@ impl ::windows_core::RuntimeType for SmsMessageReceivedTrigger {
 }
 unsafe impl ::windows_core::Interface for SmsMessageReceivedTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SmsMessageReceivedTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SmsMessageReceivedTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.SmsMessageReceivedTrigger";
@@ -3813,7 +3705,7 @@ impl SocketActivityTrigger {
         SHARED.call(callback)
     }
     pub fn IsWakeFromLowPowerSupported(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ISocketActivityTrigger>(self)?;
+        let this = &::windows_core::Interface::cast::<ISocketActivityTrigger>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsWakeFromLowPowerSupported)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3825,9 +3717,7 @@ impl ::windows_core::RuntimeType for SocketActivityTrigger {
 }
 unsafe impl ::windows_core::Interface for SocketActivityTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SocketActivityTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SocketActivityTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.SocketActivityTrigger";
@@ -3862,9 +3752,7 @@ impl ::windows_core::RuntimeType for StorageLibraryChangeTrackerTrigger {
 }
 unsafe impl ::windows_core::Interface for StorageLibraryChangeTrackerTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageLibraryChangeTrackerTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageLibraryChangeTrackerTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.StorageLibraryChangeTrackerTrigger";
@@ -3910,9 +3798,7 @@ impl ::windows_core::RuntimeType for StorageLibraryContentChangedTrigger {
 }
 unsafe impl ::windows_core::Interface for StorageLibraryContentChangedTrigger {
     type Vtable = IStorageLibraryContentChangedTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageLibraryContentChangedTrigger {
-    const IID: ::windows_core::GUID = <IStorageLibraryContentChangedTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageLibraryContentChangedTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageLibraryContentChangedTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.StorageLibraryContentChangedTrigger";
@@ -3947,9 +3833,7 @@ impl ::windows_core::RuntimeType for SystemCondition {
 }
 unsafe impl ::windows_core::Interface for SystemCondition {
     type Vtable = ISystemCondition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemCondition {
-    const IID: ::windows_core::GUID = <ISystemCondition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemCondition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemCondition {
     const NAME: &'static str = "Windows.ApplicationModel.Background.SystemCondition";
@@ -3991,9 +3875,7 @@ impl ::windows_core::RuntimeType for SystemTrigger {
 }
 unsafe impl ::windows_core::Interface for SystemTrigger {
     type Vtable = ISystemTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SystemTrigger {
-    const IID: ::windows_core::GUID = <ISystemTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISystemTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SystemTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.SystemTrigger";
@@ -4017,9 +3899,7 @@ impl ::windows_core::RuntimeType for TetheringEntitlementCheckTrigger {
 }
 unsafe impl ::windows_core::Interface for TetheringEntitlementCheckTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TetheringEntitlementCheckTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TetheringEntitlementCheckTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.TetheringEntitlementCheckTrigger";
@@ -4063,9 +3943,7 @@ impl ::windows_core::RuntimeType for TimeTrigger {
 }
 unsafe impl ::windows_core::Interface for TimeTrigger {
     type Vtable = ITimeTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TimeTrigger {
-    const IID: ::windows_core::GUID = <ITimeTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITimeTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TimeTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.TimeTrigger";
@@ -4100,9 +3978,7 @@ impl ::windows_core::RuntimeType for ToastNotificationActionTrigger {
 }
 unsafe impl ::windows_core::Interface for ToastNotificationActionTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ToastNotificationActionTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ToastNotificationActionTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ToastNotificationActionTrigger";
@@ -4139,9 +4015,7 @@ impl ::windows_core::RuntimeType for ToastNotificationHistoryChangedTrigger {
 }
 unsafe impl ::windows_core::Interface for ToastNotificationHistoryChangedTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ToastNotificationHistoryChangedTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ToastNotificationHistoryChangedTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ToastNotificationHistoryChangedTrigger";
@@ -4173,9 +4047,7 @@ impl ::windows_core::RuntimeType for UserNotificationChangedTrigger {
 }
 unsafe impl ::windows_core::Interface for UserNotificationChangedTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserNotificationChangedTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserNotificationChangedTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.UserNotificationChangedTrigger";
@@ -4201,9 +4073,7 @@ impl ::windows_core::RuntimeType for WiFiOnDemandHotspotConnectTrigger {
 }
 unsafe impl ::windows_core::Interface for WiFiOnDemandHotspotConnectTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiOnDemandHotspotConnectTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiOnDemandHotspotConnectTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.WiFiOnDemandHotspotConnectTrigger";
@@ -4229,9 +4099,7 @@ impl ::windows_core::RuntimeType for WiFiOnDemandHotspotUpdateMetadataTrigger {
 }
 unsafe impl ::windows_core::Interface for WiFiOnDemandHotspotUpdateMetadataTrigger {
     type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiOnDemandHotspotUpdateMetadataTrigger {
-    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackgroundTrigger as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiOnDemandHotspotUpdateMetadataTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.WiFiOnDemandHotspotUpdateMetadataTrigger";
@@ -4550,7 +4418,7 @@ impl<F: FnMut(::core::option::Option<&IBackgroundTaskInstance>, BackgroundTaskCa
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <BackgroundTaskCanceledEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <BackgroundTaskCanceledEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -4615,7 +4483,7 @@ impl<F: FnMut(::core::option::Option<&BackgroundTaskRegistration>, ::core::optio
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <BackgroundTaskCompletedEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <BackgroundTaskCompletedEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -4680,7 +4548,7 @@ impl<F: FnMut(::core::option::Option<&BackgroundTaskRegistration>, ::core::optio
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <BackgroundTaskProgressEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <BackgroundTaskProgressEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

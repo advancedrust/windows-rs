@@ -120,9 +120,7 @@ impl ::windows_core::RuntimeType for IndexedResourceCandidate {
 }
 unsafe impl ::windows_core::Interface for IndexedResourceCandidate {
     type Vtable = IIndexedResourceCandidate_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IndexedResourceCandidate {
-    const IID: ::windows_core::GUID = <IIndexedResourceCandidate as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIndexedResourceCandidate as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IndexedResourceCandidate {
     const NAME: &'static str = "Windows.ApplicationModel.Resources.Management.IndexedResourceCandidate";
@@ -154,9 +152,7 @@ impl ::windows_core::RuntimeType for IndexedResourceQualifier {
 }
 unsafe impl ::windows_core::Interface for IndexedResourceQualifier {
     type Vtable = IIndexedResourceQualifier_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IndexedResourceQualifier {
-    const IID: ::windows_core::GUID = <IIndexedResourceQualifier as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIndexedResourceQualifier as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IndexedResourceQualifier {
     const NAME: &'static str = "Windows.ApplicationModel.Resources.Management.IndexedResourceQualifier";
@@ -238,10 +234,7 @@ impl ::windows_core::RuntimeType for ResourceIndexer {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for ResourceIndexer {
     type Vtable = IResourceIndexer_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for ResourceIndexer {
-    const IID: ::windows_core::GUID = <IResourceIndexer as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IResourceIndexer as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for ResourceIndexer {

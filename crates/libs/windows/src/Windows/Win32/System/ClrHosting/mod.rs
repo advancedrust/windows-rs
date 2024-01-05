@@ -1,7 +1,7 @@
 #[inline]
 pub unsafe fn CLRCreateInstance<T>(clsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("mscoree.dll" "system" fn CLRCreateInstance(clsid : *const ::windows_core::GUID, riid : *const ::windows_core::GUID, ppinterface : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -644,7 +644,7 @@ impl ICLRMetaHost {
     pub unsafe fn GetRuntime<P0, T>(&self, pwzversion: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetRuntime)(::windows_core::Interface::as_raw(self), pwzversion.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -675,7 +675,7 @@ impl ICLRMetaHost {
     }
     pub unsafe fn QueryLegacyV2RuntimeBinding<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).QueryLegacyV2RuntimeBinding)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -711,7 +711,7 @@ impl ICLRMetaHostPolicy {
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
         P1: ::windows_core::IntoParam<super::Com::IStream>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetRequestedRuntime)(::windows_core::Interface::as_raw(self), dwpolicyflags, pwzbinary.into_param().abi(), pcfgstream.into_param().abi(), ::core::mem::transmute(pwzversion), pcchversion, ::core::mem::transmute(pwzimageversion), pcchimageversion, pdwconfigflags, &T::IID, &mut result__).from_abi(result__)
@@ -923,7 +923,7 @@ impl ICLRRuntimeInfo {
     }
     pub unsafe fn GetInterface<T>(&self, rclsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetInterface)(::windows_core::Interface::as_raw(self), rclsid, &T::IID, &mut result__).from_abi(result__)

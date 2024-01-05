@@ -304,18 +304,18 @@ impl IAudioInputNode {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn EffectDefinitions(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<super::Effects::IAudioEffectDefinition>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectDefinitions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutgoingGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutgoingGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -324,33 +324,33 @@ impl IAudioInputNode {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn EncodingProperties(&self) -> ::windows_core::Result<super::MediaProperties::AudioEncodingProperties> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EncodingProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConsumeInput(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConsumeInput)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetConsumeInput(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetConsumeInput)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Start(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Start)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Stop(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Stop)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Reset(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Reset)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -359,7 +359,7 @@ impl IAudioInputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DisableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -368,11 +368,11 @@ impl IAudioInputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).EnableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -405,7 +405,7 @@ impl IAudioInputNode2 {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn OutgoingConnections(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<AudioGraphConnection>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingConnections)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -415,38 +415,38 @@ impl IAudioInputNode2 {
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddOutgoingConnection)(::windows_core::Interface::as_raw(this), destination.into_param().abi()).ok() }
     }
     pub fn AddOutgoingConnectionWithGain<P0>(&self, destination: P0, gain: f64) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddOutgoingConnectionWithGain)(::windows_core::Interface::as_raw(this), destination.into_param().abi(), gain).ok() }
     }
     pub fn RemoveOutgoingConnection<P0>(&self, destination: P0) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveOutgoingConnection)(::windows_core::Interface::as_raw(this), destination.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn EffectDefinitions(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<super::Effects::IAudioEffectDefinition>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectDefinitions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutgoingGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutgoingGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -455,33 +455,33 @@ impl IAudioInputNode2 {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn EncodingProperties(&self) -> ::windows_core::Result<super::MediaProperties::AudioEncodingProperties> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EncodingProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConsumeInput(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConsumeInput)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetConsumeInput(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetConsumeInput)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Start(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Start)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Stop(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Stop)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Reset(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Reset)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -490,7 +490,7 @@ impl IAudioInputNode2 {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DisableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -499,11 +499,11 @@ impl IAudioInputNode2 {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).EnableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -591,7 +591,7 @@ impl IAudioNode {
         unsafe { (::windows_core::Interface::vtable(this).EnableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -784,18 +784,18 @@ impl IAudioNodeWithListener {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn EffectDefinitions(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<super::Effects::IAudioEffectDefinition>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectDefinitions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutgoingGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutgoingGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -804,33 +804,33 @@ impl IAudioNodeWithListener {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn EncodingProperties(&self) -> ::windows_core::Result<super::MediaProperties::AudioEncodingProperties> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EncodingProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConsumeInput(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConsumeInput)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetConsumeInput(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetConsumeInput)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Start(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Start)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Stop(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Stop)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Reset(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Reset)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -839,7 +839,7 @@ impl IAudioNodeWithListener {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DisableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -848,11 +848,11 @@ impl IAudioNodeWithListener {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).EnableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -1263,7 +1263,7 @@ impl AudioDeviceInputNode {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn OutgoingConnections(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<AudioGraphConnection>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingConnections)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1273,25 +1273,25 @@ impl AudioDeviceInputNode {
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddOutgoingConnection)(::windows_core::Interface::as_raw(this), destination.into_param().abi()).ok() }
     }
     pub fn AddOutgoingConnectionWithGain<P0>(&self, destination: P0, gain: f64) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddOutgoingConnectionWithGain)(::windows_core::Interface::as_raw(this), destination.into_param().abi(), gain).ok() }
     }
     pub fn RemoveOutgoingConnection<P0>(&self, destination: P0) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveOutgoingConnection)(::windows_core::Interface::as_raw(this), destination.into_param().abi()).ok() }
     }
     pub fn Emitter(&self) -> ::windows_core::Result<AudioNodeEmitter> {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Emitter)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1300,18 +1300,18 @@ impl AudioDeviceInputNode {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn EffectDefinitions(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<super::Effects::IAudioEffectDefinition>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectDefinitions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutgoingGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutgoingGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1320,33 +1320,33 @@ impl AudioDeviceInputNode {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn EncodingProperties(&self) -> ::windows_core::Result<super::MediaProperties::AudioEncodingProperties> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EncodingProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConsumeInput(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConsumeInput)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetConsumeInput(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetConsumeInput)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Start(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Start)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Stop(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Stop)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Reset(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Reset)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -1355,7 +1355,7 @@ impl AudioDeviceInputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DisableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -1364,11 +1364,11 @@ impl AudioDeviceInputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).EnableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -1377,9 +1377,7 @@ impl ::windows_core::RuntimeType for AudioDeviceInputNode {
 }
 unsafe impl ::windows_core::Interface for AudioDeviceInputNode {
     type Vtable = IAudioDeviceInputNode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioDeviceInputNode {
-    const IID: ::windows_core::GUID = <IAudioDeviceInputNode as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioDeviceInputNode as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioDeviceInputNode {
     const NAME: &'static str = "Windows.Media.Audio.AudioDeviceInputNode";
@@ -1404,18 +1402,18 @@ impl AudioDeviceOutputNode {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn EffectDefinitions(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<super::Effects::IAudioEffectDefinition>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectDefinitions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutgoingGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutgoingGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1424,33 +1422,33 @@ impl AudioDeviceOutputNode {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn EncodingProperties(&self) -> ::windows_core::Result<super::MediaProperties::AudioEncodingProperties> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EncodingProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConsumeInput(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConsumeInput)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetConsumeInput(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetConsumeInput)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Start(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Start)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Stop(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Stop)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Reset(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Reset)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -1459,7 +1457,7 @@ impl AudioDeviceOutputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DisableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -1468,25 +1466,25 @@ impl AudioDeviceOutputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).EnableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     pub fn SetListener<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<AudioNodeListener>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNodeWithListener>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNodeWithListener>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetListener)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Listener(&self) -> ::windows_core::Result<AudioNodeListener> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNodeWithListener>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNodeWithListener>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Listener)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -1495,9 +1493,7 @@ impl ::windows_core::RuntimeType for AudioDeviceOutputNode {
 }
 unsafe impl ::windows_core::Interface for AudioDeviceOutputNode {
     type Vtable = IAudioDeviceOutputNode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioDeviceOutputNode {
-    const IID: ::windows_core::GUID = <IAudioDeviceOutputNode as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioDeviceOutputNode as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioDeviceOutputNode {
     const NAME: &'static str = "Windows.Media.Audio.AudioDeviceOutputNode";
@@ -1607,7 +1603,7 @@ impl AudioFileInputNode {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn OutgoingConnections(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<AudioGraphConnection>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingConnections)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1617,25 +1613,25 @@ impl AudioFileInputNode {
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddOutgoingConnection)(::windows_core::Interface::as_raw(this), destination.into_param().abi()).ok() }
     }
     pub fn AddOutgoingConnectionWithGain<P0>(&self, destination: P0, gain: f64) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddOutgoingConnectionWithGain)(::windows_core::Interface::as_raw(this), destination.into_param().abi(), gain).ok() }
     }
     pub fn RemoveOutgoingConnection<P0>(&self, destination: P0) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveOutgoingConnection)(::windows_core::Interface::as_raw(this), destination.into_param().abi()).ok() }
     }
     pub fn Emitter(&self) -> ::windows_core::Result<AudioNodeEmitter> {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Emitter)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1644,18 +1640,18 @@ impl AudioFileInputNode {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn EffectDefinitions(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<super::Effects::IAudioEffectDefinition>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectDefinitions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutgoingGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutgoingGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1664,33 +1660,33 @@ impl AudioFileInputNode {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn EncodingProperties(&self) -> ::windows_core::Result<super::MediaProperties::AudioEncodingProperties> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EncodingProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConsumeInput(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConsumeInput)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetConsumeInput(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetConsumeInput)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Start(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Start)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Stop(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Stop)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Reset(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Reset)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -1699,7 +1695,7 @@ impl AudioFileInputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DisableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -1708,11 +1704,11 @@ impl AudioFileInputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).EnableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -1721,9 +1717,7 @@ impl ::windows_core::RuntimeType for AudioFileInputNode {
 }
 unsafe impl ::windows_core::Interface for AudioFileInputNode {
     type Vtable = IAudioFileInputNode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioFileInputNode {
-    const IID: ::windows_core::GUID = <IAudioFileInputNode as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioFileInputNode as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioFileInputNode {
     const NAME: &'static str = "Windows.Media.Audio.AudioFileInputNode";
@@ -1766,18 +1760,18 @@ impl AudioFileOutputNode {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn EffectDefinitions(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<super::Effects::IAudioEffectDefinition>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectDefinitions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutgoingGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutgoingGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1786,33 +1780,33 @@ impl AudioFileOutputNode {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn EncodingProperties(&self) -> ::windows_core::Result<super::MediaProperties::AudioEncodingProperties> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EncodingProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConsumeInput(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConsumeInput)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetConsumeInput(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetConsumeInput)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Start(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Start)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Stop(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Stop)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Reset(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Reset)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -1821,7 +1815,7 @@ impl AudioFileOutputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DisableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -1830,11 +1824,11 @@ impl AudioFileOutputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).EnableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -1843,9 +1837,7 @@ impl ::windows_core::RuntimeType for AudioFileOutputNode {
 }
 unsafe impl ::windows_core::Interface for AudioFileOutputNode {
     type Vtable = IAudioFileOutputNode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioFileOutputNode {
-    const IID: ::windows_core::GUID = <IAudioFileOutputNode as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioFileOutputNode as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioFileOutputNode {
     const NAME: &'static str = "Windows.Media.Audio.AudioFileOutputNode";
@@ -1871,9 +1863,7 @@ impl ::windows_core::RuntimeType for AudioFrameCompletedEventArgs {
 }
 unsafe impl ::windows_core::Interface for AudioFrameCompletedEventArgs {
     type Vtable = IAudioFrameCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioFrameCompletedEventArgs {
-    const IID: ::windows_core::GUID = <IAudioFrameCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioFrameCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioFrameCompletedEventArgs {
     const NAME: &'static str = "Windows.Media.Audio.AudioFrameCompletedEventArgs";
@@ -1945,7 +1935,7 @@ impl AudioFrameInputNode {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn OutgoingConnections(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<AudioGraphConnection>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingConnections)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1955,25 +1945,25 @@ impl AudioFrameInputNode {
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddOutgoingConnection)(::windows_core::Interface::as_raw(this), destination.into_param().abi()).ok() }
     }
     pub fn AddOutgoingConnectionWithGain<P0>(&self, destination: P0, gain: f64) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddOutgoingConnectionWithGain)(::windows_core::Interface::as_raw(this), destination.into_param().abi(), gain).ok() }
     }
     pub fn RemoveOutgoingConnection<P0>(&self, destination: P0) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveOutgoingConnection)(::windows_core::Interface::as_raw(this), destination.into_param().abi()).ok() }
     }
     pub fn Emitter(&self) -> ::windows_core::Result<AudioNodeEmitter> {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Emitter)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1982,18 +1972,18 @@ impl AudioFrameInputNode {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn EffectDefinitions(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<super::Effects::IAudioEffectDefinition>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectDefinitions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutgoingGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutgoingGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2002,33 +1992,33 @@ impl AudioFrameInputNode {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn EncodingProperties(&self) -> ::windows_core::Result<super::MediaProperties::AudioEncodingProperties> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EncodingProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConsumeInput(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConsumeInput)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetConsumeInput(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetConsumeInput)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Start(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Start)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Stop(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Stop)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Reset(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Reset)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -2037,7 +2027,7 @@ impl AudioFrameInputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DisableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -2046,11 +2036,11 @@ impl AudioFrameInputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).EnableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -2059,9 +2049,7 @@ impl ::windows_core::RuntimeType for AudioFrameInputNode {
 }
 unsafe impl ::windows_core::Interface for AudioFrameInputNode {
     type Vtable = IAudioFrameInputNode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioFrameInputNode {
-    const IID: ::windows_core::GUID = <IAudioFrameInputNode as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioFrameInputNode as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioFrameInputNode {
     const NAME: &'static str = "Windows.Media.Audio.AudioFrameInputNode";
@@ -2084,18 +2072,18 @@ impl AudioFrameOutputNode {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn EffectDefinitions(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<super::Effects::IAudioEffectDefinition>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectDefinitions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutgoingGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutgoingGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2104,33 +2092,33 @@ impl AudioFrameOutputNode {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn EncodingProperties(&self) -> ::windows_core::Result<super::MediaProperties::AudioEncodingProperties> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EncodingProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConsumeInput(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConsumeInput)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetConsumeInput(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetConsumeInput)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Start(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Start)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Stop(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Stop)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Reset(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Reset)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -2139,7 +2127,7 @@ impl AudioFrameOutputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DisableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -2148,11 +2136,11 @@ impl AudioFrameOutputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).EnableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -2161,9 +2149,7 @@ impl ::windows_core::RuntimeType for AudioFrameOutputNode {
 }
 unsafe impl ::windows_core::Interface for AudioFrameOutputNode {
     type Vtable = IAudioFrameOutputNode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioFrameOutputNode {
-    const IID: ::windows_core::GUID = <IAudioFrameOutputNode as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioFrameOutputNode as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioFrameOutputNode {
     const NAME: &'static str = "Windows.Media.Audio.AudioFrameOutputNode";
@@ -2418,7 +2404,7 @@ impl AudioGraph {
         P0: ::windows_core::IntoParam<super::MediaProperties::AudioEncodingProperties>,
         P1: ::windows_core::IntoParam<AudioNodeEmitter>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioGraph2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioGraph2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateFrameInputNodeWithFormatAndEmitter)(::windows_core::Interface::as_raw(this), encodingproperties.into_param().abi(), emitter.into_param().abi(), &mut result__).from_abi(result__)
@@ -2432,7 +2418,7 @@ impl AudioGraph {
         P1: ::windows_core::IntoParam<super::super::Devices::Enumeration::DeviceInformation>,
         P2: ::windows_core::IntoParam<AudioNodeEmitter>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioGraph2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioGraph2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateDeviceInputNodeWithFormatAndEmitterOnDeviceAsync)(::windows_core::Interface::as_raw(this), category, encodingproperties.into_param().abi(), device.into_param().abi(), emitter.into_param().abi(), &mut result__).from_abi(result__)
@@ -2445,7 +2431,7 @@ impl AudioGraph {
         P0: ::windows_core::IntoParam<super::super::Storage::IStorageFile>,
         P1: ::windows_core::IntoParam<AudioNodeEmitter>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioGraph2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioGraph2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateFileInputNodeWithEmitterAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), emitter.into_param().abi(), &mut result__).from_abi(result__)
@@ -2458,14 +2444,14 @@ impl AudioGraph {
         P0: ::windows_core::IntoParam<super::MediaProperties::AudioEncodingProperties>,
         P1: ::windows_core::IntoParam<AudioNodeEmitter>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioGraph2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioGraph2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateSubmixNodeWithFormatAndEmitter)(::windows_core::Interface::as_raw(this), encodingproperties.into_param().abi(), emitter.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateBatchUpdater(&self) -> ::windows_core::Result<AudioGraphBatchUpdater> {
-        let this = &::windows_core::ComInterface::cast::<IAudioGraph2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioGraph2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateBatchUpdater)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2477,7 +2463,7 @@ impl AudioGraph {
     where
         P0: ::windows_core::IntoParam<super::Core::MediaSource>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioGraph3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioGraph3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateMediaSourceAudioInputNodeAsync)(::windows_core::Interface::as_raw(this), mediasource.into_param().abi(), &mut result__).from_abi(result__)
@@ -2490,7 +2476,7 @@ impl AudioGraph {
         P0: ::windows_core::IntoParam<super::Core::MediaSource>,
         P1: ::windows_core::IntoParam<AudioNodeEmitter>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioGraph3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioGraph3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateMediaSourceAudioInputNodeWithEmitterAsync)(::windows_core::Interface::as_raw(this), mediasource.into_param().abi(), emitter.into_param().abi(), &mut result__).from_abi(result__)
@@ -2506,7 +2492,7 @@ impl AudioGraph {
         })
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc(hidden)]
@@ -2520,9 +2506,7 @@ impl ::windows_core::RuntimeType for AudioGraph {
 }
 unsafe impl ::windows_core::Interface for AudioGraph {
     type Vtable = IAudioGraph_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioGraph {
-    const IID: ::windows_core::GUID = <IAudioGraph as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioGraph as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioGraph {
     const NAME: &'static str = "Windows.Media.Audio.AudioGraph";
@@ -2545,9 +2529,7 @@ impl ::windows_core::RuntimeType for AudioGraphBatchUpdater {
 }
 unsafe impl ::windows_core::Interface for AudioGraphBatchUpdater {
     type Vtable = super::super::Foundation::IClosable_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioGraphBatchUpdater {
-    const IID: ::windows_core::GUID = <super::super::Foundation::IClosable as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::Foundation::IClosable as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioGraphBatchUpdater {
     const NAME: &'static str = "Windows.Media.Audio.AudioGraphBatchUpdater";
@@ -2584,9 +2566,7 @@ impl ::windows_core::RuntimeType for AudioGraphConnection {
 }
 unsafe impl ::windows_core::Interface for AudioGraphConnection {
     type Vtable = IAudioGraphConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioGraphConnection {
-    const IID: ::windows_core::GUID = <IAudioGraphConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioGraphConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioGraphConnection {
     const NAME: &'static str = "Windows.Media.Audio.AudioGraphConnection";
@@ -2683,11 +2663,11 @@ impl AudioGraphSettings {
         unsafe { (::windows_core::Interface::vtable(this).SetDesiredRenderDeviceAudioProcessing)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetMaxPlaybackSpeedFactor(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioGraphSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioGraphSettings2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMaxPlaybackSpeedFactor)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn MaxPlaybackSpeedFactor(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAudioGraphSettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioGraphSettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MaxPlaybackSpeedFactor)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2712,9 +2692,7 @@ impl ::windows_core::RuntimeType for AudioGraphSettings {
 }
 unsafe impl ::windows_core::Interface for AudioGraphSettings {
     type Vtable = IAudioGraphSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioGraphSettings {
-    const IID: ::windows_core::GUID = <IAudioGraphSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioGraphSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioGraphSettings {
     const NAME: &'static str = "Windows.Media.Audio.AudioGraphSettings";
@@ -2739,9 +2717,7 @@ impl ::windows_core::RuntimeType for AudioGraphUnrecoverableErrorOccurredEventAr
 }
 unsafe impl ::windows_core::Interface for AudioGraphUnrecoverableErrorOccurredEventArgs {
     type Vtable = IAudioGraphUnrecoverableErrorOccurredEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioGraphUnrecoverableErrorOccurredEventArgs {
-    const IID: ::windows_core::GUID = <IAudioGraphUnrecoverableErrorOccurredEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioGraphUnrecoverableErrorOccurredEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioGraphUnrecoverableErrorOccurredEventArgs {
     const NAME: &'static str = "Windows.Media.Audio.AudioGraphUnrecoverableErrorOccurredEventArgs";
@@ -2860,14 +2836,14 @@ impl AudioNodeEmitter {
         }
     }
     pub fn SpatialAudioModel(&self) -> ::windows_core::Result<SpatialAudioModel> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNodeEmitter2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNodeEmitter2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SpatialAudioModel)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetSpatialAudioModel(&self, value: SpatialAudioModel) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNodeEmitter2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNodeEmitter2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSpatialAudioModel)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CreateAudioNodeEmitter<P0, P1>(shape: P0, decaymodel: P1, settings: AudioNodeEmitterSettings) -> ::windows_core::Result<AudioNodeEmitter>
@@ -2891,9 +2867,7 @@ impl ::windows_core::RuntimeType for AudioNodeEmitter {
 }
 unsafe impl ::windows_core::Interface for AudioNodeEmitter {
     type Vtable = IAudioNodeEmitter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioNodeEmitter {
-    const IID: ::windows_core::GUID = <IAudioNodeEmitter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioNodeEmitter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioNodeEmitter {
     const NAME: &'static str = "Windows.Media.Audio.AudioNodeEmitter";
@@ -2932,9 +2906,7 @@ impl ::windows_core::RuntimeType for AudioNodeEmitterConeProperties {
 }
 unsafe impl ::windows_core::Interface for AudioNodeEmitterConeProperties {
     type Vtable = IAudioNodeEmitterConeProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioNodeEmitterConeProperties {
-    const IID: ::windows_core::GUID = <IAudioNodeEmitterConeProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioNodeEmitterConeProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioNodeEmitterConeProperties {
     const NAME: &'static str = "Windows.Media.Audio.AudioNodeEmitterConeProperties";
@@ -2997,9 +2969,7 @@ impl ::windows_core::RuntimeType for AudioNodeEmitterDecayModel {
 }
 unsafe impl ::windows_core::Interface for AudioNodeEmitterDecayModel {
     type Vtable = IAudioNodeEmitterDecayModel_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioNodeEmitterDecayModel {
-    const IID: ::windows_core::GUID = <IAudioNodeEmitterDecayModel as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioNodeEmitterDecayModel as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioNodeEmitterDecayModel {
     const NAME: &'static str = "Windows.Media.Audio.AudioNodeEmitterDecayModel";
@@ -3031,9 +3001,7 @@ impl ::windows_core::RuntimeType for AudioNodeEmitterNaturalDecayModelProperties
 }
 unsafe impl ::windows_core::Interface for AudioNodeEmitterNaturalDecayModelProperties {
     type Vtable = IAudioNodeEmitterNaturalDecayModelProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioNodeEmitterNaturalDecayModelProperties {
-    const IID: ::windows_core::GUID = <IAudioNodeEmitterNaturalDecayModelProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioNodeEmitterNaturalDecayModelProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioNodeEmitterNaturalDecayModelProperties {
     const NAME: &'static str = "Windows.Media.Audio.AudioNodeEmitterNaturalDecayModelProperties";
@@ -3082,9 +3050,7 @@ impl ::windows_core::RuntimeType for AudioNodeEmitterShape {
 }
 unsafe impl ::windows_core::Interface for AudioNodeEmitterShape {
     type Vtable = IAudioNodeEmitterShape_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioNodeEmitterShape {
-    const IID: ::windows_core::GUID = <IAudioNodeEmitterShape as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioNodeEmitterShape as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioNodeEmitterShape {
     const NAME: &'static str = "Windows.Media.Audio.AudioNodeEmitterShape";
@@ -3165,9 +3131,7 @@ impl ::windows_core::RuntimeType for AudioNodeListener {
 }
 unsafe impl ::windows_core::Interface for AudioNodeListener {
     type Vtable = IAudioNodeListener_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioNodeListener {
-    const IID: ::windows_core::GUID = <IAudioNodeListener as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioNodeListener as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioNodeListener {
     const NAME: &'static str = "Windows.Media.Audio.AudioNodeListener";
@@ -3245,7 +3209,7 @@ impl AudioPlaybackConnection {
         })
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc(hidden)]
@@ -3259,9 +3223,7 @@ impl ::windows_core::RuntimeType for AudioPlaybackConnection {
 }
 unsafe impl ::windows_core::Interface for AudioPlaybackConnection {
     type Vtable = IAudioPlaybackConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioPlaybackConnection {
-    const IID: ::windows_core::GUID = <IAudioPlaybackConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioPlaybackConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioPlaybackConnection {
     const NAME: &'static str = "Windows.Media.Audio.AudioPlaybackConnection";
@@ -3294,9 +3256,7 @@ impl ::windows_core::RuntimeType for AudioPlaybackConnectionOpenResult {
 }
 unsafe impl ::windows_core::Interface for AudioPlaybackConnectionOpenResult {
     type Vtable = IAudioPlaybackConnectionOpenResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioPlaybackConnectionOpenResult {
-    const IID: ::windows_core::GUID = <IAudioPlaybackConnectionOpenResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioPlaybackConnectionOpenResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioPlaybackConnectionOpenResult {
     const NAME: &'static str = "Windows.Media.Audio.AudioPlaybackConnectionOpenResult";
@@ -3400,9 +3360,7 @@ impl ::windows_core::RuntimeType for AudioStateMonitor {
 }
 unsafe impl ::windows_core::Interface for AudioStateMonitor {
     type Vtable = IAudioStateMonitor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioStateMonitor {
-    const IID: ::windows_core::GUID = <IAudioStateMonitor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioStateMonitor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioStateMonitor {
     const NAME: &'static str = "Windows.Media.Audio.AudioStateMonitor";
@@ -3445,7 +3403,7 @@ impl AudioSubmixNode {
         unsafe { (::windows_core::Interface::vtable(this).RemoveOutgoingConnection)(::windows_core::Interface::as_raw(this), destination.into_param().abi()).ok() }
     }
     pub fn Emitter(&self) -> ::windows_core::Result<AudioNodeEmitter> {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Emitter)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3454,18 +3412,18 @@ impl AudioSubmixNode {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn EffectDefinitions(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<super::Effects::IAudioEffectDefinition>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectDefinitions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutgoingGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutgoingGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3474,33 +3432,33 @@ impl AudioSubmixNode {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn EncodingProperties(&self) -> ::windows_core::Result<super::MediaProperties::AudioEncodingProperties> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EncodingProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConsumeInput(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConsumeInput)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetConsumeInput(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetConsumeInput)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Start(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Start)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Stop(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Stop)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Reset(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Reset)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -3509,7 +3467,7 @@ impl AudioSubmixNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DisableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -3518,11 +3476,11 @@ impl AudioSubmixNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).EnableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -3531,9 +3489,7 @@ impl ::windows_core::RuntimeType for AudioSubmixNode {
 }
 unsafe impl ::windows_core::Interface for AudioSubmixNode {
     type Vtable = IAudioInputNode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioSubmixNode {
-    const IID: ::windows_core::GUID = <IAudioInputNode as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioInputNode as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioSubmixNode {
     const NAME: &'static str = "Windows.Media.Audio.AudioSubmixNode";
@@ -3561,7 +3517,7 @@ impl CreateAudioDeviceInputNodeResult {
         }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
-        let this = &::windows_core::ComInterface::cast::<ICreateAudioDeviceInputNodeResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICreateAudioDeviceInputNodeResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ExtendedError)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3573,9 +3529,7 @@ impl ::windows_core::RuntimeType for CreateAudioDeviceInputNodeResult {
 }
 unsafe impl ::windows_core::Interface for CreateAudioDeviceInputNodeResult {
     type Vtable = ICreateAudioDeviceInputNodeResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CreateAudioDeviceInputNodeResult {
-    const IID: ::windows_core::GUID = <ICreateAudioDeviceInputNodeResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICreateAudioDeviceInputNodeResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CreateAudioDeviceInputNodeResult {
     const NAME: &'static str = "Windows.Media.Audio.CreateAudioDeviceInputNodeResult";
@@ -3602,7 +3556,7 @@ impl CreateAudioDeviceOutputNodeResult {
         }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
-        let this = &::windows_core::ComInterface::cast::<ICreateAudioDeviceOutputNodeResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICreateAudioDeviceOutputNodeResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ExtendedError)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3614,9 +3568,7 @@ impl ::windows_core::RuntimeType for CreateAudioDeviceOutputNodeResult {
 }
 unsafe impl ::windows_core::Interface for CreateAudioDeviceOutputNodeResult {
     type Vtable = ICreateAudioDeviceOutputNodeResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CreateAudioDeviceOutputNodeResult {
-    const IID: ::windows_core::GUID = <ICreateAudioDeviceOutputNodeResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICreateAudioDeviceOutputNodeResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CreateAudioDeviceOutputNodeResult {
     const NAME: &'static str = "Windows.Media.Audio.CreateAudioDeviceOutputNodeResult";
@@ -3643,7 +3595,7 @@ impl CreateAudioFileInputNodeResult {
         }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
-        let this = &::windows_core::ComInterface::cast::<ICreateAudioFileInputNodeResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICreateAudioFileInputNodeResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ExtendedError)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3655,9 +3607,7 @@ impl ::windows_core::RuntimeType for CreateAudioFileInputNodeResult {
 }
 unsafe impl ::windows_core::Interface for CreateAudioFileInputNodeResult {
     type Vtable = ICreateAudioFileInputNodeResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CreateAudioFileInputNodeResult {
-    const IID: ::windows_core::GUID = <ICreateAudioFileInputNodeResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICreateAudioFileInputNodeResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CreateAudioFileInputNodeResult {
     const NAME: &'static str = "Windows.Media.Audio.CreateAudioFileInputNodeResult";
@@ -3684,7 +3634,7 @@ impl CreateAudioFileOutputNodeResult {
         }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
-        let this = &::windows_core::ComInterface::cast::<ICreateAudioFileOutputNodeResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICreateAudioFileOutputNodeResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ExtendedError)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3696,9 +3646,7 @@ impl ::windows_core::RuntimeType for CreateAudioFileOutputNodeResult {
 }
 unsafe impl ::windows_core::Interface for CreateAudioFileOutputNodeResult {
     type Vtable = ICreateAudioFileOutputNodeResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CreateAudioFileOutputNodeResult {
-    const IID: ::windows_core::GUID = <ICreateAudioFileOutputNodeResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICreateAudioFileOutputNodeResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CreateAudioFileOutputNodeResult {
     const NAME: &'static str = "Windows.Media.Audio.CreateAudioFileOutputNodeResult";
@@ -3725,7 +3673,7 @@ impl CreateAudioGraphResult {
         }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
-        let this = &::windows_core::ComInterface::cast::<ICreateAudioGraphResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICreateAudioGraphResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ExtendedError)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3737,9 +3685,7 @@ impl ::windows_core::RuntimeType for CreateAudioGraphResult {
 }
 unsafe impl ::windows_core::Interface for CreateAudioGraphResult {
     type Vtable = ICreateAudioGraphResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CreateAudioGraphResult {
-    const IID: ::windows_core::GUID = <ICreateAudioGraphResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICreateAudioGraphResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CreateAudioGraphResult {
     const NAME: &'static str = "Windows.Media.Audio.CreateAudioGraphResult";
@@ -3766,7 +3712,7 @@ impl CreateMediaSourceAudioInputNodeResult {
         }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
-        let this = &::windows_core::ComInterface::cast::<ICreateMediaSourceAudioInputNodeResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICreateMediaSourceAudioInputNodeResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ExtendedError)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3778,9 +3724,7 @@ impl ::windows_core::RuntimeType for CreateMediaSourceAudioInputNodeResult {
 }
 unsafe impl ::windows_core::Interface for CreateMediaSourceAudioInputNodeResult {
     type Vtable = ICreateMediaSourceAudioInputNodeResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CreateMediaSourceAudioInputNodeResult {
-    const IID: ::windows_core::GUID = <ICreateMediaSourceAudioInputNodeResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICreateMediaSourceAudioInputNodeResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CreateMediaSourceAudioInputNodeResult {
     const NAME: &'static str = "Windows.Media.Audio.CreateMediaSourceAudioInputNodeResult";
@@ -3795,7 +3739,7 @@ impl EchoEffectDefinition {
     #[doc = "Required features: `\"Media_Effects\"`"]
     #[cfg(feature = "Media_Effects")]
     pub fn ActivatableClassId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ActivatableClassId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3804,7 +3748,7 @@ impl EchoEffectDefinition {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn Properties(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IPropertySet> {
-        let this = &::windows_core::ComInterface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Properties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3863,9 +3807,7 @@ impl ::windows_core::RuntimeType for EchoEffectDefinition {
 }
 unsafe impl ::windows_core::Interface for EchoEffectDefinition {
     type Vtable = IEchoEffectDefinition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EchoEffectDefinition {
-    const IID: ::windows_core::GUID = <IEchoEffectDefinition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEchoEffectDefinition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EchoEffectDefinition {
     const NAME: &'static str = "Windows.Media.Audio.EchoEffectDefinition";
@@ -3918,9 +3860,7 @@ impl ::windows_core::RuntimeType for EqualizerBand {
 }
 unsafe impl ::windows_core::Interface for EqualizerBand {
     type Vtable = IEqualizerBand_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EqualizerBand {
-    const IID: ::windows_core::GUID = <IEqualizerBand as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEqualizerBand as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EqualizerBand {
     const NAME: &'static str = "Windows.Media.Audio.EqualizerBand";
@@ -3935,7 +3875,7 @@ impl EqualizerEffectDefinition {
     #[doc = "Required features: `\"Media_Effects\"`"]
     #[cfg(feature = "Media_Effects")]
     pub fn ActivatableClassId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ActivatableClassId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3944,7 +3884,7 @@ impl EqualizerEffectDefinition {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn Properties(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IPropertySet> {
-        let this = &::windows_core::ComInterface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Properties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3979,9 +3919,7 @@ impl ::windows_core::RuntimeType for EqualizerEffectDefinition {
 }
 unsafe impl ::windows_core::Interface for EqualizerEffectDefinition {
     type Vtable = IEqualizerEffectDefinition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EqualizerEffectDefinition {
-    const IID: ::windows_core::GUID = <IEqualizerEffectDefinition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEqualizerEffectDefinition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EqualizerEffectDefinition {
     const NAME: &'static str = "Windows.Media.Audio.EqualizerEffectDefinition";
@@ -4008,9 +3946,7 @@ impl ::windows_core::RuntimeType for FrameInputNodeQuantumStartedEventArgs {
 }
 unsafe impl ::windows_core::Interface for FrameInputNodeQuantumStartedEventArgs {
     type Vtable = IFrameInputNodeQuantumStartedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameInputNodeQuantumStartedEventArgs {
-    const IID: ::windows_core::GUID = <IFrameInputNodeQuantumStartedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameInputNodeQuantumStartedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameInputNodeQuantumStartedEventArgs {
     const NAME: &'static str = "Windows.Media.Audio.FrameInputNodeQuantumStartedEventArgs";
@@ -4025,7 +3961,7 @@ impl LimiterEffectDefinition {
     #[doc = "Required features: `\"Media_Effects\"`"]
     #[cfg(feature = "Media_Effects")]
     pub fn ActivatableClassId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ActivatableClassId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4034,7 +3970,7 @@ impl LimiterEffectDefinition {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn Properties(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IPropertySet> {
-        let this = &::windows_core::ComInterface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Properties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4082,9 +4018,7 @@ impl ::windows_core::RuntimeType for LimiterEffectDefinition {
 }
 unsafe impl ::windows_core::Interface for LimiterEffectDefinition {
     type Vtable = ILimiterEffectDefinition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LimiterEffectDefinition {
-    const IID: ::windows_core::GUID = <ILimiterEffectDefinition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILimiterEffectDefinition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LimiterEffectDefinition {
     const NAME: &'static str = "Windows.Media.Audio.LimiterEffectDefinition";
@@ -4101,7 +4035,7 @@ impl MediaSourceAudioInputNode {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn OutgoingConnections(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<AudioGraphConnection>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingConnections)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4111,25 +4045,25 @@ impl MediaSourceAudioInputNode {
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddOutgoingConnection)(::windows_core::Interface::as_raw(this), destination.into_param().abi()).ok() }
     }
     pub fn AddOutgoingConnectionWithGain<P0>(&self, destination: P0, gain: f64) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddOutgoingConnectionWithGain)(::windows_core::Interface::as_raw(this), destination.into_param().abi(), gain).ok() }
     }
     pub fn RemoveOutgoingConnection<P0>(&self, destination: P0) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<IAudioNode>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveOutgoingConnection)(::windows_core::Interface::as_raw(this), destination.into_param().abi()).ok() }
     }
     pub fn Emitter(&self) -> ::windows_core::Result<AudioNodeEmitter> {
-        let this = &::windows_core::ComInterface::cast::<IAudioInputNode2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioInputNode2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Emitter)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4138,18 +4072,18 @@ impl MediaSourceAudioInputNode {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn EffectDefinitions(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<super::Effects::IAudioEffectDefinition>> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EffectDefinitions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOutgoingGain(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOutgoingGain)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OutgoingGain(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OutgoingGain)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4158,33 +4092,33 @@ impl MediaSourceAudioInputNode {
     #[doc = "Required features: `\"Media_MediaProperties\"`"]
     #[cfg(feature = "Media_MediaProperties")]
     pub fn EncodingProperties(&self) -> ::windows_core::Result<super::MediaProperties::AudioEncodingProperties> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EncodingProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConsumeInput(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConsumeInput)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetConsumeInput(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetConsumeInput)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Start(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Start)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Stop(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Stop)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Reset(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Reset)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -4193,7 +4127,7 @@ impl MediaSourceAudioInputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DisableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Media_Effects\"`"]
@@ -4202,11 +4136,11 @@ impl MediaSourceAudioInputNode {
     where
         P0: ::windows_core::IntoParam<super::Effects::IAudioEffectDefinition>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAudioNode>(self)?;
+        let this = &::windows_core::Interface::cast::<IAudioNode>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).EnableEffectsByDefinition)(::windows_core::Interface::as_raw(this), definition.into_param().abi()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn SetPlaybackSpeedFactor(&self, value: f64) -> ::windows_core::Result<()> {
@@ -4309,9 +4243,7 @@ impl ::windows_core::RuntimeType for MediaSourceAudioInputNode {
 }
 unsafe impl ::windows_core::Interface for MediaSourceAudioInputNode {
     type Vtable = IMediaSourceAudioInputNode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaSourceAudioInputNode {
-    const IID: ::windows_core::GUID = <IMediaSourceAudioInputNode as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaSourceAudioInputNode as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaSourceAudioInputNode {
     const NAME: &'static str = "Windows.Media.Audio.MediaSourceAudioInputNode";
@@ -4327,7 +4259,7 @@ impl ReverbEffectDefinition {
     #[doc = "Required features: `\"Media_Effects\"`"]
     #[cfg(feature = "Media_Effects")]
     pub fn ActivatableClassId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ActivatableClassId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4336,7 +4268,7 @@ impl ReverbEffectDefinition {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Media_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Media_Effects"))]
     pub fn Properties(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IPropertySet> {
-        let this = &::windows_core::ComInterface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Effects::IAudioEffectDefinition>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Properties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -4615,9 +4547,7 @@ impl ::windows_core::RuntimeType for ReverbEffectDefinition {
 }
 unsafe impl ::windows_core::Interface for ReverbEffectDefinition {
     type Vtable = IReverbEffectDefinition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ReverbEffectDefinition {
-    const IID: ::windows_core::GUID = <IReverbEffectDefinition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IReverbEffectDefinition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ReverbEffectDefinition {
     const NAME: &'static str = "Windows.Media.Audio.ReverbEffectDefinition";
@@ -4644,9 +4574,7 @@ impl ::windows_core::RuntimeType for SetDefaultSpatialAudioFormatResult {
 }
 unsafe impl ::windows_core::Interface for SetDefaultSpatialAudioFormatResult {
     type Vtable = ISetDefaultSpatialAudioFormatResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SetDefaultSpatialAudioFormatResult {
-    const IID: ::windows_core::GUID = <ISetDefaultSpatialAudioFormatResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISetDefaultSpatialAudioFormatResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SetDefaultSpatialAudioFormatResult {
     const NAME: &'static str = "Windows.Media.Audio.SetDefaultSpatialAudioFormatResult";
@@ -4731,9 +4659,7 @@ impl ::windows_core::RuntimeType for SpatialAudioDeviceConfiguration {
 }
 unsafe impl ::windows_core::Interface for SpatialAudioDeviceConfiguration {
     type Vtable = ISpatialAudioDeviceConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpatialAudioDeviceConfiguration {
-    const IID: ::windows_core::GUID = <ISpatialAudioDeviceConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpatialAudioDeviceConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpatialAudioDeviceConfiguration {
     const NAME: &'static str = "Windows.Media.Audio.SpatialAudioDeviceConfiguration";
@@ -4787,9 +4713,7 @@ impl ::windows_core::RuntimeType for SpatialAudioFormatConfiguration {
 }
 unsafe impl ::windows_core::Interface for SpatialAudioFormatConfiguration {
     type Vtable = ISpatialAudioFormatConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpatialAudioFormatConfiguration {
-    const IID: ::windows_core::GUID = <ISpatialAudioFormatConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpatialAudioFormatConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpatialAudioFormatConfiguration {
     const NAME: &'static str = "Windows.Media.Audio.SpatialAudioFormatConfiguration";

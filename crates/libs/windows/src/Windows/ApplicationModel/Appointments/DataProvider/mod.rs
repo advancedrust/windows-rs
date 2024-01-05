@@ -224,9 +224,7 @@ impl ::windows_core::RuntimeType for AppointmentCalendarCancelMeetingRequest {
 }
 unsafe impl ::windows_core::Interface for AppointmentCalendarCancelMeetingRequest {
     type Vtable = IAppointmentCalendarCancelMeetingRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentCalendarCancelMeetingRequest {
-    const IID: ::windows_core::GUID = <IAppointmentCalendarCancelMeetingRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentCalendarCancelMeetingRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentCalendarCancelMeetingRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarCancelMeetingRequest";
@@ -258,9 +256,7 @@ impl ::windows_core::RuntimeType for AppointmentCalendarCancelMeetingRequestEven
 }
 unsafe impl ::windows_core::Interface for AppointmentCalendarCancelMeetingRequestEventArgs {
     type Vtable = IAppointmentCalendarCancelMeetingRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentCalendarCancelMeetingRequestEventArgs {
-    const IID: ::windows_core::GUID = <IAppointmentCalendarCancelMeetingRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentCalendarCancelMeetingRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentCalendarCancelMeetingRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarCancelMeetingRequestEventArgs";
@@ -325,9 +321,7 @@ impl ::windows_core::RuntimeType for AppointmentCalendarCreateOrUpdateAppointmen
 }
 unsafe impl ::windows_core::Interface for AppointmentCalendarCreateOrUpdateAppointmentRequest {
     type Vtable = IAppointmentCalendarCreateOrUpdateAppointmentRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentCalendarCreateOrUpdateAppointmentRequest {
-    const IID: ::windows_core::GUID = <IAppointmentCalendarCreateOrUpdateAppointmentRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentCalendarCreateOrUpdateAppointmentRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentCalendarCreateOrUpdateAppointmentRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarCreateOrUpdateAppointmentRequest";
@@ -359,9 +353,7 @@ impl ::windows_core::RuntimeType for AppointmentCalendarCreateOrUpdateAppointmen
 }
 unsafe impl ::windows_core::Interface for AppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs {
     type Vtable = IAppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs {
-    const IID: ::windows_core::GUID = <IAppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarCreateOrUpdateAppointmentRequestEventArgs";
@@ -444,9 +436,7 @@ impl ::windows_core::RuntimeType for AppointmentCalendarForwardMeetingRequest {
 }
 unsafe impl ::windows_core::Interface for AppointmentCalendarForwardMeetingRequest {
     type Vtable = IAppointmentCalendarForwardMeetingRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentCalendarForwardMeetingRequest {
-    const IID: ::windows_core::GUID = <IAppointmentCalendarForwardMeetingRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentCalendarForwardMeetingRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentCalendarForwardMeetingRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarForwardMeetingRequest";
@@ -478,9 +468,7 @@ impl ::windows_core::RuntimeType for AppointmentCalendarForwardMeetingRequestEve
 }
 unsafe impl ::windows_core::Interface for AppointmentCalendarForwardMeetingRequestEventArgs {
     type Vtable = IAppointmentCalendarForwardMeetingRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentCalendarForwardMeetingRequestEventArgs {
-    const IID: ::windows_core::GUID = <IAppointmentCalendarForwardMeetingRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentCalendarForwardMeetingRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentCalendarForwardMeetingRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarForwardMeetingRequestEventArgs";
@@ -561,9 +549,7 @@ impl ::windows_core::RuntimeType for AppointmentCalendarProposeNewTimeForMeeting
 }
 unsafe impl ::windows_core::Interface for AppointmentCalendarProposeNewTimeForMeetingRequest {
     type Vtable = IAppointmentCalendarProposeNewTimeForMeetingRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentCalendarProposeNewTimeForMeetingRequest {
-    const IID: ::windows_core::GUID = <IAppointmentCalendarProposeNewTimeForMeetingRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentCalendarProposeNewTimeForMeetingRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentCalendarProposeNewTimeForMeetingRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarProposeNewTimeForMeetingRequest";
@@ -595,9 +581,7 @@ impl ::windows_core::RuntimeType for AppointmentCalendarProposeNewTimeForMeeting
 }
 unsafe impl ::windows_core::Interface for AppointmentCalendarProposeNewTimeForMeetingRequestEventArgs {
     type Vtable = IAppointmentCalendarProposeNewTimeForMeetingRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentCalendarProposeNewTimeForMeetingRequestEventArgs {
-    const IID: ::windows_core::GUID = <IAppointmentCalendarProposeNewTimeForMeetingRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentCalendarProposeNewTimeForMeetingRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentCalendarProposeNewTimeForMeetingRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarProposeNewTimeForMeetingRequestEventArgs";
@@ -636,9 +620,7 @@ impl ::windows_core::RuntimeType for AppointmentCalendarSyncManagerSyncRequest {
 }
 unsafe impl ::windows_core::Interface for AppointmentCalendarSyncManagerSyncRequest {
     type Vtable = IAppointmentCalendarSyncManagerSyncRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentCalendarSyncManagerSyncRequest {
-    const IID: ::windows_core::GUID = <IAppointmentCalendarSyncManagerSyncRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentCalendarSyncManagerSyncRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentCalendarSyncManagerSyncRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarSyncManagerSyncRequest";
@@ -670,9 +652,7 @@ impl ::windows_core::RuntimeType for AppointmentCalendarSyncManagerSyncRequestEv
 }
 unsafe impl ::windows_core::Interface for AppointmentCalendarSyncManagerSyncRequestEventArgs {
     type Vtable = IAppointmentCalendarSyncManagerSyncRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentCalendarSyncManagerSyncRequestEventArgs {
-    const IID: ::windows_core::GUID = <IAppointmentCalendarSyncManagerSyncRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentCalendarSyncManagerSyncRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentCalendarSyncManagerSyncRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarSyncManagerSyncRequestEventArgs";
@@ -753,9 +733,7 @@ impl ::windows_core::RuntimeType for AppointmentCalendarUpdateMeetingResponseReq
 }
 unsafe impl ::windows_core::Interface for AppointmentCalendarUpdateMeetingResponseRequest {
     type Vtable = IAppointmentCalendarUpdateMeetingResponseRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentCalendarUpdateMeetingResponseRequest {
-    const IID: ::windows_core::GUID = <IAppointmentCalendarUpdateMeetingResponseRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentCalendarUpdateMeetingResponseRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentCalendarUpdateMeetingResponseRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarUpdateMeetingResponseRequest";
@@ -787,9 +765,7 @@ impl ::windows_core::RuntimeType for AppointmentCalendarUpdateMeetingResponseReq
 }
 unsafe impl ::windows_core::Interface for AppointmentCalendarUpdateMeetingResponseRequestEventArgs {
     type Vtable = IAppointmentCalendarUpdateMeetingResponseRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentCalendarUpdateMeetingResponseRequestEventArgs {
-    const IID: ::windows_core::GUID = <IAppointmentCalendarUpdateMeetingResponseRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentCalendarUpdateMeetingResponseRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentCalendarUpdateMeetingResponseRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentCalendarUpdateMeetingResponseRequestEventArgs";
@@ -895,9 +871,7 @@ impl ::windows_core::RuntimeType for AppointmentDataProviderConnection {
 }
 unsafe impl ::windows_core::Interface for AppointmentDataProviderConnection {
     type Vtable = IAppointmentDataProviderConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentDataProviderConnection {
-    const IID: ::windows_core::GUID = <IAppointmentDataProviderConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentDataProviderConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentDataProviderConnection {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentDataProviderConnection";
@@ -922,9 +896,7 @@ impl ::windows_core::RuntimeType for AppointmentDataProviderTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for AppointmentDataProviderTriggerDetails {
     type Vtable = IAppointmentDataProviderTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppointmentDataProviderTriggerDetails {
-    const IID: ::windows_core::GUID = <IAppointmentDataProviderTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppointmentDataProviderTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppointmentDataProviderTriggerDetails {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.DataProvider.AppointmentDataProviderTriggerDetails";

@@ -576,10 +576,7 @@ impl ::windows_core::RuntimeType for WalletBarcode {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for WalletBarcode {
     type Vtable = IWalletBarcode_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for WalletBarcode {
-    const IID: ::windows_core::GUID = <IWalletBarcode as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWalletBarcode as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for WalletBarcode {
@@ -1052,10 +1049,7 @@ impl ::windows_core::RuntimeType for WalletItem {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for WalletItem {
     type Vtable = IWalletItem_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for WalletItem {
-    const IID: ::windows_core::GUID = <IWalletItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWalletItem as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for WalletItem {
@@ -1171,10 +1165,7 @@ impl ::windows_core::RuntimeType for WalletItemCustomProperty {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for WalletItemCustomProperty {
     type Vtable = IWalletItemCustomProperty_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for WalletItemCustomProperty {
-    const IID: ::windows_core::GUID = <IWalletItemCustomProperty as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWalletItemCustomProperty as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for WalletItemCustomProperty {
@@ -1300,10 +1291,7 @@ impl ::windows_core::RuntimeType for WalletItemStore {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for WalletItemStore {
     type Vtable = IWalletItemStore_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for WalletItemStore {
-    const IID: ::windows_core::GUID = <IWalletItemStore as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWalletItemStore as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for WalletItemStore {
@@ -1391,10 +1379,7 @@ impl ::windows_core::RuntimeType for WalletRelevantLocation {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for WalletRelevantLocation {
     type Vtable = IWalletRelevantLocation_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for WalletRelevantLocation {
-    const IID: ::windows_core::GUID = <IWalletRelevantLocation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWalletRelevantLocation as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for WalletRelevantLocation {
@@ -1521,10 +1506,7 @@ impl ::windows_core::RuntimeType for WalletTransaction {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for WalletTransaction {
     type Vtable = IWalletTransaction_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for WalletTransaction {
-    const IID: ::windows_core::GUID = <IWalletTransaction as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWalletTransaction as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for WalletTransaction {
@@ -1580,10 +1562,7 @@ impl ::windows_core::RuntimeType for WalletVerb {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for WalletVerb {
     type Vtable = IWalletVerb_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for WalletVerb {
-    const IID: ::windows_core::GUID = <IWalletVerb as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWalletVerb as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for WalletVerb {

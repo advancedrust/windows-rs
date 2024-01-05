@@ -328,7 +328,7 @@ impl ITensor {
         }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -914,35 +914,35 @@ impl ImageFeatureDescriptor {
         }
     }
     pub fn PixelRange(&self) -> ::windows_core::Result<LearningModelPixelRange> {
-        let this = &::windows_core::ComInterface::cast::<IImageFeatureDescriptor2>(self)?;
+        let this = &::windows_core::Interface::cast::<IImageFeatureDescriptor2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PixelRange)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Name)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Description(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Description)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsRequired(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsRequired)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -954,9 +954,7 @@ impl ::windows_core::RuntimeType for ImageFeatureDescriptor {
 }
 unsafe impl ::windows_core::Interface for ImageFeatureDescriptor {
     type Vtable = IImageFeatureDescriptor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ImageFeatureDescriptor {
-    const IID: ::windows_core::GUID = <IImageFeatureDescriptor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IImageFeatureDescriptor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ImageFeatureDescriptor {
     const NAME: &'static str = "Windows.AI.MachineLearning.ImageFeatureDescriptor";
@@ -990,7 +988,7 @@ impl ImageFeatureValue {
         })
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1007,9 +1005,7 @@ impl ::windows_core::RuntimeType for ImageFeatureValue {
 }
 unsafe impl ::windows_core::Interface for ImageFeatureValue {
     type Vtable = IImageFeatureValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ImageFeatureValue {
-    const IID: ::windows_core::GUID = <IImageFeatureValue as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IImageFeatureValue as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ImageFeatureValue {
     const NAME: &'static str = "Windows.AI.MachineLearning.ImageFeatureValue";
@@ -1023,7 +1019,7 @@ unsafe impl ::core::marker::Sync for ImageFeatureValue {}
 pub struct LearningModel(::windows_core::IUnknown);
 impl LearningModel {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Author(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -1183,9 +1179,7 @@ impl ::windows_core::RuntimeType for LearningModel {
 }
 unsafe impl ::windows_core::Interface for LearningModel {
     type Vtable = ILearningModel_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LearningModel {
-    const IID: ::windows_core::GUID = <ILearningModel as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILearningModel as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LearningModel {
     const NAME: &'static str = "Windows.AI.MachineLearning.LearningModel";
@@ -1201,7 +1195,7 @@ impl LearningModelBinding {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterator<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1240,7 +1234,7 @@ impl LearningModelBinding {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Lookup(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<::windows_core::IInspectable> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Lookup)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -1249,7 +1243,7 @@ impl LearningModelBinding {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1258,7 +1252,7 @@ impl LearningModelBinding {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn HasKey(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasKey)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -1267,7 +1261,7 @@ impl LearningModelBinding {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Split(&self, first: &mut ::core::option::Option<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>, second: &mut ::core::option::Option<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Split)(::windows_core::Interface::as_raw(this), first as *mut _ as _, second as *mut _ as _).ok() }
     }
     #[doc(hidden)]
@@ -1281,9 +1275,7 @@ impl ::windows_core::RuntimeType for LearningModelBinding {
 }
 unsafe impl ::windows_core::Interface for LearningModelBinding {
     type Vtable = ILearningModelBinding_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LearningModelBinding {
-    const IID: ::windows_core::GUID = <ILearningModelBinding as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILearningModelBinding as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LearningModelBinding {
     const NAME: &'static str = "Windows.AI.MachineLearning.LearningModelBinding";
@@ -1364,9 +1356,7 @@ impl ::windows_core::RuntimeType for LearningModelDevice {
 }
 unsafe impl ::windows_core::Interface for LearningModelDevice {
     type Vtable = ILearningModelDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LearningModelDevice {
-    const IID: ::windows_core::GUID = <ILearningModelDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILearningModelDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LearningModelDevice {
     const NAME: &'static str = "Windows.AI.MachineLearning.LearningModelDevice";
@@ -1414,9 +1404,7 @@ impl ::windows_core::RuntimeType for LearningModelEvaluationResult {
 }
 unsafe impl ::windows_core::Interface for LearningModelEvaluationResult {
     type Vtable = ILearningModelEvaluationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LearningModelEvaluationResult {
-    const IID: ::windows_core::GUID = <ILearningModelEvaluationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILearningModelEvaluationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LearningModelEvaluationResult {
     const NAME: &'static str = "Windows.AI.MachineLearning.LearningModelEvaluationResult";
@@ -1429,7 +1417,7 @@ unsafe impl ::core::marker::Sync for LearningModelEvaluationResult {}
 pub struct LearningModelSession(::windows_core::IUnknown);
 impl LearningModelSession {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Model(&self) -> ::windows_core::Result<LearningModel> {
@@ -1545,9 +1533,7 @@ impl ::windows_core::RuntimeType for LearningModelSession {
 }
 unsafe impl ::windows_core::Interface for LearningModelSession {
     type Vtable = ILearningModelSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LearningModelSession {
-    const IID: ::windows_core::GUID = <ILearningModelSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILearningModelSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LearningModelSession {
     const NAME: &'static str = "Windows.AI.MachineLearning.LearningModelSession";
@@ -1579,18 +1565,18 @@ impl LearningModelSessionOptions {
         unsafe { (::windows_core::Interface::vtable(this).SetBatchSizeOverride)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CloseModelOnSessionCreation(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelSessionOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelSessionOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CloseModelOnSessionCreation)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCloseModelOnSessionCreation(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelSessionOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelSessionOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCloseModelOnSessionCreation)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OverrideNamedDimension(&self, name: &::windows_core::HSTRING, dimension: u32) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelSessionOptions3>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelSessionOptions3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).OverrideNamedDimension)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(name), dimension).ok() }
     }
 }
@@ -1599,9 +1585,7 @@ impl ::windows_core::RuntimeType for LearningModelSessionOptions {
 }
 unsafe impl ::windows_core::Interface for LearningModelSessionOptions {
     type Vtable = ILearningModelSessionOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LearningModelSessionOptions {
-    const IID: ::windows_core::GUID = <ILearningModelSessionOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILearningModelSessionOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LearningModelSessionOptions {
     const NAME: &'static str = "Windows.AI.MachineLearning.LearningModelSessionOptions";
@@ -1614,28 +1598,28 @@ unsafe impl ::core::marker::Sync for LearningModelSessionOptions {}
 pub struct MapFeatureDescriptor(::windows_core::IUnknown);
 impl MapFeatureDescriptor {
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Name)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Description(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Description)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsRequired(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsRequired)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1661,9 +1645,7 @@ impl ::windows_core::RuntimeType for MapFeatureDescriptor {
 }
 unsafe impl ::windows_core::Interface for MapFeatureDescriptor {
     type Vtable = IMapFeatureDescriptor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MapFeatureDescriptor {
-    const IID: ::windows_core::GUID = <IMapFeatureDescriptor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMapFeatureDescriptor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MapFeatureDescriptor {
     const NAME: &'static str = "Windows.AI.MachineLearning.MapFeatureDescriptor";
@@ -1677,28 +1659,28 @@ unsafe impl ::core::marker::Sync for MapFeatureDescriptor {}
 pub struct SequenceFeatureDescriptor(::windows_core::IUnknown);
 impl SequenceFeatureDescriptor {
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Name)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Description(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Description)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsRequired(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsRequired)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1717,9 +1699,7 @@ impl ::windows_core::RuntimeType for SequenceFeatureDescriptor {
 }
 unsafe impl ::windows_core::Interface for SequenceFeatureDescriptor {
     type Vtable = ISequenceFeatureDescriptor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SequenceFeatureDescriptor {
-    const IID: ::windows_core::GUID = <ISequenceFeatureDescriptor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISequenceFeatureDescriptor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SequenceFeatureDescriptor {
     const NAME: &'static str = "Windows.AI.MachineLearning.SequenceFeatureDescriptor";
@@ -1733,25 +1713,25 @@ unsafe impl ::core::marker::Sync for SequenceFeatureDescriptor {}
 pub struct TensorBoolean(::windows_core::IUnknown);
 impl TensorBoolean {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1760,7 +1740,7 @@ impl TensorBoolean {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1848,9 +1828,7 @@ impl ::windows_core::RuntimeType for TensorBoolean {
 }
 unsafe impl ::windows_core::Interface for TensorBoolean {
     type Vtable = ITensorBoolean_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorBoolean {
-    const IID: ::windows_core::GUID = <ITensorBoolean as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorBoolean as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorBoolean {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorBoolean";
@@ -1864,25 +1842,25 @@ unsafe impl ::core::marker::Sync for TensorBoolean {}
 pub struct TensorDouble(::windows_core::IUnknown);
 impl TensorDouble {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1891,7 +1869,7 @@ impl TensorDouble {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1979,9 +1957,7 @@ impl ::windows_core::RuntimeType for TensorDouble {
 }
 unsafe impl ::windows_core::Interface for TensorDouble {
     type Vtable = ITensorDouble_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorDouble {
-    const IID: ::windows_core::GUID = <ITensorDouble as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorDouble as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorDouble {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorDouble";
@@ -1995,28 +1971,28 @@ unsafe impl ::core::marker::Sync for TensorDouble {}
 pub struct TensorFeatureDescriptor(::windows_core::IUnknown);
 impl TensorFeatureDescriptor {
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Name)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Description(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Description)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsRequired(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureDescriptor>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureDescriptor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsRequired)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2044,9 +2020,7 @@ impl ::windows_core::RuntimeType for TensorFeatureDescriptor {
 }
 unsafe impl ::windows_core::Interface for TensorFeatureDescriptor {
     type Vtable = ITensorFeatureDescriptor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorFeatureDescriptor {
-    const IID: ::windows_core::GUID = <ITensorFeatureDescriptor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorFeatureDescriptor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorFeatureDescriptor {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorFeatureDescriptor";
@@ -2060,25 +2034,25 @@ unsafe impl ::core::marker::Sync for TensorFeatureDescriptor {}
 pub struct TensorFloat(::windows_core::IUnknown);
 impl TensorFloat {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2087,7 +2061,7 @@ impl TensorFloat {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2175,9 +2149,7 @@ impl ::windows_core::RuntimeType for TensorFloat {
 }
 unsafe impl ::windows_core::Interface for TensorFloat {
     type Vtable = ITensorFloat_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorFloat {
-    const IID: ::windows_core::GUID = <ITensorFloat as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorFloat as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorFloat {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorFloat";
@@ -2191,25 +2163,25 @@ unsafe impl ::core::marker::Sync for TensorFloat {}
 pub struct TensorFloat16Bit(::windows_core::IUnknown);
 impl TensorFloat16Bit {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2218,7 +2190,7 @@ impl TensorFloat16Bit {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2306,9 +2278,7 @@ impl ::windows_core::RuntimeType for TensorFloat16Bit {
 }
 unsafe impl ::windows_core::Interface for TensorFloat16Bit {
     type Vtable = ITensorFloat16Bit_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorFloat16Bit {
-    const IID: ::windows_core::GUID = <ITensorFloat16Bit as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorFloat16Bit as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorFloat16Bit {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorFloat16Bit";
@@ -2322,25 +2292,25 @@ unsafe impl ::core::marker::Sync for TensorFloat16Bit {}
 pub struct TensorInt16Bit(::windows_core::IUnknown);
 impl TensorInt16Bit {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2349,7 +2319,7 @@ impl TensorInt16Bit {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2437,9 +2407,7 @@ impl ::windows_core::RuntimeType for TensorInt16Bit {
 }
 unsafe impl ::windows_core::Interface for TensorInt16Bit {
     type Vtable = ITensorInt16Bit_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorInt16Bit {
-    const IID: ::windows_core::GUID = <ITensorInt16Bit as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorInt16Bit as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorInt16Bit {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorInt16Bit";
@@ -2453,25 +2421,25 @@ unsafe impl ::core::marker::Sync for TensorInt16Bit {}
 pub struct TensorInt32Bit(::windows_core::IUnknown);
 impl TensorInt32Bit {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2480,7 +2448,7 @@ impl TensorInt32Bit {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2568,9 +2536,7 @@ impl ::windows_core::RuntimeType for TensorInt32Bit {
 }
 unsafe impl ::windows_core::Interface for TensorInt32Bit {
     type Vtable = ITensorInt32Bit_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorInt32Bit {
-    const IID: ::windows_core::GUID = <ITensorInt32Bit as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorInt32Bit as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorInt32Bit {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorInt32Bit";
@@ -2584,25 +2550,25 @@ unsafe impl ::core::marker::Sync for TensorInt32Bit {}
 pub struct TensorInt64Bit(::windows_core::IUnknown);
 impl TensorInt64Bit {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2611,7 +2577,7 @@ impl TensorInt64Bit {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2699,9 +2665,7 @@ impl ::windows_core::RuntimeType for TensorInt64Bit {
 }
 unsafe impl ::windows_core::Interface for TensorInt64Bit {
     type Vtable = ITensorInt64Bit_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorInt64Bit {
-    const IID: ::windows_core::GUID = <ITensorInt64Bit as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorInt64Bit as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorInt64Bit {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorInt64Bit";
@@ -2715,25 +2679,25 @@ unsafe impl ::core::marker::Sync for TensorInt64Bit {}
 pub struct TensorInt8Bit(::windows_core::IUnknown);
 impl TensorInt8Bit {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2742,7 +2706,7 @@ impl TensorInt8Bit {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2830,9 +2794,7 @@ impl ::windows_core::RuntimeType for TensorInt8Bit {
 }
 unsafe impl ::windows_core::Interface for TensorInt8Bit {
     type Vtable = ITensorInt8Bit_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorInt8Bit {
-    const IID: ::windows_core::GUID = <ITensorInt8Bit as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorInt8Bit as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorInt8Bit {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorInt8Bit";
@@ -2846,25 +2808,25 @@ unsafe impl ::core::marker::Sync for TensorInt8Bit {}
 pub struct TensorString(::windows_core::IUnknown);
 impl TensorString {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2873,7 +2835,7 @@ impl TensorString {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2950,9 +2912,7 @@ impl ::windows_core::RuntimeType for TensorString {
 }
 unsafe impl ::windows_core::Interface for TensorString {
     type Vtable = ITensorString_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorString {
-    const IID: ::windows_core::GUID = <ITensorString as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorString as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorString {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorString";
@@ -2966,25 +2926,25 @@ unsafe impl ::core::marker::Sync for TensorString {}
 pub struct TensorUInt16Bit(::windows_core::IUnknown);
 impl TensorUInt16Bit {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2993,7 +2953,7 @@ impl TensorUInt16Bit {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3081,9 +3041,7 @@ impl ::windows_core::RuntimeType for TensorUInt16Bit {
 }
 unsafe impl ::windows_core::Interface for TensorUInt16Bit {
     type Vtable = ITensorUInt16Bit_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorUInt16Bit {
-    const IID: ::windows_core::GUID = <ITensorUInt16Bit as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorUInt16Bit as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorUInt16Bit {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorUInt16Bit";
@@ -3097,25 +3055,25 @@ unsafe impl ::core::marker::Sync for TensorUInt16Bit {}
 pub struct TensorUInt32Bit(::windows_core::IUnknown);
 impl TensorUInt32Bit {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3124,7 +3082,7 @@ impl TensorUInt32Bit {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3212,9 +3170,7 @@ impl ::windows_core::RuntimeType for TensorUInt32Bit {
 }
 unsafe impl ::windows_core::Interface for TensorUInt32Bit {
     type Vtable = ITensorUInt32Bit_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorUInt32Bit {
-    const IID: ::windows_core::GUID = <ITensorUInt32Bit as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorUInt32Bit as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorUInt32Bit {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorUInt32Bit";
@@ -3228,25 +3184,25 @@ unsafe impl ::core::marker::Sync for TensorUInt32Bit {}
 pub struct TensorUInt64Bit(::windows_core::IUnknown);
 impl TensorUInt64Bit {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3255,7 +3211,7 @@ impl TensorUInt64Bit {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3343,9 +3299,7 @@ impl ::windows_core::RuntimeType for TensorUInt64Bit {
 }
 unsafe impl ::windows_core::Interface for TensorUInt64Bit {
     type Vtable = ITensorUInt64Bit_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorUInt64Bit {
-    const IID: ::windows_core::GUID = <ITensorUInt64Bit as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorUInt64Bit as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorUInt64Bit {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorUInt64Bit";
@@ -3359,25 +3313,25 @@ unsafe impl ::core::marker::Sync for TensorUInt64Bit {}
 pub struct TensorUInt8Bit(::windows_core::IUnknown);
 impl TensorUInt8Bit {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<LearningModelFeatureKind> {
-        let this = &::windows_core::ComInterface::cast::<ILearningModelFeatureValue>(self)?;
+        let this = &::windows_core::Interface::cast::<ILearningModelFeatureValue>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateReference(&self) -> ::windows_core::Result<super::super::Foundation::IMemoryBufferReference> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IMemoryBuffer>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateReference)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TensorKind(&self) -> ::windows_core::Result<TensorKind> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TensorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3386,7 +3340,7 @@ impl TensorUInt8Bit {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Shape(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<i64>> {
-        let this = &::windows_core::ComInterface::cast::<ITensor>(self)?;
+        let this = &::windows_core::Interface::cast::<ITensor>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Shape)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3474,9 +3428,7 @@ impl ::windows_core::RuntimeType for TensorUInt8Bit {
 }
 unsafe impl ::windows_core::Interface for TensorUInt8Bit {
     type Vtable = ITensorUInt8Bit_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TensorUInt8Bit {
-    const IID: ::windows_core::GUID = <ITensorUInt8Bit as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITensorUInt8Bit as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TensorUInt8Bit {
     const NAME: &'static str = "Windows.AI.MachineLearning.TensorUInt8Bit";

@@ -571,9 +571,7 @@ impl ::windows_core::RuntimeType for EmailDataProviderConnection {
 }
 unsafe impl ::windows_core::Interface for EmailDataProviderConnection {
     type Vtable = IEmailDataProviderConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailDataProviderConnection {
-    const IID: ::windows_core::GUID = <IEmailDataProviderConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailDataProviderConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailDataProviderConnection {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailDataProviderConnection";
@@ -598,9 +596,7 @@ impl ::windows_core::RuntimeType for EmailDataProviderTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for EmailDataProviderTriggerDetails {
     type Vtable = IEmailDataProviderTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailDataProviderTriggerDetails {
-    const IID: ::windows_core::GUID = <IEmailDataProviderTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailDataProviderTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailDataProviderTriggerDetails {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailDataProviderTriggerDetails";
@@ -656,9 +652,7 @@ impl ::windows_core::RuntimeType for EmailMailboxCreateFolderRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxCreateFolderRequest {
     type Vtable = IEmailMailboxCreateFolderRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxCreateFolderRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxCreateFolderRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxCreateFolderRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxCreateFolderRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxCreateFolderRequest";
@@ -690,9 +684,7 @@ impl ::windows_core::RuntimeType for EmailMailboxCreateFolderRequestEventArgs {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxCreateFolderRequestEventArgs {
     type Vtable = IEmailMailboxCreateFolderRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxCreateFolderRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxCreateFolderRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxCreateFolderRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxCreateFolderRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxCreateFolderRequestEventArgs";
@@ -738,9 +730,7 @@ impl ::windows_core::RuntimeType for EmailMailboxDeleteFolderRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxDeleteFolderRequest {
     type Vtable = IEmailMailboxDeleteFolderRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxDeleteFolderRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxDeleteFolderRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxDeleteFolderRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxDeleteFolderRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxDeleteFolderRequest";
@@ -772,9 +762,7 @@ impl ::windows_core::RuntimeType for EmailMailboxDeleteFolderRequestEventArgs {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxDeleteFolderRequestEventArgs {
     type Vtable = IEmailMailboxDeleteFolderRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxDeleteFolderRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxDeleteFolderRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxDeleteFolderRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxDeleteFolderRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxDeleteFolderRequestEventArgs";
@@ -827,9 +815,7 @@ impl ::windows_core::RuntimeType for EmailMailboxDownloadAttachmentRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxDownloadAttachmentRequest {
     type Vtable = IEmailMailboxDownloadAttachmentRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxDownloadAttachmentRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxDownloadAttachmentRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxDownloadAttachmentRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxDownloadAttachmentRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxDownloadAttachmentRequest";
@@ -861,9 +847,7 @@ impl ::windows_core::RuntimeType for EmailMailboxDownloadAttachmentRequestEventA
 }
 unsafe impl ::windows_core::Interface for EmailMailboxDownloadAttachmentRequestEventArgs {
     type Vtable = IEmailMailboxDownloadAttachmentRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxDownloadAttachmentRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxDownloadAttachmentRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxDownloadAttachmentRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxDownloadAttachmentRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxDownloadAttachmentRequestEventArgs";
@@ -909,9 +893,7 @@ impl ::windows_core::RuntimeType for EmailMailboxDownloadMessageRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxDownloadMessageRequest {
     type Vtable = IEmailMailboxDownloadMessageRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxDownloadMessageRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxDownloadMessageRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxDownloadMessageRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxDownloadMessageRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxDownloadMessageRequest";
@@ -943,9 +925,7 @@ impl ::windows_core::RuntimeType for EmailMailboxDownloadMessageRequestEventArgs
 }
 unsafe impl ::windows_core::Interface for EmailMailboxDownloadMessageRequestEventArgs {
     type Vtable = IEmailMailboxDownloadMessageRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxDownloadMessageRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxDownloadMessageRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxDownloadMessageRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxDownloadMessageRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxDownloadMessageRequestEventArgs";
@@ -991,9 +971,7 @@ impl ::windows_core::RuntimeType for EmailMailboxEmptyFolderRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxEmptyFolderRequest {
     type Vtable = IEmailMailboxEmptyFolderRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxEmptyFolderRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxEmptyFolderRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxEmptyFolderRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxEmptyFolderRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxEmptyFolderRequest";
@@ -1025,9 +1003,7 @@ impl ::windows_core::RuntimeType for EmailMailboxEmptyFolderRequestEventArgs {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxEmptyFolderRequestEventArgs {
     type Vtable = IEmailMailboxEmptyFolderRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxEmptyFolderRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxEmptyFolderRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxEmptyFolderRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxEmptyFolderRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxEmptyFolderRequestEventArgs";
@@ -1110,9 +1086,7 @@ impl ::windows_core::RuntimeType for EmailMailboxForwardMeetingRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxForwardMeetingRequest {
     type Vtable = IEmailMailboxForwardMeetingRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxForwardMeetingRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxForwardMeetingRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxForwardMeetingRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxForwardMeetingRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxForwardMeetingRequest";
@@ -1144,9 +1118,7 @@ impl ::windows_core::RuntimeType for EmailMailboxForwardMeetingRequestEventArgs 
 }
 unsafe impl ::windows_core::Interface for EmailMailboxForwardMeetingRequestEventArgs {
     type Vtable = IEmailMailboxForwardMeetingRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxForwardMeetingRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxForwardMeetingRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxForwardMeetingRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxForwardMeetingRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxForwardMeetingRequestEventArgs";
@@ -1195,9 +1167,7 @@ impl ::windows_core::RuntimeType for EmailMailboxGetAutoReplySettingsRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxGetAutoReplySettingsRequest {
     type Vtable = IEmailMailboxGetAutoReplySettingsRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxGetAutoReplySettingsRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxGetAutoReplySettingsRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxGetAutoReplySettingsRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxGetAutoReplySettingsRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxGetAutoReplySettingsRequest";
@@ -1229,9 +1199,7 @@ impl ::windows_core::RuntimeType for EmailMailboxGetAutoReplySettingsRequestEven
 }
 unsafe impl ::windows_core::Interface for EmailMailboxGetAutoReplySettingsRequestEventArgs {
     type Vtable = IEmailMailboxGetAutoReplySettingsRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxGetAutoReplySettingsRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxGetAutoReplySettingsRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxGetAutoReplySettingsRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxGetAutoReplySettingsRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxGetAutoReplySettingsRequestEventArgs";
@@ -1291,9 +1259,7 @@ impl ::windows_core::RuntimeType for EmailMailboxMoveFolderRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxMoveFolderRequest {
     type Vtable = IEmailMailboxMoveFolderRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxMoveFolderRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxMoveFolderRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxMoveFolderRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxMoveFolderRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxMoveFolderRequest";
@@ -1325,9 +1291,7 @@ impl ::windows_core::RuntimeType for EmailMailboxMoveFolderRequestEventArgs {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxMoveFolderRequestEventArgs {
     type Vtable = IEmailMailboxMoveFolderRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxMoveFolderRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxMoveFolderRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxMoveFolderRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxMoveFolderRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxMoveFolderRequestEventArgs";
@@ -1401,9 +1365,7 @@ impl ::windows_core::RuntimeType for EmailMailboxProposeNewTimeForMeetingRequest
 }
 unsafe impl ::windows_core::Interface for EmailMailboxProposeNewTimeForMeetingRequest {
     type Vtable = IEmailMailboxProposeNewTimeForMeetingRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxProposeNewTimeForMeetingRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxProposeNewTimeForMeetingRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxProposeNewTimeForMeetingRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxProposeNewTimeForMeetingRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxProposeNewTimeForMeetingRequest";
@@ -1435,9 +1397,7 @@ impl ::windows_core::RuntimeType for EmailMailboxProposeNewTimeForMeetingRequest
 }
 unsafe impl ::windows_core::Interface for EmailMailboxProposeNewTimeForMeetingRequestEventArgs {
     type Vtable = IEmailMailboxProposeNewTimeForMeetingRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxProposeNewTimeForMeetingRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxProposeNewTimeForMeetingRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxProposeNewTimeForMeetingRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxProposeNewTimeForMeetingRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxProposeNewTimeForMeetingRequestEventArgs";
@@ -1490,9 +1450,7 @@ impl ::windows_core::RuntimeType for EmailMailboxResolveRecipientsRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxResolveRecipientsRequest {
     type Vtable = IEmailMailboxResolveRecipientsRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxResolveRecipientsRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxResolveRecipientsRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxResolveRecipientsRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxResolveRecipientsRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxResolveRecipientsRequest";
@@ -1524,9 +1482,7 @@ impl ::windows_core::RuntimeType for EmailMailboxResolveRecipientsRequestEventAr
 }
 unsafe impl ::windows_core::Interface for EmailMailboxResolveRecipientsRequestEventArgs {
     type Vtable = IEmailMailboxResolveRecipientsRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxResolveRecipientsRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxResolveRecipientsRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxResolveRecipientsRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxResolveRecipientsRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxResolveRecipientsRequestEventArgs";
@@ -1603,9 +1559,7 @@ impl ::windows_core::RuntimeType for EmailMailboxServerSearchReadBatchRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxServerSearchReadBatchRequest {
     type Vtable = IEmailMailboxServerSearchReadBatchRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxServerSearchReadBatchRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxServerSearchReadBatchRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxServerSearchReadBatchRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxServerSearchReadBatchRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxServerSearchReadBatchRequest";
@@ -1637,9 +1591,7 @@ impl ::windows_core::RuntimeType for EmailMailboxServerSearchReadBatchRequestEve
 }
 unsafe impl ::windows_core::Interface for EmailMailboxServerSearchReadBatchRequestEventArgs {
     type Vtable = IEmailMailboxServerSearchReadBatchRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxServerSearchReadBatchRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxServerSearchReadBatchRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxServerSearchReadBatchRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxServerSearchReadBatchRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxServerSearchReadBatchRequestEventArgs";
@@ -1685,9 +1637,7 @@ impl ::windows_core::RuntimeType for EmailMailboxSetAutoReplySettingsRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxSetAutoReplySettingsRequest {
     type Vtable = IEmailMailboxSetAutoReplySettingsRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxSetAutoReplySettingsRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxSetAutoReplySettingsRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxSetAutoReplySettingsRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxSetAutoReplySettingsRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxSetAutoReplySettingsRequest";
@@ -1719,9 +1669,7 @@ impl ::windows_core::RuntimeType for EmailMailboxSetAutoReplySettingsRequestEven
 }
 unsafe impl ::windows_core::Interface for EmailMailboxSetAutoReplySettingsRequestEventArgs {
     type Vtable = IEmailMailboxSetAutoReplySettingsRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxSetAutoReplySettingsRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxSetAutoReplySettingsRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxSetAutoReplySettingsRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxSetAutoReplySettingsRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxSetAutoReplySettingsRequestEventArgs";
@@ -1760,9 +1708,7 @@ impl ::windows_core::RuntimeType for EmailMailboxSyncManagerSyncRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxSyncManagerSyncRequest {
     type Vtable = IEmailMailboxSyncManagerSyncRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxSyncManagerSyncRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxSyncManagerSyncRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxSyncManagerSyncRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxSyncManagerSyncRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxSyncManagerSyncRequest";
@@ -1794,9 +1740,7 @@ impl ::windows_core::RuntimeType for EmailMailboxSyncManagerSyncRequestEventArgs
 }
 unsafe impl ::windows_core::Interface for EmailMailboxSyncManagerSyncRequestEventArgs {
     type Vtable = IEmailMailboxSyncManagerSyncRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxSyncManagerSyncRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxSyncManagerSyncRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxSyncManagerSyncRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxSyncManagerSyncRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxSyncManagerSyncRequestEventArgs";
@@ -1870,9 +1814,7 @@ impl ::windows_core::RuntimeType for EmailMailboxUpdateMeetingResponseRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxUpdateMeetingResponseRequest {
     type Vtable = IEmailMailboxUpdateMeetingResponseRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxUpdateMeetingResponseRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxUpdateMeetingResponseRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxUpdateMeetingResponseRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxUpdateMeetingResponseRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxUpdateMeetingResponseRequest";
@@ -1904,9 +1846,7 @@ impl ::windows_core::RuntimeType for EmailMailboxUpdateMeetingResponseRequestEve
 }
 unsafe impl ::windows_core::Interface for EmailMailboxUpdateMeetingResponseRequestEventArgs {
     type Vtable = IEmailMailboxUpdateMeetingResponseRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxUpdateMeetingResponseRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxUpdateMeetingResponseRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxUpdateMeetingResponseRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxUpdateMeetingResponseRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxUpdateMeetingResponseRequestEventArgs";
@@ -1959,9 +1899,7 @@ impl ::windows_core::RuntimeType for EmailMailboxValidateCertificatesRequest {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxValidateCertificatesRequest {
     type Vtable = IEmailMailboxValidateCertificatesRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxValidateCertificatesRequest {
-    const IID: ::windows_core::GUID = <IEmailMailboxValidateCertificatesRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxValidateCertificatesRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxValidateCertificatesRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxValidateCertificatesRequest";
@@ -1993,9 +1931,7 @@ impl ::windows_core::RuntimeType for EmailMailboxValidateCertificatesRequestEven
 }
 unsafe impl ::windows_core::Interface for EmailMailboxValidateCertificatesRequestEventArgs {
     type Vtable = IEmailMailboxValidateCertificatesRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxValidateCertificatesRequestEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxValidateCertificatesRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxValidateCertificatesRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxValidateCertificatesRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.DataProvider.EmailMailboxValidateCertificatesRequestEventArgs";

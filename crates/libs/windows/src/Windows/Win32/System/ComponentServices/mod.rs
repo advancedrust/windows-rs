@@ -2218,7 +2218,7 @@ impl ICreateWithTipTransactionEx {
     pub unsafe fn CreateInstance<P0, T>(&self, bstrtipurl: P0, rclsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::BSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateInstance)(::windows_core::Interface::as_raw(self), bstrtipurl.into_param().abi(), rclsid, &T::IID, &mut result__).from_abi(result__)
@@ -2238,7 +2238,7 @@ impl ICreateWithTransactionEx {
     pub unsafe fn CreateInstance<P0, T>(&self, ptransaction: P0, rclsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<super::DistributedTransactionCoordinator::ITransaction>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateInstance)(::windows_core::Interface::as_raw(self), ptransaction.into_param().abi(), rclsid, &T::IID, &mut result__).from_abi(result__)
@@ -4380,7 +4380,7 @@ pub struct ITransactionContext_Vtbl {
 impl ITransactionContextEx {
     pub unsafe fn CreateInstance<T>(&self, rclsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateInstance)(::windows_core::Interface::as_raw(self), rclsid, &T::IID, &mut result__).from_abi(result__)

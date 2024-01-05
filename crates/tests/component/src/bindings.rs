@@ -69,7 +69,7 @@ pub mod Nested {
             }
         }
         pub fn matches(iid: &::windows_core::GUID) -> bool {
-            iid == &<IThing as ::windows_core::ComInterface>::IID
+            iid == &<IThing as ::windows_core::Interface>::IID
         }
     }
 }
@@ -245,9 +245,7 @@ impl ::windows_core::RuntimeType for Class {
 }
 unsafe impl ::windows_core::Interface for Class {
     type Vtable = IClass_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Class {
-    const IID: ::windows_core::GUID = <IClass as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IClass as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Class {
     const NAME: &'static str = "test_component.Class";
@@ -369,9 +367,9 @@ impl<F: FnMut(i32) -> ::windows_core::Result<i32> + ::core::marker::Send + 'stat
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <Callback as ::windows_core::ComInterface>::IID
-            || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID
-            || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID
+        *interface = if *iid == <Callback as ::windows_core::Interface>::IID
+            || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID
+            || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID
         {
             &mut (*this).vtable as *mut _ as _
         } else {
@@ -620,6 +618,6 @@ impl IClass_Vtbl {
         }
     }
     pub fn matches(iid: &::windows_core::GUID) -> bool {
-        iid == &<IClass as ::windows_core::ComInterface>::IID
+        iid == &<IClass as ::windows_core::Interface>::IID
     }
 }

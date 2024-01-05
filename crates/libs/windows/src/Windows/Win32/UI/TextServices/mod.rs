@@ -256,7 +256,7 @@ pub struct IAnchor_Vtbl {
 impl IClonableWrapper {
     pub unsafe fn CloneNewWrapper<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CloneNewWrapper)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)

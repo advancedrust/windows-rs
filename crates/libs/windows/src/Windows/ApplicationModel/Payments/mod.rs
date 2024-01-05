@@ -536,9 +536,7 @@ impl ::windows_core::RuntimeType for PaymentAddress {
 }
 unsafe impl ::windows_core::Interface for PaymentAddress {
     type Vtable = IPaymentAddress_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentAddress {
-    const IID: ::windows_core::GUID = <IPaymentAddress as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentAddress as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentAddress {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentAddress";
@@ -574,9 +572,7 @@ impl ::windows_core::RuntimeType for PaymentCanMakePaymentResult {
 }
 unsafe impl ::windows_core::Interface for PaymentCanMakePaymentResult {
     type Vtable = IPaymentCanMakePaymentResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentCanMakePaymentResult {
-    const IID: ::windows_core::GUID = <IPaymentCanMakePaymentResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentCanMakePaymentResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentCanMakePaymentResult {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentCanMakePaymentResult";
@@ -644,9 +640,7 @@ impl ::windows_core::RuntimeType for PaymentCurrencyAmount {
 }
 unsafe impl ::windows_core::Interface for PaymentCurrencyAmount {
     type Vtable = IPaymentCurrencyAmount_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentCurrencyAmount {
-    const IID: ::windows_core::GUID = <IPaymentCurrencyAmount as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentCurrencyAmount as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentCurrencyAmount {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentCurrencyAmount";
@@ -765,9 +759,7 @@ impl ::windows_core::RuntimeType for PaymentDetails {
 }
 unsafe impl ::windows_core::Interface for PaymentDetails {
     type Vtable = IPaymentDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentDetails {
-    const IID: ::windows_core::GUID = <IPaymentDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentDetails {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentDetails";
@@ -860,9 +852,7 @@ impl ::windows_core::RuntimeType for PaymentDetailsModifier {
 }
 unsafe impl ::windows_core::Interface for PaymentDetailsModifier {
     type Vtable = IPaymentDetailsModifier_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentDetailsModifier {
-    const IID: ::windows_core::GUID = <IPaymentDetailsModifier as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentDetailsModifier as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentDetailsModifier {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentDetailsModifier";
@@ -930,9 +920,7 @@ impl ::windows_core::RuntimeType for PaymentItem {
 }
 unsafe impl ::windows_core::Interface for PaymentItem {
     type Vtable = IPaymentItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentItem {
-    const IID: ::windows_core::GUID = <IPaymentItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentItem {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentItem";
@@ -985,7 +973,7 @@ impl PaymentMediator {
     where
         P0: ::windows_core::IntoParam<PaymentRequest>,
     {
-        let this = &::windows_core::ComInterface::cast::<IPaymentMediator2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPaymentMediator2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanMakePaymentAsync)(::windows_core::Interface::as_raw(this), paymentrequest.into_param().abi(), &mut result__).from_abi(result__)
@@ -997,9 +985,7 @@ impl ::windows_core::RuntimeType for PaymentMediator {
 }
 unsafe impl ::windows_core::Interface for PaymentMediator {
     type Vtable = IPaymentMediator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentMediator {
-    const IID: ::windows_core::GUID = <IPaymentMediator as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentMediator as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentMediator {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentMediator";
@@ -1052,9 +1038,7 @@ impl ::windows_core::RuntimeType for PaymentMerchantInfo {
 }
 unsafe impl ::windows_core::Interface for PaymentMerchantInfo {
     type Vtable = IPaymentMerchantInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentMerchantInfo {
-    const IID: ::windows_core::GUID = <IPaymentMerchantInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentMerchantInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentMerchantInfo {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentMerchantInfo";
@@ -1115,9 +1099,7 @@ impl ::windows_core::RuntimeType for PaymentMethodData {
 }
 unsafe impl ::windows_core::Interface for PaymentMethodData {
     type Vtable = IPaymentMethodData_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentMethodData {
-    const IID: ::windows_core::GUID = <IPaymentMethodData as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentMethodData as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentMethodData {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentMethodData";
@@ -1197,9 +1179,7 @@ impl ::windows_core::RuntimeType for PaymentOptions {
 }
 unsafe impl ::windows_core::Interface for PaymentOptions {
     type Vtable = IPaymentOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentOptions {
-    const IID: ::windows_core::GUID = <IPaymentOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentOptions {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentOptions";
@@ -1242,7 +1222,7 @@ impl PaymentRequest {
         }
     }
     pub fn Id(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IPaymentRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPaymentRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Id)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1317,9 +1297,7 @@ impl ::windows_core::RuntimeType for PaymentRequest {
 }
 unsafe impl ::windows_core::Interface for PaymentRequest {
     type Vtable = IPaymentRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentRequest {
-    const IID: ::windows_core::GUID = <IPaymentRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentRequest";
@@ -1365,9 +1343,7 @@ impl ::windows_core::RuntimeType for PaymentRequestChangedArgs {
 }
 unsafe impl ::windows_core::Interface for PaymentRequestChangedArgs {
     type Vtable = IPaymentRequestChangedArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentRequestChangedArgs {
-    const IID: ::windows_core::GUID = <IPaymentRequestChangedArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentRequestChangedArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentRequestChangedArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentRequestChangedArgs";
@@ -1441,9 +1417,7 @@ impl ::windows_core::RuntimeType for PaymentRequestChangedResult {
 }
 unsafe impl ::windows_core::Interface for PaymentRequestChangedResult {
     type Vtable = IPaymentRequestChangedResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentRequestChangedResult {
-    const IID: ::windows_core::GUID = <IPaymentRequestChangedResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentRequestChangedResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentRequestChangedResult {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentRequestChangedResult";
@@ -1475,9 +1449,7 @@ impl ::windows_core::RuntimeType for PaymentRequestSubmitResult {
 }
 unsafe impl ::windows_core::Interface for PaymentRequestSubmitResult {
     type Vtable = IPaymentRequestSubmitResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentRequestSubmitResult {
-    const IID: ::windows_core::GUID = <IPaymentRequestSubmitResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentRequestSubmitResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentRequestSubmitResult {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentRequestSubmitResult";
@@ -1544,9 +1516,7 @@ impl ::windows_core::RuntimeType for PaymentResponse {
 }
 unsafe impl ::windows_core::Interface for PaymentResponse {
     type Vtable = IPaymentResponse_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentResponse {
-    const IID: ::windows_core::GUID = <IPaymentResponse as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentResponse as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentResponse {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentResponse";
@@ -1643,9 +1613,7 @@ impl ::windows_core::RuntimeType for PaymentShippingOption {
 }
 unsafe impl ::windows_core::Interface for PaymentShippingOption {
     type Vtable = IPaymentShippingOption_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentShippingOption {
-    const IID: ::windows_core::GUID = <IPaymentShippingOption as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentShippingOption as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentShippingOption {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentShippingOption";
@@ -1694,9 +1662,7 @@ impl ::windows_core::RuntimeType for PaymentToken {
 }
 unsafe impl ::windows_core::Interface for PaymentToken {
     type Vtable = IPaymentToken_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PaymentToken {
-    const IID: ::windows_core::GUID = <IPaymentToken as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPaymentToken as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PaymentToken {
     const NAME: &'static str = "Windows.ApplicationModel.Payments.PaymentToken";
@@ -1852,7 +1818,7 @@ impl<F: FnMut(::core::option::Option<&PaymentRequest>, ::core::option::Option<&P
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <PaymentRequestChangedHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <PaymentRequestChangedHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

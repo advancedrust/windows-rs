@@ -140,28 +140,28 @@ impl ContactDataProviderConnection {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<ContactDataProviderConnection, ContactListCreateOrUpdateContactRequestEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IContactDataProviderConnection2>(self)?;
+        let this = &::windows_core::Interface::cast::<IContactDataProviderConnection2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateOrUpdateContactRequested)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveCreateOrUpdateContactRequested(&self, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IContactDataProviderConnection2>(self)?;
+        let this = &::windows_core::Interface::cast::<IContactDataProviderConnection2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveCreateOrUpdateContactRequested)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn DeleteContactRequested<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<ContactDataProviderConnection, ContactListDeleteContactRequestEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IContactDataProviderConnection2>(self)?;
+        let this = &::windows_core::Interface::cast::<IContactDataProviderConnection2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DeleteContactRequested)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveDeleteContactRequested(&self, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IContactDataProviderConnection2>(self)?;
+        let this = &::windows_core::Interface::cast::<IContactDataProviderConnection2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveDeleteContactRequested)(::windows_core::Interface::as_raw(this), token).ok() }
     }
 }
@@ -170,9 +170,7 @@ impl ::windows_core::RuntimeType for ContactDataProviderConnection {
 }
 unsafe impl ::windows_core::Interface for ContactDataProviderConnection {
     type Vtable = IContactDataProviderConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactDataProviderConnection {
-    const IID: ::windows_core::GUID = <IContactDataProviderConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactDataProviderConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactDataProviderConnection {
     const NAME: &'static str = "Windows.ApplicationModel.Contacts.DataProvider.ContactDataProviderConnection";
@@ -197,9 +195,7 @@ impl ::windows_core::RuntimeType for ContactDataProviderTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for ContactDataProviderTriggerDetails {
     type Vtable = IContactDataProviderTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactDataProviderTriggerDetails {
-    const IID: ::windows_core::GUID = <IContactDataProviderTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactDataProviderTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactDataProviderTriggerDetails {
     const NAME: &'static str = "Windows.ApplicationModel.Contacts.DataProvider.ContactDataProviderTriggerDetails";
@@ -248,9 +244,7 @@ impl ::windows_core::RuntimeType for ContactListCreateOrUpdateContactRequest {
 }
 unsafe impl ::windows_core::Interface for ContactListCreateOrUpdateContactRequest {
     type Vtable = IContactListCreateOrUpdateContactRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactListCreateOrUpdateContactRequest {
-    const IID: ::windows_core::GUID = <IContactListCreateOrUpdateContactRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactListCreateOrUpdateContactRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactListCreateOrUpdateContactRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Contacts.DataProvider.ContactListCreateOrUpdateContactRequest";
@@ -282,9 +276,7 @@ impl ::windows_core::RuntimeType for ContactListCreateOrUpdateContactRequestEven
 }
 unsafe impl ::windows_core::Interface for ContactListCreateOrUpdateContactRequestEventArgs {
     type Vtable = IContactListCreateOrUpdateContactRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactListCreateOrUpdateContactRequestEventArgs {
-    const IID: ::windows_core::GUID = <IContactListCreateOrUpdateContactRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactListCreateOrUpdateContactRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactListCreateOrUpdateContactRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Contacts.DataProvider.ContactListCreateOrUpdateContactRequestEventArgs";
@@ -330,9 +322,7 @@ impl ::windows_core::RuntimeType for ContactListDeleteContactRequest {
 }
 unsafe impl ::windows_core::Interface for ContactListDeleteContactRequest {
     type Vtable = IContactListDeleteContactRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactListDeleteContactRequest {
-    const IID: ::windows_core::GUID = <IContactListDeleteContactRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactListDeleteContactRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactListDeleteContactRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Contacts.DataProvider.ContactListDeleteContactRequest";
@@ -364,9 +354,7 @@ impl ::windows_core::RuntimeType for ContactListDeleteContactRequestEventArgs {
 }
 unsafe impl ::windows_core::Interface for ContactListDeleteContactRequestEventArgs {
     type Vtable = IContactListDeleteContactRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactListDeleteContactRequestEventArgs {
-    const IID: ::windows_core::GUID = <IContactListDeleteContactRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactListDeleteContactRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactListDeleteContactRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Contacts.DataProvider.ContactListDeleteContactRequestEventArgs";
@@ -436,9 +424,7 @@ impl ::windows_core::RuntimeType for ContactListServerSearchReadBatchRequest {
 }
 unsafe impl ::windows_core::Interface for ContactListServerSearchReadBatchRequest {
     type Vtable = IContactListServerSearchReadBatchRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactListServerSearchReadBatchRequest {
-    const IID: ::windows_core::GUID = <IContactListServerSearchReadBatchRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactListServerSearchReadBatchRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactListServerSearchReadBatchRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Contacts.DataProvider.ContactListServerSearchReadBatchRequest";
@@ -470,9 +456,7 @@ impl ::windows_core::RuntimeType for ContactListServerSearchReadBatchRequestEven
 }
 unsafe impl ::windows_core::Interface for ContactListServerSearchReadBatchRequestEventArgs {
     type Vtable = IContactListServerSearchReadBatchRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactListServerSearchReadBatchRequestEventArgs {
-    const IID: ::windows_core::GUID = <IContactListServerSearchReadBatchRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactListServerSearchReadBatchRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactListServerSearchReadBatchRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Contacts.DataProvider.ContactListServerSearchReadBatchRequestEventArgs";
@@ -511,9 +495,7 @@ impl ::windows_core::RuntimeType for ContactListSyncManagerSyncRequest {
 }
 unsafe impl ::windows_core::Interface for ContactListSyncManagerSyncRequest {
     type Vtable = IContactListSyncManagerSyncRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactListSyncManagerSyncRequest {
-    const IID: ::windows_core::GUID = <IContactListSyncManagerSyncRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactListSyncManagerSyncRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactListSyncManagerSyncRequest {
     const NAME: &'static str = "Windows.ApplicationModel.Contacts.DataProvider.ContactListSyncManagerSyncRequest";
@@ -545,9 +527,7 @@ impl ::windows_core::RuntimeType for ContactListSyncManagerSyncRequestEventArgs 
 }
 unsafe impl ::windows_core::Interface for ContactListSyncManagerSyncRequestEventArgs {
     type Vtable = IContactListSyncManagerSyncRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ContactListSyncManagerSyncRequestEventArgs {
-    const IID: ::windows_core::GUID = <IContactListSyncManagerSyncRequestEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IContactListSyncManagerSyncRequestEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ContactListSyncManagerSyncRequestEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Contacts.DataProvider.ContactListSyncManagerSyncRequestEventArgs";

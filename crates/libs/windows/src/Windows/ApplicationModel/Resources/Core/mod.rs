@@ -251,9 +251,7 @@ impl ::windows_core::RuntimeType for NamedResource {
 }
 unsafe impl ::windows_core::Interface for NamedResource {
     type Vtable = INamedResource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NamedResource {
-    const IID: ::windows_core::GUID = <INamedResource as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INamedResource as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NamedResource {
     const NAME: &'static str = "Windows.ApplicationModel.Resources.Core.NamedResource";
@@ -321,14 +319,14 @@ impl ResourceCandidate {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn GetValueAsStreamAsync(&self) -> ::windows_core::Result<super::super::super::Foundation::IAsyncOperation<super::super::super::Storage::Streams::IRandomAccessStream>> {
-        let this = &::windows_core::ComInterface::cast::<IResourceCandidate2>(self)?;
+        let this = &::windows_core::Interface::cast::<IResourceCandidate2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetValueAsStreamAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Kind(&self) -> ::windows_core::Result<ResourceCandidateKind> {
-        let this = &::windows_core::ComInterface::cast::<IResourceCandidate3>(self)?;
+        let this = &::windows_core::Interface::cast::<IResourceCandidate3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -340,9 +338,7 @@ impl ::windows_core::RuntimeType for ResourceCandidate {
 }
 unsafe impl ::windows_core::Interface for ResourceCandidate {
     type Vtable = IResourceCandidate_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ResourceCandidate {
-    const IID: ::windows_core::GUID = <IResourceCandidate as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IResourceCandidate as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ResourceCandidate {
     const NAME: &'static str = "Windows.ApplicationModel.Resources.Core.ResourceCandidate";
@@ -360,7 +356,7 @@ impl ResourceCandidateVectorView {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IIterator<ResourceCandidate>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IIterable<ResourceCandidate>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IIterable<ResourceCandidate>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -413,10 +409,7 @@ impl ::windows_core::RuntimeType for ResourceCandidateVectorView {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for ResourceCandidateVectorView {
     type Vtable = super::super::super::Foundation::Collections::IVectorView_Vtbl<ResourceCandidate>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for ResourceCandidateVectorView {
-    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IVectorView<ResourceCandidate> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IVectorView<ResourceCandidate> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for ResourceCandidateVectorView {
@@ -435,7 +428,7 @@ impl ::core::iter::IntoIterator for &ResourceCandidateVectorView {
     type Item = ResourceCandidate;
     type IntoIter = super::super::super::Foundation::Collections::VectorViewIterator<Self::Item>;
     fn into_iter(self) -> Self::IntoIter {
-        super::super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::ComInterface::cast(self).ok())
+        super::super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::Interface::cast(self).ok())
     }
 }
 #[cfg(feature = "Foundation_Collections")]
@@ -590,9 +583,7 @@ impl ::windows_core::RuntimeType for ResourceContext {
 }
 unsafe impl ::windows_core::Interface for ResourceContext {
     type Vtable = IResourceContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ResourceContext {
-    const IID: ::windows_core::GUID = <IResourceContext as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IResourceContext as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ResourceContext {
     const NAME: &'static str = "Windows.ApplicationModel.Resources.Core.ResourceContext";
@@ -610,7 +601,7 @@ impl ResourceContextLanguagesVectorView {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IIterator<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -660,10 +651,7 @@ impl ::windows_core::RuntimeType for ResourceContextLanguagesVectorView {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for ResourceContextLanguagesVectorView {
     type Vtable = super::super::super::Foundation::Collections::IVectorView_Vtbl<::windows_core::HSTRING>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for ResourceContextLanguagesVectorView {
-    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IVectorView<::windows_core::HSTRING> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IVectorView<::windows_core::HSTRING> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for ResourceContextLanguagesVectorView {
@@ -682,7 +670,7 @@ impl ::core::iter::IntoIterator for &ResourceContextLanguagesVectorView {
     type Item = ::windows_core::HSTRING;
     type IntoIter = super::super::super::Foundation::Collections::VectorViewIterator<Self::Item>;
     fn into_iter(self) -> Self::IntoIter {
-        super::super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::ComInterface::cast(self).ok())
+        super::super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::Interface::cast(self).ok())
     }
 }
 #[cfg(feature = "Foundation_Collections")]
@@ -741,7 +729,7 @@ impl ResourceManager {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetAllNamedResourcesForPackage(&self, packagename: &::windows_core::HSTRING, resourcelayoutinfo: ResourceLayoutInfo) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVectorView<NamedResource>> {
-        let this = &::windows_core::ComInterface::cast::<IResourceManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IResourceManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetAllNamedResourcesForPackage)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(packagename), resourcelayoutinfo, &mut result__).from_abi(result__)
@@ -750,7 +738,7 @@ impl ResourceManager {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetAllSubtreesForPackage(&self, packagename: &::windows_core::HSTRING, resourcelayoutinfo: ResourceLayoutInfo) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVectorView<ResourceMap>> {
-        let this = &::windows_core::ComInterface::cast::<IResourceManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IResourceManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetAllSubtreesForPackage)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(packagename), resourcelayoutinfo, &mut result__).from_abi(result__)
@@ -779,9 +767,7 @@ impl ::windows_core::RuntimeType for ResourceManager {
 }
 unsafe impl ::windows_core::Interface for ResourceManager {
     type Vtable = IResourceManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ResourceManager {
-    const IID: ::windows_core::GUID = <IResourceManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IResourceManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ResourceManager {
     const NAME: &'static str = "Windows.ApplicationModel.Resources.Core.ResourceManager";
@@ -796,7 +782,7 @@ impl ResourceMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IIterator<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, NamedResource>>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, NamedResource>>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, NamedResource>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -805,7 +791,7 @@ impl ResourceMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Lookup(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<NamedResource> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, NamedResource>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, NamedResource>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Lookup)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -814,7 +800,7 @@ impl ResourceMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, NamedResource>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, NamedResource>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -823,7 +809,7 @@ impl ResourceMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn HasKey(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, NamedResource>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, NamedResource>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasKey)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -832,7 +818,7 @@ impl ResourceMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Split(&self, first: &mut ::core::option::Option<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, NamedResource>>, second: &mut ::core::option::Option<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, NamedResource>>) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, NamedResource>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, NamedResource>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Split)(::windows_core::Interface::as_raw(this), first as *mut _ as _, second as *mut _ as _).ok() }
     }
     pub fn Uri(&self) -> ::windows_core::Result<super::super::super::Foundation::Uri> {
@@ -872,9 +858,7 @@ impl ::windows_core::RuntimeType for ResourceMap {
 }
 unsafe impl ::windows_core::Interface for ResourceMap {
     type Vtable = IResourceMap_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ResourceMap {
-    const IID: ::windows_core::GUID = <IResourceMap as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IResourceMap as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ResourceMap {
     const NAME: &'static str = "Windows.ApplicationModel.Resources.Core.ResourceMap";
@@ -951,10 +935,7 @@ impl ::windows_core::RuntimeType for ResourceMapIterator {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for ResourceMapIterator {
     type Vtable = super::super::super::Foundation::Collections::IIterator_Vtbl<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, NamedResource>>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for ResourceMapIterator {
-    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IIterator<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, NamedResource>> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IIterator<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, NamedResource>> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for ResourceMapIterator {
@@ -978,7 +959,7 @@ impl ResourceMapMapView {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IIterator<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ResourceMap>>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ResourceMap>>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ResourceMap>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1025,10 +1006,7 @@ impl ::windows_core::RuntimeType for ResourceMapMapView {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for ResourceMapMapView {
     type Vtable = super::super::super::Foundation::Collections::IMapView_Vtbl<::windows_core::HSTRING, ResourceMap>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for ResourceMapMapView {
-    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ResourceMap> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ResourceMap> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for ResourceMapMapView {
@@ -1109,10 +1087,7 @@ impl ::windows_core::RuntimeType for ResourceMapMapViewIterator {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for ResourceMapMapViewIterator {
     type Vtable = super::super::super::Foundation::Collections::IIterator_Vtbl<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ResourceMap>>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for ResourceMapMapViewIterator {
-    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IIterator<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ResourceMap>> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IIterator<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ResourceMap>> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for ResourceMapMapViewIterator {
@@ -1171,9 +1146,7 @@ impl ::windows_core::RuntimeType for ResourceQualifier {
 }
 unsafe impl ::windows_core::Interface for ResourceQualifier {
     type Vtable = IResourceQualifier_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ResourceQualifier {
-    const IID: ::windows_core::GUID = <IResourceQualifier as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IResourceQualifier as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ResourceQualifier {
     const NAME: &'static str = "Windows.ApplicationModel.Resources.Core.ResourceQualifier";
@@ -1191,7 +1164,7 @@ impl ResourceQualifierMapView {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IIterator<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1238,10 +1211,7 @@ impl ::windows_core::RuntimeType for ResourceQualifierMapView {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for ResourceQualifierMapView {
     type Vtable = super::super::super::Foundation::Collections::IMapView_Vtbl<::windows_core::HSTRING, ::windows_core::HSTRING>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for ResourceQualifierMapView {
-    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::HSTRING> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::HSTRING> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for ResourceQualifierMapView {
@@ -1281,7 +1251,7 @@ impl ResourceQualifierObservableMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IIterator<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1290,7 +1260,7 @@ impl ResourceQualifierObservableMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Lookup(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Lookup)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -1299,7 +1269,7 @@ impl ResourceQualifierObservableMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1308,7 +1278,7 @@ impl ResourceQualifierObservableMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn HasKey(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasKey)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -1317,7 +1287,7 @@ impl ResourceQualifierObservableMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetView(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetView)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1326,7 +1296,7 @@ impl ResourceQualifierObservableMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Insert(&self, key: &::windows_core::HSTRING, value: &::windows_core::HSTRING) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Insert)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), ::core::mem::transmute_copy(value), &mut result__).from_abi(result__)
@@ -1335,13 +1305,13 @@ impl ResourceQualifierObservableMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Remove(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Clear(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Clear)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -1370,10 +1340,7 @@ impl ::windows_core::RuntimeType for ResourceQualifierObservableMap {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for ResourceQualifierObservableMap {
     type Vtable = super::super::super::Foundation::Collections::IObservableMap_Vtbl<::windows_core::HSTRING, ::windows_core::HSTRING>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for ResourceQualifierObservableMap {
-    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IObservableMap<::windows_core::HSTRING, ::windows_core::HSTRING> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IObservableMap<::windows_core::HSTRING, ::windows_core::HSTRING> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for ResourceQualifierObservableMap {
@@ -1413,7 +1380,7 @@ impl ResourceQualifierVectorView {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IIterator<ResourceQualifier>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IIterable<ResourceQualifier>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IIterable<ResourceQualifier>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1466,10 +1433,7 @@ impl ::windows_core::RuntimeType for ResourceQualifierVectorView {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for ResourceQualifierVectorView {
     type Vtable = super::super::super::Foundation::Collections::IVectorView_Vtbl<ResourceQualifier>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for ResourceQualifierVectorView {
-    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IVectorView<ResourceQualifier> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IVectorView<ResourceQualifier> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for ResourceQualifierVectorView {
@@ -1488,7 +1452,7 @@ impl ::core::iter::IntoIterator for &ResourceQualifierVectorView {
     type Item = ResourceQualifier;
     type IntoIter = super::super::super::Foundation::Collections::VectorViewIterator<Self::Item>;
     fn into_iter(self) -> Self::IntoIter {
-        super::super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::ComInterface::cast(self).ok())
+        super::super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::Interface::cast(self).ok())
     }
 }
 #[cfg(feature = "Foundation_Collections")]

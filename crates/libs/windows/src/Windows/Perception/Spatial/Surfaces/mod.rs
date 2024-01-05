@@ -177,9 +177,7 @@ impl ::windows_core::RuntimeType for SpatialSurfaceInfo {
 }
 unsafe impl ::windows_core::Interface for SpatialSurfaceInfo {
     type Vtable = ISpatialSurfaceInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpatialSurfaceInfo {
-    const IID: ::windows_core::GUID = <ISpatialSurfaceInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpatialSurfaceInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpatialSurfaceInfo {
     const NAME: &'static str = "Windows.Perception.Spatial.Surfaces.SpatialSurfaceInfo";
@@ -241,9 +239,7 @@ impl ::windows_core::RuntimeType for SpatialSurfaceMesh {
 }
 unsafe impl ::windows_core::Interface for SpatialSurfaceMesh {
     type Vtable = ISpatialSurfaceMesh_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpatialSurfaceMesh {
-    const IID: ::windows_core::GUID = <ISpatialSurfaceMesh as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpatialSurfaceMesh as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpatialSurfaceMesh {
     const NAME: &'static str = "Windows.Perception.Spatial.Surfaces.SpatialSurfaceMesh";
@@ -293,9 +289,7 @@ impl ::windows_core::RuntimeType for SpatialSurfaceMeshBuffer {
 }
 unsafe impl ::windows_core::Interface for SpatialSurfaceMeshBuffer {
     type Vtable = ISpatialSurfaceMeshBuffer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpatialSurfaceMeshBuffer {
-    const IID: ::windows_core::GUID = <ISpatialSurfaceMeshBuffer as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpatialSurfaceMeshBuffer as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpatialSurfaceMeshBuffer {
     const NAME: &'static str = "Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshBuffer";
@@ -405,9 +399,7 @@ impl ::windows_core::RuntimeType for SpatialSurfaceMeshOptions {
 }
 unsafe impl ::windows_core::Interface for SpatialSurfaceMeshOptions {
     type Vtable = ISpatialSurfaceMeshOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpatialSurfaceMeshOptions {
-    const IID: ::windows_core::GUID = <ISpatialSurfaceMeshOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpatialSurfaceMeshOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpatialSurfaceMeshOptions {
     const NAME: &'static str = "Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshOptions";
@@ -493,9 +485,7 @@ impl ::windows_core::RuntimeType for SpatialSurfaceObserver {
 }
 unsafe impl ::windows_core::Interface for SpatialSurfaceObserver {
     type Vtable = ISpatialSurfaceObserver_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpatialSurfaceObserver {
-    const IID: ::windows_core::GUID = <ISpatialSurfaceObserver as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpatialSurfaceObserver as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpatialSurfaceObserver {
     const NAME: &'static str = "Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver";

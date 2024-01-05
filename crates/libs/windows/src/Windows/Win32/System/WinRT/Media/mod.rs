@@ -2,7 +2,7 @@
 impl IAudioFrameNative {
     pub unsafe fn GetData<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetData)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -23,7 +23,7 @@ impl IAudioFrameNativeFactory {
     where
         P0: ::windows_core::IntoParam<super::super::super::Media::MediaFoundation::IMFSample>,
         P1: ::windows_core::IntoParam<super::super::super::Foundation::BOOL>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateFromMFSample)(::windows_core::Interface::as_raw(self), data.into_param().abi(), forcereadonly.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -43,14 +43,14 @@ pub struct IAudioFrameNativeFactory_Vtbl {
 impl IVideoFrameNative {
     pub unsafe fn GetData<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetData)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -73,7 +73,7 @@ impl IVideoFrameNativeFactory {
         P0: ::windows_core::IntoParam<super::super::super::Media::MediaFoundation::IMFSample>,
         P1: ::windows_core::IntoParam<super::super::super::Foundation::BOOL>,
         P2: ::windows_core::IntoParam<super::super::super::Media::MediaFoundation::IMFDXGIDeviceManager>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateFromMFSample)(::windows_core::Interface::as_raw(self), data.into_param().abi(), subtype, width, height, forcereadonly.into_param().abi(), ::core::mem::transmute(mindisplayaperture.unwrap_or(::std::ptr::null())), device.into_param().abi(), &T::IID, &mut result__).from_abi(result__)

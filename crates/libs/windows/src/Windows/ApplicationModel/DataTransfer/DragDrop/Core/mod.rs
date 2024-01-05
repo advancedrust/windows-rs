@@ -192,9 +192,7 @@ impl ::windows_core::RuntimeType for CoreDragDropManager {
 }
 unsafe impl ::windows_core::Interface for CoreDragDropManager {
     type Vtable = ICoreDragDropManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreDragDropManager {
-    const IID: ::windows_core::GUID = <ICoreDragDropManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreDragDropManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreDragDropManager {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragDropManager";
@@ -228,7 +226,7 @@ impl CoreDragInfo {
         }
     }
     pub fn AllowedOperations(&self) -> ::windows_core::Result<super::super::DataPackageOperation> {
-        let this = &::windows_core::ComInterface::cast::<ICoreDragInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreDragInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AllowedOperations)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -240,9 +238,7 @@ impl ::windows_core::RuntimeType for CoreDragInfo {
 }
 unsafe impl ::windows_core::Interface for CoreDragInfo {
     type Vtable = ICoreDragInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreDragInfo {
-    const IID: ::windows_core::GUID = <ICoreDragInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreDragInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreDragInfo {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragInfo";
@@ -309,14 +305,14 @@ impl CoreDragOperation {
         }
     }
     pub fn AllowedOperations(&self) -> ::windows_core::Result<super::super::DataPackageOperation> {
-        let this = &::windows_core::ComInterface::cast::<ICoreDragOperation2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreDragOperation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AllowedOperations)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAllowedOperations(&self, value: super::super::DataPackageOperation) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICoreDragOperation2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreDragOperation2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAllowedOperations)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -325,9 +321,7 @@ impl ::windows_core::RuntimeType for CoreDragOperation {
 }
 unsafe impl ::windows_core::Interface for CoreDragOperation {
     type Vtable = ICoreDragOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreDragOperation {
-    const IID: ::windows_core::GUID = <ICoreDragOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreDragOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreDragOperation {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragOperation";
@@ -411,9 +405,7 @@ impl ::windows_core::RuntimeType for CoreDragUIOverride {
 }
 unsafe impl ::windows_core::Interface for CoreDragUIOverride {
     type Vtable = ICoreDragUIOverride_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreDragUIOverride {
-    const IID: ::windows_core::GUID = <ICoreDragUIOverride as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreDragUIOverride as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreDragUIOverride {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDragUIOverride";
@@ -438,9 +430,7 @@ impl ::windows_core::RuntimeType for CoreDropOperationTargetRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for CoreDropOperationTargetRequestedEventArgs {
     type Vtable = ICoreDropOperationTargetRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreDropOperationTargetRequestedEventArgs {
-    const IID: ::windows_core::GUID = <ICoreDropOperationTargetRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreDropOperationTargetRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreDropOperationTargetRequestedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DragDrop.Core.CoreDropOperationTargetRequestedEventArgs";

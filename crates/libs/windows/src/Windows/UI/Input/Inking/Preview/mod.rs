@@ -23,7 +23,7 @@ pub struct IPalmRejectionDelayZonePreviewStatics_Vtbl {
 pub struct PalmRejectionDelayZonePreview(::windows_core::IUnknown);
 impl PalmRejectionDelayZonePreview {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"UI_Composition\"`"]
@@ -60,9 +60,7 @@ impl ::windows_core::RuntimeType for PalmRejectionDelayZonePreview {
 }
 unsafe impl ::windows_core::Interface for PalmRejectionDelayZonePreview {
     type Vtable = IPalmRejectionDelayZonePreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PalmRejectionDelayZonePreview {
-    const IID: ::windows_core::GUID = <IPalmRejectionDelayZonePreview as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPalmRejectionDelayZonePreview as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PalmRejectionDelayZonePreview {
     const NAME: &'static str = "Windows.UI.Input.Inking.Preview.PalmRejectionDelayZonePreview";

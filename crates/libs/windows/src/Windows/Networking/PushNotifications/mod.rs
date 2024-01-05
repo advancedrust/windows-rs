@@ -168,9 +168,7 @@ impl ::windows_core::RuntimeType for PushNotificationChannel {
 }
 unsafe impl ::windows_core::Interface for PushNotificationChannel {
     type Vtable = IPushNotificationChannel_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PushNotificationChannel {
-    const IID: ::windows_core::GUID = <IPushNotificationChannel as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPushNotificationChannel as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PushNotificationChannel {
     const NAME: &'static str = "Windows.Networking.PushNotifications.PushNotificationChannel";
@@ -291,7 +289,7 @@ impl PushNotificationChannelManagerForUser {
     where
         P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
-        let this = &::windows_core::ComInterface::cast::<IPushNotificationChannelManagerForUser2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPushNotificationChannelManagerForUser2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateRawPushNotificationChannelWithAlternateKeyForApplicationAsync)(::windows_core::Interface::as_raw(this), appserverkey.into_param().abi(), ::core::mem::transmute_copy(channelid), &mut result__).from_abi(result__)
@@ -303,7 +301,7 @@ impl PushNotificationChannelManagerForUser {
     where
         P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
-        let this = &::windows_core::ComInterface::cast::<IPushNotificationChannelManagerForUser2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPushNotificationChannelManagerForUser2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateRawPushNotificationChannelWithAlternateKeyForApplicationAsyncWithId)(::windows_core::Interface::as_raw(this), appserverkey.into_param().abi(), ::core::mem::transmute_copy(channelid), ::core::mem::transmute_copy(appid), &mut result__).from_abi(result__)
@@ -315,9 +313,7 @@ impl ::windows_core::RuntimeType for PushNotificationChannelManagerForUser {
 }
 unsafe impl ::windows_core::Interface for PushNotificationChannelManagerForUser {
     type Vtable = IPushNotificationChannelManagerForUser_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PushNotificationChannelManagerForUser {
-    const IID: ::windows_core::GUID = <IPushNotificationChannelManagerForUser as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPushNotificationChannelManagerForUser as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PushNotificationChannelManagerForUser {
     const NAME: &'static str = "Windows.Networking.PushNotifications.PushNotificationChannelManagerForUser";
@@ -334,9 +330,7 @@ impl ::windows_core::RuntimeType for PushNotificationChannelsRevokedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PushNotificationChannelsRevokedEventArgs {
     type Vtable = IPushNotificationChannelsRevokedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PushNotificationChannelsRevokedEventArgs {
-    const IID: ::windows_core::GUID = <IPushNotificationChannelsRevokedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPushNotificationChannelsRevokedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PushNotificationChannelsRevokedEventArgs {
     const NAME: &'static str = "Windows.Networking.PushNotifications.PushNotificationChannelsRevokedEventArgs";
@@ -406,9 +400,7 @@ impl ::windows_core::RuntimeType for PushNotificationReceivedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PushNotificationReceivedEventArgs {
     type Vtable = IPushNotificationReceivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PushNotificationReceivedEventArgs {
-    const IID: ::windows_core::GUID = <IPushNotificationReceivedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPushNotificationReceivedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PushNotificationReceivedEventArgs {
     const NAME: &'static str = "Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs";
@@ -430,14 +422,14 @@ impl RawNotification {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Headers(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<IRawNotification2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRawNotification2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Headers)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ChannelId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IRawNotification2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRawNotification2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ChannelId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -446,7 +438,7 @@ impl RawNotification {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn ContentBytes(&self) -> ::windows_core::Result<super::super::Storage::Streams::IBuffer> {
-        let this = &::windows_core::ComInterface::cast::<IRawNotification3>(self)?;
+        let this = &::windows_core::Interface::cast::<IRawNotification3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContentBytes)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -458,9 +450,7 @@ impl ::windows_core::RuntimeType for RawNotification {
 }
 unsafe impl ::windows_core::Interface for RawNotification {
     type Vtable = IRawNotification_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RawNotification {
-    const IID: ::windows_core::GUID = <IRawNotification as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRawNotification as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RawNotification {
     const NAME: &'static str = "Windows.Networking.PushNotifications.RawNotification";

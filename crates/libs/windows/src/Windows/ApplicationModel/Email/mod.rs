@@ -847,83 +847,83 @@ impl EmailAttachment {
         unsafe { (::windows_core::Interface::vtable(this).SetData)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Id(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Id)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ContentId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContentId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetContentId(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetContentId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn ContentLocation(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContentLocation)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetContentLocation(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetContentLocation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn DownloadState(&self) -> ::windows_core::Result<EmailAttachmentDownloadState> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DownloadState)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetDownloadState(&self, value: EmailAttachmentDownloadState) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDownloadState)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn EstimatedDownloadSizeInBytes(&self) -> ::windows_core::Result<u64> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EstimatedDownloadSizeInBytes)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetEstimatedDownloadSizeInBytes(&self, value: u64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetEstimatedDownloadSizeInBytes)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsFromBaseMessage(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsFromBaseMessage)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsInline(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsInline)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsInline(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsInline)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn MimeType(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MimeType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetMimeType(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailAttachment2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMimeType)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -964,9 +964,7 @@ impl ::windows_core::RuntimeType for EmailAttachment {
 }
 unsafe impl ::windows_core::Interface for EmailAttachment {
     type Vtable = IEmailAttachment_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailAttachment {
-    const IID: ::windows_core::GUID = <IEmailAttachment as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailAttachment as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailAttachment {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailAttachment";
@@ -1093,9 +1091,7 @@ impl ::windows_core::RuntimeType for EmailConversation {
 }
 unsafe impl ::windows_core::Interface for EmailConversation {
     type Vtable = IEmailConversation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailConversation {
-    const IID: ::windows_core::GUID = <IEmailConversation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailConversation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailConversation {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailConversation";
@@ -1129,9 +1125,7 @@ impl ::windows_core::RuntimeType for EmailConversationBatch {
 }
 unsafe impl ::windows_core::Interface for EmailConversationBatch {
     type Vtable = IEmailConversationBatch_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailConversationBatch {
-    const IID: ::windows_core::GUID = <IEmailConversationBatch as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailConversationBatch as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailConversationBatch {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailConversationBatch";
@@ -1156,9 +1150,7 @@ impl ::windows_core::RuntimeType for EmailConversationReader {
 }
 unsafe impl ::windows_core::Interface for EmailConversationReader {
     type Vtable = IEmailConversationReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailConversationReader {
-    const IID: ::windows_core::GUID = <IEmailConversationReader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailConversationReader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailConversationReader {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailConversationReader";
@@ -1356,9 +1348,7 @@ impl ::windows_core::RuntimeType for EmailFolder {
 }
 unsafe impl ::windows_core::Interface for EmailFolder {
     type Vtable = IEmailFolder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailFolder {
-    const IID: ::windows_core::GUID = <IEmailFolder as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailFolder as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailFolder {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailFolder";
@@ -1532,9 +1522,7 @@ impl ::windows_core::RuntimeType for EmailIrmInfo {
 }
 unsafe impl ::windows_core::Interface for EmailIrmInfo {
     type Vtable = IEmailIrmInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailIrmInfo {
-    const IID: ::windows_core::GUID = <IEmailIrmInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailIrmInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailIrmInfo {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailIrmInfo";
@@ -1603,9 +1591,7 @@ impl ::windows_core::RuntimeType for EmailIrmTemplate {
 }
 unsafe impl ::windows_core::Interface for EmailIrmTemplate {
     type Vtable = IEmailIrmTemplate_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailIrmTemplate {
-    const IID: ::windows_core::GUID = <IEmailIrmTemplate as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailIrmTemplate as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailIrmTemplate {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailIrmTemplate";
@@ -1651,9 +1637,7 @@ impl ::windows_core::RuntimeType for EmailItemCounts {
 }
 unsafe impl ::windows_core::Interface for EmailItemCounts {
     type Vtable = IEmailItemCounts_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailItemCounts {
-    const IID: ::windows_core::GUID = <IEmailItemCounts as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailItemCounts as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailItemCounts {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailItemCounts";
@@ -2036,21 +2020,21 @@ impl EmailMailbox {
         }
     }
     pub fn LinkedMailboxId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailbox2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailbox2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LinkedMailboxId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn NetworkAccountId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailbox2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailbox2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).NetworkAccountId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn NetworkId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailbox2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailbox2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).NetworkId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2062,7 +2046,7 @@ impl EmailMailbox {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailbox3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailbox3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResolveRecipientsAsync)(::windows_core::Interface::as_raw(this), recipients.into_param().abi(), &mut result__).from_abi(result__)
@@ -2074,42 +2058,42 @@ impl EmailMailbox {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Security::Cryptography::Certificates::Certificate>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailbox3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailbox3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ValidateCertificatesAsync)(::windows_core::Interface::as_raw(this), certificates.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn TryEmptyFolderAsync(&self, folderid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<EmailMailboxEmptyFolderStatus>> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailbox3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailbox3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryEmptyFolderAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(folderid), &mut result__).from_abi(result__)
         }
     }
     pub fn TryCreateFolderAsync(&self, parentfolderid: &::windows_core::HSTRING, name: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<EmailMailboxCreateFolderResult>> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailbox3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailbox3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryCreateFolderAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parentfolderid), ::core::mem::transmute_copy(name), &mut result__).from_abi(result__)
         }
     }
     pub fn TryDeleteFolderAsync(&self, folderid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<EmailMailboxDeleteFolderStatus>> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailbox3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailbox3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryDeleteFolderAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(folderid), &mut result__).from_abi(result__)
         }
     }
     pub fn RegisterSyncManagerAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailbox4>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailbox4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RegisterSyncManagerAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetChangeTracker(&self, identity: &::windows_core::HSTRING) -> ::windows_core::Result<EmailMailboxChangeTracker> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailbox5>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailbox5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetChangeTracker)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(identity), &mut result__).from_abi(result__)
@@ -2121,9 +2105,7 @@ impl ::windows_core::RuntimeType for EmailMailbox {
 }
 unsafe impl ::windows_core::Interface for EmailMailbox {
     type Vtable = IEmailMailbox_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailbox {
-    const IID: ::windows_core::GUID = <IEmailMailbox as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailbox as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailbox {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailbox";
@@ -2155,9 +2137,7 @@ impl ::windows_core::RuntimeType for EmailMailboxAction {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxAction {
     type Vtable = IEmailMailboxAction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxAction {
-    const IID: ::windows_core::GUID = <IEmailMailboxAction as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxAction as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxAction {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailboxAction";
@@ -2197,9 +2177,7 @@ impl ::windows_core::RuntimeType for EmailMailboxAutoReply {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxAutoReply {
     type Vtable = IEmailMailboxAutoReply_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxAutoReply {
-    const IID: ::windows_core::GUID = <IEmailMailboxAutoReply as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxAutoReply as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxAutoReply {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailboxAutoReply";
@@ -2295,9 +2273,7 @@ impl ::windows_core::RuntimeType for EmailMailboxAutoReplySettings {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxAutoReplySettings {
     type Vtable = IEmailMailboxAutoReplySettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxAutoReplySettings {
-    const IID: ::windows_core::GUID = <IEmailMailboxAutoReplySettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxAutoReplySettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxAutoReplySettings {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailboxAutoReplySettings";
@@ -2366,101 +2342,101 @@ impl EmailMailboxCapabilities {
         }
     }
     pub fn CanResolveRecipients(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanResolveRecipients)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CanValidateCertificates(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanValidateCertificates)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CanEmptyFolder(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanEmptyFolder)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CanCreateFolder(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanCreateFolder)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CanDeleteFolder(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanDeleteFolder)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CanMoveFolder(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanMoveFolder)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCanForwardMeetings(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanForwardMeetings)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanGetAndSetExternalAutoReplies(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanGetAndSetExternalAutoReplies)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanGetAndSetInternalAutoReplies(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanGetAndSetInternalAutoReplies)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanUpdateMeetingResponses(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanUpdateMeetingResponses)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanServerSearchFolders(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanServerSearchFolders)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanServerSearchMailbox(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanServerSearchMailbox)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanProposeNewTimeForMeetings(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanProposeNewTimeForMeetings)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanSmartSend(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanSmartSend)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanResolveRecipients(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanResolveRecipients)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanValidateCertificates(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanValidateCertificates)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanEmptyFolder(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanEmptyFolder)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanCreateFolder(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanCreateFolder)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanDeleteFolder(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanDeleteFolder)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetCanMoveFolder(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxCapabilities3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxCapabilities3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanMoveFolder)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -2469,9 +2445,7 @@ impl ::windows_core::RuntimeType for EmailMailboxCapabilities {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxCapabilities {
     type Vtable = IEmailMailboxCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxCapabilities {
-    const IID: ::windows_core::GUID = <IEmailMailboxCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxCapabilities {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailboxCapabilities";
@@ -2519,9 +2493,7 @@ impl ::windows_core::RuntimeType for EmailMailboxChange {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxChange {
     type Vtable = IEmailMailboxChange_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxChange {
-    const IID: ::windows_core::GUID = <IEmailMailboxChange as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxChange as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxChange {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailboxChange";
@@ -2559,9 +2531,7 @@ impl ::windows_core::RuntimeType for EmailMailboxChangeReader {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxChangeReader {
     type Vtable = IEmailMailboxChangeReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxChangeReader {
-    const IID: ::windows_core::GUID = <IEmailMailboxChangeReader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxChangeReader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxChangeReader {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailboxChangeReader";
@@ -2601,9 +2571,7 @@ impl ::windows_core::RuntimeType for EmailMailboxChangeTracker {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxChangeTracker {
     type Vtable = IEmailMailboxChangeTracker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxChangeTracker {
-    const IID: ::windows_core::GUID = <IEmailMailboxChangeTracker as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxChangeTracker as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxChangeTracker {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailboxChangeTracker";
@@ -2625,9 +2593,7 @@ impl ::windows_core::RuntimeType for EmailMailboxChangedDeferral {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxChangedDeferral {
     type Vtable = IEmailMailboxChangedDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxChangedDeferral {
-    const IID: ::windows_core::GUID = <IEmailMailboxChangedDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxChangedDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxChangedDeferral {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailboxChangedDeferral";
@@ -2652,9 +2618,7 @@ impl ::windows_core::RuntimeType for EmailMailboxChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxChangedEventArgs {
     type Vtable = IEmailMailboxChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxChangedEventArgs {
-    const IID: ::windows_core::GUID = <IEmailMailboxChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxChangedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailboxChangedEventArgs";
@@ -2686,9 +2650,7 @@ impl ::windows_core::RuntimeType for EmailMailboxCreateFolderResult {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxCreateFolderResult {
     type Vtable = IEmailMailboxCreateFolderResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxCreateFolderResult {
-    const IID: ::windows_core::GUID = <IEmailMailboxCreateFolderResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxCreateFolderResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxCreateFolderResult {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailboxCreateFolderResult";
@@ -2729,47 +2691,47 @@ impl EmailMailboxPolicies {
         }
     }
     pub fn MustEncryptSmimeMessages(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxPolicies2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxPolicies2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MustEncryptSmimeMessages)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn MustSignSmimeMessages(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxPolicies2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxPolicies2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MustSignSmimeMessages)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAllowedSmimeEncryptionAlgorithmNegotiation(&self, value: EmailMailboxAllowedSmimeEncryptionAlgorithmNegotiation) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxPolicies3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxPolicies3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAllowedSmimeEncryptionAlgorithmNegotiation)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetAllowSmimeSoftCertificates(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxPolicies3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxPolicies3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAllowSmimeSoftCertificates)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetRequiredSmimeEncryptionAlgorithm<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::IReference<EmailMailboxSmimeEncryptionAlgorithm>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxPolicies3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxPolicies3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetRequiredSmimeEncryptionAlgorithm)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn SetRequiredSmimeSigningAlgorithm<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::IReference<EmailMailboxSmimeSigningAlgorithm>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxPolicies3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxPolicies3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetRequiredSmimeSigningAlgorithm)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn SetMustEncryptSmimeMessages(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxPolicies3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxPolicies3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMustEncryptSmimeMessages)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetMustSignSmimeMessages(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxPolicies3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxPolicies3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMustSignSmimeMessages)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -2778,9 +2740,7 @@ impl ::windows_core::RuntimeType for EmailMailboxPolicies {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxPolicies {
     type Vtable = IEmailMailboxPolicies_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxPolicies {
-    const IID: ::windows_core::GUID = <IEmailMailboxPolicies as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxPolicies as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxPolicies {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailboxPolicies";
@@ -2835,15 +2795,15 @@ impl EmailMailboxSyncManager {
         unsafe { (::windows_core::Interface::vtable(this).RemoveSyncStatusChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn SetStatus(&self, value: EmailMailboxSyncStatus) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxSyncManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxSyncManager2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStatus)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetLastSuccessfulSyncTime(&self, value: super::super::Foundation::DateTime) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxSyncManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxSyncManager2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetLastSuccessfulSyncTime)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetLastAttemptedSyncTime(&self, value: super::super::Foundation::DateTime) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMailboxSyncManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMailboxSyncManager2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetLastAttemptedSyncTime)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -2852,9 +2812,7 @@ impl ::windows_core::RuntimeType for EmailMailboxSyncManager {
 }
 unsafe impl ::windows_core::Interface for EmailMailboxSyncManager {
     type Vtable = IEmailMailboxSyncManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMailboxSyncManager {
-    const IID: ::windows_core::GUID = <IEmailMailboxSyncManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMailboxSyncManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMailboxSyncManager {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMailboxSyncManager";
@@ -2945,9 +2903,7 @@ impl ::windows_core::RuntimeType for EmailManagerForUser {
 }
 unsafe impl ::windows_core::Interface for EmailManagerForUser {
     type Vtable = IEmailManagerForUser_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailManagerForUser {
-    const IID: ::windows_core::GUID = <IEmailManagerForUser as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailManagerForUser as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailManagerForUser {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailManagerForUser";
@@ -3129,7 +3085,7 @@ impl EmailMeetingInfo {
         unsafe { (::windows_core::Interface::vtable(this).SetStartTime)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsReportedOutOfDateByServer(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMeetingInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMeetingInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsReportedOutOfDateByServer)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3141,9 +3097,7 @@ impl ::windows_core::RuntimeType for EmailMeetingInfo {
 }
 unsafe impl ::windows_core::Interface for EmailMeetingInfo {
     type Vtable = IEmailMeetingInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMeetingInfo {
-    const IID: ::windows_core::GUID = <IEmailMeetingInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMeetingInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMeetingInfo {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMeetingInfo";
@@ -3221,122 +3175,122 @@ impl EmailMessage {
         }
     }
     pub fn Id(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Id)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoteId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RemoteId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetRemoteId(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetRemoteId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn MailboxId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MailboxId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConversationId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConversationId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn FolderId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FolderId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AllowInternetImages(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AllowInternetImages)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAllowInternetImages(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAllowInternetImages)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ChangeNumber(&self) -> ::windows_core::Result<u64> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ChangeNumber)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn DownloadState(&self) -> ::windows_core::Result<EmailMessageDownloadState> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DownloadState)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetDownloadState(&self, value: EmailMessageDownloadState) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDownloadState)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn EstimatedDownloadSizeInBytes(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EstimatedDownloadSizeInBytes)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetEstimatedDownloadSizeInBytes(&self, value: u32) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetEstimatedDownloadSizeInBytes)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn FlagState(&self) -> ::windows_core::Result<EmailFlagState> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FlagState)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetFlagState(&self, value: EmailFlagState) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetFlagState)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn HasPartialBodies(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasPartialBodies)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Importance(&self) -> ::windows_core::Result<EmailImportance> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Importance)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetImportance(&self, value: EmailImportance) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetImportance)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn InResponseToMessageId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).InResponseToMessageId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IrmInfo(&self) -> ::windows_core::Result<EmailIrmInfo> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IrmInfo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3346,105 +3300,105 @@ impl EmailMessage {
     where
         P0: ::windows_core::IntoParam<EmailIrmInfo>,
     {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIrmInfo)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn IsDraftMessage(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsDraftMessage)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsRead(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsRead)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsRead(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsRead)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsSeen(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsSeen)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsSeen(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsSeen)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsServerSearchMessage(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsServerSearchMessage)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsSmartSendable(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsSmartSendable)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn MessageClass(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MessageClass)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetMessageClass(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMessageClass)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn NormalizedSubject(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).NormalizedSubject)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn OriginalCodePage(&self) -> ::windows_core::Result<i32> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OriginalCodePage)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOriginalCodePage(&self, value: i32) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOriginalCodePage)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Preview(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Preview)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetPreview(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPreview)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn LastResponseKind(&self) -> ::windows_core::Result<EmailMessageResponseKind> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LastResponseKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetLastResponseKind(&self, value: EmailMessageResponseKind) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetLastResponseKind)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Sender(&self) -> ::windows_core::Result<EmailRecipient> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Sender)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3454,11 +3408,11 @@ impl EmailMessage {
     where
         P0: ::windows_core::IntoParam<EmailRecipient>,
     {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSender)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn SentTime(&self) -> ::windows_core::Result<super::super::Foundation::IReference<super::super::Foundation::DateTime>> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SentTime)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3468,11 +3422,11 @@ impl EmailMessage {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::DateTime>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSentTime)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn MeetingInfo(&self) -> ::windows_core::Result<EmailMeetingInfo> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MeetingInfo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3482,13 +3436,13 @@ impl EmailMessage {
     where
         P0: ::windows_core::IntoParam<EmailMeetingInfo>,
     {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMeetingInfo)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn GetBodyStream(&self, r#type: EmailMessageBodyKind) -> ::windows_core::Result<super::super::Storage::Streams::IRandomAccessStreamReference> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetBodyStream)(::windows_core::Interface::as_raw(this), r#type, &mut result__).from_abi(result__)
@@ -3500,13 +3454,13 @@ impl EmailMessage {
     where
         P0: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStreamReference>,
     {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetBodyStream)(::windows_core::Interface::as_raw(this), r#type, stream.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn SmimeData(&self) -> ::windows_core::Result<super::super::Storage::Streams::IRandomAccessStreamReference> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SmimeData)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3518,31 +3472,31 @@ impl EmailMessage {
     where
         P0: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStreamReference>,
     {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSmimeData)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn SmimeKind(&self) -> ::windows_core::Result<EmailMessageSmimeKind> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SmimeKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetSmimeKind(&self, value: EmailMessageSmimeKind) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage3>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSmimeKind)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn ReplyTo(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<EmailRecipient>> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage4>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReplyTo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SentRepresenting(&self) -> ::windows_core::Result<EmailRecipient> {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage4>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SentRepresenting)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3552,7 +3506,7 @@ impl EmailMessage {
     where
         P0: ::windows_core::IntoParam<EmailRecipient>,
     {
-        let this = &::windows_core::ComInterface::cast::<IEmailMessage4>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailMessage4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSentRepresenting)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
@@ -3561,9 +3515,7 @@ impl ::windows_core::RuntimeType for EmailMessage {
 }
 unsafe impl ::windows_core::Interface for EmailMessage {
     type Vtable = IEmailMessage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMessage {
-    const IID: ::windows_core::GUID = <IEmailMessage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMessage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMessage {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMessage";
@@ -3597,9 +3549,7 @@ impl ::windows_core::RuntimeType for EmailMessageBatch {
 }
 unsafe impl ::windows_core::Interface for EmailMessageBatch {
     type Vtable = IEmailMessageBatch_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMessageBatch {
-    const IID: ::windows_core::GUID = <IEmailMessageBatch as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMessageBatch as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMessageBatch {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMessageBatch";
@@ -3624,9 +3574,7 @@ impl ::windows_core::RuntimeType for EmailMessageReader {
 }
 unsafe impl ::windows_core::Interface for EmailMessageReader {
     type Vtable = IEmailMessageReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailMessageReader {
-    const IID: ::windows_core::GUID = <IEmailMessageReader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailMessageReader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailMessageReader {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailMessageReader";
@@ -3717,9 +3665,7 @@ impl ::windows_core::RuntimeType for EmailQueryOptions {
 }
 unsafe impl ::windows_core::Interface for EmailQueryOptions {
     type Vtable = IEmailQueryOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailQueryOptions {
-    const IID: ::windows_core::GUID = <IEmailQueryOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailQueryOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailQueryOptions {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailQueryOptions";
@@ -3770,9 +3716,7 @@ impl ::windows_core::RuntimeType for EmailQueryTextSearch {
 }
 unsafe impl ::windows_core::Interface for EmailQueryTextSearch {
     type Vtable = IEmailQueryTextSearch_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailQueryTextSearch {
-    const IID: ::windows_core::GUID = <IEmailQueryTextSearch as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailQueryTextSearch as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailQueryTextSearch {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailQueryTextSearch";
@@ -3836,9 +3780,7 @@ impl ::windows_core::RuntimeType for EmailRecipient {
 }
 unsafe impl ::windows_core::Interface for EmailRecipient {
     type Vtable = IEmailRecipient_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailRecipient {
-    const IID: ::windows_core::GUID = <IEmailRecipient as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailRecipient as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailRecipient {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailRecipient";
@@ -3874,7 +3816,7 @@ impl EmailRecipientResolutionResult {
         }
     }
     pub fn SetStatus(&self, value: EmailRecipientResolutionStatus) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IEmailRecipientResolutionResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailRecipientResolutionResult2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStatus)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Security_Cryptography_Certificates\"`"]
@@ -3883,7 +3825,7 @@ impl EmailRecipientResolutionResult {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Security::Cryptography::Certificates::Certificate>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IEmailRecipientResolutionResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailRecipientResolutionResult2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPublicKeys)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
@@ -3892,9 +3834,7 @@ impl ::windows_core::RuntimeType for EmailRecipientResolutionResult {
 }
 unsafe impl ::windows_core::Interface for EmailRecipientResolutionResult {
     type Vtable = IEmailRecipientResolutionResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailRecipientResolutionResult {
-    const IID: ::windows_core::GUID = <IEmailRecipientResolutionResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailRecipientResolutionResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailRecipientResolutionResult {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailRecipientResolutionResult";
@@ -3997,9 +3937,7 @@ impl ::windows_core::RuntimeType for EmailStore {
 }
 unsafe impl ::windows_core::Interface for EmailStore {
     type Vtable = IEmailStore_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailStore {
-    const IID: ::windows_core::GUID = <IEmailStore as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailStore as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailStore {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailStore";
@@ -4016,9 +3954,7 @@ impl ::windows_core::RuntimeType for EmailStoreNotificationTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for EmailStoreNotificationTriggerDetails {
     type Vtable = IEmailStoreNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailStoreNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = <IEmailStoreNotificationTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailStoreNotificationTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailStoreNotificationTriggerDetails {
     const NAME: &'static str = "Windows.ApplicationModel.Email.EmailStoreNotificationTriggerDetails";

@@ -164,9 +164,7 @@ impl ::windows_core::RuntimeType for PdfDocument {
 }
 unsafe impl ::windows_core::Interface for PdfDocument {
     type Vtable = IPdfDocument_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PdfDocument {
-    const IID: ::windows_core::GUID = <IPdfDocument as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPdfDocument as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PdfDocument {
     const NAME: &'static str = "Windows.Data.Pdf.PdfDocument";
@@ -179,7 +177,7 @@ unsafe impl ::core::marker::Sync for PdfDocument {}
 pub struct PdfPage(::windows_core::IUnknown);
 impl PdfPage {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -255,9 +253,7 @@ impl ::windows_core::RuntimeType for PdfPage {
 }
 unsafe impl ::windows_core::Interface for PdfPage {
     type Vtable = IPdfPage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PdfPage {
-    const IID: ::windows_core::GUID = <IPdfPage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPdfPage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PdfPage {
     const NAME: &'static str = "Windows.Data.Pdf.PdfPage";
@@ -311,9 +307,7 @@ impl ::windows_core::RuntimeType for PdfPageDimensions {
 }
 unsafe impl ::windows_core::Interface for PdfPageDimensions {
     type Vtable = IPdfPageDimensions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PdfPageDimensions {
-    const IID: ::windows_core::GUID = <IPdfPageDimensions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPdfPageDimensions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PdfPageDimensions {
     const NAME: &'static str = "Windows.Data.Pdf.PdfPageDimensions";
@@ -408,9 +402,7 @@ impl ::windows_core::RuntimeType for PdfPageRenderOptions {
 }
 unsafe impl ::windows_core::Interface for PdfPageRenderOptions {
     type Vtable = IPdfPageRenderOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PdfPageRenderOptions {
-    const IID: ::windows_core::GUID = <IPdfPageRenderOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPdfPageRenderOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PdfPageRenderOptions {
     const NAME: &'static str = "Windows.Data.Pdf.PdfPageRenderOptions";

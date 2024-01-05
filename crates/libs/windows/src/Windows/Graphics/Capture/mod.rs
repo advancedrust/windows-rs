@@ -131,7 +131,7 @@ pub struct IGraphicsCaptureSessionStatics_Vtbl {
 pub struct Direct3D11CaptureFrame(::windows_core::IUnknown);
 impl Direct3D11CaptureFrame {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Graphics_DirectX_Direct3D11\"`"]
@@ -163,9 +163,7 @@ impl ::windows_core::RuntimeType for Direct3D11CaptureFrame {
 }
 unsafe impl ::windows_core::Interface for Direct3D11CaptureFrame {
     type Vtable = IDirect3D11CaptureFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Direct3D11CaptureFrame {
-    const IID: ::windows_core::GUID = <IDirect3D11CaptureFrame as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDirect3D11CaptureFrame as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Direct3D11CaptureFrame {
     const NAME: &'static str = "Windows.Graphics.Capture.Direct3D11CaptureFrame";
@@ -179,7 +177,7 @@ unsafe impl ::core::marker::Sync for Direct3D11CaptureFrame {}
 pub struct Direct3D11CaptureFramePool(::windows_core::IUnknown);
 impl Direct3D11CaptureFramePool {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Graphics_DirectX_Direct3D11\"`"]
@@ -269,9 +267,7 @@ impl ::windows_core::RuntimeType for Direct3D11CaptureFramePool {
 }
 unsafe impl ::windows_core::Interface for Direct3D11CaptureFramePool {
     type Vtable = IDirect3D11CaptureFramePool_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Direct3D11CaptureFramePool {
-    const IID: ::windows_core::GUID = <IDirect3D11CaptureFramePool as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDirect3D11CaptureFramePool as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Direct3D11CaptureFramePool {
     const NAME: &'static str = "Windows.Graphics.Capture.Direct3D11CaptureFramePool";
@@ -372,9 +368,7 @@ impl ::windows_core::RuntimeType for GraphicsCaptureItem {
 }
 unsafe impl ::windows_core::Interface for GraphicsCaptureItem {
     type Vtable = IGraphicsCaptureItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GraphicsCaptureItem {
-    const IID: ::windows_core::GUID = <IGraphicsCaptureItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGraphicsCaptureItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GraphicsCaptureItem {
     const NAME: &'static str = "Windows.Graphics.Capture.GraphicsCaptureItem";
@@ -406,9 +400,7 @@ impl ::windows_core::RuntimeType for GraphicsCapturePicker {
 }
 unsafe impl ::windows_core::Interface for GraphicsCapturePicker {
     type Vtable = IGraphicsCapturePicker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GraphicsCapturePicker {
-    const IID: ::windows_core::GUID = <IGraphicsCapturePicker as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGraphicsCapturePicker as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GraphicsCapturePicker {
     const NAME: &'static str = "Windows.Graphics.Capture.GraphicsCapturePicker";
@@ -421,7 +413,7 @@ unsafe impl ::core::marker::Sync for GraphicsCapturePicker {}
 pub struct GraphicsCaptureSession(::windows_core::IUnknown);
 impl GraphicsCaptureSession {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn StartCapture(&self) -> ::windows_core::Result<()> {
@@ -429,25 +421,25 @@ impl GraphicsCaptureSession {
         unsafe { (::windows_core::Interface::vtable(this).StartCapture)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn IsCursorCaptureEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IGraphicsCaptureSession2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGraphicsCaptureSession2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsCursorCaptureEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsCursorCaptureEnabled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IGraphicsCaptureSession2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGraphicsCaptureSession2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsCursorCaptureEnabled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsBorderRequired(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IGraphicsCaptureSession3>(self)?;
+        let this = &::windows_core::Interface::cast::<IGraphicsCaptureSession3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsBorderRequired)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsBorderRequired(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IGraphicsCaptureSession3>(self)?;
+        let this = &::windows_core::Interface::cast::<IGraphicsCaptureSession3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsBorderRequired)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsSupported() -> ::windows_core::Result<bool> {
@@ -467,9 +459,7 @@ impl ::windows_core::RuntimeType for GraphicsCaptureSession {
 }
 unsafe impl ::windows_core::Interface for GraphicsCaptureSession {
     type Vtable = IGraphicsCaptureSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GraphicsCaptureSession {
-    const IID: ::windows_core::GUID = <IGraphicsCaptureSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGraphicsCaptureSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GraphicsCaptureSession {
     const NAME: &'static str = "Windows.Graphics.Capture.GraphicsCaptureSession";

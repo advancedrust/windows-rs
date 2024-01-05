@@ -195,9 +195,7 @@ impl ::windows_core::RuntimeType for VoiceCommand {
 }
 unsafe impl ::windows_core::Interface for VoiceCommand {
     type Vtable = IVoiceCommand_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VoiceCommand {
-    const IID: ::windows_core::GUID = <IVoiceCommand as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVoiceCommand as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VoiceCommand {
     const NAME: &'static str = "Windows.ApplicationModel.VoiceCommands.VoiceCommand";
@@ -222,9 +220,7 @@ impl ::windows_core::RuntimeType for VoiceCommandCompletedEventArgs {
 }
 unsafe impl ::windows_core::Interface for VoiceCommandCompletedEventArgs {
     type Vtable = IVoiceCommandCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VoiceCommandCompletedEventArgs {
-    const IID: ::windows_core::GUID = <IVoiceCommandCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVoiceCommandCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VoiceCommandCompletedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.VoiceCommands.VoiceCommandCompletedEventArgs";
@@ -249,9 +245,7 @@ impl ::windows_core::RuntimeType for VoiceCommandConfirmationResult {
 }
 unsafe impl ::windows_core::Interface for VoiceCommandConfirmationResult {
     type Vtable = IVoiceCommandConfirmationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VoiceCommandConfirmationResult {
-    const IID: ::windows_core::GUID = <IVoiceCommandConfirmationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVoiceCommandConfirmationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VoiceCommandConfirmationResult {
     const NAME: &'static str = "Windows.ApplicationModel.VoiceCommands.VoiceCommandConfirmationResult";
@@ -374,9 +368,7 @@ impl ::windows_core::RuntimeType for VoiceCommandContentTile {
 }
 unsafe impl ::windows_core::Interface for VoiceCommandContentTile {
     type Vtable = IVoiceCommandContentTile_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VoiceCommandContentTile {
-    const IID: ::windows_core::GUID = <IVoiceCommandContentTile as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVoiceCommandContentTile as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VoiceCommandContentTile {
     const NAME: &'static str = "Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile";
@@ -420,9 +412,7 @@ impl ::windows_core::RuntimeType for VoiceCommandDefinition {
 }
 unsafe impl ::windows_core::Interface for VoiceCommandDefinition {
     type Vtable = IVoiceCommandDefinition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VoiceCommandDefinition {
-    const IID: ::windows_core::GUID = <IVoiceCommandDefinition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVoiceCommandDefinition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VoiceCommandDefinition {
     const NAME: &'static str = "Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinition";
@@ -477,9 +467,7 @@ impl ::windows_core::RuntimeType for VoiceCommandDisambiguationResult {
 }
 unsafe impl ::windows_core::Interface for VoiceCommandDisambiguationResult {
     type Vtable = IVoiceCommandDisambiguationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VoiceCommandDisambiguationResult {
-    const IID: ::windows_core::GUID = <IVoiceCommandDisambiguationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVoiceCommandDisambiguationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VoiceCommandDisambiguationResult {
     const NAME: &'static str = "Windows.ApplicationModel.VoiceCommands.VoiceCommandDisambiguationResult";
@@ -600,9 +588,7 @@ impl ::windows_core::RuntimeType for VoiceCommandResponse {
 }
 unsafe impl ::windows_core::Interface for VoiceCommandResponse {
     type Vtable = IVoiceCommandResponse_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VoiceCommandResponse {
-    const IID: ::windows_core::GUID = <IVoiceCommandResponse as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVoiceCommandResponse as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VoiceCommandResponse {
     const NAME: &'static str = "Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse";
@@ -726,9 +712,7 @@ impl ::windows_core::RuntimeType for VoiceCommandServiceConnection {
 }
 unsafe impl ::windows_core::Interface for VoiceCommandServiceConnection {
     type Vtable = IVoiceCommandServiceConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VoiceCommandServiceConnection {
-    const IID: ::windows_core::GUID = <IVoiceCommandServiceConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVoiceCommandServiceConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VoiceCommandServiceConnection {
     const NAME: &'static str = "Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection";
@@ -775,9 +759,7 @@ impl ::windows_core::RuntimeType for VoiceCommandUserMessage {
 }
 unsafe impl ::windows_core::Interface for VoiceCommandUserMessage {
     type Vtable = IVoiceCommandUserMessage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VoiceCommandUserMessage {
-    const IID: ::windows_core::GUID = <IVoiceCommandUserMessage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVoiceCommandUserMessage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VoiceCommandUserMessage {
     const NAME: &'static str = "Windows.ApplicationModel.VoiceCommands.VoiceCommandUserMessage";

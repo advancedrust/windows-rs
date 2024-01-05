@@ -168,9 +168,7 @@ impl ::windows_core::RuntimeType for ComponentLoadFailedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ComponentLoadFailedEventArgs {
     type Vtable = IComponentLoadFailedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ComponentLoadFailedEventArgs {
-    const IID: ::windows_core::GUID = <IComponentLoadFailedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IComponentLoadFailedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ComponentLoadFailedEventArgs {
     const NAME: &'static str = "Windows.Media.Protection.ComponentLoadFailedEventArgs";
@@ -210,7 +208,7 @@ impl HdcpSession {
         SHARED.call(callback)
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn IsEffectiveProtectionAtLeast(&self, protection: HdcpProtection) -> ::windows_core::Result<bool> {
@@ -254,9 +252,7 @@ impl ::windows_core::RuntimeType for HdcpSession {
 }
 unsafe impl ::windows_core::Interface for HdcpSession {
     type Vtable = IHdcpSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HdcpSession {
-    const IID: ::windows_core::GUID = <IHdcpSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHdcpSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HdcpSession {
     const NAME: &'static str = "Windows.Media.Protection.HdcpSession";
@@ -333,9 +329,7 @@ impl ::windows_core::RuntimeType for MediaProtectionManager {
 }
 unsafe impl ::windows_core::Interface for MediaProtectionManager {
     type Vtable = IMediaProtectionManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaProtectionManager {
-    const IID: ::windows_core::GUID = <IMediaProtectionManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaProtectionManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaProtectionManager {
     const NAME: &'static str = "Windows.Media.Protection.MediaProtectionManager";
@@ -378,9 +372,7 @@ impl ::windows_core::RuntimeType for MediaProtectionPMPServer {
 }
 unsafe impl ::windows_core::Interface for MediaProtectionPMPServer {
     type Vtable = IMediaProtectionPMPServer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaProtectionPMPServer {
-    const IID: ::windows_core::GUID = <IMediaProtectionPMPServer as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaProtectionPMPServer as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaProtectionPMPServer {
     const NAME: &'static str = "Windows.Media.Protection.MediaProtectionPMPServer";
@@ -402,9 +394,7 @@ impl ::windows_core::RuntimeType for MediaProtectionServiceCompletion {
 }
 unsafe impl ::windows_core::Interface for MediaProtectionServiceCompletion {
     type Vtable = IMediaProtectionServiceCompletion_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaProtectionServiceCompletion {
-    const IID: ::windows_core::GUID = <IMediaProtectionServiceCompletion as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaProtectionServiceCompletion as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaProtectionServiceCompletion {
     const NAME: &'static str = "Windows.Media.Protection.MediaProtectionServiceCompletion";
@@ -436,9 +426,7 @@ impl ::windows_core::RuntimeType for ProtectionCapabilities {
 }
 unsafe impl ::windows_core::Interface for ProtectionCapabilities {
     type Vtable = IProtectionCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProtectionCapabilities {
-    const IID: ::windows_core::GUID = <IProtectionCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProtectionCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProtectionCapabilities {
     const NAME: &'static str = "Windows.Media.Protection.ProtectionCapabilities";
@@ -465,9 +453,7 @@ impl ::windows_core::RuntimeType for RevocationAndRenewalInformation {
 }
 unsafe impl ::windows_core::Interface for RevocationAndRenewalInformation {
     type Vtable = IRevocationAndRenewalInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RevocationAndRenewalInformation {
-    const IID: ::windows_core::GUID = <IRevocationAndRenewalInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRevocationAndRenewalInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RevocationAndRenewalInformation {
     const NAME: &'static str = "Windows.Media.Protection.RevocationAndRenewalInformation";
@@ -520,9 +506,7 @@ impl ::windows_core::RuntimeType for RevocationAndRenewalItem {
 }
 unsafe impl ::windows_core::Interface for RevocationAndRenewalItem {
     type Vtable = IRevocationAndRenewalItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RevocationAndRenewalItem {
-    const IID: ::windows_core::GUID = <IRevocationAndRenewalItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRevocationAndRenewalItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RevocationAndRenewalItem {
     const NAME: &'static str = "Windows.Media.Protection.RevocationAndRenewalItem";
@@ -551,7 +535,7 @@ impl ServiceRequestedEventArgs {
     #[doc = "Required features: `\"Media_Playback\"`"]
     #[cfg(feature = "Media_Playback")]
     pub fn MediaPlaybackItem(&self) -> ::windows_core::Result<super::Playback::MediaPlaybackItem> {
-        let this = &::windows_core::ComInterface::cast::<IServiceRequestedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IServiceRequestedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MediaPlaybackItem)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -563,9 +547,7 @@ impl ::windows_core::RuntimeType for ServiceRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ServiceRequestedEventArgs {
     type Vtable = IServiceRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ServiceRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IServiceRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IServiceRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ServiceRequestedEventArgs {
     const NAME: &'static str = "Windows.Media.Protection.ServiceRequestedEventArgs";
@@ -769,7 +751,7 @@ impl<F: FnMut(::core::option::Option<&MediaProtectionManager>, ::core::option::O
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <ComponentLoadFailedEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <ComponentLoadFailedEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -833,7 +815,7 @@ impl<F: FnMut(::core::option::Option<&MediaProtectionManager>) -> ::windows_core
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <RebootNeededEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <RebootNeededEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -898,7 +880,7 @@ impl<F: FnMut(::core::option::Option<&MediaProtectionManager>, ::core::option::O
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <ServiceRequestedEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <ServiceRequestedEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

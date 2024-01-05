@@ -154,9 +154,7 @@ impl ::windows_core::RuntimeType for SpiBusInfo {
 }
 unsafe impl ::windows_core::Interface for SpiBusInfo {
     type Vtable = ISpiBusInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpiBusInfo {
-    const IID: ::windows_core::GUID = <ISpiBusInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpiBusInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpiBusInfo {
     const NAME: &'static str = "Windows.Devices.Spi.SpiBusInfo";
@@ -240,9 +238,7 @@ impl ::windows_core::RuntimeType for SpiConnectionSettings {
 }
 unsafe impl ::windows_core::Interface for SpiConnectionSettings {
     type Vtable = ISpiConnectionSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpiConnectionSettings {
-    const IID: ::windows_core::GUID = <ISpiConnectionSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpiConnectionSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpiConnectionSettings {
     const NAME: &'static str = "Windows.Devices.Spi.SpiConnectionSettings";
@@ -292,9 +288,7 @@ impl ::windows_core::RuntimeType for SpiController {
 }
 unsafe impl ::windows_core::Interface for SpiController {
     type Vtable = ISpiController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpiController {
-    const IID: ::windows_core::GUID = <ISpiController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpiController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpiController {
     const NAME: &'static str = "Windows.Devices.Spi.SpiController";
@@ -307,7 +301,7 @@ unsafe impl ::core::marker::Sync for SpiController {}
 pub struct SpiDevice(::windows_core::IUnknown);
 impl SpiDevice {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn DeviceId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -378,9 +372,7 @@ impl ::windows_core::RuntimeType for SpiDevice {
 }
 unsafe impl ::windows_core::Interface for SpiDevice {
     type Vtable = ISpiDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpiDevice {
-    const IID: ::windows_core::GUID = <ISpiDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpiDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpiDevice {
     const NAME: &'static str = "Windows.Devices.Spi.SpiDevice";

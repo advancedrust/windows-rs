@@ -120,9 +120,9 @@ fn gen_win_delegate(writer: &Writer, def: metadata::TypeDef) -> TokenStream {
                     return ::windows_core::HRESULT(-2147467261); // E_POINTER
                 }
 
-                *interface = if *iid == <#ident as ::windows_core::ComInterface>::IID ||
-                    *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID ||
-                    *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID {
+                *interface = if *iid == <#ident as ::windows_core::Interface>::IID ||
+                    *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID ||
+                    *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID {
                         &mut (*this).vtable as *mut _ as _
                     } else {
                         ::core::ptr::null_mut()

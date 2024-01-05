@@ -48,7 +48,7 @@ impl IPrintDocumentPackageTarget {
     }
     pub unsafe fn GetPackageTarget<T>(&self, guidtargettype: *const ::windows_core::GUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetPackageTarget)(::windows_core::Interface::as_raw(self), guidtargettype, &T::IID, &mut result__).from_abi(result__)
@@ -74,7 +74,7 @@ impl IPrintDocumentPackageTarget2 {
     }
     pub unsafe fn GetTargetIppPrintDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetTargetIppPrintDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)

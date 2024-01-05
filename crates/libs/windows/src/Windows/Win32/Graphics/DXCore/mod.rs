@@ -1,7 +1,7 @@
 #[inline]
 pub unsafe fn DXCoreCreateAdapterFactory<T>() -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("dxcore.dll" "system" fn DXCoreCreateAdapterFactory(riid : *const ::windows_core::GUID, ppvfactory : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -39,7 +39,7 @@ impl IDXCoreAdapter {
     }
     pub unsafe fn GetFactory<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetFactory)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -65,14 +65,14 @@ pub struct IDXCoreAdapter_Vtbl {
 impl IDXCoreAdapterFactory {
     pub unsafe fn CreateAdapterList<T>(&self, filterattributes: &[::windows_core::GUID]) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateAdapterList)(::windows_core::Interface::as_raw(self), filterattributes.len().try_into().unwrap(), ::core::mem::transmute(filterattributes.as_ptr()), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetAdapterByLuid<T>(&self, adapterluid: *const super::super::Foundation::LUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetAdapterByLuid)(::windows_core::Interface::as_raw(self), adapterluid, &T::IID, &mut result__).from_abi(result__)
@@ -106,7 +106,7 @@ pub struct IDXCoreAdapterFactory_Vtbl {
 impl IDXCoreAdapterList {
     pub unsafe fn GetAdapter<T>(&self, index: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetAdapter)(::windows_core::Interface::as_raw(self), index, &T::IID, &mut result__).from_abi(result__)
@@ -119,7 +119,7 @@ impl IDXCoreAdapterList {
     }
     pub unsafe fn GetFactory<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetFactory)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)

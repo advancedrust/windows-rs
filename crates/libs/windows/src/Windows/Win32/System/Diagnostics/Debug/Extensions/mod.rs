@@ -26,7 +26,7 @@ where
 #[inline]
 pub unsafe fn DebugCreate<T>() -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("dbgeng.dll" "system" fn DebugCreate(interfaceid : *const ::windows_core::GUID, interface : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -35,7 +35,7 @@ where
 #[inline]
 pub unsafe fn DebugCreateEx<T>(dbgengoptions: u32) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("dbgeng.dll" "system" fn DebugCreateEx(interfaceid : *const ::windows_core::GUID, dbgengoptions : u32, interface : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();

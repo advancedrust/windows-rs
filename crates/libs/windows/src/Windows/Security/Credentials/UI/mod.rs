@@ -229,9 +229,7 @@ impl ::windows_core::RuntimeType for CredentialPickerOptions {
 }
 unsafe impl ::windows_core::Interface for CredentialPickerOptions {
     type Vtable = ICredentialPickerOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CredentialPickerOptions {
-    const IID: ::windows_core::GUID = <ICredentialPickerOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICredentialPickerOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CredentialPickerOptions {
     const NAME: &'static str = "Windows.Security.Credentials.UI.CredentialPickerOptions";
@@ -298,9 +296,7 @@ impl ::windows_core::RuntimeType for CredentialPickerResults {
 }
 unsafe impl ::windows_core::Interface for CredentialPickerResults {
     type Vtable = ICredentialPickerResults_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CredentialPickerResults {
-    const IID: ::windows_core::GUID = <ICredentialPickerResults as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICredentialPickerResults as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CredentialPickerResults {
     const NAME: &'static str = "Windows.Security.Credentials.UI.CredentialPickerResults";

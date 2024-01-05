@@ -158,9 +158,7 @@ impl ::windows_core::RuntimeType for Geofence {
 }
 unsafe impl ::windows_core::Interface for Geofence {
     type Vtable = IGeofence_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Geofence {
-    const IID: ::windows_core::GUID = <IGeofence as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeofence as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Geofence {
     const NAME: &'static str = "Windows.Devices.Geolocation.Geofencing.Geofence";
@@ -249,9 +247,7 @@ impl ::windows_core::RuntimeType for GeofenceMonitor {
 }
 unsafe impl ::windows_core::Interface for GeofenceMonitor {
     type Vtable = IGeofenceMonitor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GeofenceMonitor {
-    const IID: ::windows_core::GUID = <IGeofenceMonitor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeofenceMonitor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GeofenceMonitor {
     const NAME: &'static str = "Windows.Devices.Geolocation.Geofencing.GeofenceMonitor";
@@ -297,9 +293,7 @@ impl ::windows_core::RuntimeType for GeofenceStateChangeReport {
 }
 unsafe impl ::windows_core::Interface for GeofenceStateChangeReport {
     type Vtable = IGeofenceStateChangeReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GeofenceStateChangeReport {
-    const IID: ::windows_core::GUID = <IGeofenceStateChangeReport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeofenceStateChangeReport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GeofenceStateChangeReport {
     const NAME: &'static str = "Windows.Devices.Geolocation.Geofencing.GeofenceStateChangeReport";

@@ -124,7 +124,7 @@ impl WalletItemSystemStore {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<WalletItemSystemStore, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IWalletItemSystemStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWalletItemSystemStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ItemsChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
@@ -133,7 +133,7 @@ impl WalletItemSystemStore {
     #[doc = "Required features: `\"deprecated\"`"]
     #[cfg(feature = "deprecated")]
     pub fn RemoveItemsChanged(&self, cookie: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWalletItemSystemStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWalletItemSystemStore2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveItemsChanged)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
 }
@@ -144,10 +144,7 @@ impl ::windows_core::RuntimeType for WalletItemSystemStore {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for WalletItemSystemStore {
     type Vtable = IWalletItemSystemStore_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for WalletItemSystemStore {
-    const IID: ::windows_core::GUID = <IWalletItemSystemStore as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWalletItemSystemStore as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for WalletItemSystemStore {

@@ -141,9 +141,7 @@ impl ::windows_core::RuntimeType for OcrEngine {
 }
 unsafe impl ::windows_core::Interface for OcrEngine {
     type Vtable = IOcrEngine_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OcrEngine {
-    const IID: ::windows_core::GUID = <IOcrEngine as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOcrEngine as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OcrEngine {
     const NAME: &'static str = "Windows.Media.Ocr.OcrEngine";
@@ -177,9 +175,7 @@ impl ::windows_core::RuntimeType for OcrLine {
 }
 unsafe impl ::windows_core::Interface for OcrLine {
     type Vtable = IOcrLine_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OcrLine {
-    const IID: ::windows_core::GUID = <IOcrLine as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOcrLine as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OcrLine {
     const NAME: &'static str = "Windows.Media.Ocr.OcrLine";
@@ -220,9 +216,7 @@ impl ::windows_core::RuntimeType for OcrResult {
 }
 unsafe impl ::windows_core::Interface for OcrResult {
     type Vtable = IOcrResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OcrResult {
-    const IID: ::windows_core::GUID = <IOcrResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOcrResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OcrResult {
     const NAME: &'static str = "Windows.Media.Ocr.OcrResult";
@@ -254,9 +248,7 @@ impl ::windows_core::RuntimeType for OcrWord {
 }
 unsafe impl ::windows_core::Interface for OcrWord {
     type Vtable = IOcrWord_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OcrWord {
-    const IID: ::windows_core::GUID = <IOcrWord as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOcrWord as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OcrWord {
     const NAME: &'static str = "Windows.Media.Ocr.OcrWord";

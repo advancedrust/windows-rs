@@ -122,10 +122,7 @@ impl ::windows_core::RuntimeType for HolographicKeyboardPlacementOverridePreview
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for HolographicKeyboardPlacementOverridePreview {
     type Vtable = IHolographicKeyboardPlacementOverridePreview_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for HolographicKeyboardPlacementOverridePreview {
-    const IID: ::windows_core::GUID = <IHolographicKeyboardPlacementOverridePreview as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHolographicKeyboardPlacementOverridePreview as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for HolographicKeyboardPlacementOverridePreview {

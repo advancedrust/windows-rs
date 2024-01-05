@@ -132,9 +132,7 @@ impl ::windows_core::RuntimeType for PhoneNumberFormatter {
 }
 unsafe impl ::windows_core::Interface for PhoneNumberFormatter {
     type Vtable = IPhoneNumberFormatter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneNumberFormatter {
-    const IID: ::windows_core::GUID = <IPhoneNumberFormatter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneNumberFormatter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneNumberFormatter {
     const NAME: &'static str = "Windows.Globalization.PhoneNumberFormatting.PhoneNumberFormatter";
@@ -224,7 +222,7 @@ impl PhoneNumberInfo {
         })
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -246,9 +244,7 @@ impl ::windows_core::RuntimeType for PhoneNumberInfo {
 }
 unsafe impl ::windows_core::Interface for PhoneNumberInfo {
     type Vtable = IPhoneNumberInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneNumberInfo {
-    const IID: ::windows_core::GUID = <IPhoneNumberInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneNumberInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneNumberInfo {
     const NAME: &'static str = "Windows.Globalization.PhoneNumberFormatting.PhoneNumberInfo";

@@ -260,7 +260,7 @@ impl BasicProperties {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RetrievePropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoretrieve.into_param().abi(), &mut result__).from_abi(result__)
@@ -272,14 +272,14 @@ impl BasicProperties {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SavePropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestosave.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn SavePropertiesAsyncOverloadDefault(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SavePropertiesAsyncOverloadDefault)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -291,9 +291,7 @@ impl ::windows_core::RuntimeType for BasicProperties {
 }
 unsafe impl ::windows_core::Interface for BasicProperties {
     type Vtable = IBasicProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BasicProperties {
-    const IID: ::windows_core::GUID = <IBasicProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBasicProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BasicProperties {
     const NAME: &'static str = "Windows.Storage.FileProperties.BasicProperties";
@@ -350,7 +348,7 @@ impl DocumentProperties {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RetrievePropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoretrieve.into_param().abi(), &mut result__).from_abi(result__)
@@ -362,14 +360,14 @@ impl DocumentProperties {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SavePropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestosave.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn SavePropertiesAsyncOverloadDefault(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SavePropertiesAsyncOverloadDefault)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -381,9 +379,7 @@ impl ::windows_core::RuntimeType for DocumentProperties {
 }
 unsafe impl ::windows_core::Interface for DocumentProperties {
     type Vtable = IDocumentProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DocumentProperties {
-    const IID: ::windows_core::GUID = <IDocumentProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDocumentProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DocumentProperties {
     const NAME: &'static str = "Windows.Storage.FileProperties.DocumentProperties";
@@ -554,7 +550,7 @@ impl ImageProperties {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RetrievePropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoretrieve.into_param().abi(), &mut result__).from_abi(result__)
@@ -566,14 +562,14 @@ impl ImageProperties {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SavePropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestosave.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn SavePropertiesAsyncOverloadDefault(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SavePropertiesAsyncOverloadDefault)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -585,9 +581,7 @@ impl ::windows_core::RuntimeType for ImageProperties {
 }
 unsafe impl ::windows_core::Interface for ImageProperties {
     type Vtable = IImageProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ImageProperties {
-    const IID: ::windows_core::GUID = <IImageProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IImageProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ImageProperties {
     const NAME: &'static str = "Windows.Storage.FileProperties.ImageProperties";
@@ -762,7 +756,7 @@ impl MusicProperties {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RetrievePropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoretrieve.into_param().abi(), &mut result__).from_abi(result__)
@@ -774,14 +768,14 @@ impl MusicProperties {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SavePropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestosave.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn SavePropertiesAsyncOverloadDefault(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SavePropertiesAsyncOverloadDefault)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -793,9 +787,7 @@ impl ::windows_core::RuntimeType for MusicProperties {
 }
 unsafe impl ::windows_core::Interface for MusicProperties {
     type Vtable = IMusicProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MusicProperties {
-    const IID: ::windows_core::GUID = <IMusicProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMusicProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MusicProperties {
     const NAME: &'static str = "Windows.Storage.FileProperties.MusicProperties";
@@ -840,7 +832,7 @@ impl StorageItemContentProperties {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RetrievePropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoretrieve.into_param().abi(), &mut result__).from_abi(result__)
@@ -852,14 +844,14 @@ impl StorageItemContentProperties {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SavePropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestosave.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn SavePropertiesAsyncOverloadDefault(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SavePropertiesAsyncOverloadDefault)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -871,9 +863,7 @@ impl ::windows_core::RuntimeType for StorageItemContentProperties {
 }
 unsafe impl ::windows_core::Interface for StorageItemContentProperties {
     type Vtable = IStorageItemContentProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorageItemContentProperties {
-    const IID: ::windows_core::GUID = <IStorageItemContentProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorageItemContentProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorageItemContentProperties {
     const NAME: &'static str = "Windows.Storage.FileProperties.StorageItemContentProperties";
@@ -888,13 +878,13 @@ pub struct StorageItemThumbnail(::windows_core::IUnknown);
 #[cfg(feature = "Storage_Streams")]
 impl StorageItemThumbnail {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn ContentType(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IContentTypeProvider>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IContentTypeProvider>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContentType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -906,7 +896,7 @@ impl StorageItemThumbnail {
     where
         P0: ::windows_core::IntoParam<super::Streams::IBuffer>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IInputStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IInputStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReadAsync)(::windows_core::Interface::as_raw(this), buffer.into_param().abi(), count, options, &mut result__).from_abi(result__)
@@ -918,7 +908,7 @@ impl StorageItemThumbnail {
     where
         P0: ::windows_core::IntoParam<super::Streams::IBuffer>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IOutputStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IOutputStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).WriteAsync)(::windows_core::Interface::as_raw(this), buffer.into_param().abi(), &mut result__).from_abi(result__)
@@ -927,7 +917,7 @@ impl StorageItemThumbnail {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn FlushAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IOutputStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IOutputStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FlushAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -936,7 +926,7 @@ impl StorageItemThumbnail {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn Size(&self) -> ::windows_core::Result<u64> {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -945,13 +935,13 @@ impl StorageItemThumbnail {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn SetSize(&self, value: u64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IRandomAccessStream>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSize)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn GetInputStreamAt(&self, position: u64) -> ::windows_core::Result<super::Streams::IInputStream> {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetInputStreamAt)(::windows_core::Interface::as_raw(this), position, &mut result__).from_abi(result__)
@@ -960,7 +950,7 @@ impl StorageItemThumbnail {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn GetOutputStreamAt(&self, position: u64) -> ::windows_core::Result<super::Streams::IOutputStream> {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetOutputStreamAt)(::windows_core::Interface::as_raw(this), position, &mut result__).from_abi(result__)
@@ -969,7 +959,7 @@ impl StorageItemThumbnail {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn Position(&self) -> ::windows_core::Result<u64> {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Position)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -978,13 +968,13 @@ impl StorageItemThumbnail {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn Seek(&self, position: u64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IRandomAccessStream>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Seek)(::windows_core::Interface::as_raw(this), position).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn CloneStream(&self) -> ::windows_core::Result<super::Streams::IRandomAccessStream> {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CloneStream)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -993,7 +983,7 @@ impl StorageItemThumbnail {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn CanRead(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanRead)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1002,35 +992,35 @@ impl StorageItemThumbnail {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn CanWrite(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<super::Streams::IRandomAccessStream>(self)?;
+        let this = &::windows_core::Interface::cast::<super::Streams::IRandomAccessStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanWrite)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn OriginalWidth(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IThumbnailProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IThumbnailProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OriginalWidth)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn OriginalHeight(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IThumbnailProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IThumbnailProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OriginalHeight)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ReturnedSmallerCachedSize(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IThumbnailProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IThumbnailProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReturnedSmallerCachedSize)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Type(&self) -> ::windows_core::Result<ThumbnailType> {
-        let this = &::windows_core::ComInterface::cast::<IThumbnailProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IThumbnailProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Type)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1044,10 +1034,7 @@ impl ::windows_core::RuntimeType for StorageItemThumbnail {
 #[cfg(feature = "Storage_Streams")]
 unsafe impl ::windows_core::Interface for StorageItemThumbnail {
     type Vtable = super::Streams::IRandomAccessStreamWithContentType_Vtbl;
-}
-#[cfg(feature = "Storage_Streams")]
-unsafe impl ::windows_core::ComInterface for StorageItemThumbnail {
-    const IID: ::windows_core::GUID = <super::Streams::IRandomAccessStreamWithContentType as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::Streams::IRandomAccessStreamWithContentType as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Storage_Streams")]
 impl ::windows_core::RuntimeName for StorageItemThumbnail {
@@ -1067,7 +1054,7 @@ impl VideoProperties {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RetrievePropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoretrieve.into_param().abi(), &mut result__).from_abi(result__)
@@ -1079,14 +1066,14 @@ impl VideoProperties {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SavePropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestosave.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn SavePropertiesAsyncOverloadDefault(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IStorageItemExtraProperties>(self)?;
+        let this = &::windows_core::Interface::cast::<IStorageItemExtraProperties>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SavePropertiesAsyncOverloadDefault)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1238,9 +1225,7 @@ impl ::windows_core::RuntimeType for VideoProperties {
 }
 unsafe impl ::windows_core::Interface for VideoProperties {
     type Vtable = IVideoProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VideoProperties {
-    const IID: ::windows_core::GUID = <IVideoProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVideoProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VideoProperties {
     const NAME: &'static str = "Windows.Storage.FileProperties.VideoProperties";

@@ -756,9 +756,7 @@ impl ::windows_core::RuntimeType for ClipboardContentOptions {
 }
 unsafe impl ::windows_core::Interface for ClipboardContentOptions {
     type Vtable = IClipboardContentOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ClipboardContentOptions {
-    const IID: ::windows_core::GUID = <IClipboardContentOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IClipboardContentOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ClipboardContentOptions {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.ClipboardContentOptions";
@@ -775,9 +773,7 @@ impl ::windows_core::RuntimeType for ClipboardHistoryChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ClipboardHistoryChangedEventArgs {
     type Vtable = IClipboardHistoryChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ClipboardHistoryChangedEventArgs {
-    const IID: ::windows_core::GUID = <IClipboardHistoryChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IClipboardHistoryChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ClipboardHistoryChangedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.ClipboardHistoryChangedEventArgs";
@@ -816,9 +812,7 @@ impl ::windows_core::RuntimeType for ClipboardHistoryItem {
 }
 unsafe impl ::windows_core::Interface for ClipboardHistoryItem {
     type Vtable = IClipboardHistoryItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ClipboardHistoryItem {
-    const IID: ::windows_core::GUID = <IClipboardHistoryItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IClipboardHistoryItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ClipboardHistoryItem {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.ClipboardHistoryItem";
@@ -852,9 +846,7 @@ impl ::windows_core::RuntimeType for ClipboardHistoryItemsResult {
 }
 unsafe impl ::windows_core::Interface for ClipboardHistoryItemsResult {
     type Vtable = IClipboardHistoryItemsResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ClipboardHistoryItemsResult {
-    const IID: ::windows_core::GUID = <IClipboardHistoryItemsResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IClipboardHistoryItemsResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ClipboardHistoryItemsResult {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.ClipboardHistoryItemsResult";
@@ -1001,42 +993,42 @@ impl DataPackage {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDataPackage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetApplicationLink)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn SetWebLink<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDataPackage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetWebLink)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ShareCompleted<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<DataPackage, ShareCompletedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDataPackage3>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackage3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShareCompleted)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveShareCompleted(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackage3>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackage3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveShareCompleted)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn ShareCanceled<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<DataPackage, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDataPackage4>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackage4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShareCanceled)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveShareCanceled(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackage4>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackage4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveShareCanceled)(::windows_core::Interface::as_raw(this), token).ok() }
     }
 }
@@ -1045,9 +1037,7 @@ impl ::windows_core::RuntimeType for DataPackage {
 }
 unsafe impl ::windows_core::Interface for DataPackage {
     type Vtable = IDataPackage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DataPackage {
-    const IID: ::windows_core::GUID = <IDataPackage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDataPackage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DataPackage {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DataPackage";
@@ -1134,7 +1124,7 @@ impl DataPackagePropertySet {
         unsafe { (::windows_core::Interface::vtable(this).SetApplicationListingUri)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ContentSourceWebLink(&self) -> ::windows_core::Result<super::super::Foundation::Uri> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContentSourceWebLink)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1144,11 +1134,11 @@ impl DataPackagePropertySet {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetContentSourceWebLink)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ContentSourceApplicationLink(&self) -> ::windows_core::Result<super::super::Foundation::Uri> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContentSourceApplicationLink)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1158,24 +1148,24 @@ impl DataPackagePropertySet {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetContentSourceApplicationLink)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn PackageFamilyName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PackageFamilyName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetPackageFamilyName(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPackageFamilyName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn Square30x30Logo(&self) -> ::windows_core::Result<super::super::Storage::Streams::IRandomAccessStreamReference> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Square30x30Logo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1187,13 +1177,13 @@ impl DataPackagePropertySet {
     where
         P0: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStreamReference>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSquare30x30Logo)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"UI\"`"]
     #[cfg(feature = "UI")]
     pub fn LogoBackgroundColor(&self) -> ::windows_core::Result<super::super::UI::Color> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LogoBackgroundColor)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1202,35 +1192,35 @@ impl DataPackagePropertySet {
     #[doc = "Required features: `\"UI\"`"]
     #[cfg(feature = "UI")]
     pub fn SetLogoBackgroundColor(&self, value: super::super::UI::Color) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetLogoBackgroundColor)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn EnterpriseId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet3>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EnterpriseId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetEnterpriseId(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet3>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetEnterpriseId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn ContentSourceUserActivityJson(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet4>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContentSourceUserActivityJson)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetContentSourceUserActivityJson(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySet4>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySet4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetContentSourceUserActivityJson)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterator<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1239,7 +1229,7 @@ impl DataPackagePropertySet {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Lookup(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<::windows_core::IInspectable> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Lookup)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -1248,7 +1238,7 @@ impl DataPackagePropertySet {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1257,7 +1247,7 @@ impl DataPackagePropertySet {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn HasKey(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasKey)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -1266,7 +1256,7 @@ impl DataPackagePropertySet {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetView(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetView)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1278,7 +1268,7 @@ impl DataPackagePropertySet {
     where
         P0: ::windows_core::IntoParam<::windows_core::IInspectable>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Insert)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), value.into_param().abi(), &mut result__).from_abi(result__)
@@ -1287,13 +1277,13 @@ impl DataPackagePropertySet {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Remove(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Clear(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Clear)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -1302,9 +1292,7 @@ impl ::windows_core::RuntimeType for DataPackagePropertySet {
 }
 unsafe impl ::windows_core::Interface for DataPackagePropertySet {
     type Vtable = IDataPackagePropertySet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DataPackagePropertySet {
-    const IID: ::windows_core::GUID = <IDataPackagePropertySet as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDataPackagePropertySet as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DataPackagePropertySet {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DataPackagePropertySet";
@@ -1381,21 +1369,21 @@ impl DataPackagePropertySetView {
         }
     }
     pub fn PackageFamilyName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySetView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySetView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PackageFamilyName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ContentSourceWebLink(&self) -> ::windows_core::Result<super::super::Foundation::Uri> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySetView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySetView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContentSourceWebLink)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ContentSourceApplicationLink(&self) -> ::windows_core::Result<super::super::Foundation::Uri> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySetView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySetView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContentSourceApplicationLink)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1404,7 +1392,7 @@ impl DataPackagePropertySetView {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn Square30x30Logo(&self) -> ::windows_core::Result<super::super::Storage::Streams::IRandomAccessStreamReference> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySetView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySetView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Square30x30Logo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1413,28 +1401,28 @@ impl DataPackagePropertySetView {
     #[doc = "Required features: `\"UI\"`"]
     #[cfg(feature = "UI")]
     pub fn LogoBackgroundColor(&self) -> ::windows_core::Result<super::super::UI::Color> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySetView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySetView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LogoBackgroundColor)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn EnterpriseId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySetView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySetView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EnterpriseId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ContentSourceUserActivityJson(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySetView4>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySetView4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContentSourceUserActivityJson)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsFromRoamingClipboard(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackagePropertySetView5>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackagePropertySetView5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsFromRoamingClipboard)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1443,7 +1431,7 @@ impl DataPackagePropertySetView {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterator<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1452,7 +1440,7 @@ impl DataPackagePropertySetView {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Lookup(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<::windows_core::IInspectable> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Lookup)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -1461,7 +1449,7 @@ impl DataPackagePropertySetView {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1470,7 +1458,7 @@ impl DataPackagePropertySetView {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn HasKey(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasKey)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -1479,7 +1467,7 @@ impl DataPackagePropertySetView {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Split(&self, first: &mut ::core::option::Option<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>, second: &mut ::core::option::Option<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Split)(::windows_core::Interface::as_raw(this), first as *mut _ as _, second as *mut _ as _).ok() }
     }
 }
@@ -1488,9 +1476,7 @@ impl ::windows_core::RuntimeType for DataPackagePropertySetView {
 }
 unsafe impl ::windows_core::Interface for DataPackagePropertySetView {
     type Vtable = IDataPackagePropertySetView_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DataPackagePropertySetView {
-    const IID: ::windows_core::GUID = <IDataPackagePropertySetView as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDataPackagePropertySetView as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DataPackagePropertySetView {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DataPackagePropertySetView";
@@ -1626,14 +1612,14 @@ impl DataPackageView {
         }
     }
     pub fn GetApplicationLinkAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Foundation::Uri>> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackageView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackageView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetApplicationLinkAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetWebLinkAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Foundation::Uri>> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackageView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackageView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetWebLinkAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1642,7 +1628,7 @@ impl DataPackageView {
     #[doc = "Required features: `\"Security_EnterpriseData\"`"]
     #[cfg(feature = "Security_EnterpriseData")]
     pub fn RequestAccessAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Security::EnterpriseData::ProtectionPolicyEvaluationResult>> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackageView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackageView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestAccessAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1651,7 +1637,7 @@ impl DataPackageView {
     #[doc = "Required features: `\"Security_EnterpriseData\"`"]
     #[cfg(feature = "Security_EnterpriseData")]
     pub fn RequestAccessWithEnterpriseIdAsync(&self, enterpriseid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Security::EnterpriseData::ProtectionPolicyEvaluationResult>> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackageView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackageView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestAccessWithEnterpriseIdAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(enterpriseid), &mut result__).from_abi(result__)
@@ -1660,14 +1646,14 @@ impl DataPackageView {
     #[doc = "Required features: `\"Security_EnterpriseData\"`"]
     #[cfg(feature = "Security_EnterpriseData")]
     pub fn UnlockAndAssumeEnterpriseIdentity(&self) -> ::windows_core::Result<super::super::Security::EnterpriseData::ProtectionPolicyEvaluationResult> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackageView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackageView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UnlockAndAssumeEnterpriseIdentity)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAcceptedFormatId(&self, formatid: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDataPackageView4>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataPackageView4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAcceptedFormatId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(formatid)).ok() }
     }
 }
@@ -1676,9 +1662,7 @@ impl ::windows_core::RuntimeType for DataPackageView {
 }
 unsafe impl ::windows_core::Interface for DataPackageView {
     type Vtable = IDataPackageView_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DataPackageView {
-    const IID: ::windows_core::GUID = <IDataPackageView as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDataPackageView as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DataPackageView {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DataPackageView";
@@ -1700,9 +1684,7 @@ impl ::windows_core::RuntimeType for DataProviderDeferral {
 }
 unsafe impl ::windows_core::Interface for DataProviderDeferral {
     type Vtable = IDataProviderDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DataProviderDeferral {
-    const IID: ::windows_core::GUID = <IDataProviderDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDataProviderDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DataProviderDeferral {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DataProviderDeferral";
@@ -1748,9 +1730,7 @@ impl ::windows_core::RuntimeType for DataProviderRequest {
 }
 unsafe impl ::windows_core::Interface for DataProviderRequest {
     type Vtable = IDataProviderRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DataProviderRequest {
-    const IID: ::windows_core::GUID = <IDataProviderRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDataProviderRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DataProviderRequest {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DataProviderRequest";
@@ -1800,9 +1780,7 @@ impl ::windows_core::RuntimeType for DataRequest {
 }
 unsafe impl ::windows_core::Interface for DataRequest {
     type Vtable = IDataRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DataRequest {
-    const IID: ::windows_core::GUID = <IDataRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDataRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DataRequest {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DataRequest";
@@ -1824,9 +1802,7 @@ impl ::windows_core::RuntimeType for DataRequestDeferral {
 }
 unsafe impl ::windows_core::Interface for DataRequestDeferral {
     type Vtable = IDataRequestDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DataRequestDeferral {
-    const IID: ::windows_core::GUID = <IDataRequestDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDataRequestDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DataRequestDeferral {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DataRequestDeferral";
@@ -1851,9 +1827,7 @@ impl ::windows_core::RuntimeType for DataRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for DataRequestedEventArgs {
     type Vtable = IDataRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DataRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IDataRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDataRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DataRequestedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DataRequestedEventArgs";
@@ -1897,14 +1871,14 @@ impl DataTransferManager {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<DataTransferManager, ShareProvidersRequestedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDataTransferManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataTransferManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShareProvidersRequested)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveShareProvidersRequested(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDataTransferManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDataTransferManager2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveShareProvidersRequested)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn ShowShareUI() -> ::windows_core::Result<()> {
@@ -1949,9 +1923,7 @@ impl ::windows_core::RuntimeType for DataTransferManager {
 }
 unsafe impl ::windows_core::Interface for DataTransferManager {
     type Vtable = IDataTransferManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DataTransferManager {
-    const IID: ::windows_core::GUID = <IDataTransferManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDataTransferManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DataTransferManager {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.DataTransferManager";
@@ -1992,7 +1964,7 @@ impl OperationCompletedEventArgs {
         }
     }
     pub fn AcceptedFormatId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IOperationCompletedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IOperationCompletedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AcceptedFormatId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2004,9 +1976,7 @@ impl ::windows_core::RuntimeType for OperationCompletedEventArgs {
 }
 unsafe impl ::windows_core::Interface for OperationCompletedEventArgs {
     type Vtable = IOperationCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OperationCompletedEventArgs {
-    const IID: ::windows_core::GUID = <IOperationCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOperationCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OperationCompletedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs";
@@ -2031,9 +2001,7 @@ impl ::windows_core::RuntimeType for ShareCompletedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ShareCompletedEventArgs {
     type Vtable = IShareCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ShareCompletedEventArgs {
-    const IID: ::windows_core::GUID = <IShareCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IShareCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ShareCompletedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.ShareCompletedEventArgs";
@@ -2107,9 +2075,7 @@ impl ::windows_core::RuntimeType for ShareProvider {
 }
 unsafe impl ::windows_core::Interface for ShareProvider {
     type Vtable = IShareProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ShareProvider {
-    const IID: ::windows_core::GUID = <IShareProvider as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IShareProvider as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ShareProvider {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.ShareProvider";
@@ -2145,9 +2111,7 @@ impl ::windows_core::RuntimeType for ShareProviderOperation {
 }
 unsafe impl ::windows_core::Interface for ShareProviderOperation {
     type Vtable = IShareProviderOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ShareProviderOperation {
-    const IID: ::windows_core::GUID = <IShareProviderOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IShareProviderOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ShareProviderOperation {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.ShareProviderOperation";
@@ -2188,9 +2152,7 @@ impl ::windows_core::RuntimeType for ShareProvidersRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ShareProvidersRequestedEventArgs {
     type Vtable = IShareProvidersRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ShareProvidersRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IShareProvidersRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IShareProvidersRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ShareProvidersRequestedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.ShareProvidersRequestedEventArgs";
@@ -2222,9 +2184,7 @@ impl ::windows_core::RuntimeType for ShareTargetInfo {
 }
 unsafe impl ::windows_core::Interface for ShareTargetInfo {
     type Vtable = IShareTargetInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ShareTargetInfo {
-    const IID: ::windows_core::GUID = <IShareTargetInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IShareTargetInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ShareTargetInfo {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.ShareTargetInfo";
@@ -2274,9 +2234,7 @@ impl ::windows_core::RuntimeType for ShareUIOptions {
 }
 unsafe impl ::windows_core::Interface for ShareUIOptions {
     type Vtable = IShareUIOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ShareUIOptions {
-    const IID: ::windows_core::GUID = <IShareUIOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IShareUIOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ShareUIOptions {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.ShareUIOptions";
@@ -2411,9 +2369,7 @@ impl ::windows_core::RuntimeType for TargetApplicationChosenEventArgs {
 }
 unsafe impl ::windows_core::Interface for TargetApplicationChosenEventArgs {
     type Vtable = ITargetApplicationChosenEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TargetApplicationChosenEventArgs {
-    const IID: ::windows_core::GUID = <ITargetApplicationChosenEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITargetApplicationChosenEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TargetApplicationChosenEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.DataTransfer.TargetApplicationChosenEventArgs";
@@ -2561,7 +2517,7 @@ impl<F: FnMut(::core::option::Option<&DataProviderRequest>) -> ::windows_core::R
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <DataProviderHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <DataProviderHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -2625,7 +2581,7 @@ impl<F: FnMut(::core::option::Option<&ShareProviderOperation>) -> ::windows_core
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <ShareProviderHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <ShareProviderHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

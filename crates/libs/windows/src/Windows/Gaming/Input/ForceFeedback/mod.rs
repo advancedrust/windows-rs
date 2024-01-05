@@ -133,7 +133,7 @@ pub struct IRampForceEffect_Vtbl {
 pub struct ConditionForceEffect(::windows_core::IUnknown);
 impl ConditionForceEffect {
     pub fn Kind(&self) -> ::windows_core::Result<ConditionForceEffectKind> {
-        let this = &::windows_core::ComInterface::cast::<IConditionForceEffect>(self)?;
+        let this = &::windows_core::Interface::cast::<IConditionForceEffect>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -142,7 +142,7 @@ impl ConditionForceEffect {
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetParameters(&self, direction: super::super::super::Foundation::Numerics::Vector3, positivecoefficient: f32, negativecoefficient: f32, maxpositivemagnitude: f32, maxnegativemagnitude: f32, deadzone: f32, bias: f32) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IConditionForceEffect>(self)?;
+        let this = &::windows_core::Interface::cast::<IConditionForceEffect>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetParameters)(::windows_core::Interface::as_raw(this), direction, positivecoefficient, negativecoefficient, maxpositivemagnitude, maxnegativemagnitude, deadzone, bias).ok() }
     }
     pub fn CreateInstance(effectkind: ConditionForceEffectKind) -> ::windows_core::Result<ConditionForceEffect> {
@@ -188,9 +188,7 @@ impl ::windows_core::RuntimeType for ConditionForceEffect {
 }
 unsafe impl ::windows_core::Interface for ConditionForceEffect {
     type Vtable = IForceFeedbackEffect_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ConditionForceEffect {
-    const IID: ::windows_core::GUID = <IForceFeedbackEffect as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IForceFeedbackEffect as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ConditionForceEffect {
     const NAME: &'static str = "Windows.Gaming.Input.ForceFeedback.ConditionForceEffect";
@@ -213,13 +211,13 @@ impl ConstantForceEffect {
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetParameters(&self, vector: super::super::super::Foundation::Numerics::Vector3, duration: super::super::super::Foundation::TimeSpan) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IConstantForceEffect>(self)?;
+        let this = &::windows_core::Interface::cast::<IConstantForceEffect>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetParameters)(::windows_core::Interface::as_raw(this), vector, duration).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetParametersWithEnvelope(&self, vector: super::super::super::Foundation::Numerics::Vector3, attackgain: f32, sustaingain: f32, releasegain: f32, startdelay: super::super::super::Foundation::TimeSpan, attackduration: super::super::super::Foundation::TimeSpan, sustainduration: super::super::super::Foundation::TimeSpan, releaseduration: super::super::super::Foundation::TimeSpan, repeatcount: u32) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IConstantForceEffect>(self)?;
+        let this = &::windows_core::Interface::cast::<IConstantForceEffect>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetParametersWithEnvelope)(::windows_core::Interface::as_raw(this), vector, attackgain, sustaingain, releasegain, startdelay, attackduration, sustainduration, releaseduration, repeatcount).ok() }
     }
     pub fn Gain(&self) -> ::windows_core::Result<f64> {
@@ -254,9 +252,7 @@ impl ::windows_core::RuntimeType for ConstantForceEffect {
 }
 unsafe impl ::windows_core::Interface for ConstantForceEffect {
     type Vtable = IForceFeedbackEffect_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ConstantForceEffect {
-    const IID: ::windows_core::GUID = <IForceFeedbackEffect as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IForceFeedbackEffect as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ConstantForceEffect {
     const NAME: &'static str = "Windows.Gaming.Input.ForceFeedback.ConstantForceEffect";
@@ -360,9 +356,7 @@ impl ::windows_core::RuntimeType for ForceFeedbackMotor {
 }
 unsafe impl ::windows_core::Interface for ForceFeedbackMotor {
     type Vtable = IForceFeedbackMotor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ForceFeedbackMotor {
-    const IID: ::windows_core::GUID = <IForceFeedbackMotor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IForceFeedbackMotor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ForceFeedbackMotor {
     const NAME: &'static str = "Windows.Gaming.Input.ForceFeedback.ForceFeedbackMotor";
@@ -401,7 +395,7 @@ impl PeriodicForceEffect {
         unsafe { (::windows_core::Interface::vtable(this).Stop)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<PeriodicForceEffectKind> {
-        let this = &::windows_core::ComInterface::cast::<IPeriodicForceEffect>(self)?;
+        let this = &::windows_core::Interface::cast::<IPeriodicForceEffect>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -410,13 +404,13 @@ impl PeriodicForceEffect {
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetParameters(&self, vector: super::super::super::Foundation::Numerics::Vector3, frequency: f32, phase: f32, bias: f32, duration: super::super::super::Foundation::TimeSpan) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IPeriodicForceEffect>(self)?;
+        let this = &::windows_core::Interface::cast::<IPeriodicForceEffect>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetParameters)(::windows_core::Interface::as_raw(this), vector, frequency, phase, bias, duration).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetParametersWithEnvelope(&self, vector: super::super::super::Foundation::Numerics::Vector3, frequency: f32, phase: f32, bias: f32, attackgain: f32, sustaingain: f32, releasegain: f32, startdelay: super::super::super::Foundation::TimeSpan, attackduration: super::super::super::Foundation::TimeSpan, sustainduration: super::super::super::Foundation::TimeSpan, releaseduration: super::super::super::Foundation::TimeSpan, repeatcount: u32) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IPeriodicForceEffect>(self)?;
+        let this = &::windows_core::Interface::cast::<IPeriodicForceEffect>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetParametersWithEnvelope)(::windows_core::Interface::as_raw(this), vector, frequency, phase, bias, attackgain, sustaingain, releasegain, startdelay, attackduration, sustainduration, releaseduration, repeatcount).ok() }
     }
     pub fn CreateInstance(effectkind: PeriodicForceEffectKind) -> ::windows_core::Result<PeriodicForceEffect> {
@@ -436,9 +430,7 @@ impl ::windows_core::RuntimeType for PeriodicForceEffect {
 }
 unsafe impl ::windows_core::Interface for PeriodicForceEffect {
     type Vtable = IForceFeedbackEffect_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PeriodicForceEffect {
-    const IID: ::windows_core::GUID = <IForceFeedbackEffect as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IForceFeedbackEffect as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PeriodicForceEffect {
     const NAME: &'static str = "Windows.Gaming.Input.ForceFeedback.PeriodicForceEffect";
@@ -487,13 +479,13 @@ impl RampForceEffect {
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetParameters(&self, startvector: super::super::super::Foundation::Numerics::Vector3, endvector: super::super::super::Foundation::Numerics::Vector3, duration: super::super::super::Foundation::TimeSpan) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IRampForceEffect>(self)?;
+        let this = &::windows_core::Interface::cast::<IRampForceEffect>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetParameters)(::windows_core::Interface::as_raw(this), startvector, endvector, duration).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetParametersWithEnvelope(&self, startvector: super::super::super::Foundation::Numerics::Vector3, endvector: super::super::super::Foundation::Numerics::Vector3, attackgain: f32, sustaingain: f32, releasegain: f32, startdelay: super::super::super::Foundation::TimeSpan, attackduration: super::super::super::Foundation::TimeSpan, sustainduration: super::super::super::Foundation::TimeSpan, releaseduration: super::super::super::Foundation::TimeSpan, repeatcount: u32) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IRampForceEffect>(self)?;
+        let this = &::windows_core::Interface::cast::<IRampForceEffect>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetParametersWithEnvelope)(::windows_core::Interface::as_raw(this), startvector, endvector, attackgain, sustaingain, releasegain, startdelay, attackduration, sustainduration, releaseduration, repeatcount).ok() }
     }
 }
@@ -502,9 +494,7 @@ impl ::windows_core::RuntimeType for RampForceEffect {
 }
 unsafe impl ::windows_core::Interface for RampForceEffect {
     type Vtable = IForceFeedbackEffect_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RampForceEffect {
-    const IID: ::windows_core::GUID = <IForceFeedbackEffect as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IForceFeedbackEffect as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RampForceEffect {
     const NAME: &'static str = "Windows.Gaming.Input.ForceFeedback.RampForceEffect";

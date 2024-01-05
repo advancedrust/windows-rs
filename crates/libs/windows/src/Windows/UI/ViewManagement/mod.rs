@@ -558,9 +558,7 @@ impl ::windows_core::RuntimeType for AccessibilitySettings {
 }
 unsafe impl ::windows_core::Interface for AccessibilitySettings {
     type Vtable = IAccessibilitySettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AccessibilitySettings {
-    const IID: ::windows_core::GUID = <IAccessibilitySettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAccessibilitySettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AccessibilitySettings {
     const NAME: &'static str = "Windows.UI.ViewManagement.AccessibilitySettings";
@@ -599,9 +597,7 @@ impl ::windows_core::RuntimeType for ActivationViewSwitcher {
 }
 unsafe impl ::windows_core::Interface for ActivationViewSwitcher {
     type Vtable = IActivationViewSwitcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ActivationViewSwitcher {
-    const IID: ::windows_core::GUID = <IActivationViewSwitcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IActivationViewSwitcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ActivationViewSwitcher {
     const NAME: &'static str = "Windows.UI.ViewManagement.ActivationViewSwitcher";
@@ -696,7 +692,7 @@ impl ApplicationView {
     #[doc = "Required features: `\"deprecated\"`"]
     #[cfg(feature = "deprecated")]
     pub fn SuppressSystemOverlays(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SuppressSystemOverlays)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -705,11 +701,11 @@ impl ApplicationView {
     #[doc = "Required features: `\"deprecated\"`"]
     #[cfg(feature = "deprecated")]
     pub fn SetSuppressSystemOverlays(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSuppressSystemOverlays)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn VisibleBounds(&self) -> ::windows_core::Result<super::super::Foundation::Rect> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).VisibleBounds)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -719,97 +715,97 @@ impl ApplicationView {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<ApplicationView, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).VisibleBoundsChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveVisibleBoundsChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveVisibleBoundsChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn SetDesiredBoundsMode(&self, boundsmode: ApplicationViewBoundsMode) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SetDesiredBoundsMode)(::windows_core::Interface::as_raw(this), boundsmode, &mut result__).from_abi(result__)
         }
     }
     pub fn DesiredBoundsMode(&self) -> ::windows_core::Result<ApplicationViewBoundsMode> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView2>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DesiredBoundsMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TitleBar(&self) -> ::windows_core::Result<ApplicationViewTitleBar> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TitleBar)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn FullScreenSystemOverlayMode(&self) -> ::windows_core::Result<FullScreenSystemOverlayMode> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FullScreenSystemOverlayMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetFullScreenSystemOverlayMode(&self, value: FullScreenSystemOverlayMode) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetFullScreenSystemOverlayMode)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsFullScreenMode(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsFullScreenMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TryEnterFullScreenMode(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryEnterFullScreenMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ExitFullScreenMode(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ExitFullScreenMode)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn ShowStandardSystemOverlays(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ShowStandardSystemOverlays)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn TryResizeView(&self, value: super::super::Foundation::Size) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryResizeView)(::windows_core::Interface::as_raw(this), value, &mut result__).from_abi(result__)
         }
     }
     pub fn SetPreferredMinSize(&self, minsize: super::super::Foundation::Size) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView3>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPreferredMinSize)(::windows_core::Interface::as_raw(this), minsize).ok() }
     }
     pub fn ViewMode(&self) -> ::windows_core::Result<ApplicationViewMode> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView4>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ViewMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsViewModeSupported(&self, viewmode: ApplicationViewMode) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView4>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsViewModeSupported)(::windows_core::Interface::as_raw(this), viewmode, &mut result__).from_abi(result__)
         }
     }
     pub fn TryEnterViewModeAsync(&self, viewmode: ApplicationViewMode) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView4>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryEnterViewModeAsync)(::windows_core::Interface::as_raw(this), viewmode, &mut result__).from_abi(result__)
@@ -819,34 +815,34 @@ impl ApplicationView {
     where
         P0: ::windows_core::IntoParam<ViewModePreferences>,
     {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView4>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryEnterViewModeWithPreferencesAsync)(::windows_core::Interface::as_raw(this), viewmode, viewmodepreferences.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn TryConsolidateAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView4>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryConsolidateAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PersistedStateId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView7>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView7>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PersistedStateId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetPersistedStateId(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView7>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView7>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPersistedStateId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     #[doc = "Required features: `\"UI_WindowManagement\"`"]
     #[cfg(feature = "UI_WindowManagement")]
     pub fn WindowingEnvironment(&self) -> ::windows_core::Result<super::WindowManagement::WindowingEnvironment> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView9>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView9>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).WindowingEnvironment)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -855,7 +851,7 @@ impl ApplicationView {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"UI_WindowManagement\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "UI_WindowManagement"))]
     pub fn GetDisplayRegions(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<super::WindowManagement::DisplayRegion>> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationView9>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationView9>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetDisplayRegions)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -936,7 +932,7 @@ impl ApplicationView {
         Self::IApplicationViewStatics4(|this| unsafe { (::windows_core::Interface::vtable(this).ClearPersistedState)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key)).ok() })
     }
     pub fn UIContext(&self) -> ::windows_core::Result<super::UIContext> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationViewWithContext>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationViewWithContext>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UIContext)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -980,9 +976,7 @@ impl ::windows_core::RuntimeType for ApplicationView {
 }
 unsafe impl ::windows_core::Interface for ApplicationView {
     type Vtable = IApplicationView_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ApplicationView {
-    const IID: ::windows_core::GUID = <IApplicationView as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IApplicationView as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ApplicationView {
     const NAME: &'static str = "Windows.UI.ViewManagement.ApplicationView";
@@ -1002,7 +996,7 @@ impl ApplicationViewConsolidatedEventArgs {
         }
     }
     pub fn IsAppInitiated(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IApplicationViewConsolidatedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IApplicationViewConsolidatedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsAppInitiated)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1014,9 +1008,7 @@ impl ::windows_core::RuntimeType for ApplicationViewConsolidatedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ApplicationViewConsolidatedEventArgs {
     type Vtable = IApplicationViewConsolidatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ApplicationViewConsolidatedEventArgs {
-    const IID: ::windows_core::GUID = <IApplicationViewConsolidatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IApplicationViewConsolidatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ApplicationViewConsolidatedEventArgs {
     const NAME: &'static str = "Windows.UI.ViewManagement.ApplicationViewConsolidatedEventArgs";
@@ -1051,9 +1043,7 @@ impl ::windows_core::RuntimeType for ApplicationViewScaling {
 }
 unsafe impl ::windows_core::Interface for ApplicationViewScaling {
     type Vtable = IApplicationViewScaling_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ApplicationViewScaling {
-    const IID: ::windows_core::GUID = <IApplicationViewScaling as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IApplicationViewScaling as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ApplicationViewScaling {
     const NAME: &'static str = "Windows.UI.ViewManagement.ApplicationViewScaling";
@@ -1321,9 +1311,7 @@ impl ::windows_core::RuntimeType for ApplicationViewTitleBar {
 }
 unsafe impl ::windows_core::Interface for ApplicationViewTitleBar {
     type Vtable = IApplicationViewTitleBar_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ApplicationViewTitleBar {
-    const IID: ::windows_core::GUID = <IApplicationViewTitleBar as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IApplicationViewTitleBar as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ApplicationViewTitleBar {
     const NAME: &'static str = "Windows.UI.ViewManagement.ApplicationViewTitleBar";
@@ -1370,9 +1358,7 @@ impl ::windows_core::RuntimeType for ApplicationViewTransferContext {
 }
 unsafe impl ::windows_core::Interface for ApplicationViewTransferContext {
     type Vtable = IApplicationViewTransferContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ApplicationViewTransferContext {
-    const IID: ::windows_core::GUID = <IApplicationViewTransferContext as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IApplicationViewTransferContext as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ApplicationViewTransferContext {
     const NAME: &'static str = "Windows.UI.ViewManagement.ApplicationViewTransferContext";
@@ -1418,28 +1404,28 @@ impl InputPane {
         }
     }
     pub fn TryShow(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IInputPane2>(self)?;
+        let this = &::windows_core::Interface::cast::<IInputPane2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryShow)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TryHide(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IInputPane2>(self)?;
+        let this = &::windows_core::Interface::cast::<IInputPane2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryHide)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Visible(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IInputPaneControl>(self)?;
+        let this = &::windows_core::Interface::cast::<IInputPaneControl>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Visible)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetVisible(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IInputPaneControl>(self)?;
+        let this = &::windows_core::Interface::cast::<IInputPaneControl>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetVisible)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn GetForCurrentView() -> ::windows_core::Result<InputPane> {
@@ -1473,9 +1459,7 @@ impl ::windows_core::RuntimeType for InputPane {
 }
 unsafe impl ::windows_core::Interface for InputPane {
     type Vtable = IInputPane_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for InputPane {
-    const IID: ::windows_core::GUID = <IInputPane as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IInputPane as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for InputPane {
     const NAME: &'static str = "Windows.UI.ViewManagement.InputPane";
@@ -1509,9 +1493,7 @@ impl ::windows_core::RuntimeType for InputPaneVisibilityEventArgs {
 }
 unsafe impl ::windows_core::Interface for InputPaneVisibilityEventArgs {
     type Vtable = IInputPaneVisibilityEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for InputPaneVisibilityEventArgs {
-    const IID: ::windows_core::GUID = <IInputPaneVisibilityEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IInputPaneVisibilityEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for InputPaneVisibilityEventArgs {
     const NAME: &'static str = "Windows.UI.ViewManagement.InputPaneVisibilityEventArgs";
@@ -1716,9 +1698,7 @@ impl ::windows_core::RuntimeType for StatusBar {
 }
 unsafe impl ::windows_core::Interface for StatusBar {
     type Vtable = IStatusBar_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StatusBar {
-    const IID: ::windows_core::GUID = <IStatusBar as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStatusBar as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StatusBar {
     const NAME: &'static str = "Windows.UI.ViewManagement.StatusBar";
@@ -1775,9 +1755,7 @@ impl ::windows_core::RuntimeType for StatusBarProgressIndicator {
 }
 unsafe impl ::windows_core::Interface for StatusBarProgressIndicator {
     type Vtable = IStatusBarProgressIndicator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StatusBarProgressIndicator {
-    const IID: ::windows_core::GUID = <IStatusBarProgressIndicator as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStatusBarProgressIndicator as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StatusBarProgressIndicator {
     const NAME: &'static str = "Windows.UI.ViewManagement.StatusBarProgressIndicator";
@@ -1888,7 +1866,7 @@ impl UISettings {
         }
     }
     pub fn TextScaleFactor(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IUISettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TextScaleFactor)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1898,18 +1876,18 @@ impl UISettings {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<UISettings, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IUISettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TextScaleFactorChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveTextScaleFactorChanged(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IUISettings2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveTextScaleFactorChanged)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn GetColorValue(&self, desiredcolor: UIColorType) -> ::windows_core::Result<super::Color> {
-        let this = &::windows_core::ComInterface::cast::<IUISettings3>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetColorValue)(::windows_core::Interface::as_raw(this), desiredcolor, &mut result__).from_abi(result__)
@@ -1919,18 +1897,18 @@ impl UISettings {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<UISettings, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IUISettings3>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ColorValuesChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveColorValuesChanged(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IUISettings3>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveColorValuesChanged)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn AdvancedEffectsEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IUISettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AdvancedEffectsEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1940,18 +1918,18 @@ impl UISettings {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<UISettings, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IUISettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AdvancedEffectsEnabledChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveAdvancedEffectsEnabledChanged(&self, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IUISettings4>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAdvancedEffectsEnabledChanged)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn AutoHideScrollBars(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IUISettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AutoHideScrollBars)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1961,42 +1939,42 @@ impl UISettings {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<UISettings, UISettingsAutoHideScrollBarsChangedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IUISettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AutoHideScrollBarsChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveAutoHideScrollBarsChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IUISettings5>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAutoHideScrollBarsChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn AnimationsEnabledChanged<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<UISettings, UISettingsAnimationsEnabledChangedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IUISettings6>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AnimationsEnabledChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveAnimationsEnabledChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IUISettings6>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings6>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAnimationsEnabledChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn MessageDurationChanged<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<UISettings, UISettingsMessageDurationChangedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IUISettings6>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MessageDurationChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveMessageDurationChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IUISettings6>(self)?;
+        let this = &::windows_core::Interface::cast::<IUISettings6>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveMessageDurationChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
 }
@@ -2005,9 +1983,7 @@ impl ::windows_core::RuntimeType for UISettings {
 }
 unsafe impl ::windows_core::Interface for UISettings {
     type Vtable = IUISettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UISettings {
-    const IID: ::windows_core::GUID = <IUISettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUISettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UISettings {
     const NAME: &'static str = "Windows.UI.ViewManagement.UISettings";
@@ -2024,9 +2000,7 @@ impl ::windows_core::RuntimeType for UISettingsAnimationsEnabledChangedEventArgs
 }
 unsafe impl ::windows_core::Interface for UISettingsAnimationsEnabledChangedEventArgs {
     type Vtable = IUISettingsAnimationsEnabledChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UISettingsAnimationsEnabledChangedEventArgs {
-    const IID: ::windows_core::GUID = <IUISettingsAnimationsEnabledChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUISettingsAnimationsEnabledChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UISettingsAnimationsEnabledChangedEventArgs {
     const NAME: &'static str = "Windows.UI.ViewManagement.UISettingsAnimationsEnabledChangedEventArgs";
@@ -2043,9 +2017,7 @@ impl ::windows_core::RuntimeType for UISettingsAutoHideScrollBarsChangedEventArg
 }
 unsafe impl ::windows_core::Interface for UISettingsAutoHideScrollBarsChangedEventArgs {
     type Vtable = IUISettingsAutoHideScrollBarsChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UISettingsAutoHideScrollBarsChangedEventArgs {
-    const IID: ::windows_core::GUID = <IUISettingsAutoHideScrollBarsChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUISettingsAutoHideScrollBarsChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UISettingsAutoHideScrollBarsChangedEventArgs {
     const NAME: &'static str = "Windows.UI.ViewManagement.UISettingsAutoHideScrollBarsChangedEventArgs";
@@ -2062,9 +2034,7 @@ impl ::windows_core::RuntimeType for UISettingsMessageDurationChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for UISettingsMessageDurationChangedEventArgs {
     type Vtable = IUISettingsMessageDurationChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UISettingsMessageDurationChangedEventArgs {
-    const IID: ::windows_core::GUID = <IUISettingsMessageDurationChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUISettingsMessageDurationChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UISettingsMessageDurationChangedEventArgs {
     const NAME: &'static str = "Windows.UI.ViewManagement.UISettingsMessageDurationChangedEventArgs";
@@ -2100,9 +2070,7 @@ impl ::windows_core::RuntimeType for UIViewSettings {
 }
 unsafe impl ::windows_core::Interface for UIViewSettings {
     type Vtable = IUIViewSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UIViewSettings {
-    const IID: ::windows_core::GUID = <IUIViewSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUIViewSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UIViewSettings {
     const NAME: &'static str = "Windows.UI.ViewManagement.UIViewSettings";
@@ -2153,9 +2121,7 @@ impl ::windows_core::RuntimeType for ViewModePreferences {
 }
 unsafe impl ::windows_core::Interface for ViewModePreferences {
     type Vtable = IViewModePreferences_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ViewModePreferences {
-    const IID: ::windows_core::GUID = <IViewModePreferences as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IViewModePreferences as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ViewModePreferences {
     const NAME: &'static str = "Windows.UI.ViewManagement.ViewModePreferences";

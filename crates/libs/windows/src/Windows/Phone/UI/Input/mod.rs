@@ -53,9 +53,7 @@ impl ::windows_core::RuntimeType for BackPressedEventArgs {
 }
 unsafe impl ::windows_core::Interface for BackPressedEventArgs {
     type Vtable = IBackPressedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BackPressedEventArgs {
-    const IID: ::windows_core::GUID = <IBackPressedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBackPressedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BackPressedEventArgs {
     const NAME: &'static str = "Windows.Phone.UI.Input.BackPressedEventArgs";
@@ -72,9 +70,7 @@ impl ::windows_core::RuntimeType for CameraEventArgs {
 }
 unsafe impl ::windows_core::Interface for CameraEventArgs {
     type Vtable = ICameraEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CameraEventArgs {
-    const IID: ::windows_core::GUID = <ICameraEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICameraEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CameraEventArgs {
     const NAME: &'static str = "Windows.Phone.UI.Input.CameraEventArgs";

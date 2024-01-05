@@ -69,9 +69,7 @@ impl ::windows_core::RuntimeType for AudioRoutingManager {
 }
 unsafe impl ::windows_core::Interface for AudioRoutingManager {
     type Vtable = IAudioRoutingManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AudioRoutingManager {
-    const IID: ::windows_core::GUID = <IAudioRoutingManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAudioRoutingManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AudioRoutingManager {
     const NAME: &'static str = "Windows.Phone.Media.Devices.AudioRoutingManager";

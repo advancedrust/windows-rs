@@ -330,32 +330,32 @@ impl CameraIntrinsics {
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
     pub fn UndistortedProjectionTransform(&self) -> ::windows_core::Result<super::super::super::Foundation::Numerics::Matrix4x4> {
-        let this = &::windows_core::ComInterface::cast::<ICameraIntrinsics2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICameraIntrinsics2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UndistortedProjectionTransform)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn DistortPoint(&self, input: super::super::super::Foundation::Point) -> ::windows_core::Result<super::super::super::Foundation::Point> {
-        let this = &::windows_core::ComInterface::cast::<ICameraIntrinsics2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICameraIntrinsics2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DistortPoint)(::windows_core::Interface::as_raw(this), input, &mut result__).from_abi(result__)
         }
     }
     pub fn DistortPoints(&self, inputs: &[super::super::super::Foundation::Point], results: &mut [super::super::super::Foundation::Point]) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICameraIntrinsics2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICameraIntrinsics2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).DistortPoints)(::windows_core::Interface::as_raw(this), inputs.len().try_into().unwrap(), inputs.as_ptr(), results.len().try_into().unwrap(), results.as_mut_ptr()).ok() }
     }
     pub fn UndistortPoint(&self, input: super::super::super::Foundation::Point) -> ::windows_core::Result<super::super::super::Foundation::Point> {
-        let this = &::windows_core::ComInterface::cast::<ICameraIntrinsics2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICameraIntrinsics2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UndistortPoint)(::windows_core::Interface::as_raw(this), input, &mut result__).from_abi(result__)
         }
     }
     pub fn UndistortPoints(&self, inputs: &[super::super::super::Foundation::Point], results: &mut [super::super::super::Foundation::Point]) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ICameraIntrinsics2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICameraIntrinsics2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).UndistortPoints)(::windows_core::Interface::as_raw(this), inputs.len().try_into().unwrap(), inputs.as_ptr(), results.len().try_into().unwrap(), results.as_mut_ptr()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
@@ -377,9 +377,7 @@ impl ::windows_core::RuntimeType for CameraIntrinsics {
 }
 unsafe impl ::windows_core::Interface for CameraIntrinsics {
     type Vtable = ICameraIntrinsics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CameraIntrinsics {
-    const IID: ::windows_core::GUID = <ICameraIntrinsics as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICameraIntrinsics as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CameraIntrinsics {
     const NAME: &'static str = "Windows.Media.Devices.Core.CameraIntrinsics";
@@ -392,7 +390,7 @@ unsafe impl ::core::marker::Sync for CameraIntrinsics {}
 pub struct DepthCorrelatedCoordinateMapper(::windows_core::IUnknown);
 impl DepthCorrelatedCoordinateMapper {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`, `\"Perception_Spatial\"`"]
@@ -445,9 +443,7 @@ impl ::windows_core::RuntimeType for DepthCorrelatedCoordinateMapper {
 }
 unsafe impl ::windows_core::Interface for DepthCorrelatedCoordinateMapper {
     type Vtable = IDepthCorrelatedCoordinateMapper_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DepthCorrelatedCoordinateMapper {
-    const IID: ::windows_core::GUID = <IDepthCorrelatedCoordinateMapper as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDepthCorrelatedCoordinateMapper as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DepthCorrelatedCoordinateMapper {
     const NAME: &'static str = "Windows.Media.Devices.Core.DepthCorrelatedCoordinateMapper";
@@ -496,7 +492,7 @@ impl FrameControlCapabilities {
         }
     }
     pub fn Flash(&self) -> ::windows_core::Result<FrameFlashCapabilities> {
-        let this = &::windows_core::ComInterface::cast::<IFrameControlCapabilities2>(self)?;
+        let this = &::windows_core::Interface::cast::<IFrameControlCapabilities2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Flash)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -508,9 +504,7 @@ impl ::windows_core::RuntimeType for FrameControlCapabilities {
 }
 unsafe impl ::windows_core::Interface for FrameControlCapabilities {
     type Vtable = IFrameControlCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameControlCapabilities {
-    const IID: ::windows_core::GUID = <IFrameControlCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameControlCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameControlCapabilities {
     const NAME: &'static str = "Windows.Media.Devices.Core.FrameControlCapabilities";
@@ -570,7 +564,7 @@ impl FrameController {
         unsafe { (::windows_core::Interface::vtable(this).SetPhotoConfirmationEnabled)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn FlashControl(&self) -> ::windows_core::Result<FrameFlashControl> {
-        let this = &::windows_core::ComInterface::cast::<IFrameController2>(self)?;
+        let this = &::windows_core::Interface::cast::<IFrameController2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FlashControl)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -582,9 +576,7 @@ impl ::windows_core::RuntimeType for FrameController {
 }
 unsafe impl ::windows_core::Interface for FrameController {
     type Vtable = IFrameController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameController {
-    const IID: ::windows_core::GUID = <IFrameController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameController {
     const NAME: &'static str = "Windows.Media.Devices.Core.FrameController";
@@ -630,9 +622,7 @@ impl ::windows_core::RuntimeType for FrameExposureCapabilities {
 }
 unsafe impl ::windows_core::Interface for FrameExposureCapabilities {
     type Vtable = IFrameExposureCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameExposureCapabilities {
-    const IID: ::windows_core::GUID = <IFrameExposureCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameExposureCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameExposureCapabilities {
     const NAME: &'static str = "Windows.Media.Devices.Core.FrameExposureCapabilities";
@@ -676,9 +666,7 @@ impl ::windows_core::RuntimeType for FrameExposureCompensationCapabilities {
 }
 unsafe impl ::windows_core::Interface for FrameExposureCompensationCapabilities {
     type Vtable = IFrameExposureCompensationCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameExposureCompensationCapabilities {
-    const IID: ::windows_core::GUID = <IFrameExposureCompensationCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameExposureCompensationCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameExposureCompensationCapabilities {
     const NAME: &'static str = "Windows.Media.Devices.Core.FrameExposureCompensationCapabilities";
@@ -708,9 +696,7 @@ impl ::windows_core::RuntimeType for FrameExposureCompensationControl {
 }
 unsafe impl ::windows_core::Interface for FrameExposureCompensationControl {
     type Vtable = IFrameExposureCompensationControl_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameExposureCompensationControl {
-    const IID: ::windows_core::GUID = <IFrameExposureCompensationControl as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameExposureCompensationControl as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameExposureCompensationControl {
     const NAME: &'static str = "Windows.Media.Devices.Core.FrameExposureCompensationControl";
@@ -751,9 +737,7 @@ impl ::windows_core::RuntimeType for FrameExposureControl {
 }
 unsafe impl ::windows_core::Interface for FrameExposureControl {
     type Vtable = IFrameExposureControl_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameExposureControl {
-    const IID: ::windows_core::GUID = <IFrameExposureControl as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameExposureControl as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameExposureControl {
     const NAME: &'static str = "Windows.Media.Devices.Core.FrameExposureControl";
@@ -790,9 +774,7 @@ impl ::windows_core::RuntimeType for FrameFlashCapabilities {
 }
 unsafe impl ::windows_core::Interface for FrameFlashCapabilities {
     type Vtable = IFrameFlashCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameFlashCapabilities {
-    const IID: ::windows_core::GUID = <IFrameFlashCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameFlashCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameFlashCapabilities {
     const NAME: &'static str = "Windows.Media.Devices.Core.FrameFlashCapabilities";
@@ -852,9 +834,7 @@ impl ::windows_core::RuntimeType for FrameFlashControl {
 }
 unsafe impl ::windows_core::Interface for FrameFlashControl {
     type Vtable = IFrameFlashControl_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameFlashControl {
-    const IID: ::windows_core::GUID = <IFrameFlashControl as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameFlashControl as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameFlashControl {
     const NAME: &'static str = "Windows.Media.Devices.Core.FrameFlashControl";
@@ -898,9 +878,7 @@ impl ::windows_core::RuntimeType for FrameFocusCapabilities {
 }
 unsafe impl ::windows_core::Interface for FrameFocusCapabilities {
     type Vtable = IFrameFocusCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameFocusCapabilities {
-    const IID: ::windows_core::GUID = <IFrameFocusCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameFocusCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameFocusCapabilities {
     const NAME: &'static str = "Windows.Media.Devices.Core.FrameFocusCapabilities";
@@ -930,9 +908,7 @@ impl ::windows_core::RuntimeType for FrameFocusControl {
 }
 unsafe impl ::windows_core::Interface for FrameFocusControl {
     type Vtable = IFrameFocusControl_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameFocusControl {
-    const IID: ::windows_core::GUID = <IFrameFocusControl as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameFocusControl as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameFocusControl {
     const NAME: &'static str = "Windows.Media.Devices.Core.FrameFocusControl";
@@ -976,9 +952,7 @@ impl ::windows_core::RuntimeType for FrameIsoSpeedCapabilities {
 }
 unsafe impl ::windows_core::Interface for FrameIsoSpeedCapabilities {
     type Vtable = IFrameIsoSpeedCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameIsoSpeedCapabilities {
-    const IID: ::windows_core::GUID = <IFrameIsoSpeedCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameIsoSpeedCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameIsoSpeedCapabilities {
     const NAME: &'static str = "Windows.Media.Devices.Core.FrameIsoSpeedCapabilities";
@@ -1019,9 +993,7 @@ impl ::windows_core::RuntimeType for FrameIsoSpeedControl {
 }
 unsafe impl ::windows_core::Interface for FrameIsoSpeedControl {
     type Vtable = IFrameIsoSpeedControl_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FrameIsoSpeedControl {
-    const IID: ::windows_core::GUID = <IFrameIsoSpeedControl as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFrameIsoSpeedControl as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FrameIsoSpeedControl {
     const NAME: &'static str = "Windows.Media.Devices.Core.FrameIsoSpeedControl";
@@ -1099,9 +1071,7 @@ impl ::windows_core::RuntimeType for VariablePhotoSequenceController {
 }
 unsafe impl ::windows_core::Interface for VariablePhotoSequenceController {
     type Vtable = IVariablePhotoSequenceController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VariablePhotoSequenceController {
-    const IID: ::windows_core::GUID = <IVariablePhotoSequenceController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVariablePhotoSequenceController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VariablePhotoSequenceController {
     const NAME: &'static str = "Windows.Media.Devices.Core.VariablePhotoSequenceController";

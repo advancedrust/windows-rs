@@ -85,9 +85,7 @@ impl ::windows_core::RuntimeType for PerformLocalActionRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PerformLocalActionRequestedEventArgs {
     type Vtable = IPerformLocalActionRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PerformLocalActionRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IPerformLocalActionRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPerformLocalActionRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PerformLocalActionRequestedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteDesktop.Provider.PerformLocalActionRequestedEventArgs";
@@ -129,9 +127,7 @@ impl ::windows_core::RuntimeType for RemoteDesktopConnectionInfo {
 }
 unsafe impl ::windows_core::Interface for RemoteDesktopConnectionInfo {
     type Vtable = IRemoteDesktopConnectionInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteDesktopConnectionInfo {
-    const IID: ::windows_core::GUID = <IRemoteDesktopConnectionInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteDesktopConnectionInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteDesktopConnectionInfo {
     const NAME: &'static str = "Windows.System.RemoteDesktop.Provider.RemoteDesktopConnectionInfo";
@@ -144,7 +140,7 @@ unsafe impl ::core::marker::Sync for RemoteDesktopConnectionInfo {}
 pub struct RemoteDesktopConnectionRemoteInfo(::windows_core::IUnknown);
 impl RemoteDesktopConnectionRemoteInfo {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn ReportSwitched(&self) -> ::windows_core::Result<()> {
@@ -205,9 +201,7 @@ impl ::windows_core::RuntimeType for RemoteDesktopConnectionRemoteInfo {
 }
 unsafe impl ::windows_core::Interface for RemoteDesktopConnectionRemoteInfo {
     type Vtable = IRemoteDesktopConnectionRemoteInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteDesktopConnectionRemoteInfo {
-    const IID: ::windows_core::GUID = <IRemoteDesktopConnectionRemoteInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteDesktopConnectionRemoteInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteDesktopConnectionRemoteInfo {
     const NAME: &'static str = "Windows.System.RemoteDesktop.Provider.RemoteDesktopConnectionRemoteInfo";
@@ -251,9 +245,7 @@ impl ::windows_core::RuntimeType for RemoteDesktopInfo {
 }
 unsafe impl ::windows_core::Interface for RemoteDesktopInfo {
     type Vtable = IRemoteDesktopInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteDesktopInfo {
-    const IID: ::windows_core::GUID = <IRemoteDesktopInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteDesktopInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteDesktopInfo {
     const NAME: &'static str = "Windows.System.RemoteDesktop.Provider.RemoteDesktopInfo";

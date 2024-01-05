@@ -1081,7 +1081,7 @@ pub struct IRemoteDesktopClientTouchPointer_Vtbl {
 impl IRemoteSystemAdditionalInfoProvider {
     pub unsafe fn GetAdditionalInfo<T>(&self, deduplicationid: *mut ::windows_core::HSTRING) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetAdditionalInfo)(::windows_core::Interface::as_raw(self), ::core::mem::transmute(deduplicationid), &T::IID, &mut result__).from_abi(result__)

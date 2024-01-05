@@ -154,7 +154,7 @@ impl BluetoothLEAdvertisementPublisherTriggerDetails {
         }
     }
     pub fn SelectedTransmitPowerLevelInDBm(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<i16>> {
-        let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisherTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IBluetoothLEAdvertisementPublisherTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SelectedTransmitPowerLevelInDBm)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -166,9 +166,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisementPublisherTriggerDet
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisementPublisherTriggerDetails {
     type Vtable = IBluetoothLEAdvertisementPublisherTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisementPublisherTriggerDetails {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementPublisherTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementPublisherTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisementPublisherTriggerDetails {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Background.BluetoothLEAdvertisementPublisherTriggerDetails";
@@ -209,9 +207,7 @@ impl ::windows_core::RuntimeType for BluetoothLEAdvertisementWatcherTriggerDetai
 }
 unsafe impl ::windows_core::Interface for BluetoothLEAdvertisementWatcherTriggerDetails {
     type Vtable = IBluetoothLEAdvertisementWatcherTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BluetoothLEAdvertisementWatcherTriggerDetails {
-    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementWatcherTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBluetoothLEAdvertisementWatcherTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BluetoothLEAdvertisementWatcherTriggerDetails {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Background.BluetoothLEAdvertisementWatcherTriggerDetails";
@@ -242,14 +238,14 @@ impl GattCharacteristicNotificationTriggerDetails {
         }
     }
     pub fn Error(&self) -> ::windows_core::Result<super::BluetoothError> {
-        let this = &::windows_core::ComInterface::cast::<IGattCharacteristicNotificationTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGattCharacteristicNotificationTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Error)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn EventTriggeringMode(&self) -> ::windows_core::Result<BluetoothEventTriggeringMode> {
-        let this = &::windows_core::ComInterface::cast::<IGattCharacteristicNotificationTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGattCharacteristicNotificationTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EventTriggeringMode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -258,7 +254,7 @@ impl GattCharacteristicNotificationTriggerDetails {
     #[doc = "Required features: `\"Devices_Bluetooth_GenericAttributeProfile\"`, `\"Foundation_Collections\"`"]
     #[cfg(all(feature = "Devices_Bluetooth_GenericAttributeProfile", feature = "Foundation_Collections"))]
     pub fn ValueChangedEvents(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IVectorView<super::GenericAttributeProfile::GattValueChangedEventArgs>> {
-        let this = &::windows_core::ComInterface::cast::<IGattCharacteristicNotificationTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGattCharacteristicNotificationTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ValueChangedEvents)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -270,9 +266,7 @@ impl ::windows_core::RuntimeType for GattCharacteristicNotificationTriggerDetail
 }
 unsafe impl ::windows_core::Interface for GattCharacteristicNotificationTriggerDetails {
     type Vtable = IGattCharacteristicNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GattCharacteristicNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = <IGattCharacteristicNotificationTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGattCharacteristicNotificationTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GattCharacteristicNotificationTriggerDetails {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Background.GattCharacteristicNotificationTriggerDetails";
@@ -323,9 +317,7 @@ impl ::windows_core::RuntimeType for GattServiceProviderConnection {
 }
 unsafe impl ::windows_core::Interface for GattServiceProviderConnection {
     type Vtable = IGattServiceProviderConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GattServiceProviderConnection {
-    const IID: ::windows_core::GUID = <IGattServiceProviderConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGattServiceProviderConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GattServiceProviderConnection {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Background.GattServiceProviderConnection";
@@ -350,9 +342,7 @@ impl ::windows_core::RuntimeType for GattServiceProviderTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for GattServiceProviderTriggerDetails {
     type Vtable = IGattServiceProviderTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GattServiceProviderTriggerDetails {
-    const IID: ::windows_core::GUID = <IGattServiceProviderTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGattServiceProviderTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GattServiceProviderTriggerDetails {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Background.GattServiceProviderTriggerDetails";
@@ -393,9 +383,7 @@ impl ::windows_core::RuntimeType for RfcommConnectionTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for RfcommConnectionTriggerDetails {
     type Vtable = IRfcommConnectionTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RfcommConnectionTriggerDetails {
-    const IID: ::windows_core::GUID = <IRfcommConnectionTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRfcommConnectionTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RfcommConnectionTriggerDetails {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Background.RfcommConnectionTriggerDetails";
@@ -460,9 +448,7 @@ impl ::windows_core::RuntimeType for RfcommInboundConnectionInformation {
 }
 unsafe impl ::windows_core::Interface for RfcommInboundConnectionInformation {
     type Vtable = IRfcommInboundConnectionInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RfcommInboundConnectionInformation {
-    const IID: ::windows_core::GUID = <IRfcommInboundConnectionInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRfcommInboundConnectionInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RfcommInboundConnectionInformation {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Background.RfcommInboundConnectionInformation";
@@ -498,9 +484,7 @@ impl ::windows_core::RuntimeType for RfcommOutboundConnectionInformation {
 }
 unsafe impl ::windows_core::Interface for RfcommOutboundConnectionInformation {
     type Vtable = IRfcommOutboundConnectionInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RfcommOutboundConnectionInformation {
-    const IID: ::windows_core::GUID = <IRfcommOutboundConnectionInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRfcommOutboundConnectionInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RfcommOutboundConnectionInformation {
     const NAME: &'static str = "Windows.Devices.Bluetooth.Background.RfcommOutboundConnectionInformation";

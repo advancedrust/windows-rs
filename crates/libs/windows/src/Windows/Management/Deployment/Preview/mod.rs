@@ -54,9 +54,7 @@ impl ::windows_core::RuntimeType for InstalledClassicAppInfo {
 }
 unsafe impl ::windows_core::Interface for InstalledClassicAppInfo {
     type Vtable = IInstalledClassicAppInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for InstalledClassicAppInfo {
-    const IID: ::windows_core::GUID = <IInstalledClassicAppInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IInstalledClassicAppInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for InstalledClassicAppInfo {
     const NAME: &'static str = "Windows.Management.Deployment.Preview.InstalledClassicAppInfo";

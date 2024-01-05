@@ -7987,7 +7987,7 @@ impl IXFeed {
     }
     pub unsafe fn Parent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Parent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -8036,7 +8036,7 @@ impl IXFeed {
     }
     pub unsafe fn GetItem<T>(&self, uiid: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetItem)(::windows_core::Interface::as_raw(self), uiid, &T::IID, &mut result__).from_abi(result__)
@@ -8124,7 +8124,7 @@ impl IXFeed {
     }
     pub unsafe fn GetWatcher<T>(&self, scope: FEEDS_EVENTS_SCOPE, mask: FEEDS_EVENTS_MASK) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetWatcher)(::windows_core::Interface::as_raw(self), scope, mask, &T::IID, &mut result__).from_abi(result__)
@@ -8238,7 +8238,7 @@ impl IXFeed2 {
     }
     pub unsafe fn Parent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.Parent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -8287,7 +8287,7 @@ impl IXFeed2 {
     }
     pub unsafe fn GetItem<T>(&self, uiid: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetItem)(::windows_core::Interface::as_raw(self), uiid, &T::IID, &mut result__).from_abi(result__)
@@ -8375,7 +8375,7 @@ impl IXFeed2 {
     }
     pub unsafe fn GetWatcher<T>(&self, scope: FEEDS_EVENTS_SCOPE, mask: FEEDS_EVENTS_MASK) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetWatcher)(::windows_core::Interface::as_raw(self), scope, mask, &T::IID, &mut result__).from_abi(result__)
@@ -8390,7 +8390,7 @@ impl IXFeed2 {
     }
     pub unsafe fn GetItemByEffectiveId<T>(&self, uieffectiveid: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetItemByEffectiveId)(::windows_core::Interface::as_raw(self), uieffectiveid, &T::IID, &mut result__).from_abi(result__)
@@ -8464,7 +8464,7 @@ impl IXFeedEnclosure {
     }
     pub unsafe fn Parent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Parent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -8587,7 +8587,7 @@ impl IXFeedFolder {
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
         P1: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateFeed)(::windows_core::Interface::as_raw(self), pszname.into_param().abi(), pszurl.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -8595,7 +8595,7 @@ impl IXFeedFolder {
     pub unsafe fn CreateSubfolder<P0, T>(&self, pszname: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).CreateSubfolder)(::windows_core::Interface::as_raw(self), pszname.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -8615,7 +8615,7 @@ impl IXFeedFolder {
     pub unsafe fn GetFeed<P0, T>(&self, pszname: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetFeed)(::windows_core::Interface::as_raw(self), pszname.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -8623,7 +8623,7 @@ impl IXFeedFolder {
     pub unsafe fn GetSubfolder<P0, T>(&self, pszname: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetSubfolder)(::windows_core::Interface::as_raw(self), pszname.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -8653,7 +8653,7 @@ impl IXFeedFolder {
     }
     pub unsafe fn Parent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Parent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -8664,7 +8664,7 @@ impl IXFeedFolder {
     }
     pub unsafe fn GetWatcher<T>(&self, scope: FEEDS_EVENTS_SCOPE, mask: FEEDS_EVENTS_MASK) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetWatcher)(::windows_core::Interface::as_raw(self), scope, mask, &T::IID, &mut result__).from_abi(result__)
@@ -8864,7 +8864,7 @@ impl IXFeedItem {
     }
     pub unsafe fn Enclosure<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Enclosure)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -8885,7 +8885,7 @@ impl IXFeedItem {
     }
     pub unsafe fn Parent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Parent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -8970,7 +8970,7 @@ impl IXFeedItem2 {
     }
     pub unsafe fn Enclosure<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.Enclosure)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -8991,7 +8991,7 @@ impl IXFeedItem2 {
     }
     pub unsafe fn Parent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.Parent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -9031,7 +9031,7 @@ impl IXFeedsEnum {
     }
     pub unsafe fn Item<T>(&self, uiindex: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Item)(::windows_core::Interface::as_raw(self), uiindex, &T::IID, &mut result__).from_abi(result__)
@@ -9049,7 +9049,7 @@ pub struct IXFeedsEnum_Vtbl {
 impl IXFeedsManager {
     pub unsafe fn RootFolder<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).RootFolder)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -9071,7 +9071,7 @@ impl IXFeedsManager {
     pub unsafe fn GetFeed<P0, T>(&self, pszpath: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetFeed)(::windows_core::Interface::as_raw(self), pszpath.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -9079,7 +9079,7 @@ impl IXFeedsManager {
     pub unsafe fn GetFeedByUrl<P0, T>(&self, pszurl: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetFeedByUrl)(::windows_core::Interface::as_raw(self), pszurl.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
@@ -9094,7 +9094,7 @@ impl IXFeedsManager {
     pub unsafe fn GetFolder<P0, T>(&self, pszpath: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<::windows_core::PCWSTR>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetFolder)(::windows_core::Interface::as_raw(self), pszpath.into_param().abi(), &T::IID, &mut result__).from_abi(result__)

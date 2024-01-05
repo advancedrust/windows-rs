@@ -372,9 +372,7 @@ impl ::windows_core::RuntimeType for AdvancedColorInfo {
 }
 unsafe impl ::windows_core::Interface for AdvancedColorInfo {
     type Vtable = IAdvancedColorInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdvancedColorInfo {
-    const IID: ::windows_core::GUID = <IAdvancedColorInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdvancedColorInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdvancedColorInfo {
     const NAME: &'static str = "Windows.Graphics.Display.AdvancedColorInfo";
@@ -504,9 +502,7 @@ impl ::windows_core::RuntimeType for BrightnessOverride {
 }
 unsafe impl ::windows_core::Interface for BrightnessOverride {
     type Vtable = IBrightnessOverride_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BrightnessOverride {
-    const IID: ::windows_core::GUID = <IBrightnessOverride as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBrightnessOverride as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BrightnessOverride {
     const NAME: &'static str = "Windows.Graphics.Display.BrightnessOverride";
@@ -561,9 +557,7 @@ impl ::windows_core::RuntimeType for BrightnessOverrideSettings {
 }
 unsafe impl ::windows_core::Interface for BrightnessOverrideSettings {
     type Vtable = IBrightnessOverrideSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BrightnessOverrideSettings {
-    const IID: ::windows_core::GUID = <IBrightnessOverrideSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBrightnessOverrideSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BrightnessOverrideSettings {
     const NAME: &'static str = "Windows.Graphics.Display.BrightnessOverrideSettings";
@@ -599,9 +593,7 @@ impl ::windows_core::RuntimeType for ColorOverrideSettings {
 }
 unsafe impl ::windows_core::Interface for ColorOverrideSettings {
     type Vtable = IColorOverrideSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ColorOverrideSettings {
-    const IID: ::windows_core::GUID = <IColorOverrideSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IColorOverrideSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ColorOverrideSettings {
     const NAME: &'static str = "Windows.Graphics.Display.ColorOverrideSettings";
@@ -729,9 +721,7 @@ impl ::windows_core::RuntimeType for DisplayEnhancementOverride {
 }
 unsafe impl ::windows_core::Interface for DisplayEnhancementOverride {
     type Vtable = IDisplayEnhancementOverride_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayEnhancementOverride {
-    const IID: ::windows_core::GUID = <IDisplayEnhancementOverride as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayEnhancementOverride as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayEnhancementOverride {
     const NAME: &'static str = "Windows.Graphics.Display.DisplayEnhancementOverride";
@@ -772,9 +762,7 @@ impl ::windows_core::RuntimeType for DisplayEnhancementOverrideCapabilities {
 }
 unsafe impl ::windows_core::Interface for DisplayEnhancementOverrideCapabilities {
     type Vtable = IDisplayEnhancementOverrideCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayEnhancementOverrideCapabilities {
-    const IID: ::windows_core::GUID = <IDisplayEnhancementOverrideCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayEnhancementOverrideCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayEnhancementOverrideCapabilities {
     const NAME: &'static str = "Windows.Graphics.Display.DisplayEnhancementOverrideCapabilities";
@@ -799,9 +787,7 @@ impl ::windows_core::RuntimeType for DisplayEnhancementOverrideCapabilitiesChang
 }
 unsafe impl ::windows_core::Interface for DisplayEnhancementOverrideCapabilitiesChangedEventArgs {
     type Vtable = IDisplayEnhancementOverrideCapabilitiesChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayEnhancementOverrideCapabilitiesChangedEventArgs {
-    const IID: ::windows_core::GUID = <IDisplayEnhancementOverrideCapabilitiesChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayEnhancementOverrideCapabilitiesChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayEnhancementOverrideCapabilitiesChangedEventArgs {
     const NAME: &'static str = "Windows.Graphics.Display.DisplayEnhancementOverrideCapabilitiesChangedEventArgs";
@@ -928,35 +914,35 @@ impl DisplayInformation {
         unsafe { (::windows_core::Interface::vtable(this).RemoveColorProfileChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn RawPixelsPerViewPixel(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IDisplayInformation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayInformation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RawPixelsPerViewPixel)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn DiagonalSizeInInches(&self) -> ::windows_core::Result<super::super::Foundation::IReference<f64>> {
-        let this = &::windows_core::ComInterface::cast::<IDisplayInformation3>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayInformation3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DiagonalSizeInInches)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ScreenWidthInRawPixels(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IDisplayInformation4>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayInformation4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ScreenWidthInRawPixels)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ScreenHeightInRawPixels(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IDisplayInformation4>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayInformation4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ScreenHeightInRawPixels)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetAdvancedColorInfo(&self) -> ::windows_core::Result<AdvancedColorInfo> {
-        let this = &::windows_core::ComInterface::cast::<IDisplayInformation5>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayInformation5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetAdvancedColorInfo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -966,14 +952,14 @@ impl DisplayInformation {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<DisplayInformation, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IDisplayInformation5>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayInformation5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AdvancedColorInfoChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveAdvancedColorInfoChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IDisplayInformation5>(self)?;
+        let this = &::windows_core::Interface::cast::<IDisplayInformation5>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAdvancedColorInfoChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn GetForCurrentView() -> ::windows_core::Result<DisplayInformation> {
@@ -1014,9 +1000,7 @@ impl ::windows_core::RuntimeType for DisplayInformation {
 }
 unsafe impl ::windows_core::Interface for DisplayInformation {
     type Vtable = IDisplayInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayInformation {
-    const IID: ::windows_core::GUID = <IDisplayInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayInformation {
     const NAME: &'static str = "Windows.Graphics.Display.DisplayInformation";
@@ -1202,9 +1186,7 @@ impl ::windows_core::RuntimeType for DisplayServices {
 }
 unsafe impl ::windows_core::Interface for DisplayServices {
     type Vtable = IDisplayServices_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DisplayServices {
-    const IID: ::windows_core::GUID = <IDisplayServices as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDisplayServices as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DisplayServices {
     const NAME: &'static str = "Windows.Graphics.Display.DisplayServices";
@@ -1513,7 +1495,7 @@ impl<F: FnMut(::core::option::Option<&::windows_core::IInspectable>) -> ::window
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <DisplayPropertiesEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <DisplayPropertiesEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

@@ -286,9 +286,7 @@ impl ::windows_core::RuntimeType for WebUICommandBar {
 }
 unsafe impl ::windows_core::Interface for WebUICommandBar {
     type Vtable = IWebUICommandBar_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebUICommandBar {
-    const IID: ::windows_core::GUID = <IWebUICommandBar as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebUICommandBar as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebUICommandBar {
     const NAME: &'static str = "Windows.UI.WebUI.Core.WebUICommandBar";
@@ -341,9 +339,7 @@ impl ::windows_core::RuntimeType for WebUICommandBarBitmapIcon {
 }
 unsafe impl ::windows_core::Interface for WebUICommandBarBitmapIcon {
     type Vtable = IWebUICommandBarBitmapIcon_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebUICommandBarBitmapIcon {
-    const IID: ::windows_core::GUID = <IWebUICommandBarBitmapIcon as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebUICommandBarBitmapIcon as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebUICommandBarBitmapIcon {
     const NAME: &'static str = "Windows.UI.WebUI.Core.WebUICommandBarBitmapIcon";
@@ -394,9 +390,7 @@ impl ::windows_core::RuntimeType for WebUICommandBarConfirmationButton {
 }
 unsafe impl ::windows_core::Interface for WebUICommandBarConfirmationButton {
     type Vtable = IWebUICommandBarConfirmationButton_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebUICommandBarConfirmationButton {
-    const IID: ::windows_core::GUID = <IWebUICommandBarConfirmationButton as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebUICommandBarConfirmationButton as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebUICommandBarConfirmationButton {
     const NAME: &'static str = "Windows.UI.WebUI.Core.WebUICommandBarConfirmationButton";
@@ -494,9 +488,7 @@ impl ::windows_core::RuntimeType for WebUICommandBarIconButton {
 }
 unsafe impl ::windows_core::Interface for WebUICommandBarIconButton {
     type Vtable = IWebUICommandBarIconButton_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebUICommandBarIconButton {
-    const IID: ::windows_core::GUID = <IWebUICommandBarIconButton as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebUICommandBarIconButton as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebUICommandBarIconButton {
     const NAME: &'static str = "Windows.UI.WebUI.Core.WebUICommandBarIconButton";
@@ -522,9 +514,7 @@ impl ::windows_core::RuntimeType for WebUICommandBarItemInvokedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WebUICommandBarItemInvokedEventArgs {
     type Vtable = IWebUICommandBarItemInvokedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebUICommandBarItemInvokedEventArgs {
-    const IID: ::windows_core::GUID = <IWebUICommandBarItemInvokedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebUICommandBarItemInvokedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebUICommandBarItemInvokedEventArgs {
     const NAME: &'static str = "Windows.UI.WebUI.Core.WebUICommandBarItemInvokedEventArgs";
@@ -549,9 +539,7 @@ impl ::windows_core::RuntimeType for WebUICommandBarSizeChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WebUICommandBarSizeChangedEventArgs {
     type Vtable = IWebUICommandBarSizeChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebUICommandBarSizeChangedEventArgs {
-    const IID: ::windows_core::GUID = <IWebUICommandBarSizeChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebUICommandBarSizeChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebUICommandBarSizeChangedEventArgs {
     const NAME: &'static str = "Windows.UI.WebUI.Core.WebUICommandBarSizeChangedEventArgs";
@@ -598,9 +586,7 @@ impl ::windows_core::RuntimeType for WebUICommandBarSymbolIcon {
 }
 unsafe impl ::windows_core::Interface for WebUICommandBarSymbolIcon {
     type Vtable = IWebUICommandBarSymbolIcon_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebUICommandBarSymbolIcon {
-    const IID: ::windows_core::GUID = <IWebUICommandBarSymbolIcon as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebUICommandBarSymbolIcon as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebUICommandBarSymbolIcon {
     const NAME: &'static str = "Windows.UI.WebUI.Core.WebUICommandBarSymbolIcon";
@@ -655,7 +641,7 @@ impl<F: FnMut() -> ::windows_core::Result<()> + ::core::marker::Send + 'static> 
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <MenuClosedEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <MenuClosedEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -716,7 +702,7 @@ impl<F: FnMut() -> ::windows_core::Result<()> + ::core::marker::Send + 'static> 
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <MenuOpenedEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <MenuOpenedEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -780,7 +766,7 @@ impl<F: FnMut(::core::option::Option<&WebUICommandBarSizeChangedEventArgs>) -> :
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <SizeChangedEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <SizeChangedEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

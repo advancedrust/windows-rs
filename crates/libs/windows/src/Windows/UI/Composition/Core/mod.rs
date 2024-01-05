@@ -21,7 +21,7 @@ impl CompositorController {
         SHARED.call(callback)
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<super::Compositor> {
@@ -62,9 +62,7 @@ impl ::windows_core::RuntimeType for CompositorController {
 }
 unsafe impl ::windows_core::Interface for CompositorController {
     type Vtable = ICompositorController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CompositorController {
-    const IID: ::windows_core::GUID = <ICompositorController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICompositorController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CompositorController {
     const NAME: &'static str = "Windows.UI.Composition.Core.CompositorController";

@@ -145,9 +145,7 @@ impl ::windows_core::RuntimeType for EyesPose {
 }
 unsafe impl ::windows_core::Interface for EyesPose {
     type Vtable = IEyesPose_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EyesPose {
-    const IID: ::windows_core::GUID = <IEyesPose as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEyesPose as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EyesPose {
     const NAME: &'static str = "Windows.Perception.People.EyesPose";
@@ -223,9 +221,7 @@ impl ::windows_core::RuntimeType for HandMeshObserver {
 }
 unsafe impl ::windows_core::Interface for HandMeshObserver {
     type Vtable = IHandMeshObserver_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HandMeshObserver {
-    const IID: ::windows_core::GUID = <IHandMeshObserver as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHandMeshObserver as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HandMeshObserver {
     const NAME: &'static str = "Windows.Perception.People.HandMeshObserver";
@@ -265,9 +261,7 @@ impl ::windows_core::RuntimeType for HandMeshVertexState {
 }
 unsafe impl ::windows_core::Interface for HandMeshVertexState {
     type Vtable = IHandMeshVertexState_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HandMeshVertexState {
-    const IID: ::windows_core::GUID = <IHandMeshVertexState as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHandMeshVertexState as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HandMeshVertexState {
     const NAME: &'static str = "Windows.Perception.People.HandMeshVertexState";
@@ -324,9 +318,7 @@ impl ::windows_core::RuntimeType for HandPose {
 }
 unsafe impl ::windows_core::Interface for HandPose {
     type Vtable = IHandPose_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HandPose {
-    const IID: ::windows_core::GUID = <IHandPose as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHandPose as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HandPose {
     const NAME: &'static str = "Windows.Perception.People.HandPose";
@@ -371,9 +363,7 @@ impl ::windows_core::RuntimeType for HeadPose {
 }
 unsafe impl ::windows_core::Interface for HeadPose {
     type Vtable = IHeadPose_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HeadPose {
-    const IID: ::windows_core::GUID = <IHeadPose as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHeadPose as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HeadPose {
     const NAME: &'static str = "Windows.Perception.People.HeadPose";

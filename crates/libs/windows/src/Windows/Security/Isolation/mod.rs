@@ -404,7 +404,7 @@ impl IsolatedWindowsEnvironment {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PostMessageToReceiverAsync)(::windows_core::Interface::as_raw(this), receiverid, message.into_param().abi(), &mut result__).from_abi(result__)
@@ -417,14 +417,14 @@ impl IsolatedWindowsEnvironment {
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::IInspectable>>,
         P1: ::windows_core::IntoParam<IsolatedWindowsEnvironmentTelemetryParameters>,
     {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PostMessageToReceiverWithTelemetryAsync)(::windows_core::Interface::as_raw(this), receiverid, message.into_param().abi(), telemetryparameters.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn GetUserInfo(&self) -> ::windows_core::Result<IsolatedWindowsEnvironmentUserInfo> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironment3>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironment3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetUserInfo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -434,7 +434,7 @@ impl IsolatedWindowsEnvironment {
     where
         P0: ::windows_core::IntoParam<IsolatedWindowsEnvironmentShareFileRequestOptions>,
     {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironment3>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironment3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShareFileAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(filepath), options.into_param().abi(), &mut result__).from_abi(result__)
@@ -445,14 +445,14 @@ impl IsolatedWindowsEnvironment {
         P0: ::windows_core::IntoParam<IsolatedWindowsEnvironmentShareFileRequestOptions>,
         P1: ::windows_core::IntoParam<IsolatedWindowsEnvironmentTelemetryParameters>,
     {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironment3>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironment3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShareFileWithTelemetryAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(filepath), options.into_param().abi(), telemetryparameters.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn ChangePriority(&self, priority: IsolatedWindowsEnvironmentCreationPriority) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironment4>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironment4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ChangePriority)(::windows_core::Interface::as_raw(this), priority).ok() }
     }
     pub fn CreateAsync<P0>(options: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperationWithProgress<IsolatedWindowsEnvironmentCreateResult, IsolatedWindowsEnvironmentCreateProgress>>
@@ -499,9 +499,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironment {
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironment {
     type Vtable = IIsolatedWindowsEnvironment_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironment {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironment as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironment as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironment {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironment";
@@ -535,7 +533,7 @@ impl IsolatedWindowsEnvironmentCreateResult {
         }
     }
     pub fn ChangeCreationPriority(&self, priority: IsolatedWindowsEnvironmentCreationPriority) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironmentCreateResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironmentCreateResult2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ChangeCreationPriority)(::windows_core::Interface::as_raw(this), priority).ok() }
     }
 }
@@ -544,9 +542,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentCreateResult {
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentCreateResult {
     type Vtable = IIsolatedWindowsEnvironmentCreateResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentCreateResult {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentCreateResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentCreateResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentCreateResult {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentCreateResult";
@@ -577,14 +573,14 @@ impl IsolatedWindowsEnvironmentFile {
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn GuestPath(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironmentFile2>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironmentFile2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GuestPath)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsReadOnly(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironmentFile2>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironmentFile2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsReadOnly)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -596,9 +592,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentFile {
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentFile {
     type Vtable = IIsolatedWindowsEnvironmentFile_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentFile {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentFile as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentFile as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentFile {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentFile";
@@ -662,9 +656,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentLaunchFileResult 
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentLaunchFileResult {
     type Vtable = IIsolatedWindowsEnvironmentLaunchFileResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentLaunchFileResult {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentLaunchFileResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentLaunchFileResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentLaunchFileResult {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentLaunchFileResult";
@@ -779,47 +771,47 @@ impl IsolatedWindowsEnvironmentOptions {
         unsafe { (::windows_core::Interface::vtable(this).SetAllowCameraAndMicrophoneAccess)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn WindowAnnotationOverride(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironmentOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironmentOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).WindowAnnotationOverride)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetWindowAnnotationOverride(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironmentOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironmentOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetWindowAnnotationOverride)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn AllowedClipboardFormatsToEnvironment(&self) -> ::windows_core::Result<IsolatedWindowsEnvironmentAllowedClipboardFormats> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironmentOptions3>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironmentOptions3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AllowedClipboardFormatsToEnvironment)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAllowedClipboardFormatsToEnvironment(&self, value: IsolatedWindowsEnvironmentAllowedClipboardFormats) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironmentOptions3>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironmentOptions3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAllowedClipboardFormatsToEnvironment)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn AllowedClipboardFormatsToHost(&self) -> ::windows_core::Result<IsolatedWindowsEnvironmentAllowedClipboardFormats> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironmentOptions3>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironmentOptions3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AllowedClipboardFormatsToHost)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAllowedClipboardFormatsToHost(&self, value: IsolatedWindowsEnvironmentAllowedClipboardFormats) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironmentOptions3>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironmentOptions3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAllowedClipboardFormatsToHost)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CreationPriority(&self) -> ::windows_core::Result<IsolatedWindowsEnvironmentCreationPriority> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironmentOptions3>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironmentOptions3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreationPriority)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCreationPriority(&self, value: IsolatedWindowsEnvironmentCreationPriority) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironmentOptions3>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironmentOptions3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCreationPriority)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -828,9 +820,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentOptions {
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentOptions {
     type Vtable = IIsolatedWindowsEnvironmentOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentOptions {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentOptions {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentOptions";
@@ -914,9 +904,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentOwnerRegistration
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentOwnerRegistrationData {
     type Vtable = IIsolatedWindowsEnvironmentOwnerRegistrationData_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentOwnerRegistrationData {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentOwnerRegistrationData as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentOwnerRegistrationData as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentOwnerRegistrationData {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationData";
@@ -948,9 +936,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentOwnerRegistration
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentOwnerRegistrationResult {
     type Vtable = IIsolatedWindowsEnvironmentOwnerRegistrationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentOwnerRegistrationResult {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentOwnerRegistrationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentOwnerRegistrationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentOwnerRegistrationResult {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentOwnerRegistrationResult";
@@ -982,9 +968,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentPostMessageResult
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentPostMessageResult {
     type Vtable = IIsolatedWindowsEnvironmentPostMessageResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentPostMessageResult {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentPostMessageResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentPostMessageResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentPostMessageResult {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentPostMessageResult";
@@ -1031,9 +1015,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentProcess {
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentProcess {
     type Vtable = IIsolatedWindowsEnvironmentProcess_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentProcess {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentProcess as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentProcess as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentProcess {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentProcess";
@@ -1069,9 +1051,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentShareFileRequestO
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentShareFileRequestOptions {
     type Vtable = IIsolatedWindowsEnvironmentShareFileRequestOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentShareFileRequestOptions {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentShareFileRequestOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentShareFileRequestOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentShareFileRequestOptions {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFileRequestOptions";
@@ -1110,9 +1090,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentShareFileResult {
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentShareFileResult {
     type Vtable = IIsolatedWindowsEnvironmentShareFileResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentShareFileResult {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentShareFileResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentShareFileResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentShareFileResult {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFileResult";
@@ -1148,9 +1126,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentShareFolderReques
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentShareFolderRequestOptions {
     type Vtable = IIsolatedWindowsEnvironmentShareFolderRequestOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentShareFolderRequestOptions {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentShareFolderRequestOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentShareFolderRequestOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentShareFolderRequestOptions {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderRequestOptions";
@@ -1182,9 +1158,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentShareFolderResult
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentShareFolderResult {
     type Vtable = IIsolatedWindowsEnvironmentShareFolderResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentShareFolderResult {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentShareFolderResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentShareFolderResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentShareFolderResult {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentShareFolderResult";
@@ -1223,9 +1197,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentStartProcessResul
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentStartProcessResult {
     type Vtable = IIsolatedWindowsEnvironmentStartProcessResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentStartProcessResult {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentStartProcessResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentStartProcessResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentStartProcessResult {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentStartProcessResult";
@@ -1261,9 +1233,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentTelemetryParamete
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentTelemetryParameters {
     type Vtable = IIsolatedWindowsEnvironmentTelemetryParameters_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentTelemetryParameters {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentTelemetryParameters as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentTelemetryParameters as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentTelemetryParameters {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentTelemetryParameters";
@@ -1297,7 +1267,7 @@ impl IsolatedWindowsEnvironmentUserInfo {
         }
     }
     pub fn TryWaitForSignInWithProgressAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperationWithProgress<bool, IsolatedWindowsEnvironmentSignInProgress>> {
-        let this = &::windows_core::ComInterface::cast::<IIsolatedWindowsEnvironmentUserInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IIsolatedWindowsEnvironmentUserInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryWaitForSignInWithProgressAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1309,9 +1279,7 @@ impl ::windows_core::RuntimeType for IsolatedWindowsEnvironmentUserInfo {
 }
 unsafe impl ::windows_core::Interface for IsolatedWindowsEnvironmentUserInfo {
     type Vtable = IIsolatedWindowsEnvironmentUserInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IsolatedWindowsEnvironmentUserInfo {
-    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentUserInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IIsolatedWindowsEnvironmentUserInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for IsolatedWindowsEnvironmentUserInfo {
     const NAME: &'static str = "Windows.Security.Isolation.IsolatedWindowsEnvironmentUserInfo";
@@ -1854,7 +1822,7 @@ impl<F: FnMut(&::windows_core::GUID, ::core::option::Option<&super::super::Found
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <HostMessageReceivedCallback as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <HostMessageReceivedCallback as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -1929,7 +1897,7 @@ impl<F: FnMut(&::windows_core::GUID, ::core::option::Option<&super::super::Found
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <MessageReceivedCallback as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <MessageReceivedCallback as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

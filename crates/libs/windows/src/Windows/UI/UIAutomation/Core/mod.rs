@@ -189,9 +189,7 @@ impl ::windows_core::RuntimeType for AutomationRemoteOperationResult {
 }
 unsafe impl ::windows_core::Interface for AutomationRemoteOperationResult {
     type Vtable = IAutomationRemoteOperationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AutomationRemoteOperationResult {
-    const IID: ::windows_core::GUID = <IAutomationRemoteOperationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAutomationRemoteOperationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AutomationRemoteOperationResult {
     const NAME: &'static str = "Windows.UI.UIAutomation.Core.AutomationRemoteOperationResult";
@@ -266,7 +264,7 @@ impl CoreAutomationRemoteOperation {
     where
         P0: ::windows_core::IntoParam<super::AutomationConnectionBoundObject>,
     {
-        let this = &::windows_core::ComInterface::cast::<ICoreAutomationRemoteOperation2>(self)?;
+        let this = &::windows_core::Interface::cast::<ICoreAutomationRemoteOperation2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ImportConnectionBoundObject)(::windows_core::Interface::as_raw(this), operandid, connectionboundobject.into_param().abi()).ok() }
     }
 }
@@ -275,9 +273,7 @@ impl ::windows_core::RuntimeType for CoreAutomationRemoteOperation {
 }
 unsafe impl ::windows_core::Interface for CoreAutomationRemoteOperation {
     type Vtable = ICoreAutomationRemoteOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreAutomationRemoteOperation {
-    const IID: ::windows_core::GUID = <ICoreAutomationRemoteOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreAutomationRemoteOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreAutomationRemoteOperation {
     const NAME: &'static str = "Windows.UI.UIAutomation.Core.CoreAutomationRemoteOperation";
@@ -316,9 +312,7 @@ impl ::windows_core::RuntimeType for CoreAutomationRemoteOperationContext {
 }
 unsafe impl ::windows_core::Interface for CoreAutomationRemoteOperationContext {
     type Vtable = ICoreAutomationRemoteOperationContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CoreAutomationRemoteOperationContext {
-    const IID: ::windows_core::GUID = <ICoreAutomationRemoteOperationContext as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICoreAutomationRemoteOperationContext as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CoreAutomationRemoteOperationContext {
     const NAME: &'static str = "Windows.UI.UIAutomation.Core.CoreAutomationRemoteOperationContext";
@@ -406,9 +400,7 @@ impl ::windows_core::RuntimeType for RemoteAutomationClientSession {
 }
 unsafe impl ::windows_core::Interface for RemoteAutomationClientSession {
     type Vtable = IRemoteAutomationClientSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteAutomationClientSession {
-    const IID: ::windows_core::GUID = <IRemoteAutomationClientSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteAutomationClientSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteAutomationClientSession {
     const NAME: &'static str = "Windows.UI.UIAutomation.Core.RemoteAutomationClientSession";
@@ -440,9 +432,7 @@ impl ::windows_core::RuntimeType for RemoteAutomationConnectionRequestedEventArg
 }
 unsafe impl ::windows_core::Interface for RemoteAutomationConnectionRequestedEventArgs {
     type Vtable = IRemoteAutomationConnectionRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteAutomationConnectionRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteAutomationConnectionRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteAutomationConnectionRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteAutomationConnectionRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.UIAutomation.Core.RemoteAutomationConnectionRequestedEventArgs";
@@ -467,9 +457,7 @@ impl ::windows_core::RuntimeType for RemoteAutomationDisconnectedEventArgs {
 }
 unsafe impl ::windows_core::Interface for RemoteAutomationDisconnectedEventArgs {
     type Vtable = IRemoteAutomationDisconnectedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteAutomationDisconnectedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteAutomationDisconnectedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteAutomationDisconnectedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteAutomationDisconnectedEventArgs {
     const NAME: &'static str = "Windows.UI.UIAutomation.Core.RemoteAutomationDisconnectedEventArgs";
@@ -515,9 +503,7 @@ impl ::windows_core::RuntimeType for RemoteAutomationWindow {
 }
 unsafe impl ::windows_core::Interface for RemoteAutomationWindow {
     type Vtable = IRemoteAutomationWindow_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteAutomationWindow {
-    const IID: ::windows_core::GUID = <IRemoteAutomationWindow as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteAutomationWindow as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteAutomationWindow {
     const NAME: &'static str = "Windows.UI.UIAutomation.Core.RemoteAutomationWindow";

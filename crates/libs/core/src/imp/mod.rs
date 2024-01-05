@@ -74,6 +74,8 @@ macro_rules! interface {
         // }
         unsafe impl ::windows_core::Interface for $name {
             type Vtable = $vtbl;
+            const IID: ::windows_core::GUID = ::windows_core::GUID::zeroed();
+            const UNKNOWN: bool = false;
         }
     };
 }
@@ -93,8 +95,6 @@ macro_rules! com_interface {
         // }
         unsafe impl ::windows_core::Interface for $name {
             type Vtable = $vtbl;
-        }
-        unsafe impl ::windows_core::ComInterface for $name {
             const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128($iid);
         }
     };

@@ -345,21 +345,21 @@ impl UserActivity {
         }
     }
     pub fn ToJson(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IUserActivity2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserActivity2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToJson)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsRoamable(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IUserActivity3>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserActivity3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsRoamable)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsRoamable(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IUserActivity3>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserActivity3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsRoamable)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CreateWithActivityId(activityid: &::windows_core::HSTRING) -> ::windows_core::Result<UserActivity> {
@@ -409,9 +409,7 @@ impl ::windows_core::RuntimeType for UserActivity {
 }
 unsafe impl ::windows_core::Interface for UserActivity {
     type Vtable = IUserActivity_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserActivity {
-    const IID: ::windows_core::GUID = <IUserActivity as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserActivity as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserActivity {
     const NAME: &'static str = "Windows.ApplicationModel.UserActivities.UserActivity";
@@ -486,9 +484,7 @@ impl ::windows_core::RuntimeType for UserActivityAttribution {
 }
 unsafe impl ::windows_core::Interface for UserActivityAttribution {
     type Vtable = IUserActivityAttribution_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserActivityAttribution {
-    const IID: ::windows_core::GUID = <IUserActivityAttribution as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserActivityAttribution as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserActivityAttribution {
     const NAME: &'static str = "Windows.ApplicationModel.UserActivities.UserActivityAttribution";
@@ -524,7 +520,7 @@ impl UserActivityChannel {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetRecentUserActivitiesAsync(&self, maxuniqueactivities: i32) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Foundation::Collections::IVector<UserActivitySessionHistoryItem>>> {
-        let this = &::windows_core::ComInterface::cast::<IUserActivityChannel2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserActivityChannel2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetRecentUserActivitiesAsync)(::windows_core::Interface::as_raw(this), maxuniqueactivities, &mut result__).from_abi(result__)
@@ -533,7 +529,7 @@ impl UserActivityChannel {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetSessionHistoryItemsForUserActivityAsync(&self, activityid: &::windows_core::HSTRING, starttime: super::super::Foundation::DateTime) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Foundation::Collections::IVector<UserActivitySessionHistoryItem>>> {
-        let this = &::windows_core::ComInterface::cast::<IUserActivityChannel2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserActivityChannel2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetSessionHistoryItemsForUserActivityAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(activityid), starttime, &mut result__).from_abi(result__)
@@ -591,9 +587,7 @@ impl ::windows_core::RuntimeType for UserActivityChannel {
 }
 unsafe impl ::windows_core::Interface for UserActivityChannel {
     type Vtable = IUserActivityChannel_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserActivityChannel {
-    const IID: ::windows_core::GUID = <IUserActivityChannel as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserActivityChannel as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserActivityChannel {
     const NAME: &'static str = "Windows.ApplicationModel.UserActivities.UserActivityChannel";
@@ -629,9 +623,7 @@ impl ::windows_core::RuntimeType for UserActivityContentInfo {
 }
 unsafe impl ::windows_core::Interface for UserActivityContentInfo {
     type Vtable = IUserActivityContentInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserActivityContentInfo {
-    const IID: ::windows_core::GUID = <IUserActivityContentInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserActivityContentInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserActivityContentInfo {
     const NAME: &'static str = "Windows.ApplicationModel.UserActivities.UserActivityContentInfo";
@@ -657,9 +649,7 @@ impl ::windows_core::RuntimeType for UserActivityRequest {
 }
 unsafe impl ::windows_core::Interface for UserActivityRequest {
     type Vtable = IUserActivityRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserActivityRequest {
-    const IID: ::windows_core::GUID = <IUserActivityRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserActivityRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserActivityRequest {
     const NAME: &'static str = "Windows.ApplicationModel.UserActivities.UserActivityRequest";
@@ -702,9 +692,7 @@ impl ::windows_core::RuntimeType for UserActivityRequestManager {
 }
 unsafe impl ::windows_core::Interface for UserActivityRequestManager {
     type Vtable = IUserActivityRequestManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserActivityRequestManager {
-    const IID: ::windows_core::GUID = <IUserActivityRequestManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserActivityRequestManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserActivityRequestManager {
     const NAME: &'static str = "Windows.ApplicationModel.UserActivities.UserActivityRequestManager";
@@ -734,9 +722,7 @@ impl ::windows_core::RuntimeType for UserActivityRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for UserActivityRequestedEventArgs {
     type Vtable = IUserActivityRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserActivityRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IUserActivityRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserActivityRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserActivityRequestedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.UserActivities.UserActivityRequestedEventArgs";
@@ -749,7 +735,7 @@ unsafe impl ::core::marker::Sync for UserActivityRequestedEventArgs {}
 pub struct UserActivitySession(::windows_core::IUnknown);
 impl UserActivitySession {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn ActivityId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -765,9 +751,7 @@ impl ::windows_core::RuntimeType for UserActivitySession {
 }
 unsafe impl ::windows_core::Interface for UserActivitySession {
     type Vtable = IUserActivitySession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserActivitySession {
-    const IID: ::windows_core::GUID = <IUserActivitySession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserActivitySession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserActivitySession {
     const NAME: &'static str = "Windows.ApplicationModel.UserActivities.UserActivitySession";
@@ -807,9 +791,7 @@ impl ::windows_core::RuntimeType for UserActivitySessionHistoryItem {
 }
 unsafe impl ::windows_core::Interface for UserActivitySessionHistoryItem {
     type Vtable = IUserActivitySessionHistoryItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserActivitySessionHistoryItem {
-    const IID: ::windows_core::GUID = <IUserActivitySessionHistoryItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserActivitySessionHistoryItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserActivitySessionHistoryItem {
     const NAME: &'static str = "Windows.ApplicationModel.UserActivities.UserActivitySessionHistoryItem";
@@ -891,14 +873,14 @@ impl UserActivityVisualElements {
         }
     }
     pub fn AttributionDisplayText(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IUserActivityVisualElements2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserActivityVisualElements2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AttributionDisplayText)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetAttributionDisplayText(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IUserActivityVisualElements2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserActivityVisualElements2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetAttributionDisplayText)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
 }
@@ -907,9 +889,7 @@ impl ::windows_core::RuntimeType for UserActivityVisualElements {
 }
 unsafe impl ::windows_core::Interface for UserActivityVisualElements {
     type Vtable = IUserActivityVisualElements_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserActivityVisualElements {
-    const IID: ::windows_core::GUID = <IUserActivityVisualElements as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserActivityVisualElements as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserActivityVisualElements {
     const NAME: &'static str = "Windows.ApplicationModel.UserActivities.UserActivityVisualElements";

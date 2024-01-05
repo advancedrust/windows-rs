@@ -168,9 +168,7 @@ impl ::windows_core::RuntimeType for OnlineIdAuthenticator {
 }
 unsafe impl ::windows_core::Interface for OnlineIdAuthenticator {
     type Vtable = IOnlineIdAuthenticator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OnlineIdAuthenticator {
-    const IID: ::windows_core::GUID = <IOnlineIdAuthenticator as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOnlineIdAuthenticator as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OnlineIdAuthenticator {
     const NAME: &'static str = "Windows.Security.Authentication.OnlineId.OnlineIdAuthenticator";
@@ -209,9 +207,7 @@ impl ::windows_core::RuntimeType for OnlineIdServiceTicket {
 }
 unsafe impl ::windows_core::Interface for OnlineIdServiceTicket {
     type Vtable = IOnlineIdServiceTicket_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OnlineIdServiceTicket {
-    const IID: ::windows_core::GUID = <IOnlineIdServiceTicket as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOnlineIdServiceTicket as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OnlineIdServiceTicket {
     const NAME: &'static str = "Windows.Security.Authentication.OnlineId.OnlineIdServiceTicket";
@@ -260,9 +256,7 @@ impl ::windows_core::RuntimeType for OnlineIdServiceTicketRequest {
 }
 unsafe impl ::windows_core::Interface for OnlineIdServiceTicketRequest {
     type Vtable = IOnlineIdServiceTicketRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OnlineIdServiceTicketRequest {
-    const IID: ::windows_core::GUID = <IOnlineIdServiceTicketRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOnlineIdServiceTicketRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OnlineIdServiceTicketRequest {
     const NAME: &'static str = "Windows.Security.Authentication.OnlineId.OnlineIdServiceTicketRequest";
@@ -338,9 +332,7 @@ impl ::windows_core::RuntimeType for OnlineIdSystemAuthenticatorForUser {
 }
 unsafe impl ::windows_core::Interface for OnlineIdSystemAuthenticatorForUser {
     type Vtable = IOnlineIdSystemAuthenticatorForUser_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OnlineIdSystemAuthenticatorForUser {
-    const IID: ::windows_core::GUID = <IOnlineIdSystemAuthenticatorForUser as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOnlineIdSystemAuthenticatorForUser as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OnlineIdSystemAuthenticatorForUser {
     const NAME: &'static str = "Windows.Security.Authentication.OnlineId.OnlineIdSystemAuthenticatorForUser";
@@ -372,9 +364,7 @@ impl ::windows_core::RuntimeType for OnlineIdSystemIdentity {
 }
 unsafe impl ::windows_core::Interface for OnlineIdSystemIdentity {
     type Vtable = IOnlineIdSystemIdentity_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OnlineIdSystemIdentity {
-    const IID: ::windows_core::GUID = <IOnlineIdSystemIdentity as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOnlineIdSystemIdentity as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OnlineIdSystemIdentity {
     const NAME: &'static str = "Windows.Security.Authentication.OnlineId.OnlineIdSystemIdentity";
@@ -413,9 +403,7 @@ impl ::windows_core::RuntimeType for OnlineIdSystemTicketResult {
 }
 unsafe impl ::windows_core::Interface for OnlineIdSystemTicketResult {
     type Vtable = IOnlineIdSystemTicketResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for OnlineIdSystemTicketResult {
-    const IID: ::windows_core::GUID = <IOnlineIdSystemTicketResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IOnlineIdSystemTicketResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for OnlineIdSystemTicketResult {
     const NAME: &'static str = "Windows.Security.Authentication.OnlineId.OnlineIdSystemTicketResult";
@@ -446,32 +434,32 @@ impl SignOutUserOperation {
         unsafe { (::windows_core::Interface::vtable(this).GetResults)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Id(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Id)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Status(&self) -> ::windows_core::Result<super::super::super::Foundation::AsyncStatus> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Status)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ErrorCode(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ErrorCode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Cancel(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Cancel)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -480,9 +468,7 @@ impl ::windows_core::RuntimeType for SignOutUserOperation {
 }
 unsafe impl ::windows_core::Interface for SignOutUserOperation {
     type Vtable = super::super::super::Foundation::IAsyncAction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SignOutUserOperation {
-    const IID: ::windows_core::GUID = <super::super::super::Foundation::IAsyncAction as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::super::Foundation::IAsyncAction as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SignOutUserOperation {
     const NAME: &'static str = "Windows.Security.Authentication.OnlineId.SignOutUserOperation";
@@ -525,32 +511,32 @@ unsafe impl ::core::marker::Sync for SignOutUserOperation {}
 pub struct UserAuthenticationOperation(::windows_core::IUnknown);
 impl UserAuthenticationOperation {
     pub fn Id(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Id)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Status(&self) -> ::windows_core::Result<super::super::super::Foundation::AsyncStatus> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Status)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ErrorCode(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ErrorCode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Cancel(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Cancel)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IAsyncInfo>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn SetCompleted<P0>(&self, handler: P0) -> ::windows_core::Result<()>
@@ -580,9 +566,7 @@ impl ::windows_core::RuntimeType for UserAuthenticationOperation {
 }
 unsafe impl ::windows_core::Interface for UserAuthenticationOperation {
     type Vtable = super::super::super::Foundation::IAsyncOperation_Vtbl<UserIdentity>;
-}
-unsafe impl ::windows_core::ComInterface for UserAuthenticationOperation {
-    const IID: ::windows_core::GUID = <super::super::super::Foundation::IAsyncOperation<UserIdentity> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::super::Foundation::IAsyncOperation<UserIdentity> as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserAuthenticationOperation {
     const NAME: &'static str = "Windows.Security.Authentication.OnlineId.UserAuthenticationOperation";
@@ -688,9 +672,7 @@ impl ::windows_core::RuntimeType for UserIdentity {
 }
 unsafe impl ::windows_core::Interface for UserIdentity {
     type Vtable = IUserIdentity_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserIdentity {
-    const IID: ::windows_core::GUID = <IUserIdentity as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserIdentity as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserIdentity {
     const NAME: &'static str = "Windows.Security.Authentication.OnlineId.UserIdentity";

@@ -681,35 +681,35 @@ impl RemoteSystem {
         }
     }
     pub fn IsAvailableBySpatialProximity(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystem2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystem2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsAvailableBySpatialProximity)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetCapabilitySupportedAsync(&self, capabilityname: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystem2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystem2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetCapabilitySupportedAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(capabilityname), &mut result__).from_abi(result__)
         }
     }
     pub fn ManufacturerDisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystem3>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystem3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ManufacturerDisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ModelDisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystem3>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystem3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ModelDisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Platform(&self) -> ::windows_core::Result<RemoteSystemPlatform> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystem4>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystem4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Platform)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -718,14 +718,14 @@ impl RemoteSystem {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Apps(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVectorView<RemoteSystemApp>> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystem5>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystem5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Apps)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn User(&self) -> ::windows_core::Result<super::User> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystem6>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystem6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -813,9 +813,7 @@ impl ::windows_core::RuntimeType for RemoteSystem {
 }
 unsafe impl ::windows_core::Interface for RemoteSystem {
     type Vtable = IRemoteSystem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystem {
-    const IID: ::windows_core::GUID = <IRemoteSystem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystem {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystem";
@@ -840,9 +838,7 @@ impl ::windows_core::RuntimeType for RemoteSystemAddedEventArgs {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemAddedEventArgs {
     type Vtable = IRemoteSystemAddedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemAddedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemAddedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemAddedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemAddedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemAddedEventArgs";
@@ -892,14 +888,14 @@ impl RemoteSystemApp {
         }
     }
     pub fn User(&self) -> ::windows_core::Result<super::User> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystemApp2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystemApp2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConnectionToken(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystemApp2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystemApp2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConnectionToken)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -911,9 +907,7 @@ impl ::windows_core::RuntimeType for RemoteSystemApp {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemApp {
     type Vtable = IRemoteSystemApp_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemApp {
-    const IID: ::windows_core::GUID = <IRemoteSystemApp as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemApp as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemApp {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemApp";
@@ -974,9 +968,7 @@ impl ::windows_core::RuntimeType for RemoteSystemAppRegistration {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemAppRegistration {
     type Vtable = IRemoteSystemAppRegistration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemAppRegistration {
-    const IID: ::windows_core::GUID = <IRemoteSystemAppRegistration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemAppRegistration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemAppRegistration {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemAppRegistration";
@@ -1012,9 +1004,7 @@ impl ::windows_core::RuntimeType for RemoteSystemAuthorizationKindFilter {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemAuthorizationKindFilter {
     type Vtable = IRemoteSystemAuthorizationKindFilter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemAuthorizationKindFilter {
-    const IID: ::windows_core::GUID = <IRemoteSystemAuthorizationKindFilter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemAuthorizationKindFilter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemAuthorizationKindFilter {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemAuthorizationKindFilter";
@@ -1056,9 +1046,7 @@ impl ::windows_core::RuntimeType for RemoteSystemConnectionInfo {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemConnectionInfo {
     type Vtable = IRemoteSystemConnectionInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemConnectionInfo {
-    const IID: ::windows_core::GUID = <IRemoteSystemConnectionInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemConnectionInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemConnectionInfo {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemConnectionInfo";
@@ -1078,14 +1066,14 @@ impl RemoteSystemConnectionRequest {
         }
     }
     pub fn RemoteSystemApp(&self) -> ::windows_core::Result<RemoteSystemApp> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystemConnectionRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystemConnectionRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RemoteSystemApp)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ConnectionToken(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystemConnectionRequest3>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystemConnectionRequest3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ConnectionToken)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1145,9 +1133,7 @@ impl ::windows_core::RuntimeType for RemoteSystemConnectionRequest {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemConnectionRequest {
     type Vtable = IRemoteSystemConnectionRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemConnectionRequest {
-    const IID: ::windows_core::GUID = <IRemoteSystemConnectionRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemConnectionRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemConnectionRequest {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemConnectionRequest";
@@ -1183,9 +1169,7 @@ impl ::windows_core::RuntimeType for RemoteSystemDiscoveryTypeFilter {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemDiscoveryTypeFilter {
     type Vtable = IRemoteSystemDiscoveryTypeFilter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemDiscoveryTypeFilter {
-    const IID: ::windows_core::GUID = <IRemoteSystemDiscoveryTypeFilter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemDiscoveryTypeFilter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemDiscoveryTypeFilter {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemDiscoveryTypeFilter";
@@ -1203,9 +1187,7 @@ impl ::windows_core::RuntimeType for RemoteSystemEnumerationCompletedEventArgs {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemEnumerationCompletedEventArgs {
     type Vtable = IRemoteSystemEnumerationCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemEnumerationCompletedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemEnumerationCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemEnumerationCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemEnumerationCompletedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemEnumerationCompletedEventArgs";
@@ -1248,9 +1230,7 @@ impl ::windows_core::RuntimeType for RemoteSystemKindFilter {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemKindFilter {
     type Vtable = IRemoteSystemKindFilter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemKindFilter {
-    const IID: ::windows_core::GUID = <IRemoteSystemKindFilter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemKindFilter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemKindFilter {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemKindFilter";
@@ -1340,9 +1320,7 @@ impl ::windows_core::RuntimeType for RemoteSystemRemovedEventArgs {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemRemovedEventArgs {
     type Vtable = IRemoteSystemRemovedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemRemovedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemRemovedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemRemovedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemRemovedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemRemovedEventArgs";
@@ -1355,7 +1333,7 @@ unsafe impl ::core::marker::Sync for RemoteSystemRemovedEventArgs {}
 pub struct RemoteSystemSession(::windows_core::IUnknown);
 impl RemoteSystemSession {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Id(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -1427,9 +1405,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSession {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSession {
     type Vtable = IRemoteSystemSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSession {
-    const IID: ::windows_core::GUID = <IRemoteSystemSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSession {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSession";
@@ -1455,9 +1431,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionAddedEventArgs {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionAddedEventArgs {
     type Vtable = IRemoteSystemSessionAddedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionAddedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionAddedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionAddedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionAddedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionAddedEventArgs";
@@ -1526,9 +1500,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionController {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionController {
     type Vtable = IRemoteSystemSessionController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionController {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionController {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionController";
@@ -1560,9 +1532,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionCreationResult {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionCreationResult {
     type Vtable = IRemoteSystemSessionCreationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionCreationResult {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionCreationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionCreationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionCreationResult {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionCreationResult";
@@ -1587,9 +1557,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionDisconnectedEventArgs {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionDisconnectedEventArgs {
     type Vtable = IRemoteSystemSessionDisconnectedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionDisconnectedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionDisconnectedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionDisconnectedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionDisconnectedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionDisconnectedEventArgs";
@@ -1628,9 +1596,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionInfo {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionInfo {
     type Vtable = IRemoteSystemSessionInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionInfo {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionInfo {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionInfo";
@@ -1662,9 +1628,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionInvitation {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionInvitation {
     type Vtable = IRemoteSystemSessionInvitation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionInvitation {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionInvitation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionInvitation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionInvitation {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionInvitation";
@@ -1703,9 +1667,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionInvitationListener {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionInvitationListener {
     type Vtable = IRemoteSystemSessionInvitationListener_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionInvitationListener {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionInvitationListener as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionInvitationListener as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionInvitationListener {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionInvitationListener";
@@ -1730,9 +1692,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionInvitationReceivedEventA
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionInvitationReceivedEventArgs {
     type Vtable = IRemoteSystemSessionInvitationReceivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionInvitationReceivedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionInvitationReceivedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionInvitationReceivedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionInvitationReceivedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionInvitationReceivedEventArgs";
@@ -1761,9 +1721,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionJoinRequest {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionJoinRequest {
     type Vtable = IRemoteSystemSessionJoinRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionJoinRequest {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionJoinRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionJoinRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionJoinRequest {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionJoinRequest";
@@ -1795,9 +1753,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionJoinRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionJoinRequestedEventArgs {
     type Vtable = IRemoteSystemSessionJoinRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionJoinRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionJoinRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionJoinRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionJoinRequestedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionJoinRequestedEventArgs";
@@ -1829,9 +1785,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionJoinResult {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionJoinResult {
     type Vtable = IRemoteSystemSessionJoinResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionJoinResult {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionJoinResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionJoinResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionJoinResult {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionJoinResult";
@@ -1931,9 +1885,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionMessageChannel {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionMessageChannel {
     type Vtable = IRemoteSystemSessionMessageChannel_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionMessageChannel {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionMessageChannel as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionMessageChannel as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionMessageChannel {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionMessageChannel";
@@ -1969,9 +1921,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionOptions {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionOptions {
     type Vtable = IRemoteSystemSessionOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionOptions {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionOptions {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionOptions";
@@ -2005,9 +1955,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionParticipant {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionParticipant {
     type Vtable = IRemoteSystemSessionParticipant_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionParticipant {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionParticipant as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionParticipant as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionParticipant {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionParticipant";
@@ -2032,9 +1980,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionParticipantAddedEventArg
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionParticipantAddedEventArgs {
     type Vtable = IRemoteSystemSessionParticipantAddedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionParticipantAddedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionParticipantAddedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionParticipantAddedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionParticipantAddedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionParticipantAddedEventArgs";
@@ -2059,9 +2005,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionParticipantRemovedEventA
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionParticipantRemovedEventArgs {
     type Vtable = IRemoteSystemSessionParticipantRemovedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionParticipantRemovedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionParticipantRemovedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionParticipantRemovedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionParticipantRemovedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionParticipantRemovedEventArgs";
@@ -2136,9 +2080,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionParticipantWatcher {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionParticipantWatcher {
     type Vtable = IRemoteSystemSessionParticipantWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionParticipantWatcher {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionParticipantWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionParticipantWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionParticipantWatcher {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionParticipantWatcher";
@@ -2163,9 +2105,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionRemovedEventArgs {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionRemovedEventArgs {
     type Vtable = IRemoteSystemSessionRemovedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionRemovedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionRemovedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionRemovedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionRemovedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionRemovedEventArgs";
@@ -2190,9 +2130,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionUpdatedEventArgs {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionUpdatedEventArgs {
     type Vtable = IRemoteSystemSessionUpdatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionUpdatedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionUpdatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionUpdatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionUpdatedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionUpdatedEventArgs";
@@ -2226,9 +2164,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionValueSetReceivedEventArg
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionValueSetReceivedEventArgs {
     type Vtable = IRemoteSystemSessionValueSetReceivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionValueSetReceivedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionValueSetReceivedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionValueSetReceivedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionValueSetReceivedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionValueSetReceivedEventArgs";
@@ -2303,9 +2239,7 @@ impl ::windows_core::RuntimeType for RemoteSystemSessionWatcher {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemSessionWatcher {
     type Vtable = IRemoteSystemSessionWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemSessionWatcher {
-    const IID: ::windows_core::GUID = <IRemoteSystemSessionWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemSessionWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemSessionWatcher {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemSessionWatcher";
@@ -2341,9 +2275,7 @@ impl ::windows_core::RuntimeType for RemoteSystemStatusTypeFilter {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemStatusTypeFilter {
     type Vtable = IRemoteSystemStatusTypeFilter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemStatusTypeFilter {
-    const IID: ::windows_core::GUID = <IRemoteSystemStatusTypeFilter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemStatusTypeFilter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemStatusTypeFilter {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemStatusTypeFilter";
@@ -2369,9 +2301,7 @@ impl ::windows_core::RuntimeType for RemoteSystemUpdatedEventArgs {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemUpdatedEventArgs {
     type Vtable = IRemoteSystemUpdatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemUpdatedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemUpdatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemUpdatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemUpdatedEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemUpdatedEventArgs";
@@ -2437,32 +2367,32 @@ impl RemoteSystemWatcher {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<RemoteSystemWatcher, RemoteSystemEnumerationCompletedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystemWatcher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystemWatcher2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EnumerationCompleted)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveEnumerationCompleted(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystemWatcher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystemWatcher2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveEnumerationCompleted)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn ErrorOccurred<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<RemoteSystemWatcher, RemoteSystemWatcherErrorOccurredEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystemWatcher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystemWatcher2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ErrorOccurred)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveErrorOccurred(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystemWatcher2>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystemWatcher2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveErrorOccurred)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn User(&self) -> ::windows_core::Result<super::User> {
-        let this = &::windows_core::ComInterface::cast::<IRemoteSystemWatcher3>(self)?;
+        let this = &::windows_core::Interface::cast::<IRemoteSystemWatcher3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2474,9 +2404,7 @@ impl ::windows_core::RuntimeType for RemoteSystemWatcher {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemWatcher {
     type Vtable = IRemoteSystemWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemWatcher {
-    const IID: ::windows_core::GUID = <IRemoteSystemWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemWatcher {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemWatcher";
@@ -2501,9 +2429,7 @@ impl ::windows_core::RuntimeType for RemoteSystemWatcherErrorOccurredEventArgs {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemWatcherErrorOccurredEventArgs {
     type Vtable = IRemoteSystemWatcherErrorOccurredEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemWatcherErrorOccurredEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteSystemWatcherErrorOccurredEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemWatcherErrorOccurredEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemWatcherErrorOccurredEventArgs {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemWatcherErrorOccurredEventArgs";
@@ -2546,9 +2472,7 @@ impl ::windows_core::RuntimeType for RemoteSystemWebAccountFilter {
 }
 unsafe impl ::windows_core::Interface for RemoteSystemWebAccountFilter {
     type Vtable = IRemoteSystemWebAccountFilter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteSystemWebAccountFilter {
-    const IID: ::windows_core::GUID = <IRemoteSystemWebAccountFilter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteSystemWebAccountFilter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteSystemWebAccountFilter {
     const NAME: &'static str = "Windows.System.RemoteSystems.RemoteSystemWebAccountFilter";

@@ -168,9 +168,7 @@ impl ::windows_core::RuntimeType for PnpObject {
 }
 unsafe impl ::windows_core::Interface for PnpObject {
     type Vtable = IPnpObject_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PnpObject {
-    const IID: ::windows_core::GUID = <IPnpObject as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPnpObject as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PnpObject {
     const NAME: &'static str = "Windows.Devices.Enumeration.Pnp.PnpObject";
@@ -188,7 +186,7 @@ impl PnpObjectCollection {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::super::Foundation::Collections::IIterator<PnpObject>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::Collections::IIterable<PnpObject>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::Collections::IIterable<PnpObject>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -241,10 +239,7 @@ impl ::windows_core::RuntimeType for PnpObjectCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for PnpObjectCollection {
     type Vtable = super::super::super::Foundation::Collections::IVectorView_Vtbl<PnpObject>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for PnpObjectCollection {
-    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IVectorView<PnpObject> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::super::Foundation::Collections::IVectorView<PnpObject> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for PnpObjectCollection {
@@ -263,7 +258,7 @@ impl ::core::iter::IntoIterator for &PnpObjectCollection {
     type Item = PnpObject;
     type IntoIter = super::super::super::Foundation::Collections::VectorViewIterator<Self::Item>;
     fn into_iter(self) -> Self::IntoIter {
-        super::super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::ComInterface::cast(self).ok())
+        super::super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::Interface::cast(self).ok())
     }
 }
 #[cfg(feature = "Foundation_Collections")]
@@ -307,9 +302,7 @@ impl ::windows_core::RuntimeType for PnpObjectUpdate {
 }
 unsafe impl ::windows_core::Interface for PnpObjectUpdate {
     type Vtable = IPnpObjectUpdate_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PnpObjectUpdate {
-    const IID: ::windows_core::GUID = <IPnpObjectUpdate as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPnpObjectUpdate as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PnpObjectUpdate {
     const NAME: &'static str = "Windows.Devices.Enumeration.Pnp.PnpObjectUpdate";
@@ -412,9 +405,7 @@ impl ::windows_core::RuntimeType for PnpObjectWatcher {
 }
 unsafe impl ::windows_core::Interface for PnpObjectWatcher {
     type Vtable = IPnpObjectWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PnpObjectWatcher {
-    const IID: ::windows_core::GUID = <IPnpObjectWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPnpObjectWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PnpObjectWatcher {
     const NAME: &'static str = "Windows.Devices.Enumeration.Pnp.PnpObjectWatcher";

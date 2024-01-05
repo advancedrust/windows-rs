@@ -251,9 +251,7 @@ impl ::windows_core::RuntimeType for AlternateWordForm {
 }
 unsafe impl ::windows_core::Interface for AlternateWordForm {
     type Vtable = IAlternateWordForm_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AlternateWordForm {
-    const IID: ::windows_core::GUID = <IAlternateWordForm as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAlternateWordForm as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AlternateWordForm {
     const NAME: &'static str = "Windows.Data.Text.AlternateWordForm";
@@ -285,9 +283,7 @@ impl ::windows_core::RuntimeType for SelectableWordSegment {
 }
 unsafe impl ::windows_core::Interface for SelectableWordSegment {
     type Vtable = ISelectableWordSegment_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SelectableWordSegment {
-    const IID: ::windows_core::GUID = <ISelectableWordSegment as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISelectableWordSegment as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SelectableWordSegment {
     const NAME: &'static str = "Windows.Data.Text.SelectableWordSegment";
@@ -348,9 +344,7 @@ impl ::windows_core::RuntimeType for SelectableWordsSegmenter {
 }
 unsafe impl ::windows_core::Interface for SelectableWordsSegmenter {
     type Vtable = ISelectableWordsSegmenter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SelectableWordsSegmenter {
-    const IID: ::windows_core::GUID = <ISelectableWordsSegmenter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISelectableWordsSegmenter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SelectableWordsSegmenter {
     const NAME: &'static str = "Windows.Data.Text.SelectableWordsSegmenter";
@@ -403,9 +397,7 @@ impl ::windows_core::RuntimeType for SemanticTextQuery {
 }
 unsafe impl ::windows_core::Interface for SemanticTextQuery {
     type Vtable = ISemanticTextQuery_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SemanticTextQuery {
-    const IID: ::windows_core::GUID = <ISemanticTextQuery as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISemanticTextQuery as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SemanticTextQuery {
     const NAME: &'static str = "Windows.Data.Text.SemanticTextQuery";
@@ -466,9 +458,7 @@ impl ::windows_core::RuntimeType for TextConversionGenerator {
 }
 unsafe impl ::windows_core::Interface for TextConversionGenerator {
     type Vtable = ITextConversionGenerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TextConversionGenerator {
-    const IID: ::windows_core::GUID = <ITextConversionGenerator as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITextConversionGenerator as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TextConversionGenerator {
     const NAME: &'static str = "Windows.Data.Text.TextConversionGenerator";
@@ -500,9 +490,7 @@ impl ::windows_core::RuntimeType for TextPhoneme {
 }
 unsafe impl ::windows_core::Interface for TextPhoneme {
     type Vtable = ITextPhoneme_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TextPhoneme {
-    const IID: ::windows_core::GUID = <ITextPhoneme as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITextPhoneme as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TextPhoneme {
     const NAME: &'static str = "Windows.Data.Text.TextPhoneme";
@@ -552,7 +540,7 @@ impl TextPredictionGenerator {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ITextPredictionGenerator2>(self)?;
+        let this = &::windows_core::Interface::cast::<ITextPredictionGenerator2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetCandidatesWithParametersAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(input), maxcandidates, predictionoptions, previousstrings.into_param().abi(), &mut result__).from_abi(result__)
@@ -564,7 +552,7 @@ impl TextPredictionGenerator {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ITextPredictionGenerator2>(self)?;
+        let this = &::windows_core::Interface::cast::<ITextPredictionGenerator2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetNextWordCandidatesAsync)(::windows_core::Interface::as_raw(this), maxcandidates, previousstrings.into_param().abi(), &mut result__).from_abi(result__)
@@ -573,7 +561,7 @@ impl TextPredictionGenerator {
     #[doc = "Required features: `\"UI_Text_Core\"`"]
     #[cfg(feature = "UI_Text_Core")]
     pub fn InputScope(&self) -> ::windows_core::Result<super::super::UI::Text::Core::CoreTextInputScope> {
-        let this = &::windows_core::ComInterface::cast::<ITextPredictionGenerator2>(self)?;
+        let this = &::windows_core::Interface::cast::<ITextPredictionGenerator2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).InputScope)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -582,7 +570,7 @@ impl TextPredictionGenerator {
     #[doc = "Required features: `\"UI_Text_Core\"`"]
     #[cfg(feature = "UI_Text_Core")]
     pub fn SetInputScope(&self, value: super::super::UI::Text::Core::CoreTextInputScope) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ITextPredictionGenerator2>(self)?;
+        let this = &::windows_core::Interface::cast::<ITextPredictionGenerator2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetInputScope)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Create(languagetag: &::windows_core::HSTRING) -> ::windows_core::Result<TextPredictionGenerator> {
@@ -602,9 +590,7 @@ impl ::windows_core::RuntimeType for TextPredictionGenerator {
 }
 unsafe impl ::windows_core::Interface for TextPredictionGenerator {
     type Vtable = ITextPredictionGenerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TextPredictionGenerator {
-    const IID: ::windows_core::GUID = <ITextPredictionGenerator as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITextPredictionGenerator as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TextPredictionGenerator {
     const NAME: &'static str = "Windows.Data.Text.TextPredictionGenerator";
@@ -640,7 +626,7 @@ impl TextReverseConversionGenerator {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetPhonemesAsync(&self, input: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Foundation::Collections::IVectorView<TextPhoneme>>> {
-        let this = &::windows_core::ComInterface::cast::<ITextReverseConversionGenerator2>(self)?;
+        let this = &::windows_core::Interface::cast::<ITextReverseConversionGenerator2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetPhonemesAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(input), &mut result__).from_abi(result__)
@@ -663,9 +649,7 @@ impl ::windows_core::RuntimeType for TextReverseConversionGenerator {
 }
 unsafe impl ::windows_core::Interface for TextReverseConversionGenerator {
     type Vtable = ITextReverseConversionGenerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TextReverseConversionGenerator {
-    const IID: ::windows_core::GUID = <ITextReverseConversionGenerator as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITextReverseConversionGenerator as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TextReverseConversionGenerator {
     const NAME: &'static str = "Windows.Data.Text.TextReverseConversionGenerator";
@@ -816,9 +800,7 @@ impl ::windows_core::RuntimeType for WordSegment {
 }
 unsafe impl ::windows_core::Interface for WordSegment {
     type Vtable = IWordSegment_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WordSegment {
-    const IID: ::windows_core::GUID = <IWordSegment as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWordSegment as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WordSegment {
     const NAME: &'static str = "Windows.Data.Text.WordSegment";
@@ -879,9 +861,7 @@ impl ::windows_core::RuntimeType for WordsSegmenter {
 }
 unsafe impl ::windows_core::Interface for WordsSegmenter {
     type Vtable = IWordsSegmenter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WordsSegmenter {
-    const IID: ::windows_core::GUID = <IWordsSegmenter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWordsSegmenter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WordsSegmenter {
     const NAME: &'static str = "Windows.Data.Text.WordsSegmenter";
@@ -1098,7 +1078,7 @@ impl<F: FnMut(::core::option::Option<&super::super::Foundation::Collections::IIt
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <SelectableWordSegmentsTokenizingHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <SelectableWordSegmentsTokenizingHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -1174,7 +1154,7 @@ impl<F: FnMut(::core::option::Option<&super::super::Foundation::Collections::IIt
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <WordSegmentsTokenizingHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <WordSegmentsTokenizingHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

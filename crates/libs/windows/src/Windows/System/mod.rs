@@ -990,9 +990,7 @@ impl ::windows_core::RuntimeType for AppActivationResult {
 }
 unsafe impl ::windows_core::Interface for AppActivationResult {
     type Vtable = IAppActivationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppActivationResult {
-    const IID: ::windows_core::GUID = <IAppActivationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppActivationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppActivationResult {
     const NAME: &'static str = "Windows.System.AppActivationResult";
@@ -1016,21 +1014,21 @@ impl AppDiagnosticInfo {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetResourceGroups(&self) -> ::windows_core::Result<super::Foundation::Collections::IVector<AppResourceGroupInfo>> {
-        let this = &::windows_core::ComInterface::cast::<IAppDiagnosticInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppDiagnosticInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetResourceGroups)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateResourceGroupWatcher(&self) -> ::windows_core::Result<AppResourceGroupInfoWatcher> {
-        let this = &::windows_core::ComInterface::cast::<IAppDiagnosticInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppDiagnosticInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateResourceGroupWatcher)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn LaunchAsync(&self) -> ::windows_core::Result<super::Foundation::IAsyncOperation<AppActivationResult>> {
-        let this = &::windows_core::ComInterface::cast::<IAppDiagnosticInfo3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppDiagnosticInfo3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LaunchAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1096,9 +1094,7 @@ impl ::windows_core::RuntimeType for AppDiagnosticInfo {
 }
 unsafe impl ::windows_core::Interface for AppDiagnosticInfo {
     type Vtable = IAppDiagnosticInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppDiagnosticInfo {
-    const IID: ::windows_core::GUID = <IAppDiagnosticInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppDiagnosticInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppDiagnosticInfo {
     const NAME: &'static str = "Windows.System.AppDiagnosticInfo";
@@ -1187,9 +1183,7 @@ impl ::windows_core::RuntimeType for AppDiagnosticInfoWatcher {
 }
 unsafe impl ::windows_core::Interface for AppDiagnosticInfoWatcher {
     type Vtable = IAppDiagnosticInfoWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppDiagnosticInfoWatcher {
-    const IID: ::windows_core::GUID = <IAppDiagnosticInfoWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppDiagnosticInfoWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppDiagnosticInfoWatcher {
     const NAME: &'static str = "Windows.System.AppDiagnosticInfoWatcher";
@@ -1214,9 +1208,7 @@ impl ::windows_core::RuntimeType for AppDiagnosticInfoWatcherEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppDiagnosticInfoWatcherEventArgs {
     type Vtable = IAppDiagnosticInfoWatcherEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppDiagnosticInfoWatcherEventArgs {
-    const IID: ::windows_core::GUID = <IAppDiagnosticInfoWatcherEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppDiagnosticInfoWatcherEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppDiagnosticInfoWatcherEventArgs {
     const NAME: &'static str = "Windows.System.AppDiagnosticInfoWatcherEventArgs";
@@ -1241,9 +1233,7 @@ impl ::windows_core::RuntimeType for AppExecutionStateChangeResult {
 }
 unsafe impl ::windows_core::Interface for AppExecutionStateChangeResult {
     type Vtable = IAppExecutionStateChangeResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppExecutionStateChangeResult {
-    const IID: ::windows_core::GUID = <IAppExecutionStateChangeResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppExecutionStateChangeResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppExecutionStateChangeResult {
     const NAME: &'static str = "Windows.System.AppExecutionStateChangeResult";
@@ -1284,7 +1274,7 @@ impl AppMemoryReport {
         }
     }
     pub fn ExpectedTotalCommitLimit(&self) -> ::windows_core::Result<u64> {
-        let this = &::windows_core::ComInterface::cast::<IAppMemoryReport2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppMemoryReport2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ExpectedTotalCommitLimit)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1296,9 +1286,7 @@ impl ::windows_core::RuntimeType for AppMemoryReport {
 }
 unsafe impl ::windows_core::Interface for AppMemoryReport {
     type Vtable = IAppMemoryReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppMemoryReport {
-    const IID: ::windows_core::GUID = <IAppMemoryReport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppMemoryReport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppMemoryReport {
     const NAME: &'static str = "Windows.System.AppMemoryReport";
@@ -1330,9 +1318,7 @@ impl ::windows_core::RuntimeType for AppMemoryUsageLimitChangingEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppMemoryUsageLimitChangingEventArgs {
     type Vtable = IAppMemoryUsageLimitChangingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppMemoryUsageLimitChangingEventArgs {
-    const IID: ::windows_core::GUID = <IAppMemoryUsageLimitChangingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppMemoryUsageLimitChangingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppMemoryUsageLimitChangingEventArgs {
     const NAME: &'static str = "Windows.System.AppMemoryUsageLimitChangingEventArgs";
@@ -1378,9 +1364,7 @@ impl ::windows_core::RuntimeType for AppResourceGroupBackgroundTaskReport {
 }
 unsafe impl ::windows_core::Interface for AppResourceGroupBackgroundTaskReport {
     type Vtable = IAppResourceGroupBackgroundTaskReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppResourceGroupBackgroundTaskReport {
-    const IID: ::windows_core::GUID = <IAppResourceGroupBackgroundTaskReport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppResourceGroupBackgroundTaskReport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppResourceGroupBackgroundTaskReport {
     const NAME: &'static str = "Windows.System.AppResourceGroupBackgroundTaskReport";
@@ -1439,21 +1423,21 @@ impl AppResourceGroupInfo {
         }
     }
     pub fn StartSuspendAsync(&self) -> ::windows_core::Result<super::Foundation::IAsyncOperation<AppExecutionStateChangeResult>> {
-        let this = &::windows_core::ComInterface::cast::<IAppResourceGroupInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppResourceGroupInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartSuspendAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StartResumeAsync(&self) -> ::windows_core::Result<super::Foundation::IAsyncOperation<AppExecutionStateChangeResult>> {
-        let this = &::windows_core::ComInterface::cast::<IAppResourceGroupInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppResourceGroupInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartResumeAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StartTerminateAsync(&self) -> ::windows_core::Result<super::Foundation::IAsyncOperation<AppExecutionStateChangeResult>> {
-        let this = &::windows_core::ComInterface::cast::<IAppResourceGroupInfo2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppResourceGroupInfo2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartTerminateAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1465,9 +1449,7 @@ impl ::windows_core::RuntimeType for AppResourceGroupInfo {
 }
 unsafe impl ::windows_core::Interface for AppResourceGroupInfo {
     type Vtable = IAppResourceGroupInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppResourceGroupInfo {
-    const IID: ::windows_core::GUID = <IAppResourceGroupInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppResourceGroupInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppResourceGroupInfo {
     const NAME: &'static str = "Windows.System.AppResourceGroupInfo";
@@ -1570,9 +1552,7 @@ impl ::windows_core::RuntimeType for AppResourceGroupInfoWatcher {
 }
 unsafe impl ::windows_core::Interface for AppResourceGroupInfoWatcher {
     type Vtable = IAppResourceGroupInfoWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppResourceGroupInfoWatcher {
-    const IID: ::windows_core::GUID = <IAppResourceGroupInfoWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppResourceGroupInfoWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppResourceGroupInfoWatcher {
     const NAME: &'static str = "Windows.System.AppResourceGroupInfoWatcher";
@@ -1606,9 +1586,7 @@ impl ::windows_core::RuntimeType for AppResourceGroupInfoWatcherEventArgs {
 }
 unsafe impl ::windows_core::Interface for AppResourceGroupInfoWatcherEventArgs {
     type Vtable = IAppResourceGroupInfoWatcherEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppResourceGroupInfoWatcherEventArgs {
-    const IID: ::windows_core::GUID = <IAppResourceGroupInfoWatcherEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppResourceGroupInfoWatcherEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppResourceGroupInfoWatcherEventArgs {
     const NAME: &'static str = "Windows.System.AppResourceGroupInfoWatcherEventArgs";
@@ -1642,9 +1620,7 @@ impl ::windows_core::RuntimeType for AppResourceGroupInfoWatcherExecutionStateCh
 }
 unsafe impl ::windows_core::Interface for AppResourceGroupInfoWatcherExecutionStateChangedEventArgs {
     type Vtable = IAppResourceGroupInfoWatcherExecutionStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppResourceGroupInfoWatcherExecutionStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAppResourceGroupInfoWatcherExecutionStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppResourceGroupInfoWatcherExecutionStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppResourceGroupInfoWatcherExecutionStateChangedEventArgs {
     const NAME: &'static str = "Windows.System.AppResourceGroupInfoWatcherExecutionStateChangedEventArgs";
@@ -1690,9 +1666,7 @@ impl ::windows_core::RuntimeType for AppResourceGroupMemoryReport {
 }
 unsafe impl ::windows_core::Interface for AppResourceGroupMemoryReport {
     type Vtable = IAppResourceGroupMemoryReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppResourceGroupMemoryReport {
-    const IID: ::windows_core::GUID = <IAppResourceGroupMemoryReport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppResourceGroupMemoryReport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppResourceGroupMemoryReport {
     const NAME: &'static str = "Windows.System.AppResourceGroupMemoryReport";
@@ -1724,9 +1698,7 @@ impl ::windows_core::RuntimeType for AppResourceGroupStateReport {
 }
 unsafe impl ::windows_core::Interface for AppResourceGroupStateReport {
     type Vtable = IAppResourceGroupStateReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppResourceGroupStateReport {
-    const IID: ::windows_core::GUID = <IAppResourceGroupStateReport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppResourceGroupStateReport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppResourceGroupStateReport {
     const NAME: &'static str = "Windows.System.AppResourceGroupStateReport";
@@ -1757,14 +1729,14 @@ impl AppUriHandlerHost {
         unsafe { (::windows_core::Interface::vtable(this).SetName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn IsEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAppUriHandlerHost2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppUriHandlerHost2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsEnabled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAppUriHandlerHost2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppUriHandlerHost2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsEnabled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CreateInstance(name: &::windows_core::HSTRING) -> ::windows_core::Result<AppUriHandlerHost> {
@@ -1784,9 +1756,7 @@ impl ::windows_core::RuntimeType for AppUriHandlerHost {
 }
 unsafe impl ::windows_core::Interface for AppUriHandlerHost {
     type Vtable = IAppUriHandlerHost_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppUriHandlerHost {
-    const IID: ::windows_core::GUID = <IAppUriHandlerHost as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppUriHandlerHost as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppUriHandlerHost {
     const NAME: &'static str = "Windows.System.AppUriHandlerHost";
@@ -1836,7 +1806,7 @@ impl AppUriHandlerRegistration {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetAllHosts(&self) -> ::windows_core::Result<super::Foundation::Collections::IVector<AppUriHandlerHost>> {
-        let this = &::windows_core::ComInterface::cast::<IAppUriHandlerRegistration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppUriHandlerRegistration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetAllHosts)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1848,11 +1818,11 @@ impl AppUriHandlerRegistration {
     where
         P0: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<AppUriHandlerHost>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAppUriHandlerRegistration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppUriHandlerRegistration2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).UpdateHosts)(::windows_core::Interface::as_raw(this), hosts.into_param().abi()).ok() }
     }
     pub fn PackageFamilyName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAppUriHandlerRegistration2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppUriHandlerRegistration2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PackageFamilyName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1864,9 +1834,7 @@ impl ::windows_core::RuntimeType for AppUriHandlerRegistration {
 }
 unsafe impl ::windows_core::Interface for AppUriHandlerRegistration {
     type Vtable = IAppUriHandlerRegistration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppUriHandlerRegistration {
-    const IID: ::windows_core::GUID = <IAppUriHandlerRegistration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppUriHandlerRegistration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppUriHandlerRegistration {
     const NAME: &'static str = "Windows.System.AppUriHandlerRegistration";
@@ -1893,7 +1861,7 @@ impl AppUriHandlerRegistrationManager {
         }
     }
     pub fn PackageFamilyName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAppUriHandlerRegistrationManager2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAppUriHandlerRegistrationManager2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PackageFamilyName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1945,9 +1913,7 @@ impl ::windows_core::RuntimeType for AppUriHandlerRegistrationManager {
 }
 unsafe impl ::windows_core::Interface for AppUriHandlerRegistrationManager {
     type Vtable = IAppUriHandlerRegistrationManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppUriHandlerRegistrationManager {
-    const IID: ::windows_core::GUID = <IAppUriHandlerRegistrationManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppUriHandlerRegistrationManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppUriHandlerRegistrationManager {
     const NAME: &'static str = "Windows.System.AppUriHandlerRegistrationManager";
@@ -2029,7 +1995,7 @@ impl DispatcherQueue {
         unsafe { (::windows_core::Interface::vtable(this).RemoveShutdownCompleted)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn HasThreadAccess(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IDispatcherQueue2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDispatcherQueue2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasThreadAccess)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2052,9 +2018,7 @@ impl ::windows_core::RuntimeType for DispatcherQueue {
 }
 unsafe impl ::windows_core::Interface for DispatcherQueue {
     type Vtable = IDispatcherQueue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DispatcherQueue {
-    const IID: ::windows_core::GUID = <IDispatcherQueue as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDispatcherQueue as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DispatcherQueue {
     const NAME: &'static str = "Windows.System.DispatcherQueue";
@@ -2097,9 +2061,7 @@ impl ::windows_core::RuntimeType for DispatcherQueueController {
 }
 unsafe impl ::windows_core::Interface for DispatcherQueueController {
     type Vtable = IDispatcherQueueController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DispatcherQueueController {
-    const IID: ::windows_core::GUID = <IDispatcherQueueController as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDispatcherQueueController as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DispatcherQueueController {
     const NAME: &'static str = "Windows.System.DispatcherQueueController";
@@ -2124,9 +2086,7 @@ impl ::windows_core::RuntimeType for DispatcherQueueShutdownStartingEventArgs {
 }
 unsafe impl ::windows_core::Interface for DispatcherQueueShutdownStartingEventArgs {
     type Vtable = IDispatcherQueueShutdownStartingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DispatcherQueueShutdownStartingEventArgs {
-    const IID: ::windows_core::GUID = <IDispatcherQueueShutdownStartingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDispatcherQueueShutdownStartingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DispatcherQueueShutdownStartingEventArgs {
     const NAME: &'static str = "Windows.System.DispatcherQueueShutdownStartingEventArgs";
@@ -2195,9 +2155,7 @@ impl ::windows_core::RuntimeType for DispatcherQueueTimer {
 }
 unsafe impl ::windows_core::Interface for DispatcherQueueTimer {
     type Vtable = IDispatcherQueueTimer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DispatcherQueueTimer {
-    const IID: ::windows_core::GUID = <IDispatcherQueueTimer as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDispatcherQueueTimer as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DispatcherQueueTimer {
     const NAME: &'static str = "Windows.System.DispatcherQueueTimer";
@@ -2228,7 +2186,7 @@ impl FolderLauncherOptions {
     #[doc = "Required features: `\"UI_ViewManagement\"`"]
     #[cfg(feature = "UI_ViewManagement")]
     pub fn DesiredRemainingView(&self) -> ::windows_core::Result<super::UI::ViewManagement::ViewSizePreference> {
-        let this = &::windows_core::ComInterface::cast::<ILauncherViewOptions>(self)?;
+        let this = &::windows_core::Interface::cast::<ILauncherViewOptions>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DesiredRemainingView)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2237,7 +2195,7 @@ impl FolderLauncherOptions {
     #[doc = "Required features: `\"UI_ViewManagement\"`"]
     #[cfg(feature = "UI_ViewManagement")]
     pub fn SetDesiredRemainingView(&self, value: super::UI::ViewManagement::ViewSizePreference) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ILauncherViewOptions>(self)?;
+        let this = &::windows_core::Interface::cast::<ILauncherViewOptions>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDesiredRemainingView)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -2246,9 +2204,7 @@ impl ::windows_core::RuntimeType for FolderLauncherOptions {
 }
 unsafe impl ::windows_core::Interface for FolderLauncherOptions {
     type Vtable = IFolderLauncherOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FolderLauncherOptions {
-    const IID: ::windows_core::GUID = <IFolderLauncherOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFolderLauncherOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FolderLauncherOptions {
     const NAME: &'static str = "Windows.System.FolderLauncherOptions";
@@ -2359,9 +2315,7 @@ impl ::windows_core::RuntimeType for LaunchUriResult {
 }
 unsafe impl ::windows_core::Interface for LaunchUriResult {
     type Vtable = ILaunchUriResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LaunchUriResult {
-    const IID: ::windows_core::GUID = <ILaunchUriResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILaunchUriResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LaunchUriResult {
     const NAME: &'static str = "Windows.System.LaunchUriResult";
@@ -2776,20 +2730,20 @@ impl LauncherOptions {
         unsafe { (::windows_core::Interface::vtable(this).SetContentType)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn TargetApplicationPackageFamilyName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ILauncherOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILauncherOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TargetApplicationPackageFamilyName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetTargetApplicationPackageFamilyName(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ILauncherOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILauncherOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetTargetApplicationPackageFamilyName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     #[doc = "Required features: `\"Storage_Search\"`"]
     #[cfg(feature = "Storage_Search")]
     pub fn NeighboringFilesQuery(&self) -> ::windows_core::Result<super::Storage::Search::StorageFileQueryResult> {
-        let this = &::windows_core::ComInterface::cast::<ILauncherOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILauncherOptions2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).NeighboringFilesQuery)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2801,35 +2755,35 @@ impl LauncherOptions {
     where
         P0: ::windows_core::IntoParam<super::Storage::Search::StorageFileQueryResult>,
     {
-        let this = &::windows_core::ComInterface::cast::<ILauncherOptions2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILauncherOptions2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetNeighboringFilesQuery)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn IgnoreAppUriHandlers(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ILauncherOptions3>(self)?;
+        let this = &::windows_core::Interface::cast::<ILauncherOptions3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IgnoreAppUriHandlers)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIgnoreAppUriHandlers(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ILauncherOptions3>(self)?;
+        let this = &::windows_core::Interface::cast::<ILauncherOptions3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIgnoreAppUriHandlers)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn LimitPickerToCurrentAppAndAppUriHandlers(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ILauncherOptions4>(self)?;
+        let this = &::windows_core::Interface::cast::<ILauncherOptions4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LimitPickerToCurrentAppAndAppUriHandlers)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetLimitPickerToCurrentAppAndAppUriHandlers(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ILauncherOptions4>(self)?;
+        let this = &::windows_core::Interface::cast::<ILauncherOptions4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetLimitPickerToCurrentAppAndAppUriHandlers)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"UI_ViewManagement\"`"]
     #[cfg(feature = "UI_ViewManagement")]
     pub fn DesiredRemainingView(&self) -> ::windows_core::Result<super::UI::ViewManagement::ViewSizePreference> {
-        let this = &::windows_core::ComInterface::cast::<ILauncherViewOptions>(self)?;
+        let this = &::windows_core::Interface::cast::<ILauncherViewOptions>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DesiredRemainingView)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2838,7 +2792,7 @@ impl LauncherOptions {
     #[doc = "Required features: `\"UI_ViewManagement\"`"]
     #[cfg(feature = "UI_ViewManagement")]
     pub fn SetDesiredRemainingView(&self, value: super::UI::ViewManagement::ViewSizePreference) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ILauncherViewOptions>(self)?;
+        let this = &::windows_core::Interface::cast::<ILauncherViewOptions>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDesiredRemainingView)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -2847,9 +2801,7 @@ impl ::windows_core::RuntimeType for LauncherOptions {
 }
 unsafe impl ::windows_core::Interface for LauncherOptions {
     type Vtable = ILauncherOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LauncherOptions {
-    const IID: ::windows_core::GUID = <ILauncherOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILauncherOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LauncherOptions {
     const NAME: &'static str = "Windows.System.LauncherOptions";
@@ -2911,9 +2863,7 @@ impl ::windows_core::RuntimeType for LauncherUIOptions {
 }
 unsafe impl ::windows_core::Interface for LauncherUIOptions {
     type Vtable = ILauncherUIOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LauncherUIOptions {
-    const IID: ::windows_core::GUID = <ILauncherUIOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILauncherUIOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LauncherUIOptions {
     const NAME: &'static str = "Windows.System.LauncherUIOptions";
@@ -3133,9 +3083,7 @@ impl ::windows_core::RuntimeType for ProcessLauncherOptions {
 }
 unsafe impl ::windows_core::Interface for ProcessLauncherOptions {
     type Vtable = IProcessLauncherOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProcessLauncherOptions {
-    const IID: ::windows_core::GUID = <IProcessLauncherOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProcessLauncherOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProcessLauncherOptions {
     const NAME: &'static str = "Windows.System.ProcessLauncherOptions";
@@ -3160,9 +3108,7 @@ impl ::windows_core::RuntimeType for ProcessLauncherResult {
 }
 unsafe impl ::windows_core::Interface for ProcessLauncherResult {
     type Vtable = IProcessLauncherResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProcessLauncherResult {
-    const IID: ::windows_core::GUID = <IProcessLauncherResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProcessLauncherResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProcessLauncherResult {
     const NAME: &'static str = "Windows.System.ProcessLauncherResult";
@@ -3194,9 +3140,7 @@ impl ::windows_core::RuntimeType for ProcessMemoryReport {
 }
 unsafe impl ::windows_core::Interface for ProcessMemoryReport {
     type Vtable = IProcessMemoryReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProcessMemoryReport {
-    const IID: ::windows_core::GUID = <IProcessMemoryReport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProcessMemoryReport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProcessMemoryReport {
     const NAME: &'static str = "Windows.System.ProcessMemoryReport";
@@ -3223,9 +3167,7 @@ impl ::windows_core::RuntimeType for ProtocolForResultsOperation {
 }
 unsafe impl ::windows_core::Interface for ProtocolForResultsOperation {
     type Vtable = IProtocolForResultsOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProtocolForResultsOperation {
-    const IID: ::windows_core::GUID = <IProtocolForResultsOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProtocolForResultsOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProtocolForResultsOperation {
     const NAME: &'static str = "Windows.System.ProtocolForResultsOperation";
@@ -3323,9 +3265,7 @@ impl ::windows_core::RuntimeType for RemoteLauncherOptions {
 }
 unsafe impl ::windows_core::Interface for RemoteLauncherOptions {
     type Vtable = IRemoteLauncherOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteLauncherOptions {
-    const IID: ::windows_core::GUID = <IRemoteLauncherOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteLauncherOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteLauncherOptions {
     const NAME: &'static str = "Windows.System.RemoteLauncherOptions";
@@ -3466,7 +3406,7 @@ impl User {
         }
     }
     pub fn CheckUserAgeConsentGroupAsync(&self, consentgroup: UserAgeConsentGroup) -> ::windows_core::Result<super::Foundation::IAsyncOperation<UserAgeConsentResult>> {
-        let this = &::windows_core::ComInterface::cast::<IUser2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUser2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CheckUserAgeConsentGroupAsync)(::windows_core::Interface::as_raw(this), consentgroup, &mut result__).from_abi(result__)
@@ -3530,9 +3470,7 @@ impl ::windows_core::RuntimeType for User {
 }
 unsafe impl ::windows_core::Interface for User {
     type Vtable = IUser_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for User {
-    const IID: ::windows_core::GUID = <IUser as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUser as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for User {
     const NAME: &'static str = "Windows.System.User";
@@ -3554,9 +3492,7 @@ impl ::windows_core::RuntimeType for UserAuthenticationStatusChangeDeferral {
 }
 unsafe impl ::windows_core::Interface for UserAuthenticationStatusChangeDeferral {
     type Vtable = IUserAuthenticationStatusChangeDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserAuthenticationStatusChangeDeferral {
-    const IID: ::windows_core::GUID = <IUserAuthenticationStatusChangeDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserAuthenticationStatusChangeDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserAuthenticationStatusChangeDeferral {
     const NAME: &'static str = "Windows.System.UserAuthenticationStatusChangeDeferral";
@@ -3602,9 +3538,7 @@ impl ::windows_core::RuntimeType for UserAuthenticationStatusChangingEventArgs {
 }
 unsafe impl ::windows_core::Interface for UserAuthenticationStatusChangingEventArgs {
     type Vtable = IUserAuthenticationStatusChangingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserAuthenticationStatusChangingEventArgs {
-    const IID: ::windows_core::GUID = <IUserAuthenticationStatusChangingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserAuthenticationStatusChangingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserAuthenticationStatusChangingEventArgs {
     const NAME: &'static str = "Windows.System.UserAuthenticationStatusChangingEventArgs";
@@ -3626,7 +3560,7 @@ impl UserChangedEventArgs {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn ChangedPropertyKinds(&self) -> ::windows_core::Result<super::Foundation::Collections::IVectorView<UserWatcherUpdateKind>> {
-        let this = &::windows_core::ComInterface::cast::<IUserChangedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserChangedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ChangedPropertyKinds)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -3638,9 +3572,7 @@ impl ::windows_core::RuntimeType for UserChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for UserChangedEventArgs {
     type Vtable = IUserChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserChangedEventArgs {
-    const IID: ::windows_core::GUID = <IUserChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserChangedEventArgs {
     const NAME: &'static str = "Windows.System.UserChangedEventArgs";
@@ -3708,9 +3640,7 @@ impl ::windows_core::RuntimeType for UserDeviceAssociationChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for UserDeviceAssociationChangedEventArgs {
     type Vtable = IUserDeviceAssociationChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDeviceAssociationChangedEventArgs {
-    const IID: ::windows_core::GUID = <IUserDeviceAssociationChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDeviceAssociationChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDeviceAssociationChangedEventArgs {
     const NAME: &'static str = "Windows.System.UserDeviceAssociationChangedEventArgs";
@@ -3778,9 +3708,7 @@ impl ::windows_core::RuntimeType for UserPicker {
 }
 unsafe impl ::windows_core::Interface for UserPicker {
     type Vtable = IUserPicker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserPicker {
-    const IID: ::windows_core::GUID = <IUserPicker as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserPicker as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserPicker {
     const NAME: &'static str = "Windows.System.UserPicker";
@@ -3911,9 +3839,7 @@ impl ::windows_core::RuntimeType for UserWatcher {
 }
 unsafe impl ::windows_core::Interface for UserWatcher {
     type Vtable = IUserWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserWatcher {
-    const IID: ::windows_core::GUID = <IUserWatcher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserWatcher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserWatcher {
     const NAME: &'static str = "Windows.System.UserWatcher";
@@ -4655,7 +4581,7 @@ impl<F: FnMut() -> ::windows_core::Result<()> + ::core::marker::Send + 'static> 
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <DispatcherQueueHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <DispatcherQueueHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

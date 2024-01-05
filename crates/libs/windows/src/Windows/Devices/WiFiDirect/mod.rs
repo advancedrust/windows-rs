@@ -245,7 +245,7 @@ impl WiFiDirectAdvertisement {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn SupportedConfigurationMethods(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<WiFiDirectConfigurationMethod>> {
-        let this = &::windows_core::ComInterface::cast::<IWiFiDirectAdvertisement2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWiFiDirectAdvertisement2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SupportedConfigurationMethods)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -257,9 +257,7 @@ impl ::windows_core::RuntimeType for WiFiDirectAdvertisement {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectAdvertisement {
     type Vtable = IWiFiDirectAdvertisement_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectAdvertisement {
-    const IID: ::windows_core::GUID = <IWiFiDirectAdvertisement as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectAdvertisement as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectAdvertisement {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.WiFiDirectAdvertisement";
@@ -320,9 +318,7 @@ impl ::windows_core::RuntimeType for WiFiDirectAdvertisementPublisher {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectAdvertisementPublisher {
     type Vtable = IWiFiDirectAdvertisementPublisher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectAdvertisementPublisher {
-    const IID: ::windows_core::GUID = <IWiFiDirectAdvertisementPublisher as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectAdvertisementPublisher as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectAdvertisementPublisher {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisher";
@@ -354,9 +350,7 @@ impl ::windows_core::RuntimeType for WiFiDirectAdvertisementPublisherStatusChang
 }
 unsafe impl ::windows_core::Interface for WiFiDirectAdvertisementPublisherStatusChangedEventArgs {
     type Vtable = IWiFiDirectAdvertisementPublisherStatusChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectAdvertisementPublisherStatusChangedEventArgs {
-    const IID: ::windows_core::GUID = <IWiFiDirectAdvertisementPublisherStatusChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectAdvertisementPublisherStatusChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectAdvertisementPublisherStatusChangedEventArgs {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisherStatusChangedEventArgs";
@@ -395,9 +389,7 @@ impl ::windows_core::RuntimeType for WiFiDirectConnectionListener {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectConnectionListener {
     type Vtable = IWiFiDirectConnectionListener_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectConnectionListener {
-    const IID: ::windows_core::GUID = <IWiFiDirectConnectionListener as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectConnectionListener as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectConnectionListener {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.WiFiDirectConnectionListener";
@@ -430,21 +422,21 @@ impl WiFiDirectConnectionParameters {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn PreferenceOrderedConfigurationMethods(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<WiFiDirectConfigurationMethod>> {
-        let this = &::windows_core::ComInterface::cast::<IWiFiDirectConnectionParameters2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWiFiDirectConnectionParameters2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PreferenceOrderedConfigurationMethods)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PreferredPairingProcedure(&self) -> ::windows_core::Result<WiFiDirectPairingProcedure> {
-        let this = &::windows_core::ComInterface::cast::<IWiFiDirectConnectionParameters2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWiFiDirectConnectionParameters2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PreferredPairingProcedure)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetPreferredPairingProcedure(&self, value: WiFiDirectPairingProcedure) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWiFiDirectConnectionParameters2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWiFiDirectConnectionParameters2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPreferredPairingProcedure)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Devices_Enumeration\"`"]
@@ -466,9 +458,7 @@ impl ::windows_core::RuntimeType for WiFiDirectConnectionParameters {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectConnectionParameters {
     type Vtable = IWiFiDirectConnectionParameters_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectConnectionParameters {
-    const IID: ::windows_core::GUID = <IWiFiDirectConnectionParameters as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectConnectionParameters as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectConnectionParameters {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.WiFiDirectConnectionParameters";
@@ -483,7 +473,7 @@ unsafe impl ::core::marker::Sync for WiFiDirectConnectionParameters {}
 pub struct WiFiDirectConnectionRequest(::windows_core::IUnknown);
 impl WiFiDirectConnectionRequest {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Devices_Enumeration\"`"]
@@ -501,9 +491,7 @@ impl ::windows_core::RuntimeType for WiFiDirectConnectionRequest {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectConnectionRequest {
     type Vtable = IWiFiDirectConnectionRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectConnectionRequest {
-    const IID: ::windows_core::GUID = <IWiFiDirectConnectionRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectConnectionRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectConnectionRequest {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.WiFiDirectConnectionRequest";
@@ -529,9 +517,7 @@ impl ::windows_core::RuntimeType for WiFiDirectConnectionRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectConnectionRequestedEventArgs {
     type Vtable = IWiFiDirectConnectionRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectConnectionRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IWiFiDirectConnectionRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectConnectionRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectConnectionRequestedEventArgs {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.WiFiDirectConnectionRequestedEventArgs";
@@ -544,7 +530,7 @@ unsafe impl ::core::marker::Sync for WiFiDirectConnectionRequestedEventArgs {}
 pub struct WiFiDirectDevice(::windows_core::IUnknown);
 impl WiFiDirectDevice {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn ConnectionStatus(&self) -> ::windows_core::Result<WiFiDirectConnectionStatus> {
@@ -627,9 +613,7 @@ impl ::windows_core::RuntimeType for WiFiDirectDevice {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectDevice {
     type Vtable = IWiFiDirectDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectDevice {
-    const IID: ::windows_core::GUID = <IWiFiDirectDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectDevice {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.WiFiDirectDevice";
@@ -729,9 +713,7 @@ impl ::windows_core::RuntimeType for WiFiDirectInformationElement {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectInformationElement {
     type Vtable = IWiFiDirectInformationElement_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectInformationElement {
-    const IID: ::windows_core::GUID = <IWiFiDirectInformationElement as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectInformationElement as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectInformationElement {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.WiFiDirectInformationElement";
@@ -789,9 +771,7 @@ impl ::windows_core::RuntimeType for WiFiDirectLegacySettings {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectLegacySettings {
     type Vtable = IWiFiDirectLegacySettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectLegacySettings {
-    const IID: ::windows_core::GUID = <IWiFiDirectLegacySettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectLegacySettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectLegacySettings {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.WiFiDirectLegacySettings";

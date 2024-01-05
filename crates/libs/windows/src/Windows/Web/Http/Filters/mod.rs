@@ -112,7 +112,7 @@ impl IHttpFilter {
         }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -164,7 +164,7 @@ impl HttpBaseProtocolFilter {
         SHARED.call(callback)
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn AllowAutoRedirect(&self) -> ::windows_core::Result<bool> {
@@ -300,49 +300,49 @@ impl HttpBaseProtocolFilter {
         unsafe { (::windows_core::Interface::vtable(this).SetUseProxy)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn MaxVersion(&self) -> ::windows_core::Result<super::HttpVersion> {
-        let this = &::windows_core::ComInterface::cast::<IHttpBaseProtocolFilter2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpBaseProtocolFilter2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MaxVersion)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetMaxVersion(&self, value: super::HttpVersion) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IHttpBaseProtocolFilter2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpBaseProtocolFilter2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMaxVersion)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn CookieUsageBehavior(&self) -> ::windows_core::Result<HttpCookieUsageBehavior> {
-        let this = &::windows_core::ComInterface::cast::<IHttpBaseProtocolFilter3>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpBaseProtocolFilter3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CookieUsageBehavior)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCookieUsageBehavior(&self, value: HttpCookieUsageBehavior) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IHttpBaseProtocolFilter3>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpBaseProtocolFilter3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCookieUsageBehavior)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ServerCustomValidationRequested<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::super::Foundation::EventRegistrationToken>
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::TypedEventHandler<HttpBaseProtocolFilter, HttpServerCustomValidationRequestedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpBaseProtocolFilter4>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpBaseProtocolFilter4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ServerCustomValidationRequested)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveServerCustomValidationRequested(&self, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IHttpBaseProtocolFilter4>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpBaseProtocolFilter4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveServerCustomValidationRequested)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn ClearAuthenticationCache(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IHttpBaseProtocolFilter4>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpBaseProtocolFilter4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ClearAuthenticationCache)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn User(&self) -> ::windows_core::Result<super::super::super::System::User> {
-        let this = &::windows_core::ComInterface::cast::<IHttpBaseProtocolFilter5>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpBaseProtocolFilter5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -363,7 +363,7 @@ impl HttpBaseProtocolFilter {
     where
         P0: ::windows_core::IntoParam<super::HttpRequestMessage>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpFilter>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpFilter>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SendRequestAsync)(::windows_core::Interface::as_raw(this), request.into_param().abi(), &mut result__).from_abi(result__)
@@ -380,9 +380,7 @@ impl ::windows_core::RuntimeType for HttpBaseProtocolFilter {
 }
 unsafe impl ::windows_core::Interface for HttpBaseProtocolFilter {
     type Vtable = IHttpBaseProtocolFilter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpBaseProtocolFilter {
-    const IID: ::windows_core::GUID = <IHttpBaseProtocolFilter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpBaseProtocolFilter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpBaseProtocolFilter {
     const NAME: &'static str = "Windows.Web.Http.Filters.HttpBaseProtocolFilter";
@@ -423,9 +421,7 @@ impl ::windows_core::RuntimeType for HttpCacheControl {
 }
 unsafe impl ::windows_core::Interface for HttpCacheControl {
     type Vtable = IHttpCacheControl_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpCacheControl {
-    const IID: ::windows_core::GUID = <IHttpCacheControl as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpCacheControl as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpCacheControl {
     const NAME: &'static str = "Windows.Web.Http.Filters.HttpCacheControl";
@@ -497,9 +493,7 @@ impl ::windows_core::RuntimeType for HttpServerCustomValidationRequestedEventArg
 }
 unsafe impl ::windows_core::Interface for HttpServerCustomValidationRequestedEventArgs {
     type Vtable = IHttpServerCustomValidationRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpServerCustomValidationRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IHttpServerCustomValidationRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpServerCustomValidationRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpServerCustomValidationRequestedEventArgs {
     const NAME: &'static str = "Windows.Web.Http.Filters.HttpServerCustomValidationRequestedEventArgs";

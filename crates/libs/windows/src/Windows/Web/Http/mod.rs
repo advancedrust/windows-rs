@@ -144,7 +144,7 @@ impl IHttpContent {
         }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -450,7 +450,7 @@ pub struct IHttpTransportInformation_Vtbl {
 pub struct HttpBufferContent(::windows_core::IUnknown);
 impl HttpBufferContent {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -536,7 +536,7 @@ impl HttpBufferContent {
         }
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -553,9 +553,7 @@ impl ::windows_core::RuntimeType for HttpBufferContent {
 }
 unsafe impl ::windows_core::Interface for HttpBufferContent {
     type Vtable = IHttpContent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpBufferContent {
-    const IID: ::windows_core::GUID = <IHttpContent as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpContent as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpBufferContent {
     const NAME: &'static str = "Windows.Web.Http.HttpBufferContent";
@@ -576,7 +574,7 @@ impl HttpClient {
         SHARED.call(callback)
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn DeleteAsync<P0>(&self, uri: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperationWithProgress<HttpResponseMessage, HttpProgress>>
@@ -698,7 +696,7 @@ impl HttpClient {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpClient2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpClient2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryDeleteAsync)(::windows_core::Interface::as_raw(this), uri.into_param().abi(), &mut result__).from_abi(result__)
@@ -708,7 +706,7 @@ impl HttpClient {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpClient2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpClient2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryGetAsync)(::windows_core::Interface::as_raw(this), uri.into_param().abi(), &mut result__).from_abi(result__)
@@ -718,7 +716,7 @@ impl HttpClient {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpClient2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpClient2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryGetAsync2)(::windows_core::Interface::as_raw(this), uri.into_param().abi(), completionoption, &mut result__).from_abi(result__)
@@ -728,7 +726,7 @@ impl HttpClient {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpClient2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpClient2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryGetBufferAsync)(::windows_core::Interface::as_raw(this), uri.into_param().abi(), &mut result__).from_abi(result__)
@@ -738,7 +736,7 @@ impl HttpClient {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpClient2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpClient2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryGetInputStreamAsync)(::windows_core::Interface::as_raw(this), uri.into_param().abi(), &mut result__).from_abi(result__)
@@ -748,7 +746,7 @@ impl HttpClient {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpClient2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpClient2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryGetStringAsync)(::windows_core::Interface::as_raw(this), uri.into_param().abi(), &mut result__).from_abi(result__)
@@ -759,7 +757,7 @@ impl HttpClient {
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
         P1: ::windows_core::IntoParam<IHttpContent>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpClient2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpClient2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryPostAsync)(::windows_core::Interface::as_raw(this), uri.into_param().abi(), content.into_param().abi(), &mut result__).from_abi(result__)
@@ -770,7 +768,7 @@ impl HttpClient {
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
         P1: ::windows_core::IntoParam<IHttpContent>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpClient2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpClient2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryPutAsync)(::windows_core::Interface::as_raw(this), uri.into_param().abi(), content.into_param().abi(), &mut result__).from_abi(result__)
@@ -780,7 +778,7 @@ impl HttpClient {
     where
         P0: ::windows_core::IntoParam<HttpRequestMessage>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpClient2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpClient2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TrySendRequestAsync)(::windows_core::Interface::as_raw(this), request.into_param().abi(), &mut result__).from_abi(result__)
@@ -790,21 +788,21 @@ impl HttpClient {
     where
         P0: ::windows_core::IntoParam<HttpRequestMessage>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpClient2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpClient2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TrySendRequestAsync2)(::windows_core::Interface::as_raw(this), request.into_param().abi(), completionoption, &mut result__).from_abi(result__)
         }
     }
     pub fn DefaultPrivacyAnnotation(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IHttpClient3>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpClient3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DefaultPrivacyAnnotation)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetDefaultPrivacyAnnotation(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IHttpClient3>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpClient3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDefaultPrivacyAnnotation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     #[doc = "Required features: `\"Web_Http_Filters\"`"]
@@ -819,7 +817,7 @@ impl HttpClient {
         })
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -836,9 +834,7 @@ impl ::windows_core::RuntimeType for HttpClient {
 }
 unsafe impl ::windows_core::Interface for HttpClient {
     type Vtable = IHttpClient_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpClient {
-    const IID: ::windows_core::GUID = <IHttpClient as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpClient as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpClient {
     const NAME: &'static str = "Windows.Web.Http.HttpClient";
@@ -926,7 +922,7 @@ impl HttpCookie {
         })
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -943,9 +939,7 @@ impl ::windows_core::RuntimeType for HttpCookie {
 }
 unsafe impl ::windows_core::Interface for HttpCookie {
     type Vtable = IHttpCookie_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpCookie {
-    const IID: ::windows_core::GUID = <IHttpCookie as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpCookie as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpCookie {
     const NAME: &'static str = "Windows.Web.Http.HttpCookie";
@@ -964,7 +958,7 @@ impl HttpCookieCollection {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterator<HttpCookie>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IIterable<HttpCookie>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IIterable<HttpCookie>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1017,10 +1011,7 @@ impl ::windows_core::RuntimeType for HttpCookieCollection {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for HttpCookieCollection {
     type Vtable = super::super::Foundation::Collections::IVectorView_Vtbl<HttpCookie>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for HttpCookieCollection {
-    const IID: ::windows_core::GUID = <super::super::Foundation::Collections::IVectorView<HttpCookie> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::Foundation::Collections::IVectorView<HttpCookie> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for HttpCookieCollection {
@@ -1039,7 +1030,7 @@ impl ::core::iter::IntoIterator for &HttpCookieCollection {
     type Item = HttpCookie;
     type IntoIter = super::super::Foundation::Collections::VectorViewIterator<Self::Item>;
     fn into_iter(self) -> Self::IntoIter {
-        super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::ComInterface::cast(self).ok())
+        super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::Interface::cast(self).ok())
     }
 }
 #[cfg(feature = "Foundation_Collections")]
@@ -1099,9 +1090,7 @@ impl ::windows_core::RuntimeType for HttpCookieManager {
 }
 unsafe impl ::windows_core::Interface for HttpCookieManager {
     type Vtable = IHttpCookieManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpCookieManager {
-    const IID: ::windows_core::GUID = <IHttpCookieManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpCookieManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpCookieManager {
     const NAME: &'static str = "Windows.Web.Http.HttpCookieManager";
@@ -1114,7 +1103,7 @@ unsafe impl ::core::marker::Sync for HttpCookieManager {}
 pub struct HttpFormUrlEncodedContent(::windows_core::IUnknown);
 impl HttpFormUrlEncodedContent {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Web_Http_Headers\"`"]
@@ -1189,7 +1178,7 @@ impl HttpFormUrlEncodedContent {
         })
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1206,9 +1195,7 @@ impl ::windows_core::RuntimeType for HttpFormUrlEncodedContent {
 }
 unsafe impl ::windows_core::Interface for HttpFormUrlEncodedContent {
     type Vtable = IHttpContent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpFormUrlEncodedContent {
-    const IID: ::windows_core::GUID = <IHttpContent as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpContent as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpFormUrlEncodedContent {
     const NAME: &'static str = "Windows.Web.Http.HttpFormUrlEncodedContent";
@@ -1222,7 +1209,7 @@ unsafe impl ::core::marker::Sync for HttpFormUrlEncodedContent {}
 pub struct HttpGetBufferResult(::windows_core::IUnknown);
 impl HttpGetBufferResult {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
@@ -1263,7 +1250,7 @@ impl HttpGetBufferResult {
         }
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1275,9 +1262,7 @@ impl ::windows_core::RuntimeType for HttpGetBufferResult {
 }
 unsafe impl ::windows_core::Interface for HttpGetBufferResult {
     type Vtable = IHttpGetBufferResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpGetBufferResult {
-    const IID: ::windows_core::GUID = <IHttpGetBufferResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpGetBufferResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpGetBufferResult {
     const NAME: &'static str = "Windows.Web.Http.HttpGetBufferResult";
@@ -1291,7 +1276,7 @@ unsafe impl ::core::marker::Sync for HttpGetBufferResult {}
 pub struct HttpGetInputStreamResult(::windows_core::IUnknown);
 impl HttpGetInputStreamResult {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
@@ -1332,7 +1317,7 @@ impl HttpGetInputStreamResult {
         }
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1344,9 +1329,7 @@ impl ::windows_core::RuntimeType for HttpGetInputStreamResult {
 }
 unsafe impl ::windows_core::Interface for HttpGetInputStreamResult {
     type Vtable = IHttpGetInputStreamResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpGetInputStreamResult {
-    const IID: ::windows_core::GUID = <IHttpGetInputStreamResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpGetInputStreamResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpGetInputStreamResult {
     const NAME: &'static str = "Windows.Web.Http.HttpGetInputStreamResult";
@@ -1360,7 +1343,7 @@ unsafe impl ::core::marker::Sync for HttpGetInputStreamResult {}
 pub struct HttpGetStringResult(::windows_core::IUnknown);
 impl HttpGetStringResult {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
@@ -1399,7 +1382,7 @@ impl HttpGetStringResult {
         }
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1411,9 +1394,7 @@ impl ::windows_core::RuntimeType for HttpGetStringResult {
 }
 unsafe impl ::windows_core::Interface for HttpGetStringResult {
     type Vtable = IHttpGetStringResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpGetStringResult {
-    const IID: ::windows_core::GUID = <IHttpGetStringResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpGetStringResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpGetStringResult {
     const NAME: &'static str = "Windows.Web.Http.HttpGetStringResult";
@@ -1482,7 +1463,7 @@ impl HttpMethod {
         })
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1504,9 +1485,7 @@ impl ::windows_core::RuntimeType for HttpMethod {
 }
 unsafe impl ::windows_core::Interface for HttpMethod {
     type Vtable = IHttpMethod_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpMethod {
-    const IID: ::windows_core::GUID = <IHttpMethod as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpMethod as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpMethod {
     const NAME: &'static str = "Windows.Web.Http.HttpMethod";
@@ -1527,7 +1506,7 @@ impl HttpMultipartContent {
         SHARED.call(callback)
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Web_Http_Headers\"`"]
@@ -1594,7 +1573,7 @@ impl HttpMultipartContent {
     where
         P0: ::windows_core::IntoParam<IHttpContent>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpMultipartContent>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpMultipartContent>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Add)(::windows_core::Interface::as_raw(this), content.into_param().abi()).ok() }
     }
     pub fn CreateWithSubtype(subtype: &::windows_core::HSTRING) -> ::windows_core::Result<HttpMultipartContent> {
@@ -1612,14 +1591,14 @@ impl HttpMultipartContent {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterator<IHttpContent>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IIterable<IHttpContent>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IIterable<IHttpContent>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1636,9 +1615,7 @@ impl ::windows_core::RuntimeType for HttpMultipartContent {
 }
 unsafe impl ::windows_core::Interface for HttpMultipartContent {
     type Vtable = IHttpContent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpMultipartContent {
-    const IID: ::windows_core::GUID = <IHttpContent as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpContent as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpMultipartContent {
     const NAME: &'static str = "Windows.Web.Http.HttpMultipartContent";
@@ -1676,7 +1653,7 @@ impl HttpMultipartFormDataContent {
         SHARED.call(callback)
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Web_Http_Headers\"`"]
@@ -1743,21 +1720,21 @@ impl HttpMultipartFormDataContent {
     where
         P0: ::windows_core::IntoParam<IHttpContent>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpMultipartFormDataContent>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpMultipartFormDataContent>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Add)(::windows_core::Interface::as_raw(this), content.into_param().abi()).ok() }
     }
     pub fn AddWithName<P0>(&self, content: P0, name: &::windows_core::HSTRING) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<IHttpContent>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpMultipartFormDataContent>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpMultipartFormDataContent>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddWithName)(::windows_core::Interface::as_raw(this), content.into_param().abi(), ::core::mem::transmute_copy(name)).ok() }
     }
     pub fn AddWithNameAndFileName<P0>(&self, content: P0, name: &::windows_core::HSTRING, filename: &::windows_core::HSTRING) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<IHttpContent>,
     {
-        let this = &::windows_core::ComInterface::cast::<IHttpMultipartFormDataContent>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpMultipartFormDataContent>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AddWithNameAndFileName)(::windows_core::Interface::as_raw(this), content.into_param().abi(), ::core::mem::transmute_copy(name), ::core::mem::transmute_copy(filename)).ok() }
     }
     pub fn CreateWithBoundary(boundary: &::windows_core::HSTRING) -> ::windows_core::Result<HttpMultipartFormDataContent> {
@@ -1769,14 +1746,14 @@ impl HttpMultipartFormDataContent {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterator<IHttpContent>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IIterable<IHttpContent>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IIterable<IHttpContent>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1793,9 +1770,7 @@ impl ::windows_core::RuntimeType for HttpMultipartFormDataContent {
 }
 unsafe impl ::windows_core::Interface for HttpMultipartFormDataContent {
     type Vtable = IHttpContent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpMultipartFormDataContent {
-    const IID: ::windows_core::GUID = <IHttpContent as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpContent as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpMultipartFormDataContent {
     const NAME: &'static str = "Windows.Web.Http.HttpMultipartFormDataContent";
@@ -1833,7 +1808,7 @@ impl HttpRequestMessage {
         SHARED.call(callback)
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Content(&self) -> ::windows_core::Result<IHttpContent> {
@@ -1904,14 +1879,14 @@ impl HttpRequestMessage {
         }
     }
     pub fn PrivacyAnnotation(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IHttpRequestMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpRequestMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrivacyAnnotation)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetPrivacyAnnotation(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IHttpRequestMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IHttpRequestMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetPrivacyAnnotation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn Create<P0, P1>(method: P0, uri: P1) -> ::windows_core::Result<HttpRequestMessage>
@@ -1925,7 +1900,7 @@ impl HttpRequestMessage {
         })
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1942,9 +1917,7 @@ impl ::windows_core::RuntimeType for HttpRequestMessage {
 }
 unsafe impl ::windows_core::Interface for HttpRequestMessage {
     type Vtable = IHttpRequestMessage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpRequestMessage {
-    const IID: ::windows_core::GUID = <IHttpRequestMessage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpRequestMessage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpRequestMessage {
     const NAME: &'static str = "Windows.Web.Http.HttpRequestMessage";
@@ -1958,7 +1931,7 @@ unsafe impl ::core::marker::Sync for HttpRequestMessage {}
 pub struct HttpRequestResult(::windows_core::IUnknown);
 impl HttpRequestResult {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
@@ -1990,7 +1963,7 @@ impl HttpRequestResult {
         }
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2002,9 +1975,7 @@ impl ::windows_core::RuntimeType for HttpRequestResult {
 }
 unsafe impl ::windows_core::Interface for HttpRequestResult {
     type Vtable = IHttpRequestResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpRequestResult {
-    const IID: ::windows_core::GUID = <IHttpRequestResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpRequestResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpRequestResult {
     const NAME: &'static str = "Windows.Web.Http.HttpRequestResult";
@@ -2025,7 +1996,7 @@ impl HttpResponseMessage {
         SHARED.call(callback)
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Content(&self) -> ::windows_core::Result<IHttpContent> {
@@ -2130,7 +2101,7 @@ impl HttpResponseMessage {
         })
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2147,9 +2118,7 @@ impl ::windows_core::RuntimeType for HttpResponseMessage {
 }
 unsafe impl ::windows_core::Interface for HttpResponseMessage {
     type Vtable = IHttpResponseMessage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpResponseMessage {
-    const IID: ::windows_core::GUID = <IHttpResponseMessage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpResponseMessage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpResponseMessage {
     const NAME: &'static str = "Windows.Web.Http.HttpResponseMessage";
@@ -2163,7 +2132,7 @@ unsafe impl ::core::marker::Sync for HttpResponseMessage {}
 pub struct HttpStreamContent(::windows_core::IUnknown);
 impl HttpStreamContent {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Web_Http_Headers\"`"]
@@ -2238,7 +2207,7 @@ impl HttpStreamContent {
         })
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2255,9 +2224,7 @@ impl ::windows_core::RuntimeType for HttpStreamContent {
 }
 unsafe impl ::windows_core::Interface for HttpStreamContent {
     type Vtable = IHttpContent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpStreamContent {
-    const IID: ::windows_core::GUID = <IHttpContent as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpContent as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpStreamContent {
     const NAME: &'static str = "Windows.Web.Http.HttpStreamContent";
@@ -2271,7 +2238,7 @@ unsafe impl ::core::marker::Sync for HttpStreamContent {}
 pub struct HttpStringContent(::windows_core::IUnknown);
 impl HttpStringContent {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Web_Http_Headers\"`"]
@@ -2357,7 +2324,7 @@ impl HttpStringContent {
         })
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2374,9 +2341,7 @@ impl ::windows_core::RuntimeType for HttpStringContent {
 }
 unsafe impl ::windows_core::Interface for HttpStringContent {
     type Vtable = IHttpContent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpStringContent {
-    const IID: ::windows_core::GUID = <IHttpContent as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpContent as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpStringContent {
     const NAME: &'static str = "Windows.Web.Http.HttpStringContent";
@@ -2426,7 +2391,7 @@ impl HttpTransportInformation {
         }
     }
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IStringable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IStringable>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ToString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2438,9 +2403,7 @@ impl ::windows_core::RuntimeType for HttpTransportInformation {
 }
 unsafe impl ::windows_core::Interface for HttpTransportInformation {
     type Vtable = IHttpTransportInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for HttpTransportInformation {
-    const IID: ::windows_core::GUID = <IHttpTransportInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IHttpTransportInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for HttpTransportInformation {
     const NAME: &'static str = "Windows.Web.Http.HttpTransportInformation";

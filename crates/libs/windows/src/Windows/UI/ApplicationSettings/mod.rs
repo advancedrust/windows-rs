@@ -315,9 +315,7 @@ impl ::windows_core::RuntimeType for AccountsSettingsPane {
 }
 unsafe impl ::windows_core::Interface for AccountsSettingsPane {
     type Vtable = IAccountsSettingsPane_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AccountsSettingsPane {
-    const IID: ::windows_core::GUID = <IAccountsSettingsPane as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAccountsSettingsPane as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AccountsSettingsPane {
     const NAME: &'static str = "Windows.UI.ApplicationSettings.AccountsSettingsPane";
@@ -384,7 +382,7 @@ impl AccountsSettingsPaneCommandsRequestedEventArgs {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn User(&self) -> ::windows_core::Result<super::super::System::User> {
-        let this = &::windows_core::ComInterface::cast::<IAccountsSettingsPaneCommandsRequestedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccountsSettingsPaneCommandsRequestedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -396,9 +394,7 @@ impl ::windows_core::RuntimeType for AccountsSettingsPaneCommandsRequestedEventA
 }
 unsafe impl ::windows_core::Interface for AccountsSettingsPaneCommandsRequestedEventArgs {
     type Vtable = IAccountsSettingsPaneCommandsRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AccountsSettingsPaneCommandsRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IAccountsSettingsPaneCommandsRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAccountsSettingsPaneCommandsRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AccountsSettingsPaneCommandsRequestedEventArgs {
     const NAME: &'static str = "Windows.UI.ApplicationSettings.AccountsSettingsPaneCommandsRequestedEventArgs";
@@ -418,9 +414,7 @@ impl ::windows_core::RuntimeType for AccountsSettingsPaneEventDeferral {
 }
 unsafe impl ::windows_core::Interface for AccountsSettingsPaneEventDeferral {
     type Vtable = IAccountsSettingsPaneEventDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AccountsSettingsPaneEventDeferral {
-    const IID: ::windows_core::GUID = <IAccountsSettingsPaneEventDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAccountsSettingsPaneEventDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AccountsSettingsPaneEventDeferral {
     const NAME: &'static str = "Windows.UI.ApplicationSettings.AccountsSettingsPaneEventDeferral";
@@ -480,9 +474,7 @@ impl ::windows_core::RuntimeType for CredentialCommand {
 }
 unsafe impl ::windows_core::Interface for CredentialCommand {
     type Vtable = ICredentialCommand_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CredentialCommand {
-    const IID: ::windows_core::GUID = <ICredentialCommand as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICredentialCommand as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CredentialCommand {
     const NAME: &'static str = "Windows.UI.ApplicationSettings.CredentialCommand";
@@ -584,10 +576,7 @@ impl ::windows_core::RuntimeType for SettingsCommand {
 #[cfg(feature = "UI_Popups")]
 unsafe impl ::windows_core::Interface for SettingsCommand {
     type Vtable = super::Popups::IUICommand_Vtbl;
-}
-#[cfg(feature = "UI_Popups")]
-unsafe impl ::windows_core::ComInterface for SettingsCommand {
-    const IID: ::windows_core::GUID = <super::Popups::IUICommand as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::Popups::IUICommand as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "UI_Popups")]
 impl ::windows_core::RuntimeName for SettingsCommand {
@@ -657,10 +646,7 @@ impl ::windows_core::RuntimeType for SettingsPane {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for SettingsPane {
     type Vtable = ISettingsPane_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for SettingsPane {
-    const IID: ::windows_core::GUID = <ISettingsPane as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISettingsPane as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for SettingsPane {
@@ -692,10 +678,7 @@ impl ::windows_core::RuntimeType for SettingsPaneCommandsRequest {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for SettingsPaneCommandsRequest {
     type Vtable = ISettingsPaneCommandsRequest_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for SettingsPaneCommandsRequest {
-    const IID: ::windows_core::GUID = <ISettingsPaneCommandsRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISettingsPaneCommandsRequest as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for SettingsPaneCommandsRequest {
@@ -727,10 +710,7 @@ impl ::windows_core::RuntimeType for SettingsPaneCommandsRequestedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for SettingsPaneCommandsRequestedEventArgs {
     type Vtable = ISettingsPaneCommandsRequestedEventArgs_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for SettingsPaneCommandsRequestedEventArgs {
-    const IID: ::windows_core::GUID = <ISettingsPaneCommandsRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISettingsPaneCommandsRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for SettingsPaneCommandsRequestedEventArgs {
@@ -788,9 +768,7 @@ impl ::windows_core::RuntimeType for WebAccountCommand {
 }
 unsafe impl ::windows_core::Interface for WebAccountCommand {
     type Vtable = IWebAccountCommand_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountCommand {
-    const IID: ::windows_core::GUID = <IWebAccountCommand as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountCommand as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountCommand {
     const NAME: &'static str = "Windows.UI.ApplicationSettings.WebAccountCommand";
@@ -813,9 +791,7 @@ impl ::windows_core::RuntimeType for WebAccountInvokedArgs {
 }
 unsafe impl ::windows_core::Interface for WebAccountInvokedArgs {
     type Vtable = IWebAccountInvokedArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountInvokedArgs {
-    const IID: ::windows_core::GUID = <IWebAccountInvokedArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountInvokedArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountInvokedArgs {
     const NAME: &'static str = "Windows.UI.ApplicationSettings.WebAccountInvokedArgs";
@@ -864,9 +840,7 @@ impl ::windows_core::RuntimeType for WebAccountProviderCommand {
 }
 unsafe impl ::windows_core::Interface for WebAccountProviderCommand {
     type Vtable = IWebAccountProviderCommand_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountProviderCommand {
-    const IID: ::windows_core::GUID = <IWebAccountProviderCommand as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountProviderCommand as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountProviderCommand {
     const NAME: &'static str = "Windows.UI.ApplicationSettings.WebAccountProviderCommand";
@@ -1002,7 +976,7 @@ impl<F: FnMut(::core::option::Option<&CredentialCommand>) -> ::windows_core::Res
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <CredentialCommandCredentialDeletedHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <CredentialCommandCredentialDeletedHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -1067,7 +1041,7 @@ impl<F: FnMut(::core::option::Option<&WebAccountCommand>, ::core::option::Option
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <WebAccountCommandInvokedHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <WebAccountCommandInvokedHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -1131,7 +1105,7 @@ impl<F: FnMut(::core::option::Option<&WebAccountProviderCommand>) -> ::windows_c
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <WebAccountProviderCommandInvokedHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <WebAccountProviderCommandInvokedHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

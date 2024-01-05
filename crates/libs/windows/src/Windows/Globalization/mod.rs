@@ -1305,25 +1305,25 @@ impl Calendar {
         })
     }
     pub fn GetTimeZone(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ITimeZoneOnCalendar>(self)?;
+        let this = &::windows_core::Interface::cast::<ITimeZoneOnCalendar>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetTimeZone)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ChangeTimeZone(&self, timezoneid: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ITimeZoneOnCalendar>(self)?;
+        let this = &::windows_core::Interface::cast::<ITimeZoneOnCalendar>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ChangeTimeZone)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(timezoneid)).ok() }
     }
     pub fn TimeZoneAsFullString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ITimeZoneOnCalendar>(self)?;
+        let this = &::windows_core::Interface::cast::<ITimeZoneOnCalendar>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeZoneAsFullString)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TimeZoneAsString(&self, ideallength: i32) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ITimeZoneOnCalendar>(self)?;
+        let this = &::windows_core::Interface::cast::<ITimeZoneOnCalendar>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeZoneAsString)(::windows_core::Interface::as_raw(this), ideallength, &mut result__).from_abi(result__)
@@ -1345,9 +1345,7 @@ impl ::windows_core::RuntimeType for Calendar {
 }
 unsafe impl ::windows_core::Interface for Calendar {
     type Vtable = ICalendar_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Calendar {
-    const IID: ::windows_core::GUID = <ICalendar as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICalendar as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Calendar {
     const NAME: &'static str = "Windows.Globalization.Calendar";
@@ -1524,9 +1522,7 @@ impl ::windows_core::RuntimeType for CurrencyAmount {
 }
 unsafe impl ::windows_core::Interface for CurrencyAmount {
     type Vtable = ICurrencyAmount_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CurrencyAmount {
-    const IID: ::windows_core::GUID = <ICurrencyAmount as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICurrencyAmount as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CurrencyAmount {
     const NAME: &'static str = "Windows.Globalization.CurrencyAmount";
@@ -2617,9 +2613,7 @@ impl ::windows_core::RuntimeType for GeographicRegion {
 }
 unsafe impl ::windows_core::Interface for GeographicRegion {
     type Vtable = IGeographicRegion_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GeographicRegion {
-    const IID: ::windows_core::GUID = <IGeographicRegion as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeographicRegion as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GeographicRegion {
     const NAME: &'static str = "Windows.Globalization.GeographicRegion";
@@ -2658,9 +2652,7 @@ impl ::windows_core::RuntimeType for JapanesePhoneme {
 }
 unsafe impl ::windows_core::Interface for JapanesePhoneme {
     type Vtable = IJapanesePhoneme_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for JapanesePhoneme {
-    const IID: ::windows_core::GUID = <IJapanesePhoneme as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IJapanesePhoneme as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for JapanesePhoneme {
     const NAME: &'static str = "Windows.Globalization.JapanesePhoneme";
@@ -2726,14 +2718,14 @@ impl Language {
         }
     }
     pub fn LayoutDirection(&self) -> ::windows_core::Result<LanguageLayoutDirection> {
-        let this = &::windows_core::ComInterface::cast::<ILanguage2>(self)?;
+        let this = &::windows_core::Interface::cast::<ILanguage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LayoutDirection)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AbbreviatedName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ILanguage3>(self)?;
+        let this = &::windows_core::Interface::cast::<ILanguage3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AbbreviatedName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2742,7 +2734,7 @@ impl Language {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetExtensionSubtags(&self, singleton: &::windows_core::HSTRING) -> ::windows_core::Result<super::Foundation::Collections::IVectorView<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<ILanguageExtensionSubtags>(self)?;
+        let this = &::windows_core::Interface::cast::<ILanguageExtensionSubtags>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetExtensionSubtags)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(singleton), &mut result__).from_abi(result__)
@@ -2809,9 +2801,7 @@ impl ::windows_core::RuntimeType for Language {
 }
 unsafe impl ::windows_core::Interface for Language {
     type Vtable = ILanguage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Language {
-    const IID: ::windows_core::GUID = <ILanguage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILanguage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Language {
     const NAME: &'static str = "Windows.Globalization.Language";

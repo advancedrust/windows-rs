@@ -269,9 +269,7 @@ impl ::windows_core::RuntimeType for KeyCredential {
 }
 unsafe impl ::windows_core::Interface for KeyCredential {
     type Vtable = IKeyCredential_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for KeyCredential {
-    const IID: ::windows_core::GUID = <IKeyCredential as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IKeyCredential as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for KeyCredential {
     const NAME: &'static str = "Windows.Security.Credentials.KeyCredential";
@@ -314,9 +312,7 @@ impl ::windows_core::RuntimeType for KeyCredentialAttestationResult {
 }
 unsafe impl ::windows_core::Interface for KeyCredentialAttestationResult {
     type Vtable = IKeyCredentialAttestationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for KeyCredentialAttestationResult {
-    const IID: ::windows_core::GUID = <IKeyCredentialAttestationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IKeyCredentialAttestationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for KeyCredentialAttestationResult {
     const NAME: &'static str = "Windows.Security.Credentials.KeyCredentialAttestationResult";
@@ -391,9 +387,7 @@ impl ::windows_core::RuntimeType for KeyCredentialOperationResult {
 }
 unsafe impl ::windows_core::Interface for KeyCredentialOperationResult {
     type Vtable = IKeyCredentialOperationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for KeyCredentialOperationResult {
-    const IID: ::windows_core::GUID = <IKeyCredentialOperationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IKeyCredentialOperationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for KeyCredentialOperationResult {
     const NAME: &'static str = "Windows.Security.Credentials.KeyCredentialOperationResult";
@@ -425,9 +419,7 @@ impl ::windows_core::RuntimeType for KeyCredentialRetrievalResult {
 }
 unsafe impl ::windows_core::Interface for KeyCredentialRetrievalResult {
     type Vtable = IKeyCredentialRetrievalResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for KeyCredentialRetrievalResult {
-    const IID: ::windows_core::GUID = <IKeyCredentialRetrievalResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IKeyCredentialRetrievalResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for KeyCredentialRetrievalResult {
     const NAME: &'static str = "Windows.Security.Credentials.KeyCredentialRetrievalResult";
@@ -509,9 +501,7 @@ impl ::windows_core::RuntimeType for PasswordCredential {
 }
 unsafe impl ::windows_core::Interface for PasswordCredential {
     type Vtable = IPasswordCredential_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PasswordCredential {
-    const IID: ::windows_core::GUID = <IPasswordCredential as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPasswordCredential as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PasswordCredential {
     const NAME: &'static str = "Windows.Security.Credentials.PasswordCredential";
@@ -536,7 +526,7 @@ impl PasswordCredentialPropertyStore {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterator<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -545,7 +535,7 @@ impl PasswordCredentialPropertyStore {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Lookup(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<::windows_core::IInspectable> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Lookup)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -554,7 +544,7 @@ impl PasswordCredentialPropertyStore {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -563,7 +553,7 @@ impl PasswordCredentialPropertyStore {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn HasKey(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasKey)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -572,7 +562,7 @@ impl PasswordCredentialPropertyStore {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetView(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetView)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -584,7 +574,7 @@ impl PasswordCredentialPropertyStore {
     where
         P0: ::windows_core::IntoParam<::windows_core::IInspectable>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Insert)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), value.into_param().abi(), &mut result__).from_abi(result__)
@@ -593,13 +583,13 @@ impl PasswordCredentialPropertyStore {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Remove(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Clear(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Clear)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -608,7 +598,7 @@ impl PasswordCredentialPropertyStore {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::MapChangedEventHandler<::windows_core::HSTRING, ::windows_core::IInspectable>>,
     {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MapChanged)(::windows_core::Interface::as_raw(this), vhnd.into_param().abi(), &mut result__).from_abi(result__)
@@ -617,7 +607,7 @@ impl PasswordCredentialPropertyStore {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn RemoveMapChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveMapChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
 }
@@ -628,10 +618,7 @@ impl ::windows_core::RuntimeType for PasswordCredentialPropertyStore {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for PasswordCredentialPropertyStore {
     type Vtable = super::super::Foundation::Collections::IPropertySet_Vtbl;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for PasswordCredentialPropertyStore {
-    const IID: ::windows_core::GUID = <super::super::Foundation::Collections::IPropertySet as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::Foundation::Collections::IPropertySet as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for PasswordCredentialPropertyStore {
@@ -726,9 +713,7 @@ impl ::windows_core::RuntimeType for PasswordVault {
 }
 unsafe impl ::windows_core::Interface for PasswordVault {
     type Vtable = IPasswordVault_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PasswordVault {
-    const IID: ::windows_core::GUID = <IPasswordVault as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPasswordVault as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PasswordVault {
     const NAME: &'static str = "Windows.Security.Credentials.PasswordVault";
@@ -762,7 +747,7 @@ impl WebAccount {
         }
     }
     pub fn Id(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccount2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccount2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Id)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -771,7 +756,7 @@ impl WebAccount {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Properties(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccount2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccount2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Properties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -780,21 +765,21 @@ impl WebAccount {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn GetPictureAsync(&self, desizedsize: WebAccountPictureSize) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Storage::Streams::IRandomAccessStream>> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccount2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccount2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetPictureAsync)(::windows_core::Interface::as_raw(this), desizedsize, &mut result__).from_abi(result__)
         }
     }
     pub fn SignOutAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccount2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccount2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SignOutAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SignOutWithClientIdAsync(&self, clientid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccount2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccount2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SignOutWithClientIdAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(clientid), &mut result__).from_abi(result__)
@@ -820,9 +805,7 @@ impl ::windows_core::RuntimeType for WebAccount {
 }
 unsafe impl ::windows_core::Interface for WebAccount {
     type Vtable = IWebAccount_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccount {
-    const IID: ::windows_core::GUID = <IWebAccount as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccount as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccount {
     const NAME: &'static str = "Windows.Security.Credentials.WebAccount";
@@ -859,14 +842,14 @@ impl WebAccountProvider {
         }
     }
     pub fn DisplayPurpose(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProvider2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProvider2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DisplayPurpose)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Authority(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProvider2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProvider2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Authority)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -875,14 +858,14 @@ impl WebAccountProvider {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn User(&self) -> ::windows_core::Result<super::super::System::User> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProvider3>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProvider3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsSystemProvider(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProvider4>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProvider4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsSystemProvider)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -908,9 +891,7 @@ impl ::windows_core::RuntimeType for WebAccountProvider {
 }
 unsafe impl ::windows_core::Interface for WebAccountProvider {
     type Vtable = IWebAccountProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountProvider {
-    const IID: ::windows_core::GUID = <IWebAccountProvider as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountProvider as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountProvider {
     const NAME: &'static str = "Windows.Security.Credentials.WebAccountProvider";

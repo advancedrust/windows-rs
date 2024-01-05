@@ -4,7 +4,7 @@ pub mod Common;
 #[inline]
 pub unsafe fn CreateDXGIFactory<T>() -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("dxgi.dll" "system" fn CreateDXGIFactory(riid : *const ::windows_core::GUID, ppfactory : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -13,7 +13,7 @@ where
 #[inline]
 pub unsafe fn CreateDXGIFactory1<T>() -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("dxgi.dll" "system" fn CreateDXGIFactory1(riid : *const ::windows_core::GUID, ppfactory : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -22,7 +22,7 @@ where
 #[inline]
 pub unsafe fn CreateDXGIFactory2<T>(flags: u32) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("dxgi.dll" "system" fn CreateDXGIFactory2(flags : u32, riid : *const ::windows_core::GUID, ppfactory : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -41,7 +41,7 @@ pub unsafe fn DXGIDisableVBlankVirtualization() -> ::windows_core::Result<()> {
 #[inline]
 pub unsafe fn DXGIGetDebugInterface1<T>(flags: u32) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("dxgi.dll" "system" fn DXGIGetDebugInterface1(flags : u32, riid : *const ::windows_core::GUID, pdebug : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -63,7 +63,7 @@ impl IDXGIAdapter {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -107,7 +107,7 @@ impl IDXGIAdapter1 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -152,7 +152,7 @@ impl IDXGIAdapter2 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -200,7 +200,7 @@ impl IDXGIAdapter3 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -279,7 +279,7 @@ impl IDXGIAdapter4 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -446,7 +446,7 @@ impl IDXGIDevice {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -503,7 +503,7 @@ impl IDXGIDevice1 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -561,7 +561,7 @@ impl IDXGIDevice2 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -632,7 +632,7 @@ impl IDXGIDevice3 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -704,7 +704,7 @@ impl IDXGIDevice4 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -783,14 +783,14 @@ impl IDXGIDeviceSubObject {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -843,7 +843,7 @@ impl IDXGIFactory {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -910,7 +910,7 @@ impl IDXGIFactory1 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -978,7 +978,7 @@ impl IDXGIFactory2 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1140,7 +1140,7 @@ impl IDXGIFactory3 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1286,7 +1286,7 @@ impl IDXGIFactory4 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1408,14 +1408,14 @@ impl IDXGIFactory4 {
     }
     pub unsafe fn EnumAdapterByLuid<T>(&self, adapterluid: super::super::Foundation::LUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).EnumAdapterByLuid)(::windows_core::Interface::as_raw(self), ::core::mem::transmute(adapterluid), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn EnumWarpAdapter<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).EnumWarpAdapter)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1447,7 +1447,7 @@ impl IDXGIFactory5 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1569,14 +1569,14 @@ impl IDXGIFactory5 {
     }
     pub unsafe fn EnumAdapterByLuid<T>(&self, adapterluid: super::super::Foundation::LUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.EnumAdapterByLuid)(::windows_core::Interface::as_raw(self), ::core::mem::transmute(adapterluid), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn EnumWarpAdapter<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.EnumWarpAdapter)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1610,7 +1610,7 @@ impl IDXGIFactory6 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1732,14 +1732,14 @@ impl IDXGIFactory6 {
     }
     pub unsafe fn EnumAdapterByLuid<T>(&self, adapterluid: super::super::Foundation::LUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.EnumAdapterByLuid)(::windows_core::Interface::as_raw(self), ::core::mem::transmute(adapterluid), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn EnumWarpAdapter<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.EnumWarpAdapter)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1749,7 +1749,7 @@ impl IDXGIFactory6 {
     }
     pub unsafe fn EnumAdapterByGpuPreference<T>(&self, adapter: u32, gpupreference: DXGI_GPU_PREFERENCE) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).EnumAdapterByGpuPreference)(::windows_core::Interface::as_raw(self), adapter, gpupreference, &T::IID, &mut result__).from_abi(result__)
@@ -1780,7 +1780,7 @@ impl IDXGIFactory7 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1902,14 +1902,14 @@ impl IDXGIFactory7 {
     }
     pub unsafe fn EnumAdapterByLuid<T>(&self, adapterluid: super::super::Foundation::LUID) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.EnumAdapterByLuid)(::windows_core::Interface::as_raw(self), ::core::mem::transmute(adapterluid), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn EnumWarpAdapter<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.EnumWarpAdapter)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -1919,7 +1919,7 @@ impl IDXGIFactory7 {
     }
     pub unsafe fn EnumAdapterByGpuPreference<T>(&self, adapter: u32, gpupreference: DXGI_GPU_PREFERENCE) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.EnumAdapterByGpuPreference)(::windows_core::Interface::as_raw(self), adapter, gpupreference, &T::IID, &mut result__).from_abi(result__)
@@ -2175,14 +2175,14 @@ impl IDXGIKeyedMutex {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -2220,7 +2220,7 @@ impl IDXGIObject {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -2254,7 +2254,7 @@ impl IDXGIOutput {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -2375,7 +2375,7 @@ impl IDXGIOutput1 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -2502,7 +2502,7 @@ impl IDXGIOutput2 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -2623,7 +2623,7 @@ impl IDXGIOutput3 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -2756,7 +2756,7 @@ impl IDXGIOutput4 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -2898,7 +2898,7 @@ impl IDXGIOutput5 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3049,7 +3049,7 @@ impl IDXGIOutput6 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3210,7 +3210,7 @@ impl IDXGIOutputDuplication {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3278,14 +3278,14 @@ impl IDXGIResource {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3334,14 +3334,14 @@ impl IDXGIResource1 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3404,14 +3404,14 @@ impl IDXGISurface {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3458,14 +3458,14 @@ impl IDXGISurface1 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3523,14 +3523,14 @@ impl IDXGISurface2 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3560,7 +3560,7 @@ impl IDXGISurface2 {
     }
     pub unsafe fn GetResource<T>(&self, psubresourceindex: *mut u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetResource)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__, psubresourceindex).from_abi(result__)
@@ -3591,14 +3591,14 @@ impl IDXGISwapChain {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3608,7 +3608,7 @@ impl IDXGISwapChain {
     }
     pub unsafe fn GetBuffer<T>(&self, buffer: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetBuffer)(::windows_core::Interface::as_raw(self), buffer, &T::IID, &mut result__).from_abi(result__)
@@ -3693,14 +3693,14 @@ impl IDXGISwapChain1 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3710,7 +3710,7 @@ impl IDXGISwapChain1 {
     }
     pub unsafe fn GetBuffer<T>(&self, buffer: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetBuffer)(::windows_core::Interface::as_raw(self), buffer, &T::IID, &mut result__).from_abi(result__)
@@ -3767,7 +3767,7 @@ impl IDXGISwapChain1 {
     }
     pub unsafe fn GetCoreWindow<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetCoreWindow)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3848,14 +3848,14 @@ impl IDXGISwapChain2 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -3865,7 +3865,7 @@ impl IDXGISwapChain2 {
     }
     pub unsafe fn GetBuffer<T>(&self, buffer: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetBuffer)(::windows_core::Interface::as_raw(self), buffer, &T::IID, &mut result__).from_abi(result__)
@@ -3922,7 +3922,7 @@ impl IDXGISwapChain2 {
     }
     pub unsafe fn GetCoreWindow<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetCoreWindow)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -4009,14 +4009,14 @@ impl IDXGISwapChain3 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -4026,7 +4026,7 @@ impl IDXGISwapChain3 {
     }
     pub unsafe fn GetBuffer<T>(&self, buffer: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetBuffer)(::windows_core::Interface::as_raw(self), buffer, &T::IID, &mut result__).from_abi(result__)
@@ -4083,7 +4083,7 @@ impl IDXGISwapChain3 {
     }
     pub unsafe fn GetCoreWindow<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.GetCoreWindow)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -4195,14 +4195,14 @@ impl IDXGISwapChain4 {
     }
     pub unsafe fn GetParent<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.GetParent)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn GetDevice<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.GetDevice)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)
@@ -4212,7 +4212,7 @@ impl IDXGISwapChain4 {
     }
     pub unsafe fn GetBuffer<T>(&self, buffer: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetBuffer)(::windows_core::Interface::as_raw(self), buffer, &T::IID, &mut result__).from_abi(result__)
@@ -4269,7 +4269,7 @@ impl IDXGISwapChain4 {
     }
     pub unsafe fn GetCoreWindow<T>(&self) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetCoreWindow)(::windows_core::Interface::as_raw(self), &T::IID, &mut result__).from_abi(result__)

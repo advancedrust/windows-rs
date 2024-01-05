@@ -76,9 +76,7 @@ impl ::windows_core::RuntimeType for UserDataAvailabilityStateChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for UserDataAvailabilityStateChangedEventArgs {
     type Vtable = IUserDataAvailabilityStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataAvailabilityStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IUserDataAvailabilityStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataAvailabilityStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataAvailabilityStateChangedEventArgs {
     const NAME: &'static str = "Windows.Security.DataProtection.UserDataAvailabilityStateChangedEventArgs";
@@ -112,9 +110,7 @@ impl ::windows_core::RuntimeType for UserDataBufferUnprotectResult {
 }
 unsafe impl ::windows_core::Interface for UserDataBufferUnprotectResult {
     type Vtable = IUserDataBufferUnprotectResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataBufferUnprotectResult {
-    const IID: ::windows_core::GUID = <IUserDataBufferUnprotectResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataBufferUnprotectResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataBufferUnprotectResult {
     const NAME: &'static str = "Windows.Security.DataProtection.UserDataBufferUnprotectResult";
@@ -223,9 +219,7 @@ impl ::windows_core::RuntimeType for UserDataProtectionManager {
 }
 unsafe impl ::windows_core::Interface for UserDataProtectionManager {
     type Vtable = IUserDataProtectionManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataProtectionManager {
-    const IID: ::windows_core::GUID = <IUserDataProtectionManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataProtectionManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataProtectionManager {
     const NAME: &'static str = "Windows.Security.DataProtection.UserDataProtectionManager";
@@ -250,9 +244,7 @@ impl ::windows_core::RuntimeType for UserDataStorageItemProtectionInfo {
 }
 unsafe impl ::windows_core::Interface for UserDataStorageItemProtectionInfo {
     type Vtable = IUserDataStorageItemProtectionInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataStorageItemProtectionInfo {
-    const IID: ::windows_core::GUID = <IUserDataStorageItemProtectionInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataStorageItemProtectionInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataStorageItemProtectionInfo {
     const NAME: &'static str = "Windows.Security.DataProtection.UserDataStorageItemProtectionInfo";

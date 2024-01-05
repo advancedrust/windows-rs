@@ -216,9 +216,7 @@ impl ::windows_core::RuntimeType for DeliveryOptimizationSettings {
 }
 unsafe impl ::windows_core::Interface for DeliveryOptimizationSettings {
     type Vtable = IDeliveryOptimizationSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DeliveryOptimizationSettings {
-    const IID: ::windows_core::GUID = <IDeliveryOptimizationSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDeliveryOptimizationSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DeliveryOptimizationSettings {
     const NAME: &'static str = "Windows.ApplicationModel.Store.Preview.DeliveryOptimizationSettings";
@@ -494,9 +492,7 @@ impl ::windows_core::RuntimeType for StoreHardwareManufacturerInfo {
 }
 unsafe impl ::windows_core::Interface for StoreHardwareManufacturerInfo {
     type Vtable = IStoreHardwareManufacturerInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StoreHardwareManufacturerInfo {
-    const IID: ::windows_core::GUID = <IStoreHardwareManufacturerInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStoreHardwareManufacturerInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StoreHardwareManufacturerInfo {
     const NAME: &'static str = "Windows.ApplicationModel.Store.Preview.StoreHardwareManufacturerInfo";
@@ -576,9 +572,7 @@ impl ::windows_core::RuntimeType for StorePreviewProductInfo {
 }
 unsafe impl ::windows_core::Interface for StorePreviewProductInfo {
     type Vtable = IStorePreviewProductInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorePreviewProductInfo {
-    const IID: ::windows_core::GUID = <IStorePreviewProductInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorePreviewProductInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorePreviewProductInfo {
     const NAME: &'static str = "Windows.ApplicationModel.Store.Preview.StorePreviewProductInfo";
@@ -603,9 +597,7 @@ impl ::windows_core::RuntimeType for StorePreviewPurchaseResults {
 }
 unsafe impl ::windows_core::Interface for StorePreviewPurchaseResults {
     type Vtable = IStorePreviewPurchaseResults_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorePreviewPurchaseResults {
-    const IID: ::windows_core::GUID = <IStorePreviewPurchaseResults as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorePreviewPurchaseResults as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorePreviewPurchaseResults {
     const NAME: &'static str = "Windows.ApplicationModel.Store.Preview.StorePreviewPurchaseResults";
@@ -686,9 +678,7 @@ impl ::windows_core::RuntimeType for StorePreviewSkuInfo {
 }
 unsafe impl ::windows_core::Interface for StorePreviewSkuInfo {
     type Vtable = IStorePreviewSkuInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StorePreviewSkuInfo {
-    const IID: ::windows_core::GUID = <IStorePreviewSkuInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStorePreviewSkuInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StorePreviewSkuInfo {
     const NAME: &'static str = "Windows.ApplicationModel.Store.Preview.StorePreviewSkuInfo";

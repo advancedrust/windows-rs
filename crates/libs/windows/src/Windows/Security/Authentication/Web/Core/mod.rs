@@ -267,9 +267,7 @@ impl ::windows_core::RuntimeType for FindAllAccountsResult {
 }
 unsafe impl ::windows_core::Interface for FindAllAccountsResult {
     type Vtable = IFindAllAccountsResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FindAllAccountsResult {
-    const IID: ::windows_core::GUID = <IFindAllAccountsResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFindAllAccountsResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FindAllAccountsResult {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Core.FindAllAccountsResult";
@@ -296,9 +294,7 @@ impl ::windows_core::RuntimeType for WebAccountEventArgs {
 }
 unsafe impl ::windows_core::Interface for WebAccountEventArgs {
     type Vtable = IWebAccountEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountEventArgs {
-    const IID: ::windows_core::GUID = <IWebAccountEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountEventArgs {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Core.WebAccountEventArgs";
@@ -356,14 +352,14 @@ impl WebAccountMonitor {
     where
         P0: ::windows_core::IntoParam<super::super::super::super::Foundation::TypedEventHandler<WebAccountMonitor, WebAccountEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountMonitor2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountMonitor2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AccountPictureUpdated)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveAccountPictureUpdated(&self, token: super::super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountMonitor2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountMonitor2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveAccountPictureUpdated)(::windows_core::Interface::as_raw(this), token).ok() }
     }
 }
@@ -372,9 +368,7 @@ impl ::windows_core::RuntimeType for WebAccountMonitor {
 }
 unsafe impl ::windows_core::Interface for WebAccountMonitor {
     type Vtable = IWebAccountMonitor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountMonitor {
-    const IID: ::windows_core::GUID = <IWebAccountMonitor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountMonitor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountMonitor {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Core.WebAccountMonitor";
@@ -592,9 +586,7 @@ impl ::windows_core::RuntimeType for WebProviderError {
 }
 unsafe impl ::windows_core::Interface for WebProviderError {
     type Vtable = IWebProviderError_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebProviderError {
-    const IID: ::windows_core::GUID = <IWebProviderError as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebProviderError as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebProviderError {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Core.WebProviderError";
@@ -648,21 +640,21 @@ impl WebTokenRequest {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn AppProperties(&self) -> ::windows_core::Result<super::super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<IWebTokenRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebTokenRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CorrelationId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IWebTokenRequest3>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebTokenRequest3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CorrelationId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCorrelationId(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWebTokenRequest3>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebTokenRequest3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCorrelationId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     #[doc = "Required features: `\"Security_Credentials\"`"]
@@ -720,9 +712,7 @@ impl ::windows_core::RuntimeType for WebTokenRequest {
 }
 unsafe impl ::windows_core::Interface for WebTokenRequest {
     type Vtable = IWebTokenRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebTokenRequest {
-    const IID: ::windows_core::GUID = <IWebTokenRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebTokenRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebTokenRequest {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Core.WebTokenRequest";
@@ -770,9 +760,7 @@ impl ::windows_core::RuntimeType for WebTokenRequestResult {
 }
 unsafe impl ::windows_core::Interface for WebTokenRequestResult {
     type Vtable = IWebTokenRequestResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebTokenRequestResult {
-    const IID: ::windows_core::GUID = <IWebTokenRequestResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebTokenRequestResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebTokenRequestResult {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Core.WebTokenRequestResult";
@@ -863,9 +851,7 @@ impl ::windows_core::RuntimeType for WebTokenResponse {
 }
 unsafe impl ::windows_core::Interface for WebTokenResponse {
     type Vtable = IWebTokenResponse_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebTokenResponse {
-    const IID: ::windows_core::GUID = <IWebTokenResponse as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebTokenResponse as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebTokenResponse {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Core.WebTokenResponse";

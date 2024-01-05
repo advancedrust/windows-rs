@@ -55,7 +55,7 @@ impl PerceptionTimestamp {
         }
     }
     pub fn SystemRelativeTargetTime(&self) -> ::windows_core::Result<super::Foundation::TimeSpan> {
-        let this = &::windows_core::ComInterface::cast::<IPerceptionTimestamp2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPerceptionTimestamp2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SystemRelativeTargetTime)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -67,9 +67,7 @@ impl ::windows_core::RuntimeType for PerceptionTimestamp {
 }
 unsafe impl ::windows_core::Interface for PerceptionTimestamp {
     type Vtable = IPerceptionTimestamp_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PerceptionTimestamp {
-    const IID: ::windows_core::GUID = <IPerceptionTimestamp as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPerceptionTimestamp as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PerceptionTimestamp {
     const NAME: &'static str = "Windows.Perception.PerceptionTimestamp";

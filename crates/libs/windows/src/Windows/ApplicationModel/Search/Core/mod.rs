@@ -63,9 +63,7 @@ impl ::windows_core::RuntimeType for RequestingFocusOnKeyboardInputEventArgs {
 }
 unsafe impl ::windows_core::Interface for RequestingFocusOnKeyboardInputEventArgs {
     type Vtable = IRequestingFocusOnKeyboardInputEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RequestingFocusOnKeyboardInputEventArgs {
-    const IID: ::windows_core::GUID = <IRequestingFocusOnKeyboardInputEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRequestingFocusOnKeyboardInputEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RequestingFocusOnKeyboardInputEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Search.Core.RequestingFocusOnKeyboardInputEventArgs";
@@ -127,9 +125,7 @@ impl ::windows_core::RuntimeType for SearchSuggestion {
 }
 unsafe impl ::windows_core::Interface for SearchSuggestion {
     type Vtable = ISearchSuggestion_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SearchSuggestion {
-    const IID: ::windows_core::GUID = <ISearchSuggestion as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISearchSuggestion as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SearchSuggestion {
     const NAME: &'static str = "Windows.ApplicationModel.Search.Core.SearchSuggestion";
@@ -245,9 +241,7 @@ impl ::windows_core::RuntimeType for SearchSuggestionManager {
 }
 unsafe impl ::windows_core::Interface for SearchSuggestionManager {
     type Vtable = ISearchSuggestionManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SearchSuggestionManager {
-    const IID: ::windows_core::GUID = <ISearchSuggestionManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISearchSuggestionManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SearchSuggestionManager {
     const NAME: &'static str = "Windows.ApplicationModel.Search.Core.SearchSuggestionManager";
@@ -291,9 +285,7 @@ impl ::windows_core::RuntimeType for SearchSuggestionsRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for SearchSuggestionsRequestedEventArgs {
     type Vtable = ISearchSuggestionsRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SearchSuggestionsRequestedEventArgs {
-    const IID: ::windows_core::GUID = <ISearchSuggestionsRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISearchSuggestionsRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SearchSuggestionsRequestedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Search.Core.SearchSuggestionsRequestedEventArgs";

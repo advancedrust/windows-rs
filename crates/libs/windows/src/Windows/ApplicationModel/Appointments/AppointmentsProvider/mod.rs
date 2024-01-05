@@ -94,9 +94,7 @@ impl ::windows_core::RuntimeType for AddAppointmentOperation {
 }
 unsafe impl ::windows_core::Interface for AddAppointmentOperation {
     type Vtable = IAddAppointmentOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AddAppointmentOperation {
-    const IID: ::windows_core::GUID = <IAddAppointmentOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAddAppointmentOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AddAppointmentOperation {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.AppointmentsProvider.AddAppointmentOperation";
@@ -197,9 +195,7 @@ impl ::windows_core::RuntimeType for RemoveAppointmentOperation {
 }
 unsafe impl ::windows_core::Interface for RemoveAppointmentOperation {
     type Vtable = IRemoveAppointmentOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoveAppointmentOperation {
-    const IID: ::windows_core::GUID = <IRemoveAppointmentOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoveAppointmentOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoveAppointmentOperation {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.AppointmentsProvider.RemoveAppointmentOperation";
@@ -261,9 +257,7 @@ impl ::windows_core::RuntimeType for ReplaceAppointmentOperation {
 }
 unsafe impl ::windows_core::Interface for ReplaceAppointmentOperation {
     type Vtable = IReplaceAppointmentOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ReplaceAppointmentOperation {
-    const IID: ::windows_core::GUID = <IReplaceAppointmentOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IReplaceAppointmentOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ReplaceAppointmentOperation {
     const NAME: &'static str = "Windows.ApplicationModel.Appointments.AppointmentsProvider.ReplaceAppointmentOperation";

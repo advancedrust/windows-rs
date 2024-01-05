@@ -66,9 +66,7 @@ impl ::windows_core::RuntimeType for VariablePhotoCapturedEventArgs {
 }
 unsafe impl ::windows_core::Interface for VariablePhotoCapturedEventArgs {
     type Vtable = IVariablePhotoCapturedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VariablePhotoCapturedEventArgs {
-    const IID: ::windows_core::GUID = <IVariablePhotoCapturedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVariablePhotoCapturedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VariablePhotoCapturedEventArgs {
     const NAME: &'static str = "Windows.Media.Capture.Core.VariablePhotoCapturedEventArgs";
@@ -130,7 +128,7 @@ impl VariablePhotoSequenceCapture {
         unsafe { (::windows_core::Interface::vtable(this).RemoveStopped)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn UpdateSettingsAsync(&self) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IVariablePhotoSequenceCapture2>(self)?;
+        let this = &::windows_core::Interface::cast::<IVariablePhotoSequenceCapture2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).UpdateSettingsAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -142,9 +140,7 @@ impl ::windows_core::RuntimeType for VariablePhotoSequenceCapture {
 }
 unsafe impl ::windows_core::Interface for VariablePhotoSequenceCapture {
     type Vtable = IVariablePhotoSequenceCapture_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VariablePhotoSequenceCapture {
-    const IID: ::windows_core::GUID = <IVariablePhotoSequenceCapture as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVariablePhotoSequenceCapture as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VariablePhotoSequenceCapture {
     const NAME: &'static str = "Windows.Media.Capture.Core.VariablePhotoSequenceCapture";

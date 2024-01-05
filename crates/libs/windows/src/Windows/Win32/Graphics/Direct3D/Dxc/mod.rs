@@ -1,7 +1,7 @@
 #[inline]
 pub unsafe fn DxcCreateInstance<T>(rclsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
 where
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("dxcompiler.dll" "system" fn DxcCreateInstance(rclsid : *const ::windows_core::GUID, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -13,7 +13,7 @@ where
 pub unsafe fn DxcCreateInstance2<P0, T>(pmalloc: P0, rclsid: *const ::windows_core::GUID) -> ::windows_core::Result<T>
 where
     P0: ::windows_core::IntoParam<super::super::super::System::Com::IMalloc>,
-    T: ::windows_core::ComInterface,
+    T: ::windows_core::Interface,
 {
     ::windows_targets::link!("dxcompiler.dll" "system" fn DxcCreateInstance2(pmalloc : * mut::core::ffi::c_void, rclsid : *const ::windows_core::GUID, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     let mut result__ = ::std::ptr::null_mut();
@@ -230,14 +230,14 @@ impl IDxcCompiler3 {
     pub unsafe fn Compile<P0, T>(&self, psource: *const DxcBuffer, parguments: ::core::option::Option<&[::windows_core::PCWSTR]>, pincludehandler: P0) -> ::windows_core::Result<T>
     where
         P0: ::windows_core::IntoParam<IDxcIncludeHandler>,
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Compile)(::windows_core::Interface::as_raw(self), psource, ::core::mem::transmute(parguments.as_deref().map_or(::core::ptr::null(), |slice| slice.as_ptr())), parguments.as_deref().map_or(0, |slice| slice.len().try_into().unwrap()), pincludehandler.into_param().abi(), &T::IID, &mut result__).from_abi(result__)
     }
     pub unsafe fn Disassemble<T>(&self, pobject: *const DxcBuffer) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Disassemble)(::windows_core::Interface::as_raw(self), pobject, &T::IID, &mut result__).from_abi(result__)
@@ -359,7 +359,7 @@ impl IDxcExtraOutputs {
     }
     pub unsafe fn GetOutput<T>(&self, uindex: u32, ppoutputtype: ::core::option::Option<*mut ::core::option::Option<IDxcBlobUtf16>>, ppoutputname: ::core::option::Option<*mut ::core::option::Option<IDxcBlobUtf16>>, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).GetOutput)(::windows_core::Interface::as_raw(self), uindex, &T::IID, result__ as *mut _ as *mut _, ::core::mem::transmute(ppoutputtype.unwrap_or(::std::ptr::null_mut())), ::core::mem::transmute(ppoutputname.unwrap_or(::std::ptr::null_mut()))).ok()
     }
@@ -744,7 +744,7 @@ impl IDxcResult {
     }
     pub unsafe fn GetOutput<T>(&self, dxcoutkind: DXC_OUT_KIND, ppoutputname: *mut ::core::option::Option<IDxcBlobUtf16>, result__: *mut ::core::option::Option<T>) -> ::windows_core::Result<()>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         (::windows_core::Interface::vtable(self).GetOutput)(::windows_core::Interface::as_raw(self), dxcoutkind, &T::IID, result__ as *mut _ as *mut _, ::core::mem::transmute(ppoutputname)).ok()
     }

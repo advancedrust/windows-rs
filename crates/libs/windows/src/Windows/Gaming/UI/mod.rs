@@ -152,9 +152,7 @@ impl ::windows_core::RuntimeType for GameChatMessageReceivedEventArgs {
 }
 unsafe impl ::windows_core::Interface for GameChatMessageReceivedEventArgs {
     type Vtable = IGameChatMessageReceivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameChatMessageReceivedEventArgs {
-    const IID: ::windows_core::GUID = <IGameChatMessageReceivedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameChatMessageReceivedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameChatMessageReceivedEventArgs {
     const NAME: &'static str = "Windows.Gaming.UI.GameChatMessageReceivedEventArgs";
@@ -198,9 +196,7 @@ impl ::windows_core::RuntimeType for GameChatOverlay {
 }
 unsafe impl ::windows_core::Interface for GameChatOverlay {
     type Vtable = IGameChatOverlay_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameChatOverlay {
-    const IID: ::windows_core::GUID = <IGameChatOverlay as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameChatOverlay as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameChatOverlay {
     const NAME: &'static str = "Windows.Gaming.UI.GameChatOverlay";
@@ -243,9 +239,7 @@ impl ::windows_core::RuntimeType for GameChatOverlayMessageSource {
 }
 unsafe impl ::windows_core::Interface for GameChatOverlayMessageSource {
     type Vtable = IGameChatOverlayMessageSource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameChatOverlayMessageSource {
-    const IID: ::windows_core::GUID = <IGameChatOverlayMessageSource as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameChatOverlayMessageSource as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameChatOverlayMessageSource {
     const NAME: &'static str = "Windows.Gaming.UI.GameChatOverlayMessageSource";
@@ -260,7 +254,7 @@ impl GameUIProviderActivatedEventArgs {
     #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
     #[cfg(feature = "ApplicationModel_Activation")]
     pub fn Kind(&self) -> ::windows_core::Result<super::super::ApplicationModel::Activation::ActivationKind> {
-        let this = &::windows_core::ComInterface::cast::<super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -269,7 +263,7 @@ impl GameUIProviderActivatedEventArgs {
     #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
     #[cfg(feature = "ApplicationModel_Activation")]
     pub fn PreviousExecutionState(&self) -> ::windows_core::Result<super::super::ApplicationModel::Activation::ApplicationExecutionState> {
-        let this = &::windows_core::ComInterface::cast::<super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PreviousExecutionState)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -278,7 +272,7 @@ impl GameUIProviderActivatedEventArgs {
     #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
     #[cfg(feature = "ApplicationModel_Activation")]
     pub fn SplashScreen(&self) -> ::windows_core::Result<super::super::ApplicationModel::Activation::SplashScreen> {
-        let this = &::windows_core::ComInterface::cast::<super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::ApplicationModel::Activation::IActivatedEventArgs>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SplashScreen)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -308,9 +302,7 @@ impl ::windows_core::RuntimeType for GameUIProviderActivatedEventArgs {
 }
 unsafe impl ::windows_core::Interface for GameUIProviderActivatedEventArgs {
     type Vtable = IGameUIProviderActivatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameUIProviderActivatedEventArgs {
-    const IID: ::windows_core::GUID = <IGameUIProviderActivatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameUIProviderActivatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameUIProviderActivatedEventArgs {
     const NAME: &'static str = "Windows.Gaming.UI.GameUIProviderActivatedEventArgs";

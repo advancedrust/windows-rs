@@ -6,7 +6,7 @@ impl IObjectArray {
     }
     pub unsafe fn GetAt<T>(&self, uiindex: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).GetAt)(::windows_core::Interface::as_raw(self), uiindex, &T::IID, &mut result__).from_abi(result__)
@@ -28,7 +28,7 @@ impl IObjectCollection {
     }
     pub unsafe fn GetAt<T>(&self, uiindex: u32) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).base__.GetAt)(::windows_core::Interface::as_raw(self), uiindex, &T::IID, &mut result__).from_abi(result__)

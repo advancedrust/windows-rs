@@ -91,9 +91,7 @@ impl ::windows_core::RuntimeType for NotePlacementChangedPreviewEventArgs {
 }
 unsafe impl ::windows_core::Interface for NotePlacementChangedPreviewEventArgs {
     type Vtable = INotePlacementChangedPreviewEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NotePlacementChangedPreviewEventArgs {
-    const IID: ::windows_core::GUID = <INotePlacementChangedPreviewEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INotePlacementChangedPreviewEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NotePlacementChangedPreviewEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Preview.Notes.NotePlacementChangedPreviewEventArgs";
@@ -125,9 +123,7 @@ impl ::windows_core::RuntimeType for NoteVisibilityChangedPreviewEventArgs {
 }
 unsafe impl ::windows_core::Interface for NoteVisibilityChangedPreviewEventArgs {
     type Vtable = INoteVisibilityChangedPreviewEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NoteVisibilityChangedPreviewEventArgs {
-    const IID: ::windows_core::GUID = <INoteVisibilityChangedPreviewEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INoteVisibilityChangedPreviewEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NoteVisibilityChangedPreviewEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Preview.Notes.NoteVisibilityChangedPreviewEventArgs";
@@ -245,7 +241,7 @@ impl NotesWindowManagerPreview {
     where
         P0: ::windows_core::IntoParam<NotesWindowManagerPreviewShowNoteOptions>,
     {
-        let this = &::windows_core::ComInterface::cast::<INotesWindowManagerPreview2>(self)?;
+        let this = &::windows_core::Interface::cast::<INotesWindowManagerPreview2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ShowNoteRelativeToWithOptions)(::windows_core::Interface::as_raw(this), noteviewid, anchornoteviewid, options.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -255,11 +251,11 @@ impl NotesWindowManagerPreview {
         P0: ::windows_core::IntoParam<super::super::super::Storage::Streams::IBuffer>,
         P1: ::windows_core::IntoParam<NotesWindowManagerPreviewShowNoteOptions>,
     {
-        let this = &::windows_core::ComInterface::cast::<INotesWindowManagerPreview2>(self)?;
+        let this = &::windows_core::Interface::cast::<INotesWindowManagerPreview2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ShowNoteWithPlacementWithOptions)(::windows_core::Interface::as_raw(this), noteviewid, data.into_param().abi(), options.into_param().abi()).ok() }
     }
     pub fn SetFocusToPreviousView(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<INotesWindowManagerPreview2>(self)?;
+        let this = &::windows_core::Interface::cast::<INotesWindowManagerPreview2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetFocusToPreviousView)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Graphics_Imaging\"`"]
@@ -268,7 +264,7 @@ impl NotesWindowManagerPreview {
     where
         P0: ::windows_core::IntoParam<super::super::super::Graphics::Imaging::SoftwareBitmap>,
     {
-        let this = &::windows_core::ComInterface::cast::<INotesWindowManagerPreview2>(self)?;
+        let this = &::windows_core::Interface::cast::<INotesWindowManagerPreview2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SetThumbnailImageForTaskSwitcherAsync)(::windows_core::Interface::as_raw(this), bitmap.into_param().abi(), &mut result__).from_abi(result__)
@@ -291,9 +287,7 @@ impl ::windows_core::RuntimeType for NotesWindowManagerPreview {
 }
 unsafe impl ::windows_core::Interface for NotesWindowManagerPreview {
     type Vtable = INotesWindowManagerPreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NotesWindowManagerPreview {
-    const IID: ::windows_core::GUID = <INotesWindowManagerPreview as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INotesWindowManagerPreview as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NotesWindowManagerPreview {
     const NAME: &'static str = "Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreview";
@@ -329,9 +323,7 @@ impl ::windows_core::RuntimeType for NotesWindowManagerPreviewShowNoteOptions {
 }
 unsafe impl ::windows_core::Interface for NotesWindowManagerPreviewShowNoteOptions {
     type Vtable = INotesWindowManagerPreviewShowNoteOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NotesWindowManagerPreviewShowNoteOptions {
-    const IID: ::windows_core::GUID = <INotesWindowManagerPreviewShowNoteOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <INotesWindowManagerPreviewShowNoteOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for NotesWindowManagerPreviewShowNoteOptions {
     const NAME: &'static str = "Windows.ApplicationModel.Preview.Notes.NotesWindowManagerPreviewShowNoteOptions";

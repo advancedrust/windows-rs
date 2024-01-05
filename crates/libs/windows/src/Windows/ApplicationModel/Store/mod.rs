@@ -604,9 +604,7 @@ impl ::windows_core::RuntimeType for LicenseInformation {
 }
 unsafe impl ::windows_core::Interface for LicenseInformation {
     type Vtable = ILicenseInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LicenseInformation {
-    const IID: ::windows_core::GUID = <ILicenseInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILicenseInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LicenseInformation {
     const NAME: &'static str = "Windows.ApplicationModel.Store.LicenseInformation";
@@ -663,28 +661,28 @@ impl ListingInformation {
         }
     }
     pub fn FormattedBasePrice(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IListingInformation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IListingInformation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FormattedBasePrice)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SaleEndDate(&self) -> ::windows_core::Result<super::super::Foundation::DateTime> {
-        let this = &::windows_core::ComInterface::cast::<IListingInformation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IListingInformation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SaleEndDate)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsOnSale(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IListingInformation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IListingInformation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsOnSale)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CurrencyCode(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IListingInformation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IListingInformation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CurrencyCode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -696,9 +694,7 @@ impl ::windows_core::RuntimeType for ListingInformation {
 }
 unsafe impl ::windows_core::Interface for ListingInformation {
     type Vtable = IListingInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ListingInformation {
-    const IID: ::windows_core::GUID = <IListingInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IListingInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ListingInformation {
     const NAME: &'static str = "Windows.ApplicationModel.Store.ListingInformation";
@@ -732,7 +728,7 @@ impl ProductLicense {
         }
     }
     pub fn IsConsumable(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IProductLicenseWithFulfillment>(self)?;
+        let this = &::windows_core::Interface::cast::<IProductLicenseWithFulfillment>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsConsumable)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -744,9 +740,7 @@ impl ::windows_core::RuntimeType for ProductLicense {
 }
 unsafe impl ::windows_core::Interface for ProductLicense {
     type Vtable = IProductLicense_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProductLicense {
-    const IID: ::windows_core::GUID = <IProductLicense as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProductLicense as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProductLicense {
     const NAME: &'static str = "Windows.ApplicationModel.Store.ProductLicense";
@@ -780,35 +774,35 @@ impl ProductListing {
         }
     }
     pub fn FormattedBasePrice(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IProductListing2>(self)?;
+        let this = &::windows_core::Interface::cast::<IProductListing2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FormattedBasePrice)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SaleEndDate(&self) -> ::windows_core::Result<super::super::Foundation::DateTime> {
-        let this = &::windows_core::ComInterface::cast::<IProductListing2>(self)?;
+        let this = &::windows_core::Interface::cast::<IProductListing2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SaleEndDate)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsOnSale(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IProductListing2>(self)?;
+        let this = &::windows_core::Interface::cast::<IProductListing2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsOnSale)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CurrencyCode(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IProductListing2>(self)?;
+        let this = &::windows_core::Interface::cast::<IProductListing2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CurrencyCode)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Description(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IProductListingWithMetadata>(self)?;
+        let this = &::windows_core::Interface::cast::<IProductListingWithMetadata>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Description)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -817,28 +811,28 @@ impl ProductListing {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Keywords(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<IProductListingWithMetadata>(self)?;
+        let this = &::windows_core::Interface::cast::<IProductListingWithMetadata>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Keywords)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ProductType(&self) -> ::windows_core::Result<ProductType> {
-        let this = &::windows_core::ComInterface::cast::<IProductListingWithMetadata>(self)?;
+        let this = &::windows_core::Interface::cast::<IProductListingWithMetadata>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ProductType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Tag(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IProductListingWithMetadata>(self)?;
+        let this = &::windows_core::Interface::cast::<IProductListingWithMetadata>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Tag)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ImageUri(&self) -> ::windows_core::Result<super::super::Foundation::Uri> {
-        let this = &::windows_core::ComInterface::cast::<IProductListingWithMetadata>(self)?;
+        let this = &::windows_core::Interface::cast::<IProductListingWithMetadata>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ImageUri)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -850,9 +844,7 @@ impl ::windows_core::RuntimeType for ProductListing {
 }
 unsafe impl ::windows_core::Interface for ProductListing {
     type Vtable = IProductListing_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProductListing {
-    const IID: ::windows_core::GUID = <IProductListing as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProductListing as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProductListing {
     const NAME: &'static str = "Windows.ApplicationModel.Store.ProductListing";
@@ -924,9 +916,7 @@ impl ::windows_core::RuntimeType for ProductPurchaseDisplayProperties {
 }
 unsafe impl ::windows_core::Interface for ProductPurchaseDisplayProperties {
     type Vtable = IProductPurchaseDisplayProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ProductPurchaseDisplayProperties {
-    const IID: ::windows_core::GUID = <IProductPurchaseDisplayProperties as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IProductPurchaseDisplayProperties as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ProductPurchaseDisplayProperties {
     const NAME: &'static str = "Windows.ApplicationModel.Store.ProductPurchaseDisplayProperties";
@@ -972,9 +962,7 @@ impl ::windows_core::RuntimeType for PurchaseResults {
 }
 unsafe impl ::windows_core::Interface for PurchaseResults {
     type Vtable = IPurchaseResults_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PurchaseResults {
-    const IID: ::windows_core::GUID = <IPurchaseResults as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPurchaseResults as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PurchaseResults {
     const NAME: &'static str = "Windows.ApplicationModel.Store.PurchaseResults";
@@ -1013,9 +1001,7 @@ impl ::windows_core::RuntimeType for UnfulfilledConsumable {
 }
 unsafe impl ::windows_core::Interface for UnfulfilledConsumable {
     type Vtable = IUnfulfilledConsumable_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UnfulfilledConsumable {
-    const IID: ::windows_core::GUID = <IUnfulfilledConsumable as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUnfulfilledConsumable as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UnfulfilledConsumable {
     const NAME: &'static str = "Windows.ApplicationModel.Store.UnfulfilledConsumable";
@@ -1110,7 +1096,7 @@ impl<F: FnMut() -> ::windows_core::Result<()> + ::core::marker::Send + 'static> 
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <LicenseChangedEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <LicenseChangedEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

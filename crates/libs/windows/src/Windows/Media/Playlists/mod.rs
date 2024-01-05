@@ -100,9 +100,7 @@ impl ::windows_core::RuntimeType for Playlist {
 }
 unsafe impl ::windows_core::Interface for Playlist {
     type Vtable = IPlaylist_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Playlist {
-    const IID: ::windows_core::GUID = <IPlaylist as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPlaylist as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Playlist {
     const NAME: &'static str = "Windows.Media.Playlists.Playlist";

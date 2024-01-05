@@ -258,9 +258,7 @@ impl ::windows_core::RuntimeType for ColorHelper {
 }
 unsafe impl ::windows_core::Interface for ColorHelper {
     type Vtable = IColorHelper_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ColorHelper {
-    const IID: ::windows_core::GUID = <IColorHelper as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IColorHelper as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ColorHelper {
     const NAME: &'static str = "Windows.UI.ColorHelper";
@@ -1129,9 +1127,7 @@ impl ::windows_core::RuntimeType for Colors {
 }
 unsafe impl ::windows_core::Interface for Colors {
     type Vtable = IColors_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Colors {
-    const IID: ::windows_core::GUID = <IColors as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IColors as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Colors {
     const NAME: &'static str = "Windows.UI.Colors";
@@ -1156,9 +1152,7 @@ impl ::windows_core::RuntimeType for UIContentRoot {
 }
 unsafe impl ::windows_core::Interface for UIContentRoot {
     type Vtable = IUIContentRoot_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UIContentRoot {
-    const IID: ::windows_core::GUID = <IUIContentRoot as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUIContentRoot as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UIContentRoot {
     const NAME: &'static str = "Windows.UI.UIContentRoot";
@@ -1175,9 +1169,7 @@ impl ::windows_core::RuntimeType for UIContext {
 }
 unsafe impl ::windows_core::Interface for UIContext {
     type Vtable = IUIContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UIContext {
-    const IID: ::windows_core::GUID = <IUIContext as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUIContext as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UIContext {
     const NAME: &'static str = "Windows.UI.UIContext";

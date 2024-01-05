@@ -708,42 +708,42 @@ impl ::windows_core::RuntimeName for AccessoryManager {
 pub struct AlarmNotificationTriggerDetails(::windows_core::IUnknown);
 impl AlarmNotificationTriggerDetails {
     pub fn TimeCreated(&self) -> ::windows_core::Result<super::super::super::Foundation::DateTime> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeCreated)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppDisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppDisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AccessoryNotificationType(&self) -> ::windows_core::Result<AccessoryNotificationType> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AccessoryNotificationType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StartedProcessing(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartedProcessing)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetStartedProcessing(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStartedProcessing)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn AlarmId(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -775,7 +775,7 @@ impl AlarmNotificationTriggerDetails {
         }
     }
     pub fn InstanceId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAlarmNotificationTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAlarmNotificationTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).InstanceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -787,9 +787,7 @@ impl ::windows_core::RuntimeType for AlarmNotificationTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for AlarmNotificationTriggerDetails {
     type Vtable = IAlarmNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AlarmNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = <IAlarmNotificationTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAlarmNotificationTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AlarmNotificationTriggerDetails {
     const NAME: &'static str = "Windows.Phone.Notification.Management.AlarmNotificationTriggerDetails";
@@ -820,9 +818,7 @@ impl ::windows_core::RuntimeType for AppNotificationInfo {
 }
 unsafe impl ::windows_core::Interface for AppNotificationInfo {
     type Vtable = IAppNotificationInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AppNotificationInfo {
-    const IID: ::windows_core::GUID = <IAppNotificationInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAppNotificationInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AppNotificationInfo {
     const NAME: &'static str = "Windows.Phone.Notification.Management.AppNotificationInfo";
@@ -852,9 +848,7 @@ impl ::windows_core::RuntimeType for BinaryId {
 }
 unsafe impl ::windows_core::Interface for BinaryId {
     type Vtable = IBinaryId_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BinaryId {
-    const IID: ::windows_core::GUID = <IBinaryId as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IBinaryId as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for BinaryId {
     const NAME: &'static str = "Windows.Phone.Notification.Management.BinaryId";
@@ -865,42 +859,42 @@ impl ::windows_core::RuntimeName for BinaryId {
 pub struct CalendarChangedNotificationTriggerDetails(::windows_core::IUnknown);
 impl CalendarChangedNotificationTriggerDetails {
     pub fn TimeCreated(&self) -> ::windows_core::Result<super::super::super::Foundation::DateTime> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeCreated)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppDisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppDisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AccessoryNotificationType(&self) -> ::windows_core::Result<AccessoryNotificationType> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AccessoryNotificationType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StartedProcessing(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartedProcessing)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetStartedProcessing(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStartedProcessing)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn EventType(&self) -> ::windows_core::Result<CalendarChangedEvent> {
@@ -923,9 +917,7 @@ impl ::windows_core::RuntimeType for CalendarChangedNotificationTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for CalendarChangedNotificationTriggerDetails {
     type Vtable = ICalendarChangedNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CalendarChangedNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = <ICalendarChangedNotificationTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICalendarChangedNotificationTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CalendarChangedNotificationTriggerDetails {
     const NAME: &'static str = "Windows.Phone.Notification.Management.CalendarChangedNotificationTriggerDetails";
@@ -937,42 +929,42 @@ impl ::windows_core::RuntimeName for CalendarChangedNotificationTriggerDetails {
 pub struct CortanaTileNotificationTriggerDetails(::windows_core::IUnknown);
 impl CortanaTileNotificationTriggerDetails {
     pub fn TimeCreated(&self) -> ::windows_core::Result<super::super::super::Foundation::DateTime> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeCreated)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppDisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppDisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AccessoryNotificationType(&self) -> ::windows_core::Result<AccessoryNotificationType> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AccessoryNotificationType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StartedProcessing(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartedProcessing)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetStartedProcessing(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStartedProcessing)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn TileId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -1051,9 +1043,7 @@ impl ::windows_core::RuntimeType for CortanaTileNotificationTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for CortanaTileNotificationTriggerDetails {
     type Vtable = ICortanaTileNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CortanaTileNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = <ICortanaTileNotificationTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICortanaTileNotificationTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CortanaTileNotificationTriggerDetails {
     const NAME: &'static str = "Windows.Phone.Notification.Management.CortanaTileNotificationTriggerDetails";
@@ -1084,9 +1074,7 @@ impl ::windows_core::RuntimeType for EmailAccountInfo {
 }
 unsafe impl ::windows_core::Interface for EmailAccountInfo {
     type Vtable = IEmailAccountInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailAccountInfo {
-    const IID: ::windows_core::GUID = <IEmailAccountInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailAccountInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailAccountInfo {
     const NAME: &'static str = "Windows.Phone.Notification.Management.EmailAccountInfo";
@@ -1116,9 +1104,7 @@ impl ::windows_core::RuntimeType for EmailFolderInfo {
 }
 unsafe impl ::windows_core::Interface for EmailFolderInfo {
     type Vtable = IEmailFolderInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailFolderInfo {
-    const IID: ::windows_core::GUID = <IEmailFolderInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailFolderInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailFolderInfo {
     const NAME: &'static str = "Windows.Phone.Notification.Management.EmailFolderInfo";
@@ -1129,42 +1115,42 @@ impl ::windows_core::RuntimeName for EmailFolderInfo {
 pub struct EmailNotificationTriggerDetails(::windows_core::IUnknown);
 impl EmailNotificationTriggerDetails {
     pub fn TimeCreated(&self) -> ::windows_core::Result<super::super::super::Foundation::DateTime> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeCreated)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppDisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppDisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AccessoryNotificationType(&self) -> ::windows_core::Result<AccessoryNotificationType> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AccessoryNotificationType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StartedProcessing(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartedProcessing)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetStartedProcessing(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStartedProcessing)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn AccountName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -1212,7 +1198,7 @@ impl EmailNotificationTriggerDetails {
         }
     }
     pub fn MessageEntryId(&self) -> ::windows_core::Result<BinaryId> {
-        let this = &::windows_core::ComInterface::cast::<IEmailNotificationTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEmailNotificationTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MessageEntryId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1224,9 +1210,7 @@ impl ::windows_core::RuntimeType for EmailNotificationTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for EmailNotificationTriggerDetails {
     type Vtable = IEmailNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = <IEmailNotificationTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailNotificationTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailNotificationTriggerDetails {
     const NAME: &'static str = "Windows.Phone.Notification.Management.EmailNotificationTriggerDetails";
@@ -1238,42 +1222,42 @@ impl ::windows_core::RuntimeName for EmailNotificationTriggerDetails {
 pub struct EmailReadNotificationTriggerDetails(::windows_core::IUnknown);
 impl EmailReadNotificationTriggerDetails {
     pub fn TimeCreated(&self) -> ::windows_core::Result<super::super::super::Foundation::DateTime> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeCreated)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppDisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppDisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AccessoryNotificationType(&self) -> ::windows_core::Result<AccessoryNotificationType> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AccessoryNotificationType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StartedProcessing(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartedProcessing)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetStartedProcessing(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStartedProcessing)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn AccountName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -1310,9 +1294,7 @@ impl ::windows_core::RuntimeType for EmailReadNotificationTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for EmailReadNotificationTriggerDetails {
     type Vtable = IEmailReadNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EmailReadNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = <IEmailReadNotificationTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEmailReadNotificationTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EmailReadNotificationTriggerDetails {
     const NAME: &'static str = "Windows.Phone.Notification.Management.EmailReadNotificationTriggerDetails";
@@ -1324,42 +1306,42 @@ impl ::windows_core::RuntimeName for EmailReadNotificationTriggerDetails {
 pub struct MediaControlsTriggerDetails(::windows_core::IUnknown);
 impl MediaControlsTriggerDetails {
     pub fn TimeCreated(&self) -> ::windows_core::Result<super::super::super::Foundation::DateTime> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeCreated)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppDisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppDisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AccessoryNotificationType(&self) -> ::windows_core::Result<AccessoryNotificationType> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AccessoryNotificationType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StartedProcessing(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartedProcessing)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetStartedProcessing(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStartedProcessing)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn PlaybackStatus(&self) -> ::windows_core::Result<PlaybackStatus> {
@@ -1382,9 +1364,7 @@ impl ::windows_core::RuntimeType for MediaControlsTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for MediaControlsTriggerDetails {
     type Vtable = IMediaControlsTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaControlsTriggerDetails {
-    const IID: ::windows_core::GUID = <IMediaControlsTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaControlsTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaControlsTriggerDetails {
     const NAME: &'static str = "Windows.Phone.Notification.Management.MediaControlsTriggerDetails";
@@ -1452,9 +1432,7 @@ impl ::windows_core::RuntimeType for MediaMetadata {
 }
 unsafe impl ::windows_core::Interface for MediaMetadata {
     type Vtable = IMediaMetadata_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaMetadata {
-    const IID: ::windows_core::GUID = <IMediaMetadata as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaMetadata as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaMetadata {
     const NAME: &'static str = "Windows.Phone.Notification.Management.MediaMetadata";
@@ -1556,9 +1534,7 @@ impl ::windows_core::RuntimeType for PhoneCallDetails {
 }
 unsafe impl ::windows_core::Interface for PhoneCallDetails {
     type Vtable = IPhoneCallDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneCallDetails {
-    const IID: ::windows_core::GUID = <IPhoneCallDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneCallDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneCallDetails {
     const NAME: &'static str = "Windows.Phone.Notification.Management.PhoneCallDetails";
@@ -1611,7 +1587,7 @@ impl PhoneLineDetails {
         }
     }
     pub fn MissedCallCount(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IPhoneLineDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IPhoneLineDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MissedCallCount)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1623,9 +1599,7 @@ impl ::windows_core::RuntimeType for PhoneLineDetails {
 }
 unsafe impl ::windows_core::Interface for PhoneLineDetails {
     type Vtable = IPhoneLineDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneLineDetails {
-    const IID: ::windows_core::GUID = <IPhoneLineDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneLineDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneLineDetails {
     const NAME: &'static str = "Windows.Phone.Notification.Management.PhoneLineDetails";
@@ -1636,42 +1610,42 @@ impl ::windows_core::RuntimeName for PhoneLineDetails {
 pub struct PhoneNotificationTriggerDetails(::windows_core::IUnknown);
 impl PhoneNotificationTriggerDetails {
     pub fn TimeCreated(&self) -> ::windows_core::Result<super::super::super::Foundation::DateTime> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeCreated)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppDisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppDisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AccessoryNotificationType(&self) -> ::windows_core::Result<AccessoryNotificationType> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AccessoryNotificationType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StartedProcessing(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartedProcessing)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetStartedProcessing(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStartedProcessing)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn PhoneNotificationType(&self) -> ::windows_core::Result<PhoneNotificationType> {
@@ -1701,9 +1675,7 @@ impl ::windows_core::RuntimeType for PhoneNotificationTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for PhoneNotificationTriggerDetails {
     type Vtable = IPhoneNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PhoneNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = <IPhoneNotificationTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPhoneNotificationTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PhoneNotificationTriggerDetails {
     const NAME: &'static str = "Windows.Phone.Notification.Management.PhoneNotificationTriggerDetails";
@@ -1715,42 +1687,42 @@ impl ::windows_core::RuntimeName for PhoneNotificationTriggerDetails {
 pub struct ReminderNotificationTriggerDetails(::windows_core::IUnknown);
 impl ReminderNotificationTriggerDetails {
     pub fn TimeCreated(&self) -> ::windows_core::Result<super::super::super::Foundation::DateTime> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeCreated)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppDisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppDisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AccessoryNotificationType(&self) -> ::windows_core::Result<AccessoryNotificationType> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AccessoryNotificationType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StartedProcessing(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartedProcessing)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetStartedProcessing(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStartedProcessing)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ReminderId(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -1805,7 +1777,7 @@ impl ReminderNotificationTriggerDetails {
         }
     }
     pub fn InstanceId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IReminderNotificationTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IReminderNotificationTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).InstanceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1817,9 +1789,7 @@ impl ::windows_core::RuntimeType for ReminderNotificationTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for ReminderNotificationTriggerDetails {
     type Vtable = IReminderNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ReminderNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = <IReminderNotificationTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IReminderNotificationTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ReminderNotificationTriggerDetails {
     const NAME: &'static str = "Windows.Phone.Notification.Management.ReminderNotificationTriggerDetails";
@@ -1857,9 +1827,7 @@ impl ::windows_core::RuntimeType for SpeedDialEntry {
 }
 unsafe impl ::windows_core::Interface for SpeedDialEntry {
     type Vtable = ISpeedDialEntry_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeedDialEntry {
-    const IID: ::windows_core::GUID = <ISpeedDialEntry as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeedDialEntry as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeedDialEntry {
     const NAME: &'static str = "Windows.Phone.Notification.Management.SpeedDialEntry";
@@ -1889,9 +1857,7 @@ impl ::windows_core::RuntimeType for TextResponse {
 }
 unsafe impl ::windows_core::Interface for TextResponse {
     type Vtable = ITextResponse_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TextResponse {
-    const IID: ::windows_core::GUID = <ITextResponse as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITextResponse as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TextResponse {
     const NAME: &'static str = "Windows.Phone.Notification.Management.TextResponse";
@@ -1902,42 +1868,42 @@ impl ::windows_core::RuntimeName for TextResponse {
 pub struct ToastNotificationTriggerDetails(::windows_core::IUnknown);
 impl ToastNotificationTriggerDetails {
     pub fn TimeCreated(&self) -> ::windows_core::Result<super::super::super::Foundation::DateTime> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeCreated)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppDisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppDisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AppId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AppId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AccessoryNotificationType(&self) -> ::windows_core::Result<AccessoryNotificationType> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AccessoryNotificationType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StartedProcessing(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StartedProcessing)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetStartedProcessing(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
+        let this = &::windows_core::Interface::cast::<IAccessoryNotificationTriggerDetails>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStartedProcessing)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Text1(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -1976,7 +1942,7 @@ impl ToastNotificationTriggerDetails {
         }
     }
     pub fn InstanceId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IToastNotificationTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IToastNotificationTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).InstanceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1988,9 +1954,7 @@ impl ::windows_core::RuntimeType for ToastNotificationTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for ToastNotificationTriggerDetails {
     type Vtable = IToastNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ToastNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = <IToastNotificationTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IToastNotificationTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ToastNotificationTriggerDetails {
     const NAME: &'static str = "Windows.Phone.Notification.Management.ToastNotificationTriggerDetails";
@@ -2042,9 +2006,7 @@ impl ::windows_core::RuntimeType for VolumeInfo {
 }
 unsafe impl ::windows_core::Interface for VolumeInfo {
     type Vtable = IVolumeInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VolumeInfo {
-    const IID: ::windows_core::GUID = <IVolumeInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVolumeInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VolumeInfo {
     const NAME: &'static str = "Windows.Phone.Notification.Management.VolumeInfo";

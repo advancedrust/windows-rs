@@ -210,9 +210,7 @@ impl ::windows_core::RuntimeType for FileOpenPickerUI {
 }
 unsafe impl ::windows_core::Interface for FileOpenPickerUI {
     type Vtable = IFileOpenPickerUI_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FileOpenPickerUI {
-    const IID: ::windows_core::GUID = <IFileOpenPickerUI as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFileOpenPickerUI as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FileOpenPickerUI {
     const NAME: &'static str = "Windows.Storage.Pickers.Provider.FileOpenPickerUI";
@@ -242,10 +240,7 @@ impl ::windows_core::RuntimeType for FileRemovedEventArgs {
 #[cfg(feature = "deprecated")]
 unsafe impl ::windows_core::Interface for FileRemovedEventArgs {
     type Vtable = IFileRemovedEventArgs_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for FileRemovedEventArgs {
-    const IID: ::windows_core::GUID = <IFileRemovedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFileRemovedEventArgs as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "deprecated")]
 impl ::windows_core::RuntimeName for FileRemovedEventArgs {
@@ -332,9 +327,7 @@ impl ::windows_core::RuntimeType for FileSavePickerUI {
 }
 unsafe impl ::windows_core::Interface for FileSavePickerUI {
     type Vtable = IFileSavePickerUI_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FileSavePickerUI {
-    const IID: ::windows_core::GUID = <IFileSavePickerUI as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFileSavePickerUI as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FileSavePickerUI {
     const NAME: &'static str = "Windows.Storage.Pickers.Provider.FileSavePickerUI";
@@ -354,9 +347,7 @@ impl ::windows_core::RuntimeType for PickerClosingDeferral {
 }
 unsafe impl ::windows_core::Interface for PickerClosingDeferral {
     type Vtable = IPickerClosingDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PickerClosingDeferral {
-    const IID: ::windows_core::GUID = <IPickerClosingDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPickerClosingDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PickerClosingDeferral {
     const NAME: &'static str = "Windows.Storage.Pickers.Provider.PickerClosingDeferral";
@@ -386,9 +377,7 @@ impl ::windows_core::RuntimeType for PickerClosingEventArgs {
 }
 unsafe impl ::windows_core::Interface for PickerClosingEventArgs {
     type Vtable = IPickerClosingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PickerClosingEventArgs {
-    const IID: ::windows_core::GUID = <IPickerClosingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPickerClosingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PickerClosingEventArgs {
     const NAME: &'static str = "Windows.Storage.Pickers.Provider.PickerClosingEventArgs";
@@ -418,9 +407,7 @@ impl ::windows_core::RuntimeType for PickerClosingOperation {
 }
 unsafe impl ::windows_core::Interface for PickerClosingOperation {
     type Vtable = IPickerClosingOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PickerClosingOperation {
-    const IID: ::windows_core::GUID = <IPickerClosingOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPickerClosingOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PickerClosingOperation {
     const NAME: &'static str = "Windows.Storage.Pickers.Provider.PickerClosingOperation";
@@ -457,9 +444,7 @@ impl ::windows_core::RuntimeType for TargetFileRequest {
 }
 unsafe impl ::windows_core::Interface for TargetFileRequest {
     type Vtable = ITargetFileRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TargetFileRequest {
-    const IID: ::windows_core::GUID = <ITargetFileRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITargetFileRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TargetFileRequest {
     const NAME: &'static str = "Windows.Storage.Pickers.Provider.TargetFileRequest";
@@ -479,9 +464,7 @@ impl ::windows_core::RuntimeType for TargetFileRequestDeferral {
 }
 unsafe impl ::windows_core::Interface for TargetFileRequestDeferral {
     type Vtable = ITargetFileRequestDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TargetFileRequestDeferral {
-    const IID: ::windows_core::GUID = <ITargetFileRequestDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITargetFileRequestDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TargetFileRequestDeferral {
     const NAME: &'static str = "Windows.Storage.Pickers.Provider.TargetFileRequestDeferral";
@@ -504,9 +487,7 @@ impl ::windows_core::RuntimeType for TargetFileRequestedEventArgs {
 }
 unsafe impl ::windows_core::Interface for TargetFileRequestedEventArgs {
     type Vtable = ITargetFileRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for TargetFileRequestedEventArgs {
-    const IID: ::windows_core::GUID = <ITargetFileRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ITargetFileRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for TargetFileRequestedEventArgs {
     const NAME: &'static str = "Windows.Storage.Pickers.Provider.TargetFileRequestedEventArgs";

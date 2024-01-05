@@ -74,9 +74,7 @@ impl ::windows_core::RuntimeType for EnterpriseKeyCredentialRegistrationInfo {
 }
 unsafe impl ::windows_core::Interface for EnterpriseKeyCredentialRegistrationInfo {
     type Vtable = IEnterpriseKeyCredentialRegistrationInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EnterpriseKeyCredentialRegistrationInfo {
-    const IID: ::windows_core::GUID = <IEnterpriseKeyCredentialRegistrationInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEnterpriseKeyCredentialRegistrationInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EnterpriseKeyCredentialRegistrationInfo {
     const NAME: &'static str = "Windows.Security.Authentication.Identity.EnterpriseKeyCredentialRegistrationInfo";
@@ -114,9 +112,7 @@ impl ::windows_core::RuntimeType for EnterpriseKeyCredentialRegistrationManager 
 }
 unsafe impl ::windows_core::Interface for EnterpriseKeyCredentialRegistrationManager {
     type Vtable = IEnterpriseKeyCredentialRegistrationManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EnterpriseKeyCredentialRegistrationManager {
-    const IID: ::windows_core::GUID = <IEnterpriseKeyCredentialRegistrationManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEnterpriseKeyCredentialRegistrationManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EnterpriseKeyCredentialRegistrationManager {
     const NAME: &'static str = "Windows.Security.Authentication.Identity.EnterpriseKeyCredentialRegistrationManager";

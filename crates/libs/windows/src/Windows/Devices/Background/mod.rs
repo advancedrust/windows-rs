@@ -46,9 +46,7 @@ impl ::windows_core::RuntimeType for DeviceServicingDetails {
 }
 unsafe impl ::windows_core::Interface for DeviceServicingDetails {
     type Vtable = IDeviceServicingDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DeviceServicingDetails {
-    const IID: ::windows_core::GUID = <IDeviceServicingDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDeviceServicingDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DeviceServicingDetails {
     const NAME: &'static str = "Windows.Devices.Background.DeviceServicingDetails";
@@ -80,9 +78,7 @@ impl ::windows_core::RuntimeType for DeviceUseDetails {
 }
 unsafe impl ::windows_core::Interface for DeviceUseDetails {
     type Vtable = IDeviceUseDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DeviceUseDetails {
-    const IID: ::windows_core::GUID = <IDeviceUseDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDeviceUseDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DeviceUseDetails {
     const NAME: &'static str = "Windows.Devices.Background.DeviceUseDetails";

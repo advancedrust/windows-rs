@@ -207,7 +207,7 @@ impl FileExtensionVector {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterator<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -308,10 +308,7 @@ impl ::windows_core::RuntimeType for FileExtensionVector {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for FileExtensionVector {
     type Vtable = super::super::Foundation::Collections::IVector_Vtbl<::windows_core::HSTRING>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for FileExtensionVector {
-    const IID: ::windows_core::GUID = <super::super::Foundation::Collections::IVector<::windows_core::HSTRING> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::Foundation::Collections::IVector<::windows_core::HSTRING> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for FileExtensionVector {
@@ -330,7 +327,7 @@ impl ::core::iter::IntoIterator for &FileExtensionVector {
     type Item = ::windows_core::HSTRING;
     type IntoIter = super::super::Foundation::Collections::VectorIterator<Self::Item>;
     fn into_iter(self) -> Self::IntoIter {
-        super::super::Foundation::Collections::VectorIterator::new(::windows_core::ComInterface::cast(self).ok())
+        super::super::Foundation::Collections::VectorIterator::new(::windows_core::Interface::cast(self).ok())
     }
 }
 #[cfg(feature = "Foundation_Collections")]
@@ -424,7 +421,7 @@ impl FileOpenPicker {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"deprecated\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "deprecated"))]
     pub fn ContinuationData(&self) -> ::windows_core::Result<super::super::Foundation::Collections::ValueSet> {
-        let this = &::windows_core::ComInterface::cast::<IFileOpenPicker2>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileOpenPicker2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContinuationData)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -433,19 +430,19 @@ impl FileOpenPicker {
     #[doc = "Required features: `\"deprecated\"`"]
     #[cfg(feature = "deprecated")]
     pub fn PickSingleFileAndContinue(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IFileOpenPicker2>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileOpenPicker2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).PickSingleFileAndContinue)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"deprecated\"`"]
     #[cfg(feature = "deprecated")]
     pub fn PickMultipleFilesAndContinue(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IFileOpenPicker2>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileOpenPicker2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).PickMultipleFilesAndContinue)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn User(&self) -> ::windows_core::Result<super::super::System::User> {
-        let this = &::windows_core::ComInterface::cast::<IFileOpenPicker3>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileOpenPicker3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -471,7 +468,7 @@ impl FileOpenPicker {
         })
     }
     pub fn PickSingleFileAsync2(&self, pickeroperationid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::StorageFile>> {
-        let this = &::windows_core::ComInterface::cast::<IFileOpenPickerWithOperationId>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileOpenPickerWithOperationId>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PickSingleFileAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(pickeroperationid), &mut result__).from_abi(result__)
@@ -493,9 +490,7 @@ impl ::windows_core::RuntimeType for FileOpenPicker {
 }
 unsafe impl ::windows_core::Interface for FileOpenPicker {
     type Vtable = IFileOpenPicker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FileOpenPicker {
-    const IID: ::windows_core::GUID = <IFileOpenPicker as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFileOpenPicker as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FileOpenPicker {
     const NAME: &'static str = "Windows.Storage.Pickers.FileOpenPicker";
@@ -513,7 +508,7 @@ impl FilePickerFileTypesOrderedMap {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterator<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, super::super::Foundation::Collections::IVector<::windows_core::HSTRING>>>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, super::super::Foundation::Collections::IVector<::windows_core::HSTRING>>>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, super::super::Foundation::Collections::IVector<::windows_core::HSTRING>>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -587,10 +582,7 @@ impl ::windows_core::RuntimeType for FilePickerFileTypesOrderedMap {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for FilePickerFileTypesOrderedMap {
     type Vtable = super::super::Foundation::Collections::IMap_Vtbl<::windows_core::HSTRING, super::super::Foundation::Collections::IVector<::windows_core::HSTRING>>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for FilePickerFileTypesOrderedMap {
-    const IID: ::windows_core::GUID = <super::super::Foundation::Collections::IMap<::windows_core::HSTRING, super::super::Foundation::Collections::IVector<::windows_core::HSTRING>> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::Foundation::Collections::IMap<::windows_core::HSTRING, super::super::Foundation::Collections::IVector<::windows_core::HSTRING>> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for FilePickerFileTypesOrderedMap {
@@ -630,7 +622,7 @@ impl FilePickerSelectedFilesArray {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterator<super::StorageFile>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IIterable<super::StorageFile>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IIterable<super::StorageFile>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -683,10 +675,7 @@ impl ::windows_core::RuntimeType for FilePickerSelectedFilesArray {
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::windows_core::Interface for FilePickerSelectedFilesArray {
     type Vtable = super::super::Foundation::Collections::IVectorView_Vtbl<super::StorageFile>;
-}
-#[cfg(feature = "Foundation_Collections")]
-unsafe impl ::windows_core::ComInterface for FilePickerSelectedFilesArray {
-    const IID: ::windows_core::GUID = <super::super::Foundation::Collections::IVectorView<super::StorageFile> as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <super::super::Foundation::Collections::IVectorView<super::StorageFile> as ::windows_core::Interface>::IID;
 }
 #[cfg(feature = "Foundation_Collections")]
 impl ::windows_core::RuntimeName for FilePickerSelectedFilesArray {
@@ -705,7 +694,7 @@ impl ::core::iter::IntoIterator for &FilePickerSelectedFilesArray {
     type Item = super::StorageFile;
     type IntoIter = super::super::Foundation::Collections::VectorViewIterator<Self::Item>;
     fn into_iter(self) -> Self::IntoIter {
-        super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::ComInterface::cast(self).ok())
+        super::super::Foundation::Collections::VectorViewIterator::new(::windows_core::Interface::cast(self).ok())
     }
 }
 #[cfg(feature = "Foundation_Collections")]
@@ -815,7 +804,7 @@ impl FileSavePicker {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn ContinuationData(&self) -> ::windows_core::Result<super::super::Foundation::Collections::ValueSet> {
-        let this = &::windows_core::ComInterface::cast::<IFileSavePicker2>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileSavePicker2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContinuationData)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -824,24 +813,24 @@ impl FileSavePicker {
     #[doc = "Required features: `\"deprecated\"`"]
     #[cfg(feature = "deprecated")]
     pub fn PickSaveFileAndContinue(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IFileSavePicker2>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileSavePicker2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).PickSaveFileAndContinue)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn EnterpriseId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IFileSavePicker3>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileSavePicker3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EnterpriseId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetEnterpriseId(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IFileSavePicker3>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileSavePicker3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetEnterpriseId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn User(&self) -> ::windows_core::Result<super::super::System::User> {
-        let this = &::windows_core::ComInterface::cast::<IFileSavePicker4>(self)?;
+        let this = &::windows_core::Interface::cast::<IFileSavePicker4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -869,9 +858,7 @@ impl ::windows_core::RuntimeType for FileSavePicker {
 }
 unsafe impl ::windows_core::Interface for FileSavePicker {
     type Vtable = IFileSavePicker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FileSavePicker {
-    const IID: ::windows_core::GUID = <IFileSavePicker as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFileSavePicker as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FileSavePicker {
     const NAME: &'static str = "Windows.Storage.Pickers.FileSavePicker";
@@ -953,7 +940,7 @@ impl FolderPicker {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn ContinuationData(&self) -> ::windows_core::Result<super::super::Foundation::Collections::ValueSet> {
-        let this = &::windows_core::ComInterface::cast::<IFolderPicker2>(self)?;
+        let this = &::windows_core::Interface::cast::<IFolderPicker2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContinuationData)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -962,13 +949,13 @@ impl FolderPicker {
     #[doc = "Required features: `\"deprecated\"`"]
     #[cfg(feature = "deprecated")]
     pub fn PickFolderAndContinue(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IFolderPicker2>(self)?;
+        let this = &::windows_core::Interface::cast::<IFolderPicker2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).PickFolderAndContinue)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn User(&self) -> ::windows_core::Result<super::super::System::User> {
-        let this = &::windows_core::ComInterface::cast::<IFolderPicker3>(self)?;
+        let this = &::windows_core::Interface::cast::<IFolderPicker3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -996,9 +983,7 @@ impl ::windows_core::RuntimeType for FolderPicker {
 }
 unsafe impl ::windows_core::Interface for FolderPicker {
     type Vtable = IFolderPicker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FolderPicker {
-    const IID: ::windows_core::GUID = <IFolderPicker as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFolderPicker as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FolderPicker {
     const NAME: &'static str = "Windows.Storage.Pickers.FolderPicker";

@@ -166,9 +166,7 @@ impl ::windows_core::RuntimeType for DialApp {
 }
 unsafe impl ::windows_core::Interface for DialApp {
     type Vtable = IDialApp_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DialApp {
-    const IID: ::windows_core::GUID = <IDialApp as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDialApp as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DialApp {
     const NAME: &'static str = "Windows.Media.DialProtocol.DialApp";
@@ -200,9 +198,7 @@ impl ::windows_core::RuntimeType for DialAppStateDetails {
 }
 unsafe impl ::windows_core::Interface for DialAppStateDetails {
     type Vtable = IDialAppStateDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DialAppStateDetails {
-    const IID: ::windows_core::GUID = <IDialAppStateDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDialAppStateDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DialAppStateDetails {
     const NAME: &'static str = "Windows.Media.DialProtocol.DialAppStateDetails";
@@ -229,7 +225,7 @@ impl DialDevice {
         }
     }
     pub fn FriendlyName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IDialDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDialDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FriendlyName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -238,7 +234,7 @@ impl DialDevice {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn Thumbnail(&self) -> ::windows_core::Result<super::super::Storage::Streams::IRandomAccessStreamReference> {
-        let this = &::windows_core::ComInterface::cast::<IDialDevice2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDialDevice2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Thumbnail)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -278,9 +274,7 @@ impl ::windows_core::RuntimeType for DialDevice {
 }
 unsafe impl ::windows_core::Interface for DialDevice {
     type Vtable = IDialDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DialDevice {
-    const IID: ::windows_core::GUID = <IDialDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDialDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DialDevice {
     const NAME: &'static str = "Windows.Media.DialProtocol.DialDevice";
@@ -400,9 +394,7 @@ impl ::windows_core::RuntimeType for DialDevicePicker {
 }
 unsafe impl ::windows_core::Interface for DialDevicePicker {
     type Vtable = IDialDevicePicker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DialDevicePicker {
-    const IID: ::windows_core::GUID = <IDialDevicePicker as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDialDevicePicker as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DialDevicePicker {
     const NAME: &'static str = "Windows.Media.DialProtocol.DialDevicePicker";
@@ -429,9 +421,7 @@ impl ::windows_core::RuntimeType for DialDevicePickerFilter {
 }
 unsafe impl ::windows_core::Interface for DialDevicePickerFilter {
     type Vtable = IDialDevicePickerFilter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DialDevicePickerFilter {
-    const IID: ::windows_core::GUID = <IDialDevicePickerFilter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDialDevicePickerFilter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DialDevicePickerFilter {
     const NAME: &'static str = "Windows.Media.DialProtocol.DialDevicePickerFilter";
@@ -456,9 +446,7 @@ impl ::windows_core::RuntimeType for DialDeviceSelectedEventArgs {
 }
 unsafe impl ::windows_core::Interface for DialDeviceSelectedEventArgs {
     type Vtable = IDialDeviceSelectedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DialDeviceSelectedEventArgs {
-    const IID: ::windows_core::GUID = <IDialDeviceSelectedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDialDeviceSelectedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DialDeviceSelectedEventArgs {
     const NAME: &'static str = "Windows.Media.DialProtocol.DialDeviceSelectedEventArgs";
@@ -483,9 +471,7 @@ impl ::windows_core::RuntimeType for DialDisconnectButtonClickedEventArgs {
 }
 unsafe impl ::windows_core::Interface for DialDisconnectButtonClickedEventArgs {
     type Vtable = IDialDisconnectButtonClickedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DialDisconnectButtonClickedEventArgs {
-    const IID: ::windows_core::GUID = <IDialDisconnectButtonClickedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDialDisconnectButtonClickedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DialDisconnectButtonClickedEventArgs {
     const NAME: &'static str = "Windows.Media.DialProtocol.DialDisconnectButtonClickedEventArgs";
@@ -519,7 +505,7 @@ impl DialReceiverApp {
         }
     }
     pub fn GetUniqueDeviceNameAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<IDialReceiverApp2>(self)?;
+        let this = &::windows_core::Interface::cast::<IDialReceiverApp2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetUniqueDeviceNameAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -542,9 +528,7 @@ impl ::windows_core::RuntimeType for DialReceiverApp {
 }
 unsafe impl ::windows_core::Interface for DialReceiverApp {
     type Vtable = IDialReceiverApp_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DialReceiverApp {
-    const IID: ::windows_core::GUID = <IDialReceiverApp as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDialReceiverApp as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DialReceiverApp {
     const NAME: &'static str = "Windows.Media.DialProtocol.DialReceiverApp";

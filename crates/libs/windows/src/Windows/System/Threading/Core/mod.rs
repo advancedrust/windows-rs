@@ -81,9 +81,7 @@ impl ::windows_core::RuntimeType for PreallocatedWorkItem {
 }
 unsafe impl ::windows_core::Interface for PreallocatedWorkItem {
     type Vtable = IPreallocatedWorkItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PreallocatedWorkItem {
-    const IID: ::windows_core::GUID = <IPreallocatedWorkItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPreallocatedWorkItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PreallocatedWorkItem {
     const NAME: &'static str = "Windows.System.Threading.Core.PreallocatedWorkItem";
@@ -150,9 +148,7 @@ impl ::windows_core::RuntimeType for SignalNotifier {
 }
 unsafe impl ::windows_core::Interface for SignalNotifier {
     type Vtable = ISignalNotifier_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SignalNotifier {
-    const IID: ::windows_core::GUID = <ISignalNotifier as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISignalNotifier as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SignalNotifier {
     const NAME: &'static str = "Windows.System.Threading.Core.SignalNotifier";
@@ -190,7 +186,7 @@ impl<F: FnMut(::core::option::Option<&SignalNotifier>, bool) -> ::windows_core::
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <SignalHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <SignalHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

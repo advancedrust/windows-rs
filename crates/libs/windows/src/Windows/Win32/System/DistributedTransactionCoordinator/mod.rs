@@ -1354,7 +1354,7 @@ pub struct ITransactionExportFactory_Vtbl {
 impl ITransactionImport {
     pub unsafe fn Import<T>(&self, rgbtransactioncookie: &[u8]) -> ::windows_core::Result<T>
     where
-        T: ::windows_core::ComInterface,
+        T: ::windows_core::Interface,
     {
         let mut result__ = ::std::ptr::null_mut();
         (::windows_core::Interface::vtable(self).Import)(::windows_core::Interface::as_raw(self), rgbtransactioncookie.len().try_into().unwrap(), ::core::mem::transmute(rgbtransactioncookie.as_ptr()), &T::IID, &mut result__).from_abi(result__)

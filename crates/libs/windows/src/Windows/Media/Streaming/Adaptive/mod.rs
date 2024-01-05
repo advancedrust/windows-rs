@@ -500,28 +500,28 @@ impl AdaptiveMediaSource {
         unsafe { (::windows_core::Interface::vtable(this).RemoveDownloadFailed)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn AdvancedSettings(&self) -> ::windows_core::Result<AdaptiveMediaSourceAdvancedSettings> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSource2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSource2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AdvancedSettings)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn MinLiveOffset(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSource3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSource3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MinLiveOffset)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn MaxSeekableWindowSize(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSource3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSource3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MaxSeekableWindowSize)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn DesiredSeekableWindowSize(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSource3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSource3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DesiredSeekableWindowSize)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -531,18 +531,18 @@ impl AdaptiveMediaSource {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSource3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSource3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDesiredSeekableWindowSize)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Diagnostics(&self) -> ::windows_core::Result<AdaptiveMediaSourceDiagnostics> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSource3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSource3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Diagnostics)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn GetCorrelatedTimes(&self) -> ::windows_core::Result<AdaptiveMediaSourceCorrelatedTimes> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSource3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSource3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetCorrelatedTimes)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -601,7 +601,7 @@ impl AdaptiveMediaSource {
         })
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc(hidden)]
@@ -615,9 +615,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSource {
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSource {
     type Vtable = IAdaptiveMediaSource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSource {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSource as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSource as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSource {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSource";
@@ -676,9 +674,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourceAdvancedSettings {
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourceAdvancedSettings {
     type Vtable = IAdaptiveMediaSourceAdvancedSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourceAdvancedSettings {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceAdvancedSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceAdvancedSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourceAdvancedSettings {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceAdvancedSettings";
@@ -717,9 +713,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourceCorrelatedTimes {
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourceCorrelatedTimes {
     type Vtable = IAdaptiveMediaSourceCorrelatedTimes_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourceCorrelatedTimes {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceCorrelatedTimes as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceCorrelatedTimes as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourceCorrelatedTimes {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCorrelatedTimes";
@@ -755,7 +749,7 @@ impl AdaptiveMediaSourceCreationResult {
         }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceCreationResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceCreationResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ExtendedError)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -767,9 +761,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourceCreationResult {
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourceCreationResult {
     type Vtable = IAdaptiveMediaSourceCreationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourceCreationResult {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceCreationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceCreationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourceCreationResult {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceCreationResult";
@@ -845,21 +837,21 @@ impl AdaptiveMediaSourceDiagnosticAvailableEventArgs {
         }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDiagnosticAvailableEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDiagnosticAvailableEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ExtendedError)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ResourceDuration(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDiagnosticAvailableEventArgs3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDiagnosticAvailableEventArgs3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResourceDuration)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ResourceContentType(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDiagnosticAvailableEventArgs3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDiagnosticAvailableEventArgs3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResourceContentType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -871,9 +863,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourceDiagnosticAvailableEvent
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourceDiagnosticAvailableEventArgs {
     type Vtable = IAdaptiveMediaSourceDiagnosticAvailableEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourceDiagnosticAvailableEventArgs {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDiagnosticAvailableEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDiagnosticAvailableEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourceDiagnosticAvailableEventArgs {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDiagnosticAvailableEventArgs";
@@ -905,9 +895,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourceDiagnostics {
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourceDiagnostics {
     type Vtable = IAdaptiveMediaSourceDiagnostics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourceDiagnostics {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDiagnostics as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDiagnostics as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourceDiagnostics {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDiagnostics";
@@ -934,7 +922,7 @@ impl AdaptiveMediaSourceDownloadBitrateChangedEventArgs {
         }
     }
     pub fn Reason(&self) -> ::windows_core::Result<AdaptiveMediaSourceDownloadBitrateChangedReason> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadBitrateChangedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadBitrateChangedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Reason)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -946,9 +934,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourceDownloadBitrateChangedEv
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourceDownloadBitrateChangedEventArgs {
     type Vtable = IAdaptiveMediaSourceDownloadBitrateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourceDownloadBitrateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadBitrateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadBitrateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourceDownloadBitrateChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadBitrateChangedEventArgs";
@@ -998,35 +984,35 @@ impl AdaptiveMediaSourceDownloadCompletedEventArgs {
         }
     }
     pub fn RequestId(&self) -> ::windows_core::Result<i32> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadCompletedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadCompletedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Statistics(&self) -> ::windows_core::Result<AdaptiveMediaSourceDownloadStatistics> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadCompletedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadCompletedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Statistics)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Position(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadCompletedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadCompletedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Position)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ResourceDuration(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadCompletedEventArgs3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadCompletedEventArgs3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResourceDuration)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ResourceContentType(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadCompletedEventArgs3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadCompletedEventArgs3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResourceContentType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1038,9 +1024,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourceDownloadCompletedEventAr
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourceDownloadCompletedEventArgs {
     type Vtable = IAdaptiveMediaSourceDownloadCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourceDownloadCompletedEventArgs {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourceDownloadCompletedEventArgs {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadCompletedEventArgs";
@@ -1090,42 +1074,42 @@ impl AdaptiveMediaSourceDownloadFailedEventArgs {
         }
     }
     pub fn RequestId(&self) -> ::windows_core::Result<i32> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadFailedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadFailedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ExtendedError(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadFailedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadFailedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ExtendedError)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Statistics(&self) -> ::windows_core::Result<AdaptiveMediaSourceDownloadStatistics> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadFailedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadFailedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Statistics)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Position(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadFailedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadFailedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Position)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ResourceDuration(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadFailedEventArgs3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadFailedEventArgs3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResourceDuration)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ResourceContentType(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadFailedEventArgs3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadFailedEventArgs3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResourceContentType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1137,9 +1121,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourceDownloadFailedEventArgs 
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourceDownloadFailedEventArgs {
     type Vtable = IAdaptiveMediaSourceDownloadFailedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourceDownloadFailedEventArgs {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadFailedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadFailedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourceDownloadFailedEventArgs {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadFailedEventArgs";
@@ -1161,9 +1143,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourceDownloadRequestedDeferra
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourceDownloadRequestedDeferral {
     type Vtable = IAdaptiveMediaSourceDownloadRequestedDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourceDownloadRequestedDeferral {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadRequestedDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadRequestedDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourceDownloadRequestedDeferral {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadRequestedDeferral";
@@ -1218,28 +1198,28 @@ impl AdaptiveMediaSourceDownloadRequestedEventArgs {
         }
     }
     pub fn RequestId(&self) -> ::windows_core::Result<i32> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadRequestedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadRequestedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RequestId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Position(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadRequestedEventArgs2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadRequestedEventArgs2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Position)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ResourceDuration(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadRequestedEventArgs3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadRequestedEventArgs3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResourceDuration)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ResourceContentType(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadRequestedEventArgs3>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadRequestedEventArgs3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResourceContentType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1251,9 +1231,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourceDownloadRequestedEventAr
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourceDownloadRequestedEventArgs {
     type Vtable = IAdaptiveMediaSourceDownloadRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourceDownloadRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourceDownloadRequestedEventArgs {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadRequestedEventArgs";
@@ -1338,7 +1316,7 @@ impl AdaptiveMediaSourceDownloadResult {
         unsafe { (::windows_core::Interface::vtable(this).SetExtendedStatus)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ResourceByteRangeOffset(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<u64>> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResourceByteRangeOffset)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1348,11 +1326,11 @@ impl AdaptiveMediaSourceDownloadResult {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<u64>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadResult2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetResourceByteRangeOffset)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ResourceByteRangeLength(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<u64>> {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ResourceByteRangeLength)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1362,7 +1340,7 @@ impl AdaptiveMediaSourceDownloadResult {
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<u64>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IAdaptiveMediaSourceDownloadResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<IAdaptiveMediaSourceDownloadResult2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetResourceByteRangeLength)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
@@ -1371,9 +1349,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourceDownloadResult {
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourceDownloadResult {
     type Vtable = IAdaptiveMediaSourceDownloadResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourceDownloadResult {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourceDownloadResult {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadResult";
@@ -1419,9 +1395,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourceDownloadStatistics {
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourceDownloadStatistics {
     type Vtable = IAdaptiveMediaSourceDownloadStatistics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourceDownloadStatistics {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadStatistics as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourceDownloadStatistics as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourceDownloadStatistics {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourceDownloadStatistics";
@@ -1460,9 +1434,7 @@ impl ::windows_core::RuntimeType for AdaptiveMediaSourcePlaybackBitrateChangedEv
 }
 unsafe impl ::windows_core::Interface for AdaptiveMediaSourcePlaybackBitrateChangedEventArgs {
     type Vtable = IAdaptiveMediaSourcePlaybackBitrateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdaptiveMediaSourcePlaybackBitrateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IAdaptiveMediaSourcePlaybackBitrateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdaptiveMediaSourcePlaybackBitrateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdaptiveMediaSourcePlaybackBitrateChangedEventArgs {
     const NAME: &'static str = "Windows.Media.Streaming.Adaptive.AdaptiveMediaSourcePlaybackBitrateChangedEventArgs";

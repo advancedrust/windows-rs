@@ -403,9 +403,7 @@ impl ::windows_core::RuntimeType for CivicAddress {
 }
 unsafe impl ::windows_core::Interface for CivicAddress {
     type Vtable = ICivicAddress_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for CivicAddress {
-    const IID: ::windows_core::GUID = <ICivicAddress as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICivicAddress as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for CivicAddress {
     const NAME: &'static str = "Windows.Devices.Geolocation.CivicAddress";
@@ -504,21 +502,21 @@ impl GeoboundingBox {
         })
     }
     pub fn GeoshapeType(&self) -> ::windows_core::Result<GeoshapeType> {
-        let this = &::windows_core::ComInterface::cast::<IGeoshape>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoshape>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GeoshapeType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SpatialReferenceId(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IGeoshape>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoshape>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SpatialReferenceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AltitudeReferenceSystem(&self) -> ::windows_core::Result<AltitudeReferenceSystem> {
-        let this = &::windows_core::ComInterface::cast::<IGeoshape>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoshape>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AltitudeReferenceSystem)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -540,9 +538,7 @@ impl ::windows_core::RuntimeType for GeoboundingBox {
 }
 unsafe impl ::windows_core::Interface for GeoboundingBox {
     type Vtable = IGeoboundingBox_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GeoboundingBox {
-    const IID: ::windows_core::GUID = <IGeoboundingBox as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeoboundingBox as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GeoboundingBox {
     const NAME: &'static str = "Windows.Devices.Geolocation.GeoboundingBox";
@@ -588,21 +584,21 @@ impl Geocircle {
         })
     }
     pub fn GeoshapeType(&self) -> ::windows_core::Result<GeoshapeType> {
-        let this = &::windows_core::ComInterface::cast::<IGeoshape>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoshape>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GeoshapeType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SpatialReferenceId(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IGeoshape>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoshape>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SpatialReferenceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AltitudeReferenceSystem(&self) -> ::windows_core::Result<AltitudeReferenceSystem> {
-        let this = &::windows_core::ComInterface::cast::<IGeoshape>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoshape>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AltitudeReferenceSystem)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -619,9 +615,7 @@ impl ::windows_core::RuntimeType for Geocircle {
 }
 unsafe impl ::windows_core::Interface for Geocircle {
     type Vtable = IGeocircle_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Geocircle {
-    const IID: ::windows_core::GUID = <IGeocircle as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeocircle as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Geocircle {
     const NAME: &'static str = "Windows.Devices.Geolocation.Geocircle";
@@ -697,35 +691,35 @@ impl Geocoordinate {
         }
     }
     pub fn Point(&self) -> ::windows_core::Result<Geopoint> {
-        let this = &::windows_core::ComInterface::cast::<IGeocoordinateWithPoint>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeocoordinateWithPoint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Point)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PositionSource(&self) -> ::windows_core::Result<PositionSource> {
-        let this = &::windows_core::ComInterface::cast::<IGeocoordinateWithPositionData>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeocoordinateWithPositionData>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PositionSource)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SatelliteData(&self) -> ::windows_core::Result<GeocoordinateSatelliteData> {
-        let this = &::windows_core::ComInterface::cast::<IGeocoordinateWithPositionData>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeocoordinateWithPositionData>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SatelliteData)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PositionSourceTimestamp(&self) -> ::windows_core::Result<super::super::Foundation::IReference<super::super::Foundation::DateTime>> {
-        let this = &::windows_core::ComInterface::cast::<IGeocoordinateWithPositionSourceTimestamp>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeocoordinateWithPositionSourceTimestamp>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PositionSourceTimestamp)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsRemoteSource(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IGeocoordinateWithRemoteSource>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeocoordinateWithRemoteSource>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsRemoteSource)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -737,9 +731,7 @@ impl ::windows_core::RuntimeType for Geocoordinate {
 }
 unsafe impl ::windows_core::Interface for Geocoordinate {
     type Vtable = IGeocoordinate_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Geocoordinate {
-    const IID: ::windows_core::GUID = <IGeocoordinate as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeocoordinate as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Geocoordinate {
     const NAME: &'static str = "Windows.Devices.Geolocation.Geocoordinate";
@@ -773,14 +765,14 @@ impl GeocoordinateSatelliteData {
         }
     }
     pub fn GeometricDilutionOfPrecision(&self) -> ::windows_core::Result<super::super::Foundation::IReference<f64>> {
-        let this = &::windows_core::ComInterface::cast::<IGeocoordinateSatelliteData2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeocoordinateSatelliteData2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GeometricDilutionOfPrecision)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TimeDilutionOfPrecision(&self) -> ::windows_core::Result<super::super::Foundation::IReference<f64>> {
-        let this = &::windows_core::ComInterface::cast::<IGeocoordinateSatelliteData2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeocoordinateSatelliteData2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeDilutionOfPrecision)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -792,9 +784,7 @@ impl ::windows_core::RuntimeType for GeocoordinateSatelliteData {
 }
 unsafe impl ::windows_core::Interface for GeocoordinateSatelliteData {
     type Vtable = IGeocoordinateSatelliteData_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GeocoordinateSatelliteData {
-    const IID: ::windows_core::GUID = <IGeocoordinateSatelliteData as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeocoordinateSatelliteData as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GeocoordinateSatelliteData {
     const NAME: &'static str = "Windows.Devices.Geolocation.GeocoordinateSatelliteData";
@@ -896,7 +886,7 @@ impl Geolocator {
         unsafe { (::windows_core::Interface::vtable(this).RemoveStatusChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn AllowFallbackToConsentlessPositions(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IGeolocator2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeolocator2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).AllowFallbackToConsentlessPositions)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn RequestAccessAsync() -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<GeolocationAccessStatus>> {
@@ -940,7 +930,7 @@ impl Geolocator {
         })
     }
     pub fn DesiredAccuracyInMeters(&self) -> ::windows_core::Result<super::super::Foundation::IReference<u32>> {
-        let this = &::windows_core::ComInterface::cast::<IGeolocatorWithScalarAccuracy>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeolocatorWithScalarAccuracy>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DesiredAccuracyInMeters)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -950,7 +940,7 @@ impl Geolocator {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::IReference<u32>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IGeolocatorWithScalarAccuracy>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeolocatorWithScalarAccuracy>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDesiredAccuracyInMeters)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc(hidden)]
@@ -969,9 +959,7 @@ impl ::windows_core::RuntimeType for Geolocator {
 }
 unsafe impl ::windows_core::Interface for Geolocator {
     type Vtable = IGeolocator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Geolocator {
-    const IID: ::windows_core::GUID = <IGeolocator as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeolocator as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Geolocator {
     const NAME: &'static str = "Windows.Devices.Geolocation.Geolocator";
@@ -1026,21 +1014,21 @@ impl Geopath {
         })
     }
     pub fn GeoshapeType(&self) -> ::windows_core::Result<GeoshapeType> {
-        let this = &::windows_core::ComInterface::cast::<IGeoshape>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoshape>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GeoshapeType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SpatialReferenceId(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IGeoshape>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoshape>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SpatialReferenceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AltitudeReferenceSystem(&self) -> ::windows_core::Result<AltitudeReferenceSystem> {
-        let this = &::windows_core::ComInterface::cast::<IGeoshape>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoshape>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AltitudeReferenceSystem)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1057,9 +1045,7 @@ impl ::windows_core::RuntimeType for Geopath {
 }
 unsafe impl ::windows_core::Interface for Geopath {
     type Vtable = IGeopath_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Geopath {
-    const IID: ::windows_core::GUID = <IGeopath as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeopath as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Geopath {
     const NAME: &'static str = "Windows.Devices.Geolocation.Geopath";
@@ -1098,21 +1084,21 @@ impl Geopoint {
         })
     }
     pub fn GeoshapeType(&self) -> ::windows_core::Result<GeoshapeType> {
-        let this = &::windows_core::ComInterface::cast::<IGeoshape>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoshape>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GeoshapeType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SpatialReferenceId(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<IGeoshape>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoshape>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SpatialReferenceId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn AltitudeReferenceSystem(&self) -> ::windows_core::Result<AltitudeReferenceSystem> {
-        let this = &::windows_core::ComInterface::cast::<IGeoshape>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoshape>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).AltitudeReferenceSystem)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1129,9 +1115,7 @@ impl ::windows_core::RuntimeType for Geopoint {
 }
 unsafe impl ::windows_core::Interface for Geopoint {
     type Vtable = IGeopoint_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Geopoint {
-    const IID: ::windows_core::GUID = <IGeopoint as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeopoint as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Geopoint {
     const NAME: &'static str = "Windows.Devices.Geolocation.Geopoint";
@@ -1159,7 +1143,7 @@ impl Geoposition {
         }
     }
     pub fn VenueData(&self) -> ::windows_core::Result<VenueData> {
-        let this = &::windows_core::ComInterface::cast::<IGeoposition2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGeoposition2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).VenueData)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1171,9 +1155,7 @@ impl ::windows_core::RuntimeType for Geoposition {
 }
 unsafe impl ::windows_core::Interface for Geoposition {
     type Vtable = IGeoposition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Geoposition {
-    const IID: ::windows_core::GUID = <IGeoposition as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeoposition as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Geoposition {
     const NAME: &'static str = "Windows.Devices.Geolocation.Geoposition";
@@ -1212,9 +1194,7 @@ impl ::windows_core::RuntimeType for Geovisit {
 }
 unsafe impl ::windows_core::Interface for Geovisit {
     type Vtable = IGeovisit_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Geovisit {
-    const IID: ::windows_core::GUID = <IGeovisit as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeovisit as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Geovisit {
     const NAME: &'static str = "Windows.Devices.Geolocation.Geovisit";
@@ -1279,9 +1259,7 @@ impl ::windows_core::RuntimeType for GeovisitMonitor {
 }
 unsafe impl ::windows_core::Interface for GeovisitMonitor {
     type Vtable = IGeovisitMonitor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GeovisitMonitor {
-    const IID: ::windows_core::GUID = <IGeovisitMonitor as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeovisitMonitor as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GeovisitMonitor {
     const NAME: &'static str = "Windows.Devices.Geolocation.GeovisitMonitor";
@@ -1306,9 +1284,7 @@ impl ::windows_core::RuntimeType for GeovisitStateChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for GeovisitStateChangedEventArgs {
     type Vtable = IGeovisitStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GeovisitStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <IGeovisitStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeovisitStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GeovisitStateChangedEventArgs {
     const NAME: &'static str = "Windows.Devices.Geolocation.GeovisitStateChangedEventArgs";
@@ -1335,9 +1311,7 @@ impl ::windows_core::RuntimeType for GeovisitTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for GeovisitTriggerDetails {
     type Vtable = IGeovisitTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GeovisitTriggerDetails {
-    const IID: ::windows_core::GUID = <IGeovisitTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGeovisitTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GeovisitTriggerDetails {
     const NAME: &'static str = "Windows.Devices.Geolocation.GeovisitTriggerDetails";
@@ -1362,9 +1336,7 @@ impl ::windows_core::RuntimeType for PositionChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for PositionChangedEventArgs {
     type Vtable = IPositionChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PositionChangedEventArgs {
-    const IID: ::windows_core::GUID = <IPositionChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPositionChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PositionChangedEventArgs {
     const NAME: &'static str = "Windows.Devices.Geolocation.PositionChangedEventArgs";
@@ -1389,9 +1361,7 @@ impl ::windows_core::RuntimeType for StatusChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for StatusChangedEventArgs {
     type Vtable = IStatusChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for StatusChangedEventArgs {
-    const IID: ::windows_core::GUID = <IStatusChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IStatusChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for StatusChangedEventArgs {
     const NAME: &'static str = "Windows.Devices.Geolocation.StatusChangedEventArgs";
@@ -1423,9 +1393,7 @@ impl ::windows_core::RuntimeType for VenueData {
 }
 unsafe impl ::windows_core::Interface for VenueData {
     type Vtable = IVenueData_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VenueData {
-    const IID: ::windows_core::GUID = <IVenueData as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVenueData as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VenueData {
     const NAME: &'static str = "Windows.Devices.Geolocation.VenueData";

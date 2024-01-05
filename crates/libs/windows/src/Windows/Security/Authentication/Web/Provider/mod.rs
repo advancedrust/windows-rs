@@ -243,7 +243,7 @@ impl IWebAccountProviderSilentReportOperation {
         unsafe { (::windows_core::Interface::vtable(this).ReportUserInteractionRequiredWithError)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ReportCompleted(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportCompleted)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Security_Authentication_Web_Core\"`"]
@@ -252,7 +252,7 @@ impl IWebAccountProviderSilentReportOperation {
     where
         P0: ::windows_core::IntoParam<super::Core::WebProviderError>,
     {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportError)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
@@ -303,7 +303,7 @@ impl IWebAccountProviderTokenObjects2 {
         }
     }
     pub fn Operation(&self) -> ::windows_core::Result<IWebAccountProviderOperation> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderTokenObjects>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderTokenObjects>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Operation)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -354,7 +354,7 @@ impl IWebAccountProviderTokenOperation {
         }
     }
     pub fn Kind(&self) -> ::windows_core::Result<WebAccountProviderOperationKind> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderOperation>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -385,7 +385,7 @@ impl IWebAccountProviderUIReportOperation {
         unsafe { (::windows_core::Interface::vtable(this).ReportUserCanceled)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn ReportCompleted(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportCompleted)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Security_Authentication_Web_Core\"`"]
@@ -394,7 +394,7 @@ impl IWebAccountProviderUIReportOperation {
     where
         P0: ::windows_core::IntoParam<super::Core::WebProviderError>,
     {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportError)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
@@ -540,9 +540,7 @@ impl ::windows_core::RuntimeType for WebAccountClientView {
 }
 unsafe impl ::windows_core::Interface for WebAccountClientView {
     type Vtable = IWebAccountClientView_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountClientView {
-    const IID: ::windows_core::GUID = <IWebAccountClientView as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountClientView as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountClientView {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Provider.WebAccountClientView";
@@ -854,7 +852,7 @@ impl WebAccountProviderAddAccountOperation {
         unsafe { (::windows_core::Interface::vtable(this).ReportCompleted)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<WebAccountProviderOperationKind> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderOperation>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -866,9 +864,7 @@ impl ::windows_core::RuntimeType for WebAccountProviderAddAccountOperation {
 }
 unsafe impl ::windows_core::Interface for WebAccountProviderAddAccountOperation {
     type Vtable = IWebAccountProviderAddAccountOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountProviderAddAccountOperation {
-    const IID: ::windows_core::GUID = <IWebAccountProviderAddAccountOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountProviderAddAccountOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountProviderAddAccountOperation {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Provider.WebAccountProviderAddAccountOperation";
@@ -882,7 +878,7 @@ unsafe impl ::core::marker::Sync for WebAccountProviderAddAccountOperation {}
 pub struct WebAccountProviderDeleteAccountOperation(::windows_core::IUnknown);
 impl WebAccountProviderDeleteAccountOperation {
     pub fn ReportCompleted(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportCompleted)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Security_Authentication_Web_Core\"`"]
@@ -891,7 +887,7 @@ impl WebAccountProviderDeleteAccountOperation {
     where
         P0: ::windows_core::IntoParam<super::Core::WebProviderError>,
     {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportError)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Security_Credentials\"`"]
@@ -904,7 +900,7 @@ impl WebAccountProviderDeleteAccountOperation {
         }
     }
     pub fn Kind(&self) -> ::windows_core::Result<WebAccountProviderOperationKind> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderOperation>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -916,9 +912,7 @@ impl ::windows_core::RuntimeType for WebAccountProviderDeleteAccountOperation {
 }
 unsafe impl ::windows_core::Interface for WebAccountProviderDeleteAccountOperation {
     type Vtable = IWebAccountProviderDeleteAccountOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountProviderDeleteAccountOperation {
-    const IID: ::windows_core::GUID = <IWebAccountProviderDeleteAccountOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountProviderDeleteAccountOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountProviderDeleteAccountOperation {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Provider.WebAccountProviderDeleteAccountOperation";
@@ -932,7 +926,7 @@ unsafe impl ::core::marker::Sync for WebAccountProviderDeleteAccountOperation {}
 pub struct WebAccountProviderGetTokenSilentOperation(::windows_core::IUnknown);
 impl WebAccountProviderGetTokenSilentOperation {
     pub fn ReportCompleted(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportCompleted)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Security_Authentication_Web_Core\"`"]
@@ -941,18 +935,18 @@ impl WebAccountProviderGetTokenSilentOperation {
     where
         P0: ::windows_core::IntoParam<super::Core::WebProviderError>,
     {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportError)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<WebAccountProviderOperationKind> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderOperation>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ReportUserInteractionRequired(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderSilentReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderSilentReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportUserInteractionRequired)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Security_Authentication_Web_Core\"`"]
@@ -961,7 +955,7 @@ impl WebAccountProviderGetTokenSilentOperation {
     where
         P0: ::windows_core::IntoParam<super::Core::WebProviderError>,
     {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderSilentReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderSilentReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportUserInteractionRequiredWithError)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ProviderRequest(&self) -> ::windows_core::Result<WebProviderTokenRequest> {
@@ -997,9 +991,7 @@ impl ::windows_core::RuntimeType for WebAccountProviderGetTokenSilentOperation {
 }
 unsafe impl ::windows_core::Interface for WebAccountProviderGetTokenSilentOperation {
     type Vtable = IWebAccountProviderTokenOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountProviderGetTokenSilentOperation {
-    const IID: ::windows_core::GUID = <IWebAccountProviderTokenOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountProviderTokenOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountProviderGetTokenSilentOperation {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Provider.WebAccountProviderGetTokenSilentOperation";
@@ -1026,7 +1018,7 @@ impl WebAccountProviderManageAccountOperation {
         unsafe { (::windows_core::Interface::vtable(this).ReportCompleted)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<WebAccountProviderOperationKind> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderOperation>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1038,9 +1030,7 @@ impl ::windows_core::RuntimeType for WebAccountProviderManageAccountOperation {
 }
 unsafe impl ::windows_core::Interface for WebAccountProviderManageAccountOperation {
     type Vtable = IWebAccountProviderManageAccountOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountProviderManageAccountOperation {
-    const IID: ::windows_core::GUID = <IWebAccountProviderManageAccountOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountProviderManageAccountOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountProviderManageAccountOperation {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Provider.WebAccountProviderManageAccountOperation";
@@ -1054,7 +1044,7 @@ unsafe impl ::core::marker::Sync for WebAccountProviderManageAccountOperation {}
 pub struct WebAccountProviderRequestTokenOperation(::windows_core::IUnknown);
 impl WebAccountProviderRequestTokenOperation {
     pub fn ReportCompleted(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportCompleted)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Security_Authentication_Web_Core\"`"]
@@ -1063,11 +1053,11 @@ impl WebAccountProviderRequestTokenOperation {
     where
         P0: ::windows_core::IntoParam<super::Core::WebProviderError>,
     {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportError)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<WebAccountProviderOperationKind> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderOperation>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1101,7 +1091,7 @@ impl WebAccountProviderRequestTokenOperation {
         }
     }
     pub fn ReportUserCanceled(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderUIReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderUIReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportUserCanceled)(::windows_core::Interface::as_raw(this)).ok() }
     }
 }
@@ -1110,9 +1100,7 @@ impl ::windows_core::RuntimeType for WebAccountProviderRequestTokenOperation {
 }
 unsafe impl ::windows_core::Interface for WebAccountProviderRequestTokenOperation {
     type Vtable = IWebAccountProviderTokenOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountProviderRequestTokenOperation {
-    const IID: ::windows_core::GUID = <IWebAccountProviderTokenOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountProviderTokenOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountProviderRequestTokenOperation {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Provider.WebAccountProviderRequestTokenOperation";
@@ -1126,7 +1114,7 @@ unsafe impl ::core::marker::Sync for WebAccountProviderRequestTokenOperation {}
 pub struct WebAccountProviderRetrieveCookiesOperation(::windows_core::IUnknown);
 impl WebAccountProviderRetrieveCookiesOperation {
     pub fn ReportCompleted(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportCompleted)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Security_Authentication_Web_Core\"`"]
@@ -1135,11 +1123,11 @@ impl WebAccountProviderRetrieveCookiesOperation {
     where
         P0: ::windows_core::IntoParam<super::Core::WebProviderError>,
     {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportError)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<WebAccountProviderOperationKind> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderOperation>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1188,9 +1176,7 @@ impl ::windows_core::RuntimeType for WebAccountProviderRetrieveCookiesOperation 
 }
 unsafe impl ::windows_core::Interface for WebAccountProviderRetrieveCookiesOperation {
     type Vtable = IWebAccountProviderRetrieveCookiesOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountProviderRetrieveCookiesOperation {
-    const IID: ::windows_core::GUID = <IWebAccountProviderRetrieveCookiesOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountProviderRetrieveCookiesOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountProviderRetrieveCookiesOperation {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Provider.WebAccountProviderRetrieveCookiesOperation";
@@ -1204,7 +1190,7 @@ unsafe impl ::core::marker::Sync for WebAccountProviderRetrieveCookiesOperation 
 pub struct WebAccountProviderSignOutAccountOperation(::windows_core::IUnknown);
 impl WebAccountProviderSignOutAccountOperation {
     pub fn ReportCompleted(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportCompleted)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Security_Authentication_Web_Core\"`"]
@@ -1213,11 +1199,11 @@ impl WebAccountProviderSignOutAccountOperation {
     where
         P0: ::windows_core::IntoParam<super::Core::WebProviderError>,
     {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderBaseReportOperation>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).ReportError)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Kind(&self) -> ::windows_core::Result<WebAccountProviderOperationKind> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderOperation>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderOperation>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Kind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1252,9 +1238,7 @@ impl ::windows_core::RuntimeType for WebAccountProviderSignOutAccountOperation {
 }
 unsafe impl ::windows_core::Interface for WebAccountProviderSignOutAccountOperation {
     type Vtable = IWebAccountProviderSignOutAccountOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountProviderSignOutAccountOperation {
-    const IID: ::windows_core::GUID = <IWebAccountProviderSignOutAccountOperation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountProviderSignOutAccountOperation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountProviderSignOutAccountOperation {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Provider.WebAccountProviderSignOutAccountOperation";
@@ -1277,7 +1261,7 @@ impl WebAccountProviderTriggerDetails {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
     pub fn User(&self) -> ::windows_core::Result<super::super::super::super::System::User> {
-        let this = &::windows_core::ComInterface::cast::<IWebAccountProviderTokenObjects2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebAccountProviderTokenObjects2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).User)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1289,9 +1273,7 @@ impl ::windows_core::RuntimeType for WebAccountProviderTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for WebAccountProviderTriggerDetails {
     type Vtable = IWebAccountProviderTokenObjects_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebAccountProviderTriggerDetails {
-    const IID: ::windows_core::GUID = <IWebAccountProviderTokenObjects as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebAccountProviderTokenObjects as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebAccountProviderTriggerDetails {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Provider.WebAccountProviderTriggerDetails";
@@ -1354,28 +1336,28 @@ impl WebProviderTokenRequest {
     where
         P0: ::windows_core::IntoParam<super::super::super::super::Foundation::Uri>,
     {
-        let this = &::windows_core::ComInterface::cast::<IWebProviderTokenRequest2>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebProviderTokenRequest2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetApplicationTokenBindingKeyIdAsync)(::windows_core::Interface::as_raw(this), keytype, target.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn ApplicationPackageFamilyName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IWebProviderTokenRequest3>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebProviderTokenRequest3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ApplicationPackageFamilyName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ApplicationProcessName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IWebProviderTokenRequest3>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebProviderTokenRequest3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ApplicationProcessName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn CheckApplicationForCapabilityAsync(&self, capabilityname: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IWebProviderTokenRequest3>(self)?;
+        let this = &::windows_core::Interface::cast::<IWebProviderTokenRequest3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CheckApplicationForCapabilityAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(capabilityname), &mut result__).from_abi(result__)
@@ -1387,9 +1369,7 @@ impl ::windows_core::RuntimeType for WebProviderTokenRequest {
 }
 unsafe impl ::windows_core::Interface for WebProviderTokenRequest {
     type Vtable = IWebProviderTokenRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebProviderTokenRequest {
-    const IID: ::windows_core::GUID = <IWebProviderTokenRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebProviderTokenRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebProviderTokenRequest {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Provider.WebProviderTokenRequest";
@@ -1432,9 +1412,7 @@ impl ::windows_core::RuntimeType for WebProviderTokenResponse {
 }
 unsafe impl ::windows_core::Interface for WebProviderTokenResponse {
     type Vtable = IWebProviderTokenResponse_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WebProviderTokenResponse {
-    const IID: ::windows_core::GUID = <IWebProviderTokenResponse as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWebProviderTokenResponse as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WebProviderTokenResponse {
     const NAME: &'static str = "Windows.Security.Authentication.Web.Provider.WebProviderTokenResponse";

@@ -292,7 +292,7 @@ impl GameListEntry {
         }
     }
     pub fn LaunchableState(&self) -> ::windows_core::Result<GameListEntryLaunchableState> {
-        let this = &::windows_core::ComInterface::cast::<IGameListEntry2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGameListEntry2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LaunchableState)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -301,14 +301,14 @@ impl GameListEntry {
     #[doc = "Required features: `\"Storage\"`"]
     #[cfg(feature = "Storage")]
     pub fn LauncherExecutable(&self) -> ::windows_core::Result<super::super::super::Storage::IStorageFile> {
-        let this = &::windows_core::ComInterface::cast::<IGameListEntry2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGameListEntry2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LauncherExecutable)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn LaunchParameters(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IGameListEntry2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGameListEntry2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).LaunchParameters)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -320,7 +320,7 @@ impl GameListEntry {
     where
         P0: ::windows_core::IntoParam<super::super::super::Storage::IStorageFile>,
     {
-        let this = &::windows_core::ComInterface::cast::<IGameListEntry2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGameListEntry2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SetLauncherExecutableFileAsync)(::windows_core::Interface::as_raw(this), executablefile.into_param().abi(), &mut result__).from_abi(result__)
@@ -332,28 +332,28 @@ impl GameListEntry {
     where
         P0: ::windows_core::IntoParam<super::super::super::Storage::IStorageFile>,
     {
-        let this = &::windows_core::ComInterface::cast::<IGameListEntry2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGameListEntry2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SetLauncherExecutableFileWithParamsAsync)(::windows_core::Interface::as_raw(this), executablefile.into_param().abi(), ::core::mem::transmute_copy(launchparams), &mut result__).from_abi(result__)
         }
     }
     pub fn TitleId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IGameListEntry2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGameListEntry2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TitleId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetTitleIdAsync(&self, id: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IGameListEntry2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGameListEntry2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SetTitleIdAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(id), &mut result__).from_abi(result__)
         }
     }
     pub fn GameModeConfiguration(&self) -> ::windows_core::Result<GameModeConfiguration> {
-        let this = &::windows_core::ComInterface::cast::<IGameListEntry2>(self)?;
+        let this = &::windows_core::Interface::cast::<IGameListEntry2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GameModeConfiguration)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -365,9 +365,7 @@ impl ::windows_core::RuntimeType for GameListEntry {
 }
 unsafe impl ::windows_core::Interface for GameListEntry {
     type Vtable = IGameListEntry_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameListEntry {
-    const IID: ::windows_core::GUID = <IGameListEntry as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameListEntry as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameListEntry {
     const NAME: &'static str = "Windows.Gaming.Preview.GamesEnumeration.GameListEntry";
@@ -508,9 +506,7 @@ impl ::windows_core::RuntimeType for GameModeConfiguration {
 }
 unsafe impl ::windows_core::Interface for GameModeConfiguration {
     type Vtable = IGameModeConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameModeConfiguration {
-    const IID: ::windows_core::GUID = <IGameModeConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameModeConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameModeConfiguration {
     const NAME: &'static str = "Windows.Gaming.Preview.GamesEnumeration.GameModeConfiguration";
@@ -555,9 +551,7 @@ impl ::windows_core::RuntimeType for GameModeUserConfiguration {
 }
 unsafe impl ::windows_core::Interface for GameModeUserConfiguration {
     type Vtable = IGameModeUserConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GameModeUserConfiguration {
-    const IID: ::windows_core::GUID = <IGameModeUserConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGameModeUserConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GameModeUserConfiguration {
     const NAME: &'static str = "Windows.Gaming.Preview.GamesEnumeration.GameModeUserConfiguration";
@@ -634,7 +628,7 @@ impl<F: FnMut(::core::option::Option<&GameListEntry>) -> ::windows_core::Result<
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <GameListChangedEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <GameListChangedEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {
@@ -695,7 +689,7 @@ impl<F: FnMut(&::windows_core::HSTRING) -> ::windows_core::Result<()> + ::core::
         if iid.is_null() || interface.is_null() {
             return ::windows_core::HRESULT(-2147467261);
         }
-        *interface = if *iid == <GameListRemovedEventHandler as ::windows_core::ComInterface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::ComInterface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::ComInterface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
+        *interface = if *iid == <GameListRemovedEventHandler as ::windows_core::Interface>::IID || *iid == <::windows_core::IUnknown as ::windows_core::Interface>::IID || *iid == <::windows_core::imp::IAgileObject as ::windows_core::Interface>::IID { &mut (*this).vtable as *mut _ as _ } else { ::core::ptr::null_mut() };
         if (*interface).is_null() {
             ::windows_core::HRESULT(-2147467262)
         } else {

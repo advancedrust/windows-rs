@@ -702,9 +702,7 @@ impl ::windows_core::RuntimeType for ChatCapabilities {
 }
 unsafe impl ::windows_core::Interface for ChatCapabilities {
     type Vtable = IChatCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatCapabilities {
-    const IID: ::windows_core::GUID = <IChatCapabilities as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatCapabilities as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatCapabilities {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatCapabilities";
@@ -873,18 +871,18 @@ impl ChatConversation {
         unsafe { (::windows_core::Interface::vtable(this).RemoveRemoteParticipantComposingChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn CanModifyParticipants(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IChatConversation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatConversation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanModifyParticipants)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCanModifyParticipants(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatConversation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatConversation2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanModifyParticipants)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ItemKind(&self) -> ::windows_core::Result<ChatItemKind> {
-        let this = &::windows_core::ComInterface::cast::<IChatItem>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatItem>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ItemKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -896,9 +894,7 @@ impl ::windows_core::RuntimeType for ChatConversation {
 }
 unsafe impl ::windows_core::Interface for ChatConversation {
     type Vtable = IChatConversation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatConversation {
-    const IID: ::windows_core::GUID = <IChatConversation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatConversation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatConversation {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatConversation";
@@ -935,9 +931,7 @@ impl ::windows_core::RuntimeType for ChatConversationReader {
 }
 unsafe impl ::windows_core::Interface for ChatConversationReader {
     type Vtable = IChatConversationReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatConversationReader {
-    const IID: ::windows_core::GUID = <IChatConversationReader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatConversationReader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatConversationReader {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatConversationReader";
@@ -1015,9 +1009,7 @@ impl ::windows_core::RuntimeType for ChatConversationThreadingInfo {
 }
 unsafe impl ::windows_core::Interface for ChatConversationThreadingInfo {
     type Vtable = IChatConversationThreadingInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatConversationThreadingInfo {
-    const IID: ::windows_core::GUID = <IChatConversationThreadingInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatConversationThreadingInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatConversationThreadingInfo {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatConversationThreadingInfo";
@@ -1037,7 +1029,7 @@ impl ChatMessage {
         SHARED.call(callback)
     }
     pub fn ItemKind(&self) -> ::windows_core::Result<ChatItemKind> {
-        let this = &::windows_core::ComInterface::cast::<IChatItem>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatItem>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ItemKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1163,134 +1155,134 @@ impl ChatMessage {
         unsafe { (::windows_core::Interface::vtable(this).SetTransportId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn EstimatedDownloadSize(&self) -> ::windows_core::Result<u64> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EstimatedDownloadSize)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetEstimatedDownloadSize(&self, value: u64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetEstimatedDownloadSize)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetFrom(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetFrom)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn IsAutoReply(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsAutoReply)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsAutoReply(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsAutoReply)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetIsForwardingDisabled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsForwardingDisabled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsReplyDisabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsReplyDisabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsIncoming(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsIncoming)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetIsRead(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsRead)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsSeen(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsSeen)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsSeen(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsSeen)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsSimMessage(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsSimMessage)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetLocalTimestamp(&self, value: super::super::Foundation::DateTime) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetLocalTimestamp)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn MessageKind(&self) -> ::windows_core::Result<ChatMessageKind> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MessageKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetMessageKind(&self, value: ChatMessageKind) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMessageKind)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn MessageOperatorKind(&self) -> ::windows_core::Result<ChatMessageOperatorKind> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MessageOperatorKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetMessageOperatorKind(&self, value: ChatMessageOperatorKind) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetMessageOperatorKind)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetNetworkTimestamp(&self, value: super::super::Foundation::DateTime) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetNetworkTimestamp)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn IsReceivedDuringQuietHours(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsReceivedDuringQuietHours)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsReceivedDuringQuietHours(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsReceivedDuringQuietHours)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetRemoteId(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetRemoteId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn SetStatus(&self, value: ChatMessageStatus) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetStatus)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn SetSubject(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSubject)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn ShouldSuppressNotification(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShouldSuppressNotification)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetShouldSuppressNotification(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetShouldSuppressNotification)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn ThreadingInfo(&self) -> ::windows_core::Result<ChatConversationThreadingInfo> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ThreadingInfo)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1300,34 +1292,34 @@ impl ChatMessage {
     where
         P0: ::windows_core::IntoParam<ChatConversationThreadingInfo>,
     {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetThreadingInfo)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn RecipientsDeliveryInfos(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<ChatRecipientDeliveryInfo>> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RecipientsDeliveryInfos)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoteId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage3>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).RemoteId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SyncId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage4>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SyncId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetSyncId(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessage4>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessage4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetSyncId)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
 }
@@ -1336,9 +1328,7 @@ impl ::windows_core::RuntimeType for ChatMessage {
 }
 unsafe impl ::windows_core::Interface for ChatMessage {
     type Vtable = IChatMessage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessage {
-    const IID: ::windows_core::GUID = <IChatMessage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessage {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessage";
@@ -1405,7 +1395,7 @@ impl ChatMessageAttachment {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn Thumbnail(&self) -> ::windows_core::Result<super::super::Storage::Streams::IRandomAccessStreamReference> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageAttachment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Thumbnail)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1417,29 +1407,29 @@ impl ChatMessageAttachment {
     where
         P0: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStreamReference>,
     {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageAttachment2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetThumbnail)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn TransferProgress(&self) -> ::windows_core::Result<f64> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageAttachment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TransferProgress)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetTransferProgress(&self, value: f64) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageAttachment2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetTransferProgress)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn OriginalFileName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageAttachment2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).OriginalFileName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetOriginalFileName(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageAttachment2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageAttachment2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetOriginalFileName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -1464,9 +1454,7 @@ impl ::windows_core::RuntimeType for ChatMessageAttachment {
 }
 unsafe impl ::windows_core::Interface for ChatMessageAttachment {
     type Vtable = IChatMessageAttachment_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageAttachment {
-    const IID: ::windows_core::GUID = <IChatMessageAttachment as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageAttachment as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageAttachment {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageAttachment";
@@ -1515,9 +1503,7 @@ impl ::windows_core::RuntimeType for ChatMessageChange {
 }
 unsafe impl ::windows_core::Interface for ChatMessageChange {
     type Vtable = IChatMessageChange_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageChange {
-    const IID: ::windows_core::GUID = <IChatMessageChange as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageChange as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageChange {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageChange";
@@ -1555,9 +1541,7 @@ impl ::windows_core::RuntimeType for ChatMessageChangeReader {
 }
 unsafe impl ::windows_core::Interface for ChatMessageChangeReader {
     type Vtable = IChatMessageChangeReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageChangeReader {
-    const IID: ::windows_core::GUID = <IChatMessageChangeReader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageChangeReader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageChangeReader {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageChangeReader";
@@ -1590,9 +1574,7 @@ impl ::windows_core::RuntimeType for ChatMessageChangeTracker {
 }
 unsafe impl ::windows_core::Interface for ChatMessageChangeTracker {
     type Vtable = IChatMessageChangeTracker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageChangeTracker {
-    const IID: ::windows_core::GUID = <IChatMessageChangeTracker as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageChangeTracker as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageChangeTracker {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageChangeTracker";
@@ -1614,9 +1596,7 @@ impl ::windows_core::RuntimeType for ChatMessageChangedDeferral {
 }
 unsafe impl ::windows_core::Interface for ChatMessageChangedDeferral {
     type Vtable = IChatMessageChangedDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageChangedDeferral {
-    const IID: ::windows_core::GUID = <IChatMessageChangedDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageChangedDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageChangedDeferral {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageChangedDeferral";
@@ -1641,9 +1621,7 @@ impl ::windows_core::RuntimeType for ChatMessageChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ChatMessageChangedEventArgs {
     type Vtable = IChatMessageChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageChangedEventArgs {
-    const IID: ::windows_core::GUID = <IChatMessageChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageChangedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageChangedEventArgs";
@@ -1728,28 +1706,28 @@ impl ChatMessageNotificationTriggerDetails {
         }
     }
     pub fn ShouldDisplayToast(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageNotificationTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageNotificationTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShouldDisplayToast)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ShouldUpdateDetailText(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageNotificationTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageNotificationTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShouldUpdateDetailText)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ShouldUpdateBadge(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageNotificationTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageNotificationTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShouldUpdateBadge)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn ShouldUpdateActionCenter(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageNotificationTriggerDetails2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageNotificationTriggerDetails2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ShouldUpdateActionCenter)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1761,9 +1739,7 @@ impl ::windows_core::RuntimeType for ChatMessageNotificationTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for ChatMessageNotificationTriggerDetails {
     type Vtable = IChatMessageNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = <IChatMessageNotificationTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageNotificationTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageNotificationTriggerDetails {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageNotificationTriggerDetails";
@@ -1787,7 +1763,7 @@ impl ChatMessageReader {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn ReadBatchWithCountAsync(&self, count: i32) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Foundation::Collections::IVectorView<ChatMessage>>> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageReader2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageReader2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ReadBatchWithCountAsync)(::windows_core::Interface::as_raw(this), count, &mut result__).from_abi(result__)
@@ -1799,9 +1775,7 @@ impl ::windows_core::RuntimeType for ChatMessageReader {
 }
 unsafe impl ::windows_core::Interface for ChatMessageReader {
     type Vtable = IChatMessageReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageReader {
-    const IID: ::windows_core::GUID = <IChatMessageReader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageReader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageReader {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageReader";
@@ -1909,14 +1883,14 @@ impl ChatMessageStore {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ForwardMessageAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(localchatmessageid), addresses.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn GetConversationAsync(&self, conversationid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<ChatConversation>> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetConversationAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(conversationid), &mut result__).from_abi(result__)
@@ -1928,7 +1902,7 @@ impl ChatMessageStore {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetConversationForTransportsAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(conversationid), transportids.into_param().abi(), &mut result__).from_abi(result__)
@@ -1938,14 +1912,14 @@ impl ChatMessageStore {
     where
         P0: ::windows_core::IntoParam<ChatConversationThreadingInfo>,
     {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetConversationFromThreadingInfoAsync)(::windows_core::Interface::as_raw(this), threadinginfo.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn GetConversationReader(&self) -> ::windows_core::Result<ChatConversationReader> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetConversationReader)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1957,21 +1931,21 @@ impl ChatMessageStore {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetConversationForTransportsReader)(::windows_core::Interface::as_raw(this), transportids.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn GetMessageByRemoteIdAsync(&self, transportid: &::windows_core::HSTRING, remoteid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<ChatMessage>> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetMessageByRemoteIdAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(transportid), ::core::mem::transmute_copy(remoteid), &mut result__).from_abi(result__)
         }
     }
     pub fn GetUnseenCountAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<i32>> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetUnseenCountAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1983,14 +1957,14 @@ impl ChatMessageStore {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetUnseenCountForTransportsReaderAsync)(::windows_core::Interface::as_raw(this), transportids.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn MarkAsSeenAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MarkAsSeenAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2002,7 +1976,7 @@ impl ChatMessageStore {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).MarkAsSeenForTransportsAsync)(::windows_core::Interface::as_raw(this), transportids.into_param().abi(), &mut result__).from_abi(result__)
@@ -2012,7 +1986,7 @@ impl ChatMessageStore {
     where
         P0: ::windows_core::IntoParam<ChatQueryOptions>,
     {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetSearchReader)(::windows_core::Interface::as_raw(this), value.into_param().abi(), &mut result__).from_abi(result__)
@@ -2022,21 +1996,21 @@ impl ChatMessageStore {
     where
         P0: ::windows_core::IntoParam<ChatMessage>,
     {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SaveMessageAsync)(::windows_core::Interface::as_raw(this), chatmessage.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn TryCancelDownloadMessageAsync(&self, localchatmessageid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryCancelDownloadMessageAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(localchatmessageid), &mut result__).from_abi(result__)
         }
     }
     pub fn TryCancelSendMessageAsync(&self, localchatmessageid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<bool>> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryCancelSendMessageAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(localchatmessageid), &mut result__).from_abi(result__)
@@ -2046,18 +2020,18 @@ impl ChatMessageStore {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<ChatMessageStore, ChatMessageStoreChangedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StoreChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveStoreChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveStoreChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn GetMessageBySyncIdAsync(&self, syncid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<ChatMessage>> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageStore3>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageStore3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetMessageBySyncIdAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(syncid), &mut result__).from_abi(result__)
@@ -2069,9 +2043,7 @@ impl ::windows_core::RuntimeType for ChatMessageStore {
 }
 unsafe impl ::windows_core::Interface for ChatMessageStore {
     type Vtable = IChatMessageStore_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageStore {
-    const IID: ::windows_core::GUID = <IChatMessageStore as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageStore as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageStore {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageStore";
@@ -2103,9 +2075,7 @@ impl ::windows_core::RuntimeType for ChatMessageStoreChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for ChatMessageStoreChangedEventArgs {
     type Vtable = IChatMessageStoreChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageStoreChangedEventArgs {
-    const IID: ::windows_core::GUID = <IChatMessageStoreChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageStoreChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageStoreChangedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageStoreChangedEventArgs";
@@ -2153,14 +2123,14 @@ impl ChatMessageTransport {
         }
     }
     pub fn Configuration(&self) -> ::windows_core::Result<ChatMessageTransportConfiguration> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageTransport2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageTransport2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Configuration)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TransportKind(&self) -> ::windows_core::Result<ChatMessageTransportKind> {
-        let this = &::windows_core::ComInterface::cast::<IChatMessageTransport2>(self)?;
+        let this = &::windows_core::Interface::cast::<IChatMessageTransport2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TransportKind)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -2172,9 +2142,7 @@ impl ::windows_core::RuntimeType for ChatMessageTransport {
 }
 unsafe impl ::windows_core::Interface for ChatMessageTransport {
     type Vtable = IChatMessageTransport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageTransport {
-    const IID: ::windows_core::GUID = <IChatMessageTransport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageTransport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageTransport {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageTransport";
@@ -2231,9 +2199,7 @@ impl ::windows_core::RuntimeType for ChatMessageTransportConfiguration {
 }
 unsafe impl ::windows_core::Interface for ChatMessageTransportConfiguration {
     type Vtable = IChatMessageTransportConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageTransportConfiguration {
-    const IID: ::windows_core::GUID = <IChatMessageTransportConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageTransportConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageTransportConfiguration {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageTransportConfiguration";
@@ -2279,9 +2245,7 @@ impl ::windows_core::RuntimeType for ChatMessageValidationResult {
 }
 unsafe impl ::windows_core::Interface for ChatMessageValidationResult {
     type Vtable = IChatMessageValidationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatMessageValidationResult {
-    const IID: ::windows_core::GUID = <IChatMessageValidationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatMessageValidationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatMessageValidationResult {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatMessageValidationResult";
@@ -2317,9 +2281,7 @@ impl ::windows_core::RuntimeType for ChatQueryOptions {
 }
 unsafe impl ::windows_core::Interface for ChatQueryOptions {
     type Vtable = IChatQueryOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatQueryOptions {
-    const IID: ::windows_core::GUID = <IChatQueryOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatQueryOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatQueryOptions {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatQueryOptions";
@@ -2418,9 +2380,7 @@ impl ::windows_core::RuntimeType for ChatRecipientDeliveryInfo {
 }
 unsafe impl ::windows_core::Interface for ChatRecipientDeliveryInfo {
     type Vtable = IChatRecipientDeliveryInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatRecipientDeliveryInfo {
-    const IID: ::windows_core::GUID = <IChatRecipientDeliveryInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatRecipientDeliveryInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatRecipientDeliveryInfo {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatRecipientDeliveryInfo";
@@ -2456,9 +2416,7 @@ impl ::windows_core::RuntimeType for ChatSearchReader {
 }
 unsafe impl ::windows_core::Interface for ChatSearchReader {
     type Vtable = IChatSearchReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatSearchReader {
-    const IID: ::windows_core::GUID = <IChatSearchReader as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatSearchReader as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatSearchReader {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatSearchReader";
@@ -2498,9 +2456,7 @@ impl ::windows_core::RuntimeType for ChatSyncConfiguration {
 }
 unsafe impl ::windows_core::Interface for ChatSyncConfiguration {
     type Vtable = IChatSyncConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatSyncConfiguration {
-    const IID: ::windows_core::GUID = <IChatSyncConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatSyncConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatSyncConfiguration {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatSyncConfiguration";
@@ -2570,9 +2526,7 @@ impl ::windows_core::RuntimeType for ChatSyncManager {
 }
 unsafe impl ::windows_core::Interface for ChatSyncManager {
     type Vtable = IChatSyncManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ChatSyncManager {
-    const IID: ::windows_core::GUID = <IChatSyncManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IChatSyncManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for ChatSyncManager {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.ChatSyncManager";
@@ -2647,9 +2601,7 @@ impl ::windows_core::RuntimeType for RcsEndUserMessage {
 }
 unsafe impl ::windows_core::Interface for RcsEndUserMessage {
     type Vtable = IRcsEndUserMessage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RcsEndUserMessage {
-    const IID: ::windows_core::GUID = <IRcsEndUserMessage as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRcsEndUserMessage as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RcsEndUserMessage {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.RcsEndUserMessage";
@@ -2674,9 +2626,7 @@ impl ::windows_core::RuntimeType for RcsEndUserMessageAction {
 }
 unsafe impl ::windows_core::Interface for RcsEndUserMessageAction {
     type Vtable = IRcsEndUserMessageAction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RcsEndUserMessageAction {
-    const IID: ::windows_core::GUID = <IRcsEndUserMessageAction as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRcsEndUserMessageAction as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RcsEndUserMessageAction {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.RcsEndUserMessageAction";
@@ -2708,9 +2658,7 @@ impl ::windows_core::RuntimeType for RcsEndUserMessageAvailableEventArgs {
 }
 unsafe impl ::windows_core::Interface for RcsEndUserMessageAvailableEventArgs {
     type Vtable = IRcsEndUserMessageAvailableEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RcsEndUserMessageAvailableEventArgs {
-    const IID: ::windows_core::GUID = <IRcsEndUserMessageAvailableEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRcsEndUserMessageAvailableEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RcsEndUserMessageAvailableEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.RcsEndUserMessageAvailableEventArgs";
@@ -2742,9 +2690,7 @@ impl ::windows_core::RuntimeType for RcsEndUserMessageAvailableTriggerDetails {
 }
 unsafe impl ::windows_core::Interface for RcsEndUserMessageAvailableTriggerDetails {
     type Vtable = IRcsEndUserMessageAvailableTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RcsEndUserMessageAvailableTriggerDetails {
-    const IID: ::windows_core::GUID = <IRcsEndUserMessageAvailableTriggerDetails as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRcsEndUserMessageAvailableTriggerDetails as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RcsEndUserMessageAvailableTriggerDetails {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.RcsEndUserMessageAvailableTriggerDetails";
@@ -2776,9 +2722,7 @@ impl ::windows_core::RuntimeType for RcsEndUserMessageManager {
 }
 unsafe impl ::windows_core::Interface for RcsEndUserMessageManager {
     type Vtable = IRcsEndUserMessageManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RcsEndUserMessageManager {
-    const IID: ::windows_core::GUID = <IRcsEndUserMessageManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRcsEndUserMessageManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RcsEndUserMessageManager {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.RcsEndUserMessageManager";
@@ -2860,9 +2804,7 @@ impl ::windows_core::RuntimeType for RcsServiceKindSupportedChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for RcsServiceKindSupportedChangedEventArgs {
     type Vtable = IRcsServiceKindSupportedChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RcsServiceKindSupportedChangedEventArgs {
-    const IID: ::windows_core::GUID = <IRcsServiceKindSupportedChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRcsServiceKindSupportedChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RcsServiceKindSupportedChangedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.RcsServiceKindSupportedChangedEventArgs";
@@ -2945,9 +2887,7 @@ impl ::windows_core::RuntimeType for RcsTransport {
 }
 unsafe impl ::windows_core::Interface for RcsTransport {
     type Vtable = IRcsTransport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RcsTransport {
-    const IID: ::windows_core::GUID = <IRcsTransport as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRcsTransport as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RcsTransport {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.RcsTransport";
@@ -3007,9 +2947,7 @@ impl ::windows_core::RuntimeType for RcsTransportConfiguration {
 }
 unsafe impl ::windows_core::Interface for RcsTransportConfiguration {
     type Vtable = IRcsTransportConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RcsTransportConfiguration {
-    const IID: ::windows_core::GUID = <IRcsTransportConfiguration as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRcsTransportConfiguration as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RcsTransportConfiguration {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.RcsTransportConfiguration";
@@ -3048,9 +2986,7 @@ impl ::windows_core::RuntimeType for RemoteParticipantComposingChangedEventArgs 
 }
 unsafe impl ::windows_core::Interface for RemoteParticipantComposingChangedEventArgs {
     type Vtable = IRemoteParticipantComposingChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteParticipantComposingChangedEventArgs {
-    const IID: ::windows_core::GUID = <IRemoteParticipantComposingChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IRemoteParticipantComposingChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for RemoteParticipantComposingChangedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.Chat.RemoteParticipantComposingChangedEventArgs";

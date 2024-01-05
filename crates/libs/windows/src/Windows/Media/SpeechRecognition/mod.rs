@@ -373,9 +373,7 @@ impl ::windows_core::RuntimeType for SpeechContinuousRecognitionCompletedEventAr
 }
 unsafe impl ::windows_core::Interface for SpeechContinuousRecognitionCompletedEventArgs {
     type Vtable = ISpeechContinuousRecognitionCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechContinuousRecognitionCompletedEventArgs {
-    const IID: ::windows_core::GUID = <ISpeechContinuousRecognitionCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechContinuousRecognitionCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechContinuousRecognitionCompletedEventArgs {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechContinuousRecognitionCompletedEventArgs";
@@ -400,9 +398,7 @@ impl ::windows_core::RuntimeType for SpeechContinuousRecognitionResultGeneratedE
 }
 unsafe impl ::windows_core::Interface for SpeechContinuousRecognitionResultGeneratedEventArgs {
     type Vtable = ISpeechContinuousRecognitionResultGeneratedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechContinuousRecognitionResultGeneratedEventArgs {
-    const IID: ::windows_core::GUID = <ISpeechContinuousRecognitionResultGeneratedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechContinuousRecognitionResultGeneratedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechContinuousRecognitionResultGeneratedEventArgs {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs";
@@ -498,9 +494,7 @@ impl ::windows_core::RuntimeType for SpeechContinuousRecognitionSession {
 }
 unsafe impl ::windows_core::Interface for SpeechContinuousRecognitionSession {
     type Vtable = ISpeechContinuousRecognitionSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechContinuousRecognitionSession {
-    const IID: ::windows_core::GUID = <ISpeechContinuousRecognitionSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechContinuousRecognitionSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechContinuousRecognitionSession {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession";
@@ -525,9 +519,7 @@ impl ::windows_core::RuntimeType for SpeechRecognitionCompilationResult {
 }
 unsafe impl ::windows_core::Interface for SpeechRecognitionCompilationResult {
     type Vtable = ISpeechRecognitionCompilationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognitionCompilationResult {
-    const IID: ::windows_core::GUID = <ISpeechRecognitionCompilationResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognitionCompilationResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognitionCompilationResult {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognitionCompilationResult";
@@ -540,43 +532,43 @@ unsafe impl ::core::marker::Sync for SpeechRecognitionCompilationResult {}
 pub struct SpeechRecognitionGrammarFileConstraint(::windows_core::IUnknown);
 impl SpeechRecognitionGrammarFileConstraint {
     pub fn IsEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsEnabled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsEnabled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Tag(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Tag)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetTag(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetTag)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn Type(&self) -> ::windows_core::Result<SpeechRecognitionConstraintType> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Type)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Probability(&self) -> ::windows_core::Result<SpeechRecognitionConstraintProbability> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Probability)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetProbability(&self, value: SpeechRecognitionConstraintProbability) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetProbability)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Storage\"`"]
@@ -621,9 +613,7 @@ impl ::windows_core::RuntimeType for SpeechRecognitionGrammarFileConstraint {
 }
 unsafe impl ::windows_core::Interface for SpeechRecognitionGrammarFileConstraint {
     type Vtable = ISpeechRecognitionGrammarFileConstraint_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognitionGrammarFileConstraint {
-    const IID: ::windows_core::GUID = <ISpeechRecognitionGrammarFileConstraint as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognitionGrammarFileConstraint as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognitionGrammarFileConstraint {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognitionGrammarFileConstraint";
@@ -649,9 +639,7 @@ impl ::windows_core::RuntimeType for SpeechRecognitionHypothesis {
 }
 unsafe impl ::windows_core::Interface for SpeechRecognitionHypothesis {
     type Vtable = ISpeechRecognitionHypothesis_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognitionHypothesis {
-    const IID: ::windows_core::GUID = <ISpeechRecognitionHypothesis as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognitionHypothesis as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognitionHypothesis {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognitionHypothesis";
@@ -676,9 +664,7 @@ impl ::windows_core::RuntimeType for SpeechRecognitionHypothesisGeneratedEventAr
 }
 unsafe impl ::windows_core::Interface for SpeechRecognitionHypothesisGeneratedEventArgs {
     type Vtable = ISpeechRecognitionHypothesisGeneratedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognitionHypothesisGeneratedEventArgs {
-    const IID: ::windows_core::GUID = <ISpeechRecognitionHypothesisGeneratedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognitionHypothesisGeneratedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognitionHypothesisGeneratedEventArgs {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognitionHypothesisGeneratedEventArgs";
@@ -691,43 +677,43 @@ unsafe impl ::core::marker::Sync for SpeechRecognitionHypothesisGeneratedEventAr
 pub struct SpeechRecognitionListConstraint(::windows_core::IUnknown);
 impl SpeechRecognitionListConstraint {
     pub fn IsEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsEnabled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsEnabled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Tag(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Tag)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetTag(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetTag)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn Type(&self) -> ::windows_core::Result<SpeechRecognitionConstraintType> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Type)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Probability(&self) -> ::windows_core::Result<SpeechRecognitionConstraintProbability> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Probability)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetProbability(&self, value: SpeechRecognitionConstraintProbability) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetProbability)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -772,9 +758,7 @@ impl ::windows_core::RuntimeType for SpeechRecognitionListConstraint {
 }
 unsafe impl ::windows_core::Interface for SpeechRecognitionListConstraint {
     type Vtable = ISpeechRecognitionListConstraint_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognitionListConstraint {
-    const IID: ::windows_core::GUID = <ISpeechRecognitionListConstraint as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognitionListConstraint as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognitionListConstraint {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint";
@@ -800,9 +784,7 @@ impl ::windows_core::RuntimeType for SpeechRecognitionQualityDegradingEventArgs 
 }
 unsafe impl ::windows_core::Interface for SpeechRecognitionQualityDegradingEventArgs {
     type Vtable = ISpeechRecognitionQualityDegradingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognitionQualityDegradingEventArgs {
-    const IID: ::windows_core::GUID = <ISpeechRecognitionQualityDegradingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognitionQualityDegradingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognitionQualityDegradingEventArgs {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognitionQualityDegradingEventArgs";
@@ -875,14 +857,14 @@ impl SpeechRecognitionResult {
         }
     }
     pub fn PhraseStartTime(&self) -> ::windows_core::Result<super::super::Foundation::DateTime> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PhraseStartTime)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn PhraseDuration(&self) -> ::windows_core::Result<super::super::Foundation::TimeSpan> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionResult2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionResult2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PhraseDuration)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -894,9 +876,7 @@ impl ::windows_core::RuntimeType for SpeechRecognitionResult {
 }
 unsafe impl ::windows_core::Interface for SpeechRecognitionResult {
     type Vtable = ISpeechRecognitionResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognitionResult {
-    const IID: ::windows_core::GUID = <ISpeechRecognitionResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognitionResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognitionResult {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognitionResult";
@@ -923,9 +903,7 @@ impl ::windows_core::RuntimeType for SpeechRecognitionSemanticInterpretation {
 }
 unsafe impl ::windows_core::Interface for SpeechRecognitionSemanticInterpretation {
     type Vtable = ISpeechRecognitionSemanticInterpretation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognitionSemanticInterpretation {
-    const IID: ::windows_core::GUID = <ISpeechRecognitionSemanticInterpretation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognitionSemanticInterpretation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognitionSemanticInterpretation {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognitionSemanticInterpretation";
@@ -938,43 +916,43 @@ unsafe impl ::core::marker::Sync for SpeechRecognitionSemanticInterpretation {}
 pub struct SpeechRecognitionTopicConstraint(::windows_core::IUnknown);
 impl SpeechRecognitionTopicConstraint {
     pub fn IsEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsEnabled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsEnabled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Tag(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Tag)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetTag(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetTag)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn Type(&self) -> ::windows_core::Result<SpeechRecognitionConstraintType> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Type)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Probability(&self) -> ::windows_core::Result<SpeechRecognitionConstraintProbability> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Probability)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetProbability(&self, value: SpeechRecognitionConstraintProbability) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetProbability)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Scenario(&self) -> ::windows_core::Result<SpeechRecognitionScenario> {
@@ -1014,9 +992,7 @@ impl ::windows_core::RuntimeType for SpeechRecognitionTopicConstraint {
 }
 unsafe impl ::windows_core::Interface for SpeechRecognitionTopicConstraint {
     type Vtable = ISpeechRecognitionTopicConstraint_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognitionTopicConstraint {
-    const IID: ::windows_core::GUID = <ISpeechRecognitionTopicConstraint as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognitionTopicConstraint as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognitionTopicConstraint {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognitionTopicConstraint";
@@ -1030,43 +1006,43 @@ unsafe impl ::core::marker::Sync for SpeechRecognitionTopicConstraint {}
 pub struct SpeechRecognitionVoiceCommandDefinitionConstraint(::windows_core::IUnknown);
 impl SpeechRecognitionVoiceCommandDefinitionConstraint {
     pub fn IsEnabled(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsEnabled)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsEnabled(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsEnabled)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn Tag(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Tag)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetTag(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetTag)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn Type(&self) -> ::windows_core::Result<SpeechRecognitionConstraintType> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Type)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn Probability(&self) -> ::windows_core::Result<SpeechRecognitionConstraintProbability> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Probability)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetProbability(&self, value: SpeechRecognitionConstraintProbability) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognitionConstraint>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognitionConstraint>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetProbability)(::windows_core::Interface::as_raw(this), value).ok() }
     }
 }
@@ -1075,9 +1051,7 @@ impl ::windows_core::RuntimeType for SpeechRecognitionVoiceCommandDefinitionCons
 }
 unsafe impl ::windows_core::Interface for SpeechRecognitionVoiceCommandDefinitionConstraint {
     type Vtable = ISpeechRecognitionVoiceCommandDefinitionConstraint_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognitionVoiceCommandDefinitionConstraint {
-    const IID: ::windows_core::GUID = <ISpeechRecognitionVoiceCommandDefinitionConstraint as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognitionVoiceCommandDefinitionConstraint as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognitionVoiceCommandDefinitionConstraint {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognitionVoiceCommandDefinitionConstraint";
@@ -1098,7 +1072,7 @@ impl SpeechRecognizer {
         SHARED.call(callback)
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Globalization\"`"]
@@ -1183,21 +1157,21 @@ impl SpeechRecognizer {
         unsafe { (::windows_core::Interface::vtable(this).RemoveStateChanged)(::windows_core::Interface::as_raw(this), cookie).ok() }
     }
     pub fn ContinuousRecognitionSession(&self) -> ::windows_core::Result<SpeechContinuousRecognitionSession> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognizer2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognizer2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ContinuousRecognitionSession)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn State(&self) -> ::windows_core::Result<SpeechRecognizerState> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognizer2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognizer2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).State)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn StopRecognitionAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognizer2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognizer2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StopRecognitionAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -1207,14 +1181,14 @@ impl SpeechRecognizer {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<SpeechRecognizer, SpeechRecognitionHypothesisGeneratedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognizer2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognizer2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HypothesisGenerated)(::windows_core::Interface::as_raw(this), value.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveHypothesisGenerated(&self, value: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ISpeechRecognizer2>(self)?;
+        let this = &::windows_core::Interface::cast::<ISpeechRecognizer2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveHypothesisGenerated)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Globalization\"`"]
@@ -1284,9 +1258,7 @@ impl ::windows_core::RuntimeType for SpeechRecognizer {
 }
 unsafe impl ::windows_core::Interface for SpeechRecognizer {
     type Vtable = ISpeechRecognizer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognizer {
-    const IID: ::windows_core::GUID = <ISpeechRecognizer as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognizer as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognizer {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognizer";
@@ -1312,9 +1284,7 @@ impl ::windows_core::RuntimeType for SpeechRecognizerStateChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for SpeechRecognizerStateChangedEventArgs {
     type Vtable = ISpeechRecognizerStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognizerStateChangedEventArgs {
-    const IID: ::windows_core::GUID = <ISpeechRecognizerStateChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognizerStateChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognizerStateChangedEventArgs {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognizerStateChangedEventArgs";
@@ -1365,9 +1335,7 @@ impl ::windows_core::RuntimeType for SpeechRecognizerTimeouts {
 }
 unsafe impl ::windows_core::Interface for SpeechRecognizerTimeouts {
     type Vtable = ISpeechRecognizerTimeouts_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognizerTimeouts {
-    const IID: ::windows_core::GUID = <ISpeechRecognizerTimeouts as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognizerTimeouts as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognizerTimeouts {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognizerTimeouts";
@@ -1429,9 +1397,7 @@ impl ::windows_core::RuntimeType for SpeechRecognizerUIOptions {
 }
 unsafe impl ::windows_core::Interface for SpeechRecognizerUIOptions {
     type Vtable = ISpeechRecognizerUIOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SpeechRecognizerUIOptions {
-    const IID: ::windows_core::GUID = <ISpeechRecognizerUIOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ISpeechRecognizerUIOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for SpeechRecognizerUIOptions {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.SpeechRecognizerUIOptions";
@@ -1505,9 +1471,7 @@ impl ::windows_core::RuntimeType for VoiceCommandSet {
 }
 unsafe impl ::windows_core::Interface for VoiceCommandSet {
     type Vtable = IVoiceCommandSet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for VoiceCommandSet {
-    const IID: ::windows_core::GUID = <IVoiceCommandSet as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IVoiceCommandSet as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for VoiceCommandSet {
     const NAME: &'static str = "Windows.Media.SpeechRecognition.VoiceCommandSet";

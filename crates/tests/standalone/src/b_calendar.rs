@@ -1197,7 +1197,7 @@ impl Calendar {
         })
     }
     pub fn GetTimeZone(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ITimeZoneOnCalendar>(self)?;
+        let this = &::windows_core::Interface::cast::<ITimeZoneOnCalendar>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).GetTimeZone)(
@@ -1211,7 +1211,7 @@ impl Calendar {
         &self,
         timezoneid: &::windows_core::HSTRING,
     ) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<ITimeZoneOnCalendar>(self)?;
+        let this = &::windows_core::Interface::cast::<ITimeZoneOnCalendar>(self)?;
         unsafe {
             (::windows_core::Interface::vtable(this).ChangeTimeZone)(
                 ::windows_core::Interface::as_raw(this),
@@ -1221,7 +1221,7 @@ impl Calendar {
         }
     }
     pub fn TimeZoneAsFullString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ITimeZoneOnCalendar>(self)?;
+        let this = &::windows_core::Interface::cast::<ITimeZoneOnCalendar>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeZoneAsFullString)(
@@ -1235,7 +1235,7 @@ impl Calendar {
         &self,
         ideallength: i32,
     ) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<ITimeZoneOnCalendar>(self)?;
+        let this = &::windows_core::Interface::cast::<ITimeZoneOnCalendar>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TimeZoneAsString)(
@@ -1269,9 +1269,7 @@ impl ::windows_core::RuntimeType for Calendar {
 }
 unsafe impl ::windows_core::Interface for Calendar {
     type Vtable = ICalendar_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for Calendar {
-    const IID: ::windows_core::GUID = <ICalendar as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ICalendar as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for Calendar {
     const NAME: &'static str = "Windows.Globalization.Calendar";
@@ -1853,10 +1851,6 @@ impl<T: ::windows_core::RuntimeType> ::core::iter::IntoIterator for &IIterable<T
 }
 unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IIterable<T> {
     type Vtable = IIterable_Vtbl<T>;
-}
-unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface
-    for IIterable<T>
-{
     const IID: ::windows_core::GUID =
         ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
@@ -1959,10 +1953,6 @@ impl<T: ::windows_core::RuntimeType> ::core::iter::Iterator for IIterator<T> {
 }
 unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IIterator<T> {
     type Vtable = IIterator_Vtbl<T>;
-}
-unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface
-    for IIterator<T>
-{
     const IID: ::windows_core::GUID =
         ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }
@@ -2084,7 +2074,7 @@ impl<T: ::windows_core::RuntimeType + 'static> IVectorView<T> {
         }
     }
     pub fn First(&self) -> ::windows_core::Result<IIterator<T>> {
-        let this = &::windows_core::ComInterface::cast::<IIterable<T>>(self)?;
+        let this = &::windows_core::Interface::cast::<IIterable<T>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(
@@ -2157,10 +2147,6 @@ impl<T: ::windows_core::RuntimeType> ::core::iter::IntoIterator for &IVectorView
 }
 unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::Interface for IVectorView<T> {
     type Vtable = IVectorView_Vtbl<T>;
-}
-unsafe impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::ComInterface
-    for IVectorView<T>
-{
     const IID: ::windows_core::GUID =
         ::windows_core::GUID::from_signature(<Self as ::windows_core::RuntimeType>::SIGNATURE);
 }

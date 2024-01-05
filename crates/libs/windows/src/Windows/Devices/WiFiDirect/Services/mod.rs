@@ -322,9 +322,7 @@ impl ::windows_core::RuntimeType for WiFiDirectService {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectService {
     type Vtable = IWiFiDirectService_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectService {
-    const IID: ::windows_core::GUID = <IWiFiDirectService as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectService as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectService {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.Services.WiFiDirectService";
@@ -546,9 +544,7 @@ impl ::windows_core::RuntimeType for WiFiDirectServiceAdvertiser {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectServiceAdvertiser {
     type Vtable = IWiFiDirectServiceAdvertiser_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectServiceAdvertiser {
-    const IID: ::windows_core::GUID = <IWiFiDirectServiceAdvertiser as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectServiceAdvertiser as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectServiceAdvertiser {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.Services.WiFiDirectServiceAdvertiser";
@@ -582,9 +578,7 @@ impl ::windows_core::RuntimeType for WiFiDirectServiceAutoAcceptSessionConnected
 }
 unsafe impl ::windows_core::Interface for WiFiDirectServiceAutoAcceptSessionConnectedEventArgs {
     type Vtable = IWiFiDirectServiceAutoAcceptSessionConnectedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectServiceAutoAcceptSessionConnectedEventArgs {
-    const IID: ::windows_core::GUID = <IWiFiDirectServiceAutoAcceptSessionConnectedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectServiceAutoAcceptSessionConnectedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectServiceAutoAcceptSessionConnectedEventArgs {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.Services.WiFiDirectServiceAutoAcceptSessionConnectedEventArgs";
@@ -616,9 +610,7 @@ impl ::windows_core::RuntimeType for WiFiDirectServiceProvisioningInfo {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectServiceProvisioningInfo {
     type Vtable = IWiFiDirectServiceProvisioningInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectServiceProvisioningInfo {
-    const IID: ::windows_core::GUID = <IWiFiDirectServiceProvisioningInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectServiceProvisioningInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectServiceProvisioningInfo {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.Services.WiFiDirectServiceProvisioningInfo";
@@ -652,9 +644,7 @@ impl ::windows_core::RuntimeType for WiFiDirectServiceRemotePortAddedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectServiceRemotePortAddedEventArgs {
     type Vtable = IWiFiDirectServiceRemotePortAddedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectServiceRemotePortAddedEventArgs {
-    const IID: ::windows_core::GUID = <IWiFiDirectServiceRemotePortAddedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectServiceRemotePortAddedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectServiceRemotePortAddedEventArgs {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.Services.WiFiDirectServiceRemotePortAddedEventArgs";
@@ -667,7 +657,7 @@ unsafe impl ::core::marker::Sync for WiFiDirectServiceRemotePortAddedEventArgs {
 pub struct WiFiDirectServiceSession(::windows_core::IUnknown);
 impl WiFiDirectServiceSession {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn ServiceName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -786,9 +776,7 @@ impl ::windows_core::RuntimeType for WiFiDirectServiceSession {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectServiceSession {
     type Vtable = IWiFiDirectServiceSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectServiceSession {
-    const IID: ::windows_core::GUID = <IWiFiDirectServiceSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectServiceSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectServiceSession {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSession";
@@ -816,9 +804,7 @@ impl ::windows_core::RuntimeType for WiFiDirectServiceSessionDeferredEventArgs {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectServiceSessionDeferredEventArgs {
     type Vtable = IWiFiDirectServiceSessionDeferredEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectServiceSessionDeferredEventArgs {
-    const IID: ::windows_core::GUID = <IWiFiDirectServiceSessionDeferredEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectServiceSessionDeferredEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectServiceSessionDeferredEventArgs {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionDeferredEventArgs";
@@ -831,7 +817,7 @@ unsafe impl ::core::marker::Sync for WiFiDirectServiceSessionDeferredEventArgs {
 pub struct WiFiDirectServiceSessionRequest(::windows_core::IUnknown);
 impl WiFiDirectServiceSessionRequest {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     #[doc = "Required features: `\"Devices_Enumeration\"`"]
@@ -865,9 +851,7 @@ impl ::windows_core::RuntimeType for WiFiDirectServiceSessionRequest {
 }
 unsafe impl ::windows_core::Interface for WiFiDirectServiceSessionRequest {
     type Vtable = IWiFiDirectServiceSessionRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectServiceSessionRequest {
-    const IID: ::windows_core::GUID = <IWiFiDirectServiceSessionRequest as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectServiceSessionRequest as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectServiceSessionRequest {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionRequest";
@@ -893,9 +877,7 @@ impl ::windows_core::RuntimeType for WiFiDirectServiceSessionRequestedEventArgs 
 }
 unsafe impl ::windows_core::Interface for WiFiDirectServiceSessionRequestedEventArgs {
     type Vtable = IWiFiDirectServiceSessionRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WiFiDirectServiceSessionRequestedEventArgs {
-    const IID: ::windows_core::GUID = <IWiFiDirectServiceSessionRequestedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWiFiDirectServiceSessionRequestedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WiFiDirectServiceSessionRequestedEventArgs {
     const NAME: &'static str = "Windows.Devices.WiFiDirect.Services.WiFiDirectServiceSessionRequestedEventArgs";

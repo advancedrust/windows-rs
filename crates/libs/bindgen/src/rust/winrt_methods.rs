@@ -78,7 +78,7 @@ pub fn writer(writer: &Writer, def: metadata::TypeDef, generic_types: &[metadata
                 #doc
                 #features
                 pub fn #name<#generics>(&self, #params) -> ::windows_core::Result<#return_type_tokens> #where_clause {
-                    let this = &::windows_core::ComInterface::cast::<#interface_name>(self)?;
+                    let this = &::windows_core::Interface::cast::<#interface_name>(self)?;
                     unsafe {
                         #vcall
                     }

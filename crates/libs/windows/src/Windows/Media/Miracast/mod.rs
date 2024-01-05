@@ -370,9 +370,7 @@ impl ::windows_core::RuntimeType for MiracastReceiver {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiver {
     type Vtable = IMiracastReceiver_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiver {
-    const IID: ::windows_core::GUID = <IMiracastReceiver as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiver as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiver {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiver";
@@ -404,9 +402,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverApplySettingsResult {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverApplySettingsResult {
     type Vtable = IMiracastReceiverApplySettingsResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverApplySettingsResult {
-    const IID: ::windows_core::GUID = <IMiracastReceiverApplySettingsResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverApplySettingsResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverApplySettingsResult {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverApplySettingsResult";
@@ -419,7 +415,7 @@ unsafe impl ::core::marker::Sync for MiracastReceiverApplySettingsResult {}
 pub struct MiracastReceiverConnection(::windows_core::IUnknown);
 impl MiracastReceiverConnection {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn Disconnect(&self, reason: MiracastReceiverDisconnectReason) -> ::windows_core::Result<()> {
@@ -486,9 +482,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverConnection {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverConnection {
     type Vtable = IMiracastReceiverConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverConnection {
-    const IID: ::windows_core::GUID = <IMiracastReceiverConnection as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverConnection as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverConnection {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverConnection";
@@ -528,9 +522,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverConnectionCreatedEventArgs 
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverConnectionCreatedEventArgs {
     type Vtable = IMiracastReceiverConnectionCreatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverConnectionCreatedEventArgs {
-    const IID: ::windows_core::GUID = <IMiracastReceiverConnectionCreatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverConnectionCreatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverConnectionCreatedEventArgs {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverConnectionCreatedEventArgs";
@@ -610,9 +602,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverCursorImageChannel {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverCursorImageChannel {
     type Vtable = IMiracastReceiverCursorImageChannel_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverCursorImageChannel {
-    const IID: ::windows_core::GUID = <IMiracastReceiverCursorImageChannel as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverCursorImageChannel as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverCursorImageChannel {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverCursorImageChannel";
@@ -656,9 +646,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverCursorImageChannelSettings 
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverCursorImageChannelSettings {
     type Vtable = IMiracastReceiverCursorImageChannelSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverCursorImageChannelSettings {
-    const IID: ::windows_core::GUID = <IMiracastReceiverCursorImageChannelSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverCursorImageChannelSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverCursorImageChannelSettings {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverCursorImageChannelSettings";
@@ -683,9 +671,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverDisconnectedEventArgs {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverDisconnectedEventArgs {
     type Vtable = IMiracastReceiverDisconnectedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverDisconnectedEventArgs {
-    const IID: ::windows_core::GUID = <IMiracastReceiverDisconnectedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverDisconnectedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverDisconnectedEventArgs {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverDisconnectedEventArgs";
@@ -753,9 +739,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverGameControllerDevice {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverGameControllerDevice {
     type Vtable = IMiracastReceiverGameControllerDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverGameControllerDevice {
-    const IID: ::windows_core::GUID = <IMiracastReceiverGameControllerDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverGameControllerDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverGameControllerDevice {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverGameControllerDevice";
@@ -787,9 +771,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverInputDevices {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverInputDevices {
     type Vtable = IMiracastReceiverInputDevices_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverInputDevices {
-    const IID: ::windows_core::GUID = <IMiracastReceiverInputDevices as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverInputDevices as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverInputDevices {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverInputDevices";
@@ -846,9 +828,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverKeyboardDevice {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverKeyboardDevice {
     type Vtable = IMiracastReceiverKeyboardDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverKeyboardDevice {
-    const IID: ::windows_core::GUID = <IMiracastReceiverKeyboardDevice as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverKeyboardDevice as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverKeyboardDevice {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverKeyboardDevice";
@@ -896,9 +876,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverMediaSourceCreatedEventArgs
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverMediaSourceCreatedEventArgs {
     type Vtable = IMiracastReceiverMediaSourceCreatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverMediaSourceCreatedEventArgs {
-    const IID: ::windows_core::GUID = <IMiracastReceiverMediaSourceCreatedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverMediaSourceCreatedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverMediaSourceCreatedEventArgs {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverMediaSourceCreatedEventArgs";
@@ -911,7 +889,7 @@ unsafe impl ::core::marker::Sync for MiracastReceiverMediaSourceCreatedEventArgs
 pub struct MiracastReceiverSession(::windows_core::IUnknown);
 impl MiracastReceiverSession {
     pub fn Close(&self) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::IClosable>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::IClosable>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Close)(::windows_core::Interface::as_raw(this)).ok() }
     }
     pub fn ConnectionCreated<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::Foundation::EventRegistrationToken>
@@ -998,9 +976,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverSession {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverSession {
     type Vtable = IMiracastReceiverSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverSession {
-    const IID: ::windows_core::GUID = <IMiracastReceiverSession as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverSession as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverSession {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverSession";
@@ -1033,9 +1009,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverSessionStartResult {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverSessionStartResult {
     type Vtable = IMiracastReceiverSessionStartResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverSessionStartResult {
-    const IID: ::windows_core::GUID = <IMiracastReceiverSessionStartResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverSessionStartResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverSessionStartResult {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverSessionStartResult";
@@ -1108,9 +1082,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverSettings {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverSettings {
     type Vtable = IMiracastReceiverSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverSettings {
-    const IID: ::windows_core::GUID = <IMiracastReceiverSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverSettings {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverSettings";
@@ -1165,9 +1137,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverStatus {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverStatus {
     type Vtable = IMiracastReceiverStatus_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverStatus {
-    const IID: ::windows_core::GUID = <IMiracastReceiverStatus as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverStatus as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverStatus {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverStatus";
@@ -1227,9 +1197,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverStreamControl {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverStreamControl {
     type Vtable = IMiracastReceiverStreamControl_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverStreamControl {
-    const IID: ::windows_core::GUID = <IMiracastReceiverStreamControl as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverStreamControl as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverStreamControl {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverStreamControl";
@@ -1273,9 +1241,7 @@ impl ::windows_core::RuntimeType for MiracastReceiverVideoStreamSettings {
 }
 unsafe impl ::windows_core::Interface for MiracastReceiverVideoStreamSettings {
     type Vtable = IMiracastReceiverVideoStreamSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastReceiverVideoStreamSettings {
-    const IID: ::windows_core::GUID = <IMiracastReceiverVideoStreamSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastReceiverVideoStreamSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastReceiverVideoStreamSettings {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverVideoStreamSettings";
@@ -1338,9 +1304,7 @@ impl ::windows_core::RuntimeType for MiracastTransmitter {
 }
 unsafe impl ::windows_core::Interface for MiracastTransmitter {
     type Vtable = IMiracastTransmitter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MiracastTransmitter {
-    const IID: ::windows_core::GUID = <IMiracastTransmitter as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMiracastTransmitter as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MiracastTransmitter {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastTransmitter";

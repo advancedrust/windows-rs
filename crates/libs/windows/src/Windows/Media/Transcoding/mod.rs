@@ -173,18 +173,18 @@ impl MediaTranscoder {
         P1: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStream>,
         P2: ::windows_core::IntoParam<super::MediaProperties::MediaEncodingProfile>,
     {
-        let this = &::windows_core::ComInterface::cast::<IMediaTranscoder2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaTranscoder2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).PrepareMediaStreamSourceTranscodeAsync)(::windows_core::Interface::as_raw(this), source.into_param().abi(), destination.into_param().abi(), profile.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn SetVideoProcessingAlgorithm(&self, value: MediaVideoProcessingAlgorithm) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IMediaTranscoder2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaTranscoder2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetVideoProcessingAlgorithm)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     pub fn VideoProcessingAlgorithm(&self) -> ::windows_core::Result<MediaVideoProcessingAlgorithm> {
-        let this = &::windows_core::ComInterface::cast::<IMediaTranscoder2>(self)?;
+        let this = &::windows_core::Interface::cast::<IMediaTranscoder2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).VideoProcessingAlgorithm)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -196,9 +196,7 @@ impl ::windows_core::RuntimeType for MediaTranscoder {
 }
 unsafe impl ::windows_core::Interface for MediaTranscoder {
     type Vtable = IMediaTranscoder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for MediaTranscoder {
-    const IID: ::windows_core::GUID = <IMediaTranscoder as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IMediaTranscoder as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for MediaTranscoder {
     const NAME: &'static str = "Windows.Media.Transcoding.MediaTranscoder";
@@ -237,9 +235,7 @@ impl ::windows_core::RuntimeType for PrepareTranscodeResult {
 }
 unsafe impl ::windows_core::Interface for PrepareTranscodeResult {
     type Vtable = IPrepareTranscodeResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PrepareTranscodeResult {
-    const IID: ::windows_core::GUID = <IPrepareTranscodeResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPrepareTranscodeResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PrepareTranscodeResult {
     const NAME: &'static str = "Windows.Media.Transcoding.PrepareTranscodeResult";

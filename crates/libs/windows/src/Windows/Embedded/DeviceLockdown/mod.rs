@@ -72,9 +72,7 @@ impl ::windows_core::RuntimeType for DeviceLockdownProfileInformation {
 }
 unsafe impl ::windows_core::Interface for DeviceLockdownProfileInformation {
     type Vtable = IDeviceLockdownProfileInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DeviceLockdownProfileInformation {
-    const IID: ::windows_core::GUID = <IDeviceLockdownProfileInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDeviceLockdownProfileInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DeviceLockdownProfileInformation {
     const NAME: &'static str = "Windows.Embedded.DeviceLockdown.DeviceLockdownProfileInformation";

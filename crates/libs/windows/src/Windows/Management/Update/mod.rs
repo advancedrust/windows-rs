@@ -306,9 +306,7 @@ impl ::windows_core::RuntimeType for PreviewBuildsManager {
 }
 unsafe impl ::windows_core::Interface for PreviewBuildsManager {
     type Vtable = IPreviewBuildsManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PreviewBuildsManager {
-    const IID: ::windows_core::GUID = <IPreviewBuildsManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPreviewBuildsManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PreviewBuildsManager {
     const NAME: &'static str = "Windows.Management.Update.PreviewBuildsManager";
@@ -335,9 +333,7 @@ impl ::windows_core::RuntimeType for PreviewBuildsState {
 }
 unsafe impl ::windows_core::Interface for PreviewBuildsState {
     type Vtable = IPreviewBuildsState_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for PreviewBuildsState {
-    const IID: ::windows_core::GUID = <IPreviewBuildsState as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IPreviewBuildsState as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for PreviewBuildsState {
     const NAME: &'static str = "Windows.Management.Update.PreviewBuildsState";
@@ -520,9 +516,7 @@ impl ::windows_core::RuntimeType for WindowsUpdate {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdate {
     type Vtable = IWindowsUpdate_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdate {
-    const IID: ::windows_core::GUID = <IWindowsUpdate as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdate as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdate {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdate";
@@ -568,9 +562,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateActionCompletedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateActionCompletedEventArgs {
     type Vtable = IWindowsUpdateActionCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateActionCompletedEventArgs {
-    const IID: ::windows_core::GUID = <IWindowsUpdateActionCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateActionCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateActionCompletedEventArgs {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateActionCompletedEventArgs";
@@ -602,9 +594,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateActionProgress {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateActionProgress {
     type Vtable = IWindowsUpdateActionProgress_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateActionProgress {
-    const IID: ::windows_core::GUID = <IWindowsUpdateActionProgress as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateActionProgress as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateActionProgress {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateActionProgress";
@@ -650,9 +640,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateActionResult {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateActionResult {
     type Vtable = IWindowsUpdateActionResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateActionResult {
-    const IID: ::windows_core::GUID = <IWindowsUpdateActionResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateActionResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateActionResult {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateActionResult";
@@ -743,9 +731,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateAdministrator {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateAdministrator {
     type Vtable = IWindowsUpdateAdministrator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateAdministrator {
-    const IID: ::windows_core::GUID = <IWindowsUpdateAdministrator as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateAdministrator as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateAdministrator {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateAdministrator";
@@ -840,9 +826,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateApprovalData {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateApprovalData {
     type Vtable = IWindowsUpdateApprovalData_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateApprovalData {
-    const IID: ::windows_core::GUID = <IWindowsUpdateApprovalData as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateApprovalData as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateApprovalData {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateApprovalData";
@@ -874,9 +858,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateAttentionRequiredInfo {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateAttentionRequiredInfo {
     type Vtable = IWindowsUpdateAttentionRequiredInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateAttentionRequiredInfo {
-    const IID: ::windows_core::GUID = <IWindowsUpdateAttentionRequiredInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateAttentionRequiredInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateAttentionRequiredInfo {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateAttentionRequiredInfo";
@@ -908,9 +890,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateAttentionRequiredReasonChanged
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateAttentionRequiredReasonChangedEventArgs {
     type Vtable = IWindowsUpdateAttentionRequiredReasonChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateAttentionRequiredReasonChangedEventArgs {
-    const IID: ::windows_core::GUID = <IWindowsUpdateAttentionRequiredReasonChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateAttentionRequiredReasonChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateAttentionRequiredReasonChangedEventArgs {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateAttentionRequiredReasonChangedEventArgs";
@@ -942,9 +922,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateGetAdministratorResult {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateGetAdministratorResult {
     type Vtable = IWindowsUpdateGetAdministratorResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateGetAdministratorResult {
-    const IID: ::windows_core::GUID = <IWindowsUpdateGetAdministratorResult as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateGetAdministratorResult as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateGetAdministratorResult {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateGetAdministratorResult";
@@ -1018,9 +996,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateItem {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateItem {
     type Vtable = IWindowsUpdateItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateItem {
-    const IID: ::windows_core::GUID = <IWindowsUpdateItem as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateItem as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateItem {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateItem";
@@ -1185,9 +1161,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateManager {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateManager {
     type Vtable = IWindowsUpdateManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateManager {
-    const IID: ::windows_core::GUID = <IWindowsUpdateManager as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateManager as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateManager {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateManager";
@@ -1219,9 +1193,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateProgressChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateProgressChangedEventArgs {
     type Vtable = IWindowsUpdateProgressChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateProgressChangedEventArgs {
-    const IID: ::windows_core::GUID = <IWindowsUpdateProgressChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateProgressChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateProgressChangedEventArgs {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateProgressChangedEventArgs";
@@ -1340,9 +1312,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateRestartRequestOptions {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateRestartRequestOptions {
     type Vtable = IWindowsUpdateRestartRequestOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateRestartRequestOptions {
-    const IID: ::windows_core::GUID = <IWindowsUpdateRestartRequestOptions as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateRestartRequestOptions as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateRestartRequestOptions {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateRestartRequestOptions";
@@ -1390,9 +1360,7 @@ impl ::windows_core::RuntimeType for WindowsUpdateScanCompletedEventArgs {
 }
 unsafe impl ::windows_core::Interface for WindowsUpdateScanCompletedEventArgs {
     type Vtable = IWindowsUpdateScanCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for WindowsUpdateScanCompletedEventArgs {
-    const IID: ::windows_core::GUID = <IWindowsUpdateScanCompletedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IWindowsUpdateScanCompletedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for WindowsUpdateScanCompletedEventArgs {
     const NAME: &'static str = "Windows.Management.Update.WindowsUpdateScanCompletedEventArgs";

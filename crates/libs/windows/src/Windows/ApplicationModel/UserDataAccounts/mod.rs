@@ -258,14 +258,14 @@ impl UserDataAccount {
         }
     }
     pub fn EnterpriseId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EnterpriseId)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn IsProtectedUnderLock(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).IsProtectedUnderLock)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -274,38 +274,38 @@ impl UserDataAccount {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn ExplictReadAccessPackageFamilyNames(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IVector<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount3>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ExplictReadAccessPackageFamilyNames)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn DisplayName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount3>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).DisplayName)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetDisplayName(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount3>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount3>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetDisplayName)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(value)).ok() }
     }
     pub fn CanShowCreateContactGroup(&self) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount4>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CanShowCreateContactGroup)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetCanShowCreateContactGroup(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount4>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetCanShowCreateContactGroup)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn ProviderProperties(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IPropertySet> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount4>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).ProviderProperties)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -314,7 +314,7 @@ impl UserDataAccount {
     #[doc = "Required features: `\"ApplicationModel_UserDataTasks\"`, `\"Foundation_Collections\"`"]
     #[cfg(all(feature = "ApplicationModel_UserDataTasks", feature = "Foundation_Collections"))]
     pub fn FindUserDataTaskListsAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Foundation::Collections::IVectorView<super::UserDataTasks::UserDataTaskList>>> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount4>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FindUserDataTaskListsAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -323,21 +323,21 @@ impl UserDataAccount {
     #[doc = "Required features: `\"ApplicationModel_Contacts\"`, `\"Foundation_Collections\"`"]
     #[cfg(all(feature = "ApplicationModel_Contacts", feature = "Foundation_Collections"))]
     pub fn FindContactGroupsAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Foundation::Collections::IVectorView<super::Contacts::ContactGroup>>> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount4>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).FindContactGroupsAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn TryShowCreateContactGroupAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<::windows_core::HSTRING>> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount4>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).TryShowCreateContactGroupAsync)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SetIsProtectedUnderLock(&self, value: bool) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount4>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIsProtectedUnderLock)(::windows_core::Interface::as_raw(this), value).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -346,7 +346,7 @@ impl UserDataAccount {
     where
         P0: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStreamReference>,
     {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccount4>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccount4>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).SetIcon)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
@@ -355,9 +355,7 @@ impl ::windows_core::RuntimeType for UserDataAccount {
 }
 unsafe impl ::windows_core::Interface for UserDataAccount {
     type Vtable = IUserDataAccount_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataAccount {
-    const IID: ::windows_core::GUID = <IUserDataAccount as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataAccount as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataAccount {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataAccounts.UserDataAccount";
@@ -442,9 +440,7 @@ impl ::windows_core::RuntimeType for UserDataAccountManagerForUser {
 }
 unsafe impl ::windows_core::Interface for UserDataAccountManagerForUser {
     type Vtable = IUserDataAccountManagerForUser_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataAccountManagerForUser {
-    const IID: ::windows_core::GUID = <IUserDataAccountManagerForUser as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataAccountManagerForUser as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataAccountManagerForUser {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataAccounts.UserDataAccountManagerForUser";
@@ -480,7 +476,7 @@ impl UserDataAccountStore {
         }
     }
     pub fn CreateAccountWithPackageRelativeAppIdAsync(&self, userdisplayname: &::windows_core::HSTRING, packagerelativeappid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<UserDataAccount>> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccountStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccountStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateAccountWithPackageRelativeAppIdAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(userdisplayname), ::core::mem::transmute_copy(packagerelativeappid), &mut result__).from_abi(result__)
@@ -490,18 +486,18 @@ impl UserDataAccountStore {
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::TypedEventHandler<UserDataAccountStore, UserDataAccountStoreChangedEventArgs>>,
     {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccountStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccountStore2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).StoreChanged)(::windows_core::Interface::as_raw(this), handler.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RemoveStoreChanged(&self, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccountStore2>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccountStore2>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).RemoveStoreChanged)(::windows_core::Interface::as_raw(this), token).ok() }
     }
     pub fn CreateAccountWithPackageRelativeAppIdAndEnterpriseIdAsync(&self, userdisplayname: &::windows_core::HSTRING, packagerelativeappid: &::windows_core::HSTRING, enterpriseid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<UserDataAccount>> {
-        let this = &::windows_core::ComInterface::cast::<IUserDataAccountStore3>(self)?;
+        let this = &::windows_core::Interface::cast::<IUserDataAccountStore3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateAccountWithPackageRelativeAppIdAndEnterpriseIdAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(userdisplayname), ::core::mem::transmute_copy(packagerelativeappid), ::core::mem::transmute_copy(enterpriseid), &mut result__).from_abi(result__)
@@ -513,9 +509,7 @@ impl ::windows_core::RuntimeType for UserDataAccountStore {
 }
 unsafe impl ::windows_core::Interface for UserDataAccountStore {
     type Vtable = IUserDataAccountStore_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataAccountStore {
-    const IID: ::windows_core::GUID = <IUserDataAccountStore as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataAccountStore as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataAccountStore {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataAccounts.UserDataAccountStore";
@@ -540,9 +534,7 @@ impl ::windows_core::RuntimeType for UserDataAccountStoreChangedEventArgs {
 }
 unsafe impl ::windows_core::Interface for UserDataAccountStoreChangedEventArgs {
     type Vtable = IUserDataAccountStoreChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserDataAccountStoreChangedEventArgs {
-    const IID: ::windows_core::GUID = <IUserDataAccountStoreChangedEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserDataAccountStoreChangedEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserDataAccountStoreChangedEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.UserDataAccounts.UserDataAccountStoreChangedEventArgs";

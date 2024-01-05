@@ -115,9 +115,7 @@ impl ::windows_core::RuntimeType for LockApplicationHost {
 }
 unsafe impl ::windows_core::Interface for LockApplicationHost {
     type Vtable = ILockApplicationHost_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LockApplicationHost {
-    const IID: ::windows_core::GUID = <ILockApplicationHost as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILockApplicationHost as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LockApplicationHost {
     const NAME: &'static str = "Windows.ApplicationModel.LockScreen.LockApplicationHost";
@@ -171,9 +169,7 @@ impl ::windows_core::RuntimeType for LockScreenBadge {
 }
 unsafe impl ::windows_core::Interface for LockScreenBadge {
     type Vtable = ILockScreenBadge_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LockScreenBadge {
-    const IID: ::windows_core::GUID = <ILockScreenBadge as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILockScreenBadge as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LockScreenBadge {
     const NAME: &'static str = "Windows.ApplicationModel.LockScreen.LockScreenBadge";
@@ -283,9 +279,7 @@ impl ::windows_core::RuntimeType for LockScreenInfo {
 }
 unsafe impl ::windows_core::Interface for LockScreenInfo {
     type Vtable = ILockScreenInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LockScreenInfo {
-    const IID: ::windows_core::GUID = <ILockScreenInfo as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILockScreenInfo as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LockScreenInfo {
     const NAME: &'static str = "Windows.ApplicationModel.LockScreen.LockScreenInfo";
@@ -307,9 +301,7 @@ impl ::windows_core::RuntimeType for LockScreenUnlockingDeferral {
 }
 unsafe impl ::windows_core::Interface for LockScreenUnlockingDeferral {
     type Vtable = ILockScreenUnlockingDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LockScreenUnlockingDeferral {
-    const IID: ::windows_core::GUID = <ILockScreenUnlockingDeferral as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILockScreenUnlockingDeferral as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LockScreenUnlockingDeferral {
     const NAME: &'static str = "Windows.ApplicationModel.LockScreen.LockScreenUnlockingDeferral";
@@ -341,9 +333,7 @@ impl ::windows_core::RuntimeType for LockScreenUnlockingEventArgs {
 }
 unsafe impl ::windows_core::Interface for LockScreenUnlockingEventArgs {
     type Vtable = ILockScreenUnlockingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for LockScreenUnlockingEventArgs {
-    const IID: ::windows_core::GUID = <ILockScreenUnlockingEventArgs as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <ILockScreenUnlockingEventArgs as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for LockScreenUnlockingEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.LockScreen.LockScreenUnlockingEventArgs";

@@ -118,14 +118,14 @@ impl EasClientDeviceInformation {
         }
     }
     pub fn SystemHardwareVersion(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEasClientDeviceInformation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEasClientDeviceInformation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SystemHardwareVersion)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
         }
     }
     pub fn SystemFirmwareVersion(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
-        let this = &::windows_core::ComInterface::cast::<IEasClientDeviceInformation2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEasClientDeviceInformation2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).SystemFirmwareVersion)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -137,9 +137,7 @@ impl ::windows_core::RuntimeType for EasClientDeviceInformation {
 }
 unsafe impl ::windows_core::Interface for EasClientDeviceInformation {
     type Vtable = IEasClientDeviceInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EasClientDeviceInformation {
-    const IID: ::windows_core::GUID = <IEasClientDeviceInformation as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEasClientDeviceInformation as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EasClientDeviceInformation {
     const NAME: &'static str = "Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation";
@@ -264,9 +262,7 @@ impl ::windows_core::RuntimeType for EasClientSecurityPolicy {
 }
 unsafe impl ::windows_core::Interface for EasClientSecurityPolicy {
     type Vtable = IEasClientSecurityPolicy_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EasClientSecurityPolicy {
-    const IID: ::windows_core::GUID = <IEasClientSecurityPolicy as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEasClientSecurityPolicy as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EasClientSecurityPolicy {
     const NAME: &'static str = "Windows.Security.ExchangeActiveSyncProvisioning.EasClientSecurityPolicy";
@@ -340,7 +336,7 @@ impl EasComplianceResults {
         }
     }
     pub fn EncryptionProviderType(&self) -> ::windows_core::Result<EasEncryptionProviderType> {
-        let this = &::windows_core::ComInterface::cast::<IEasComplianceResults2>(self)?;
+        let this = &::windows_core::Interface::cast::<IEasComplianceResults2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).EncryptionProviderType)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -352,9 +348,7 @@ impl ::windows_core::RuntimeType for EasComplianceResults {
 }
 unsafe impl ::windows_core::Interface for EasComplianceResults {
     type Vtable = IEasComplianceResults_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for EasComplianceResults {
-    const IID: ::windows_core::GUID = <IEasComplianceResults as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IEasComplianceResults as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for EasComplianceResults {
     const NAME: &'static str = "Windows.Security.ExchangeActiveSyncProvisioning.EasComplianceResults";

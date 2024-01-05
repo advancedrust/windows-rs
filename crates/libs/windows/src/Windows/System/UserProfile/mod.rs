@@ -311,9 +311,7 @@ impl ::windows_core::RuntimeType for AdvertisingManagerForUser {
 }
 unsafe impl ::windows_core::Interface for AdvertisingManagerForUser {
     type Vtable = IAdvertisingManagerForUser_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AdvertisingManagerForUser {
-    const IID: ::windows_core::GUID = <IAdvertisingManagerForUser as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAdvertisingManagerForUser as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AdvertisingManagerForUser {
     const NAME: &'static str = "Windows.System.UserProfile.AdvertisingManagerForUser";
@@ -372,9 +370,7 @@ impl ::windows_core::RuntimeType for AssignedAccessSettings {
 }
 unsafe impl ::windows_core::Interface for AssignedAccessSettings {
     type Vtable = IAssignedAccessSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AssignedAccessSettings {
-    const IID: ::windows_core::GUID = <IAssignedAccessSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IAssignedAccessSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for AssignedAccessSettings {
     const NAME: &'static str = "Windows.System.UserProfile.AssignedAccessSettings";
@@ -426,9 +422,7 @@ impl ::windows_core::RuntimeType for DiagnosticsSettings {
 }
 unsafe impl ::windows_core::Interface for DiagnosticsSettings {
     type Vtable = IDiagnosticsSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DiagnosticsSettings {
-    const IID: ::windows_core::GUID = <IDiagnosticsSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IDiagnosticsSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for DiagnosticsSettings {
     const NAME: &'static str = "Windows.System.UserProfile.DiagnosticsSettings";
@@ -449,7 +443,7 @@ impl FirstSignInSettings {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn First(&self) -> ::windows_core::Result<super::super::Foundation::Collections::IIterator<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).First)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -458,7 +452,7 @@ impl FirstSignInSettings {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Lookup(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<::windows_core::IInspectable> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Lookup)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -467,7 +461,7 @@ impl FirstSignInSettings {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Size(&self) -> ::windows_core::Result<u32> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).Size)(::windows_core::Interface::as_raw(this), &mut result__).from_abi(result__)
@@ -476,7 +470,7 @@ impl FirstSignInSettings {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn HasKey(&self, key: &::windows_core::HSTRING) -> ::windows_core::Result<bool> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).HasKey)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), &mut result__).from_abi(result__)
@@ -485,7 +479,7 @@ impl FirstSignInSettings {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn Split(&self, first: &mut ::core::option::Option<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>, second: &mut ::core::option::Option<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>) -> ::windows_core::Result<()> {
-        let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
+        let this = &::windows_core::Interface::cast::<super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::IInspectable>>(self)?;
         unsafe { (::windows_core::Interface::vtable(this).Split)(::windows_core::Interface::as_raw(this), first as *mut _ as _, second as *mut _ as _).ok() }
     }
     #[doc(hidden)]
@@ -499,9 +493,7 @@ impl ::windows_core::RuntimeType for FirstSignInSettings {
 }
 unsafe impl ::windows_core::Interface for FirstSignInSettings {
     type Vtable = IFirstSignInSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for FirstSignInSettings {
-    const IID: ::windows_core::GUID = <IFirstSignInSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IFirstSignInSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for FirstSignInSettings {
     const NAME: &'static str = "Windows.System.UserProfile.FirstSignInSettings";
@@ -689,9 +681,7 @@ impl ::windows_core::RuntimeType for GlobalizationPreferencesForUser {
 }
 unsafe impl ::windows_core::Interface for GlobalizationPreferencesForUser {
     type Vtable = IGlobalizationPreferencesForUser_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for GlobalizationPreferencesForUser {
-    const IID: ::windows_core::GUID = <IGlobalizationPreferencesForUser as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IGlobalizationPreferencesForUser as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for GlobalizationPreferencesForUser {
     const NAME: &'static str = "Windows.System.UserProfile.GlobalizationPreferencesForUser";
@@ -969,9 +959,7 @@ impl ::windows_core::RuntimeType for UserProfilePersonalizationSettings {
 }
 unsafe impl ::windows_core::Interface for UserProfilePersonalizationSettings {
     type Vtable = IUserProfilePersonalizationSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for UserProfilePersonalizationSettings {
-    const IID: ::windows_core::GUID = <IUserProfilePersonalizationSettings as ::windows_core::ComInterface>::IID;
+    const IID: ::windows_core::GUID = <IUserProfilePersonalizationSettings as ::windows_core::Interface>::IID;
 }
 impl ::windows_core::RuntimeName for UserProfilePersonalizationSettings {
     const NAME: &'static str = "Windows.System.UserProfile.UserProfilePersonalizationSettings";
