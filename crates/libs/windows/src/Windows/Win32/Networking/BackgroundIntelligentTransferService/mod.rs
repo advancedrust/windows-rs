@@ -42,7 +42,12 @@ pub struct AsyncIBackgroundCopyCallback_Vtbl {
     pub Finish_JobModification: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IBITSExtensionSetup, IBITSExtensionSetup_Vtbl, 0x29cfbbf7_09e4_4b97_b0bc_f2287e3d8eb3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IBITSExtensionSetup,
+    IBITSExtensionSetup_Vtbl,
+    0x29cfbbf7_09e4_4b97_b0bc_f2287e3d8eb3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IBITSExtensionSetup {
     pub unsafe fn EnableBITSUploads(&self) -> ::windows_core::Result<()> {
@@ -73,7 +78,12 @@ pub struct IBITSExtensionSetup_Vtbl {
     pub GetCleanupTask: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IBITSExtensionSetupFactory, IBITSExtensionSetupFactory_Vtbl, 0xd5d2d542_5503_4e64_8b48_72ef91a32ee1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IBITSExtensionSetupFactory,
+    IBITSExtensionSetupFactory_Vtbl,
+    0xd5d2d542_5503_4e64_8b48_72ef91a32ee1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IBITSExtensionSetupFactory {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

@@ -479,7 +479,12 @@ pub struct IPortableDeviceContent2_Vtbl {
     UpdateObjectWithPropertiesAndData: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPortableDeviceDataStream, IPortableDeviceDataStream_Vtbl, 0x88e04db3_1012_4d64_9996_f703a950d3f4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPortableDeviceDataStream,
+    IPortableDeviceDataStream_Vtbl,
+    0x88e04db3_1012_4d64_9996_f703a950d3f4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPortableDeviceDataStream {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1670,7 +1675,12 @@ pub struct IPortableDeviceValuesCollection_Vtbl {
     pub RemoveAt: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwindex: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPortableDeviceWebControl, IPortableDeviceWebControl_Vtbl, 0x94fc7953_5ca1_483a_8aee_df52e7747d00);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPortableDeviceWebControl,
+    IPortableDeviceWebControl_Vtbl,
+    0x94fc7953_5ca1_483a_8aee_df52e7747d00
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPortableDeviceWebControl {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

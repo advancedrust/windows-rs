@@ -1152,7 +1152,12 @@ pub struct IFullContactCardOptions_Vtbl {
     SetDesiredRemainingView: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IKnownContactFieldStatics, IKnownContactFieldStatics_Vtbl, 0x2e0e1b12_d627_4fca_bad4_1faf168c7d14);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IKnownContactFieldStatics,
+    IKnownContactFieldStatics_Vtbl,
+    0x2e0e1b12_d627_4fca_bad4_1faf168c7d14
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

@@ -283,7 +283,12 @@ where
     ::std::mem::transmute(result__)
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWSMan, IWSMan_Vtbl, 0x190d8637_5cd3_496d_ad24_69636bb5a3b5);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWSMan,
+    IWSMan_Vtbl,
+    0x190d8637_5cd3_496d_ad24_69636bb5a3b5
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWSMan {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -330,7 +335,12 @@ pub struct IWSMan_Vtbl {
     pub Error: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWSManConnectionOptions, IWSManConnectionOptions_Vtbl, 0xf704e861_9e52_464f_b786_da5eb2320fdd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWSManConnectionOptions,
+    IWSManConnectionOptions_Vtbl,
+    0xf704e861_9e52_464f_b786_da5eb2320fdd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManConnectionOptions {
     pub unsafe fn UserName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -362,7 +372,12 @@ pub struct IWSManConnectionOptions_Vtbl {
     pub SetPassword: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, password: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWSManConnectionOptionsEx, IWSManConnectionOptionsEx_Vtbl, 0xef43edf7_2a48_4d93_9526_8bd6ab6d4a6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWSManConnectionOptionsEx,
+    IWSManConnectionOptionsEx_Vtbl,
+    0xef43edf7_2a48_4d93_9526_8bd6ab6d4a6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManConnectionOptionsEx {
     pub unsafe fn UserName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -403,7 +418,12 @@ pub struct IWSManConnectionOptionsEx_Vtbl {
     pub SetCertificateThumbprint: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, thumbprint: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWSManConnectionOptionsEx2, IWSManConnectionOptionsEx2_Vtbl, 0xf500c9ec_24ee_48ab_b38d_fc9a164c658e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWSManConnectionOptionsEx2,
+    IWSManConnectionOptionsEx2_Vtbl,
+    0xf500c9ec_24ee_48ab_b38d_fc9a164c658e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManConnectionOptionsEx2 {
     pub unsafe fn UserName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -485,7 +505,12 @@ pub struct IWSManConnectionOptionsEx2_Vtbl {
     pub ProxyAuthenticationUseDigest: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWSManEnumerator, IWSManEnumerator_Vtbl, 0xf3457ca9_abb9_4fa5_b850_90e8ca300e7f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWSManEnumerator,
+    IWSManEnumerator_Vtbl,
+    0xf3457ca9_abb9_4fa5_b850_90e8ca300e7f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManEnumerator {
     pub unsafe fn ReadItem(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -513,7 +538,12 @@ pub struct IWSManEnumerator_Vtbl {
     pub Error: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWSManEx, IWSManEx_Vtbl, 0x2d53bdaa_798e_49e6_a1aa_74d01256f411);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWSManEx,
+    IWSManEx_Vtbl,
+    0x2d53bdaa_798e_49e6_a1aa_74d01256f411
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManEx {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -658,7 +688,12 @@ pub struct IWSManEx_Vtbl {
     pub EnumerationFlagReturnObject: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, flags: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWSManEx2, IWSManEx2_Vtbl, 0x1d1b5ae0_42d9_4021_8261_3987619512e9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWSManEx2,
+    IWSManEx2_Vtbl,
+    0x1d1b5ae0_42d9_4021_8261_3987619512e9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManEx2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -785,7 +820,12 @@ pub struct IWSManEx2_Vtbl {
     pub SessionFlagUseClientCertificate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, flags: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWSManEx3, IWSManEx3_Vtbl, 0x6400e966_011d_4eac_8474_049e0848afad);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWSManEx3,
+    IWSManEx3_Vtbl,
+    0x6400e966_011d_4eac_8474_049e0848afad
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManEx3 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -946,7 +986,12 @@ pub struct IWSManEx3_Vtbl {
     pub SessionFlagUseSsl: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, flags: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWSManInternal, IWSManInternal_Vtbl, 0x04ae2b1d_9954_4d99_94a9_a961e72c3a13);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWSManInternal,
+    IWSManInternal_Vtbl,
+    0x04ae2b1d_9954_4d99_94a9_a961e72c3a13
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManInternal {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -972,7 +1017,12 @@ pub struct IWSManInternal_Vtbl {
     ConfigSDDL: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWSManResourceLocator, IWSManResourceLocator_Vtbl, 0xa7a1ba28_de41_466a_ad0a_c4059ead7428);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWSManResourceLocator,
+    IWSManResourceLocator_Vtbl,
+    0xa7a1ba28_de41_466a_ad0a_c4059ead7428
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManResourceLocator {
     pub unsafe fn SetResourceURI<P0>(&self, uri: P0) -> ::windows_core::Result<()>
@@ -1079,7 +1129,12 @@ pub struct IWSManResourceLocatorInternal_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWSManSession, IWSManSession_Vtbl, 0xfc84fc58_1286_40c4_9da0_c8ef6ec241e0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWSManSession,
+    IWSManSession_Vtbl,
+    0xfc84fc58_1286_40c4_9da0_c8ef6ec241e0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWSManSession {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]

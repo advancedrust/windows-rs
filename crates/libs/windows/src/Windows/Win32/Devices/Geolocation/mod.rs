@@ -57,7 +57,12 @@ pub struct ICivicAddressReport_Vtbl {
     pub GetDetailLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdetaillevel: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICivicAddressReportFactory, ICivicAddressReportFactory_Vtbl, 0xbf773b93_c64f_4bee_beb2_67c0b8df66e0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICivicAddressReportFactory,
+    ICivicAddressReportFactory_Vtbl,
+    0xbf773b93_c64f_4bee_beb2_67c0b8df66e0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICivicAddressReportFactory {
     pub unsafe fn ListenForReports(&self, requestedreportinterval: u32) -> ::windows_core::Result<()> {
@@ -128,7 +133,12 @@ pub struct IDefaultLocation_Vtbl {
     pub GetReport: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reporttype: *const ::windows_core::GUID, pplocationreport: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDispCivicAddressReport, IDispCivicAddressReport_Vtbl, 0x16ff1a34_9e30_42c3_b44d_e22513b5767a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDispCivicAddressReport,
+    IDispCivicAddressReport_Vtbl,
+    0x16ff1a34_9e30_42c3_b44d_e22513b5767a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDispCivicAddressReport {
     pub unsafe fn AddressLine1(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -181,7 +191,12 @@ pub struct IDispCivicAddressReport_Vtbl {
     pub Timestamp: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pval: *mut f64) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDispLatLongReport, IDispLatLongReport_Vtbl, 0x8ae32723_389b_4a11_9957_5bdd48fc9617);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDispLatLongReport,
+    IDispLatLongReport_Vtbl,
+    0x8ae32723_389b_4a11_9957_5bdd48fc9617
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDispLatLongReport {
     pub unsafe fn Latitude(&self) -> ::windows_core::Result<f64> {
@@ -272,7 +287,12 @@ pub struct ILatLongReport_Vtbl {
     pub GetAltitudeError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, paltitudeerror: *mut f64) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ILatLongReportFactory, ILatLongReportFactory_Vtbl, 0x3f0804cb_b114_447d_83dd_390174ebb082);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ILatLongReportFactory,
+    ILatLongReportFactory_Vtbl,
+    0x3f0804cb_b114_447d_83dd_390174ebb082
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ILatLongReportFactory {
     pub unsafe fn ListenForReports(&self, requestedreportinterval: u32) -> ::windows_core::Result<()> {
@@ -454,7 +474,12 @@ pub struct ILocationReport_Vtbl {
     GetValue: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ILocationReportFactory, ILocationReportFactory_Vtbl, 0x2daec322_90b2_47e4_bb08_0da841935a6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ILocationReportFactory,
+    ILocationReportFactory_Vtbl,
+    0x2daec322_90b2_47e4_bb08_0da841935a6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ILocationReportFactory {
     pub unsafe fn ListenForReports(&self, requestedreportinterval: u32) -> ::windows_core::Result<()> {
@@ -502,7 +527,12 @@ pub struct ILocationReportFactory_Vtbl {
     pub RequestPermissions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, hwnd: *const u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_ICivicAddressReportFactoryEvents, _ICivicAddressReportFactoryEvents_Vtbl, 0xc96039ff_72ec_4617_89bd_84d88bedc722);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _ICivicAddressReportFactoryEvents,
+    _ICivicAddressReportFactoryEvents_Vtbl,
+    0xc96039ff_72ec_4617_89bd_84d88bedc722
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _ICivicAddressReportFactoryEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -514,7 +544,12 @@ pub struct _ICivicAddressReportFactoryEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_ILatLongReportFactoryEvents, _ILatLongReportFactoryEvents_Vtbl, 0x16ee6cb7_ab3c_424b_849f_269be551fcbc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _ILatLongReportFactoryEvents,
+    _ILatLongReportFactoryEvents_Vtbl,
+    0x16ee6cb7_ab3c_424b_849f_269be551fcbc
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _ILatLongReportFactoryEvents {}
 #[cfg(feature = "Win32_System_Com")]

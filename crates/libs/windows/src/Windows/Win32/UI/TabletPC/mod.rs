@@ -389,7 +389,12 @@ pub struct IHandwrittenTextInsertion_Vtbl {
     InsertInkRecognitionResult: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInk, IInk_Vtbl, 0x03f8e511_43a1_11d3_8bb6_0080c7d6bad5);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInk,
+    IInk_Vtbl,
+    0x03f8e511_43a1_11d3_8bb6_0080c7d6bad5
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInk {}
 #[cfg(feature = "Win32_System_Com")]
@@ -401,7 +406,12 @@ pub struct IInk_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkCollector, IInkCollector_Vtbl, 0xf0f060b5_8b1f_4a7c_89ec_880692588a4f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkCollector,
+    IInkCollector_Vtbl,
+    0xf0f060b5_8b1f_4a7c_89ec_880692588a4f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkCollector {
     pub unsafe fn hWnd(&self) -> ::windows_core::Result<isize> {
@@ -715,7 +725,12 @@ pub struct IInkCollector_Vtbl {
     pub SetEventInterest: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, eventid: InkCollectorEventInterest, listen: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkCursor, IInkCursor_Vtbl, 0xad30c630_40c5_4350_8405_9c71012fc558);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkCursor,
+    IInkCursor_Vtbl,
+    0xad30c630_40c5_4350_8405_9c71012fc558
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkCursor {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -785,7 +800,12 @@ pub struct IInkCursor_Vtbl {
     Buttons: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkCursorButton, IInkCursorButton_Vtbl, 0x85ef9417_1d59_49b2_a13c_702c85430894);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkCursorButton,
+    IInkCursorButton_Vtbl,
+    0x85ef9417_1d59_49b2_a13c_702c85430894
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkCursorButton {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -813,7 +833,12 @@ pub struct IInkCursorButton_Vtbl {
     pub State: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, currentstate: *mut InkCursorButtonState) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkCursorButtons, IInkCursorButtons_Vtbl, 0x3671cc40_b624_4671_9fa0_db119d952d54);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkCursorButtons,
+    IInkCursorButtons_Vtbl,
+    0x3671cc40_b624_4671_9fa0_db119d952d54
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkCursorButtons {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -846,7 +871,12 @@ pub struct IInkCursorButtons_Vtbl {
     Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkCursors, IInkCursors_Vtbl, 0xa248c1ac_c698_4e06_9e5c_d57f77c7e647);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkCursors,
+    IInkCursors_Vtbl,
+    0xa248c1ac_c698_4e06_9e5c_d57f77c7e647
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkCursors {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -879,7 +909,12 @@ pub struct IInkCursors_Vtbl {
     Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkCustomStrokes, IInkCustomStrokes_Vtbl, 0x7e23a88f_c30e_420f_9bdb_28902543f0c1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkCustomStrokes,
+    IInkCustomStrokes_Vtbl,
+    0x7e23a88f_c30e_420f_9bdb_28902543f0c1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkCustomStrokes {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -938,7 +973,12 @@ pub struct IInkCustomStrokes_Vtbl {
     pub Clear: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkDisp, IInkDisp_Vtbl, 0x9d398fa0_c4e2_4fcd_9973_975caaf47ea6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkDisp,
+    IInkDisp_Vtbl,
+    0x9d398fa0_c4e2_4fcd_9973_975caaf47ea6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkDisp {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1220,7 +1260,12 @@ pub struct IInkDisp_Vtbl {
     ClipboardPaste: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkDivider, IInkDivider_Vtbl, 0x5de00405_f9a4_4651_b0c5_c317defd58b9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkDivider,
+    IInkDivider_Vtbl,
+    0x5de00405_f9a4_4651_b0c5_c317defd58b9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkDivider {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1296,7 +1341,12 @@ pub struct IInkDivider_Vtbl {
     Divide: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkDivisionResult, IInkDivisionResult_Vtbl, 0x2dbec0a7_74c7_4b38_81eb_aa8ef0c24900);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkDivisionResult,
+    IInkDivisionResult_Vtbl,
+    0x2dbec0a7_74c7_4b38_81eb_aa8ef0c24900
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkDivisionResult {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1329,7 +1379,12 @@ pub struct IInkDivisionResult_Vtbl {
     ResultByType: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkDivisionUnit, IInkDivisionUnit_Vtbl, 0x85aee342_48b0_4244_9dd5_1ed435410fab);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkDivisionUnit,
+    IInkDivisionUnit_Vtbl,
+    0x85aee342_48b0_4244_9dd5_1ed435410fab
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkDivisionUnit {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1372,7 +1427,12 @@ pub struct IInkDivisionUnit_Vtbl {
     RotationTransform: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkDivisionUnits, IInkDivisionUnits_Vtbl, 0x1bb5ddc2_31cc_4135_ab82_2c66c9f00c41);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkDivisionUnits,
+    IInkDivisionUnits_Vtbl,
+    0x1bb5ddc2_31cc_4135_ab82_2c66c9f00c41
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkDivisionUnits {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -1405,7 +1465,12 @@ pub struct IInkDivisionUnits_Vtbl {
     Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkDrawingAttributes, IInkDrawingAttributes_Vtbl, 0xbf519b75_0a15_4623_adc9_c00d436a8092);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkDrawingAttributes,
+    IInkDrawingAttributes_Vtbl,
+    0xbf519b75_0a15_4623_adc9_c00d436a8092
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkDrawingAttributes {
     pub unsafe fn Color(&self) -> ::windows_core::Result<i32> {
@@ -1528,7 +1593,12 @@ pub struct IInkDrawingAttributes_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkEdit, IInkEdit_Vtbl, 0xf2127a19_fbfb_4aed_8464_3f36d78cfefb);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkEdit,
+    IInkEdit_Vtbl,
+    0xf2127a19_fbfb_4aed_8464_3f36d78cfefb
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkEdit {
     pub unsafe fn Status(&self) -> ::windows_core::Result<InkEditStatus> {
@@ -2075,7 +2145,12 @@ pub struct IInkEdit_Vtbl {
     pub Refresh: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkExtendedProperties, IInkExtendedProperties_Vtbl, 0x89f2a8be_95a9_4530_8b8f_88e971e3e25f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkExtendedProperties,
+    IInkExtendedProperties_Vtbl,
+    0x89f2a8be_95a9_4530_8b8f_88e971e3e25f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkExtendedProperties {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -2142,7 +2217,12 @@ pub struct IInkExtendedProperties_Vtbl {
     pub DoesPropertyExist: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, guid: ::std::mem::MaybeUninit<::windows_core::BSTR>, doespropertyexist: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkExtendedProperty, IInkExtendedProperty_Vtbl, 0xdb489209_b7c3_411d_90f6_1548cfff271e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkExtendedProperty,
+    IInkExtendedProperty_Vtbl,
+    0xdb489209_b7c3_411d_90f6_1548cfff271e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkExtendedProperty {
     pub unsafe fn Guid(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2179,7 +2259,12 @@ pub struct IInkExtendedProperty_Vtbl {
     SetData: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkGesture, IInkGesture_Vtbl, 0x3bdc0a97_04e5_4e26_b813_18f052d41def);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkGesture,
+    IInkGesture_Vtbl,
+    0x3bdc0a97_04e5_4e26_b813_18f052d41def
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkGesture {
     pub unsafe fn Confidence(&self) -> ::windows_core::Result<InkRecognitionConfidence> {
@@ -2245,7 +2330,12 @@ pub struct IInkLineInfo_Vtbl {
     pub Recognize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkOverlay, IInkOverlay_Vtbl, 0xb82a463b_c1c5_45a3_997c_deab5651b67a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkOverlay,
+    IInkOverlay_Vtbl,
+    0xb82a463b_c1c5_45a3_997c_deab5651b67a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkOverlay {
     pub unsafe fn hWnd(&self) -> ::windows_core::Result<isize> {
@@ -2646,7 +2736,12 @@ pub struct IInkOverlay_Vtbl {
     pub SetEventInterest: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, eventid: InkCollectorEventInterest, listen: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkPicture, IInkPicture_Vtbl, 0xe85662e0_379a_40d7_9b5c_757d233f9923);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkPicture,
+    IInkPicture_Vtbl,
+    0xe85662e0_379a_40d7_9b5c_757d233f9923
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkPicture {
     pub unsafe fn hWnd(&self) -> ::windows_core::Result<isize> {
@@ -3086,7 +3181,12 @@ pub struct IInkPicture_Vtbl {
     pub SetEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, vbool: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkRecognitionAlternate, IInkRecognitionAlternate_Vtbl, 0xb7e660ad_77e4_429b_adda_873780d1fc4a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkRecognitionAlternate,
+    IInkRecognitionAlternate_Vtbl,
+    0xb7e660ad_77e4_429b_adda_873780d1fc4a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognitionAlternate {
     pub unsafe fn String(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3244,7 +3344,12 @@ pub struct IInkRecognitionAlternate_Vtbl {
     GetPropertyValue: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkRecognitionAlternates, IInkRecognitionAlternates_Vtbl, 0x286a167f_9f19_4c61_9d53_4f07be622b84);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkRecognitionAlternates,
+    IInkRecognitionAlternates_Vtbl,
+    0x286a167f_9f19_4c61_9d53_4f07be622b84
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognitionAlternates {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3287,7 +3392,12 @@ pub struct IInkRecognitionAlternates_Vtbl {
     Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkRecognitionResult, IInkRecognitionResult_Vtbl, 0x3bc129a8_86cd_45ad_bde8_e0d32d61c16d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkRecognitionResult,
+    IInkRecognitionResult_Vtbl,
+    0x3bc129a8_86cd_45ad_bde8_e0d32d61c16d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognitionResult {
     pub unsafe fn TopString(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3356,7 +3466,12 @@ pub struct IInkRecognitionResult_Vtbl {
     pub SetResultOnStrokes: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkRecognizer, IInkRecognizer_Vtbl, 0x782bf7cf_034b_4396_8a32_3a1833cf6b56);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkRecognizer,
+    IInkRecognizer_Vtbl,
+    0x782bf7cf_034b_4396_8a32_3a1833cf6b56
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognizer {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3424,7 +3539,12 @@ pub struct IInkRecognizer_Vtbl {
     CreateRecognizerContext: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkRecognizer2, IInkRecognizer2_Vtbl, 0x6110118a_3a75_4ad6_b2aa_04b2b72bbe65);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkRecognizer2,
+    IInkRecognizer2_Vtbl,
+    0x6110118a_3a75_4ad6_b2aa_04b2b72bbe65
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognizer2 {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3452,7 +3572,12 @@ pub struct IInkRecognizer2_Vtbl {
     UnicodeRanges: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkRecognizerContext, IInkRecognizerContext_Vtbl, 0xc68f52f9_32a3_4625_906c_44fc23b40958);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkRecognizerContext,
+    IInkRecognizerContext_Vtbl,
+    0xc68f52f9_32a3_4625_906c_44fc23b40958
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognizerContext {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3648,7 +3773,12 @@ pub struct IInkRecognizerContext_Vtbl {
     pub IsStringSupported: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, string: ::std::mem::MaybeUninit<::windows_core::BSTR>, supported: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkRecognizerContext2, IInkRecognizerContext2_Vtbl, 0xd6f0e32f_73d8_408e_8e9f_5fea592c363f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkRecognizerContext2,
+    IInkRecognizerContext2_Vtbl,
+    0xd6f0e32f_73d8_408e_8e9f_5fea592c363f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognizerContext2 {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -3680,7 +3810,12 @@ pub struct IInkRecognizerContext2_Vtbl {
     SetEnabledUnicodeRanges: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkRecognizerGuide, IInkRecognizerGuide_Vtbl, 0xd934be07_7b84_4208_9136_83c20994e905);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkRecognizerGuide,
+    IInkRecognizerGuide_Vtbl,
+    0xd934be07_7b84_4208_9136_83c20994e905
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognizerGuide {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3772,7 +3907,12 @@ pub struct IInkRecognizerGuide_Vtbl {
     pub SetGuideData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, recoguide: InkRecoGuide) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkRecognizers, IInkRecognizers_Vtbl, 0x9ccc4f12_b0b7_4a8b_bf58_4aeca4e8cefd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkRecognizers,
+    IInkRecognizers_Vtbl,
+    0x9ccc4f12_b0b7_4a8b_bf58_4aeca4e8cefd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRecognizers {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3815,7 +3955,12 @@ pub struct IInkRecognizers_Vtbl {
     Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkRectangle, IInkRectangle_Vtbl, 0x9794ff82_6071_4717_8a8b_6ac7c64a686e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkRectangle,
+    IInkRectangle_Vtbl,
+    0x9794ff82_6071_4717_8a8b_6ac7c64a686e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRectangle {
     pub unsafe fn Top(&self) -> ::windows_core::Result<i32> {
@@ -3881,7 +4026,12 @@ pub struct IInkRectangle_Vtbl {
     pub SetRectangle: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, top: i32, left: i32, bottom: i32, right: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkRenderer, IInkRenderer_Vtbl, 0xe6257a9c_b511_4f4c_a8b0_a7dbc9506b83);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkRenderer,
+    IInkRenderer_Vtbl,
+    0xe6257a9c_b511_4f4c_a8b0_a7dbc9506b83
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkRenderer {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4035,7 +4185,12 @@ pub struct IInkRenderer_Vtbl {
     pub ScaleTransform: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, horizontalmultiplier: f32, verticalmultiplier: f32, applyonpenwidth: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkStrokeDisp, IInkStrokeDisp_Vtbl, 0x43242fea_91d1_4a72_963e_fbb91829cfa2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkStrokeDisp,
+    IInkStrokeDisp_Vtbl,
+    0x43242fea_91d1_4a72_963e_fbb91829cfa2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkStrokeDisp {
     pub unsafe fn ID(&self) -> ::windows_core::Result<i32> {
@@ -4341,7 +4496,12 @@ pub struct IInkStrokeDisp_Vtbl {
     pub ScaleTransform: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, horizontalmultiplier: f32, verticalmultiplier: f32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkStrokes, IInkStrokes_Vtbl, 0xf1f4c9d8_590a_4963_b3ae_1935671bb6f3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkStrokes,
+    IInkStrokes_Vtbl,
+    0xf1f4c9d8_590a_4963_b3ae_1935671bb6f3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkStrokes {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4526,7 +4686,12 @@ pub struct IInkStrokes_Vtbl {
     pub RemoveRecognitionResult: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkTablet, IInkTablet_Vtbl, 0x2de25eaa_6ef8_42d5_aee9_185bc81b912d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkTablet,
+    IInkTablet_Vtbl,
+    0x2de25eaa_6ef8_42d5_aee9_185bc81b912d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkTablet {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4579,7 +4744,12 @@ pub struct IInkTablet_Vtbl {
     pub GetPropertyMetrics: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, propertyname: ::std::mem::MaybeUninit<::windows_core::BSTR>, minimum: *mut i32, maximum: *mut i32, units: *mut TabletPropertyMetricUnit, resolution: *mut f32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkTablet2, IInkTablet2_Vtbl, 0x90c91ad2_fa36_49d6_9516_ce8d570f6f85);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkTablet2,
+    IInkTablet2_Vtbl,
+    0x90c91ad2_fa36_49d6_9516_ce8d570f6f85
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkTablet2 {
     pub unsafe fn DeviceKind(&self) -> ::windows_core::Result<TabletDeviceKind> {
@@ -4597,7 +4767,12 @@ pub struct IInkTablet2_Vtbl {
     pub DeviceKind: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, kind: *mut TabletDeviceKind) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkTablet3, IInkTablet3_Vtbl, 0x7e313997_1327_41dd_8ca9_79f24be17250);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkTablet3,
+    IInkTablet3_Vtbl,
+    0x7e313997_1327_41dd_8ca9_79f24be17250
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkTablet3 {
     pub unsafe fn IsMultiTouch(&self) -> ::windows_core::Result<super::super::Foundation::VARIANT_BOOL> {
@@ -4620,7 +4795,12 @@ pub struct IInkTablet3_Vtbl {
     pub MaximumCursors: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pmaximumcursors: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkTablets, IInkTablets_Vtbl, 0x112086d9_7779_4535_a699_862b43ac1863);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkTablets,
+    IInkTablets_Vtbl,
+    0x112086d9_7779_4535_a699_862b43ac1863
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkTablets {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4671,7 +4851,12 @@ pub struct IInkTablets_Vtbl {
     pub IsPacketPropertySupported: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, packetpropertyname: ::std::mem::MaybeUninit<::windows_core::BSTR>, supported: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkTransform, IInkTransform_Vtbl, 0x615f1d43_8703_4565_88e2_8201d2ecd7b7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkTransform,
+    IInkTransform_Vtbl,
+    0x615f1d43_8703_4565_88e2_8201d2ecd7b7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkTransform {
     pub unsafe fn Reset(&self) -> ::windows_core::Result<()> {
@@ -4792,7 +4977,12 @@ pub struct IInkTransform_Vtbl {
     SetData: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkWordList, IInkWordList_Vtbl, 0x76ba3491_cb2f_406b_9961_0e0c4cdaaef2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkWordList,
+    IInkWordList_Vtbl,
+    0x76ba3491_cb2f_406b_9961_0e0c4cdaaef2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkWordList {
     pub unsafe fn AddWord<P0>(&self, newword: P0) -> ::windows_core::Result<()>
@@ -4831,7 +5021,12 @@ pub struct IInkWordList_Vtbl {
     Merge: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IInkWordList2, IInkWordList2_Vtbl, 0x14542586_11bf_4f5f_b6e7_49d0744aab6e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IInkWordList2,
+    IInkWordList2_Vtbl,
+    0x14542586_11bf_4f5f_b6e7_49d0744aab6e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IInkWordList2 {
     pub unsafe fn AddWords<P0>(&self, newwords: P0) -> ::windows_core::Result<()>
@@ -4878,7 +5073,12 @@ pub struct IInputPanelWindowHandle_Vtbl {
     pub SetAttachedEditWindow64: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, attachededitwindow: i64) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMathInputControl, IMathInputControl_Vtbl, 0xeba615aa_fac6_4738_ba5f_ff09e9fe473e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMathInputControl,
+    IMathInputControl_Vtbl,
+    0xeba615aa_fac6_4738_ba5f_ff09e9fe473e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMathInputControl {
     pub unsafe fn Show(&self) -> ::windows_core::Result<()> {
@@ -4993,7 +5193,12 @@ pub struct IMathInputControl_Vtbl {
     GetHoverIcon: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPenInputPanel, IPenInputPanel_Vtbl, 0xfa7a4083_5747_4040_a182_0b0e9fd4fac7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPenInputPanel,
+    IPenInputPanel_Vtbl,
+    0xfa7a4083_5747_4040_a182_0b0e9fd4fac7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPenInputPanel {
     pub unsafe fn Busy(&self) -> ::windows_core::Result<super::super::Foundation::VARIANT_BOOL> {
@@ -5390,7 +5595,12 @@ pub struct IRealTimeStylusSynchronization_Vtbl {
     pub ReleaseLock: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, lock: RealTimeStylusLockType) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISketchInk, ISketchInk_Vtbl, 0xb4563688_98eb_4646_b279_44da14d45748);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISketchInk,
+    ISketchInk_Vtbl,
+    0xb4563688_98eb_4646_b279_44da14d45748
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISketchInk {}
 #[cfg(feature = "Win32_System_Com")]
@@ -6116,7 +6326,12 @@ pub struct ITipAutoCompleteProvider_Vtbl {
     pub Show: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, fshow: super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_IInkCollectorEvents, _IInkCollectorEvents_Vtbl, 0x11a583f2_712d_4fea_abcf_ab4af38ea06b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _IInkCollectorEvents,
+    _IInkCollectorEvents_Vtbl,
+    0x11a583f2_712d_4fea_abcf_ab4af38ea06b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkCollectorEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -6128,7 +6343,12 @@ pub struct _IInkCollectorEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_IInkEditEvents, _IInkEditEvents_Vtbl, 0xe3b0b797_a72e_46db_a0d7_6c9eba8e9bbc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _IInkEditEvents,
+    _IInkEditEvents_Vtbl,
+    0xe3b0b797_a72e_46db_a0d7_6c9eba8e9bbc
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkEditEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -6140,7 +6360,12 @@ pub struct _IInkEditEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_IInkEvents, _IInkEvents_Vtbl, 0x427b1865_ca3f_479a_83a9_0f420f2a0073);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _IInkEvents,
+    _IInkEvents_Vtbl,
+    0x427b1865_ca3f_479a_83a9_0f420f2a0073
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -6152,7 +6377,12 @@ pub struct _IInkEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_IInkOverlayEvents, _IInkOverlayEvents_Vtbl, 0x31179b69_e563_489e_b16f_712f1e8a0651);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _IInkOverlayEvents,
+    _IInkOverlayEvents_Vtbl,
+    0x31179b69_e563_489e_b16f_712f1e8a0651
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkOverlayEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -6164,7 +6394,12 @@ pub struct _IInkOverlayEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_IInkPictureEvents, _IInkPictureEvents_Vtbl, 0x60ff4fee_22ff_4484_acc1_d308d9cd7ea3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _IInkPictureEvents,
+    _IInkPictureEvents_Vtbl,
+    0x60ff4fee_22ff_4484_acc1_d308d9cd7ea3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkPictureEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -6176,7 +6411,12 @@ pub struct _IInkPictureEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_IInkRecognitionEvents, _IInkRecognitionEvents_Vtbl, 0x17bce92f_2e21_47fd_9d33_3c6afbfd8c59);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _IInkRecognitionEvents,
+    _IInkRecognitionEvents_Vtbl,
+    0x17bce92f_2e21_47fd_9d33_3c6afbfd8c59
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkRecognitionEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -6188,7 +6428,12 @@ pub struct _IInkRecognitionEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_IInkStrokesEvents, _IInkStrokesEvents_Vtbl, 0xf33053ec_5d25_430a_928f_76a6491dde15);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _IInkStrokesEvents,
+    _IInkStrokesEvents_Vtbl,
+    0xf33053ec_5d25_430a_928f_76a6491dde15
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _IInkStrokesEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -6200,7 +6445,12 @@ pub struct _IInkStrokesEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_IMathInputControlEvents, _IMathInputControlEvents_Vtbl, 0x683336b5_a47d_4358_96f9_875a472ae70a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _IMathInputControlEvents,
+    _IMathInputControlEvents_Vtbl,
+    0x683336b5_a47d_4358_96f9_875a472ae70a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _IMathInputControlEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -6212,7 +6462,12 @@ pub struct _IMathInputControlEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_IPenInputPanelEvents, _IPenInputPanelEvents_Vtbl, 0xb7e489da_3719_439f_848f_e7acbd820f17);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _IPenInputPanelEvents,
+    _IPenInputPanelEvents_Vtbl,
+    0xb7e489da_3719_439f_848f_e7acbd820f17
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _IPenInputPanelEvents {}
 #[cfg(feature = "Win32_System_Com")]

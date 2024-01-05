@@ -1,5 +1,10 @@
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMXAttributes, IMXAttributes_Vtbl, 0xf10d27cc_3ec0_415c_8ed8_77ab1c5e7262);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMXAttributes,
+    IMXAttributes_Vtbl,
+    0xf10d27cc_3ec0_415c_8ed8_77ab1c5e7262
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMXAttributes {
     pub unsafe fn addAttribute<P0, P1, P2, P3, P4>(&self, struri: P0, strlocalname: P1, strqname: P2, strtype: P3, strvalue: P4) -> ::windows_core::Result<()>
@@ -173,7 +178,12 @@ pub struct IMXNamespaceManager_Vtbl {
     getURI: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMXNamespacePrefixes, IMXNamespacePrefixes_Vtbl, 0xc90352f4_643c_4fbc_bb23_e996eb2d51fd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMXNamespacePrefixes,
+    IMXNamespacePrefixes_Vtbl,
+    0xc90352f4_643c_4fbc_bb23_e996eb2d51fd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMXNamespacePrefixes {
     pub unsafe fn get_item(&self, index: i32) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -201,7 +211,12 @@ pub struct IMXNamespacePrefixes_Vtbl {
     pub _newEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMXReaderControl, IMXReaderControl_Vtbl, 0x808f4e35_8d5a_4fbe_8466_33a41279ed30);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMXReaderControl,
+    IMXReaderControl_Vtbl,
+    0x808f4e35_8d5a_4fbe_8466_33a41279ed30
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMXReaderControl {
     pub unsafe fn abort(&self) -> ::windows_core::Result<()> {
@@ -226,7 +241,12 @@ pub struct IMXReaderControl_Vtbl {
     pub suspend: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMXSchemaDeclHandler, IMXSchemaDeclHandler_Vtbl, 0xfa4bb38c_faf9_4cca_9302_d1dd0fe520db);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMXSchemaDeclHandler,
+    IMXSchemaDeclHandler_Vtbl,
+    0xfa4bb38c_faf9_4cca_9302_d1dd0fe520db
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMXSchemaDeclHandler {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -251,7 +271,12 @@ pub struct IMXSchemaDeclHandler_Vtbl {
     schemaElementDecl: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMXWriter, IMXWriter_Vtbl, 0x4d7ff4ba_1565_4ea8_94e1_6e724a46f98d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMXWriter,
+    IMXWriter_Vtbl,
+    0x4d7ff4ba_1565_4ea8_94e1_6e724a46f98d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMXWriter {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -371,7 +396,12 @@ pub struct IMXWriter_Vtbl {
     pub flush: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMXXMLFilter, IMXXMLFilter_Vtbl, 0xc90352f7_643c_4fbc_bb23_e996eb2d51fd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMXXMLFilter,
+    IMXXMLFilter_Vtbl,
+    0xc90352f7_643c_4fbc_bb23_e996eb2d51fd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMXXMLFilter {
     pub unsafe fn getFeature<P0>(&self, strname: P0) -> ::windows_core::Result<super::super::super::Foundation::VARIANT_BOOL>
@@ -1115,7 +1145,12 @@ pub struct ISAXXMLReader_Vtbl {
     pub parseURL: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pwchurl: ::windows_core::PCWSTR) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchema, ISchema_Vtbl, 0x50ea08b4_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchema,
+    ISchema_Vtbl,
+    0x50ea08b4_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchema {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1243,7 +1278,12 @@ pub struct ISchema_Vtbl {
     schemaLocations: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaAny, ISchemaAny_Vtbl, 0x50ea08bc_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaAny,
+    ISchemaAny_Vtbl,
+    0x50ea08bc_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaAny {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1318,7 +1358,12 @@ pub struct ISchemaAny_Vtbl {
     pub processContents: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, processcontents: *mut SCHEMAPROCESSCONTENTS) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaAttribute, ISchemaAttribute_Vtbl, 0x50ea08b6_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaAttribute,
+    ISchemaAttribute_Vtbl,
+    0x50ea08b6_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaAttribute {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1406,7 +1451,12 @@ pub struct ISchemaAttribute_Vtbl {
     pub isReference: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reference: *mut super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaAttributeGroup, ISchemaAttributeGroup_Vtbl, 0x50ea08ba_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaAttributeGroup,
+    ISchemaAttributeGroup_Vtbl,
+    0x50ea08ba_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaAttributeGroup {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1474,7 +1524,12 @@ pub struct ISchemaAttributeGroup_Vtbl {
     attributes: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaComplexType, ISchemaComplexType_Vtbl, 0x50ea08b9_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaComplexType,
+    ISchemaComplexType_Vtbl,
+    0x50ea08b9_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaComplexType {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1654,7 +1709,12 @@ pub struct ISchemaComplexType_Vtbl {
     pub prohibitedSubstitutions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, prohibited: *mut SCHEMADERIVATIONMETHOD) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaElement, ISchemaElement_Vtbl, 0x50ea08b7_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaElement,
+    ISchemaElement_Vtbl,
+    0x50ea08b7_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaElement {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1789,7 +1849,12 @@ pub struct ISchemaElement_Vtbl {
     pub isReference: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reference: *mut super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaIdentityConstraint, ISchemaIdentityConstraint_Vtbl, 0x50ea08bd_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaIdentityConstraint,
+    ISchemaIdentityConstraint_Vtbl,
+    0x50ea08bd_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaIdentityConstraint {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1862,7 +1927,12 @@ pub struct ISchemaIdentityConstraint_Vtbl {
     referencedKey: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaItem, ISchemaItem_Vtbl, 0x50ea08b3_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaItem,
+    ISchemaItem_Vtbl,
+    0x50ea08b3_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaItem {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1923,7 +1993,12 @@ pub struct ISchemaItem_Vtbl {
     pub writeAnnotation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, annotationsink: *mut ::core::ffi::c_void, iswritten: *mut super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaItemCollection, ISchemaItemCollection_Vtbl, 0x50ea08b2_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaItemCollection,
+    ISchemaItemCollection_Vtbl,
+    0x50ea08b2_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaItemCollection {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1983,7 +2058,12 @@ pub struct ISchemaItemCollection_Vtbl {
     pub _newEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaModelGroup, ISchemaModelGroup_Vtbl, 0x50ea08bb_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaModelGroup,
+    ISchemaModelGroup_Vtbl,
+    0x50ea08bb_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaModelGroup {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2053,7 +2133,12 @@ pub struct ISchemaModelGroup_Vtbl {
     particles: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaNotation, ISchemaNotation_Vtbl, 0x50ea08be_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaNotation,
+    ISchemaNotation_Vtbl,
+    0x50ea08be_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaNotation {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2111,7 +2196,12 @@ pub struct ISchemaNotation_Vtbl {
     pub publicIdentifier: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, uri: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaParticle, ISchemaParticle_Vtbl, 0x50ea08b5_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaParticle,
+    ISchemaParticle_Vtbl,
+    0x50ea08b5_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaParticle {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2179,7 +2269,12 @@ pub struct ISchemaParticle_Vtbl {
     maxOccurs: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaStringCollection, ISchemaStringCollection_Vtbl, 0x50ea08b1_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaStringCollection,
+    ISchemaStringCollection_Vtbl,
+    0x50ea08b1_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaStringCollection {
     pub unsafe fn get_item(&self, index: i32) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2207,7 +2302,12 @@ pub struct ISchemaStringCollection_Vtbl {
     pub _newEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchemaType, ISchemaType_Vtbl, 0x50ea08b8_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchemaType,
+    ISchemaType_Vtbl,
+    0x50ea08b8_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchemaType {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2383,7 +2483,12 @@ pub struct ISchemaType_Vtbl {
     patterns: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IServerXMLHTTPRequest, IServerXMLHTTPRequest_Vtbl, 0x2e9196bf_13ba_4dd4_91ca_6c571f281495);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IServerXMLHTTPRequest,
+    IServerXMLHTTPRequest_Vtbl,
+    0x2e9196bf_13ba_4dd4_91ca_6c571f281495
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IServerXMLHTTPRequest {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -2506,7 +2611,12 @@ pub struct IServerXMLHTTPRequest_Vtbl {
     setOption: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IServerXMLHTTPRequest2, IServerXMLHTTPRequest2_Vtbl, 0x2e01311b_c322_4b0a_bd77_b90cfdc8dce7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IServerXMLHTTPRequest2,
+    IServerXMLHTTPRequest2_Vtbl,
+    0x2e01311b_c322_4b0a_bd77_b90cfdc8dce7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IServerXMLHTTPRequest2 {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -2633,7 +2743,12 @@ pub struct IServerXMLHTTPRequest2_Vtbl {
     pub setProxyCredentials: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrusername: ::std::mem::MaybeUninit<::windows_core::BSTR>, bstrpassword: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IVBMXNamespaceManager, IVBMXNamespaceManager_Vtbl, 0xc90352f5_643c_4fbc_bb23_e996eb2d51fd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IVBMXNamespaceManager,
+    IVBMXNamespaceManager_Vtbl,
+    0xc90352f5_643c_4fbc_bb23_e996eb2d51fd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IVBMXNamespaceManager {
     pub unsafe fn SetallowOverride<P0>(&self, foverride: P0) -> ::windows_core::Result<()>
@@ -2741,7 +2856,12 @@ pub struct IVBMXNamespaceManager_Vtbl {
     getURIFromNode: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IVBSAXAttributes, IVBSAXAttributes_Vtbl, 0x10dc0586_132b_4cac_8bb3_db00ac8b7ee0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IVBSAXAttributes,
+    IVBSAXAttributes_Vtbl,
+    0x10dc0586_132b_4cac_8bb3_db00ac8b7ee0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXAttributes {
     pub unsafe fn length(&self) -> ::windows_core::Result<i32> {
@@ -2835,7 +2955,12 @@ pub struct IVBSAXAttributes_Vtbl {
     pub getValueFromQName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strqname: ::std::mem::MaybeUninit<::windows_core::BSTR>, strvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IVBSAXContentHandler, IVBSAXContentHandler_Vtbl, 0x2ed7290a_4dd5_4b46_bb26_4e4155e77faa);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IVBSAXContentHandler,
+    IVBSAXContentHandler_Vtbl,
+    0x2ed7290a_4dd5_4b46_bb26_4e4155e77faa
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXContentHandler {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2908,7 +3033,12 @@ pub struct IVBSAXContentHandler_Vtbl {
     pub skippedEntity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strname: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IVBSAXDTDHandler, IVBSAXDTDHandler_Vtbl, 0x24fb3297_302d_4620_ba39_3a732d850558);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IVBSAXDTDHandler,
+    IVBSAXDTDHandler_Vtbl,
+    0x24fb3297_302d_4620_ba39_3a732d850558
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXDTDHandler {
     pub unsafe fn notationDecl(&self, strname: *mut ::windows_core::BSTR, strpublicid: *mut ::windows_core::BSTR, strsystemid: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -2929,7 +3059,12 @@ pub struct IVBSAXDTDHandler_Vtbl {
     pub unparsedEntityDecl: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strname: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>, strpublicid: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>, strsystemid: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>, strnotationname: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IVBSAXDeclHandler, IVBSAXDeclHandler_Vtbl, 0xe8917260_7579_4be1_b5dd_7afbfa6f077b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IVBSAXDeclHandler,
+    IVBSAXDeclHandler_Vtbl,
+    0xe8917260_7579_4be1_b5dd_7afbfa6f077b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXDeclHandler {
     pub unsafe fn elementDecl(&self, strname: *mut ::windows_core::BSTR, strmodel: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -2958,7 +3093,12 @@ pub struct IVBSAXDeclHandler_Vtbl {
     pub externalEntityDecl: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strname: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>, strpublicid: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>, strsystemid: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IVBSAXEntityResolver, IVBSAXEntityResolver_Vtbl, 0x0c05d096_f45b_4aca_ad1a_aa0bc25518dc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IVBSAXEntityResolver,
+    IVBSAXEntityResolver_Vtbl,
+    0x0c05d096_f45b_4aca_ad1a_aa0bc25518dc
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXEntityResolver {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -2980,7 +3120,12 @@ pub struct IVBSAXEntityResolver_Vtbl {
     resolveEntity: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IVBSAXErrorHandler, IVBSAXErrorHandler_Vtbl, 0xd963d3fe_173c_4862_9095_b92f66995f52);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IVBSAXErrorHandler,
+    IVBSAXErrorHandler_Vtbl,
+    0xd963d3fe_173c_4862_9095_b92f66995f52
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXErrorHandler {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3029,7 +3174,12 @@ pub struct IVBSAXErrorHandler_Vtbl {
     ignorableWarning: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IVBSAXLexicalHandler, IVBSAXLexicalHandler_Vtbl, 0x032aac35_8c0e_4d9d_979f_e3b702935576);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IVBSAXLexicalHandler,
+    IVBSAXLexicalHandler_Vtbl,
+    0x032aac35_8c0e_4d9d_979f_e3b702935576
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXLexicalHandler {
     pub unsafe fn startDTD(&self, strname: *mut ::windows_core::BSTR, strpublicid: *mut ::windows_core::BSTR, strsystemid: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -3070,7 +3220,12 @@ pub struct IVBSAXLexicalHandler_Vtbl {
     pub comment: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strchars: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IVBSAXLocator, IVBSAXLocator_Vtbl, 0x796e7ac5_5aa2_4eff_acad_3faaf01a3288);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IVBSAXLocator,
+    IVBSAXLocator_Vtbl,
+    0x796e7ac5_5aa2_4eff_acad_3faaf01a3288
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXLocator {
     pub unsafe fn columnNumber(&self) -> ::windows_core::Result<i32> {
@@ -3103,7 +3258,12 @@ pub struct IVBSAXLocator_Vtbl {
     pub systemId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strsystemid: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IVBSAXXMLFilter, IVBSAXXMLFilter_Vtbl, 0x1299eb1b_5b88_433e_82de_82ca75ad4e04);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IVBSAXXMLFilter,
+    IVBSAXXMLFilter_Vtbl,
+    0x1299eb1b_5b88_433e_82de_82ca75ad4e04
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXXMLFilter {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3138,7 +3298,12 @@ pub struct IVBSAXXMLFilter_Vtbl {
     putref_parent: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IVBSAXXMLReader, IVBSAXXMLReader_Vtbl, 0x8c033caa_6cd6_4f73_b728_4531af74945f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IVBSAXXMLReader,
+    IVBSAXXMLReader_Vtbl,
+    0x8c033caa_6cd6_4f73_b728_4531af74945f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IVBSAXXMLReader {
     pub unsafe fn getFeature<P0>(&self, strname: P0) -> ::windows_core::Result<super::super::super::Foundation::VARIANT_BOOL>
@@ -3320,7 +3485,12 @@ pub struct IVBSAXXMLReader_Vtbl {
     pub parseURL: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strurl: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLAttribute, IXMLAttribute_Vtbl, 0xd4d4a0fc_3b73_11d1_b2b4_00c04fb92596);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLAttribute,
+    IXMLAttribute_Vtbl,
+    0xd4d4a0fc_3b73_11d1_b2b4_00c04fb92596
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLAttribute {
     pub unsafe fn name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3343,7 +3513,12 @@ pub struct IXMLAttribute_Vtbl {
     pub value: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, v: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMAttribute, IXMLDOMAttribute_Vtbl, 0x2933bf85_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMAttribute,
+    IXMLDOMAttribute_Vtbl,
+    0x2933bf85_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMAttribute {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3599,7 +3774,12 @@ pub struct IXMLDOMAttribute_Vtbl {
     Setvalue: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMCDATASection, IXMLDOMCDATASection_Vtbl, 0x2933bf8a_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMCDATASection,
+    IXMLDOMCDATASection_Vtbl,
+    0x2933bf8a_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMCDATASection {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3876,7 +4056,12 @@ pub struct IXMLDOMCDATASection_Vtbl {
     pub base__: IXMLDOMText_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMCharacterData, IXMLDOMCharacterData_Vtbl, 0x2933bf84_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMCharacterData,
+    IXMLDOMCharacterData_Vtbl,
+    0x2933bf84_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMCharacterData {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4155,7 +4340,12 @@ pub struct IXMLDOMCharacterData_Vtbl {
     pub replaceData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, offset: i32, count: i32, data: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMComment, IXMLDOMComment_Vtbl, 0x2933bf88_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMComment,
+    IXMLDOMComment_Vtbl,
+    0x2933bf88_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMComment {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4426,7 +4616,12 @@ pub struct IXMLDOMComment_Vtbl {
     pub base__: IXMLDOMCharacterData_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMDocument, IXMLDOMDocument_Vtbl, 0x2933bf81_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMDocument,
+    IXMLDOMDocument_Vtbl,
+    0x2933bf81_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMDocument {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4968,7 +5163,12 @@ pub struct IXMLDOMDocument_Vtbl {
     Setontransformnode: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMDocument2, IXMLDOMDocument2_Vtbl, 0x2933bf95_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMDocument2,
+    IXMLDOMDocument2_Vtbl,
+    0x2933bf95_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMDocument2 {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -5478,7 +5678,12 @@ pub struct IXMLDOMDocument2_Vtbl {
     getProperty: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMDocument3, IXMLDOMDocument3_Vtbl, 0x2933bf96_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMDocument3,
+    IXMLDOMDocument3_Vtbl,
+    0x2933bf96_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMDocument3 {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -5991,7 +6196,12 @@ pub struct IXMLDOMDocument3_Vtbl {
     importNode: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMDocumentFragment, IXMLDOMDocumentFragment_Vtbl, 0x3efaa413_272f_11d2_836f_0000f87a7782);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMDocumentFragment,
+    IXMLDOMDocumentFragment_Vtbl,
+    0x3efaa413_272f_11d2_836f_0000f87a7782
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMDocumentFragment {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -6223,7 +6433,12 @@ pub struct IXMLDOMDocumentFragment_Vtbl {
     pub base__: IXMLDOMNode_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMDocumentType, IXMLDOMDocumentType_Vtbl, 0x2933bf8b_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMDocumentType,
+    IXMLDOMDocumentType_Vtbl,
+    0x2933bf8b_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMDocumentType {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -6480,7 +6695,12 @@ pub struct IXMLDOMDocumentType_Vtbl {
     notations: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMElement, IXMLDOMElement_Vtbl, 0x2933bf86_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMElement,
+    IXMLDOMElement_Vtbl,
+    0x2933bf86_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMElement {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -6805,7 +7025,12 @@ pub struct IXMLDOMElement_Vtbl {
     pub normalize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMEntity, IXMLDOMEntity_Vtbl, 0x2933bf8d_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMEntity,
+    IXMLDOMEntity_Vtbl,
+    0x2933bf8d_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMEntity {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -7062,7 +7287,12 @@ pub struct IXMLDOMEntity_Vtbl {
     pub notationName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMEntityReference, IXMLDOMEntityReference_Vtbl, 0x2933bf8e_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMEntityReference,
+    IXMLDOMEntityReference_Vtbl,
+    0x2933bf8e_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMEntityReference {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -7294,7 +7524,12 @@ pub struct IXMLDOMEntityReference_Vtbl {
     pub base__: IXMLDOMNode_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMImplementation, IXMLDOMImplementation_Vtbl, 0x2933bf8f_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMImplementation,
+    IXMLDOMImplementation_Vtbl,
+    0x2933bf8f_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMImplementation {
     pub unsafe fn hasFeature<P0, P1>(&self, feature: P0, version: P1) -> ::windows_core::Result<super::super::super::Foundation::VARIANT_BOOL>
@@ -7316,7 +7551,12 @@ pub struct IXMLDOMImplementation_Vtbl {
     pub hasFeature: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, feature: ::std::mem::MaybeUninit<::windows_core::BSTR>, version: ::std::mem::MaybeUninit<::windows_core::BSTR>, hasfeature: *mut super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMNamedNodeMap, IXMLDOMNamedNodeMap_Vtbl, 0x2933bf83_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMNamedNodeMap,
+    IXMLDOMNamedNodeMap_Vtbl,
+    0x2933bf83_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMNamedNodeMap {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -7430,7 +7670,12 @@ pub struct IXMLDOMNamedNodeMap_Vtbl {
     pub _newEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMNode, IXMLDOMNode_Vtbl, 0x2933bf80_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMNode,
+    IXMLDOMNode_Vtbl,
+    0x2933bf80_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMNode {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -7767,7 +8012,12 @@ pub struct IXMLDOMNode_Vtbl {
     transformNodeToObject: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMNodeList, IXMLDOMNodeList_Vtbl, 0x2933bf82_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMNodeList,
+    IXMLDOMNodeList_Vtbl,
+    0x2933bf82_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMNodeList {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -7814,7 +8064,12 @@ pub struct IXMLDOMNodeList_Vtbl {
     pub _newEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMNotation, IXMLDOMNotation_Vtbl, 0x2933bf8c_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMNotation,
+    IXMLDOMNotation_Vtbl,
+    0x2933bf8c_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMNotation {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -8066,7 +8321,12 @@ pub struct IXMLDOMNotation_Vtbl {
     systemId: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMParseError, IXMLDOMParseError_Vtbl, 0x3efaa426_272f_11d2_836f_0000f87a7782);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMParseError,
+    IXMLDOMParseError_Vtbl,
+    0x3efaa426_272f_11d2_836f_0000f87a7782
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMParseError {
     pub unsafe fn errorCode(&self) -> ::windows_core::Result<i32> {
@@ -8114,7 +8374,12 @@ pub struct IXMLDOMParseError_Vtbl {
     pub filepos: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, fileposition: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMParseError2, IXMLDOMParseError2_Vtbl, 0x3efaa428_272f_11d2_836f_0000f87a7782);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMParseError2,
+    IXMLDOMParseError2_Vtbl,
+    0x3efaa428_272f_11d2_836f_0000f87a7782
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMParseError2 {
     pub unsafe fn errorCode(&self) -> ::windows_core::Result<i32> {
@@ -8180,7 +8445,12 @@ pub struct IXMLDOMParseError2_Vtbl {
     pub errorParametersCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, count: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMParseErrorCollection, IXMLDOMParseErrorCollection_Vtbl, 0x3efaa429_272f_11d2_836f_0000f87a7782);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMParseErrorCollection,
+    IXMLDOMParseErrorCollection_Vtbl,
+    0x3efaa429_272f_11d2_836f_0000f87a7782
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMParseErrorCollection {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8227,7 +8497,12 @@ pub struct IXMLDOMParseErrorCollection_Vtbl {
     pub _newEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMProcessingInstruction, IXMLDOMProcessingInstruction_Vtbl, 0x2933bf89_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMProcessingInstruction,
+    IXMLDOMProcessingInstruction_Vtbl,
+    0x2933bf89_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMProcessingInstruction {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -8476,7 +8751,12 @@ pub struct IXMLDOMProcessingInstruction_Vtbl {
     pub Setdata: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMSchemaCollection, IXMLDOMSchemaCollection_Vtbl, 0x373984c8_b845_449b_91e7_45ac83036ade);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMSchemaCollection,
+    IXMLDOMSchemaCollection_Vtbl,
+    0x373984c8_b845_449b_91e7_45ac83036ade
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMSchemaCollection {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -8548,7 +8828,12 @@ pub struct IXMLDOMSchemaCollection_Vtbl {
     pub _newEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMSchemaCollection2, IXMLDOMSchemaCollection2_Vtbl, 0x50ea08b0_dd1b_4664_9a50_c2f40f4bd79a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMSchemaCollection2,
+    IXMLDOMSchemaCollection2_Vtbl,
+    0x50ea08b0_dd1b_4664_9a50_c2f40f4bd79a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMSchemaCollection2 {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -8646,7 +8931,12 @@ pub struct IXMLDOMSchemaCollection2_Vtbl {
     getDeclaration: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMSelection, IXMLDOMSelection_Vtbl, 0xaa634fc7_5888_44a7_a257_3a47150d3a0e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMSelection,
+    IXMLDOMSelection_Vtbl,
+    0xaa634fc7_5888_44a7_a257_3a47150d3a0e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMSelection {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8788,7 +9078,12 @@ pub struct IXMLDOMSelection_Vtbl {
     setProperty: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDOMText, IXMLDOMText_Vtbl, 0x2933bf87_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDOMText,
+    IXMLDOMText_Vtbl,
+    0x2933bf87_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDOMText {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -9069,7 +9364,12 @@ pub struct IXMLDOMText_Vtbl {
     splitText: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDSOControl, IXMLDSOControl_Vtbl, 0x310afa62_0575_11d2_9ca9_0060b0ec3d39);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDSOControl,
+    IXMLDSOControl_Vtbl,
+    0x310afa62_0575_11d2_9ca9_0060b0ec3d39
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDSOControl {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -9121,7 +9421,12 @@ pub struct IXMLDSOControl_Vtbl {
     pub readyState: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, state: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDocument, IXMLDocument_Vtbl, 0xf52e2b61_18a1_11d1_b105_00805f49916b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDocument,
+    IXMLDocument_Vtbl,
+    0xf52e2b61_18a1_11d1_b105_00805f49916b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDocument {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -9218,7 +9523,12 @@ pub struct IXMLDocument_Vtbl {
     createElement: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLDocument2, IXMLDocument2_Vtbl, 0x2b8de2fe_8d2d_11d1_b2fc_00c04fd915a9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLDocument2,
+    IXMLDocument2_Vtbl,
+    0x2b8de2fe_8d2d_11d1_b2fc_00c04fd915a9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLDocument2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -9327,7 +9637,12 @@ pub struct IXMLDocument2_Vtbl {
     pub Setasync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, f: super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLElement, IXMLElement_Vtbl, 0x3f7f31ac_e15f_11d0_9c25_00c04fc99c8e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLElement,
+    IXMLElement_Vtbl,
+    0x3f7f31ac_e15f_11d0_9c25_00c04fc99c8e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLElement {
     pub unsafe fn tagName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -9445,7 +9760,12 @@ pub struct IXMLElement_Vtbl {
     removeChild: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLElement2, IXMLElement2_Vtbl, 0x2b8de2ff_8d2d_11d1_b2fc_00c04fd915a9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLElement2,
+    IXMLElement2_Vtbl,
+    0x2b8de2ff_8d2d_11d1_b2fc_00c04fd915a9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLElement2 {
     pub unsafe fn tagName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -9573,7 +9893,12 @@ pub struct IXMLElement2_Vtbl {
     attributes: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLElementCollection, IXMLElementCollection_Vtbl, 0x65725580_9b5d_11d0_9bfe_00c04fc99c8e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLElementCollection,
+    IXMLElementCollection_Vtbl,
+    0x65725580_9b5d_11d0_9bfe_00c04fc99c8e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLElementCollection {
     pub unsafe fn Setlength(&self, v: i32) -> ::windows_core::Result<()> {
@@ -9623,7 +9948,12 @@ pub struct IXMLError_Vtbl {
     pub GetErrorInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, perrorreturn: *mut XML_ERROR) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXMLHTTPRequest, IXMLHTTPRequest_Vtbl, 0xed8c108d_4349_11d2_91a4_00c04f7969e8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXMLHTTPRequest,
+    IXMLHTTPRequest_Vtbl,
+    0xed8c108d_4349_11d2_91a4_00c04f7969e8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXMLHTTPRequest {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -10031,7 +10361,12 @@ pub struct IXMLHTTPRequest3Callback_Vtbl {
     pub OnClientCertificateRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pxhr: *mut ::core::ffi::c_void, cissuerlist: u32, rgpwszissuerlist: *const *const u16) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXSLProcessor, IXSLProcessor_Vtbl, 0x2933bf92_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXSLProcessor,
+    IXSLProcessor_Vtbl,
+    0x2933bf92_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXSLProcessor {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -10160,7 +10495,12 @@ pub struct IXSLProcessor_Vtbl {
     stylesheet: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXSLTemplate, IXSLTemplate_Vtbl, 0x2933bf93_7b36_11d2_b20e_00c04f983e60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXSLTemplate,
+    IXSLTemplate_Vtbl,
+    0x2933bf93_7b36_11d2_b20e_00c04f983e60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXSLTemplate {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -10205,7 +10545,12 @@ pub struct IXSLTemplate_Vtbl {
     createProcessor: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXTLRuntime, IXTLRuntime_Vtbl, 0x3efaa425_272f_11d2_836f_0000f87a7782);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXTLRuntime,
+    IXTLRuntime_Vtbl,
+    0x3efaa425_272f_11d2_836f_0000f87a7782
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXTLRuntime {
     pub unsafe fn nodeName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -10545,7 +10890,12 @@ pub struct IXTLRuntime_Vtbl {
     formatTime: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(XMLDOMDocumentEvents, XMLDOMDocumentEvents_Vtbl, 0x3efaa427_272f_11d2_836f_0000f87a7782);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    XMLDOMDocumentEvents,
+    XMLDOMDocumentEvents_Vtbl,
+    0x3efaa427_272f_11d2_836f_0000f87a7782
+);
 #[cfg(feature = "Win32_System_Com")]
 impl XMLDOMDocumentEvents {}
 #[cfg(feature = "Win32_System_Com")]

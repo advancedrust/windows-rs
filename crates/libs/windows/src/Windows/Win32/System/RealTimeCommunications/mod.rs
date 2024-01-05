@@ -208,7 +208,12 @@ pub struct IRTCBuddy2_Vtbl {
     pub SubscriptionType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pensubscriptiontype: *mut RTC_BUDDY_SUBSCRIPTION_TYPE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCBuddyEvent, IRTCBuddyEvent_Vtbl, 0xf36d755d_17e6_404e_954f_0fc07574c78d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCBuddyEvent,
+    IRTCBuddyEvent_Vtbl,
+    0xf36d755d_17e6_404e_954f_0fc07574c78d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCBuddyEvent {
     pub unsafe fn Buddy(&self) -> ::windows_core::Result<IRTCBuddy> {
@@ -226,7 +231,12 @@ pub struct IRTCBuddyEvent_Vtbl {
     pub Buddy: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppbuddy: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCBuddyEvent2, IRTCBuddyEvent2_Vtbl, 0x484a7f1e_73f0_4990_bfc2_60bc3978a720);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCBuddyEvent2,
+    IRTCBuddyEvent2_Vtbl,
+    0x484a7f1e_73f0_4990_bfc2_60bc3978a720
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCBuddyEvent2 {
     pub unsafe fn Buddy(&self) -> ::windows_core::Result<IRTCBuddy> {
@@ -325,7 +335,12 @@ pub struct IRTCBuddyGroup_Vtbl {
     pub Profile: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppprofile: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCBuddyGroupEvent, IRTCBuddyGroupEvent_Vtbl, 0x3a79e1d1_b736_4414_96f8_bbc7f08863e4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCBuddyGroupEvent,
+    IRTCBuddyGroupEvent_Vtbl,
+    0x3a79e1d1_b736_4414_96f8_bbc7f08863e4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCBuddyGroupEvent {
     pub unsafe fn EventType(&self) -> ::windows_core::Result<RTC_GROUP_EVENT_TYPE> {
@@ -865,7 +880,12 @@ pub struct IRTCClient2_Vtbl {
     pub get_AllowedPorts: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ltransport: i32, penlistenmode: *mut RTC_LISTEN_MODE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCClientEvent, IRTCClientEvent_Vtbl, 0x2b493b7a_3cba_4170_9c8b_76a9dacdd644);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCClientEvent,
+    IRTCClientEvent_Vtbl,
+    0x2b493b7a_3cba_4170_9c8b_76a9dacdd644
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCClientEvent {
     pub unsafe fn EventType(&self) -> ::windows_core::Result<RTC_CLIENT_EVENT_TYPE> {
@@ -1419,7 +1439,12 @@ pub struct IRTCClientProvisioning2_Vtbl {
     pub EnableProfileEx: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pprofile: *mut ::core::ffi::c_void, lregisterflags: i32, lroamingflags: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCCollection, IRTCCollection_Vtbl, 0xec7c8096_b918_4044_94f1_e4fba0361d5c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCCollection,
+    IRTCCollection_Vtbl,
+    0xec7c8096_b918_4044_94f1_e4fba0361d5c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -1452,7 +1477,12 @@ pub struct IRTCCollection_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppnewenum: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCDispatchEventNotification, IRTCDispatchEventNotification_Vtbl, 0x176ddfbe_fec0_4d55_bc87_84cff1ef7f91);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCDispatchEventNotification,
+    IRTCDispatchEventNotification_Vtbl,
+    0x176ddfbe_fec0_4d55_bc87_84cff1ef7f91
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCDispatchEventNotification {}
 #[cfg(feature = "Win32_System_Com")]
@@ -1667,7 +1697,12 @@ pub struct IRTCEventNotification_Vtbl {
     Event: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCInfoEvent, IRTCInfoEvent_Vtbl, 0x4e1d68ae_1912_4f49_b2c3_594fadfd425f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCInfoEvent,
+    IRTCInfoEvent_Vtbl,
+    0x4e1d68ae_1912_4f49_b2c3_594fadfd425f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCInfoEvent {
     pub unsafe fn Session(&self) -> ::windows_core::Result<IRTCSession2> {
@@ -1700,7 +1735,12 @@ pub struct IRTCInfoEvent_Vtbl {
     pub InfoHeader: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrinfoheader: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCIntensityEvent, IRTCIntensityEvent_Vtbl, 0x4c23bf51_390c_4992_a41d_41eec05b2a4b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCIntensityEvent,
+    IRTCIntensityEvent_Vtbl,
+    0x4c23bf51_390c_4992_a41d_41eec05b2a4b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCIntensityEvent {
     pub unsafe fn Level(&self) -> ::windows_core::Result<i32> {
@@ -1733,7 +1773,12 @@ pub struct IRTCIntensityEvent_Vtbl {
     pub Direction: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pendirection: *mut RTC_AUDIO_DEVICE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCMediaEvent, IRTCMediaEvent_Vtbl, 0x099944fb_bcda_453e_8c41_e13da2adf7f3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCMediaEvent,
+    IRTCMediaEvent_Vtbl,
+    0x099944fb_bcda_453e_8c41_e13da2adf7f3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCMediaEvent {
     pub unsafe fn MediaType(&self) -> ::windows_core::Result<i32> {
@@ -1761,7 +1806,12 @@ pub struct IRTCMediaEvent_Vtbl {
     pub EventReason: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, peneventreason: *mut RTC_MEDIA_EVENT_REASON) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCMediaRequestEvent, IRTCMediaRequestEvent_Vtbl, 0x52572d15_148c_4d97_a36c_2da55c289d63);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCMediaRequestEvent,
+    IRTCMediaRequestEvent_Vtbl,
+    0x52572d15_148c_4d97_a36c_2da55c289d63
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCMediaRequestEvent {
     pub unsafe fn Session(&self) -> ::windows_core::Result<IRTCSession2> {
@@ -1807,7 +1857,12 @@ pub struct IRTCMediaRequestEvent_Vtbl {
     pub State: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstate: *mut RTC_REINVITE_STATE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCMessagingEvent, IRTCMessagingEvent_Vtbl, 0xd3609541_1b29_4de5_a4ad_5aebaf319512);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCMessagingEvent,
+    IRTCMessagingEvent_Vtbl,
+    0xd3609541_1b29_4de5_a4ad_5aebaf319512
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCMessagingEvent {
     pub unsafe fn Session(&self) -> ::windows_core::Result<IRTCSession> {
@@ -1884,7 +1939,12 @@ pub struct IRTCParticipant_Vtbl {
     pub Session: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppsession: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCParticipantStateChangeEvent, IRTCParticipantStateChangeEvent_Vtbl, 0x09bcb597_f0fa_48f9_b420_468cea7fde04);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCParticipantStateChangeEvent,
+    IRTCParticipantStateChangeEvent_Vtbl,
+    0x09bcb597_f0fa_48f9_b420_468cea7fde04
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCParticipantStateChangeEvent {
     pub unsafe fn Participant(&self) -> ::windows_core::Result<IRTCParticipant> {
@@ -2002,7 +2062,12 @@ pub struct IRTCPresenceContact_Vtbl {
     pub SetPersistent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, fpersistent: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCPresenceDataEvent, IRTCPresenceDataEvent_Vtbl, 0x38f0e78c_8b87_4c04_a82d_aedd83c909bb);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCPresenceDataEvent,
+    IRTCPresenceDataEvent_Vtbl,
+    0x38f0e78c_8b87_4c04_a82d_aedd83c909bb
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCPresenceDataEvent {
     pub unsafe fn StatusCode(&self) -> ::windows_core::Result<i32> {
@@ -2057,7 +2122,12 @@ pub struct IRTCPresenceDevice_Vtbl {
     pub GetPresenceData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrnamespace: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>, pbstrdata: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCPresencePropertyEvent, IRTCPresencePropertyEvent_Vtbl, 0xf777f570_a820_49d5_86bd_e099493f1518);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCPresencePropertyEvent,
+    IRTCPresencePropertyEvent_Vtbl,
+    0xf777f570_a820_49d5_86bd_e099493f1518
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCPresencePropertyEvent {
     pub unsafe fn StatusCode(&self) -> ::windows_core::Result<i32> {
@@ -2090,7 +2160,12 @@ pub struct IRTCPresencePropertyEvent_Vtbl {
     pub Value: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCPresenceStatusEvent, IRTCPresenceStatusEvent_Vtbl, 0x78673f32_4a0f_462c_89aa_ee7706707678);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCPresenceStatusEvent,
+    IRTCPresenceStatusEvent_Vtbl,
+    0x78673f32_4a0f_462c_89aa_ee7706707678
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCPresenceStatusEvent {
     pub unsafe fn StatusCode(&self) -> ::windows_core::Result<i32> {
@@ -2326,7 +2401,12 @@ pub struct IRTCProfile2_Vtbl {
     pub SetAllowedAuth: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, lallowedauth: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCProfileEvent, IRTCProfileEvent_Vtbl, 0xd6d5ab3b_770e_43e8_800a_79b062395fca);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCProfileEvent,
+    IRTCProfileEvent_Vtbl,
+    0xd6d5ab3b_770e_43e8_800a_79b062395fca
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCProfileEvent {
     pub unsafe fn Profile(&self) -> ::windows_core::Result<IRTCProfile> {
@@ -2354,7 +2434,12 @@ pub struct IRTCProfileEvent_Vtbl {
     pub StatusCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plstatuscode: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCProfileEvent2, IRTCProfileEvent2_Vtbl, 0x62e56edc_03fa_4121_94fb_23493fd0ae64);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCProfileEvent2,
+    IRTCProfileEvent2_Vtbl,
+    0x62e56edc_03fa_4121_94fb_23493fd0ae64
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCProfileEvent2 {
     pub unsafe fn Profile(&self) -> ::windows_core::Result<IRTCProfile> {
@@ -2384,7 +2469,12 @@ pub struct IRTCProfileEvent2_Vtbl {
     pub EventType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, peventtype: *mut RTC_PROFILE_EVENT_TYPE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCReInviteEvent, IRTCReInviteEvent_Vtbl, 0x11558d84_204c_43e7_99b0_2034e9417f7d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCReInviteEvent,
+    IRTCReInviteEvent_Vtbl,
+    0x11558d84_204c_43e7_99b0_2034e9417f7d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCReInviteEvent {
     pub unsafe fn Session(&self) -> ::windows_core::Result<IRTCSession2> {
@@ -2423,7 +2513,12 @@ pub struct IRTCReInviteEvent_Vtbl {
     pub GetRemoteSessionDescription: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrcontenttype: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>, pbstrsessiondescription: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCRegistrationStateChangeEvent, IRTCRegistrationStateChangeEvent_Vtbl, 0x62d0991b_50ab_4f02_b948_ca94f26f8f95);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCRegistrationStateChangeEvent,
+    IRTCRegistrationStateChangeEvent_Vtbl,
+    0x62d0991b_50ab_4f02_b948_ca94f26f8f95
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCRegistrationStateChangeEvent {
     pub unsafe fn Profile(&self) -> ::windows_core::Result<IRTCProfile> {
@@ -2456,7 +2551,12 @@ pub struct IRTCRegistrationStateChangeEvent_Vtbl {
     pub StatusText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrstatustext: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCRoamingEvent, IRTCRoamingEvent_Vtbl, 0x79960a6b_0cb1_4dc8_a805_7318e99902e8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCRoamingEvent,
+    IRTCRoamingEvent_Vtbl,
+    0x79960a6b_0cb1_4dc8_a805_7318e99902e8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCRoamingEvent {
     pub unsafe fn EventType(&self) -> ::windows_core::Result<RTC_ROAMING_EVENT_TYPE> {
@@ -2826,7 +2926,12 @@ pub struct IRTCSessionDescriptionManager_Vtbl {
     pub EvaluateSessionDescription: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrcontenttype: ::std::mem::MaybeUninit<::windows_core::BSTR>, bstrsessiondescription: ::std::mem::MaybeUninit<::windows_core::BSTR>, pfapplicationsession: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCSessionOperationCompleteEvent, IRTCSessionOperationCompleteEvent_Vtbl, 0xa6bff4c0_f7c8_4d3c_9a41_3550f78a95b0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCSessionOperationCompleteEvent,
+    IRTCSessionOperationCompleteEvent_Vtbl,
+    0xa6bff4c0_f7c8_4d3c_9a41_3550f78a95b0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCSessionOperationCompleteEvent {
     pub unsafe fn Session(&self) -> ::windows_core::Result<IRTCSession> {
@@ -2859,7 +2964,12 @@ pub struct IRTCSessionOperationCompleteEvent_Vtbl {
     pub StatusText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrstatustext: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCSessionOperationCompleteEvent2, IRTCSessionOperationCompleteEvent2_Vtbl, 0xf6fc2a9b_d5bc_4241_b436_1b8460c13832);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCSessionOperationCompleteEvent2,
+    IRTCSessionOperationCompleteEvent2_Vtbl,
+    0xf6fc2a9b_d5bc_4241_b436_1b8460c13832
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCSessionOperationCompleteEvent2 {
     pub unsafe fn Session(&self) -> ::windows_core::Result<IRTCSession> {
@@ -2913,7 +3023,12 @@ pub struct IRTCSessionPortManagement_Vtbl {
     pub SetPortManager: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pportmanager: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCSessionReferStatusEvent, IRTCSessionReferStatusEvent_Vtbl, 0x3d8fc2cd_5d76_44ab_bb68_2a80353b34a2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCSessionReferStatusEvent,
+    IRTCSessionReferStatusEvent_Vtbl,
+    0x3d8fc2cd_5d76_44ab_bb68_2a80353b34a2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCSessionReferStatusEvent {
     pub unsafe fn Session(&self) -> ::windows_core::Result<IRTCSession2> {
@@ -2946,7 +3061,12 @@ pub struct IRTCSessionReferStatusEvent_Vtbl {
     pub StatusText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrstatustext: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCSessionReferredEvent, IRTCSessionReferredEvent_Vtbl, 0x176a6828_4fcc_4f28_a862_04597a6cf1c4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCSessionReferredEvent,
+    IRTCSessionReferredEvent_Vtbl,
+    0x176a6828_4fcc_4f28_a862_04597a6cf1c4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCSessionReferredEvent {
     pub unsafe fn Session(&self) -> ::windows_core::Result<IRTCSession2> {
@@ -2991,7 +3111,12 @@ pub struct IRTCSessionReferredEvent_Vtbl {
     pub SetReferredSessionState: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enstate: RTC_SESSION_STATE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCSessionStateChangeEvent, IRTCSessionStateChangeEvent_Vtbl, 0xb5bad703_5952_48b3_9321_7f4500521506);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCSessionStateChangeEvent,
+    IRTCSessionStateChangeEvent_Vtbl,
+    0xb5bad703_5952_48b3_9321_7f4500521506
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCSessionStateChangeEvent {
     pub unsafe fn Session(&self) -> ::windows_core::Result<IRTCSession> {
@@ -3024,7 +3149,12 @@ pub struct IRTCSessionStateChangeEvent_Vtbl {
     pub StatusText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrstatustext: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCSessionStateChangeEvent2, IRTCSessionStateChangeEvent2_Vtbl, 0x4f933171_6f95_4880_80d9_2ec8d495d261);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCSessionStateChangeEvent2,
+    IRTCSessionStateChangeEvent2_Vtbl,
+    0x4f933171_6f95_4880_80d9_2ec8d495d261
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCSessionStateChangeEvent2 {
     pub unsafe fn Session(&self) -> ::windows_core::Result<IRTCSession> {
@@ -3159,7 +3289,12 @@ pub struct IRTCUserSearchResult_Vtbl {
     pub get_Value: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encolumn: RTC_USER_SEARCH_COLUMN, pbstrvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCUserSearchResultsEvent, IRTCUserSearchResultsEvent_Vtbl, 0xd8c8c3cd_7fac_4088_81c5_c24cbc0938e3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCUserSearchResultsEvent,
+    IRTCUserSearchResultsEvent_Vtbl,
+    0xd8c8c3cd_7fac_4088_81c5_c24cbc0938e3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCUserSearchResultsEvent {
     pub unsafe fn EnumerateResults(&self) -> ::windows_core::Result<IRTCEnumUserSearchResults> {
@@ -3336,7 +3471,12 @@ pub struct IRTCWatcher2_Vtbl {
     pub Scope: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, penscope: *mut RTC_ACE_SCOPE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCWatcherEvent, IRTCWatcherEvent_Vtbl, 0xf30d7261_587a_424f_822c_312788f43548);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCWatcherEvent,
+    IRTCWatcherEvent_Vtbl,
+    0xf30d7261_587a_424f_822c_312788f43548
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCWatcherEvent {
     pub unsafe fn Watcher(&self) -> ::windows_core::Result<IRTCWatcher> {
@@ -3354,7 +3494,12 @@ pub struct IRTCWatcherEvent_Vtbl {
     pub Watcher: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppwatcher: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRTCWatcherEvent2, IRTCWatcherEvent2_Vtbl, 0xe52891e8_188c_49af_b005_98ed13f83f9c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRTCWatcherEvent2,
+    IRTCWatcherEvent2_Vtbl,
+    0xe52891e8_188c_49af_b005_98ed13f83f9c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRTCWatcherEvent2 {
     pub unsafe fn Watcher(&self) -> ::windows_core::Result<IRTCWatcher> {

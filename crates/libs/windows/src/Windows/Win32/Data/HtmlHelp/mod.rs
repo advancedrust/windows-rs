@@ -54,7 +54,12 @@ pub struct IITDatabase_Vtbl {
     pub GetObjectPersistence: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, lpwszobject: ::windows_core::PCWSTR, dwobjinstance: u32, ppvpersistence: *mut *mut ::core::ffi::c_void, fstream: super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IITPropList, IITPropList_Vtbl, 0x1f403bb1_9997_11d0_a850_00aa006c7d01);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IITPropList,
+    IITPropList_Vtbl,
+    0x1f403bb1_9997_11d0_a850_00aa006c7d01
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IITPropList {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

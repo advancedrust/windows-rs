@@ -290,7 +290,12 @@ pub struct IFunctionDiscoveryServiceProvider_Vtbl {
     Initialize: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFunctionInstance, IFunctionInstance_Vtbl, 0x33591c10_0bed_4f02_b0ab_1530d5533ee9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFunctionInstance,
+    IFunctionInstance_Vtbl,
+    0x33591c10_0bed_4f02_b0ab_1530d5533ee9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFunctionInstance {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

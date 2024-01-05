@@ -5841,7 +5841,12 @@ where
     wvnsprintfW(::core::mem::transmute(pszdest.as_ptr()), pszdest.len().try_into().unwrap(), pszfmt.into_param().abi(), arglist)
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(CIE4ConnectionPoint, CIE4ConnectionPoint_Vtbl, 0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    CIE4ConnectionPoint,
+    CIE4ConnectionPoint_Vtbl,
+    0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl CIE4ConnectionPoint {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5907,7 +5912,12 @@ pub struct CIE4ConnectionPoint_Vtbl {
     DoInvokePIDLIE4: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DFConstraint, DFConstraint_Vtbl, 0x4a3df050_23bd_11d2_939f_00a0c91eedba);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DFConstraint,
+    DFConstraint_Vtbl,
+    0x4a3df050_23bd_11d2_939f_00a0c91eedba
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DFConstraint {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -5935,7 +5945,12 @@ pub struct DFConstraint_Vtbl {
     Value: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DShellFolderViewEvents, DShellFolderViewEvents_Vtbl, 0x62112aa2_ebe4_11cf_a5fb_0020afe7292d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DShellFolderViewEvents,
+    DShellFolderViewEvents_Vtbl,
+    0x62112aa2_ebe4_11cf_a5fb_0020afe7292d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DShellFolderViewEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -5947,7 +5962,12 @@ pub struct DShellFolderViewEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DShellNameSpaceEvents, DShellNameSpaceEvents_Vtbl, 0x55136806_b2de_11d1_b9f2_00a0c98bc547);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DShellNameSpaceEvents,
+    DShellNameSpaceEvents_Vtbl,
+    0x55136806_b2de_11d1_b9f2_00a0c98bc547
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DShellNameSpaceEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -5959,7 +5979,12 @@ pub struct DShellNameSpaceEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DShellWindowsEvents, DShellWindowsEvents_Vtbl, 0xfe4106e0_399a_11d0_a48c_00a0c90a8f39);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DShellWindowsEvents,
+    DShellWindowsEvents_Vtbl,
+    0xfe4106e0_399a_11d0_a48c_00a0c90a8f39
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DShellWindowsEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -5971,7 +5996,12 @@ pub struct DShellWindowsEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DWebBrowserEvents, DWebBrowserEvents_Vtbl, 0xeab22ac2_30c1_11cf_a7eb_0000c05bae0b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DWebBrowserEvents,
+    DWebBrowserEvents_Vtbl,
+    0xeab22ac2_30c1_11cf_a7eb_0000c05bae0b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DWebBrowserEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -5983,7 +6013,12 @@ pub struct DWebBrowserEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DWebBrowserEvents2, DWebBrowserEvents2_Vtbl, 0x34a715a0_6587_11d0_924a_0020afc7ac4d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DWebBrowserEvents2,
+    DWebBrowserEvents2_Vtbl,
+    0x34a715a0_6587_11d0_924a_0020afc7ac4d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DWebBrowserEvents2 {}
 #[cfg(feature = "Win32_System_Com")]
@@ -5995,7 +6030,12 @@ pub struct DWebBrowserEvents2_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Folder, Folder_Vtbl, 0xbbcbde60_c3ff_11ce_8350_444553540000);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Folder,
+    Folder_Vtbl,
+    0xbbcbde60_c3ff_11ce_8350_444553540000
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Folder {
     pub unsafe fn Title(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -6106,7 +6146,12 @@ pub struct Folder_Vtbl {
     GetDetailsOf: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Folder2, Folder2_Vtbl, 0xf0d2d8ef_3890_11d2_bf8b_00c04fb93661);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Folder2,
+    Folder2_Vtbl,
+    0xf0d2d8ef_3890_11d2_bf8b_00c04fb93661
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Folder2 {
     pub unsafe fn Title(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -6208,7 +6253,12 @@ pub struct Folder2_Vtbl {
     pub DismissedWebViewBarricade: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Folder3, Folder3_Vtbl, 0xa7ae5f64_c4d7_4d7f_9307_4d24ee54b841);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Folder3,
+    Folder3_Vtbl,
+    0xa7ae5f64_c4d7_4d7f_9307_4d24ee54b841
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Folder3 {
     pub unsafe fn Title(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -6314,7 +6364,12 @@ pub struct Folder3_Vtbl {
     pub SetShowWebViewBarricade: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bshowwebviewbarricade: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(FolderItem, FolderItem_Vtbl, 0xfac32c80_cbe4_11ce_8350_444553540000);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    FolderItem,
+    FolderItem_Vtbl,
+    0xfac32c80_cbe4_11ce_8350_444553540000
+);
 #[cfg(feature = "Win32_System_Com")]
 impl FolderItem {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6442,7 +6497,12 @@ pub struct FolderItem_Vtbl {
     InvokeVerb: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(FolderItem2, FolderItem2_Vtbl, 0xedc817aa_92b8_11d1_b075_00c04fc33aa5);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    FolderItem2,
+    FolderItem2_Vtbl,
+    0xedc817aa_92b8_11d1_b075_00c04fc33aa5
+);
 #[cfg(feature = "Win32_System_Com")]
 impl FolderItem2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6557,7 +6617,12 @@ pub struct FolderItem2_Vtbl {
     ExtendedProperty: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(FolderItemVerb, FolderItemVerb_Vtbl, 0x08ec3e00_50b0_11cf_960c_0080c7f4ee85);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    FolderItemVerb,
+    FolderItemVerb_Vtbl,
+    0x08ec3e00_50b0_11cf_960c_0080c7f4ee85
+);
 #[cfg(feature = "Win32_System_Com")]
 impl FolderItemVerb {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6599,7 +6664,12 @@ pub struct FolderItemVerb_Vtbl {
     pub DoIt: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(FolderItemVerbs, FolderItemVerbs_Vtbl, 0x1f8352c0_50b0_11cf_960c_0080c7f4ee85);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    FolderItemVerbs,
+    FolderItemVerbs_Vtbl,
+    0x1f8352c0_50b0_11cf_960c_0080c7f4ee85
+);
 #[cfg(feature = "Win32_System_Com")]
 impl FolderItemVerbs {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -6652,7 +6722,12 @@ pub struct FolderItemVerbs_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(FolderItems, FolderItems_Vtbl, 0x744129e0_cbe5_11ce_8350_444553540000);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    FolderItems,
+    FolderItems_Vtbl,
+    0x744129e0_cbe5_11ce_8350_444553540000
+);
 #[cfg(feature = "Win32_System_Com")]
 impl FolderItems {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -6705,7 +6780,12 @@ pub struct FolderItems_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(FolderItems2, FolderItems2_Vtbl, 0xc94f0ad0_f363_11d2_a327_00c04f8eec7f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    FolderItems2,
+    FolderItems2_Vtbl,
+    0xc94f0ad0_f363_11d2_a327_00c04f8eec7f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl FolderItems2 {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -6753,7 +6833,12 @@ pub struct FolderItems2_Vtbl {
     InvokeVerbEx: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(FolderItems3, FolderItems3_Vtbl, 0xeaa7c309_bbec_49d5_821d_64d966cb667f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    FolderItems3,
+    FolderItems3_Vtbl,
+    0xeaa7c309_bbec_49d5_821d_64d966cb667f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl FolderItems3 {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -11292,7 +11377,12 @@ pub struct IDelegateItem_Vtbl {
     pub base__: IRelatedItem_Vtbl,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IDeskBand, IDeskBand_Vtbl, 0xeb0fe172_1a3a_11d0_89b3_00a0c90a90ac);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IDeskBand,
+    IDeskBand_Vtbl,
+    0xeb0fe172_1a3a_11d0_89b3_00a0c90a90ac
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IDeskBand {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -11339,7 +11429,12 @@ pub struct IDeskBand_Vtbl {
     pub GetBandInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwbandid: u32, dwviewmode: u32, pdbi: *mut DESKBANDINFO) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IDeskBand2, IDeskBand2_Vtbl, 0x79d16de4_abee_4021_8d9d_9169b261d657);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IDeskBand2,
+    IDeskBand2_Vtbl,
+    0x79d16de4_abee_4021_8d9d_9169b261d657
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IDeskBand2 {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -11416,7 +11511,12 @@ pub struct IDeskBandInfo_Vtbl {
     pub GetDefaultBandWidth: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwbandid: u32, dwviewmode: u32, pnwidth: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IDeskBar, IDeskBar_Vtbl, 0xeb0fe173_1a3a_11d0_89b3_00a0c90a90ac);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IDeskBar,
+    IDeskBar_Vtbl,
+    0xeb0fe173_1a3a_11d0_89b3_00a0c90a90ac
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IDeskBar {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -11459,7 +11559,12 @@ pub struct IDeskBar_Vtbl {
     pub OnPosRectChangeDB: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, prc: *const super::super::Foundation::RECT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IDeskBarClient, IDeskBarClient_Vtbl, 0xeb0fe175_1a3a_11d0_89b3_00a0c90a90ac);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IDeskBarClient,
+    IDeskBarClient_Vtbl,
+    0xeb0fe175_1a3a_11d0_89b3_00a0c90a90ac
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IDeskBarClient {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -11681,7 +11786,12 @@ pub struct IDocViewSite_Vtbl {
     OnSetTitle: usize,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IDockingWindow, IDockingWindow_Vtbl, 0x012dd920_7b26_11d0_8ca9_00a0c92dbfe8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IDockingWindow,
+    IDockingWindow_Vtbl,
+    0x012dd920_7b26_11d0_8ca9_00a0c92dbfe8
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IDockingWindow {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -11727,7 +11837,12 @@ pub struct IDockingWindow_Vtbl {
     pub ResizeBorderDW: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, prcborder: *const super::super::Foundation::RECT, punktoolbarsite: *mut ::core::ffi::c_void, freserved: super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IDockingWindowFrame, IDockingWindowFrame_Vtbl, 0x47d2657a_7b27_11d0_8ca9_00a0c92dbfe8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IDockingWindowFrame,
+    IDockingWindowFrame_Vtbl,
+    0x47d2657a_7b27_11d0_8ca9_00a0c92dbfe8
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IDockingWindowFrame {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -11776,7 +11891,12 @@ pub struct IDockingWindowFrame_Vtbl {
     pub FindToolbar: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pwszitem: ::windows_core::PCWSTR, riid: *const ::windows_core::GUID, ppv: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IDockingWindowSite, IDockingWindowSite_Vtbl, 0x2a342fc2_7b26_11d0_8ca9_00a0c92dbfe8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IDockingWindowSite,
+    IDockingWindowSite_Vtbl,
+    0x2a342fc2_7b26_11d0_8ca9_00a0c92dbfe8
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IDockingWindowSite {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -11960,7 +12080,12 @@ pub struct IDynamicHWHandler_Vtbl {
     pub GetDynamicInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pszdeviceid: ::windows_core::PCWSTR, dwcontenttype: u32, ppszaction: *mut ::windows_core::PWSTR) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IEnumACString, IEnumACString_Vtbl, 0x8e74c210_cf9d_4eaf_a403_7356428f0a5a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IEnumACString,
+    IEnumACString_Vtbl,
+    0x8e74c210_cf9d_4eaf_a403_7356428f0a5a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IEnumACString {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14255,7 +14380,12 @@ pub struct IFileSaveDialog_Vtbl {
     ApplyProperties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFileSearchBand, IFileSearchBand_Vtbl, 0x2d91eea1_9932_11d2_be86_00a0c9a83da1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFileSearchBand,
+    IFileSearchBand_Vtbl,
+    0x2d91eea1_9932_11d2_be86_00a0c9a83da1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFileSearchBand {
     pub unsafe fn SetFocus(&self) -> ::windows_core::Result<()> {
@@ -14860,7 +14990,12 @@ pub struct IFolderViewHost_Vtbl {
     Initialize: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFolderViewOC, IFolderViewOC_Vtbl, 0x9ba05970_f6a8_11cf_a442_00a0c90a8f39);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFolderViewOC,
+    IFolderViewOC_Vtbl,
+    0x9ba05970_f6a8_11cf_a442_00a0c90a8f39
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFolderViewOC {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -16215,7 +16350,12 @@ pub struct IMenuBand_Vtbl {
     TranslateMenuMessage: usize,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IMenuPopup, IMenuPopup_Vtbl, 0xd1e7afeb_6a2e_11d0_8c78_00c04fd918b4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IMenuPopup,
+    IMenuPopup_Vtbl,
+    0xd1e7afeb_6a2e_11d0_8c78_00c04fd918b4
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IMenuPopup {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -17158,7 +17298,12 @@ pub struct INewShortcutHookW_Vtbl {
     pub GetExtension: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pszextension: ::windows_core::PWSTR, cchextension: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(INewWDEvents, INewWDEvents_Vtbl, 0x0751c551_7568_41c9_8e5b_e22e38919236);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    INewWDEvents,
+    INewWDEvents_Vtbl,
+    0x0751c551_7568_41c9_8e5b_e22e38919236
+);
 #[cfg(feature = "Win32_System_Com")]
 impl INewWDEvents {
     pub unsafe fn FinalBack(&self) -> ::windows_core::Result<()> {
@@ -17817,7 +17962,12 @@ pub struct IParseAndCreateItem_Vtbl {
     pub GetItem: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppv: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPersistFolder, IPersistFolder_Vtbl, 0x000214ea_0000_0000_c000_000000000046);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPersistFolder,
+    IPersistFolder_Vtbl,
+    0x000214ea_0000_0000_c000_000000000046
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPersistFolder {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -17845,7 +17995,12 @@ pub struct IPersistFolder_Vtbl {
     Initialize: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPersistFolder2, IPersistFolder2_Vtbl, 0x1ac3d9f0_175c_11d1_95be_00609797ea4f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPersistFolder2,
+    IPersistFolder2_Vtbl,
+    0x1ac3d9f0_175c_11d1_95be_00609797ea4f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPersistFolder2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -17879,7 +18034,12 @@ pub struct IPersistFolder2_Vtbl {
     GetCurFolder: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPersistFolder3, IPersistFolder3_Vtbl, 0xcef04fdf_fe72_11d2_87a5_00c04f6837cf);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPersistFolder3,
+    IPersistFolder3_Vtbl,
+    0xcef04fdf_fe72_11d2_87a5_00c04f6837cf
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPersistFolder3 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -17930,7 +18090,12 @@ pub struct IPersistFolder3_Vtbl {
     GetFolderTargetInfo: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPersistIDList, IPersistIDList_Vtbl, 0x1079acfc_29bd_11d3_8e0d_00c04f6837d5);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPersistIDList,
+    IPersistIDList_Vtbl,
+    0x1079acfc_29bd_11d3_8e0d_00c04f6837d5
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPersistIDList {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -18682,7 +18847,12 @@ pub struct IRunnableTask_Vtbl {
     pub IsRunning: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> u32,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IScriptErrorList, IScriptErrorList_Vtbl, 0xf3470f24_15fd_11d2_bb2e_00805ff7efca);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IScriptErrorList,
+    IScriptErrorList_Vtbl,
+    0xf3470f24_15fd_11d2_bb2e_00805ff7efca
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IScriptErrorList {
     pub unsafe fn advanceError(&self) -> ::windows_core::Result<()> {
@@ -19033,7 +19203,12 @@ pub struct IShellApp_Vtbl {
     pub IsInstalled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IShellBrowser, IShellBrowser_Vtbl, 0x000214e2_0000_0000_c000_000000000046);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IShellBrowser,
+    IShellBrowser_Vtbl,
+    0x000214e2_0000_0000_c000_000000000046
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IShellBrowser {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -19223,7 +19398,12 @@ pub struct IShellDetails_Vtbl {
     pub ColumnClick: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, icolumn: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellDispatch, IShellDispatch_Vtbl, 0xd8f015c0_c278_11ce_a49e_444553540000);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellDispatch,
+    IShellDispatch_Vtbl,
+    0xd8f015c0_c278_11ce_a49e_444553540000
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellDispatch {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -19374,7 +19554,12 @@ pub struct IShellDispatch_Vtbl {
     pub ControlPanelItem: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrdir: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellDispatch2, IShellDispatch2_Vtbl, 0xa4c6892c_3ba9_11d2_9dea_00c04fb16162);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellDispatch2,
+    IShellDispatch2_Vtbl,
+    0xa4c6892c_3ba9_11d2_9dea_00c04fb16162
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellDispatch2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -19589,7 +19774,12 @@ pub struct IShellDispatch2_Vtbl {
     ShowBrowserBar: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellDispatch3, IShellDispatch3_Vtbl, 0x177160ca_bb5a_411c_841d_bd38facdeaa0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellDispatch3,
+    IShellDispatch3_Vtbl,
+    0x177160ca_bb5a_411c_841d_bd38facdeaa0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellDispatch3 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -19786,7 +19976,12 @@ pub struct IShellDispatch3_Vtbl {
     AddToRecent: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellDispatch4, IShellDispatch4_Vtbl, 0xefd84b2d_4bcf_4298_be25_eb542a59fbda);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellDispatch4,
+    IShellDispatch4_Vtbl,
+    0xefd84b2d_4bcf_4298_be25_eb542a59fbda
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellDispatch4 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -20005,7 +20200,12 @@ pub struct IShellDispatch4_Vtbl {
     pub GetSetting: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, lsetting: i32, presult: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellDispatch5, IShellDispatch5_Vtbl, 0x866738b9_6cf2_4de8_8767_f794ebe74f4e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellDispatch5,
+    IShellDispatch5_Vtbl,
+    0x866738b9_6cf2_4de8_8767_f794ebe74f4e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellDispatch5 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -20221,7 +20421,12 @@ pub struct IShellDispatch5_Vtbl {
     pub WindowSwitcher: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellDispatch6, IShellDispatch6_Vtbl, 0x286e6f1b_7113_4355_9562_96b7e9d64c54);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellDispatch6,
+    IShellDispatch6_Vtbl,
+    0x286e6f1b_7113_4355_9562_96b7e9d64c54
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellDispatch6 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -20462,7 +20667,12 @@ pub struct IShellExtInit_Vtbl {
     Initialize: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellFavoritesNameSpace, IShellFavoritesNameSpace_Vtbl, 0x55136804_b2de_11d1_b9f2_00a0c98bc547);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellFavoritesNameSpace,
+    IShellFavoritesNameSpace_Vtbl,
+    0x55136804_b2de_11d1_b9f2_00a0c98bc547
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellFavoritesNameSpace {
     pub unsafe fn MoveSelectionUp(&self) -> ::windows_core::Result<()> {
@@ -21072,7 +21282,12 @@ pub struct IShellFolderViewCB_Vtbl {
     pub MessageSFVCB: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, umsg: u32, wparam: super::super::Foundation::WPARAM, lparam: super::super::Foundation::LPARAM) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellFolderViewDual, IShellFolderViewDual_Vtbl, 0xe7a1af80_4d96_11cf_960c_0080c7f4ee85);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellFolderViewDual,
+    IShellFolderViewDual_Vtbl,
+    0xe7a1af80_4d96_11cf_960c_0080c7f4ee85
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellFolderViewDual {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -21172,7 +21387,12 @@ pub struct IShellFolderViewDual_Vtbl {
     pub ViewOptions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plviewoptions: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellFolderViewDual2, IShellFolderViewDual2_Vtbl, 0x31c147b6_0ade_4a3c_b514_ddf932ef6d17);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellFolderViewDual2,
+    IShellFolderViewDual2_Vtbl,
+    0x31c147b6_0ade_4a3c_b514_ddf932ef6d17
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellFolderViewDual2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -21252,7 +21472,12 @@ pub struct IShellFolderViewDual2_Vtbl {
     pub SelectItemRelative: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, irelative: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellFolderViewDual3, IShellFolderViewDual3_Vtbl, 0x29ec8e6c_46d3_411f_baaa_611a6c9cac66);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellFolderViewDual3,
+    IShellFolderViewDual3_Vtbl,
+    0x29ec8e6c_46d3_411f_baaa_611a6c9cac66
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellFolderViewDual3 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -22397,7 +22622,12 @@ pub struct IShellLinkDataList_Vtbl {
     pub SetFlags: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwflags: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellLinkDual, IShellLinkDual_Vtbl, 0x88a05c00_f000_11ce_8350_444553540000);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellLinkDual,
+    IShellLinkDual_Vtbl,
+    0x88a05c00_f000_11ce_8350_444553540000
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellLinkDual {
     pub unsafe fn Path(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -22500,7 +22730,12 @@ pub struct IShellLinkDual_Vtbl {
     Save: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellLinkDual2, IShellLinkDual2_Vtbl, 0x317ee249_f12e_11d2_b1e4_00c04f8eeb3e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellLinkDual2,
+    IShellLinkDual2_Vtbl,
+    0x317ee249_f12e_11d2_b1e4_00c04f8eeb3e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellLinkDual2 {
     pub unsafe fn Path(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -22835,7 +23070,12 @@ pub struct IShellMenuCallback_Vtbl {
     CallbackSM: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellNameSpace, IShellNameSpace_Vtbl, 0xe572d3c9_37be_4ae2_825d_d521763e3108);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellNameSpace,
+    IShellNameSpace_Vtbl,
+    0xe572d3c9_37be_4ae2_825d_d521763e3108
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellNameSpace {
     pub unsafe fn MoveSelectionUp(&self) -> ::windows_core::Result<()> {
@@ -23122,7 +23362,12 @@ pub struct IShellTaskScheduler_Vtbl {
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwreleasestatus: u32, dwthreadtimeout: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellUIHelper, IShellUIHelper_Vtbl, 0x729fe2f8_1ea8_11d1_8f85_00c04fc2fbe1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellUIHelper,
+    IShellUIHelper_Vtbl,
+    0x729fe2f8_1ea8_11d1_8f85_00c04fc2fbe1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellUIHelper {
     pub unsafe fn ResetFirstBootMode(&self) -> ::windows_core::Result<()> {
@@ -23252,7 +23497,12 @@ pub struct IShellUIHelper_Vtbl {
     ShowBrowserUI: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellUIHelper2, IShellUIHelper2_Vtbl, 0xa7fe6eda_1932_4281_b881_87b31b8bc52c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellUIHelper2,
+    IShellUIHelper2_Vtbl,
+    0xa7fe6eda_1932_4281_b881_87b31b8bc52c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellUIHelper2 {
     pub unsafe fn ResetFirstBootMode(&self) -> ::windows_core::Result<()> {
@@ -23437,7 +23687,12 @@ pub struct IShellUIHelper2_Vtbl {
     pub SearchGuideUrl: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrurl: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellUIHelper3, IShellUIHelper3_Vtbl, 0x528df2ec_d419_40bc_9b6d_dcdbf9c1b25d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellUIHelper3,
+    IShellUIHelper3_Vtbl,
+    0x528df2ec_d419_40bc_9b6d_dcdbf9c1b25d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellUIHelper3 {
     pub unsafe fn ResetFirstBootMode(&self) -> ::windows_core::Result<()> {
@@ -23689,7 +23944,12 @@ pub struct IShellUIHelper3_Vtbl {
     pub ShowInPrivateHelp: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellUIHelper4, IShellUIHelper4_Vtbl, 0xb36e6a53_8073_499e_824c_d776330a333e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellUIHelper4,
+    IShellUIHelper4_Vtbl,
+    0xb36e6a53_8073_499e_824c_d776330a333e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellUIHelper4 {
     pub unsafe fn ResetFirstBootMode(&self) -> ::windows_core::Result<()> {
@@ -24068,7 +24328,12 @@ pub struct IShellUIHelper4_Vtbl {
     pub msActiveXFilteringEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pfenabled: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellUIHelper5, IShellUIHelper5_Vtbl, 0xa2a08b09_103d_4d3f_b91c_ea455ca82efa);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellUIHelper5,
+    IShellUIHelper5_Vtbl,
+    0xa2a08b09_103d_4d3f_b91c_ea455ca82efa
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellUIHelper5 {
     pub unsafe fn ResetFirstBootMode(&self) -> ::windows_core::Result<()> {
@@ -24448,7 +24713,12 @@ pub struct IShellUIHelper5_Vtbl {
     pub msChangeDefaultBrowser: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, fchange: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellUIHelper6, IShellUIHelper6_Vtbl, 0x987a573e_46ee_4e89_96ab_ddf7f8fdc98c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellUIHelper6,
+    IShellUIHelper6_Vtbl,
+    0x987a573e_46ee_4e89_96ab_ddf7f8fdc98c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellUIHelper6 {
     pub unsafe fn ResetFirstBootMode(&self) -> ::windows_core::Result<()> {
@@ -24923,7 +25193,12 @@ pub struct IShellUIHelper6_Vtbl {
     pub msLaunchInternetOptions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellUIHelper7, IShellUIHelper7_Vtbl, 0x60e567c8_9573_4ab2_a264_637c6c161cb1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellUIHelper7,
+    IShellUIHelper7_Vtbl,
+    0x60e567c8_9573_4ab2_a264_637c6c161cb1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellUIHelper7 {
     pub unsafe fn ResetFirstBootMode(&self) -> ::windows_core::Result<()> {
@@ -25436,7 +25711,12 @@ pub struct IShellUIHelper7_Vtbl {
     pub LaunchIE: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrurl: ::std::mem::MaybeUninit<::windows_core::BSTR>, automated: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellUIHelper8, IShellUIHelper8_Vtbl, 0x66debcf2_05b0_4f07_b49b_b96241a65db2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellUIHelper8,
+    IShellUIHelper8_Vtbl,
+    0x66debcf2_05b0_4f07_b49b_b96241a65db2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellUIHelper8 {
     pub unsafe fn ResetFirstBootMode(&self) -> ::windows_core::Result<()> {
@@ -25975,7 +26255,12 @@ pub struct IShellUIHelper8_Vtbl {
     pub LaunchInHVSI: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrurl: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellUIHelper9, IShellUIHelper9_Vtbl, 0x6cdf73b0_7f2f_451f_bc0f_63e0f3284e54);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellUIHelper9,
+    IShellUIHelper9_Vtbl,
+    0x6cdf73b0_7f2f_451f_bc0f_63e0f3284e54
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellUIHelper9 {
     pub unsafe fn ResetFirstBootMode(&self) -> ::windows_core::Result<()> {
@@ -26512,7 +26797,12 @@ pub struct IShellUIHelper9_Vtbl {
     pub GetOSSku: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdwresult: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IShellView, IShellView_Vtbl, 0x000214e3_0000_0000_c000_000000000046);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IShellView,
+    IShellView_Vtbl,
+    0x000214e3_0000_0000_c000_000000000046
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IShellView {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -26619,7 +26909,12 @@ pub struct IShellView_Vtbl {
     pub GetItemObject: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, uitem: u32, riid: *const ::windows_core::GUID, ppv: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IShellView2, IShellView2_Vtbl, 0x88e39e80_3578_11cf_ae69_08002b2e1262);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IShellView2,
+    IShellView2_Vtbl,
+    0x88e39e80_3578_11cf_ae69_08002b2e1262
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IShellView2 {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -26734,7 +27029,12 @@ pub struct IShellView2_Vtbl {
     SelectAndPositionItem: usize,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IShellView3, IShellView3_Vtbl, 0xec39fa88_f8af_41c5_8421_38bed28f4673);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IShellView3,
+    IShellView3_Vtbl,
+    0xec39fa88_f8af_41c5_8421_38bed28f4673
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IShellView3 {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -26850,7 +27150,12 @@ pub struct IShellView3_Vtbl {
     CreateViewWindow3: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShellWindows, IShellWindows_Vtbl, 0x85cb6900_4d95_11cf_960c_0080c7f4ee85);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShellWindows,
+    IShellWindows_Vtbl,
+    0x85cb6900_4d95_11cf_960c_0080c7f4ee85
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShellWindows {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -27118,7 +27423,12 @@ pub struct IStorageProviderPropertyHandler_Vtbl {
     SaveProperties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IStreamAsync, IStreamAsync_Vtbl, 0xfe0b6665_e0ca_49b9_a178_2b5cb48d92a5);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IStreamAsync,
+    IStreamAsync_Vtbl,
+    0xfe0b6665_e0ca_49b9_a178_2b5cb48d92a5
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IStreamAsync {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -29852,7 +30162,12 @@ pub struct IVisualProperties_Vtbl {
     pub SetTheme: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pszsubappname: ::windows_core::PCWSTR, pszsubidlist: ::windows_core::PCWSTR) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWebBrowser, IWebBrowser_Vtbl, 0xeab22ac1_30c1_11cf_a7eb_0000c05bae0b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWebBrowser,
+    IWebBrowser_Vtbl,
+    0xeab22ac1_30c1_11cf_a7eb_0000c05bae0b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWebBrowser {
     pub unsafe fn GoBack(&self) -> ::windows_core::Result<()> {
@@ -30011,7 +30326,12 @@ pub struct IWebBrowser_Vtbl {
     pub Busy: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbool: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWebBrowser2, IWebBrowser2_Vtbl, 0xd30c1661_cdaf_11d0_8a3e_00c04fc9e26e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWebBrowser2,
+    IWebBrowser2_Vtbl,
+    0xd30c1661_cdaf_11d0_8a3e_00c04fc9e26e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWebBrowser2 {
     pub unsafe fn GoBack(&self) -> ::windows_core::Result<()> {
@@ -30354,7 +30674,12 @@ pub struct IWebBrowser2_Vtbl {
     pub SetResizable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWebBrowserApp, IWebBrowserApp_Vtbl, 0x0002df05_0000_0000_c000_000000000046);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWebBrowserApp,
+    IWebBrowserApp_Vtbl,
+    0x0002df05_0000_0000_c000_000000000046
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWebBrowserApp {
     pub unsafe fn GoBack(&self) -> ::windows_core::Result<()> {
@@ -30632,7 +30957,12 @@ pub struct IWebWizardExtension_Vtbl {
     pub SetErrorURL: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pszerrorurl: ::windows_core::PCWSTR) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWebWizardHost, IWebWizardHost_Vtbl, 0x18bcc359_4990_4bfb_b951_3c83702be5f9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWebWizardHost,
+    IWebWizardHost_Vtbl,
+    0x18bcc359_4990_4bfb_b951_3c83702be5f9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWebWizardHost {
     pub unsafe fn FinalBack(&self) -> ::windows_core::Result<()> {
@@ -30711,7 +31041,12 @@ pub struct IWebWizardHost_Vtbl {
     pub SetHeaderText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrheadertitle: ::std::mem::MaybeUninit<::windows_core::BSTR>, bstrheadersubtitle: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWebWizardHost2, IWebWizardHost2_Vtbl, 0xf9c013dc_3c23_4041_8e39_cfb402f7ea59);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWebWizardHost2,
+    IWebWizardHost2_Vtbl,
+    0xf9c013dc_3c23_4041_8e39_cfb402f7ea59
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWebWizardHost2 {
     pub unsafe fn FinalBack(&self) -> ::windows_core::Result<()> {

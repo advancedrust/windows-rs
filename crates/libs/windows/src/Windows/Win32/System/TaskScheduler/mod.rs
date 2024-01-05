@@ -1,5 +1,10 @@
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAction, IAction_Vtbl, 0xbae54997_48b1_4cbe_9965_d6be263ebea4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAction,
+    IAction_Vtbl,
+    0xbae54997_48b1_4cbe_9965_d6be263ebea4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAction {
     pub unsafe fn Id(&self, pid: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -27,7 +32,12 @@ pub struct IAction_Vtbl {
     pub Type: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ptype: *mut TASK_ACTION_TYPE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IActionCollection, IActionCollection_Vtbl, 0x02820e19_7b98_4ed2_b2e8_fdccceff619b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IActionCollection,
+    IActionCollection_Vtbl,
+    0x02820e19_7b98_4ed2_b2e8_fdccceff619b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IActionCollection {
     pub unsafe fn Count(&self, pcount: *mut i32) -> ::windows_core::Result<()> {
@@ -104,7 +114,12 @@ pub struct IActionCollection_Vtbl {
     pub SetContext: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, context: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IBootTrigger, IBootTrigger_Vtbl, 0x2a9c35da_d357_41f4_bbc1_207ac1b1f3cb);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IBootTrigger,
+    IBootTrigger_Vtbl,
+    0x2a9c35da_d357_41f4_bbc1_207ac1b1f3cb
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IBootTrigger {
     pub unsafe fn Type(&self, ptype: *mut TASK_TRIGGER_TYPE2) -> ::windows_core::Result<()> {
@@ -190,7 +205,12 @@ pub struct IBootTrigger_Vtbl {
     pub SetDelay: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, delay: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IComHandlerAction, IComHandlerAction_Vtbl, 0x6d2fd252_75c5_4f66_90ba_2a7d8cc3039f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IComHandlerAction,
+    IComHandlerAction_Vtbl,
+    0x6d2fd252_75c5_4f66_90ba_2a7d8cc3039f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IComHandlerAction {
     pub unsafe fn Id(&self, pid: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -237,7 +257,12 @@ pub struct IComHandlerAction_Vtbl {
     pub SetData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, data: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDailyTrigger, IDailyTrigger_Vtbl, 0x126c5cd8_b288_41d5_8dbf_e491446adc5c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDailyTrigger,
+    IDailyTrigger_Vtbl,
+    0x126c5cd8_b288_41d5_8dbf_e491446adc5c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDailyTrigger {
     pub unsafe fn Type(&self, ptype: *mut TASK_TRIGGER_TYPE2) -> ::windows_core::Result<()> {
@@ -331,7 +356,12 @@ pub struct IDailyTrigger_Vtbl {
     pub SetRandomDelay: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, randomdelay: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IEmailAction, IEmailAction_Vtbl, 0x10f62c64_7e16_4314_a0c2_0c3683f99d40);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IEmailAction,
+    IEmailAction_Vtbl,
+    0x10f62c64_7e16_4314_a0c2_0c3683f99d40
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IEmailAction {
     pub unsafe fn Id(&self, pid: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -510,7 +540,12 @@ pub struct IEnumWorkItems_Vtbl {
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenumworkitems: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IEventTrigger, IEventTrigger_Vtbl, 0xd45b0167_9653_4eef_b94f_0732ca7af251);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IEventTrigger,
+    IEventTrigger_Vtbl,
+    0xd45b0167_9653_4eef_b94f_0732ca7af251
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IEventTrigger {
     pub unsafe fn Type(&self, ptype: *mut TASK_TRIGGER_TYPE2) -> ::windows_core::Result<()> {
@@ -629,7 +664,12 @@ pub struct IEventTrigger_Vtbl {
     SetValueQueries: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IExecAction, IExecAction_Vtbl, 0x4c3d624d_fd6b_49a3_b9b7_09cb3cd3f047);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IExecAction,
+    IExecAction_Vtbl,
+    0x4c3d624d_fd6b_49a3_b9b7_09cb3cd3f047
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IExecAction {
     pub unsafe fn Id(&self, pid: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -687,7 +727,12 @@ pub struct IExecAction_Vtbl {
     pub SetWorkingDirectory: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, workingdirectory: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IExecAction2, IExecAction2_Vtbl, 0xf2a82542_bda5_4e6b_9143_e2bf4f8987b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IExecAction2,
+    IExecAction2_Vtbl,
+    0xf2a82542_bda5_4e6b_9143_e2bf4f8987b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IExecAction2 {
     pub unsafe fn Id(&self, pid: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -750,7 +795,12 @@ pub struct IExecAction2_Vtbl {
     pub SetHideAppWindow: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, hideappwindow: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IIdleSettings, IIdleSettings_Vtbl, 0x84594461_0053_4342_a8fd_088fabf11f32);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IIdleSettings,
+    IIdleSettings_Vtbl,
+    0x84594461_0053_4342_a8fd_088fabf11f32
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IIdleSettings {
     pub unsafe fn IdleDuration(&self, pdelay: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -807,7 +857,12 @@ pub struct IIdleSettings_Vtbl {
     pub SetRestartOnIdle: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, restart: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IIdleTrigger, IIdleTrigger_Vtbl, 0xd537d2b0_9fb3_4d34_9739_1ff5ce7b1ef3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IIdleTrigger,
+    IIdleTrigger_Vtbl,
+    0xd537d2b0_9fb3_4d34_9739_1ff5ce7b1ef3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IIdleTrigger {
     pub unsafe fn Type(&self, ptype: *mut TASK_TRIGGER_TYPE2) -> ::windows_core::Result<()> {
@@ -882,7 +937,12 @@ pub struct IIdleTrigger_Vtbl {
     pub base__: ITrigger_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ILogonTrigger, ILogonTrigger_Vtbl, 0x72dade38_fae4_4b3e_baf4_5d009af02b1c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ILogonTrigger,
+    ILogonTrigger_Vtbl,
+    0x72dade38_fae4_4b3e_baf4_5d009af02b1c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ILogonTrigger {
     pub unsafe fn Type(&self, ptype: *mut TASK_TRIGGER_TYPE2) -> ::windows_core::Result<()> {
@@ -979,7 +1039,12 @@ pub struct ILogonTrigger_Vtbl {
     pub SetUserId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, user: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMaintenanceSettings, IMaintenanceSettings_Vtbl, 0xa6024fa8_9652_4adb_a6bf_5cfcd877a7ba);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMaintenanceSettings,
+    IMaintenanceSettings_Vtbl,
+    0xa6024fa8_9652_4adb_a6bf_5cfcd877a7ba
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMaintenanceSettings {
     pub unsafe fn SetPeriod<P0>(&self, value: P0) -> ::windows_core::Result<()>
@@ -1025,7 +1090,12 @@ pub struct IMaintenanceSettings_Vtbl {
     pub Exclusive: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, target: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMonthlyDOWTrigger, IMonthlyDOWTrigger_Vtbl, 0x77d025a3_90fa_43aa_b52e_cda5499b946a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMonthlyDOWTrigger,
+    IMonthlyDOWTrigger_Vtbl,
+    0x77d025a3_90fa_43aa_b52e_cda5499b946a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMonthlyDOWTrigger {
     pub unsafe fn Type(&self, ptype: *mut TASK_TRIGGER_TYPE2) -> ::windows_core::Result<()> {
@@ -1146,7 +1216,12 @@ pub struct IMonthlyDOWTrigger_Vtbl {
     pub SetRandomDelay: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, randomdelay: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMonthlyTrigger, IMonthlyTrigger_Vtbl, 0x97c45ef1_6b02_4a1a_9c0e_1ebfba1500ac);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMonthlyTrigger,
+    IMonthlyTrigger_Vtbl,
+    0x97c45ef1_6b02_4a1a_9c0e_1ebfba1500ac
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMonthlyTrigger {
     pub unsafe fn Type(&self, ptype: *mut TASK_TRIGGER_TYPE2) -> ::windows_core::Result<()> {
@@ -1259,7 +1334,12 @@ pub struct IMonthlyTrigger_Vtbl {
     pub SetRandomDelay: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, randomdelay: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(INetworkSettings, INetworkSettings_Vtbl, 0x9f7dea84_c30b_4245_80b6_00e9f646f1b4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    INetworkSettings,
+    INetworkSettings_Vtbl,
+    0x9f7dea84_c30b_4245_80b6_00e9f646f1b4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl INetworkSettings {
     pub unsafe fn Name(&self, pname: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -1294,7 +1374,12 @@ pub struct INetworkSettings_Vtbl {
     pub SetId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, id: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrincipal, IPrincipal_Vtbl, 0xd98d51e5_c9b4_496a_a9c1_18980261cf0f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrincipal,
+    IPrincipal_Vtbl,
+    0xd98d51e5_c9b4_496a_a9c1_18980261cf0f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrincipal {
     pub unsafe fn Id(&self, pid: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -1367,7 +1452,12 @@ pub struct IPrincipal_Vtbl {
     pub SetRunLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, runlevel: TASK_RUNLEVEL_TYPE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrincipal2, IPrincipal2_Vtbl, 0x248919ae_e345_4a6d_8aeb_e0d3165c904e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrincipal2,
+    IPrincipal2_Vtbl,
+    0x248919ae_e345_4a6d_8aeb_e0d3165c904e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrincipal2 {
     pub unsafe fn ProcessTokenSidType(&self, pprocesstokensidtype: *mut TASK_PROCESSTOKENSID_TYPE) -> ::windows_core::Result<()> {
@@ -1425,7 +1515,12 @@ pub struct IProvideTaskPage_Vtbl {
     GetPage: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRegisteredTask, IRegisteredTask_Vtbl, 0x9c86f320_dee3_4dd1_b972_a303f26b061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRegisteredTask,
+    IRegisteredTask_Vtbl,
+    0x9c86f320_dee3_4dd1_b972_a303f26b061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRegisteredTask {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1553,7 +1648,12 @@ pub struct IRegisteredTask_Vtbl {
     pub GetRunTimes: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pststart: *const super::super::Foundation::SYSTEMTIME, pstend: *const super::super::Foundation::SYSTEMTIME, pcount: *mut u32, pruntimes: *mut *mut super::super::Foundation::SYSTEMTIME) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRegisteredTaskCollection, IRegisteredTaskCollection_Vtbl, 0x86627eb4_42a7_41e4_a4d9_ac33a72f2d52);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRegisteredTaskCollection,
+    IRegisteredTaskCollection_Vtbl,
+    0x86627eb4_42a7_41e4_a4d9_ac33a72f2d52
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRegisteredTaskCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -1586,7 +1686,12 @@ pub struct IRegisteredTaskCollection_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenum: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRegistrationInfo, IRegistrationInfo_Vtbl, 0x416d8b73_cb41_4ea1_805c_9be9a5ac4a74);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRegistrationInfo,
+    IRegistrationInfo_Vtbl,
+    0x416d8b73_cb41_4ea1_805c_9be9a5ac4a74
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRegistrationInfo {
     pub unsafe fn Description(&self, pdescription: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -1705,7 +1810,12 @@ pub struct IRegistrationInfo_Vtbl {
     pub SetSource: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, source: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRegistrationTrigger, IRegistrationTrigger_Vtbl, 0x4c8fec3a_c218_4e0c_b23d_629024db91a2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRegistrationTrigger,
+    IRegistrationTrigger_Vtbl,
+    0x4c8fec3a_c218_4e0c_b23d_629024db91a2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRegistrationTrigger {
     pub unsafe fn Type(&self, ptype: *mut TASK_TRIGGER_TYPE2) -> ::windows_core::Result<()> {
@@ -1791,7 +1901,12 @@ pub struct IRegistrationTrigger_Vtbl {
     pub SetDelay: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, delay: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRepetitionPattern, IRepetitionPattern_Vtbl, 0x7fb9acf1_26be_400e_85b5_294b9c75dfd6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRepetitionPattern,
+    IRepetitionPattern_Vtbl,
+    0x7fb9acf1_26be_400e_85b5_294b9c75dfd6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRepetitionPattern {
     pub unsafe fn Interval(&self, pinterval: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -1837,7 +1952,12 @@ pub struct IRepetitionPattern_Vtbl {
     pub SetStopAtDurationEnd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, stop: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRunningTask, IRunningTask_Vtbl, 0x653758fb_7b9a_4f1e_a471_beeb8e9b834e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRunningTask,
+    IRunningTask_Vtbl,
+    0x653758fb_7b9a_4f1e_a471_beeb8e9b834e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRunningTask {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1888,7 +2008,12 @@ pub struct IRunningTask_Vtbl {
     pub EnginePID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppid: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRunningTaskCollection, IRunningTaskCollection_Vtbl, 0x6a67614b_6828_4fec_aa54_6d52e8f1f2db);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRunningTaskCollection,
+    IRunningTaskCollection_Vtbl,
+    0x6a67614b_6828_4fec_aa54_6d52e8f1f2db
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRunningTaskCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -2071,7 +2196,12 @@ pub struct IScheduledWorkItem_Vtbl {
     pub GetAccountInformation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppwszaccountname: *mut ::windows_core::PWSTR) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISessionStateChangeTrigger, ISessionStateChangeTrigger_Vtbl, 0x754da71b_4385_4475_9dd9_598294fa3641);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISessionStateChangeTrigger,
+    ISessionStateChangeTrigger_Vtbl,
+    0x754da71b_4385_4475_9dd9_598294fa3641
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISessionStateChangeTrigger {
     pub unsafe fn Type(&self, ptype: *mut TASK_TRIGGER_TYPE2) -> ::windows_core::Result<()> {
@@ -2176,7 +2306,12 @@ pub struct ISessionStateChangeTrigger_Vtbl {
     pub SetStateChange: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, r#type: TASK_SESSION_STATE_CHANGE_TYPE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IShowMessageAction, IShowMessageAction_Vtbl, 0x505e9e68_af89_46b8_a30f_56162a83d537);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IShowMessageAction,
+    IShowMessageAction_Vtbl,
+    0x505e9e68_af89_46b8_a30f_56162a83d537
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IShowMessageAction {
     pub unsafe fn Id(&self, pid: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -2407,7 +2542,12 @@ pub struct ITask_Vtbl {
     pub GetMaxRunTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdwmaxruntimems: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITaskDefinition, ITaskDefinition_Vtbl, 0xf5bc8fc5_536d_4f77_b852_fbc1356fdeb6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITaskDefinition,
+    ITaskDefinition_Vtbl,
+    0xf5bc8fc5_536d_4f77_b852_fbc1356fdeb6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskDefinition {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2552,7 +2692,12 @@ pub struct ITaskDefinition_Vtbl {
     pub SetXmlText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, xml: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITaskFolder, ITaskFolder_Vtbl, 0x8cfac062_a080_4c15_9a88_aa7c2af80dfc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITaskFolder,
+    ITaskFolder_Vtbl,
+    0x8cfac062_a080_4c15_9a88_aa7c2af80dfc
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskFolder {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2688,7 +2833,12 @@ pub struct ITaskFolder_Vtbl {
     pub SetSecurityDescriptor: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, sddl: ::std::mem::MaybeUninit<::windows_core::BSTR>, flags: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITaskFolderCollection, ITaskFolderCollection_Vtbl, 0x79184a66_8664_423f_97f1_637356a5d812);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITaskFolderCollection,
+    ITaskFolderCollection_Vtbl,
+    0x79184a66_8664_423f_97f1_637356a5d812
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskFolderCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -2771,7 +2921,12 @@ pub struct ITaskHandlerStatus_Vtbl {
     pub TaskCompleted: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, taskerrcode: ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITaskNamedValueCollection, ITaskNamedValueCollection_Vtbl, 0xb4ef826b_63c3_46e4_a504_ef69e4f7ea4d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITaskNamedValueCollection,
+    ITaskNamedValueCollection_Vtbl,
+    0xb4ef826b_63c3_46e4_a504_ef69e4f7ea4d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskNamedValueCollection {
     pub unsafe fn Count(&self, pcount: *mut i32) -> ::windows_core::Result<()> {
@@ -2825,7 +2980,12 @@ pub struct ITaskNamedValueCollection_Vtbl {
     pub Clear: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITaskNamedValuePair, ITaskNamedValuePair_Vtbl, 0x39038068_2b46_4afd_8662_7bb6f868d221);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITaskNamedValuePair,
+    ITaskNamedValuePair_Vtbl,
+    0x39038068_2b46_4afd_8662_7bb6f868d221
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskNamedValuePair {
     pub unsafe fn Name(&self, pname: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -2924,7 +3084,12 @@ pub struct ITaskScheduler_Vtbl {
     pub IsOfType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pwszname: ::windows_core::PCWSTR, riid: *const ::windows_core::GUID) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITaskService, ITaskService_Vtbl, 0x2faba4c7_4da9_4013_9697_20cc3fd40f85);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITaskService,
+    ITaskService_Vtbl,
+    0x2faba4c7_4da9_4013_9697_20cc3fd40f85
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskService {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3004,7 +3169,12 @@ pub struct ITaskService_Vtbl {
     pub HighestVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pversion: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITaskSettings, ITaskSettings_Vtbl, 0x8fd4711d_2d02_4c8c_87e3_eff699de127e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITaskSettings,
+    ITaskSettings_Vtbl,
+    0x8fd4711d_2d02_4c8c_87e3_eff699de127e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskSettings {
     pub unsafe fn AllowDemandStart(&self, pallowdemandstart: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::Result<()> {
@@ -3247,7 +3417,12 @@ pub struct ITaskSettings_Vtbl {
     SetNetworkSettings: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITaskSettings2, ITaskSettings2_Vtbl, 0x2c05c3f0_6eed_4c05_a15f_ed7d7a98a369);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITaskSettings2,
+    ITaskSettings2_Vtbl,
+    0x2c05c3f0_6eed_4c05_a15f_ed7d7a98a369
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskSettings2 {
     pub unsafe fn DisallowStartOnRemoteAppSession(&self, pdisallowstart: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::Result<()> {
@@ -3282,7 +3457,12 @@ pub struct ITaskSettings2_Vtbl {
     pub SetUseUnifiedSchedulingEngine: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, useunifiedengine: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITaskSettings3, ITaskSettings3_Vtbl, 0x0ad9d0d7_0c7f_4ebb_9a5f_d1c648dca528);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITaskSettings3,
+    ITaskSettings3_Vtbl,
+    0x0ad9d0d7_0c7f_4ebb_9a5f_d1c648dca528
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITaskSettings3 {
     pub unsafe fn AllowDemandStart(&self, pallowdemandstart: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::Result<()> {
@@ -3586,7 +3766,12 @@ pub struct ITaskVariables_Vtbl {
     pub GetContext: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pcontext: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITimeTrigger, ITimeTrigger_Vtbl, 0xb45747e0_eba7_4276_9f29_85c5bb300006);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITimeTrigger,
+    ITimeTrigger_Vtbl,
+    0xb45747e0_eba7_4276_9f29_85c5bb300006
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITimeTrigger {
     pub unsafe fn Type(&self, ptype: *mut TASK_TRIGGER_TYPE2) -> ::windows_core::Result<()> {
@@ -3672,7 +3857,12 @@ pub struct ITimeTrigger_Vtbl {
     pub SetRandomDelay: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, randomdelay: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITrigger, ITrigger_Vtbl, 0x09941815_ea89_4b5b_89e0_2a773801fac3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITrigger,
+    ITrigger_Vtbl,
+    0x09941815_ea89_4b5b_89e0_2a773801fac3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITrigger {
     pub unsafe fn Type(&self, ptype: *mut TASK_TRIGGER_TYPE2) -> ::windows_core::Result<()> {
@@ -3766,7 +3956,12 @@ pub struct ITrigger_Vtbl {
     pub SetEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enabled: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITriggerCollection, ITriggerCollection_Vtbl, 0x85df5081_1b24_4f32_878a_d9d14df4cb77);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITriggerCollection,
+    ITriggerCollection_Vtbl,
+    0x85df5081_1b24_4f32_878a_d9d14df4cb77
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITriggerCollection {
     pub unsafe fn Count(&self, pcount: *mut i32) -> ::windows_core::Result<()> {
@@ -3821,7 +4016,12 @@ pub struct ITriggerCollection_Vtbl {
     pub Clear: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWeeklyTrigger, IWeeklyTrigger_Vtbl, 0x5038fc98_82ff_436d_8728_a512a57c9dc1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWeeklyTrigger,
+    IWeeklyTrigger_Vtbl,
+    0x5038fc98_82ff_436d_8728_a512a57c9dc1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWeeklyTrigger {
     pub unsafe fn Type(&self, ptype: *mut TASK_TRIGGER_TYPE2) -> ::windows_core::Result<()> {

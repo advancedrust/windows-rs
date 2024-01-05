@@ -532,7 +532,12 @@ where
     WTSWaitSystemEvent(hserver.into_param().abi(), eventmask, peventflags).ok()
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IADsTSUserEx, IADsTSUserEx_Vtbl, 0xc4930e79_2989_4462_8a60_2fcf2f2955ef);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IADsTSUserEx,
+    IADsTSUserEx_Vtbl,
+    0xc4930e79_2989_4462_8a60_2fcf2f2955ef
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IADsTSUserEx {
     pub unsafe fn TerminalServicesProfilePath(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -860,7 +865,12 @@ pub struct IAudioOutputEndpointRT_Vtbl {
     pub PulseEndpoint: unsafe extern "system" fn(this: *mut ::core::ffi::c_void),
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRemoteDesktopClient, IRemoteDesktopClient_Vtbl, 0x57d25668_625a_4905_be4e_304caa13f89c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRemoteDesktopClient,
+    IRemoteDesktopClient_Vtbl,
+    0x57d25668_625a_4905_be4e_304caa13f89c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRemoteDesktopClient {
     pub unsafe fn Connect(&self) -> ::windows_core::Result<()> {
@@ -952,7 +962,12 @@ pub struct IRemoteDesktopClient_Vtbl {
     detachEvent: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRemoteDesktopClientActions, IRemoteDesktopClientActions_Vtbl, 0x7d54bc4e_1028_45d4_8b0a_b9b6bffba176);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRemoteDesktopClientActions,
+    IRemoteDesktopClientActions_Vtbl,
+    0x7d54bc4e_1028_45d4_8b0a_b9b6bffba176
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRemoteDesktopClientActions {
     pub unsafe fn SuspendScreenUpdates(&self) -> ::windows_core::Result<()> {
@@ -982,7 +997,12 @@ pub struct IRemoteDesktopClientActions_Vtbl {
     pub GetSnapshot: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, snapshotencoding: SnapshotEncodingType, snapshotformat: SnapshotFormatType, snapshotwidth: u32, snapshotheight: u32, snapshotdata: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRemoteDesktopClientSettings, IRemoteDesktopClientSettings_Vtbl, 0x48a0f2a7_2713_431f_bbac_6f4558e7d64d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRemoteDesktopClientSettings,
+    IRemoteDesktopClientSettings_Vtbl,
+    0x48a0f2a7_2713_431f_bbac_6f4558e7d64d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRemoteDesktopClientSettings {
     pub unsafe fn ApplySettings<P0>(&self, rdpfilecontents: P0) -> ::windows_core::Result<()>
@@ -1032,7 +1052,12 @@ pub struct IRemoteDesktopClientSettings_Vtbl {
     SetRdpProperty: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IRemoteDesktopClientTouchPointer, IRemoteDesktopClientTouchPointer_Vtbl, 0x260ec22d_8cbc_44b5_9e88_2a37f6c93ae9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IRemoteDesktopClientTouchPointer,
+    IRemoteDesktopClientTouchPointer_Vtbl,
+    0x260ec22d_8cbc_44b5_9e88_2a37f6c93ae9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IRemoteDesktopClientTouchPointer {
     pub unsafe fn SetEnabled<P0>(&self, enabled: P0) -> ::windows_core::Result<()>
@@ -1342,7 +1367,12 @@ pub struct ITsSbClientConnection_Vtbl {
     pub GetDisconnectedSession: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppsession: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
-::windows_core::imp::com_interface!(ITsSbClientConnectionPropertySet, ITsSbClientConnectionPropertySet_Vtbl, 0xe51995b0_46d6_11dd_aa21_cedc55d89593);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`"]
+    ITsSbClientConnectionPropertySet,
+    ITsSbClientConnectionPropertySet_Vtbl,
+    0xe51995b0_46d6_11dd_aa21_cedc55d89593
+);
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ITsSbClientConnectionPropertySet {
     #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -1413,7 +1443,12 @@ pub struct ITsSbEnvironment_Vtbl {
     SetEnvironmentPropertySet: usize,
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
-::windows_core::imp::com_interface!(ITsSbEnvironmentPropertySet, ITsSbEnvironmentPropertySet_Vtbl, 0xd0d1bf7e_7acf_11dd_a243_e51156d89593);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`"]
+    ITsSbEnvironmentPropertySet,
+    ITsSbEnvironmentPropertySet_Vtbl,
+    0xd0d1bf7e_7acf_11dd_a243_e51156d89593
+);
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ITsSbEnvironmentPropertySet {
     #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -1801,7 +1836,12 @@ pub struct ITsSbPluginNotifySink_Vtbl {
     pub OnTerminated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
-::windows_core::imp::com_interface!(ITsSbPluginPropertySet, ITsSbPluginPropertySet_Vtbl, 0x95006e34_7eff_4b6c_bb40_49a4fda7cea6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`"]
+    ITsSbPluginPropertySet,
+    ITsSbPluginPropertySet_Vtbl,
+    0x95006e34_7eff_4b6c_bb40_49a4fda7cea6
+);
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ITsSbPluginPropertySet {
     #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -1831,7 +1871,12 @@ pub struct ITsSbPluginPropertySet_Vtbl {
     pub base__: ITsSbPropertySet_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
-::windows_core::imp::com_interface!(ITsSbPropertySet, ITsSbPropertySet_Vtbl, 0x5c025171_bb1e_4baf_a212_6d5e9774b33b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`"]
+    ITsSbPropertySet,
+    ITsSbPropertySet_Vtbl,
+    0x5c025171_bb1e_4baf_a212_6d5e9774b33b
+);
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ITsSbPropertySet {
     #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -2640,7 +2685,12 @@ pub struct ITsSbTarget_Vtbl {
     pub TargetLoad: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ptargetload: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
-::windows_core::imp::com_interface!(ITsSbTargetPropertySet, ITsSbTargetPropertySet_Vtbl, 0xf7bda5d6_994c_4e11_a079_2763b61830ac);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`"]
+    ITsSbTargetPropertySet,
+    ITsSbTargetPropertySet_Vtbl,
+    0xf7bda5d6_994c_4e11_a079_2763b61830ac
+);
 #[cfg(feature = "Win32_System_Com_StructuredStorage")]
 impl ITsSbTargetPropertySet {
     #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -4149,7 +4199,12 @@ pub struct IWorkspaceReportMessage_Vtbl {
     pub RegisterErrorEvent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrwkspid: ::std::mem::MaybeUninit<::windows_core::BSTR>, dwerrortype: u32, bstrerrormessagetype: ::std::mem::MaybeUninit<::windows_core::BSTR>, dwerrorcode: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWorkspaceResTypeRegistry, IWorkspaceResTypeRegistry_Vtbl, 0x1d428c79_6e2e_4351_a361_c0401a03a0ba);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWorkspaceResTypeRegistry,
+    IWorkspaceResTypeRegistry_Vtbl,
+    0x1d428c79_6e2e_4351_a361_c0401a03a0ba
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWorkspaceResTypeRegistry {
     pub unsafe fn AddResourceType<P0, P1, P2>(&self, fmachinewide: P0, bstrfileextension: P1, bstrlauncher: P2) -> ::windows_core::Result<()>
@@ -4210,7 +4265,12 @@ pub struct IWorkspaceResTypeRegistry_Vtbl {
     pub ModifyResourceType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, fmachinewide: super::super::Foundation::VARIANT_BOOL, bstrfileextension: ::std::mem::MaybeUninit<::windows_core::BSTR>, bstrlauncher: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWorkspaceScriptable, IWorkspaceScriptable_Vtbl, 0xefea49a2_dda5_429d_8f42_b23b92c4c347);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWorkspaceScriptable,
+    IWorkspaceScriptable_Vtbl,
+    0xefea49a2_dda5_429d_8f42_b23b92c4c347
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWorkspaceScriptable {
     pub unsafe fn DisconnectWorkspace<P0>(&self, bstrworkspaceid: P0) -> ::windows_core::Result<()>
@@ -4276,7 +4336,12 @@ pub struct IWorkspaceScriptable_Vtbl {
     pub DisconnectWorkspaceByFriendlyName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrworkspacefriendlyname: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWorkspaceScriptable2, IWorkspaceScriptable2_Vtbl, 0xefea49a2_dda5_429d_8f42_b33ba2c4c348);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWorkspaceScriptable2,
+    IWorkspaceScriptable2_Vtbl,
+    0xefea49a2_dda5_429d_8f42_b33ba2c4c348
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWorkspaceScriptable2 {
     pub unsafe fn DisconnectWorkspace<P0>(&self, bstrworkspaceid: P0) -> ::windows_core::Result<()>
@@ -4356,7 +4421,12 @@ pub struct IWorkspaceScriptable2_Vtbl {
     pub ResourceDismissed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrworkspaceid: ::std::mem::MaybeUninit<::windows_core::BSTR>, bstrworkspacefriendlyname: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWorkspaceScriptable3, IWorkspaceScriptable3_Vtbl, 0x531e6512_2cbf_4bd2_80a5_d90a71636a9a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWorkspaceScriptable3,
+    IWorkspaceScriptable3_Vtbl,
+    0x531e6512_2cbf_4bd2_80a5_d90a71636a9a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWorkspaceScriptable3 {
     pub unsafe fn DisconnectWorkspace<P0>(&self, bstrworkspaceid: P0) -> ::windows_core::Result<()>
@@ -4565,7 +4635,12 @@ pub struct ItsPubPlugin2_Vtbl {
     pub DeletePersonalDesktopAssignment: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, userid: ::windows_core::PCWSTR, poolid: ::windows_core::PCWSTR, endpointname: ::windows_core::PCWSTR) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_ITSWkspEvents, _ITSWkspEvents_Vtbl, 0xb922bbb8_4c55_4fea_8496_beb0b44285e9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _ITSWkspEvents,
+    _ITSWkspEvents_Vtbl,
+    0xb922bbb8_4c55_4fea_8496_beb0b44285e9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _ITSWkspEvents {}
 #[cfg(feature = "Win32_System_Com")]

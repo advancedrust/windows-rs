@@ -1,5 +1,10 @@
 #[cfg(all(feature = "Win32_System_Com", feature = "Win32_UI_Accessibility"))]
-::windows_core::imp::com_interface!(IAccessibleWinSAT, IAccessibleWinSAT_Vtbl, 0x30e6018a_94a8_4ff8_a69a_71b67413f07b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_UI_Accessibility\"`"]
+    IAccessibleWinSAT,
+    IAccessibleWinSAT_Vtbl,
+    0x30e6018a_94a8_4ff8_a69a_71b67413f07b
+);
 #[cfg(all(feature = "Win32_System_Com", feature = "Win32_UI_Accessibility"))]
 impl IAccessibleWinSAT {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_UI_Accessibility\"`"]
@@ -177,7 +182,12 @@ pub struct IInitiateWinSATAssessment_Vtbl {
     pub CancelAssessment: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IProvideWinSATAssessmentInfo, IProvideWinSATAssessmentInfo_Vtbl, 0x0cd1c380_52d3_4678_ac6f_e929e480be9e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IProvideWinSATAssessmentInfo,
+    IProvideWinSATAssessmentInfo_Vtbl,
+    0x0cd1c380_52d3_4678_ac6f_e929e480be9e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IProvideWinSATAssessmentInfo {
     pub unsafe fn Score(&self) -> ::windows_core::Result<f32> {
@@ -205,7 +215,12 @@ pub struct IProvideWinSATAssessmentInfo_Vtbl {
     pub Description: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, description: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IProvideWinSATResultsInfo, IProvideWinSATResultsInfo_Vtbl, 0xf8334d5d_568e_4075_875f_9df341506640);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IProvideWinSATResultsInfo,
+    IProvideWinSATResultsInfo_Vtbl,
+    0xf8334d5d_568e_4075_875f_9df341506640
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IProvideWinSATResultsInfo {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -272,7 +287,12 @@ pub struct IProvideWinSATVisuals_Vtbl {
     get_Bitmap: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IQueryAllWinSATAssessments, IQueryAllWinSATAssessments_Vtbl, 0x0b89ed1d_6398_4fea_87fc_567d8d19176f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IQueryAllWinSATAssessments,
+    IQueryAllWinSATAssessments_Vtbl,
+    0x0b89ed1d_6398_4fea_87fc_567d8d19176f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IQueryAllWinSATAssessments {
     #[doc = "Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`"]
@@ -313,7 +333,12 @@ pub struct IQueryOEMWinSATCustomization_Vtbl {
     pub GetOEMPrePopulationInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, state: *mut WINSAT_OEM_CUSTOMIZATION_STATE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IQueryRecentWinSATAssessment, IQueryRecentWinSATAssessment_Vtbl, 0xf8ad5d1f_3b47_4bdc_9375_7c6b1da4eca7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IQueryRecentWinSATAssessment,
+    IQueryRecentWinSATAssessment_Vtbl,
+    0xf8ad5d1f_3b47_4bdc_9375_7c6b1da4eca7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IQueryRecentWinSATAssessment {
     #[doc = "Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`"]

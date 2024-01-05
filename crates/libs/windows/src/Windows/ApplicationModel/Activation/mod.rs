@@ -1610,7 +1610,12 @@ pub struct IFileOpenPickerActivatedEventArgs2_Vtbl {
     pub CallerPackageFamilyName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IFileOpenPickerContinuationEventArgs, IFileOpenPickerContinuationEventArgs_Vtbl, 0xf0fa3f3a_d4e8_4ad3_9c34_2308f32fcec9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IFileOpenPickerContinuationEventArgs,
+    IFileOpenPickerContinuationEventArgs_Vtbl,
+    0xf0fa3f3a_d4e8_4ad3_9c34_2308f32fcec9
+);
 #[cfg(feature = "deprecated")]
 impl IFileOpenPickerContinuationEventArgs {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Storage\"`, `\"deprecated\"`"]
@@ -1747,7 +1752,12 @@ pub struct IFileSavePickerActivatedEventArgs2_Vtbl {
     pub EnterpriseId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IFileSavePickerContinuationEventArgs, IFileSavePickerContinuationEventArgs_Vtbl, 0x2c846fe1_3bad_4f33_8c8b_e46fae824b4b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IFileSavePickerContinuationEventArgs,
+    IFileSavePickerContinuationEventArgs_Vtbl,
+    0x2c846fe1_3bad_4f33_8c8b_e46fae824b4b
+);
 #[cfg(feature = "deprecated")]
 impl IFileSavePickerContinuationEventArgs {
     #[doc = "Required features: `\"Storage\"`, `\"deprecated\"`"]
@@ -1809,7 +1819,12 @@ pub struct IFileSavePickerContinuationEventArgs_Vtbl {
     File: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IFolderPickerContinuationEventArgs, IFolderPickerContinuationEventArgs_Vtbl, 0x51882366_9f4b_498f_beb0_42684f6e1c29);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IFolderPickerContinuationEventArgs,
+    IFolderPickerContinuationEventArgs_Vtbl,
+    0x51882366_9f4b_498f_beb0_42684f6e1c29
+);
 #[cfg(feature = "deprecated")]
 impl IFolderPickerContinuationEventArgs {
     #[doc = "Required features: `\"Storage\"`, `\"deprecated\"`"]
@@ -2865,7 +2880,12 @@ pub struct IVoiceCommandActivatedEventArgs_Vtbl {
     Result: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IWalletActionActivatedEventArgs, IWalletActionActivatedEventArgs_Vtbl, 0xfcfc027b_1a1a_4d22_923f_ae6f45fa52d9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IWalletActionActivatedEventArgs,
+    IWalletActionActivatedEventArgs_Vtbl,
+    0xfcfc027b_1a1a_4d22_923f_ae6f45fa52d9
+);
 #[cfg(feature = "deprecated")]
 impl IWalletActionActivatedEventArgs {
     #[doc = "Required features: `\"deprecated\"`"]

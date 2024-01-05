@@ -1,5 +1,10 @@
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IATSCChannelTuneRequest, IATSCChannelTuneRequest_Vtbl, 0x0369b4e1_45b6_11d3_b650_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IATSCChannelTuneRequest,
+    IATSCChannelTuneRequest_Vtbl,
+    0x0369b4e1_45b6_11d3_b650_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IATSCChannelTuneRequest {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -60,7 +65,12 @@ pub struct IATSCChannelTuneRequest_Vtbl {
     pub SetMinorChannel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, minorchannel: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IATSCComponentType, IATSCComponentType_Vtbl, 0xfc189e4d_7bd4_4125_b3b3_3a76a332cc96);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IATSCComponentType,
+    IATSCComponentType_Vtbl,
+    0xfc189e4d_7bd4_4125_b3b3_3a76a332cc96
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IATSCComponentType {
     pub unsafe fn Category(&self) -> ::windows_core::Result<super::ComponentCategory> {
@@ -171,7 +181,12 @@ pub struct IATSCComponentType_Vtbl {
     pub SetFlags: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, flags: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IATSCLocator, IATSCLocator_Vtbl, 0xbf8d986f_8c2b_4131_94d7_4d3d9fcc21ef);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IATSCLocator,
+    IATSCLocator_Vtbl,
+    0xbf8d986f_8c2b_4131_94d7_4d3d9fcc21ef
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IATSCLocator {
     pub unsafe fn CarrierFrequency(&self) -> ::windows_core::Result<i32> {
@@ -257,7 +272,12 @@ pub struct IATSCLocator_Vtbl {
     pub SetTSID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, tsid: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IATSCLocator2, IATSCLocator2_Vtbl, 0x612aa885_66cf_4090_ba0a_566f5312e4ca);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IATSCLocator2,
+    IATSCLocator2_Vtbl,
+    0x612aa885_66cf_4090_ba0a_566f5312e4ca
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IATSCLocator2 {
     pub unsafe fn CarrierFrequency(&self) -> ::windows_core::Result<i32> {
@@ -348,7 +368,12 @@ pub struct IATSCLocator2_Vtbl {
     pub SetProgramNumber: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, programnumber: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IATSCTuningSpace, IATSCTuningSpace_Vtbl, 0x0369b4e2_45b6_11d3_b650_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IATSCTuningSpace,
+    IATSCTuningSpace_Vtbl,
+    0x0369b4e2_45b6_11d3_b650_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IATSCTuningSpace {
     pub unsafe fn UniqueName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -903,7 +928,12 @@ pub struct IATSC_VCT_Vtbl {
     pub GetTableDescriptorByTag: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, btag: u8, pdwcookie: *mut u32, ppdescriptor: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAnalogAudioComponentType, IAnalogAudioComponentType_Vtbl, 0x2cfeb2a8_1787_4a24_a941_c6eaec39c842);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAnalogAudioComponentType,
+    IAnalogAudioComponentType_Vtbl,
+    0x2cfeb2a8_1787_4a24_a941_c6eaec39c842
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAnalogAudioComponentType {
     pub unsafe fn Category(&self) -> ::windows_core::Result<super::ComponentCategory> {
@@ -1000,7 +1030,12 @@ pub struct IAnalogAudioComponentType_Vtbl {
     pub SetAnalogAudioMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, mode: super::TVAudioMode) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAnalogLocator, IAnalogLocator_Vtbl, 0x34d1f26b_e339_430d_abce_738cb48984dc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAnalogLocator,
+    IAnalogLocator_Vtbl,
+    0x34d1f26b_e339_430d_abce_738cb48984dc
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAnalogLocator {
     pub unsafe fn CarrierFrequency(&self) -> ::windows_core::Result<i32> {
@@ -1077,7 +1112,12 @@ pub struct IAnalogLocator_Vtbl {
     pub SetVideoStandard: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, avs: super::AnalogVideoStandard) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAnalogRadioTuningSpace, IAnalogRadioTuningSpace_Vtbl, 0x2a6e293b_2595_11d3_b64c_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAnalogRadioTuningSpace,
+    IAnalogRadioTuningSpace_Vtbl,
+    0x2a6e293b_2595_11d3_b64c_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAnalogRadioTuningSpace {
     pub unsafe fn UniqueName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1220,7 +1260,12 @@ pub struct IAnalogRadioTuningSpace_Vtbl {
     pub SetStep: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, newstepval: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAnalogRadioTuningSpace2, IAnalogRadioTuningSpace2_Vtbl, 0x39dd45da_2da8_46ba_8a8a_87e2b73d983a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAnalogRadioTuningSpace2,
+    IAnalogRadioTuningSpace2_Vtbl,
+    0x39dd45da_2da8_46ba_8a8a_87e2b73d983a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAnalogRadioTuningSpace2 {
     pub unsafe fn UniqueName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1366,7 +1411,12 @@ pub struct IAnalogRadioTuningSpace2_Vtbl {
     pub SetCountryCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, newcountrycodeval: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAnalogTVTuningSpace, IAnalogTVTuningSpace_Vtbl, 0x2a6e293c_2595_11d3_b64c_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAnalogTVTuningSpace,
+    IAnalogTVTuningSpace_Vtbl,
+    0x2a6e293c_2595_11d3_b64c_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAnalogTVTuningSpace {
     pub unsafe fn UniqueName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1670,7 +1720,12 @@ pub struct IAttributeSet_Vtbl {
     pub SetAttrib: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, guidattribute: ::windows_core::GUID, pbattribute: *const u8, dwattributelength: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAuxInTuningSpace, IAuxInTuningSpace_Vtbl, 0xe48244b8_7e17_4f76_a763_5090ff1e2f30);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAuxInTuningSpace,
+    IAuxInTuningSpace_Vtbl,
+    0xe48244b8_7e17_4f76_a763_5090ff1e2f30
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAuxInTuningSpace {
     pub unsafe fn UniqueName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1786,7 +1841,12 @@ pub struct IAuxInTuningSpace_Vtbl {
     pub base__: ITuningSpace_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAuxInTuningSpace2, IAuxInTuningSpace2_Vtbl, 0xb10931ed_8bfe_4ab0_9dce_e469c29a9729);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAuxInTuningSpace2,
+    IAuxInTuningSpace2_Vtbl,
+    0xb10931ed_8bfe_4ab0_9dce_e469c29a9729
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAuxInTuningSpace2 {
     pub unsafe fn UniqueName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2102,7 +2162,12 @@ pub struct ICaptionServiceDescriptor_Vtbl {
     pub GetWideAspectRatio: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bindex: u8, pbval: *mut u8) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IChannelIDTuneRequest, IChannelIDTuneRequest_Vtbl, 0x156eff60_86f4_4e28_89fc_109799fd57ee);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IChannelIDTuneRequest,
+    IChannelIDTuneRequest_Vtbl,
+    0x156eff60_86f4_4e28_89fc_109799fd57ee
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IChannelIDTuneRequest {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2159,7 +2224,12 @@ pub struct IChannelIDTuneRequest_Vtbl {
     pub SetChannelID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, channelid: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IChannelTuneRequest, IChannelTuneRequest_Vtbl, 0x0369b4e0_45b6_11d3_b650_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IChannelTuneRequest,
+    IChannelTuneRequest_Vtbl,
+    0x0369b4e0_45b6_11d3_b650_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IChannelTuneRequest {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2213,7 +2283,12 @@ pub struct IChannelTuneRequest_Vtbl {
     pub SetChannel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, channel: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IComponent, IComponent_Vtbl, 0x1a5576fc_0e19_11d3_9d8e_00c04f72d980);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IComponent,
+    IComponent_Vtbl,
+    0x1a5576fc_0e19_11d3_9d8e_00c04f72d980
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IComponent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2288,7 +2363,12 @@ pub struct IComponent_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IComponentType, IComponentType_Vtbl, 0x6a340dc0_0311_11d3_9d8e_00c04f72d980);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IComponentType,
+    IComponentType_Vtbl,
+    0x6a340dc0_0311_11d3_9d8e_00c04f72d980
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IComponentType {
     pub unsafe fn Category(&self) -> ::windows_core::Result<super::ComponentCategory> {
@@ -2402,7 +2482,12 @@ pub struct IComponentType_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IComponentTypes, IComponentTypes_Vtbl, 0x0dc13d4a_0313_11d3_9d8e_00c04f72d980);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IComponentTypes,
+    IComponentTypes_Vtbl,
+    0x0dc13d4a_0313_11d3_9d8e_00c04f72d980
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IComponentTypes {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -2489,7 +2574,12 @@ pub struct IComponentTypes_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IComponents, IComponents_Vtbl, 0x39a48091_fffe_4182_a161_3ff802640e26);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IComponents,
+    IComponents_Vtbl,
+    0x39a48091_fffe_4182_a161_3ff802640e26
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IComponents {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -2576,7 +2666,12 @@ pub struct IComponents_Vtbl {
     put_Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IComponentsOld, IComponentsOld_Vtbl, 0xfcd01846_0e19_11d3_9d8e_00c04f72d980);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IComponentsOld,
+    IComponentsOld_Vtbl,
+    0xfcd01846_0e19_11d3_9d8e_00c04f72d980
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IComponentsOld {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -2857,7 +2952,12 @@ pub struct IDTFilterConfig_Vtbl {
     pub GetSecureChannelObject: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunkdrmsecurechannel: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDTFilterEvents, IDTFilterEvents_Vtbl, 0xc4c4c4c2_0049_4e2b_98fb_9537f6ce516d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDTFilterEvents,
+    IDTFilterEvents_Vtbl,
+    0xc4c4c4c2_0049_4e2b_98fb_9537f6ce516d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDTFilterEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -2882,7 +2982,12 @@ pub struct IDTFilterLicenseRenewal_Vtbl {
     pub GetLicenseRenewalData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppwszfilename: *mut ::windows_core::PWSTR, ppwszexpiredkid: *mut ::windows_core::PWSTR, ppwsztunerid: *mut ::windows_core::PWSTR) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDVBCLocator, IDVBCLocator_Vtbl, 0x6e42f36e_1dd2_43c4_9f78_69d25ae39034);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDVBCLocator,
+    IDVBCLocator_Vtbl,
+    0x6e42f36e_1dd2_43c4_9f78_69d25ae39034
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDVBCLocator {
     pub unsafe fn CarrierFrequency(&self) -> ::windows_core::Result<i32> {
@@ -2950,7 +3055,12 @@ pub struct IDVBCLocator_Vtbl {
     pub base__: IDigitalLocator_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDVBSLocator, IDVBSLocator_Vtbl, 0x3d7c353c_0d04_45f1_a742_f97cc1188dc8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDVBSLocator,
+    IDVBSLocator_Vtbl,
+    0x3d7c353c_0d04_45f1_a742_f97cc1188dc8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDVBSLocator {
     pub unsafe fn CarrierFrequency(&self) -> ::windows_core::Result<i32> {
@@ -3066,7 +3176,12 @@ pub struct IDVBSLocator_Vtbl {
     pub SetElevation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, elevation: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDVBSLocator2, IDVBSLocator2_Vtbl, 0x6044634a_1733_4f99_b982_5fb12afce4f0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDVBSLocator2,
+    IDVBSLocator2_Vtbl,
+    0x6044634a_1733_4f99_b982_5fb12afce4f0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDVBSLocator2 {
     pub unsafe fn CarrierFrequency(&self) -> ::windows_core::Result<i32> {
@@ -3235,7 +3350,12 @@ pub struct IDVBSLocator2_Vtbl {
     pub SetSignalPilot: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pilotval: super::Pilot) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDVBSTuningSpace, IDVBSTuningSpace_Vtbl, 0xcdf7be60_d954_42fd_a972_78971958e470);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDVBSTuningSpace,
+    IDVBSTuningSpace_Vtbl,
+    0xcdf7be60_d954_42fd_a972_78971958e470
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDVBSTuningSpace {
     pub unsafe fn UniqueName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3413,7 +3533,12 @@ pub struct IDVBSTuningSpace_Vtbl {
     pub SetSpectralInversion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, spectralinversionval: super::SpectralInversion) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDVBTLocator, IDVBTLocator_Vtbl, 0x8664da16_dda2_42ac_926a_c18f9127c302);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDVBTLocator,
+    IDVBTLocator_Vtbl,
+    0x8664da16_dda2_42ac_926a_c18f9127c302
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDVBTLocator {
     pub unsafe fn CarrierFrequency(&self) -> ::windows_core::Result<i32> {
@@ -3547,7 +3672,12 @@ pub struct IDVBTLocator_Vtbl {
     pub SetOtherFrequencyInUse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, otherfrequencyinuseval: super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDVBTLocator2, IDVBTLocator2_Vtbl, 0x448a2edf_ae95_4b43_a3cc_747843c453d4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDVBTLocator2,
+    IDVBTLocator2_Vtbl,
+    0x448a2edf_ae95_4b43_a3cc_747843c453d4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDVBTLocator2 {
     pub unsafe fn CarrierFrequency(&self) -> ::windows_core::Result<i32> {
@@ -3676,7 +3806,12 @@ pub struct IDVBTLocator2_Vtbl {
     pub SetPhysicalLayerPipeId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, physicallayerpipeidval: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDVBTuneRequest, IDVBTuneRequest_Vtbl, 0x0d6f567e_a636_42bb_83ba_ce4c1704afa2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDVBTuneRequest,
+    IDVBTuneRequest_Vtbl,
+    0x0d6f567e_a636_42bb_83ba_ce4c1704afa2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDVBTuneRequest {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3748,7 +3883,12 @@ pub struct IDVBTuneRequest_Vtbl {
     pub SetSID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, sid: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDVBTuningSpace, IDVBTuningSpace_Vtbl, 0xada0b268_3b19_4e5b_acc4_49f852be13ba);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDVBTuningSpace,
+    IDVBTuningSpace_Vtbl,
+    0xada0b268_3b19_4e5b_acc4_49f852be13ba
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDVBTuningSpace {
     pub unsafe fn UniqueName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3873,7 +4013,12 @@ pub struct IDVBTuningSpace_Vtbl {
     pub SetSystemType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, systype: super::DVBSystemType) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDVBTuningSpace2, IDVBTuningSpace2_Vtbl, 0x843188b4_ce62_43db_966b_8145a094e040);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDVBTuningSpace2,
+    IDVBTuningSpace2_Vtbl,
+    0x843188b4_ce62_43db_966b_8145a094e040
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDVBTuningSpace2 {
     pub unsafe fn UniqueName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4762,7 +4907,12 @@ pub struct IDVB_TOT_Vtbl {
     pub GetTableDescriptorByTag: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, btag: u8, pdwcookie: *mut u32, ppdescriptor: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDigitalCableLocator, IDigitalCableLocator_Vtbl, 0x48f66a11_171a_419a_9525_beeecd51584c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDigitalCableLocator,
+    IDigitalCableLocator_Vtbl,
+    0x48f66a11_171a_419a_9525_beeecd51584c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDigitalCableLocator {
     pub unsafe fn CarrierFrequency(&self) -> ::windows_core::Result<i32> {
@@ -4851,7 +5001,12 @@ pub struct IDigitalCableLocator_Vtbl {
     pub base__: IATSCLocator2_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDigitalCableTuneRequest, IDigitalCableTuneRequest_Vtbl, 0xbad7753b_6b37_4810_ae57_3ce0c4a9e6cb);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDigitalCableTuneRequest,
+    IDigitalCableTuneRequest_Vtbl,
+    0xbad7753b_6b37_4810_ae57_3ce0c4a9e6cb
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDigitalCableTuneRequest {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4928,7 +5083,12 @@ pub struct IDigitalCableTuneRequest_Vtbl {
     pub SetSourceID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, sourceid: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDigitalCableTuningSpace, IDigitalCableTuningSpace_Vtbl, 0x013f9f9c_b449_4ec7_a6d2_9d4f2fc70ae5);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDigitalCableTuningSpace,
+    IDigitalCableTuningSpace_Vtbl,
+    0x013f9f9c_b449_4ec7_a6d2_9d4f2fc70ae5
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDigitalCableTuningSpace {
     pub unsafe fn UniqueName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -5136,7 +5296,12 @@ pub struct IDigitalCableTuningSpace_Vtbl {
     pub SetMaxSourceID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, newmaxsourceidval: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDigitalLocator, IDigitalLocator_Vtbl, 0x19b595d8_839a_47f0_96df_4f194f3c768c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDigitalLocator,
+    IDigitalLocator_Vtbl,
+    0x19b595d8_839a_47f0_96df_4f194f3c768c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDigitalLocator {
     pub unsafe fn CarrierFrequency(&self) -> ::windows_core::Result<i32> {
@@ -7058,7 +7223,12 @@ pub struct IETFilterConfig_Vtbl {
     pub GetSecureChannelObject: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunkdrmsecurechannel: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IETFilterEvents, IETFilterEvents_Vtbl, 0xc4c4c4c1_0049_4e2b_98fb_9537f6ce516d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IETFilterEvents,
+    IETFilterEvents_Vtbl,
+    0xc4c4c4c1_0049_4e2b_98fb_9537f6ce516d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IETFilterEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -7277,7 +7447,12 @@ pub struct IEnumTuningSpaces_Vtbl {
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenum: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IEvalRat, IEvalRat_Vtbl, 0xc5c5c5b1_3abc_11d6_b25b_00c04fa0c026);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IEvalRat,
+    IEvalRat_Vtbl,
+    0xc5c5c5b1_3abc_11d6_b25b_00c04fa0c026
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IEvalRat {
     pub unsafe fn get_BlockedRatingAttributes(&self, ensystem: EnTvRat_System, enlevel: EnTvRat_GenericLevel) -> ::windows_core::Result<i32> {
@@ -7577,7 +7752,12 @@ pub struct IGuideDataProperty_Vtbl {
     Value: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IISDBSLocator, IISDBSLocator_Vtbl, 0xc9897087_e29c_473f_9e4b_7072123dea14);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IISDBSLocator,
+    IISDBSLocator_Vtbl,
+    0xc9897087_e29c_473f_9e4b_7072123dea14
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IISDBSLocator {
     pub unsafe fn CarrierFrequency(&self) -> ::windows_core::Result<i32> {
@@ -9155,7 +9335,12 @@ pub struct IIsdbTerrestrialDeliverySystemDescriptor_Vtbl {
     pub GetRecordFrequency: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, brecordindex: u8, pdwval: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ILanguageComponentType, ILanguageComponentType_Vtbl, 0xb874c8ba_0fa2_11d3_9d8e_00c04f72d980);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ILanguageComponentType,
+    ILanguageComponentType_Vtbl,
+    0xb874c8ba_0fa2_11d3_9d8e_00c04f72d980
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ILanguageComponentType {
     pub unsafe fn Category(&self) -> ::windows_core::Result<super::ComponentCategory> {
@@ -9252,7 +9437,12 @@ pub struct ILanguageComponentType_Vtbl {
     pub SetLangID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, langid: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ILocator, ILocator_Vtbl, 0x286d7f89_760c_4f89_80c4_66841d2507aa);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ILocator,
+    ILocator_Vtbl,
+    0x286d7f89_760c_4f89_80c4_66841d2507aa
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ILocator {
     pub unsafe fn CarrierFrequency(&self) -> ::windows_core::Result<i32> {
@@ -9338,7 +9528,12 @@ pub struct ILocator_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMPEG2Component, IMPEG2Component_Vtbl, 0x1493e353_1eb6_473c_802d_8e6b8ec9d2a9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMPEG2Component,
+    IMPEG2Component_Vtbl,
+    0x1493e353_1eb6_473c_802d_8e6b8ec9d2a9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMPEG2Component {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -9422,7 +9617,12 @@ pub struct IMPEG2Component_Vtbl {
     pub SetProgramNumber: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, programnumber: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMPEG2ComponentType, IMPEG2ComponentType_Vtbl, 0x2c073d84_b51c_48c9_aa9f_68971e1f6e38);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMPEG2ComponentType,
+    IMPEG2ComponentType_Vtbl,
+    0x2c073d84_b51c_48c9_aa9f_68971e1f6e38
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMPEG2ComponentType {
     pub unsafe fn Category(&self) -> ::windows_core::Result<super::ComponentCategory> {
@@ -9526,7 +9726,12 @@ pub struct IMPEG2ComponentType_Vtbl {
     pub SetStreamType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, mp2streamtype: super::MPEG2StreamType) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMPEG2TuneRequest, IMPEG2TuneRequest_Vtbl, 0xeb7d987f_8a01_42ad_b8ae_574deee44d1a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMPEG2TuneRequest,
+    IMPEG2TuneRequest_Vtbl,
+    0xeb7d987f_8a01_42ad_b8ae_574deee44d1a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMPEG2TuneRequest {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -9589,7 +9794,12 @@ pub struct IMPEG2TuneRequest_Vtbl {
     pub SetProgNo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, progno: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMPEG2TuneRequestFactory, IMPEG2TuneRequestFactory_Vtbl, 0x14e11abd_ee37_4893_9ea1_6964de933e39);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMPEG2TuneRequestFactory,
+    IMPEG2TuneRequestFactory_Vtbl,
+    0x14e11abd_ee37_4893_9ea1_6964de933e39
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMPEG2TuneRequestFactory {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -9660,7 +9870,12 @@ pub struct IMPEG2_TIF_CONTROL_Vtbl {
     pub GetPIDs: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pulcpids: *mut u32, pulpids: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSEventBinder, IMSEventBinder_Vtbl, 0xc3a9f406_2222_436d_86d5_ba3229279efb);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSEventBinder,
+    IMSEventBinder_Vtbl,
+    0xc3a9f406_2222_436d_86d5_ba3229279efb
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSEventBinder {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -9692,7 +9907,12 @@ pub struct IMSEventBinder_Vtbl {
     pub Unbind: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, cancelcookie: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidAnalogTuner, IMSVidAnalogTuner_Vtbl, 0x1c15d47e_911d_11d2_b632_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidAnalogTuner,
+    IMSVidAnalogTuner_Vtbl,
+    0x1c15d47e_911d_11d2_b632_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidAnalogTuner {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -9831,7 +10051,12 @@ pub struct IMSVidAnalogTuner_Vtbl {
     pub ChannelAvailable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, nchannel: i32, signalstrength: *mut i32, fsignalpresent: *mut super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidAnalogTuner2, IMSVidAnalogTuner2_Vtbl, 0x37647bf7_3dde_4cc8_a4dc_0d534d3d0037);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidAnalogTuner2,
+    IMSVidAnalogTuner2_Vtbl,
+    0x37647bf7_3dde_4cc8_a4dc_0d534d3d0037
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidAnalogTuner2 {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -9976,7 +10201,12 @@ pub struct IMSVidAnalogTuner2_Vtbl {
     pub NumAuxInputs: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, inputs: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidAnalogTunerEvent, IMSVidAnalogTunerEvent_Vtbl, 0x1c15d486_911d_11d2_b632_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidAnalogTunerEvent,
+    IMSVidAnalogTunerEvent_Vtbl,
+    0x1c15d486_911d_11d2_b632_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidAnalogTunerEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -9997,7 +10227,12 @@ pub struct IMSVidAnalogTunerEvent_Vtbl {
     pub base__: IMSVidTunerEvent_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidAudioRenderer, IMSVidAudioRenderer_Vtbl, 0x37b0353f_a4c8_11d2_b634_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidAudioRenderer,
+    IMSVidAudioRenderer_Vtbl,
+    0x37b0353f_a4c8_11d2_b634_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidAudioRenderer {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -10071,7 +10306,12 @@ pub struct IMSVidAudioRenderer_Vtbl {
     pub Balance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, lbal: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidAudioRendererDevices, IMSVidAudioRendererDevices_Vtbl, 0xc5702cd4_9b79_11d3_b654_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidAudioRendererDevices,
+    IMSVidAudioRendererDevices_Vtbl,
+    0xc5702cd4_9b79_11d3_b654_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidAudioRendererDevices {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -10130,7 +10370,12 @@ pub struct IMSVidAudioRendererDevices_Vtbl {
     Remove: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidAudioRendererEvent, IMSVidAudioRendererEvent_Vtbl, 0x37b03541_a4c8_11d2_b634_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidAudioRendererEvent,
+    IMSVidAudioRendererEvent_Vtbl,
+    0x37b03541_a4c8_11d2_b634_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidAudioRendererEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -10151,7 +10396,12 @@ pub struct IMSVidAudioRendererEvent_Vtbl {
     pub base__: IMSVidOutputDeviceEvent_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidAudioRendererEvent2, IMSVidAudioRendererEvent2_Vtbl, 0xe3f55729_353b_4c43_a028_50f79aa9a907);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidAudioRendererEvent2,
+    IMSVidAudioRendererEvent2_Vtbl,
+    0xe3f55729_353b_4c43_a028_50f79aa9a907
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidAudioRendererEvent2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -10204,7 +10454,12 @@ pub struct IMSVidAudioRendererEvent2_Vtbl {
     pub AVDecCommonOutputFormat: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidClosedCaptioning, IMSVidClosedCaptioning_Vtbl, 0x99652ea1_c1f7_414f_bb7b_1c967de75983);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidClosedCaptioning,
+    IMSVidClosedCaptioning_Vtbl,
+    0x99652ea1_c1f7_414f_bb7b_1c967de75983
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidClosedCaptioning {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -10272,7 +10527,12 @@ pub struct IMSVidClosedCaptioning_Vtbl {
     pub SetEnable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, on: super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidClosedCaptioning2, IMSVidClosedCaptioning2_Vtbl, 0xe00cb864_a029_4310_9987_a873f5887d97);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidClosedCaptioning2,
+    IMSVidClosedCaptioning2_Vtbl,
+    0xe00cb864_a029_4310_9987_a873f5887d97
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidClosedCaptioning2 {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -10347,7 +10607,12 @@ pub struct IMSVidClosedCaptioning2_Vtbl {
     pub SetService: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, on: MSVidCCService) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidClosedCaptioning3, IMSVidClosedCaptioning3_Vtbl, 0xc8638e8a_7625_4c51_9366_2f40a9831fc0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidClosedCaptioning3,
+    IMSVidClosedCaptioning3_Vtbl,
+    0xc8638e8a_7625_4c51_9366_2f40a9831fc0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidClosedCaptioning3 {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -10425,7 +10690,12 @@ pub struct IMSVidClosedCaptioning3_Vtbl {
     pub TeleTextFilter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, punkttfilter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidCompositionSegment, IMSVidCompositionSegment_Vtbl, 0x1c15d483_911d_11d2_b632_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidCompositionSegment,
+    IMSVidCompositionSegment_Vtbl,
+    0x1c15d483_911d_11d2_b632_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidCompositionSegment {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -10533,7 +10803,12 @@ pub struct IMSVidCompositionSegment_Vtbl {
     Down: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidCtl, IMSVidCtl_Vtbl, 0xb0edf162_910a_11d2_b632_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidCtl,
+    IMSVidCtl_Vtbl,
+    0xb0edf162_910a_11d2_b632_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidCtl {
     pub unsafe fn AutoSize(&self) -> ::windows_core::Result<super::super::super::Foundation::VARIANT_BOOL> {
@@ -10867,7 +11142,12 @@ pub struct IMSVidCtl_Vtbl {
     ViewNext: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidDataServices, IMSVidDataServices_Vtbl, 0x334125c1_77e5_11d3_b653_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidDataServices,
+    IMSVidDataServices_Vtbl,
+    0x334125c1_77e5_11d3_b653_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidDataServices {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -10923,7 +11203,12 @@ pub struct IMSVidDataServices_Vtbl {
     pub base__: IMSVidFeature_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidDataServicesEvent, IMSVidDataServicesEvent_Vtbl, 0x334125c2_77e5_11d3_b653_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidDataServicesEvent,
+    IMSVidDataServicesEvent_Vtbl,
+    0x334125c2_77e5_11d3_b653_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidDataServicesEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -10944,7 +11229,12 @@ pub struct IMSVidDataServicesEvent_Vtbl {
     pub base__: IMSVidDeviceEvent_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidDevice, IMSVidDevice_Vtbl, 0x1c15d47c_911d_11d2_b632_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidDevice,
+    IMSVidDevice_Vtbl,
+    0x1c15d47c_911d_11d2_b632_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidDevice {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -11026,7 +11316,12 @@ pub struct IMSVidDevice2_Vtbl {
     pub DevicePath: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, devpath: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidDeviceEvent, IMSVidDeviceEvent_Vtbl, 0x1c15d480_911d_11d2_b632_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidDeviceEvent,
+    IMSVidDeviceEvent_Vtbl,
+    0x1c15d480_911d_11d2_b632_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidDeviceEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -11051,7 +11346,12 @@ pub struct IMSVidDeviceEvent_Vtbl {
     StateChange: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidEVR, IMSVidEVR_Vtbl, 0x15e496ae_82a8_4cf9_a6b6_c561dc60398f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidEVR,
+    IMSVidEVR_Vtbl,
+    0x15e496ae_82a8_4cf9_a6b6_c561dc60398f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidEVR {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -11297,7 +11597,12 @@ pub struct IMSVidEVR_Vtbl {
     pub SuppressEffects: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bsuppress: *mut super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidEVREvent, IMSVidEVREvent_Vtbl, 0x349abb10_883c_4f22_8714_cecaeee45d62);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidEVREvent,
+    IMSVidEVREvent_Vtbl,
+    0x349abb10_883c_4f22_8714_cecaeee45d62
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidEVREvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -11322,7 +11627,12 @@ pub struct IMSVidEVREvent_Vtbl {
     pub OnUserEvent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, leventcode: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidEncoder, IMSVidEncoder_Vtbl, 0xc0020fd4_bee7_43d9_a495_9f213117103d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidEncoder,
+    IMSVidEncoder_Vtbl,
+    0xc0020fd4_bee7_43d9_a495_9f213117103d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidEncoder {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -11388,7 +11698,12 @@ pub struct IMSVidEncoder_Vtbl {
     pub AudioEncoderInterface: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppencint: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidFeature, IMSVidFeature_Vtbl, 0x37b03547_a4c8_11d2_b634_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidFeature,
+    IMSVidFeature_Vtbl,
+    0x37b03547_a4c8_11d2_b634_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidFeature {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -11444,7 +11759,12 @@ pub struct IMSVidFeature_Vtbl {
     pub base__: IMSVidDevice_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidFeatureEvent, IMSVidFeatureEvent_Vtbl, 0x3dd2903c_e0aa_11d2_b63a_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidFeatureEvent,
+    IMSVidFeatureEvent_Vtbl,
+    0x3dd2903c_e0aa_11d2_b63a_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidFeatureEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -11465,7 +11785,12 @@ pub struct IMSVidFeatureEvent_Vtbl {
     pub base__: IMSVidDeviceEvent_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidFeatures, IMSVidFeatures_Vtbl, 0xc5702cd5_9b79_11d3_b654_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidFeatures,
+    IMSVidFeatures_Vtbl,
+    0xc5702cd5_9b79_11d3_b654_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidFeatures {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -11524,7 +11849,12 @@ pub struct IMSVidFeatures_Vtbl {
     Remove: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidFilePlayback, IMSVidFilePlayback_Vtbl, 0x37b03539_a4c8_11d2_b634_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidFilePlayback,
+    IMSVidFilePlayback_Vtbl,
+    0x37b03539_a4c8_11d2_b634_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidFilePlayback {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -11657,7 +11987,12 @@ pub struct IMSVidFilePlayback_Vtbl {
     pub SetFileName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, filename: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidFilePlayback2, IMSVidFilePlayback2_Vtbl, 0x2f7e44af_6e52_4660_bc08_d8d542587d72);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidFilePlayback2,
+    IMSVidFilePlayback2_Vtbl,
+    0x2f7e44af_6e52_4660_bc08_d8d542587d72
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidFilePlayback2 {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -11799,7 +12134,12 @@ pub struct IMSVidFilePlayback2_Vtbl {
     pub Set__SourceFilter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, filename: ::windows_core::GUID) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidFilePlaybackEvent, IMSVidFilePlaybackEvent_Vtbl, 0x37b0353a_a4c8_11d2_b634_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidFilePlaybackEvent,
+    IMSVidFilePlaybackEvent_Vtbl,
+    0x37b0353a_a4c8_11d2_b634_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidFilePlaybackEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -11820,7 +12160,12 @@ pub struct IMSVidFilePlaybackEvent_Vtbl {
     pub base__: IMSVidPlaybackEvent_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidGenericSink, IMSVidGenericSink_Vtbl, 0x6c29b41d_455b_4c33_963a_0d28e5e555ea);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidGenericSink,
+    IMSVidGenericSink_Vtbl,
+    0x6c29b41d_455b_4c33_963a_0d28e5e555ea
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidGenericSink {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -11892,7 +12237,12 @@ pub struct IMSVidGenericSink_Vtbl {
     pub SetSinkStreams: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, streams: MSVidSinkStreams) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidGenericSink2, IMSVidGenericSink2_Vtbl, 0x6b5a28f3_47f1_4092_b168_60cabec08f1c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidGenericSink2,
+    IMSVidGenericSink2_Vtbl,
+    0x6b5a28f3_47f1_4092_b168_60cabec08f1c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidGenericSink2 {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -11972,7 +12322,12 @@ pub struct IMSVidGenericSink2_Vtbl {
     pub ResetFilterList: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidGraphSegment, IMSVidGraphSegment_Vtbl, 0x238dec54_adeb_4005_a349_f772b9afebc4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidGraphSegment,
+    IMSVidGraphSegment_Vtbl,
+    0x238dec54_adeb_4005_a349_f772b9afebc4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidGraphSegment {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -12187,7 +12542,12 @@ pub struct IMSVidGraphSegmentUserInput_Vtbl {
     pub MouseUp: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, buttonstate: i16, shiftstate: i16, x: i32, y: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidInputDevice, IMSVidInputDevice_Vtbl, 0x37b0353d_a4c8_11d2_b634_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidInputDevice,
+    IMSVidInputDevice_Vtbl,
+    0x37b0353d_a4c8_11d2_b634_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidInputDevice {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -12262,7 +12622,12 @@ pub struct IMSVidInputDevice_Vtbl {
     View: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidInputDeviceEvent, IMSVidInputDeviceEvent_Vtbl, 0x37b0353e_a4c8_11d2_b634_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidInputDeviceEvent,
+    IMSVidInputDeviceEvent_Vtbl,
+    0x37b0353e_a4c8_11d2_b634_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidInputDeviceEvent {}
 #[cfg(feature = "Win32_System_Com")]
@@ -12274,7 +12639,12 @@ pub struct IMSVidInputDeviceEvent_Vtbl {
     pub base__: super::super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidInputDevices, IMSVidInputDevices_Vtbl, 0xc5702cd1_9b79_11d3_b654_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidInputDevices,
+    IMSVidInputDevices_Vtbl,
+    0xc5702cd1_9b79_11d3_b654_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidInputDevices {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -12333,7 +12703,12 @@ pub struct IMSVidInputDevices_Vtbl {
     Remove: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidOutputDevice, IMSVidOutputDevice_Vtbl, 0x37b03546_a4c8_11d2_b634_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidOutputDevice,
+    IMSVidOutputDevice_Vtbl,
+    0x37b03546_a4c8_11d2_b634_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidOutputDevice {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -12389,7 +12764,12 @@ pub struct IMSVidOutputDevice_Vtbl {
     pub base__: IMSVidDevice_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidOutputDeviceEvent, IMSVidOutputDeviceEvent_Vtbl, 0x2e6a14e2_571c_11d3_b652_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidOutputDeviceEvent,
+    IMSVidOutputDeviceEvent_Vtbl,
+    0x2e6a14e2_571c_11d3_b652_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidOutputDeviceEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -12410,7 +12790,12 @@ pub struct IMSVidOutputDeviceEvent_Vtbl {
     pub base__: IMSVidDeviceEvent_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidOutputDevices, IMSVidOutputDevices_Vtbl, 0xc5702cd2_9b79_11d3_b654_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidOutputDevices,
+    IMSVidOutputDevices_Vtbl,
+    0xc5702cd2_9b79_11d3_b654_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidOutputDevices {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -12469,7 +12854,12 @@ pub struct IMSVidOutputDevices_Vtbl {
     Remove: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidPlayback, IMSVidPlayback_Vtbl, 0x37b03538_a4c8_11d2_b634_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidPlayback,
+    IMSVidPlayback_Vtbl,
+    0x37b03538_a4c8_11d2_b634_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidPlayback {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -12604,7 +12994,12 @@ pub struct IMSVidPlayback_Vtbl {
     pub Length: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, llength: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidPlaybackEvent, IMSVidPlaybackEvent_Vtbl, 0x37b0353b_a4c8_11d2_b634_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidPlaybackEvent,
+    IMSVidPlaybackEvent_Vtbl,
+    0x37b0353b_a4c8_11d2_b634_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidPlaybackEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -12629,7 +13024,12 @@ pub struct IMSVidPlaybackEvent_Vtbl {
     EndOfMedia: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidRect, IMSVidRect_Vtbl, 0x7f5000a6_a440_47ca_8acc_c0e75531a2c2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidRect,
+    IMSVidRect_Vtbl,
+    0x7f5000a6_a440_47ca_8acc_c0e75531a2c2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidRect {
     pub unsafe fn Top(&self) -> ::windows_core::Result<i32> {
@@ -12702,7 +13102,12 @@ pub struct IMSVidRect_Vtbl {
     SetRect: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferRecordingControl, IMSVidStreamBufferRecordingControl_Vtbl, 0x160621aa_bbbc_4326_a824_c395aebc6e74);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferRecordingControl,
+    IMSVidStreamBufferRecordingControl_Vtbl,
+    0x160621aa_bbbc_4326_a824_c395aebc6e74
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferRecordingControl {
     pub unsafe fn StartTime(&self) -> ::windows_core::Result<i32> {
@@ -12753,7 +13158,12 @@ pub struct IMSVidStreamBufferRecordingControl_Vtbl {
     pub RecordingAttribute: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, precordingattribute: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferSink, IMSVidStreamBufferSink_Vtbl, 0x159dbb45_cd1b_4dab_83ea_5cb1f4f21d07);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferSink,
+    IMSVidStreamBufferSink_Vtbl,
+    0x159dbb45_cd1b_4dab_83ea_5cb1f4f21d07
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferSink {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -12856,7 +13266,12 @@ pub struct IMSVidStreamBufferSink_Vtbl {
     pub SBESink: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, sbeconfig: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferSink2, IMSVidStreamBufferSink2_Vtbl, 0x2ca9fc63_c131_4e5a_955a_544a47c67146);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferSink2,
+    IMSVidStreamBufferSink2_Vtbl,
+    0x2ca9fc63_c131_4e5a_955a_544a47c67146
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferSink2 {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -12951,7 +13366,12 @@ pub struct IMSVidStreamBufferSink2_Vtbl {
     pub UnlockProfile: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferSink3, IMSVidStreamBufferSink3_Vtbl, 0x4f8721d7_7d59_4d8b_99f5_a77775586bd5);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferSink3,
+    IMSVidStreamBufferSink3_Vtbl,
+    0x4f8721d7_7d59_4d8b_99f5_a77775586bd5
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferSink3 {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -13138,7 +13558,12 @@ pub struct IMSVidStreamBufferSink3_Vtbl {
     pub LicenseErrorCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, hres: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferSinkEvent, IMSVidStreamBufferSinkEvent_Vtbl, 0xf798a36b_b05b_4bbe_9703_eaea7d61cd51);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferSinkEvent,
+    IMSVidStreamBufferSinkEvent_Vtbl,
+    0xf798a36b_b05b_4bbe_9703_eaea7d61cd51
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferSinkEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -13171,7 +13596,12 @@ pub struct IMSVidStreamBufferSinkEvent_Vtbl {
     pub WriteFailure: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferSinkEvent2, IMSVidStreamBufferSinkEvent2_Vtbl, 0x3d7a5166_72d7_484b_a06f_286187b80ca1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferSinkEvent2,
+    IMSVidStreamBufferSinkEvent2_Vtbl,
+    0x3d7a5166_72d7_484b_a06f_286187b80ca1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferSinkEvent2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -13209,7 +13639,12 @@ pub struct IMSVidStreamBufferSinkEvent2_Vtbl {
     pub EncryptionOff: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferSinkEvent3, IMSVidStreamBufferSinkEvent3_Vtbl, 0x735ad8d5_c259_48e9_81e7_d27953665b23);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferSinkEvent3,
+    IMSVidStreamBufferSinkEvent3_Vtbl,
+    0x735ad8d5_c259_48e9_81e7_d27953665b23
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferSinkEvent3 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -13249,7 +13684,12 @@ pub struct IMSVidStreamBufferSinkEvent3_Vtbl {
     pub LicenseChange: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwprot: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferSinkEvent4, IMSVidStreamBufferSinkEvent4_Vtbl, 0x1b01dcb0_daf0_412c_a5d1_590c7f62e2b8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferSinkEvent4,
+    IMSVidStreamBufferSinkEvent4_Vtbl,
+    0x1b01dcb0_daf0_412c_a5d1_590c7f62e2b8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferSinkEvent4 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -13292,7 +13732,12 @@ pub struct IMSVidStreamBufferSinkEvent4_Vtbl {
     pub WriteFailureClear: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferSource, IMSVidStreamBufferSource_Vtbl, 0xeb0c8cf9_6950_4772_87b1_47d11cf3a02f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferSource,
+    IMSVidStreamBufferSource_Vtbl,
+    0xeb0c8cf9_6950_4772_87b1_47d11cf3a02f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferSource {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -13457,7 +13902,12 @@ pub struct IMSVidStreamBufferSource_Vtbl {
     pub SBESource: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, sbefilter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferSource2, IMSVidStreamBufferSource2_Vtbl, 0xe4ba9059_b1ce_40d8_b9a0_d4ea4a9989d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferSource2,
+    IMSVidStreamBufferSource2_Vtbl,
+    0xe4ba9059_b1ce_40d8_b9a0_d4ea4a9989d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferSource2 {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -13639,7 +14089,12 @@ pub struct IMSVidStreamBufferSource2_Vtbl {
     pub WSTCounter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferSourceEvent, IMSVidStreamBufferSourceEvent_Vtbl, 0x50ce8a7d_9c28_4da8_9042_cdfa7116f979);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferSourceEvent,
+    IMSVidStreamBufferSourceEvent_Vtbl,
+    0x50ce8a7d_9c28_4da8_9042_cdfa7116f979
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferSourceEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -13696,7 +14151,12 @@ pub struct IMSVidStreamBufferSourceEvent_Vtbl {
     pub StaleFileDeleted: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferSourceEvent2, IMSVidStreamBufferSourceEvent2_Vtbl, 0x7aef50ce_8e22_4ba8_bc06_a92a458b4ef2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferSourceEvent2,
+    IMSVidStreamBufferSourceEvent2_Vtbl,
+    0x7aef50ce_8e22_4ba8_bc06_a92a458b4ef2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferSourceEvent2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -13748,7 +14208,12 @@ pub struct IMSVidStreamBufferSourceEvent2_Vtbl {
     pub RateChange: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, qwnewrate: f64, qwoldrate: f64) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferSourceEvent3, IMSVidStreamBufferSourceEvent3_Vtbl, 0xceabd6ab_9b90_4570_adf1_3ce76e00a763);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferSourceEvent3,
+    IMSVidStreamBufferSourceEvent3_Vtbl,
+    0xceabd6ab_9b90_4570_adf1_3ce76e00a763
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferSourceEvent3 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -13825,7 +14290,12 @@ pub struct IMSVidStreamBufferSourceEvent3_Vtbl {
     pub ContentPrimarilyAudio: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidStreamBufferV2SourceEvent, IMSVidStreamBufferV2SourceEvent_Vtbl, 0x49c771f9_41b2_4cf7_9f9a_a313a8f6027e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidStreamBufferV2SourceEvent,
+    IMSVidStreamBufferV2SourceEvent_Vtbl,
+    0x49c771f9_41b2_4cf7_9f9a_a313a8f6027e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidStreamBufferV2SourceEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -13888,7 +14358,12 @@ pub struct IMSVidStreamBufferV2SourceEvent_Vtbl {
     pub ContentPrimarilyAudio: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidTuner, IMSVidTuner_Vtbl, 0x1c15d47d_911d_11d2_b632_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidTuner,
+    IMSVidTuner_Vtbl,
+    0x1c15d47d_911d_11d2_b632_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidTuner {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -13999,7 +14474,12 @@ pub struct IMSVidTuner_Vtbl {
     SetTuningSpace: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidTunerEvent, IMSVidTunerEvent_Vtbl, 0x1c15d485_911d_11d2_b632_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidTunerEvent,
+    IMSVidTunerEvent_Vtbl,
+    0x1c15d485_911d_11d2_b632_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidTunerEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14024,7 +14504,12 @@ pub struct IMSVidTunerEvent_Vtbl {
     TuneChanged: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidVMR9, IMSVidVMR9_Vtbl, 0xd58b0015_ebef_44bb_bbdd_3f3699d76ea1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidVMR9,
+    IMSVidVMR9_Vtbl,
+    0xd58b0015_ebef_44bb_bbdd_3f3699d76ea1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidVMR9 {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -14265,7 +14750,12 @@ pub struct IMSVidVMR9_Vtbl {
     pub Allocator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, allocpresent: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidVRGraphSegment, IMSVidVRGraphSegment_Vtbl, 0xdd47de3f_9874_4f7b_8b22_7cb2688461e7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidVRGraphSegment,
+    IMSVidVRGraphSegment_Vtbl,
+    0xdd47de3f_9874_4f7b_8b22_7cb2688461e7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidVRGraphSegment {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14452,7 +14942,12 @@ pub struct IMSVidVRGraphSegment_Vtbl {
     RePaint: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidVideoInputDevice, IMSVidVideoInputDevice_Vtbl, 0x1c15d47f_911d_11d2_b632_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidVideoInputDevice,
+    IMSVidVideoInputDevice_Vtbl,
+    0x1c15d47f_911d_11d2_b632_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidVideoInputDevice {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -14519,7 +15014,12 @@ pub struct IMSVidVideoInputDevice_Vtbl {
     pub base__: IMSVidInputDevice_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidVideoRenderer, IMSVidVideoRenderer_Vtbl, 0x37b03540_a4c8_11d2_b634_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidVideoRenderer,
+    IMSVidVideoRenderer_Vtbl,
+    0x37b03540_a4c8_11d2_b634_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidVideoRenderer {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -14797,7 +15297,12 @@ pub struct IMSVidVideoRenderer_Vtbl {
     pub SetDecimateInput: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdeci: super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidVideoRenderer2, IMSVidVideoRenderer2_Vtbl, 0x6bdd5c1e_2810_4159_94bc_05511ae8549b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidVideoRenderer2,
+    IMSVidVideoRenderer2_Vtbl,
+    0x6bdd5c1e_2810_4159_94bc_05511ae8549b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidVideoRenderer2 {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -15050,7 +15555,12 @@ pub struct IMSVidVideoRenderer2_Vtbl {
     pub SuppressEffects: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bsuppress: *mut super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidVideoRendererDevices, IMSVidVideoRendererDevices_Vtbl, 0xc5702cd3_9b79_11d3_b654_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidVideoRendererDevices,
+    IMSVidVideoRendererDevices_Vtbl,
+    0xc5702cd3_9b79_11d3_b654_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidVideoRendererDevices {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -15109,7 +15619,12 @@ pub struct IMSVidVideoRendererDevices_Vtbl {
     Remove: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidVideoRendererEvent, IMSVidVideoRendererEvent_Vtbl, 0x37b03545_a4c8_11d2_b634_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidVideoRendererEvent,
+    IMSVidVideoRendererEvent_Vtbl,
+    0x37b03545_a4c8_11d2_b634_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidVideoRendererEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -15134,7 +15649,12 @@ pub struct IMSVidVideoRendererEvent_Vtbl {
     pub OverlayUnavailable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidVideoRendererEvent2, IMSVidVideoRendererEvent2_Vtbl, 0x7145ed66_4730_4fdb_8a53_fde7508d3e5e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidVideoRendererEvent2,
+    IMSVidVideoRendererEvent2_Vtbl,
+    0x7145ed66_4730_4fdb_8a53_fde7508d3e5e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidVideoRendererEvent2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -15159,7 +15679,12 @@ pub struct IMSVidVideoRendererEvent2_Vtbl {
     pub OverlayUnavailable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidWebDVD, IMSVidWebDVD_Vtbl, 0xcf45f88b_ac56_4ee2_a73a_ed04e2885d3c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidWebDVD,
+    IMSVidWebDVD_Vtbl,
+    0xcf45f88b_ac56_4ee2_a73a_ed04e2885d3c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidWebDVD {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -15769,7 +16294,12 @@ pub struct IMSVidWebDVD_Vtbl {
     SetDVDScreenInMouseCoordinates: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidWebDVD2, IMSVidWebDVD2_Vtbl, 0x7027212f_ee9a_4a7c_8b67_f023714cdaff);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidWebDVD2,
+    IMSVidWebDVD2_Vtbl,
+    0x7027212f_ee9a_4a7c_8b67_f023714cdaff
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidWebDVD2 {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -16280,7 +16810,12 @@ pub struct IMSVidWebDVD2_Vtbl {
     pub put_Bookmark: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdata: *const u8, dwdatalength: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidWebDVDAdm, IMSVidWebDVDAdm_Vtbl, 0xb8be681a_eb2c_47f0_b415_94d5452f0e05);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidWebDVDAdm,
+    IMSVidWebDVDAdm_Vtbl,
+    0xb8be681a_eb2c_47f0_b415_94d5452f0e05
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidWebDVDAdm {
     pub unsafe fn ChangePassword<P0, P1, P2>(&self, strusername: P0, strold: P1, strnew: P2) -> ::windows_core::Result<()>
@@ -16376,7 +16911,12 @@ pub struct IMSVidWebDVDAdm_Vtbl {
     pub SetBookmarkOnStop: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, newval: super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidWebDVDEvent, IMSVidWebDVDEvent_Vtbl, 0xb4f7a674_9b83_49cb_a357_c63b871be958);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidWebDVDEvent,
+    IMSVidWebDVDEvent_Vtbl,
+    0xb4f7a674_9b83_49cb_a357_c63b871be958
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidWebDVDEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -16560,7 +17100,12 @@ pub struct IMSVidWebDVDEvent_Vtbl {
     pub ChangeVideoPresMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, benabled: super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidXDS, IMSVidXDS_Vtbl, 0x11ebc158_e712_4d1f_8bb3_01ed5274c4ce);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidXDS,
+    IMSVidXDS_Vtbl,
+    0x11ebc158_e712_4d1f_8bb3_01ed5274c4ce
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidXDS {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -16621,7 +17166,12 @@ pub struct IMSVidXDS_Vtbl {
     pub ChannelChangeInterface: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, punkcc: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSVidXDSEvent, IMSVidXDSEvent_Vtbl, 0x6db2317d_3b23_41ec_ba4b_701f407eaf3a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSVidXDSEvent,
+    IMSVidXDSEvent_Vtbl,
+    0x6db2317d_3b23_41ec_ba4b_701f407eaf3a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSVidXDSEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -17109,7 +17659,12 @@ pub struct IPTFilterLicenseRenewal_Vtbl {
     pub CancelLicenseRenewal: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPersistTuneXml, IPersistTuneXml_Vtbl, 0x0754cd31_8d15_47a9_8215_d20064157244);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPersistTuneXml,
+    IPersistTuneXml_Vtbl,
+    0x0754cd31_8d15_47a9_8215_d20064157244
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPersistTuneXml {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -18485,7 +19040,12 @@ pub struct ITSDT_Vtbl {
     pub ConvertNextToCurrent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITuneRequest, ITuneRequest_Vtbl, 0x07ddc146_fc3d_11d2_9d8c_00c04f72d980);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITuneRequest,
+    ITuneRequest_Vtbl,
+    0x07ddc146_fc3d_11d2_9d8c_00c04f72d980
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITuneRequest {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -18865,7 +19425,12 @@ pub struct ITunerCapEx_Vtbl {
     pub Has608_708Caption: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbhascaption: *mut super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITuningSpace, ITuningSpace_Vtbl, 0x061c6e30_e622_11d2_9493_00c04f72d980);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITuningSpace,
+    ITuningSpace_Vtbl,
+    0x061c6e30_e622_11d2_9493_00c04f72d980
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITuningSpace {
     pub unsafe fn UniqueName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -19024,7 +19589,12 @@ pub struct ITuningSpace_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITuningSpaceContainer, ITuningSpaceContainer_Vtbl, 0x5b692e84_e2f1_11d2_9493_00c04f72d980);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITuningSpaceContainer,
+    ITuningSpaceContainer_Vtbl,
+    0x5b692e84_e2f1_11d2_9493_00c04f72d980
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITuningSpaceContainer {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -19159,7 +19729,12 @@ pub struct ITuningSpaceContainer_Vtbl {
     pub SetMaxCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, maxcount: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITuningSpaces, ITuningSpaces_Vtbl, 0x901284e4_33fe_4b69_8d63_634a596f3756);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITuningSpaces,
+    ITuningSpaces_Vtbl,
+    0x901284e4_33fe_4b69_8d63_634a596f3756
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITuningSpaces {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -19260,7 +19835,12 @@ pub struct IXDSCodecConfig_Vtbl {
     pub SetPauseBufferTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwpausebuffertime: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXDSCodecEvents, IXDSCodecEvents_Vtbl, 0xc4c4c4c3_0049_4e2b_98fb_9537f6ce516d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXDSCodecEvents,
+    IXDSCodecEvents_Vtbl,
+    0xc4c4c4c3_0049_4e2b_98fb_9537f6ce516d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXDSCodecEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -19272,7 +19852,12 @@ pub struct IXDSCodecEvents_Vtbl {
     pub base__: super::super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IXDSToRat, IXDSToRat_Vtbl, 0xc5c5c5b0_3abc_11d6_b25b_00c04fa0c026);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IXDSToRat,
+    IXDSToRat_Vtbl,
+    0xc5c5c5b0_3abc_11d6_b25b_00c04fa0c026
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IXDSToRat {
     pub unsafe fn Init(&self) -> ::windows_core::Result<()> {
@@ -19293,7 +19878,12 @@ pub struct IXDSToRat_Vtbl {
     pub ParseXDSBytePair: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, byte1: u8, byte2: u8, pensystem: *mut EnTvRat_System, penlevel: *mut EnTvRat_GenericLevel, plbfenattributes: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_IMSVidCtlEvents, _IMSVidCtlEvents_Vtbl, 0xb0edf164_910a_11d2_b632_00c04f79498e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _IMSVidCtlEvents,
+    _IMSVidCtlEvents_Vtbl,
+    0xb0edf164_910a_11d2_b632_00c04f79498e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _IMSVidCtlEvents {}
 #[cfg(feature = "Win32_System_Com")]

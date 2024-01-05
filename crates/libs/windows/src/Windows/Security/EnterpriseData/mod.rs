@@ -130,7 +130,12 @@ pub struct IFileProtectionManagerStatics3_Vtbl {
     UnprotectWithOptionsAsync: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IFileRevocationManagerStatics, IFileRevocationManagerStatics_Vtbl, 0x256bbc3d_1c5d_4260_8c75_9144cfb78ba9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IFileRevocationManagerStatics,
+    IFileRevocationManagerStatics_Vtbl,
+    0x256bbc3d_1c5d_4260_8c75_9144cfb78ba9
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

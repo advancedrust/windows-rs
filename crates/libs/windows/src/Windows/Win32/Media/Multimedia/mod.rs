@@ -1331,7 +1331,12 @@ pub struct IAVIFile_Vtbl {
     pub DeleteStream: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, fcctype: u32, lparam: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAVIPersistFile, IAVIPersistFile_Vtbl, 0x00020025_0000_0000_c000_000000000046);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAVIPersistFile,
+    IAVIPersistFile_Vtbl,
+    0x00020025_0000_0000_c000_000000000046
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAVIPersistFile {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

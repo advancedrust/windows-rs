@@ -2863,7 +2863,12 @@ where
     VerifyHash(hcrypto, phash.len().try_into().unwrap(), ::core::mem::transmute(phash.as_ptr()), hashalgoid.into_param().abi(), psig.len().try_into().unwrap(), ::core::mem::transmute(psig.as_ptr()), &mut result__).from_abi(result__)
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertSrvSetup, ICertSrvSetup_Vtbl, 0xb760a1bb_4784_44c0_8f12_555f0780ff25);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertSrvSetup,
+    ICertSrvSetup_Vtbl,
+    0xb760a1bb_4784_44c0_8f12_555f0780ff25
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertSrvSetup {
     pub unsafe fn CAErrorId(&self) -> ::windows_core::Result<i32> {
@@ -3051,7 +3056,12 @@ pub struct ICertSrvSetup_Vtbl {
     pub PostUnInstall: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertSrvSetupKeyInformation, ICertSrvSetupKeyInformation_Vtbl, 0x6ba73778_36da_4c39_8a85_bcfa7d000793);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertSrvSetupKeyInformation,
+    ICertSrvSetupKeyInformation_Vtbl,
+    0x6ba73778_36da_4c39_8a85_bcfa7d000793
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertSrvSetupKeyInformation {
     pub unsafe fn ProviderName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3140,7 +3150,12 @@ pub struct ICertSrvSetupKeyInformation_Vtbl {
     SetExistingCACertificate: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertSrvSetupKeyInformationCollection, ICertSrvSetupKeyInformationCollection_Vtbl, 0xe65c8b00_e58f_41f9_a9ec_a28d7427c844);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertSrvSetupKeyInformationCollection,
+    ICertSrvSetupKeyInformationCollection_Vtbl,
+    0xe65c8b00_e58f_41f9_a9ec_a28d7427c844
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertSrvSetupKeyInformationCollection {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -3185,7 +3200,12 @@ pub struct ICertSrvSetupKeyInformationCollection_Vtbl {
     Add: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertificateEnrollmentPolicyServerSetup, ICertificateEnrollmentPolicyServerSetup_Vtbl, 0x859252cc_238c_4a88_b8fd_a37e7d04e68b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertificateEnrollmentPolicyServerSetup,
+    ICertificateEnrollmentPolicyServerSetup_Vtbl,
+    0x859252cc_238c_4a88_b8fd_a37e7d04e68b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificateEnrollmentPolicyServerSetup {
     pub unsafe fn ErrorString(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3239,7 +3259,12 @@ pub struct ICertificateEnrollmentPolicyServerSetup_Vtbl {
     UnInstall: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertificateEnrollmentServerSetup, ICertificateEnrollmentServerSetup_Vtbl, 0x70027fdb_9dd9_4921_8944_b35cb31bd2ec);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertificateEnrollmentServerSetup,
+    ICertificateEnrollmentServerSetup_Vtbl,
+    0x70027fdb_9dd9_4921_8944_b35cb31bd2ec
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificateEnrollmentServerSetup {
     pub unsafe fn ErrorString(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3301,7 +3326,12 @@ pub struct ICertificateEnrollmentServerSetup_Vtbl {
     UnInstall: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSCEPSetup, IMSCEPSetup_Vtbl, 0x4f7761bb_9f3b_4592_9ee0_9a73259c313e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSCEPSetup,
+    IMSCEPSetup_Vtbl,
+    0x4f7761bb_9f3b_4592_9ee0_9a73259c313e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSCEPSetup {
     pub unsafe fn MSCEPErrorId(&self) -> ::windows_core::Result<i32> {

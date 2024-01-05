@@ -2233,7 +2233,12 @@ pub struct IFixedPage_Vtbl {
     pub GetXpsPartIterator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pxpspartit: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IImgCreateErrorInfo, IImgCreateErrorInfo_Vtbl, 0x1c55a64c_07cd_4fb5_90f7_b753d91f0c9e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IImgCreateErrorInfo,
+    IImgCreateErrorInfo_Vtbl,
+    0x1c55a64c_07cd_4fb5_90f7_b753d91f0c9e
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IImgCreateErrorInfo {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -2284,7 +2289,12 @@ pub struct IImgCreateErrorInfo_Vtbl {
     pub AttachToErrorInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, perrorinfo: *mut ImgErrorInfo) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IImgErrorInfo, IImgErrorInfo_Vtbl, 0x2bce4ece_d30e_445a_9423_6829be945ad8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IImgErrorInfo,
+    IImgErrorInfo_Vtbl,
+    0x2bce4ece_d30e_445a_9423_6829be945ad8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IImgErrorInfo {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3358,7 +3368,12 @@ pub struct IPrintJob_Vtbl {
     pub RequestCancel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintJobCollection, IPrintJobCollection_Vtbl, 0x72b82a24_a598_4e87_895f_cdb23a49e9dc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintJobCollection,
+    IPrintJobCollection_Vtbl,
+    0x72b82a24_a598_4e87_895f_cdb23a49e9dc
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintJobCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<u32> {
@@ -3888,7 +3903,12 @@ pub struct IPrintReadStreamFactory_Vtbl {
     pub GetStream: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppstream: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaAsyncOperation, IPrintSchemaAsyncOperation_Vtbl, 0x143c8dcb_d37f_47f7_88e8_6b1d21f2c5f7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaAsyncOperation,
+    IPrintSchemaAsyncOperation_Vtbl,
+    0x143c8dcb_d37f_47f7_88e8_6b1d21f2c5f7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaAsyncOperation {
     pub unsafe fn Start(&self) -> ::windows_core::Result<()> {
@@ -3909,7 +3929,12 @@ pub struct IPrintSchemaAsyncOperation_Vtbl {
     pub Cancel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaAsyncOperationEvent, IPrintSchemaAsyncOperationEvent_Vtbl, 0x23adbb16_0133_4906_b29a_1dce1d026379);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaAsyncOperationEvent,
+    IPrintSchemaAsyncOperationEvent_Vtbl,
+    0x23adbb16_0133_4906_b29a_1dce1d026379
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaAsyncOperationEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3934,7 +3959,12 @@ pub struct IPrintSchemaAsyncOperationEvent_Vtbl {
     Completed: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaCapabilities, IPrintSchemaCapabilities_Vtbl, 0x5a577640_501d_4927_bcd0_5ef57a7ed175);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaCapabilities,
+    IPrintSchemaCapabilities_Vtbl,
+    0x5a577640_501d_4927_bcd0_5ef57a7ed175
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaCapabilities {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -4032,7 +4062,12 @@ pub struct IPrintSchemaCapabilities_Vtbl {
     GetOptions: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaCapabilities2, IPrintSchemaCapabilities2_Vtbl, 0xb58845f4_9970_4d87_a636_169fb82ed642);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaCapabilities2,
+    IPrintSchemaCapabilities2_Vtbl,
+    0xb58845f4_9970_4d87_a636_169fb82ed642
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaCapabilities2 {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -4122,7 +4157,12 @@ pub struct IPrintSchemaCapabilities2_Vtbl {
     GetParameterDefinition: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaDisplayableElement, IPrintSchemaDisplayableElement_Vtbl, 0xaf45af49_d6aa_407d_bf87_3912236e9d94);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaDisplayableElement,
+    IPrintSchemaDisplayableElement_Vtbl,
+    0xaf45af49_d6aa_407d_bf87_3912236e9d94
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaDisplayableElement {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -4152,7 +4192,12 @@ pub struct IPrintSchemaDisplayableElement_Vtbl {
     pub DisplayName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrdisplayname: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaElement, IPrintSchemaElement_Vtbl, 0x724c1646_e64b_4bbf_8eb4_d45e4fd580da);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaElement,
+    IPrintSchemaElement_Vtbl,
+    0x724c1646_e64b_4bbf_8eb4_d45e4fd580da
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaElement {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -4180,7 +4225,12 @@ pub struct IPrintSchemaElement_Vtbl {
     pub NamespaceUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrnamespaceuri: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaFeature, IPrintSchemaFeature_Vtbl, 0xef189461_5d62_4626_8e57_ff83583c4826);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaFeature,
+    IPrintSchemaFeature_Vtbl,
+    0xef189461_5d62_4626_8e57_ff83583c4826
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaFeature {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -4255,7 +4305,12 @@ pub struct IPrintSchemaFeature_Vtbl {
     pub DisplayUI: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbshow: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaNUpOption, IPrintSchemaNUpOption_Vtbl, 0x1f6342f2_d848_42e3_8995_c10a9ef9a3ba);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaNUpOption,
+    IPrintSchemaNUpOption_Vtbl,
+    0x1f6342f2_d848_42e3_8995_c10a9ef9a3ba
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaNUpOption {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -4305,7 +4360,12 @@ pub struct IPrintSchemaNUpOption_Vtbl {
     pub PagesPerSheet: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pulpagespersheet: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaOption, IPrintSchemaOption_Vtbl, 0x66bb2f51_5844_4997_8d70_4b7cc221cf92);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaOption,
+    IPrintSchemaOption_Vtbl,
+    0x66bb2f51_5844_4997_8d70_4b7cc221cf92
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaOption {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -4353,7 +4413,12 @@ pub struct IPrintSchemaOption_Vtbl {
     pub GetPropertyValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrname: ::std::mem::MaybeUninit<::windows_core::BSTR>, bstrnamespaceuri: ::std::mem::MaybeUninit<::windows_core::BSTR>, ppxmlvaluenode: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaOptionCollection, IPrintSchemaOptionCollection_Vtbl, 0xbaecb0bd_a946_4771_bc30_e8b24f8d45c1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaOptionCollection,
+    IPrintSchemaOptionCollection_Vtbl,
+    0xbaecb0bd_a946_4771_bc30_e8b24f8d45c1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaOptionCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<u32> {
@@ -4386,7 +4451,12 @@ pub struct IPrintSchemaOptionCollection_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaPageImageableSize, IPrintSchemaPageImageableSize_Vtbl, 0x7c85bf5e_dc7c_4f61_839b_4107e1c9b68e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaPageImageableSize,
+    IPrintSchemaPageImageableSize_Vtbl,
+    0x7c85bf5e_dc7c_4f61_839b_4107e1c9b68e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaPageImageableSize {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -4441,7 +4511,12 @@ pub struct IPrintSchemaPageImageableSize_Vtbl {
     pub ExtentHeightInMicrons: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pulextentheight: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaPageMediaSizeOption, IPrintSchemaPageMediaSizeOption_Vtbl, 0x68746729_f493_4830_a10f_69028774605d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaPageMediaSizeOption,
+    IPrintSchemaPageMediaSizeOption_Vtbl,
+    0x68746729_f493_4830_a10f_69028774605d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaPageMediaSizeOption {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -4496,7 +4571,12 @@ pub struct IPrintSchemaPageMediaSizeOption_Vtbl {
     pub HeightInMicrons: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pulheight: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaParameterDefinition, IPrintSchemaParameterDefinition_Vtbl, 0xb5ade81e_0e61_4fe1_81c6_c333e4ffe0f1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaParameterDefinition,
+    IPrintSchemaParameterDefinition_Vtbl,
+    0xb5ade81e_0e61_4fe1_81c6_c333e4ffe0f1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaParameterDefinition {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -4550,7 +4630,12 @@ pub struct IPrintSchemaParameterDefinition_Vtbl {
     pub RangeMax: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, prangemax: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaParameterInitializer, IPrintSchemaParameterInitializer_Vtbl, 0x52027082_0b74_4648_9564_828cc6cb656c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaParameterInitializer,
+    IPrintSchemaParameterInitializer_Vtbl,
+    0x52027082_0b74_4648_9564_828cc6cb656c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaParameterInitializer {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -4594,7 +4679,12 @@ pub struct IPrintSchemaParameterInitializer_Vtbl {
     SetValue: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaTicket, IPrintSchemaTicket_Vtbl, 0xe480b861_4708_4e6d_a5b4_a2b4eeb9baa4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaTicket,
+    IPrintSchemaTicket_Vtbl,
+    0xe480b861_4708_4e6d_a5b4_a2b4eeb9baa4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaTicket {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -4692,7 +4782,12 @@ pub struct IPrintSchemaTicket_Vtbl {
     pub SetJobCopiesAllDocuments: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, uljobcopiesalldocuments: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrintSchemaTicket2, IPrintSchemaTicket2_Vtbl, 0x2ec1f844_766a_47a1_91f4_2eeb6190f80c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrintSchemaTicket2,
+    IPrintSchemaTicket2_Vtbl,
+    0x2ec1f844_766a_47a1_91f4_2eeb6190f80c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrintSchemaTicket2 {
     pub unsafe fn XmlNode(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -5023,7 +5118,12 @@ pub struct IPrinterExtensionAsyncOperation_Vtbl {
     pub Cancel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterExtensionContext, IPrinterExtensionContext_Vtbl, 0x39843bf2_c4d2_41fd_b4b2_aedbee5e1900);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterExtensionContext,
+    IPrinterExtensionContext_Vtbl,
+    0x39843bf2_c4d2_41fd_b4b2_aedbee5e1900
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterExtensionContext {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5076,7 +5176,12 @@ pub struct IPrinterExtensionContext_Vtbl {
     UserProperties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterExtensionContextCollection, IPrinterExtensionContextCollection_Vtbl, 0xfb476970_9bab_4861_811e_3e98b0c5addf);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterExtensionContextCollection,
+    IPrinterExtensionContextCollection_Vtbl,
+    0xfb476970_9bab_4861_811e_3e98b0c5addf
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterExtensionContextCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<u32> {
@@ -5109,7 +5214,12 @@ pub struct IPrinterExtensionContextCollection_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterExtensionEvent, IPrinterExtensionEvent_Vtbl, 0xc093cb63_5ef5_4585_af8e_4d5637487b57);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterExtensionEvent,
+    IPrinterExtensionEvent_Vtbl,
+    0xc093cb63_5ef5_4585_af8e_4d5637487b57
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterExtensionEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5146,7 +5256,12 @@ pub struct IPrinterExtensionEvent_Vtbl {
     OnPrinterQueuesEnumerated: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterExtensionEventArgs, IPrinterExtensionEventArgs_Vtbl, 0x39843bf4_c4d2_41fd_b4b2_aedbee5e1900);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterExtensionEventArgs,
+    IPrinterExtensionEventArgs_Vtbl,
+    0x39843bf4_c4d2_41fd_b4b2_aedbee5e1900
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterExtensionEventArgs {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5240,7 +5355,12 @@ pub struct IPrinterExtensionManager_Vtbl {
     pub DisableEvents: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterExtensionRequest, IPrinterExtensionRequest_Vtbl, 0x39843bf3_c4d2_41fd_b4b2_aedbee5e1900);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterExtensionRequest,
+    IPrinterExtensionRequest_Vtbl,
+    0x39843bf3_c4d2_41fd_b4b2_aedbee5e1900
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterExtensionRequest {
     pub unsafe fn Cancel<P0>(&self, hrstatus: ::windows_core::HRESULT, bstrlogmessage: P0) -> ::windows_core::Result<()>
@@ -5264,7 +5384,12 @@ pub struct IPrinterExtensionRequest_Vtbl {
     pub Complete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterPropertyBag, IPrinterPropertyBag_Vtbl, 0xfea77364_df95_4a23_a905_019b79a8e481);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterPropertyBag,
+    IPrinterPropertyBag_Vtbl,
+    0xfea77364_df95_4a23_a905_019b79a8e481
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterPropertyBag {
     pub unsafe fn GetBool<P0>(&self, bstrname: P0) -> ::windows_core::Result<super::super::Foundation::BOOL>
@@ -5364,7 +5489,12 @@ pub struct IPrinterPropertyBag_Vtbl {
     GetWriteStream: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterQueue, IPrinterQueue_Vtbl, 0x3580a828_07fe_4b94_ac1a_757d9d2d3056);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterQueue,
+    IPrinterQueue_Vtbl,
+    0x3580a828_07fe_4b94_ac1a_757d9d2d3056
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterQueue {
     pub unsafe fn Handle(&self) -> ::windows_core::Result<super::super::Foundation::HANDLE> {
@@ -5404,7 +5534,12 @@ pub struct IPrinterQueue_Vtbl {
     GetProperties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterQueue2, IPrinterQueue2_Vtbl, 0x8cd444e8_c9bb_49b3_8e38_e03209416131);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterQueue2,
+    IPrinterQueue2_Vtbl,
+    0x8cd444e8_c9bb_49b3_8e38_e03209416131
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterQueue2 {
     pub unsafe fn Handle(&self) -> ::windows_core::Result<super::super::Foundation::HANDLE> {
@@ -5456,7 +5591,12 @@ pub struct IPrinterQueue2_Vtbl {
     GetPrinterQueueView: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterQueueEvent, IPrinterQueueEvent_Vtbl, 0x214685f6_7b78_4681_87e0_495f739273d1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterQueueEvent,
+    IPrinterQueueEvent_Vtbl,
+    0x214685f6_7b78_4681_87e0_495f739273d1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterQueueEvent {
     pub unsafe fn OnBidiResponseReceived<P0>(&self, bstrresponse: P0, hrstatus: ::windows_core::HRESULT) -> ::windows_core::Result<()>
@@ -5476,7 +5616,12 @@ pub struct IPrinterQueueEvent_Vtbl {
     pub OnBidiResponseReceived: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrresponse: ::std::mem::MaybeUninit<::windows_core::BSTR>, hrstatus: ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterQueueView, IPrinterQueueView_Vtbl, 0x476e2969_3b2b_4b3f_8277_cff6056042aa);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterQueueView,
+    IPrinterQueueView_Vtbl,
+    0x476e2969_3b2b_4b3f_8277_cff6056042aa
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterQueueView {
     pub unsafe fn SetViewRange(&self, ulviewoffset: u32, ulviewsize: u32) -> ::windows_core::Result<()> {
@@ -5493,7 +5638,12 @@ pub struct IPrinterQueueView_Vtbl {
     pub SetViewRange: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ulviewoffset: u32, ulviewsize: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterQueueViewEvent, IPrinterQueueViewEvent_Vtbl, 0xc5b6042b_fd21_404a_a0ef_e2fbb52b9080);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterQueueViewEvent,
+    IPrinterQueueViewEvent_Vtbl,
+    0xc5b6042b_fd21_404a_a0ef_e2fbb52b9080
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterQueueViewEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5518,7 +5668,12 @@ pub struct IPrinterQueueViewEvent_Vtbl {
     OnChanged: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterScriptContext, IPrinterScriptContext_Vtbl, 0x066acbca_8881_49c9_bb98_fae16b4889e1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterScriptContext,
+    IPrinterScriptContext_Vtbl,
+    0x066acbca_8881_49c9_bb98_fae16b4889e1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterScriptContext {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5561,7 +5716,12 @@ pub struct IPrinterScriptContext_Vtbl {
     UserProperties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterScriptablePropertyBag, IPrinterScriptablePropertyBag_Vtbl, 0x91c7765f_ed57_49ad_8b01_dc24816a5294);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterScriptablePropertyBag,
+    IPrinterScriptablePropertyBag_Vtbl,
+    0x91c7765f_ed57_49ad_8b01_dc24816a5294
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterScriptablePropertyBag {
     pub unsafe fn GetBool<P0>(&self, bstrname: P0) -> ::windows_core::Result<super::super::Foundation::BOOL>
@@ -5673,7 +5833,12 @@ pub struct IPrinterScriptablePropertyBag_Vtbl {
     GetWriteStream: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterScriptablePropertyBag2, IPrinterScriptablePropertyBag2_Vtbl, 0x2a1c53c4_8638_4b3e_b518_2773c94556a3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterScriptablePropertyBag2,
+    IPrinterScriptablePropertyBag2_Vtbl,
+    0x2a1c53c4_8638_4b3e_b518_2773c94556a3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterScriptablePropertyBag2 {
     pub unsafe fn GetBool<P0>(&self, bstrname: P0) -> ::windows_core::Result<super::super::Foundation::BOOL>
@@ -5771,7 +5936,12 @@ pub struct IPrinterScriptablePropertyBag2_Vtbl {
     pub GetReadStreamAsXML: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrname: ::std::mem::MaybeUninit<::windows_core::BSTR>, ppxmlnode: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterScriptableSequentialStream, IPrinterScriptableSequentialStream_Vtbl, 0x2072838a_316f_467a_a949_27f68c44a854);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterScriptableSequentialStream,
+    IPrinterScriptableSequentialStream_Vtbl,
+    0x2072838a_316f_467a_a949_27f68c44a854
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterScriptableSequentialStream {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5807,7 +5977,12 @@ pub struct IPrinterScriptableSequentialStream_Vtbl {
     Write: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPrinterScriptableStream, IPrinterScriptableStream_Vtbl, 0x7edf9a92_4750_41a5_a17f_879a6f4f7dcb);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPrinterScriptableStream,
+    IPrinterScriptableStream_Vtbl,
+    0x7edf9a92_4750_41a5_a17f_879a6f4f7dcb
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPrinterScriptableStream {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

@@ -124,7 +124,12 @@ pub struct ISettingsCommandStatics_Vtbl {
     AccountsCommand: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISettingsPane, ISettingsPane_Vtbl, 0xb1cd0932_4570_4c69_8d38_89446561ace0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISettingsPane,
+    ISettingsPane_Vtbl,
+    0xb1cd0932_4570_4c69_8d38_89446561ace0
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -140,7 +145,12 @@ pub struct ISettingsPane_Vtbl {
     RemoveCommandsRequested: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISettingsPaneCommandsRequest, ISettingsPaneCommandsRequest_Vtbl, 0x44df23ae_5d6e_4068_a168_f47643182114);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISettingsPaneCommandsRequest,
+    ISettingsPaneCommandsRequest_Vtbl,
+    0x44df23ae_5d6e_4068_a168_f47643182114
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -152,7 +162,12 @@ pub struct ISettingsPaneCommandsRequest_Vtbl {
     ApplicationCommands: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISettingsPaneCommandsRequestedEventArgs, ISettingsPaneCommandsRequestedEventArgs_Vtbl, 0x205f5d24_1b48_4629_a6ca_2fdfedafb75d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISettingsPaneCommandsRequestedEventArgs,
+    ISettingsPaneCommandsRequestedEventArgs_Vtbl,
+    0x205f5d24_1b48_4629_a6ca_2fdfedafb75d
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -164,7 +179,12 @@ pub struct ISettingsPaneCommandsRequestedEventArgs_Vtbl {
     Request: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISettingsPaneStatics, ISettingsPaneStatics_Vtbl, 0x1c6a52c5_ff19_471b_ba6b_f8f35694ad9a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISettingsPaneStatics,
+    ISettingsPaneStatics_Vtbl,
+    0x1c6a52c5_ff19_471b_ba6b_f8f35694ad9a
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

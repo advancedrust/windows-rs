@@ -1,5 +1,10 @@
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IBackgroundMediaPlayerStatics, IBackgroundMediaPlayerStatics_Vtbl, 0x856ddbc1_55f7_471f_a0f2_68ac4c904592);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IBackgroundMediaPlayerStatics,
+    IBackgroundMediaPlayerStatics_Vtbl,
+    0x856ddbc1_55f7_471f_a0f2_68ac4c904592
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -151,7 +156,12 @@ pub struct IMediaBreakStartedEventArgs_Vtbl {
     pub MediaBreak: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IMediaEnginePlaybackSource, IMediaEnginePlaybackSource_Vtbl, 0x5c1d0ba7_3856_48b9_8dc6_244bf107bf8c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IMediaEnginePlaybackSource,
+    IMediaEnginePlaybackSource_Vtbl,
+    0x5c1d0ba7_3856_48b9_8dc6_244bf107bf8c
+);
 #[cfg(feature = "deprecated")]
 impl IMediaEnginePlaybackSource {
     #[doc = "Required features: `\"deprecated\"`"]

@@ -1,5 +1,10 @@
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DRendezvousSessionEvents, DRendezvousSessionEvents_Vtbl, 0x3fa19cf8_64c4_4f53_ae60_635b3806eca6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DRendezvousSessionEvents,
+    DRendezvousSessionEvents_Vtbl,
+    0x3fa19cf8_64c4_4f53_ae60_635b3806eca6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DRendezvousSessionEvents {}
 #[cfg(feature = "Win32_System_Com")]

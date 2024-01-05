@@ -123,7 +123,12 @@ pub struct IApplicationViewConsolidatedEventArgs2_Vtbl {
     pub IsAppInitiated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IApplicationViewFullscreenStatics, IApplicationViewFullscreenStatics_Vtbl, 0xbc792ebd_64fe_4b65_a0c0_901ce2b68636);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IApplicationViewFullscreenStatics,
+    IApplicationViewFullscreenStatics_Vtbl,
+    0xbc792ebd_64fe_4b65_a0c0_901ce2b68636
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -159,7 +164,12 @@ pub struct IApplicationViewScalingStatics_Vtbl {
     pub TrySetDisableLayoutScaling: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, disablelayoutscaling: bool, result__: *mut bool) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IApplicationViewStatics, IApplicationViewStatics_Vtbl, 0x010a6306_c433_44e5_a9f2_bd84d4030a95);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IApplicationViewStatics,
+    IApplicationViewStatics_Vtbl,
+    0x010a6306_c433_44e5_a9f2_bd84d4030a95
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

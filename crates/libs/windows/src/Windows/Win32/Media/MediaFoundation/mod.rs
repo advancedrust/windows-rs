@@ -2106,7 +2106,12 @@ pub struct ICodecAPI_Vtbl {
     SetAllSettingsWithNotify: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoDecodeCommandList, ID3D12VideoDecodeCommandList_Vtbl, 0x3b60536e_ad29_4e64_a269_f853837e5e53);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoDecodeCommandList,
+    ID3D12VideoDecodeCommandList_Vtbl,
+    0x3b60536e_ad29_4e64_a269_f853837e5e53
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecodeCommandList {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -2285,7 +2290,12 @@ pub struct ID3D12VideoDecodeCommandList_Vtbl {
     WriteBufferImmediate: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoDecodeCommandList1, ID3D12VideoDecodeCommandList1_Vtbl, 0xd52f011b_b56e_453c_a05a_a7f311c8f472);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoDecodeCommandList1,
+    ID3D12VideoDecodeCommandList1_Vtbl,
+    0xd52f011b_b56e_453c_a05a_a7f311c8f472
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecodeCommandList1 {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -2435,7 +2445,12 @@ pub struct ID3D12VideoDecodeCommandList1_Vtbl {
     DecodeFrame1: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoDecodeCommandList2, ID3D12VideoDecodeCommandList2_Vtbl, 0x6e120880_c114_4153_8036_d247051e1729);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoDecodeCommandList2,
+    ID3D12VideoDecodeCommandList2_Vtbl,
+    0x6e120880_c114_4153_8036_d247051e1729
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecodeCommandList2 {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -2617,7 +2632,12 @@ pub struct ID3D12VideoDecodeCommandList2_Vtbl {
     ExecuteExtensionCommand: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoDecodeCommandList3, ID3D12VideoDecodeCommandList3_Vtbl, 0x2aee8c37_9562_42da_8abf_61efeb2e4513);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoDecodeCommandList3,
+    ID3D12VideoDecodeCommandList3_Vtbl,
+    0x2aee8c37_9562_42da_8abf_61efeb2e4513
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecodeCommandList3 {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -2796,7 +2816,12 @@ pub struct ID3D12VideoDecodeCommandList3_Vtbl {
     Barrier: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoDecoder, ID3D12VideoDecoder_Vtbl, 0xc59b6bdc_7720_4074_a136_17a156037470);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoDecoder,
+    ID3D12VideoDecoder_Vtbl,
+    0xc59b6bdc_7720_4074_a136_17a156037470
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecoder {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -2853,7 +2878,12 @@ pub struct ID3D12VideoDecoder_Vtbl {
     pub GetDesc: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut D3D12_VIDEO_DECODER_DESC),
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoDecoder1, ID3D12VideoDecoder1_Vtbl, 0x79a2e5fb_ccd2_469a_9fde_195d10951f7e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoDecoder1,
+    ID3D12VideoDecoder1_Vtbl,
+    0x79a2e5fb_ccd2_469a_9fde_195d10951f7e
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecoder1 {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -2916,7 +2946,12 @@ pub struct ID3D12VideoDecoder1_Vtbl {
     pub GetProtectedResourceSession: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppprotectedsession: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoDecoderHeap, ID3D12VideoDecoderHeap_Vtbl, 0x0946b7c9_ebf6_4047_bb73_8683e27dbb1f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoDecoderHeap,
+    ID3D12VideoDecoderHeap_Vtbl,
+    0x0946b7c9_ebf6_4047_bb73_8683e27dbb1f
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecoderHeap {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -2978,7 +3013,12 @@ pub struct ID3D12VideoDecoderHeap_Vtbl {
     GetDesc: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoDecoderHeap1, ID3D12VideoDecoderHeap1_Vtbl, 0xda1d98c5_539f_41b2_bf6b_1198a03b6d26);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoDecoderHeap1,
+    ID3D12VideoDecoderHeap1_Vtbl,
+    0xda1d98c5_539f_41b2_bf6b_1198a03b6d26
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoDecoderHeap1 {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -3414,7 +3454,12 @@ pub struct ID3D12VideoDevice3_Vtbl {
     pub CreateVideoEncoderHeap: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdesc: *const D3D12_VIDEO_ENCODER_HEAP_DESC, riid: *const ::windows_core::GUID, ppvideoencoderheap: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoEncodeCommandList, ID3D12VideoEncodeCommandList_Vtbl, 0x8455293a_0cbd_4831_9b39_fbdbab724723);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoEncodeCommandList,
+    ID3D12VideoEncodeCommandList_Vtbl,
+    0x8455293a_0cbd_4831_9b39_fbdbab724723
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoEncodeCommandList {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -3614,7 +3659,12 @@ pub struct ID3D12VideoEncodeCommandList_Vtbl {
     SetProtectedResourceSession: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoEncodeCommandList1, ID3D12VideoEncodeCommandList1_Vtbl, 0x94971eca_2bdb_4769_88cf_3675ea757ebc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoEncodeCommandList1,
+    ID3D12VideoEncodeCommandList1_Vtbl,
+    0x94971eca_2bdb_4769_88cf_3675ea757ebc
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoEncodeCommandList1 {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -3789,7 +3839,12 @@ pub struct ID3D12VideoEncodeCommandList1_Vtbl {
     ExecuteExtensionCommand: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoEncodeCommandList2, ID3D12VideoEncodeCommandList2_Vtbl, 0x895491e2_e701_46a9_9a1f_8d3480ed867a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoEncodeCommandList2,
+    ID3D12VideoEncodeCommandList2_Vtbl,
+    0x895491e2_e701_46a9_9a1f_8d3480ed867a
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoEncodeCommandList2 {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -3978,7 +4033,12 @@ pub struct ID3D12VideoEncodeCommandList2_Vtbl {
     ResolveEncoderOutputMetadata: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoEncodeCommandList3, ID3D12VideoEncodeCommandList3_Vtbl, 0x7f027b22_1515_4e85_aa0d_026486580576);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoEncodeCommandList3,
+    ID3D12VideoEncodeCommandList3_Vtbl,
+    0x7f027b22_1515_4e85_aa0d_026486580576
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoEncodeCommandList3 {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -4168,7 +4228,12 @@ pub struct ID3D12VideoEncodeCommandList3_Vtbl {
     Barrier: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoEncoder, ID3D12VideoEncoder_Vtbl, 0x2e0d212d_8df9_44a6_a770_bb289b182737);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoEncoder,
+    ID3D12VideoEncoder_Vtbl,
+    0x2e0d212d_8df9_44a6_a770_bb289b182737
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoEncoder {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -4252,7 +4317,12 @@ pub struct ID3D12VideoEncoder_Vtbl {
     pub GetMaxMotionEstimationPrecision: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> D3D12_VIDEO_ENCODER_MOTION_ESTIMATION_PRECISION_MODE,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoEncoderHeap, ID3D12VideoEncoderHeap_Vtbl, 0x22b35d96_876a_44c0_b25e_fb8c9c7f1c4a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoEncoderHeap,
+    ID3D12VideoEncoderHeap_Vtbl,
+    0x22b35d96_876a_44c0_b25e_fb8c9c7f1c4a
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoEncoderHeap {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -4331,7 +4401,12 @@ pub struct ID3D12VideoEncoderHeap_Vtbl {
     pub GetResolutionList: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, resolutionslistcount: u32, presolutionlist: *mut D3D12_VIDEO_ENCODER_PICTURE_RESOLUTION_DESC) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoExtensionCommand, ID3D12VideoExtensionCommand_Vtbl, 0x554e41e8_ae8e_4a8c_b7d2_5b4f274a30e4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoExtensionCommand,
+    ID3D12VideoExtensionCommand_Vtbl,
+    0x554e41e8_ae8e_4a8c_b7d2_5b4f274a30e4
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoExtensionCommand {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -4395,7 +4470,12 @@ pub struct ID3D12VideoExtensionCommand_Vtbl {
     pub GetProtectedResourceSession: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppprotectedsession: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoMotionEstimator, ID3D12VideoMotionEstimator_Vtbl, 0x33fdae0e_098b_428f_87bb_34b695de08f8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoMotionEstimator,
+    ID3D12VideoMotionEstimator_Vtbl,
+    0x33fdae0e_098b_428f_87bb_34b695de08f8
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoMotionEstimator {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -4464,7 +4544,12 @@ pub struct ID3D12VideoMotionEstimator_Vtbl {
     pub GetProtectedResourceSession: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppprotectedsession: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoMotionVectorHeap, ID3D12VideoMotionVectorHeap_Vtbl, 0x5be17987_743a_4061_834b_23d22daea505);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoMotionVectorHeap,
+    ID3D12VideoMotionVectorHeap_Vtbl,
+    0x5be17987_743a_4061_834b_23d22daea505
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoMotionVectorHeap {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -4533,7 +4618,12 @@ pub struct ID3D12VideoMotionVectorHeap_Vtbl {
     pub GetProtectedResourceSession: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppprotectedsession: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoProcessCommandList, ID3D12VideoProcessCommandList_Vtbl, 0xaeb2543a_167f_4682_acc8_d159ed4a6209);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoProcessCommandList,
+    ID3D12VideoProcessCommandList_Vtbl,
+    0xaeb2543a_167f_4682_acc8_d159ed4a6209
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoProcessCommandList {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -4712,7 +4802,12 @@ pub struct ID3D12VideoProcessCommandList_Vtbl {
     WriteBufferImmediate: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoProcessCommandList1, ID3D12VideoProcessCommandList1_Vtbl, 0x542c5c4d_7596_434f_8c93_4efa6766f267);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoProcessCommandList1,
+    ID3D12VideoProcessCommandList1_Vtbl,
+    0x542c5c4d_7596_434f_8c93_4efa6766f267
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoProcessCommandList1 {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -4862,7 +4957,12 @@ pub struct ID3D12VideoProcessCommandList1_Vtbl {
     ProcessFrames1: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoProcessCommandList2, ID3D12VideoProcessCommandList2_Vtbl, 0xdb525ae4_6ad6_473c_baa7_59b2e37082e4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoProcessCommandList2,
+    ID3D12VideoProcessCommandList2_Vtbl,
+    0xdb525ae4_6ad6_473c_baa7_59b2e37082e4
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoProcessCommandList2 {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -5044,7 +5144,12 @@ pub struct ID3D12VideoProcessCommandList2_Vtbl {
     ExecuteExtensionCommand: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoProcessCommandList3, ID3D12VideoProcessCommandList3_Vtbl, 0x1a0a4ca4_9f08_40ce_9558_b411fd2666ff);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoProcessCommandList3,
+    ID3D12VideoProcessCommandList3_Vtbl,
+    0x1a0a4ca4_9f08_40ce_9558_b411fd2666ff
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoProcessCommandList3 {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -5223,7 +5328,12 @@ pub struct ID3D12VideoProcessCommandList3_Vtbl {
     Barrier: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoProcessor, ID3D12VideoProcessor_Vtbl, 0x304fdb32_bede_410a_8545_943ac6a46138);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoProcessor,
+    ID3D12VideoProcessor_Vtbl,
+    0x304fdb32_bede_410a_8545_943ac6a46138
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoProcessor {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
@@ -5302,7 +5412,12 @@ pub struct ID3D12VideoProcessor_Vtbl {
     GetOutputStreamDesc: usize,
 }
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
-::windows_core::imp::com_interface!(ID3D12VideoProcessor1, ID3D12VideoProcessor1_Vtbl, 0xf3cfe615_553f_425c_86d8_ee8c1b1fb01c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]
+    ID3D12VideoProcessor1,
+    ID3D12VideoProcessor1_Vtbl,
+    0xf3cfe615_553f_425c_86d8_ee8c1b1fb01c
+);
 #[cfg(feature = "Win32_Graphics_Direct3D12")]
 impl ID3D12VideoProcessor1 {
     #[doc = "Required features: `\"Win32_Graphics_Direct3D12\"`"]

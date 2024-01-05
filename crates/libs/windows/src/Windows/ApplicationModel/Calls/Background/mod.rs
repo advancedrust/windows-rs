@@ -8,7 +8,12 @@ pub struct IPhoneCallBlockedTriggerDetails_Vtbl {
     pub CallBlockedReason: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut PhoneCallBlockedReason) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPhoneCallOriginDataRequestTriggerDetails, IPhoneCallOriginDataRequestTriggerDetails_Vtbl, 0x6e9b5b3f_c54b_4e82_4cc9_e329a4184592);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPhoneCallOriginDataRequestTriggerDetails,
+    IPhoneCallOriginDataRequestTriggerDetails_Vtbl,
+    0x6e9b5b3f_c54b_4e82_4cc9_e329a4184592
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -24,7 +29,12 @@ pub struct IPhoneCallOriginDataRequestTriggerDetails_Vtbl {
     PhoneNumber: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPhoneIncomingCallDismissedTriggerDetails, IPhoneIncomingCallDismissedTriggerDetails_Vtbl, 0xbad30276_83b6_5732_9c38_0c206546196a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPhoneIncomingCallDismissedTriggerDetails,
+    IPhoneIncomingCallDismissedTriggerDetails_Vtbl,
+    0xbad30276_83b6_5732_9c38_0c206546196a
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

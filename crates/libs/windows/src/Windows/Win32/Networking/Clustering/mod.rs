@@ -3704,7 +3704,12 @@ pub struct IGetClusterUIInfo_Vtbl {
     GetIcon: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusApplication, ISClusApplication_Vtbl, 0xf2e606e6_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusApplication,
+    ISClusApplication_Vtbl,
+    0xf2e606e6_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusApplication {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3753,7 +3758,12 @@ pub struct ISClusApplication_Vtbl {
     OpenCluster: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusCryptoKeys, ISClusCryptoKeys_Vtbl, 0xf2e6072c_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusCryptoKeys,
+    ISClusCryptoKeys_Vtbl,
+    0xf2e6072c_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusCryptoKeys {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3806,7 +3816,12 @@ pub struct ISClusCryptoKeys_Vtbl {
     RemoveItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusDisk, ISClusDisk_Vtbl, 0xf2e60724_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusDisk,
+    ISClusDisk_Vtbl,
+    0xf2e60724_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusDisk {
     pub unsafe fn Signature(&self) -> ::windows_core::Result<i32> {
@@ -3849,7 +3864,12 @@ pub struct ISClusDisk_Vtbl {
     Partitions: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusDisks, ISClusDisks_Vtbl, 0xf2e60726_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusDisks,
+    ISClusDisks_Vtbl,
+    0xf2e60726_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusDisks {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3882,7 +3902,12 @@ pub struct ISClusDisks_Vtbl {
     get_Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusNetInterface, ISClusNetInterface_Vtbl, 0xf2e606ee_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusNetInterface,
+    ISClusNetInterface_Vtbl,
+    0xf2e606ee_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNetInterface {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3960,7 +3985,12 @@ pub struct ISClusNetInterface_Vtbl {
     Cluster: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusNetInterfaces, ISClusNetInterfaces_Vtbl, 0xf2e606f0_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusNetInterfaces,
+    ISClusNetInterfaces_Vtbl,
+    0xf2e606f0_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNetInterfaces {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3997,7 +4027,12 @@ pub struct ISClusNetInterfaces_Vtbl {
     get_Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusNetwork, ISClusNetwork_Vtbl, 0xf2e606f2_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusNetwork,
+    ISClusNetwork_Vtbl,
+    0xf2e606f2_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNetwork {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4097,7 +4132,12 @@ pub struct ISClusNetwork_Vtbl {
     Cluster: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusNetworkNetInterfaces, ISClusNetworkNetInterfaces_Vtbl, 0xf2e606f6_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusNetworkNetInterfaces,
+    ISClusNetworkNetInterfaces_Vtbl,
+    0xf2e606f6_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNetworkNetInterfaces {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4134,7 +4174,12 @@ pub struct ISClusNetworkNetInterfaces_Vtbl {
     get_Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusNetworks, ISClusNetworks_Vtbl, 0xf2e606f4_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusNetworks,
+    ISClusNetworks_Vtbl,
+    0xf2e606f4_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNetworks {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4171,7 +4216,12 @@ pub struct ISClusNetworks_Vtbl {
     get_Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusNode, ISClusNode_Vtbl, 0xf2e606f8_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusNode,
+    ISClusNode_Vtbl,
+    0xf2e606f8_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNode {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4286,7 +4336,12 @@ pub struct ISClusNode_Vtbl {
     NetInterfaces: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusNodeNetInterfaces, ISClusNodeNetInterfaces_Vtbl, 0xf2e606fc_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusNodeNetInterfaces,
+    ISClusNodeNetInterfaces_Vtbl,
+    0xf2e606fc_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNodeNetInterfaces {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4323,7 +4378,12 @@ pub struct ISClusNodeNetInterfaces_Vtbl {
     get_Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusNodes, ISClusNodes_Vtbl, 0xf2e606fa_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusNodes,
+    ISClusNodes_Vtbl,
+    0xf2e606fa_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusNodes {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4360,7 +4420,12 @@ pub struct ISClusNodes_Vtbl {
     get_Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusPartition, ISClusPartition_Vtbl, 0xf2e60720_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusPartition,
+    ISClusPartition_Vtbl,
+    0xf2e60720_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusPartition {
     pub unsafe fn Flags(&self) -> ::windows_core::Result<i32> {
@@ -4408,7 +4473,12 @@ pub struct ISClusPartition_Vtbl {
     pub FileSystem: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrfilesystem: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusPartitionEx, ISClusPartitionEx_Vtbl, 0x8802d4fe_b32e_4ad1_9dbd_64f18e1166ce);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusPartitionEx,
+    ISClusPartitionEx_Vtbl,
+    0x8802d4fe_b32e_4ad1_9dbd_64f18e1166ce
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusPartitionEx {
     pub unsafe fn Flags(&self) -> ::windows_core::Result<i32> {
@@ -4474,7 +4544,12 @@ pub struct ISClusPartitionEx_Vtbl {
     pub VolumeGuid: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrvolumeguid: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusPartitions, ISClusPartitions_Vtbl, 0xf2e60722_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusPartitions,
+    ISClusPartitions_Vtbl,
+    0xf2e60722_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusPartitions {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4507,7 +4582,12 @@ pub struct ISClusPartitions_Vtbl {
     get_Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusProperties, ISClusProperties_Vtbl, 0xf2e60700_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusProperties,
+    ISClusProperties_Vtbl,
+    0xf2e60700_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusProperties {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4616,7 +4696,12 @@ pub struct ISClusProperties_Vtbl {
     Modified: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusProperty, ISClusProperty_Vtbl, 0xf2e606fe_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusProperty,
+    ISClusProperty_Vtbl,
+    0xf2e606fe_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusProperty {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4735,7 +4820,12 @@ pub struct ISClusProperty_Vtbl {
     pub UseDefaultValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusPropertyValue, ISClusPropertyValue_Vtbl, 0xf2e6071a_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusPropertyValue,
+    ISClusPropertyValue_Vtbl,
+    0xf2e6071a_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusPropertyValue {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -4805,7 +4895,12 @@ pub struct ISClusPropertyValue_Vtbl {
     Data: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusPropertyValueData, ISClusPropertyValueData_Vtbl, 0xf2e6071e_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusPropertyValueData,
+    ISClusPropertyValueData_Vtbl,
+    0xf2e6071e_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusPropertyValueData {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4857,7 +4952,12 @@ pub struct ISClusPropertyValueData_Vtbl {
     RemoveItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusPropertyValues, ISClusPropertyValues_Vtbl, 0xf2e6071c_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusPropertyValues,
+    ISClusPropertyValues_Vtbl,
+    0xf2e6071c_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusPropertyValues {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4912,7 +5012,12 @@ pub struct ISClusPropertyValues_Vtbl {
     RemoveItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusRefObject, ISClusRefObject_Vtbl, 0xf2e60702_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusRefObject,
+    ISClusRefObject_Vtbl,
+    0xf2e60702_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusRefObject {
     pub unsafe fn Handle(&self) -> ::windows_core::Result<usize> {
@@ -4930,7 +5035,12 @@ pub struct ISClusRefObject_Vtbl {
     pub Handle: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, phandle: *mut usize) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusRegistryKeys, ISClusRegistryKeys_Vtbl, 0xf2e6072a_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusRegistryKeys,
+    ISClusRegistryKeys_Vtbl,
+    0xf2e6072a_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusRegistryKeys {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4983,7 +5093,12 @@ pub struct ISClusRegistryKeys_Vtbl {
     RemoveItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResDependencies, ISClusResDependencies_Vtbl, 0xf2e60704_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResDependencies,
+    ISClusResDependencies_Vtbl,
+    0xf2e60704_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResDependencies {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5064,7 +5179,12 @@ pub struct ISClusResDependencies_Vtbl {
     RemoveItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResDependents, ISClusResDependents_Vtbl, 0xf2e6072e_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResDependents,
+    ISClusResDependents_Vtbl,
+    0xf2e6072e_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResDependents {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5145,7 +5265,12 @@ pub struct ISClusResDependents_Vtbl {
     RemoveItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResGroup, ISClusResGroup_Vtbl, 0xf2e60706_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResGroup,
+    ISClusResGroup_Vtbl,
+    0xf2e60706_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResGroup {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5294,7 +5419,12 @@ pub struct ISClusResGroup_Vtbl {
     Cluster: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResGroupPreferredOwnerNodes, ISClusResGroupPreferredOwnerNodes_Vtbl, 0xf2e606e8_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResGroupPreferredOwnerNodes,
+    ISClusResGroupPreferredOwnerNodes_Vtbl,
+    0xf2e606e8_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResGroupPreferredOwnerNodes {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5378,7 +5508,12 @@ pub struct ISClusResGroupPreferredOwnerNodes_Vtbl {
     AddItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResGroupResources, ISClusResGroupResources_Vtbl, 0xf2e606ea_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResGroupResources,
+    ISClusResGroupResources_Vtbl,
+    0xf2e606ea_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResGroupResources {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5438,7 +5573,12 @@ pub struct ISClusResGroupResources_Vtbl {
     DeleteItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResGroups, ISClusResGroups_Vtbl, 0xf2e60708_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResGroups,
+    ISClusResGroups_Vtbl,
+    0xf2e60708_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResGroups {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5497,7 +5637,12 @@ pub struct ISClusResGroups_Vtbl {
     DeleteItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResPossibleOwnerNodes, ISClusResPossibleOwnerNodes_Vtbl, 0xf2e6070e_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResPossibleOwnerNodes,
+    ISClusResPossibleOwnerNodes_Vtbl,
+    0xf2e6070e_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResPossibleOwnerNodes {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5565,7 +5710,12 @@ pub struct ISClusResPossibleOwnerNodes_Vtbl {
     Modified: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResType, ISClusResType_Vtbl, 0xf2e60710_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResType,
+    ISClusResType_Vtbl,
+    0xf2e60710_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResType {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5667,7 +5817,12 @@ pub struct ISClusResType_Vtbl {
     AvailableDisks: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResTypePossibleOwnerNodes, ISClusResTypePossibleOwnerNodes_Vtbl, 0xf2e60718_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResTypePossibleOwnerNodes,
+    ISClusResTypePossibleOwnerNodes_Vtbl,
+    0xf2e60718_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResTypePossibleOwnerNodes {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5704,7 +5859,12 @@ pub struct ISClusResTypePossibleOwnerNodes_Vtbl {
     get_Item: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResTypeResources, ISClusResTypeResources_Vtbl, 0xf2e60714_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResTypeResources,
+    ISClusResTypeResources_Vtbl,
+    0xf2e60714_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResTypeResources {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5764,7 +5924,12 @@ pub struct ISClusResTypeResources_Vtbl {
     DeleteItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResTypes, ISClusResTypes_Vtbl, 0xf2e60712_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResTypes,
+    ISClusResTypes_Vtbl,
+    0xf2e60712_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResTypes {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5825,7 +5990,12 @@ pub struct ISClusResTypes_Vtbl {
     DeleteItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResource, ISClusResource_Vtbl, 0xf2e6070a_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResource,
+    ISClusResource_Vtbl,
+    0xf2e6070a_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResource {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6111,7 +6281,12 @@ pub struct ISClusResource_Vtbl {
     pub SetMaintenanceMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bmaintenancemode: super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusResources, ISClusResources_Vtbl, 0xf2e6070c_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusResources,
+    ISClusResources_Vtbl,
+    0xf2e6070c_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusResources {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -6172,7 +6347,12 @@ pub struct ISClusResources_Vtbl {
     DeleteItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusScsiAddress, ISClusScsiAddress_Vtbl, 0xf2e60728_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusScsiAddress,
+    ISClusScsiAddress_Vtbl,
+    0xf2e60728_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusScsiAddress {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -6225,7 +6405,12 @@ pub struct ISClusScsiAddress_Vtbl {
     Lun: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusVersion, ISClusVersion_Vtbl, 0xf2e60716_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusVersion,
+    ISClusVersion_Vtbl,
+    0xf2e60716_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusVersion {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -6293,7 +6478,12 @@ pub struct ISClusVersion_Vtbl {
     MixedVersion: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISCluster, ISCluster_Vtbl, 0xf2e606e4_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISCluster,
+    ISCluster_Vtbl,
+    0xf2e606e4_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISCluster {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6483,7 +6673,12 @@ pub struct ISCluster_Vtbl {
     NetInterfaces: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISClusterNames, ISClusterNames_Vtbl, 0xf2e606ec_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISClusterNames,
+    ISClusterNames_Vtbl,
+    0xf2e606ec_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISClusterNames {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -6525,7 +6720,12 @@ pub struct ISClusterNames_Vtbl {
     pub DomainName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrdomainname: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISDomainNames, ISDomainNames_Vtbl, 0xf2e606e2_2631_11d1_89f1_00a0c90d061e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISDomainNames,
+    ISDomainNames_Vtbl,
+    0xf2e606e2_2631_11d1_89f1_00a0c90d061e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISDomainNames {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {

@@ -2601,7 +2601,12 @@ pub struct ISyncProviderConfigUI_Vtbl {
     ModifySyncProvider: usize,
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
-::windows_core::imp::com_interface!(ISyncProviderConfigUIInfo, ISyncProviderConfigUIInfo_Vtbl, 0x214141ae_33d7_4d8d_8e37_f227e880ce50);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_UI_Shell_PropertiesSystem\"`"]
+    ISyncProviderConfigUIInfo,
+    ISyncProviderConfigUIInfo_Vtbl,
+    0x214141ae_33d7_4d8d_8e37_f227e880ce50
+);
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ISyncProviderConfigUIInfo {
     #[doc = "Required features: `\"Win32_UI_Shell_PropertiesSystem\"`"]
@@ -2646,7 +2651,12 @@ pub struct ISyncProviderConfigUIInfo_Vtbl {
     pub GetSyncProviderConfigUI: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwclscontext: u32, ppsyncproviderconfigui: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
-::windows_core::imp::com_interface!(ISyncProviderInfo, ISyncProviderInfo_Vtbl, 0x1ee135de_88a4_4504_b0d0_f7920d7e5ba6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_UI_Shell_PropertiesSystem\"`"]
+    ISyncProviderInfo,
+    ISyncProviderInfo_Vtbl,
+    0x1ee135de_88a4_4504_b0d0_f7920d7e5ba6
+);
 #[cfg(feature = "Win32_UI_Shell_PropertiesSystem")]
 impl ISyncProviderInfo {
     #[doc = "Required features: `\"Win32_UI_Shell_PropertiesSystem\"`"]

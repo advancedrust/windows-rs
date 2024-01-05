@@ -13,7 +13,12 @@ pub struct IMuteChangeRequestedEventArgs_Vtbl {
     pub Mute: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPlayToConnection, IPlayToConnection_Vtbl, 0x112fbfc8_f235_4fde_8d41_9bf27c9e9a40);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPlayToConnection,
+    IPlayToConnection_Vtbl,
+    0x112fbfc8_f235_4fde_8d41_9bf27c9e9a40
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -49,7 +54,12 @@ pub struct IPlayToConnection_Vtbl {
     RemoveError: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPlayToConnectionErrorEventArgs, IPlayToConnectionErrorEventArgs_Vtbl, 0xbf5eada6_88e6_445f_9d40_d9b9f8939896);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPlayToConnectionErrorEventArgs,
+    IPlayToConnectionErrorEventArgs_Vtbl,
+    0xbf5eada6_88e6_445f_9d40_d9b9f8939896
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -65,7 +75,12 @@ pub struct IPlayToConnectionErrorEventArgs_Vtbl {
     Message: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPlayToConnectionStateChangedEventArgs, IPlayToConnectionStateChangedEventArgs_Vtbl, 0x68c4b50f_0c20_4980_8602_58c62238d423);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPlayToConnectionStateChangedEventArgs,
+    IPlayToConnectionStateChangedEventArgs_Vtbl,
+    0x68c4b50f_0c20_4980_8602_58c62238d423
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -81,7 +96,12 @@ pub struct IPlayToConnectionStateChangedEventArgs_Vtbl {
     CurrentState: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPlayToConnectionTransferredEventArgs, IPlayToConnectionTransferredEventArgs_Vtbl, 0xfae3193a_0683_47d9_8df0_18cbb48984d8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPlayToConnectionTransferredEventArgs,
+    IPlayToConnectionTransferredEventArgs_Vtbl,
+    0xfae3193a_0683_47d9_8df0_18cbb48984d8
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -97,7 +117,12 @@ pub struct IPlayToConnectionTransferredEventArgs_Vtbl {
     CurrentSource: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPlayToManager, IPlayToManager_Vtbl, 0xf56a206e_1b77_42ef_8f0d_b949f8d9b260);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPlayToManager,
+    IPlayToManager_Vtbl,
+    0xf56a206e_1b77_42ef_8f0d_b949f8d9b260
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -129,7 +154,12 @@ pub struct IPlayToManager_Vtbl {
     DefaultSourceSelection: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPlayToManagerStatics, IPlayToManagerStatics_Vtbl, 0x64e6a887_3982_4f3b_ba20_6155e435325b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPlayToManagerStatics,
+    IPlayToManagerStatics_Vtbl,
+    0x64e6a887_3982_4f3b_ba20_6155e435325b
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -195,7 +225,12 @@ pub struct IPlayToReceiver_Vtbl {
     pub StopAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPlayToSource, IPlayToSource_Vtbl, 0x7f138a08_fbb7_4b09_8356_aa5f4e335c31);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPlayToSource,
+    IPlayToSource_Vtbl,
+    0x7f138a08_fbb7_4b09_8356_aa5f4e335c31
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -219,7 +254,12 @@ pub struct IPlayToSource_Vtbl {
     PlayNext: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPlayToSourceDeferral, IPlayToSourceDeferral_Vtbl, 0x4100891d_278e_4f29_859b_a9e501053e7d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPlayToSourceDeferral,
+    IPlayToSourceDeferral_Vtbl,
+    0x4100891d_278e_4f29_859b_a9e501053e7d
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -231,7 +271,12 @@ pub struct IPlayToSourceDeferral_Vtbl {
     Complete: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPlayToSourceRequest, IPlayToSourceRequest_Vtbl, 0xf8584665_64f4_44a0_ac0d_468d2b8fda83);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPlayToSourceRequest,
+    IPlayToSourceRequest_Vtbl,
+    0xf8584665_64f4_44a0_ac0d_468d2b8fda83
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -255,7 +300,12 @@ pub struct IPlayToSourceRequest_Vtbl {
     SetSource: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPlayToSourceRequestedEventArgs, IPlayToSourceRequestedEventArgs_Vtbl, 0xc5cdc330_29df_4ec6_9da9_9fbdfcfc1b3e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPlayToSourceRequestedEventArgs,
+    IPlayToSourceRequestedEventArgs_Vtbl,
+    0xc5cdc330_29df_4ec6_9da9_9fbdfcfc1b3e
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -267,7 +317,12 @@ pub struct IPlayToSourceRequestedEventArgs_Vtbl {
     SourceRequest: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPlayToSourceSelectedEventArgs, IPlayToSourceSelectedEventArgs_Vtbl, 0x0c9d8511_5202_4dcb_8c67_abda12bb3c12);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPlayToSourceSelectedEventArgs,
+    IPlayToSourceSelectedEventArgs_Vtbl,
+    0x0c9d8511_5202_4dcb_8c67_abda12bb3c12
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -295,7 +350,12 @@ pub struct IPlayToSourceSelectedEventArgs_Vtbl {
     SupportsVideo: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IPlayToSourceWithPreferredSourceUri, IPlayToSourceWithPreferredSourceUri_Vtbl, 0xaab253eb_3301_4dc4_afba_b2f2ed9635a0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IPlayToSourceWithPreferredSourceUri,
+    IPlayToSourceWithPreferredSourceUri_Vtbl,
+    0xaab253eb_3301_4dc4_afba_b2f2ed9635a0
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

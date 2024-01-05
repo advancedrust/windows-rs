@@ -1,5 +1,10 @@
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IEnumNetworkConnections, IEnumNetworkConnections_Vtbl, 0xdcb00006_570f_4a9b_8d69_199fdba5723b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IEnumNetworkConnections,
+    IEnumNetworkConnections_Vtbl,
+    0xdcb00006_570f_4a9b_8d69_199fdba5723b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IEnumNetworkConnections {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -49,7 +54,12 @@ pub struct IEnumNetworkConnections_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IEnumNetworks, IEnumNetworks_Vtbl, 0xdcb00003_570f_4a9b_8d69_199fdba5723b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IEnumNetworks,
+    IEnumNetworks_Vtbl,
+    0xdcb00003_570f_4a9b_8d69_199fdba5723b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IEnumNetworks {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -99,7 +109,12 @@ pub struct IEnumNetworks_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(INetwork, INetwork_Vtbl, 0xdcb00002_570f_4a9b_8d69_199fdba5723b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    INetwork,
+    INetwork_Vtbl,
+    0xdcb00002_570f_4a9b_8d69_199fdba5723b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl INetwork {
     pub unsafe fn GetName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -184,7 +199,12 @@ pub struct INetwork_Vtbl {
     pub SetCategory: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, newcategory: NLM_NETWORK_CATEGORY) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(INetwork2, INetwork2_Vtbl, 0xb5550abb_3391_4310_804f_25dcc325ed81);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    INetwork2,
+    INetwork2_Vtbl,
+    0xb5550abb_3391_4310_804f_25dcc325ed81
+);
 #[cfg(feature = "Win32_System_Com")]
 impl INetwork2 {
     pub unsafe fn GetName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -258,7 +278,12 @@ pub struct INetwork2_Vtbl {
     pub IsDomainAuthenticatedBy: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, domainauthenticationkind: NLM_DOMAIN_AUTHENTICATION_KIND, pvalue: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(INetworkConnection, INetworkConnection_Vtbl, 0xdcb00005_570f_4a9b_8d69_199fdba5723b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    INetworkConnection,
+    INetworkConnection_Vtbl,
+    0xdcb00005_570f_4a9b_8d69_199fdba5723b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl INetworkConnection {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -311,7 +336,12 @@ pub struct INetworkConnection_Vtbl {
     pub GetDomainType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdomaintype: *mut NLM_DOMAIN_TYPE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(INetworkConnection2, INetworkConnection2_Vtbl, 0x00e676ed_5a35_4738_92eb_8581738d0f0a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    INetworkConnection2,
+    INetworkConnection2_Vtbl,
+    0x00e676ed_5a35_4738_92eb_8581738d0f0a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl INetworkConnection2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -477,7 +507,12 @@ pub struct INetworkEvents_Vtbl {
     pub NetworkPropertyChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, networkid: ::windows_core::GUID, flags: NLM_NETWORK_PROPERTY_CHANGE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(INetworkListManager, INetworkListManager_Vtbl, 0xdcb00000_570f_4a9b_8d69_199fdba5723b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    INetworkListManager,
+    INetworkListManager_Vtbl,
+    0xdcb00000_570f_4a9b_8d69_199fdba5723b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl INetworkListManager {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

@@ -95,7 +95,12 @@ pub struct IBackgroundDownloaderStaticMethods2_Vtbl {
     GetCurrentDownloadsForTransferGroupAsync: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IBackgroundDownloaderUserConsent, IBackgroundDownloaderUserConsent_Vtbl, 0x5d14e906_9266_4808_bd71_5925f2a3130a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IBackgroundDownloaderUserConsent,
+    IBackgroundDownloaderUserConsent_Vtbl,
+    0x5d14e906_9266_4808_bd71_5925f2a3130a
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -541,7 +546,12 @@ pub struct IBackgroundUploaderStaticMethods2_Vtbl {
     GetCurrentUploadsForTransferGroupAsync: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IBackgroundUploaderUserConsent, IBackgroundUploaderUserConsent_Vtbl, 0x3bb384cb_0760_461d_907f_5138f84d44c1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IBackgroundUploaderUserConsent,
+    IBackgroundUploaderUserConsent_Vtbl,
+    0x3bb384cb_0760_461d_907f_5138f84d44c1
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -649,7 +659,12 @@ pub struct IResponseInformation_Vtbl {
     Headers: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IUnconstrainedTransferRequestResult, IUnconstrainedTransferRequestResult_Vtbl, 0x4c24b81f_d944_4112_a98e_6a69522b7ebb);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IUnconstrainedTransferRequestResult,
+    IUnconstrainedTransferRequestResult_Vtbl,
+    0x4c24b81f_d944_4112_a98e_6a69522b7ebb
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

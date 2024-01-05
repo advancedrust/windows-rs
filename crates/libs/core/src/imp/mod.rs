@@ -65,7 +65,8 @@ pub use required_hierarchy;
 #[doc(hidden)]
 #[macro_export]
 macro_rules! interface {
-    ($name:ident, $vtbl:ident) => {
+    ($(#[$doc:meta])? $name:ident, $vtbl:ident) => {
+        $(#[$doc])?
         #[repr(transparent)]
         #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
         pub struct $name(::std::ptr::NonNull<::std::ffi::c_void>);
@@ -86,7 +87,8 @@ pub use interface;
 #[doc(hidden)]
 #[macro_export]
 macro_rules! com_interface {
-    ($name:ident, $vtbl:ident, $iid:literal) => {
+    ($(#[$doc:meta])? $name:ident, $vtbl:ident, $iid:literal) => {
+        $(#[$doc])?
         #[repr(transparent)]
         #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
         pub struct $name(::windows_core::IUnknown);

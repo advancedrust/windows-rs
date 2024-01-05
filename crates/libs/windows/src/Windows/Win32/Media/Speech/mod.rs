@@ -34,7 +34,12 @@ pub struct IEnumSpObjectTokens_Vtbl {
     pub GetCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pcount: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpAudio, ISpAudio_Vtbl, 0xc05c768f_fae8_4ec2_8e07_338321c12452);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpAudio,
+    ISpAudio_Vtbl,
+    0xc05c768f_fae8_4ec2_8e07_338321c12452
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpAudio {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -623,7 +628,12 @@ pub struct ISpLexicon_Vtbl {
     pub GetWords: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwflags: u32, pdwgeneration: *mut u32, pdwcookie: *mut u32, pwordlist: *mut SPWORDLIST) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpMMSysAudio, ISpMMSysAudio_Vtbl, 0x15806f6e_1d70_4b48_98e6_3b1a007509ab);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpMMSysAudio,
+    ISpMMSysAudio_Vtbl,
+    0x15806f6e_1d70_4b48_98e6_3b1a007509ab
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpMMSysAudio {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2401,7 +2411,12 @@ pub struct ISpRegDataKey_Vtbl {
     SetKey: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpResourceManager, ISpResourceManager_Vtbl, 0x93384e18_5014_43d5_adbb_a78e055926bd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpResourceManager,
+    ISpResourceManager_Vtbl,
+    0x93384e18_5014_43d5_adbb_a78e055926bd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpResourceManager {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2504,7 +2519,12 @@ pub struct ISpShortcut_Vtbl {
     pub GetGenerationChange: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdwgeneration: *mut u32, pshortcutpairlist: *mut SPSHORTCUTPAIRLIST) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpStream, ISpStream_Vtbl, 0x12e3cca9_7518_44c5_a5e7_ba5a79cb929e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpStream,
+    ISpStream_Vtbl,
+    0x12e3cca9_7518_44c5_a5e7_ba5a79cb929e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpStream {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2620,7 +2640,12 @@ pub struct ISpStream_Vtbl {
     pub Close: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpStreamFormat, ISpStreamFormat_Vtbl, 0xbed530be_2606_4f4d_a1c0_54c5cda5566f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpStreamFormat,
+    ISpStreamFormat_Vtbl,
+    0xbed530be_2606_4f4d_a1c0_54c5cda5566f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpStreamFormat {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2702,7 +2727,12 @@ pub struct ISpStreamFormat_Vtbl {
     GetFormat: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpStreamFormatConverter, ISpStreamFormatConverter_Vtbl, 0x678a932c_ea71_4446_9b41_78fda6280a29);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpStreamFormatConverter,
+    ISpStreamFormatConverter_Vtbl,
+    0x678a932c_ea71_4446_9b41_78fda6280a29
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpStreamFormatConverter {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3104,7 +3134,12 @@ pub struct ISpXMLRecoResult_Vtbl {
     pub GetXMLErrorInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, psemanticerrorinfo: *mut SPSEMANTICERRORINFO) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechAudio, ISpeechAudio_Vtbl, 0xcff8e175_019e_11d3_a08e_00c04f8ef9b5);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechAudio,
+    ISpeechAudio_Vtbl,
+    0xcff8e175_019e_11d3_a08e_00c04f8ef9b5
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechAudio {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3205,7 +3240,12 @@ pub struct ISpeechAudio_Vtbl {
     pub SetState: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, state: SpeechAudioState) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechAudioBufferInfo, ISpeechAudioBufferInfo_Vtbl, 0x11b103d8_1142_4edf_a093_82fb3915f8cc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechAudioBufferInfo,
+    ISpeechAudioBufferInfo_Vtbl,
+    0x11b103d8_1142_4edf_a093_82fb3915f8cc
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechAudioBufferInfo {
     pub unsafe fn MinNotification(&self) -> ::windows_core::Result<i32> {
@@ -3245,7 +3285,12 @@ pub struct ISpeechAudioBufferInfo_Vtbl {
     pub SetEventBias: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, eventbias: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechAudioFormat, ISpeechAudioFormat_Vtbl, 0xe6e9c590_3e18_40e3_8299_061f98bde7c7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechAudioFormat,
+    ISpeechAudioFormat_Vtbl,
+    0xe6e9c590_3e18_40e3_8299_061f98bde7c7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechAudioFormat {
     pub unsafe fn Type(&self) -> ::windows_core::Result<SpeechAudioFormatType> {
@@ -3301,7 +3346,12 @@ pub struct ISpeechAudioFormat_Vtbl {
     SetWaveFormatEx: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechAudioStatus, ISpeechAudioStatus_Vtbl, 0xc62d9c91_7458_47f6_862d_1ef86fb0b278);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechAudioStatus,
+    ISpeechAudioStatus_Vtbl,
+    0xc62d9c91_7458_47f6_862d_1ef86fb0b278
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechAudioStatus {
     pub unsafe fn FreeBufferSpace(&self) -> ::windows_core::Result<i32> {
@@ -3349,7 +3399,12 @@ pub struct ISpeechAudioStatus_Vtbl {
     CurrentDevicePosition: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechBaseStream, ISpeechBaseStream_Vtbl, 0x6450336f_7d49_4ced_8097_49d6dee37294);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechBaseStream,
+    ISpeechBaseStream_Vtbl,
+    0x6450336f_7d49_4ced_8097_49d6dee37294
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechBaseStream {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3413,7 +3468,12 @@ pub struct ISpeechBaseStream_Vtbl {
     Seek: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechCustomStream, ISpeechCustomStream_Vtbl, 0x1a9e9f4f_104f_4db8_a115_efd7fd0c97ae);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechCustomStream,
+    ISpeechCustomStream_Vtbl,
+    0x1a9e9f4f_104f_4db8_a115_efd7fd0c97ae
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechCustomStream {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3469,7 +3529,12 @@ pub struct ISpeechCustomStream_Vtbl {
     pub putref_BaseStream: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, punkstream: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechDataKey, ISpeechDataKey_Vtbl, 0xce17c09b_4efa_44d5_a4c9_59d9585ab0cd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechDataKey,
+    ISpeechDataKey_Vtbl,
+    0xce17c09b_4efa_44d5_a4c9_59d9585ab0cd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechDataKey {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -3588,7 +3653,12 @@ pub struct ISpeechDataKey_Vtbl {
     pub EnumValues: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, index: i32, valuename: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechFileStream, ISpeechFileStream_Vtbl, 0xaf67f125_ab39_4e93_b4a2_cc2e66e182a7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechFileStream,
+    ISpeechFileStream_Vtbl,
+    0xaf67f125_ab39_4e93_b4a2_cc2e66e182a7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechFileStream {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3644,7 +3714,12 @@ pub struct ISpeechFileStream_Vtbl {
     pub Close: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechGrammarRule, ISpeechGrammarRule_Vtbl, 0xafe719cf_5dd1_44f2_999c_7a399f1cfccc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechGrammarRule,
+    ISpeechGrammarRule_Vtbl,
+    0xafe719cf_5dd1_44f2_999c_7a399f1cfccc
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechGrammarRule {
     pub unsafe fn Attributes(&self) -> ::windows_core::Result<SpeechRuleAttributes> {
@@ -3704,7 +3779,12 @@ pub struct ISpeechGrammarRule_Vtbl {
     AddState: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechGrammarRuleState, ISpeechGrammarRuleState_Vtbl, 0xd4286f2c_ee67_45ae_b928_28d695362eda);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechGrammarRuleState,
+    ISpeechGrammarRuleState_Vtbl,
+    0xd4286f2c_ee67_45ae_b928_28d695362eda
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechGrammarRuleState {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3779,7 +3859,12 @@ pub struct ISpeechGrammarRuleState_Vtbl {
     AddSpecialTransition: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechGrammarRuleStateTransition, ISpeechGrammarRuleStateTransition_Vtbl, 0xcafd1db1_41d1_4a06_9863_e2e81da17a9a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechGrammarRuleStateTransition,
+    ISpeechGrammarRuleStateTransition_Vtbl,
+    0xcafd1db1_41d1_4a06_9863_e2e81da17a9a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechGrammarRuleStateTransition {
     pub unsafe fn Type(&self) -> ::windows_core::Result<SpeechGrammarRuleStateTransitionType> {
@@ -3852,7 +3937,12 @@ pub struct ISpeechGrammarRuleStateTransition_Vtbl {
     NextState: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechGrammarRuleStateTransitions, ISpeechGrammarRuleStateTransitions_Vtbl, 0xeabce657_75bc_44a2_aa7f_c56476742963);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechGrammarRuleStateTransitions,
+    ISpeechGrammarRuleStateTransitions_Vtbl,
+    0xeabce657_75bc_44a2_aa7f_c56476742963
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechGrammarRuleStateTransitions {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3885,7 +3975,12 @@ pub struct ISpeechGrammarRuleStateTransitions_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enumvariant: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechGrammarRules, ISpeechGrammarRules_Vtbl, 0x6ffa3b44_fc2d_40d1_8afc_32911c7f1ad1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechGrammarRules,
+    ISpeechGrammarRules_Vtbl,
+    0x6ffa3b44_fc2d_40d1_8afc_32911c7f1ad1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechGrammarRules {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3959,7 +4054,12 @@ pub struct ISpeechGrammarRules_Vtbl {
     CommitAndSave: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechLexicon, ISpeechLexicon_Vtbl, 0x3da7627a_c7ae_4b23_8708_638c50362c25);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechLexicon,
+    ISpeechLexicon_Vtbl,
+    0x3da7627a_c7ae_4b23_8708_638c50362c25
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechLexicon {
     pub unsafe fn GenerationId(&self) -> ::windows_core::Result<i32> {
@@ -4048,7 +4148,12 @@ pub struct ISpeechLexicon_Vtbl {
     GetGenerationChange: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechLexiconPronunciation, ISpeechLexiconPronunciation_Vtbl, 0x95252c5d_9e43_4f4a_9899_48ee73352f9f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechLexiconPronunciation,
+    ISpeechLexiconPronunciation_Vtbl,
+    0x95252c5d_9e43_4f4a_9899_48ee73352f9f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechLexiconPronunciation {
     pub unsafe fn Type(&self) -> ::windows_core::Result<SpeechLexiconType> {
@@ -4091,7 +4196,12 @@ pub struct ISpeechLexiconPronunciation_Vtbl {
     pub Symbolic: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, symbolic: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechLexiconPronunciations, ISpeechLexiconPronunciations_Vtbl, 0x72829128_5682_4704_a0d4_3e2bb6f2ead3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechLexiconPronunciations,
+    ISpeechLexiconPronunciations_Vtbl,
+    0x72829128_5682_4704_a0d4_3e2bb6f2ead3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechLexiconPronunciations {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4124,7 +4234,12 @@ pub struct ISpeechLexiconPronunciations_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enumvariant: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechLexiconWord, ISpeechLexiconWord_Vtbl, 0x4e5b933c_c9be_48ed_8842_1ee51bb1d4ff);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechLexiconWord,
+    ISpeechLexiconWord_Vtbl,
+    0x4e5b933c_c9be_48ed_8842_1ee51bb1d4ff
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechLexiconWord {
     pub unsafe fn LangId(&self) -> ::windows_core::Result<i32> {
@@ -4162,7 +4277,12 @@ pub struct ISpeechLexiconWord_Vtbl {
     Pronunciations: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechLexiconWords, ISpeechLexiconWords_Vtbl, 0x8d199862_415e_47d5_ac4f_faa608b424e6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechLexiconWords,
+    ISpeechLexiconWords_Vtbl,
+    0x8d199862_415e_47d5_ac4f_faa608b424e6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechLexiconWords {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4195,7 +4315,12 @@ pub struct ISpeechLexiconWords_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enumvariant: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechMMSysAudio, ISpeechMMSysAudio_Vtbl, 0x3c76af6d_1fd7_4831_81d1_3b71d5a13c44);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechMMSysAudio,
+    ISpeechMMSysAudio_Vtbl,
+    0x3c76af6d_1fd7_4831_81d1_3b71d5a13c44
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechMMSysAudio {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4301,7 +4426,12 @@ pub struct ISpeechMMSysAudio_Vtbl {
     pub MMHandle: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handle: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechMemoryStream, ISpeechMemoryStream_Vtbl, 0xeeb14b68_808b_4abe_a5ea_b51da7588008);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechMemoryStream,
+    ISpeechMemoryStream_Vtbl,
+    0xeeb14b68_808b_4abe_a5ea_b51da7588008
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechMemoryStream {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4364,7 +4494,12 @@ pub struct ISpeechMemoryStream_Vtbl {
     GetData: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechObjectToken, ISpeechObjectToken_Vtbl, 0xc74a3adc_b727_4500_a84a_b526721c8b8c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechObjectToken,
+    ISpeechObjectToken_Vtbl,
+    0xc74a3adc_b727_4500_a84a_b526721c8b8c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechObjectToken {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4494,7 +4629,12 @@ pub struct ISpeechObjectToken_Vtbl {
     pub MatchesAttributes: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, attributes: ::std::mem::MaybeUninit<::windows_core::BSTR>, matches: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechObjectTokenCategory, ISpeechObjectTokenCategory_Vtbl, 0xca7eac50_2d01_4145_86d4_5ae7d70f4469);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechObjectTokenCategory,
+    ISpeechObjectTokenCategory_Vtbl,
+    0xca7eac50_2d01_4145_86d4_5ae7d70f4469
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechObjectTokenCategory {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4556,7 +4696,12 @@ pub struct ISpeechObjectTokenCategory_Vtbl {
     EnumerateTokens: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechObjectTokens, ISpeechObjectTokens_Vtbl, 0x9285b776_2e7b_4bc0_b53e_580eb6fa967f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechObjectTokens,
+    ISpeechObjectTokens_Vtbl,
+    0x9285b776_2e7b_4bc0_b53e_580eb6fa967f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechObjectTokens {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4589,7 +4734,12 @@ pub struct ISpeechObjectTokens_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenumvariant: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhoneConverter, ISpeechPhoneConverter_Vtbl, 0xc3e4f353_433f_43d6_89a1_6a62a7054c3d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhoneConverter,
+    ISpeechPhoneConverter_Vtbl,
+    0xc3e4f353_433f_43d6_89a1_6a62a7054c3d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhoneConverter {
     pub unsafe fn LanguageId(&self) -> ::windows_core::Result<i32> {
@@ -4634,7 +4784,12 @@ pub struct ISpeechPhoneConverter_Vtbl {
     IdToPhone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhraseAlternate, ISpeechPhraseAlternate_Vtbl, 0x27864a2a_2b9f_4cb8_92d3_0d2722fd1e73);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhraseAlternate,
+    ISpeechPhraseAlternate_Vtbl,
+    0x27864a2a_2b9f_4cb8_92d3_0d2722fd1e73
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhraseAlternate {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4681,7 +4836,12 @@ pub struct ISpeechPhraseAlternate_Vtbl {
     pub Commit: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhraseAlternates, ISpeechPhraseAlternates_Vtbl, 0xb238b6d5_f276_4c3d_a6c1_2974801c3cc2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhraseAlternates,
+    ISpeechPhraseAlternates_Vtbl,
+    0xb238b6d5_f276_4c3d_a6c1_2974801c3cc2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhraseAlternates {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4714,7 +4874,12 @@ pub struct ISpeechPhraseAlternates_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enumvariant: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhraseElement, ISpeechPhraseElement_Vtbl, 0xe6176f96_e373_4801_b223_3b62c068c0b4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhraseElement,
+    ISpeechPhraseElement_Vtbl,
+    0xe6176f96_e373_4801_b223_3b62c068c0b4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhraseElement {
     pub unsafe fn AudioTimeOffset(&self) -> ::windows_core::Result<i32> {
@@ -4797,7 +4962,12 @@ pub struct ISpeechPhraseElement_Vtbl {
     pub EngineConfidence: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, engineconfidence: *mut f32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhraseElements, ISpeechPhraseElements_Vtbl, 0x0626b328_3478_467d_a0b3_d0853b93dda3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhraseElements,
+    ISpeechPhraseElements_Vtbl,
+    0x0626b328_3478_467d_a0b3_d0853b93dda3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhraseElements {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4830,7 +5000,12 @@ pub struct ISpeechPhraseElements_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enumvariant: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhraseInfo, ISpeechPhraseInfo_Vtbl, 0x961559cf_4e67_4662_8bf0_d93f1fcd61b3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhraseInfo,
+    ISpeechPhraseInfo_Vtbl,
+    0x961559cf_4e67_4662_8bf0_d93f1fcd61b3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhraseInfo {
     pub unsafe fn LanguageId(&self) -> ::windows_core::Result<i32> {
@@ -4974,7 +5149,12 @@ pub struct ISpeechPhraseInfo_Vtbl {
     pub GetDisplayAttributes: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, startelement: i32, elements: i32, usereplacements: super::super::Foundation::VARIANT_BOOL, displayattributes: *mut SpeechDisplayAttributes) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhraseInfoBuilder, ISpeechPhraseInfoBuilder_Vtbl, 0x3b151836_df3a_4e0a_846c_d2adc9334333);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhraseInfoBuilder,
+    ISpeechPhraseInfoBuilder_Vtbl,
+    0x3b151836_df3a_4e0a_846c_d2adc9334333
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhraseInfoBuilder {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -4997,7 +5177,12 @@ pub struct ISpeechPhraseInfoBuilder_Vtbl {
     RestorePhraseFromMemory: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhraseProperties, ISpeechPhraseProperties_Vtbl, 0x08166b47_102e_4b23_a599_bdb98dbfd1f4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhraseProperties,
+    ISpeechPhraseProperties_Vtbl,
+    0x08166b47_102e_4b23_a599_bdb98dbfd1f4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhraseProperties {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5030,7 +5215,12 @@ pub struct ISpeechPhraseProperties_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enumvariant: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhraseProperty, ISpeechPhraseProperty_Vtbl, 0xce563d48_961e_4732_a2e1_378a42b430be);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhraseProperty,
+    ISpeechPhraseProperty_Vtbl,
+    0xce563d48_961e_4732_a2e1_378a42b430be
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhraseProperty {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -5103,7 +5293,12 @@ pub struct ISpeechPhraseProperty_Vtbl {
     Children: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhraseReplacement, ISpeechPhraseReplacement_Vtbl, 0x2890a410_53a7_4fb5_94ec_06d4998e3d02);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhraseReplacement,
+    ISpeechPhraseReplacement_Vtbl,
+    0x2890a410_53a7_4fb5_94ec_06d4998e3d02
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhraseReplacement {
     pub unsafe fn DisplayAttributes(&self) -> ::windows_core::Result<SpeechDisplayAttributes> {
@@ -5136,7 +5331,12 @@ pub struct ISpeechPhraseReplacement_Vtbl {
     pub NumberOfElements: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, numberofelements: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhraseReplacements, ISpeechPhraseReplacements_Vtbl, 0x38bc662f_2257_4525_959e_2069d2596c05);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhraseReplacements,
+    ISpeechPhraseReplacements_Vtbl,
+    0x38bc662f_2257_4525_959e_2069d2596c05
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhraseReplacements {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5169,7 +5369,12 @@ pub struct ISpeechPhraseReplacements_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enumvariant: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhraseRule, ISpeechPhraseRule_Vtbl, 0xa7bfe112_a4a0_48d9_b602_c313843f6964);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhraseRule,
+    ISpeechPhraseRule_Vtbl,
+    0xa7bfe112_a4a0_48d9_b602_c313843f6964
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhraseRule {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -5232,7 +5437,12 @@ pub struct ISpeechPhraseRule_Vtbl {
     pub EngineConfidence: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, engineconfidence: *mut f32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechPhraseRules, ISpeechPhraseRules_Vtbl, 0x9047d593_01dd_4b72_81a3_e4a0ca69f407);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechPhraseRules,
+    ISpeechPhraseRules_Vtbl,
+    0x9047d593_01dd_4b72_81a3_e4a0ca69f407
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechPhraseRules {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5265,7 +5475,12 @@ pub struct ISpeechPhraseRules_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enumvariant: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechRecoContext, ISpeechRecoContext_Vtbl, 0x580aa49d_7e1e_4809_b8e2_57da806104b8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechRecoContext,
+    ISpeechRecoContext_Vtbl,
+    0x580aa49d_7e1e_4809_b8e2_57da806104b8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechRecoContext {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5443,7 +5658,12 @@ pub struct ISpeechRecoContext_Vtbl {
     pub SetAdaptationData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, adaptationstring: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechRecoGrammar, ISpeechRecoGrammar_Vtbl, 0xb6d6f79f_2158_4e50_b5bc_9a9ccd852a09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechRecoGrammar,
+    ISpeechRecoGrammar_Vtbl,
+    0xb6d6f79f_2158_4e50_b5bc_9a9ccd852a09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechRecoGrammar {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -5604,7 +5824,12 @@ pub struct ISpeechRecoGrammar_Vtbl {
     pub IsPronounceable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, word: ::std::mem::MaybeUninit<::windows_core::BSTR>, wordpronounceable: *mut SpeechWordPronounceable) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechRecoResult, ISpeechRecoResult_Vtbl, 0xed2879cf_ced9_4ee6_a534_de0191d5468d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechRecoResult,
+    ISpeechRecoResult_Vtbl,
+    0xed2879cf_ced9_4ee6_a534_de0191d5468d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechRecoResult {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5708,7 +5933,12 @@ pub struct ISpeechRecoResult_Vtbl {
     pub DiscardResultInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, valuetypes: SpeechDiscardType) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechRecoResult2, ISpeechRecoResult2_Vtbl, 0x8e0a246d_d3c8_45de_8657_04290c458c3c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechRecoResult2,
+    ISpeechRecoResult2_Vtbl,
+    0x8e0a246d_d3c8_45de_8657_04290c458c3c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechRecoResult2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5786,7 +6016,12 @@ pub struct ISpeechRecoResult2_Vtbl {
     pub SetTextFeedback: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, feedback: ::std::mem::MaybeUninit<::windows_core::BSTR>, wassuccessful: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechRecoResultDispatch, ISpeechRecoResultDispatch_Vtbl, 0x6d60eb64_aced_40a6_bbf3_4e557f71dee2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechRecoResultDispatch,
+    ISpeechRecoResultDispatch_Vtbl,
+    0x6d60eb64_aced_40a6_bbf3_4e557f71dee2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechRecoResultDispatch {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5907,7 +6142,12 @@ pub struct ISpeechRecoResultDispatch_Vtbl {
     pub SetTextFeedback: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, feedback: ::std::mem::MaybeUninit<::windows_core::BSTR>, wassuccessful: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechRecoResultTimes, ISpeechRecoResultTimes_Vtbl, 0x62b3b8fb_f6e7_41be_bdcb_056b1c29efc0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechRecoResultTimes,
+    ISpeechRecoResultTimes_Vtbl,
+    0x62b3b8fb_f6e7_41be_bdcb_056b1c29efc0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechRecoResultTimes {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -5955,7 +6195,12 @@ pub struct ISpeechRecoResultTimes_Vtbl {
     OffsetFromStart: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechRecognizer, ISpeechRecognizer_Vtbl, 0x2d5f1c0c_bd75_4b08_9478_3b11fea2586c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechRecognizer,
+    ISpeechRecognizer_Vtbl,
+    0x2d5f1c0c_bd75_4b08_9478_3b11fea2586c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechRecognizer {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6220,7 +6465,12 @@ pub struct ISpeechRecognizer_Vtbl {
     GetProfiles: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechRecognizerStatus, ISpeechRecognizerStatus_Vtbl, 0xbff9e781_53ec_484e_bb8a_0e1b5551e35c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechRecognizerStatus,
+    ISpeechRecognizerStatus_Vtbl,
+    0xbff9e781_53ec_484e_bb8a_0e1b5551e35c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechRecognizerStatus {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6278,7 +6528,12 @@ pub struct ISpeechRecognizerStatus_Vtbl {
     SupportedLanguages: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechResourceLoader, ISpeechResourceLoader_Vtbl, 0xb9ac5783_fcd0_4b21_b119_b4f8da8fd2c3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechResourceLoader,
+    ISpeechResourceLoader_Vtbl,
+    0xb9ac5783_fcd0_4b21_b119_b4f8da8fd2c3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechResourceLoader {
     pub unsafe fn LoadResource<P0, P1>(&self, bstrresourceuri: P0, falwaysreload: P1, pstream: *mut ::core::option::Option<::windows_core::IUnknown>, pbstrmimetype: ::core::option::Option<*mut ::windows_core::BSTR>, pfmodified: *mut super::super::Foundation::VARIANT_BOOL, pbstrredirecturl: ::core::option::Option<*mut ::windows_core::BSTR>) -> ::windows_core::Result<()>
@@ -6313,7 +6568,12 @@ pub struct ISpeechResourceLoader_Vtbl {
     pub ReleaseLocalCopy: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrlocalpath: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechTextSelectionInformation, ISpeechTextSelectionInformation_Vtbl, 0x3b9c7e7a_6eee_4ded_9092_11657279adbe);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechTextSelectionInformation,
+    ISpeechTextSelectionInformation_Vtbl,
+    0x3b9c7e7a_6eee_4ded_9092_11657279adbe
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechTextSelectionInformation {
     pub unsafe fn SetActiveOffset(&self, activeoffset: i32) -> ::windows_core::Result<()> {
@@ -6362,7 +6622,12 @@ pub struct ISpeechTextSelectionInformation_Vtbl {
     pub SelectionLength: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, selectionlength: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechVoice, ISpeechVoice_Vtbl, 0x269316d8_57bd_11d2_9eee_00c04f797396);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechVoice,
+    ISpeechVoice_Vtbl,
+    0x269316d8_57bd_11d2_9eee_00c04f797396
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechVoice {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6618,7 +6883,12 @@ pub struct ISpeechVoice_Vtbl {
     DisplayUI: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechVoiceStatus, ISpeechVoiceStatus_Vtbl, 0x8be47b07_57f6_11d2_9eee_00c04f797396);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechVoiceStatus,
+    ISpeechVoiceStatus_Vtbl,
+    0x8be47b07_57f6_11d2_9eee_00c04f797396
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechVoiceStatus {
     pub unsafe fn CurrentStreamNumber(&self) -> ::windows_core::Result<i32> {
@@ -6691,7 +6961,12 @@ pub struct ISpeechVoiceStatus_Vtbl {
     pub VisemeId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, visemeid: *mut i16) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechWaveFormatEx, ISpeechWaveFormatEx_Vtbl, 0x7a1ef0d5_1581_4741_88e4_209a49f11a10);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechWaveFormatEx,
+    ISpeechWaveFormatEx_Vtbl,
+    0x7a1ef0d5_1581_4741_88e4_209a49f11a10
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechWaveFormatEx {
     pub unsafe fn FormatTag(&self) -> ::windows_core::Result<i16> {
@@ -6777,7 +7052,12 @@ pub struct ISpeechWaveFormatEx_Vtbl {
     SetExtraData: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISpeechXMLRecoResult, ISpeechXMLRecoResult_Vtbl, 0xaaec54af_8f85_4924_944d_b79d39d72e19);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISpeechXMLRecoResult,
+    ISpeechXMLRecoResult_Vtbl,
+    0xaaec54af_8f85_4924_944d_b79d39d72e19
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISpeechXMLRecoResult {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6856,7 +7136,12 @@ pub struct ISpeechXMLRecoResult_Vtbl {
     pub GetXMLErrorInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, linenumber: *mut i32, scriptline: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>, source: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>, description: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>, resultcode: *mut i32, iserror: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_ISpeechRecoContextEvents, _ISpeechRecoContextEvents_Vtbl, 0x7b8fcb42_0e9d_4f00_a048_7b04d6179d3d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _ISpeechRecoContextEvents,
+    _ISpeechRecoContextEvents_Vtbl,
+    0x7b8fcb42_0e9d_4f00_a048_7b04d6179d3d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _ISpeechRecoContextEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -6868,7 +7153,12 @@ pub struct _ISpeechRecoContextEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_ISpeechVoiceEvents, _ISpeechVoiceEvents_Vtbl, 0xa372acd1_3bef_4bbd_8ffb_cb3e2b416af8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _ISpeechVoiceEvents,
+    _ISpeechVoiceEvents_Vtbl,
+    0xa372acd1_3bef_4bbd_8ffb_cb3e2b416af8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _ISpeechVoiceEvents {}
 #[cfg(feature = "Win32_System_Com")]

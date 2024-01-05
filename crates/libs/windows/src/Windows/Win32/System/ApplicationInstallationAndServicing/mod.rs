@@ -3106,7 +3106,12 @@ pub struct IEnumMsmString_Vtbl {
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pemsmstrings: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMsmDependencies, IMsmDependencies_Vtbl, 0x0adda82d_2c26_11d2_ad65_00a0c9af11a6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMsmDependencies,
+    IMsmDependencies_Vtbl,
+    0x0adda82d_2c26_11d2_ad65_00a0c9af11a6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmDependencies {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3138,7 +3143,12 @@ pub struct IMsmDependencies_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, newenum: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMsmDependency, IMsmDependency_Vtbl, 0x0adda82b_2c26_11d2_ad65_00a0c9af11a6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMsmDependency,
+    IMsmDependency_Vtbl,
+    0x0adda82b_2c26_11d2_ad65_00a0c9af11a6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmDependency {
     pub unsafe fn Module(&self, module: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {
@@ -3163,7 +3173,12 @@ pub struct IMsmDependency_Vtbl {
     pub Version: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, version: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMsmError, IMsmError_Vtbl, 0x0adda828_2c26_11d2_ad65_00a0c9af11a6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMsmError,
+    IMsmError_Vtbl,
+    0x0adda828_2c26_11d2_ad65_00a0c9af11a6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmError {
     pub unsafe fn Type(&self, errortype: *mut msmErrorType) -> ::windows_core::Result<()> {
@@ -3216,7 +3231,12 @@ pub struct IMsmError_Vtbl {
     ModuleKeys: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMsmErrors, IMsmErrors_Vtbl, 0x0adda82a_2c26_11d2_ad65_00a0c9af11a6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMsmErrors,
+    IMsmErrors_Vtbl,
+    0x0adda82a_2c26_11d2_ad65_00a0c9af11a6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmErrors {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3248,7 +3268,12 @@ pub struct IMsmErrors_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, newenum: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMsmGetFiles, IMsmGetFiles_Vtbl, 0x7041ae26_2d78_11d2_888a_00a0c981b015);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMsmGetFiles,
+    IMsmGetFiles_Vtbl,
+    0x7041ae26_2d78_11d2_888a_00a0c981b015
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmGetFiles {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3271,7 +3296,12 @@ pub struct IMsmGetFiles_Vtbl {
     ModuleFiles: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMsmMerge, IMsmMerge_Vtbl, 0x0adda82e_2c26_11d2_ad65_00a0c9af11a6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMsmMerge,
+    IMsmMerge_Vtbl,
+    0x0adda82e_2c26_11d2_ad65_00a0c9af11a6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmMerge {
     pub unsafe fn OpenDatabase<P0>(&self, path: P0) -> ::windows_core::Result<()>
@@ -3376,7 +3406,12 @@ pub struct IMsmMerge_Vtbl {
     pub ExtractFiles: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, path: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMsmStrings, IMsmStrings_Vtbl, 0x0adda827_2c26_11d2_ad65_00a0c9af11a6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMsmStrings,
+    IMsmStrings_Vtbl,
+    0x0adda827_2c26_11d2_ad65_00a0c9af11a6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMsmStrings {
     pub unsafe fn get_Item(&self, item: i32, r#return: *mut ::windows_core::BSTR) -> ::windows_core::Result<()> {

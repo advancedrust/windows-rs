@@ -96,7 +96,12 @@ pub struct IAudioRenderEffectsManager_Vtbl {
     GetAudioRenderEffects: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IAudioRenderEffectsManager2, IAudioRenderEffectsManager2_Vtbl, 0xa844cd09_5ecc_44b3_bb4e_1db07287139c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IAudioRenderEffectsManager2,
+    IAudioRenderEffectsManager2_Vtbl,
+    0xa844cd09_5ecc_44b3_bb4e_1db07287139c
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

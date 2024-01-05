@@ -323,7 +323,12 @@ where
     WinHttpWriteProxySettings(hsession, fforceupdate.into_param().abi(), pwinhttpproxysettings)
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWinHttpRequest, IWinHttpRequest_Vtbl, 0x016fe2ec_b2c8_45f8_b23b_39e53a75396b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWinHttpRequest,
+    IWinHttpRequest_Vtbl,
+    0x016fe2ec_b2c8_45f8_b23b_39e53a75396b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWinHttpRequest {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]

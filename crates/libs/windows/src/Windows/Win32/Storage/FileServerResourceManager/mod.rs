@@ -1,5 +1,10 @@
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DIFsrmClassificationEvents, DIFsrmClassificationEvents_Vtbl, 0x26942db0_dabf_41d8_bbdd_b129a9f70424);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DIFsrmClassificationEvents,
+    DIFsrmClassificationEvents_Vtbl,
+    0x26942db0_dabf_41d8_bbdd_b129a9f70424
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DIFsrmClassificationEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -11,7 +16,12 @@ pub struct DIFsrmClassificationEvents_Vtbl {
     pub base__: super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmAccessDeniedRemediationClient, IFsrmAccessDeniedRemediationClient_Vtbl, 0x40002314_590b_45a5_8e1b_8c05da527e52);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmAccessDeniedRemediationClient,
+    IFsrmAccessDeniedRemediationClient_Vtbl,
+    0x40002314_590b_45a5_8e1b_8c05da527e52
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmAccessDeniedRemediationClient {
     pub unsafe fn Show<P0, P1, P2>(&self, parentwnd: usize, accesspath: P0, errortype: AdrClientErrorType, flags: i32, windowtitle: P1, windowmessage: P2) -> ::windows_core::Result<i32>
@@ -34,7 +44,12 @@ pub struct IFsrmAccessDeniedRemediationClient_Vtbl {
     pub Show: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, parentwnd: usize, accesspath: ::std::mem::MaybeUninit<::windows_core::BSTR>, errortype: AdrClientErrorType, flags: i32, windowtitle: ::std::mem::MaybeUninit<::windows_core::BSTR>, windowmessage: ::std::mem::MaybeUninit<::windows_core::BSTR>, result: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmAction, IFsrmAction_Vtbl, 0x6cd6408a_ae60_463b_9ef1_e117534d69dc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmAction,
+    IFsrmAction_Vtbl,
+    0x6cd6408a_ae60_463b_9ef1_e117534d69dc
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmAction {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -70,7 +85,12 @@ pub struct IFsrmAction_Vtbl {
     pub Delete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmActionCommand, IFsrmActionCommand_Vtbl, 0x12937789_e247_4917_9c20_f3ee9c7ee783);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmActionCommand,
+    IFsrmActionCommand_Vtbl,
+    0x12937789_e247_4917_9c20_f3ee9c7ee783
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmActionCommand {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -179,7 +199,12 @@ pub struct IFsrmActionCommand_Vtbl {
     pub SetLogResult: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, logresults: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmActionEmail, IFsrmActionEmail_Vtbl, 0xd646567d_26ae_4caa_9f84_4e0aad207fca);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmActionEmail,
+    IFsrmActionEmail_Vtbl,
+    0xd646567d_26ae_4caa_9f84_4e0aad207fca
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmActionEmail {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -294,7 +319,12 @@ pub struct IFsrmActionEmail_Vtbl {
     pub SetMessageText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, messagetext: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmActionEmail2, IFsrmActionEmail2_Vtbl, 0x8276702f_2532_4839_89bf_4872609a2ea4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmActionEmail2,
+    IFsrmActionEmail2_Vtbl,
+    0x8276702f_2532_4839_89bf_4872609a2ea4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmActionEmail2 {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -404,7 +434,12 @@ pub struct IFsrmActionEmail2_Vtbl {
     pub SetAttachmentFileListSize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, attachmentfilelistsize: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmActionEventLog, IFsrmActionEventLog_Vtbl, 0x4c8f96c3_5d94_4f37_a4f4_f56ab463546f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmActionEventLog,
+    IFsrmActionEventLog_Vtbl,
+    0x4c8f96c3_5d94_4f37_a4f4_f56ab463546f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmActionEventLog {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -456,7 +491,12 @@ pub struct IFsrmActionEventLog_Vtbl {
     pub SetMessageText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, messagetext: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmActionReport, IFsrmActionReport_Vtbl, 0x2dbe63c4_b340_48a0_a5b0_158e07fc567e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmActionReport,
+    IFsrmActionReport_Vtbl,
+    0x2dbe63c4_b340_48a0_a5b0_158e07fc567e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmActionReport {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -518,7 +558,12 @@ pub struct IFsrmActionReport_Vtbl {
     pub SetMailTo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, mailto: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmAutoApplyQuota, IFsrmAutoApplyQuota_Vtbl, 0xf82e5729_6aba_4740_bfc7_c7f58f75fb7b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmAutoApplyQuota,
+    IFsrmAutoApplyQuota_Vtbl,
+    0xf82e5729_6aba_4740_bfc7_c7f58f75fb7b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmAutoApplyQuota {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -651,7 +696,12 @@ pub struct IFsrmAutoApplyQuota_Vtbl {
     CommitAndUpdateDerived: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmClassificationManager, IFsrmClassificationManager_Vtbl, 0xd2dc89da_ee91_48a0_85d8_cc72a56f7d04);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmClassificationManager,
+    IFsrmClassificationManager_Vtbl,
+    0xd2dc89da_ee91_48a0_85d8_cc72a56f7d04
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmClassificationManager {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -890,7 +940,12 @@ pub struct IFsrmClassificationManager_Vtbl {
     pub ClearFileProperty: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, filepath: ::std::mem::MaybeUninit<::windows_core::BSTR>, property: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmClassificationManager2, IFsrmClassificationManager2_Vtbl, 0x0004c1c9_127e_4765_ba07_6a3147bca112);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmClassificationManager2,
+    IFsrmClassificationManager2_Vtbl,
+    0x0004c1c9_127e_4765_ba07_6a3147bca112
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmClassificationManager2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1072,7 +1127,12 @@ pub struct IFsrmClassificationManager2_Vtbl {
     ClassifyFiles: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmClassificationRule, IFsrmClassificationRule_Vtbl, 0xafc052c2_5315_45ab_841b_c6db0e120148);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmClassificationRule,
+    IFsrmClassificationRule_Vtbl,
+    0xafc052c2_5315_45ab_841b_c6db0e120148
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmClassificationRule {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -1197,7 +1257,12 @@ pub struct IFsrmClassificationRule_Vtbl {
     pub SetValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmClassifierModuleDefinition, IFsrmClassifierModuleDefinition_Vtbl, 0xbb36ea26_6318_4b8c_8592_f72dd602e7a5);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmClassifierModuleDefinition,
+    IFsrmClassifierModuleDefinition_Vtbl,
+    0xbb36ea26_6318_4b8c_8592_f72dd602e7a5
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmClassifierModuleDefinition {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -1373,7 +1438,12 @@ pub struct IFsrmClassifierModuleDefinition_Vtbl {
     pub SetNeedsExplicitValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, needsexplicitvalue: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmClassifierModuleImplementation, IFsrmClassifierModuleImplementation_Vtbl, 0x4c968fc6_6edb_4051_9c18_73b7291ae106);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmClassifierModuleImplementation,
+    IFsrmClassifierModuleImplementation_Vtbl,
+    0x4c968fc6_6edb_4051_9c18_73b7291ae106
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmClassifierModuleImplementation {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1452,7 +1522,12 @@ pub struct IFsrmClassifierModuleImplementation_Vtbl {
     pub OnEndFile: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmCollection, IFsrmCollection_Vtbl, 0xf76fbf3b_8ddd_4b42_b05a_cb1c3ff1fee8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmCollection,
+    IFsrmCollection_Vtbl,
+    0xf76fbf3b_8ddd_4b42_b05a_cb1c3ff1fee8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmCollection {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -1509,7 +1584,12 @@ pub struct IFsrmCollection_Vtbl {
     GetById: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmCommittableCollection, IFsrmCommittableCollection_Vtbl, 0x96deb3b5_8b91_4a2a_9d93_80a35d8aa847);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmCommittableCollection,
+    IFsrmCommittableCollection_Vtbl,
+    0x96deb3b5_8b91_4a2a_9d93_80a35d8aa847
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmCommittableCollection {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -1580,7 +1660,12 @@ pub struct IFsrmCommittableCollection_Vtbl {
     Commit: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmDerivedObjectsResult, IFsrmDerivedObjectsResult_Vtbl, 0x39322a2d_38ee_4d0d_8095_421a80849a82);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmDerivedObjectsResult,
+    IFsrmDerivedObjectsResult_Vtbl,
+    0x39322a2d_38ee_4d0d_8095_421a80849a82
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmDerivedObjectsResult {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1613,7 +1698,12 @@ pub struct IFsrmDerivedObjectsResult_Vtbl {
     Results: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmExportImport, IFsrmExportImport_Vtbl, 0xefcb0ab1_16c4_4a79_812c_725614c3306b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmExportImport,
+    IFsrmExportImport_Vtbl,
+    0xefcb0ab1_16c4_4a79_812c_725614c3306b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmExportImport {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -1707,7 +1797,12 @@ pub struct IFsrmExportImport_Vtbl {
     ImportQuotaTemplates: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileCondition, IFsrmFileCondition_Vtbl, 0x70684ffc_691a_4a1a_b922_97752e138cc1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileCondition,
+    IFsrmFileCondition_Vtbl,
+    0x70684ffc_691a_4a1a_b922_97752e138cc1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileCondition {
     pub unsafe fn Type(&self) -> ::windows_core::Result<FsrmFileConditionType> {
@@ -1729,7 +1824,12 @@ pub struct IFsrmFileCondition_Vtbl {
     pub Delete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileConditionProperty, IFsrmFileConditionProperty_Vtbl, 0x81926775_b981_4479_988f_da171d627360);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileConditionProperty,
+    IFsrmFileConditionProperty_Vtbl,
+    0x81926775_b981_4479_988f_da171d627360
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileConditionProperty {
     pub unsafe fn Type(&self) -> ::windows_core::Result<FsrmFileConditionType> {
@@ -1807,7 +1907,12 @@ pub struct IFsrmFileConditionProperty_Vtbl {
     SetValue: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileGroup, IFsrmFileGroup_Vtbl, 0x8dd04909_0e34_4d55_afaa_89e1f1a1bbb9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileGroup,
+    IFsrmFileGroup_Vtbl,
+    0x8dd04909_0e34_4d55_afaa_89e1f1a1bbb9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileGroup {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -1896,7 +2001,12 @@ pub struct IFsrmFileGroup_Vtbl {
     SetNonMembers: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileGroupImported, IFsrmFileGroupImported_Vtbl, 0xad55f10b_5f11_4be7_94ef_d9ee2e470ded);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileGroupImported,
+    IFsrmFileGroupImported_Vtbl,
+    0xad55f10b_5f11_4be7_94ef_d9ee2e470ded
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileGroupImported {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -1979,7 +2089,12 @@ pub struct IFsrmFileGroupImported_Vtbl {
     pub SetOverwriteOnCommit: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, overwrite: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileGroupManager, IFsrmFileGroupManager_Vtbl, 0x426677d5_018c_485c_8a51_20b86d00bdc4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileGroupManager,
+    IFsrmFileGroupManager_Vtbl,
+    0x426677d5_018c_485c_8a51_20b86d00bdc4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileGroupManager {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2048,7 +2163,12 @@ pub struct IFsrmFileGroupManager_Vtbl {
     ImportFileGroups: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileManagementJob, IFsrmFileManagementJob_Vtbl, 0x0770687e_9f36_4d6f_8778_599d188461c9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileManagementJob,
+    IFsrmFileManagementJob_Vtbl,
+    0x0770687e_9f36_4d6f_8778_599d188461c9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileManagementJob {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -2394,7 +2514,12 @@ pub struct IFsrmFileManagementJob_Vtbl {
     CreateCustomAction: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileManagementJobManager, IFsrmFileManagementJobManager_Vtbl, 0xee321ecb_d95e_48e9_907c_c7685a013235);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileManagementJobManager,
+    IFsrmFileManagementJobManager_Vtbl,
+    0xee321ecb_d95e_48e9_907c_c7685a013235
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileManagementJobManager {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2460,7 +2585,12 @@ pub struct IFsrmFileManagementJobManager_Vtbl {
     GetFileManagementJob: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileScreen, IFsrmFileScreen_Vtbl, 0x5f6325d3_ce88_4733_84c1_2d6aefc5ea07);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileScreen,
+    IFsrmFileScreen_Vtbl,
+    0x5f6325d3_ce88_4733_84c1_2d6aefc5ea07
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreen {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -2558,7 +2688,12 @@ pub struct IFsrmFileScreen_Vtbl {
     pub ApplyTemplate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, filescreentemplatename: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileScreenBase, IFsrmFileScreenBase_Vtbl, 0xf3637e80_5b22_4a2b_a637_bbb642b41cfc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileScreenBase,
+    IFsrmFileScreenBase_Vtbl,
+    0xf3637e80_5b22_4a2b_a637_bbb642b41cfc
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreenBase {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -2642,7 +2777,12 @@ pub struct IFsrmFileScreenBase_Vtbl {
     EnumActions: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileScreenException, IFsrmFileScreenException_Vtbl, 0xbee7ce02_df77_4515_9389_78f01c5afc1a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileScreenException,
+    IFsrmFileScreenException_Vtbl,
+    0xbee7ce02_df77_4515_9389_78f01c5afc1a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreenException {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -2702,7 +2842,12 @@ pub struct IFsrmFileScreenException_Vtbl {
     SetAllowedFileGroups: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileScreenManager, IFsrmFileScreenManager_Vtbl, 0xff4fa04e_5a94_4bda_a3a0_d5b4d3c52eba);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileScreenManager,
+    IFsrmFileScreenManager_Vtbl,
+    0xff4fa04e_5a94_4bda_a3a0_d5b4d3c52eba
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreenManager {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2823,7 +2968,12 @@ pub struct IFsrmFileScreenManager_Vtbl {
     CreateFileScreenCollection: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileScreenTemplate, IFsrmFileScreenTemplate_Vtbl, 0x205bebf8_dd93_452a_95a6_32b566b35828);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileScreenTemplate,
+    IFsrmFileScreenTemplate_Vtbl,
+    0x205bebf8_dd93_452a_95a6_32b566b35828
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreenTemplate {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -2918,7 +3068,12 @@ pub struct IFsrmFileScreenTemplate_Vtbl {
     CommitAndUpdateDerived: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileScreenTemplateImported, IFsrmFileScreenTemplateImported_Vtbl, 0xe1010359_3e5d_4ecd_9fe4_ef48622fdf30);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileScreenTemplateImported,
+    IFsrmFileScreenTemplateImported_Vtbl,
+    0xe1010359_3e5d_4ecd_9fe4_ef48622fdf30
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreenTemplateImported {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -3018,7 +3173,12 @@ pub struct IFsrmFileScreenTemplateImported_Vtbl {
     pub SetOverwriteOnCommit: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, overwrite: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmFileScreenTemplateManager, IFsrmFileScreenTemplateManager_Vtbl, 0xcfe36cba_1949_4e74_a14f_f1d580ceaf13);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmFileScreenTemplateManager,
+    IFsrmFileScreenTemplateManager_Vtbl,
+    0xcfe36cba_1949_4e74_a14f_f1d580ceaf13
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmFileScreenTemplateManager {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3087,7 +3247,12 @@ pub struct IFsrmFileScreenTemplateManager_Vtbl {
     ImportTemplates: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmMutableCollection, IFsrmMutableCollection_Vtbl, 0x1bb617b8_3886_49dc_af82_a6c90fa35dda);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmMutableCollection,
+    IFsrmMutableCollection_Vtbl,
+    0x1bb617b8_3886_49dc_af82_a6c90fa35dda
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmMutableCollection {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -3158,7 +3323,12 @@ pub struct IFsrmMutableCollection_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmObject, IFsrmObject_Vtbl, 0x22bcef93_4a3f_4183_89f9_2f8b8a628aee);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmObject,
+    IFsrmObject_Vtbl,
+    0x22bcef93_4a3f_4183_89f9_2f8b8a628aee
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmObject {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -3196,7 +3366,12 @@ pub struct IFsrmObject_Vtbl {
     pub Commit: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmPathMapper, IFsrmPathMapper_Vtbl, 0x6f4dbfff_6920_4821_a6c3_b7e94c1fd60c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmPathMapper,
+    IFsrmPathMapper_Vtbl,
+    0x6f4dbfff_6920_4821_a6c3_b7e94c1fd60c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPathMapper {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3222,7 +3397,12 @@ pub struct IFsrmPathMapper_Vtbl {
     GetSharePathsForLocalPath: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmPipelineModuleConnector, IFsrmPipelineModuleConnector_Vtbl, 0xc16014f3_9aa1_46b3_b0a7_ab146eb205f2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmPipelineModuleConnector,
+    IFsrmPipelineModuleConnector_Vtbl,
+    0xc16014f3_9aa1_46b3_b0a7_ab146eb205f2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPipelineModuleConnector {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3273,7 +3453,12 @@ pub struct IFsrmPipelineModuleConnector_Vtbl {
     Bind: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmPipelineModuleDefinition, IFsrmPipelineModuleDefinition_Vtbl, 0x515c1277_2c81_440e_8fcf_367921ed4f59);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmPipelineModuleDefinition,
+    IFsrmPipelineModuleDefinition_Vtbl,
+    0x515c1277_2c81_440e_8fcf_367921ed4f59
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPipelineModuleDefinition {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -3430,7 +3615,12 @@ pub struct IFsrmPipelineModuleDefinition_Vtbl {
     SetParameters: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmPipelineModuleImplementation, IFsrmPipelineModuleImplementation_Vtbl, 0xb7907906_2b02_4cb5_84a9_fdf54613d6cd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmPipelineModuleImplementation,
+    IFsrmPipelineModuleImplementation_Vtbl,
+    0xb7907906_2b02_4cb5_84a9_fdf54613d6cd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPipelineModuleImplementation {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3460,7 +3650,12 @@ pub struct IFsrmPipelineModuleImplementation_Vtbl {
     pub OnUnload: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmProperty, IFsrmProperty_Vtbl, 0x4a73fee4_4102_4fcc_9ffb_38614f9ee768);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmProperty,
+    IFsrmProperty_Vtbl,
+    0x4a73fee4_4102_4fcc_9ffb_38614f9ee768
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmProperty {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3498,7 +3693,12 @@ pub struct IFsrmProperty_Vtbl {
     pub PropertyFlags: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, flags: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmPropertyBag, IFsrmPropertyBag_Vtbl, 0x774589d1_d300_4f7a_9a24_f7b766800250);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmPropertyBag,
+    IFsrmPropertyBag_Vtbl,
+    0x774589d1_d300_4f7a_9a24_f7b766800250
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPropertyBag {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3679,7 +3879,12 @@ pub struct IFsrmPropertyBag_Vtbl {
     GetFileStreamInterface: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmPropertyBag2, IFsrmPropertyBag2_Vtbl, 0x0e46bdbd_2402_4fed_9c30_9266e6eb2cc9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmPropertyBag2,
+    IFsrmPropertyBag2_Vtbl,
+    0x0e46bdbd_2402_4fed_9c30_9266e6eb2cc9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPropertyBag2 {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3826,7 +4031,12 @@ pub struct IFsrmPropertyBag2_Vtbl {
     GetUntrustedInFileProperties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmPropertyCondition, IFsrmPropertyCondition_Vtbl, 0x326af66f_2ac0_4f68_bf8c_4759f054fa29);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmPropertyCondition,
+    IFsrmPropertyCondition_Vtbl,
+    0x326af66f_2ac0_4f68_bf8c_4759f054fa29
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPropertyCondition {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3876,7 +4086,12 @@ pub struct IFsrmPropertyCondition_Vtbl {
     pub Delete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmPropertyDefinition, IFsrmPropertyDefinition_Vtbl, 0xede0150f_e9a3_419c_877c_01fe5d24c5d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmPropertyDefinition,
+    IFsrmPropertyDefinition_Vtbl,
+    0xede0150f_e9a3_419c_877c_01fe5d24c5d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPropertyDefinition {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -3987,7 +4202,12 @@ pub struct IFsrmPropertyDefinition_Vtbl {
     SetParameters: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmPropertyDefinition2, IFsrmPropertyDefinition2_Vtbl, 0x47782152_d16c_4229_b4e1_0ddfe308b9f6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmPropertyDefinition2,
+    IFsrmPropertyDefinition2_Vtbl,
+    0x47782152_d16c_4229_b4e1_0ddfe308b9f6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPropertyDefinition2 {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -4102,7 +4322,12 @@ pub struct IFsrmPropertyDefinition2_Vtbl {
     ValueDefinitions: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmPropertyDefinitionValue, IFsrmPropertyDefinitionValue_Vtbl, 0xe946d148_bd67_4178_8e22_1c44925ed710);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmPropertyDefinitionValue,
+    IFsrmPropertyDefinitionValue_Vtbl,
+    0xe946d148_bd67_4178_8e22_1c44925ed710
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmPropertyDefinitionValue {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4135,7 +4360,12 @@ pub struct IFsrmPropertyDefinitionValue_Vtbl {
     pub UniqueID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, uniqueid: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmQuota, IFsrmQuota_Vtbl, 0x377f739d_9647_4b8e_97d2_5ffce6d759cd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmQuota,
+    IFsrmQuota_Vtbl,
+    0x377f739d_9647_4b8e_97d2_5ffce6d759cd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuota {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -4272,7 +4502,12 @@ pub struct IFsrmQuota_Vtbl {
     pub RefreshUsageProperties: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmQuotaBase, IFsrmQuotaBase_Vtbl, 0x1568a795_3924_4118_b74b_68d8f0fa5daf);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmQuotaBase,
+    IFsrmQuotaBase_Vtbl,
+    0x1568a795_3924_4118_b74b_68d8f0fa5daf
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaBase {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -4375,7 +4610,12 @@ pub struct IFsrmQuotaBase_Vtbl {
     EnumThresholdActions: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmQuotaManager, IFsrmQuotaManager_Vtbl, 0x8bb68c7d_19d8_4ffb_809e_be4fc1734014);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmQuotaManager,
+    IFsrmQuotaManager_Vtbl,
+    0x8bb68c7d_19d8_4ffb_809e_be4fc1734014
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaManager {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4530,7 +4770,12 @@ pub struct IFsrmQuotaManager_Vtbl {
     CreateQuotaCollection: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmQuotaManagerEx, IFsrmQuotaManagerEx_Vtbl, 0x4846cb01_d430_494f_abb4_b1054999fb09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmQuotaManagerEx,
+    IFsrmQuotaManagerEx_Vtbl,
+    0x4846cb01_d430_494f_abb4_b1054999fb09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaManagerEx {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4648,7 +4893,12 @@ pub struct IFsrmQuotaManagerEx_Vtbl {
     pub IsAffectedByQuota: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, path: ::std::mem::MaybeUninit<::windows_core::BSTR>, options: FsrmEnumOptions, affected: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmQuotaObject, IFsrmQuotaObject_Vtbl, 0x42dc3511_61d5_48ae_b6dc_59fc00c0a8d6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmQuotaObject,
+    IFsrmQuotaObject_Vtbl,
+    0x42dc3511_61d5_48ae_b6dc_59fc00c0a8d6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaObject {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -4758,7 +5008,12 @@ pub struct IFsrmQuotaObject_Vtbl {
     pub ApplyTemplate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, quotatemplatename: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmQuotaTemplate, IFsrmQuotaTemplate_Vtbl, 0xa2efab31_295e_46bb_b976_e86d58b52e8b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmQuotaTemplate,
+    IFsrmQuotaTemplate_Vtbl,
+    0xa2efab31_295e_46bb_b976_e86d58b52e8b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaTemplate {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -4865,7 +5120,12 @@ pub struct IFsrmQuotaTemplate_Vtbl {
     CommitAndUpdateDerived: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmQuotaTemplateImported, IFsrmQuotaTemplateImported_Vtbl, 0x9a2bf113_a329_44cc_809a_5c00fce8da40);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmQuotaTemplateImported,
+    IFsrmQuotaTemplateImported_Vtbl,
+    0x9a2bf113_a329_44cc_809a_5c00fce8da40
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaTemplateImported {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -4977,7 +5237,12 @@ pub struct IFsrmQuotaTemplateImported_Vtbl {
     pub SetOverwriteOnCommit: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, overwrite: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmQuotaTemplateManager, IFsrmQuotaTemplateManager_Vtbl, 0x4173ac41_172d_4d52_963c_fdc7e415f717);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmQuotaTemplateManager,
+    IFsrmQuotaTemplateManager_Vtbl,
+    0x4173ac41_172d_4d52_963c_fdc7e415f717
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmQuotaTemplateManager {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5046,7 +5311,12 @@ pub struct IFsrmQuotaTemplateManager_Vtbl {
     ImportTemplates: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmReport, IFsrmReport_Vtbl, 0xd8cc81d9_46b8_4fa4_bfa5_4aa9dec9b638);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmReport,
+    IFsrmReport_Vtbl,
+    0xd8cc81d9_46b8_4fa4_bfa5_4aa9dec9b638
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmReport {
     pub unsafe fn Type(&self) -> ::windows_core::Result<FsrmReportType> {
@@ -5116,7 +5386,12 @@ pub struct IFsrmReport_Vtbl {
     pub Delete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmReportJob, IFsrmReportJob_Vtbl, 0x38e87280_715c_4c7d_a280_ea1651a19fef);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmReportJob,
+    IFsrmReportJob_Vtbl,
+    0x38e87280_715c_4c7d_a280_ea1651a19fef
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmReportJob {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -5264,7 +5539,12 @@ pub struct IFsrmReportJob_Vtbl {
     pub Cancel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmReportManager, IFsrmReportManager_Vtbl, 0x27b899fe_6ffa_4481_a184_d3daade8a02b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmReportManager,
+    IFsrmReportManager_Vtbl,
+    0x27b899fe_6ffa_4481_a184_d3daade8a02b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmReportManager {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5365,7 +5645,12 @@ pub struct IFsrmReportManager_Vtbl {
     SetReportSizeLimit: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmReportScheduler, IFsrmReportScheduler_Vtbl, 0x6879caf9_6617_4484_8719_71c3d8645f94);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmReportScheduler,
+    IFsrmReportScheduler_Vtbl,
+    0x6879caf9_6617_4484_8719_71c3d8645f94
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmReportScheduler {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -5420,7 +5705,12 @@ pub struct IFsrmReportScheduler_Vtbl {
     pub DeleteScheduleTask: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, taskname: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmRule, IFsrmRule_Vtbl, 0xcb0df960_16f5_4495_9079_3f9360d831df);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmRule,
+    IFsrmRule_Vtbl,
+    0xcb0df960_16f5_4495_9079_3f9360d831df
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmRule {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -5539,7 +5829,12 @@ pub struct IFsrmRule_Vtbl {
     LastModified: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmSetting, IFsrmSetting_Vtbl, 0xf411d4fd_14be_4260_8c40_03b7c95e608a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmSetting,
+    IFsrmSetting_Vtbl,
+    0xf411d4fd_14be_4260_8c40_03b7c95e608a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmSetting {
     pub unsafe fn SmtpServer(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -5628,7 +5923,12 @@ pub struct IFsrmSetting_Vtbl {
     pub GetActionRunLimitInterval: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, actiontype: FsrmActionType, delaytimeminutes: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmStorageModuleDefinition, IFsrmStorageModuleDefinition_Vtbl, 0x15a81350_497d_4aba_80e9_d4dbcc5521fe);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmStorageModuleDefinition,
+    IFsrmStorageModuleDefinition_Vtbl,
+    0x15a81350_497d_4aba_80e9_d4dbcc5521fe
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmStorageModuleDefinition {
     pub unsafe fn Id(&self) -> ::windows_core::Result<::windows_core::GUID> {
@@ -5784,7 +6084,12 @@ pub struct IFsrmStorageModuleDefinition_Vtbl {
     pub SetUpdatesFileContent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, updatesfilecontent: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFsrmStorageModuleImplementation, IFsrmStorageModuleImplementation_Vtbl, 0x0af4a0da_895a_4e50_8712_a96724bcec64);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFsrmStorageModuleImplementation,
+    IFsrmStorageModuleImplementation_Vtbl,
+    0x0af4a0da_895a_4e50_8712_a96724bcec64
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFsrmStorageModuleImplementation {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

@@ -281,7 +281,12 @@ where
     MQSetQueueSecurity(lpwcsformatname.into_param().abi(), securityinformation, psecuritydescriptor.into_param().abi()).ok()
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQApplication, IMSMQApplication_Vtbl, 0xd7d6e085_dccd_11d0_aa4b_0060970debae);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQApplication,
+    IMSMQApplication_Vtbl,
+    0xd7d6e085_dccd_11d0_aa4b_0060970debae
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQApplication {
     pub unsafe fn MachineIdOfMachineName<P0>(&self, machinename: P0) -> ::windows_core::Result<::windows_core::BSTR>
@@ -302,7 +307,12 @@ pub struct IMSMQApplication_Vtbl {
     pub MachineIdOfMachineName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, machinename: ::std::mem::MaybeUninit<::windows_core::BSTR>, pbstrguid: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQApplication2, IMSMQApplication2_Vtbl, 0x12a30900_7300_11d2_b0e6_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQApplication2,
+    IMSMQApplication2_Vtbl,
+    0x12a30900_7300_11d2_b0e6_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQApplication2 {
     pub unsafe fn MachineIdOfMachineName<P0>(&self, machinename: P0) -> ::windows_core::Result<::windows_core::BSTR>
@@ -369,7 +379,12 @@ pub struct IMSMQApplication2_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQApplication3, IMSMQApplication3_Vtbl, 0xeba96b1f_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQApplication3,
+    IMSMQApplication3_Vtbl,
+    0xeba96b1f_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQApplication3 {
     pub unsafe fn MachineIdOfMachineName<P0>(&self, machinename: P0) -> ::windows_core::Result<::windows_core::BSTR>
@@ -487,7 +502,12 @@ pub struct IMSMQApplication3_Vtbl {
     pub Tidy: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQCollection, IMSMQCollection_Vtbl, 0x0188ac2f_ecb3_4173_9779_635ca2039c72);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQCollection,
+    IMSMQCollection_Vtbl,
+    0x0188ac2f_ecb3_4173_9779_635ca2039c72
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQCollection {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -520,7 +540,12 @@ pub struct IMSMQCollection_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppunk: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQCoordinatedTransactionDispenser, IMSMQCoordinatedTransactionDispenser_Vtbl, 0xd7d6e081_dccd_11d0_aa4b_0060970debae);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQCoordinatedTransactionDispenser,
+    IMSMQCoordinatedTransactionDispenser_Vtbl,
+    0xd7d6e081_dccd_11d0_aa4b_0060970debae
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQCoordinatedTransactionDispenser {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -543,7 +568,12 @@ pub struct IMSMQCoordinatedTransactionDispenser_Vtbl {
     BeginTransaction: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQCoordinatedTransactionDispenser2, IMSMQCoordinatedTransactionDispenser2_Vtbl, 0xeba96b10_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQCoordinatedTransactionDispenser2,
+    IMSMQCoordinatedTransactionDispenser2_Vtbl,
+    0xeba96b10_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQCoordinatedTransactionDispenser2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -576,7 +606,12 @@ pub struct IMSMQCoordinatedTransactionDispenser2_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQCoordinatedTransactionDispenser3, IMSMQCoordinatedTransactionDispenser3_Vtbl, 0xeba96b14_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQCoordinatedTransactionDispenser3,
+    IMSMQCoordinatedTransactionDispenser3_Vtbl,
+    0xeba96b14_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQCoordinatedTransactionDispenser3 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -609,7 +644,12 @@ pub struct IMSMQCoordinatedTransactionDispenser3_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQDestination, IMSMQDestination_Vtbl, 0xeba96b16_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQDestination,
+    IMSMQDestination_Vtbl,
+    0xeba96b16_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQDestination {
     pub unsafe fn Open(&self) -> ::windows_core::Result<()> {
@@ -725,7 +765,12 @@ pub struct IMSMQDestination_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQEvent, IMSMQEvent_Vtbl, 0xd7d6e077_dccd_11d0_aa4b_0060970debae);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQEvent,
+    IMSMQEvent_Vtbl,
+    0xd7d6e077_dccd_11d0_aa4b_0060970debae
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQEvent {}
 #[cfg(feature = "Win32_System_Com")]
@@ -737,7 +782,12 @@ pub struct IMSMQEvent_Vtbl {
     pub base__: super::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQEvent2, IMSMQEvent2_Vtbl, 0xeba96b12_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQEvent2,
+    IMSMQEvent2_Vtbl,
+    0xeba96b12_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQEvent2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -760,7 +810,12 @@ pub struct IMSMQEvent2_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQEvent3, IMSMQEvent3_Vtbl, 0xeba96b1c_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQEvent3,
+    IMSMQEvent3_Vtbl,
+    0xeba96b1c_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQEvent3 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -779,7 +834,12 @@ pub struct IMSMQEvent3_Vtbl {
     pub base__: IMSMQEvent2_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQManagement, IMSMQManagement_Vtbl, 0xbe5f0241_e489_4957_8cc4_a452fcf3e23e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQManagement,
+    IMSMQManagement_Vtbl,
+    0xbe5f0241_e489_4957_8cc4_a452fcf3e23e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQManagement {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -846,7 +906,12 @@ pub struct IMSMQManagement_Vtbl {
     BytesInQueue: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQMessage, IMSMQMessage_Vtbl, 0xd7d6e074_dccd_11d0_aa4b_0060970debae);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQMessage,
+    IMSMQMessage_Vtbl,
+    0xd7d6e074_dccd_11d0_aa4b_0060970debae
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQMessage {
     pub unsafe fn Class(&self) -> ::windows_core::Result<i32> {
@@ -1175,7 +1240,12 @@ pub struct IMSMQMessage_Vtbl {
     pub AttachCurrentSecurityContext: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQMessage2, IMSMQMessage2_Vtbl, 0xd9933be0_a567_11d2_b0f3_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQMessage2,
+    IMSMQMessage2_Vtbl,
+    0xd9933be0_a567_11d2_b0f3_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQMessage2 {
     pub unsafe fn Class(&self) -> ::windows_core::Result<i32> {
@@ -1706,7 +1776,12 @@ pub struct IMSMQMessage2_Vtbl {
     pub ReceivedAuthenticationLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, psreceivedauthenticationlevel: *mut i16) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQMessage3, IMSMQMessage3_Vtbl, 0xeba96b1a_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQMessage3,
+    IMSMQMessage3_Vtbl,
+    0xeba96b1a_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQMessage3 {
     pub unsafe fn Class(&self) -> ::windows_core::Result<i32> {
@@ -2371,7 +2446,12 @@ pub struct IMSMQMessage3_Vtbl {
     pub SetSoapBody: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrsoapbody: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQMessage4, IMSMQMessage4_Vtbl, 0xeba96b23_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQMessage4,
+    IMSMQMessage4_Vtbl,
+    0xeba96b23_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQMessage4 {
     pub unsafe fn Class(&self) -> ::windows_core::Result<i32> {
@@ -3036,7 +3116,12 @@ pub struct IMSMQMessage4_Vtbl {
     pub SetSoapBody: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrsoapbody: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQOutgoingQueueManagement, IMSMQOutgoingQueueManagement_Vtbl, 0x64c478fb_f9b0_4695_8a7f_439ac94326d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQOutgoingQueueManagement,
+    IMSMQOutgoingQueueManagement_Vtbl,
+    0x64c478fb_f9b0_4695_8a7f_439ac94326d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQOutgoingQueueManagement {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -3125,7 +3210,12 @@ pub struct IMSMQOutgoingQueueManagement_Vtbl {
     pub EodResend: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQPrivateDestination, IMSMQPrivateDestination_Vtbl, 0xeba96b17_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQPrivateDestination,
+    IMSMQPrivateDestination_Vtbl,
+    0xeba96b17_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQPrivateDestination {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -3157,7 +3247,12 @@ pub struct IMSMQPrivateDestination_Vtbl {
     SetHandle: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQPrivateEvent, IMSMQPrivateEvent_Vtbl, 0xd7ab3341_c9d3_11d1_bb47_0080c7c5a2c0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQPrivateEvent,
+    IMSMQPrivateEvent_Vtbl,
+    0xd7ab3341_c9d3_11d1_bb47_0080c7c5a2c0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQPrivateEvent {
     pub unsafe fn Hwnd(&self) -> ::windows_core::Result<i32> {
@@ -3199,7 +3294,12 @@ pub struct IMSMQPrivateEvent_Vtbl {
     FireArrivedErrorEvent: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQuery, IMSMQQuery_Vtbl, 0xd7d6e072_dccd_11d0_aa4b_0060970debae);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQuery,
+    IMSMQQuery_Vtbl,
+    0xd7d6e072_dccd_11d0_aa4b_0060970debae
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQuery {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -3222,7 +3322,12 @@ pub struct IMSMQQuery_Vtbl {
     LookupQueue: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQuery2, IMSMQQuery2_Vtbl, 0xeba96b0e_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQuery2,
+    IMSMQQuery2_Vtbl,
+    0xeba96b0e_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQuery2 {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -3255,7 +3360,12 @@ pub struct IMSMQQuery2_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQuery3, IMSMQQuery3_Vtbl, 0xeba96b19_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQuery3,
+    IMSMQQuery3_Vtbl,
+    0xeba96b19_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQuery3 {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -3298,7 +3408,12 @@ pub struct IMSMQQuery3_Vtbl {
     LookupQueue: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQuery4, IMSMQQuery4_Vtbl, 0xeba96b24_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQuery4,
+    IMSMQQuery4_Vtbl,
+    0xeba96b24_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQuery4 {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -3341,7 +3456,12 @@ pub struct IMSMQQuery4_Vtbl {
     LookupQueue: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueue, IMSMQQueue_Vtbl, 0xd7d6e076_dccd_11d0_aa4b_0060970debae);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueue,
+    IMSMQQueue_Vtbl,
+    0xd7d6e076_dccd_11d0_aa4b_0060970debae
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueue {
     pub unsafe fn Access(&self) -> ::windows_core::Result<i32> {
@@ -3454,7 +3574,12 @@ pub struct IMSMQQueue_Vtbl {
     PeekCurrent: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueue2, IMSMQQueue2_Vtbl, 0xef0574e0_06d8_11d3_b100_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueue2,
+    IMSMQQueue2_Vtbl,
+    0xef0574e0_06d8_11d3_b100_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueue2 {
     pub unsafe fn Access(&self) -> ::windows_core::Result<i32> {
@@ -3627,7 +3752,12 @@ pub struct IMSMQQueue2_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueue3, IMSMQQueue3_Vtbl, 0xeba96b1b_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueue3,
+    IMSMQQueue3_Vtbl,
+    0xeba96b1b_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueue3 {
     pub unsafe fn Access(&self) -> ::windows_core::Result<i32> {
@@ -3919,7 +4049,12 @@ pub struct IMSMQQueue3_Vtbl {
     pub IsOpen2: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pisopen: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueue4, IMSMQQueue4_Vtbl, 0xeba96b20_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueue4,
+    IMSMQQueue4_Vtbl,
+    0xeba96b20_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueue4 {
     pub unsafe fn Access(&self) -> ::windows_core::Result<i32> {
@@ -4221,7 +4356,12 @@ pub struct IMSMQQueue4_Vtbl {
     ReceiveByLookupIdAllowPeek: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueueInfo, IMSMQQueueInfo_Vtbl, 0xd7d6e07b_dccd_11d0_aa4b_0060970debae);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueueInfo,
+    IMSMQQueueInfo_Vtbl,
+    0xd7d6e07b_dccd_11d0_aa4b_0060970debae
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfo {
     pub unsafe fn QueueGuid(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4402,7 +4542,12 @@ pub struct IMSMQQueueInfo_Vtbl {
     pub Update: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueueInfo2, IMSMQQueueInfo2_Vtbl, 0xfd174a80_89cf_11d2_b0f2_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueueInfo2,
+    IMSMQQueueInfo2_Vtbl,
+    0xfd174a80_89cf_11d2_b0f2_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfo2 {
     pub unsafe fn QueueGuid(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4617,7 +4762,12 @@ pub struct IMSMQQueueInfo2_Vtbl {
     SetSecurity: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueueInfo3, IMSMQQueueInfo3_Vtbl, 0xeba96b1d_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueueInfo3,
+    IMSMQQueueInfo3_Vtbl,
+    0xeba96b1d_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfo3 {
     pub unsafe fn QueueGuid(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4859,7 +5009,12 @@ pub struct IMSMQQueueInfo3_Vtbl {
     pub ADsPath: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstradspath: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueueInfo4, IMSMQQueueInfo4_Vtbl, 0xeba96b21_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueueInfo4,
+    IMSMQQueueInfo4_Vtbl,
+    0xeba96b21_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfo4 {
     pub unsafe fn QueueGuid(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -5101,7 +5256,12 @@ pub struct IMSMQQueueInfo4_Vtbl {
     pub ADsPath: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstradspath: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueueInfos, IMSMQQueueInfos_Vtbl, 0xd7d6e07d_dccd_11d0_aa4b_0060970debae);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueueInfos,
+    IMSMQQueueInfos_Vtbl,
+    0xd7d6e07d_dccd_11d0_aa4b_0060970debae
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfos {
     pub unsafe fn Reset(&self) -> ::windows_core::Result<()> {
@@ -5128,7 +5288,12 @@ pub struct IMSMQQueueInfos_Vtbl {
     Next: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueueInfos2, IMSMQQueueInfos2_Vtbl, 0xeba96b0f_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueueInfos2,
+    IMSMQQueueInfos2_Vtbl,
+    0xeba96b0f_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfos2 {
     pub unsafe fn Reset(&self) -> ::windows_core::Result<()> {
@@ -5165,7 +5330,12 @@ pub struct IMSMQQueueInfos2_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueueInfos3, IMSMQQueueInfos3_Vtbl, 0xeba96b1e_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueueInfos3,
+    IMSMQQueueInfos3_Vtbl,
+    0xeba96b1e_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfos3 {
     pub unsafe fn Reset(&self) -> ::windows_core::Result<()> {
@@ -5202,7 +5372,12 @@ pub struct IMSMQQueueInfos3_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueueInfos4, IMSMQQueueInfos4_Vtbl, 0xeba96b22_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueueInfos4,
+    IMSMQQueueInfos4_Vtbl,
+    0xeba96b22_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueInfos4 {
     pub unsafe fn Reset(&self) -> ::windows_core::Result<()> {
@@ -5239,7 +5414,12 @@ pub struct IMSMQQueueInfos4_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQQueueManagement, IMSMQQueueManagement_Vtbl, 0x7fbe7759_5760_444d_b8a5_5e7ab9a84cce);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQQueueManagement,
+    IMSMQQueueManagement_Vtbl,
+    0x7fbe7759_5760_444d_b8a5_5e7ab9a84cce
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQQueueManagement {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -5316,7 +5496,12 @@ pub struct IMSMQQueueManagement_Vtbl {
     EodGetReceiveInfo: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQTransaction, IMSMQTransaction_Vtbl, 0xd7d6e07f_dccd_11d0_aa4b_0060970debae);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQTransaction,
+    IMSMQTransaction_Vtbl,
+    0xd7d6e07f_dccd_11d0_aa4b_0060970debae
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQTransaction {
     pub unsafe fn Transaction(&self) -> ::windows_core::Result<i32> {
@@ -5352,7 +5537,12 @@ pub struct IMSMQTransaction_Vtbl {
     Abort: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQTransaction2, IMSMQTransaction2_Vtbl, 0x2ce0c5b0_6e67_11d2_b0e6_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQTransaction2,
+    IMSMQTransaction2_Vtbl,
+    0x2ce0c5b0_6e67_11d2_b0e6_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQTransaction2 {
     pub unsafe fn Transaction(&self) -> ::windows_core::Result<i32> {
@@ -5398,7 +5588,12 @@ pub struct IMSMQTransaction2_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQTransaction3, IMSMQTransaction3_Vtbl, 0xeba96b13_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQTransaction3,
+    IMSMQTransaction3_Vtbl,
+    0xeba96b13_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQTransaction3 {
     pub unsafe fn Transaction(&self) -> ::windows_core::Result<i32> {
@@ -5446,7 +5641,12 @@ pub struct IMSMQTransaction3_Vtbl {
     ITransaction: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQTransactionDispenser, IMSMQTransactionDispenser_Vtbl, 0xd7d6e083_dccd_11d0_aa4b_0060970debae);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQTransactionDispenser,
+    IMSMQTransactionDispenser_Vtbl,
+    0xd7d6e083_dccd_11d0_aa4b_0060970debae
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQTransactionDispenser {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5469,7 +5669,12 @@ pub struct IMSMQTransactionDispenser_Vtbl {
     BeginTransaction: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQTransactionDispenser2, IMSMQTransactionDispenser2_Vtbl, 0xeba96b11_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQTransactionDispenser2,
+    IMSMQTransactionDispenser2_Vtbl,
+    0xeba96b11_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQTransactionDispenser2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5502,7 +5707,12 @@ pub struct IMSMQTransactionDispenser2_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMSMQTransactionDispenser3, IMSMQTransactionDispenser3_Vtbl, 0xeba96b15_2168_11d3_898c_00e02c074f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMSMQTransactionDispenser3,
+    IMSMQTransactionDispenser3_Vtbl,
+    0xeba96b15_2168_11d3_898c_00e02c074f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMSMQTransactionDispenser3 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5535,7 +5745,12 @@ pub struct IMSMQTransactionDispenser3_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_DMSMQEventEvents, _DMSMQEventEvents_Vtbl, 0xd7d6e078_dccd_11d0_aa4b_0060970debae);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _DMSMQEventEvents,
+    _DMSMQEventEvents_Vtbl,
+    0xd7d6e078_dccd_11d0_aa4b_0060970debae
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _DMSMQEventEvents {}
 #[cfg(feature = "Win32_System_Com")]

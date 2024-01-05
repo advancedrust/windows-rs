@@ -76,7 +76,12 @@ pub struct IMofCompiler_Vtbl {
     pub CreateBMOF: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, textfilename: ::windows_core::PCWSTR, bmoffilename: ::windows_core::PCWSTR, serverandnamespace: ::windows_core::PCWSTR, loptionflags: i32, lclassflags: i32, linstanceflags: i32, pinfo: *mut WBEM_COMPILE_STATUS_INFO) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemDateTime, ISWbemDateTime_Vtbl, 0x5e97458a_cf77_11d3_b38f_00105a1f473a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemDateTime,
+    ISWbemDateTime_Vtbl,
+    0x5e97458a_cf77_11d3_b38f_00105a1f473a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemDateTime {
     pub unsafe fn Value(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -312,7 +317,12 @@ pub struct ISWbemDateTime_Vtbl {
     pub SetFileTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strfiletime: ::std::mem::MaybeUninit<::windows_core::BSTR>, bislocal: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemEventSource, ISWbemEventSource_Vtbl, 0x27d54d92_0ebe_11d2_8b22_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemEventSource,
+    ISWbemEventSource_Vtbl,
+    0x27d54d92_0ebe_11d2_8b22_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemEventSource {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -345,7 +355,12 @@ pub struct ISWbemEventSource_Vtbl {
     Security_: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemLastError, ISWbemLastError_Vtbl, 0xd962db84_d4bb_11d1_8b09_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemLastError,
+    ISWbemLastError_Vtbl,
+    0xd962db84_d4bb_11d1_8b09_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemLastError {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -587,7 +602,12 @@ pub struct ISWbemLastError_Vtbl {
     pub base__: ISWbemObject_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemLocator, ISWbemLocator_Vtbl, 0x76a6415b_cb41_11d1_8b02_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemLocator,
+    ISWbemLocator_Vtbl,
+    0x76a6415b_cb41_11d1_8b02_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemLocator {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -629,7 +649,12 @@ pub struct ISWbemLocator_Vtbl {
     Security_: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemMethod, ISWbemMethod_Vtbl, 0x422e8e90_d955_11d1_8b09_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemMethod,
+    ISWbemMethod_Vtbl,
+    0x422e8e90_d955_11d1_8b09_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemMethod {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -682,7 +707,12 @@ pub struct ISWbemMethod_Vtbl {
     Qualifiers_: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemMethodSet, ISWbemMethodSet_Vtbl, 0xc93ba292_d955_11d1_8b09_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemMethodSet,
+    ISWbemMethodSet_Vtbl,
+    0xc93ba292_d955_11d1_8b09_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemMethodSet {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -718,7 +748,12 @@ pub struct ISWbemMethodSet_Vtbl {
     pub Count: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, icount: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemNamedValue, ISWbemNamedValue_Vtbl, 0x76a64164_cb41_11d1_8b02_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemNamedValue,
+    ISWbemNamedValue_Vtbl,
+    0x76a64164_cb41_11d1_8b02_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemNamedValue {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -755,7 +790,12 @@ pub struct ISWbemNamedValue_Vtbl {
     pub Name: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strname: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemNamedValueSet, ISWbemNamedValueSet_Vtbl, 0xcf2376ea_ce8c_11d1_8b05_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemNamedValueSet,
+    ISWbemNamedValueSet_Vtbl,
+    0xcf2376ea_ce8c_11d1_8b05_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemNamedValueSet {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -825,7 +865,12 @@ pub struct ISWbemNamedValueSet_Vtbl {
     pub DeleteAll: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemObject, ISWbemObject_Vtbl, 0x76a6415a_cb41_11d1_8b02_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemObject,
+    ISWbemObject_Vtbl,
+    0x76a6415a_cb41_11d1_8b02_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemObject {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1164,7 +1209,12 @@ pub struct ISWbemObject_Vtbl {
     Security_: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemObjectEx, ISWbemObjectEx_Vtbl, 0x269ad56a_8a67_4129_bc8c_0506dcfe9880);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemObjectEx,
+    ISWbemObjectEx_Vtbl,
+    0x269ad56a_8a67_4129_bc8c_0506dcfe9880
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemObjectEx {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1454,7 +1504,12 @@ pub struct ISWbemObjectEx_Vtbl {
     SetFromText_: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemObjectPath, ISWbemObjectPath_Vtbl, 0x5791bc27_ce9c_11d1_97bf_0000f81e849c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemObjectPath,
+    ISWbemObjectPath_Vtbl,
+    0x5791bc27_ce9c_11d1_97bf_0000f81e849c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemObjectPath {
     pub unsafe fn Path(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1606,7 +1661,12 @@ pub struct ISWbemObjectPath_Vtbl {
     pub SetAuthority: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strauthority: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemObjectSet, ISWbemObjectSet_Vtbl, 0x76a6415f_cb41_11d1_8b02_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemObjectSet,
+    ISWbemObjectSet_Vtbl,
+    0x76a6415f_cb41_11d1_8b02_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemObjectSet {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -1662,7 +1722,12 @@ pub struct ISWbemObjectSet_Vtbl {
     ItemIndex: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemPrivilege, ISWbemPrivilege_Vtbl, 0x26ee67bd_5804_11d2_8b4a_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemPrivilege,
+    ISWbemPrivilege_Vtbl,
+    0x26ee67bd_5804_11d2_8b4a_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemPrivilege {
     pub unsafe fn IsEnabled(&self) -> ::windows_core::Result<super::super::Foundation::VARIANT_BOOL> {
@@ -1702,7 +1767,12 @@ pub struct ISWbemPrivilege_Vtbl {
     pub Identifier: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, iprivilege: *mut WbemPrivilegeEnum) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemPrivilegeSet, ISWbemPrivilegeSet_Vtbl, 0x26ee67bf_5804_11d2_8b4a_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemPrivilegeSet,
+    ISWbemPrivilegeSet_Vtbl,
+    0x26ee67bf_5804_11d2_8b4a_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemPrivilegeSet {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -1770,7 +1840,12 @@ pub struct ISWbemPrivilegeSet_Vtbl {
     AddAsString: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemProperty, ISWbemProperty_Vtbl, 0x1a388f98_d4ba_11d1_8b09_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemProperty,
+    ISWbemProperty_Vtbl,
+    0x1a388f98_d4ba_11d1_8b09_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemProperty {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -1837,7 +1912,12 @@ pub struct ISWbemProperty_Vtbl {
     pub IsArray: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bisarray: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemPropertySet, ISWbemPropertySet_Vtbl, 0xdea0a7b2_d4ba_11d1_8b09_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemPropertySet,
+    ISWbemPropertySet_Vtbl,
+    0xdea0a7b2_d4ba_11d1_8b09_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemPropertySet {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -1894,7 +1974,12 @@ pub struct ISWbemPropertySet_Vtbl {
     pub Remove: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strname: ::std::mem::MaybeUninit<::windows_core::BSTR>, iflags: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemQualifier, ISWbemQualifier_Vtbl, 0x79b05932_d3b7_11d1_8b06_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemQualifier,
+    ISWbemQualifier_Vtbl,
+    0x79b05932_d3b7_11d1_8b06_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemQualifier {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -1977,7 +2062,12 @@ pub struct ISWbemQualifier_Vtbl {
     pub IsAmended: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bisamended: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemQualifierSet, ISWbemQualifierSet_Vtbl, 0x9b16ed16_d3df_11d1_8b08_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemQualifierSet,
+    ISWbemQualifierSet_Vtbl,
+    0x9b16ed16_d3df_11d1_8b08_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemQualifierSet {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -2036,7 +2126,12 @@ pub struct ISWbemQualifierSet_Vtbl {
     pub Remove: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strname: ::std::mem::MaybeUninit<::windows_core::BSTR>, iflags: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemRefreshableItem, ISWbemRefreshableItem_Vtbl, 0x5ad4bf92_daab_11d3_b38f_00105a1f473a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemRefreshableItem,
+    ISWbemRefreshableItem_Vtbl,
+    0x5ad4bf92_daab_11d3_b38f_00105a1f473a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemRefreshableItem {
     pub unsafe fn Index(&self) -> ::windows_core::Result<i32> {
@@ -2093,7 +2188,12 @@ pub struct ISWbemRefreshableItem_Vtbl {
     pub Remove: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, iflags: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemRefresher, ISWbemRefresher_Vtbl, 0x14d8250e_d9c2_11d3_b38f_00105a1f473a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemRefresher,
+    ISWbemRefresher_Vtbl,
+    0x14d8250e_d9c2_11d3_b38f_00105a1f473a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemRefresher {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -2180,7 +2280,12 @@ pub struct ISWbemRefresher_Vtbl {
     pub DeleteAll: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemSecurity, ISWbemSecurity_Vtbl, 0xb54d66e6_2287_11d2_8b33_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemSecurity,
+    ISWbemSecurity_Vtbl,
+    0xb54d66e6_2287_11d2_8b33_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemSecurity {
     pub unsafe fn ImpersonationLevel(&self) -> ::windows_core::Result<WbemImpersonationLevelEnum> {
@@ -2221,7 +2326,12 @@ pub struct ISWbemSecurity_Vtbl {
     Privileges: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemServices, ISWbemServices_Vtbl, 0x76a6415c_cb41_11d1_8b02_00600806d9b6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemServices,
+    ISWbemServices_Vtbl,
+    0x76a6415c_cb41_11d1_8b02_00600806d9b6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemServices {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2539,7 +2649,12 @@ pub struct ISWbemServices_Vtbl {
     Security_: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemServicesEx, ISWbemServicesEx_Vtbl, 0xd2f68443_85dc_427e_91d8_366554cc754c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemServicesEx,
+    ISWbemServicesEx_Vtbl,
+    0xd2f68443_85dc_427e_91d8_366554cc754c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemServicesEx {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2809,7 +2924,12 @@ pub struct ISWbemServicesEx_Vtbl {
     PutAsync: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemSink, ISWbemSink_Vtbl, 0x75718c9f_f029_11d1_a1ac_00c04fb6c223);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemSink,
+    ISWbemSink_Vtbl,
+    0x75718c9f_f029_11d1_a1ac_00c04fb6c223
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemSink {
     pub unsafe fn Cancel(&self) -> ::windows_core::Result<()> {
@@ -2826,7 +2946,12 @@ pub struct ISWbemSink_Vtbl {
     pub Cancel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISWbemSinkEvents, ISWbemSinkEvents_Vtbl, 0x75718ca0_f029_11d1_a1ac_00c04fb6c223);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISWbemSinkEvents,
+    ISWbemSinkEvents_Vtbl,
+    0x75718ca0_f029_11d1_a1ac_00c04fb6c223
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISWbemSinkEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -2855,7 +2980,12 @@ pub struct IUnsecuredApartment_Vtbl {
     pub CreateObjectStub: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pobject: *mut ::core::ffi::c_void, ppstub: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWMIExtension, IWMIExtension_Vtbl, 0xadc1f06e_5c7e_11d2_8b74_00104b2afb41);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWMIExtension,
+    IWMIExtension_Vtbl,
+    0xadc1f06e_5c7e_11d2_8b74_00104b2afb41
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWMIExtension {
     pub unsafe fn WMIObjectPath(&self) -> ::windows_core::Result<::windows_core::BSTR> {

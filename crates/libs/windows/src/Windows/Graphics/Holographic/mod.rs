@@ -251,7 +251,12 @@ pub struct IHolographicFramePrediction_Vtbl {
     Timestamp: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IHolographicFramePresentationMonitor, IHolographicFramePresentationMonitor_Vtbl, 0xca87256c_6fae_428e_bb83_25dfee51136b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IHolographicFramePresentationMonitor,
+    IHolographicFramePresentationMonitor_Vtbl,
+    0xca87256c_6fae_428e_bb83_25dfee51136b
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -263,7 +268,12 @@ pub struct IHolographicFramePresentationMonitor_Vtbl {
     ReadReports: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IHolographicFramePresentationReport, IHolographicFramePresentationReport_Vtbl, 0x80baf614_f2f4_4c8a_8de3_065c78f6d5de);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IHolographicFramePresentationReport,
+    IHolographicFramePresentationReport_Vtbl,
+    0x80baf614_f2f4_4c8a_8de3_065c78f6d5de
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

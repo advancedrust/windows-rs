@@ -1007,7 +1007,12 @@ where
     UpdatePerfNameFilesW(sznewctrfilepath.into_param().abi(), sznewhlpfilepath.into_param().abi(), szlanguageid.into_param().abi(), dwflags)
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DICounterItem, DICounterItem_Vtbl, 0xc08c4ff2_0e2e_11cf_942c_008029004347);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DICounterItem,
+    DICounterItem_Vtbl,
+    0xc08c4ff2_0e2e_11cf_942c_008029004347
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DICounterItem {}
 #[cfg(feature = "Win32_System_Com")]
@@ -1019,7 +1024,12 @@ pub struct DICounterItem_Vtbl {
     pub base__: super::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DILogFileItem, DILogFileItem_Vtbl, 0x8d093ffc_f777_4917_82d1_833fbc54c58f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DILogFileItem,
+    DILogFileItem_Vtbl,
+    0x8d093ffc_f777_4917_82d1_833fbc54c58f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DILogFileItem {}
 #[cfg(feature = "Win32_System_Com")]
@@ -1031,7 +1041,12 @@ pub struct DILogFileItem_Vtbl {
     pub base__: super::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DISystemMonitor, DISystemMonitor_Vtbl, 0x13d73d81_c32e_11cf_9398_00aa00a3ddea);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DISystemMonitor,
+    DISystemMonitor_Vtbl,
+    0x13d73d81_c32e_11cf_9398_00aa00a3ddea
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DISystemMonitor {}
 #[cfg(feature = "Win32_System_Com")]
@@ -1043,7 +1058,12 @@ pub struct DISystemMonitor_Vtbl {
     pub base__: super::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DISystemMonitorEvents, DISystemMonitorEvents_Vtbl, 0x84979930_4ab3_11cf_943a_008029004347);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DISystemMonitorEvents,
+    DISystemMonitorEvents_Vtbl,
+    0x84979930_4ab3_11cf_943a_008029004347
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DISystemMonitorEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -1055,7 +1075,12 @@ pub struct DISystemMonitorEvents_Vtbl {
     pub base__: super::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DISystemMonitorInternal, DISystemMonitorInternal_Vtbl, 0x194eb242_c32c_11cf_9398_00aa00a3ddea);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DISystemMonitorInternal,
+    DISystemMonitorInternal_Vtbl,
+    0x194eb242_c32c_11cf_9398_00aa00a3ddea
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DISystemMonitorInternal {}
 #[cfg(feature = "Win32_System_Com")]
@@ -1067,7 +1092,12 @@ pub struct DISystemMonitorInternal_Vtbl {
     pub base__: super::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAlertDataCollector, IAlertDataCollector_Vtbl, 0x03837516_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAlertDataCollector,
+    IAlertDataCollector_Vtbl,
+    0x03837516_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAlertDataCollector {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1306,7 +1336,12 @@ pub struct IAlertDataCollector_Vtbl {
     pub SetTriggerDataCollectorSet: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IApiTracingDataCollector, IApiTracingDataCollector_Vtbl, 0x0383751a_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IApiTracingDataCollector,
+    IApiTracingDataCollector_Vtbl,
+    0x0383751a_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IApiTracingDataCollector {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1550,7 +1585,12 @@ pub struct IApiTracingDataCollector_Vtbl {
     SetExcludeApis: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IConfigurationDataCollector, IConfigurationDataCollector_Vtbl, 0x03837514_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IConfigurationDataCollector,
+    IConfigurationDataCollector_Vtbl,
+    0x03837514_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IConfigurationDataCollector {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1954,7 +1994,12 @@ pub struct ICounterItem2_Vtbl {
     GetDataAt: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICounters, ICounters_Vtbl, 0x79167962_28fc_11cf_942f_008029004347);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICounters,
+    ICounters_Vtbl,
+    0x79167962_28fc_11cf_942f_008029004347
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICounters {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -2009,7 +2054,12 @@ pub struct ICounters_Vtbl {
     Remove: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDataCollector, IDataCollector_Vtbl, 0x038374ff_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDataCollector,
+    IDataCollector_Vtbl,
+    0x038374ff_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDataCollector {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2182,7 +2232,12 @@ pub struct IDataCollector_Vtbl {
     pub CreateOutputLocation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, latest: super::super::Foundation::VARIANT_BOOL, location: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDataCollectorCollection, IDataCollectorCollection_Vtbl, 0x03837502_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDataCollectorCollection,
+    IDataCollectorCollection_Vtbl,
+    0x03837502_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDataCollectorCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -2274,7 +2329,12 @@ pub struct IDataCollectorCollection_Vtbl {
     CreateDataCollector: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDataCollectorSet, IDataCollectorSet_Vtbl, 0x03837520_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDataCollectorSet,
+    IDataCollectorSet_Vtbl,
+    0x03837520_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDataCollectorSet {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2666,7 +2726,12 @@ pub struct IDataCollectorSet_Vtbl {
     pub GetValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, key: ::std::mem::MaybeUninit<::windows_core::BSTR>, value: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDataCollectorSetCollection, IDataCollectorSetCollection_Vtbl, 0x03837524_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDataCollectorSetCollection,
+    IDataCollectorSetCollection_Vtbl,
+    0x03837524_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDataCollectorSetCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -2744,7 +2809,12 @@ pub struct IDataCollectorSetCollection_Vtbl {
     pub GetDataCollectorSets: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, server: ::std::mem::MaybeUninit<::windows_core::BSTR>, filter: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDataManager, IDataManager_Vtbl, 0x03837541_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDataManager,
+    IDataManager_Vtbl,
+    0x03837541_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDataManager {
     pub unsafe fn Enabled(&self) -> ::windows_core::Result<super::super::Foundation::VARIANT_BOOL> {
@@ -2908,7 +2978,12 @@ pub struct IDataManager_Vtbl {
     pub Extract: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, cabfilename: ::std::mem::MaybeUninit<::windows_core::BSTR>, destinationpath: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFolderAction, IFolderAction_Vtbl, 0x03837543_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFolderAction,
+    IFolderAction_Vtbl,
+    0x03837543_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFolderAction {
     pub unsafe fn Age(&self) -> ::windows_core::Result<u32> {
@@ -2960,7 +3035,12 @@ pub struct IFolderAction_Vtbl {
     pub SetSendCabTo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrdestination: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFolderActionCollection, IFolderActionCollection_Vtbl, 0x03837544_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFolderActionCollection,
+    IFolderActionCollection_Vtbl,
+    0x03837544_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFolderActionCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<u32> {
@@ -3054,7 +3134,12 @@ pub struct ILogFileItem_Vtbl {
     pub Path: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstrvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ILogFiles, ILogFiles_Vtbl, 0x6a2a97e6_6851_41ea_87ad_2a8225335865);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ILogFiles,
+    ILogFiles_Vtbl,
+    0x6a2a97e6_6851_41ea_87ad_2a8225335865
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ILogFiles {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3109,7 +3194,12 @@ pub struct ILogFiles_Vtbl {
     Remove: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPerformanceCounterDataCollector, IPerformanceCounterDataCollector_Vtbl, 0x03837506_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPerformanceCounterDataCollector,
+    IPerformanceCounterDataCollector_Vtbl,
+    0x03837506_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPerformanceCounterDataCollector {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3306,7 +3396,12 @@ pub struct IPerformanceCounterDataCollector_Vtbl {
     pub SetSegmentMaxRecords: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, records: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISchedule, ISchedule_Vtbl, 0x0383753a_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISchedule,
+    ISchedule_Vtbl,
+    0x0383753a_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISchedule {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -3385,7 +3480,12 @@ pub struct ISchedule_Vtbl {
     pub SetDays: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, days: WeekDays) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IScheduleCollection, IScheduleCollection_Vtbl, 0x0383753d_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IScheduleCollection,
+    IScheduleCollection_Vtbl,
+    0x0383753d_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IScheduleCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4366,7 +4466,12 @@ pub struct ISystemMonitorEvents_Vtbl {
     pub OnDblClick: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, index: i32),
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITraceDataCollector, ITraceDataCollector_Vtbl, 0x0383750b_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITraceDataCollector,
+    ITraceDataCollector_Vtbl,
+    0x0383750b_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITraceDataCollector {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4700,7 +4805,12 @@ pub struct ITraceDataCollector_Vtbl {
     TraceDataProviders: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITraceDataProvider, ITraceDataProvider_Vtbl, 0x03837512_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITraceDataProvider,
+    ITraceDataProvider_Vtbl,
+    0x03837512_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITraceDataProvider {
     pub unsafe fn DisplayName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4856,7 +4966,12 @@ pub struct ITraceDataProvider_Vtbl {
     GetRegisteredProcesses: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITraceDataProviderCollection, ITraceDataProviderCollection_Vtbl, 0x03837510_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITraceDataProviderCollection,
+    ITraceDataProviderCollection_Vtbl,
+    0x03837510_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITraceDataProviderCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4950,7 +5065,12 @@ pub struct ITraceDataProviderCollection_Vtbl {
     pub GetTraceDataProvidersByProcess: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, server: ::std::mem::MaybeUninit<::windows_core::BSTR>, pid: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IValueMap, IValueMap_Vtbl, 0x03837534_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IValueMap,
+    IValueMap_Vtbl,
+    0x03837534_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IValueMap {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -5067,7 +5187,12 @@ pub struct IValueMap_Vtbl {
     CreateValueMapItem: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IValueMapItem, IValueMapItem_Vtbl, 0x03837533_098b_11d8_9414_505054503030);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IValueMapItem,
+    IValueMapItem_Vtbl,
+    0x03837533_098b_11d8_9414_505054503030
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IValueMapItem {
     pub unsafe fn Description(&self) -> ::windows_core::Result<::windows_core::BSTR> {

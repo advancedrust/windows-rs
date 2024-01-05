@@ -20,7 +20,12 @@ pub unsafe fn IsNetworkAlive(lpdwflags: *mut u32) -> ::windows_core::Result<()> 
     IsNetworkAlive(lpdwflags).ok()
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISensLogon, ISensLogon_Vtbl, 0xd597bab3_5b9f_11d1_8dd2_00aa004abd5e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISensLogon,
+    ISensLogon_Vtbl,
+    0xd597bab3_5b9f_11d1_8dd2_00aa004abd5e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISensLogon {
     pub unsafe fn Logon<P0>(&self, bstrusername: P0) -> ::windows_core::Result<()>
@@ -82,7 +87,12 @@ pub struct ISensLogon_Vtbl {
     pub StopScreenSaver: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrusername: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISensLogon2, ISensLogon2_Vtbl, 0xd597bab4_5b9f_11d1_8dd2_00aa004abd5e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISensLogon2,
+    ISensLogon2_Vtbl,
+    0xd597bab4_5b9f_11d1_8dd2_00aa004abd5e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISensLogon2 {
     pub unsafe fn Logon<P0>(&self, bstrusername: P0, dwsessionid: u32) -> ::windows_core::Result<()>
@@ -130,7 +140,12 @@ pub struct ISensLogon2_Vtbl {
     pub PostShell: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrusername: ::std::mem::MaybeUninit<::windows_core::BSTR>, dwsessionid: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISensNetwork, ISensNetwork_Vtbl, 0xd597bab1_5b9f_11d1_8dd2_00aa004abd5e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISensNetwork,
+    ISensNetwork_Vtbl,
+    0xd597bab1_5b9f_11d1_8dd2_00aa004abd5e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISensNetwork {
     pub unsafe fn ConnectionMade<P0>(&self, bstrconnection: P0, ultype: u32, lpqocinfo: *const SENS_QOCINFO) -> ::windows_core::Result<()>
@@ -180,7 +195,12 @@ pub struct ISensNetwork_Vtbl {
     pub DestinationReachableNoQOCInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrdestination: ::std::mem::MaybeUninit<::windows_core::BSTR>, bstrconnection: ::std::mem::MaybeUninit<::windows_core::BSTR>, ultype: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISensOnNow, ISensOnNow_Vtbl, 0xd597bab2_5b9f_11d1_8dd2_00aa004abd5e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISensOnNow,
+    ISensOnNow_Vtbl,
+    0xd597bab2_5b9f_11d1_8dd2_00aa004abd5e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISensOnNow {
     pub unsafe fn OnACPower(&self) -> ::windows_core::Result<()> {

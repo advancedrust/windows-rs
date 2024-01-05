@@ -220,7 +220,12 @@ pub struct IDataPlanUsage_Vtbl {
     pub LastSyncTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::DateTime) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IDataUsage, IDataUsage_Vtbl, 0xc1431dd3_b146_4d39_b959_0c69b096c512);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IDataUsage,
+    IDataUsage_Vtbl,
+    0xc1431dd3_b146_4d39_b959_0c69b096c512
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

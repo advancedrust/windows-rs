@@ -168,7 +168,12 @@ where
     PstValidate(::core::mem::transmute(ptargetname.unwrap_or(::std::ptr::null())), bisclient.into_param().abi(), ::core::mem::transmute(prequestedissuancepolicy.unwrap_or(::std::ptr::null())), ::core::mem::transmute(phadditionalcertstore.unwrap_or(::std::ptr::null())), pcert, ::core::mem::transmute(pprovguid.unwrap_or(::std::ptr::null_mut())))
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAlternativeName, IAlternativeName_Vtbl, 0x728ab313_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAlternativeName,
+    IAlternativeName_Vtbl,
+    0x728ab313_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAlternativeName {
     pub unsafe fn InitializeFromString<P0>(&self, r#type: AlternativeNameType, strvalue: P0) -> ::windows_core::Result<()>
@@ -234,7 +239,12 @@ pub struct IAlternativeName_Vtbl {
     pub get_RawData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAlternativeNames, IAlternativeNames_Vtbl, 0x728ab314_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAlternativeNames,
+    IAlternativeNames_Vtbl,
+    0x728ab314_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAlternativeNames {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -287,7 +297,12 @@ pub struct IAlternativeNames_Vtbl {
     pub Clear: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IBinaryConverter, IBinaryConverter_Vtbl, 0x728ab302_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IBinaryConverter,
+    IBinaryConverter_Vtbl,
+    0x728ab302_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IBinaryConverter {
     pub unsafe fn StringToString<P0>(&self, strencodedin: P0, encodingin: EncodingType, encoding: EncodingType) -> ::windows_core::Result<::windows_core::BSTR>
@@ -331,7 +346,12 @@ pub struct IBinaryConverter_Vtbl {
     StringToVariantByteArray: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IBinaryConverter2, IBinaryConverter2_Vtbl, 0x8d7928b4_4e17_428d_9a17_728df00d1b2b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IBinaryConverter2,
+    IBinaryConverter2_Vtbl,
+    0x8d7928b4_4e17_428d_9a17_728df00d1b2b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IBinaryConverter2 {
     pub unsafe fn StringToString<P0>(&self, strencodedin: P0, encodingin: EncodingType, encoding: EncodingType) -> ::windows_core::Result<::windows_core::BSTR>
@@ -386,7 +406,12 @@ pub struct IBinaryConverter2_Vtbl {
     VariantArrayToStringArray: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICEnroll, ICEnroll_Vtbl, 0x43f8f288_7a20_11d0_8f06_00c04fc295e1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICEnroll,
+    ICEnroll_Vtbl,
+    0x43f8f288_7a20_11d0_8f06_00c04fc295e1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICEnroll {
     pub unsafe fn createFilePKCS10<P0, P1, P2>(&self, dnname: P0, usage: P1, wszpkcs10filename: P2) -> ::windows_core::Result<()>
@@ -720,7 +745,12 @@ pub struct ICEnroll_Vtbl {
     pub SetHashAlgorithm: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstr: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICEnroll2, ICEnroll2_Vtbl, 0x704ca730_c90b_11d1_9bec_00c04fc295e1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICEnroll2,
+    ICEnroll2_Vtbl,
+    0x704ca730_c90b_11d1_9bec_00c04fc295e1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICEnroll2 {
     pub unsafe fn createFilePKCS10<P0, P1, P2>(&self, dnname: P0, usage: P1, wszpkcs10filename: P2) -> ::windows_core::Result<()>
@@ -1037,7 +1067,12 @@ pub struct ICEnroll2_Vtbl {
     pub SetEnableT61DNEncoding: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, fbool: super::super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICEnroll3, ICEnroll3_Vtbl, 0xc28c2d95_b7de_11d2_a421_00c04f79fe8e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICEnroll3,
+    ICEnroll3_Vtbl,
+    0xc28c2d95_b7de_11d2_a421_00c04f79fe8e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICEnroll3 {
     pub unsafe fn createFilePKCS10<P0, P1, P2>(&self, dnname: P0, usage: P1, wszpkcs10filename: P2) -> ::windows_core::Result<()>
@@ -1428,7 +1463,12 @@ pub struct ICEnroll3_Vtbl {
     pub EnableSMIMECapabilities: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, fenablesmimecapabilities: *mut super::super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICEnroll4, ICEnroll4_Vtbl, 0xc1f1188a_2eb5_4a80_841b_7e729a356d90);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICEnroll4,
+    ICEnroll4_Vtbl,
+    0xc1f1188a_2eb5_4a80_841b_7e729a356d90
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICEnroll4 {
     pub unsafe fn createFilePKCS10<P0, P1, P2>(&self, dnname: P0, usage: P1, wszpkcs10filename: P2) -> ::windows_core::Result<()>
@@ -2035,7 +2075,12 @@ pub struct ICEnroll4_Vtbl {
     pub IncludeSubjectKeyID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pfinclude: *mut super::super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertAdmin, ICertAdmin_Vtbl, 0x34df6950_7fb6_11d0_8817_00a0c903b83c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertAdmin,
+    ICertAdmin_Vtbl,
+    0x34df6950_7fb6_11d0_8817_00a0c903b83c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertAdmin {
     pub unsafe fn IsValidCertificate<P0, P1>(&self, strconfig: P0, strserialnumber: P1) -> ::windows_core::Result<i32>
@@ -2130,7 +2175,12 @@ pub struct ICertAdmin_Vtbl {
     pub ImportCertificate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strconfig: ::std::mem::MaybeUninit<::windows_core::BSTR>, strcertificate: ::std::mem::MaybeUninit<::windows_core::BSTR>, flags: CERT_IMPORT_FLAGS, prequestid: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertAdmin2, ICertAdmin2_Vtbl, 0xf7c3ac41_b8ce_4fb4_aa58_3d1dc0e36b39);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertAdmin2,
+    ICertAdmin2_Vtbl,
+    0xf7c3ac41_b8ce_4fb4_aa58_3d1dc0e36b39
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertAdmin2 {
     pub unsafe fn IsValidCertificate<P0, P1>(&self, strconfig: P0, strserialnumber: P1) -> ::windows_core::Result<i32>
@@ -2322,7 +2372,12 @@ pub struct ICertAdmin2_Vtbl {
     pub DeleteRow: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strconfig: ::std::mem::MaybeUninit<::windows_core::BSTR>, flags: CERT_DELETE_ROW_FLAGS, date: f64, table: CVRC_TABLE, rowid: i32, pcdeleted: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertConfig, ICertConfig_Vtbl, 0x372fce34_4324_11d0_8810_00a0c903b83c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertConfig,
+    ICertConfig_Vtbl,
+    0x372fce34_4324_11d0_8810_00a0c903b83c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertConfig {
     pub unsafe fn Reset(&self, index: i32) -> ::windows_core::Result<i32> {
@@ -2358,7 +2413,12 @@ pub struct ICertConfig_Vtbl {
     pub GetConfig: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, flags: i32, pstrout: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertConfig2, ICertConfig2_Vtbl, 0x7a18edde_7e78_4163_8ded_78e2c9cee924);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertConfig2,
+    ICertConfig2_Vtbl,
+    0x7a18edde_7e78_4163_8ded_78e2c9cee924
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertConfig2 {
     pub unsafe fn Reset(&self, index: i32) -> ::windows_core::Result<i32> {
@@ -2397,7 +2457,12 @@ pub struct ICertConfig2_Vtbl {
     pub SetSharedFolder: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strsharedfolder: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertEncodeAltName, ICertEncodeAltName_Vtbl, 0x1c9a8c70_1271_11d1_9bd4_00c04fb683fa);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertEncodeAltName,
+    ICertEncodeAltName_Vtbl,
+    0x1c9a8c70_1271_11d1_9bd4_00c04fb683fa
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeAltName {
     pub unsafe fn Decode<P0>(&self, strbinary: P0) -> ::windows_core::Result<()>
@@ -2448,7 +2513,12 @@ pub struct ICertEncodeAltName_Vtbl {
     pub Encode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstrbinary: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertEncodeAltName2, ICertEncodeAltName2_Vtbl, 0xf67fe177_5ef1_4535_b4ce_29df15e2e0c3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertEncodeAltName2,
+    ICertEncodeAltName2_Vtbl,
+    0xf67fe177_5ef1_4535_b4ce_29df15e2e0c3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeAltName2 {
     pub unsafe fn Decode<P0>(&self, strbinary: P0) -> ::windows_core::Result<()>
@@ -2516,7 +2586,12 @@ pub struct ICertEncodeAltName2_Vtbl {
     pub SetNameEntryBlob: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, nameindex: i32, namechoice: i32, strname: ::std::mem::MaybeUninit<::windows_core::BSTR>, encoding: EncodingType) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertEncodeBitString, ICertEncodeBitString_Vtbl, 0x6db525be_1278_11d1_9bd4_00c04fb683fa);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertEncodeBitString,
+    ICertEncodeBitString_Vtbl,
+    0x6db525be_1278_11d1_9bd4_00c04fb683fa
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeBitString {
     pub unsafe fn Decode<P0>(&self, strbinary: P0) -> ::windows_core::Result<()>
@@ -2554,7 +2629,12 @@ pub struct ICertEncodeBitString_Vtbl {
     pub Encode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bitcount: i32, strbitstring: ::std::mem::MaybeUninit<::windows_core::BSTR>, pstrbinary: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertEncodeBitString2, ICertEncodeBitString2_Vtbl, 0xe070d6e7_23ef_4dd2_8242_ebd9c928cb30);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertEncodeBitString2,
+    ICertEncodeBitString2_Vtbl,
+    0xe070d6e7_23ef_4dd2_8242_ebd9c928cb30
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeBitString2 {
     pub unsafe fn Decode<P0>(&self, strbinary: P0) -> ::windows_core::Result<()>
@@ -2608,7 +2688,12 @@ pub struct ICertEncodeBitString2_Vtbl {
     pub GetBitStringBlob: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pstrbitstring: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertEncodeCRLDistInfo, ICertEncodeCRLDistInfo_Vtbl, 0x01958640_bbff_11d0_8825_00a0c903b83c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertEncodeCRLDistInfo,
+    ICertEncodeCRLDistInfo_Vtbl,
+    0x01958640_bbff_11d0_8825_00a0c903b83c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeCRLDistInfo {
     pub unsafe fn Decode<P0>(&self, strbinary: P0) -> ::windows_core::Result<()>
@@ -2668,7 +2753,12 @@ pub struct ICertEncodeCRLDistInfo_Vtbl {
     pub Encode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstrbinary: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertEncodeCRLDistInfo2, ICertEncodeCRLDistInfo2_Vtbl, 0xb4275d4b_3e30_446f_ad36_09d03120b078);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertEncodeCRLDistInfo2,
+    ICertEncodeCRLDistInfo2_Vtbl,
+    0xb4275d4b_3e30_446f_ad36_09d03120b078
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeCRLDistInfo2 {
     pub unsafe fn Decode<P0>(&self, strbinary: P0) -> ::windows_core::Result<()>
@@ -2731,7 +2821,12 @@ pub struct ICertEncodeCRLDistInfo2_Vtbl {
     pub EncodeBlob: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pstrencodeddata: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertEncodeDateArray, ICertEncodeDateArray_Vtbl, 0x2f9469a0_a470_11d0_8821_00a0c903b83c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertEncodeDateArray,
+    ICertEncodeDateArray_Vtbl,
+    0x2f9469a0_a470_11d0_8821_00a0c903b83c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeDateArray {
     pub unsafe fn Decode<P0>(&self, strbinary: P0) -> ::windows_core::Result<()>
@@ -2774,7 +2869,12 @@ pub struct ICertEncodeDateArray_Vtbl {
     pub Encode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstrbinary: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertEncodeDateArray2, ICertEncodeDateArray2_Vtbl, 0x99a4edb5_2b8e_448d_bf95_bba8d7789dc8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertEncodeDateArray2,
+    ICertEncodeDateArray2_Vtbl,
+    0x99a4edb5_2b8e_448d_bf95_bba8d7789dc8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeDateArray2 {
     pub unsafe fn Decode<P0>(&self, strbinary: P0) -> ::windows_core::Result<()>
@@ -2823,7 +2923,12 @@ pub struct ICertEncodeDateArray2_Vtbl {
     pub EncodeBlob: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pstrencodeddata: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertEncodeLongArray, ICertEncodeLongArray_Vtbl, 0x15e2f230_a0a2_11d0_8821_00a0c903b83c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertEncodeLongArray,
+    ICertEncodeLongArray_Vtbl,
+    0x15e2f230_a0a2_11d0_8821_00a0c903b83c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeLongArray {
     pub unsafe fn Decode<P0>(&self, strbinary: P0) -> ::windows_core::Result<()>
@@ -2866,7 +2971,12 @@ pub struct ICertEncodeLongArray_Vtbl {
     pub Encode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstrbinary: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertEncodeLongArray2, ICertEncodeLongArray2_Vtbl, 0x4efde84a_bd9b_4fc2_a108_c347d478840f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertEncodeLongArray2,
+    ICertEncodeLongArray2_Vtbl,
+    0x4efde84a_bd9b_4fc2_a108_c347d478840f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeLongArray2 {
     pub unsafe fn Decode<P0>(&self, strbinary: P0) -> ::windows_core::Result<()>
@@ -2915,7 +3025,12 @@ pub struct ICertEncodeLongArray2_Vtbl {
     pub EncodeBlob: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pstrencodeddata: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertEncodeStringArray, ICertEncodeStringArray_Vtbl, 0x12a88820_7494_11d0_8816_00a0c903b83c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertEncodeStringArray,
+    ICertEncodeStringArray_Vtbl,
+    0x12a88820_7494_11d0_8816_00a0c903b83c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeStringArray {
     pub unsafe fn Decode<P0>(&self, strbinary: P0) -> ::windows_core::Result<()>
@@ -2966,7 +3081,12 @@ pub struct ICertEncodeStringArray_Vtbl {
     pub Encode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstrbinary: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertEncodeStringArray2, ICertEncodeStringArray2_Vtbl, 0x9c680d93_9b7d_4e95_9018_4ffe10ba5ada);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertEncodeStringArray2,
+    ICertEncodeStringArray2_Vtbl,
+    0x9c680d93_9b7d_4e95_9018_4ffe10ba5ada
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertEncodeStringArray2 {
     pub unsafe fn Decode<P0>(&self, strbinary: P0) -> ::windows_core::Result<()>
@@ -3022,7 +3142,12 @@ pub struct ICertEncodeStringArray2_Vtbl {
     pub EncodeBlob: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pstrencodeddata: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertExit, ICertExit_Vtbl, 0xe19ae1a0_7364_11d0_8816_00a0c903b83c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertExit,
+    ICertExit_Vtbl,
+    0xe19ae1a0_7364_11d0_8816_00a0c903b83c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertExit {
     pub unsafe fn Initialize<P0>(&self, strconfig: P0) -> ::windows_core::Result<CERT_EXIT_EVENT_MASK>
@@ -3052,7 +3177,12 @@ pub struct ICertExit_Vtbl {
     pub GetDescription: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstrdescription: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertExit2, ICertExit2_Vtbl, 0x0abf484b_d049_464d_a7ed_552e7529b0ff);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertExit2,
+    ICertExit2_Vtbl,
+    0x0abf484b_d049_464d_a7ed_552e7529b0ff
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertExit2 {
     pub unsafe fn Initialize<P0>(&self, strconfig: P0) -> ::windows_core::Result<CERT_EXIT_EVENT_MASK>
@@ -3089,7 +3219,12 @@ pub struct ICertExit2_Vtbl {
     GetManageModule: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertGetConfig, ICertGetConfig_Vtbl, 0xc7ea09c0_ce17_11d0_8833_00a0c903b83c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertGetConfig,
+    ICertGetConfig_Vtbl,
+    0xc7ea09c0_ce17_11d0_8833_00a0c903b83c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertGetConfig {
     pub unsafe fn GetConfig(&self, flags: CERT_GET_CONFIG_FLAGS) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3107,7 +3242,12 @@ pub struct ICertGetConfig_Vtbl {
     pub GetConfig: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, flags: CERT_GET_CONFIG_FLAGS, pstrout: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertManageModule, ICertManageModule_Vtbl, 0xe7d7ad42_bd3d_11d1_9a4d_00c04fc297eb);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertManageModule,
+    ICertManageModule_Vtbl,
+    0xe7d7ad42_bd3d_11d1_9a4d_00c04fc297eb
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertManageModule {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -3157,7 +3297,12 @@ pub struct ICertManageModule_Vtbl {
     pub Configure: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strconfig: ::std::mem::MaybeUninit<::windows_core::BSTR>, strstoragelocation: ::std::mem::MaybeUninit<::windows_core::BSTR>, flags: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPolicy, ICertPolicy_Vtbl, 0x38bb5a00_7636_11d0_b413_00a0c91bbf8c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPolicy,
+    ICertPolicy_Vtbl,
+    0x38bb5a00_7636_11d0_b413_00a0c91bbf8c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPolicy {
     pub unsafe fn Initialize<P0>(&self, strconfig: P0) -> ::windows_core::Result<()>
@@ -3194,7 +3339,12 @@ pub struct ICertPolicy_Vtbl {
     pub ShutDown: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPolicy2, ICertPolicy2_Vtbl, 0x3db4910e_8001_4bf1_aa1b_f43a808317a0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPolicy2,
+    ICertPolicy2_Vtbl,
+    0x3db4910e_8001_4bf1_aa1b_f43a808317a0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPolicy2 {
     pub unsafe fn Initialize<P0>(&self, strconfig: P0) -> ::windows_core::Result<()>
@@ -3237,7 +3387,12 @@ pub struct ICertPolicy2_Vtbl {
     GetManageModule: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertProperties, ICertProperties_Vtbl, 0x728ab32f_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertProperties,
+    ICertProperties_Vtbl,
+    0x728ab32f_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertProperties {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3298,7 +3453,12 @@ pub struct ICertProperties_Vtbl {
     pub InitializeFromCertificate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, machinecontext: super::super::super::Foundation::VARIANT_BOOL, encoding: EncodingType, strcertificate: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertProperty, ICertProperty_Vtbl, 0x728ab32e_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertProperty,
+    ICertProperty_Vtbl,
+    0x728ab32e_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertProperty {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -3356,7 +3516,12 @@ pub struct ICertProperty_Vtbl {
     pub SetValueOnCertificate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, machinecontext: super::super::super::Foundation::VARIANT_BOOL, encoding: EncodingType, strcertificate: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPropertyArchived, ICertPropertyArchived_Vtbl, 0x728ab337_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPropertyArchived,
+    ICertPropertyArchived_Vtbl,
+    0x728ab337_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyArchived {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -3419,7 +3584,12 @@ pub struct ICertPropertyArchived_Vtbl {
     pub Archived: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPropertyArchivedKeyHash, ICertPropertyArchivedKeyHash_Vtbl, 0x728ab33b_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPropertyArchivedKeyHash,
+    ICertPropertyArchivedKeyHash_Vtbl,
+    0x728ab33b_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyArchivedKeyHash {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -3482,7 +3652,12 @@ pub struct ICertPropertyArchivedKeyHash_Vtbl {
     pub get_ArchivedKeyHash: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPropertyAutoEnroll, ICertPropertyAutoEnroll_Vtbl, 0x728ab332_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPropertyAutoEnroll,
+    ICertPropertyAutoEnroll_Vtbl,
+    0x728ab332_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyAutoEnroll {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -3545,7 +3720,12 @@ pub struct ICertPropertyAutoEnroll_Vtbl {
     pub TemplateName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPropertyBackedUp, ICertPropertyBackedUp_Vtbl, 0x728ab338_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPropertyBackedUp,
+    ICertPropertyBackedUp_Vtbl,
+    0x728ab338_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyBackedUp {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -3620,7 +3800,12 @@ pub struct ICertPropertyBackedUp_Vtbl {
     pub BackedUpTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdate: *mut f64) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPropertyDescription, ICertPropertyDescription_Vtbl, 0x728ab331_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPropertyDescription,
+    ICertPropertyDescription_Vtbl,
+    0x728ab331_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyDescription {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -3683,7 +3868,12 @@ pub struct ICertPropertyDescription_Vtbl {
     pub Description: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPropertyEnrollment, ICertPropertyEnrollment_Vtbl, 0x728ab339_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPropertyEnrollment,
+    ICertPropertyEnrollment_Vtbl,
+    0x728ab339_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyEnrollment {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -3763,7 +3953,12 @@ pub struct ICertPropertyEnrollment_Vtbl {
     pub FriendlyName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPropertyEnrollmentPolicyServer, ICertPropertyEnrollmentPolicyServer_Vtbl, 0x728ab34a_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPropertyEnrollmentPolicyServer,
+    ICertPropertyEnrollmentPolicyServer_Vtbl,
+    0x728ab34a_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyEnrollmentPolicyServer {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -3864,7 +4059,12 @@ pub struct ICertPropertyEnrollmentPolicyServer_Vtbl {
     pub GetEnrollmentServerAuthentication: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut X509EnrollmentAuthFlags) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPropertyFriendlyName, ICertPropertyFriendlyName_Vtbl, 0x728ab330_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPropertyFriendlyName,
+    ICertPropertyFriendlyName_Vtbl,
+    0x728ab330_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyFriendlyName {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -3927,7 +4127,12 @@ pub struct ICertPropertyFriendlyName_Vtbl {
     pub FriendlyName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPropertyKeyProvInfo, ICertPropertyKeyProvInfo_Vtbl, 0x728ab336_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPropertyKeyProvInfo,
+    ICertPropertyKeyProvInfo_Vtbl,
+    0x728ab336_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyKeyProvInfo {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -4000,7 +4205,12 @@ pub struct ICertPropertyKeyProvInfo_Vtbl {
     PrivateKey: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPropertyRenewal, ICertPropertyRenewal_Vtbl, 0x728ab33a_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPropertyRenewal,
+    ICertPropertyRenewal_Vtbl,
+    0x728ab33a_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyRenewal {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -4071,7 +4281,12 @@ pub struct ICertPropertyRenewal_Vtbl {
     pub get_Renewal: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPropertyRequestOriginator, ICertPropertyRequestOriginator_Vtbl, 0x728ab333_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPropertyRequestOriginator,
+    ICertPropertyRequestOriginator_Vtbl,
+    0x728ab333_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertyRequestOriginator {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -4138,7 +4353,12 @@ pub struct ICertPropertyRequestOriginator_Vtbl {
     pub RequestOriginator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertPropertySHA1Hash, ICertPropertySHA1Hash_Vtbl, 0x728ab334_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertPropertySHA1Hash,
+    ICertPropertySHA1Hash_Vtbl,
+    0x728ab334_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertPropertySHA1Hash {
     pub unsafe fn InitializeFromCertificate<P0, P1>(&self, machinecontext: P0, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -4201,7 +4421,12 @@ pub struct ICertPropertySHA1Hash_Vtbl {
     pub get_SHA1Hash: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertRequest, ICertRequest_Vtbl, 0x014e4840_5523_11d0_8812_00a0c903b83c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertRequest,
+    ICertRequest_Vtbl,
+    0x014e4840_5523_11d0_8812_00a0c903b83c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertRequest {
     pub unsafe fn Submit<P0, P1, P2>(&self, flags: i32, strrequest: P0, strattributes: P1, strconfig: P2) -> ::windows_core::Result<i32>
@@ -4260,7 +4485,12 @@ pub struct ICertRequest_Vtbl {
     pub GetCertificate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, flags: i32, pstrcertificate: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertRequest2, ICertRequest2_Vtbl, 0xa4772988_4a85_4fa9_824e_b5cf5c16405a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertRequest2,
+    ICertRequest2_Vtbl,
+    0xa4772988_4a85_4fa9_824e_b5cf5c16405a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertRequest2 {
     pub unsafe fn Submit<P0, P1, P2>(&self, flags: i32, strrequest: P0, strattributes: P1, strconfig: P2) -> ::windows_core::Result<i32>
@@ -4365,7 +4595,12 @@ pub struct ICertRequest2_Vtbl {
     GetFullResponseProperty: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertRequest3, ICertRequest3_Vtbl, 0xafc8f92b_33a2_4861_bf36_2933b7cd67b3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertRequest3,
+    ICertRequest3_Vtbl,
+    0xafc8f92b_33a2_4861_bf36_2933b7cd67b3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertRequest3 {
     pub unsafe fn Submit<P0, P1, P2>(&self, flags: i32, strrequest: P0, strattributes: P1, strconfig: P2) -> ::windows_core::Result<i32>
@@ -4578,7 +4813,12 @@ pub struct ICertRequestD2_Vtbl {
     pub Ping2: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pwszauthority: ::windows_core::PCWSTR) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertServerExit, ICertServerExit_Vtbl, 0x4ba9eb90_732c_11d0_8816_00a0c903b83c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertServerExit,
+    ICertServerExit_Vtbl,
+    0x4ba9eb90_732c_11d0_8816_00a0c903b83c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertServerExit {
     pub unsafe fn SetContext(&self, context: i32) -> ::windows_core::Result<()> {
@@ -4673,7 +4913,12 @@ pub struct ICertServerExit_Vtbl {
     pub EnumerateAttributesClose: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertServerPolicy, ICertServerPolicy_Vtbl, 0xaa000922_ffbe_11cf_8800_00a0c903b83c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertServerPolicy,
+    ICertServerPolicy_Vtbl,
+    0xaa000922_ffbe_11cf_8800_00a0c903b83c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertServerPolicy {
     pub unsafe fn SetContext(&self, context: i32) -> ::windows_core::Result<()> {
@@ -4792,7 +5037,12 @@ pub struct ICertServerPolicy_Vtbl {
     pub EnumerateAttributesClose: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertView, ICertView_Vtbl, 0xc3fac344_1e84_11d1_9bd6_00c04fb683fa);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertView,
+    ICertView_Vtbl,
+    0xc3fac344_1e84_11d1_9bd6_00c04fb683fa
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertView {
     pub unsafe fn OpenConnection<P0>(&self, strconfig: P0) -> ::windows_core::Result<()>
@@ -4860,7 +5110,12 @@ pub struct ICertView_Vtbl {
     OpenView: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertView2, ICertView2_Vtbl, 0xd594b282_8851_4b61_9c66_3edadf848863);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertView2,
+    ICertView2_Vtbl,
+    0xd594b282_8851_4b61_9c66_3edadf848863
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertView2 {
     pub unsafe fn OpenConnection<P0>(&self, strconfig: P0) -> ::windows_core::Result<()>
@@ -4915,7 +5170,12 @@ pub struct ICertView2_Vtbl {
     pub SetTable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, table: CVRC_TABLE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertificateAttestationChallenge, ICertificateAttestationChallenge_Vtbl, 0x6f175a7c_4a3a_40ae_9dba_592fd6bbf9b8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertificateAttestationChallenge,
+    ICertificateAttestationChallenge_Vtbl,
+    0x6f175a7c_4a3a_40ae_9dba_592fd6bbf9b8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificateAttestationChallenge {
     pub unsafe fn Initialize<P0>(&self, encoding: EncodingType, strpendingfullcmcresponsewithchallenge: P0) -> ::windows_core::Result<()>
@@ -4945,7 +5205,12 @@ pub struct ICertificateAttestationChallenge_Vtbl {
     pub RequestID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstrrequestid: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertificateAttestationChallenge2, ICertificateAttestationChallenge2_Vtbl, 0x4631334d_e266_47d6_bd79_be53cb2e2753);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertificateAttestationChallenge2,
+    ICertificateAttestationChallenge2_Vtbl,
+    0x4631334d_e266_47d6_bd79_be53cb2e2753
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificateAttestationChallenge2 {
     pub unsafe fn Initialize<P0>(&self, encoding: EncodingType, strpendingfullcmcresponsewithchallenge: P0) -> ::windows_core::Result<()>
@@ -4986,7 +5251,12 @@ pub struct ICertificateAttestationChallenge2_Vtbl {
     pub put_KeyBlob: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, value: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertificatePolicies, ICertificatePolicies_Vtbl, 0x728ab31f_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertificatePolicies,
+    ICertificatePolicies_Vtbl,
+    0x728ab31f_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificatePolicies {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5039,7 +5309,12 @@ pub struct ICertificatePolicies_Vtbl {
     pub Clear: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertificatePolicy, ICertificatePolicy_Vtbl, 0x728ab31e_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertificatePolicy,
+    ICertificatePolicy_Vtbl,
+    0x728ab31e_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificatePolicy {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5084,7 +5359,12 @@ pub struct ICertificatePolicy_Vtbl {
     PolicyQualifiers: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertificationAuthorities, ICertificationAuthorities_Vtbl, 0x13b79005_2181_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertificationAuthorities,
+    ICertificationAuthorities_Vtbl,
+    0x13b79005_2181_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificationAuthorities {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5154,7 +5434,12 @@ pub struct ICertificationAuthorities_Vtbl {
     get_ItemByName: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICertificationAuthority, ICertificationAuthority_Vtbl, 0x835d1f61_1e95_4bc8_b4d3_976c42b968f7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICertificationAuthority,
+    ICertificationAuthority_Vtbl,
+    0x835d1f61_1e95_4bc8_b4d3_976c42b968f7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICertificationAuthority {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -5177,7 +5462,12 @@ pub struct ICertificationAuthority_Vtbl {
     get_Property: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICryptAttribute, ICryptAttribute_Vtbl, 0x728ab32c_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICryptAttribute,
+    ICryptAttribute_Vtbl,
+    0x728ab32c_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICryptAttribute {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5234,7 +5524,12 @@ pub struct ICryptAttribute_Vtbl {
     Values: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICryptAttributes, ICryptAttributes_Vtbl, 0x728ab32d_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICryptAttributes,
+    ICryptAttributes_Vtbl,
+    0x728ab32d_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICryptAttributes {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5312,7 +5607,12 @@ pub struct ICryptAttributes_Vtbl {
     AddRange: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICspAlgorithm, ICspAlgorithm_Vtbl, 0x728ab305_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICspAlgorithm,
+    ICspAlgorithm_Vtbl,
+    0x728ab305_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICspAlgorithm {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5380,7 +5680,12 @@ pub struct ICspAlgorithm_Vtbl {
     pub Operations: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut AlgorithmOperationFlags) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICspAlgorithms, ICspAlgorithms_Vtbl, 0x728ab306_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICspAlgorithms,
+    ICspAlgorithms_Vtbl,
+    0x728ab306_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICspAlgorithms {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5459,7 +5764,12 @@ pub struct ICspAlgorithms_Vtbl {
     get_IndexByObjectId: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICspInformation, ICspInformation_Vtbl, 0x728ab307_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICspInformation,
+    ICspInformation_Vtbl,
+    0x728ab307_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICspInformation {
     pub unsafe fn InitializeFromName<P0>(&self, strname: P0) -> ::windows_core::Result<()>
@@ -5583,7 +5893,12 @@ pub struct ICspInformation_Vtbl {
     GetCspStatusFromOperations: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICspInformations, ICspInformations_Vtbl, 0x728ab308_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICspInformations,
+    ICspInformations_Vtbl,
+    0x728ab308_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICspInformations {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5705,7 +6020,12 @@ pub struct ICspInformations_Vtbl {
     GetHashAlgorithms: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICspStatus, ICspStatus_Vtbl, 0x728ab309_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICspStatus,
+    ICspStatus_Vtbl,
+    0x728ab309_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICspStatus {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5775,7 +6095,12 @@ pub struct ICspStatus_Vtbl {
     pub DisplayName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICspStatuses, ICspStatuses_Vtbl, 0x728ab30a_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICspStatuses,
+    ICspStatuses_Vtbl,
+    0x728ab30a_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICspStatuses {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -7179,7 +7504,12 @@ pub struct IEnroll4_Vtbl {
     pub IncludeSubjectKeyID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pfinclude: *mut super::super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IEnumCERTVIEWATTRIBUTE, IEnumCERTVIEWATTRIBUTE_Vtbl, 0xe77db656_7653_11d1_9bde_00c04fb683fa);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IEnumCERTVIEWATTRIBUTE,
+    IEnumCERTVIEWATTRIBUTE_Vtbl,
+    0xe77db656_7653_11d1_9bde_00c04fb683fa
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IEnumCERTVIEWATTRIBUTE {
     pub unsafe fn Next(&self, pindex: *mut i32) -> ::windows_core::Result<()> {
@@ -7222,7 +7552,12 @@ pub struct IEnumCERTVIEWATTRIBUTE_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IEnumCERTVIEWCOLUMN, IEnumCERTVIEWCOLUMN_Vtbl, 0x9c735be2_57a5_11d1_9bdb_00c04fb683fa);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IEnumCERTVIEWCOLUMN,
+    IEnumCERTVIEWCOLUMN_Vtbl,
+    0x9c735be2_57a5_11d1_9bdb_00c04fb683fa
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IEnumCERTVIEWCOLUMN {
     pub unsafe fn Next(&self, pindex: *mut i32) -> ::windows_core::Result<()> {
@@ -7286,7 +7621,12 @@ pub struct IEnumCERTVIEWCOLUMN_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IEnumCERTVIEWEXTENSION, IEnumCERTVIEWEXTENSION_Vtbl, 0xe7dd1466_7653_11d1_9bde_00c04fb683fa);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IEnumCERTVIEWEXTENSION,
+    IEnumCERTVIEWEXTENSION_Vtbl,
+    0xe7dd1466_7653_11d1_9bde_00c04fb683fa
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IEnumCERTVIEWEXTENSION {
     pub unsafe fn Next(&self, pindex: *mut i32) -> ::windows_core::Result<()> {
@@ -7338,7 +7678,12 @@ pub struct IEnumCERTVIEWEXTENSION_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IEnumCERTVIEWROW, IEnumCERTVIEWROW_Vtbl, 0xd1157f4c_5af2_11d1_9bdc_00c04fb683fa);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IEnumCERTVIEWROW,
+    IEnumCERTVIEWROW_Vtbl,
+    0xd1157f4c_5af2_11d1_9bdc_00c04fb683fa
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IEnumCERTVIEWROW {
     pub unsafe fn Next(&self, pindex: *mut i32) -> ::windows_core::Result<()> {
@@ -7449,7 +7794,12 @@ pub struct INDESPolicy_Vtbl {
     pub Notify: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pwszchallenge: ::windows_core::PCWSTR, pwsztransactionid: ::windows_core::PCWSTR, disposition: X509SCEPDisposition, lasthresult: i32, pctbissuedcertencoded: *mut CERTTRANSBLOB) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IOCSPAdmin, IOCSPAdmin_Vtbl, 0x322e830d_67db_4fe9_9577_4596d9f09294);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IOCSPAdmin,
+    IOCSPAdmin_Vtbl,
+    0x322e830d_67db_4fe9_9577_4596d9f09294
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IOCSPAdmin {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -7556,7 +7906,12 @@ pub struct IOCSPAdmin_Vtbl {
     GetHashAlgorithms: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IOCSPCAConfiguration, IOCSPCAConfiguration_Vtbl, 0xaec92b40_3d46_433f_87d1_b84d5c1e790d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IOCSPCAConfiguration,
+    IOCSPCAConfiguration_Vtbl,
+    0xaec92b40_3d46_433f_87d1_b84d5c1e790d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IOCSPCAConfiguration {
     pub unsafe fn Identifier(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -7727,7 +8082,12 @@ pub struct IOCSPCAConfiguration_Vtbl {
     pub SetCAConfig: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, newval: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IOCSPCAConfigurationCollection, IOCSPCAConfigurationCollection_Vtbl, 0x2bebea0b_5ece_4f28_a91c_86b4bb20f0d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IOCSPCAConfigurationCollection,
+    IOCSPCAConfigurationCollection_Vtbl,
+    0x2bebea0b_5ece_4f28_a91c_86b4bb20f0d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IOCSPCAConfigurationCollection {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -7793,7 +8153,12 @@ pub struct IOCSPCAConfigurationCollection_Vtbl {
     pub DeleteCAConfiguration: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstridentifier: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IOCSPProperty, IOCSPProperty_Vtbl, 0x66fb7839_5f04_4c25_ad18_9ff1a8376ee0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IOCSPProperty,
+    IOCSPProperty_Vtbl,
+    0x66fb7839_5f04_4c25_ad18_9ff1a8376ee0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IOCSPProperty {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -7835,7 +8200,12 @@ pub struct IOCSPProperty_Vtbl {
     pub Modified: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pval: *mut super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IOCSPPropertyCollection, IOCSPPropertyCollection_Vtbl, 0x2597c18d_54e6_4b74_9fa9_a6bfda99cbbe);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IOCSPPropertyCollection,
+    IOCSPPropertyCollection_Vtbl,
+    0x2597c18d_54e6_4b74_9fa9_a6bfda99cbbe
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IOCSPPropertyCollection {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -7920,7 +8290,12 @@ pub struct IOCSPPropertyCollection_Vtbl {
     GetAllProperties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IObjectId, IObjectId_Vtbl, 0x728ab300_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IObjectId,
+    IObjectId_Vtbl,
+    0x728ab300_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IObjectId {
     pub unsafe fn InitializeFromName(&self, name: CERTENROLL_OBJECTID) -> ::windows_core::Result<()> {
@@ -7978,7 +8353,12 @@ pub struct IObjectId_Vtbl {
     pub GetAlgorithmName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, groupid: ObjectIdGroupId, keyflags: ObjectIdPublicKeyFlags, pstralgorithmname: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IObjectIds, IObjectIds_Vtbl, 0x728ab301_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IObjectIds,
+    IObjectIds_Vtbl,
+    0x728ab301_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IObjectIds {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8043,7 +8423,12 @@ pub struct IObjectIds_Vtbl {
     AddRange: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPolicyQualifier, IPolicyQualifier_Vtbl, 0x728ab31c_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPolicyQualifier,
+    IPolicyQualifier_Vtbl,
+    0x728ab31c_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPolicyQualifier {
     pub unsafe fn InitializeEncode<P0>(&self, strqualifier: P0, r#type: PolicyQualifierType) -> ::windows_core::Result<()>
@@ -8088,7 +8473,12 @@ pub struct IPolicyQualifier_Vtbl {
     pub get_RawData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPolicyQualifiers, IPolicyQualifiers_Vtbl, 0x728ab31d_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPolicyQualifiers,
+    IPolicyQualifiers_Vtbl,
+    0x728ab31d_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPolicyQualifiers {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8141,7 +8531,12 @@ pub struct IPolicyQualifiers_Vtbl {
     pub Clear: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISignerCertificate, ISignerCertificate_Vtbl, 0x728ab33d_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISignerCertificate,
+    ISignerCertificate_Vtbl,
+    0x728ab33d_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISignerCertificate {
     pub unsafe fn Initialize<P0, P1>(&self, machinecontext: P0, verifytype: X509PrivateKeyVerify, encoding: EncodingType, strcertificate: P1) -> ::windows_core::Result<()>
@@ -8227,7 +8622,12 @@ pub struct ISignerCertificate_Vtbl {
     SignatureInformation: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISignerCertificates, ISignerCertificates_Vtbl, 0x728ab33e_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISignerCertificates,
+    ISignerCertificates_Vtbl,
+    0x728ab33e_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISignerCertificates {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8293,7 +8693,12 @@ pub struct ISignerCertificates_Vtbl {
     Find: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISmimeCapabilities, ISmimeCapabilities_Vtbl, 0x728ab31a_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISmimeCapabilities,
+    ISmimeCapabilities_Vtbl,
+    0x728ab31a_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISmimeCapabilities {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8365,7 +8770,12 @@ pub struct ISmimeCapabilities_Vtbl {
     pub AddAvailableSmimeCapabilities: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, machinecontext: super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISmimeCapability, ISmimeCapability_Vtbl, 0x728ab319_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISmimeCapability,
+    ISmimeCapability_Vtbl,
+    0x728ab319_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISmimeCapability {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8405,7 +8815,12 @@ pub struct ISmimeCapability_Vtbl {
     pub BitCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX500DistinguishedName, IX500DistinguishedName_Vtbl, 0x728ab303_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX500DistinguishedName,
+    IX500DistinguishedName_Vtbl,
+    0x728ab303_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX500DistinguishedName {
     pub unsafe fn Decode<P0>(&self, strencodedname: P0, encoding: EncodingType, nameflags: X500NameFlags) -> ::windows_core::Result<()>
@@ -8442,7 +8857,12 @@ pub struct IX500DistinguishedName_Vtbl {
     pub get_EncodedName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509Attribute, IX509Attribute_Vtbl, 0x728ab322_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509Attribute,
+    IX509Attribute_Vtbl,
+    0x728ab322_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509Attribute {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8483,7 +8903,12 @@ pub struct IX509Attribute_Vtbl {
     pub get_RawData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509AttributeArchiveKey, IX509AttributeArchiveKey_Vtbl, 0x728ab327_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509AttributeArchiveKey,
+    IX509AttributeArchiveKey_Vtbl,
+    0x728ab327_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeArchiveKey {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8556,7 +8981,12 @@ pub struct IX509AttributeArchiveKey_Vtbl {
     pub EncryptionStrength: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509AttributeArchiveKeyHash, IX509AttributeArchiveKeyHash_Vtbl, 0x728ab328_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509AttributeArchiveKeyHash,
+    IX509AttributeArchiveKeyHash_Vtbl,
+    0x728ab328_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeArchiveKeyHash {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8607,7 +9037,12 @@ pub struct IX509AttributeArchiveKeyHash_Vtbl {
     pub get_EncryptedKeyHashBlob: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509AttributeClientId, IX509AttributeClientId_Vtbl, 0x728ab325_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509AttributeClientId,
+    IX509AttributeClientId_Vtbl,
+    0x728ab325_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeClientId {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8675,7 +9110,12 @@ pub struct IX509AttributeClientId_Vtbl {
     pub ProcessName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509AttributeCspProvider, IX509AttributeCspProvider_Vtbl, 0x728ab32b_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509AttributeCspProvider,
+    IX509AttributeCspProvider_Vtbl,
+    0x728ab32b_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeCspProvider {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8737,7 +9177,12 @@ pub struct IX509AttributeCspProvider_Vtbl {
     pub get_Signature: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509AttributeExtensions, IX509AttributeExtensions_Vtbl, 0x728ab324_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509AttributeExtensions,
+    IX509AttributeExtensions_Vtbl,
+    0x728ab324_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeExtensions {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8798,7 +9243,12 @@ pub struct IX509AttributeExtensions_Vtbl {
     X509Extensions: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509AttributeOSVersion, IX509AttributeOSVersion_Vtbl, 0x728ab32a_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509AttributeOSVersion,
+    IX509AttributeOSVersion_Vtbl,
+    0x728ab32a_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeOSVersion {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8849,7 +9299,12 @@ pub struct IX509AttributeOSVersion_Vtbl {
     pub OSVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509AttributeRenewalCertificate, IX509AttributeRenewalCertificate_Vtbl, 0x728ab326_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509AttributeRenewalCertificate,
+    IX509AttributeRenewalCertificate_Vtbl,
+    0x728ab326_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509AttributeRenewalCertificate {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8900,7 +9355,12 @@ pub struct IX509AttributeRenewalCertificate_Vtbl {
     pub get_RenewalCertificate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509Attributes, IX509Attributes_Vtbl, 0x728ab323_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509Attributes,
+    IX509Attributes_Vtbl,
+    0x728ab323_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509Attributes {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -8953,7 +9413,12 @@ pub struct IX509Attributes_Vtbl {
     pub Clear: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRequest, IX509CertificateRequest_Vtbl, 0x728ab341_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRequest,
+    IX509CertificateRequest_Vtbl,
+    0x728ab341_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequest {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -9125,7 +9590,12 @@ pub struct IX509CertificateRequest_Vtbl {
     pub get_RawData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRequestCertificate, IX509CertificateRequestCertificate_Vtbl, 0x728ab343_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRequestCertificate,
+    IX509CertificateRequestCertificate_Vtbl,
+    0x728ab343_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestCertificate {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -9500,7 +9970,12 @@ pub struct IX509CertificateRequestCertificate_Vtbl {
     SetSignerCertificate: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRequestCertificate2, IX509CertificateRequestCertificate2_Vtbl, 0x728ab35a_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRequestCertificate2,
+    IX509CertificateRequestCertificate2_Vtbl,
+    0x728ab35a_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestCertificate2 {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -9896,7 +10371,12 @@ pub struct IX509CertificateRequestCertificate2_Vtbl {
     Template: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRequestCmc, IX509CertificateRequestCmc_Vtbl, 0x728ab345_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRequestCmc,
+    IX509CertificateRequestCmc_Vtbl,
+    0x728ab345_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestCmc {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -10258,7 +10738,12 @@ pub struct IX509CertificateRequestCmc_Vtbl {
     SignerCertificates: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRequestCmc2, IX509CertificateRequestCmc2_Vtbl, 0x728ab35d_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRequestCmc2,
+    IX509CertificateRequestCmc2_Vtbl,
+    0x728ab35d_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestCmc2 {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -10628,7 +11113,12 @@ pub struct IX509CertificateRequestCmc2_Vtbl {
     CheckCertificateSignature: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRequestPkcs10, IX509CertificateRequestPkcs10_Vtbl, 0x728ab342_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRequestPkcs10,
+    IX509CertificateRequestPkcs10_Vtbl,
+    0x728ab342_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestPkcs10 {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -10987,7 +11477,12 @@ pub struct IX509CertificateRequestPkcs10_Vtbl {
     GetCspStatuses: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRequestPkcs10V2, IX509CertificateRequestPkcs10V2_Vtbl, 0x728ab35b_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRequestPkcs10V2,
+    IX509CertificateRequestPkcs10V2_Vtbl,
+    0x728ab35b_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestPkcs10V2 {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -11337,7 +11832,12 @@ pub struct IX509CertificateRequestPkcs10V2_Vtbl {
     Template: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRequestPkcs10V3, IX509CertificateRequestPkcs10V3_Vtbl, 0x54ea9942_3d66_4530_b76e_7c9170d3ec52);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRequestPkcs10V3,
+    IX509CertificateRequestPkcs10V3_Vtbl,
+    0x54ea9942_3d66_4530_b76e_7c9170d3ec52
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestPkcs10V3 {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -11744,7 +12244,12 @@ pub struct IX509CertificateRequestPkcs10V3_Vtbl {
     NameValuePairs: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRequestPkcs10V4, IX509CertificateRequestPkcs10V4_Vtbl, 0x728ab363_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRequestPkcs10V4,
+    IX509CertificateRequestPkcs10V4_Vtbl,
+    0x728ab363_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestPkcs10V4 {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -12152,7 +12657,12 @@ pub struct IX509CertificateRequestPkcs10V4_Vtbl {
     pub SetAttestPrivateKeyPreferred: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRequestPkcs7, IX509CertificateRequestPkcs7_Vtbl, 0x728ab344_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRequestPkcs7,
+    IX509CertificateRequestPkcs7_Vtbl,
+    0x728ab344_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestPkcs7 {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -12352,7 +12862,12 @@ pub struct IX509CertificateRequestPkcs7_Vtbl {
     SetSignerCertificate: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRequestPkcs7V2, IX509CertificateRequestPkcs7V2_Vtbl, 0x728ab35c_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRequestPkcs7V2,
+    IX509CertificateRequestPkcs7V2_Vtbl,
+    0x728ab35c_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRequestPkcs7V2 {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -12575,7 +13090,12 @@ pub struct IX509CertificateRequestPkcs7V2_Vtbl {
     pub CheckCertificateSignature: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, validatecertificatechain: super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRevocationList, IX509CertificateRevocationList_Vtbl, 0x728ab360_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRevocationList,
+    IX509CertificateRevocationList_Vtbl,
+    0x728ab360_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRevocationList {
     pub unsafe fn Initialize(&self) -> ::windows_core::Result<()> {
@@ -12805,7 +13325,12 @@ pub struct IX509CertificateRevocationList_Vtbl {
     pub get_Signature: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRevocationListEntries, IX509CertificateRevocationListEntries_Vtbl, 0x728ab35f_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRevocationListEntries,
+    IX509CertificateRevocationListEntries_Vtbl,
+    0x728ab35f_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRevocationListEntries {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -12878,7 +13403,12 @@ pub struct IX509CertificateRevocationListEntries_Vtbl {
     AddRange: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateRevocationListEntry, IX509CertificateRevocationListEntry_Vtbl, 0x728ab35e_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateRevocationListEntry,
+    IX509CertificateRevocationListEntry_Vtbl,
+    0x728ab35e_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateRevocationListEntry {
     pub unsafe fn Initialize<P0>(&self, encoding: EncodingType, serialnumber: P0, revocationdate: f64) -> ::windows_core::Result<()>
@@ -12937,7 +13467,12 @@ pub struct IX509CertificateRevocationListEntry_Vtbl {
     CriticalExtensions: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateTemplate, IX509CertificateTemplate_Vtbl, 0x54244a13_555a_4e22_896d_1b0e52f76406);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateTemplate,
+    IX509CertificateTemplate_Vtbl,
+    0x54244a13_555a_4e22_896d_1b0e52f76406
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateTemplate {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -12960,7 +13495,12 @@ pub struct IX509CertificateTemplate_Vtbl {
     get_Property: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateTemplateWritable, IX509CertificateTemplateWritable_Vtbl, 0xf49466a7_395a_4e9e_b6e7_32b331600dc0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateTemplateWritable,
+    IX509CertificateTemplateWritable_Vtbl,
+    0xf49466a7_395a_4e9e_b6e7_32b331600dc0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateTemplateWritable {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -13021,7 +13561,12 @@ pub struct IX509CertificateTemplateWritable_Vtbl {
     Template: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509CertificateTemplates, IX509CertificateTemplates_Vtbl, 0x13b79003_2181_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509CertificateTemplates,
+    IX509CertificateTemplates_Vtbl,
+    0x13b79003_2181_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509CertificateTemplates {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -13100,7 +13645,12 @@ pub struct IX509CertificateTemplates_Vtbl {
     get_ItemByOid: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509EndorsementKey, IX509EndorsementKey_Vtbl, 0xb11cd855_f4c4_4fc6_b710_4422237f09e9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509EndorsementKey,
+    IX509EndorsementKey_Vtbl,
+    0xb11cd855_f4c4_4fc6_b710_4422237f09e9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509EndorsementKey {
     pub unsafe fn ProviderName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -13183,7 +13733,12 @@ pub struct IX509EndorsementKey_Vtbl {
     pub Close: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509Enrollment, IX509Enrollment_Vtbl, 0x728ab346_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509Enrollment,
+    IX509Enrollment_Vtbl,
+    0x728ab346_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509Enrollment {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -13344,7 +13899,12 @@ pub struct IX509Enrollment_Vtbl {
     pub CAConfigString: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509Enrollment2, IX509Enrollment2_Vtbl, 0x728ab350_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509Enrollment2,
+    IX509Enrollment2_Vtbl,
+    0x728ab350_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509Enrollment2 {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -13518,7 +14078,12 @@ pub struct IX509Enrollment2_Vtbl {
     pub RequestIdString: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509EnrollmentHelper, IX509EnrollmentHelper_Vtbl, 0x728ab351_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509EnrollmentHelper,
+    IX509EnrollmentHelper_Vtbl,
+    0x728ab351_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509EnrollmentHelper {
     pub unsafe fn AddPolicyServer<P0, P1, P2, P3>(&self, strenrollmentpolicyserveruri: P0, strenrollmentpolicyid: P1, enrollmentpolicyserverflags: PolicyServerUrlFlags, authflags: X509EnrollmentAuthFlags, strcredential: P2, strpassword: P3) -> ::windows_core::Result<()>
@@ -13563,7 +14128,12 @@ pub struct IX509EnrollmentHelper_Vtbl {
     pub Initialize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, context: X509CertificateEnrollmentContext) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509EnrollmentPolicyServer, IX509EnrollmentPolicyServer_Vtbl, 0x13b79026_2181_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509EnrollmentPolicyServer,
+    IX509EnrollmentPolicyServer_Vtbl,
+    0x13b79026_2181_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509EnrollmentPolicyServer {
     pub unsafe fn Initialize<P0, P1, P2>(&self, bstrpolicyserverurl: P0, bstrpolicyserverid: P1, authflags: X509EnrollmentAuthFlags, fisuntrusted: P2, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()>
@@ -13732,7 +14302,12 @@ pub struct IX509EnrollmentPolicyServer_Vtbl {
     pub SetCost: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509EnrollmentStatus, IX509EnrollmentStatus_Vtbl, 0x728ab304_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509EnrollmentStatus,
+    IX509EnrollmentStatus_Vtbl,
+    0x728ab304_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509EnrollmentStatus {
     pub unsafe fn AppendText<P0>(&self, strtext: P0) -> ::windows_core::Result<()>
@@ -13805,7 +14380,12 @@ pub struct IX509EnrollmentStatus_Vtbl {
     pub ErrorText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509EnrollmentWebClassFactory, IX509EnrollmentWebClassFactory_Vtbl, 0x728ab349_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509EnrollmentWebClassFactory,
+    IX509EnrollmentWebClassFactory_Vtbl,
+    0x728ab349_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509EnrollmentWebClassFactory {
     pub unsafe fn CreateObject<P0>(&self, strprogid: P0) -> ::windows_core::Result<::windows_core::IUnknown>
@@ -13826,7 +14406,12 @@ pub struct IX509EnrollmentWebClassFactory_Vtbl {
     pub CreateObject: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strprogid: ::std::mem::MaybeUninit<::windows_core::BSTR>, ppiunknown: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509Extension, IX509Extension_Vtbl, 0x728ab30d_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509Extension,
+    IX509Extension_Vtbl,
+    0x728ab30d_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509Extension {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -13879,7 +14464,12 @@ pub struct IX509Extension_Vtbl {
     pub SetCritical: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: super::super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509ExtensionAlternativeNames, IX509ExtensionAlternativeNames_Vtbl, 0x728ab315_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509ExtensionAlternativeNames,
+    IX509ExtensionAlternativeNames_Vtbl,
+    0x728ab315_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionAlternativeNames {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -13950,7 +14540,12 @@ pub struct IX509ExtensionAlternativeNames_Vtbl {
     AlternativeNames: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509ExtensionAuthorityKeyIdentifier, IX509ExtensionAuthorityKeyIdentifier_Vtbl, 0x728ab318_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509ExtensionAuthorityKeyIdentifier,
+    IX509ExtensionAuthorityKeyIdentifier_Vtbl,
+    0x728ab318_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionAuthorityKeyIdentifier {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14011,7 +14606,12 @@ pub struct IX509ExtensionAuthorityKeyIdentifier_Vtbl {
     pub get_AuthorityKeyIdentifier: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509ExtensionBasicConstraints, IX509ExtensionBasicConstraints_Vtbl, 0x728ab316_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509ExtensionBasicConstraints,
+    IX509ExtensionBasicConstraints_Vtbl,
+    0x728ab316_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionBasicConstraints {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14077,7 +14677,12 @@ pub struct IX509ExtensionBasicConstraints_Vtbl {
     pub PathLenConstraint: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509ExtensionCertificatePolicies, IX509ExtensionCertificatePolicies_Vtbl, 0x728ab320_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509ExtensionCertificatePolicies,
+    IX509ExtensionCertificatePolicies_Vtbl,
+    0x728ab320_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionCertificatePolicies {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14148,7 +14753,12 @@ pub struct IX509ExtensionCertificatePolicies_Vtbl {
     Policies: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509ExtensionEnhancedKeyUsage, IX509ExtensionEnhancedKeyUsage_Vtbl, 0x728ab310_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509ExtensionEnhancedKeyUsage,
+    IX509ExtensionEnhancedKeyUsage_Vtbl,
+    0x728ab310_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionEnhancedKeyUsage {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14219,7 +14829,12 @@ pub struct IX509ExtensionEnhancedKeyUsage_Vtbl {
     EnhancedKeyUsage: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509ExtensionKeyUsage, IX509ExtensionKeyUsage_Vtbl, 0x728ab30f_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509ExtensionKeyUsage,
+    IX509ExtensionKeyUsage_Vtbl,
+    0x728ab30f_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionKeyUsage {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14277,7 +14892,12 @@ pub struct IX509ExtensionKeyUsage_Vtbl {
     pub KeyUsage: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut X509KeyUsageFlags) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509ExtensionMSApplicationPolicies, IX509ExtensionMSApplicationPolicies_Vtbl, 0x728ab321_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509ExtensionMSApplicationPolicies,
+    IX509ExtensionMSApplicationPolicies_Vtbl,
+    0x728ab321_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionMSApplicationPolicies {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14348,7 +14968,12 @@ pub struct IX509ExtensionMSApplicationPolicies_Vtbl {
     Policies: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509ExtensionSmimeCapabilities, IX509ExtensionSmimeCapabilities_Vtbl, 0x728ab31b_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509ExtensionSmimeCapabilities,
+    IX509ExtensionSmimeCapabilities_Vtbl,
+    0x728ab31b_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionSmimeCapabilities {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14419,7 +15044,12 @@ pub struct IX509ExtensionSmimeCapabilities_Vtbl {
     SmimeCapabilities: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509ExtensionSubjectKeyIdentifier, IX509ExtensionSubjectKeyIdentifier_Vtbl, 0x728ab317_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509ExtensionSubjectKeyIdentifier,
+    IX509ExtensionSubjectKeyIdentifier_Vtbl,
+    0x728ab317_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionSubjectKeyIdentifier {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14480,7 +15110,12 @@ pub struct IX509ExtensionSubjectKeyIdentifier_Vtbl {
     pub get_SubjectKeyIdentifier: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509ExtensionTemplate, IX509ExtensionTemplate_Vtbl, 0x728ab312_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509ExtensionTemplate,
+    IX509ExtensionTemplate_Vtbl,
+    0x728ab312_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionTemplate {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14561,7 +15196,12 @@ pub struct IX509ExtensionTemplate_Vtbl {
     pub MinorVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509ExtensionTemplateName, IX509ExtensionTemplateName_Vtbl, 0x728ab311_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509ExtensionTemplateName,
+    IX509ExtensionTemplateName_Vtbl,
+    0x728ab311_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509ExtensionTemplateName {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14622,7 +15262,12 @@ pub struct IX509ExtensionTemplateName_Vtbl {
     pub TemplateName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509Extensions, IX509Extensions_Vtbl, 0x728ab30e_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509Extensions,
+    IX509Extensions_Vtbl,
+    0x728ab30e_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509Extensions {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14700,7 +15345,12 @@ pub struct IX509Extensions_Vtbl {
     AddRange: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509MachineEnrollmentFactory, IX509MachineEnrollmentFactory_Vtbl, 0x728ab352_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509MachineEnrollmentFactory,
+    IX509MachineEnrollmentFactory_Vtbl,
+    0x728ab352_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509MachineEnrollmentFactory {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14726,7 +15376,12 @@ pub struct IX509MachineEnrollmentFactory_Vtbl {
     CreateObject: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509NameValuePair, IX509NameValuePair_Vtbl, 0x728ab33f_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509NameValuePair,
+    IX509NameValuePair_Vtbl,
+    0x728ab33f_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509NameValuePair {
     pub unsafe fn Initialize<P0, P1>(&self, strname: P0, strvalue: P1) -> ::windows_core::Result<()>
@@ -14757,7 +15412,12 @@ pub struct IX509NameValuePair_Vtbl {
     pub Name: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509NameValuePairs, IX509NameValuePairs_Vtbl, 0x728ab340_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509NameValuePairs,
+    IX509NameValuePairs_Vtbl,
+    0x728ab340_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509NameValuePairs {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14810,7 +15470,12 @@ pub struct IX509NameValuePairs_Vtbl {
     pub Clear: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509PolicyServerListManager, IX509PolicyServerListManager_Vtbl, 0x884e204b_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509PolicyServerListManager,
+    IX509PolicyServerListManager_Vtbl,
+    0x884e204b_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509PolicyServerListManager {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -14867,7 +15532,12 @@ pub struct IX509PolicyServerListManager_Vtbl {
     pub Initialize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, context: X509CertificateEnrollmentContext, flags: PolicyServerUrlFlags) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509PolicyServerUrl, IX509PolicyServerUrl_Vtbl, 0x884e204a_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509PolicyServerUrl,
+    IX509PolicyServerUrl_Vtbl,
+    0x884e204a_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509PolicyServerUrl {
     pub unsafe fn Initialize(&self, context: X509CertificateEnrollmentContext) -> ::windows_core::Result<()> {
@@ -14955,7 +15625,12 @@ pub struct IX509PolicyServerUrl_Vtbl {
     pub RemoveFromRegistry: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, context: X509CertificateEnrollmentContext) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509PrivateKey, IX509PrivateKey_Vtbl, 0x728ab30c_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509PrivateKey,
+    IX509PrivateKey_Vtbl,
+    0x728ab30c_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509PrivateKey {
     pub unsafe fn Open(&self) -> ::windows_core::Result<()> {
@@ -15321,7 +15996,12 @@ pub struct IX509PrivateKey_Vtbl {
     pub SetDescription: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509PrivateKey2, IX509PrivateKey2_Vtbl, 0x728ab362_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509PrivateKey2,
+    IX509PrivateKey2_Vtbl,
+    0x728ab362_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509PrivateKey2 {
     pub unsafe fn Open(&self) -> ::windows_core::Result<()> {
@@ -15662,7 +16342,12 @@ pub struct IX509PrivateKey2_Vtbl {
     pub SetParametersExportType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: X509KeyParametersExportType) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509PublicKey, IX509PublicKey_Vtbl, 0x728ab30b_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509PublicKey,
+    IX509PublicKey_Vtbl,
+    0x728ab30b_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509PublicKey {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -15726,7 +16411,12 @@ pub struct IX509PublicKey_Vtbl {
     pub ComputeKeyIdentifier: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, algorithm: KeyIdentifierHashAlgorithm, encoding: EncodingType, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509SCEPEnrollment, IX509SCEPEnrollment_Vtbl, 0x728ab361_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509SCEPEnrollment,
+    IX509SCEPEnrollment_Vtbl,
+    0x728ab361_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509SCEPEnrollment {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -15905,7 +16595,12 @@ pub struct IX509SCEPEnrollment_Vtbl {
     pub DeleteRequest: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509SCEPEnrollment2, IX509SCEPEnrollment2_Vtbl, 0x728ab364_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509SCEPEnrollment2,
+    IX509SCEPEnrollment2_Vtbl,
+    0x728ab364_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509SCEPEnrollment2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -16076,7 +16771,12 @@ pub struct IX509SCEPEnrollment2_Vtbl {
     pub SetActivityId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509SCEPEnrollmentHelper, IX509SCEPEnrollmentHelper_Vtbl, 0x728ab365_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509SCEPEnrollmentHelper,
+    IX509SCEPEnrollmentHelper_Vtbl,
+    0x728ab365_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509SCEPEnrollmentHelper {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -16138,7 +16838,12 @@ pub struct IX509SCEPEnrollmentHelper_Vtbl {
     pub ResultMessageText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IX509SignatureInformation, IX509SignatureInformation_Vtbl, 0x728ab33c_217d_11da_b2a4_000e7bbb2b09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IX509SignatureInformation,
+    IX509SignatureInformation_Vtbl,
+    0x728ab33c_217d_11da_b2a4_000e7bbb2b09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IX509SignatureInformation {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

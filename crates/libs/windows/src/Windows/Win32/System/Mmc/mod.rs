@@ -1,5 +1,10 @@
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(AppEvents, AppEvents_Vtbl, 0xfc7a4252_78ac_4532_8c5a_563cfe138863);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    AppEvents,
+    AppEvents_Vtbl,
+    0xfc7a4252_78ac_4532_8c5a_563cfe138863
+);
 #[cfg(feature = "Win32_System_Com")]
 impl AppEvents {}
 #[cfg(feature = "Win32_System_Com")]
@@ -11,7 +16,12 @@ pub struct AppEvents_Vtbl {
     pub base__: super::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Column, Column_Vtbl, 0xfd1c5f63_2b16_4d06_9ab3_f45350b940ab);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Column,
+    Column_Vtbl,
+    0xfd1c5f63_2b16_4d06_9ab3_f45350b940ab
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Column {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -68,7 +78,12 @@ pub struct Column_Vtbl {
     pub IsSortColumn: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, issortcolumn: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Columns, Columns_Vtbl, 0x383d4d97_fc44_478b_b139_6323dc48611c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Columns,
+    Columns_Vtbl,
+    0x383d4d97_fc44_478b_b139_6323dc48611c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Columns {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -101,7 +116,12 @@ pub struct Columns_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, retval: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ContextMenu, ContextMenu_Vtbl, 0xdab39ce0_25e6_4e07_8362_ba9c95706545);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ContextMenu,
+    ContextMenu_Vtbl,
+    0xdab39ce0_25e6_4e07_8362_ba9c95706545
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ContextMenu {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -134,7 +154,12 @@ pub struct ContextMenu_Vtbl {
     pub Count: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, count: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Document, Document_Vtbl, 0x225120d6_1e0f_40a3_93fe_1079e6a8017b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Document,
+    Document_Vtbl,
+    0x225120d6_1e0f_40a3_93fe_1079e6a8017b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Document {
     pub unsafe fn Save(&self) -> ::windows_core::Result<()> {
@@ -266,7 +291,12 @@ pub struct Document_Vtbl {
     Application: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Extension, Extension_Vtbl, 0xad4d6ca6_912f_409b_a26e_7fd234aef542);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Extension,
+    Extension_Vtbl,
+    0xad4d6ca6_912f_409b_a26e_7fd234aef542
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Extension {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -323,7 +353,12 @@ pub struct Extension_Vtbl {
     pub Enable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enable: super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Extensions, Extensions_Vtbl, 0x82dbea43_8ca4_44bc_a2ca_d18741059ec8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Extensions,
+    Extensions_Vtbl,
+    0x82dbea43_8ca4_44bc_a2ca_d18741059ec8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Extensions {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -356,7 +391,12 @@ pub struct Extensions_Vtbl {
     pub Count: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, count: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Frame, Frame_Vtbl, 0xe5e2d970_5bb3_4306_8804_b0968a31c8e6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Frame,
+    Frame_Vtbl,
+    0xe5e2d970_5bb3_4306_8804_b0968a31c8e6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Frame {
     pub unsafe fn Maximize(&self) -> ::windows_core::Result<()> {
@@ -2210,7 +2250,12 @@ pub struct IViewExtensionCallback_Vtbl {
     pub AddView: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pextviewdata: *const MMC_EXT_VIEW_DATA) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(MenuItem, MenuItem_Vtbl, 0x0178fad1_b361_4b27_96ad_67c57ebf2e1d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    MenuItem,
+    MenuItem_Vtbl,
+    0x0178fad1_b361_4b27_96ad_67c57ebf2e1d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl MenuItem {
     pub unsafe fn DisplayName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2252,7 +2297,12 @@ pub struct MenuItem_Vtbl {
     pub Enabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enabled: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Node, Node_Vtbl, 0xf81ed800_7839_4447_945d_8e15da59ca55);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Node,
+    Node_Vtbl,
+    0xf81ed800_7839_4447_945d_8e15da59ca55
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Node {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2293,7 +2343,12 @@ pub struct Node_Vtbl {
     pub Nodetype: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, nodetype: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Nodes, Nodes_Vtbl, 0x313b01df_b22f_4d42_b1b8_483cdcf51d35);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Nodes,
+    Nodes_Vtbl,
+    0x313b01df_b22f_4d42_b1b8_483cdcf51d35
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Nodes {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -2326,7 +2381,12 @@ pub struct Nodes_Vtbl {
     pub Count: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, count: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Properties, Properties_Vtbl, 0x2886abc2_a425_42b2_91c6_e25c0e04581c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Properties,
+    Properties_Vtbl,
+    0x2886abc2_a425_42b2_91c6_e25c0e04581c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Properties {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -2369,7 +2429,12 @@ pub struct Properties_Vtbl {
     pub Remove: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Property, Property_Vtbl, 0x4600c3a5_e301_41d8_b6d0_ef2e4212e0ca);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Property,
+    Property_Vtbl,
+    0x4600c3a5_e301_41d8_b6d0_ef2e4212e0ca
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Property {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -2406,7 +2471,12 @@ pub struct Property_Vtbl {
     pub Name: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ScopeNamespace, ScopeNamespace_Vtbl, 0xebbb48dc_1a3b_4d86_b786_c21b28389012);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ScopeNamespace,
+    ScopeNamespace_Vtbl,
+    0xebbb48dc_1a3b_4d86_b786_c21b28389012
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ScopeNamespace {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2480,7 +2550,12 @@ pub struct ScopeNamespace_Vtbl {
     Expand: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(SnapIn, SnapIn_Vtbl, 0x3be910f6_3459_49c6_a1bb_41e6be9df3ea);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    SnapIn,
+    SnapIn_Vtbl,
+    0x3be910f6_3459_49c6_a1bb_41e6be9df3ea
+);
 #[cfg(feature = "Win32_System_Com")]
 impl SnapIn {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2540,7 +2615,12 @@ pub struct SnapIn_Vtbl {
     pub EnableAllExtensions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enable: super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(SnapIns, SnapIns_Vtbl, 0x2ef3de1d_b12a_49d1_92c5_0b00798768f1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    SnapIns,
+    SnapIns_Vtbl,
+    0x2ef3de1d_b12a_49d1_92c5_0b00798768f1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl SnapIns {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -2598,7 +2678,12 @@ pub struct SnapIns_Vtbl {
     Remove: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(View, View_Vtbl, 0x6efc2da2_b38c_457e_9abb_ed2d189b8c38);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    View,
+    View_Vtbl,
+    0x6efc2da2_b38c_457e_9abb_ed2d189b8c38
+);
 #[cfg(feature = "Win32_System_Com")]
 impl View {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2959,7 +3044,12 @@ pub struct View_Vtbl {
     ControlObject: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Views, Views_Vtbl, 0xd6b8c29d_a1ff_4d72_aab0_e381e9b9338d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Views,
+    Views_Vtbl,
+    0xd6b8c29d_a1ff_4d72_aab0_e381e9b9338d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Views {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3004,7 +3094,12 @@ pub struct Views_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, retval: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_AppEvents, _AppEvents_Vtbl, 0xde46cbdd_53f5_4635_af54_4fe71e923d3f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _AppEvents,
+    _AppEvents_Vtbl,
+    0xde46cbdd_53f5_4635_af54_4fe71e923d3f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _AppEvents {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3158,7 +3253,12 @@ pub struct _AppEvents_Vtbl {
     OnListUpdated: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_Application, _Application_Vtbl, 0xa3afb9cc_b653_4741_86ab_f0470ec1384c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _Application,
+    _Application_Vtbl,
+    0xa3afb9cc_b653_4741_86ab_f0470ec1384c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _Application {
     pub unsafe fn Help(&self) {
@@ -3241,7 +3341,12 @@ pub struct _Application_Vtbl {
     pub VersionMinor: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, versionminor: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(_EventConnector, _EventConnector_Vtbl, 0xc0bccd30_de44_4528_8403_a05a6a1cc8ea);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    _EventConnector,
+    _EventConnector_Vtbl,
+    0xc0bccd30_de44_4528_8403_a05a6a1cc8ea
+);
 #[cfg(feature = "Win32_System_Com")]
 impl _EventConnector {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

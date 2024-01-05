@@ -3344,7 +3344,12 @@ where
     VectorFromBstr(bstr.into_param().abi(), &mut result__).from_abi(result__)
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAdviseSinkEx, IAdviseSinkEx_Vtbl, 0x3af24290_0c96_11ce_a0cf_00aa00600ab8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAdviseSinkEx,
+    IAdviseSinkEx_Vtbl,
+    0x3af24290_0c96_11ce_a0cf_00aa00600ab8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAdviseSinkEx {
     #[doc = "Required features: `\"Win32_Graphics_Gdi\"`, `\"Win32_System_Com_StructuredStorage\"`"]
@@ -3407,7 +3412,12 @@ pub struct ICanHandleException_Vtbl {
     CanHandleException: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IClassFactory2, IClassFactory2_Vtbl, 0xb196b28f_bab4_101a_b69c_00aa00341d07);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IClassFactory2,
+    IClassFactory2_Vtbl,
+    0xb196b28f_bab4_101a_b69c_00aa00341d07
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IClassFactory2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4079,7 +4089,12 @@ pub struct IDispError_Vtbl {
     pub GetDescription: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrdescription: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDispatchEx, IDispatchEx_Vtbl, 0xa6ef9860_c720_11d0_9337_00a0c90dcaa9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDispatchEx,
+    IDispatchEx_Vtbl,
+    0xa6ef9860_c720_11d0_9337_00a0c90dcaa9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDispatchEx {
     pub unsafe fn GetDispID<P0>(&self, bstrname: P0, grfdex: u32) -> ::windows_core::Result<i32>
@@ -4546,7 +4561,12 @@ pub struct IFont_Vtbl {
     SetHdc: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFontDisp, IFontDisp_Vtbl, 0xbef6e003_a874_101a_8bba_00aa00300cab);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFontDisp,
+    IFontDisp_Vtbl,
+    0xbef6e003_a874_101a_8bba_00aa00300cab
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFontDisp {}
 #[cfg(feature = "Win32_System_Com")]
@@ -4558,7 +4578,12 @@ pub struct IFontDisp_Vtbl {
     pub base__: super::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFontEventsDisp, IFontEventsDisp_Vtbl, 0x4ef6100a_af88_11d0_9846_00c04fc29993);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFontEventsDisp,
+    IFontEventsDisp_Vtbl,
+    0x4ef6100a_af88_11d0_9846_00c04fc29993
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFontEventsDisp {}
 #[cfg(feature = "Win32_System_Com")]
@@ -6566,7 +6591,12 @@ pub struct IPerPropertyBrowsing_Vtbl {
     GetPredefinedValue: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPersistPropertyBag, IPersistPropertyBag_Vtbl, 0x37d84f60_42cb_11ce_8135_00aa004bb851);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPersistPropertyBag,
+    IPersistPropertyBag_Vtbl,
+    0x37d84f60_42cb_11ce_8135_00aa004bb851
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPersistPropertyBag {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6616,7 +6646,12 @@ pub struct IPersistPropertyBag_Vtbl {
     Save: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPersistPropertyBag2, IPersistPropertyBag2_Vtbl, 0x22f55881_280b_11d0_a8a9_00a0c90c2004);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPersistPropertyBag2,
+    IPersistPropertyBag2_Vtbl,
+    0x22f55881_280b_11d0_a8a9_00a0c90c2004
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPersistPropertyBag2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6887,7 +6922,12 @@ pub struct IPicture2_Vtbl {
     pub Attributes: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdwattr: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPictureDisp, IPictureDisp_Vtbl, 0x7bf80981_bf32_101a_8bbb_00aa00300cab);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPictureDisp,
+    IPictureDisp_Vtbl,
+    0x7bf80981_bf32_101a_8bbb_00aa00300cab
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPictureDisp {}
 #[cfg(feature = "Win32_System_Com")]

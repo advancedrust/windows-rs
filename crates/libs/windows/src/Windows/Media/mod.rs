@@ -120,7 +120,12 @@ pub struct IImageDisplayProperties_Vtbl {
     pub SetSubtitle: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IMediaControl, IMediaControl_Vtbl, 0x98f1fbe1_7a8d_42cb_b6fe_8fe698264f13);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IMediaControl,
+    IMediaControl_Vtbl,
+    0x98f1fbe1_7a8d_42cb_b6fe_8fe698264f13
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

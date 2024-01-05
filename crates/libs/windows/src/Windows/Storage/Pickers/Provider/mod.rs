@@ -27,7 +27,12 @@ pub struct IFileOpenPickerUI_Vtbl {
     pub RemoveClosing: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IFileRemovedEventArgs, IFileRemovedEventArgs_Vtbl, 0x13043da7_7fca_4c2b_9eca_6890f9f00185);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IFileRemovedEventArgs,
+    IFileRemovedEventArgs_Vtbl,
+    0x13043da7_7fca_4c2b_9eca_6890f9f00185
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

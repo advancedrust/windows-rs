@@ -325,7 +325,12 @@ pub struct IGPEInformation_Vtbl {
     pub PolicyChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bmachine: super::super::Foundation::BOOL, badd: super::super::Foundation::BOOL, pguidextension: *mut ::windows_core::GUID, pguidsnapin: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPM, IGPM_Vtbl, 0xf5fae809_3bd6_4da9_a65e_17665b41d763);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPM,
+    IGPM_Vtbl,
+    0xf5fae809_3bd6_4da9_a65e_17665b41d763
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPM {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -480,7 +485,12 @@ pub struct IGPM_Vtbl {
     pub InitializeReporting: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstradmpath: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPM2, IGPM2_Vtbl, 0x00238f8a_3d86_41ac_8f5e_06a6638a634a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPM2,
+    IGPM2_Vtbl,
+    0x00238f8a_3d86_41ac_8f5e_06a6638a634a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPM2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -610,7 +620,12 @@ pub struct IGPM2_Vtbl {
     pub InitializeReportingEx: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstradmpath: ::std::mem::MaybeUninit<::windows_core::BSTR>, reportingoptions: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMAsyncCancel, IGPMAsyncCancel_Vtbl, 0xddc67754_be67_4541_8166_f48166868c9c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMAsyncCancel,
+    IGPMAsyncCancel_Vtbl,
+    0xddc67754_be67_4541_8166_f48166868c9c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMAsyncCancel {
     pub unsafe fn Cancel(&self) -> ::windows_core::Result<()> {
@@ -627,7 +642,12 @@ pub struct IGPMAsyncCancel_Vtbl {
     pub Cancel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMAsyncProgress, IGPMAsyncProgress_Vtbl, 0x6aac29f8_5948_4324_bf70_423818942dbc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMAsyncProgress,
+    IGPMAsyncProgress_Vtbl,
+    0x6aac29f8_5948_4324_bf70_423818942dbc
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMAsyncProgress {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -652,7 +672,12 @@ pub struct IGPMAsyncProgress_Vtbl {
     Status: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMBackup, IGPMBackup_Vtbl, 0xd8a16a35_3b0d_416b_8d02_4df6f95a7119);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMBackup,
+    IGPMBackup_Vtbl,
+    0xd8a16a35_3b0d_416b_8d02_4df6f95a7119
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMBackup {
     pub unsafe fn ID(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -726,7 +751,12 @@ pub struct IGPMBackup_Vtbl {
     GenerateReportToFile: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMBackupCollection, IGPMBackupCollection_Vtbl, 0xc786fc0f_26d8_4bab_a745_39ca7e800cac);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMBackupCollection,
+    IGPMBackupCollection_Vtbl,
+    0xc786fc0f_26d8_4bab_a745_39ca7e800cac
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMBackupCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -764,7 +794,12 @@ pub struct IGPMBackupCollection_Vtbl {
     _NewEnum: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMBackupDir, IGPMBackupDir_Vtbl, 0xb1568bed_0a93_4acc_810f_afe7081019b9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMBackupDir,
+    IGPMBackupDir_Vtbl,
+    0xb1568bed_0a93_4acc_810f_afe7081019b9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMBackupDir {
     pub unsafe fn BackupDirectory(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -808,7 +843,12 @@ pub struct IGPMBackupDir_Vtbl {
     SearchBackups: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMBackupDirEx, IGPMBackupDirEx_Vtbl, 0xf8dc55ed_3ba0_4864_aad4_d365189ee1d5);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMBackupDirEx,
+    IGPMBackupDirEx_Vtbl,
+    0xf8dc55ed_3ba0_4864_aad4_d365189ee1d5
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMBackupDirEx {
     pub unsafe fn BackupDir(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -857,7 +897,12 @@ pub struct IGPMBackupDirEx_Vtbl {
     SearchBackups: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMCSECollection, IGPMCSECollection_Vtbl, 0x2e52a97d_0a4a_4a6f_85db_201622455da0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMCSECollection,
+    IGPMCSECollection_Vtbl,
+    0x2e52a97d_0a4a_4a6f_85db_201622455da0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMCSECollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -895,7 +940,12 @@ pub struct IGPMCSECollection_Vtbl {
     _NewEnum: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMClientSideExtension, IGPMClientSideExtension_Vtbl, 0x69da7488_b8db_415e_9266_901be4d49928);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMClientSideExtension,
+    IGPMClientSideExtension_Vtbl,
+    0x69da7488_b8db_415e_9266_901be4d49928
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMClientSideExtension {
     pub unsafe fn ID(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -928,7 +978,12 @@ pub struct IGPMClientSideExtension_Vtbl {
     pub IsComputerEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvbenabled: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMConstants, IGPMConstants_Vtbl, 0x50ef73e6_d35c_4c8d_be63_7ea5d2aac5c4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMConstants,
+    IGPMConstants_Vtbl,
+    0x50ef73e6_d35c_4c8d_be63_7ea5d2aac5c4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMConstants {
     pub unsafe fn PermGPOApply(&self) -> ::windows_core::Result<GPMPermissionType> {
@@ -1250,7 +1305,12 @@ pub struct IGPMConstants_Vtbl {
     pub RsopPlanningAssumeCompWQLFilterTrue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pval: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMConstants2, IGPMConstants2_Vtbl, 0x05ae21b0_ac09_4032_a26f_9e7da786dc19);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMConstants2,
+    IGPMConstants2_Vtbl,
+    0x05ae21b0_ac09_4032_a26f_9e7da786dc19
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMConstants2 {
     pub unsafe fn PermGPOApply(&self) -> ::windows_core::Result<GPMPermissionType> {
@@ -1587,7 +1647,12 @@ pub struct IGPMConstants2_Vtbl {
     pub ReportComments: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pval: *mut GPMReportingOptions) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMDomain, IGPMDomain_Vtbl, 0x6b21cc14_5a00_4f44_a738_feec8a94c7e3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMDomain,
+    IGPMDomain_Vtbl,
+    0x6b21cc14_5a00_4f44_a738_feec8a94c7e3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMDomain {
     pub unsafe fn DomainController(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1710,7 +1775,12 @@ pub struct IGPMDomain_Vtbl {
     SearchWMIFilters: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMDomain2, IGPMDomain2_Vtbl, 0x7ca6bb8b_f1eb_490a_938d_3c4e51c768e6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMDomain2,
+    IGPMDomain2_Vtbl,
+    0x7ca6bb8b_f1eb_490a_938d_3c4e51c768e6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMDomain2 {
     pub unsafe fn DomainController(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1873,7 +1943,12 @@ pub struct IGPMDomain2_Vtbl {
     RestoreStarterGPO: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMDomain3, IGPMDomain3_Vtbl, 0x0077fdfe_88c7_4acf_a11d_d10a7c310a03);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMDomain3,
+    IGPMDomain3_Vtbl,
+    0x0077fdfe_88c7_4acf_a11d_d10a7c310a03
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMDomain3 {
     pub unsafe fn DomainController(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2037,7 +2112,12 @@ pub struct IGPMDomain3_Vtbl {
     pub SetInfrastructureFlags: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwflags: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMGPO, IGPMGPO_Vtbl, 0x58cc4352_1ca3_48e5_9864_1da4d6e0d60f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMGPO,
+    IGPMGPO_Vtbl,
+    0x58cc4352_1ca3_48e5_9864_1da4d6e0d60f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMGPO {
     pub unsafe fn DisplayName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2269,7 +2349,12 @@ pub struct IGPMGPO_Vtbl {
     pub MakeACLConsistent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMGPO2, IGPMGPO2_Vtbl, 0x8a66a210_b78b_4d99_88e2_c306a817c925);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMGPO2,
+    IGPMGPO2_Vtbl,
+    0x8a66a210_b78b_4d99_88e2_c306a817c925
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMGPO2 {
     pub unsafe fn DisplayName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2451,7 +2536,12 @@ pub struct IGPMGPO2_Vtbl {
     pub SetDescription: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, newval: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMGPO3, IGPMGPO3_Vtbl, 0x7cf123a1_f94a_4112_bfae_6aa1db9cb248);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMGPO3,
+    IGPMGPO3_Vtbl,
+    0x7cf123a1_f94a_4112_bfae_6aa1db9cb248
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMGPO3 {
     pub unsafe fn DisplayName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2647,7 +2737,12 @@ pub struct IGPMGPO3_Vtbl {
     pub SetInfrastructureFlags: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwflags: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMGPOCollection, IGPMGPOCollection_Vtbl, 0xf0f0d5cf_70ca_4c39_9e29_b642f8726c01);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMGPOCollection,
+    IGPMGPOCollection_Vtbl,
+    0xf0f0d5cf_70ca_4c39_9e29_b642f8726c01
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMGPOCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -2685,7 +2780,12 @@ pub struct IGPMGPOCollection_Vtbl {
     _NewEnum: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMGPOLink, IGPMGPOLink_Vtbl, 0x434b99bd_5de7_478a_809c_c251721df70c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMGPOLink,
+    IGPMGPOLink_Vtbl,
+    0x434b99bd_5de7_478a_809c_c251721df70c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMGPOLink {
     pub unsafe fn GPOID(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2751,7 +2851,12 @@ pub struct IGPMGPOLink_Vtbl {
     pub Delete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMGPOLinksCollection, IGPMGPOLinksCollection_Vtbl, 0x189d7b68_16bd_4d0d_a2ec_2e6aa2288c7f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMGPOLinksCollection,
+    IGPMGPOLinksCollection_Vtbl,
+    0x189d7b68_16bd_4d0d_a2ec_2e6aa2288c7f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMGPOLinksCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -2789,7 +2894,12 @@ pub struct IGPMGPOLinksCollection_Vtbl {
     _NewEnum: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMMapEntry, IGPMMapEntry_Vtbl, 0x8e79ad06_2381_4444_be4c_ff693e6e6f2b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMMapEntry,
+    IGPMMapEntry_Vtbl,
+    0x8e79ad06_2381_4444_be4c_ff693e6e6f2b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMMapEntry {
     pub unsafe fn Source(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2822,7 +2932,12 @@ pub struct IGPMMapEntry_Vtbl {
     pub EntryType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pgpmentrytype: *mut GPMEntryType) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMMapEntryCollection, IGPMMapEntryCollection_Vtbl, 0xbb0bf49b_e53f_443f_b807_8be22bfb6d42);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMMapEntryCollection,
+    IGPMMapEntryCollection_Vtbl,
+    0xbb0bf49b_e53f_443f_b807_8be22bfb6d42
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMMapEntryCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -2860,7 +2975,12 @@ pub struct IGPMMapEntryCollection_Vtbl {
     _NewEnum: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMMigrationTable, IGPMMigrationTable_Vtbl, 0x48f823b1_efaf_470b_b6ed_40d14ee1a4ec);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMMigrationTable,
+    IGPMMigrationTable_Vtbl,
+    0x48f823b1_efaf_470b_b6ed_40d14ee1a4ec
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMMigrationTable {
     pub unsafe fn Save<P0>(&self, bstrmigrationtablepath: P0) -> ::windows_core::Result<()>
@@ -2955,7 +3075,12 @@ pub struct IGPMMigrationTable_Vtbl {
     GetEntries: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMPermission, IGPMPermission_Vtbl, 0x35ebca40_e1a1_4a02_8905_d79416fb464a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMPermission,
+    IGPMPermission_Vtbl,
+    0x35ebca40_e1a1_4a02_8905_d79416fb464a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMPermission {
     pub unsafe fn Inherited(&self) -> ::windows_core::Result<super::super::Foundation::VARIANT_BOOL> {
@@ -2998,7 +3123,12 @@ pub struct IGPMPermission_Vtbl {
     Trustee: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMRSOP, IGPMRSOP_Vtbl, 0x49ed785a_3237_4ff2_b1f0_fdf5a8d5a1ee);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMRSOP,
+    IGPMRSOP_Vtbl,
+    0x49ed785a_3237_4ff2_b1f0_fdf5a8d5a1ee
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMRSOP {
     pub unsafe fn Mode(&self) -> ::windows_core::Result<GPMRSOPMode> {
@@ -3251,7 +3381,12 @@ pub struct IGPMRSOP_Vtbl {
     GenerateReportToFile: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMResult, IGPMResult_Vtbl, 0x86dff7e9_f76f_42ab_9570_cebc6be8a52d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMResult,
+    IGPMResult_Vtbl,
+    0x86dff7e9_f76f_42ab_9570_cebc6be8a52d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMResult {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3288,7 +3423,12 @@ pub struct IGPMResult_Vtbl {
     pub OverallStatus: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMSOM, IGPMSOM_Vtbl, 0xc0a7f09e_05a1_4f0c_8158_9e5c33684f6b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMSOM,
+    IGPMSOM_Vtbl,
+    0xc0a7f09e_05a1_4f0c_8158_9e5c33684f6b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMSOM {
     pub unsafe fn GPOInheritanceBlocked(&self) -> ::windows_core::Result<super::super::Foundation::VARIANT_BOOL> {
@@ -3383,7 +3523,12 @@ pub struct IGPMSOM_Vtbl {
     SetSecurityInfo: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMSOMCollection, IGPMSOMCollection_Vtbl, 0xadc1688e_00e4_4495_abba_bed200df0cab);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMSOMCollection,
+    IGPMSOMCollection_Vtbl,
+    0xadc1688e_00e4_4495_abba_bed200df0cab
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMSOMCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3421,7 +3566,12 @@ pub struct IGPMSOMCollection_Vtbl {
     _NewEnum: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMSearchCriteria, IGPMSearchCriteria_Vtbl, 0xd6f11c42_829b_48d4_83f5_3615b67dfc22);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMSearchCriteria,
+    IGPMSearchCriteria_Vtbl,
+    0xd6f11c42_829b_48d4_83f5_3615b67dfc22
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMSearchCriteria {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -3443,7 +3593,12 @@ pub struct IGPMSearchCriteria_Vtbl {
     Add: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMSecurityInfo, IGPMSecurityInfo_Vtbl, 0xb6c31ed4_1c93_4d3e_ae84_eb6d61161b60);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMSecurityInfo,
+    IGPMSecurityInfo_Vtbl,
+    0xb6c31ed4_1c93_4d3e_ae84_eb6d61161b60
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMSecurityInfo {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3512,7 +3667,12 @@ pub struct IGPMSecurityInfo_Vtbl {
     pub RemoveTrustee: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrtrustee: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMSitesContainer, IGPMSitesContainer_Vtbl, 0x4725a899_2782_4d27_a6bb_d499246ffd72);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMSitesContainer,
+    IGPMSitesContainer_Vtbl,
+    0x4725a899_2782_4d27_a6bb_d499246ffd72
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMSitesContainer {
     pub unsafe fn DomainController(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3566,7 +3726,12 @@ pub struct IGPMSitesContainer_Vtbl {
     SearchSites: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMStarterGPO, IGPMStarterGPO_Vtbl, 0xdfc3f61b_8880_4490_9337_d29c7ba8c2f0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMStarterGPO,
+    IGPMStarterGPO_Vtbl,
+    0xdfc3f61b_8880_4490_9337_d29c7ba8c2f0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMStarterGPO {
     pub unsafe fn DisplayName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3734,7 +3899,12 @@ pub struct IGPMStarterGPO_Vtbl {
     SetSecurityInfo: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMStarterGPOBackup, IGPMStarterGPOBackup_Vtbl, 0x51d98eda_a87e_43dd_b80a_0b66ef1938d6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMStarterGPOBackup,
+    IGPMStarterGPOBackup_Vtbl,
+    0x51d98eda_a87e_43dd_b80a_0b66ef1938d6
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMStarterGPOBackup {
     pub unsafe fn BackupDir(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3813,7 +3983,12 @@ pub struct IGPMStarterGPOBackup_Vtbl {
     GenerateReportToFile: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMStarterGPOBackupCollection, IGPMStarterGPOBackupCollection_Vtbl, 0xc998031d_add0_4bb5_8dea_298505d8423b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMStarterGPOBackupCollection,
+    IGPMStarterGPOBackupCollection_Vtbl,
+    0xc998031d_add0_4bb5_8dea_298505d8423b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMStarterGPOBackupCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3851,7 +4026,12 @@ pub struct IGPMStarterGPOBackupCollection_Vtbl {
     _NewEnum: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMStarterGPOCollection, IGPMStarterGPOCollection_Vtbl, 0x2e522729_2219_44ad_933a_64dfd650c423);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMStarterGPOCollection,
+    IGPMStarterGPOCollection_Vtbl,
+    0x2e522729_2219_44ad_933a_64dfd650c423
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMStarterGPOCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3889,7 +4069,12 @@ pub struct IGPMStarterGPOCollection_Vtbl {
     _NewEnum: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMStatusMessage, IGPMStatusMessage_Vtbl, 0x8496c22f_f3de_4a1f_8f58_603caaa93d7b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMStatusMessage,
+    IGPMStatusMessage_Vtbl,
+    0x8496c22f_f3de_4a1f_8f58_603caaa93d7b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMStatusMessage {
     pub unsafe fn ObjectPath(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3930,7 +4115,12 @@ pub struct IGPMStatusMessage_Vtbl {
     pub Message: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pval: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMStatusMsgCollection, IGPMStatusMsgCollection_Vtbl, 0x9b6e1af0_1a92_40f3_a59d_f36ac1f728b7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMStatusMsgCollection,
+    IGPMStatusMsgCollection_Vtbl,
+    0x9b6e1af0_1a92_40f3_a59d_f36ac1f728b7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMStatusMsgCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -3968,7 +4158,12 @@ pub struct IGPMStatusMsgCollection_Vtbl {
     _NewEnum: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMTrustee, IGPMTrustee_Vtbl, 0x3b466da8_c1a4_4b2a_999a_befcdd56cefb);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMTrustee,
+    IGPMTrustee_Vtbl,
+    0x3b466da8_c1a4_4b2a_999a_befcdd56cefb
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMTrustee {
     pub unsafe fn TrusteeSid(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4006,7 +4201,12 @@ pub struct IGPMTrustee_Vtbl {
     pub TrusteeType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, lval: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMWMIFilter, IGPMWMIFilter_Vtbl, 0xef2ff9b4_3c27_459a_b979_038305cec75d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMWMIFilter,
+    IGPMWMIFilter_Vtbl,
+    0xef2ff9b4_3c27_459a_b979_038305cec75d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMWMIFilter {
     pub unsafe fn Path(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4080,7 +4280,12 @@ pub struct IGPMWMIFilter_Vtbl {
     SetSecurityInfo: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IGPMWMIFilterCollection, IGPMWMIFilterCollection_Vtbl, 0x5782d582_1a36_4661_8a94_c3c32551945b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IGPMWMIFilterCollection,
+    IGPMWMIFilterCollection_Vtbl,
+    0x5782d582_1a36_4661_8a94_c3c32551945b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IGPMWMIFilterCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {

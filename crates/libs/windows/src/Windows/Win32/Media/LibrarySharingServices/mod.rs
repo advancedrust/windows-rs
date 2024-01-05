@@ -1,5 +1,10 @@
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWindowsMediaLibrarySharingDevice, IWindowsMediaLibrarySharingDevice_Vtbl, 0x3dccc293_4fd9_4191_a25b_8e57c5d27bd4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWindowsMediaLibrarySharingDevice,
+    IWindowsMediaLibrarySharingDevice_Vtbl,
+    0x3dccc293_4fd9_4191_a25b_8e57c5d27bd4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsMediaLibrarySharingDevice {
     pub unsafe fn DeviceID(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -36,7 +41,12 @@ pub struct IWindowsMediaLibrarySharingDevice_Vtbl {
     Properties: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWindowsMediaLibrarySharingDeviceProperties, IWindowsMediaLibrarySharingDeviceProperties_Vtbl, 0xc4623214_6b06_40c5_a623_b2ff4c076bfd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWindowsMediaLibrarySharingDeviceProperties,
+    IWindowsMediaLibrarySharingDeviceProperties_Vtbl,
+    0xc4623214_6b06_40c5_a623_b2ff4c076bfd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsMediaLibrarySharingDeviceProperties {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -77,7 +87,12 @@ pub struct IWindowsMediaLibrarySharingDeviceProperties_Vtbl {
     GetProperty: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWindowsMediaLibrarySharingDeviceProperty, IWindowsMediaLibrarySharingDeviceProperty_Vtbl, 0x81e26927_7a7d_40a7_81d4_bddc02960e3e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWindowsMediaLibrarySharingDeviceProperty,
+    IWindowsMediaLibrarySharingDeviceProperty_Vtbl,
+    0x81e26927_7a7d_40a7_81d4_bddc02960e3e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsMediaLibrarySharingDeviceProperty {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -105,7 +120,12 @@ pub struct IWindowsMediaLibrarySharingDeviceProperty_Vtbl {
     Value: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWindowsMediaLibrarySharingDevices, IWindowsMediaLibrarySharingDevices_Vtbl, 0x1803f9d6_fe6d_4546_bf5b_992fe8ec12d1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWindowsMediaLibrarySharingDevices,
+    IWindowsMediaLibrarySharingDevices_Vtbl,
+    0x1803f9d6_fe6d_4546_bf5b_992fe8ec12d1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsMediaLibrarySharingDevices {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -146,7 +166,12 @@ pub struct IWindowsMediaLibrarySharingDevices_Vtbl {
     GetDevice: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWindowsMediaLibrarySharingServices, IWindowsMediaLibrarySharingServices_Vtbl, 0x01f5f85e_0a81_40da_a7c8_21ef3af8440c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWindowsMediaLibrarySharingServices,
+    IWindowsMediaLibrarySharingServices_Vtbl,
+    0x01f5f85e_0a81_40da_a7c8_21ef3af8440c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWindowsMediaLibrarySharingServices {
     pub unsafe fn showShareMediaCPL<P0>(&self, device: P0) -> ::windows_core::Result<()>

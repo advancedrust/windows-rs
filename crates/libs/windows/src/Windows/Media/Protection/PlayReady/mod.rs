@@ -1,5 +1,10 @@
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDClient, INDClient_Vtbl, 0x3bd6781b_61b8_46e2_99a5_8abcb6b9f7d6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDClient,
+    INDClient_Vtbl,
+    0x3bd6781b_61b8_46e2_99a5_8abcb6b9f7d6
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -63,7 +68,12 @@ pub struct INDClient_Vtbl {
     Close: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDClientFactory, INDClientFactory_Vtbl, 0x3e53dd62_fee8_451f_b0d4_f706cca3e037);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDClientFactory,
+    INDClientFactory_Vtbl,
+    0x3e53dd62_fee8_451f_b0d4_f706cca3e037
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -75,7 +85,12 @@ pub struct INDClientFactory_Vtbl {
     CreateInstance: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDClosedCaptionDataReceivedEventArgs, INDClosedCaptionDataReceivedEventArgs_Vtbl, 0x4738d29f_c345_4649_8468_b8c5fc357190);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDClosedCaptionDataReceivedEventArgs,
+    INDClosedCaptionDataReceivedEventArgs_Vtbl,
+    0x4738d29f_c345_4649_8468_b8c5fc357190
+);
 #[cfg(feature = "deprecated")]
 impl INDClosedCaptionDataReceivedEventArgs {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -131,7 +146,12 @@ pub struct INDClosedCaptionDataReceivedEventArgs_Vtbl {
     ClosedCaptionData: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDCustomData, INDCustomData_Vtbl, 0xf5cb0fdc_2d09_4f19_b5e1_76a0b3ee9267);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDCustomData,
+    INDCustomData_Vtbl,
+    0xf5cb0fdc_2d09_4f19_b5e1_76a0b3ee9267
+);
 #[cfg(feature = "deprecated")]
 impl INDCustomData {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -174,7 +194,12 @@ pub struct INDCustomData_Vtbl {
     CustomData: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDCustomDataFactory, INDCustomDataFactory_Vtbl, 0xd65405ab_3424_4833_8c9a_af5fdeb22872);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDCustomDataFactory,
+    INDCustomDataFactory_Vtbl,
+    0xd65405ab_3424_4833_8c9a_af5fdeb22872
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -186,7 +211,12 @@ pub struct INDCustomDataFactory_Vtbl {
     CreateInstance: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDDownloadEngine, INDDownloadEngine_Vtbl, 0x2d223d65_c4b6_4438_8d46_b96e6d0fb21f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDDownloadEngine,
+    INDDownloadEngine_Vtbl,
+    0x2d223d65_c4b6_4438_8d46_b96e6d0fb21f
+);
 #[cfg(feature = "deprecated")]
 impl INDDownloadEngine {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -308,7 +338,12 @@ pub struct INDDownloadEngine_Vtbl {
     Notifier: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDDownloadEngineNotifier, INDDownloadEngineNotifier_Vtbl, 0xd720b4d4_f4b8_4530_a809_9193a571e7fc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDDownloadEngineNotifier,
+    INDDownloadEngineNotifier_Vtbl,
+    0xd720b4d4_f4b8_4530_a809_9193a571e7fc
+);
 #[cfg(feature = "deprecated")]
 impl INDDownloadEngineNotifier {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -388,7 +423,12 @@ pub struct INDDownloadEngineNotifier_Vtbl {
     OnNetworkError: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDLicenseFetchCompletedEventArgs, INDLicenseFetchCompletedEventArgs_Vtbl, 0x1ee30a1a_11b2_4558_8865_e3a516922517);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDLicenseFetchCompletedEventArgs,
+    INDLicenseFetchCompletedEventArgs_Vtbl,
+    0x1ee30a1a_11b2_4558_8865_e3a516922517
+);
 #[cfg(feature = "deprecated")]
 impl INDLicenseFetchCompletedEventArgs {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -418,7 +458,12 @@ pub struct INDLicenseFetchCompletedEventArgs_Vtbl {
     ResponseCustomData: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDLicenseFetchDescriptor, INDLicenseFetchDescriptor_Vtbl, 0x5498d33a_e686_4935_a567_7ca77ad20fa4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDLicenseFetchDescriptor,
+    INDLicenseFetchDescriptor_Vtbl,
+    0x5498d33a_e686_4935_a567_7ca77ad20fa4
+);
 #[cfg(feature = "deprecated")]
 impl INDLicenseFetchDescriptor {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -487,7 +532,12 @@ pub struct INDLicenseFetchDescriptor_Vtbl {
     SetLicenseFetchChallengeCustomData: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDLicenseFetchDescriptorFactory, INDLicenseFetchDescriptorFactory_Vtbl, 0xd0031202_cfac_4f00_ae6a_97af80b848f2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDLicenseFetchDescriptorFactory,
+    INDLicenseFetchDescriptorFactory_Vtbl,
+    0xd0031202_cfac_4f00_ae6a_97af80b848f2
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -499,7 +549,12 @@ pub struct INDLicenseFetchDescriptorFactory_Vtbl {
     CreateInstance: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDLicenseFetchResult, INDLicenseFetchResult_Vtbl, 0x21d39698_aa62_45ff_a5ff_8037e5433825);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDLicenseFetchResult,
+    INDLicenseFetchResult_Vtbl,
+    0x21d39698_aa62_45ff_a5ff_8037e5433825
+);
 #[cfg(feature = "deprecated")]
 impl INDLicenseFetchResult {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -529,7 +584,12 @@ pub struct INDLicenseFetchResult_Vtbl {
     ResponseCustomData: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDMessenger, INDMessenger_Vtbl, 0xd42df95d_a75b_47bf_8249_bc83820da38a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDMessenger,
+    INDMessenger_Vtbl,
+    0xd42df95d_a75b_47bf_8249_bc83820da38a
+);
 #[cfg(feature = "deprecated")]
 impl INDMessenger {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -598,7 +658,12 @@ pub struct INDMessenger_Vtbl {
     SendLicenseFetchRequestAsync: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDProximityDetectionCompletedEventArgs, INDProximityDetectionCompletedEventArgs_Vtbl, 0x2a706328_da25_4f8c_9eb7_5d0fc3658bca);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDProximityDetectionCompletedEventArgs,
+    INDProximityDetectionCompletedEventArgs_Vtbl,
+    0x2a706328_da25_4f8c_9eb7_5d0fc3658bca
+);
 #[cfg(feature = "deprecated")]
 impl INDProximityDetectionCompletedEventArgs {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -628,7 +693,12 @@ pub struct INDProximityDetectionCompletedEventArgs_Vtbl {
     ProximityDetectionRetryCount: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDRegistrationCompletedEventArgs, INDRegistrationCompletedEventArgs_Vtbl, 0x9e39b64d_ab5b_4905_acdc_787a77c6374d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDRegistrationCompletedEventArgs,
+    INDRegistrationCompletedEventArgs_Vtbl,
+    0x9e39b64d_ab5b_4905_acdc_787a77c6374d
+);
 #[cfg(feature = "deprecated")]
 impl INDRegistrationCompletedEventArgs {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -694,7 +764,12 @@ pub struct INDRegistrationCompletedEventArgs_Vtbl {
     SetTransmitterCertificateAccepted: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDSendResult, INDSendResult_Vtbl, 0xe3685517_a584_479d_90b7_d689c7bf7c80);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDSendResult,
+    INDSendResult_Vtbl,
+    0xe3685517_a584_479d_90b7_d689c7bf7c80
+);
 #[cfg(feature = "deprecated")]
 impl INDSendResult {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -724,7 +799,12 @@ pub struct INDSendResult_Vtbl {
     Response: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDStartResult, INDStartResult_Vtbl, 0x79f6e96e_f50f_4015_8ba4_c2bc344ebd4e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDStartResult,
+    INDStartResult_Vtbl,
+    0x79f6e96e_f50f_4015_8ba4_c2bc344ebd4e
+);
 #[cfg(feature = "deprecated")]
 impl INDStartResult {
     #[doc = "Required features: `\"Media_Core\"`, `\"deprecated\"`"]
@@ -754,7 +834,12 @@ pub struct INDStartResult_Vtbl {
     MediaStreamSource: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDStorageFileHelper, INDStorageFileHelper_Vtbl, 0xd8f0bef8_91d2_4d47_a3f9_eaff4edb729f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDStorageFileHelper,
+    INDStorageFileHelper_Vtbl,
+    0xd8f0bef8_91d2_4d47_a3f9_eaff4edb729f
+);
 #[cfg(feature = "deprecated")]
 impl INDStorageFileHelper {
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Storage\"`, `\"deprecated\"`"]
@@ -787,7 +872,12 @@ pub struct INDStorageFileHelper_Vtbl {
     GetFileURLs: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDStreamParser, INDStreamParser_Vtbl, 0xe0baa198_9796_41c9_8695_59437e67e66a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDStreamParser,
+    INDStreamParser_Vtbl,
+    0xe0baa198_9796_41c9_8695_59437e67e66a
+);
 #[cfg(feature = "deprecated")]
 impl INDStreamParser {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -863,7 +953,12 @@ pub struct INDStreamParser_Vtbl {
     Notifier: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDStreamParserNotifier, INDStreamParserNotifier_Vtbl, 0xc167acd0_2ce6_426c_ace5_5e9275fea715);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDStreamParserNotifier,
+    INDStreamParserNotifier_Vtbl,
+    0xc167acd0_2ce6_426c_ace5_5e9275fea715
+);
 #[cfg(feature = "deprecated")]
 impl INDStreamParserNotifier {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -933,7 +1028,12 @@ pub struct INDStreamParserNotifier_Vtbl {
     OnBeginSetupDecryptor: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDTCPMessengerFactory, INDTCPMessengerFactory_Vtbl, 0x7dd85cfe_1b99_4f68_8f82_8177f7cedf2b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDTCPMessengerFactory,
+    INDTCPMessengerFactory_Vtbl,
+    0x7dd85cfe_1b99_4f68_8f82_8177f7cedf2b
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -945,7 +1045,12 @@ pub struct INDTCPMessengerFactory_Vtbl {
     CreateInstance: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(INDTransmitterProperties, INDTransmitterProperties_Vtbl, 0xe536af23_ac4f_4adc_8c66_4ff7c2702dd6);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    INDTransmitterProperties,
+    INDTransmitterProperties_Vtbl,
+    0xe536af23_ac4f_4adc_8c66_4ff7c2702dd6
+);
 #[cfg(feature = "deprecated")]
 impl INDTransmitterProperties {
     #[doc = "Required features: `\"deprecated\"`"]

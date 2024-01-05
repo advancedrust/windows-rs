@@ -95,7 +95,12 @@ pub struct ISpatialAnchorStore_Vtbl {
     pub Clear: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISpatialAnchorTransferManagerStatics, ISpatialAnchorTransferManagerStatics_Vtbl, 0x03bbf9b9_12d8_4bce_8835_c5df3ac0adab);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISpatialAnchorTransferManagerStatics,
+    ISpatialAnchorTransferManagerStatics_Vtbl,
+    0x03bbf9b9_12d8_4bce_8835_c5df3ac0adab
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

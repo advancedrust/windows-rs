@@ -2507,7 +2507,12 @@ pub struct IWICPalette_Vtbl {
     pub HasAlpha: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pfhasalpha: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWICPersistStream, IWICPersistStream_Vtbl, 0x00675040_6908_45f8_86a3_49c7dfd6d9ad);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWICPersistStream,
+    IWICPersistStream_Vtbl,
+    0x00675040_6908_45f8_86a3_49c7dfd6d9ad
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWICPersistStream {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2816,7 +2821,12 @@ pub struct IWICProgressiveLevelControl_Vtbl {
     pub SetCurrentLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, nlevel: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IWICStream, IWICStream_Vtbl, 0x135ff860_22b7_4ddf_b0f6_218f4f299a43);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IWICStream,
+    IWICStream_Vtbl,
+    0x135ff860_22b7_4ddf_b0f6_218f4f299a43
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IWICStream {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

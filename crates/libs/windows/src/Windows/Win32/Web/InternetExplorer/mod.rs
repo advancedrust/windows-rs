@@ -538,7 +538,12 @@ pub struct IActiveXUIHandlerSite3_Vtbl {
     pub MessageBoxW: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, hwnd: super::super::Foundation::HWND, text: ::windows_core::PCWSTR, caption: ::windows_core::PCWSTR, r#type: u32, result: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAnchorClick, IAnchorClick_Vtbl, 0x13d5413b_33b9_11d2_95a7_00c04f8ecb02);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAnchorClick,
+    IAnchorClick_Vtbl,
+    0x13d5413b_33b9_11d2_95a7_00c04f8ecb02
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAnchorClick {
     pub unsafe fn ProcOnClick(&self) -> ::windows_core::Result<()> {
@@ -596,7 +601,12 @@ pub struct ICaretPositionProvider_Vtbl {
     pub GetCaretPosition: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pptcaret: *mut super::super::Foundation::POINT, pflheight: *mut f32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDeviceRect, IDeviceRect_Vtbl, 0x3050f6d5_98b5_11cf_bb82_00aa00bdce0b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDeviceRect,
+    IDeviceRect_Vtbl,
+    0x3050f6d5_98b5_11cf_bb82_00aa00bdce0b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDeviceRect {}
 #[cfg(feature = "Win32_System_Com")]
@@ -733,7 +743,12 @@ pub struct IDocObjectService_Vtbl {
     pub IsErrorUrl: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, lpszurl: ::windows_core::PCWSTR, pfiserror: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDownloadBehavior, IDownloadBehavior_Vtbl, 0x3050f5bd_98b5_11cf_bb82_00aa00bdce0b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDownloadBehavior,
+    IDownloadBehavior_Vtbl,
+    0x3050f5bd_98b5_11cf_bb82_00aa00bdce0b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDownloadBehavior {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -959,7 +974,12 @@ pub struct IHTMLPersistData_Vtbl {
     pub queryType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ltype: i32, pfsupportstype: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IHTMLPersistDataOM, IHTMLPersistDataOM_Vtbl, 0x3050f4c0_98b5_11cf_bb82_00aa00bdce0b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IHTMLPersistDataOM,
+    IHTMLPersistDataOM_Vtbl,
+    0x3050f4c0_98b5_11cf_bb82_00aa00bdce0b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IHTMLPersistDataOM {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1014,7 +1034,12 @@ pub struct IHTMLPersistDataOM_Vtbl {
     pub removeAttribute: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IHTMLUserDataOM, IHTMLUserDataOM_Vtbl, 0x3050f48f_98b5_11cf_bb82_00aa00bdce0b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IHTMLUserDataOM,
+    IHTMLUserDataOM_Vtbl,
+    0x3050f48f_98b5_11cf_bb82_00aa00bdce0b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IHTMLUserDataOM {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1095,7 +1120,12 @@ pub struct IHTMLUserDataOM_Vtbl {
     pub expires: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstr: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IHeaderFooter, IHeaderFooter_Vtbl, 0x3050f6ce_98b5_11cf_bb82_00aa00bdce0b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IHeaderFooter,
+    IHeaderFooter_Vtbl,
+    0x3050f6ce_98b5_11cf_bb82_00aa00bdce0b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IHeaderFooter {
     pub unsafe fn htmlHead(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1232,7 +1262,12 @@ pub struct IHeaderFooter_Vtbl {
     pub timeLong: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, p: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IHeaderFooter2, IHeaderFooter2_Vtbl, 0x305104a5_98b5_11cf_bb82_00aa00bdce0b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IHeaderFooter2,
+    IHeaderFooter2_Vtbl,
+    0x305104a5_98b5_11cf_bb82_00aa00bdce0b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IHeaderFooter2 {
     pub unsafe fn htmlHead(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -1359,7 +1394,12 @@ pub struct IHeaderFooter2_Vtbl {
     pub font: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, p: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IHomePage, IHomePage_Vtbl, 0x766bf2af_d650_11d1_9811_00c04fc31d2e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IHomePage,
+    IHomePage_Vtbl,
+    0x766bf2af_d650_11d1_9811_00c04fc31d2e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IHomePage {
     pub unsafe fn navigateHomePage(&self) -> ::windows_core::Result<()> {
@@ -1421,7 +1461,12 @@ pub struct IHomePageSetting_Vtbl {
     pub SetHomePageToBrowserDefault: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IIEWebDriverManager, IIEWebDriverManager_Vtbl, 0xbd1dc630_6590_4ca2_a293_6bc72b2438d8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IIEWebDriverManager,
+    IIEWebDriverManager_Vtbl,
+    0xbd1dc630_6590_4ca2_a293_6bc72b2438d8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IIEWebDriverManager {
     pub unsafe fn ExecuteCommand<P0>(&self, command: P0) -> ::windows_core::Result<::windows_core::PWSTR>
@@ -1442,7 +1487,12 @@ pub struct IIEWebDriverManager_Vtbl {
     pub ExecuteCommand: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, command: ::windows_core::PCWSTR, response: *mut ::windows_core::PWSTR) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IIEWebDriverSite, IIEWebDriverSite_Vtbl, 0xffb84444_453d_4fbc_9f9d_8db5c471ec75);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IIEWebDriverSite,
+    IIEWebDriverSite_Vtbl,
+    0xffb84444_453d_4fbc_9f9d_8db5c471ec75
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IIEWebDriverSite {
     pub unsafe fn WindowOperation(&self, operationcode: u32, hwnd: u32) -> ::windows_core::Result<()> {
@@ -1585,7 +1635,12 @@ pub struct IImageDecodeFilter_Vtbl {
     pub Terminate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, hrstatus: ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IIntelliForms, IIntelliForms_Vtbl, 0x9b9f68e6_1aaa_11d2_bca5_00c04fd929db);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IIntelliForms,
+    IIntelliForms_Vtbl,
+    0x9b9f68e6_1aaa_11d2_bca5_00c04fd929db
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IIntelliForms {
     pub unsafe fn enabled(&self) -> ::windows_core::Result<super::super::Foundation::VARIANT_BOOL> {
@@ -1642,7 +1697,12 @@ pub struct IInternetExplorerManager2_Vtbl {
     pub EnumFrameWindows: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenum: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ILayoutRect, ILayoutRect_Vtbl, 0x3050f665_98b5_11cf_bb82_00aa00bdce0b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ILayoutRect,
+    ILayoutRect_Vtbl,
+    0x3050f665_98b5_11cf_bb82_00aa00bdce0b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ILayoutRect {
     pub unsafe fn SetnextRect<P0>(&self, bstrelementid: P0) -> ::windows_core::Result<()>
@@ -2146,7 +2206,12 @@ pub struct IPeerFactory_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IPersistHistory, IPersistHistory_Vtbl, 0x91a565c1_e38f_11d0_94bf_00a0c9055cbf);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IPersistHistory,
+    IPersistHistory_Vtbl,
+    0x91a565c1_e38f_11d0_94bf_00a0c9055cbf
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IPersistHistory {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2911,7 +2976,12 @@ pub struct ITridentTouchInputSite_Vtbl {
     pub ZoomToPoint: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, x: i32, y: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Ole")]
-::windows_core::imp::com_interface!(IUrlHistoryNotify, IUrlHistoryNotify_Vtbl, 0xbc40bec1_c493_11d0_831b_00c04fd5ae38);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Ole\"`"]
+    IUrlHistoryNotify,
+    IUrlHistoryNotify_Vtbl,
+    0xbc40bec1_c493_11d0_831b_00c04fd5ae38
+);
 #[cfg(feature = "Win32_System_Ole")]
 impl IUrlHistoryNotify {
     #[doc = "Required features: `\"Win32_System_Ole\"`"]
@@ -3199,7 +3269,12 @@ pub struct IWebBrowserEventsUrlService_Vtbl {
     pub GetUrlForEvents: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, purl: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(Iwfolders, Iwfolders_Vtbl, 0xbae31f98_1b81_11d2_a97a_00c04f8ecb02);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    Iwfolders,
+    Iwfolders_Vtbl,
+    0xbae31f98_1b81_11d2_a97a_00c04f8ecb02
+);
 #[cfg(feature = "Win32_System_Com")]
 impl Iwfolders {
     pub unsafe fn navigate<P0>(&self, bstrurl: P0) -> ::windows_core::Result<::windows_core::BSTR>

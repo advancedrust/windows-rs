@@ -1,5 +1,10 @@
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IBackgroundEnergyManagerStatics, IBackgroundEnergyManagerStatics_Vtbl, 0xb3161d95_1180_4376_96e1_4095568147ce);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IBackgroundEnergyManagerStatics,
+    IBackgroundEnergyManagerStatics_Vtbl,
+    0xb3161d95_1180_4376_96e1_4095568147ce
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -55,7 +60,12 @@ pub struct IBackgroundEnergyManagerStatics_Vtbl {
     RemoveRecentEnergyUsageReturnedToLow: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IForegroundEnergyManagerStatics, IForegroundEnergyManagerStatics_Vtbl, 0x9ff86872_e677_4814_9a20_5337ca732b98);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IForegroundEnergyManagerStatics,
+    IForegroundEnergyManagerStatics_Vtbl,
+    0x9ff86872_e677_4814_9a20_5337ca732b98
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

@@ -876,7 +876,12 @@ pub struct IDeviceConnectionChangeTriggerStatics_Vtbl {
     pub FromIdAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, deviceid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IDeviceManufacturerNotificationTrigger, IDeviceManufacturerNotificationTrigger_Vtbl, 0x81278ab5_41ab_16da_86c2_7f7bf0912f5b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IDeviceManufacturerNotificationTrigger,
+    IDeviceManufacturerNotificationTrigger_Vtbl,
+    0x81278ab5_41ab_16da_86c2_7f7bf0912f5b
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -892,7 +897,12 @@ pub struct IDeviceManufacturerNotificationTrigger_Vtbl {
     OneShot: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IDeviceManufacturerNotificationTriggerFactory, IDeviceManufacturerNotificationTriggerFactory_Vtbl, 0x7955de75_25bb_4153_a1a2_3029fcabb652);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IDeviceManufacturerNotificationTriggerFactory,
+    IDeviceManufacturerNotificationTriggerFactory_Vtbl,
+    0x7955de75_25bb_4153_a1a2_3029fcabb652
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -1149,7 +1159,12 @@ pub struct IRfcommConnectionTrigger_Vtbl {
     SetRemoteHostName: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISecondaryAuthenticationFactorAuthenticationTrigger, ISecondaryAuthenticationFactorAuthenticationTrigger_Vtbl, 0xf237f327_5181_4f24_96a7_700a4e5fac62);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISecondaryAuthenticationFactorAuthenticationTrigger,
+    ISecondaryAuthenticationFactorAuthenticationTrigger_Vtbl,
+    0xf237f327_5181_4f24_96a7_700a4e5fac62
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

@@ -20,7 +20,12 @@ pub struct ILocalContentSuggestionSettings_Vtbl {
     PropertiesToMatch: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISearchPane, ISearchPane_Vtbl, 0xfdacec38_3700_4d73_91a1_2f998674238a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISearchPane,
+    ISearchPane_Vtbl,
+    0xfdacec38_3700_4d73_91a1_2f998674238a
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -128,7 +133,12 @@ pub struct ISearchPane_Vtbl {
     TrySetQueryText: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISearchPaneQueryChangedEventArgs, ISearchPaneQueryChangedEventArgs_Vtbl, 0x3c064fe9_2351_4248_a529_7110f464a785);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISearchPaneQueryChangedEventArgs,
+    ISearchPaneQueryChangedEventArgs_Vtbl,
+    0x3c064fe9_2351_4248_a529_7110f464a785
+);
 #[cfg(feature = "deprecated")]
 impl ISearchPaneQueryChangedEventArgs {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -196,7 +206,12 @@ pub struct ISearchPaneQueryLinguisticDetails_Vtbl {
     pub QueryTextCompositionLength: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISearchPaneQuerySubmittedEventArgs, ISearchPaneQuerySubmittedEventArgs_Vtbl, 0x143ba4fc_e9c5_4736_91b2_e8eb9cb88356);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISearchPaneQuerySubmittedEventArgs,
+    ISearchPaneQuerySubmittedEventArgs_Vtbl,
+    0x143ba4fc_e9c5_4736_91b2_e8eb9cb88356
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -212,7 +227,12 @@ pub struct ISearchPaneQuerySubmittedEventArgs_Vtbl {
     Language: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISearchPaneQuerySubmittedEventArgsWithLinguisticDetails, ISearchPaneQuerySubmittedEventArgsWithLinguisticDetails_Vtbl, 0x460c92e5_4c32_4538_a4d4_b6b4400d140f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISearchPaneQuerySubmittedEventArgsWithLinguisticDetails,
+    ISearchPaneQuerySubmittedEventArgsWithLinguisticDetails_Vtbl,
+    0x460c92e5_4c32_4538_a4d4_b6b4400d140f
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -224,7 +244,12 @@ pub struct ISearchPaneQuerySubmittedEventArgsWithLinguisticDetails_Vtbl {
     LinguisticDetails: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISearchPaneResultSuggestionChosenEventArgs, ISearchPaneResultSuggestionChosenEventArgs_Vtbl, 0xc8316cc0_aed2_41e0_bce0_c26ca74f85ec);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISearchPaneResultSuggestionChosenEventArgs,
+    ISearchPaneResultSuggestionChosenEventArgs_Vtbl,
+    0xc8316cc0_aed2_41e0_bce0_c26ca74f85ec
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -236,7 +261,12 @@ pub struct ISearchPaneResultSuggestionChosenEventArgs_Vtbl {
     Tag: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISearchPaneStatics, ISearchPaneStatics_Vtbl, 0x9572adf1_8f1d_481f_a15b_c61655f16a0e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISearchPaneStatics,
+    ISearchPaneStatics_Vtbl,
+    0x9572adf1_8f1d_481f_a15b_c61655f16a0e
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -248,7 +278,12 @@ pub struct ISearchPaneStatics_Vtbl {
     GetForCurrentView: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISearchPaneStaticsWithHideThisApplication, ISearchPaneStaticsWithHideThisApplication_Vtbl, 0x00732830_50f1_4d03_99ac_c6644c8ed8b5);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISearchPaneStaticsWithHideThisApplication,
+    ISearchPaneStaticsWithHideThisApplication_Vtbl,
+    0x00732830_50f1_4d03_99ac_c6644c8ed8b5
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -260,7 +295,12 @@ pub struct ISearchPaneStaticsWithHideThisApplication_Vtbl {
     HideThisApplication: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISearchPaneSuggestionsRequest, ISearchPaneSuggestionsRequest_Vtbl, 0x81b10b1c_e561_4093_9b4d_2ad482794a53);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISearchPaneSuggestionsRequest,
+    ISearchPaneSuggestionsRequest_Vtbl,
+    0x81b10b1c_e561_4093_9b4d_2ad482794a53
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -280,7 +320,12 @@ pub struct ISearchPaneSuggestionsRequest_Vtbl {
     GetDeferral: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISearchPaneSuggestionsRequestDeferral, ISearchPaneSuggestionsRequestDeferral_Vtbl, 0xa0d009f7_8748_4ee2_ad44_afa6be997c51);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISearchPaneSuggestionsRequestDeferral,
+    ISearchPaneSuggestionsRequestDeferral_Vtbl,
+    0xa0d009f7_8748_4ee2_ad44_afa6be997c51
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -292,7 +337,12 @@ pub struct ISearchPaneSuggestionsRequestDeferral_Vtbl {
     Complete: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISearchPaneSuggestionsRequestedEventArgs, ISearchPaneSuggestionsRequestedEventArgs_Vtbl, 0xc89b8a2f_ac56_4460_8d2f_80023bec4fc5);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISearchPaneSuggestionsRequestedEventArgs,
+    ISearchPaneSuggestionsRequestedEventArgs_Vtbl,
+    0xc89b8a2f_ac56_4460_8d2f_80023bec4fc5
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -304,7 +354,12 @@ pub struct ISearchPaneSuggestionsRequestedEventArgs_Vtbl {
     Request: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISearchPaneVisibilityChangedEventArgs, ISearchPaneVisibilityChangedEventArgs_Vtbl, 0x3c4d3046_ac4b_49f2_97d6_020e6182cb9c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISearchPaneVisibilityChangedEventArgs,
+    ISearchPaneVisibilityChangedEventArgs_Vtbl,
+    0x3c4d3046_ac4b_49f2_97d6_020e6182cb9c
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

@@ -167,7 +167,12 @@ pub struct ILockScreenStatics_Vtbl {
     SetImageStreamAsync: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IUserInformationStatics, IUserInformationStatics_Vtbl, 0x77f3a910_48fa_489c_934e_2ae85ba8f772);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IUserInformationStatics,
+    IUserInformationStatics_Vtbl,
+    0x77f3a910_48fa_489c_934e_2ae85ba8f772
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

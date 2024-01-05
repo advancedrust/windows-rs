@@ -514,7 +514,12 @@ pub struct IOpcPartSet_Vtbl {
     pub GetEnumerator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, partenumerator: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IOpcPartUri, IOpcPartUri_Vtbl, 0x7d3babe7_88b2_46ba_85cb_4203cb016c87);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IOpcPartUri,
+    IOpcPartUri_Vtbl,
+    0x7d3babe7_88b2_46ba_85cb_4203cb016c87
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IOpcPartUri {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1451,7 +1456,12 @@ pub struct IOpcSigningOptions_Vtbl {
     SetSignaturePartName: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IOpcUri, IOpcUri_Vtbl, 0xbc9c1b9b_d62c_49eb_aef0_3b4e0b28ebed);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IOpcUri,
+    IOpcUri_Vtbl,
+    0xbc9c1b9b_d62c_49eb_aef0_3b4e0b28ebed
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IOpcUri {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

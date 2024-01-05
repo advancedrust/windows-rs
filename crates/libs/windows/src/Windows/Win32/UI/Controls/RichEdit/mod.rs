@@ -254,7 +254,12 @@ pub struct IRicheditUiaOverrides_Vtbl {
     GetPropertyOverrideValue: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextDisplays, ITextDisplays_Vtbl, 0xc241f5f2_7206_11d8_a2c7_00a0d1d6c6b3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextDisplays,
+    ITextDisplays_Vtbl,
+    0xc241f5f2_7206_11d8_a2c7_00a0d1d6c6b3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextDisplays {}
 #[cfg(feature = "Win32_System_Com")]
@@ -266,7 +271,12 @@ pub struct ITextDisplays_Vtbl {
     pub base__: super::super::super::System::Com::IDispatch_Vtbl,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextDocument, ITextDocument_Vtbl, 0x8cc497c0_a1df_11ce_8098_00aa0047be5d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextDocument,
+    ITextDocument_Vtbl,
+    0x8cc497c0_a1df_11ce_8098_00aa0047be5d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextDocument {
     pub unsafe fn GetName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -397,7 +407,12 @@ pub struct ITextDocument_Vtbl {
     RangeFromPoint: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextDocument2, ITextDocument2_Vtbl, 0xc241f5e0_7206_11d8_a2c7_00a0d1d6c6b3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextDocument2,
+    ITextDocument2_Vtbl,
+    0xc241f5e0_7206_11d8_a2c7_00a0d1d6c6b3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextDocument2 {
     pub unsafe fn GetName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -756,7 +771,12 @@ pub struct ITextDocument2_Vtbl {
     pub GetStory: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, index: i32, ppstory: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextDocument2Old, ITextDocument2Old_Vtbl, 0x01c25500_4268_11d1_883a_3c8b00c10000);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextDocument2Old,
+    ITextDocument2Old_Vtbl,
+    0x01c25500_4268_11d1_883a_3c8b00c10000
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextDocument2Old {
     pub unsafe fn GetName(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -980,7 +1000,12 @@ pub struct ITextDocument2Old_Vtbl {
     pub ReleaseCallManager: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvoid: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextFont, ITextFont_Vtbl, 0x8cc497c3_a1df_11ce_8098_00aa0047be5d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextFont,
+    ITextFont_Vtbl,
+    0x8cc497c3_a1df_11ce_8098_00aa0047be5d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextFont {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1265,7 +1290,12 @@ pub struct ITextFont_Vtbl {
     pub SetWeight: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextFont2, ITextFont2_Vtbl, 0xc241f5e3_7206_11d8_a2c7_00a0d1d6c6b3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextFont2,
+    ITextFont2_Vtbl,
+    0xc241f5e3_7206_11d8_a2c7_00a0d1d6c6b3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextFont2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2228,7 +2258,12 @@ pub struct ITextHost2_Vtbl {
     pub TxGetHorzExtent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plhorzextent: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextPara, ITextPara_Vtbl, 0x8cc497c4_a1df_11ce_8098_00aa0047be5d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextPara,
+    ITextPara_Vtbl,
+    0x8cc497c4_a1df_11ce_8098_00aa0047be5d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextPara {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2478,7 +2513,12 @@ pub struct ITextPara_Vtbl {
     pub GetTab: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, itab: i32, ptbpos: *mut f32, ptbalign: *mut i32, ptbleader: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextPara2, ITextPara2_Vtbl, 0xc241f5e4_7206_11d8_a2c7_00a0d1d6c6b3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextPara2,
+    ITextPara2_Vtbl,
+    0xc241f5e4_7206_11d8_a2c7_00a0d1d6c6b3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextPara2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2764,7 +2804,12 @@ pub struct ITextPara2_Vtbl {
     pub SetProperty: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, r#type: i32, value: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextRange, ITextRange_Vtbl, 0x8cc497c2_a1df_11ce_8098_00aa0047be5d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextRange,
+    ITextRange_Vtbl,
+    0x8cc497c2_a1df_11ce_8098_00aa0047be5d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextRange {
     pub unsafe fn GetText(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3146,7 +3191,12 @@ pub struct ITextRange_Vtbl {
     pub GetEmbeddedObject: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppobject: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextRange2, ITextRange2_Vtbl, 0xc241f5e2_7206_11d8_a2c7_00a0d1d6c6b3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextRange2,
+    ITextRange2_Vtbl,
+    0xc241f5e2_7206_11d8_a2c7_00a0d1d6c6b3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextRange2 {
     pub unsafe fn GetText(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3710,7 +3760,12 @@ pub struct ITextRange2_Vtbl {
     InsertImage: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextRow, ITextRow_Vtbl, 0xc241f5ef_7206_11d8_a2c7_00a0d1d6c6b3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextRow,
+    ITextRow_Vtbl,
+    0xc241f5ef_7206_11d8_a2c7_00a0d1d6c6b3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextRow {
     pub unsafe fn GetAlignment(&self) -> ::windows_core::Result<i32> {
@@ -3936,7 +3991,12 @@ pub struct ITextRow_Vtbl {
     pub SetProperty: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, r#type: i32, value: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextSelection, ITextSelection_Vtbl, 0x8cc497c1_a1df_11ce_8098_00aa0047be5d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextSelection,
+    ITextSelection_Vtbl,
+    0x8cc497c1_a1df_11ce_8098_00aa0047be5d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextSelection {
     pub unsafe fn GetText(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -4258,7 +4318,12 @@ pub struct ITextSelection_Vtbl {
     pub TypeText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstr: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextSelection2, ITextSelection2_Vtbl, 0xc241f5e1_7206_11d8_a2c7_00a0d1d6c6b3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextSelection2,
+    ITextSelection2_Vtbl,
+    0xc241f5e1_7206_11d8_a2c7_00a0d1d6c6b3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextSelection2 {
     pub unsafe fn GetText(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -5079,7 +5144,12 @@ pub struct ITextStory_Vtbl {
     pub SetText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, flags: i32, bstr: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextStoryRanges, ITextStoryRanges_Vtbl, 0x8cc497c5_a1df_11ce_8098_00aa0047be5d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextStoryRanges,
+    ITextStoryRanges_Vtbl,
+    0x8cc497c5_a1df_11ce_8098_00aa0047be5d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextStoryRanges {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -5112,7 +5182,12 @@ pub struct ITextStoryRanges_Vtbl {
     pub GetCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pcount: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextStoryRanges2, ITextStoryRanges2_Vtbl, 0xc241f5e5_7206_11d8_a2c7_00a0d1d6c6b3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextStoryRanges2,
+    ITextStoryRanges2_Vtbl,
+    0xc241f5e5_7206_11d8_a2c7_00a0d1d6c6b3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextStoryRanges2 {
     pub unsafe fn _NewEnum(&self) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -5149,7 +5224,12 @@ pub struct ITextStoryRanges2_Vtbl {
     Item2: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITextStrings, ITextStrings_Vtbl, 0xc241f5e7_7206_11d8_a2c7_00a0d1d6c6b3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITextStrings,
+    ITextStrings_Vtbl,
+    0xc241f5e7_7206_11d8_a2c7_00a0d1d6c6b3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITextStrings {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

@@ -2328,7 +2328,12 @@ pub struct IEnumTerminalClass_Vtbl {
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenum: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMcastAddressAllocation, IMcastAddressAllocation_Vtbl, 0xdf0daef1_a289_11d1_8697_006008b0e5d2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMcastAddressAllocation,
+    IMcastAddressAllocation_Vtbl,
+    0xdf0daef1_a289_11d1_8697_006008b0e5d2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMcastAddressAllocation {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -2422,7 +2427,12 @@ pub struct IMcastAddressAllocation_Vtbl {
     CreateLeaseInfoFromVariant: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMcastLeaseInfo, IMcastLeaseInfo_Vtbl, 0xdf0daefd_a289_11d1_8697_006008b0e5d2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMcastLeaseInfo,
+    IMcastLeaseInfo_Vtbl,
+    0xdf0daefd_a289_11d1_8697_006008b0e5d2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMcastLeaseInfo {
     pub unsafe fn RequestID(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2488,7 +2498,12 @@ pub struct IMcastLeaseInfo_Vtbl {
     pub EnumerateAddresses: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenumaddresses: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IMcastScope, IMcastScope_Vtbl, 0xdf0daef4_a289_11d1_8697_006008b0e5d2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IMcastScope,
+    IMcastScope_Vtbl,
+    0xdf0daef4_a289_11d1_8697_006008b0e5d2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IMcastScope {
     pub unsafe fn ScopeID(&self) -> ::windows_core::Result<i32> {
@@ -2526,7 +2541,12 @@ pub struct IMcastScope_Vtbl {
     pub TTL: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pttl: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITACDGroup, ITACDGroup_Vtbl, 0x5afc3148_4bcc_11d1_bf80_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITACDGroup,
+    ITACDGroup_Vtbl,
+    0x5afc3148_4bcc_11d1_bf80_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITACDGroup {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -2559,7 +2579,12 @@ pub struct ITACDGroup_Vtbl {
     Queues: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITACDGroupEvent, ITACDGroupEvent_Vtbl, 0x297f3032_bd11_11d1_a0a7_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITACDGroupEvent,
+    ITACDGroupEvent_Vtbl,
+    0x297f3032_bd11_11d1_a0a7_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITACDGroupEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2615,7 +2640,12 @@ pub struct ITAMMediaFormat_Vtbl {
     SetMediaFormat: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITASRTerminalEvent, ITASRTerminalEvent_Vtbl, 0xee016a02_4fa9_467c_933f_5a15b12377d7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITASRTerminalEvent,
+    ITASRTerminalEvent_Vtbl,
+    0xee016a02_4fa9_467c_933f_5a15b12377d7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITASRTerminalEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2653,7 +2683,12 @@ pub struct ITASRTerminalEvent_Vtbl {
     pub Error: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, phrerrorcode: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAddress, ITAddress_Vtbl, 0xb1efc386_9355_11d0_835c_00aa003ccabd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAddress,
+    ITAddress_Vtbl,
+    0xb1efc386_9355_11d0_835c_00aa003ccabd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddress {
     pub unsafe fn State(&self) -> ::windows_core::Result<ADDRESS_STATE> {
@@ -2781,7 +2816,12 @@ pub struct ITAddress_Vtbl {
     pub DoNotDisturb: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pfdonotdisturb: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAddress2, ITAddress2_Vtbl, 0xb0ae5d9b_be51_46c9_b0f7_dfa8a22a8bc4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAddress2,
+    ITAddress2_Vtbl,
+    0xb0ae5d9b_be51_46c9_b0f7_dfa8a22a8bc4
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddress2 {
     pub unsafe fn State(&self) -> ::windows_core::Result<ADDRESS_STATE> {
@@ -2960,7 +3000,12 @@ pub struct ITAddress2_Vtbl {
     pub NegotiateExtVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, llowversion: i32, lhighversion: i32, plextversion: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAddressCapabilities, ITAddressCapabilities_Vtbl, 0x8df232f5_821b_11d1_bb5c_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAddressCapabilities,
+    ITAddressCapabilities_Vtbl,
+    0x8df232f5_821b_11d1_bb5c_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddressCapabilities {
     pub unsafe fn get_AddressCapability(&self, addresscap: ADDRESS_CAPABILITY) -> ::windows_core::Result<i32> {
@@ -3028,7 +3073,12 @@ pub struct ITAddressCapabilities_Vtbl {
     pub EnumerateDeviceClasses: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenumdeviceclass: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAddressDeviceSpecificEvent, ITAddressDeviceSpecificEvent_Vtbl, 0x3acb216b_40bd_487a_8672_5ce77bd7e3a3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAddressDeviceSpecificEvent,
+    ITAddressDeviceSpecificEvent_Vtbl,
+    0x3acb216b_40bd_487a_8672_5ce77bd7e3a3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddressDeviceSpecificEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3076,7 +3126,12 @@ pub struct ITAddressDeviceSpecificEvent_Vtbl {
     pub lParam3: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pparam3: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAddressEvent, ITAddressEvent_Vtbl, 0x831ce2d1_83b5_11d1_bb5c_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAddressEvent,
+    ITAddressEvent_Vtbl,
+    0x831ce2d1_83b5_11d1_bb5c_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddressEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3114,7 +3169,12 @@ pub struct ITAddressEvent_Vtbl {
     Terminal: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAddressTranslation, ITAddressTranslation_Vtbl, 0x0c4d8f03_8ddb_11d1_a09e_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAddressTranslation,
+    ITAddressTranslation_Vtbl,
+    0x0c4d8f03_8ddb_11d1_a09e_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddressTranslation {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3177,7 +3237,12 @@ pub struct ITAddressTranslation_Vtbl {
     CallingCards: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAddressTranslationInfo, ITAddressTranslationInfo_Vtbl, 0xafc15945_8d40_11d1_a09e_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAddressTranslationInfo,
+    ITAddressTranslationInfo_Vtbl,
+    0xafc15945_8d40_11d1_a09e_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAddressTranslationInfo {
     pub unsafe fn DialableString(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3215,7 +3280,12 @@ pub struct ITAddressTranslationInfo_Vtbl {
     pub TranslationResults: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plresults: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAgent, ITAgent_Vtbl, 0x5770ece5_4b27_11d1_bf80_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAgent,
+    ITAgent_Vtbl,
+    0x5770ece5_4b27_11d1_bf80_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAgent {
     pub unsafe fn EnumerateAgentSessions(&self) -> ::windows_core::Result<IEnumAgentSession> {
@@ -3340,7 +3410,12 @@ pub struct ITAgent_Vtbl {
     AgentSessions: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAgentEvent, ITAgentEvent_Vtbl, 0x5afc314a_4bcc_11d1_bf80_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAgentEvent,
+    ITAgentEvent_Vtbl,
+    0x5afc314a_4bcc_11d1_bf80_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAgentEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3368,7 +3443,12 @@ pub struct ITAgentEvent_Vtbl {
     pub Event: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pevent: *mut AGENT_EVENT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAgentHandler, ITAgentHandler_Vtbl, 0x587e8c22_9802_11d1_a0a4_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAgentHandler,
+    ITAgentHandler_Vtbl,
+    0x587e8c22_9802_11d1_a0a4_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAgentHandler {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -3440,7 +3520,12 @@ pub struct ITAgentHandler_Vtbl {
     UsableAddresses: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAgentHandlerEvent, ITAgentHandlerEvent_Vtbl, 0x297f3034_bd11_11d1_a0a7_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAgentHandlerEvent,
+    ITAgentHandlerEvent_Vtbl,
+    0x297f3034_bd11_11d1_a0a7_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAgentHandlerEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3468,7 +3553,12 @@ pub struct ITAgentHandlerEvent_Vtbl {
     pub Event: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pevent: *mut AGENTHANDLER_EVENT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAgentSession, ITAgentSession_Vtbl, 0x5afc3147_4bcc_11d1_bf80_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAgentSession,
+    ITAgentSession_Vtbl,
+    0x5afc3147_4bcc_11d1_bf80_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAgentSession {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3585,7 +3675,12 @@ pub struct ITAgentSession_Vtbl {
     pub AverageTimeToAnswer: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, planswertime: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAgentSessionEvent, ITAgentSessionEvent_Vtbl, 0x5afc314b_4bcc_11d1_bf80_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAgentSessionEvent,
+    ITAgentSessionEvent_Vtbl,
+    0x5afc314b_4bcc_11d1_bf80_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAgentSessionEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3662,7 +3757,12 @@ pub struct ITAllocatorProperties_Vtbl {
     pub GetBufferSize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbuffersize: *mut u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITAutomatedPhoneControl, ITAutomatedPhoneControl_Vtbl, 0x1ee1af0e_6159_4a61_b79b_6a4ba3fc9dfc);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITAutomatedPhoneControl,
+    ITAutomatedPhoneControl_Vtbl,
+    0x1ee1af0e_6159_4a61_b79b_6a4ba3fc9dfc
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITAutomatedPhoneControl {
     pub unsafe fn StartTone(&self, tone: PHONE_TONE, lduration: i32) -> ::windows_core::Result<()> {
@@ -3858,7 +3958,12 @@ pub struct ITAutomatedPhoneControl_Vtbl {
     SelectedCalls: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITBasicAudioTerminal, ITBasicAudioTerminal_Vtbl, 0xb1efc38d_9355_11d0_835c_00aa003ccabd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITBasicAudioTerminal,
+    ITBasicAudioTerminal_Vtbl,
+    0xb1efc38d_9355_11d0_835c_00aa003ccabd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITBasicAudioTerminal {
     pub unsafe fn SetVolume(&self, lvolume: i32) -> ::windows_core::Result<()> {
@@ -3889,7 +3994,12 @@ pub struct ITBasicAudioTerminal_Vtbl {
     pub Balance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plbalance: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITBasicCallControl, ITBasicCallControl_Vtbl, 0xb1efc389_9355_11d0_835c_00aa003ccabd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITBasicCallControl,
+    ITBasicCallControl_Vtbl,
+    0xb1efc389_9355_11d0_835c_00aa003ccabd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITBasicCallControl {
     pub unsafe fn Connect<P0>(&self, fsync: P0) -> ::windows_core::Result<()>
@@ -4022,7 +4132,12 @@ pub struct ITBasicCallControl_Vtbl {
     pub RemoveFromConference: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITBasicCallControl2, ITBasicCallControl2_Vtbl, 0x161a4a56_1e99_4b3f_a46a_168f38a5ee4c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITBasicCallControl2,
+    ITBasicCallControl2_Vtbl,
+    0x161a4a56_1e99_4b3f_a46a_168f38a5ee4c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITBasicCallControl2 {
     pub unsafe fn Connect<P0>(&self, fsync: P0) -> ::windows_core::Result<()>
@@ -4165,7 +4280,12 @@ pub struct ITBasicCallControl2_Vtbl {
     UnselectTerminalOnCall: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITCallHub, ITCallHub_Vtbl, 0xa3c1544e_5b92_11d1_8f4e_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITCallHub,
+    ITCallHub_Vtbl,
+    0xa3c1544e_5b92_11d1_8f4e_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallHub {
     pub unsafe fn Clear(&self) -> ::windows_core::Result<()> {
@@ -4207,7 +4327,12 @@ pub struct ITCallHub_Vtbl {
     pub State: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstate: *mut CALLHUB_STATE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITCallHubEvent, ITCallHubEvent_Vtbl, 0xa3c15451_5b92_11d1_8f4e_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITCallHubEvent,
+    ITCallHubEvent_Vtbl,
+    0xa3c15451_5b92_11d1_8f4e_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallHubEvent {
     pub unsafe fn Event(&self) -> ::windows_core::Result<CALLHUB_EVENT> {
@@ -4245,7 +4370,12 @@ pub struct ITCallHubEvent_Vtbl {
     Call: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITCallInfo, ITCallInfo_Vtbl, 0x350f85d1_1227_11d3_83d4_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITCallInfo,
+    ITCallInfo_Vtbl,
+    0x350f85d1_1227_11d3_83d4_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallInfo {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4340,7 +4470,12 @@ pub struct ITCallInfo_Vtbl {
     pub ReleaseUserUserInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITCallInfo2, ITCallInfo2_Vtbl, 0x94d70ca6_7ab0_4daa_81ca_b8f8643faec1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITCallInfo2,
+    ITCallInfo2_Vtbl,
+    0x94d70ca6_7ab0_4daa_81ca_b8f8643faec1
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallInfo2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4422,7 +4557,12 @@ pub struct ITCallInfo2_Vtbl {
     pub put_EventFilter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, tapievent: TAPI_EVENT, lsubevent: i32, benable: super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITCallInfoChangeEvent, ITCallInfoChangeEvent_Vtbl, 0x5d4b65f9_e51c_11d1_a02f_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITCallInfoChangeEvent,
+    ITCallInfoChangeEvent_Vtbl,
+    0x5d4b65f9_e51c_11d1_a02f_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallInfoChangeEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4455,7 +4595,12 @@ pub struct ITCallInfoChangeEvent_Vtbl {
     pub CallbackInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plcallbackinstance: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITCallMediaEvent, ITCallMediaEvent_Vtbl, 0xff36b87f_ec3a_11d0_8ee4_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITCallMediaEvent,
+    ITCallMediaEvent_Vtbl,
+    0xff36b87f_ec3a_11d0_8ee4_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallMediaEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4513,7 +4658,12 @@ pub struct ITCallMediaEvent_Vtbl {
     pub Cause: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pcause: *mut CALL_MEDIA_EVENT_CAUSE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITCallNotificationEvent, ITCallNotificationEvent_Vtbl, 0x895801df_3dd6_11d1_8f30_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITCallNotificationEvent,
+    ITCallNotificationEvent_Vtbl,
+    0x895801df_3dd6_11d1_8f30_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallNotificationEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4546,7 +4696,12 @@ pub struct ITCallNotificationEvent_Vtbl {
     pub CallbackInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plcallbackinstance: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITCallStateEvent, ITCallStateEvent_Vtbl, 0x62f47097_95c9_11d0_835d_00aa003ccabd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITCallStateEvent,
+    ITCallStateEvent_Vtbl,
+    0x62f47097_95c9_11d0_835d_00aa003ccabd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallStateEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4584,7 +4739,12 @@ pub struct ITCallStateEvent_Vtbl {
     pub CallbackInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plcallbackinstance: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITCallingCard, ITCallingCard_Vtbl, 0x0c4d8f00_8ddb_11d1_a09e_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITCallingCard,
+    ITCallingCard_Vtbl,
+    0x0c4d8f00_8ddb_11d1_a09e_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITCallingCard {
     pub unsafe fn PermanentCardID(&self) -> ::windows_core::Result<i32> {
@@ -4632,7 +4792,12 @@ pub struct ITCallingCard_Vtbl {
     pub InternationalDialingRule: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pprule: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITCollection, ITCollection_Vtbl, 0x5ec5acf2_9c02_11d0_8362_00aa003ccabd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITCollection,
+    ITCollection_Vtbl,
+    0x5ec5acf2_9c02_11d0_8362_00aa003ccabd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4665,7 +4830,12 @@ pub struct ITCollection_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppnewenum: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITCollection2, ITCollection2_Vtbl, 0xe6dddda5_a6d3_48ff_8737_d32fc4d95477);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITCollection2,
+    ITCollection2_Vtbl,
+    0xe6dddda5_a6d3_48ff_8737_d32fc4d95477
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITCollection2 {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -4705,7 +4875,12 @@ pub struct ITCollection2_Vtbl {
     pub Remove: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, index: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITCustomTone, ITCustomTone_Vtbl, 0x357ad764_b3c6_4b2a_8fa5_0722827a9254);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITCustomTone,
+    ITCustomTone_Vtbl,
+    0x357ad764_b3c6_4b2a_8fa5_0722827a9254
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITCustomTone {
     pub unsafe fn Frequency(&self) -> ::windows_core::Result<i32> {
@@ -4754,7 +4929,12 @@ pub struct ITCustomTone_Vtbl {
     pub SetVolume: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, lvolume: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITDetectTone, ITDetectTone_Vtbl, 0x961f79bd_3097_49df_a1d6_909b77e89ca0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITDetectTone,
+    ITDetectTone_Vtbl,
+    0x961f79bd_3097_49df_a1d6_909b77e89ca0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITDetectTone {
     pub unsafe fn AppSpecific(&self) -> ::windows_core::Result<i32> {
@@ -4794,7 +4974,12 @@ pub struct ITDetectTone_Vtbl {
     pub put_Frequency: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, index: i32, lfrequency: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITDigitDetectionEvent, ITDigitDetectionEvent_Vtbl, 0x80d3bfac_57d9_11d2_a04a_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITDigitDetectionEvent,
+    ITDigitDetectionEvent_Vtbl,
+    0x80d3bfac_57d9_11d2_a04a_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITDigitDetectionEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4837,7 +5022,12 @@ pub struct ITDigitDetectionEvent_Vtbl {
     pub CallbackInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plcallbackinstance: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITDigitGenerationEvent, ITDigitGenerationEvent_Vtbl, 0x80d3bfad_57d9_11d2_a04a_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITDigitGenerationEvent,
+    ITDigitGenerationEvent_Vtbl,
+    0x80d3bfad_57d9_11d2_a04a_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITDigitGenerationEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4875,7 +5065,12 @@ pub struct ITDigitGenerationEvent_Vtbl {
     pub CallbackInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plcallbackinstance: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITDigitsGatheredEvent, ITDigitsGatheredEvent_Vtbl, 0xe52ec4c1_cba3_441a_9e6a_93cb909e9724);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITDigitsGatheredEvent,
+    ITDigitsGatheredEvent_Vtbl,
+    0xe52ec4c1_cba3_441a_9e6a_93cb909e9724
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITDigitsGatheredEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -4918,7 +5113,12 @@ pub struct ITDigitsGatheredEvent_Vtbl {
     pub CallbackInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plcallbackinstance: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITDirectory, ITDirectory_Vtbl, 0x34621d6c_6cff_11d1_aff7_00c04fc31fee);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITDirectory,
+    ITDirectory_Vtbl,
+    0x34621d6c_6cff_11d1_aff7_00c04fc31fee
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITDirectory {
     pub unsafe fn DirectoryType(&self) -> ::windows_core::Result<DIRECTORY_TYPE> {
@@ -5047,7 +5247,12 @@ pub struct ITDirectory_Vtbl {
     pub EnumerateDirectoryObjects: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, directoryobjecttype: DIRECTORY_OBJECT_TYPE, pname: ::std::mem::MaybeUninit<::windows_core::BSTR>, ppenumobject: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITDirectoryObject, ITDirectoryObject_Vtbl, 0x34621d6e_6cff_11d1_aff7_00c04fc31fee);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITDirectoryObject,
+    ITDirectoryObject_Vtbl,
+    0x34621d6e_6cff_11d1_aff7_00c04fc31fee
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITDirectoryObject {
     pub unsafe fn ObjectType(&self) -> ::windows_core::Result<DIRECTORY_OBJECT_TYPE> {
@@ -5114,7 +5319,12 @@ pub struct ITDirectoryObject_Vtbl {
     SetSecurityDescriptor: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITDirectoryObjectConference, ITDirectoryObjectConference_Vtbl, 0xf1029e5d_cb5b_11d0_8d59_00c04fd91ac0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITDirectoryObjectConference,
+    ITDirectoryObjectConference_Vtbl,
+    0xf1029e5d_cb5b_11d0_8d59_00c04fd91ac0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITDirectoryObjectConference {
     pub unsafe fn Protocol(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -5207,7 +5417,12 @@ pub struct ITDirectoryObjectConference_Vtbl {
     pub SetStopTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, date: f64) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITDirectoryObjectUser, ITDirectoryObjectUser_Vtbl, 0x34621d6f_6cff_11d1_aff7_00c04fc31fee);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITDirectoryObjectUser,
+    ITDirectoryObjectUser_Vtbl,
+    0x34621d6f_6cff_11d1_aff7_00c04fc31fee
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITDirectoryObjectUser {
     pub unsafe fn IPPhonePrimary(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -5232,7 +5447,12 @@ pub struct ITDirectoryObjectUser_Vtbl {
     pub SetIPPhonePrimary: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pname: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITDispatchMapper, ITDispatchMapper_Vtbl, 0xe9225295_c759_11d1_a02b_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITDispatchMapper,
+    ITDispatchMapper_Vtbl,
+    0xe9225295_c759_11d1_a02b_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITDispatchMapper {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5259,7 +5479,12 @@ pub struct ITDispatchMapper_Vtbl {
     QueryDispatchInterface: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITFileTerminalEvent, ITFileTerminalEvent_Vtbl, 0xe4a7fbac_8c17_4427_9f55_9f589ac8af00);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITFileTerminalEvent,
+    ITFileTerminalEvent_Vtbl,
+    0xe4a7fbac_8c17_4427_9f55_9f589ac8af00
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITFileTerminalEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -5317,7 +5542,12 @@ pub struct ITFileTerminalEvent_Vtbl {
     pub Error: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, phrerrorcode: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITFileTrack, ITFileTrack_Vtbl, 0x31ca6ea9_c08a_4bea_8811_8e9c1ba3ea3a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITFileTrack,
+    ITFileTrack_Vtbl,
+    0x31ca6ea9_c08a_4bea_8811_8e9c1ba3ea3a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITFileTrack {
     #[doc = "Required features: `\"Win32_Media_MediaFoundation\"`"]
@@ -5391,7 +5621,12 @@ pub struct ITFileTrack_Vtbl {
     EmptyAudioFormatForScripting: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITForwardInformation, ITForwardInformation_Vtbl, 0x449f659e_88a3_11d1_bb5d_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITForwardInformation,
+    ITForwardInformation_Vtbl,
+    0x449f659e_88a3_11d1_bb5d_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITForwardInformation {
     pub unsafe fn SetNumRingsNoAnswer(&self, lnumrings: i32) -> ::windows_core::Result<()> {
@@ -5439,7 +5674,12 @@ pub struct ITForwardInformation_Vtbl {
     pub Clear: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITForwardInformation2, ITForwardInformation2_Vtbl, 0x5229b4ed_b260_4382_8e1a_5df3a8a4ccc0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITForwardInformation2,
+    ITForwardInformation2_Vtbl,
+    0x5229b4ed_b260_4382_8e1a_5df3a8a4ccc0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITForwardInformation2 {
     pub unsafe fn SetNumRingsNoAnswer(&self, lnumrings: i32) -> ::windows_core::Result<()> {
@@ -5502,7 +5742,12 @@ pub struct ITForwardInformation2_Vtbl {
     pub get_ForwardTypeCallerAddressType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, forwardtype: i32, pcalleraddresstype: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITILSConfig, ITILSConfig_Vtbl, 0x34621d72_6cff_11d1_aff7_00c04fc31fee);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITILSConfig,
+    ITILSConfig_Vtbl,
+    0x34621d72_6cff_11d1_aff7_00c04fc31fee
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITILSConfig {
     pub unsafe fn Port(&self) -> ::windows_core::Result<i32> {
@@ -5597,7 +5842,12 @@ pub struct ITLegacyAddressMediaControl2_Vtbl {
     pub ConfigDialogEdit: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, hwndowner: super::super::Foundation::HWND, pdeviceclass: ::std::mem::MaybeUninit<::windows_core::BSTR>, dwsizein: u32, pdeviceconfigin: *const u8, pdwsizeout: *mut u32, ppdeviceconfigout: *mut *mut u8) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITLegacyCallMediaControl, ITLegacyCallMediaControl_Vtbl, 0xd624582f_cc23_4436_b8a5_47c625c8045d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITLegacyCallMediaControl,
+    ITLegacyCallMediaControl_Vtbl,
+    0xd624582f_cc23_4436_b8a5_47c625c8045d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITLegacyCallMediaControl {
     pub unsafe fn DetectDigits(&self, digitmode: i32) -> ::windows_core::Result<()> {
@@ -5636,7 +5886,12 @@ pub struct ITLegacyCallMediaControl_Vtbl {
     pub MonitorMedia: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, lmediatype: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITLegacyCallMediaControl2, ITLegacyCallMediaControl2_Vtbl, 0x57ca332d_7bc2_44f1_a60c_936fe8d7ce73);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITLegacyCallMediaControl2,
+    ITLegacyCallMediaControl2_Vtbl,
+    0x57ca332d_7bc2_44f1_a60c_936fe8d7ce73
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITLegacyCallMediaControl2 {
     pub unsafe fn DetectDigits(&self, digitmode: i32) -> ::windows_core::Result<()> {
@@ -5753,7 +6008,12 @@ pub struct ITLegacyCallMediaControl2_Vtbl {
     GetIDAsVariant: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITLegacyWaveSupport, ITLegacyWaveSupport_Vtbl, 0x207823ea_e252_11d2_b77e_0080c7135381);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITLegacyWaveSupport,
+    ITLegacyWaveSupport_Vtbl,
+    0x207823ea_e252_11d2_b77e_0080c7135381
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITLegacyWaveSupport {
     pub unsafe fn IsFullDuplex(&self) -> ::windows_core::Result<FULLDUPLEX_SUPPORT> {
@@ -5771,7 +6031,12 @@ pub struct ITLegacyWaveSupport_Vtbl {
     pub IsFullDuplex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, psupport: *mut FULLDUPLEX_SUPPORT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITLocationInfo, ITLocationInfo_Vtbl, 0x0c4d8eff_8ddb_11d1_a09e_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITLocationInfo,
+    ITLocationInfo_Vtbl,
+    0x0c4d8eff_8ddb_11d1_a09e_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITLocationInfo {
     pub unsafe fn PermanentLocationID(&self) -> ::windows_core::Result<i32> {
@@ -5882,7 +6147,12 @@ pub struct ITMSPAddress_Vtbl {
     pub GetEvent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdwsize: *mut u32, peventbuffer: *mut u8) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITMediaControl, ITMediaControl_Vtbl, 0xc445dde8_5199_4bc7_9807_5ffb92e42e09);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITMediaControl,
+    ITMediaControl_Vtbl,
+    0xc445dde8_5199_4bc7_9807_5ffb92e42e09
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITMediaControl {
     pub unsafe fn Start(&self) -> ::windows_core::Result<()> {
@@ -5912,7 +6182,12 @@ pub struct ITMediaControl_Vtbl {
     pub MediaState: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pterminalmediastate: *mut TERMINAL_MEDIA_STATE) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITMediaPlayback, ITMediaPlayback_Vtbl, 0x627e8ae6_ae4c_4a69_bb63_2ad625404b77);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITMediaPlayback,
+    ITMediaPlayback_Vtbl,
+    0x627e8ae6_ae4c_4a69_bb63_2ad625404b77
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITMediaPlayback {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -5944,7 +6219,12 @@ pub struct ITMediaPlayback_Vtbl {
     PlayList: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITMediaRecord, ITMediaRecord_Vtbl, 0xf5dd4592_5476_4cc1_9d4d_fad3eefe7db2);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITMediaRecord,
+    ITMediaRecord_Vtbl,
+    0xf5dd4592_5476_4cc1_9d4d_fad3eefe7db2
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITMediaRecord {
     pub unsafe fn SetFileName<P0>(&self, bstrfilename: P0) -> ::windows_core::Result<()>
@@ -5969,7 +6249,12 @@ pub struct ITMediaRecord_Vtbl {
     pub FileName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrfilename: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITMediaSupport, ITMediaSupport_Vtbl, 0xb1efc384_9355_11d0_835c_00aa003ccabd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITMediaSupport,
+    ITMediaSupport_Vtbl,
+    0xb1efc384_9355_11d0_835c_00aa003ccabd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITMediaSupport {
     pub unsafe fn MediaTypes(&self) -> ::windows_core::Result<i32> {
@@ -5992,7 +6277,12 @@ pub struct ITMediaSupport_Vtbl {
     pub QueryMediaType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, lmediatype: i32, pfsupport: *mut super::super::Foundation::VARIANT_BOOL) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITMultiTrackTerminal, ITMultiTrackTerminal_Vtbl, 0xfe040091_ade8_4072_95c9_bf7de8c54b44);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITMultiTrackTerminal,
+    ITMultiTrackTerminal_Vtbl,
+    0xfe040091_ade8_4072_95c9_bf7de8c54b44
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITMultiTrackTerminal {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -6052,7 +6342,12 @@ pub struct ITMultiTrackTerminal_Vtbl {
     RemoveTrackTerminal: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITPhone, ITPhone_Vtbl, 0x09d48db4_10cc_4388_9de7_a8465618975a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITPhone,
+    ITPhone_Vtbl,
+    0x09d48db4_10cc_4388_9de7_a8465618975a
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITPhone {
     pub unsafe fn Open(&self, privilege: PHONE_PRIVILEGE) -> ::windows_core::Result<()> {
@@ -6259,7 +6554,12 @@ pub struct ITPhone_Vtbl {
     pub NegotiateExtVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, llowversion: i32, lhighversion: i32, plextversion: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITPhoneDeviceSpecificEvent, ITPhoneDeviceSpecificEvent_Vtbl, 0x63ffb2a6_872b_4cd3_a501_326e8fb40af7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITPhoneDeviceSpecificEvent,
+    ITPhoneDeviceSpecificEvent_Vtbl,
+    0x63ffb2a6_872b_4cd3_a501_326e8fb40af7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITPhoneDeviceSpecificEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6297,7 +6597,12 @@ pub struct ITPhoneDeviceSpecificEvent_Vtbl {
     pub lParam3: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pparam3: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITPhoneEvent, ITPhoneEvent_Vtbl, 0x8f942dd8_64ed_4aaf_a77d_b23db0837ead);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITPhoneEvent,
+    ITPhoneEvent_Vtbl,
+    0x8f942dd8_64ed_4aaf_a77d_b23db0837ead
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITPhoneEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6365,7 +6670,12 @@ pub struct ITPhoneEvent_Vtbl {
     Call: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITPluggableTerminalClassInfo, ITPluggableTerminalClassInfo_Vtbl, 0x41757f4a_cf09_4b34_bc96_0a79d2390076);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITPluggableTerminalClassInfo,
+    ITPluggableTerminalClassInfo_Vtbl,
+    0x41757f4a_cf09_4b34_bc96_0a79d2390076
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITPluggableTerminalClassInfo {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -6451,7 +6761,12 @@ pub struct ITPluggableTerminalEventSinkRegistration_Vtbl {
     pub UnregisterSink: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITPluggableTerminalSuperclassInfo, ITPluggableTerminalSuperclassInfo_Vtbl, 0x6d54e42c_4625_4359_a6f7_631999107e05);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITPluggableTerminalSuperclassInfo,
+    ITPluggableTerminalSuperclassInfo_Vtbl,
+    0x6d54e42c_4625_4359_a6f7_631999107e05
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITPluggableTerminalSuperclassInfo {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -6474,7 +6789,12 @@ pub struct ITPluggableTerminalSuperclassInfo_Vtbl {
     pub CLSID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pclsid: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITPrivateEvent, ITPrivateEvent_Vtbl, 0x0e269cd0_10d4_4121_9c22_9c85d625650d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITPrivateEvent,
+    ITPrivateEvent_Vtbl,
+    0x0e269cd0_10d4_4121_9c22_9c85d625650d
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITPrivateEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6532,7 +6852,12 @@ pub struct ITPrivateEvent_Vtbl {
     EventInterface: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITQOSEvent, ITQOSEvent_Vtbl, 0xcfa3357c_ad77_11d1_bb68_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITQOSEvent,
+    ITQOSEvent_Vtbl,
+    0xcfa3357c_ad77_11d1_bb68_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITQOSEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6565,7 +6890,12 @@ pub struct ITQOSEvent_Vtbl {
     pub MediaType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plmediatype: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITQueue, ITQueue_Vtbl, 0x5afc3149_4bcc_11d1_bf80_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITQueue,
+    ITQueue_Vtbl,
+    0x5afc3149_4bcc_11d1_bf80_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITQueue {
     pub unsafe fn SetMeasurementPeriod(&self, lperiod: i32) -> ::windows_core::Result<()> {
@@ -6637,7 +6967,12 @@ pub struct ITQueue_Vtbl {
     pub Name: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppname: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITQueueEvent, ITQueueEvent_Vtbl, 0x297f3033_bd11_11d1_a0a7_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITQueueEvent,
+    ITQueueEvent_Vtbl,
+    0x297f3033_bd11_11d1_a0a7_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITQueueEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6665,7 +7000,12 @@ pub struct ITQueueEvent_Vtbl {
     pub Event: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pevent: *mut ACDQUEUE_EVENT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITRendezvous, ITRendezvous_Vtbl, 0x34621d6b_6cff_11d1_aff7_00c04fc31fee);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITRendezvous,
+    ITRendezvous_Vtbl,
+    0x34621d6b_6cff_11d1_aff7_00c04fc31fee
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITRendezvous {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -6719,7 +7059,12 @@ pub struct ITRendezvous_Vtbl {
     CreateDirectoryObject: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITRequest, ITRequest_Vtbl, 0xac48ffdf_f8c4_11d1_a030_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITRequest,
+    ITRequest_Vtbl,
+    0xac48ffdf_f8c4_11d1_a030_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITRequest {
     pub unsafe fn MakeCall<P0, P1, P2, P3>(&self, pdestaddress: P0, pappname: P1, pcalledparty: P2, pcomment: P3) -> ::windows_core::Result<()>
@@ -6742,7 +7087,12 @@ pub struct ITRequest_Vtbl {
     pub MakeCall: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdestaddress: ::std::mem::MaybeUninit<::windows_core::BSTR>, pappname: ::std::mem::MaybeUninit<::windows_core::BSTR>, pcalledparty: ::std::mem::MaybeUninit<::windows_core::BSTR>, pcomment: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITRequestEvent, ITRequestEvent_Vtbl, 0xac48ffde_f8c4_11d1_a030_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITRequestEvent,
+    ITRequestEvent_Vtbl,
+    0xac48ffde_f8c4_11d1_a030_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITRequestEvent {
     pub unsafe fn RegistrationInstance(&self) -> ::windows_core::Result<i32> {
@@ -6785,7 +7135,12 @@ pub struct ITRequestEvent_Vtbl {
     pub Comment: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppcomment: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITScriptableAudioFormat, ITScriptableAudioFormat_Vtbl, 0xb87658bd_3c59_4f64_be74_aede3e86a81e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITScriptableAudioFormat,
+    ITScriptableAudioFormat_Vtbl,
+    0xb87658bd_3c59_4f64_be74_aede3e86a81e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITScriptableAudioFormat {
     pub unsafe fn Channels(&self) -> ::windows_core::Result<i32> {
@@ -6852,7 +7207,12 @@ pub struct ITScriptableAudioFormat_Vtbl {
     pub SetFormatTag: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, nnewval: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITStaticAudioTerminal, ITStaticAudioTerminal_Vtbl, 0xa86b7871_d14c_48e6_922e_a8d15f984800);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITStaticAudioTerminal,
+    ITStaticAudioTerminal_Vtbl,
+    0xa86b7871_d14c_48e6_922e_a8d15f984800
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITStaticAudioTerminal {
     pub unsafe fn WaveId(&self) -> ::windows_core::Result<i32> {
@@ -6870,7 +7230,12 @@ pub struct ITStaticAudioTerminal_Vtbl {
     pub WaveId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plwaveid: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITStream, ITStream_Vtbl, 0xee3bd605_3868_11d2_a045_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITStream,
+    ITStream_Vtbl,
+    0xee3bd605_3868_11d2_a045_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITStream {
     pub unsafe fn MediaType(&self) -> ::windows_core::Result<i32> {
@@ -6949,7 +7314,12 @@ pub struct ITStream_Vtbl {
     Terminals: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITStreamControl, ITStreamControl_Vtbl, 0xee3bd604_3868_11d2_a045_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITStreamControl,
+    ITStreamControl_Vtbl,
+    0xee3bd604_3868_11d2_a045_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITStreamControl {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -6999,7 +7369,12 @@ pub struct ITStreamControl_Vtbl {
     Streams: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITSubStream, ITSubStream_Vtbl, 0xee3bd608_3868_11d2_a045_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITSubStream,
+    ITSubStream_Vtbl,
+    0xee3bd608_3868_11d2_a045_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITSubStream {
     pub unsafe fn StartSubStream(&self) -> ::windows_core::Result<()> {
@@ -7073,7 +7448,12 @@ pub struct ITSubStream_Vtbl {
     Stream: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITSubStreamControl, ITSubStreamControl_Vtbl, 0xee3bd607_3868_11d2_a045_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITSubStreamControl,
+    ITSubStreamControl_Vtbl,
+    0xee3bd607_3868_11d2_a045_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITSubStreamControl {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -7123,7 +7503,12 @@ pub struct ITSubStreamControl_Vtbl {
     SubStreams: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITTAPI, ITTAPI_Vtbl, 0xb1efc382_9355_11d0_835c_00aa003ccabd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITTAPI,
+    ITTAPI_Vtbl,
+    0xb1efc382_9355_11d0_835c_00aa003ccabd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITTAPI {
     pub unsafe fn Initialize(&self) -> ::windows_core::Result<()> {
@@ -7257,7 +7642,12 @@ pub struct ITTAPI_Vtbl {
     pub EventFilter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plfiltermask: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITTAPI2, ITTAPI2_Vtbl, 0x54fbdc8c_d90f_4dad_9695_b373097f094b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITTAPI2,
+    ITTAPI2_Vtbl,
+    0x54fbdc8c_d90f_4dad_9695_b373097f094b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITTAPI2 {
     pub unsafe fn Initialize(&self) -> ::windows_core::Result<()> {
@@ -7382,7 +7772,12 @@ pub struct ITTAPI2_Vtbl {
     CreateEmptyCollectionObject: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITTAPICallCenter, ITTAPICallCenter_Vtbl, 0x5afc3154_4bcc_11d1_bf80_00805fc147d3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITTAPICallCenter,
+    ITTAPICallCenter_Vtbl,
+    0x5afc3154_4bcc_11d1_bf80_00805fc147d3
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITTAPICallCenter {
     pub unsafe fn EnumerateAgentHandlers(&self) -> ::windows_core::Result<IEnumAgentHandler> {
@@ -7410,7 +7805,12 @@ pub struct ITTAPICallCenter_Vtbl {
     AgentHandlers: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITTAPIDispatchEventNotification, ITTAPIDispatchEventNotification_Vtbl, 0x9f34325b_7e62_11d2_9457_00c04f8ec888);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITTAPIDispatchEventNotification,
+    ITTAPIDispatchEventNotification_Vtbl,
+    0x9f34325b_7e62_11d2_9457_00c04f8ec888
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITTAPIDispatchEventNotification {}
 #[cfg(feature = "Win32_System_Com")]
@@ -7443,7 +7843,12 @@ pub struct ITTAPIEventNotification_Vtbl {
     Event: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITTAPIObjectEvent, ITTAPIObjectEvent_Vtbl, 0xf4854d48_937a_11d1_bb58_00c04fb6809f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITTAPIObjectEvent,
+    ITTAPIObjectEvent_Vtbl,
+    0xf4854d48_937a_11d1_bb58_00c04fb6809f
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITTAPIObjectEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -7486,7 +7891,12 @@ pub struct ITTAPIObjectEvent_Vtbl {
     pub CallbackInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plcallbackinstance: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITTAPIObjectEvent2, ITTAPIObjectEvent2_Vtbl, 0x359dda6e_68ce_4383_bf0b_169133c41b46);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITTAPIObjectEvent2,
+    ITTAPIObjectEvent2_Vtbl,
+    0x359dda6e_68ce_4383_bf0b_169133c41b46
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITTAPIObjectEvent2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -7529,7 +7939,12 @@ pub struct ITTAPIObjectEvent2_Vtbl {
     Phone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITTTSTerminalEvent, ITTTSTerminalEvent_Vtbl, 0xd964788f_95a5_461d_ab0c_b9900a6c2713);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITTTSTerminalEvent,
+    ITTTSTerminalEvent_Vtbl,
+    0xd964788f_95a5_461d_ab0c_b9900a6c2713
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITTTSTerminalEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -7567,7 +7982,12 @@ pub struct ITTTSTerminalEvent_Vtbl {
     pub Error: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, phrerrorcode: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITTerminal, ITTerminal_Vtbl, 0xb1efc38a_9355_11d0_835c_00aa003ccabd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITTerminal,
+    ITTerminal_Vtbl,
+    0xb1efc38a_9355_11d0_835c_00aa003ccabd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITTerminal {
     pub unsafe fn Name(&self) -> ::windows_core::Result<::windows_core::BSTR> {
@@ -7610,7 +8030,12 @@ pub struct ITTerminal_Vtbl {
     pub Direction: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdirection: *mut TERMINAL_DIRECTION) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITTerminalSupport, ITTerminalSupport_Vtbl, 0xb1efc385_9355_11d0_835c_00aa003ccabd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITTerminalSupport,
+    ITTerminalSupport_Vtbl,
+    0xb1efc385_9355_11d0_835c_00aa003ccabd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITTerminalSupport {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -7676,7 +8101,12 @@ pub struct ITTerminalSupport_Vtbl {
     GetDefaultStaticTerminal: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITTerminalSupport2, ITTerminalSupport2_Vtbl, 0xf3eb39bc_1b1f_4e99_a0c0_56305c4dd591);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITTerminalSupport2,
+    ITTerminalSupport2_Vtbl,
+    0xf3eb39bc_1b1f_4e99_a0c0_56305c4dd591
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITTerminalSupport2 {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -7757,7 +8187,12 @@ pub struct ITTerminalSupport2_Vtbl {
     pub EnumeratePluggableTerminalClasses: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, iidterminalsuperclass: ::windows_core::GUID, lmediatype: i32, ppclassenumerator: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITToneDetectionEvent, ITToneDetectionEvent_Vtbl, 0x407e0faf_d047_4753_b0c6_8e060373fecd);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITToneDetectionEvent,
+    ITToneDetectionEvent_Vtbl,
+    0x407e0faf_d047_4753_b0c6_8e060373fecd
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITToneDetectionEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -7795,7 +8230,12 @@ pub struct ITToneDetectionEvent_Vtbl {
     pub CallbackInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plcallbackinstance: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITToneTerminalEvent, ITToneTerminalEvent_Vtbl, 0xe6f56009_611f_4945_bbd2_2d0ce5612056);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITToneTerminalEvent,
+    ITToneTerminalEvent_Vtbl,
+    0xe6f56009_611f_4945_bbd2_2d0ce5612056
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITToneTerminalEvent {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

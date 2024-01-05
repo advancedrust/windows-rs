@@ -3078,7 +3078,12 @@ pub struct IEnumRegisterWordW_Vtbl {
     pub Skip: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ulcount: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IFEClassFactory, IFEClassFactory_Vtbl, 0);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IFEClassFactory,
+    IFEClassFactory_Vtbl,
+    0
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IFEClassFactory {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

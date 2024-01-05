@@ -116,7 +116,12 @@ pub struct IUPnPAsyncResult_Vtbl {
     pub AsyncOperationComplete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ullrequestid: u64) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IUPnPDescriptionDocument, IUPnPDescriptionDocument_Vtbl, 0x11d1c1b2_7daa_4c9e_9595_7f82ed206d1e);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IUPnPDescriptionDocument,
+    IUPnPDescriptionDocument_Vtbl,
+    0x11d1c1b2_7daa_4c9e_9595_7f82ed206d1e
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPDescriptionDocument {
     pub unsafe fn ReadyState(&self) -> ::windows_core::Result<i32> {
@@ -194,7 +199,12 @@ pub struct IUPnPDescriptionDocumentCallback_Vtbl {
     pub LoadComplete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, hrloadresult: ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IUPnPDevice, IUPnPDevice_Vtbl, 0x3d44d0d1_98c9_4889_acd1_f9d674bf2221);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IUPnPDevice,
+    IUPnPDevice_Vtbl,
+    0x3d44d0d1_98c9_4889_acd1_f9d674bf2221
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPDevice {
     pub unsafe fn IsRootDevice(&self) -> ::windows_core::Result<super::super::super::Foundation::VARIANT_BOOL> {
@@ -399,7 +409,12 @@ pub struct IUPnPDeviceDocumentAccessEx_Vtbl {
     pub GetDocument: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pbstrdocument: *mut ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IUPnPDeviceFinder, IUPnPDeviceFinder_Vtbl, 0xadda3d55_6f72_4319_bff9_18600a539b10);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IUPnPDeviceFinder,
+    IUPnPDeviceFinder_Vtbl,
+    0xadda3d55_6f72_4319_bff9_18600a539b10
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPDeviceFinder {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -528,7 +543,12 @@ pub struct IUPnPDeviceProvider_Vtbl {
     pub Stop: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IUPnPDevices, IUPnPDevices_Vtbl, 0xfdbc0c73_bda3_4c66_ac4f_f2d96fdad68c);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IUPnPDevices,
+    IUPnPDevices_Vtbl,
+    0xfdbc0c73_bda3_4c66_ac4f_f2d96fdad68c
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPDevices {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -756,7 +776,12 @@ pub struct IUPnPReregistrar_Vtbl {
     pub ReregisterRunningDevice: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrdeviceidentifier: ::std::mem::MaybeUninit<::windows_core::BSTR>, bstrxmldesc: ::std::mem::MaybeUninit<::windows_core::BSTR>, punkdevicecontrol: *mut ::core::ffi::c_void, bstrinitstring: ::std::mem::MaybeUninit<::windows_core::BSTR>, bstrresourcepath: ::std::mem::MaybeUninit<::windows_core::BSTR>, nlifetime: i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IUPnPService, IUPnPService_Vtbl, 0xa295019c_dc65_47dd_90dc_7fe918a1ab44);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IUPnPService,
+    IUPnPService_Vtbl,
+    0xa295019c_dc65_47dd_90dc_7fe918a1ab44
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPService {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -962,7 +987,12 @@ pub struct IUPnPServiceEnumProperty_Vtbl {
     pub SetServiceEnumProperty: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwmask: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IUPnPServices, IUPnPServices_Vtbl, 0x3f8c8e9e_9a7a_4dc8_bc41_ff31fa374956);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IUPnPServices,
+    IUPnPServices_Vtbl,
+    0x3f8c8e9e_9a7a_4dc8_bc41_ff31fa374956
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IUPnPServices {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {

@@ -1688,7 +1688,12 @@ pub struct DataSourceListener_Vtbl {
     pub dataMemberRemoved: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrdm: *const u16) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(DataSourceObject, DataSourceObject_Vtbl, 0x0ae9a4e4_18d4_11d1_b3b3_00aa00c1a924);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    DataSourceObject,
+    DataSourceObject_Vtbl,
+    0x0ae9a4e4_18d4_11d1_b3b3_00aa00c1a924
+);
 #[cfg(feature = "Win32_System_Com")]
 impl DataSourceObject {}
 #[cfg(feature = "Win32_System_Com")]
@@ -2237,7 +2242,12 @@ pub struct ICommandWithParameters_Vtbl {
     pub SetParameterInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, cparams: usize, rgparamordinals: *const usize, rgparambindinfo: *const DBPARAMBINDINFO) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICondition, ICondition_Vtbl, 0x0fc988d4_c935_4b97_a973_46282ea175c8);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICondition,
+    ICondition_Vtbl,
+    0x0fc988d4_c935_4b97_a973_46282ea175c8
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICondition {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2335,7 +2345,12 @@ pub struct ICondition_Vtbl {
     Clone: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ICondition2, ICondition2_Vtbl, 0x0db8851d_2e5b_47eb_9208_d28c325a01d7);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ICondition2,
+    ICondition2_Vtbl,
+    0x0db8851d_2e5b_47eb_9208_d28c325a01d7
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ICondition2 {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3185,7 +3200,12 @@ pub struct IDataInitialize_Vtbl {
     pub WriteStringToStorage: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pwszfilename: ::windows_core::PCWSTR, pwszinitializationstring: ::windows_core::PCWSTR, dwcreationdisposition: u32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDataSourceLocator, IDataSourceLocator_Vtbl, 0x2206ccb2_19c1_11d1_89e0_00c04fd7a829);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDataSourceLocator,
+    IDataSourceLocator_Vtbl,
+    0x2206ccb2_19c1_11d1_89e0_00c04fd7a829
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDataSourceLocator {
     pub unsafe fn hWnd(&self) -> ::windows_core::Result<super::super::Foundation::HWND> {
@@ -7437,7 +7457,12 @@ pub struct ITransactionJoin_Vtbl {
     JoinTransaction: usize,
 }
 #[cfg(feature = "Win32_System_DistributedTransactionCoordinator")]
-::windows_core::imp::com_interface!(ITransactionLocal, ITransactionLocal_Vtbl, 0x0c733a5f_2a1c_11ce_ade5_00aa0044773d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_DistributedTransactionCoordinator\"`"]
+    ITransactionLocal,
+    ITransactionLocal_Vtbl,
+    0x0c733a5f_2a1c_11ce_ade5_00aa0044773d
+);
 #[cfg(feature = "Win32_System_DistributedTransactionCoordinator")]
 impl ITransactionLocal {
     #[doc = "Required features: `\"Win32_System_DistributedTransactionCoordinator\"`"]

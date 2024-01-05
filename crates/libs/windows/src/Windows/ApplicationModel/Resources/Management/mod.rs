@@ -25,7 +25,12 @@ pub struct IIndexedResourceQualifier_Vtbl {
     pub QualifierValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IResourceIndexer, IResourceIndexer_Vtbl, 0x2d4cf9a5_e32f_4ab2_8748_96350a016da3);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IResourceIndexer,
+    IResourceIndexer_Vtbl,
+    0x2d4cf9a5_e32f_4ab2_8748_96350a016da3
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -41,7 +46,12 @@ pub struct IResourceIndexer_Vtbl {
     IndexFileContentsAsync: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IResourceIndexerFactory, IResourceIndexerFactory_Vtbl, 0xb8de3f09_31cd_4d97_bd30_8d39f742bc61);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IResourceIndexerFactory,
+    IResourceIndexerFactory_Vtbl,
+    0xb8de3f09_31cd_4d97_bd30_8d39f742bc61
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -53,7 +63,12 @@ pub struct IResourceIndexerFactory_Vtbl {
     CreateResourceIndexer: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IResourceIndexerFactory2, IResourceIndexerFactory2_Vtbl, 0x6040f18d_d5e5_4b60_9201_cd279cbcfed9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IResourceIndexerFactory2,
+    IResourceIndexerFactory2_Vtbl,
+    0x6040f18d_d5e5_4b60_9201_cd279cbcfed9
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

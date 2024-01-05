@@ -33,7 +33,12 @@ pub struct ISmsAppMessage_Vtbl {
     SetBinaryBody: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISmsBinaryMessage, ISmsBinaryMessage_Vtbl, 0x5bf4e813_3b53_4c6e_b61a_d86a63755650);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISmsBinaryMessage,
+    ISmsBinaryMessage_Vtbl,
+    0x5bf4e813_3b53_4c6e_b61a_d86a63755650
+);
 #[cfg(feature = "deprecated")]
 impl ISmsBinaryMessage {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -128,7 +133,12 @@ pub struct ISmsBroadcastMessage_Vtbl {
     pub IsUserPopupRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISmsDevice, ISmsDevice_Vtbl, 0x091791ed_872b_4eec_9c72_ab11627b34ec);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISmsDevice,
+    ISmsDevice_Vtbl,
+    0x091791ed_872b_4eec_9c72_ab11627b34ec
+);
 #[cfg(feature = "deprecated")]
 impl ISmsDevice {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -308,7 +318,12 @@ pub struct ISmsDevice2Statics_Vtbl {
     pub FromParentId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, parentdeviceid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISmsDeviceMessageStore, ISmsDeviceMessageStore_Vtbl, 0x9889f253_f188_4427_8d54_ce0c2423c5c1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISmsDeviceMessageStore,
+    ISmsDeviceMessageStore_Vtbl,
+    0x9889f253_f188_4427_8d54_ce0c2423c5c1
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -336,7 +351,12 @@ pub struct ISmsDeviceMessageStore_Vtbl {
     MaxMessages: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISmsDeviceStatics, ISmsDeviceStatics_Vtbl, 0xf88d07ea_d815_4dd1_a234_4520ce4604a4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISmsDeviceStatics,
+    ISmsDeviceStatics_Vtbl,
+    0xf88d07ea_d815_4dd1_a234_4520ce4604a4
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -356,7 +376,12 @@ pub struct ISmsDeviceStatics_Vtbl {
     GetDefaultAsync: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISmsDeviceStatics2, ISmsDeviceStatics2_Vtbl, 0x2ca11c87_0873_4caf_8a7d_bd471e8586d1);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISmsDeviceStatics2,
+    ISmsDeviceStatics2_Vtbl,
+    0x2ca11c87_0873_4caf_8a7d_bd471e8586d1
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -526,7 +551,12 @@ pub struct ISmsMessageBase_Vtbl {
     pub SimIccId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISmsMessageReceivedEventArgs, ISmsMessageReceivedEventArgs_Vtbl, 0x08e80a98_b8e5_41c1_a3d8_d3abfae22675);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISmsMessageReceivedEventArgs,
+    ISmsMessageReceivedEventArgs_Vtbl,
+    0x08e80a98_b8e5_41c1_a3d8_d3abfae22675
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -578,7 +608,12 @@ pub struct ISmsMessageRegistrationStatics_Vtbl {
     pub Register: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, id: ::std::mem::MaybeUninit<::windows_core::HSTRING>, filterrules: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISmsReceivedEventDetails, ISmsReceivedEventDetails_Vtbl, 0x5bb50f15_e46d_4c82_847d_5a0304c1d53d);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISmsReceivedEventDetails,
+    ISmsReceivedEventDetails_Vtbl,
+    0x5bb50f15_e46d_4c82_847d_5a0304c1d53d
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -594,7 +629,12 @@ pub struct ISmsReceivedEventDetails_Vtbl {
     MessageIndex: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISmsReceivedEventDetails2, ISmsReceivedEventDetails2_Vtbl, 0x40e05c86_a7b4_4771_9ae7_0b5ffb12c03a);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISmsReceivedEventDetails2,
+    ISmsReceivedEventDetails2_Vtbl,
+    0x40e05c86_a7b4_4771_9ae7_0b5ffb12c03a
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -639,7 +679,12 @@ pub struct ISmsStatusMessage_Vtbl {
     pub DischargeTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::DateTime) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISmsTextMessage, ISmsTextMessage_Vtbl, 0xd61c904c_a495_487f_9a6f_971548c5bc9f);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISmsTextMessage,
+    ISmsTextMessage_Vtbl,
+    0xd61c904c_a495_487f_9a6f_971548c5bc9f
+);
 #[cfg(feature = "deprecated")]
 impl ISmsTextMessage {
     #[doc = "Required features: `\"deprecated\"`"]
@@ -851,7 +896,12 @@ pub struct ISmsTextMessage2_Vtbl {
     pub ProtocolId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(ISmsTextMessageStatics, ISmsTextMessageStatics_Vtbl, 0x7f68c5ed_3ccc_47a3_8c55_380d3b010892);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    ISmsTextMessageStatics,
+    ISmsTextMessageStatics_Vtbl,
+    0x7f68c5ed_3ccc_47a3_8c55_380d3b010892
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

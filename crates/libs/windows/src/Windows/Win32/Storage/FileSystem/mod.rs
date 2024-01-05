@@ -3393,7 +3393,12 @@ where
     WriteTapemark(hdevice.into_param().abi(), dwtapemarktype, dwtapemarkcount, bimmediate.into_param().abi())
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IDiskQuotaControl, IDiskQuotaControl_Vtbl, 0x7988b572_ec89_11cf_9c00_00aa00a14f56);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IDiskQuotaControl,
+    IDiskQuotaControl_Vtbl,
+    0x7988b572_ec89_11cf_9c00_00aa00a14f56
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IDiskQuotaControl {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

@@ -1198,7 +1198,12 @@ pub struct IAccPropServices_Vtbl {
     DecomposeHmenuIdentityString: usize,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(IAccessible, IAccessible_Vtbl, 0x618736e0_3c3d_11cf_810c_00aa00389b71);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    IAccessible,
+    IAccessible_Vtbl,
+    0x618736e0_3c3d_11cf_810c_00aa00389b71
+);
 #[cfg(feature = "Win32_System_Com")]
 impl IAccessible {
     #[doc = "Required features: `\"Win32_System_Com\"`"]

@@ -10,7 +10,12 @@ pub struct IHolographicApplicationPreviewStatics_Vtbl {
     IsHolographicActivation: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IHolographicKeyboardPlacementOverridePreview, IHolographicKeyboardPlacementOverridePreview_Vtbl, 0xc8a8ce3a_dfde_5a14_8d5f_182c526dd9c4);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IHolographicKeyboardPlacementOverridePreview,
+    IHolographicKeyboardPlacementOverridePreview_Vtbl,
+    0xc8a8ce3a_dfde_5a14_8d5f_182c526dd9c4
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -30,7 +35,12 @@ pub struct IHolographicKeyboardPlacementOverridePreview_Vtbl {
     ResetPlacementOverride: usize,
 }
 #[cfg(feature = "deprecated")]
-::windows_core::imp::com_interface!(IHolographicKeyboardPlacementOverridePreviewStatics, IHolographicKeyboardPlacementOverridePreviewStatics_Vtbl, 0x202e6039_1ff6_5a06_aac4_a5e24fa3ec4b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"deprecated\"`"]
+    IHolographicKeyboardPlacementOverridePreviewStatics,
+    IHolographicKeyboardPlacementOverridePreviewStatics_Vtbl,
+    0x202e6039_1ff6_5a06_aac4_a5e24fa3ec4b
+);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

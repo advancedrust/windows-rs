@@ -1,5 +1,10 @@
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISdo, ISdo_Vtbl, 0x56bc53de_96db_11d1_bf3f_000000000000);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISdo,
+    ISdo_Vtbl,
+    0x56bc53de_96db_11d1_bf3f_000000000000
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISdo {
     pub unsafe fn GetPropertyInfo(&self, id: i32) -> ::windows_core::Result<::windows_core::IUnknown> {
@@ -53,7 +58,12 @@ pub struct ISdo_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenumvariant: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISdoCollection, ISdoCollection_Vtbl, 0x56bc53e2_96db_11d1_bf3f_000000000000);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISdoCollection,
+    ISdoCollection_Vtbl,
+    0x56bc53e2_96db_11d1_bf3f_000000000000
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISdoCollection {
     pub unsafe fn Count(&self) -> ::windows_core::Result<i32> {
@@ -126,7 +136,12 @@ pub struct ISdoCollection_Vtbl {
     pub _NewEnum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenumvariant: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISdoDictionaryOld, ISdoDictionaryOld_Vtbl, 0xd432e5f4_53d8_11d2_9a3a_00c04fb998ac);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISdoDictionaryOld,
+    ISdoDictionaryOld_Vtbl,
+    0xd432e5f4_53d8_11d2_9a3a_00c04fb998ac
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISdoDictionaryOld {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -185,7 +200,12 @@ pub struct ISdoDictionaryOld_Vtbl {
     pub GetAttributeID: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrattributename: ::std::mem::MaybeUninit<::windows_core::BSTR>, pid: *mut ATTRIBUTEID) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISdoMachine, ISdoMachine_Vtbl, 0x479f6e75_49a2_11d2_8eca_00c04fc2f519);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISdoMachine,
+    ISdoMachine_Vtbl,
+    0x479f6e75_49a2_11d2_8eca_00c04fc2f519
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISdoMachine {
     pub unsafe fn Attach<P0>(&self, bstrcomputername: P0) -> ::windows_core::Result<()>
@@ -251,7 +271,12 @@ pub struct ISdoMachine_Vtbl {
     pub GetSDOSchema: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppsdoschema: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISdoMachine2, ISdoMachine2_Vtbl, 0x518e5ffe_d8ce_4f7e_a5db_b40a35419d3b);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISdoMachine2,
+    ISdoMachine2_Vtbl,
+    0x518e5ffe_d8ce_4f7e_a5db_b40a35419d3b
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISdoMachine2 {
     pub unsafe fn Attach<P0>(&self, bstrcomputername: P0) -> ::windows_core::Result<()>
@@ -340,7 +365,12 @@ pub struct ISdoMachine2_Vtbl {
     pub Reload: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ISdoServiceControl, ISdoServiceControl_Vtbl, 0x479f6e74_49a2_11d2_8eca_00c04fc2f519);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ISdoServiceControl,
+    ISdoServiceControl_Vtbl,
+    0x479f6e74_49a2_11d2_8eca_00c04fc2f519
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ISdoServiceControl {
     pub unsafe fn StartService(&self) -> ::windows_core::Result<()> {
@@ -370,7 +400,12 @@ pub struct ISdoServiceControl_Vtbl {
     pub ResetService: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
 #[cfg(feature = "Win32_System_Com")]
-::windows_core::imp::com_interface!(ITemplateSdo, ITemplateSdo_Vtbl, 0x8aa85302_d2e2_4e20_8b1f_a571e437d6c9);
+::windows_core::imp::com_interface!(
+    #[doc = "Required features: `\"Win32_System_Com\"`"]
+    ITemplateSdo,
+    ITemplateSdo_Vtbl,
+    0x8aa85302_d2e2_4e20_8b1f_a571e437d6c9
+);
 #[cfg(feature = "Win32_System_Com")]
 impl ITemplateSdo {
     pub unsafe fn GetPropertyInfo(&self, id: i32) -> ::windows_core::Result<::windows_core::IUnknown> {
