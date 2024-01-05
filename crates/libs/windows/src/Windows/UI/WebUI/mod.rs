@@ -1,25 +1,14 @@
 #[cfg(feature = "UI_WebUI_Core")]
 #[doc = "Required features: `\"UI_WebUI_Core\"`"]
 pub mod Core;
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IActivatedDeferral(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IActivatedDeferral {
-    type Vtable = IActivatedDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IActivatedDeferral {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc3bd1978_a431_49d8_a76a_395a4e03dcf3);
-}
+::windows_core::imp::com_interface!(IActivatedDeferral, IActivatedDeferral_Vtbl, 0xc3bd1978_a431_49d8_a76a_395a4e03dcf3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IActivatedDeferral_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Complete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IActivatedEventArgsDeferral(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IActivatedEventArgsDeferral, IActivatedEventArgsDeferral_Vtbl, 0xca6d5f74_63c2_44a6_b97b_d9a03c20bc9b);
 impl IActivatedEventArgsDeferral {
     pub fn ActivatedOperation(&self) -> ::windows_core::Result<ActivatedOperation> {
         let this = self;
@@ -33,44 +22,20 @@ impl IActivatedEventArgsDeferral {
 impl ::windows_core::RuntimeType for IActivatedEventArgsDeferral {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IActivatedEventArgsDeferral {
-    type Vtable = IActivatedEventArgsDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IActivatedEventArgsDeferral {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xca6d5f74_63c2_44a6_b97b_d9a03c20bc9b);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IActivatedEventArgsDeferral_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ActivatedOperation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IActivatedOperation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IActivatedOperation {
-    type Vtable = IActivatedOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IActivatedOperation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb6a0b4bc_c6ca_42fd_9818_71904e45fed7);
-}
+::windows_core::imp::com_interface!(IActivatedOperation, IActivatedOperation_Vtbl, 0xb6a0b4bc_c6ca_42fd_9818_71904e45fed7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IActivatedOperation_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHtmlPrintDocumentSource(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHtmlPrintDocumentSource {
-    type Vtable = IHtmlPrintDocumentSource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHtmlPrintDocumentSource {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcea6469a_0e05_467a_abc9_36ec1d4cdcb6);
-}
+::windows_core::imp::com_interface!(IHtmlPrintDocumentSource, IHtmlPrintDocumentSource_Vtbl, 0xcea6469a_0e05_467a_abc9_36ec1d4cdcb6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHtmlPrintDocumentSource_Vtbl {
@@ -94,16 +59,7 @@ pub struct IHtmlPrintDocumentSource_Vtbl {
     pub PageRange: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TrySetPageRange: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strpagerange: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INewWebUIViewCreatedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INewWebUIViewCreatedEventArgs {
-    type Vtable = INewWebUIViewCreatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INewWebUIViewCreatedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe8e1b216_be2b_4c9e_85e7_083143ec4be7);
-}
+::windows_core::imp::com_interface!(INewWebUIViewCreatedEventArgs, INewWebUIViewCreatedEventArgs_Vtbl, 0xe8e1b216_be2b_4c9e_85e7_083143ec4be7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INewWebUIViewCreatedEventArgs_Vtbl {
@@ -116,16 +72,7 @@ pub struct INewWebUIViewCreatedEventArgs_Vtbl {
     pub HasPendingNavigate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebUIActivationStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebUIActivationStatics {
-    type Vtable = IWebUIActivationStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebUIActivationStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x351b86bd_43b3_482b_85db_35d87b517ad9);
-}
+::windows_core::imp::com_interface!(IWebUIActivationStatics, IWebUIActivationStatics_Vtbl, 0x351b86bd_43b3_482b_85db_35d87b517ad9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebUIActivationStatics_Vtbl {
@@ -145,16 +92,7 @@ pub struct IWebUIActivationStatics_Vtbl {
     pub Navigated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveNavigated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebUIActivationStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebUIActivationStatics2 {
-    type Vtable = IWebUIActivationStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebUIActivationStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc8e88696_4d78_4aa4_8f06_2a9eadc6c40a);
-}
+::windows_core::imp::com_interface!(IWebUIActivationStatics2, IWebUIActivationStatics2_Vtbl, 0xc8e88696_4d78_4aa4_8f06_2a9eadc6c40a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebUIActivationStatics2_Vtbl {
@@ -171,16 +109,7 @@ pub struct IWebUIActivationStatics2_Vtbl {
     pub RemoveEnteredBackground: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub EnablePrelaunch: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebUIActivationStatics3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebUIActivationStatics3 {
-    type Vtable = IWebUIActivationStatics3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebUIActivationStatics3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x91abb686_1af5_4445_b49f_9459f40fc8de);
-}
+::windows_core::imp::com_interface!(IWebUIActivationStatics3, IWebUIActivationStatics3_Vtbl, 0x91abb686_1af5_4445_b49f_9459f40fc8de);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebUIActivationStatics3_Vtbl {
@@ -194,16 +123,7 @@ pub struct IWebUIActivationStatics3_Vtbl {
     #[cfg(not(all(feature = "ApplicationModel_Core", feature = "System")))]
     RequestRestartForUserAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebUIActivationStatics4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebUIActivationStatics4 {
-    type Vtable = IWebUIActivationStatics4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebUIActivationStatics4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5e391429_183f_478d_8a25_67f80d03935b);
-}
+::windows_core::imp::com_interface!(IWebUIActivationStatics4, IWebUIActivationStatics4_Vtbl, 0x5e391429_183f_478d_8a25_67f80d03935b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebUIActivationStatics4_Vtbl {
@@ -216,9 +136,7 @@ pub struct IWebUIActivationStatics4_Vtbl {
     BackgroundActivated: usize,
     pub RemoveBackgroundActivated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebUIBackgroundTaskInstance(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWebUIBackgroundTaskInstance, IWebUIBackgroundTaskInstance_Vtbl, 0x23f12c25_e2f7_4741_bc9c_394595de24dc);
 impl IWebUIBackgroundTaskInstance {
     pub fn Succeeded(&self) -> ::windows_core::Result<bool> {
         let this = self;
@@ -236,12 +154,6 @@ impl IWebUIBackgroundTaskInstance {
 impl ::windows_core::RuntimeType for IWebUIBackgroundTaskInstance {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IWebUIBackgroundTaskInstance {
-    type Vtable = IWebUIBackgroundTaskInstance_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebUIBackgroundTaskInstance {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x23f12c25_e2f7_4741_bc9c_394595de24dc);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebUIBackgroundTaskInstance_Vtbl {
@@ -249,41 +161,21 @@ pub struct IWebUIBackgroundTaskInstance_Vtbl {
     pub Succeeded: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetSucceeded: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, succeeded: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebUIBackgroundTaskInstanceStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebUIBackgroundTaskInstanceStatics {
-    type Vtable = IWebUIBackgroundTaskInstanceStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebUIBackgroundTaskInstanceStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9c7a5291_19ae_4ca3_b94b_fe4ec744a740);
-}
+::windows_core::imp::com_interface!(IWebUIBackgroundTaskInstanceStatics, IWebUIBackgroundTaskInstanceStatics_Vtbl, 0x9c7a5291_19ae_4ca3_b94b_fe4ec744a740);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebUIBackgroundTaskInstanceStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Current: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebUINavigatedDeferral(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebUINavigatedDeferral {
-    type Vtable = IWebUINavigatedDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebUINavigatedDeferral {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd804204d_831f_46e2_b432_3afce211f962);
-}
+::windows_core::imp::com_interface!(IWebUINavigatedDeferral, IWebUINavigatedDeferral_Vtbl, 0xd804204d_831f_46e2_b432_3afce211f962);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebUINavigatedDeferral_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Complete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebUINavigatedEventArgs(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWebUINavigatedEventArgs, IWebUINavigatedEventArgs_Vtbl, 0xa75841b8_2499_4030_a69d_15d2d9cfe524);
 impl IWebUINavigatedEventArgs {
     pub fn NavigatedOperation(&self) -> ::windows_core::Result<WebUINavigatedOperation> {
         let this = self;
@@ -297,44 +189,20 @@ impl IWebUINavigatedEventArgs {
 impl ::windows_core::RuntimeType for IWebUINavigatedEventArgs {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IWebUINavigatedEventArgs {
-    type Vtable = IWebUINavigatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebUINavigatedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa75841b8_2499_4030_a69d_15d2d9cfe524);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebUINavigatedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub NavigatedOperation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebUINavigatedOperation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebUINavigatedOperation {
-    type Vtable = IWebUINavigatedOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebUINavigatedOperation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7a965f08_8182_4a89_ab67_8492e8750d4b);
-}
+::windows_core::imp::com_interface!(IWebUINavigatedOperation, IWebUINavigatedOperation_Vtbl, 0x7a965f08_8182_4a89_ab67_8492e8750d4b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebUINavigatedOperation_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebUIView(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebUIView {
-    type Vtable = IWebUIView_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebUIView {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6783f64f_52da_4fd7_be69_8ef6284b423c);
-}
+::windows_core::imp::com_interface!(IWebUIView, IWebUIView_Vtbl, 0x6783f64f_52da_4fd7_be69_8ef6284b423c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebUIView_Vtbl {
@@ -350,16 +218,7 @@ pub struct IWebUIView_Vtbl {
     pub IgnoreApplicationContentUriRulesNavigationRestrictions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetIgnoreApplicationContentUriRulesNavigationRestrictions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebUIViewStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebUIViewStatics {
-    type Vtable = IWebUIViewStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebUIViewStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb591e668_8e59_44f9_8803_1b24c9149d30);
-}
+::windows_core::imp::com_interface!(IWebUIViewStatics, IWebUIViewStatics_Vtbl, 0xb591e668_8e59_44f9_8803_1b24c9149d30);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebUIViewStatics_Vtbl {
@@ -450,7 +309,7 @@ impl ::windows_core::RuntimeName for BackgroundActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(BackgroundActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IBackgroundActivatedEventArgs> for BackgroundActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(BackgroundActivatedEventArgs, super::super::ApplicationModel::Activation::IBackgroundActivatedEventArgs);
 #[cfg(feature = "ApplicationModel_Activation")]
 unsafe impl ::core::marker::Send for BackgroundActivatedEventArgs {}
 #[cfg(feature = "ApplicationModel_Activation")]
@@ -491,7 +350,7 @@ impl ::windows_core::RuntimeName for EnteredBackgroundEventArgs {
 #[cfg(feature = "ApplicationModel")]
 ::windows_core::imp::interface_hierarchy!(EnteredBackgroundEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::IEnteredBackgroundEventArgs> for EnteredBackgroundEventArgs {}
+::windows_core::imp::required_hierarchy!(EnteredBackgroundEventArgs, super::super::ApplicationModel::IEnteredBackgroundEventArgs);
 #[cfg(feature = "ApplicationModel")]
 unsafe impl ::core::marker::Send for EnteredBackgroundEventArgs {}
 #[cfg(feature = "ApplicationModel")]
@@ -620,9 +479,8 @@ impl ::windows_core::RuntimeName for HtmlPrintDocumentSource {
     const NAME: &'static str = "Windows.UI.WebUI.HtmlPrintDocumentSource";
 }
 ::windows_core::imp::interface_hierarchy!(HtmlPrintDocumentSource, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for HtmlPrintDocumentSource {}
 #[cfg(feature = "Graphics_Printing")]
-impl ::windows_core::CanTryInto<super::super::Graphics::Printing::IPrintDocumentSource> for HtmlPrintDocumentSource {}
+::windows_core::imp::required_hierarchy!(HtmlPrintDocumentSource, super::super::Foundation::IClosable, super::super::Graphics::Printing::IPrintDocumentSource);
 unsafe impl ::core::marker::Send for HtmlPrintDocumentSource {}
 unsafe impl ::core::marker::Sync for HtmlPrintDocumentSource {}
 #[doc = "Required features: `\"ApplicationModel\"`"]
@@ -661,7 +519,7 @@ impl ::windows_core::RuntimeName for LeavingBackgroundEventArgs {
 #[cfg(feature = "ApplicationModel")]
 ::windows_core::imp::interface_hierarchy!(LeavingBackgroundEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::ILeavingBackgroundEventArgs> for LeavingBackgroundEventArgs {}
+::windows_core::imp::required_hierarchy!(LeavingBackgroundEventArgs, super::super::ApplicationModel::ILeavingBackgroundEventArgs);
 #[cfg(feature = "ApplicationModel")]
 unsafe impl ::core::marker::Send for LeavingBackgroundEventArgs {}
 #[cfg(feature = "ApplicationModel")]
@@ -747,7 +605,7 @@ impl ::windows_core::RuntimeName for SuspendingDeferral {
 #[cfg(feature = "ApplicationModel")]
 ::windows_core::imp::interface_hierarchy!(SuspendingDeferral, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::ISuspendingDeferral> for SuspendingDeferral {}
+::windows_core::imp::required_hierarchy!(SuspendingDeferral, super::super::ApplicationModel::ISuspendingDeferral);
 #[doc = "Required features: `\"ApplicationModel\"`"]
 #[cfg(feature = "ApplicationModel")]
 #[repr(transparent)]
@@ -784,7 +642,7 @@ impl ::windows_core::RuntimeName for SuspendingEventArgs {
 #[cfg(feature = "ApplicationModel")]
 ::windows_core::imp::interface_hierarchy!(SuspendingEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::ISuspendingEventArgs> for SuspendingEventArgs {}
+::windows_core::imp::required_hierarchy!(SuspendingEventArgs, super::super::ApplicationModel::ISuspendingEventArgs);
 #[doc = "Required features: `\"ApplicationModel\"`"]
 #[cfg(feature = "ApplicationModel")]
 #[repr(transparent)]
@@ -830,7 +688,7 @@ impl ::windows_core::RuntimeName for SuspendingOperation {
 #[cfg(feature = "ApplicationModel")]
 ::windows_core::imp::interface_hierarchy!(SuspendingOperation, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::ISuspendingOperation> for SuspendingOperation {}
+::windows_core::imp::required_hierarchy!(SuspendingOperation, super::super::ApplicationModel::ISuspendingOperation);
 pub struct WebUIApplication;
 impl WebUIApplication {
     #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
@@ -1073,15 +931,7 @@ impl ::windows_core::RuntimeName for WebUIAppointmentsProviderAddAppointmentActi
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIAppointmentsProviderAddAppointmentActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIAppointmentsProviderAddAppointmentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIAppointmentsProviderAddAppointmentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIAppointmentsProviderAddAppointmentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IAppointmentsProviderActivatedEventArgs> for WebUIAppointmentsProviderAddAppointmentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IAppointmentsProviderAddAppointmentActivatedEventArgs> for WebUIAppointmentsProviderAddAppointmentActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIAppointmentsProviderAddAppointmentActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IAppointmentsProviderActivatedEventArgs, super::super::ApplicationModel::Activation::IAppointmentsProviderAddAppointmentActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -1170,15 +1020,7 @@ impl ::windows_core::RuntimeName for WebUIAppointmentsProviderRemoveAppointmentA
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IAppointmentsProviderActivatedEventArgs> for WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IAppointmentsProviderRemoveAppointmentActivatedEventArgs> for WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIAppointmentsProviderRemoveAppointmentActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IAppointmentsProviderActivatedEventArgs, super::super::ApplicationModel::Activation::IAppointmentsProviderRemoveAppointmentActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -1267,15 +1109,7 @@ impl ::windows_core::RuntimeName for WebUIAppointmentsProviderReplaceAppointment
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IAppointmentsProviderActivatedEventArgs> for WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IAppointmentsProviderReplaceAppointmentActivatedEventArgs> for WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIAppointmentsProviderReplaceAppointmentActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IAppointmentsProviderActivatedEventArgs, super::super::ApplicationModel::Activation::IAppointmentsProviderReplaceAppointmentActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -1382,15 +1216,7 @@ impl ::windows_core::RuntimeName for WebUIAppointmentsProviderShowAppointmentDet
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IAppointmentsProviderActivatedEventArgs> for WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs> for WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIAppointmentsProviderShowAppointmentDetailsActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IAppointmentsProviderActivatedEventArgs, super::super::ApplicationModel::Activation::IAppointmentsProviderShowAppointmentDetailsActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -1488,15 +1314,7 @@ impl ::windows_core::RuntimeName for WebUIAppointmentsProviderShowTimeFrameActiv
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IAppointmentsProviderActivatedEventArgs> for WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IAppointmentsProviderShowTimeFrameActivatedEventArgs> for WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIAppointmentsProviderShowTimeFrameActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IAppointmentsProviderActivatedEventArgs, super::super::ApplicationModel::Activation::IAppointmentsProviderShowTimeFrameActivatedEventArgs);
 pub struct WebUIBackgroundTaskInstance;
 impl WebUIBackgroundTaskInstance {
     pub fn Current() -> ::windows_core::Result<IWebUIBackgroundTaskInstance> {
@@ -1622,8 +1440,7 @@ impl ::windows_core::RuntimeName for WebUIBackgroundTaskInstanceRuntimeClass {
 }
 ::windows_core::imp::interface_hierarchy!(WebUIBackgroundTaskInstanceRuntimeClass, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Background")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Background::IBackgroundTaskInstance> for WebUIBackgroundTaskInstanceRuntimeClass {}
-impl ::windows_core::CanTryInto<IWebUIBackgroundTaskInstance> for WebUIBackgroundTaskInstanceRuntimeClass {}
+::windows_core::imp::required_hierarchy!(WebUIBackgroundTaskInstanceRuntimeClass, super::super::ApplicationModel::Background::IBackgroundTaskInstance, IWebUIBackgroundTaskInstance);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -1703,13 +1520,7 @@ impl ::windows_core::RuntimeName for WebUIBarcodeScannerPreviewActivatedEventArg
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIBarcodeScannerPreviewActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIBarcodeScannerPreviewActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIBarcodeScannerPreviewActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIBarcodeScannerPreviewActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IBarcodeScannerPreviewActivatedEventArgs> for WebUIBarcodeScannerPreviewActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIBarcodeScannerPreviewActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IBarcodeScannerPreviewActivatedEventArgs);
 #[cfg(feature = "ApplicationModel_Activation")]
 unsafe impl ::core::marker::Send for WebUIBarcodeScannerPreviewActivatedEventArgs {}
 #[cfg(feature = "ApplicationModel_Activation")]
@@ -1793,13 +1604,7 @@ impl ::windows_core::RuntimeName for WebUICachedFileUpdaterActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUICachedFileUpdaterActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUICachedFileUpdaterActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUICachedFileUpdaterActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUICachedFileUpdaterActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::ICachedFileUpdaterActivatedEventArgs> for WebUICachedFileUpdaterActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUICachedFileUpdaterActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::ICachedFileUpdaterActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -1879,11 +1684,7 @@ impl ::windows_core::RuntimeName for WebUICameraSettingsActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUICameraSettingsActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUICameraSettingsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUICameraSettingsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::ICameraSettingsActivatedEventArgs> for WebUICameraSettingsActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUICameraSettingsActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::ICameraSettingsActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -1963,13 +1764,7 @@ impl ::windows_core::RuntimeName for WebUICommandLineActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUICommandLineActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUICommandLineActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUICommandLineActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUICommandLineActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::ICommandLineActivatedEventArgs> for WebUICommandLineActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUICommandLineActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::ICommandLineActivatedEventArgs);
 #[cfg(feature = "ApplicationModel_Activation")]
 unsafe impl ::core::marker::Send for WebUICommandLineActivatedEventArgs {}
 #[cfg(feature = "ApplicationModel_Activation")]
@@ -2071,13 +1866,7 @@ impl ::windows_core::RuntimeName for WebUIContactCallActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIContactCallActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIContactCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIContactCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContactActivatedEventArgs> for WebUIContactCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContactCallActivatedEventArgs> for WebUIContactCallActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIContactCallActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IContactActivatedEventArgs, super::super::ApplicationModel::Activation::IContactCallActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -2166,13 +1955,7 @@ impl ::windows_core::RuntimeName for WebUIContactMapActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIContactMapActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIContactMapActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIContactMapActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContactActivatedEventArgs> for WebUIContactMapActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContactMapActivatedEventArgs> for WebUIContactMapActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIContactMapActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IContactActivatedEventArgs, super::super::ApplicationModel::Activation::IContactMapActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -2270,13 +2053,7 @@ impl ::windows_core::RuntimeName for WebUIContactMessageActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIContactMessageActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIContactMessageActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIContactMessageActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContactActivatedEventArgs> for WebUIContactMessageActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContactMessageActivatedEventArgs> for WebUIContactMessageActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIContactMessageActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IContactActivatedEventArgs, super::super::ApplicationModel::Activation::IContactMessageActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -2365,13 +2142,7 @@ impl ::windows_core::RuntimeName for WebUIContactPanelActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIContactPanelActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIContactPanelActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIContactPanelActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIContactPanelActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContactPanelActivatedEventArgs> for WebUIContactPanelActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIContactPanelActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IContactPanelActivatedEventArgs);
 #[cfg(feature = "ApplicationModel_Activation")]
 unsafe impl ::core::marker::Send for WebUIContactPanelActivatedEventArgs {}
 #[cfg(feature = "ApplicationModel_Activation")]
@@ -2446,11 +2217,7 @@ impl ::windows_core::RuntimeName for WebUIContactPickerActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIContactPickerActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIContactPickerActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIContactPickerActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContactPickerActivatedEventArgs> for WebUIContactPickerActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIContactPickerActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IContactPickerActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -2548,13 +2315,7 @@ impl ::windows_core::RuntimeName for WebUIContactPostActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIContactPostActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIContactPostActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIContactPostActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContactActivatedEventArgs> for WebUIContactPostActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContactPostActivatedEventArgs> for WebUIContactPostActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIContactPostActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IContactActivatedEventArgs, super::super::ApplicationModel::Activation::IContactPostActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -2652,13 +2413,7 @@ impl ::windows_core::RuntimeName for WebUIContactVideoCallActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIContactVideoCallActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIContactVideoCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIContactVideoCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContactActivatedEventArgs> for WebUIContactVideoCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContactVideoCallActivatedEventArgs> for WebUIContactVideoCallActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIContactVideoCallActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IContactActivatedEventArgs, super::super::ApplicationModel::Activation::IContactVideoCallActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -2756,15 +2511,7 @@ impl ::windows_core::RuntimeName for WebUIDeviceActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIDeviceActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIDeviceActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIDeviceActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIDeviceActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs> for WebUIDeviceActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IDeviceActivatedEventArgs> for WebUIDeviceActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIDeviceActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs, super::super::ApplicationModel::Activation::IDeviceActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -2844,13 +2591,7 @@ impl ::windows_core::RuntimeName for WebUIDevicePairingActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIDevicePairingActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIDevicePairingActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIDevicePairingActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIDevicePairingActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IDevicePairingActivatedEventArgs> for WebUIDevicePairingActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIDevicePairingActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IDevicePairingActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -2957,17 +2698,7 @@ impl ::windows_core::RuntimeName for WebUIDialReceiverActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIDialReceiverActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIDialReceiverActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIDialReceiverActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIDialReceiverActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs> for WebUIDialReceiverActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IDialReceiverActivatedEventArgs> for WebUIDialReceiverActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::ILaunchActivatedEventArgs> for WebUIDialReceiverActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIDialReceiverActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs, super::super::ApplicationModel::Activation::IDialReceiverActivatedEventArgs, super::super::ApplicationModel::Activation::ILaunchActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -3074,17 +2805,7 @@ impl ::windows_core::RuntimeName for WebUIFileActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIFileActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIFileActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIFileActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIFileActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs> for WebUIFileActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IFileActivatedEventArgs> for WebUIFileActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IFileActivatedEventArgsWithNeighboringFiles> for WebUIFileActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIFileActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs, super::super::ApplicationModel::Activation::IFileActivatedEventArgs, super::super::ApplicationModel::Activation::IFileActivatedEventArgsWithNeighboringFiles);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -3173,15 +2894,7 @@ impl ::windows_core::RuntimeName for WebUIFileOpenPickerActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIFileOpenPickerActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIFileOpenPickerActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIFileOpenPickerActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIFileOpenPickerActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IFileOpenPickerActivatedEventArgs> for WebUIFileOpenPickerActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IFileOpenPickerActivatedEventArgs2> for WebUIFileOpenPickerActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIFileOpenPickerActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IFileOpenPickerActivatedEventArgs, super::super::ApplicationModel::Activation::IFileOpenPickerActivatedEventArgs2);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`, `\"deprecated\"`"]
 #[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
 #[repr(transparent)]
@@ -3270,15 +2983,7 @@ impl ::windows_core::RuntimeName for WebUIFileOpenPickerContinuationEventArgs {
 #[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
 ::windows_core::imp::interface_hierarchy!(WebUIFileOpenPickerContinuationEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIFileOpenPickerContinuationEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIFileOpenPickerContinuationEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIFileOpenPickerContinuationEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContinuationActivatedEventArgs> for WebUIFileOpenPickerContinuationEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IFileOpenPickerContinuationEventArgs> for WebUIFileOpenPickerContinuationEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIFileOpenPickerContinuationEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IContinuationActivatedEventArgs, super::super::ApplicationModel::Activation::IFileOpenPickerContinuationEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -3376,15 +3081,7 @@ impl ::windows_core::RuntimeName for WebUIFileSavePickerActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIFileSavePickerActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIFileSavePickerActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIFileSavePickerActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIFileSavePickerActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IFileSavePickerActivatedEventArgs> for WebUIFileSavePickerActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IFileSavePickerActivatedEventArgs2> for WebUIFileSavePickerActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIFileSavePickerActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IFileSavePickerActivatedEventArgs, super::super::ApplicationModel::Activation::IFileSavePickerActivatedEventArgs2);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`, `\"deprecated\"`"]
 #[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
 #[repr(transparent)]
@@ -3473,15 +3170,7 @@ impl ::windows_core::RuntimeName for WebUIFileSavePickerContinuationEventArgs {
 #[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
 ::windows_core::imp::interface_hierarchy!(WebUIFileSavePickerContinuationEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIFileSavePickerContinuationEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIFileSavePickerContinuationEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIFileSavePickerContinuationEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContinuationActivatedEventArgs> for WebUIFileSavePickerContinuationEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IFileSavePickerContinuationEventArgs> for WebUIFileSavePickerContinuationEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIFileSavePickerContinuationEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IContinuationActivatedEventArgs, super::super::ApplicationModel::Activation::IFileSavePickerContinuationEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`, `\"deprecated\"`"]
 #[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
 #[repr(transparent)]
@@ -3570,15 +3259,7 @@ impl ::windows_core::RuntimeName for WebUIFolderPickerContinuationEventArgs {
 #[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
 ::windows_core::imp::interface_hierarchy!(WebUIFolderPickerContinuationEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIFolderPickerContinuationEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIFolderPickerContinuationEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIFolderPickerContinuationEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContinuationActivatedEventArgs> for WebUIFolderPickerContinuationEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IFolderPickerContinuationEventArgs> for WebUIFolderPickerContinuationEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIFolderPickerContinuationEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IContinuationActivatedEventArgs, super::super::ApplicationModel::Activation::IFolderPickerContinuationEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -3694,19 +3375,16 @@ impl ::windows_core::RuntimeName for WebUILaunchActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUILaunchActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUILaunchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUILaunchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUILaunchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs> for WebUILaunchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::ILaunchActivatedEventArgs> for WebUILaunchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::ILaunchActivatedEventArgs2> for WebUILaunchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IPrelaunchActivatedEventArgs> for WebUILaunchActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(
+    WebUILaunchActivatedEventArgs,
+    super::super::ApplicationModel::Activation::IActivatedEventArgs,
+    IActivatedEventArgsDeferral,
+    super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser,
+    super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs,
+    super::super::ApplicationModel::Activation::ILaunchActivatedEventArgs,
+    super::super::ApplicationModel::Activation::ILaunchActivatedEventArgs2,
+    super::super::ApplicationModel::Activation::IPrelaunchActivatedEventArgs
+);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -3795,15 +3473,7 @@ impl ::windows_core::RuntimeName for WebUILockScreenActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUILockScreenActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUILockScreenActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUILockScreenActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUILockScreenActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs> for WebUILockScreenActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::ILockScreenActivatedEventArgs> for WebUILockScreenActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUILockScreenActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs, super::super::ApplicationModel::Activation::ILockScreenActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -3901,15 +3571,7 @@ impl ::windows_core::RuntimeName for WebUILockScreenCallActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUILockScreenCallActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUILockScreenCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUILockScreenCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs> for WebUILockScreenCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::ILaunchActivatedEventArgs> for WebUILockScreenCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::ILockScreenCallActivatedEventArgs> for WebUILockScreenCallActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUILockScreenCallActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs, super::super::ApplicationModel::Activation::ILaunchActivatedEventArgs, super::super::ApplicationModel::Activation::ILockScreenCallActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -3971,9 +3633,7 @@ impl ::windows_core::RuntimeName for WebUILockScreenComponentActivatedEventArgs 
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUILockScreenComponentActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUILockScreenComponentActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUILockScreenComponentActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUILockScreenComponentActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct WebUINavigatedDeferral(::windows_core::IUnknown);
@@ -4021,7 +3681,7 @@ impl ::windows_core::RuntimeName for WebUINavigatedEventArgs {
     const NAME: &'static str = "Windows.UI.WebUI.WebUINavigatedEventArgs";
 }
 ::windows_core::imp::interface_hierarchy!(WebUINavigatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IWebUINavigatedEventArgs> for WebUINavigatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUINavigatedEventArgs, IWebUINavigatedEventArgs);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct WebUINavigatedOperation(::windows_core::IUnknown);
@@ -4126,13 +3786,7 @@ impl ::windows_core::RuntimeName for WebUIPhoneCallActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIPhoneCallActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIPhoneCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIPhoneCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIPhoneCallActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IPhoneCallActivatedEventArgs> for WebUIPhoneCallActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIPhoneCallActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IPhoneCallActivatedEventArgs);
 #[cfg(feature = "ApplicationModel_Activation")]
 unsafe impl ::core::marker::Send for WebUIPhoneCallActivatedEventArgs {}
 #[cfg(feature = "ApplicationModel_Activation")]
@@ -4207,11 +3861,7 @@ impl ::windows_core::RuntimeName for WebUIPrint3DWorkflowActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIPrint3DWorkflowActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIPrint3DWorkflowActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIPrint3DWorkflowActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IPrint3DWorkflowActivatedEventArgs> for WebUIPrint3DWorkflowActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIPrint3DWorkflowActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IPrint3DWorkflowActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -4282,11 +3932,7 @@ impl ::windows_core::RuntimeName for WebUIPrintTaskSettingsActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIPrintTaskSettingsActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIPrintTaskSettingsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIPrintTaskSettingsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IPrintTaskSettingsActivatedEventArgs> for WebUIPrintTaskSettingsActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIPrintTaskSettingsActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IPrintTaskSettingsActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -4348,9 +3994,7 @@ impl ::windows_core::RuntimeName for WebUIPrintWorkflowForegroundTaskActivatedEv
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIPrintWorkflowForegroundTaskActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIPrintWorkflowForegroundTaskActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIPrintWorkflowForegroundTaskActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIPrintWorkflowForegroundTaskActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -4457,17 +4101,7 @@ impl ::windows_core::RuntimeName for WebUIProtocolActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIProtocolActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIProtocolActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIProtocolActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIProtocolActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs> for WebUIProtocolActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IProtocolActivatedEventArgs> for WebUIProtocolActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData> for WebUIProtocolActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIProtocolActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs, super::super::ApplicationModel::Activation::IProtocolActivatedEventArgs, super::super::ApplicationModel::Activation::IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -4583,19 +4217,16 @@ impl ::windows_core::RuntimeName for WebUIProtocolForResultsActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIProtocolForResultsActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIProtocolForResultsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIProtocolForResultsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIProtocolForResultsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs> for WebUIProtocolForResultsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IProtocolActivatedEventArgs> for WebUIProtocolForResultsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData> for WebUIProtocolForResultsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IProtocolForResultsActivatedEventArgs> for WebUIProtocolForResultsActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(
+    WebUIProtocolForResultsActivatedEventArgs,
+    super::super::ApplicationModel::Activation::IActivatedEventArgs,
+    IActivatedEventArgsDeferral,
+    super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser,
+    super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs,
+    super::super::ApplicationModel::Activation::IProtocolActivatedEventArgs,
+    super::super::ApplicationModel::Activation::IProtocolActivatedEventArgsWithCallerPackageFamilyNameAndData,
+    super::super::ApplicationModel::Activation::IProtocolForResultsActivatedEventArgs
+);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -4675,13 +4306,7 @@ impl ::windows_core::RuntimeName for WebUIRestrictedLaunchActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIRestrictedLaunchActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIRestrictedLaunchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIRestrictedLaunchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIRestrictedLaunchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IRestrictedLaunchActivatedEventArgs> for WebUIRestrictedLaunchActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIRestrictedLaunchActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IRestrictedLaunchActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -4779,15 +4404,7 @@ impl ::windows_core::RuntimeName for WebUISearchActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUISearchActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUISearchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUISearchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs> for WebUISearchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::ISearchActivatedEventArgs> for WebUISearchActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::ISearchActivatedEventArgsWithLinguisticDetails> for WebUISearchActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUISearchActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IApplicationViewActivatedEventArgs, super::super::ApplicationModel::Activation::ISearchActivatedEventArgs, super::super::ApplicationModel::Activation::ISearchActivatedEventArgsWithLinguisticDetails);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -4867,13 +4484,7 @@ impl ::windows_core::RuntimeName for WebUIShareTargetActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIShareTargetActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIShareTargetActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIShareTargetActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIShareTargetActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IShareTargetActivatedEventArgs> for WebUIShareTargetActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIShareTargetActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IShareTargetActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -4953,13 +4564,7 @@ impl ::windows_core::RuntimeName for WebUIStartupTaskActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIStartupTaskActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIStartupTaskActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIStartupTaskActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIStartupTaskActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IStartupTaskActivatedEventArgs> for WebUIStartupTaskActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIStartupTaskActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IStartupTaskActivatedEventArgs);
 #[cfg(feature = "ApplicationModel_Activation")]
 unsafe impl ::core::marker::Send for WebUIStartupTaskActivatedEventArgs {}
 #[cfg(feature = "ApplicationModel_Activation")]
@@ -5052,13 +4657,7 @@ impl ::windows_core::RuntimeName for WebUIToastNotificationActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIToastNotificationActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIToastNotificationActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIToastNotificationActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIToastNotificationActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IToastNotificationActivatedEventArgs> for WebUIToastNotificationActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIToastNotificationActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IToastNotificationActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -5129,11 +4728,7 @@ impl ::windows_core::RuntimeName for WebUIUserDataAccountProviderActivatedEventA
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIUserDataAccountProviderActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIUserDataAccountProviderActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIUserDataAccountProviderActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IUserDataAccountProviderActivatedEventArgs> for WebUIUserDataAccountProviderActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIUserDataAccountProviderActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IUserDataAccountProviderActivatedEventArgs);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct WebUIView(::windows_core::IUnknown);
@@ -5332,10 +4927,10 @@ impl WebUIView {
     pub fn NavigateToLocalStreamUri<P0, P1>(&self, source: P0, streamresolver: P1) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
-        P1: ::windows_core::TryIntoParam<super::super::Web::IUriToStreamResolver>,
+        P1: ::windows_core::IntoParam<super::super::Web::IUriToStreamResolver>,
     {
         let this = &::windows_core::ComInterface::cast::<super::super::Web::UI::IWebViewControl>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).NavigateToLocalStreamUri)(::windows_core::Interface::as_raw(this), source.into_param().abi(), streamresolver.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).NavigateToLocalStreamUri)(::windows_core::Interface::as_raw(this), source.into_param().abi(), streamresolver.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Web_Http\"`, `\"Web_UI\"`"]
     #[cfg(all(feature = "Web_Http", feature = "Web_UI"))]
@@ -5350,24 +4945,24 @@ impl WebUIView {
     #[cfg(all(feature = "Foundation_Collections", feature = "Web_UI"))]
     pub fn InvokeScriptAsync<P0>(&self, scriptname: &::windows_core::HSTRING, arguments: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<::windows_core::HSTRING>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         let this = &::windows_core::ComInterface::cast::<super::super::Web::UI::IWebViewControl>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).InvokeScriptAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(scriptname), arguments.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).InvokeScriptAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(scriptname), arguments.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_Streams\"`, `\"Web_UI\"`"]
     #[cfg(all(feature = "Storage_Streams", feature = "Web_UI"))]
     pub fn CapturePreviewToStreamAsync<P0>(&self, stream: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IRandomAccessStream>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStream>,
     {
         let this = &::windows_core::ComInterface::cast::<super::super::Web::UI::IWebViewControl>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CapturePreviewToStreamAsync)(::windows_core::Interface::as_raw(this), stream.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CapturePreviewToStreamAsync)(::windows_core::Interface::as_raw(this), stream.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"ApplicationModel_DataTransfer\"`, `\"Web_UI\"`"]
@@ -5726,9 +5321,7 @@ impl ::windows_core::RuntimeName for WebUIView {
 }
 ::windows_core::imp::interface_hierarchy!(WebUIView, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Web_UI")]
-impl ::windows_core::CanTryInto<super::super::Web::UI::IWebViewControl> for WebUIView {}
-#[cfg(feature = "Web_UI")]
-impl ::windows_core::CanTryInto<super::super::Web::UI::IWebViewControl2> for WebUIView {}
+::windows_core::imp::required_hierarchy!(WebUIView, super::super::Web::UI::IWebViewControl, super::super::Web::UI::IWebViewControl2);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -5808,13 +5401,7 @@ impl ::windows_core::RuntimeName for WebUIVoiceCommandActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIVoiceCommandActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIVoiceCommandActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIVoiceCommandActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIVoiceCommandActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IVoiceCommandActivatedEventArgs> for WebUIVoiceCommandActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIVoiceCommandActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IVoiceCommandActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`, `\"deprecated\"`"]
 #[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
 #[repr(transparent)]
@@ -5903,11 +5490,7 @@ impl ::windows_core::RuntimeName for WebUIWalletActionActivatedEventArgs {
 #[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
 ::windows_core::imp::interface_hierarchy!(WebUIWalletActionActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIWalletActionActivatedEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIWalletActionActivatedEventArgs {}
-#[cfg(all(feature = "ApplicationModel_Activation", feature = "deprecated"))]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IWalletActionActivatedEventArgs> for WebUIWalletActionActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIWalletActionActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IWalletActionActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -5987,13 +5570,7 @@ impl ::windows_core::RuntimeName for WebUIWebAccountProviderActivatedEventArgs {
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIWebAccountProviderActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIWebAccountProviderActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIWebAccountProviderActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for WebUIWebAccountProviderActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IWebAccountProviderActivatedEventArgs> for WebUIWebAccountProviderActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIWebAccountProviderActivatedEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser, super::super::ApplicationModel::Activation::IWebAccountProviderActivatedEventArgs);
 #[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
 #[repr(transparent)]
@@ -6073,13 +5650,7 @@ impl ::windows_core::RuntimeName for WebUIWebAuthenticationBrokerContinuationEve
 #[cfg(feature = "ApplicationModel_Activation")]
 ::windows_core::imp::interface_hierarchy!(WebUIWebAuthenticationBrokerContinuationEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IActivatedEventArgs> for WebUIWebAuthenticationBrokerContinuationEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<IActivatedEventArgsDeferral> for WebUIWebAuthenticationBrokerContinuationEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IContinuationActivatedEventArgs> for WebUIWebAuthenticationBrokerContinuationEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::ApplicationModel::Activation::IWebAuthenticationBrokerContinuationEventArgs> for WebUIWebAuthenticationBrokerContinuationEventArgs {}
+::windows_core::imp::required_hierarchy!(WebUIWebAuthenticationBrokerContinuationEventArgs, super::super::ApplicationModel::Activation::IActivatedEventArgs, IActivatedEventArgsDeferral, super::super::ApplicationModel::Activation::IContinuationActivatedEventArgs, super::super::ApplicationModel::Activation::IWebAuthenticationBrokerContinuationEventArgs);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::marker::Copy, ::core::clone::Clone, ::core::default::Default)]
 pub struct PrintContent(pub i32);
@@ -6100,11 +5671,8 @@ impl ::core::fmt::Debug for PrintContent {
 impl ::windows_core::RuntimeType for PrintContent {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::from_slice(b"enum(Windows.UI.WebUI.PrintContent;i4)");
 }
-#[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ActivatedEventHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ActivatedEventHandler, ActivatedEventHandler_Vtbl, 0x50f1e730_c5d1_4b6b_9adb_8a11756be29c);
 #[cfg(feature = "ApplicationModel_Activation")]
 impl ActivatedEventHandler {
     pub fn new<F: FnMut(::core::option::Option<&::windows_core::IInspectable>, ::core::option::Option<&super::super::ApplicationModel::Activation::IActivatedEventArgs>) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
@@ -6116,10 +5684,10 @@ impl ActivatedEventHandler {
     pub fn Invoke<P0, P1>(&self, sender: P0, eventargs: P1) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<::windows_core::IInspectable>,
-        P1: ::windows_core::TryIntoParam<super::super::ApplicationModel::Activation::IActivatedEventArgs>,
+        P1: ::windows_core::IntoParam<super::super::ApplicationModel::Activation::IActivatedEventArgs>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), eventargs.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), eventargs.into_param().abi()).ok() }
     }
 }
 #[cfg(feature = "ApplicationModel_Activation")]
@@ -6166,14 +5734,6 @@ impl<F: FnMut(::core::option::Option<&::windows_core::IInspectable>, ::core::opt
     }
 }
 #[cfg(feature = "ApplicationModel_Activation")]
-unsafe impl ::windows_core::Interface for ActivatedEventHandler {
-    type Vtable = ActivatedEventHandler_Vtbl;
-}
-#[cfg(feature = "ApplicationModel_Activation")]
-unsafe impl ::windows_core::ComInterface for ActivatedEventHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x50f1e730_c5d1_4b6b_9adb_8a11756be29c);
-}
-#[cfg(feature = "ApplicationModel_Activation")]
 impl ::windows_core::RuntimeType for ActivatedEventHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -6187,11 +5747,8 @@ pub struct ActivatedEventHandler_Vtbl {
     #[cfg(not(feature = "ApplicationModel_Activation"))]
     Invoke: usize,
 }
-#[doc = "Required features: `\"ApplicationModel_Activation\"`"]
 #[cfg(feature = "ApplicationModel_Activation")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct BackgroundActivatedEventHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(BackgroundActivatedEventHandler, BackgroundActivatedEventHandler_Vtbl, 0xedb19fbb_0761_47cc_9a77_24d7072965ca);
 #[cfg(feature = "ApplicationModel_Activation")]
 impl BackgroundActivatedEventHandler {
     pub fn new<F: FnMut(::core::option::Option<&::windows_core::IInspectable>, ::core::option::Option<&super::super::ApplicationModel::Activation::IBackgroundActivatedEventArgs>) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
@@ -6203,10 +5760,10 @@ impl BackgroundActivatedEventHandler {
     pub fn Invoke<P0, P1>(&self, sender: P0, eventargs: P1) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<::windows_core::IInspectable>,
-        P1: ::windows_core::TryIntoParam<super::super::ApplicationModel::Activation::IBackgroundActivatedEventArgs>,
+        P1: ::windows_core::IntoParam<super::super::ApplicationModel::Activation::IBackgroundActivatedEventArgs>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), eventargs.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), eventargs.into_param().abi()).ok() }
     }
 }
 #[cfg(feature = "ApplicationModel_Activation")]
@@ -6253,14 +5810,6 @@ impl<F: FnMut(::core::option::Option<&::windows_core::IInspectable>, ::core::opt
     }
 }
 #[cfg(feature = "ApplicationModel_Activation")]
-unsafe impl ::windows_core::Interface for BackgroundActivatedEventHandler {
-    type Vtable = BackgroundActivatedEventHandler_Vtbl;
-}
-#[cfg(feature = "ApplicationModel_Activation")]
-unsafe impl ::windows_core::ComInterface for BackgroundActivatedEventHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xedb19fbb_0761_47cc_9a77_24d7072965ca);
-}
-#[cfg(feature = "ApplicationModel_Activation")]
 impl ::windows_core::RuntimeType for BackgroundActivatedEventHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -6274,11 +5823,8 @@ pub struct BackgroundActivatedEventHandler_Vtbl {
     #[cfg(not(feature = "ApplicationModel_Activation"))]
     Invoke: usize,
 }
-#[doc = "Required features: `\"ApplicationModel\"`"]
 #[cfg(feature = "ApplicationModel")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct EnteredBackgroundEventHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(EnteredBackgroundEventHandler, EnteredBackgroundEventHandler_Vtbl, 0x2b09a173_b68e_4def_88c1_8de84e5aab2f);
 #[cfg(feature = "ApplicationModel")]
 impl EnteredBackgroundEventHandler {
     pub fn new<F: FnMut(::core::option::Option<&::windows_core::IInspectable>, ::core::option::Option<&super::super::ApplicationModel::IEnteredBackgroundEventArgs>) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
@@ -6290,10 +5836,10 @@ impl EnteredBackgroundEventHandler {
     pub fn Invoke<P0, P1>(&self, sender: P0, e: P1) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<::windows_core::IInspectable>,
-        P1: ::windows_core::TryIntoParam<super::super::ApplicationModel::IEnteredBackgroundEventArgs>,
+        P1: ::windows_core::IntoParam<super::super::ApplicationModel::IEnteredBackgroundEventArgs>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), e.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), e.into_param().abi()).ok() }
     }
 }
 #[cfg(feature = "ApplicationModel")]
@@ -6340,14 +5886,6 @@ impl<F: FnMut(::core::option::Option<&::windows_core::IInspectable>, ::core::opt
     }
 }
 #[cfg(feature = "ApplicationModel")]
-unsafe impl ::windows_core::Interface for EnteredBackgroundEventHandler {
-    type Vtable = EnteredBackgroundEventHandler_Vtbl;
-}
-#[cfg(feature = "ApplicationModel")]
-unsafe impl ::windows_core::ComInterface for EnteredBackgroundEventHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2b09a173_b68e_4def_88c1_8de84e5aab2f);
-}
-#[cfg(feature = "ApplicationModel")]
 impl ::windows_core::RuntimeType for EnteredBackgroundEventHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -6361,11 +5899,8 @@ pub struct EnteredBackgroundEventHandler_Vtbl {
     #[cfg(not(feature = "ApplicationModel"))]
     Invoke: usize,
 }
-#[doc = "Required features: `\"ApplicationModel\"`"]
 #[cfg(feature = "ApplicationModel")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct LeavingBackgroundEventHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(LeavingBackgroundEventHandler, LeavingBackgroundEventHandler_Vtbl, 0x00b4ccd9_7a9c_4b6b_9ac4_13474f268bc4);
 #[cfg(feature = "ApplicationModel")]
 impl LeavingBackgroundEventHandler {
     pub fn new<F: FnMut(::core::option::Option<&::windows_core::IInspectable>, ::core::option::Option<&super::super::ApplicationModel::ILeavingBackgroundEventArgs>) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
@@ -6377,10 +5912,10 @@ impl LeavingBackgroundEventHandler {
     pub fn Invoke<P0, P1>(&self, sender: P0, e: P1) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<::windows_core::IInspectable>,
-        P1: ::windows_core::TryIntoParam<super::super::ApplicationModel::ILeavingBackgroundEventArgs>,
+        P1: ::windows_core::IntoParam<super::super::ApplicationModel::ILeavingBackgroundEventArgs>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), e.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), e.into_param().abi()).ok() }
     }
 }
 #[cfg(feature = "ApplicationModel")]
@@ -6427,14 +5962,6 @@ impl<F: FnMut(::core::option::Option<&::windows_core::IInspectable>, ::core::opt
     }
 }
 #[cfg(feature = "ApplicationModel")]
-unsafe impl ::windows_core::Interface for LeavingBackgroundEventHandler {
-    type Vtable = LeavingBackgroundEventHandler_Vtbl;
-}
-#[cfg(feature = "ApplicationModel")]
-unsafe impl ::windows_core::ComInterface for LeavingBackgroundEventHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00b4ccd9_7a9c_4b6b_9ac4_13474f268bc4);
-}
-#[cfg(feature = "ApplicationModel")]
 impl ::windows_core::RuntimeType for LeavingBackgroundEventHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -6448,9 +5975,7 @@ pub struct LeavingBackgroundEventHandler_Vtbl {
     #[cfg(not(feature = "ApplicationModel"))]
     Invoke: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct NavigatedEventHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(NavigatedEventHandler, NavigatedEventHandler_Vtbl, 0x7af46fe6_40ca_4e49_a7d6_dbdb330cd1a3);
 impl NavigatedEventHandler {
     pub fn new<F: FnMut(::core::option::Option<&::windows_core::IInspectable>, ::core::option::Option<&IWebUINavigatedEventArgs>) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
         let com = NavigatedEventHandlerBox::<F> { vtable: &NavigatedEventHandlerBox::<F>::VTABLE, count: ::windows_core::imp::RefCount::new(1), invoke };
@@ -6459,10 +5984,10 @@ impl NavigatedEventHandler {
     pub fn Invoke<P0, P1>(&self, sender: P0, e: P1) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<::windows_core::IInspectable>,
-        P1: ::windows_core::TryIntoParam<IWebUINavigatedEventArgs>,
+        P1: ::windows_core::IntoParam<IWebUINavigatedEventArgs>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), e.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), e.into_param().abi()).ok() }
     }
 }
 #[repr(C)]
@@ -6506,12 +6031,6 @@ impl<F: FnMut(::core::option::Option<&::windows_core::IInspectable>, ::core::opt
         ((*this).invoke)(::windows_core::from_raw_borrowed(&sender), ::windows_core::from_raw_borrowed(&e)).into()
     }
 }
-unsafe impl ::windows_core::Interface for NavigatedEventHandler {
-    type Vtable = NavigatedEventHandler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for NavigatedEventHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7af46fe6_40ca_4e49_a7d6_dbdb330cd1a3);
-}
 impl ::windows_core::RuntimeType for NavigatedEventHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -6521,9 +6040,7 @@ pub struct NavigatedEventHandler_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub Invoke: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, sender: *mut ::core::ffi::c_void, e: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ResumingEventHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ResumingEventHandler, ResumingEventHandler_Vtbl, 0x26599ba9_a22d_4806_a728_acadc1d075fa);
 impl ResumingEventHandler {
     pub fn new<F: FnMut(::core::option::Option<&::windows_core::IInspectable>) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
         let com = ResumingEventHandlerBox::<F> { vtable: &ResumingEventHandlerBox::<F>::VTABLE, count: ::windows_core::imp::RefCount::new(1), invoke };
@@ -6578,12 +6095,6 @@ impl<F: FnMut(::core::option::Option<&::windows_core::IInspectable>) -> ::window
         ((*this).invoke)(::windows_core::from_raw_borrowed(&sender)).into()
     }
 }
-unsafe impl ::windows_core::Interface for ResumingEventHandler {
-    type Vtable = ResumingEventHandler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ResumingEventHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x26599ba9_a22d_4806_a728_acadc1d075fa);
-}
 impl ::windows_core::RuntimeType for ResumingEventHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -6593,11 +6104,8 @@ pub struct ResumingEventHandler_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub Invoke: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, sender: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc = "Required features: `\"ApplicationModel\"`"]
 #[cfg(feature = "ApplicationModel")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct SuspendingEventHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(SuspendingEventHandler, SuspendingEventHandler_Vtbl, 0x509c429c_78e2_4883_abc8_8960dcde1b5c);
 #[cfg(feature = "ApplicationModel")]
 impl SuspendingEventHandler {
     pub fn new<F: FnMut(::core::option::Option<&::windows_core::IInspectable>, ::core::option::Option<&super::super::ApplicationModel::ISuspendingEventArgs>) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
@@ -6609,10 +6117,10 @@ impl SuspendingEventHandler {
     pub fn Invoke<P0, P1>(&self, sender: P0, e: P1) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<::windows_core::IInspectable>,
-        P1: ::windows_core::TryIntoParam<super::super::ApplicationModel::ISuspendingEventArgs>,
+        P1: ::windows_core::IntoParam<super::super::ApplicationModel::ISuspendingEventArgs>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), e.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), e.into_param().abi()).ok() }
     }
 }
 #[cfg(feature = "ApplicationModel")]
@@ -6657,14 +6165,6 @@ impl<F: FnMut(::core::option::Option<&::windows_core::IInspectable>, ::core::opt
         let this = this as *mut *mut ::core::ffi::c_void as *mut Self;
         ((*this).invoke)(::windows_core::from_raw_borrowed(&sender), ::windows_core::from_raw_borrowed(&e)).into()
     }
-}
-#[cfg(feature = "ApplicationModel")]
-unsafe impl ::windows_core::Interface for SuspendingEventHandler {
-    type Vtable = SuspendingEventHandler_Vtbl;
-}
-#[cfg(feature = "ApplicationModel")]
-unsafe impl ::windows_core::ComInterface for SuspendingEventHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x509c429c_78e2_4883_abc8_8960dcde1b5c);
 }
 #[cfg(feature = "ApplicationModel")]
 impl ::windows_core::RuntimeType for SuspendingEventHandler {

@@ -20,9 +20,7 @@ where
     ::windows_targets::link!("directml.dll" "system" fn DMLCreateDevice1(d3d12device : * mut::core::ffi::c_void, flags : DML_CREATE_DEVICE_FLAGS, minimumfeaturelevel : DML_FEATURE_LEVEL, riid : *const ::windows_core::GUID, ppv : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     DMLCreateDevice1(d3d12device.into_param().abi(), flags, minimumfeaturelevel, &T::IID, result__ as *mut _ as *mut _).ok()
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDMLBindingTable(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDMLBindingTable, IDMLBindingTable_Vtbl, 0x29c687dc_de74_4e3b_ab00_1168f2fc3cfc);
 impl IDMLBindingTable {
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows_core::GUID, datasize: *mut u32, data: ::core::option::Option<*mut ::core::ffi::c_void>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.GetPrivateData)(::windows_core::Interface::as_raw(self), guid, datasize, ::core::mem::transmute(data.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -68,12 +66,6 @@ impl IDMLBindingTable {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDMLBindingTable, ::windows_core::IUnknown, IDMLObject, IDMLDeviceChild);
-unsafe impl ::windows_core::Interface for IDMLBindingTable {
-    type Vtable = IDMLBindingTable_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDMLBindingTable {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x29c687dc_de74_4e3b_ab00_1168f2fc3cfc);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDMLBindingTable_Vtbl {
@@ -87,9 +79,7 @@ pub struct IDMLBindingTable_Vtbl {
     #[cfg(not(feature = "Win32_Graphics_Direct3D12"))]
     Reset: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDMLCommandRecorder(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDMLCommandRecorder, IDMLCommandRecorder_Vtbl, 0xe6857a76_2e3e_4fdd_bff4_5d2ba10fb453);
 impl IDMLCommandRecorder {
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows_core::GUID, datasize: *mut u32, data: ::core::option::Option<*mut ::core::ffi::c_void>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.GetPrivateData)(::windows_core::Interface::as_raw(self), guid, datasize, ::core::mem::transmute(data.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -128,12 +118,6 @@ impl IDMLCommandRecorder {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDMLCommandRecorder, ::windows_core::IUnknown, IDMLObject, IDMLDeviceChild);
-unsafe impl ::windows_core::Interface for IDMLCommandRecorder {
-    type Vtable = IDMLCommandRecorder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDMLCommandRecorder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe6857a76_2e3e_4fdd_bff4_5d2ba10fb453);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDMLCommandRecorder_Vtbl {
@@ -143,9 +127,7 @@ pub struct IDMLCommandRecorder_Vtbl {
     #[cfg(not(feature = "Win32_Graphics_Direct3D12"))]
     RecordDispatch: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDMLCompiledOperator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDMLCompiledOperator, IDMLCompiledOperator_Vtbl, 0x6b15e56a_bf5c_4902_92d8_da3a650afea4);
 impl IDMLCompiledOperator {
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows_core::GUID, datasize: *mut u32, data: ::core::option::Option<*mut ::core::ffi::c_void>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetPrivateData)(::windows_core::Interface::as_raw(self), guid, datasize, ::core::mem::transmute(data.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -179,20 +161,12 @@ impl IDMLCompiledOperator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDMLCompiledOperator, ::windows_core::IUnknown, IDMLObject, IDMLDeviceChild, IDMLPageable, IDMLDispatchable);
-unsafe impl ::windows_core::Interface for IDMLCompiledOperator {
-    type Vtable = IDMLCompiledOperator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDMLCompiledOperator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6b15e56a_bf5c_4902_92d8_da3a650afea4);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDMLCompiledOperator_Vtbl {
     pub base__: IDMLDispatchable_Vtbl,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDMLDebugDevice(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDMLDebugDevice, IDMLDebugDevice_Vtbl, 0x7d6f3ac9_394a_4ac3_92a7_390cc57a8217);
 impl IDMLDebugDevice {
     pub unsafe fn SetMuteDebugOutput<P0>(&self, mute: P0)
     where
@@ -202,21 +176,13 @@ impl IDMLDebugDevice {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDMLDebugDevice, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDMLDebugDevice {
-    type Vtable = IDMLDebugDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDMLDebugDevice {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7d6f3ac9_394a_4ac3_92a7_390cc57a8217);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDMLDebugDevice_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub SetMuteDebugOutput: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, mute: super::super::super::Foundation::BOOL),
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDMLDevice(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDMLDevice, IDMLDevice_Vtbl, 0x6dbd6437_96fd_423f_a98c_ae5e7c2a573f);
 impl IDMLDevice {
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows_core::GUID, datasize: *mut u32, data: ::core::option::Option<*mut ::core::ffi::c_void>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.GetPrivateData)(::windows_core::Interface::as_raw(self), guid, datasize, ::core::mem::transmute(data.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -293,12 +259,6 @@ impl IDMLDevice {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDMLDevice, ::windows_core::IUnknown, IDMLObject);
-unsafe impl ::windows_core::Interface for IDMLDevice {
-    type Vtable = IDMLDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDMLDevice {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6dbd6437_96fd_423f_a98c_ae5e7c2a573f);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDMLDevice_Vtbl {
@@ -317,9 +277,7 @@ pub struct IDMLDevice_Vtbl {
     pub GetDeviceRemovedReason: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetParentDevice: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppv: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDMLDevice1(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDMLDevice1, IDMLDevice1_Vtbl, 0xa0884f9a_d2be_4355_aa5d_5901281ad1d2);
 impl IDMLDevice1 {
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows_core::GUID, datasize: *mut u32, data: ::core::option::Option<*mut ::core::ffi::c_void>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.GetPrivateData)(::windows_core::Interface::as_raw(self), guid, datasize, ::core::mem::transmute(data.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -402,21 +360,13 @@ impl IDMLDevice1 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDMLDevice1, ::windows_core::IUnknown, IDMLObject, IDMLDevice);
-unsafe impl ::windows_core::Interface for IDMLDevice1 {
-    type Vtable = IDMLDevice1_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDMLDevice1 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa0884f9a_d2be_4355_aa5d_5901281ad1d2);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDMLDevice1_Vtbl {
     pub base__: IDMLDevice_Vtbl,
     pub CompileGraph: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, desc: *const DML_GRAPH_DESC, flags: DML_EXECUTION_FLAGS, riid: *const ::windows_core::GUID, ppv: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDMLDeviceChild(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDMLDeviceChild, IDMLDeviceChild_Vtbl, 0x27e83142_8165_49e3_974e_2fd66e4cb69d);
 impl IDMLDeviceChild {
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows_core::GUID, datasize: *mut u32, data: ::core::option::Option<*mut ::core::ffi::c_void>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.GetPrivateData)(::windows_core::Interface::as_raw(self), guid, datasize, ::core::mem::transmute(data.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -445,21 +395,13 @@ impl IDMLDeviceChild {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDMLDeviceChild, ::windows_core::IUnknown, IDMLObject);
-unsafe impl ::windows_core::Interface for IDMLDeviceChild {
-    type Vtable = IDMLDeviceChild_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDMLDeviceChild {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x27e83142_8165_49e3_974e_2fd66e4cb69d);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDMLDeviceChild_Vtbl {
     pub base__: IDMLObject_Vtbl,
     pub GetDevice: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppv: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDMLDispatchable(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDMLDispatchable, IDMLDispatchable_Vtbl, 0xdcb821a8_1039_441e_9f1c_b1759c2f3cec);
 impl IDMLDispatchable {
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows_core::GUID, datasize: *mut u32, data: ::core::option::Option<*mut ::core::ffi::c_void>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.GetPrivateData)(::windows_core::Interface::as_raw(self), guid, datasize, ::core::mem::transmute(data.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -493,21 +435,13 @@ impl IDMLDispatchable {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDMLDispatchable, ::windows_core::IUnknown, IDMLObject, IDMLDeviceChild, IDMLPageable);
-unsafe impl ::windows_core::Interface for IDMLDispatchable {
-    type Vtable = IDMLDispatchable_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDMLDispatchable {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdcb821a8_1039_441e_9f1c_b1759c2f3cec);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDMLDispatchable_Vtbl {
     pub base__: IDMLPageable_Vtbl,
     pub GetBindingProperties: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut DML_BINDING_PROPERTIES),
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDMLObject(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDMLObject, IDMLObject_Vtbl, 0xc8263aac_9e0c_4a2d_9b8e_007521a3317c);
 impl IDMLObject {
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows_core::GUID, datasize: *mut u32, data: ::core::option::Option<*mut ::core::ffi::c_void>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).GetPrivateData)(::windows_core::Interface::as_raw(self), guid, datasize, ::core::mem::transmute(data.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -529,12 +463,6 @@ impl IDMLObject {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDMLObject, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDMLObject {
-    type Vtable = IDMLObject_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDMLObject {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc8263aac_9e0c_4a2d_9b8e_007521a3317c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDMLObject_Vtbl {
@@ -544,9 +472,7 @@ pub struct IDMLObject_Vtbl {
     pub SetPrivateDataInterface: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, guid: *const ::windows_core::GUID, data: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::windows_core::PCWSTR) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDMLOperator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDMLOperator, IDMLOperator_Vtbl, 0x26caae7a_3081_4633_9581_226fbe57695d);
 impl IDMLOperator {
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows_core::GUID, datasize: *mut u32, data: ::core::option::Option<*mut ::core::ffi::c_void>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.GetPrivateData)(::windows_core::Interface::as_raw(self), guid, datasize, ::core::mem::transmute(data.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -575,20 +501,12 @@ impl IDMLOperator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDMLOperator, ::windows_core::IUnknown, IDMLObject, IDMLDeviceChild);
-unsafe impl ::windows_core::Interface for IDMLOperator {
-    type Vtable = IDMLOperator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDMLOperator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x26caae7a_3081_4633_9581_226fbe57695d);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDMLOperator_Vtbl {
     pub base__: IDMLDeviceChild_Vtbl,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDMLOperatorInitializer(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDMLOperatorInitializer, IDMLOperatorInitializer_Vtbl, 0x427c1113_435c_469c_8676_4d5dd072f813);
 impl IDMLOperatorInitializer {
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows_core::GUID, datasize: *mut u32, data: ::core::option::Option<*mut ::core::ffi::c_void>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.GetPrivateData)(::windows_core::Interface::as_raw(self), guid, datasize, ::core::mem::transmute(data.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -625,21 +543,13 @@ impl IDMLOperatorInitializer {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDMLOperatorInitializer, ::windows_core::IUnknown, IDMLObject, IDMLDeviceChild, IDMLPageable, IDMLDispatchable);
-unsafe impl ::windows_core::Interface for IDMLOperatorInitializer {
-    type Vtable = IDMLOperatorInitializer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDMLOperatorInitializer {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x427c1113_435c_469c_8676_4d5dd072f813);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDMLOperatorInitializer_Vtbl {
     pub base__: IDMLDispatchable_Vtbl,
     pub Reset: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, operatorcount: u32, operators: *const *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDMLPageable(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDMLPageable, IDMLPageable_Vtbl, 0xb1ab0825_4542_4a4b_8617_6dde6e8f6201);
 impl IDMLPageable {
     pub unsafe fn GetPrivateData(&self, guid: *const ::windows_core::GUID, datasize: *mut u32, data: ::core::option::Option<*mut ::core::ffi::c_void>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.GetPrivateData)(::windows_core::Interface::as_raw(self), guid, datasize, ::core::mem::transmute(data.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -668,12 +578,6 @@ impl IDMLPageable {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDMLPageable, ::windows_core::IUnknown, IDMLObject, IDMLDeviceChild);
-unsafe impl ::windows_core::Interface for IDMLPageable {
-    type Vtable = IDMLPageable_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDMLPageable {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb1ab0825_4542_4a4b_8617_6dde6e8f6201);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDMLPageable_Vtbl {

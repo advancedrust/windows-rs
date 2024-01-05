@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOemSupportInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOemSupportInfo {
-    type Vtable = IOemSupportInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOemSupportInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8d2eae55_87ef_4266_86d0_c4afbeb29bb9);
-}
+::windows_core::imp::com_interface!(IOemSupportInfo, IOemSupportInfo_Vtbl, 0x8d2eae55_87ef_4266_86d0_c4afbeb29bb9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOemSupportInfo_Vtbl {
@@ -16,32 +7,14 @@ pub struct IOemSupportInfo_Vtbl {
     pub SupportAppLink: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SupportProvider: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISmbiosInformationStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISmbiosInformationStatics {
-    type Vtable = ISmbiosInformationStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISmbiosInformationStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x080cca7c_637c_48c4_b728_f9273812db8e);
-}
+::windows_core::imp::com_interface!(ISmbiosInformationStatics, ISmbiosInformationStatics_Vtbl, 0x080cca7c_637c_48c4_b728_f9273812db8e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISmbiosInformationStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SerialNumber: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemSupportDeviceInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemSupportDeviceInfo {
-    type Vtable = ISystemSupportDeviceInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemSupportDeviceInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x05880b99_8247_441b_a996_a1784bab79a8);
-}
+::windows_core::imp::com_interface!(ISystemSupportDeviceInfo, ISystemSupportDeviceInfo_Vtbl, 0x05880b99_8247_441b_a996_a1784bab79a8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemSupportDeviceInfo_Vtbl {
@@ -54,16 +27,7 @@ pub struct ISystemSupportDeviceInfo_Vtbl {
     pub SystemHardwareVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SystemFirmwareVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemSupportInfoStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemSupportInfoStatics {
-    type Vtable = ISystemSupportInfoStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemSupportInfoStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xef750974_c422_45d7_a44d_5c1c0043a2b3);
-}
+::windows_core::imp::com_interface!(ISystemSupportInfoStatics, ISystemSupportInfoStatics_Vtbl, 0xef750974_c422_45d7_a44d_5c1c0043a2b3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemSupportInfoStatics_Vtbl {
@@ -71,16 +35,7 @@ pub struct ISystemSupportInfoStatics_Vtbl {
     pub LocalSystemEdition: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub OemSupportInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemSupportInfoStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemSupportInfoStatics2 {
-    type Vtable = ISystemSupportInfoStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemSupportInfoStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x33f349a4_3fa1_4986_aa4b_057420455e6d);
-}
+::windows_core::imp::com_interface!(ISystemSupportInfoStatics2, ISystemSupportInfoStatics2_Vtbl, 0x33f349a4_3fa1_4986_aa4b_057420455e6d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemSupportInfoStatics2_Vtbl {

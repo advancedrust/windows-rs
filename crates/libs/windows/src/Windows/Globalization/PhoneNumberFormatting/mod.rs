@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneNumberFormatter(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPhoneNumberFormatter {
-    type Vtable = IPhoneNumberFormatter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPhoneNumberFormatter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1556b49e_bad4_4b4a_900d_4407adb7c981);
-}
+::windows_core::imp::com_interface!(IPhoneNumberFormatter, IPhoneNumberFormatter_Vtbl, 0x1556b49e_bad4_4b4a_900d_4407adb7c981);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPhoneNumberFormatter_Vtbl {
@@ -18,16 +9,7 @@ pub struct IPhoneNumberFormatter_Vtbl {
     pub FormatString: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, number: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub FormatStringWithLeftToRightMarkers: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, number: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneNumberFormatterStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPhoneNumberFormatterStatics {
-    type Vtable = IPhoneNumberFormatterStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPhoneNumberFormatterStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5ca6f931_84d9_414b_ab4e_a0552c878602);
-}
+::windows_core::imp::com_interface!(IPhoneNumberFormatterStatics, IPhoneNumberFormatterStatics_Vtbl, 0x5ca6f931_84d9_414b_ab4e_a0552c878602);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPhoneNumberFormatterStatics_Vtbl {
@@ -37,16 +19,7 @@ pub struct IPhoneNumberFormatterStatics_Vtbl {
     pub GetNationalDirectDialingPrefixForRegion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, regioncode: ::std::mem::MaybeUninit<::windows_core::HSTRING>, stripnondigit: bool, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub WrapWithLeftToRightMarkers: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, number: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneNumberInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPhoneNumberInfo {
-    type Vtable = IPhoneNumberInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPhoneNumberInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1c7ce4dd_c8b4_4ea3_9aef_b342e2c5b417);
-}
+::windows_core::imp::com_interface!(IPhoneNumberInfo, IPhoneNumberInfo_Vtbl, 0x1c7ce4dd_c8b4_4ea3_9aef_b342e2c5b417);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPhoneNumberInfo_Vtbl {
@@ -60,32 +33,14 @@ pub struct IPhoneNumberInfo_Vtbl {
     pub GetGeographicRegionCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub CheckNumberMatch: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, othernumber: *mut ::core::ffi::c_void, result__: *mut PhoneNumberMatchResult) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneNumberInfoFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPhoneNumberInfoFactory {
-    type Vtable = IPhoneNumberInfoFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPhoneNumberInfoFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8202b964_adaa_4cff_8fcf_17e7516a28ff);
-}
+::windows_core::imp::com_interface!(IPhoneNumberInfoFactory, IPhoneNumberInfoFactory_Vtbl, 0x8202b964_adaa_4cff_8fcf_17e7516a28ff);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPhoneNumberInfoFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, number: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneNumberInfoStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPhoneNumberInfoStatics {
-    type Vtable = IPhoneNumberInfoStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPhoneNumberInfoStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5b3f4f6a_86a9_40e9_8649_6d61161928d4);
-}
+::windows_core::imp::com_interface!(IPhoneNumberInfoStatics, IPhoneNumberInfoStatics_Vtbl, 0x5b3f4f6a_86a9_40e9_8649_6d61161928d4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPhoneNumberInfoStatics_Vtbl {
@@ -299,7 +254,7 @@ impl ::windows_core::RuntimeName for PhoneNumberInfo {
     const NAME: &'static str = "Windows.Globalization.PhoneNumberFormatting.PhoneNumberInfo";
 }
 ::windows_core::imp::interface_hierarchy!(PhoneNumberInfo, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::Foundation::IStringable> for PhoneNumberInfo {}
+::windows_core::imp::required_hierarchy!(PhoneNumberInfo, super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for PhoneNumberInfo {}
 unsafe impl ::core::marker::Sync for PhoneNumberInfo {}
 #[repr(transparent)]

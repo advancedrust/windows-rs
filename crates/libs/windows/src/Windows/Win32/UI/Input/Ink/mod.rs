@@ -1,27 +1,17 @@
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkCommitRequestHandler(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IInkCommitRequestHandler, IInkCommitRequestHandler_Vtbl, 0xfabea3fc_b108_45b6_a9fc_8d08fa9f85cf);
 impl IInkCommitRequestHandler {
     pub unsafe fn OnCommitRequested(&self) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).OnCommitRequested)(::windows_core::Interface::as_raw(self)).ok()
     }
 }
 ::windows_core::imp::interface_hierarchy!(IInkCommitRequestHandler, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkCommitRequestHandler {
-    type Vtable = IInkCommitRequestHandler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkCommitRequestHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfabea3fc_b108_45b6_a9fc_8d08fa9f85cf);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkCommitRequestHandler_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub OnCommitRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkD2DRenderer(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IInkD2DRenderer, IInkD2DRenderer_Vtbl, 0x407fb1de_f85a_4150_97cf_b7fb274fb4f8);
 impl IInkD2DRenderer {
     pub unsafe fn Draw<P0, P1, P2>(&self, pd2d1devicecontext: P0, pinkstrokeiterable: P1, fhighcontrast: P2) -> ::windows_core::Result<()>
     where
@@ -33,21 +23,13 @@ impl IInkD2DRenderer {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IInkD2DRenderer, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkD2DRenderer {
-    type Vtable = IInkD2DRenderer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkD2DRenderer {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x407fb1de_f85a_4150_97cf_b7fb274fb4f8);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkD2DRenderer_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub Draw: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pd2d1devicecontext: *mut ::core::ffi::c_void, pinkstrokeiterable: *mut ::core::ffi::c_void, fhighcontrast: super::super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkD2DRenderer2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IInkD2DRenderer2, IInkD2DRenderer2_Vtbl, 0x0a95dcd9_4578_4b71_b20b_bf664d4bfeee);
 impl IInkD2DRenderer2 {
     pub unsafe fn Draw<P0, P1>(&self, pd2d1devicecontext: P0, pinkstrokeiterable: P1, highcontrastadjustment: INK_HIGH_CONTRAST_ADJUSTMENT) -> ::windows_core::Result<()>
     where
@@ -58,21 +40,13 @@ impl IInkD2DRenderer2 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IInkD2DRenderer2, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkD2DRenderer2 {
-    type Vtable = IInkD2DRenderer2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkD2DRenderer2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0a95dcd9_4578_4b71_b20b_bf664d4bfeee);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkD2DRenderer2_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub Draw: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pd2d1devicecontext: *mut ::core::ffi::c_void, pinkstrokeiterable: *mut ::core::ffi::c_void, highcontrastadjustment: INK_HIGH_CONTRAST_ADJUSTMENT) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkDesktopHost(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IInkDesktopHost, IInkDesktopHost_Vtbl, 0x4ce7d875_a981_4140_a1ff_ad93258e8d59);
 impl IInkDesktopHost {
     pub unsafe fn QueueWorkItem<P0>(&self, workitem: P0) -> ::windows_core::Result<()>
     where
@@ -97,12 +71,6 @@ impl IInkDesktopHost {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IInkDesktopHost, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkDesktopHost {
-    type Vtable = IInkDesktopHost_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkDesktopHost {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4ce7d875_a981_4140_a1ff_ad93258e8d59);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkDesktopHost_Vtbl {
@@ -111,30 +79,20 @@ pub struct IInkDesktopHost_Vtbl {
     pub CreateInkPresenter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppv: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateAndInitializeInkPresenter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, rootvisual: *mut ::core::ffi::c_void, width: f32, height: f32, riid: *const ::windows_core::GUID, ppv: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkHostWorkItem(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IInkHostWorkItem, IInkHostWorkItem_Vtbl, 0xccda0a9a_1b78_4632_bb96_97800662e26c);
 impl IInkHostWorkItem {
     pub unsafe fn Invoke(&self) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).Invoke)(::windows_core::Interface::as_raw(self)).ok()
     }
 }
 ::windows_core::imp::interface_hierarchy!(IInkHostWorkItem, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkHostWorkItem {
-    type Vtable = IInkHostWorkItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkHostWorkItem {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xccda0a9a_1b78_4632_bb96_97800662e26c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkHostWorkItem_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub Invoke: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkPresenterDesktop(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IInkPresenterDesktop, IInkPresenterDesktop_Vtbl, 0x73f3c0d9_2e8b_48f3_895e_20cbd27b723b);
 impl IInkPresenterDesktop {
     pub unsafe fn SetRootVisual<P0, P1>(&self, rootvisual: P0, device: P1) -> ::windows_core::Result<()>
     where
@@ -160,12 +118,6 @@ impl IInkPresenterDesktop {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IInkPresenterDesktop, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkPresenterDesktop {
-    type Vtable = IInkPresenterDesktop_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkPresenterDesktop {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x73f3c0d9_2e8b_48f3_895e_20cbd27b723b);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkPresenterDesktop_Vtbl {

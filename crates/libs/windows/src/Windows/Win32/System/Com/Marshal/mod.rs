@@ -709,9 +709,7 @@ pub unsafe fn STGMEDIUM_UserUnmarshal64(param0: *const u32, param1: *const u8, p
     ::windows_targets::link!("ole32.dll" "system" fn STGMEDIUM_UserUnmarshal64(param0 : *const u32, param1 : *const u8, param2 : *mut super:: STGMEDIUM) -> *mut u8);
     STGMEDIUM_UserUnmarshal64(param0, param1, param2)
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMarshal(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IMarshal, IMarshal_Vtbl, 0x00000003_0000_0000_c000_000000000046);
 impl IMarshal {
     pub unsafe fn GetUnmarshalClass(&self, riid: *const ::windows_core::GUID, pv: ::core::option::Option<*const ::core::ffi::c_void>, dwdestcontext: u32, pvdestcontext: ::core::option::Option<*const ::core::ffi::c_void>, mshlflags: u32) -> ::windows_core::Result<::windows_core::GUID> {
         let mut result__ = ::std::mem::zeroed();
@@ -744,12 +742,6 @@ impl IMarshal {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IMarshal, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMarshal {
-    type Vtable = IMarshal_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMarshal {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000003_0000_0000_c000_000000000046);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMarshal_Vtbl {
@@ -761,9 +753,7 @@ pub struct IMarshal_Vtbl {
     pub ReleaseMarshalData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstm: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub DisconnectObject: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwreserved: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMarshal2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IMarshal2, IMarshal2_Vtbl, 0x000001cf_0000_0000_c000_000000000046);
 impl IMarshal2 {
     pub unsafe fn GetUnmarshalClass(&self, riid: *const ::windows_core::GUID, pv: ::core::option::Option<*const ::core::ffi::c_void>, dwdestcontext: u32, pvdestcontext: ::core::option::Option<*const ::core::ffi::c_void>, mshlflags: u32) -> ::windows_core::Result<::windows_core::GUID> {
         let mut result__ = ::std::mem::zeroed();
@@ -796,20 +786,12 @@ impl IMarshal2 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IMarshal2, ::windows_core::IUnknown, IMarshal);
-unsafe impl ::windows_core::Interface for IMarshal2 {
-    type Vtable = IMarshal2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMarshal2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x000001cf_0000_0000_c000_000000000046);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMarshal2_Vtbl {
     pub base__: IMarshal_Vtbl,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMarshalingStream(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IMarshalingStream, IMarshalingStream_Vtbl, 0xd8f2f5e6_6102_4863_9f26_389a4676efde);
 impl IMarshalingStream {
     pub unsafe fn Read(&self, pv: *mut ::core::ffi::c_void, cb: u32, pcbread: ::core::option::Option<*mut u32>) -> ::windows_core::HRESULT {
         (::windows_core::Interface::vtable(self).base__.base__.Read)(::windows_core::Interface::as_raw(self), pv, cb, ::core::mem::transmute(pcbread.unwrap_or(::std::ptr::null_mut())))
@@ -854,12 +836,6 @@ impl IMarshalingStream {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IMarshalingStream, ::windows_core::IUnknown, super::ISequentialStream, super::IStream);
-unsafe impl ::windows_core::Interface for IMarshalingStream {
-    type Vtable = IMarshalingStream_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMarshalingStream {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd8f2f5e6_6102_4863_9f26_389a4676efde);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMarshalingStream_Vtbl {

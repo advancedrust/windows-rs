@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDisplayRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDisplayRequest {
-    type Vtable = IDisplayRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDisplayRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe5732044_f49f_4b60_8dd4_5e7e3a632ac0);
-}
+::windows_core::imp::com_interface!(IDisplayRequest, IDisplayRequest_Vtbl, 0xe5732044_f49f_4b60_8dd4_5e7e3a632ac0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDisplayRequest_Vtbl {

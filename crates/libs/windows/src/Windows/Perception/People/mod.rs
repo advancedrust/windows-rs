@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IEyesPose(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IEyesPose {
-    type Vtable = IEyesPose_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IEyesPose {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x682a9b23_8a1e_5b86_a060_906ffacb62a4);
-}
+::windows_core::imp::com_interface!(IEyesPose, IEyesPose_Vtbl, 0x682a9b23_8a1e_5b86_a060_906ffacb62a4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IEyesPose_Vtbl {
@@ -19,16 +10,7 @@ pub struct IEyesPose_Vtbl {
     Gaze: usize,
     pub UpdateTimestamp: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IEyesPoseStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IEyesPoseStatics {
-    type Vtable = IEyesPoseStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IEyesPoseStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1cff7413_b21f_54c0_80c1_e60d994ca58c);
-}
+::windows_core::imp::com_interface!(IEyesPoseStatics, IEyesPoseStatics_Vtbl, 0x1cff7413_b21f_54c0_80c1_e60d994ca58c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IEyesPoseStatics_Vtbl {
@@ -39,16 +21,7 @@ pub struct IEyesPoseStatics_Vtbl {
     #[cfg(not(feature = "UI_Input"))]
     RequestAccessAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHandMeshObserver(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHandMeshObserver {
-    type Vtable = IHandMeshObserver_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHandMeshObserver {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x85ae30cb_6fc3_55c4_a7b4_29e33896ca69);
-}
+::windows_core::imp::com_interface!(IHandMeshObserver, IHandMeshObserver_Vtbl, 0x85ae30cb_6fc3_55c4_a7b4_29e33896ca69);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHandMeshObserver_Vtbl {
@@ -65,16 +38,7 @@ pub struct IHandMeshObserver_Vtbl {
     pub NeutralPoseVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
     pub ModelId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHandMeshVertexState(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHandMeshVertexState {
-    type Vtable = IHandMeshVertexState_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHandMeshVertexState {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x046c5fef_1d8b_55de_ab2c_1cd424886d8f);
-}
+::windows_core::imp::com_interface!(IHandMeshVertexState, IHandMeshVertexState_Vtbl, 0x046c5fef_1d8b_55de_ab2c_1cd424886d8f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHandMeshVertexState_Vtbl {
@@ -89,16 +53,7 @@ pub struct IHandMeshVertexState_Vtbl {
     GetVertices: usize,
     pub UpdateTimestamp: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHandPose(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHandPose {
-    type Vtable = IHandPose_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHandPose {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4d98e79a_bb08_5d09_91de_df0dd3fae46c);
-}
+::windows_core::imp::com_interface!(IHandPose, IHandPose_Vtbl, 0x4d98e79a_bb08_5d09_91de_df0dd3fae46c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHandPose_Vtbl {
@@ -120,16 +75,7 @@ pub struct IHandPose_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     GetRelativeJoints: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHeadPose(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHeadPose {
-    type Vtable = IHeadPose_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHeadPose {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7f5ac5a5_49db_379f_9429_32a2faf34fa6);
-}
+::windows_core::imp::com_interface!(IHeadPose, IHeadPose_Vtbl, 0x7f5ac5a5_49db_379f_9429_32a2faf34fa6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHeadPose_Vtbl {

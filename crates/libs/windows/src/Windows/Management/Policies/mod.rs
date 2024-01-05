@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INamedPolicyData(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INamedPolicyData {
-    type Vtable = INamedPolicyData_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INamedPolicyData {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x38dcb198_95ac_4077_a643_8078cae26400);
-}
+::windows_core::imp::com_interface!(INamedPolicyData, INamedPolicyData_Vtbl, 0x38dcb198_95ac_4077_a643_8078cae26400);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INamedPolicyData_Vtbl {
@@ -32,16 +23,7 @@ pub struct INamedPolicyData_Vtbl {
     pub Changed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, changedhandler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INamedPolicyStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INamedPolicyStatics {
-    type Vtable = INamedPolicyStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INamedPolicyStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7f793be7_76c4_4058_8cad_67662cd05f0d);
-}
+::windows_core::imp::com_interface!(INamedPolicyStatics, INamedPolicyStatics_Vtbl, 0x7f793be7_76c4_4058_8cad_67662cd05f0d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INamedPolicyStatics_Vtbl {

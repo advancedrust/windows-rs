@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAtomPubClient(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAtomPubClient {
-    type Vtable = IAtomPubClient_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAtomPubClient {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x35392c38_cded_4d4c_9637_05f15c1c9406);
-}
+::windows_core::imp::com_interface!(IAtomPubClient, IAtomPubClient_Vtbl, 0x35392c38_cded_4d4c_9637_05f15c1c9406);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAtomPubClient_Vtbl {
@@ -54,16 +45,7 @@ pub struct IAtomPubClient_Vtbl {
     DeleteResourceItemAsync: usize,
     pub CancelAsyncOperations: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAtomPubClientFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAtomPubClientFactory {
-    type Vtable = IAtomPubClientFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAtomPubClientFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x49d55012_57cb_4bde_ab9f_2610b172777b);
-}
+::windows_core::imp::com_interface!(IAtomPubClientFactory, IAtomPubClientFactory_Vtbl, 0x49d55012_57cb_4bde_ab9f_2610b172777b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAtomPubClientFactory_Vtbl {
@@ -73,16 +55,7 @@ pub struct IAtomPubClientFactory_Vtbl {
     #[cfg(not(feature = "Security_Credentials"))]
     CreateAtomPubClientWithCredentials: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IResourceCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IResourceCollection {
-    type Vtable = IResourceCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IResourceCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7f5fd609_bc88_41d4_88fa_3de6704d428e);
-}
+::windows_core::imp::com_interface!(IResourceCollection, IResourceCollection_Vtbl, 0x7f5fd609_bc88_41d4_88fa_3de6704d428e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IResourceCollection_Vtbl {
@@ -101,16 +74,7 @@ pub struct IResourceCollection_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Accepts: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IServiceDocument(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IServiceDocument {
-    type Vtable = IServiceDocument_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IServiceDocument {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8b7ec771_2ab3_4dbe_8bcc_778f92b75e51);
-}
+::windows_core::imp::com_interface!(IServiceDocument, IServiceDocument_Vtbl, 0x8b7ec771_2ab3_4dbe_8bcc_778f92b75e51);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IServiceDocument_Vtbl {
@@ -120,16 +84,7 @@ pub struct IServiceDocument_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Workspaces: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWorkspace(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWorkspace {
-    type Vtable = IWorkspace_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWorkspace {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb41da63b_a4b8_4036_89c5_83c31266ba49);
-}
+::windows_core::imp::com_interface!(IWorkspace, IWorkspace_Vtbl, 0xb41da63b_a4b8_4036_89c5_83c31266ba49);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWorkspace_Vtbl {
@@ -208,12 +163,12 @@ impl AtomPubClient {
     pub fn CreateMediaResourceAsync<P0, P1>(&self, uri: P0, mediatype: &::windows_core::HSTRING, description: &::windows_core::HSTRING, mediastream: P1) -> ::windows_core::Result<super::super::Foundation::IAsyncOperationWithProgress<super::Syndication::SyndicationItem, super::Syndication::TransferProgress>>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
-        P1: ::windows_core::TryIntoParam<super::super::Storage::Streams::IInputStream>,
+        P1: ::windows_core::IntoParam<super::super::Storage::Streams::IInputStream>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateMediaResourceAsync)(::windows_core::Interface::as_raw(this), uri.into_param().abi(), ::core::mem::transmute_copy(mediatype), ::core::mem::transmute_copy(description), mediastream.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateMediaResourceAsync)(::windows_core::Interface::as_raw(this), uri.into_param().abi(), ::core::mem::transmute_copy(mediatype), ::core::mem::transmute_copy(description), mediastream.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_Streams\"`, `\"Web_Syndication\"`"]
@@ -221,12 +176,12 @@ impl AtomPubClient {
     pub fn UpdateMediaResourceAsync<P0, P1>(&self, uri: P0, mediatype: &::windows_core::HSTRING, mediastream: P1) -> ::windows_core::Result<super::super::Foundation::IAsyncActionWithProgress<super::Syndication::TransferProgress>>
     where
         P0: ::windows_core::IntoParam<super::super::Foundation::Uri>,
-        P1: ::windows_core::TryIntoParam<super::super::Storage::Streams::IInputStream>,
+        P1: ::windows_core::IntoParam<super::super::Storage::Streams::IInputStream>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).UpdateMediaResourceAsync)(::windows_core::Interface::as_raw(this), uri.into_param().abi(), ::core::mem::transmute_copy(mediatype), mediastream.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).UpdateMediaResourceAsync)(::windows_core::Interface::as_raw(this), uri.into_param().abi(), ::core::mem::transmute_copy(mediatype), mediastream.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Web_Syndication\"`"]
@@ -412,7 +367,7 @@ impl ::windows_core::RuntimeName for AtomPubClient {
 }
 ::windows_core::imp::interface_hierarchy!(AtomPubClient, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Web_Syndication")]
-impl ::windows_core::CanTryInto<super::Syndication::ISyndicationClient> for AtomPubClient {}
+::windows_core::imp::required_hierarchy!(AtomPubClient, super::Syndication::ISyndicationClient);
 unsafe impl ::core::marker::Send for AtomPubClient {}
 unsafe impl ::core::marker::Sync for AtomPubClient {}
 #[repr(transparent)]
@@ -573,7 +528,7 @@ impl ::windows_core::RuntimeName for ResourceCollection {
 }
 ::windows_core::imp::interface_hierarchy!(ResourceCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Web_Syndication")]
-impl ::windows_core::CanTryInto<super::Syndication::ISyndicationNode> for ResourceCollection {}
+::windows_core::imp::required_hierarchy!(ResourceCollection, super::Syndication::ISyndicationNode);
 unsafe impl ::core::marker::Send for ResourceCollection {}
 unsafe impl ::core::marker::Sync for ResourceCollection {}
 #[repr(transparent)]
@@ -709,7 +664,7 @@ impl ::windows_core::RuntimeName for ServiceDocument {
 }
 ::windows_core::imp::interface_hierarchy!(ServiceDocument, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Web_Syndication")]
-impl ::windows_core::CanTryInto<super::Syndication::ISyndicationNode> for ServiceDocument {}
+::windows_core::imp::required_hierarchy!(ServiceDocument, super::Syndication::ISyndicationNode);
 unsafe impl ::core::marker::Send for ServiceDocument {}
 unsafe impl ::core::marker::Sync for ServiceDocument {}
 #[repr(transparent)]
@@ -854,6 +809,6 @@ impl ::windows_core::RuntimeName for Workspace {
 }
 ::windows_core::imp::interface_hierarchy!(Workspace, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Web_Syndication")]
-impl ::windows_core::CanTryInto<super::Syndication::ISyndicationNode> for Workspace {}
+::windows_core::imp::required_hierarchy!(Workspace, super::Syndication::ISyndicationNode);
 unsafe impl ::core::marker::Send for Workspace {}
 unsafe impl ::core::marker::Sync for Workspace {}

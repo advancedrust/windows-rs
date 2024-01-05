@@ -1,29 +1,11 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IExtendedExecutionForegroundRevokedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IExtendedExecutionForegroundRevokedEventArgs {
-    type Vtable = IExtendedExecutionForegroundRevokedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IExtendedExecutionForegroundRevokedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb07cd940_9557_aea4_2c99_bdd56d9be461);
-}
+::windows_core::imp::com_interface!(IExtendedExecutionForegroundRevokedEventArgs, IExtendedExecutionForegroundRevokedEventArgs_Vtbl, 0xb07cd940_9557_aea4_2c99_bdd56d9be461);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IExtendedExecutionForegroundRevokedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Reason: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ExtendedExecutionForegroundRevokedReason) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IExtendedExecutionForegroundSession(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IExtendedExecutionForegroundSession {
-    type Vtable = IExtendedExecutionForegroundSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IExtendedExecutionForegroundSession {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfbf440e1_9d10_4201_b01e_c83275296f2e);
-}
+::windows_core::imp::com_interface!(IExtendedExecutionForegroundSession, IExtendedExecutionForegroundSession_Vtbl, 0xfbf440e1_9d10_4201_b01e_c83275296f2e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IExtendedExecutionForegroundSession_Vtbl {
@@ -135,7 +117,7 @@ impl ::windows_core::RuntimeName for ExtendedExecutionForegroundSession {
     const NAME: &'static str = "Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundSession";
 }
 ::windows_core::imp::interface_hierarchy!(ExtendedExecutionForegroundSession, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IClosable> for ExtendedExecutionForegroundSession {}
+::windows_core::imp::required_hierarchy!(ExtendedExecutionForegroundSession, super::super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for ExtendedExecutionForegroundSession {}
 unsafe impl ::core::marker::Sync for ExtendedExecutionForegroundSession {}
 #[repr(transparent)]

@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IRemoteTextConnection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IRemoteTextConnection {
-    type Vtable = IRemoteTextConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IRemoteTextConnection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4e7bb02a_183e_5e66_b5e4_3e6e5c570cf1);
-}
+::windows_core::imp::com_interface!(IRemoteTextConnection, IRemoteTextConnection_Vtbl, 0x4e7bb02a_183e_5e66_b5e4_3e6e5c570cf1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IRemoteTextConnection_Vtbl {
@@ -18,16 +9,7 @@ pub struct IRemoteTextConnection_Vtbl {
     pub UnregisterThread: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, threadid: u32) -> ::windows_core::HRESULT,
     pub ReportDataReceived: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pduData_array_size: u32, pdudata: *const u8) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IRemoteTextConnectionFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IRemoteTextConnectionFactory {
-    type Vtable = IRemoteTextConnectionFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IRemoteTextConnectionFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x88e075c2_0cae_596c_850f_78d345cd728b);
-}
+::windows_core::imp::com_interface!(IRemoteTextConnectionFactory, IRemoteTextConnectionFactory_Vtbl, 0x88e075c2_0cae_596c_850f_78d345cd728b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IRemoteTextConnectionFactory_Vtbl {
@@ -93,12 +75,10 @@ impl ::windows_core::RuntimeName for RemoteTextConnection {
     const NAME: &'static str = "Windows.System.RemoteDesktop.Input.RemoteTextConnection";
 }
 ::windows_core::imp::interface_hierarchy!(RemoteTextConnection, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IClosable> for RemoteTextConnection {}
+::windows_core::imp::required_hierarchy!(RemoteTextConnection, super::super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for RemoteTextConnection {}
 unsafe impl ::core::marker::Sync for RemoteTextConnection {}
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct RemoteTextConnectionDataHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(RemoteTextConnectionDataHandler, RemoteTextConnectionDataHandler_Vtbl, 0x099ffbc8_8bcb_41b5_b056_57e77021bf1b);
 impl RemoteTextConnectionDataHandler {
     pub fn new<F: FnMut(&[u8]) -> ::windows_core::Result<bool> + ::core::marker::Send + 'static>(invoke: F) -> Self {
         let com = RemoteTextConnectionDataHandlerBox::<F> { vtable: &RemoteTextConnectionDataHandlerBox::<F>::VTABLE, count: ::windows_core::imp::RefCount::new(1), invoke };
@@ -158,12 +138,6 @@ impl<F: FnMut(&[u8]) -> ::windows_core::Result<bool> + ::core::marker::Send + 's
             ::core::result::Result::Err(err) => err.into(),
         }
     }
-}
-unsafe impl ::windows_core::Interface for RemoteTextConnectionDataHandler {
-    type Vtable = RemoteTextConnectionDataHandler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for RemoteTextConnectionDataHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x099ffbc8_8bcb_41b5_b056_57e77021bf1b);
 }
 impl ::windows_core::RuntimeType for RemoteTextConnectionDataHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();

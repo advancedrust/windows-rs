@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapBuffer(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapBuffer {
-    type Vtable = IBitmapBuffer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapBuffer {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa53e04c4_399c_438c_b28f_a63a6b83d1a1);
-}
+::windows_core::imp::com_interface!(IBitmapBuffer, IBitmapBuffer_Vtbl, 0xa53e04c4_399c_438c_b28f_a63a6b83d1a1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapBuffer_Vtbl {
@@ -15,16 +6,7 @@ pub struct IBitmapBuffer_Vtbl {
     pub GetPlaneCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
     pub GetPlaneDescription: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, index: i32, result__: *mut BitmapPlaneDescription) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapCodecInformation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapCodecInformation {
-    type Vtable = IBitmapCodecInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapCodecInformation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x400caaf2_c4b0_4392_a3b0_6f6f9ba95cb4);
-}
+::windows_core::imp::com_interface!(IBitmapCodecInformation, IBitmapCodecInformation_Vtbl, 0x400caaf2_c4b0_4392_a3b0_6f6f9ba95cb4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapCodecInformation_Vtbl {
@@ -40,16 +22,7 @@ pub struct IBitmapCodecInformation_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     MimeTypes: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapDecoder(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapDecoder {
-    type Vtable = IBitmapDecoder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapDecoder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xacef22ba_1d74_4c91_9dfc_9620745233e6);
-}
+::windows_core::imp::com_interface!(IBitmapDecoder, IBitmapDecoder_Vtbl, 0xacef22ba_1d74_4c91_9dfc_9620745233e6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapDecoder_Vtbl {
@@ -63,16 +36,7 @@ pub struct IBitmapDecoder_Vtbl {
     GetPreviewAsync: usize,
     pub GetFrameAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, frameindex: u32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapDecoderStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapDecoderStatics {
-    type Vtable = IBitmapDecoderStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapDecoderStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x438ccb26_bcef_4e95_bad6_23a822e58d01);
-}
+::windows_core::imp::com_interface!(IBitmapDecoderStatics, IBitmapDecoderStatics_Vtbl, 0x438ccb26_bcef_4e95_bad6_23a822e58d01);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapDecoderStatics_Vtbl {
@@ -97,16 +61,7 @@ pub struct IBitmapDecoderStatics_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     CreateWithIdAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapDecoderStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapDecoderStatics2 {
-    type Vtable = IBitmapDecoderStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapDecoderStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x50ba68ea_99a1_40c4_80d9_aef0dafa6c3f);
-}
+::windows_core::imp::com_interface!(IBitmapDecoderStatics2, IBitmapDecoderStatics2_Vtbl, 0x50ba68ea_99a1_40c4_80d9_aef0dafa6c3f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapDecoderStatics2_Vtbl {
@@ -114,16 +69,7 @@ pub struct IBitmapDecoderStatics2_Vtbl {
     pub HeifDecoderId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
     pub WebpDecoderId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapEncoder(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapEncoder {
-    type Vtable = IBitmapEncoder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapEncoder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2bc468e3_e1f8_4b54_95e8_32919551ce62);
-}
+::windows_core::imp::com_interface!(IBitmapEncoder, IBitmapEncoder_Vtbl, 0x2bc468e3_e1f8_4b54_95e8_32919551ce62);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapEncoder_Vtbl {
@@ -146,16 +92,7 @@ pub struct IBitmapEncoder_Vtbl {
     GoToNextFrameWithEncodingOptionsAsync: usize,
     pub FlushAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapEncoderStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapEncoderStatics {
-    type Vtable = IBitmapEncoderStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapEncoderStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa74356a7_a4e4_4eb9_8e40_564de7e1ccb2);
-}
+::windows_core::imp::com_interface!(IBitmapEncoderStatics, IBitmapEncoderStatics_Vtbl, 0xa74356a7_a4e4_4eb9_8e40_564de7e1ccb2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapEncoderStatics_Vtbl {
@@ -184,41 +121,21 @@ pub struct IBitmapEncoderStatics_Vtbl {
     CreateForTranscodingAsync: usize,
     pub CreateForInPlacePropertyEncodingAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bitmapdecoder: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapEncoderStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapEncoderStatics2 {
-    type Vtable = IBitmapEncoderStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapEncoderStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x33cbc259_fe31_41b1_b812_086d21e87e16);
-}
+::windows_core::imp::com_interface!(IBitmapEncoderStatics2, IBitmapEncoderStatics2_Vtbl, 0x33cbc259_fe31_41b1_b812_086d21e87e16);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapEncoderStatics2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub HeifEncoderId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapEncoderWithSoftwareBitmap(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapEncoderWithSoftwareBitmap {
-    type Vtable = IBitmapEncoderWithSoftwareBitmap_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapEncoderWithSoftwareBitmap {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x686cd241_4330_4c77_ace4_0334968b1768);
-}
+::windows_core::imp::com_interface!(IBitmapEncoderWithSoftwareBitmap, IBitmapEncoderWithSoftwareBitmap_Vtbl, 0x686cd241_4330_4c77_ace4_0334968b1768);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapEncoderWithSoftwareBitmap_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SetSoftwareBitmap: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bitmap: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapFrame(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IBitmapFrame, IBitmapFrame_Vtbl, 0x72a49a1c_8081_438d_91bc_94ecfc8185c6);
 impl IBitmapFrame {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
@@ -314,12 +231,6 @@ impl IBitmapFrame {
 impl ::windows_core::RuntimeType for IBitmapFrame {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IBitmapFrame {
-    type Vtable = IBitmapFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapFrame {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x72a49a1c_8081_438d_91bc_94ecfc8185c6);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapFrame_Vtbl {
@@ -340,9 +251,7 @@ pub struct IBitmapFrame_Vtbl {
     pub GetPixelDataAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetPixelDataTransformedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pixelformat: BitmapPixelFormat, alphamode: BitmapAlphaMode, transform: *mut ::core::ffi::c_void, exiforientationmode: ExifOrientationMode, colormanagementmode: ColorManagementMode, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapFrameWithSoftwareBitmap(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IBitmapFrameWithSoftwareBitmap, IBitmapFrameWithSoftwareBitmap_Vtbl, 0xfe287c9a_420c_4963_87ad_691436e08383);
 impl IBitmapFrameWithSoftwareBitmap {
     pub fn GetSoftwareBitmapAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<SoftwareBitmap>> {
         let this = self;
@@ -459,15 +368,9 @@ impl IBitmapFrameWithSoftwareBitmap {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IBitmapFrameWithSoftwareBitmap, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBitmapFrame> for IBitmapFrameWithSoftwareBitmap {}
+::windows_core::imp::required_hierarchy!(IBitmapFrameWithSoftwareBitmap, IBitmapFrame);
 impl ::windows_core::RuntimeType for IBitmapFrameWithSoftwareBitmap {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IBitmapFrameWithSoftwareBitmap {
-    type Vtable = IBitmapFrameWithSoftwareBitmap_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapFrameWithSoftwareBitmap {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfe287c9a_420c_4963_87ad_691436e08383);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -477,16 +380,7 @@ pub struct IBitmapFrameWithSoftwareBitmap_Vtbl {
     pub GetSoftwareBitmapConvertedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pixelformat: BitmapPixelFormat, alphamode: BitmapAlphaMode, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetSoftwareBitmapTransformedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pixelformat: BitmapPixelFormat, alphamode: BitmapAlphaMode, transform: *mut ::core::ffi::c_void, exiforientationmode: ExifOrientationMode, colormanagementmode: ColorManagementMode, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapProperties(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapProperties {
-    type Vtable = IBitmapProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapProperties {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xea9f4f1b_b505_4450_a4d1_e8ca94529d8d);
-}
+::windows_core::imp::com_interface!(IBitmapProperties, IBitmapProperties_Vtbl, 0xea9f4f1b_b505_4450_a4d1_e8ca94529d8d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapProperties_Vtbl {
@@ -496,32 +390,24 @@ pub struct IBitmapProperties_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     SetPropertiesAsync: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapPropertiesView(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IBitmapPropertiesView, IBitmapPropertiesView_Vtbl, 0x7e0fe87a_3a70_48f8_9c55_196cf5a545f5);
 impl IBitmapPropertiesView {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetPropertiesAsync<P0>(&self, propertiestoretrieve: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<BitmapPropertySet>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetPropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoretrieve.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetPropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoretrieve.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
 }
 ::windows_core::imp::interface_hierarchy!(IBitmapPropertiesView, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for IBitmapPropertiesView {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IBitmapPropertiesView {
-    type Vtable = IBitmapPropertiesView_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapPropertiesView {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7e0fe87a_3a70_48f8_9c55_196cf5a545f5);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -532,16 +418,7 @@ pub struct IBitmapPropertiesView_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     GetPropertiesAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapTransform(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapTransform {
-    type Vtable = IBitmapTransform_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapTransform {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xae755344_e268_4d35_adcf_e995d31a8d34);
-}
+::windows_core::imp::com_interface!(IBitmapTransform, IBitmapTransform_Vtbl, 0xae755344_e268_4d35_adcf_e995d31a8d34);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapTransform_Vtbl {
@@ -559,16 +436,7 @@ pub struct IBitmapTransform_Vtbl {
     pub Bounds: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut BitmapBounds) -> ::windows_core::HRESULT,
     pub SetBounds: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: BitmapBounds) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapTypedValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapTypedValue {
-    type Vtable = IBitmapTypedValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapTypedValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcd8044a9_2443_4000_b0cd_79316c56f589);
-}
+::windows_core::imp::com_interface!(IBitmapTypedValue, IBitmapTypedValue_Vtbl, 0xcd8044a9_2443_4000_b0cd_79316c56f589);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapTypedValue_Vtbl {
@@ -576,48 +444,21 @@ pub struct IBitmapTypedValue_Vtbl {
     pub Value: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Type: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::PropertyType) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBitmapTypedValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBitmapTypedValueFactory {
-    type Vtable = IBitmapTypedValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBitmapTypedValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x92dbb599_ce13_46bb_9545_cb3a3f63eb8b);
-}
+::windows_core::imp::com_interface!(IBitmapTypedValueFactory, IBitmapTypedValueFactory_Vtbl, 0x92dbb599_ce13_46bb_9545_cb3a3f63eb8b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBitmapTypedValueFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void, r#type: super::super::Foundation::PropertyType, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPixelDataProvider(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPixelDataProvider {
-    type Vtable = IPixelDataProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPixelDataProvider {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdd831f25_185c_4595_9fb9_ccbe6ec18a6f);
-}
+::windows_core::imp::com_interface!(IPixelDataProvider, IPixelDataProvider_Vtbl, 0xdd831f25_185c_4595_9fb9_ccbe6ec18a6f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPixelDataProvider_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub DetachPixelData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result_size__: *mut u32, result__: *mut *mut u8) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISoftwareBitmap(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISoftwareBitmap {
-    type Vtable = ISoftwareBitmap_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISoftwareBitmap {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x689e0708_7eef_483f_963f_da938818e073);
-}
+::windows_core::imp::com_interface!(ISoftwareBitmap, ISoftwareBitmap_Vtbl, 0x689e0708_7eef_483f_963f_da938818e073);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISoftwareBitmap_Vtbl {
@@ -643,16 +484,7 @@ pub struct ISoftwareBitmap_Vtbl {
     CopyToBuffer: usize,
     pub GetReadOnlyView: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISoftwareBitmapFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISoftwareBitmapFactory {
-    type Vtable = ISoftwareBitmapFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISoftwareBitmapFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc99feb69_2d62_4d47_a6b3_4fdb6a07fdf8);
-}
+::windows_core::imp::com_interface!(ISoftwareBitmapFactory, ISoftwareBitmapFactory_Vtbl, 0xc99feb69_2d62_4d47_a6b3_4fdb6a07fdf8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISoftwareBitmapFactory_Vtbl {
@@ -660,16 +492,7 @@ pub struct ISoftwareBitmapFactory_Vtbl {
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, format: BitmapPixelFormat, width: i32, height: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateWithAlpha: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, format: BitmapPixelFormat, width: i32, height: i32, alpha: BitmapAlphaMode, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISoftwareBitmapStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISoftwareBitmapStatics {
-    type Vtable = ISoftwareBitmapStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISoftwareBitmapStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdf0385db_672f_4a9d_806e_c2442f343e86);
-}
+::windows_core::imp::com_interface!(ISoftwareBitmapStatics, ISoftwareBitmapStatics_Vtbl, 0xdf0385db_672f_4a9d_806e_c2442f343e86);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISoftwareBitmapStatics_Vtbl {
@@ -737,8 +560,7 @@ impl ::windows_core::RuntimeName for BitmapBuffer {
     const NAME: &'static str = "Windows.Graphics.Imaging.BitmapBuffer";
 }
 ::windows_core::imp::interface_hierarchy!(BitmapBuffer, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for BitmapBuffer {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IMemoryBuffer> for BitmapBuffer {}
+::windows_core::imp::required_hierarchy!(BitmapBuffer, super::super::Foundation::IClosable, super::super::Foundation::IMemoryBuffer);
 unsafe impl ::core::marker::Send for BitmapBuffer {}
 unsafe impl ::core::marker::Sync for BitmapBuffer {}
 #[repr(transparent)]
@@ -888,22 +710,22 @@ impl BitmapDecoder {
     #[cfg(feature = "Storage_Streams")]
     pub fn CreateAsync<P0>(stream: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<BitmapDecoder>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IRandomAccessStream>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStream>,
     {
         Self::IBitmapDecoderStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateAsync)(::windows_core::Interface::as_raw(this), stream.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateAsync)(::windows_core::Interface::as_raw(this), stream.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn CreateWithIdAsync<P0>(decoderid: ::windows_core::GUID, stream: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<BitmapDecoder>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IRandomAccessStream>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStream>,
     {
         Self::IBitmapDecoderStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateWithIdAsync)(::windows_core::Interface::as_raw(this), decoderid, stream.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateWithIdAsync)(::windows_core::Interface::as_raw(this), decoderid, stream.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     pub fn HeifDecoderId() -> ::windows_core::Result<::windows_core::GUID> {
@@ -1055,8 +877,7 @@ impl ::windows_core::RuntimeName for BitmapDecoder {
     const NAME: &'static str = "Windows.Graphics.Imaging.BitmapDecoder";
 }
 ::windows_core::imp::interface_hierarchy!(BitmapDecoder, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBitmapFrame> for BitmapDecoder {}
-impl ::windows_core::CanTryInto<IBitmapFrameWithSoftwareBitmap> for BitmapDecoder {}
+::windows_core::imp::required_hierarchy!(BitmapDecoder, IBitmapFrame, IBitmapFrameWithSoftwareBitmap);
 unsafe impl ::core::marker::Send for BitmapDecoder {}
 unsafe impl ::core::marker::Sync for BitmapDecoder {}
 #[repr(transparent)]
@@ -1139,12 +960,12 @@ impl BitmapEncoder {
     #[cfg(feature = "Foundation_Collections")]
     pub fn GoToNextFrameWithEncodingOptionsAsync<P0>(&self, encodingoptions: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, BitmapTypedValue>>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, BitmapTypedValue>>>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GoToNextFrameWithEncodingOptionsAsync)(::windows_core::Interface::as_raw(this), encodingoptions.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GoToNextFrameWithEncodingOptionsAsync)(::windows_core::Interface::as_raw(this), encodingoptions.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn FlushAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
@@ -1202,35 +1023,35 @@ impl BitmapEncoder {
     #[cfg(feature = "Storage_Streams")]
     pub fn CreateAsync<P0>(encoderid: ::windows_core::GUID, stream: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<BitmapEncoder>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IRandomAccessStream>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStream>,
     {
         Self::IBitmapEncoderStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateAsync)(::windows_core::Interface::as_raw(this), encoderid, stream.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateAsync)(::windows_core::Interface::as_raw(this), encoderid, stream.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Storage_Streams\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Storage_Streams"))]
     pub fn CreateWithEncodingOptionsAsync<P0, P1>(encoderid: ::windows_core::GUID, stream: P0, encodingoptions: P1) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<BitmapEncoder>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IRandomAccessStream>,
-        P1: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, BitmapTypedValue>>>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStream>,
+        P1: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, BitmapTypedValue>>>,
     {
         Self::IBitmapEncoderStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateWithEncodingOptionsAsync)(::windows_core::Interface::as_raw(this), encoderid, stream.try_into_param()?.abi(), encodingoptions.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateWithEncodingOptionsAsync)(::windows_core::Interface::as_raw(this), encoderid, stream.into_param().abi(), encodingoptions.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn CreateForTranscodingAsync<P0, P1>(stream: P0, bitmapdecoder: P1) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<BitmapEncoder>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IRandomAccessStream>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStream>,
         P1: ::windows_core::IntoParam<BitmapDecoder>,
     {
         Self::IBitmapEncoderStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateForTranscodingAsync)(::windows_core::Interface::as_raw(this), stream.try_into_param()?.abi(), bitmapdecoder.into_param().abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateForTranscodingAsync)(::windows_core::Interface::as_raw(this), stream.into_param().abi(), bitmapdecoder.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     pub fn CreateForInPlacePropertyEncodingAsync<P0>(bitmapdecoder: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<BitmapEncoder>>
@@ -1412,8 +1233,7 @@ impl ::windows_core::RuntimeName for BitmapFrame {
     const NAME: &'static str = "Windows.Graphics.Imaging.BitmapFrame";
 }
 ::windows_core::imp::interface_hierarchy!(BitmapFrame, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBitmapFrame> for BitmapFrame {}
-impl ::windows_core::CanTryInto<IBitmapFrameWithSoftwareBitmap> for BitmapFrame {}
+::windows_core::imp::required_hierarchy!(BitmapFrame, IBitmapFrame, IBitmapFrameWithSoftwareBitmap);
 unsafe impl ::core::marker::Send for BitmapFrame {}
 unsafe impl ::core::marker::Sync for BitmapFrame {}
 #[repr(transparent)]
@@ -1424,24 +1244,24 @@ impl BitmapProperties {
     #[cfg(feature = "Foundation_Collections")]
     pub fn SetPropertiesAsync<P0>(&self, propertiestoset: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, BitmapTypedValue>>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, BitmapTypedValue>>>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).SetPropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoset.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).SetPropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoset.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetPropertiesAsync<P0>(&self, propertiestoretrieve: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<BitmapPropertySet>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         let this = &::windows_core::ComInterface::cast::<IBitmapPropertiesView>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetPropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoretrieve.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetPropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoretrieve.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
 }
@@ -1458,7 +1278,7 @@ impl ::windows_core::RuntimeName for BitmapProperties {
     const NAME: &'static str = "Windows.Graphics.Imaging.BitmapProperties";
 }
 ::windows_core::imp::interface_hierarchy!(BitmapProperties, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBitmapPropertiesView> for BitmapProperties {}
+::windows_core::imp::required_hierarchy!(BitmapProperties, IBitmapPropertiesView);
 unsafe impl ::core::marker::Send for BitmapProperties {}
 unsafe impl ::core::marker::Sync for BitmapProperties {}
 #[repr(transparent)]
@@ -1469,12 +1289,12 @@ impl BitmapPropertiesView {
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetPropertiesAsync<P0>(&self, propertiestoretrieve: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<BitmapPropertySet>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetPropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoretrieve.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetPropertiesAsync)(::windows_core::Interface::as_raw(this), propertiestoretrieve.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
 }
@@ -1491,7 +1311,7 @@ impl ::windows_core::RuntimeName for BitmapPropertiesView {
     const NAME: &'static str = "Windows.Graphics.Imaging.BitmapPropertiesView";
 }
 ::windows_core::imp::interface_hierarchy!(BitmapPropertiesView, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBitmapPropertiesView> for BitmapPropertiesView {}
+::windows_core::imp::required_hierarchy!(BitmapPropertiesView, IBitmapPropertiesView);
 unsafe impl ::core::marker::Send for BitmapPropertiesView {}
 unsafe impl ::core::marker::Sync for BitmapPropertiesView {}
 #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -1613,9 +1433,7 @@ impl ::core::iter::IntoIterator for &BitmapPropertySet {
 #[cfg(feature = "Foundation_Collections")]
 ::windows_core::imp::interface_hierarchy!(BitmapPropertySet, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, BitmapTypedValue>>> for BitmapPropertySet {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, BitmapTypedValue>> for BitmapPropertySet {}
+::windows_core::imp::required_hierarchy!(BitmapPropertySet, super::super::Foundation::Collections::IIterable::<super::super::Foundation::Collections::IKeyValuePair::<::windows_core::HSTRING, BitmapTypedValue>>, super::super::Foundation::Collections::IMap::<::windows_core::HSTRING, BitmapTypedValue>);
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::core::marker::Send for BitmapPropertySet {}
 #[cfg(feature = "Foundation_Collections")]
@@ -1785,24 +1603,24 @@ impl ImageStream {
     #[cfg(feature = "Storage_Streams")]
     pub fn ReadAsync<P0>(&self, buffer: P0, count: u32, options: super::super::Storage::Streams::InputStreamOptions) -> ::windows_core::Result<super::super::Foundation::IAsyncOperationWithProgress<super::super::Storage::Streams::IBuffer, u32>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
         let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IInputStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).ReadAsync)(::windows_core::Interface::as_raw(this), buffer.try_into_param()?.abi(), count, options, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).ReadAsync)(::windows_core::Interface::as_raw(this), buffer.into_param().abi(), count, options, &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn WriteAsync<P0>(&self, buffer: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperationWithProgress<u32, u32>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
         let this = &::windows_core::ComInterface::cast::<super::super::Storage::Streams::IOutputStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteAsync)(::windows_core::Interface::as_raw(this), buffer.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteAsync)(::windows_core::Interface::as_raw(this), buffer.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -1909,17 +1727,7 @@ impl ::windows_core::RuntimeName for ImageStream {
 #[cfg(feature = "Storage_Streams")]
 ::windows_core::imp::interface_hierarchy!(ImageStream, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for ImageStream {}
-#[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<super::super::Storage::Streams::IContentTypeProvider> for ImageStream {}
-#[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<super::super::Storage::Streams::IInputStream> for ImageStream {}
-#[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<super::super::Storage::Streams::IOutputStream> for ImageStream {}
-#[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<super::super::Storage::Streams::IRandomAccessStream> for ImageStream {}
-#[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<super::super::Storage::Streams::IRandomAccessStreamWithContentType> for ImageStream {}
+::windows_core::imp::required_hierarchy!(ImageStream, super::super::Foundation::IClosable, super::super::Storage::Streams::IContentTypeProvider, super::super::Storage::Streams::IInputStream, super::super::Storage::Streams::IOutputStream, super::super::Storage::Streams::IRandomAccessStream, super::super::Storage::Streams::IRandomAccessStreamWithContentType);
 #[cfg(feature = "Storage_Streams")]
 unsafe impl ::core::marker::Send for ImageStream {}
 #[cfg(feature = "Storage_Streams")]
@@ -2034,19 +1842,19 @@ impl SoftwareBitmap {
     #[cfg(feature = "Storage_Streams")]
     pub fn CopyFromBuffer<P0>(&self, buffer: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).CopyFromBuffer)(::windows_core::Interface::as_raw(this), buffer.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).CopyFromBuffer)(::windows_core::Interface::as_raw(this), buffer.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn CopyToBuffer<P0>(&self, buffer: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).CopyToBuffer)(::windows_core::Interface::as_raw(this), buffer.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).CopyToBuffer)(::windows_core::Interface::as_raw(this), buffer.into_param().abi()).ok() }
     }
     pub fn GetReadOnlyView(&self) -> ::windows_core::Result<SoftwareBitmap> {
         let this = self;
@@ -2098,44 +1906,44 @@ impl SoftwareBitmap {
     #[cfg(feature = "Storage_Streams")]
     pub fn CreateCopyFromBuffer<P0>(source: P0, format: BitmapPixelFormat, width: i32, height: i32) -> ::windows_core::Result<SoftwareBitmap>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
         Self::ISoftwareBitmapStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateCopyFromBuffer)(::windows_core::Interface::as_raw(this), source.try_into_param()?.abi(), format, width, height, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateCopyFromBuffer)(::windows_core::Interface::as_raw(this), source.into_param().abi(), format, width, height, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn CreateCopyWithAlphaFromBuffer<P0>(source: P0, format: BitmapPixelFormat, width: i32, height: i32, alpha: BitmapAlphaMode) -> ::windows_core::Result<SoftwareBitmap>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
         Self::ISoftwareBitmapStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateCopyWithAlphaFromBuffer)(::windows_core::Interface::as_raw(this), source.try_into_param()?.abi(), format, width, height, alpha, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateCopyWithAlphaFromBuffer)(::windows_core::Interface::as_raw(this), source.into_param().abi(), format, width, height, alpha, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Graphics_DirectX_Direct3D11\"`"]
     #[cfg(feature = "Graphics_DirectX_Direct3D11")]
     pub fn CreateCopyFromSurfaceAsync<P0>(surface: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<SoftwareBitmap>>
     where
-        P0: ::windows_core::TryIntoParam<super::DirectX::Direct3D11::IDirect3DSurface>,
+        P0: ::windows_core::IntoParam<super::DirectX::Direct3D11::IDirect3DSurface>,
     {
         Self::ISoftwareBitmapStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateCopyFromSurfaceAsync)(::windows_core::Interface::as_raw(this), surface.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateCopyFromSurfaceAsync)(::windows_core::Interface::as_raw(this), surface.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Graphics_DirectX_Direct3D11\"`"]
     #[cfg(feature = "Graphics_DirectX_Direct3D11")]
     pub fn CreateCopyWithAlphaFromSurfaceAsync<P0>(surface: P0, alpha: BitmapAlphaMode) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<SoftwareBitmap>>
     where
-        P0: ::windows_core::TryIntoParam<super::DirectX::Direct3D11::IDirect3DSurface>,
+        P0: ::windows_core::IntoParam<super::DirectX::Direct3D11::IDirect3DSurface>,
     {
         Self::ISoftwareBitmapStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateCopyWithAlphaFromSurfaceAsync)(::windows_core::Interface::as_raw(this), surface.try_into_param()?.abi(), alpha, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateCopyWithAlphaFromSurfaceAsync)(::windows_core::Interface::as_raw(this), surface.into_param().abi(), alpha, &mut result__).from_abi(result__)
         })
     }
     #[doc(hidden)]
@@ -2162,7 +1970,7 @@ impl ::windows_core::RuntimeName for SoftwareBitmap {
     const NAME: &'static str = "Windows.Graphics.Imaging.SoftwareBitmap";
 }
 ::windows_core::imp::interface_hierarchy!(SoftwareBitmap, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for SoftwareBitmap {}
+::windows_core::imp::required_hierarchy!(SoftwareBitmap, super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for SoftwareBitmap {}
 unsafe impl ::core::marker::Sync for SoftwareBitmap {}
 #[repr(transparent)]

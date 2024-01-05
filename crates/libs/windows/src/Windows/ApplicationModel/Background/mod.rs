@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IActivitySensorTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IActivitySensorTrigger {
-    type Vtable = IActivitySensorTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IActivitySensorTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd0dd4342_e37b_4823_a5fe_6b31dfefdeb0);
-}
+::windows_core::imp::com_interface!(IActivitySensorTrigger, IActivitySensorTrigger_Vtbl, 0xd0dd4342_e37b_4823_a5fe_6b31dfefdeb0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IActivitySensorTrigger_Vtbl {
@@ -23,32 +14,14 @@ pub struct IActivitySensorTrigger_Vtbl {
     SupportedActivities: usize,
     pub MinimumReportInterval: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IActivitySensorTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IActivitySensorTriggerFactory {
-    type Vtable = IActivitySensorTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IActivitySensorTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa72691c3_3837_44f7_831b_0132cc872bc3);
-}
+::windows_core::imp::com_interface!(IActivitySensorTriggerFactory, IActivitySensorTriggerFactory_Vtbl, 0xa72691c3_3837_44f7_831b_0132cc872bc3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IActivitySensorTriggerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reportintervalinmilliseconds: u32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAlarmApplicationManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAlarmApplicationManagerStatics {
-    type Vtable = IAlarmApplicationManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAlarmApplicationManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xca03fa3b_cce6_4de2_b09b_9628bd33bbbe);
-}
+::windows_core::imp::com_interface!(IAlarmApplicationManagerStatics, IAlarmApplicationManagerStatics_Vtbl, 0xca03fa3b_cce6_4de2_b09b_9628bd33bbbe);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAlarmApplicationManagerStatics_Vtbl {
@@ -56,16 +29,7 @@ pub struct IAlarmApplicationManagerStatics_Vtbl {
     pub RequestAccessAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetAccessStatus: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut AlarmAccessStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppBroadcastTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppBroadcastTrigger {
-    type Vtable = IAppBroadcastTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppBroadcastTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x74d4f496_8d37_44ec_9481_2a0b9854eb48);
-}
+::windows_core::imp::com_interface!(IAppBroadcastTrigger, IAppBroadcastTrigger_Vtbl, 0x74d4f496_8d37_44ec_9481_2a0b9854eb48);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppBroadcastTrigger_Vtbl {
@@ -73,32 +37,14 @@ pub struct IAppBroadcastTrigger_Vtbl {
     pub SetProviderInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ProviderInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppBroadcastTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppBroadcastTriggerFactory {
-    type Vtable = IAppBroadcastTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppBroadcastTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x280b9f44_22f4_4618_a02e_e7e411eb7238);
-}
+::windows_core::imp::com_interface!(IAppBroadcastTriggerFactory, IAppBroadcastTriggerFactory_Vtbl, 0x280b9f44_22f4_4618_a02e_e7e411eb7238);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppBroadcastTriggerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateAppBroadcastTrigger: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, providerkey: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppBroadcastTriggerProviderInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppBroadcastTriggerProviderInfo {
-    type Vtable = IAppBroadcastTriggerProviderInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppBroadcastTriggerProviderInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf219352d_9de8_4420_9ce2_5eff8f17376b);
-}
+::windows_core::imp::com_interface!(IAppBroadcastTriggerProviderInfo, IAppBroadcastTriggerProviderInfo_Vtbl, 0xf219352d_9de8_4420_9ce2_5eff8f17376b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppBroadcastTriggerProviderInfo_Vtbl {
@@ -116,16 +62,7 @@ pub struct IAppBroadcastTriggerProviderInfo_Vtbl {
     pub SetMaxVideoHeight: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: u32) -> ::windows_core::HRESULT,
     pub MaxVideoHeight: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IApplicationTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IApplicationTrigger {
-    type Vtable = IApplicationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IApplicationTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0b468630_9574_492c_9e93_1a3ae6335fe9);
-}
+::windows_core::imp::com_interface!(IApplicationTrigger, IApplicationTrigger_Vtbl, 0x0b468630_9574_492c_9e93_1a3ae6335fe9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IApplicationTrigger_Vtbl {
@@ -136,16 +73,7 @@ pub struct IApplicationTrigger_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     RequestAsyncWithArguments: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IApplicationTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IApplicationTriggerDetails {
-    type Vtable = IApplicationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IApplicationTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x97dc6ab2_2219_4a9e_9c5e_41d047f76e82);
-}
+::windows_core::imp::com_interface!(IApplicationTriggerDetails, IApplicationTriggerDetails_Vtbl, 0x97dc6ab2_2219_4a9e_9c5e_41d047f76e82);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IApplicationTriggerDetails_Vtbl {
@@ -155,50 +83,24 @@ pub struct IApplicationTriggerDetails_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Arguments: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppointmentStoreNotificationTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppointmentStoreNotificationTrigger {
-    type Vtable = IAppointmentStoreNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppointmentStoreNotificationTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x64d4040c_c201_42ad_aa2a_e21ba3425b6d);
-}
+::windows_core::imp::com_interface!(IAppointmentStoreNotificationTrigger, IAppointmentStoreNotificationTrigger_Vtbl, 0x64d4040c_c201_42ad_aa2a_e21ba3425b6d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppointmentStoreNotificationTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundCondition(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IBackgroundCondition, IBackgroundCondition_Vtbl, 0xae48a1ee_8951_400a_8302_9c9c9a2a3a3b);
 impl IBackgroundCondition {}
 ::windows_core::imp::interface_hierarchy!(IBackgroundCondition, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for IBackgroundCondition {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IBackgroundCondition {
-    type Vtable = IBackgroundCondition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundCondition {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xae48a1ee_8951_400a_8302_9c9c9a2a3a3b);
 }
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundCondition_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundExecutionManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundExecutionManagerStatics {
-    type Vtable = IBackgroundExecutionManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundExecutionManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe826ea58_66a9_4d41_83d4_b4c18c87b846);
-}
+::windows_core::imp::com_interface!(IBackgroundExecutionManagerStatics, IBackgroundExecutionManagerStatics_Vtbl, 0xe826ea58_66a9_4d41_83d4_b4c18c87b846);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundExecutionManagerStatics_Vtbl {
@@ -210,32 +112,14 @@ pub struct IBackgroundExecutionManagerStatics_Vtbl {
     pub GetAccessStatus: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut BackgroundAccessStatus) -> ::windows_core::HRESULT,
     pub GetAccessStatusForApplication: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, applicationid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut BackgroundAccessStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundExecutionManagerStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundExecutionManagerStatics2 {
-    type Vtable = IBackgroundExecutionManagerStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundExecutionManagerStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x469b24ef_9bbb_4e18_999a_fd6512931be9);
-}
+::windows_core::imp::com_interface!(IBackgroundExecutionManagerStatics2, IBackgroundExecutionManagerStatics2_Vtbl, 0x469b24ef_9bbb_4e18_999a_fd6512931be9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundExecutionManagerStatics2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub RequestAccessKindAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, requestedaccess: BackgroundAccessRequestKind, reason: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundExecutionManagerStatics3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundExecutionManagerStatics3 {
-    type Vtable = IBackgroundExecutionManagerStatics3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundExecutionManagerStatics3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x98a5d3f6_5a25_5b6c_9192_d77a43dfedc4);
-}
+::windows_core::imp::com_interface!(IBackgroundExecutionManagerStatics3, IBackgroundExecutionManagerStatics3_Vtbl, 0x98a5d3f6_5a25_5b6c_9192_d77a43dfedc4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundExecutionManagerStatics3_Vtbl {
@@ -244,27 +128,19 @@ pub struct IBackgroundExecutionManagerStatics3_Vtbl {
     pub GetAccessStatusForModernStandby: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut BackgroundAccessStatus) -> ::windows_core::HRESULT,
     pub GetAccessStatusForModernStandbyForApplication: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, applicationid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut BackgroundAccessStatus) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTask(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IBackgroundTask, IBackgroundTask_Vtbl, 0x7d13d534_fd12_43ce_8c22_ea1ff13c06df);
 impl IBackgroundTask {
     pub fn Run<P0>(&self, taskinstance: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IBackgroundTaskInstance>,
+        P0: ::windows_core::IntoParam<IBackgroundTaskInstance>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Run)(::windows_core::Interface::as_raw(this), taskinstance.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Run)(::windows_core::Interface::as_raw(this), taskinstance.into_param().abi()).ok() }
     }
 }
 ::windows_core::imp::interface_hierarchy!(IBackgroundTask, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for IBackgroundTask {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IBackgroundTask {
-    type Vtable = IBackgroundTask_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTask {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7d13d534_fd12_43ce_8c22_ea1ff13c06df);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -272,16 +148,7 @@ pub struct IBackgroundTask_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Run: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, taskinstance: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskBuilder(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundTaskBuilder {
-    type Vtable = IBackgroundTaskBuilder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskBuilder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0351550e_3e64_4572_a93a_84075a37c917);
-}
+::windows_core::imp::com_interface!(IBackgroundTaskBuilder, IBackgroundTaskBuilder_Vtbl, 0x0351550e_3e64_4572_a93a_84075a37c917);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskBuilder_Vtbl {
@@ -294,16 +161,7 @@ pub struct IBackgroundTaskBuilder_Vtbl {
     pub Name: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Register: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskBuilder2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundTaskBuilder2 {
-    type Vtable = IBackgroundTaskBuilder2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskBuilder2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6ae7cfb1_104f_406d_8db6_844a570f42bb);
-}
+::windows_core::imp::com_interface!(IBackgroundTaskBuilder2, IBackgroundTaskBuilder2_Vtbl, 0x6ae7cfb1_104f_406d_8db6_844a570f42bb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskBuilder2_Vtbl {
@@ -311,16 +169,7 @@ pub struct IBackgroundTaskBuilder2_Vtbl {
     pub SetCancelOnConditionLoss: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
     pub CancelOnConditionLoss: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskBuilder3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundTaskBuilder3 {
-    type Vtable = IBackgroundTaskBuilder3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskBuilder3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x28c74f4a_8ba9_4c09_a24f_19683e2c924c);
-}
+::windows_core::imp::com_interface!(IBackgroundTaskBuilder3, IBackgroundTaskBuilder3_Vtbl, 0x28c74f4a_8ba9_4c09_a24f_19683e2c924c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskBuilder3_Vtbl {
@@ -328,16 +177,7 @@ pub struct IBackgroundTaskBuilder3_Vtbl {
     pub SetIsNetworkRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
     pub IsNetworkRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskBuilder4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundTaskBuilder4 {
-    type Vtable = IBackgroundTaskBuilder4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskBuilder4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4755e522_cba2_4e35_bd16_a6da7f1c19aa);
-}
+::windows_core::imp::com_interface!(IBackgroundTaskBuilder4, IBackgroundTaskBuilder4_Vtbl, 0x4755e522_cba2_4e35_bd16_a6da7f1c19aa);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskBuilder4_Vtbl {
@@ -345,32 +185,14 @@ pub struct IBackgroundTaskBuilder4_Vtbl {
     pub TaskGroup: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetTaskGroup: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskBuilder5(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundTaskBuilder5 {
-    type Vtable = IBackgroundTaskBuilder5_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskBuilder5 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x077103f6_99f5_4af4_bcad_4731d0330d43);
-}
+::windows_core::imp::com_interface!(IBackgroundTaskBuilder5, IBackgroundTaskBuilder5_Vtbl, 0x077103f6_99f5_4af4_bcad_4731d0330d43);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskBuilder5_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SetTaskEntryPointClsid: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, taskentrypoint: ::windows_core::GUID) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskCompletedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundTaskCompletedEventArgs {
-    type Vtable = IBackgroundTaskCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskCompletedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x565d25cf_f209_48f4_9967_2b184f7bfbf0);
-}
+::windows_core::imp::com_interface!(IBackgroundTaskCompletedEventArgs, IBackgroundTaskCompletedEventArgs_Vtbl, 0x565d25cf_f209_48f4_9967_2b184f7bfbf0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskCompletedEventArgs_Vtbl {
@@ -378,25 +200,14 @@ pub struct IBackgroundTaskCompletedEventArgs_Vtbl {
     pub InstanceId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
     pub CheckResult: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskDeferral(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundTaskDeferral {
-    type Vtable = IBackgroundTaskDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskDeferral {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x93cc156d_af27_4dd3_846e_24ee40cadd25);
-}
+::windows_core::imp::com_interface!(IBackgroundTaskDeferral, IBackgroundTaskDeferral_Vtbl, 0x93cc156d_af27_4dd3_846e_24ee40cadd25);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskDeferral_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Complete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskInstance(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IBackgroundTaskInstance, IBackgroundTaskInstance_Vtbl, 0x865bda7a_21d8_4573_8f32_928a1b0641f6);
 impl IBackgroundTaskInstance {
     pub fn InstanceId(&self) -> ::windows_core::Result<::windows_core::GUID> {
         let this = self;
@@ -463,12 +274,6 @@ impl IBackgroundTaskInstance {
 impl ::windows_core::RuntimeType for IBackgroundTaskInstance {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IBackgroundTaskInstance {
-    type Vtable = IBackgroundTaskInstance_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskInstance {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x865bda7a_21d8_4573_8f32_928a1b0641f6);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskInstance_Vtbl {
@@ -483,9 +288,7 @@ pub struct IBackgroundTaskInstance_Vtbl {
     pub SuspendedCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskInstance2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IBackgroundTaskInstance2, IBackgroundTaskInstance2_Vtbl, 0x4f7d0176_0c76_4fb4_896d_5de1864122f6);
 impl IBackgroundTaskInstance2 {
     pub fn GetThrottleCount(&self, counter: BackgroundTaskThrottleCounter) -> ::windows_core::Result<u32> {
         let this = self;
@@ -556,15 +359,9 @@ impl IBackgroundTaskInstance2 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IBackgroundTaskInstance2, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTaskInstance> for IBackgroundTaskInstance2 {}
+::windows_core::imp::required_hierarchy!(IBackgroundTaskInstance2, IBackgroundTaskInstance);
 impl ::windows_core::RuntimeType for IBackgroundTaskInstance2 {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IBackgroundTaskInstance2 {
-    type Vtable = IBackgroundTaskInstance2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskInstance2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4f7d0176_0c76_4fb4_896d_5de1864122f6);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -572,9 +369,7 @@ pub struct IBackgroundTaskInstance2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetThrottleCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, counter: BackgroundTaskThrottleCounter, result__: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskInstance4(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IBackgroundTaskInstance4, IBackgroundTaskInstance4_Vtbl, 0x7f29f23c_aa04_4b08_97b0_06d874cdabf5);
 impl IBackgroundTaskInstance4 {
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -647,15 +442,9 @@ impl IBackgroundTaskInstance4 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IBackgroundTaskInstance4, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTaskInstance> for IBackgroundTaskInstance4 {}
+::windows_core::imp::required_hierarchy!(IBackgroundTaskInstance4, IBackgroundTaskInstance);
 impl ::windows_core::RuntimeType for IBackgroundTaskInstance4 {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IBackgroundTaskInstance4 {
-    type Vtable = IBackgroundTaskInstance4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskInstance4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7f29f23c_aa04_4b08_97b0_06d874cdabf5);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -666,16 +455,7 @@ pub struct IBackgroundTaskInstance4_Vtbl {
     #[cfg(not(feature = "System"))]
     User: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskProgressEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundTaskProgressEventArgs {
-    type Vtable = IBackgroundTaskProgressEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskProgressEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfb1468ac_8332_4d0a_9532_03eae684da31);
-}
+::windows_core::imp::com_interface!(IBackgroundTaskProgressEventArgs, IBackgroundTaskProgressEventArgs_Vtbl, 0xfb1468ac_8332_4d0a_9532_03eae684da31);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskProgressEventArgs_Vtbl {
@@ -683,9 +463,7 @@ pub struct IBackgroundTaskProgressEventArgs_Vtbl {
     pub InstanceId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
     pub Progress: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskRegistration(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IBackgroundTaskRegistration, IBackgroundTaskRegistration_Vtbl, 0x10654cc2_a26e_43bf_8c12_1fb40dbfbfa0);
 impl IBackgroundTaskRegistration {
     pub fn TaskId(&self) -> ::windows_core::Result<::windows_core::GUID> {
         let this = self;
@@ -738,12 +516,6 @@ impl IBackgroundTaskRegistration {
 impl ::windows_core::RuntimeType for IBackgroundTaskRegistration {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IBackgroundTaskRegistration {
-    type Vtable = IBackgroundTaskRegistration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskRegistration {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x10654cc2_a26e_43bf_8c12_1fb40dbfbfa0);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskRegistration_Vtbl {
@@ -756,9 +528,7 @@ pub struct IBackgroundTaskRegistration_Vtbl {
     pub RemoveCompleted: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, cookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub Unregister: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, canceltask: bool) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskRegistration2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IBackgroundTaskRegistration2, IBackgroundTaskRegistration2_Vtbl, 0x6138c703_bb86_4112_afc3_7f939b166e3b);
 impl IBackgroundTaskRegistration2 {
     pub fn Trigger(&self) -> ::windows_core::Result<IBackgroundTrigger> {
         let this = self;
@@ -815,15 +585,9 @@ impl IBackgroundTaskRegistration2 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IBackgroundTaskRegistration2, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTaskRegistration> for IBackgroundTaskRegistration2 {}
+::windows_core::imp::required_hierarchy!(IBackgroundTaskRegistration2, IBackgroundTaskRegistration);
 impl ::windows_core::RuntimeType for IBackgroundTaskRegistration2 {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IBackgroundTaskRegistration2 {
-    type Vtable = IBackgroundTaskRegistration2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskRegistration2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6138c703_bb86_4112_afc3_7f939b166e3b);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -831,9 +595,7 @@ pub struct IBackgroundTaskRegistration2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Trigger: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskRegistration3(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IBackgroundTaskRegistration3, IBackgroundTaskRegistration3_Vtbl, 0xfe338195_9423_4d8b_830d_b1dd2c7badd5);
 impl IBackgroundTaskRegistration3 {
     pub fn TaskGroup(&self) -> ::windows_core::Result<BackgroundTaskRegistrationGroup> {
         let this = self;
@@ -890,15 +652,9 @@ impl IBackgroundTaskRegistration3 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IBackgroundTaskRegistration3, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTaskRegistration> for IBackgroundTaskRegistration3 {}
+::windows_core::imp::required_hierarchy!(IBackgroundTaskRegistration3, IBackgroundTaskRegistration);
 impl ::windows_core::RuntimeType for IBackgroundTaskRegistration3 {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IBackgroundTaskRegistration3 {
-    type Vtable = IBackgroundTaskRegistration3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskRegistration3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfe338195_9423_4d8b_830d_b1dd2c7badd5);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -906,16 +662,7 @@ pub struct IBackgroundTaskRegistration3_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub TaskGroup: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskRegistrationGroup(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundTaskRegistrationGroup {
-    type Vtable = IBackgroundTaskRegistrationGroup_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskRegistrationGroup {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2ab1919a_871b_4167_8a76_055cd67b5b23);
-}
+::windows_core::imp::com_interface!(IBackgroundTaskRegistrationGroup, IBackgroundTaskRegistrationGroup_Vtbl, 0x2ab1919a_871b_4167_8a76_055cd67b5b23);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskRegistrationGroup_Vtbl {
@@ -932,16 +679,7 @@ pub struct IBackgroundTaskRegistrationGroup_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     AllTasks: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskRegistrationGroupFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundTaskRegistrationGroupFactory {
-    type Vtable = IBackgroundTaskRegistrationGroupFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskRegistrationGroupFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x83d92b69_44cf_4631_9740_03c7d8741bc5);
-}
+::windows_core::imp::com_interface!(IBackgroundTaskRegistrationGroupFactory, IBackgroundTaskRegistrationGroupFactory_Vtbl, 0x83d92b69_44cf_4631_9740_03c7d8741bc5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskRegistrationGroupFactory_Vtbl {
@@ -949,16 +687,7 @@ pub struct IBackgroundTaskRegistrationGroupFactory_Vtbl {
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, id: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateWithName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, id: ::std::mem::MaybeUninit<::windows_core::HSTRING>, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskRegistrationStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundTaskRegistrationStatics {
-    type Vtable = IBackgroundTaskRegistrationStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskRegistrationStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4c542f69_b000_42ba_a093_6a563c65e3f8);
-}
+::windows_core::imp::com_interface!(IBackgroundTaskRegistrationStatics, IBackgroundTaskRegistrationStatics_Vtbl, 0x4c542f69_b000_42ba_a093_6a563c65e3f8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskRegistrationStatics_Vtbl {
@@ -968,16 +697,7 @@ pub struct IBackgroundTaskRegistrationStatics_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     AllTasks: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTaskRegistrationStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundTaskRegistrationStatics2 {
-    type Vtable = IBackgroundTaskRegistrationStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTaskRegistrationStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x174b671e_b20d_4fa9_ad9a_e93ad6c71e01);
-}
+::windows_core::imp::com_interface!(IBackgroundTaskRegistrationStatics2, IBackgroundTaskRegistrationStatics2_Vtbl, 0x174b671e_b20d_4fa9_ad9a_e93ad6c71e01);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTaskRegistrationStatics2_Vtbl {
@@ -988,51 +708,25 @@ pub struct IBackgroundTaskRegistrationStatics2_Vtbl {
     AllTaskGroups: usize,
     pub GetTaskGroup: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, groupid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundTrigger(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IBackgroundTrigger, IBackgroundTrigger_Vtbl, 0x84b3a058_6027_4b87_9790_bdf3f757dbd7);
 impl IBackgroundTrigger {}
 ::windows_core::imp::interface_hierarchy!(IBackgroundTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for IBackgroundTrigger {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IBackgroundTrigger {
-    type Vtable = IBackgroundTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x84b3a058_6027_4b87_9790_bdf3f757dbd7);
 }
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackgroundWorkCostStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackgroundWorkCostStatics {
-    type Vtable = IBackgroundWorkCostStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackgroundWorkCostStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc740a662_c310_4b82_b3e3_3bcfb9e4c77d);
-}
+::windows_core::imp::com_interface!(IBackgroundWorkCostStatics, IBackgroundWorkCostStatics_Vtbl, 0xc740a662_c310_4b82_b3e3_3bcfb9e4c77d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackgroundWorkCostStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CurrentBackgroundWorkCost: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut BackgroundWorkCostValue) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBluetoothLEAdvertisementPublisherTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBluetoothLEAdvertisementPublisherTrigger {
-    type Vtable = IBluetoothLEAdvertisementPublisherTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBluetoothLEAdvertisementPublisherTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xab3e2612_25d3_48ae_8724_d81877ae6129);
-}
+::windows_core::imp::com_interface!(IBluetoothLEAdvertisementPublisherTrigger, IBluetoothLEAdvertisementPublisherTrigger_Vtbl, 0xab3e2612_25d3_48ae_8724_d81877ae6129);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBluetoothLEAdvertisementPublisherTrigger_Vtbl {
@@ -1042,16 +736,7 @@ pub struct IBluetoothLEAdvertisementPublisherTrigger_Vtbl {
     #[cfg(not(feature = "Devices_Bluetooth_Advertisement"))]
     Advertisement: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBluetoothLEAdvertisementPublisherTrigger2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBluetoothLEAdvertisementPublisherTrigger2 {
-    type Vtable = IBluetoothLEAdvertisementPublisherTrigger2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBluetoothLEAdvertisementPublisherTrigger2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaa28d064_38f4_597d_b597_4e55588c6503);
-}
+::windows_core::imp::com_interface!(IBluetoothLEAdvertisementPublisherTrigger2, IBluetoothLEAdvertisementPublisherTrigger2_Vtbl, 0xaa28d064_38f4_597d_b597_4e55588c6503);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBluetoothLEAdvertisementPublisherTrigger2_Vtbl {
@@ -1065,16 +750,7 @@ pub struct IBluetoothLEAdvertisementPublisherTrigger2_Vtbl {
     pub IncludeTransmitPowerLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetIncludeTransmitPowerLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBluetoothLEAdvertisementWatcherTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBluetoothLEAdvertisementWatcherTrigger {
-    type Vtable = IBluetoothLEAdvertisementWatcherTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBluetoothLEAdvertisementWatcherTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1aab1819_bce1_48eb_a827_59fb7cee52a6);
-}
+::windows_core::imp::com_interface!(IBluetoothLEAdvertisementWatcherTrigger, IBluetoothLEAdvertisementWatcherTrigger_Vtbl, 0x1aab1819_bce1_48eb_a827_59fb7cee52a6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBluetoothLEAdvertisementWatcherTrigger_Vtbl {
@@ -1100,16 +776,7 @@ pub struct IBluetoothLEAdvertisementWatcherTrigger_Vtbl {
     #[cfg(not(feature = "Devices_Bluetooth_Advertisement"))]
     SetAdvertisementFilter: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBluetoothLEAdvertisementWatcherTrigger2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBluetoothLEAdvertisementWatcherTrigger2 {
-    type Vtable = IBluetoothLEAdvertisementWatcherTrigger2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBluetoothLEAdvertisementWatcherTrigger2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x39b56799_eb39_5ab6_9932_aa9e4549604d);
-}
+::windows_core::imp::com_interface!(IBluetoothLEAdvertisementWatcherTrigger2, IBluetoothLEAdvertisementWatcherTrigger2_Vtbl, 0x39b56799_eb39_5ab6_9932_aa9e4549604d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBluetoothLEAdvertisementWatcherTrigger2_Vtbl {
@@ -1117,31 +784,13 @@ pub struct IBluetoothLEAdvertisementWatcherTrigger2_Vtbl {
     pub AllowExtendedAdvertisements: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetAllowExtendedAdvertisements: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICachedFileUpdaterTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICachedFileUpdaterTrigger {
-    type Vtable = ICachedFileUpdaterTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICachedFileUpdaterTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe21caeeb_32f2_4d31_b553_b9e01bde37e0);
-}
+::windows_core::imp::com_interface!(ICachedFileUpdaterTrigger, ICachedFileUpdaterTrigger_Vtbl, 0xe21caeeb_32f2_4d31_b553_b9e01bde37e0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICachedFileUpdaterTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICachedFileUpdaterTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICachedFileUpdaterTriggerDetails {
-    type Vtable = ICachedFileUpdaterTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICachedFileUpdaterTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x71838c13_1314_47b4_9597_dc7e248c17cc);
-}
+::windows_core::imp::com_interface!(ICachedFileUpdaterTriggerDetails, ICachedFileUpdaterTriggerDetails_Vtbl, 0x71838c13_1314_47b4_9597_dc7e248c17cc);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICachedFileUpdaterTriggerDetails_Vtbl {
@@ -1156,108 +805,45 @@ pub struct ICachedFileUpdaterTriggerDetails_Vtbl {
     UpdateRequest: usize,
     pub CanRequestUserInput: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IChatMessageNotificationTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IChatMessageNotificationTrigger {
-    type Vtable = IChatMessageNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IChatMessageNotificationTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x513b43bf_1d40_5c5d_78f5_c923fee3739e);
-}
+::windows_core::imp::com_interface!(IChatMessageNotificationTrigger, IChatMessageNotificationTrigger_Vtbl, 0x513b43bf_1d40_5c5d_78f5_c923fee3739e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IChatMessageNotificationTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IChatMessageReceivedNotificationTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IChatMessageReceivedNotificationTrigger {
-    type Vtable = IChatMessageReceivedNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IChatMessageReceivedNotificationTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3ea3760e_baf5_4077_88e9_060cf6f0c6d5);
-}
+::windows_core::imp::com_interface!(IChatMessageReceivedNotificationTrigger, IChatMessageReceivedNotificationTrigger_Vtbl, 0x3ea3760e_baf5_4077_88e9_060cf6f0c6d5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IChatMessageReceivedNotificationTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICommunicationBlockingAppSetAsActiveTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICommunicationBlockingAppSetAsActiveTrigger {
-    type Vtable = ICommunicationBlockingAppSetAsActiveTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICommunicationBlockingAppSetAsActiveTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfb91f28a_16a5_486d_974c_7835a8477be2);
-}
+::windows_core::imp::com_interface!(ICommunicationBlockingAppSetAsActiveTrigger, ICommunicationBlockingAppSetAsActiveTrigger_Vtbl, 0xfb91f28a_16a5_486d_974c_7835a8477be2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICommunicationBlockingAppSetAsActiveTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactStoreNotificationTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactStoreNotificationTrigger {
-    type Vtable = IContactStoreNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactStoreNotificationTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc833419b_4705_4571_9a16_06b997bf9c96);
-}
+::windows_core::imp::com_interface!(IContactStoreNotificationTrigger, IContactStoreNotificationTrigger_Vtbl, 0xc833419b_4705_4571_9a16_06b997bf9c96);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactStoreNotificationTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContentPrefetchTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContentPrefetchTrigger {
-    type Vtable = IContentPrefetchTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContentPrefetchTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x710627ee_04fa_440b_80c0_173202199e5d);
-}
+::windows_core::imp::com_interface!(IContentPrefetchTrigger, IContentPrefetchTrigger_Vtbl, 0x710627ee_04fa_440b_80c0_173202199e5d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContentPrefetchTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub WaitInterval: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContentPrefetchTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContentPrefetchTriggerFactory {
-    type Vtable = IContentPrefetchTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContentPrefetchTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc2643eda_8a03_409e_b8c4_88814c28ccb6);
-}
+::windows_core::imp::com_interface!(IContentPrefetchTriggerFactory, IContentPrefetchTriggerFactory_Vtbl, 0xc2643eda_8a03_409e_b8c4_88814c28ccb6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContentPrefetchTriggerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, waitinterval: super::super::Foundation::TimeSpan, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICustomSystemEventTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICustomSystemEventTrigger {
-    type Vtable = ICustomSystemEventTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICustomSystemEventTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf3596798_cf6b_4ef4_a0ca_29cf4a278c87);
-}
+::windows_core::imp::com_interface!(ICustomSystemEventTrigger, ICustomSystemEventTrigger_Vtbl, 0xf3596798_cf6b_4ef4_a0ca_29cf4a278c87);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICustomSystemEventTrigger_Vtbl {
@@ -1265,32 +851,14 @@ pub struct ICustomSystemEventTrigger_Vtbl {
     pub TriggerId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Recurrence: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut CustomSystemEventTriggerRecurrence) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICustomSystemEventTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICustomSystemEventTriggerFactory {
-    type Vtable = ICustomSystemEventTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICustomSystemEventTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6bcb16c5_f2dc_41b2_9efd_b96bdcd13ced);
-}
+::windows_core::imp::com_interface!(ICustomSystemEventTriggerFactory, ICustomSystemEventTriggerFactory_Vtbl, 0x6bcb16c5_f2dc_41b2_9efd_b96bdcd13ced);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICustomSystemEventTriggerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, triggerid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, recurrence: CustomSystemEventTriggerRecurrence, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeviceConnectionChangeTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDeviceConnectionChangeTrigger {
-    type Vtable = IDeviceConnectionChangeTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDeviceConnectionChangeTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x90875e64_3cdd_4efb_ab1c_5b3b6a60ce34);
-}
+::windows_core::imp::com_interface!(IDeviceConnectionChangeTrigger, IDeviceConnectionChangeTrigger_Vtbl, 0x90875e64_3cdd_4efb_ab1c_5b3b6a60ce34);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDeviceConnectionChangeTrigger_Vtbl {
@@ -1300,35 +868,15 @@ pub struct IDeviceConnectionChangeTrigger_Vtbl {
     pub MaintainConnection: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetMaintainConnection: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeviceConnectionChangeTriggerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDeviceConnectionChangeTriggerStatics {
-    type Vtable = IDeviceConnectionChangeTriggerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDeviceConnectionChangeTriggerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc3ea246a_4efd_4498_aa60_a4e4e3b17ab9);
-}
+::windows_core::imp::com_interface!(IDeviceConnectionChangeTriggerStatics, IDeviceConnectionChangeTriggerStatics_Vtbl, 0xc3ea246a_4efd_4498_aa60_a4e4e3b17ab9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDeviceConnectionChangeTriggerStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub FromIdAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, deviceid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
 #[cfg(feature = "deprecated")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeviceManufacturerNotificationTrigger(::windows_core::IUnknown);
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::Interface for IDeviceManufacturerNotificationTrigger {
-    type Vtable = IDeviceManufacturerNotificationTrigger_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for IDeviceManufacturerNotificationTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x81278ab5_41ab_16da_86c2_7f7bf0912f5b);
-}
+::windows_core::imp::com_interface!(IDeviceManufacturerNotificationTrigger, IDeviceManufacturerNotificationTrigger_Vtbl, 0x81278ab5_41ab_16da_86c2_7f7bf0912f5b);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -1343,19 +891,8 @@ pub struct IDeviceManufacturerNotificationTrigger_Vtbl {
     #[cfg(not(feature = "deprecated"))]
     OneShot: usize,
 }
-#[doc(hidden)]
 #[cfg(feature = "deprecated")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeviceManufacturerNotificationTriggerFactory(::windows_core::IUnknown);
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::Interface for IDeviceManufacturerNotificationTriggerFactory {
-    type Vtable = IDeviceManufacturerNotificationTriggerFactory_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for IDeviceManufacturerNotificationTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7955de75_25bb_4153_a1a2_3029fcabb652);
-}
+::windows_core::imp::com_interface!(IDeviceManufacturerNotificationTriggerFactory, IDeviceManufacturerNotificationTriggerFactory_Vtbl, 0x7955de75_25bb_4153_a1a2_3029fcabb652);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -1366,16 +903,7 @@ pub struct IDeviceManufacturerNotificationTriggerFactory_Vtbl {
     #[cfg(not(feature = "deprecated"))]
     Create: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeviceServicingTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDeviceServicingTrigger {
-    type Vtable = IDeviceServicingTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDeviceServicingTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1ab217ad_6e34_49d3_9e6f_17f1b6dfa881);
-}
+::windows_core::imp::com_interface!(IDeviceServicingTrigger, IDeviceServicingTrigger_Vtbl, 0x1ab217ad_6e34_49d3_9e6f_17f1b6dfa881);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDeviceServicingTrigger_Vtbl {
@@ -1383,16 +911,7 @@ pub struct IDeviceServicingTrigger_Vtbl {
     pub RequestAsyncSimple: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, deviceid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, expectedduration: super::super::Foundation::TimeSpan, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RequestAsyncWithArguments: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, deviceid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, expectedduration: super::super::Foundation::TimeSpan, arguments: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeviceUseTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDeviceUseTrigger {
-    type Vtable = IDeviceUseTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDeviceUseTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0da68011_334f_4d57_b6ec_6dca64b412e4);
-}
+::windows_core::imp::com_interface!(IDeviceUseTrigger, IDeviceUseTrigger_Vtbl, 0x0da68011_334f_4d57_b6ec_6dca64b412e4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDeviceUseTrigger_Vtbl {
@@ -1400,46 +919,19 @@ pub struct IDeviceUseTrigger_Vtbl {
     pub RequestAsyncSimple: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, deviceid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RequestAsyncWithArguments: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, deviceid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, arguments: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeviceWatcherTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDeviceWatcherTrigger {
-    type Vtable = IDeviceWatcherTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDeviceWatcherTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa4617fdd_8573_4260_befc_5bec89cb693d);
-}
+::windows_core::imp::com_interface!(IDeviceWatcherTrigger, IDeviceWatcherTrigger_Vtbl, 0xa4617fdd_8573_4260_befc_5bec89cb693d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDeviceWatcherTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IEmailStoreNotificationTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IEmailStoreNotificationTrigger {
-    type Vtable = IEmailStoreNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IEmailStoreNotificationTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x986d06da_47eb_4268_a4f2_f3f77188388a);
-}
+::windows_core::imp::com_interface!(IEmailStoreNotificationTrigger, IEmailStoreNotificationTrigger_Vtbl, 0x986d06da_47eb_4268_a4f2_f3f77188388a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IEmailStoreNotificationTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGattCharacteristicNotificationTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGattCharacteristicNotificationTrigger {
-    type Vtable = IGattCharacteristicNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGattCharacteristicNotificationTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe25f8fc8_0696_474f_a732_f292b0cebc5d);
-}
+::windows_core::imp::com_interface!(IGattCharacteristicNotificationTrigger, IGattCharacteristicNotificationTrigger_Vtbl, 0xe25f8fc8_0696_474f_a732_f292b0cebc5d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGattCharacteristicNotificationTrigger_Vtbl {
@@ -1449,16 +941,7 @@ pub struct IGattCharacteristicNotificationTrigger_Vtbl {
     #[cfg(not(feature = "Devices_Bluetooth_GenericAttributeProfile"))]
     Characteristic: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGattCharacteristicNotificationTrigger2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGattCharacteristicNotificationTrigger2 {
-    type Vtable = IGattCharacteristicNotificationTrigger2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGattCharacteristicNotificationTrigger2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9322a2c4_ae0e_42f2_b28c_f51372e69245);
-}
+::windows_core::imp::com_interface!(IGattCharacteristicNotificationTrigger2, IGattCharacteristicNotificationTrigger2_Vtbl, 0x9322a2c4_ae0e_42f2_b28c_f51372e69245);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGattCharacteristicNotificationTrigger2_Vtbl {
@@ -1468,16 +951,7 @@ pub struct IGattCharacteristicNotificationTrigger2_Vtbl {
     #[cfg(not(feature = "Devices_Bluetooth_Background"))]
     EventTriggeringMode: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGattCharacteristicNotificationTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGattCharacteristicNotificationTriggerFactory {
-    type Vtable = IGattCharacteristicNotificationTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGattCharacteristicNotificationTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x57ba1995_b143_4575_9f6b_fd59d93ace1a);
-}
+::windows_core::imp::com_interface!(IGattCharacteristicNotificationTriggerFactory, IGattCharacteristicNotificationTriggerFactory_Vtbl, 0x57ba1995_b143_4575_9f6b_fd59d93ace1a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGattCharacteristicNotificationTriggerFactory_Vtbl {
@@ -1487,16 +961,7 @@ pub struct IGattCharacteristicNotificationTriggerFactory_Vtbl {
     #[cfg(not(feature = "Devices_Bluetooth_GenericAttributeProfile"))]
     Create: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGattCharacteristicNotificationTriggerFactory2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGattCharacteristicNotificationTriggerFactory2 {
-    type Vtable = IGattCharacteristicNotificationTriggerFactory2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGattCharacteristicNotificationTriggerFactory2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5998e91f_8a53_4e9f_a32c_23cd33664cee);
-}
+::windows_core::imp::com_interface!(IGattCharacteristicNotificationTriggerFactory2, IGattCharacteristicNotificationTriggerFactory2_Vtbl, 0x5998e91f_8a53_4e9f_a32c_23cd33664cee);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGattCharacteristicNotificationTriggerFactory2_Vtbl {
@@ -1506,16 +971,7 @@ pub struct IGattCharacteristicNotificationTriggerFactory2_Vtbl {
     #[cfg(not(all(feature = "Devices_Bluetooth_Background", feature = "Devices_Bluetooth_GenericAttributeProfile")))]
     CreateWithEventTriggeringMode: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGattServiceProviderTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGattServiceProviderTrigger {
-    type Vtable = IGattServiceProviderTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGattServiceProviderTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xddc6a3e9_1557_4bd8_8542_468aa0c696f6);
-}
+::windows_core::imp::com_interface!(IGattServiceProviderTrigger, IGattServiceProviderTrigger_Vtbl, 0xddc6a3e9_1557_4bd8_8542_468aa0c696f6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGattServiceProviderTrigger_Vtbl {
@@ -1534,16 +990,7 @@ pub struct IGattServiceProviderTrigger_Vtbl {
     #[cfg(not(feature = "Devices_Bluetooth_GenericAttributeProfile"))]
     AdvertisingParameters: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGattServiceProviderTriggerResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGattServiceProviderTriggerResult {
-    type Vtable = IGattServiceProviderTriggerResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGattServiceProviderTriggerResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3c4691b1_b198_4e84_bad4_cf4ad299ed3a);
-}
+::windows_core::imp::com_interface!(IGattServiceProviderTriggerResult, IGattServiceProviderTriggerResult_Vtbl, 0x3c4691b1_b198_4e84_bad4_cf4ad299ed3a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGattServiceProviderTriggerResult_Vtbl {
@@ -1554,32 +1001,14 @@ pub struct IGattServiceProviderTriggerResult_Vtbl {
     #[cfg(not(feature = "Devices_Bluetooth"))]
     Error: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGattServiceProviderTriggerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGattServiceProviderTriggerStatics {
-    type Vtable = IGattServiceProviderTriggerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGattServiceProviderTriggerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb413a36a_e294_4591_a5a6_64891a828153);
-}
+::windows_core::imp::com_interface!(IGattServiceProviderTriggerStatics, IGattServiceProviderTriggerStatics_Vtbl, 0xb413a36a_e294_4591_a5a6_64891a828153);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGattServiceProviderTriggerStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, triggerid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, serviceuuid: ::windows_core::GUID, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGeovisitTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGeovisitTrigger {
-    type Vtable = IGeovisitTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGeovisitTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4818edaa_04e1_4127_9a4c_19351b8a80a4);
-}
+::windows_core::imp::com_interface!(IGeovisitTrigger, IGeovisitTrigger_Vtbl, 0x4818edaa_04e1_4127_9a4c_19351b8a80a4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGeovisitTrigger_Vtbl {
@@ -1593,48 +1022,21 @@ pub struct IGeovisitTrigger_Vtbl {
     #[cfg(not(feature = "Devices_Geolocation"))]
     SetMonitoringScope: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILocationTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILocationTrigger {
-    type Vtable = ILocationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILocationTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x47666a1c_6877_481e_8026_ff7e14a811a0);
-}
+::windows_core::imp::com_interface!(ILocationTrigger, ILocationTrigger_Vtbl, 0x47666a1c_6877_481e_8026_ff7e14a811a0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILocationTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub TriggerType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut LocationTriggerType) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILocationTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILocationTriggerFactory {
-    type Vtable = ILocationTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILocationTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1106bb07_ff69_4e09_aa8b_1384ea475e98);
-}
+::windows_core::imp::com_interface!(ILocationTriggerFactory, ILocationTriggerFactory_Vtbl, 0x1106bb07_ff69_4e09_aa8b_1384ea475e98);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILocationTriggerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, triggertype: LocationTriggerType, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMaintenanceTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMaintenanceTrigger {
-    type Vtable = IMaintenanceTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMaintenanceTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x68184c83_fc22_4ce5_841a_7239a9810047);
-}
+::windows_core::imp::com_interface!(IMaintenanceTrigger, IMaintenanceTrigger_Vtbl, 0x68184c83_fc22_4ce5_841a_7239a9810047);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMaintenanceTrigger_Vtbl {
@@ -1642,32 +1044,14 @@ pub struct IMaintenanceTrigger_Vtbl {
     pub FreshnessTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
     pub OneShot: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMaintenanceTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMaintenanceTriggerFactory {
-    type Vtable = IMaintenanceTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMaintenanceTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4b3ddb2e_97dd_4629_88b0_b06cf9482ae5);
-}
+::windows_core::imp::com_interface!(IMaintenanceTriggerFactory, IMaintenanceTriggerFactory_Vtbl, 0x4b3ddb2e_97dd_4629_88b0_b06cf9482ae5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMaintenanceTriggerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, freshnesstime: u32, oneshot: bool, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaProcessingTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaProcessingTrigger {
-    type Vtable = IMediaProcessingTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaProcessingTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9a95be65_8a52_4b30_9011_cf38040ea8b0);
-}
+::windows_core::imp::com_interface!(IMediaProcessingTrigger, IMediaProcessingTrigger_Vtbl, 0x9a95be65_8a52_4b30_9011_cf38040ea8b0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaProcessingTrigger_Vtbl {
@@ -1678,63 +1062,27 @@ pub struct IMediaProcessingTrigger_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     RequestAsyncWithArguments: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorHotspotAuthenticationTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorHotspotAuthenticationTrigger {
-    type Vtable = INetworkOperatorHotspotAuthenticationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorHotspotAuthenticationTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe756c791_3001_4de5_83c7_de61d88831d0);
-}
+::windows_core::imp::com_interface!(INetworkOperatorHotspotAuthenticationTrigger, INetworkOperatorHotspotAuthenticationTrigger_Vtbl, 0xe756c791_3001_4de5_83c7_de61d88831d0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorHotspotAuthenticationTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorNotificationTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorNotificationTrigger {
-    type Vtable = INetworkOperatorNotificationTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorNotificationTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x90089cc6_63cd_480c_95d1_6e6aef801e4a);
-}
+::windows_core::imp::com_interface!(INetworkOperatorNotificationTrigger, INetworkOperatorNotificationTrigger_Vtbl, 0x90089cc6_63cd_480c_95d1_6e6aef801e4a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorNotificationTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub NetworkAccountId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorNotificationTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorNotificationTriggerFactory {
-    type Vtable = INetworkOperatorNotificationTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorNotificationTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0a223e00_27d7_4353_adb9_9265aaea579d);
-}
+::windows_core::imp::com_interface!(INetworkOperatorNotificationTriggerFactory, INetworkOperatorNotificationTriggerFactory_Vtbl, 0x0a223e00_27d7_4353_adb9_9265aaea579d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorNotificationTriggerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, networkaccountid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPhoneTrigger {
-    type Vtable = IPhoneTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPhoneTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8dcfe99b_d4c5_49f1_b7d3_82e87a0e9dde);
-}
+::windows_core::imp::com_interface!(IPhoneTrigger, IPhoneTrigger_Vtbl, 0x8dcfe99b_d4c5_49f1_b7d3_82e87a0e9dde);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPhoneTrigger_Vtbl {
@@ -1745,16 +1093,7 @@ pub struct IPhoneTrigger_Vtbl {
     #[cfg(not(feature = "ApplicationModel_Calls_Background"))]
     TriggerType: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPhoneTriggerFactory {
-    type Vtable = IPhoneTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPhoneTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa0d93cda_5fc1_48fb_a546_32262040157b);
-}
+::windows_core::imp::com_interface!(IPhoneTriggerFactory, IPhoneTriggerFactory_Vtbl, 0xa0d93cda_5fc1_48fb_a546_32262040157b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPhoneTriggerFactory_Vtbl {
@@ -1764,47 +1103,20 @@ pub struct IPhoneTriggerFactory_Vtbl {
     #[cfg(not(feature = "ApplicationModel_Calls_Background"))]
     Create: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPushNotificationTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPushNotificationTriggerFactory {
-    type Vtable = IPushNotificationTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPushNotificationTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6dd8ed1b_458e_4fc2_bc2e_d5664f77ed19);
-}
+::windows_core::imp::com_interface!(IPushNotificationTriggerFactory, IPushNotificationTriggerFactory_Vtbl, 0x6dd8ed1b_458e_4fc2_bc2e_d5664f77ed19);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPushNotificationTriggerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, applicationid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IRcsEndUserMessageAvailableTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IRcsEndUserMessageAvailableTrigger {
-    type Vtable = IRcsEndUserMessageAvailableTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IRcsEndUserMessageAvailableTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x986d0d6a_b2f6_467f_a978_a44091c11a66);
-}
+::windows_core::imp::com_interface!(IRcsEndUserMessageAvailableTrigger, IRcsEndUserMessageAvailableTrigger_Vtbl, 0x986d0d6a_b2f6_467f_a978_a44091c11a66);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IRcsEndUserMessageAvailableTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IRfcommConnectionTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IRfcommConnectionTrigger {
-    type Vtable = IRfcommConnectionTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IRfcommConnectionTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe8c4cae2_0b53_4464_9394_fd875654de64);
-}
+::windows_core::imp::com_interface!(IRfcommConnectionTrigger, IRfcommConnectionTrigger_Vtbl, 0xe8c4cae2_0b53_4464_9394_fd875654de64);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IRfcommConnectionTrigger_Vtbl {
@@ -1836,50 +1148,21 @@ pub struct IRfcommConnectionTrigger_Vtbl {
     #[cfg(not(feature = "Networking"))]
     SetRemoteHostName: usize,
 }
-#[doc(hidden)]
 #[cfg(feature = "deprecated")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISecondaryAuthenticationFactorAuthenticationTrigger(::windows_core::IUnknown);
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::Interface for ISecondaryAuthenticationFactorAuthenticationTrigger {
-    type Vtable = ISecondaryAuthenticationFactorAuthenticationTrigger_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for ISecondaryAuthenticationFactorAuthenticationTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf237f327_5181_4f24_96a7_700a4e5fac62);
-}
+::windows_core::imp::com_interface!(ISecondaryAuthenticationFactorAuthenticationTrigger, ISecondaryAuthenticationFactorAuthenticationTrigger_Vtbl, 0xf237f327_5181_4f24_96a7_700a4e5fac62);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISecondaryAuthenticationFactorAuthenticationTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISensorDataThresholdTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISensorDataThresholdTrigger {
-    type Vtable = ISensorDataThresholdTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISensorDataThresholdTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5bc0f372_d48b_4b7f_abec_15f9bacc12e2);
-}
+::windows_core::imp::com_interface!(ISensorDataThresholdTrigger, ISensorDataThresholdTrigger_Vtbl, 0x5bc0f372_d48b_4b7f_abec_15f9bacc12e2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISensorDataThresholdTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISensorDataThresholdTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISensorDataThresholdTriggerFactory {
-    type Vtable = ISensorDataThresholdTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISensorDataThresholdTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x921fe675_7df0_4da3_97b3_e544ee857fe6);
-}
+::windows_core::imp::com_interface!(ISensorDataThresholdTriggerFactory, ISensorDataThresholdTriggerFactory_Vtbl, 0x921fe675_7df0_4da3_97b3_e544ee857fe6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISensorDataThresholdTriggerFactory_Vtbl {
@@ -1889,16 +1172,7 @@ pub struct ISensorDataThresholdTriggerFactory_Vtbl {
     #[cfg(not(feature = "Devices_Sensors"))]
     Create: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISmartCardTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISmartCardTrigger {
-    type Vtable = ISmartCardTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISmartCardTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf53bc5ac_84ca_4972_8ce9_e58f97b37a50);
-}
+::windows_core::imp::com_interface!(ISmartCardTrigger, ISmartCardTrigger_Vtbl, 0xf53bc5ac_84ca_4972_8ce9_e58f97b37a50);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISmartCardTrigger_Vtbl {
@@ -1908,16 +1182,7 @@ pub struct ISmartCardTrigger_Vtbl {
     #[cfg(not(feature = "Devices_SmartCards"))]
     TriggerType: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISmartCardTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISmartCardTriggerFactory {
-    type Vtable = ISmartCardTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISmartCardTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x63bf54c3_89c1_4e00_a9d3_97c629269dad);
-}
+::windows_core::imp::com_interface!(ISmartCardTriggerFactory, ISmartCardTriggerFactory_Vtbl, 0x63bf54c3_89c1_4e00_a9d3_97c629269dad);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISmartCardTriggerFactory_Vtbl {
@@ -1927,16 +1192,7 @@ pub struct ISmartCardTriggerFactory_Vtbl {
     #[cfg(not(feature = "Devices_SmartCards"))]
     Create: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISmsMessageReceivedTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISmsMessageReceivedTriggerFactory {
-    type Vtable = ISmsMessageReceivedTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISmsMessageReceivedTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xea3ad8c8_6ba4_4ab2_8d21_bc6b09c77564);
-}
+::windows_core::imp::com_interface!(ISmsMessageReceivedTriggerFactory, ISmsMessageReceivedTriggerFactory_Vtbl, 0xea3ad8c8_6ba4_4ab2_8d21_bc6b09c77564);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISmsMessageReceivedTriggerFactory_Vtbl {
@@ -1946,32 +1202,14 @@ pub struct ISmsMessageReceivedTriggerFactory_Vtbl {
     #[cfg(not(feature = "Devices_Sms"))]
     Create: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISocketActivityTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISocketActivityTrigger {
-    type Vtable = ISocketActivityTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISocketActivityTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa9bbf810_9dde_4f8a_83e3_b0e0e7a50d70);
-}
+::windows_core::imp::com_interface!(ISocketActivityTrigger, ISocketActivityTrigger_Vtbl, 0xa9bbf810_9dde_4f8a_83e3_b0e0e7a50d70);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISocketActivityTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub IsWakeFromLowPowerSupported: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryChangeTrackerTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryChangeTrackerTriggerFactory {
-    type Vtable = IStorageLibraryChangeTrackerTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryChangeTrackerTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1eb0ffd0_5a85_499e_a888_824607124f50);
-}
+::windows_core::imp::com_interface!(IStorageLibraryChangeTrackerTriggerFactory, IStorageLibraryChangeTrackerTriggerFactory_Vtbl, 0x1eb0ffd0_5a85_499e_a888_824607124f50);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryChangeTrackerTriggerFactory_Vtbl {
@@ -1981,31 +1219,13 @@ pub struct IStorageLibraryChangeTrackerTriggerFactory_Vtbl {
     #[cfg(not(feature = "Storage"))]
     Create: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryContentChangedTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryContentChangedTrigger {
-    type Vtable = IStorageLibraryContentChangedTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryContentChangedTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1637e0a7_829c_45bc_929b_a1e7ea78d89b);
-}
+::windows_core::imp::com_interface!(IStorageLibraryContentChangedTrigger, IStorageLibraryContentChangedTrigger_Vtbl, 0x1637e0a7_829c_45bc_929b_a1e7ea78d89b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryContentChangedTrigger_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryContentChangedTriggerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryContentChangedTriggerStatics {
-    type Vtable = IStorageLibraryContentChangedTriggerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryContentChangedTriggerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7f9f1b39_5f90_4e12_914e_a7d8e0bbfb18);
-}
+::windows_core::imp::com_interface!(IStorageLibraryContentChangedTriggerStatics, IStorageLibraryContentChangedTriggerStatics_Vtbl, 0x7f9f1b39_5f90_4e12_914e_a7d8e0bbfb18);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryContentChangedTriggerStatics_Vtbl {
@@ -2019,48 +1239,21 @@ pub struct IStorageLibraryContentChangedTriggerStatics_Vtbl {
     #[cfg(not(all(feature = "Foundation_Collections", feature = "Storage")))]
     CreateFromLibraries: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemCondition(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemCondition {
-    type Vtable = ISystemCondition_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemCondition {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc15fb476_89c5_420b_abd3_fb3030472128);
-}
+::windows_core::imp::com_interface!(ISystemCondition, ISystemCondition_Vtbl, 0xc15fb476_89c5_420b_abd3_fb3030472128);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemCondition_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ConditionType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut SystemConditionType) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemConditionFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemConditionFactory {
-    type Vtable = ISystemConditionFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemConditionFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd269d1f1_05a7_49ae_87d7_16b2b8b9a553);
-}
+::windows_core::imp::com_interface!(ISystemConditionFactory, ISystemConditionFactory_Vtbl, 0xd269d1f1_05a7_49ae_87d7_16b2b8b9a553);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemConditionFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, conditiontype: SystemConditionType, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemTrigger {
-    type Vtable = ISystemTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1d80c776_3748_4463_8d7e_276dc139ac1c);
-}
+::windows_core::imp::com_interface!(ISystemTrigger, ISystemTrigger_Vtbl, 0x1d80c776_3748_4463_8d7e_276dc139ac1c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemTrigger_Vtbl {
@@ -2068,32 +1261,14 @@ pub struct ISystemTrigger_Vtbl {
     pub OneShot: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub TriggerType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut SystemTriggerType) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemTriggerFactory {
-    type Vtable = ISystemTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe80423d4_8791_4579_8126_87ec8aaa407a);
-}
+::windows_core::imp::com_interface!(ISystemTriggerFactory, ISystemTriggerFactory_Vtbl, 0xe80423d4_8791_4579_8126_87ec8aaa407a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemTriggerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, triggertype: SystemTriggerType, oneshot: bool, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ITimeTrigger(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ITimeTrigger {
-    type Vtable = ITimeTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ITimeTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x656e5556_0b2a_4377_ba70_3b45a935547f);
-}
+::windows_core::imp::com_interface!(ITimeTrigger, ITimeTrigger_Vtbl, 0x656e5556_0b2a_4377_ba70_3b45a935547f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ITimeTrigger_Vtbl {
@@ -2101,64 +1276,28 @@ pub struct ITimeTrigger_Vtbl {
     pub FreshnessTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
     pub OneShot: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ITimeTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ITimeTriggerFactory {
-    type Vtable = ITimeTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ITimeTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x38c682fe_9b54_45e6_b2f3_269b87a6f734);
-}
+::windows_core::imp::com_interface!(ITimeTriggerFactory, ITimeTriggerFactory_Vtbl, 0x38c682fe_9b54_45e6_b2f3_269b87a6f734);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ITimeTriggerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, freshnesstime: u32, oneshot: bool, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IToastNotificationActionTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IToastNotificationActionTriggerFactory {
-    type Vtable = IToastNotificationActionTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IToastNotificationActionTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb09dfc27_6480_4349_8125_97b3efaa0a3a);
-}
+::windows_core::imp::com_interface!(IToastNotificationActionTriggerFactory, IToastNotificationActionTriggerFactory_Vtbl, 0xb09dfc27_6480_4349_8125_97b3efaa0a3a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IToastNotificationActionTriggerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, applicationid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IToastNotificationHistoryChangedTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IToastNotificationHistoryChangedTriggerFactory {
-    type Vtable = IToastNotificationHistoryChangedTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IToastNotificationHistoryChangedTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x81c6faad_8797_4785_81b4_b0cccb73d1d9);
-}
+::windows_core::imp::com_interface!(IToastNotificationHistoryChangedTriggerFactory, IToastNotificationHistoryChangedTriggerFactory_Vtbl, 0x81c6faad_8797_4785_81b4_b0cccb73d1d9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IToastNotificationHistoryChangedTriggerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, applicationid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserNotificationChangedTriggerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserNotificationChangedTriggerFactory {
-    type Vtable = IUserNotificationChangedTriggerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserNotificationChangedTriggerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcad4436c_69ab_4e18_a48a_5ed2ac435957);
-}
+::windows_core::imp::com_interface!(IUserNotificationChangedTriggerFactory, IUserNotificationChangedTriggerFactory_Vtbl, 0xcad4436c_69ab_4e18_a48a_5ed2ac435957);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserNotificationChangedTriggerFactory_Vtbl {
@@ -2229,7 +1368,7 @@ impl ::windows_core::RuntimeName for ActivitySensorTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ActivitySensorTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(ActivitySensorTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for ActivitySensorTrigger {}
+::windows_core::imp::required_hierarchy!(ActivitySensorTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for ActivitySensorTrigger {}
 unsafe impl ::core::marker::Sync for ActivitySensorTrigger {}
 pub struct AlarmApplicationManager;
@@ -2298,7 +1437,7 @@ impl ::windows_core::RuntimeName for AppBroadcastTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.AppBroadcastTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(AppBroadcastTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for AppBroadcastTrigger {}
+::windows_core::imp::required_hierarchy!(AppBroadcastTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for AppBroadcastTrigger {}
 unsafe impl ::core::marker::Sync for AppBroadcastTrigger {}
 #[repr(transparent)]
@@ -2431,7 +1570,7 @@ impl ::windows_core::RuntimeName for ApplicationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ApplicationTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(ApplicationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for ApplicationTrigger {}
+::windows_core::imp::required_hierarchy!(ApplicationTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for ApplicationTrigger {}
 unsafe impl ::core::marker::Sync for ApplicationTrigger {}
 #[repr(transparent)]
@@ -2488,7 +1627,7 @@ impl ::windows_core::RuntimeName for AppointmentStoreNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.AppointmentStoreNotificationTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(AppointmentStoreNotificationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for AppointmentStoreNotificationTrigger {}
+::windows_core::imp::required_hierarchy!(AppointmentStoreNotificationTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for AppointmentStoreNotificationTrigger {}
 unsafe impl ::core::marker::Sync for AppointmentStoreNotificationTrigger {}
 pub struct BackgroundExecutionManager;
@@ -2590,17 +1729,17 @@ impl BackgroundTaskBuilder {
     }
     pub fn SetTrigger<P0>(&self, trigger: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IBackgroundTrigger>,
+        P0: ::windows_core::IntoParam<IBackgroundTrigger>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetTrigger)(::windows_core::Interface::as_raw(this), trigger.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetTrigger)(::windows_core::Interface::as_raw(this), trigger.into_param().abi()).ok() }
     }
     pub fn AddCondition<P0>(&self, condition: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IBackgroundCondition>,
+        P0: ::windows_core::IntoParam<IBackgroundCondition>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).AddCondition)(::windows_core::Interface::as_raw(this), condition.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).AddCondition)(::windows_core::Interface::as_raw(this), condition.into_param().abi()).ok() }
     }
     pub fn SetName(&self, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = self;
@@ -2873,9 +2012,7 @@ impl ::windows_core::RuntimeName for BackgroundTaskRegistration {
     const NAME: &'static str = "Windows.ApplicationModel.Background.BackgroundTaskRegistration";
 }
 ::windows_core::imp::interface_hierarchy!(BackgroundTaskRegistration, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTaskRegistration> for BackgroundTaskRegistration {}
-impl ::windows_core::CanTryInto<IBackgroundTaskRegistration2> for BackgroundTaskRegistration {}
-impl ::windows_core::CanTryInto<IBackgroundTaskRegistration3> for BackgroundTaskRegistration {}
+::windows_core::imp::required_hierarchy!(BackgroundTaskRegistration, IBackgroundTaskRegistration, IBackgroundTaskRegistration2, IBackgroundTaskRegistration3);
 unsafe impl ::core::marker::Send for BackgroundTaskRegistration {}
 unsafe impl ::core::marker::Sync for BackgroundTaskRegistration {}
 #[repr(transparent)]
@@ -3000,10 +2137,10 @@ impl BluetoothLEAdvertisementPublisherTrigger {
     }
     pub fn SetPreferredTransmitPowerLevelInDBm<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<i16>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<i16>>,
     {
         let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetPreferredTransmitPowerLevelInDBm)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetPreferredTransmitPowerLevelInDBm)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn UseExtendedFormat(&self) -> ::windows_core::Result<bool> {
         let this = &::windows_core::ComInterface::cast::<IBluetoothLEAdvertisementPublisherTrigger2>(self)?;
@@ -3052,7 +2189,7 @@ impl ::windows_core::RuntimeName for BluetoothLEAdvertisementPublisherTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.BluetoothLEAdvertisementPublisherTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(BluetoothLEAdvertisementPublisherTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for BluetoothLEAdvertisementPublisherTrigger {}
+::windows_core::imp::required_hierarchy!(BluetoothLEAdvertisementPublisherTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for BluetoothLEAdvertisementPublisherTrigger {}
 unsafe impl ::core::marker::Sync for BluetoothLEAdvertisementPublisherTrigger {}
 #[repr(transparent)]
@@ -3155,7 +2292,7 @@ impl ::windows_core::RuntimeName for BluetoothLEAdvertisementWatcherTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.BluetoothLEAdvertisementWatcherTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(BluetoothLEAdvertisementWatcherTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for BluetoothLEAdvertisementWatcherTrigger {}
+::windows_core::imp::required_hierarchy!(BluetoothLEAdvertisementWatcherTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for BluetoothLEAdvertisementWatcherTrigger {}
 unsafe impl ::core::marker::Sync for BluetoothLEAdvertisementWatcherTrigger {}
 #[repr(transparent)]
@@ -3183,7 +2320,7 @@ impl ::windows_core::RuntimeName for CachedFileUpdaterTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.CachedFileUpdaterTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(CachedFileUpdaterTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for CachedFileUpdaterTrigger {}
+::windows_core::imp::required_hierarchy!(CachedFileUpdaterTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for CachedFileUpdaterTrigger {}
 unsafe impl ::core::marker::Sync for CachedFileUpdaterTrigger {}
 #[repr(transparent)]
@@ -3256,7 +2393,7 @@ impl ::windows_core::RuntimeName for ChatMessageNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ChatMessageNotificationTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(ChatMessageNotificationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for ChatMessageNotificationTrigger {}
+::windows_core::imp::required_hierarchy!(ChatMessageNotificationTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for ChatMessageNotificationTrigger {}
 unsafe impl ::core::marker::Sync for ChatMessageNotificationTrigger {}
 #[repr(transparent)]
@@ -3284,7 +2421,7 @@ impl ::windows_core::RuntimeName for ChatMessageReceivedNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ChatMessageReceivedNotificationTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(ChatMessageReceivedNotificationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for ChatMessageReceivedNotificationTrigger {}
+::windows_core::imp::required_hierarchy!(ChatMessageReceivedNotificationTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for ChatMessageReceivedNotificationTrigger {}
 unsafe impl ::core::marker::Sync for ChatMessageReceivedNotificationTrigger {}
 #[repr(transparent)]
@@ -3312,7 +2449,7 @@ impl ::windows_core::RuntimeName for CommunicationBlockingAppSetAsActiveTrigger 
     const NAME: &'static str = "Windows.ApplicationModel.Background.CommunicationBlockingAppSetAsActiveTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(CommunicationBlockingAppSetAsActiveTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for CommunicationBlockingAppSetAsActiveTrigger {}
+::windows_core::imp::required_hierarchy!(CommunicationBlockingAppSetAsActiveTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for CommunicationBlockingAppSetAsActiveTrigger {}
 unsafe impl ::core::marker::Sync for CommunicationBlockingAppSetAsActiveTrigger {}
 #[repr(transparent)]
@@ -3340,7 +2477,7 @@ impl ::windows_core::RuntimeName for ContactStoreNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ContactStoreNotificationTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(ContactStoreNotificationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for ContactStoreNotificationTrigger {}
+::windows_core::imp::required_hierarchy!(ContactStoreNotificationTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for ContactStoreNotificationTrigger {}
 unsafe impl ::core::marker::Sync for ContactStoreNotificationTrigger {}
 #[repr(transparent)]
@@ -3386,7 +2523,7 @@ impl ::windows_core::RuntimeName for ContentPrefetchTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ContentPrefetchTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(ContentPrefetchTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for ContentPrefetchTrigger {}
+::windows_core::imp::required_hierarchy!(ContentPrefetchTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct ConversationalAgentTrigger(::windows_core::IUnknown);
@@ -3412,7 +2549,7 @@ impl ::windows_core::RuntimeName for ConversationalAgentTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ConversationalAgentTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(ConversationalAgentTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for ConversationalAgentTrigger {}
+::windows_core::imp::required_hierarchy!(ConversationalAgentTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct CustomSystemEventTrigger(::windows_core::IUnknown);
@@ -3456,7 +2593,7 @@ impl ::windows_core::RuntimeName for CustomSystemEventTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.CustomSystemEventTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(CustomSystemEventTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for CustomSystemEventTrigger {}
+::windows_core::imp::required_hierarchy!(CustomSystemEventTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct DeviceConnectionChangeTrigger(::windows_core::IUnknown);
@@ -3511,7 +2648,7 @@ impl ::windows_core::RuntimeName for DeviceConnectionChangeTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(DeviceConnectionChangeTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for DeviceConnectionChangeTrigger {}
+::windows_core::imp::required_hierarchy!(DeviceConnectionChangeTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for DeviceConnectionChangeTrigger {}
 unsafe impl ::core::marker::Sync for DeviceConnectionChangeTrigger {}
 #[doc = "Required features: `\"deprecated\"`"]
@@ -3573,7 +2710,7 @@ impl ::windows_core::RuntimeName for DeviceManufacturerNotificationTrigger {
 #[cfg(feature = "deprecated")]
 ::windows_core::imp::interface_hierarchy!(DeviceManufacturerNotificationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "deprecated")]
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for DeviceManufacturerNotificationTrigger {}
+::windows_core::imp::required_hierarchy!(DeviceManufacturerNotificationTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct DeviceServicingTrigger(::windows_core::IUnknown);
@@ -3613,7 +2750,7 @@ impl ::windows_core::RuntimeName for DeviceServicingTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.DeviceServicingTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(DeviceServicingTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for DeviceServicingTrigger {}
+::windows_core::imp::required_hierarchy!(DeviceServicingTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for DeviceServicingTrigger {}
 unsafe impl ::core::marker::Sync for DeviceServicingTrigger {}
 #[repr(transparent)]
@@ -3655,7 +2792,7 @@ impl ::windows_core::RuntimeName for DeviceUseTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.DeviceUseTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(DeviceUseTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for DeviceUseTrigger {}
+::windows_core::imp::required_hierarchy!(DeviceUseTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for DeviceUseTrigger {}
 unsafe impl ::core::marker::Sync for DeviceUseTrigger {}
 #[repr(transparent)]
@@ -3675,7 +2812,7 @@ impl ::windows_core::RuntimeName for DeviceWatcherTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.DeviceWatcherTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(DeviceWatcherTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for DeviceWatcherTrigger {}
+::windows_core::imp::required_hierarchy!(DeviceWatcherTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct EmailStoreNotificationTrigger(::windows_core::IUnknown);
@@ -3701,7 +2838,7 @@ impl ::windows_core::RuntimeName for EmailStoreNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.EmailStoreNotificationTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(EmailStoreNotificationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for EmailStoreNotificationTrigger {}
+::windows_core::imp::required_hierarchy!(EmailStoreNotificationTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for EmailStoreNotificationTrigger {}
 unsafe impl ::core::marker::Sync for EmailStoreNotificationTrigger {}
 #[repr(transparent)]
@@ -3772,7 +2909,7 @@ impl ::windows_core::RuntimeName for GattCharacteristicNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.GattCharacteristicNotificationTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(GattCharacteristicNotificationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for GattCharacteristicNotificationTrigger {}
+::windows_core::imp::required_hierarchy!(GattCharacteristicNotificationTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for GattCharacteristicNotificationTrigger {}
 unsafe impl ::core::marker::Sync for GattCharacteristicNotificationTrigger {}
 #[repr(transparent)]
@@ -3838,7 +2975,7 @@ impl ::windows_core::RuntimeName for GattServiceProviderTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.GattServiceProviderTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(GattServiceProviderTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for GattServiceProviderTrigger {}
+::windows_core::imp::required_hierarchy!(GattServiceProviderTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for GattServiceProviderTrigger {}
 unsafe impl ::core::marker::Sync for GattServiceProviderTrigger {}
 #[repr(transparent)]
@@ -3917,7 +3054,7 @@ impl ::windows_core::RuntimeName for GeovisitTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.GeovisitTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(GeovisitTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for GeovisitTrigger {}
+::windows_core::imp::required_hierarchy!(GeovisitTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for GeovisitTrigger {}
 unsafe impl ::core::marker::Sync for GeovisitTrigger {}
 #[repr(transparent)]
@@ -3956,7 +3093,7 @@ impl ::windows_core::RuntimeName for LocationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.LocationTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(LocationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for LocationTrigger {}
+::windows_core::imp::required_hierarchy!(LocationTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for LocationTrigger {}
 unsafe impl ::core::marker::Sync for LocationTrigger {}
 #[repr(transparent)]
@@ -4002,7 +3139,7 @@ impl ::windows_core::RuntimeName for MaintenanceTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.MaintenanceTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(MaintenanceTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for MaintenanceTrigger {}
+::windows_core::imp::required_hierarchy!(MaintenanceTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct MediaProcessingTrigger(::windows_core::IUnknown);
@@ -4047,7 +3184,7 @@ impl ::windows_core::RuntimeName for MediaProcessingTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.MediaProcessingTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(MediaProcessingTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for MediaProcessingTrigger {}
+::windows_core::imp::required_hierarchy!(MediaProcessingTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct MobileBroadbandDeviceServiceNotificationTrigger(::windows_core::IUnknown);
@@ -4073,7 +3210,7 @@ impl ::windows_core::RuntimeName for MobileBroadbandDeviceServiceNotificationTri
     const NAME: &'static str = "Windows.ApplicationModel.Background.MobileBroadbandDeviceServiceNotificationTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(MobileBroadbandDeviceServiceNotificationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for MobileBroadbandDeviceServiceNotificationTrigger {}
+::windows_core::imp::required_hierarchy!(MobileBroadbandDeviceServiceNotificationTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for MobileBroadbandDeviceServiceNotificationTrigger {}
 unsafe impl ::core::marker::Sync for MobileBroadbandDeviceServiceNotificationTrigger {}
 #[repr(transparent)]
@@ -4101,7 +3238,7 @@ impl ::windows_core::RuntimeName for MobileBroadbandPcoDataChangeTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.MobileBroadbandPcoDataChangeTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(MobileBroadbandPcoDataChangeTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for MobileBroadbandPcoDataChangeTrigger {}
+::windows_core::imp::required_hierarchy!(MobileBroadbandPcoDataChangeTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for MobileBroadbandPcoDataChangeTrigger {}
 unsafe impl ::core::marker::Sync for MobileBroadbandPcoDataChangeTrigger {}
 #[repr(transparent)]
@@ -4129,7 +3266,7 @@ impl ::windows_core::RuntimeName for MobileBroadbandPinLockStateChangeTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.MobileBroadbandPinLockStateChangeTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(MobileBroadbandPinLockStateChangeTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for MobileBroadbandPinLockStateChangeTrigger {}
+::windows_core::imp::required_hierarchy!(MobileBroadbandPinLockStateChangeTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for MobileBroadbandPinLockStateChangeTrigger {}
 unsafe impl ::core::marker::Sync for MobileBroadbandPinLockStateChangeTrigger {}
 #[repr(transparent)]
@@ -4157,7 +3294,7 @@ impl ::windows_core::RuntimeName for MobileBroadbandRadioStateChangeTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.MobileBroadbandRadioStateChangeTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(MobileBroadbandRadioStateChangeTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for MobileBroadbandRadioStateChangeTrigger {}
+::windows_core::imp::required_hierarchy!(MobileBroadbandRadioStateChangeTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for MobileBroadbandRadioStateChangeTrigger {}
 unsafe impl ::core::marker::Sync for MobileBroadbandRadioStateChangeTrigger {}
 #[repr(transparent)]
@@ -4185,7 +3322,7 @@ impl ::windows_core::RuntimeName for MobileBroadbandRegistrationStateChangeTrigg
     const NAME: &'static str = "Windows.ApplicationModel.Background.MobileBroadbandRegistrationStateChangeTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(MobileBroadbandRegistrationStateChangeTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for MobileBroadbandRegistrationStateChangeTrigger {}
+::windows_core::imp::required_hierarchy!(MobileBroadbandRegistrationStateChangeTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for MobileBroadbandRegistrationStateChangeTrigger {}
 unsafe impl ::core::marker::Sync for MobileBroadbandRegistrationStateChangeTrigger {}
 #[repr(transparent)]
@@ -4213,7 +3350,7 @@ impl ::windows_core::RuntimeName for NetworkOperatorDataUsageTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.NetworkOperatorDataUsageTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(NetworkOperatorDataUsageTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for NetworkOperatorDataUsageTrigger {}
+::windows_core::imp::required_hierarchy!(NetworkOperatorDataUsageTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for NetworkOperatorDataUsageTrigger {}
 unsafe impl ::core::marker::Sync for NetworkOperatorDataUsageTrigger {}
 #[repr(transparent)]
@@ -4241,7 +3378,7 @@ impl ::windows_core::RuntimeName for NetworkOperatorHotspotAuthenticationTrigger
     const NAME: &'static str = "Windows.ApplicationModel.Background.NetworkOperatorHotspotAuthenticationTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(NetworkOperatorHotspotAuthenticationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for NetworkOperatorHotspotAuthenticationTrigger {}
+::windows_core::imp::required_hierarchy!(NetworkOperatorHotspotAuthenticationTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct NetworkOperatorNotificationTrigger(::windows_core::IUnknown);
@@ -4278,7 +3415,7 @@ impl ::windows_core::RuntimeName for NetworkOperatorNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.NetworkOperatorNotificationTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(NetworkOperatorNotificationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for NetworkOperatorNotificationTrigger {}
+::windows_core::imp::required_hierarchy!(NetworkOperatorNotificationTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct PaymentAppCanMakePaymentTrigger(::windows_core::IUnknown);
@@ -4304,7 +3441,7 @@ impl ::windows_core::RuntimeName for PaymentAppCanMakePaymentTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.PaymentAppCanMakePaymentTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(PaymentAppCanMakePaymentTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for PaymentAppCanMakePaymentTrigger {}
+::windows_core::imp::required_hierarchy!(PaymentAppCanMakePaymentTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for PaymentAppCanMakePaymentTrigger {}
 unsafe impl ::core::marker::Sync for PaymentAppCanMakePaymentTrigger {}
 #[repr(transparent)]
@@ -4354,7 +3491,7 @@ impl ::windows_core::RuntimeName for PhoneTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.PhoneTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(PhoneTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for PhoneTrigger {}
+::windows_core::imp::required_hierarchy!(PhoneTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for PhoneTrigger {}
 unsafe impl ::core::marker::Sync for PhoneTrigger {}
 #[repr(transparent)]
@@ -4393,7 +3530,7 @@ impl ::windows_core::RuntimeName for PushNotificationTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.PushNotificationTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(PushNotificationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for PushNotificationTrigger {}
+::windows_core::imp::required_hierarchy!(PushNotificationTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for PushNotificationTrigger {}
 unsafe impl ::core::marker::Sync for PushNotificationTrigger {}
 #[repr(transparent)]
@@ -4421,7 +3558,7 @@ impl ::windows_core::RuntimeName for RcsEndUserMessageAvailableTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.RcsEndUserMessageAvailableTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(RcsEndUserMessageAvailableTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for RcsEndUserMessageAvailableTrigger {}
+::windows_core::imp::required_hierarchy!(RcsEndUserMessageAvailableTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for RcsEndUserMessageAvailableTrigger {}
 unsafe impl ::core::marker::Sync for RcsEndUserMessageAvailableTrigger {}
 #[repr(transparent)]
@@ -4511,7 +3648,7 @@ impl ::windows_core::RuntimeName for RfcommConnectionTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.RfcommConnectionTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(RfcommConnectionTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for RfcommConnectionTrigger {}
+::windows_core::imp::required_hierarchy!(RfcommConnectionTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for RfcommConnectionTrigger {}
 unsafe impl ::core::marker::Sync for RfcommConnectionTrigger {}
 #[doc = "Required features: `\"deprecated\"`"]
@@ -4548,7 +3685,7 @@ impl ::windows_core::RuntimeName for SecondaryAuthenticationFactorAuthentication
 #[cfg(feature = "deprecated")]
 ::windows_core::imp::interface_hierarchy!(SecondaryAuthenticationFactorAuthenticationTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "deprecated")]
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for SecondaryAuthenticationFactorAuthenticationTrigger {}
+::windows_core::imp::required_hierarchy!(SecondaryAuthenticationFactorAuthenticationTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct SensorDataThresholdTrigger(::windows_core::IUnknown);
@@ -4557,11 +3694,11 @@ impl SensorDataThresholdTrigger {
     #[cfg(feature = "Devices_Sensors")]
     pub fn Create<P0>(threshold: P0) -> ::windows_core::Result<SensorDataThresholdTrigger>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Devices::Sensors::ISensorDataThreshold>,
+        P0: ::windows_core::IntoParam<super::super::Devices::Sensors::ISensorDataThreshold>,
     {
         Self::ISensorDataThresholdTriggerFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).Create)(::windows_core::Interface::as_raw(this), threshold.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).Create)(::windows_core::Interface::as_raw(this), threshold.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc(hidden)]
@@ -4583,7 +3720,7 @@ impl ::windows_core::RuntimeName for SensorDataThresholdTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.SensorDataThresholdTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(SensorDataThresholdTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for SensorDataThresholdTrigger {}
+::windows_core::imp::required_hierarchy!(SensorDataThresholdTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for SensorDataThresholdTrigger {}
 unsafe impl ::core::marker::Sync for SensorDataThresholdTrigger {}
 #[repr(transparent)]
@@ -4626,7 +3763,7 @@ impl ::windows_core::RuntimeName for SmartCardTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.SmartCardTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(SmartCardTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for SmartCardTrigger {}
+::windows_core::imp::required_hierarchy!(SmartCardTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct SmsMessageReceivedTrigger(::windows_core::IUnknown);
@@ -4661,7 +3798,7 @@ impl ::windows_core::RuntimeName for SmsMessageReceivedTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.SmsMessageReceivedTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(SmsMessageReceivedTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for SmsMessageReceivedTrigger {}
+::windows_core::imp::required_hierarchy!(SmsMessageReceivedTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for SmsMessageReceivedTrigger {}
 unsafe impl ::core::marker::Sync for SmsMessageReceivedTrigger {}
 #[repr(transparent)]
@@ -4696,7 +3833,7 @@ impl ::windows_core::RuntimeName for SocketActivityTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.SocketActivityTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(SocketActivityTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for SocketActivityTrigger {}
+::windows_core::imp::required_hierarchy!(SocketActivityTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for SocketActivityTrigger {}
 unsafe impl ::core::marker::Sync for SocketActivityTrigger {}
 #[repr(transparent)]
@@ -4733,7 +3870,7 @@ impl ::windows_core::RuntimeName for StorageLibraryChangeTrackerTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.StorageLibraryChangeTrackerTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(StorageLibraryChangeTrackerTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for StorageLibraryChangeTrackerTrigger {}
+::windows_core::imp::required_hierarchy!(StorageLibraryChangeTrackerTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for StorageLibraryChangeTrackerTrigger {}
 unsafe impl ::core::marker::Sync for StorageLibraryChangeTrackerTrigger {}
 #[repr(transparent)]
@@ -4755,11 +3892,11 @@ impl StorageLibraryContentChangedTrigger {
     #[cfg(all(feature = "Foundation_Collections", feature = "Storage"))]
     pub fn CreateFromLibraries<P0>(storagelibraries: P0) -> ::windows_core::Result<StorageLibraryContentChangedTrigger>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<super::super::Storage::StorageLibrary>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Storage::StorageLibrary>>,
     {
         Self::IStorageLibraryContentChangedTriggerStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateFromLibraries)(::windows_core::Interface::as_raw(this), storagelibraries.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateFromLibraries)(::windows_core::Interface::as_raw(this), storagelibraries.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc(hidden)]
@@ -4781,7 +3918,7 @@ impl ::windows_core::RuntimeName for StorageLibraryContentChangedTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.StorageLibraryContentChangedTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(StorageLibraryContentChangedTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for StorageLibraryContentChangedTrigger {}
+::windows_core::imp::required_hierarchy!(StorageLibraryContentChangedTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct SystemCondition(::windows_core::IUnknown);
@@ -4818,7 +3955,7 @@ impl ::windows_core::RuntimeName for SystemCondition {
     const NAME: &'static str = "Windows.ApplicationModel.Background.SystemCondition";
 }
 ::windows_core::imp::interface_hierarchy!(SystemCondition, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundCondition> for SystemCondition {}
+::windows_core::imp::required_hierarchy!(SystemCondition, IBackgroundCondition);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct SystemTrigger(::windows_core::IUnknown);
@@ -4862,7 +3999,7 @@ impl ::windows_core::RuntimeName for SystemTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.SystemTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(SystemTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for SystemTrigger {}
+::windows_core::imp::required_hierarchy!(SystemTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct TetheringEntitlementCheckTrigger(::windows_core::IUnknown);
@@ -4888,7 +4025,7 @@ impl ::windows_core::RuntimeName for TetheringEntitlementCheckTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.TetheringEntitlementCheckTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(TetheringEntitlementCheckTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for TetheringEntitlementCheckTrigger {}
+::windows_core::imp::required_hierarchy!(TetheringEntitlementCheckTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for TetheringEntitlementCheckTrigger {}
 unsafe impl ::core::marker::Sync for TetheringEntitlementCheckTrigger {}
 #[repr(transparent)]
@@ -4934,7 +4071,7 @@ impl ::windows_core::RuntimeName for TimeTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.TimeTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(TimeTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for TimeTrigger {}
+::windows_core::imp::required_hierarchy!(TimeTrigger, IBackgroundTrigger);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct ToastNotificationActionTrigger(::windows_core::IUnknown);
@@ -4971,7 +4108,7 @@ impl ::windows_core::RuntimeName for ToastNotificationActionTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ToastNotificationActionTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(ToastNotificationActionTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for ToastNotificationActionTrigger {}
+::windows_core::imp::required_hierarchy!(ToastNotificationActionTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for ToastNotificationActionTrigger {}
 unsafe impl ::core::marker::Sync for ToastNotificationActionTrigger {}
 #[repr(transparent)]
@@ -5010,7 +4147,7 @@ impl ::windows_core::RuntimeName for ToastNotificationHistoryChangedTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.ToastNotificationHistoryChangedTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(ToastNotificationHistoryChangedTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for ToastNotificationHistoryChangedTrigger {}
+::windows_core::imp::required_hierarchy!(ToastNotificationHistoryChangedTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for ToastNotificationHistoryChangedTrigger {}
 unsafe impl ::core::marker::Sync for ToastNotificationHistoryChangedTrigger {}
 #[repr(transparent)]
@@ -5044,7 +4181,7 @@ impl ::windows_core::RuntimeName for UserNotificationChangedTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.UserNotificationChangedTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(UserNotificationChangedTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for UserNotificationChangedTrigger {}
+::windows_core::imp::required_hierarchy!(UserNotificationChangedTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for UserNotificationChangedTrigger {}
 unsafe impl ::core::marker::Sync for UserNotificationChangedTrigger {}
 #[repr(transparent)]
@@ -5072,7 +4209,7 @@ impl ::windows_core::RuntimeName for WiFiOnDemandHotspotConnectTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.WiFiOnDemandHotspotConnectTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(WiFiOnDemandHotspotConnectTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for WiFiOnDemandHotspotConnectTrigger {}
+::windows_core::imp::required_hierarchy!(WiFiOnDemandHotspotConnectTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for WiFiOnDemandHotspotConnectTrigger {}
 unsafe impl ::core::marker::Sync for WiFiOnDemandHotspotConnectTrigger {}
 #[repr(transparent)]
@@ -5100,7 +4237,7 @@ impl ::windows_core::RuntimeName for WiFiOnDemandHotspotUpdateMetadataTrigger {
     const NAME: &'static str = "Windows.ApplicationModel.Background.WiFiOnDemandHotspotUpdateMetadataTrigger";
 }
 ::windows_core::imp::interface_hierarchy!(WiFiOnDemandHotspotUpdateMetadataTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IBackgroundTrigger> for WiFiOnDemandHotspotUpdateMetadataTrigger {}
+::windows_core::imp::required_hierarchy!(WiFiOnDemandHotspotUpdateMetadataTrigger, IBackgroundTrigger);
 unsafe impl ::core::marker::Send for WiFiOnDemandHotspotUpdateMetadataTrigger {}
 unsafe impl ::core::marker::Sync for WiFiOnDemandHotspotUpdateMetadataTrigger {}
 #[repr(transparent)]
@@ -5383,9 +4520,7 @@ impl ::core::fmt::Debug for SystemTriggerType {
 impl ::windows_core::RuntimeType for SystemTriggerType {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::from_slice(b"enum(Windows.ApplicationModel.Background.SystemTriggerType;i4)");
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct BackgroundTaskCanceledEventHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(BackgroundTaskCanceledEventHandler, BackgroundTaskCanceledEventHandler_Vtbl, 0xa6c4bac0_51f8_4c57_ac3f_156dd1680c4f);
 impl BackgroundTaskCanceledEventHandler {
     pub fn new<F: FnMut(::core::option::Option<&IBackgroundTaskInstance>, BackgroundTaskCancellationReason) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
         let com = BackgroundTaskCanceledEventHandlerBox::<F> { vtable: &BackgroundTaskCanceledEventHandlerBox::<F>::VTABLE, count: ::windows_core::imp::RefCount::new(1), invoke };
@@ -5393,10 +4528,10 @@ impl BackgroundTaskCanceledEventHandler {
     }
     pub fn Invoke<P0>(&self, sender: P0, reason: BackgroundTaskCancellationReason) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IBackgroundTaskInstance>,
+        P0: ::windows_core::IntoParam<IBackgroundTaskInstance>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.try_into_param()?.abi(), reason).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), reason).ok() }
     }
 }
 #[repr(C)]
@@ -5440,12 +4575,6 @@ impl<F: FnMut(::core::option::Option<&IBackgroundTaskInstance>, BackgroundTaskCa
         ((*this).invoke)(::windows_core::from_raw_borrowed(&sender), reason).into()
     }
 }
-unsafe impl ::windows_core::Interface for BackgroundTaskCanceledEventHandler {
-    type Vtable = BackgroundTaskCanceledEventHandler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BackgroundTaskCanceledEventHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa6c4bac0_51f8_4c57_ac3f_156dd1680c4f);
-}
 impl ::windows_core::RuntimeType for BackgroundTaskCanceledEventHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -5455,9 +4584,7 @@ pub struct BackgroundTaskCanceledEventHandler_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub Invoke: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, sender: *mut ::core::ffi::c_void, reason: BackgroundTaskCancellationReason) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct BackgroundTaskCompletedEventHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(BackgroundTaskCompletedEventHandler, BackgroundTaskCompletedEventHandler_Vtbl, 0x5b38e929_a086_46a7_a678_439135822bcf);
 impl BackgroundTaskCompletedEventHandler {
     pub fn new<F: FnMut(::core::option::Option<&BackgroundTaskRegistration>, ::core::option::Option<&BackgroundTaskCompletedEventArgs>) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
         let com = BackgroundTaskCompletedEventHandlerBox::<F> { vtable: &BackgroundTaskCompletedEventHandlerBox::<F>::VTABLE, count: ::windows_core::imp::RefCount::new(1), invoke };
@@ -5513,12 +4640,6 @@ impl<F: FnMut(::core::option::Option<&BackgroundTaskRegistration>, ::core::optio
         ((*this).invoke)(::windows_core::from_raw_borrowed(&sender), ::windows_core::from_raw_borrowed(&args)).into()
     }
 }
-unsafe impl ::windows_core::Interface for BackgroundTaskCompletedEventHandler {
-    type Vtable = BackgroundTaskCompletedEventHandler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BackgroundTaskCompletedEventHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5b38e929_a086_46a7_a678_439135822bcf);
-}
 impl ::windows_core::RuntimeType for BackgroundTaskCompletedEventHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -5528,9 +4649,7 @@ pub struct BackgroundTaskCompletedEventHandler_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub Invoke: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, sender: *mut ::core::ffi::c_void, args: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct BackgroundTaskProgressEventHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(BackgroundTaskProgressEventHandler, BackgroundTaskProgressEventHandler_Vtbl, 0x46e0683c_8a88_4c99_804c_76897f6277a6);
 impl BackgroundTaskProgressEventHandler {
     pub fn new<F: FnMut(::core::option::Option<&BackgroundTaskRegistration>, ::core::option::Option<&BackgroundTaskProgressEventArgs>) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
         let com = BackgroundTaskProgressEventHandlerBox::<F> { vtable: &BackgroundTaskProgressEventHandlerBox::<F>::VTABLE, count: ::windows_core::imp::RefCount::new(1), invoke };
@@ -5585,12 +4704,6 @@ impl<F: FnMut(::core::option::Option<&BackgroundTaskRegistration>, ::core::optio
         let this = this as *mut *mut ::core::ffi::c_void as *mut Self;
         ((*this).invoke)(::windows_core::from_raw_borrowed(&sender), ::windows_core::from_raw_borrowed(&args)).into()
     }
-}
-unsafe impl ::windows_core::Interface for BackgroundTaskProgressEventHandler {
-    type Vtable = BackgroundTaskProgressEventHandler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for BackgroundTaskProgressEventHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x46e0683c_8a88_4c99_804c_76897f6277a6);
 }
 impl ::windows_core::RuntimeType for BackgroundTaskProgressEventHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();

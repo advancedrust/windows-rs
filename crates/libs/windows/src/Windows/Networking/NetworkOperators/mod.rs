@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESim(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESim {
-    type Vtable = IESim_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESim {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6f6e6e26_f123_437d_8ced_dc1d2bc0c3a9);
-}
+::windows_core::imp::com_interface!(IESim, IESim_Vtbl, 0x6f6e6e26_f123_437d_8ced_dc1d2bc0c3a9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESim_Vtbl {
@@ -28,16 +19,7 @@ pub struct IESim_Vtbl {
     pub ProfileChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveProfileChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESim2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESim2 {
-    type Vtable = IESim2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESim2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbd4fd0a0_c68f_56eb_b99b_8f34b8100299);
-}
+::windows_core::imp::com_interface!(IESim2, IESim2_Vtbl, 0xbd4fd0a0_c68f_56eb_b99b_8f34b8100299);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESim2_Vtbl {
@@ -47,48 +29,21 @@ pub struct IESim2_Vtbl {
     pub DiscoverAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub DiscoverWithServerAddressAndMatchingIdAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, serveraddress: ::std::mem::MaybeUninit<::windows_core::HSTRING>, matchingid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESim3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESim3 {
-    type Vtable = IESim3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESim3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfe1edf45_01b8_5d31_b8d3_d9cbebb2b831);
-}
+::windows_core::imp::com_interface!(IESim3, IESim3_Vtbl, 0xfe1edf45_01b8_5d31_b8d3_d9cbebb2b831);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESim3_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SlotIndex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimAddedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimAddedEventArgs {
-    type Vtable = IESimAddedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimAddedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x38bd0a58_4d5a_4d08_8da7_e73eff369ddd);
-}
+::windows_core::imp::com_interface!(IESimAddedEventArgs, IESimAddedEventArgs_Vtbl, 0x38bd0a58_4d5a_4d08_8da7_e73eff369ddd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimAddedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ESim: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimDiscoverEvent(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimDiscoverEvent {
-    type Vtable = IESimDiscoverEvent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimDiscoverEvent {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe59ac3e3_39bc_5f6f_9321_0d4a182d261b);
-}
+::windows_core::imp::com_interface!(IESimDiscoverEvent, IESimDiscoverEvent_Vtbl, 0xe59ac3e3_39bc_5f6f_9321_0d4a182d261b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimDiscoverEvent_Vtbl {
@@ -96,16 +51,7 @@ pub struct IESimDiscoverEvent_Vtbl {
     pub MatchingId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub RspServerAddress: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimDiscoverResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimDiscoverResult {
-    type Vtable = IESimDiscoverResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimDiscoverResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x56b4bb5e_ab2f_5ac6_b359_dd5a8e237926);
-}
+::windows_core::imp::com_interface!(IESimDiscoverResult, IESimDiscoverResult_Vtbl, 0x56b4bb5e_ab2f_5ac6_b359_dd5a8e237926);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimDiscoverResult_Vtbl {
@@ -118,16 +64,7 @@ pub struct IESimDiscoverResult_Vtbl {
     pub ProfileMetadata: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Result: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimDownloadProfileMetadataResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimDownloadProfileMetadataResult {
-    type Vtable = IESimDownloadProfileMetadataResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimDownloadProfileMetadataResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc4234d9e_5ad6_426d_8d00_4434f449afec);
-}
+::windows_core::imp::com_interface!(IESimDownloadProfileMetadataResult, IESimDownloadProfileMetadataResult_Vtbl, 0xc4234d9e_5ad6_426d_8d00_4434f449afec);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimDownloadProfileMetadataResult_Vtbl {
@@ -135,16 +72,7 @@ pub struct IESimDownloadProfileMetadataResult_Vtbl {
     pub Result: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ProfileMetadata: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimManagerStatics {
-    type Vtable = IESimManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0bfa2c0c_df88_4631_bf04_c12e281b3962);
-}
+::windows_core::imp::com_interface!(IESimManagerStatics, IESimManagerStatics_Vtbl, 0x0bfa2c0c_df88_4631_bf04_c12e281b3962);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimManagerStatics_Vtbl {
@@ -154,48 +82,21 @@ pub struct IESimManagerStatics_Vtbl {
     pub ServiceInfoChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveServiceInfoChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimOperationResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimOperationResult {
-    type Vtable = IESimOperationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimOperationResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa67b63b1_309b_4e77_9e7e_cd93f1ddc7b9);
-}
+::windows_core::imp::com_interface!(IESimOperationResult, IESimOperationResult_Vtbl, 0xa67b63b1_309b_4e77_9e7e_cd93f1ddc7b9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimOperationResult_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ESimOperationStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimPolicy(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimPolicy {
-    type Vtable = IESimPolicy_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimPolicy {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x41e1b99d_cf7e_4315_882b_6f1e74b0d38f);
-}
+::windows_core::imp::com_interface!(IESimPolicy, IESimPolicy_Vtbl, 0x41e1b99d_cf7e_4315_882b_6f1e74b0d38f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimPolicy_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ShouldEnableManagingUi: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimProfile(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimProfile {
-    type Vtable = IESimProfile_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimProfile {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xee1e7880_06a9_4027_b4f8_ddb23d7810e0);
-}
+::windows_core::imp::com_interface!(IESimProfile, IESimProfile_Vtbl, 0xee1e7880_06a9_4027_b4f8_ddb23d7810e0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimProfile_Vtbl {
@@ -215,16 +116,7 @@ pub struct IESimProfile_Vtbl {
     pub EnableAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetNicknameAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, newnickname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimProfileMetadata(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimProfileMetadata {
-    type Vtable = IESimProfileMetadata_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimProfileMetadata {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xed25831f_90db_498d_a7b4_ebce807d3c23);
-}
+::windows_core::imp::com_interface!(IESimProfileMetadata, IESimProfileMetadata_Vtbl, 0xed25831f_90db_498d_a7b4_ebce807d3c23);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimProfileMetadata_Vtbl {
@@ -246,16 +138,7 @@ pub struct IESimProfileMetadata_Vtbl {
     pub StateChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveStateChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimProfilePolicy(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimProfilePolicy {
-    type Vtable = IESimProfilePolicy_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimProfilePolicy {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe6dd0f1d_9c5c_46c5_a289_a948999bf062);
-}
+::windows_core::imp::com_interface!(IESimProfilePolicy, IESimProfilePolicy_Vtbl, 0xe6dd0f1d_9c5c_46c5_a289_a948999bf062);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimProfilePolicy_Vtbl {
@@ -264,32 +147,14 @@ pub struct IESimProfilePolicy_Vtbl {
     pub CanDisable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub IsManagedByEnterprise: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimRemovedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimRemovedEventArgs {
-    type Vtable = IESimRemovedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimRemovedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdec5277b_2fd9_4ed9_8376_d9b5e41278a3);
-}
+::windows_core::imp::com_interface!(IESimRemovedEventArgs, IESimRemovedEventArgs_Vtbl, 0xdec5277b_2fd9_4ed9_8376_d9b5e41278a3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimRemovedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ESim: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimServiceInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimServiceInfo {
-    type Vtable = IESimServiceInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimServiceInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf16aabcf_7f59_4a51_8494_bd89d5ff50ee);
-}
+::windows_core::imp::com_interface!(IESimServiceInfo, IESimServiceInfo_Vtbl, 0xf16aabcf_7f59_4a51_8494_bd89d5ff50ee);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimServiceInfo_Vtbl {
@@ -297,32 +162,14 @@ pub struct IESimServiceInfo_Vtbl {
     pub AuthenticationPreference: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ESimAuthenticationPreference) -> ::windows_core::HRESULT,
     pub IsESimUiEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimUpdatedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimUpdatedEventArgs {
-    type Vtable = IESimUpdatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimUpdatedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4c125cec_508d_4b88_83cb_68bef8168d12);
-}
+::windows_core::imp::com_interface!(IESimUpdatedEventArgs, IESimUpdatedEventArgs_Vtbl, 0x4c125cec_508d_4b88_83cb_68bef8168d12);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimUpdatedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ESim: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IESimWatcher(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IESimWatcher {
-    type Vtable = IESimWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IESimWatcher {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc1f84ceb_a28d_4fbf_9771_6e31b81ccf22);
-}
+::windows_core::imp::com_interface!(IESimWatcher, IESimWatcher_Vtbl, 0xc1f84ceb_a28d_4fbf_9771_6e31b81ccf22);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IESimWatcher_Vtbl {
@@ -341,32 +188,14 @@ pub struct IESimWatcher_Vtbl {
     pub Updated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveUpdated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFdnAccessManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFdnAccessManagerStatics {
-    type Vtable = IFdnAccessManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFdnAccessManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf2aa4395_f1e6_4319_aa3e_477ca64b2bdf);
-}
+::windows_core::imp::com_interface!(IFdnAccessManagerStatics, IFdnAccessManagerStatics_Vtbl, 0xf2aa4395_f1e6_4319_aa3e_477ca64b2bdf);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFdnAccessManagerStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub RequestUnlockAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, contactlistid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHotspotAuthenticationContext(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHotspotAuthenticationContext {
-    type Vtable = IHotspotAuthenticationContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHotspotAuthenticationContext {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe756c791_1003_4de5_83c7_de61d88831d0);
-}
+::windows_core::imp::com_interface!(IHotspotAuthenticationContext, IHotspotAuthenticationContext_Vtbl, 0xe756c791_1003_4de5_83c7_de61d88831d0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHotspotAuthenticationContext_Vtbl {
@@ -387,64 +216,28 @@ pub struct IHotspotAuthenticationContext_Vtbl {
     pub SkipAuthentication: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TriggerAttentionRequired: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, packagerelativeapplicationid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, applicationparameters: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHotspotAuthenticationContext2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHotspotAuthenticationContext2 {
-    type Vtable = IHotspotAuthenticationContext2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHotspotAuthenticationContext2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe756c791_1004_4de5_83c7_de61d88831d0);
-}
+::windows_core::imp::com_interface!(IHotspotAuthenticationContext2, IHotspotAuthenticationContext2_Vtbl, 0xe756c791_1004_4de5_83c7_de61d88831d0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHotspotAuthenticationContext2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub IssueCredentialsAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, username: ::std::mem::MaybeUninit<::windows_core::HSTRING>, password: ::std::mem::MaybeUninit<::windows_core::HSTRING>, extraparameters: ::std::mem::MaybeUninit<::windows_core::HSTRING>, markasmanualconnectonfailure: bool, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHotspotAuthenticationContextStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHotspotAuthenticationContextStatics {
-    type Vtable = IHotspotAuthenticationContextStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHotspotAuthenticationContextStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe756c791_1002_4de5_83c7_de61d88831d0);
-}
+::windows_core::imp::com_interface!(IHotspotAuthenticationContextStatics, IHotspotAuthenticationContextStatics_Vtbl, 0xe756c791_1002_4de5_83c7_de61d88831d0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHotspotAuthenticationContextStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub TryGetAuthenticationContext: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, eventoken: ::std::mem::MaybeUninit<::windows_core::HSTRING>, context: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHotspotAuthenticationEventDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHotspotAuthenticationEventDetails {
-    type Vtable = IHotspotAuthenticationEventDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHotspotAuthenticationEventDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe756c791_1001_4de5_83c7_de61d88831d0);
-}
+::windows_core::imp::com_interface!(IHotspotAuthenticationEventDetails, IHotspotAuthenticationEventDetails_Vtbl, 0xe756c791_1001_4de5_83c7_de61d88831d0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHotspotAuthenticationEventDetails_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub EventToken: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHotspotCredentialsAuthenticationResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHotspotCredentialsAuthenticationResult {
-    type Vtable = IHotspotCredentialsAuthenticationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHotspotCredentialsAuthenticationResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe756c791_1005_4de5_83c7_de61d88831d0);
-}
+::windows_core::imp::com_interface!(IHotspotCredentialsAuthenticationResult, IHotspotCredentialsAuthenticationResult_Vtbl, 0xe756c791_1005_4de5_83c7_de61d88831d0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHotspotCredentialsAuthenticationResult_Vtbl {
@@ -457,16 +250,7 @@ pub struct IHotspotCredentialsAuthenticationResult_Vtbl {
     #[cfg(not(feature = "Data_Xml_Dom"))]
     AuthenticationReplyXml: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKnownCSimFilePathsStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKnownCSimFilePathsStatics {
-    type Vtable = IKnownCSimFilePathsStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKnownCSimFilePathsStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb458aeed_49f1_4c22_b073_96d511bf9c35);
-}
+::windows_core::imp::com_interface!(IKnownCSimFilePathsStatics, IKnownCSimFilePathsStatics_Vtbl, 0xb458aeed_49f1_4c22_b073_96d511bf9c35);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKnownCSimFilePathsStatics_Vtbl {
@@ -484,16 +268,7 @@ pub struct IKnownCSimFilePathsStatics_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Gid2: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKnownRuimFilePathsStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKnownRuimFilePathsStatics {
-    type Vtable = IKnownRuimFilePathsStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKnownRuimFilePathsStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3883c8b9_ff24_4571_a867_09f960426e14);
-}
+::windows_core::imp::com_interface!(IKnownRuimFilePathsStatics, IKnownRuimFilePathsStatics_Vtbl, 0x3883c8b9_ff24_4571_a867_09f960426e14);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKnownRuimFilePathsStatics_Vtbl {
@@ -511,16 +286,7 @@ pub struct IKnownRuimFilePathsStatics_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Gid2: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKnownSimFilePathsStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKnownSimFilePathsStatics {
-    type Vtable = IKnownSimFilePathsStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKnownSimFilePathsStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x80cd1a63_37a5_43d3_80a3_ccd23e8fecee);
-}
+::windows_core::imp::com_interface!(IKnownSimFilePathsStatics, IKnownSimFilePathsStatics_Vtbl, 0x80cd1a63_37a5_43d3_80a3_ccd23e8fecee);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKnownSimFilePathsStatics_Vtbl {
@@ -542,16 +308,7 @@ pub struct IKnownSimFilePathsStatics_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Gid2: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKnownUSimFilePathsStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKnownUSimFilePathsStatics {
-    type Vtable = IKnownUSimFilePathsStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKnownUSimFilePathsStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7c34e581_1f1b_43f4_9530_8b092d32d71f);
-}
+::windows_core::imp::com_interface!(IKnownUSimFilePathsStatics, IKnownUSimFilePathsStatics_Vtbl, 0x7c34e581_1f1b_43f4_9530_8b092d32d71f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKnownUSimFilePathsStatics_Vtbl {
@@ -577,16 +334,7 @@ pub struct IKnownUSimFilePathsStatics_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Gid2: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandAccount(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandAccount {
-    type Vtable = IMobileBroadbandAccount_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandAccount {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x36c24ccd_cee2_43e0_a603_ee86a36d6570);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandAccount, IMobileBroadbandAccount_Vtbl, 0x36c24ccd_cee2_43e0_a603_ee86a36d6570);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandAccount_Vtbl {
@@ -597,16 +345,7 @@ pub struct IMobileBroadbandAccount_Vtbl {
     pub CurrentNetwork: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CurrentDeviceInformation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandAccount2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandAccount2 {
-    type Vtable = IMobileBroadbandAccount2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandAccount2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x38f52f1c_1136_4257_959f_b658a352b6d4);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandAccount2, IMobileBroadbandAccount2_Vtbl, 0x38f52f1c_1136_4257_959f_b658a352b6d4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandAccount2_Vtbl {
@@ -616,48 +355,21 @@ pub struct IMobileBroadbandAccount2_Vtbl {
     #[cfg(not(all(feature = "Foundation_Collections", feature = "Networking_Connectivity")))]
     GetConnectionProfiles: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandAccount3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandAccount3 {
-    type Vtable = IMobileBroadbandAccount3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandAccount3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x092a1e21_9379_4b9b_ad31_d5fee2f748c6);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandAccount3, IMobileBroadbandAccount3_Vtbl, 0x092a1e21_9379_4b9b_ad31_d5fee2f748c6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandAccount3_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub AccountExperienceUrl: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandAccountEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandAccountEventArgs {
-    type Vtable = IMobileBroadbandAccountEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandAccountEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3853c880_77de_4c04_bead_a123b08c9f59);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandAccountEventArgs, IMobileBroadbandAccountEventArgs_Vtbl, 0x3853c880_77de_4c04_bead_a123b08c9f59);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandAccountEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub NetworkAccountId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandAccountStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandAccountStatics {
-    type Vtable = IMobileBroadbandAccountStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandAccountStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaa7f4d24_afc1_4fc8_ae9a_a9175310faad);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandAccountStatics, IMobileBroadbandAccountStatics_Vtbl, 0xaa7f4d24_afc1_4fc8_ae9a_a9175310faad);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandAccountStatics_Vtbl {
@@ -668,16 +380,7 @@ pub struct IMobileBroadbandAccountStatics_Vtbl {
     AvailableNetworkAccountIds: usize,
     pub CreateFromNetworkAccountId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, networkaccountid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandAccountUpdatedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandAccountUpdatedEventArgs {
-    type Vtable = IMobileBroadbandAccountUpdatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandAccountUpdatedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7bc31d88_a6bd_49e1_80ab_6b91354a57d4);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandAccountUpdatedEventArgs, IMobileBroadbandAccountUpdatedEventArgs_Vtbl, 0x7bc31d88_a6bd_49e1_80ab_6b91354a57d4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandAccountUpdatedEventArgs_Vtbl {
@@ -686,16 +389,7 @@ pub struct IMobileBroadbandAccountUpdatedEventArgs_Vtbl {
     pub HasDeviceInformationChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub HasNetworkChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandAccountWatcher(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandAccountWatcher {
-    type Vtable = IMobileBroadbandAccountWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandAccountWatcher {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6bf3335e_23b5_449f_928d_5e0d3e04471d);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandAccountWatcher, IMobileBroadbandAccountWatcher_Vtbl, 0x6bf3335e_23b5_449f_928d_5e0d3e04471d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandAccountWatcher_Vtbl {
@@ -714,16 +408,7 @@ pub struct IMobileBroadbandAccountWatcher_Vtbl {
     pub Start: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Stop: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandAntennaSar(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandAntennaSar {
-    type Vtable = IMobileBroadbandAntennaSar_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandAntennaSar {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb9af4b7e_cbf9_4109_90be_5c06bfd513b6);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandAntennaSar, IMobileBroadbandAntennaSar_Vtbl, 0xb9af4b7e_cbf9_4109_90be_5c06bfd513b6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandAntennaSar_Vtbl {
@@ -731,32 +416,14 @@ pub struct IMobileBroadbandAntennaSar_Vtbl {
     pub AntennaIndex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
     pub SarBackoffIndex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandAntennaSarFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandAntennaSarFactory {
-    type Vtable = IMobileBroadbandAntennaSarFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandAntennaSarFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa91e1716_c04d_4a21_8698_1459dc672c6e);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandAntennaSarFactory, IMobileBroadbandAntennaSarFactory_Vtbl, 0xa91e1716_c04d_4a21_8698_1459dc672c6e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandAntennaSarFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateWithIndex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, antennaindex: i32, sarbackoffindex: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandCellCdma(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandCellCdma {
-    type Vtable = IMobileBroadbandCellCdma_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandCellCdma {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0601b3b4_411a_4f2e_8287_76f5650c60cd);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandCellCdma, IMobileBroadbandCellCdma_Vtbl, 0x0601b3b4_411a_4f2e_8287_76f5650c60cd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandCellCdma_Vtbl {
@@ -770,16 +437,7 @@ pub struct IMobileBroadbandCellCdma_Vtbl {
     pub PilotSignalStrengthInDB: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SystemId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandCellGsm(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandCellGsm {
-    type Vtable = IMobileBroadbandCellGsm_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandCellGsm {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcc917f06_7ee0_47b8_9e1f_c3b48df9df5b);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandCellGsm, IMobileBroadbandCellGsm_Vtbl, 0xcc917f06_7ee0_47b8_9e1f_c3b48df9df5b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandCellGsm_Vtbl {
@@ -792,16 +450,7 @@ pub struct IMobileBroadbandCellGsm_Vtbl {
     pub ReceivedSignalStrengthInDBm: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TimingAdvanceInBitPeriods: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandCellLte(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandCellLte {
-    type Vtable = IMobileBroadbandCellLte_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandCellLte {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9197c87b_2b78_456d_8b53_aaa25d0af741);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandCellLte, IMobileBroadbandCellLte_Vtbl, 0x9197c87b_2b78_456d_8b53_aaa25d0af741);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandCellLte_Vtbl {
@@ -815,16 +464,7 @@ pub struct IMobileBroadbandCellLte_Vtbl {
     pub TimingAdvanceInBitPeriods: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TrackingAreaCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandCellNR(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandCellNR {
-    type Vtable = IMobileBroadbandCellNR_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandCellNR {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa13f0deb_66fc_4b4b_83a9_a487a3a5a0a6);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandCellNR, IMobileBroadbandCellNR_Vtbl, 0xa13f0deb_66fc_4b4b_83a9_a487a3a5a0a6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandCellNR_Vtbl {
@@ -839,16 +479,7 @@ pub struct IMobileBroadbandCellNR_Vtbl {
     pub TrackingAreaCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SignalToNoiseRatioInDB: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandCellTdscdma(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandCellTdscdma {
-    type Vtable = IMobileBroadbandCellTdscdma_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandCellTdscdma {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0eda1655_db0e_4182_8cda_cc419a7bde08);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandCellTdscdma, IMobileBroadbandCellTdscdma_Vtbl, 0x0eda1655_db0e_4182_8cda_cc419a7bde08);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandCellTdscdma_Vtbl {
@@ -862,16 +493,7 @@ pub struct IMobileBroadbandCellTdscdma_Vtbl {
     pub ReceivedSignalCodePowerInDBm: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TimingAdvanceInBitPeriods: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandCellUmts(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandCellUmts {
-    type Vtable = IMobileBroadbandCellUmts_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandCellUmts {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x77b4b5ae_49c8_4f15_b285_4c26a7f67215);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandCellUmts, IMobileBroadbandCellUmts_Vtbl, 0x77b4b5ae_49c8_4f15_b285_4c26a7f67215);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandCellUmts_Vtbl {
@@ -885,16 +507,7 @@ pub struct IMobileBroadbandCellUmts_Vtbl {
     pub ReceivedSignalCodePowerInDBm: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SignalToNoiseRatioInDB: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandCellsInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandCellsInfo {
-    type Vtable = IMobileBroadbandCellsInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandCellsInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x89a9562a_e472_4da5_929c_de61711dd261);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandCellsInfo, IMobileBroadbandCellsInfo_Vtbl, 0x89a9562a_e472_4da5_929c_de61711dd261);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandCellsInfo_Vtbl {
@@ -940,16 +553,7 @@ pub struct IMobileBroadbandCellsInfo_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     ServingCellsUmts: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandCellsInfo2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandCellsInfo2 {
-    type Vtable = IMobileBroadbandCellsInfo2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandCellsInfo2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x66205912_b89f_4e12_bbb6_d5cf09a820ca);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandCellsInfo2, IMobileBroadbandCellsInfo2_Vtbl, 0x66205912_b89f_4e12_bbb6_d5cf09a820ca);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandCellsInfo2_Vtbl {
@@ -963,32 +567,14 @@ pub struct IMobileBroadbandCellsInfo2_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     ServingCellsNR: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandCurrentSlotIndexChangedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandCurrentSlotIndexChangedEventArgs {
-    type Vtable = IMobileBroadbandCurrentSlotIndexChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandCurrentSlotIndexChangedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf718b184_c370_5fd4_a670_1846cb9bce47);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandCurrentSlotIndexChangedEventArgs, IMobileBroadbandCurrentSlotIndexChangedEventArgs_Vtbl, 0xf718b184_c370_5fd4_a670_1846cb9bce47);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandCurrentSlotIndexChangedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CurrentSlotIndex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandDeviceInformation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandDeviceInformation {
-    type Vtable = IMobileBroadbandDeviceInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandDeviceInformation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe6d08168_e381_4c6e_9be8_fe156969a446);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandDeviceInformation, IMobileBroadbandDeviceInformation_Vtbl, 0xe6d08168_e381_4c6e_9be8_fe156969a446);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandDeviceInformation_Vtbl {
@@ -1014,16 +600,7 @@ pub struct IMobileBroadbandDeviceInformation_Vtbl {
     pub DeviceId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub CurrentRadioState: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MobileBroadbandRadioState) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandDeviceInformation2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandDeviceInformation2 {
-    type Vtable = IMobileBroadbandDeviceInformation2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandDeviceInformation2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2e467af1_f932_4737_a722_03ba72370cb8);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandDeviceInformation2, IMobileBroadbandDeviceInformation2_Vtbl, 0x2e467af1_f932_4737_a722_03ba72370cb8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandDeviceInformation2_Vtbl {
@@ -1032,16 +609,7 @@ pub struct IMobileBroadbandDeviceInformation2_Vtbl {
     pub Revision: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SerialNumber: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandDeviceInformation3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandDeviceInformation3 {
-    type Vtable = IMobileBroadbandDeviceInformation3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandDeviceInformation3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe08bb4bd_5d30_4b5a_92cc_d54df881d49e);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandDeviceInformation3, IMobileBroadbandDeviceInformation3_Vtbl, 0xe08bb4bd_5d30_4b5a_92cc_d54df881d49e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandDeviceInformation3_Vtbl {
@@ -1050,32 +618,14 @@ pub struct IMobileBroadbandDeviceInformation3_Vtbl {
     pub SimPnn: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SimGid1: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandDeviceInformation4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandDeviceInformation4 {
-    type Vtable = IMobileBroadbandDeviceInformation4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandDeviceInformation4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x263f3152_7b9d_582c_b17c_f80a60b50031);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandDeviceInformation4, IMobileBroadbandDeviceInformation4_Vtbl, 0x263f3152_7b9d_582c_b17c_f80a60b50031);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandDeviceInformation4_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SlotManager: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandDeviceService(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandDeviceService {
-    type Vtable = IMobileBroadbandDeviceService_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandDeviceService {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x22be1a52_bd80_40ac_8e1f_2e07836a3dbd);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandDeviceService, IMobileBroadbandDeviceService_Vtbl, 0x22be1a52_bd80_40ac_8e1f_2e07836a3dbd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandDeviceService_Vtbl {
@@ -1088,16 +638,7 @@ pub struct IMobileBroadbandDeviceService_Vtbl {
     pub OpenDataSession: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub OpenCommandSession: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandDeviceServiceCommandResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandDeviceServiceCommandResult {
-    type Vtable = IMobileBroadbandDeviceServiceCommandResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandDeviceServiceCommandResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb0f46abb_94d6_44b9_a538_f0810b645389);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandDeviceServiceCommandResult, IMobileBroadbandDeviceServiceCommandResult_Vtbl, 0xb0f46abb_94d6_44b9_a538_f0810b645389);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandDeviceServiceCommandResult_Vtbl {
@@ -1108,16 +649,7 @@ pub struct IMobileBroadbandDeviceServiceCommandResult_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     ResponseData: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandDeviceServiceCommandSession(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandDeviceServiceCommandSession {
-    type Vtable = IMobileBroadbandDeviceServiceCommandSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandDeviceServiceCommandSession {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfc098a45_913b_4914_b6c3_ae6304593e75);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandDeviceServiceCommandSession, IMobileBroadbandDeviceServiceCommandSession_Vtbl, 0xfc098a45_913b_4914_b6c3_ae6304593e75);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandDeviceServiceCommandSession_Vtbl {
@@ -1132,16 +664,7 @@ pub struct IMobileBroadbandDeviceServiceCommandSession_Vtbl {
     SendSetCommandAsync: usize,
     pub CloseSession: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandDeviceServiceDataReceivedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandDeviceServiceDataReceivedEventArgs {
-    type Vtable = IMobileBroadbandDeviceServiceDataReceivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandDeviceServiceDataReceivedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb6aa13de_1380_40e3_8618_73cbca48138c);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandDeviceServiceDataReceivedEventArgs, IMobileBroadbandDeviceServiceDataReceivedEventArgs_Vtbl, 0xb6aa13de_1380_40e3_8618_73cbca48138c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandDeviceServiceDataReceivedEventArgs_Vtbl {
@@ -1151,16 +674,7 @@ pub struct IMobileBroadbandDeviceServiceDataReceivedEventArgs_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     ReceivedData: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandDeviceServiceDataSession(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandDeviceServiceDataSession {
-    type Vtable = IMobileBroadbandDeviceServiceDataSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandDeviceServiceDataSession {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdad62333_8bcf_4289_8a37_045c2169486a);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandDeviceServiceDataSession, IMobileBroadbandDeviceServiceDataSession_Vtbl, 0xdad62333_8bcf_4289_8a37_045c2169486a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandDeviceServiceDataSession_Vtbl {
@@ -1173,16 +687,7 @@ pub struct IMobileBroadbandDeviceServiceDataSession_Vtbl {
     pub DataReceived: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, eventhandler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveDataReceived: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, eventcookie: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandDeviceServiceInformation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandDeviceServiceInformation {
-    type Vtable = IMobileBroadbandDeviceServiceInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandDeviceServiceInformation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x53d69b5b_c4ed_45f0_803a_d9417a6d9846);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandDeviceServiceInformation, IMobileBroadbandDeviceServiceInformation_Vtbl, 0x53d69b5b_c4ed_45f0_803a_d9417a6d9846);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandDeviceServiceInformation_Vtbl {
@@ -1191,16 +696,7 @@ pub struct IMobileBroadbandDeviceServiceInformation_Vtbl {
     pub IsDataReadSupported: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub IsDataWriteSupported: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandDeviceServiceTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandDeviceServiceTriggerDetails {
-    type Vtable = IMobileBroadbandDeviceServiceTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandDeviceServiceTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4a055b70_b9ae_4458_9241_a6a5fbf18a0c);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandDeviceServiceTriggerDetails, IMobileBroadbandDeviceServiceTriggerDetails_Vtbl, 0x4a055b70_b9ae_4458_9241_a6a5fbf18a0c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandDeviceServiceTriggerDetails_Vtbl {
@@ -1212,32 +708,14 @@ pub struct IMobileBroadbandDeviceServiceTriggerDetails_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     ReceivedData: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandDeviceServiceTriggerDetails2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandDeviceServiceTriggerDetails2 {
-    type Vtable = IMobileBroadbandDeviceServiceTriggerDetails2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandDeviceServiceTriggerDetails2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd83d5f16_336a_553f_94bb_0cd1a2ff0c81);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandDeviceServiceTriggerDetails2, IMobileBroadbandDeviceServiceTriggerDetails2_Vtbl, 0xd83d5f16_336a_553f_94bb_0cd1a2ff0c81);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandDeviceServiceTriggerDetails2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub EventId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandModem(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandModem {
-    type Vtable = IMobileBroadbandModem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandModem {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd0356912_e9f9_4f67_a03d_43189a316bf1);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandModem, IMobileBroadbandModem_Vtbl, 0xd0356912_e9f9_4f67_a03d_43189a316bf1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandModem_Vtbl {
@@ -1256,16 +734,7 @@ pub struct IMobileBroadbandModem_Vtbl {
     pub GetCurrentConfigurationAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CurrentNetwork: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandModem2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandModem2 {
-    type Vtable = IMobileBroadbandModem2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandModem2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x12862b28_b9eb_4ee2_bbe3_711f53eea373);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandModem2, IMobileBroadbandModem2_Vtbl, 0x12862b28_b9eb_4ee2_bbe3_711f53eea373);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandModem2_Vtbl {
@@ -1273,16 +742,7 @@ pub struct IMobileBroadbandModem2_Vtbl {
     pub GetIsPassthroughEnabledAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetIsPassthroughEnabledAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandModem3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandModem3 {
-    type Vtable = IMobileBroadbandModem3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandModem3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe9fec6ea_2f34_4582_9102_c314d2a87eec);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandModem3, IMobileBroadbandModem3_Vtbl, 0xe9fec6ea_2f34_4582_9102_c314d2a87eec);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandModem3_Vtbl {
@@ -1292,16 +752,7 @@ pub struct IMobileBroadbandModem3_Vtbl {
     pub IsInEmergencyCallModeChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveIsInEmergencyCallModeChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandModem4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandModem4 {
-    type Vtable = IMobileBroadbandModem4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandModem4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4a0398c2_91be_412b_b569_586e9f0030d1);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandModem4, IMobileBroadbandModem4_Vtbl, 0x4a0398c2_91be_412b_b569_586e9f0030d1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandModem4_Vtbl {
@@ -1311,16 +762,7 @@ pub struct IMobileBroadbandModem4_Vtbl {
     pub SetIsPassthroughEnabledWithSlotIndex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool, slotindex: i32, result__: *mut MobileBroadbandModemStatus) -> ::windows_core::HRESULT,
     pub GetIsPassthroughEnabledWithSlotIndex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, slotindex: i32, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandModemConfiguration(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandModemConfiguration {
-    type Vtable = IMobileBroadbandModemConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandModemConfiguration {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfce035a3_d6cd_4320_b982_be9d3ec7890f);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandModemConfiguration, IMobileBroadbandModemConfiguration_Vtbl, 0xfce035a3_d6cd_4320_b982_be9d3ec7890f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandModemConfiguration_Vtbl {
@@ -1329,32 +771,14 @@ pub struct IMobileBroadbandModemConfiguration_Vtbl {
     pub HomeProviderId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub HomeProviderName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandModemConfiguration2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandModemConfiguration2 {
-    type Vtable = IMobileBroadbandModemConfiguration2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandModemConfiguration2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x320ff5c5_e460_42ae_aa51_69621e7a4477);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandModemConfiguration2, IMobileBroadbandModemConfiguration2_Vtbl, 0x320ff5c5_e460_42ae_aa51_69621e7a4477);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandModemConfiguration2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SarManager: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandModemIsolation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandModemIsolation {
-    type Vtable = IMobileBroadbandModemIsolation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandModemIsolation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb5618fec_e661_4330_9bb4_3480212ec354);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandModemIsolation, IMobileBroadbandModemIsolation_Vtbl, 0xb5618fec_e661_4330_9bb4_3480212ec354);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandModemIsolation_Vtbl {
@@ -1364,32 +788,14 @@ pub struct IMobileBroadbandModemIsolation_Vtbl {
     pub ApplyConfigurationAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ClearConfigurationAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandModemIsolationFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandModemIsolationFactory {
-    type Vtable = IMobileBroadbandModemIsolationFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandModemIsolationFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x21d7ec58_c2b1_4c2f_a030_72820a24ecd9);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandModemIsolationFactory, IMobileBroadbandModemIsolationFactory_Vtbl, 0x21d7ec58_c2b1_4c2f_a030_72820a24ecd9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandModemIsolationFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, modemdeviceid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, rulegroupid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandModemStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandModemStatics {
-    type Vtable = IMobileBroadbandModemStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandModemStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf99ed637_d6f1_4a78_8cbc_6421a65063c8);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandModemStatics, IMobileBroadbandModemStatics_Vtbl, 0xf99ed637_d6f1_4a78_8cbc_6421a65063c8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandModemStatics_Vtbl {
@@ -1398,16 +804,7 @@ pub struct IMobileBroadbandModemStatics_Vtbl {
     pub FromId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, deviceid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDefault: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandNetwork(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandNetwork {
-    type Vtable = IMobileBroadbandNetwork_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandNetwork {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcb63928c_0309_4cb6_a8c1_6a5a3c8e1ff6);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandNetwork, IMobileBroadbandNetwork_Vtbl, 0xcb63928c_0309_4cb6_a8c1_6a5a3c8e1ff6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandNetwork_Vtbl {
@@ -1426,16 +823,7 @@ pub struct IMobileBroadbandNetwork_Vtbl {
     pub RegisteredProviderName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub ShowConnectionUI: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandNetwork2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandNetwork2 {
-    type Vtable = IMobileBroadbandNetwork2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandNetwork2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5a55db22_62f7_4bdd_ba1d_477441960ba0);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandNetwork2, IMobileBroadbandNetwork2_Vtbl, 0x5a55db22_62f7_4bdd_ba1d_477441960ba0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandNetwork2_Vtbl {
@@ -1446,32 +834,14 @@ pub struct IMobileBroadbandNetwork2_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     RegistrationUiccApps: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandNetwork3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandNetwork3 {
-    type Vtable = IMobileBroadbandNetwork3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandNetwork3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x33670a8a_c7ef_444c_ab6c_df7ef7a390fe);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandNetwork3, IMobileBroadbandNetwork3_Vtbl, 0x33670a8a_c7ef_444c_ab6c_df7ef7a390fe);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandNetwork3_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetCellsInfoAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandNetworkRegistrationStateChange(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandNetworkRegistrationStateChange {
-    type Vtable = IMobileBroadbandNetworkRegistrationStateChange_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandNetworkRegistrationStateChange {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbeaf94e1_960f_49b4_a08d_7d85e968c7ec);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandNetworkRegistrationStateChange, IMobileBroadbandNetworkRegistrationStateChange_Vtbl, 0xbeaf94e1_960f_49b4_a08d_7d85e968c7ec);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandNetworkRegistrationStateChange_Vtbl {
@@ -1479,16 +849,7 @@ pub struct IMobileBroadbandNetworkRegistrationStateChange_Vtbl {
     pub DeviceId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Network: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
-    type Vtable = IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x89135cff_28b8_46aa_b137_1c4b0f21edfe);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails, IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails_Vtbl, 0x89135cff_28b8_46aa_b137_1c4b0f21edfe);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails_Vtbl {
@@ -1498,16 +859,7 @@ pub struct IMobileBroadbandNetworkRegistrationStateChangeTriggerDetails_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     NetworkRegistrationStateChanges: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandPco(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandPco {
-    type Vtable = IMobileBroadbandPco_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandPco {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd4e4fcbe_e3a3_43c5_a87b_6c86d229d7fa);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandPco, IMobileBroadbandPco_Vtbl, 0xd4e4fcbe_e3a3_43c5_a87b_6c86d229d7fa);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandPco_Vtbl {
@@ -1519,32 +871,14 @@ pub struct IMobileBroadbandPco_Vtbl {
     pub IsComplete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub DeviceId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandPcoDataChangeTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandPcoDataChangeTriggerDetails {
-    type Vtable = IMobileBroadbandPcoDataChangeTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandPcoDataChangeTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x263f5114_64e0_4493_909b_2d14a01962b1);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandPcoDataChangeTriggerDetails, IMobileBroadbandPcoDataChangeTriggerDetails_Vtbl, 0x263f5114_64e0_4493_909b_2d14a01962b1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandPcoDataChangeTriggerDetails_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub UpdatedData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandPin(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandPin {
-    type Vtable = IMobileBroadbandPin_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandPin {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe661d709_e779_45bf_8281_75323df9e321);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandPin, IMobileBroadbandPin_Vtbl, 0xe661d709_e779_45bf_8281_75323df9e321);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandPin_Vtbl {
@@ -1562,16 +896,7 @@ pub struct IMobileBroadbandPin_Vtbl {
     pub ChangeAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, currentpin: ::std::mem::MaybeUninit<::windows_core::HSTRING>, newpin: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub UnblockAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pinunblockkey: ::std::mem::MaybeUninit<::windows_core::HSTRING>, newpin: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandPinLockStateChange(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandPinLockStateChange {
-    type Vtable = IMobileBroadbandPinLockStateChange_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandPinLockStateChange {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbe16673e_1f04_4f95_8b90_e7f559dde7e5);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandPinLockStateChange, IMobileBroadbandPinLockStateChange_Vtbl, 0xbe16673e_1f04_4f95_8b90_e7f559dde7e5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandPinLockStateChange_Vtbl {
@@ -1580,16 +905,7 @@ pub struct IMobileBroadbandPinLockStateChange_Vtbl {
     pub PinType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MobileBroadbandPinType) -> ::windows_core::HRESULT,
     pub PinLockState: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MobileBroadbandPinLockState) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandPinLockStateChangeTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandPinLockStateChangeTriggerDetails {
-    type Vtable = IMobileBroadbandPinLockStateChangeTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandPinLockStateChangeTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd338c091_3e91_4d38_9036_aee83a6e79ad);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandPinLockStateChangeTriggerDetails, IMobileBroadbandPinLockStateChangeTriggerDetails_Vtbl, 0xd338c091_3e91_4d38_9036_aee83a6e79ad);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandPinLockStateChangeTriggerDetails_Vtbl {
@@ -1599,16 +915,7 @@ pub struct IMobileBroadbandPinLockStateChangeTriggerDetails_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     PinLockStateChanges: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandPinManager(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandPinManager {
-    type Vtable = IMobileBroadbandPinManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandPinManager {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x83567edd_6e1f_4b9b_a413_2b1f50cc36df);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandPinManager, IMobileBroadbandPinManager_Vtbl, 0x83567edd_6e1f_4b9b_a413_2b1f50cc36df);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandPinManager_Vtbl {
@@ -1619,16 +926,7 @@ pub struct IMobileBroadbandPinManager_Vtbl {
     SupportedPins: usize,
     pub GetPin: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pintype: MobileBroadbandPinType, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandPinOperationResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandPinOperationResult {
-    type Vtable = IMobileBroadbandPinOperationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandPinOperationResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x11dddc32_31e7_49f5_b663_123d3bef0362);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandPinOperationResult, IMobileBroadbandPinOperationResult_Vtbl, 0x11dddc32_31e7_49f5_b663_123d3bef0362);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandPinOperationResult_Vtbl {
@@ -1636,16 +934,7 @@ pub struct IMobileBroadbandPinOperationResult_Vtbl {
     pub IsSuccessful: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub AttemptsRemaining: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandRadioStateChange(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandRadioStateChange {
-    type Vtable = IMobileBroadbandRadioStateChange_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandRadioStateChange {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb054a561_9833_4aed_9717_4348b21a24b3);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandRadioStateChange, IMobileBroadbandRadioStateChange_Vtbl, 0xb054a561_9833_4aed_9717_4348b21a24b3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandRadioStateChange_Vtbl {
@@ -1653,16 +942,7 @@ pub struct IMobileBroadbandRadioStateChange_Vtbl {
     pub DeviceId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub RadioState: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MobileBroadbandRadioState) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandRadioStateChangeTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandRadioStateChangeTriggerDetails {
-    type Vtable = IMobileBroadbandRadioStateChangeTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandRadioStateChangeTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x71301ace_093c_42c6_b0db_ad1f75a65445);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandRadioStateChangeTriggerDetails, IMobileBroadbandRadioStateChangeTriggerDetails_Vtbl, 0x71301ace_093c_42c6_b0db_ad1f75a65445);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandRadioStateChangeTriggerDetails_Vtbl {
@@ -1672,16 +952,7 @@ pub struct IMobileBroadbandRadioStateChangeTriggerDetails_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     RadioStateChanges: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandSarManager(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandSarManager {
-    type Vtable = IMobileBroadbandSarManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandSarManager {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe5b26833_967e_40c9_a485_19c0dd209e22);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandSarManager, IMobileBroadbandSarManager_Vtbl, 0xe5b26833_967e_40c9_a485_19c0dd209e22);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandSarManager_Vtbl {
@@ -1708,16 +979,7 @@ pub struct IMobileBroadbandSarManager_Vtbl {
     pub StartTransmissionStateMonitoring: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub StopTransmissionStateMonitoring: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandSlotInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandSlotInfo {
-    type Vtable = IMobileBroadbandSlotInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandSlotInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbd350b32_882e_542a_b17d_0bb1b49bae9e);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandSlotInfo, IMobileBroadbandSlotInfo_Vtbl, 0xbd350b32_882e_542a_b17d_0bb1b49bae9e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandSlotInfo_Vtbl {
@@ -1725,48 +987,21 @@ pub struct IMobileBroadbandSlotInfo_Vtbl {
     pub Index: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
     pub State: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MobileBroadbandSlotState) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandSlotInfo2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandSlotInfo2 {
-    type Vtable = IMobileBroadbandSlotInfo2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandSlotInfo2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x393cb039_ca44_524c_822d_83a3620f0efc);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandSlotInfo2, IMobileBroadbandSlotInfo2_Vtbl, 0x393cb039_ca44_524c_822d_83a3620f0efc);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandSlotInfo2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub IccId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandSlotInfoChangedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandSlotInfoChangedEventArgs {
-    type Vtable = IMobileBroadbandSlotInfoChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandSlotInfoChangedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3158839f_950c_54ce_a48d_ba4529b48f0f);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandSlotInfoChangedEventArgs, IMobileBroadbandSlotInfoChangedEventArgs_Vtbl, 0x3158839f_950c_54ce_a48d_ba4529b48f0f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandSlotInfoChangedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SlotInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandSlotManager(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandSlotManager {
-    type Vtable = IMobileBroadbandSlotManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandSlotManager {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xeba07cd6_2019_5f81_a294_cc364a11d0b2);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandSlotManager, IMobileBroadbandSlotManager_Vtbl, 0xeba07cd6_2019_5f81_a294_cc364a11d0b2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandSlotManager_Vtbl {
@@ -1783,32 +1018,14 @@ pub struct IMobileBroadbandSlotManager_Vtbl {
     pub CurrentSlotIndexChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveCurrentSlotIndexChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandTransmissionStateChangedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandTransmissionStateChangedEventArgs {
-    type Vtable = IMobileBroadbandTransmissionStateChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandTransmissionStateChangedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x612e3875_040a_4f99_a4f9_61d7c32da129);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandTransmissionStateChangedEventArgs, IMobileBroadbandTransmissionStateChangedEventArgs_Vtbl, 0x612e3875_040a_4f99_a4f9_61d7c32da129);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandTransmissionStateChangedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub IsTransmitting: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandUicc(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandUicc {
-    type Vtable = IMobileBroadbandUicc_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandUicc {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe634f691_525a_4ce2_8fce_aa4162579154);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandUicc, IMobileBroadbandUicc_Vtbl, 0xe634f691_525a_4ce2_8fce_aa4162579154);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandUicc_Vtbl {
@@ -1816,16 +1033,7 @@ pub struct IMobileBroadbandUicc_Vtbl {
     pub SimIccId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub GetUiccAppsAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandUiccApp(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandUiccApp {
-    type Vtable = IMobileBroadbandUiccApp_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandUiccApp {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4d170556_98a1_43dd_b2ec_50c90cf248df);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandUiccApp, IMobileBroadbandUiccApp_Vtbl, 0x4d170556_98a1_43dd_b2ec_50c90cf248df);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandUiccApp_Vtbl {
@@ -1844,16 +1052,7 @@ pub struct IMobileBroadbandUiccApp_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     ReadRecordAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandUiccAppReadRecordResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandUiccAppReadRecordResult {
-    type Vtable = IMobileBroadbandUiccAppReadRecordResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandUiccAppReadRecordResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x64c95285_358e_47c5_8249_695f383b2bdb);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandUiccAppReadRecordResult, IMobileBroadbandUiccAppReadRecordResult_Vtbl, 0x64c95285_358e_47c5_8249_695f383b2bdb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandUiccAppReadRecordResult_Vtbl {
@@ -1864,16 +1063,7 @@ pub struct IMobileBroadbandUiccAppReadRecordResult_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     Data: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandUiccAppRecordDetailsResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandUiccAppRecordDetailsResult {
-    type Vtable = IMobileBroadbandUiccAppRecordDetailsResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandUiccAppRecordDetailsResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd919682f_be14_4934_981d_2f57b9ed83e6);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandUiccAppRecordDetailsResult, IMobileBroadbandUiccAppRecordDetailsResult_Vtbl, 0xd919682f_be14_4934_981d_2f57b9ed83e6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandUiccAppRecordDetailsResult_Vtbl {
@@ -1885,16 +1075,7 @@ pub struct IMobileBroadbandUiccAppRecordDetailsResult_Vtbl {
     pub ReadAccessCondition: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut UiccAccessCondition) -> ::windows_core::HRESULT,
     pub WriteAccessCondition: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut UiccAccessCondition) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMobileBroadbandUiccAppsResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMobileBroadbandUiccAppsResult {
-    type Vtable = IMobileBroadbandUiccAppsResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMobileBroadbandUiccAppsResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x744930eb_8157_4a41_8494_6bf54c9b1d2b);
-}
+::windows_core::imp::com_interface!(IMobileBroadbandUiccAppsResult, IMobileBroadbandUiccAppsResult_Vtbl, 0x744930eb_8157_4a41_8494_6bf54c9b1d2b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMobileBroadbandUiccAppsResult_Vtbl {
@@ -1905,32 +1086,14 @@ pub struct IMobileBroadbandUiccAppsResult_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     UiccApps: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorDataUsageTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorDataUsageTriggerDetails {
-    type Vtable = INetworkOperatorDataUsageTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorDataUsageTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x50e3126d_a465_4eeb_9317_28a167630cea);
-}
+::windows_core::imp::com_interface!(INetworkOperatorDataUsageTriggerDetails, INetworkOperatorDataUsageTriggerDetails_Vtbl, 0x50e3126d_a465_4eeb_9317_28a167630cea);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorDataUsageTriggerDetails_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub NotificationKind: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut NetworkOperatorDataUsageNotificationKind) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorNotificationEventDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorNotificationEventDetails {
-    type Vtable = INetworkOperatorNotificationEventDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorNotificationEventDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbc68a9d1_82e1_4488_9f2c_1276c2468fac);
-}
+::windows_core::imp::com_interface!(INetworkOperatorNotificationEventDetails, INetworkOperatorNotificationEventDetails_Vtbl, 0xbc68a9d1_82e1_4488_9f2c_1276c2468fac);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorNotificationEventDetails_Vtbl {
@@ -1945,16 +1108,7 @@ pub struct INetworkOperatorNotificationEventDetails_Vtbl {
     #[cfg(not(feature = "Devices_Sms"))]
     SmsMessage: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorTetheringAccessPointConfiguration(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorTetheringAccessPointConfiguration {
-    type Vtable = INetworkOperatorTetheringAccessPointConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorTetheringAccessPointConfiguration {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0bcc0284_412e_403d_acc6_b757e34774a4);
-}
+::windows_core::imp::com_interface!(INetworkOperatorTetheringAccessPointConfiguration, INetworkOperatorTetheringAccessPointConfiguration_Vtbl, 0x0bcc0284_412e_403d_acc6_b757e34774a4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorTetheringAccessPointConfiguration_Vtbl {
@@ -1964,16 +1118,7 @@ pub struct INetworkOperatorTetheringAccessPointConfiguration_Vtbl {
     pub Passphrase: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetPassphrase: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorTetheringAccessPointConfiguration2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorTetheringAccessPointConfiguration2 {
-    type Vtable = INetworkOperatorTetheringAccessPointConfiguration2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorTetheringAccessPointConfiguration2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb1809142_7238_59a0_928b_74ab46fd64b6);
-}
+::windows_core::imp::com_interface!(INetworkOperatorTetheringAccessPointConfiguration2, INetworkOperatorTetheringAccessPointConfiguration2_Vtbl, 0xb1809142_7238_59a0_928b_74ab46fd64b6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorTetheringAccessPointConfiguration2_Vtbl {
@@ -1983,16 +1128,7 @@ pub struct INetworkOperatorTetheringAccessPointConfiguration2_Vtbl {
     pub Band: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut TetheringWiFiBand) -> ::windows_core::HRESULT,
     pub SetBand: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: TetheringWiFiBand) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorTetheringClient(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorTetheringClient {
-    type Vtable = INetworkOperatorTetheringClient_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorTetheringClient {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x709d254c_595f_4847_bb30_646935542918);
-}
+::windows_core::imp::com_interface!(INetworkOperatorTetheringClient, INetworkOperatorTetheringClient_Vtbl, 0x709d254c_595f_4847_bb30_646935542918);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorTetheringClient_Vtbl {
@@ -2003,16 +1139,7 @@ pub struct INetworkOperatorTetheringClient_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     HostNames: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorTetheringClientManager(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorTetheringClientManager {
-    type Vtable = INetworkOperatorTetheringClientManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorTetheringClientManager {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x91b14016_8dca_4225_bbed_eef8b8d718d7);
-}
+::windows_core::imp::com_interface!(INetworkOperatorTetheringClientManager, INetworkOperatorTetheringClientManager_Vtbl, 0x91b14016_8dca_4225_bbed_eef8b8d718d7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorTetheringClientManager_Vtbl {
@@ -2022,32 +1149,14 @@ pub struct INetworkOperatorTetheringClientManager_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     GetTetheringClients: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorTetheringEntitlementCheck(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorTetheringEntitlementCheck {
-    type Vtable = INetworkOperatorTetheringEntitlementCheck_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorTetheringEntitlementCheck {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0108916d_9e9a_4af6_8da3_60493b19c204);
-}
+::windows_core::imp::com_interface!(INetworkOperatorTetheringEntitlementCheck, INetworkOperatorTetheringEntitlementCheck_Vtbl, 0x0108916d_9e9a_4af6_8da3_60493b19c204);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorTetheringEntitlementCheck_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub AuthorizeTethering: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, allow: bool, entitlementfailurereason: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorTetheringManager(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorTetheringManager {
-    type Vtable = INetworkOperatorTetheringManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorTetheringManager {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd45a8da0_0e86_4d98_8ba4_dd70d4b764d3);
-}
+::windows_core::imp::com_interface!(INetworkOperatorTetheringManager, INetworkOperatorTetheringManager_Vtbl, 0xd45a8da0_0e86_4d98_8ba4_dd70d4b764d3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorTetheringManager_Vtbl {
@@ -2060,16 +1169,7 @@ pub struct INetworkOperatorTetheringManager_Vtbl {
     pub StartTetheringAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub StopTetheringAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorTetheringManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorTetheringManagerStatics {
-    type Vtable = INetworkOperatorTetheringManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorTetheringManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3ebcbacc_f8c3_405c_9964_70a1eeabe194);
-}
+::windows_core::imp::com_interface!(INetworkOperatorTetheringManagerStatics, INetworkOperatorTetheringManagerStatics_Vtbl, 0x3ebcbacc_f8c3_405c_9964_70a1eeabe194);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorTetheringManagerStatics_Vtbl {
@@ -2077,16 +1177,7 @@ pub struct INetworkOperatorTetheringManagerStatics_Vtbl {
     pub GetTetheringCapability: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, networkaccountid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut TetheringCapability) -> ::windows_core::HRESULT,
     pub CreateFromNetworkAccountId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, networkaccountid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorTetheringManagerStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorTetheringManagerStatics2 {
-    type Vtable = INetworkOperatorTetheringManagerStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorTetheringManagerStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5b235412_35f0_49e7_9b08_16d278fbaa42);
-}
+::windows_core::imp::com_interface!(INetworkOperatorTetheringManagerStatics2, INetworkOperatorTetheringManagerStatics2_Vtbl, 0x5b235412_35f0_49e7_9b08_16d278fbaa42);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorTetheringManagerStatics2_Vtbl {
@@ -2100,16 +1191,7 @@ pub struct INetworkOperatorTetheringManagerStatics2_Vtbl {
     #[cfg(not(feature = "Networking_Connectivity"))]
     CreateFromConnectionProfile: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorTetheringManagerStatics3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorTetheringManagerStatics3 {
-    type Vtable = INetworkOperatorTetheringManagerStatics3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorTetheringManagerStatics3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8fdaadb6_4af9_4f21_9b58_d53e9f24231e);
-}
+::windows_core::imp::com_interface!(INetworkOperatorTetheringManagerStatics3, INetworkOperatorTetheringManagerStatics3_Vtbl, 0x8fdaadb6_4af9_4f21_9b58_d53e9f24231e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorTetheringManagerStatics3_Vtbl {
@@ -2119,16 +1201,7 @@ pub struct INetworkOperatorTetheringManagerStatics3_Vtbl {
     #[cfg(not(feature = "Networking_Connectivity"))]
     CreateFromConnectionProfileWithTargetAdapter: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorTetheringManagerStatics4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorTetheringManagerStatics4 {
-    type Vtable = INetworkOperatorTetheringManagerStatics4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorTetheringManagerStatics4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb3b9f9d0_ebff_46a4_a847_d663d8b0977e);
-}
+::windows_core::imp::com_interface!(INetworkOperatorTetheringManagerStatics4, INetworkOperatorTetheringManagerStatics4_Vtbl, 0xb3b9f9d0_ebff_46a4_a847_d663d8b0977e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorTetheringManagerStatics4_Vtbl {
@@ -2139,16 +1212,7 @@ pub struct INetworkOperatorTetheringManagerStatics4_Vtbl {
     pub DisableNoConnectionsTimeout: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub DisableNoConnectionsTimeoutAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INetworkOperatorTetheringOperationResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INetworkOperatorTetheringOperationResult {
-    type Vtable = INetworkOperatorTetheringOperationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INetworkOperatorTetheringOperationResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xebd203a1_01ba_476d_b4b3_bf3d12c8f80c);
-}
+::windows_core::imp::com_interface!(INetworkOperatorTetheringOperationResult, INetworkOperatorTetheringOperationResult_Vtbl, 0xebd203a1_01ba_476d_b4b3_bf3d12c8f80c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INetworkOperatorTetheringOperationResult_Vtbl {
@@ -2156,16 +1220,7 @@ pub struct INetworkOperatorTetheringOperationResult_Vtbl {
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut TetheringOperationStatus) -> ::windows_core::HRESULT,
     pub AdditionalErrorMessage: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IProvisionFromXmlDocumentResults(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IProvisionFromXmlDocumentResults {
-    type Vtable = IProvisionFromXmlDocumentResults_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IProvisionFromXmlDocumentResults {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x217700e0_8203_11df_adb9_f4ce462d9137);
-}
+::windows_core::imp::com_interface!(IProvisionFromXmlDocumentResults, IProvisionFromXmlDocumentResults_Vtbl, 0x217700e0_8203_11df_adb9_f4ce462d9137);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IProvisionFromXmlDocumentResults_Vtbl {
@@ -2173,16 +1228,7 @@ pub struct IProvisionFromXmlDocumentResults_Vtbl {
     pub AllElementsProvisioned: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub ProvisionResultsXml: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IProvisionedProfile(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IProvisionedProfile {
-    type Vtable = IProvisionedProfile_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IProvisionedProfile {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x217700e0_8202_11df_adb9_f4ce462d9137);
-}
+::windows_core::imp::com_interface!(IProvisionedProfile, IProvisionedProfile_Vtbl, 0x217700e0_8202_11df_adb9_f4ce462d9137);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IProvisionedProfile_Vtbl {
@@ -2193,16 +1239,7 @@ pub struct IProvisionedProfile_Vtbl {
     UpdateCost: usize,
     pub UpdateUsage: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ProfileUsage) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IProvisioningAgent(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IProvisioningAgent {
-    type Vtable = IProvisioningAgent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IProvisioningAgent {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x217700e0_8201_11df_adb9_f4ce462d9137);
-}
+::windows_core::imp::com_interface!(IProvisioningAgent, IProvisioningAgent_Vtbl, 0x217700e0_8201_11df_adb9_f4ce462d9137);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IProvisioningAgent_Vtbl {
@@ -2210,32 +1247,14 @@ pub struct IProvisioningAgent_Vtbl {
     pub ProvisionFromXmlDocumentAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, provisioningxmldocument: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetProvisionedProfile: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, mediatype: ProfileMediaType, profilename: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IProvisioningAgentStaticMethods(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IProvisioningAgentStaticMethods {
-    type Vtable = IProvisioningAgentStaticMethods_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IProvisioningAgentStaticMethods {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x217700e0_8101_11df_adb9_f4ce462d9137);
-}
+::windows_core::imp::com_interface!(IProvisioningAgentStaticMethods, IProvisioningAgentStaticMethods_Vtbl, 0x217700e0_8101_11df_adb9_f4ce462d9137);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IProvisioningAgentStaticMethods_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateFromNetworkAccountId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, networkaccountid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ITetheringEntitlementCheckTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ITetheringEntitlementCheckTriggerDetails {
-    type Vtable = ITetheringEntitlementCheckTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ITetheringEntitlementCheckTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x03c65e9d_5926_41f3_a94e_b50926fc421b);
-}
+::windows_core::imp::com_interface!(ITetheringEntitlementCheckTriggerDetails, ITetheringEntitlementCheckTriggerDetails_Vtbl, 0x03c65e9d_5926_41f3_a94e_b50926fc421b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ITetheringEntitlementCheckTriggerDetails_Vtbl {
@@ -2244,16 +1263,7 @@ pub struct ITetheringEntitlementCheckTriggerDetails_Vtbl {
     pub AllowTethering: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub DenyTethering: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, entitlementfailurereason: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUssdMessage(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUssdMessage {
-    type Vtable = IUssdMessage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUssdMessage {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2f9acf82_2004_4d5d_bf81_2aba1b4be4a8);
-}
+::windows_core::imp::com_interface!(IUssdMessage, IUssdMessage_Vtbl, 0x2f9acf82_2004_4d5d_bf81_2aba1b4be4a8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUssdMessage_Vtbl {
@@ -2265,32 +1275,14 @@ pub struct IUssdMessage_Vtbl {
     pub PayloadAsText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetPayloadAsText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUssdMessageFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUssdMessageFactory {
-    type Vtable = IUssdMessageFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUssdMessageFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2f9acf82_1003_4d5d_bf81_2aba1b4be4a8);
-}
+::windows_core::imp::com_interface!(IUssdMessageFactory, IUssdMessageFactory_Vtbl, 0x2f9acf82_1003_4d5d_bf81_2aba1b4be4a8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUssdMessageFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateMessage: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, messagetext: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUssdReply(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUssdReply {
-    type Vtable = IUssdReply_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUssdReply {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2f9acf82_2005_4d5d_bf81_2aba1b4be4a8);
-}
+::windows_core::imp::com_interface!(IUssdReply, IUssdReply_Vtbl, 0x2f9acf82_2005_4d5d_bf81_2aba1b4be4a8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUssdReply_Vtbl {
@@ -2298,16 +1290,7 @@ pub struct IUssdReply_Vtbl {
     pub ResultCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut UssdResultCode) -> ::windows_core::HRESULT,
     pub Message: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUssdSession(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUssdSession {
-    type Vtable = IUssdSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUssdSession {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2f9acf82_2002_4d5d_bf81_2aba1b4be4a8);
-}
+::windows_core::imp::com_interface!(IUssdSession, IUssdSession_Vtbl, 0x2f9acf82_2002_4d5d_bf81_2aba1b4be4a8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUssdSession_Vtbl {
@@ -2315,16 +1298,7 @@ pub struct IUssdSession_Vtbl {
     pub SendMessageAndGetReplyAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, message: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Close: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUssdSessionStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUssdSessionStatics {
-    type Vtable = IUssdSessionStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUssdSessionStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2f9acf82_1001_4d5d_bf81_2aba1b4be4a8);
-}
+::windows_core::imp::com_interface!(IUssdSessionStatics, IUssdSessionStatics_Vtbl, 0x2f9acf82_1001_4d5d_bf81_2aba1b4be4a8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUssdSessionStatics_Vtbl {
@@ -4679,24 +3653,24 @@ impl MobileBroadbandDeviceServiceCommandSession {
     #[cfg(feature = "Storage_Streams")]
     pub fn SendQueryCommandAsync<P0>(&self, commandid: u32, data: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MobileBroadbandDeviceServiceCommandResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).SendQueryCommandAsync)(::windows_core::Interface::as_raw(this), commandid, data.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).SendQueryCommandAsync)(::windows_core::Interface::as_raw(this), commandid, data.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn SendSetCommandAsync<P0>(&self, commandid: u32, data: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MobileBroadbandDeviceServiceCommandResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).SendSetCommandAsync)(::windows_core::Interface::as_raw(this), commandid, data.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).SendSetCommandAsync)(::windows_core::Interface::as_raw(this), commandid, data.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CloseSession(&self) -> ::windows_core::Result<()> {
@@ -4756,12 +3730,12 @@ impl MobileBroadbandDeviceServiceDataSession {
     #[cfg(feature = "Storage_Streams")]
     pub fn WriteDataAsync<P0>(&self, value: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IBuffer>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteDataAsync)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteDataAsync)(::windows_core::Interface::as_raw(this), value.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CloseSession(&self) -> ::windows_core::Result<()> {
@@ -5803,12 +4777,12 @@ impl MobileBroadbandSarManager {
     #[cfg(feature = "Foundation_Collections")]
     pub fn SetConfigurationAsync<P0>(&self, antennas: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<MobileBroadbandAntennaSar>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<MobileBroadbandAntennaSar>>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).SetConfigurationAsync)(::windows_core::Interface::as_raw(this), antennas.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).SetConfigurationAsync)(::windows_core::Interface::as_raw(this), antennas.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RevertSarToHardwareControlAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncAction> {
@@ -6087,24 +5061,24 @@ impl MobileBroadbandUiccApp {
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetRecordDetailsAsync<P0>(&self, uiccfilepath: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MobileBroadbandUiccAppRecordDetailsResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<u32>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<u32>>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetRecordDetailsAsync)(::windows_core::Interface::as_raw(this), uiccfilepath.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetRecordDetailsAsync)(::windows_core::Interface::as_raw(this), uiccfilepath.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn ReadRecordAsync<P0>(&self, uiccfilepath: P0, recordindex: i32) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MobileBroadbandUiccAppReadRecordResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<u32>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<u32>>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).ReadRecordAsync)(::windows_core::Interface::as_raw(this), uiccfilepath.try_into_param()?.abi(), recordindex, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).ReadRecordAsync)(::windows_core::Interface::as_raw(this), uiccfilepath.into_param().abi(), recordindex, &mut result__).from_abi(result__)
         }
     }
 }

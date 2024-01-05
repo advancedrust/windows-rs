@@ -19,11 +19,8 @@ pub unsafe fn IsNetworkAlive(lpdwflags: *mut u32) -> ::windows_core::Result<()> 
     ::windows_targets::link!("sensapi.dll" "system" fn IsNetworkAlive(lpdwflags : *mut u32) -> super::super::Foundation:: BOOL);
     IsNetworkAlive(lpdwflags).ok()
 }
-#[doc = "Required features: `\"Win32_System_Com\"`"]
 #[cfg(feature = "Win32_System_Com")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISensLogon(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISensLogon, ISensLogon_Vtbl, 0xd597bab3_5b9f_11d1_8dd2_00aa004abd5e);
 #[cfg(feature = "Win32_System_Com")]
 impl ISensLogon {
     pub unsafe fn Logon<P0>(&self, bstrusername: P0) -> ::windows_core::Result<()>
@@ -72,14 +69,6 @@ impl ISensLogon {
 #[cfg(feature = "Win32_System_Com")]
 ::windows_core::imp::interface_hierarchy!(ISensLogon, ::windows_core::IUnknown, super::Com::IDispatch);
 #[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::Interface for ISensLogon {
-    type Vtable = ISensLogon_Vtbl;
-}
-#[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::ComInterface for ISensLogon {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd597bab3_5b9f_11d1_8dd2_00aa004abd5e);
-}
-#[cfg(feature = "Win32_System_Com")]
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISensLogon_Vtbl {
@@ -92,11 +81,8 @@ pub struct ISensLogon_Vtbl {
     pub StartScreenSaver: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrusername: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
     pub StopScreenSaver: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrusername: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
 }
-#[doc = "Required features: `\"Win32_System_Com\"`"]
 #[cfg(feature = "Win32_System_Com")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISensLogon2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISensLogon2, ISensLogon2_Vtbl, 0xd597bab4_5b9f_11d1_8dd2_00aa004abd5e);
 #[cfg(feature = "Win32_System_Com")]
 impl ISensLogon2 {
     pub unsafe fn Logon<P0>(&self, bstrusername: P0, dwsessionid: u32) -> ::windows_core::Result<()>
@@ -133,14 +119,6 @@ impl ISensLogon2 {
 #[cfg(feature = "Win32_System_Com")]
 ::windows_core::imp::interface_hierarchy!(ISensLogon2, ::windows_core::IUnknown, super::Com::IDispatch);
 #[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::Interface for ISensLogon2 {
-    type Vtable = ISensLogon2_Vtbl;
-}
-#[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::ComInterface for ISensLogon2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd597bab4_5b9f_11d1_8dd2_00aa004abd5e);
-}
-#[cfg(feature = "Win32_System_Com")]
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISensLogon2_Vtbl {
@@ -151,11 +129,8 @@ pub struct ISensLogon2_Vtbl {
     pub SessionReconnect: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrusername: ::std::mem::MaybeUninit<::windows_core::BSTR>, dwsessionid: u32) -> ::windows_core::HRESULT,
     pub PostShell: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrusername: ::std::mem::MaybeUninit<::windows_core::BSTR>, dwsessionid: u32) -> ::windows_core::HRESULT,
 }
-#[doc = "Required features: `\"Win32_System_Com\"`"]
 #[cfg(feature = "Win32_System_Com")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISensNetwork(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISensNetwork, ISensNetwork_Vtbl, 0xd597bab1_5b9f_11d1_8dd2_00aa004abd5e);
 #[cfg(feature = "Win32_System_Com")]
 impl ISensNetwork {
     pub unsafe fn ConnectionMade<P0>(&self, bstrconnection: P0, ultype: u32, lpqocinfo: *const SENS_QOCINFO) -> ::windows_core::Result<()>
@@ -194,14 +169,6 @@ impl ISensNetwork {
 #[cfg(feature = "Win32_System_Com")]
 ::windows_core::imp::interface_hierarchy!(ISensNetwork, ::windows_core::IUnknown, super::Com::IDispatch);
 #[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::Interface for ISensNetwork {
-    type Vtable = ISensNetwork_Vtbl;
-}
-#[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::ComInterface for ISensNetwork {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd597bab1_5b9f_11d1_8dd2_00aa004abd5e);
-}
-#[cfg(feature = "Win32_System_Com")]
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISensNetwork_Vtbl {
@@ -212,11 +179,8 @@ pub struct ISensNetwork_Vtbl {
     pub DestinationReachable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrdestination: ::std::mem::MaybeUninit<::windows_core::BSTR>, bstrconnection: ::std::mem::MaybeUninit<::windows_core::BSTR>, ultype: u32, lpqocinfo: *const SENS_QOCINFO) -> ::windows_core::HRESULT,
     pub DestinationReachableNoQOCInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bstrdestination: ::std::mem::MaybeUninit<::windows_core::BSTR>, bstrconnection: ::std::mem::MaybeUninit<::windows_core::BSTR>, ultype: u32) -> ::windows_core::HRESULT,
 }
-#[doc = "Required features: `\"Win32_System_Com\"`"]
 #[cfg(feature = "Win32_System_Com")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISensOnNow(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISensOnNow, ISensOnNow_Vtbl, 0xd597bab2_5b9f_11d1_8dd2_00aa004abd5e);
 #[cfg(feature = "Win32_System_Com")]
 impl ISensOnNow {
     pub unsafe fn OnACPower(&self) -> ::windows_core::Result<()> {
@@ -231,14 +195,6 @@ impl ISensOnNow {
 }
 #[cfg(feature = "Win32_System_Com")]
 ::windows_core::imp::interface_hierarchy!(ISensOnNow, ::windows_core::IUnknown, super::Com::IDispatch);
-#[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::Interface for ISensOnNow {
-    type Vtable = ISensOnNow_Vtbl;
-}
-#[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::ComInterface for ISensOnNow {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd597bab2_5b9f_11d1_8dd2_00aa004abd5e);
-}
 #[cfg(feature = "Win32_System_Com")]
 #[repr(C)]
 #[doc(hidden)]

@@ -1087,9 +1087,7 @@ pub unsafe fn WsXmlStringEquals(string1: *const WS_XML_STRING, string2: *const W
     ::windows_targets::link!("webservices.dll" "system" fn WsXmlStringEquals(string1 : *const WS_XML_STRING, string2 : *const WS_XML_STRING, error : *const WS_ERROR) -> ::windows_core::HRESULT);
     WsXmlStringEquals(string1, string2, ::core::mem::transmute(error.unwrap_or(::std::ptr::null()))).ok()
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContentPrefetcherTaskTrigger(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IContentPrefetcherTaskTrigger, IContentPrefetcherTaskTrigger_Vtbl, 0x1b35a14a_6094_4799_a60e_e474e15d4dc9);
 impl IContentPrefetcherTaskTrigger {
     pub unsafe fn TriggerContentPrefetcherTask<P0>(&self, packagefullname: P0) -> ::windows_core::Result<()>
     where
@@ -1106,12 +1104,6 @@ impl IContentPrefetcherTaskTrigger {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IContentPrefetcherTaskTrigger, ::windows_core::IUnknown, ::windows_core::IInspectable);
-unsafe impl ::windows_core::Interface for IContentPrefetcherTaskTrigger {
-    type Vtable = IContentPrefetcherTaskTrigger_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContentPrefetcherTaskTrigger {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1b35a14a_6094_4799_a60e_e474e15d4dc9);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContentPrefetcherTaskTrigger_Vtbl {

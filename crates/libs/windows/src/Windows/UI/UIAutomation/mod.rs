@@ -1,16 +1,7 @@
 #[cfg(feature = "UI_UIAutomation_Core")]
 #[doc = "Required features: `\"UI_UIAutomation_Core\"`"]
 pub mod Core;
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAutomationConnection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAutomationConnection {
-    type Vtable = IAutomationConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAutomationConnection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaad262ed_0ef4_5d43_97be_a834e27b65b9);
-}
+::windows_core::imp::com_interface!(IAutomationConnection, IAutomationConnection_Vtbl, 0xaad262ed_0ef4_5d43_97be_a834e27b65b9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAutomationConnection_Vtbl {
@@ -19,32 +10,14 @@ pub struct IAutomationConnection_Vtbl {
     pub AppUserModelId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub ExecutableFileName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAutomationConnectionBoundObject(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAutomationConnectionBoundObject {
-    type Vtable = IAutomationConnectionBoundObject_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAutomationConnectionBoundObject {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5e8558fb_ca52_5b65_9830_dd2905816093);
-}
+::windows_core::imp::com_interface!(IAutomationConnectionBoundObject, IAutomationConnectionBoundObject_Vtbl, 0x5e8558fb_ca52_5b65_9830_dd2905816093);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAutomationConnectionBoundObject_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Connection: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAutomationElement(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAutomationElement {
-    type Vtable = IAutomationElement_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAutomationElement {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa1898370_2c07_56fd_993f_61a72a08058c);
-}
+::windows_core::imp::com_interface!(IAutomationElement, IAutomationElement_Vtbl, 0xa1898370_2c07_56fd_993f_61a72a08058c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAutomationElement_Vtbl {
@@ -53,16 +26,7 @@ pub struct IAutomationElement_Vtbl {
     pub AppUserModelId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub ExecutableFileName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAutomationTextRange(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAutomationTextRange {
-    type Vtable = IAutomationTextRange_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAutomationTextRange {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7e101b65_40d3_5994_85a9_0a0cb9a4ec98);
-}
+::windows_core::imp::com_interface!(IAutomationTextRange, IAutomationTextRange_Vtbl, 0x7e101b65_40d3_5994_85a9_0a0cb9a4ec98);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAutomationTextRange_Vtbl {

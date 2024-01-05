@@ -1,29 +1,11 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkAnalysisInkBullet(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkAnalysisInkBullet {
-    type Vtable = IInkAnalysisInkBullet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkAnalysisInkBullet {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xee049368_6110_4136_95f9_ee809fc20030);
-}
+::windows_core::imp::com_interface!(IInkAnalysisInkBullet, IInkAnalysisInkBullet_Vtbl, 0xee049368_6110_4136_95f9_ee809fc20030);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkAnalysisInkBullet_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub RecognizedText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkAnalysisInkDrawing(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkAnalysisInkDrawing {
-    type Vtable = IInkAnalysisInkDrawing_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkAnalysisInkDrawing {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6a85ed1f_1fe4_4e15_898c_8e112377e021);
-}
+::windows_core::imp::com_interface!(IInkAnalysisInkDrawing, IInkAnalysisInkDrawing_Vtbl, 0x6a85ed1f_1fe4_4e15_898c_8e112377e021);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkAnalysisInkDrawing_Vtbl {
@@ -35,16 +17,7 @@ pub struct IInkAnalysisInkDrawing_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Points: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkAnalysisInkWord(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkAnalysisInkWord {
-    type Vtable = IInkAnalysisInkWord_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkAnalysisInkWord {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4bd228ad_83af_4034_8f3b_f8687dfff436);
-}
+::windows_core::imp::com_interface!(IInkAnalysisInkWord, IInkAnalysisInkWord_Vtbl, 0x4bd228ad_83af_4034_8f3b_f8687dfff436);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkAnalysisInkWord_Vtbl {
@@ -55,16 +28,7 @@ pub struct IInkAnalysisInkWord_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     TextAlternates: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkAnalysisLine(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkAnalysisLine {
-    type Vtable = IInkAnalysisLine_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkAnalysisLine {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa06d048d_2b8d_4754_ad5a_d0871193a956);
-}
+::windows_core::imp::com_interface!(IInkAnalysisLine, IInkAnalysisLine_Vtbl, 0xa06d048d_2b8d_4754_ad5a_d0871193a956);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkAnalysisLine_Vtbl {
@@ -72,25 +36,14 @@ pub struct IInkAnalysisLine_Vtbl {
     pub RecognizedText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub IndentLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkAnalysisListItem(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkAnalysisListItem {
-    type Vtable = IInkAnalysisListItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkAnalysisListItem {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb4e3c23f_c4c3_4c3a_a1a6_9d85547ee586);
-}
+::windows_core::imp::com_interface!(IInkAnalysisListItem, IInkAnalysisListItem_Vtbl, 0xb4e3c23f_c4c3_4c3a_a1a6_9d85547ee586);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkAnalysisListItem_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub RecognizedText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkAnalysisNode(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IInkAnalysisNode, IInkAnalysisNode_Vtbl, 0x30831f05_5f64_4a2c_ba37_4f4887879574);
 impl IInkAnalysisNode {
     pub fn Id(&self) -> ::windows_core::Result<u32> {
         let this = self;
@@ -152,12 +105,6 @@ impl IInkAnalysisNode {
 impl ::windows_core::RuntimeType for IInkAnalysisNode {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IInkAnalysisNode {
-    type Vtable = IInkAnalysisNode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkAnalysisNode {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x30831f05_5f64_4a2c_ba37_4f4887879574);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkAnalysisNode_Vtbl {
@@ -179,48 +126,21 @@ pub struct IInkAnalysisNode_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     GetStrokeIds: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkAnalysisParagraph(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkAnalysisParagraph {
-    type Vtable = IInkAnalysisParagraph_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkAnalysisParagraph {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd9ad045c_0cd1_4dd4_a68b_eb1f12b3d727);
-}
+::windows_core::imp::com_interface!(IInkAnalysisParagraph, IInkAnalysisParagraph_Vtbl, 0xd9ad045c_0cd1_4dd4_a68b_eb1f12b3d727);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkAnalysisParagraph_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub RecognizedText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkAnalysisResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkAnalysisResult {
-    type Vtable = IInkAnalysisResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkAnalysisResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8948ba79_a243_4aa3_a294_1f98bd0ff580);
-}
+::windows_core::imp::com_interface!(IInkAnalysisResult, IInkAnalysisResult_Vtbl, 0x8948ba79_a243_4aa3_a294_1f98bd0ff580);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkAnalysisResult_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut InkAnalysisStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkAnalysisRoot(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkAnalysisRoot {
-    type Vtable = IInkAnalysisRoot_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkAnalysisRoot {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3fb6a3c4_2fde_4061_8502_a90f32545b84);
-}
+::windows_core::imp::com_interface!(IInkAnalysisRoot, IInkAnalysisRoot_Vtbl, 0x3fb6a3c4_2fde_4061_8502_a90f32545b84);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkAnalysisRoot_Vtbl {
@@ -231,32 +151,14 @@ pub struct IInkAnalysisRoot_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     FindNodes: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkAnalysisWritingRegion(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkAnalysisWritingRegion {
-    type Vtable = IInkAnalysisWritingRegion_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkAnalysisWritingRegion {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdd6d6231_bd16_4663_b5ae_941d3043ef5b);
-}
+::windows_core::imp::com_interface!(IInkAnalysisWritingRegion, IInkAnalysisWritingRegion_Vtbl, 0xdd6d6231_bd16_4663_b5ae_941d3043ef5b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkAnalysisWritingRegion_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub RecognizedText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkAnalyzer(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInkAnalyzer {
-    type Vtable = IInkAnalyzer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkAnalyzer {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf12b8f95_0866_4dc5_8c77_f88614dfe38c);
-}
+::windows_core::imp::com_interface!(IInkAnalyzer, IInkAnalyzer_Vtbl, 0xf12b8f95_0866_4dc5_8c77_f88614dfe38c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInkAnalyzer_Vtbl {
@@ -278,9 +180,7 @@ pub struct IInkAnalyzer_Vtbl {
     pub SetStrokeDataKind: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, strokeid: u32, strokekind: InkAnalysisStrokeKind) -> ::windows_core::HRESULT,
     pub AnalyzeAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInkAnalyzerFactory(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IInkAnalyzerFactory, IInkAnalyzerFactory_Vtbl, 0x29138686_1963_49d8_9589_e14384c769e3);
 impl IInkAnalyzerFactory {
     pub fn CreateAnalyzer(&self) -> ::windows_core::Result<InkAnalyzer> {
         let this = self;
@@ -293,12 +193,6 @@ impl IInkAnalyzerFactory {
 ::windows_core::imp::interface_hierarchy!(IInkAnalyzerFactory, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for IInkAnalyzerFactory {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IInkAnalyzerFactory {
-    type Vtable = IInkAnalyzerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInkAnalyzerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x29138686_1963_49d8_9589_e14384c769e3);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -386,7 +280,7 @@ impl ::windows_core::RuntimeName for InkAnalysisInkBullet {
     const NAME: &'static str = "Windows.UI.Input.Inking.Analysis.InkAnalysisInkBullet";
 }
 ::windows_core::imp::interface_hierarchy!(InkAnalysisInkBullet, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IInkAnalysisNode> for InkAnalysisInkBullet {}
+::windows_core::imp::required_hierarchy!(InkAnalysisInkBullet, IInkAnalysisNode);
 unsafe impl ::core::marker::Send for InkAnalysisInkBullet {}
 unsafe impl ::core::marker::Sync for InkAnalysisInkBullet {}
 #[repr(transparent)]
@@ -485,7 +379,7 @@ impl ::windows_core::RuntimeName for InkAnalysisInkDrawing {
     const NAME: &'static str = "Windows.UI.Input.Inking.Analysis.InkAnalysisInkDrawing";
 }
 ::windows_core::imp::interface_hierarchy!(InkAnalysisInkDrawing, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IInkAnalysisNode> for InkAnalysisInkDrawing {}
+::windows_core::imp::required_hierarchy!(InkAnalysisInkDrawing, IInkAnalysisNode);
 unsafe impl ::core::marker::Send for InkAnalysisInkDrawing {}
 unsafe impl ::core::marker::Sync for InkAnalysisInkDrawing {}
 #[repr(transparent)]
@@ -577,7 +471,7 @@ impl ::windows_core::RuntimeName for InkAnalysisInkWord {
     const NAME: &'static str = "Windows.UI.Input.Inking.Analysis.InkAnalysisInkWord";
 }
 ::windows_core::imp::interface_hierarchy!(InkAnalysisInkWord, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IInkAnalysisNode> for InkAnalysisInkWord {}
+::windows_core::imp::required_hierarchy!(InkAnalysisInkWord, IInkAnalysisNode);
 unsafe impl ::core::marker::Send for InkAnalysisInkWord {}
 unsafe impl ::core::marker::Sync for InkAnalysisInkWord {}
 #[repr(transparent)]
@@ -667,7 +561,7 @@ impl ::windows_core::RuntimeName for InkAnalysisLine {
     const NAME: &'static str = "Windows.UI.Input.Inking.Analysis.InkAnalysisLine";
 }
 ::windows_core::imp::interface_hierarchy!(InkAnalysisLine, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IInkAnalysisNode> for InkAnalysisLine {}
+::windows_core::imp::required_hierarchy!(InkAnalysisLine, IInkAnalysisNode);
 unsafe impl ::core::marker::Send for InkAnalysisLine {}
 unsafe impl ::core::marker::Sync for InkAnalysisLine {}
 #[repr(transparent)]
@@ -750,7 +644,7 @@ impl ::windows_core::RuntimeName for InkAnalysisListItem {
     const NAME: &'static str = "Windows.UI.Input.Inking.Analysis.InkAnalysisListItem";
 }
 ::windows_core::imp::interface_hierarchy!(InkAnalysisListItem, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IInkAnalysisNode> for InkAnalysisListItem {}
+::windows_core::imp::required_hierarchy!(InkAnalysisListItem, IInkAnalysisNode);
 unsafe impl ::core::marker::Send for InkAnalysisListItem {}
 unsafe impl ::core::marker::Sync for InkAnalysisListItem {}
 #[repr(transparent)]
@@ -826,7 +720,7 @@ impl ::windows_core::RuntimeName for InkAnalysisNode {
     const NAME: &'static str = "Windows.UI.Input.Inking.Analysis.InkAnalysisNode";
 }
 ::windows_core::imp::interface_hierarchy!(InkAnalysisNode, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IInkAnalysisNode> for InkAnalysisNode {}
+::windows_core::imp::required_hierarchy!(InkAnalysisNode, IInkAnalysisNode);
 unsafe impl ::core::marker::Send for InkAnalysisNode {}
 unsafe impl ::core::marker::Sync for InkAnalysisNode {}
 #[repr(transparent)]
@@ -909,7 +803,7 @@ impl ::windows_core::RuntimeName for InkAnalysisParagraph {
     const NAME: &'static str = "Windows.UI.Input.Inking.Analysis.InkAnalysisParagraph";
 }
 ::windows_core::imp::interface_hierarchy!(InkAnalysisParagraph, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IInkAnalysisNode> for InkAnalysisParagraph {}
+::windows_core::imp::required_hierarchy!(InkAnalysisParagraph, IInkAnalysisNode);
 unsafe impl ::core::marker::Send for InkAnalysisParagraph {}
 unsafe impl ::core::marker::Sync for InkAnalysisParagraph {}
 #[repr(transparent)]
@@ -1028,7 +922,7 @@ impl ::windows_core::RuntimeName for InkAnalysisRoot {
     const NAME: &'static str = "Windows.UI.Input.Inking.Analysis.InkAnalysisRoot";
 }
 ::windows_core::imp::interface_hierarchy!(InkAnalysisRoot, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IInkAnalysisNode> for InkAnalysisRoot {}
+::windows_core::imp::required_hierarchy!(InkAnalysisRoot, IInkAnalysisNode);
 unsafe impl ::core::marker::Send for InkAnalysisRoot {}
 unsafe impl ::core::marker::Sync for InkAnalysisRoot {}
 #[repr(transparent)]
@@ -1111,7 +1005,7 @@ impl ::windows_core::RuntimeName for InkAnalysisWritingRegion {
     const NAME: &'static str = "Windows.UI.Input.Inking.Analysis.InkAnalysisWritingRegion";
 }
 ::windows_core::imp::interface_hierarchy!(InkAnalysisWritingRegion, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IInkAnalysisNode> for InkAnalysisWritingRegion {}
+::windows_core::imp::required_hierarchy!(InkAnalysisWritingRegion, IInkAnalysisNode);
 unsafe impl ::core::marker::Send for InkAnalysisWritingRegion {}
 unsafe impl ::core::marker::Sync for InkAnalysisWritingRegion {}
 #[repr(transparent)]
@@ -1150,10 +1044,10 @@ impl InkAnalyzer {
     #[cfg(feature = "Foundation_Collections")]
     pub fn AddDataForStrokes<P0>(&self, strokes: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::super::Foundation::Collections::IIterable<super::InkStroke>>,
+        P0: ::windows_core::IntoParam<super::super::super::super::Foundation::Collections::IIterable<super::InkStroke>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).AddDataForStrokes)(::windows_core::Interface::as_raw(this), strokes.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).AddDataForStrokes)(::windows_core::Interface::as_raw(this), strokes.into_param().abi()).ok() }
     }
     pub fn ClearDataForAllStrokes(&self) -> ::windows_core::Result<()> {
         let this = self;
@@ -1167,10 +1061,10 @@ impl InkAnalyzer {
     #[cfg(feature = "Foundation_Collections")]
     pub fn RemoveDataForStrokes<P0>(&self, strokeids: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::super::Foundation::Collections::IIterable<u32>>,
+        P0: ::windows_core::IntoParam<super::super::super::super::Foundation::Collections::IIterable<u32>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).RemoveDataForStrokes)(::windows_core::Interface::as_raw(this), strokeids.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).RemoveDataForStrokes)(::windows_core::Interface::as_raw(this), strokeids.into_param().abi()).ok() }
     }
     pub fn ReplaceDataForStroke<P0>(&self, stroke: P0) -> ::windows_core::Result<()>
     where

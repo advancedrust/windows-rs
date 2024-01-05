@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataTaskDataProviderConnection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataTaskDataProviderConnection {
-    type Vtable = IUserDataTaskDataProviderConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataTaskDataProviderConnection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9ff39d1d_a447_428b_afe9_e5402bdeb041);
-}
+::windows_core::imp::com_interface!(IUserDataTaskDataProviderConnection, IUserDataTaskDataProviderConnection_Vtbl, 0x9ff39d1d_a447_428b_afe9_e5402bdeb041);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataTaskDataProviderConnection_Vtbl {
@@ -24,32 +15,14 @@ pub struct IUserDataTaskDataProviderConnection_Vtbl {
     pub RemoveDeleteTaskRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub Start: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataTaskDataProviderTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataTaskDataProviderTriggerDetails {
-    type Vtable = IUserDataTaskDataProviderTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataTaskDataProviderTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xae273202_b1c9_453e_afc5_b30af3bd217d);
-}
+::windows_core::imp::com_interface!(IUserDataTaskDataProviderTriggerDetails, IUserDataTaskDataProviderTriggerDetails_Vtbl, 0xae273202_b1c9_453e_afc5_b30af3bd217d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataTaskDataProviderTriggerDetails_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Connection: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataTaskListCompleteTaskRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataTaskListCompleteTaskRequest {
-    type Vtable = IUserDataTaskListCompleteTaskRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataTaskListCompleteTaskRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf65e14a3_1a42_49da_8552_2873e52c55eb);
-}
+::windows_core::imp::com_interface!(IUserDataTaskListCompleteTaskRequest, IUserDataTaskListCompleteTaskRequest_Vtbl, 0xf65e14a3_1a42_49da_8552_2873e52c55eb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataTaskListCompleteTaskRequest_Vtbl {
@@ -59,16 +32,7 @@ pub struct IUserDataTaskListCompleteTaskRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, completedtaskid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataTaskListCompleteTaskRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataTaskListCompleteTaskRequestEventArgs {
-    type Vtable = IUserDataTaskListCompleteTaskRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataTaskListCompleteTaskRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd77c393d_4cf2_48ad_87fd_963f0eaa7a95);
-}
+::windows_core::imp::com_interface!(IUserDataTaskListCompleteTaskRequestEventArgs, IUserDataTaskListCompleteTaskRequestEventArgs_Vtbl, 0xd77c393d_4cf2_48ad_87fd_963f0eaa7a95);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataTaskListCompleteTaskRequestEventArgs_Vtbl {
@@ -76,16 +40,7 @@ pub struct IUserDataTaskListCompleteTaskRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataTaskListCreateOrUpdateTaskRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataTaskListCreateOrUpdateTaskRequest {
-    type Vtable = IUserDataTaskListCreateOrUpdateTaskRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataTaskListCreateOrUpdateTaskRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2133772c_55c2_4300_8279_04326e07cce4);
-}
+::windows_core::imp::com_interface!(IUserDataTaskListCreateOrUpdateTaskRequest, IUserDataTaskListCreateOrUpdateTaskRequest_Vtbl, 0x2133772c_55c2_4300_8279_04326e07cce4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataTaskListCreateOrUpdateTaskRequest_Vtbl {
@@ -95,16 +50,7 @@ pub struct IUserDataTaskListCreateOrUpdateTaskRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, createdorupdateduserdatatask: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataTaskListCreateOrUpdateTaskRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataTaskListCreateOrUpdateTaskRequestEventArgs {
-    type Vtable = IUserDataTaskListCreateOrUpdateTaskRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataTaskListCreateOrUpdateTaskRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x12c55a52_e378_419b_ae38_a5e9e604476e);
-}
+::windows_core::imp::com_interface!(IUserDataTaskListCreateOrUpdateTaskRequestEventArgs, IUserDataTaskListCreateOrUpdateTaskRequestEventArgs_Vtbl, 0x12c55a52_e378_419b_ae38_a5e9e604476e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataTaskListCreateOrUpdateTaskRequestEventArgs_Vtbl {
@@ -112,16 +58,7 @@ pub struct IUserDataTaskListCreateOrUpdateTaskRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataTaskListDeleteTaskRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataTaskListDeleteTaskRequest {
-    type Vtable = IUserDataTaskListDeleteTaskRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataTaskListDeleteTaskRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4b863c68_7657_4f3d_b074_d47ec8df07e7);
-}
+::windows_core::imp::com_interface!(IUserDataTaskListDeleteTaskRequest, IUserDataTaskListDeleteTaskRequest_Vtbl, 0x4b863c68_7657_4f3d_b074_d47ec8df07e7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataTaskListDeleteTaskRequest_Vtbl {
@@ -131,16 +68,7 @@ pub struct IUserDataTaskListDeleteTaskRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataTaskListDeleteTaskRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataTaskListDeleteTaskRequestEventArgs {
-    type Vtable = IUserDataTaskListDeleteTaskRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataTaskListDeleteTaskRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6063dad9_f562_4145_8efe_d50078c92b7f);
-}
+::windows_core::imp::com_interface!(IUserDataTaskListDeleteTaskRequestEventArgs, IUserDataTaskListDeleteTaskRequestEventArgs_Vtbl, 0x6063dad9_f562_4145_8efe_d50078c92b7f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataTaskListDeleteTaskRequestEventArgs_Vtbl {
@@ -148,16 +76,7 @@ pub struct IUserDataTaskListDeleteTaskRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataTaskListSkipOccurrenceRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataTaskListSkipOccurrenceRequest {
-    type Vtable = IUserDataTaskListSkipOccurrenceRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataTaskListSkipOccurrenceRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xab87e34d_1cd3_431c_9f58_089aa4338d85);
-}
+::windows_core::imp::com_interface!(IUserDataTaskListSkipOccurrenceRequest, IUserDataTaskListSkipOccurrenceRequest_Vtbl, 0xab87e34d_1cd3_431c_9f58_089aa4338d85);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataTaskListSkipOccurrenceRequest_Vtbl {
@@ -167,16 +86,7 @@ pub struct IUserDataTaskListSkipOccurrenceRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataTaskListSkipOccurrenceRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataTaskListSkipOccurrenceRequestEventArgs {
-    type Vtable = IUserDataTaskListSkipOccurrenceRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataTaskListSkipOccurrenceRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7a3b924a_cc2f_4e7b_aacd_a5b9d29cfa4e);
-}
+::windows_core::imp::com_interface!(IUserDataTaskListSkipOccurrenceRequestEventArgs, IUserDataTaskListSkipOccurrenceRequestEventArgs_Vtbl, 0x7a3b924a_cc2f_4e7b_aacd_a5b9d29cfa4e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataTaskListSkipOccurrenceRequestEventArgs_Vtbl {
@@ -184,16 +94,7 @@ pub struct IUserDataTaskListSkipOccurrenceRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataTaskListSyncManagerSyncRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataTaskListSyncManagerSyncRequest {
-    type Vtable = IUserDataTaskListSyncManagerSyncRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataTaskListSyncManagerSyncRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x40a73807_7590_4149_ae19_b211431a9f48);
-}
+::windows_core::imp::com_interface!(IUserDataTaskListSyncManagerSyncRequest, IUserDataTaskListSyncManagerSyncRequest_Vtbl, 0x40a73807_7590_4149_ae19_b211431a9f48);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataTaskListSyncManagerSyncRequest_Vtbl {
@@ -202,16 +103,7 @@ pub struct IUserDataTaskListSyncManagerSyncRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataTaskListSyncManagerSyncRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataTaskListSyncManagerSyncRequestEventArgs {
-    type Vtable = IUserDataTaskListSyncManagerSyncRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataTaskListSyncManagerSyncRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8ead1c12_768e_43bd_8385_5cdc351ffdea);
-}
+::windows_core::imp::com_interface!(IUserDataTaskListSyncManagerSyncRequestEventArgs, IUserDataTaskListSyncManagerSyncRequestEventArgs_Vtbl, 0x8ead1c12_768e_43bd_8385_5cdc351ffdea);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataTaskListSyncManagerSyncRequestEventArgs_Vtbl {

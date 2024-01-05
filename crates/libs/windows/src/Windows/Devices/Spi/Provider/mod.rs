@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IProviderSpiConnectionSettings(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IProviderSpiConnectionSettings {
-    type Vtable = IProviderSpiConnectionSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IProviderSpiConnectionSettings {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf6034550_a542_4ec0_9601_a4dd68f8697b);
-}
+::windows_core::imp::com_interface!(IProviderSpiConnectionSettings, IProviderSpiConnectionSettings_Vtbl, 0xf6034550_a542_4ec0_9601_a4dd68f8697b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IProviderSpiConnectionSettings_Vtbl {
@@ -23,25 +14,14 @@ pub struct IProviderSpiConnectionSettings_Vtbl {
     pub SharingMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ProviderSpiSharingMode) -> ::windows_core::HRESULT,
     pub SetSharingMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ProviderSpiSharingMode) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IProviderSpiConnectionSettingsFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IProviderSpiConnectionSettingsFactory {
-    type Vtable = IProviderSpiConnectionSettingsFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IProviderSpiConnectionSettingsFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x66456b5a_0c79_43e3_9f3c_e59780ac18fa);
-}
+::windows_core::imp::com_interface!(IProviderSpiConnectionSettingsFactory, IProviderSpiConnectionSettingsFactory_Vtbl, 0x66456b5a_0c79_43e3_9f3c_e59780ac18fa);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IProviderSpiConnectionSettingsFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, chipselectline: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISpiControllerProvider(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISpiControllerProvider, ISpiControllerProvider_Vtbl, 0xc1686504_02ce_4226_a385_4f11fb04b41b);
 impl ISpiControllerProvider {
     pub fn GetDeviceProvider<P0>(&self, settings: P0) -> ::windows_core::Result<ISpiDeviceProvider>
     where
@@ -58,21 +38,13 @@ impl ISpiControllerProvider {
 impl ::windows_core::RuntimeType for ISpiControllerProvider {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for ISpiControllerProvider {
-    type Vtable = ISpiControllerProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISpiControllerProvider {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc1686504_02ce_4226_a385_4f11fb04b41b);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISpiControllerProvider_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetDeviceProvider: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, settings: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISpiDeviceProvider(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISpiDeviceProvider, ISpiDeviceProvider_Vtbl, 0x0d1c3443_304b_405c_b4f7_f5ab1074461e);
 impl ISpiDeviceProvider {
     pub fn DeviceId(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -110,15 +82,9 @@ impl ISpiDeviceProvider {
     }
 }
 ::windows_core::imp::interface_hierarchy!(ISpiDeviceProvider, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IClosable> for ISpiDeviceProvider {}
+::windows_core::imp::required_hierarchy!(ISpiDeviceProvider, super::super::super::Foundation::IClosable);
 impl ::windows_core::RuntimeType for ISpiDeviceProvider {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for ISpiDeviceProvider {
-    type Vtable = ISpiDeviceProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISpiDeviceProvider {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0d1c3443_304b_405c_b4f7_f5ab1074461e);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -131,9 +97,7 @@ pub struct ISpiDeviceProvider_Vtbl {
     pub TransferSequential: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, writeBuffer_array_size: u32, writebuffer: *const u8, readBuffer_array_size: u32, readbuffer: *mut u8) -> ::windows_core::HRESULT,
     pub TransferFullDuplex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, writeBuffer_array_size: u32, writebuffer: *const u8, readBuffer_array_size: u32, readbuffer: *mut u8) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISpiProvider(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISpiProvider, ISpiProvider_Vtbl, 0x96b461e2_77d4_48ce_aaa0_75715a8362cf);
 impl ISpiProvider {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -148,12 +112,6 @@ impl ISpiProvider {
 ::windows_core::imp::interface_hierarchy!(ISpiProvider, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for ISpiProvider {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for ISpiProvider {
-    type Vtable = ISpiProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISpiProvider {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x96b461e2_77d4_48ce_aaa0_75715a8362cf);
 }
 #[repr(C)]
 #[doc(hidden)]

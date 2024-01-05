@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICurrencyFormatter(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICurrencyFormatter {
-    type Vtable = ICurrencyFormatter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICurrencyFormatter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x11730ca5_4b00_41b2_b332_73b12a497d54);
-}
+::windows_core::imp::com_interface!(ICurrencyFormatter, ICurrencyFormatter_Vtbl, 0x11730ca5_4b00_41b2_b332_73b12a497d54);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICurrencyFormatter_Vtbl {
@@ -18,16 +9,7 @@ pub struct ICurrencyFormatter_Vtbl {
     #[cfg(not(feature = "deprecated"))]
     SetCurrency: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICurrencyFormatter2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICurrencyFormatter2 {
-    type Vtable = ICurrencyFormatter2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICurrencyFormatter2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x072c2f1d_e7ba_4197_920e_247c92f7dea6);
-}
+::windows_core::imp::com_interface!(ICurrencyFormatter2, ICurrencyFormatter2_Vtbl, 0x072c2f1d_e7ba_4197_920e_247c92f7dea6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICurrencyFormatter2_Vtbl {
@@ -36,16 +18,7 @@ pub struct ICurrencyFormatter2_Vtbl {
     pub SetMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: CurrencyFormatterMode) -> ::windows_core::HRESULT,
     pub ApplyRoundingForCurrency: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, roundingalgorithm: RoundingAlgorithm) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICurrencyFormatterFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICurrencyFormatterFactory {
-    type Vtable = ICurrencyFormatterFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICurrencyFormatterFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x86c7537e_b938_4aa2_84b0_2c33dc5b1450);
-}
+::windows_core::imp::com_interface!(ICurrencyFormatterFactory, ICurrencyFormatterFactory_Vtbl, 0x86c7537e_b938_4aa2_84b0_2c33dc5b1450);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICurrencyFormatterFactory_Vtbl {
@@ -56,16 +29,7 @@ pub struct ICurrencyFormatterFactory_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     CreateCurrencyFormatterCodeContext: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDecimalFormatterFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDecimalFormatterFactory {
-    type Vtable = IDecimalFormatterFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDecimalFormatterFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0d018c9a_e393_46b8_b830_7a69c8f89fbb);
-}
+::windows_core::imp::com_interface!(IDecimalFormatterFactory, IDecimalFormatterFactory_Vtbl, 0x0d018c9a_e393_46b8_b830_7a69c8f89fbb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDecimalFormatterFactory_Vtbl {
@@ -75,16 +39,7 @@ pub struct IDecimalFormatterFactory_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     CreateDecimalFormatter: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IIncrementNumberRounder(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IIncrementNumberRounder {
-    type Vtable = IIncrementNumberRounder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IIncrementNumberRounder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x70a64ff8_66ab_4155_9da1_739e46764543);
-}
+::windows_core::imp::com_interface!(IIncrementNumberRounder, IIncrementNumberRounder_Vtbl, 0x70a64ff8_66ab_4155_9da1_739e46764543);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IIncrementNumberRounder_Vtbl {
@@ -94,9 +49,7 @@ pub struct IIncrementNumberRounder_Vtbl {
     pub Increment: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f64) -> ::windows_core::HRESULT,
     pub SetIncrement: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f64) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INumberFormatter(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(INumberFormatter, INumberFormatter_Vtbl, 0xa5007c49_7676_4db7_8631_1b6ff265caa9);
 impl INumberFormatter {
     pub fn FormatInt(&self, value: i64) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -124,12 +77,6 @@ impl INumberFormatter {
 impl ::windows_core::RuntimeType for INumberFormatter {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for INumberFormatter {
-    type Vtable = INumberFormatter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INumberFormatter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa5007c49_7676_4db7_8631_1b6ff265caa9);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct INumberFormatter_Vtbl {
@@ -138,9 +85,7 @@ pub struct INumberFormatter_Vtbl {
     pub FormatUInt: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: u64, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub FormatDouble: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f64, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INumberFormatter2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(INumberFormatter2, INumberFormatter2_Vtbl, 0xd4a8c1f0_80d0_4b0d_a89e_882c1e8f8310);
 impl INumberFormatter2 {
     pub fn FormatInt(&self, value: i64) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -168,12 +113,6 @@ impl INumberFormatter2 {
 impl ::windows_core::RuntimeType for INumberFormatter2 {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for INumberFormatter2 {
-    type Vtable = INumberFormatter2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INumberFormatter2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd4a8c1f0_80d0_4b0d_a89e_882c1e8f8310);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct INumberFormatter2_Vtbl {
@@ -182,9 +121,7 @@ pub struct INumberFormatter2_Vtbl {
     pub FormatUInt: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: u64, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub FormatDouble: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f64, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INumberFormatterOptions(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(INumberFormatterOptions, INumberFormatterOptions_Vtbl, 0x80332d21_aee1_4a39_baa2_07ed8c96daf6);
 impl INumberFormatterOptions {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -276,12 +213,6 @@ impl INumberFormatterOptions {
 impl ::windows_core::RuntimeType for INumberFormatterOptions {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for INumberFormatterOptions {
-    type Vtable = INumberFormatterOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INumberFormatterOptions {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x80332d21_aee1_4a39_baa2_07ed8c96daf6);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct INumberFormatterOptions_Vtbl {
@@ -304,9 +235,7 @@ pub struct INumberFormatterOptions_Vtbl {
     pub ResolvedLanguage: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub ResolvedGeographicRegion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INumberParser(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(INumberParser, INumberParser_Vtbl, 0xe6659412_4a13_4a53_83a1_392fbe4cff9f);
 impl INumberParser {
     pub fn ParseInt(&self, text: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IReference<i64>> {
         let this = self;
@@ -334,12 +263,6 @@ impl INumberParser {
 impl ::windows_core::RuntimeType for INumberParser {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for INumberParser {
-    type Vtable = INumberParser_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INumberParser {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe6659412_4a13_4a53_83a1_392fbe4cff9f);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct INumberParser_Vtbl {
@@ -348,9 +271,7 @@ pub struct INumberParser_Vtbl {
     pub ParseUInt: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, text: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ParseDouble: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, text: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INumberRounder(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(INumberRounder, INumberRounder_Vtbl, 0x5473c375_38ed_4631_b80c_ef34fc48b7f5);
 impl INumberRounder {
     pub fn RoundInt32(&self, value: i32) -> ::windows_core::Result<i32> {
         let this = self;
@@ -399,12 +320,6 @@ impl INumberRounder {
 impl ::windows_core::RuntimeType for INumberRounder {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for INumberRounder {
-    type Vtable = INumberRounder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INumberRounder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5473c375_38ed_4631_b80c_ef34fc48b7f5);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct INumberRounder_Vtbl {
@@ -416,9 +331,7 @@ pub struct INumberRounder_Vtbl {
     pub RoundSingle: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32, result__: *mut f32) -> ::windows_core::HRESULT,
     pub RoundDouble: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f64, result__: *mut f64) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INumberRounderOption(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(INumberRounderOption, INumberRounderOption_Vtbl, 0x3b088433_646f_4efe_8d48_66eb2e49e736);
 impl INumberRounderOption {
     pub fn NumberRounder(&self) -> ::windows_core::Result<INumberRounder> {
         let this = self;
@@ -429,21 +342,15 @@ impl INumberRounderOption {
     }
     pub fn SetNumberRounder<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<INumberRounder>,
+        P0: ::windows_core::IntoParam<INumberRounder>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetNumberRounder)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetNumberRounder)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
 ::windows_core::imp::interface_hierarchy!(INumberRounderOption, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for INumberRounderOption {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for INumberRounderOption {
-    type Vtable = INumberRounderOption_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INumberRounderOption {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3b088433_646f_4efe_8d48_66eb2e49e736);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -452,16 +359,7 @@ pub struct INumberRounderOption_Vtbl {
     pub NumberRounder: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetNumberRounder: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INumeralSystemTranslator(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INumeralSystemTranslator {
-    type Vtable = INumeralSystemTranslator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INumeralSystemTranslator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x28f5bc2c_8c23_4234_ad2e_fa5a3a426e9b);
-}
+::windows_core::imp::com_interface!(INumeralSystemTranslator, INumeralSystemTranslator_Vtbl, 0x28f5bc2c_8c23_4234_ad2e_fa5a3a426e9b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INumeralSystemTranslator_Vtbl {
@@ -475,16 +373,7 @@ pub struct INumeralSystemTranslator_Vtbl {
     pub SetNumeralSystem: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TranslateNumerals: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INumeralSystemTranslatorFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INumeralSystemTranslatorFactory {
-    type Vtable = INumeralSystemTranslatorFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INumeralSystemTranslatorFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9630c8da_36ef_4d88_a85c_6f0d98d620a6);
-}
+::windows_core::imp::com_interface!(INumeralSystemTranslatorFactory, INumeralSystemTranslatorFactory_Vtbl, 0x9630c8da_36ef_4d88_a85c_6f0d98d620a6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INumeralSystemTranslatorFactory_Vtbl {
@@ -494,16 +383,7 @@ pub struct INumeralSystemTranslatorFactory_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Create: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPercentFormatterFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPercentFormatterFactory {
-    type Vtable = IPercentFormatterFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPercentFormatterFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb7828aef_fed4_4018_a6e2_e09961e03765);
-}
+::windows_core::imp::com_interface!(IPercentFormatterFactory, IPercentFormatterFactory_Vtbl, 0xb7828aef_fed4_4018_a6e2_e09961e03765);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPercentFormatterFactory_Vtbl {
@@ -513,16 +393,7 @@ pub struct IPercentFormatterFactory_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     CreatePercentFormatter: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPermilleFormatterFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPermilleFormatterFactory {
-    type Vtable = IPermilleFormatterFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPermilleFormatterFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2b37b4ac_e638_4ed5_a998_62f6b06a49ae);
-}
+::windows_core::imp::com_interface!(IPermilleFormatterFactory, IPermilleFormatterFactory_Vtbl, 0x2b37b4ac_e638_4ed5_a998_62f6b06a49ae);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPermilleFormatterFactory_Vtbl {
@@ -532,9 +403,7 @@ pub struct IPermilleFormatterFactory_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     CreatePermilleFormatter: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISignedZeroOption(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISignedZeroOption, ISignedZeroOption_Vtbl, 0xfd1cdd31_0a3c_49c4_a642_96a1564f4f30);
 impl ISignedZeroOption {
     pub fn IsZeroSigned(&self) -> ::windows_core::Result<bool> {
         let this = self;
@@ -552,12 +421,6 @@ impl ISignedZeroOption {
 impl ::windows_core::RuntimeType for ISignedZeroOption {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for ISignedZeroOption {
-    type Vtable = ISignedZeroOption_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISignedZeroOption {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfd1cdd31_0a3c_49c4_a642_96a1564f4f30);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISignedZeroOption_Vtbl {
@@ -565,16 +428,7 @@ pub struct ISignedZeroOption_Vtbl {
     pub IsZeroSigned: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetIsZeroSigned: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISignificantDigitsNumberRounder(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISignificantDigitsNumberRounder {
-    type Vtable = ISignificantDigitsNumberRounder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISignificantDigitsNumberRounder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf5941bca_6646_4913_8c76_1b191ff94dfd);
-}
+::windows_core::imp::com_interface!(ISignificantDigitsNumberRounder, ISignificantDigitsNumberRounder_Vtbl, 0xf5941bca_6646_4913_8c76_1b191ff94dfd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISignificantDigitsNumberRounder_Vtbl {
@@ -584,9 +438,7 @@ pub struct ISignificantDigitsNumberRounder_Vtbl {
     pub SignificantDigits: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
     pub SetSignificantDigits: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISignificantDigitsOption(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISignificantDigitsOption, ISignificantDigitsOption_Vtbl, 0x1d4dfcdd_2d43_4ee8_bbf1_c1b26a711a58);
 impl ISignificantDigitsOption {
     pub fn SignificantDigits(&self) -> ::windows_core::Result<i32> {
         let this = self;
@@ -603,12 +455,6 @@ impl ISignificantDigitsOption {
 ::windows_core::imp::interface_hierarchy!(ISignificantDigitsOption, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for ISignificantDigitsOption {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for ISignificantDigitsOption {
-    type Vtable = ISignificantDigitsOption_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISignificantDigitsOption {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1d4dfcdd_2d43_4ee8_bbf1_c1b26a711a58);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -659,11 +505,11 @@ impl CurrencyFormatter {
     #[cfg(feature = "Foundation_Collections")]
     pub fn CreateCurrencyFormatterCodeContext<P0>(currencycode: &::windows_core::HSTRING, languages: P0, geographicregion: &::windows_core::HSTRING) -> ::windows_core::Result<CurrencyFormatter>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::ICurrencyFormatterFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateCurrencyFormatterCodeContext)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(currencycode), languages.try_into_param()?.abi(), ::core::mem::transmute_copy(geographicregion), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateCurrencyFormatterCodeContext)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(currencycode), languages.into_param().abi(), ::core::mem::transmute_copy(geographicregion), &mut result__).from_abi(result__)
         })
     }
     pub fn FormatInt(&self, value: i64) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -823,10 +669,10 @@ impl CurrencyFormatter {
     }
     pub fn SetNumberRounder<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<INumberRounder>,
+        P0: ::windows_core::IntoParam<INumberRounder>,
     {
         let this = &::windows_core::ComInterface::cast::<INumberRounderOption>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetNumberRounder)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetNumberRounder)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn IsZeroSigned(&self) -> ::windows_core::Result<bool> {
         let this = &::windows_core::ComInterface::cast::<ISignedZeroOption>(self)?;
@@ -869,13 +715,7 @@ impl ::windows_core::RuntimeName for CurrencyFormatter {
     const NAME: &'static str = "Windows.Globalization.NumberFormatting.CurrencyFormatter";
 }
 ::windows_core::imp::interface_hierarchy!(CurrencyFormatter, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<INumberFormatter> for CurrencyFormatter {}
-impl ::windows_core::CanTryInto<INumberFormatter2> for CurrencyFormatter {}
-impl ::windows_core::CanTryInto<INumberFormatterOptions> for CurrencyFormatter {}
-impl ::windows_core::CanTryInto<INumberParser> for CurrencyFormatter {}
-impl ::windows_core::CanTryInto<INumberRounderOption> for CurrencyFormatter {}
-impl ::windows_core::CanTryInto<ISignedZeroOption> for CurrencyFormatter {}
-impl ::windows_core::CanTryInto<ISignificantDigitsOption> for CurrencyFormatter {}
+::windows_core::imp::required_hierarchy!(CurrencyFormatter, INumberFormatter, INumberFormatter2, INumberFormatterOptions, INumberParser, INumberRounderOption, ISignedZeroOption, ISignificantDigitsOption);
 unsafe impl ::core::marker::Send for CurrencyFormatter {}
 unsafe impl ::core::marker::Sync for CurrencyFormatter {}
 #[repr(transparent)]
@@ -893,11 +733,11 @@ impl DecimalFormatter {
     #[cfg(feature = "Foundation_Collections")]
     pub fn CreateDecimalFormatter<P0>(languages: P0, geographicregion: &::windows_core::HSTRING) -> ::windows_core::Result<DecimalFormatter>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::IDecimalFormatterFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateDecimalFormatter)(::windows_core::Interface::as_raw(this), languages.try_into_param()?.abi(), ::core::mem::transmute_copy(geographicregion), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateDecimalFormatter)(::windows_core::Interface::as_raw(this), languages.into_param().abi(), ::core::mem::transmute_copy(geographicregion), &mut result__).from_abi(result__)
         })
     }
     pub fn FormatInt(&self, value: i64) -> ::windows_core::Result<::windows_core::HSTRING> {
@@ -1057,10 +897,10 @@ impl DecimalFormatter {
     }
     pub fn SetNumberRounder<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<INumberRounder>,
+        P0: ::windows_core::IntoParam<INumberRounder>,
     {
         let this = &::windows_core::ComInterface::cast::<INumberRounderOption>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetNumberRounder)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetNumberRounder)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn IsZeroSigned(&self) -> ::windows_core::Result<bool> {
         let this = &::windows_core::ComInterface::cast::<ISignedZeroOption>(self)?;
@@ -1103,13 +943,7 @@ impl ::windows_core::RuntimeName for DecimalFormatter {
     const NAME: &'static str = "Windows.Globalization.NumberFormatting.DecimalFormatter";
 }
 ::windows_core::imp::interface_hierarchy!(DecimalFormatter, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<INumberFormatter> for DecimalFormatter {}
-impl ::windows_core::CanTryInto<INumberFormatter2> for DecimalFormatter {}
-impl ::windows_core::CanTryInto<INumberFormatterOptions> for DecimalFormatter {}
-impl ::windows_core::CanTryInto<INumberParser> for DecimalFormatter {}
-impl ::windows_core::CanTryInto<INumberRounderOption> for DecimalFormatter {}
-impl ::windows_core::CanTryInto<ISignedZeroOption> for DecimalFormatter {}
-impl ::windows_core::CanTryInto<ISignificantDigitsOption> for DecimalFormatter {}
+::windows_core::imp::required_hierarchy!(DecimalFormatter, INumberFormatter, INumberFormatter2, INumberFormatterOptions, INumberParser, INumberRounderOption, ISignedZeroOption, ISignificantDigitsOption);
 unsafe impl ::core::marker::Send for DecimalFormatter {}
 unsafe impl ::core::marker::Sync for DecimalFormatter {}
 #[repr(transparent)]
@@ -1201,7 +1035,7 @@ impl ::windows_core::RuntimeName for IncrementNumberRounder {
     const NAME: &'static str = "Windows.Globalization.NumberFormatting.IncrementNumberRounder";
 }
 ::windows_core::imp::interface_hierarchy!(IncrementNumberRounder, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<INumberRounder> for IncrementNumberRounder {}
+::windows_core::imp::required_hierarchy!(IncrementNumberRounder, INumberRounder);
 unsafe impl ::core::marker::Send for IncrementNumberRounder {}
 unsafe impl ::core::marker::Sync for IncrementNumberRounder {}
 #[repr(transparent)]
@@ -1253,11 +1087,11 @@ impl NumeralSystemTranslator {
     #[cfg(feature = "Foundation_Collections")]
     pub fn Create<P0>(languages: P0) -> ::windows_core::Result<NumeralSystemTranslator>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::INumeralSystemTranslatorFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).Create)(::windows_core::Interface::as_raw(this), languages.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).Create)(::windows_core::Interface::as_raw(this), languages.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc(hidden)]
@@ -1449,20 +1283,20 @@ impl PercentFormatter {
     }
     pub fn SetNumberRounder<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<INumberRounder>,
+        P0: ::windows_core::IntoParam<INumberRounder>,
     {
         let this = &::windows_core::ComInterface::cast::<INumberRounderOption>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetNumberRounder)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetNumberRounder)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn CreatePercentFormatter<P0>(languages: P0, geographicregion: &::windows_core::HSTRING) -> ::windows_core::Result<PercentFormatter>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::IPercentFormatterFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreatePercentFormatter)(::windows_core::Interface::as_raw(this), languages.try_into_param()?.abi(), ::core::mem::transmute_copy(geographicregion), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreatePercentFormatter)(::windows_core::Interface::as_raw(this), languages.into_param().abi(), ::core::mem::transmute_copy(geographicregion), &mut result__).from_abi(result__)
         })
     }
     pub fn IsZeroSigned(&self) -> ::windows_core::Result<bool> {
@@ -1506,13 +1340,7 @@ impl ::windows_core::RuntimeName for PercentFormatter {
     const NAME: &'static str = "Windows.Globalization.NumberFormatting.PercentFormatter";
 }
 ::windows_core::imp::interface_hierarchy!(PercentFormatter, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<INumberFormatter> for PercentFormatter {}
-impl ::windows_core::CanTryInto<INumberFormatter2> for PercentFormatter {}
-impl ::windows_core::CanTryInto<INumberFormatterOptions> for PercentFormatter {}
-impl ::windows_core::CanTryInto<INumberParser> for PercentFormatter {}
-impl ::windows_core::CanTryInto<INumberRounderOption> for PercentFormatter {}
-impl ::windows_core::CanTryInto<ISignedZeroOption> for PercentFormatter {}
-impl ::windows_core::CanTryInto<ISignificantDigitsOption> for PercentFormatter {}
+::windows_core::imp::required_hierarchy!(PercentFormatter, INumberFormatter, INumberFormatter2, INumberFormatterOptions, INumberParser, INumberRounderOption, ISignedZeroOption, ISignificantDigitsOption);
 unsafe impl ::core::marker::Send for PercentFormatter {}
 unsafe impl ::core::marker::Sync for PercentFormatter {}
 #[repr(transparent)]
@@ -1683,20 +1511,20 @@ impl PermilleFormatter {
     }
     pub fn SetNumberRounder<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<INumberRounder>,
+        P0: ::windows_core::IntoParam<INumberRounder>,
     {
         let this = &::windows_core::ComInterface::cast::<INumberRounderOption>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetNumberRounder)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetNumberRounder)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn CreatePermilleFormatter<P0>(languages: P0, geographicregion: &::windows_core::HSTRING) -> ::windows_core::Result<PermilleFormatter>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::IPermilleFormatterFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreatePermilleFormatter)(::windows_core::Interface::as_raw(this), languages.try_into_param()?.abi(), ::core::mem::transmute_copy(geographicregion), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreatePermilleFormatter)(::windows_core::Interface::as_raw(this), languages.into_param().abi(), ::core::mem::transmute_copy(geographicregion), &mut result__).from_abi(result__)
         })
     }
     pub fn IsZeroSigned(&self) -> ::windows_core::Result<bool> {
@@ -1740,13 +1568,7 @@ impl ::windows_core::RuntimeName for PermilleFormatter {
     const NAME: &'static str = "Windows.Globalization.NumberFormatting.PermilleFormatter";
 }
 ::windows_core::imp::interface_hierarchy!(PermilleFormatter, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<INumberFormatter> for PermilleFormatter {}
-impl ::windows_core::CanTryInto<INumberFormatter2> for PermilleFormatter {}
-impl ::windows_core::CanTryInto<INumberFormatterOptions> for PermilleFormatter {}
-impl ::windows_core::CanTryInto<INumberParser> for PermilleFormatter {}
-impl ::windows_core::CanTryInto<INumberRounderOption> for PermilleFormatter {}
-impl ::windows_core::CanTryInto<ISignedZeroOption> for PermilleFormatter {}
-impl ::windows_core::CanTryInto<ISignificantDigitsOption> for PermilleFormatter {}
+::windows_core::imp::required_hierarchy!(PermilleFormatter, INumberFormatter, INumberFormatter2, INumberFormatterOptions, INumberParser, INumberRounderOption, ISignedZeroOption, ISignificantDigitsOption);
 unsafe impl ::core::marker::Send for PermilleFormatter {}
 unsafe impl ::core::marker::Sync for PermilleFormatter {}
 #[repr(transparent)]
@@ -1838,7 +1660,7 @@ impl ::windows_core::RuntimeName for SignificantDigitsNumberRounder {
     const NAME: &'static str = "Windows.Globalization.NumberFormatting.SignificantDigitsNumberRounder";
 }
 ::windows_core::imp::interface_hierarchy!(SignificantDigitsNumberRounder, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<INumberRounder> for SignificantDigitsNumberRounder {}
+::windows_core::imp::required_hierarchy!(SignificantDigitsNumberRounder, INumberRounder);
 unsafe impl ::core::marker::Send for SignificantDigitsNumberRounder {}
 unsafe impl ::core::marker::Sync for SignificantDigitsNumberRounder {}
 #[repr(transparent)]

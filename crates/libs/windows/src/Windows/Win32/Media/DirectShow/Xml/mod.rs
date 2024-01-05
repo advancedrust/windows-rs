@@ -1,6 +1,4 @@
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IXMLGraphBuilder(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IXMLGraphBuilder, IXMLGraphBuilder_Vtbl, 0x1bb05960_5fbf_11d2_a521_44df07c10000);
 impl IXMLGraphBuilder {
     #[doc = "Required features: `\"Win32_Data_Xml_MsXml\"`, `\"Win32_System_Com\"`"]
     #[cfg(all(feature = "Win32_Data_Xml_MsXml", feature = "Win32_System_Com"))]
@@ -27,12 +25,6 @@ impl IXMLGraphBuilder {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IXMLGraphBuilder, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IXMLGraphBuilder {
-    type Vtable = IXMLGraphBuilder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IXMLGraphBuilder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1bb05960_5fbf_11d2_a521_44df07c10000);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IXMLGraphBuilder_Vtbl {

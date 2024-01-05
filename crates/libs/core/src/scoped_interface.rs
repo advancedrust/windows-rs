@@ -27,6 +27,10 @@ impl<'a, T: Interface> std::ops::Deref for ScopedInterface<'a, T> {
     }
 }
 
+// unsafe impl<'a, T: Interface> Interface for ScopedInterface<'a, T> {
+//     type Vtable = T::Vtable;
+// }
+
 impl<'a, T: Interface> Drop for ScopedInterface<'a, T> {
     fn drop(&mut self) {
         unsafe {

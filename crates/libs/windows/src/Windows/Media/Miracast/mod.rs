@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiver(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiver {
-    type Vtable = IMiracastReceiver_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiver {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7a315258_e444_51b4_aff7_b88daa1229e0);
-}
+::windows_core::imp::com_interface!(IMiracastReceiver, IMiracastReceiver_Vtbl, 0x7a315258_e444_51b4_aff7_b88daa1229e0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiver_Vtbl {
@@ -32,16 +23,7 @@ pub struct IMiracastReceiver_Vtbl {
     pub ClearKnownTransmitters: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RemoveKnownTransmitter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, transmitter: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverApplySettingsResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverApplySettingsResult {
-    type Vtable = IMiracastReceiverApplySettingsResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverApplySettingsResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd0aa6272_09cd_58e1_a4f2_5d5143d312f9);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverApplySettingsResult, IMiracastReceiverApplySettingsResult_Vtbl, 0xd0aa6272_09cd_58e1_a4f2_5d5143d312f9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverApplySettingsResult_Vtbl {
@@ -49,16 +31,7 @@ pub struct IMiracastReceiverApplySettingsResult_Vtbl {
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MiracastReceiverApplySettingsStatus) -> ::windows_core::HRESULT,
     pub ExtendedError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverConnection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverConnection {
-    type Vtable = IMiracastReceiverConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverConnection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x704b2f36_d2e5_551f_a854_f822b7917d28);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverConnection, IMiracastReceiverConnection_Vtbl, 0x704b2f36_d2e5_551f_a854_f822b7917d28);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverConnection_Vtbl {
@@ -74,16 +47,7 @@ pub struct IMiracastReceiverConnection_Vtbl {
     pub CursorImageChannel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub StreamControl: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverConnectionCreatedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverConnectionCreatedEventArgs {
-    type Vtable = IMiracastReceiverConnectionCreatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverConnectionCreatedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7d8dfa39_307a_5c0f_94bd_d0c69d169982);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverConnectionCreatedEventArgs, IMiracastReceiverConnectionCreatedEventArgs_Vtbl, 0x7d8dfa39_307a_5c0f_94bd_d0c69d169982);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverConnectionCreatedEventArgs_Vtbl {
@@ -92,16 +56,7 @@ pub struct IMiracastReceiverConnectionCreatedEventArgs_Vtbl {
     pub Pin: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverCursorImageChannel(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverCursorImageChannel {
-    type Vtable = IMiracastReceiverCursorImageChannel_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverCursorImageChannel {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd9ac332d_723a_5a9d_b90a_81153efa2a0f);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverCursorImageChannel, IMiracastReceiverCursorImageChannel_Vtbl, 0xd9ac332d_723a_5a9d_b90a_81153efa2a0f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverCursorImageChannel_Vtbl {
@@ -124,16 +79,7 @@ pub struct IMiracastReceiverCursorImageChannel_Vtbl {
     pub PositionChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemovePositionChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverCursorImageChannelSettings(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverCursorImageChannelSettings {
-    type Vtable = IMiracastReceiverCursorImageChannelSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverCursorImageChannelSettings {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xccdbedff_bd00_5b9c_8e4c_00cacf86b634);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverCursorImageChannelSettings, IMiracastReceiverCursorImageChannelSettings_Vtbl, 0xccdbedff_bd00_5b9c_8e4c_00cacf86b634);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverCursorImageChannelSettings_Vtbl {
@@ -149,32 +95,14 @@ pub struct IMiracastReceiverCursorImageChannelSettings_Vtbl {
     #[cfg(not(feature = "Graphics"))]
     SetMaxImageSize: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverDisconnectedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverDisconnectedEventArgs {
-    type Vtable = IMiracastReceiverDisconnectedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverDisconnectedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd9a15e5e_5fee_57e6_b4b0_04727db93229);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverDisconnectedEventArgs, IMiracastReceiverDisconnectedEventArgs_Vtbl, 0xd9a15e5e_5fee_57e6_b4b0_04727db93229);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverDisconnectedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Connection: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverGameControllerDevice(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverGameControllerDevice {
-    type Vtable = IMiracastReceiverGameControllerDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverGameControllerDevice {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2d7171e8_bed4_5118_a058_e2477eb5888d);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverGameControllerDevice, IMiracastReceiverGameControllerDevice_Vtbl, 0x2d7171e8_bed4_5118_a058_e2477eb5888d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverGameControllerDevice_Vtbl {
@@ -188,16 +116,7 @@ pub struct IMiracastReceiverGameControllerDevice_Vtbl {
     pub Changed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverInputDevices(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverInputDevices {
-    type Vtable = IMiracastReceiverInputDevices_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverInputDevices {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xda35bb02_28aa_5ee8_96f5_a42901c66f00);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverInputDevices, IMiracastReceiverInputDevices_Vtbl, 0xda35bb02_28aa_5ee8_96f5_a42901c66f00);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverInputDevices_Vtbl {
@@ -205,16 +124,7 @@ pub struct IMiracastReceiverInputDevices_Vtbl {
     pub Keyboard: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GameController: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverKeyboardDevice(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverKeyboardDevice {
-    type Vtable = IMiracastReceiverKeyboardDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverKeyboardDevice {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbeb67272_06c0_54ff_ac96_217464ff2501);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverKeyboardDevice, IMiracastReceiverKeyboardDevice_Vtbl, 0xbeb67272_06c0_54ff_ac96_217464ff2501);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverKeyboardDevice_Vtbl {
@@ -226,16 +136,7 @@ pub struct IMiracastReceiverKeyboardDevice_Vtbl {
     pub Changed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverMediaSourceCreatedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverMediaSourceCreatedEventArgs {
-    type Vtable = IMiracastReceiverMediaSourceCreatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverMediaSourceCreatedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x17cf519e_1246_531d_945a_6b158e39c3aa);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverMediaSourceCreatedEventArgs, IMiracastReceiverMediaSourceCreatedEventArgs_Vtbl, 0x17cf519e_1246_531d_945a_6b158e39c3aa);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverMediaSourceCreatedEventArgs_Vtbl {
@@ -248,16 +149,7 @@ pub struct IMiracastReceiverMediaSourceCreatedEventArgs_Vtbl {
     pub CursorImageChannelSettings: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverSession(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverSession {
-    type Vtable = IMiracastReceiverSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverSession {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1d2bcdb4_ef8b_5209_bfc9_c32116504803);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverSession, IMiracastReceiverSession_Vtbl, 0x1d2bcdb4_ef8b_5209_bfc9_c32116504803);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverSession_Vtbl {
@@ -275,16 +167,7 @@ pub struct IMiracastReceiverSession_Vtbl {
     pub Start: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub StartAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverSessionStartResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverSessionStartResult {
-    type Vtable = IMiracastReceiverSessionStartResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverSessionStartResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb7c573ee_40ca_51ff_95f2_c9de34f2e90e);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverSessionStartResult, IMiracastReceiverSessionStartResult_Vtbl, 0xb7c573ee_40ca_51ff_95f2_c9de34f2e90e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverSessionStartResult_Vtbl {
@@ -292,16 +175,7 @@ pub struct IMiracastReceiverSessionStartResult_Vtbl {
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MiracastReceiverSessionStartStatus) -> ::windows_core::HRESULT,
     pub ExtendedError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverSettings(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverSettings {
-    type Vtable = IMiracastReceiverSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverSettings {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x57cd2f24_c55a_5fbe_9464_eb05307705dd);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverSettings, IMiracastReceiverSettings_Vtbl, 0x57cd2f24_c55a_5fbe_9464_eb05307705dd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverSettings_Vtbl {
@@ -317,16 +191,7 @@ pub struct IMiracastReceiverSettings_Vtbl {
     pub RequireAuthorizationFromKnownTransmitters: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetRequireAuthorizationFromKnownTransmitters: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverStatus(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverStatus {
-    type Vtable = IMiracastReceiverStatus_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverStatus {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc28a5591_23ab_519e_ad09_90bff6dcc87e);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverStatus, IMiracastReceiverStatus_Vtbl, 0xc28a5591_23ab_519e_ad09_90bff6dcc87e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverStatus_Vtbl {
@@ -340,16 +205,7 @@ pub struct IMiracastReceiverStatus_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     KnownTransmitters: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverStreamControl(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverStreamControl {
-    type Vtable = IMiracastReceiverStreamControl_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverStreamControl {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x38ea2d8b_2769_5ad7_8a8a_254b9df7ba82);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverStreamControl, IMiracastReceiverStreamControl_Vtbl, 0x38ea2d8b_2769_5ad7_8a8a_254b9df7ba82);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverStreamControl_Vtbl {
@@ -361,16 +217,7 @@ pub struct IMiracastReceiverStreamControl_Vtbl {
     pub MuteAudio: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetMuteAudio: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastReceiverVideoStreamSettings(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastReceiverVideoStreamSettings {
-    type Vtable = IMiracastReceiverVideoStreamSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastReceiverVideoStreamSettings {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x169b5e1b_149d_52d0_b126_6f89744e4f50);
-}
+::windows_core::imp::com_interface!(IMiracastReceiverVideoStreamSettings, IMiracastReceiverVideoStreamSettings_Vtbl, 0x169b5e1b_149d_52d0_b126_6f89744e4f50);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastReceiverVideoStreamSettings_Vtbl {
@@ -386,16 +233,7 @@ pub struct IMiracastReceiverVideoStreamSettings_Vtbl {
     pub Bitrate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
     pub SetBitrate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: i32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMiracastTransmitter(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMiracastTransmitter {
-    type Vtable = IMiracastTransmitter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMiracastTransmitter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x342d79fd_2e64_5508_8a30_833d1eac70d0);
-}
+::windows_core::imp::com_interface!(IMiracastTransmitter, IMiracastTransmitter_Vtbl, 0x342d79fd_2e64_5508_8a30_833d1eac70d0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMiracastTransmitter_Vtbl {
@@ -656,7 +494,7 @@ impl ::windows_core::RuntimeName for MiracastReceiverConnection {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverConnection";
 }
 ::windows_core::imp::interface_hierarchy!(MiracastReceiverConnection, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for MiracastReceiverConnection {}
+::windows_core::imp::required_hierarchy!(MiracastReceiverConnection, super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for MiracastReceiverConnection {}
 unsafe impl ::core::marker::Sync for MiracastReceiverConnection {}
 #[repr(transparent)]
@@ -1168,7 +1006,7 @@ impl ::windows_core::RuntimeName for MiracastReceiverSession {
     const NAME: &'static str = "Windows.Media.Miracast.MiracastReceiverSession";
 }
 ::windows_core::imp::interface_hierarchy!(MiracastReceiverSession, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for MiracastReceiverSession {}
+::windows_core::imp::required_hierarchy!(MiracastReceiverSession, super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for MiracastReceiverSession {}
 unsafe impl ::core::marker::Sync for MiracastReceiverSession {}
 #[repr(transparent)]

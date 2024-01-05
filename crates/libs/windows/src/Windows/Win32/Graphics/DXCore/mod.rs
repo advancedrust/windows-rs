@@ -7,9 +7,7 @@ where
     let mut result__ = ::std::ptr::null_mut();
     DXCoreCreateAdapterFactory(&T::IID, &mut result__).from_abi(result__)
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXCoreAdapter(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXCoreAdapter, IDXCoreAdapter_Vtbl, 0xf0db4c7f_fe5a_42a2_bd62_f2a6cf6fc83e);
 impl IDXCoreAdapter {
     pub unsafe fn IsValid(&self) -> bool {
         (::windows_core::Interface::vtable(self).IsValid)(::windows_core::Interface::as_raw(self))
@@ -48,12 +46,6 @@ impl IDXCoreAdapter {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDXCoreAdapter, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDXCoreAdapter {
-    type Vtable = IDXCoreAdapter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXCoreAdapter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf0db4c7f_fe5a_42a2_bd62_f2a6cf6fc83e);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXCoreAdapter_Vtbl {
@@ -69,9 +61,7 @@ pub struct IDXCoreAdapter_Vtbl {
     pub SetState: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, state: DXCoreAdapterState, inputstatedetailssize: usize, inputstatedetails: *const ::core::ffi::c_void, inputdatasize: usize, inputdata: *const ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetFactory: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppvfactory: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXCoreAdapterFactory(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXCoreAdapterFactory, IDXCoreAdapterFactory_Vtbl, 0x78ee5945_c36e_4b13_a669_005dd11c0f06);
 impl IDXCoreAdapterFactory {
     pub unsafe fn CreateAdapterList<T>(&self, filterattributes: &[::windows_core::GUID]) -> ::windows_core::Result<T>
     where
@@ -102,12 +92,6 @@ impl IDXCoreAdapterFactory {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDXCoreAdapterFactory, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDXCoreAdapterFactory {
-    type Vtable = IDXCoreAdapterFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXCoreAdapterFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x78ee5945_c36e_4b13_a669_005dd11c0f06);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXCoreAdapterFactory_Vtbl {
@@ -118,9 +102,7 @@ pub struct IDXCoreAdapterFactory_Vtbl {
     pub RegisterEventNotification: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dxcoreobject: *mut ::core::ffi::c_void, notificationtype: DXCoreNotificationType, callbackfunction: PFN_DXCORE_NOTIFICATION_CALLBACK, callbackcontext: *const ::core::ffi::c_void, eventcookie: *mut u32) -> ::windows_core::HRESULT,
     pub UnregisterEventNotification: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, eventcookie: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXCoreAdapterList(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXCoreAdapterList, IDXCoreAdapterList_Vtbl, 0x526c7776_40e9_459b_b711_f32ad76dfc28);
 impl IDXCoreAdapterList {
     pub unsafe fn GetAdapter<T>(&self, index: u32) -> ::windows_core::Result<T>
     where
@@ -150,12 +132,6 @@ impl IDXCoreAdapterList {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDXCoreAdapterList, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDXCoreAdapterList {
-    type Vtable = IDXCoreAdapterList_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXCoreAdapterList {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x526c7776_40e9_459b_b711_f32ad76dfc28);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXCoreAdapterList_Vtbl {

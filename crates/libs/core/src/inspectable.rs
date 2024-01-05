@@ -37,6 +37,10 @@ pub struct IInspectable_Vtbl {
     pub GetTrustLevel: unsafe extern "system" fn(this: *mut std::ffi::c_void, value: *mut i32) -> HRESULT,
 }
 
+// impl TypeKind for IInspectable {
+//     type TypeKind = ReferenceType;
+// }
+
 unsafe impl Interface for IInspectable {
     type Vtable = IInspectable_Vtbl;
 }

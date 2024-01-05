@@ -37,9 +37,7 @@ where
     ::windows_targets::link!("query.dll" "system" fn LoadIFilterEx(pwcspath : ::windows_core::PCWSTR, dwflags : u32, riid : *const ::windows_core::GUID, ppiunk : *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT);
     LoadIFilterEx(pwcspath.into_param().abi(), dwflags, riid, ppiunk).ok()
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFilter(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IFilter, IFilter_Vtbl, 0x89bcb740_6119_101a_bcb7_00dd010655af);
 impl IFilter {
     #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -64,12 +62,6 @@ impl IFilter {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IFilter, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFilter {
-    type Vtable = IFilter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFilter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x89bcb740_6119_101a_bcb7_00dd010655af);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFilter_Vtbl {
@@ -89,9 +81,7 @@ pub struct IFilter_Vtbl {
     GetValue: usize,
     pub BindRegion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, origpos: FILTERREGION, riid: *const ::windows_core::GUID, ppunk: *mut *mut ::core::ffi::c_void) -> i32,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhraseSink(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IPhraseSink, IPhraseSink_Vtbl, 0xcc906ff0_c058_101a_b554_08002b33b0e6);
 impl IPhraseSink {
     pub unsafe fn PutSmallPhrase<P0, P1>(&self, pwcnoun: P0, cwcnoun: u32, pwcmodifier: P1, cwcmodifier: u32, ulattachmenttype: u32) -> ::windows_core::Result<()>
     where
@@ -108,12 +98,6 @@ impl IPhraseSink {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IPhraseSink, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPhraseSink {
-    type Vtable = IPhraseSink_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPhraseSink {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcc906ff0_c058_101a_b554_08002b33b0e6);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPhraseSink_Vtbl {

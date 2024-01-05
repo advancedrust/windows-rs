@@ -235,7 +235,9 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
 }
 impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IUnknown> for IMap<K, V> {}
 impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IInspectable> for IMap<K, V> {}
-impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IIterable<IKeyValuePair<K, V>>> for IMap<K, V> {}
+impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IIterable<IKeyValuePair<K, V>>> for IMap<K, V> {
+    const QUERY: bool = true;
+}
 impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for IMap<K, V> {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = { ::windows_core::imp::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{3c2925fe-8519-45c1-aa79-197b6718c1c1}").push_slice(b";").push_other(K::SIGNATURE).push_slice(b";").push_other(V::SIGNATURE).push_slice(b")") };
 }
@@ -368,7 +370,9 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
 }
 impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IUnknown> for IMapView<K, V> {}
 impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IInspectable> for IMapView<K, V> {}
-impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IIterable<IKeyValuePair<K, V>>> for IMapView<K, V> {}
+impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IIterable<IKeyValuePair<K, V>>> for IMapView<K, V> {
+    const QUERY: bool = true;
+}
 impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for IMapView<K, V> {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = { ::windows_core::imp::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{e480ce40-a338-4ada-adcf-272272e48cb9}").push_slice(b";").push_other(K::SIGNATURE).push_slice(b";").push_other(V::SIGNATURE).push_slice(b")") };
 }
@@ -494,8 +498,12 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
 }
 impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IUnknown> for IObservableMap<K, V> {}
 impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IInspectable> for IObservableMap<K, V> {}
-impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IIterable<IKeyValuePair<K, V>>> for IObservableMap<K, V> {}
-impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IMap<K, V>> for IObservableMap<K, V> {}
+impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IIterable<IKeyValuePair<K, V>>> for IObservableMap<K, V> {
+    const QUERY: bool = true;
+}
+impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IMap<K, V>> for IObservableMap<K, V> {
+    const QUERY: bool = true;
+}
 impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for IObservableMap<K, V> {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = { ::windows_core::imp::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{65df2bf5-bf39-41b5-aebc-5a9d865e472b}").push_slice(b";").push_other(K::SIGNATURE).push_slice(b";").push_other(V::SIGNATURE).push_slice(b")") };
 }
@@ -637,8 +645,12 @@ impl<T: ::windows_core::RuntimeType + 'static> IObservableVector<T> {
 }
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IUnknown> for IObservableVector<T> {}
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IInspectable> for IObservableVector<T> {}
-impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IIterable<T>> for IObservableVector<T> {}
-impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IVector<T>> for IObservableVector<T> {}
+impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IIterable<T>> for IObservableVector<T> {
+    const QUERY: bool = true;
+}
+impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IVector<T>> for IObservableVector<T> {
+    const QUERY: bool = true;
+}
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for IObservableVector<T> {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = { ::windows_core::imp::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{5917eb53-50b4-4a0d-b309-65862b3f1dbc}").push_slice(b";").push_other(T::SIGNATURE).push_slice(b")") };
 }
@@ -673,9 +685,7 @@ where
     pub RemoveVectorChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub T: ::core::marker::PhantomData<T>,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPropertySet(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IPropertySet, IPropertySet_Vtbl, 0x8a43ed9f_f4e6_4421_acf9_1dab2986820c);
 impl IPropertySet {
     pub fn First(&self) -> ::windows_core::Result<IIterator<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> {
         let this = &::windows_core::ComInterface::cast::<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>>(self)?;
@@ -746,9 +756,7 @@ impl IPropertySet {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IPropertySet, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> for IPropertySet {}
-impl ::windows_core::CanTryInto<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>> for IPropertySet {}
-impl ::windows_core::CanTryInto<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>> for IPropertySet {}
+::windows_core::imp::required_hierarchy!(IPropertySet, IIterable < IKeyValuePair < ::windows_core::HSTRING , ::windows_core::IInspectable > >, IMap < ::windows_core::HSTRING , ::windows_core::IInspectable >, IObservableMap < ::windows_core::HSTRING , ::windows_core::IInspectable >);
 impl ::windows_core::RuntimeType for IPropertySet {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -765,12 +773,6 @@ impl ::core::iter::IntoIterator for &IPropertySet {
     fn into_iter(self) -> Self::IntoIter {
         self.First().unwrap()
     }
-}
-unsafe impl ::windows_core::Interface for IPropertySet {
-    type Vtable = IPropertySet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPropertySet {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8a43ed9f_f4e6_4421_acf9_1dab2986820c);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -868,7 +870,9 @@ impl<T: ::windows_core::RuntimeType + 'static> IVector<T> {
 }
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IUnknown> for IVector<T> {}
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IInspectable> for IVector<T> {}
-impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IIterable<T>> for IVector<T> {}
+impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IIterable<T>> for IVector<T> {
+    const QUERY: bool = true;
+}
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for IVector<T> {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = { ::windows_core::imp::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{913337e9-11a1-4345-a3a2-4e7f956e222d}").push_slice(b";").push_other(T::SIGNATURE).push_slice(b")") };
 }
@@ -931,9 +935,7 @@ where
     pub ReplaceAll: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, items_array_size: u32, items: *const ::windows_core::AbiType<T>) -> ::windows_core::HRESULT,
     pub T: ::core::marker::PhantomData<T>,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVectorChangedEventArgs(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IVectorChangedEventArgs, IVectorChangedEventArgs_Vtbl, 0x575933df_34fe_4480_af15_07691f3d5d9b);
 impl IVectorChangedEventArgs {
     pub fn CollectionChange(&self) -> ::windows_core::Result<CollectionChange> {
         let this = self;
@@ -953,12 +955,6 @@ impl IVectorChangedEventArgs {
 ::windows_core::imp::interface_hierarchy!(IVectorChangedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for IVectorChangedEventArgs {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IVectorChangedEventArgs {
-    type Vtable = IVectorChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVectorChangedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x575933df_34fe_4480_af15_07691f3d5d9b);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -1014,7 +1010,9 @@ impl<T: ::windows_core::RuntimeType + 'static> IVectorView<T> {
 }
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IUnknown> for IVectorView<T> {}
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IInspectable> for IVectorView<T> {}
-impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IIterable<T>> for IVectorView<T> {}
+impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IIterable<T>> for IVectorView<T> {
+    const QUERY: bool = true;
+}
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for IVectorView<T> {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = { ::windows_core::imp::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{bbe1fa4c-b0e3-4583-baef-1f1b2e483e56}").push_slice(b";").push_other(T::SIGNATURE).push_slice(b")") };
 }
@@ -1175,10 +1173,7 @@ impl ::core::iter::IntoIterator for &PropertySet {
     }
 }
 ::windows_core::imp::interface_hierarchy!(PropertySet, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> for PropertySet {}
-impl ::windows_core::CanTryInto<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>> for PropertySet {}
-impl ::windows_core::CanTryInto<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>> for PropertySet {}
-impl ::windows_core::CanTryInto<IPropertySet> for PropertySet {}
+::windows_core::imp::required_hierarchy!(PropertySet, IIterable < IKeyValuePair < ::windows_core::HSTRING , ::windows_core::IInspectable > >, IMap < ::windows_core::HSTRING , ::windows_core::IInspectable >, IObservableMap < ::windows_core::HSTRING , ::windows_core::IInspectable >, IPropertySet);
 unsafe impl ::core::marker::Send for PropertySet {}
 unsafe impl ::core::marker::Sync for PropertySet {}
 #[repr(transparent)]
@@ -1284,9 +1279,7 @@ impl ::core::iter::IntoIterator for &StringMap {
     }
 }
 ::windows_core::imp::interface_hierarchy!(StringMap, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>> for StringMap {}
-impl ::windows_core::CanTryInto<IMap<::windows_core::HSTRING, ::windows_core::HSTRING>> for StringMap {}
-impl ::windows_core::CanTryInto<IObservableMap<::windows_core::HSTRING, ::windows_core::HSTRING>> for StringMap {}
+::windows_core::imp::required_hierarchy!(StringMap, IIterable < IKeyValuePair < ::windows_core::HSTRING , ::windows_core::HSTRING > >, IMap < ::windows_core::HSTRING , ::windows_core::HSTRING >, IObservableMap < ::windows_core::HSTRING , ::windows_core::HSTRING >);
 unsafe impl ::core::marker::Send for StringMap {}
 unsafe impl ::core::marker::Sync for StringMap {}
 #[repr(transparent)]
@@ -1395,10 +1388,7 @@ impl ::core::iter::IntoIterator for &ValueSet {
     }
 }
 ::windows_core::imp::interface_hierarchy!(ValueSet, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IIterable<IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> for ValueSet {}
-impl ::windows_core::CanTryInto<IMap<::windows_core::HSTRING, ::windows_core::IInspectable>> for ValueSet {}
-impl ::windows_core::CanTryInto<IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>> for ValueSet {}
-impl ::windows_core::CanTryInto<IPropertySet> for ValueSet {}
+::windows_core::imp::required_hierarchy!(ValueSet, IIterable < IKeyValuePair < ::windows_core::HSTRING , ::windows_core::IInspectable > >, IMap < ::windows_core::HSTRING , ::windows_core::IInspectable >, IObservableMap < ::windows_core::HSTRING , ::windows_core::IInspectable >, IPropertySet);
 unsafe impl ::core::marker::Send for ValueSet {}
 unsafe impl ::core::marker::Sync for ValueSet {}
 #[repr(transparent)]
@@ -1423,7 +1413,7 @@ impl ::windows_core::RuntimeType for CollectionChange {
 }
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct MapChangedEventHandler<K, V>(pub ::windows_core::IUnknown, ::core::marker::PhantomData<K>, ::core::marker::PhantomData<V>)
+pub struct MapChangedEventHandler<K, V>(::windows_core::IUnknown, ::core::marker::PhantomData<K>, ::core::marker::PhantomData<V>)
 where
     K: ::windows_core::RuntimeType + 'static,
     V: ::windows_core::RuntimeType + 'static;
@@ -1434,11 +1424,11 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
     }
     pub fn Invoke<P0, P1>(&self, sender: P0, event: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IObservableMap<K, V>>,
-        P1: ::windows_core::TryIntoParam<IMapChangedEventArgs<K>>,
+        P0: ::windows_core::IntoParam<IObservableMap<K, V>>,
+        P1: ::windows_core::IntoParam<IMapChangedEventArgs<K>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.try_into_param()?.abi(), event.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), event.into_param().abi()).ok() }
     }
 }
 #[repr(C)]
@@ -1511,7 +1501,7 @@ where
 }
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct VectorChangedEventHandler<T>(pub ::windows_core::IUnknown, ::core::marker::PhantomData<T>)
+pub struct VectorChangedEventHandler<T>(::windows_core::IUnknown, ::core::marker::PhantomData<T>)
 where
     T: ::windows_core::RuntimeType + 'static;
 impl<T: ::windows_core::RuntimeType + 'static> VectorChangedEventHandler<T> {
@@ -1521,11 +1511,11 @@ impl<T: ::windows_core::RuntimeType + 'static> VectorChangedEventHandler<T> {
     }
     pub fn Invoke<P0, P1>(&self, sender: P0, event: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IObservableVector<T>>,
-        P1: ::windows_core::TryIntoParam<IVectorChangedEventArgs>,
+        P0: ::windows_core::IntoParam<IObservableVector<T>>,
+        P1: ::windows_core::IntoParam<IVectorChangedEventArgs>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.try_into_param()?.abi(), event.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), sender.into_param().abi(), event.into_param().abi()).ok() }
     }
 }
 #[repr(C)]

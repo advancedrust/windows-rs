@@ -312,11 +312,8 @@ impl Writer {
         };
         for (position, param) in self.generic_params(params) {
             match param.kind {
-                metadata::SignatureParamKind::TryInto => {
-                    let name: TokenStream = gen_name(position);
-                    let into = self.type_name(&param.ty);
-                    tokens.combine(&quote! { #name: ::windows_core::TryIntoParam<#into>, });
-                }
+                // TODO: simplify this enum
+                metadata::SignatureParamKind::TryInto |
                 metadata::SignatureParamKind::IntoParam => {
                     let name: TokenStream = gen_name(position);
                     let into = self.type_name(&param.ty);
@@ -552,6 +549,14 @@ impl Writer {
         let guid = self.type_name(&metadata::Type::GUID);
         format!("{}::from_u128(0x{:08x?}_{:04x?}_{:04x?}_{:02x?}{:02x?}_{:02x?}{:02x?}{:02x?}{:02x?}{:02x?}{:02x?})", guid.into_string(), value.0, value.1, value.2, value.3, value.4, value.5, value.6, value.7, value.8, value.9, value.10).into()
     }
+
+    pub fn guid_literal(&self, value: Option<metadata::Guid>) -> TokenStream {
+        match value {
+            Some(value) =>         format!("0x{:08x?}_{:04x?}_{:04x?}_{:02x?}{:02x?}_{:02x?}{:02x?}{:02x?}{:02x?}{:02x?}{:02x?}", value.0, value.1, value.2, value.3, value.4, value.5, value.6, value.7, value.8, value.9, value.10).into(),
+            None => quote! { 0 },
+        }
+    }
+
     pub fn agile(&self, def: metadata::TypeDef, ident: &TokenStream, constraints: &TokenStream, features: &TokenStream) -> TokenStream {
         if type_def_is_agile(def) {
             quote! {
@@ -737,23 +742,30 @@ impl Writer {
                 }
             };
 
-            let mut tokens = quote! {
-                #features
-                unsafe impl<#constraints> ::windows_core::Interface for #ident {
-                    type Vtable = #vtbl;
-                }
-            };
-
             if has_unknown_base {
-                tokens.combine(&quote! {
+                if generics.is_empty() {
+quote! {
+
+}
+                } else {
+                quote! {
+                    #features
+                    unsafe impl<#constraints> ::windows_core::Interface for #ident {
+                        type Vtable = #vtbl;
+                    }
                     #features
                     unsafe impl<#constraints> ::windows_core::ComInterface for #ident {
                         const IID: ::windows_core::GUID = #guid;
                     }
-                });
+                    // #features
+                    // impl<#constraints> ::windows_core::TypeKind for #ident {
+                    //     type TypeKind = ::windows_core::ReferenceType;
+                    // }
+                }
             }
-
-            tokens
+            } else {
+                quote! {}
+            }
         }
     }
     pub fn interface_vtbl(&self, def: metadata::TypeDef, generics: &[metadata::Type], _ident: &TokenStream, constraints: &TokenStream, features: &TokenStream) -> TokenStream {
@@ -923,9 +935,8 @@ impl Writer {
                                 quote! { #name.len().try_into().unwrap(), }
                             }
                         }
-                        metadata::SignatureParamKind::TryInto => {
-                            quote! { #name.try_into_param()?.abi(), }
-                        }
+                        // TODO: collapse this enum
+                        metadata::SignatureParamKind::TryInto |
                         metadata::SignatureParamKind::IntoParam => {
                             quote! { #name.into_param().abi(), }
                         }
@@ -942,6 +953,8 @@ impl Writer {
                         metadata::SignatureParamKind::Blittable => {
                             if matches!(param.ty, metadata::Type::PrimitiveOrEnum(_, _)) {
                                 quote! { #name.0 as _, }
+                            // } else if metadata::type_non_com_interface(&param.ty) {
+                            //     quote! { #name.map_or(::std::ptr::null_mut(), |interface|::core::mem::transmute(interface)), }
                             } else {
                                 quote! { ::core::mem::transmute(#name), }
                             }
@@ -1029,8 +1042,13 @@ impl Writer {
                     tokens.combine(&quote! { #name: ::core::option::Option<#kind>, });
                 }
                 metadata::SignatureParamKind::ValueType | metadata::SignatureParamKind::Blittable => {
-                    let kind = self.type_default_name(&param.ty);
-                    tokens.combine(&quote! { #name: #kind, });
+                    // if metadata::type_non_com_interface(&param.ty) {
+                    //     let kind = self.type_name(&param.ty);
+                    //     tokens.combine(&quote! { #name: ::core::option::Option<&#kind>, });
+                    // } else {
+                        let kind = self.type_default_name(&param.ty);
+                        tokens.combine(&quote! { #name: #kind, });
+                    //}
                 }
                 metadata::SignatureParamKind::Other => {
                     let kind = self.type_default_name(&param.ty);

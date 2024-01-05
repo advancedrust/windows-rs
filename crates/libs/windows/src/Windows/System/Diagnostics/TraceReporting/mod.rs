@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPlatformDiagnosticActionsStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPlatformDiagnosticActionsStatics {
-    type Vtable = IPlatformDiagnosticActionsStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPlatformDiagnosticActionsStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc1145cfa_9292_4267_890a_9ea3ed072312);
-}
+::windows_core::imp::com_interface!(IPlatformDiagnosticActionsStatics, IPlatformDiagnosticActionsStatics_Vtbl, 0xc1145cfa_9292_4267_890a_9ea3ed072312);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPlatformDiagnosticActionsStatics_Vtbl {
@@ -30,16 +21,7 @@ pub struct IPlatformDiagnosticActionsStatics_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     GetKnownTraceList: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPlatformDiagnosticTraceInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPlatformDiagnosticTraceInfo {
-    type Vtable = IPlatformDiagnosticTraceInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPlatformDiagnosticTraceInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf870ed97_d597_4bf7_88dc_cf5c7dc2a1d2);
-}
+::windows_core::imp::com_interface!(IPlatformDiagnosticTraceInfo, IPlatformDiagnosticTraceInfo_Vtbl, 0xf870ed97_d597_4bf7_88dc_cf5c7dc2a1d2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPlatformDiagnosticTraceInfo_Vtbl {
@@ -51,16 +33,7 @@ pub struct IPlatformDiagnosticTraceInfo_Vtbl {
     pub MaxTraceDurationFileTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i64) -> ::windows_core::HRESULT,
     pub Priority: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut PlatformDiagnosticTracePriority) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPlatformDiagnosticTraceRuntimeInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPlatformDiagnosticTraceRuntimeInfo {
-    type Vtable = IPlatformDiagnosticTraceRuntimeInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPlatformDiagnosticTraceRuntimeInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3d4d5e2d_01d8_4768_8554_1eb1ca610986);
-}
+::windows_core::imp::com_interface!(IPlatformDiagnosticTraceRuntimeInfo, IPlatformDiagnosticTraceRuntimeInfo_Vtbl, 0x3d4d5e2d_01d8_4768_8554_1eb1ca610986);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPlatformDiagnosticTraceRuntimeInfo_Vtbl {
@@ -80,11 +53,11 @@ impl PlatformDiagnosticActions {
     #[cfg(feature = "Foundation_Collections")]
     pub fn TryEscalateScenario<P0>(scenarioid: ::windows_core::GUID, escalationtype: PlatformDiagnosticEscalationType, outputdirectory: &::windows_core::HSTRING, timestampoutputdirectory: bool, forceescalationupload: bool, triggers: P0) -> ::windows_core::Result<bool>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::Collections::IMapView<::windows_core::HSTRING, ::windows_core::HSTRING>>,
     {
         Self::IPlatformDiagnosticActionsStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).TryEscalateScenario)(::windows_core::Interface::as_raw(this), scenarioid, escalationtype, ::core::mem::transmute_copy(outputdirectory), timestampoutputdirectory, forceescalationupload, triggers.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).TryEscalateScenario)(::windows_core::Interface::as_raw(this), scenarioid, escalationtype, ::core::mem::transmute_copy(outputdirectory), timestampoutputdirectory, forceescalationupload, triggers.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     pub fn DownloadLatestSettingsForNamespace(partner: &::windows_core::HSTRING, feature: &::windows_core::HSTRING, isscenarionamespace: bool, downloadovercostednetwork: bool, downloadoverbattery: bool) -> ::windows_core::Result<PlatformDiagnosticActionState> {

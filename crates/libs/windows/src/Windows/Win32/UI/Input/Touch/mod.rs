@@ -78,9 +78,7 @@ where
     ::windows_targets::link!("user32.dll" "system" fn UnregisterTouchWindow(hwnd : super::super::super::Foundation:: HWND) -> super::super::super::Foundation:: BOOL);
     UnregisterTouchWindow(hwnd.into_param().abi()).ok()
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInertiaProcessor(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IInertiaProcessor, IInertiaProcessor_Vtbl, 0x18b00c6d_c5ee_41b1_90a9_9d4a929095ad);
 impl IInertiaProcessor {
     pub unsafe fn InitialOriginX(&self) -> ::windows_core::Result<f32> {
         let mut result__ = ::std::mem::zeroed();
@@ -255,12 +253,6 @@ impl IInertiaProcessor {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IInertiaProcessor, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInertiaProcessor {
-    type Vtable = IInertiaProcessor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInertiaProcessor {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x18b00c6d_c5ee_41b1_90a9_9d4a929095ad);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInertiaProcessor_Vtbl {
@@ -315,9 +307,7 @@ pub struct IInertiaProcessor_Vtbl {
     pub Complete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CompleteTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, timestamp: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IManipulationProcessor(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IManipulationProcessor, IManipulationProcessor_Vtbl, 0xa22ac519_8300_48a0_bef4_f1be8737dba4);
 impl IManipulationProcessor {
     pub unsafe fn SupportedManipulations(&self) -> ::windows_core::Result<MANIPULATION_PROCESSOR_MANIPULATIONS> {
         let mut result__ = ::std::mem::zeroed();
@@ -393,12 +383,6 @@ impl IManipulationProcessor {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IManipulationProcessor, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IManipulationProcessor {
-    type Vtable = IManipulationProcessor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IManipulationProcessor {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa22ac519_8300_48a0_bef4_f1be8737dba4);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IManipulationProcessor_Vtbl {
@@ -425,9 +409,7 @@ pub struct IManipulationProcessor_Vtbl {
     pub MinimumScaleRotateRadius: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, minradius: *mut f32) -> ::windows_core::HRESULT,
     pub SetMinimumScaleRotateRadius: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, minradius: f32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct _IManipulationEvents(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(_IManipulationEvents, _IManipulationEvents_Vtbl, 0x4f62c8da_9c53_4b22_93df_927a862bbb03);
 impl _IManipulationEvents {
     pub unsafe fn ManipulationStarted(&self, x: f32, y: f32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).ManipulationStarted)(::windows_core::Interface::as_raw(self), x, y).ok()
@@ -440,12 +422,6 @@ impl _IManipulationEvents {
     }
 }
 ::windows_core::imp::interface_hierarchy!(_IManipulationEvents, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for _IManipulationEvents {
-    type Vtable = _IManipulationEvents_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for _IManipulationEvents {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4f62c8da_9c53_4b22_93df_927a862bbb03);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct _IManipulationEvents_Vtbl {

@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IScreenReaderPositionChangedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IScreenReaderPositionChangedEventArgs {
-    type Vtable = IScreenReaderPositionChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IScreenReaderPositionChangedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x557eb5e5_54d0_5ccd_9fc5_ed33357f8a9f);
-}
+::windows_core::imp::com_interface!(IScreenReaderPositionChangedEventArgs, IScreenReaderPositionChangedEventArgs_Vtbl, 0x557eb5e5_54d0_5ccd_9fc5_ed33357f8a9f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IScreenReaderPositionChangedEventArgs_Vtbl {
@@ -15,16 +6,7 @@ pub struct IScreenReaderPositionChangedEventArgs_Vtbl {
     pub ScreenPositionInRawPixels: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::Rect) -> ::windows_core::HRESULT,
     pub IsReadingText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IScreenReaderService(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IScreenReaderService {
-    type Vtable = IScreenReaderService_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IScreenReaderService {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x19475427_eac0_50d3_bdd9_9b487a226256);
-}
+::windows_core::imp::com_interface!(IScreenReaderService, IScreenReaderService_Vtbl, 0x19475427_eac0_50d3_bdd9_9b487a226256);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IScreenReaderService_Vtbl {

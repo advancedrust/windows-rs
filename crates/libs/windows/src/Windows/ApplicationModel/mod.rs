@@ -76,16 +76,7 @@ pub mod VoiceCommands;
 #[cfg(feature = "ApplicationModel_Wallet")]
 #[doc = "Required features: `\"ApplicationModel_Wallet\"`"]
 pub mod Wallet;
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppDisplayInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppDisplayInfo {
-    type Vtable = IAppDisplayInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppDisplayInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1aeb1103_e4d4_41aa_a4f6_c4a276e79eac);
-}
+::windows_core::imp::com_interface!(IAppDisplayInfo, IAppDisplayInfo_Vtbl, 0x1aeb1103_e4d4_41aa_a4f6_c4a276e79eac);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppDisplayInfo_Vtbl {
@@ -97,16 +88,7 @@ pub struct IAppDisplayInfo_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     GetLogo: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppInfo {
-    type Vtable = IAppInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcf7f59b3_6a09_4de8_a6c0_5792d56880d1);
-}
+::windows_core::imp::com_interface!(IAppInfo, IAppInfo_Vtbl, 0xcf7f59b3_6a09_4de8_a6c0_5792d56880d1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppInfo_Vtbl {
@@ -116,64 +98,28 @@ pub struct IAppInfo_Vtbl {
     pub DisplayInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub PackageFamilyName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppInfo2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppInfo2 {
-    type Vtable = IAppInfo2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppInfo2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbe4b1f5a_2098_431b_bd25_b30878748d47);
-}
+::windows_core::imp::com_interface!(IAppInfo2, IAppInfo2_Vtbl, 0xbe4b1f5a_2098_431b_bd25_b30878748d47);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppInfo2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Package: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppInfo3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppInfo3 {
-    type Vtable = IAppInfo3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppInfo3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x09a78e46_93a4_46de_9397_0843b57115ea);
-}
+::windows_core::imp::com_interface!(IAppInfo3, IAppInfo3_Vtbl, 0x09a78e46_93a4_46de_9397_0843b57115ea);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppInfo3_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ExecutionContext: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut AppExecutionContext) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppInfo4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppInfo4 {
-    type Vtable = IAppInfo4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppInfo4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2f34bdeb_1609_4554_9f33_12e1e803e0d4);
-}
+::windows_core::imp::com_interface!(IAppInfo4, IAppInfo4_Vtbl, 0x2f34bdeb_1609_4554_9f33_12e1e803e0d4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppInfo4_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SupportedFileExtensions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result_size__: *mut u32, result__: *mut *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppInfoStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppInfoStatics {
-    type Vtable = IAppInfoStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppInfoStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcf1f782a_e48b_4f0c_9b0b_79c3f8957dd7);
-}
+::windows_core::imp::com_interface!(IAppInfoStatics, IAppInfoStatics_Vtbl, 0xcf1f782a_e48b_4f0c_9b0b_79c3f8957dd7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppInfoStatics_Vtbl {
@@ -185,32 +131,14 @@ pub struct IAppInfoStatics_Vtbl {
     #[cfg(not(feature = "System"))]
     GetFromAppUserModelIdForUser: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppInstallerInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppInstallerInfo {
-    type Vtable = IAppInstallerInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppInstallerInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x29ab2ac0_d4f6_42a3_adcd_d6583c659508);
-}
+::windows_core::imp::com_interface!(IAppInstallerInfo, IAppInstallerInfo_Vtbl, 0x29ab2ac0_d4f6_42a3_adcd_d6583c659508);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppInstallerInfo_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Uri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppInstallerInfo2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppInstallerInfo2 {
-    type Vtable = IAppInstallerInfo2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppInstallerInfo2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd20f1388_8256_597c_8511_c84ec50d5e2b);
-}
+::windows_core::imp::com_interface!(IAppInstallerInfo2, IAppInstallerInfo2_Vtbl, 0xd20f1388_8256_597c_8511_c84ec50d5e2b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppInstallerInfo2_Vtbl {
@@ -243,16 +171,7 @@ pub struct IAppInstallerInfo2_Vtbl {
     OptionalPackageUris: usize,
     pub PolicySource: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut AppInstallerPolicySource) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppInstance(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppInstance {
-    type Vtable = IAppInstance_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppInstance {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x675f2b47_f25f_4532_9fd6_3633e0634d01);
-}
+::windows_core::imp::com_interface!(IAppInstance, IAppInstance_Vtbl, 0x675f2b47_f25f_4532_9fd6_3633e0634d01);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppInstance_Vtbl {
@@ -261,16 +180,7 @@ pub struct IAppInstance_Vtbl {
     pub IsCurrentInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub RedirectActivationTo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppInstanceStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppInstanceStatics {
-    type Vtable = IAppInstanceStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppInstanceStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9d11e77f_9ea6_47af_a6ec_46784c5ba254);
-}
+::windows_core::imp::com_interface!(IAppInstanceStatics, IAppInstanceStatics_Vtbl, 0x9d11e77f_9ea6_47af_a6ec_46784c5ba254);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppInstanceStatics_Vtbl {
@@ -287,57 +197,28 @@ pub struct IAppInstanceStatics_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     GetInstances: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICameraApplicationManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICameraApplicationManagerStatics {
-    type Vtable = ICameraApplicationManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICameraApplicationManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9599ddce_9bd3_435c_8054_c1add50028fe);
-}
+::windows_core::imp::com_interface!(ICameraApplicationManagerStatics, ICameraApplicationManagerStatics_Vtbl, 0x9599ddce_9bd3_435c_8054_c1add50028fe);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICameraApplicationManagerStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ShowInstalledApplicationsUI: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDesignModeStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDesignModeStatics {
-    type Vtable = IDesignModeStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDesignModeStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2c3893cc_f81a_4e7a_b857_76a80887e185);
-}
+::windows_core::imp::com_interface!(IDesignModeStatics, IDesignModeStatics_Vtbl, 0x2c3893cc_f81a_4e7a_b857_76a80887e185);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDesignModeStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub DesignModeEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDesignModeStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDesignModeStatics2 {
-    type Vtable = IDesignModeStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDesignModeStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x80cf8137_b064_4858_bec8_3eba22357535);
-}
+::windows_core::imp::com_interface!(IDesignModeStatics2, IDesignModeStatics2_Vtbl, 0x80cf8137_b064_4858_bec8_3eba22357535);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDesignModeStatics2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub DesignMode2Enabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IEnteredBackgroundEventArgs(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IEnteredBackgroundEventArgs, IEnteredBackgroundEventArgs_Vtbl, 0xf722dcc2_9827_403d_aaed_ecca9ac17398);
 impl IEnteredBackgroundEventArgs {
     pub fn GetDeferral(&self) -> ::windows_core::Result<super::Foundation::Deferral> {
         let this = self;
@@ -351,28 +232,13 @@ impl IEnteredBackgroundEventArgs {
 impl ::windows_core::RuntimeType for IEnteredBackgroundEventArgs {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IEnteredBackgroundEventArgs {
-    type Vtable = IEnteredBackgroundEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IEnteredBackgroundEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf722dcc2_9827_403d_aaed_ecca9ac17398);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IEnteredBackgroundEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFindRelatedPackagesOptions(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFindRelatedPackagesOptions {
-    type Vtable = IFindRelatedPackagesOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFindRelatedPackagesOptions {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x41dd7eea_b335_521f_b96c_5ea07f5b7329);
-}
+::windows_core::imp::com_interface!(IFindRelatedPackagesOptions, IFindRelatedPackagesOptions_Vtbl, 0x41dd7eea_b335_521f_b96c_5ea07f5b7329);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFindRelatedPackagesOptions_Vtbl {
@@ -388,32 +254,14 @@ pub struct IFindRelatedPackagesOptions_Vtbl {
     pub IncludeResources: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetIncludeResources: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFindRelatedPackagesOptionsFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFindRelatedPackagesOptionsFactory {
-    type Vtable = IFindRelatedPackagesOptionsFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFindRelatedPackagesOptionsFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd7d17254_a4fd_55c4_98cf_f2710b7d8be2);
-}
+::windows_core::imp::com_interface!(IFindRelatedPackagesOptionsFactory, IFindRelatedPackagesOptionsFactory_Vtbl, 0xd7d17254_a4fd_55c4_98cf_f2710b7d8be2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFindRelatedPackagesOptionsFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, relationship: PackageRelationship, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFullTrustProcessLaunchResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFullTrustProcessLaunchResult {
-    type Vtable = IFullTrustProcessLaunchResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFullTrustProcessLaunchResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8917d888_edfb_515f_8e22_5ebceb69dfd9);
-}
+::windows_core::imp::com_interface!(IFullTrustProcessLaunchResult, IFullTrustProcessLaunchResult_Vtbl, 0x8917d888_edfb_515f_8e22_5ebceb69dfd9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFullTrustProcessLaunchResult_Vtbl {
@@ -421,16 +269,7 @@ pub struct IFullTrustProcessLaunchResult_Vtbl {
     pub LaunchResult: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut FullTrustLaunchResult) -> ::windows_core::HRESULT,
     pub ExtendedError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFullTrustProcessLauncherStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFullTrustProcessLauncherStatics {
-    type Vtable = IFullTrustProcessLauncherStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFullTrustProcessLauncherStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd784837f_1100_3c6b_a455_f6262cc331b6);
-}
+::windows_core::imp::com_interface!(IFullTrustProcessLauncherStatics, IFullTrustProcessLauncherStatics_Vtbl, 0xd784837f_1100_3c6b_a455_f6262cc331b6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFullTrustProcessLauncherStatics_Vtbl {
@@ -440,16 +279,7 @@ pub struct IFullTrustProcessLauncherStatics_Vtbl {
     pub LaunchFullTrustProcessForAppAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, fulltrustpackagerelativeappid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub LaunchFullTrustProcessForAppWithParametersAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, fulltrustpackagerelativeappid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, parametergroupid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFullTrustProcessLauncherStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFullTrustProcessLauncherStatics2 {
-    type Vtable = IFullTrustProcessLauncherStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFullTrustProcessLauncherStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8b8ed72f_b65c_56cf_a1a7_2bf77cbc6ea8);
-}
+::windows_core::imp::com_interface!(IFullTrustProcessLauncherStatics2, IFullTrustProcessLauncherStatics2_Vtbl, 0x8b8ed72f_b65c_56cf_a1a7_2bf77cbc6ea8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFullTrustProcessLauncherStatics2_Vtbl {
@@ -457,9 +287,7 @@ pub struct IFullTrustProcessLauncherStatics2_Vtbl {
     pub LaunchFullTrustProcessForCurrentAppWithArgumentsAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, commandline: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub LaunchFullTrustProcessForAppWithArgumentsAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, fulltrustpackagerelativeappid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, commandline: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILeavingBackgroundEventArgs(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ILeavingBackgroundEventArgs, ILeavingBackgroundEventArgs_Vtbl, 0x39c6ec9a_ae6e_46f9_a07a_cfc23f88733e);
 impl ILeavingBackgroundEventArgs {
     pub fn GetDeferral(&self) -> ::windows_core::Result<super::Foundation::Deferral> {
         let this = self;
@@ -473,28 +301,13 @@ impl ILeavingBackgroundEventArgs {
 impl ::windows_core::RuntimeType for ILeavingBackgroundEventArgs {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for ILeavingBackgroundEventArgs {
-    type Vtable = ILeavingBackgroundEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILeavingBackgroundEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x39c6ec9a_ae6e_46f9_a07a_cfc23f88733e);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILeavingBackgroundEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILimitedAccessFeatureRequestResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILimitedAccessFeatureRequestResult {
-    type Vtable = ILimitedAccessFeatureRequestResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILimitedAccessFeatureRequestResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd45156a6_1e24_5ddd_abb4_6188aba4d5bf);
-}
+::windows_core::imp::com_interface!(ILimitedAccessFeatureRequestResult, ILimitedAccessFeatureRequestResult_Vtbl, 0xd45156a6_1e24_5ddd_abb4_6188aba4d5bf);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILimitedAccessFeatureRequestResult_Vtbl {
@@ -503,32 +316,14 @@ pub struct ILimitedAccessFeatureRequestResult_Vtbl {
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut LimitedAccessFeatureStatus) -> ::windows_core::HRESULT,
     pub EstimatedRemovalDate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILimitedAccessFeaturesStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILimitedAccessFeaturesStatics {
-    type Vtable = ILimitedAccessFeaturesStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILimitedAccessFeaturesStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8be612d4_302b_5fbf_a632_1a99e43e8925);
-}
+::windows_core::imp::com_interface!(ILimitedAccessFeaturesStatics, ILimitedAccessFeaturesStatics_Vtbl, 0x8be612d4_302b_5fbf_a632_1a99e43e8925);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILimitedAccessFeaturesStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub TryUnlockFeature: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, featureid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, token: ::std::mem::MaybeUninit<::windows_core::HSTRING>, attestation: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackage(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackage {
-    type Vtable = IPackage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackage {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x163c792f_bd75_413c_bf23_b1fe7b95d825);
-}
+::windows_core::imp::com_interface!(IPackage, IPackage_Vtbl, 0x163c792f_bd75_413c_bf23_b1fe7b95d825);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackage_Vtbl {
@@ -544,16 +339,7 @@ pub struct IPackage_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Dependencies: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackage2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackage2 {
-    type Vtable = IPackage2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackage2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa6612fb6_7688_4ace_95fb_359538e7aa01);
-}
+::windows_core::imp::com_interface!(IPackage2, IPackage2_Vtbl, 0xa6612fb6_7688_4ace_95fb_359538e7aa01);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackage2_Vtbl {
@@ -566,16 +352,7 @@ pub struct IPackage2_Vtbl {
     pub IsBundle: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub IsDevelopmentMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackage3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackage3 {
-    type Vtable = IPackage3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackage3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5f738b61_f86a_4917_93d1_f1ee9d3b35d9);
-}
+::windows_core::imp::com_interface!(IPackage3, IPackage3_Vtbl, 0x5f738b61_f86a_4917_93d1_f1ee9d3b35d9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackage3_Vtbl {
@@ -587,16 +364,7 @@ pub struct IPackage3_Vtbl {
     #[cfg(not(all(feature = "ApplicationModel_Core", feature = "Foundation_Collections")))]
     GetAppListEntriesAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackage4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackage4 {
-    type Vtable = IPackage4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackage4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x65aed1ae_b95b_450c_882b_6255187f397e);
-}
+::windows_core::imp::com_interface!(IPackage4, IPackage4_Vtbl, 0x65aed1ae_b95b_450c_882b_6255187f397e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackage4_Vtbl {
@@ -605,16 +373,7 @@ pub struct IPackage4_Vtbl {
     pub IsOptional: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub VerifyContentIntegrityAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackage5(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackage5 {
-    type Vtable = IPackage5_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackage5 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0e842dd4_d9ac_45ed_9a1e_74ce056b2635);
-}
+::windows_core::imp::com_interface!(IPackage5, IPackage5_Vtbl, 0x0e842dd4_d9ac_45ed_9a1e_74ce056b2635);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackage5_Vtbl {
@@ -634,16 +393,7 @@ pub struct IPackage5_Vtbl {
     StageContentGroupsWithPriorityAsync: usize,
     pub SetInUseAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, inuse: bool, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackage6(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackage6 {
-    type Vtable = IPackage6_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackage6 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8b1ad942_12d7_4754_ae4e_638cbc0e3a2e);
-}
+::windows_core::imp::com_interface!(IPackage6, IPackage6_Vtbl, 0x8b1ad942_12d7_4754_ae4e_638cbc0e3a2e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackage6_Vtbl {
@@ -651,16 +401,7 @@ pub struct IPackage6_Vtbl {
     pub GetAppInstallerInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CheckUpdateAvailabilityAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackage7(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackage7 {
-    type Vtable = IPackage7_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackage7 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x86ff8d31_a2e4_45e0_9732_283a6d88fde1);
-}
+::windows_core::imp::com_interface!(IPackage7, IPackage7_Vtbl, 0x86ff8d31_a2e4_45e0_9732_283a6d88fde1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackage7_Vtbl {
@@ -674,16 +415,7 @@ pub struct IPackage7_Vtbl {
     #[cfg(not(feature = "Storage"))]
     EffectiveLocation: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackage8(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackage8 {
-    type Vtable = IPackage8_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackage8 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2c584f7b_ce2a_4be6_a093_77cfbb2a7ea1);
-}
+::windows_core::imp::com_interface!(IPackage8, IPackage8_Vtbl, 0x2c584f7b_ce2a_4be6_a093_77cfbb2a7ea1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackage8_Vtbl {
@@ -716,16 +448,7 @@ pub struct IPackage8_Vtbl {
     GetAppListEntries: usize,
     pub IsStub: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackage9(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackage9 {
-    type Vtable = IPackage9_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackage9 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd5ab224f_d7e1_49ec_90ce_720cdbd02e9c);
-}
+::windows_core::imp::com_interface!(IPackage9, IPackage9_Vtbl, 0xd5ab224f_d7e1_49ec_90ce_720cdbd02e9c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackage9_Vtbl {
@@ -736,16 +459,7 @@ pub struct IPackage9_Vtbl {
     FindRelatedPackages: usize,
     pub SourceUriSchemeName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageCatalog(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageCatalog {
-    type Vtable = IPackageCatalog_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageCatalog {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x230a3751_9de3_4445_be74_91fb325abefe);
-}
+::windows_core::imp::com_interface!(IPackageCatalog, IPackageCatalog_Vtbl, 0x230a3751_9de3_4445_be74_91fb325abefe);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageCatalog_Vtbl {
@@ -761,16 +475,7 @@ pub struct IPackageCatalog_Vtbl {
     pub PackageStatusChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemovePackageStatusChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageCatalog2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageCatalog2 {
-    type Vtable = IPackageCatalog2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageCatalog2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x96a60c36_8ff7_4344_b6bf_ee64c2207ed2);
-}
+::windows_core::imp::com_interface!(IPackageCatalog2, IPackageCatalog2_Vtbl, 0x96a60c36_8ff7_4344_b6bf_ee64c2207ed2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageCatalog2_Vtbl {
@@ -779,16 +484,7 @@ pub struct IPackageCatalog2_Vtbl {
     pub RemovePackageContentGroupStaging: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub AddOptionalPackageAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, optionalpackagefamilyname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageCatalog3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageCatalog3 {
-    type Vtable = IPackageCatalog3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageCatalog3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x96dd5c88_8837_43f9_9015_033434ba14f3);
-}
+::windows_core::imp::com_interface!(IPackageCatalog3, IPackageCatalog3_Vtbl, 0x96dd5c88_8837_43f9_9015_033434ba14f3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageCatalog3_Vtbl {
@@ -798,16 +494,7 @@ pub struct IPackageCatalog3_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     RemoveOptionalPackagesAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageCatalog4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageCatalog4 {
-    type Vtable = IPackageCatalog4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageCatalog4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc37c399b_44cc_4b7b_8baf_796c04ead3b9);
-}
+::windows_core::imp::com_interface!(IPackageCatalog4, IPackageCatalog4_Vtbl, 0xc37c399b_44cc_4b7b_8baf_796c04ead3b9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageCatalog4_Vtbl {
@@ -818,16 +505,7 @@ pub struct IPackageCatalog4_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     RemoveResourcePackagesAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageCatalogAddOptionalPackageResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageCatalogAddOptionalPackageResult {
-    type Vtable = IPackageCatalogAddOptionalPackageResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageCatalogAddOptionalPackageResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3bf10cd4_b4df_47b3_a963_e2fa832f7dd3);
-}
+::windows_core::imp::com_interface!(IPackageCatalogAddOptionalPackageResult, IPackageCatalogAddOptionalPackageResult_Vtbl, 0x3bf10cd4_b4df_47b3_a963_e2fa832f7dd3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageCatalogAddOptionalPackageResult_Vtbl {
@@ -835,16 +513,7 @@ pub struct IPackageCatalogAddOptionalPackageResult_Vtbl {
     pub Package: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ExtendedError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageCatalogAddResourcePackageResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageCatalogAddResourcePackageResult {
-    type Vtable = IPackageCatalogAddResourcePackageResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageCatalogAddResourcePackageResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9636ce0d_3e17_493f_aa08_ccec6fdef699);
-}
+::windows_core::imp::com_interface!(IPackageCatalogAddResourcePackageResult, IPackageCatalogAddResourcePackageResult_Vtbl, 0x9636ce0d_3e17_493f_aa08_ccec6fdef699);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageCatalogAddResourcePackageResult_Vtbl {
@@ -853,16 +522,7 @@ pub struct IPackageCatalogAddResourcePackageResult_Vtbl {
     pub IsComplete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub ExtendedError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageCatalogRemoveOptionalPackagesResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageCatalogRemoveOptionalPackagesResult {
-    type Vtable = IPackageCatalogRemoveOptionalPackagesResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageCatalogRemoveOptionalPackagesResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x29d2f97b_d974_4e64_9359_22cadfd79828);
-}
+::windows_core::imp::com_interface!(IPackageCatalogRemoveOptionalPackagesResult, IPackageCatalogRemoveOptionalPackagesResult_Vtbl, 0x29d2f97b_d974_4e64_9359_22cadfd79828);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageCatalogRemoveOptionalPackagesResult_Vtbl {
@@ -873,16 +533,7 @@ pub struct IPackageCatalogRemoveOptionalPackagesResult_Vtbl {
     PackagesRemoved: usize,
     pub ExtendedError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageCatalogRemoveResourcePackagesResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageCatalogRemoveResourcePackagesResult {
-    type Vtable = IPackageCatalogRemoveResourcePackagesResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageCatalogRemoveResourcePackagesResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xae719709_1a52_4321_87b3_e5a1a17981a7);
-}
+::windows_core::imp::com_interface!(IPackageCatalogRemoveResourcePackagesResult, IPackageCatalogRemoveResourcePackagesResult_Vtbl, 0xae719709_1a52_4321_87b3_e5a1a17981a7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageCatalogRemoveResourcePackagesResult_Vtbl {
@@ -893,16 +544,7 @@ pub struct IPackageCatalogRemoveResourcePackagesResult_Vtbl {
     PackagesRemoved: usize,
     pub ExtendedError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageCatalogStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageCatalogStatics {
-    type Vtable = IPackageCatalogStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageCatalogStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa18c9696_e65b_4634_ba21_5e63eb7244a7);
-}
+::windows_core::imp::com_interface!(IPackageCatalogStatics, IPackageCatalogStatics_Vtbl, 0xa18c9696_e65b_4634_ba21_5e63eb7244a7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageCatalogStatics_Vtbl {
@@ -910,9 +552,7 @@ pub struct IPackageCatalogStatics_Vtbl {
     pub OpenForCurrentPackage: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub OpenForCurrentUser: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageCatalogStatics2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IPackageCatalogStatics2, IPackageCatalogStatics2_Vtbl, 0x4c11c159_9a28_598c_b185_55e1899b2be4);
 impl IPackageCatalogStatics2 {
     pub fn OpenForPackage<P0>(&self, package: P0) -> ::windows_core::Result<PackageCatalog>
     where
@@ -929,28 +569,13 @@ impl IPackageCatalogStatics2 {
 impl ::windows_core::RuntimeType for IPackageCatalogStatics2 {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IPackageCatalogStatics2 {
-    type Vtable = IPackageCatalogStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageCatalogStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4c11c159_9a28_598c_b185_55e1899b2be4);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageCatalogStatics2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub OpenForPackage: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, package: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageContentGroup(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageContentGroup {
-    type Vtable = IPackageContentGroup_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageContentGroup {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8f62695d_120a_4798_b5e1_5800dda8f2e1);
-}
+::windows_core::imp::com_interface!(IPackageContentGroup, IPackageContentGroup_Vtbl, 0x8f62695d_120a_4798_b5e1_5800dda8f2e1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageContentGroup_Vtbl {
@@ -960,16 +585,7 @@ pub struct IPackageContentGroup_Vtbl {
     pub State: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut PackageContentGroupState) -> ::windows_core::HRESULT,
     pub IsRequired: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageContentGroupStagingEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageContentGroupStagingEventArgs {
-    type Vtable = IPackageContentGroupStagingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageContentGroupStagingEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3d7bc27e_6f27_446c_986e_d4733d4d9113);
-}
+::windows_core::imp::com_interface!(IPackageContentGroupStagingEventArgs, IPackageContentGroupStagingEventArgs_Vtbl, 0x3d7bc27e_6f27_446c_986e_d4733d4d9113);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageContentGroupStagingEventArgs_Vtbl {
@@ -982,32 +598,14 @@ pub struct IPackageContentGroupStagingEventArgs_Vtbl {
     pub ContentGroupName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub IsContentGroupRequired: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageContentGroupStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageContentGroupStatics {
-    type Vtable = IPackageContentGroupStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageContentGroupStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x70ee7619_5f12_4b92_b9ea_6ccada13bc75);
-}
+::windows_core::imp::com_interface!(IPackageContentGroupStatics, IPackageContentGroupStatics_Vtbl, 0x70ee7619_5f12_4b92_b9ea_6ccada13bc75);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageContentGroupStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub RequiredGroupName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageId(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageId {
-    type Vtable = IPackageId_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageId {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1adb665e_37c7_4790_9980_dd7ae74e8bb2);
-}
+::windows_core::imp::com_interface!(IPackageId, IPackageId_Vtbl, 0x1adb665e_37c7_4790_9980_dd7ae74e8bb2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageId_Vtbl {
@@ -1024,16 +622,7 @@ pub struct IPackageId_Vtbl {
     pub FullName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub FamilyName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageIdWithMetadata(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageIdWithMetadata {
-    type Vtable = IPackageIdWithMetadata_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageIdWithMetadata {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x40577a7c_0c9e_443d_9074_855f5ce0a08d);
-}
+::windows_core::imp::com_interface!(IPackageIdWithMetadata, IPackageIdWithMetadata_Vtbl, 0x40577a7c_0c9e_443d_9074_855f5ce0a08d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageIdWithMetadata_Vtbl {
@@ -1041,16 +630,7 @@ pub struct IPackageIdWithMetadata_Vtbl {
     pub ProductId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Author: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageInstallingEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageInstallingEventArgs {
-    type Vtable = IPackageInstallingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageInstallingEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x97741eb7_ab7a_401a_8b61_eb0e7faff237);
-}
+::windows_core::imp::com_interface!(IPackageInstallingEventArgs, IPackageInstallingEventArgs_Vtbl, 0x97741eb7_ab7a_401a_8b61_eb0e7faff237);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageInstallingEventArgs_Vtbl {
@@ -1061,16 +641,7 @@ pub struct IPackageInstallingEventArgs_Vtbl {
     pub IsComplete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub ErrorCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageStagingEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageStagingEventArgs {
-    type Vtable = IPackageStagingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageStagingEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1041682d_54e2_4f51_b828_9ef7046c210f);
-}
+::windows_core::imp::com_interface!(IPackageStagingEventArgs, IPackageStagingEventArgs_Vtbl, 0x1041682d_54e2_4f51_b828_9ef7046c210f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageStagingEventArgs_Vtbl {
@@ -1081,32 +652,14 @@ pub struct IPackageStagingEventArgs_Vtbl {
     pub IsComplete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub ErrorCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageStatics {
-    type Vtable = IPackageStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4e534bdf_2960_4878_97a4_9624deb72f2d);
-}
+::windows_core::imp::com_interface!(IPackageStatics, IPackageStatics_Vtbl, 0x4e534bdf_2960_4878_97a4_9624deb72f2d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Current: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageStatus(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageStatus {
-    type Vtable = IPackageStatus_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageStatus {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5fe74f71_a365_4c09_a02d_046d525ea1da);
-}
+::windows_core::imp::com_interface!(IPackageStatus, IPackageStatus_Vtbl, 0x5fe74f71_a365_4c09_a02d_046d525ea1da);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageStatus_Vtbl {
@@ -1124,48 +677,21 @@ pub struct IPackageStatus_Vtbl {
     pub Servicing: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub DeploymentInProgress: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageStatus2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageStatus2 {
-    type Vtable = IPackageStatus2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageStatus2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf428fa93_7c56_4862_acfa_abaedcc0694d);
-}
+::windows_core::imp::com_interface!(IPackageStatus2, IPackageStatus2_Vtbl, 0xf428fa93_7c56_4862_acfa_abaedcc0694d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageStatus2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub IsPartiallyStaged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageStatusChangedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageStatusChangedEventArgs {
-    type Vtable = IPackageStatusChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageStatusChangedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x437d714d_bd80_4a70_bc50_f6e796509575);
-}
+::windows_core::imp::com_interface!(IPackageStatusChangedEventArgs, IPackageStatusChangedEventArgs_Vtbl, 0x437d714d_bd80_4a70_bc50_f6e796509575);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageStatusChangedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Package: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageUninstallingEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageUninstallingEventArgs {
-    type Vtable = IPackageUninstallingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageUninstallingEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4443aa52_ab22_44cd_82bb_4ec9b827367a);
-}
+::windows_core::imp::com_interface!(IPackageUninstallingEventArgs, IPackageUninstallingEventArgs_Vtbl, 0x4443aa52_ab22_44cd_82bb_4ec9b827367a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageUninstallingEventArgs_Vtbl {
@@ -1176,16 +702,7 @@ pub struct IPackageUninstallingEventArgs_Vtbl {
     pub IsComplete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub ErrorCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageUpdateAvailabilityResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageUpdateAvailabilityResult {
-    type Vtable = IPackageUpdateAvailabilityResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageUpdateAvailabilityResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x114e5009_199a_48a1_a079_313c45634a71);
-}
+::windows_core::imp::com_interface!(IPackageUpdateAvailabilityResult, IPackageUpdateAvailabilityResult_Vtbl, 0x114e5009_199a_48a1_a079_313c45634a71);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageUpdateAvailabilityResult_Vtbl {
@@ -1193,16 +710,7 @@ pub struct IPackageUpdateAvailabilityResult_Vtbl {
     pub Availability: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut PackageUpdateAvailability) -> ::windows_core::HRESULT,
     pub ExtendedError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageUpdatingEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageUpdatingEventArgs {
-    type Vtable = IPackageUpdatingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageUpdatingEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcd7b4228_fd74_443e_b114_23e677b0e86f);
-}
+::windows_core::imp::com_interface!(IPackageUpdatingEventArgs, IPackageUpdatingEventArgs_Vtbl, 0xcd7b4228_fd74_443e_b114_23e677b0e86f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageUpdatingEventArgs_Vtbl {
@@ -1214,16 +722,7 @@ pub struct IPackageUpdatingEventArgs_Vtbl {
     pub IsComplete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub ErrorCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageWithMetadata(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageWithMetadata {
-    type Vtable = IPackageWithMetadata_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageWithMetadata {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x95949780_1de9_40f2_b452_0de9f1910012);
-}
+::windows_core::imp::com_interface!(IPackageWithMetadata, IPackageWithMetadata_Vtbl, 0x95949780_1de9_40f2_b452_0de9f1910012);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageWithMetadata_Vtbl {
@@ -1235,16 +734,7 @@ pub struct IPackageWithMetadata_Vtbl {
     #[cfg(not(feature = "deprecated"))]
     Launch: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStartupTask(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStartupTask {
-    type Vtable = IStartupTask_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStartupTask {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf75c23c8_b5f2_4f6c_88dd_36cb1d599d17);
-}
+::windows_core::imp::com_interface!(IStartupTask, IStartupTask_Vtbl, 0xf75c23c8_b5f2_4f6c_88dd_36cb1d599d17);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStartupTask_Vtbl {
@@ -1254,16 +744,7 @@ pub struct IStartupTask_Vtbl {
     pub State: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut StartupTaskState) -> ::windows_core::HRESULT,
     pub TaskId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStartupTaskStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStartupTaskStatics {
-    type Vtable = IStartupTaskStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStartupTaskStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xee5b60bd_a148_41a7_b26e_e8b88a1e62f8);
-}
+::windows_core::imp::com_interface!(IStartupTaskStatics, IStartupTaskStatics_Vtbl, 0xee5b60bd_a148_41a7_b26e_e8b88a1e62f8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStartupTaskStatics_Vtbl {
@@ -1274,9 +755,7 @@ pub struct IStartupTaskStatics_Vtbl {
     GetForCurrentPackageAsync: usize,
     pub GetAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, taskid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISuspendingDeferral(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISuspendingDeferral, ISuspendingDeferral_Vtbl, 0x59140509_8bc9_4eb4_b636_dabdc4f46f66);
 impl ISuspendingDeferral {
     pub fn Complete(&self) -> ::windows_core::Result<()> {
         let this = self;
@@ -1287,21 +766,13 @@ impl ISuspendingDeferral {
 impl ::windows_core::RuntimeType for ISuspendingDeferral {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for ISuspendingDeferral {
-    type Vtable = ISuspendingDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISuspendingDeferral {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x59140509_8bc9_4eb4_b636_dabdc4f46f66);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISuspendingDeferral_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Complete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISuspendingEventArgs(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISuspendingEventArgs, ISuspendingEventArgs_Vtbl, 0x96061c05_2dba_4d08_b0bd_2b30a131c6aa);
 impl ISuspendingEventArgs {
     pub fn SuspendingOperation(&self) -> ::windows_core::Result<SuspendingOperation> {
         let this = self;
@@ -1315,21 +786,13 @@ impl ISuspendingEventArgs {
 impl ::windows_core::RuntimeType for ISuspendingEventArgs {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for ISuspendingEventArgs {
-    type Vtable = ISuspendingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISuspendingEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x96061c05_2dba_4d08_b0bd_2b30a131c6aa);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISuspendingEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SuspendingOperation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISuspendingOperation(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISuspendingOperation, ISuspendingOperation_Vtbl, 0x9da4ca41_20e1_4e9b_9f65_a9f435340c3a);
 impl ISuspendingOperation {
     pub fn GetDeferral(&self) -> ::windows_core::Result<SuspendingDeferral> {
         let this = self;
@@ -1349,12 +812,6 @@ impl ISuspendingOperation {
 ::windows_core::imp::interface_hierarchy!(ISuspendingOperation, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for ISuspendingOperation {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for ISuspendingOperation {
-    type Vtable = ISuspendingOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISuspendingOperation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9da4ca41_20e1_4e9b_9f65_a9f435340c3a);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -1784,7 +1241,7 @@ impl ::windows_core::RuntimeName for EnteredBackgroundEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.EnteredBackgroundEventArgs";
 }
 ::windows_core::imp::interface_hierarchy!(EnteredBackgroundEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IEnteredBackgroundEventArgs> for EnteredBackgroundEventArgs {}
+::windows_core::imp::required_hierarchy!(EnteredBackgroundEventArgs, IEnteredBackgroundEventArgs);
 unsafe impl ::core::marker::Send for EnteredBackgroundEventArgs {}
 unsafe impl ::core::marker::Sync for EnteredBackgroundEventArgs {}
 #[repr(transparent)]
@@ -1984,7 +1441,7 @@ impl ::windows_core::RuntimeName for LeavingBackgroundEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.LeavingBackgroundEventArgs";
 }
 ::windows_core::imp::interface_hierarchy!(LeavingBackgroundEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ILeavingBackgroundEventArgs> for LeavingBackgroundEventArgs {}
+::windows_core::imp::required_hierarchy!(LeavingBackgroundEventArgs, ILeavingBackgroundEventArgs);
 unsafe impl ::core::marker::Send for LeavingBackgroundEventArgs {}
 unsafe impl ::core::marker::Sync for LeavingBackgroundEventArgs {}
 #[repr(transparent)]
@@ -2194,24 +1651,24 @@ impl Package {
     #[cfg(feature = "Foundation_Collections")]
     pub fn StageContentGroupsAsync<P0>(&self, names: P0) -> ::windows_core::Result<super::Foundation::IAsyncOperation<super::Foundation::Collections::IVector<PackageContentGroup>>>
     where
-        P0: ::windows_core::TryIntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         let this = &::windows_core::ComInterface::cast::<IPackage5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).StageContentGroupsAsync)(::windows_core::Interface::as_raw(this), names.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).StageContentGroupsAsync)(::windows_core::Interface::as_raw(this), names.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn StageContentGroupsWithPriorityAsync<P0>(&self, names: P0, movetoheadofqueue: bool) -> ::windows_core::Result<super::Foundation::IAsyncOperation<super::Foundation::Collections::IVector<PackageContentGroup>>>
     where
-        P0: ::windows_core::TryIntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         let this = &::windows_core::ComInterface::cast::<IPackage5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).StageContentGroupsWithPriorityAsync)(::windows_core::Interface::as_raw(this), names.try_into_param()?.abi(), movetoheadofqueue, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).StageContentGroupsWithPriorityAsync)(::windows_core::Interface::as_raw(this), names.into_param().abi(), movetoheadofqueue, &mut result__).from_abi(result__)
         }
     }
     pub fn SetInUseAsync(&self, inuse: bool) -> ::windows_core::Result<super::Foundation::IAsyncOperation<bool>> {
@@ -2512,12 +1969,12 @@ impl PackageCatalog {
     #[cfg(feature = "Foundation_Collections")]
     pub fn RemoveOptionalPackagesAsync<P0>(&self, optionalpackagefamilynames: P0) -> ::windows_core::Result<super::Foundation::IAsyncOperation<PackageCatalogRemoveOptionalPackagesResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         let this = &::windows_core::ComInterface::cast::<IPackageCatalog3>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).RemoveOptionalPackagesAsync)(::windows_core::Interface::as_raw(this), optionalpackagefamilynames.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).RemoveOptionalPackagesAsync)(::windows_core::Interface::as_raw(this), optionalpackagefamilynames.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn AddResourcePackageAsync(&self, resourcepackagefamilyname: &::windows_core::HSTRING, resourceid: &::windows_core::HSTRING, options: AddResourcePackageOptions) -> ::windows_core::Result<super::Foundation::IAsyncOperationWithProgress<PackageCatalogAddResourcePackageResult, PackageInstallProgress>> {
@@ -2531,12 +1988,12 @@ impl PackageCatalog {
     #[cfg(feature = "Foundation_Collections")]
     pub fn RemoveResourcePackagesAsync<P0>(&self, resourcepackages: P0) -> ::windows_core::Result<super::Foundation::IAsyncOperation<PackageCatalogRemoveResourcePackagesResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::Foundation::Collections::IIterable<Package>>,
+        P0: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<Package>>,
     {
         let this = &::windows_core::ComInterface::cast::<IPackageCatalog4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).RemoveResourcePackagesAsync)(::windows_core::Interface::as_raw(this), resourcepackages.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).RemoveResourcePackagesAsync)(::windows_core::Interface::as_raw(this), resourcepackages.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn OpenForCurrentPackage() -> ::windows_core::Result<PackageCatalog> {
@@ -3432,7 +2889,7 @@ impl ::windows_core::RuntimeName for SuspendingDeferral {
     const NAME: &'static str = "Windows.ApplicationModel.SuspendingDeferral";
 }
 ::windows_core::imp::interface_hierarchy!(SuspendingDeferral, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISuspendingDeferral> for SuspendingDeferral {}
+::windows_core::imp::required_hierarchy!(SuspendingDeferral, ISuspendingDeferral);
 unsafe impl ::core::marker::Send for SuspendingDeferral {}
 unsafe impl ::core::marker::Sync for SuspendingDeferral {}
 #[repr(transparent)]
@@ -3460,7 +2917,7 @@ impl ::windows_core::RuntimeName for SuspendingEventArgs {
     const NAME: &'static str = "Windows.ApplicationModel.SuspendingEventArgs";
 }
 ::windows_core::imp::interface_hierarchy!(SuspendingEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISuspendingEventArgs> for SuspendingEventArgs {}
+::windows_core::imp::required_hierarchy!(SuspendingEventArgs, ISuspendingEventArgs);
 unsafe impl ::core::marker::Send for SuspendingEventArgs {}
 unsafe impl ::core::marker::Sync for SuspendingEventArgs {}
 #[repr(transparent)]
@@ -3495,7 +2952,7 @@ impl ::windows_core::RuntimeName for SuspendingOperation {
     const NAME: &'static str = "Windows.ApplicationModel.SuspendingOperation";
 }
 ::windows_core::imp::interface_hierarchy!(SuspendingOperation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISuspendingOperation> for SuspendingOperation {}
+::windows_core::imp::required_hierarchy!(SuspendingOperation, ISuspendingOperation);
 unsafe impl ::core::marker::Send for SuspendingOperation {}
 unsafe impl ::core::marker::Sync for SuspendingOperation {}
 #[repr(transparent)]

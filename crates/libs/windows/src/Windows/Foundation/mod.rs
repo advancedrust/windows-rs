@@ -10,9 +10,7 @@ pub mod Metadata;
 #[cfg(feature = "Foundation_Numerics")]
 #[doc = "Required features: `\"Foundation_Numerics\"`"]
 pub mod Numerics;
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAsyncAction(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IAsyncAction, IAsyncAction_Vtbl, 0x5a648006_843a_4da9_865b_9d26e5dfad7b);
 impl IAsyncAction {
     pub fn SetCompleted<P0>(&self, handler: P0) -> ::windows_core::Result<()>
     where
@@ -63,7 +61,7 @@ impl IAsyncAction {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IAsyncAction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAsyncInfo> for IAsyncAction {}
+::windows_core::imp::required_hierarchy!(IAsyncAction, IAsyncInfo);
 impl ::windows_core::RuntimeType for IAsyncAction {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -98,12 +96,6 @@ impl ::std::future::Future for IAsyncAction {
 }
 unsafe impl ::core::marker::Send for IAsyncAction {}
 unsafe impl ::core::marker::Sync for IAsyncAction {}
-unsafe impl ::windows_core::Interface for IAsyncAction {
-    type Vtable = IAsyncAction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAsyncAction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5a648006_843a_4da9_865b_9d26e5dfad7b);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAsyncAction_Vtbl {
@@ -182,7 +174,9 @@ impl<TProgress: ::windows_core::RuntimeType + 'static> IAsyncActionWithProgress<
 }
 impl<TProgress: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IUnknown> for IAsyncActionWithProgress<TProgress> {}
 impl<TProgress: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IInspectable> for IAsyncActionWithProgress<TProgress> {}
-impl<TProgress: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IAsyncInfo> for IAsyncActionWithProgress<TProgress> {}
+impl<TProgress: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IAsyncInfo> for IAsyncActionWithProgress<TProgress> {
+    const QUERY: bool = true;
+}
 impl<TProgress: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for IAsyncActionWithProgress<TProgress> {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = { ::windows_core::imp::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{1f6db258-e803-48a1-9546-eb7353398884}").push_slice(b";").push_other(TProgress::SIGNATURE).push_slice(b")") };
 }
@@ -237,9 +231,7 @@ where
     pub GetResults: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TProgress: ::core::marker::PhantomData<TProgress>,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAsyncInfo(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IAsyncInfo, IAsyncInfo_Vtbl, 0x00000036_0000_0000_c000_000000000046);
 impl IAsyncInfo {
     pub fn Id(&self) -> ::windows_core::Result<u32> {
         let this = self;
@@ -274,12 +266,6 @@ impl IAsyncInfo {
 ::windows_core::imp::interface_hierarchy!(IAsyncInfo, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for IAsyncInfo {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IAsyncInfo {
-    type Vtable = IAsyncInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAsyncInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000036_0000_0000_c000_000000000046);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -350,7 +336,9 @@ impl<TResult: ::windows_core::RuntimeType + 'static> IAsyncOperation<TResult> {
 }
 impl<TResult: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IUnknown> for IAsyncOperation<TResult> {}
 impl<TResult: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IInspectable> for IAsyncOperation<TResult> {}
-impl<TResult: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IAsyncInfo> for IAsyncOperation<TResult> {}
+impl<TResult: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IAsyncInfo> for IAsyncOperation<TResult> {
+    const QUERY: bool = true;
+}
 impl<TResult: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for IAsyncOperation<TResult> {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = { ::windows_core::imp::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{9fc2b0bb-e446-44e2-aa61-9cab8f636af2}").push_slice(b";").push_other(TResult::SIGNATURE).push_slice(b")") };
 }
@@ -477,7 +465,9 @@ impl<TResult: ::windows_core::RuntimeType + 'static, TProgress: ::windows_core::
 }
 impl<TResult: ::windows_core::RuntimeType + 'static, TProgress: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IUnknown> for IAsyncOperationWithProgress<TResult, TProgress> {}
 impl<TResult: ::windows_core::RuntimeType + 'static, TProgress: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IInspectable> for IAsyncOperationWithProgress<TResult, TProgress> {}
-impl<TResult: ::windows_core::RuntimeType + 'static, TProgress: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IAsyncInfo> for IAsyncOperationWithProgress<TResult, TProgress> {}
+impl<TResult: ::windows_core::RuntimeType + 'static, TProgress: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IAsyncInfo> for IAsyncOperationWithProgress<TResult, TProgress> {
+    const QUERY: bool = true;
+}
 impl<TResult: ::windows_core::RuntimeType + 'static, TProgress: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for IAsyncOperationWithProgress<TResult, TProgress> {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = { ::windows_core::imp::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{b5d036d7-e297-498f-ba60-0289e76e23dd}").push_slice(b";").push_other(TResult::SIGNATURE).push_slice(b";").push_other(TProgress::SIGNATURE).push_slice(b")") };
 }
@@ -534,9 +524,7 @@ where
     pub TResult: ::core::marker::PhantomData<TResult>,
     pub TProgress: ::core::marker::PhantomData<TProgress>,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IClosable(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IClosable, IClosable_Vtbl, 0x30d5a829_7fa4_4026_83bb_d75bae4ea99e);
 impl IClosable {
     pub fn Close(&self) -> ::windows_core::Result<()> {
         let this = self;
@@ -547,53 +535,27 @@ impl IClosable {
 impl ::windows_core::RuntimeType for IClosable {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IClosable {
-    type Vtable = IClosable_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IClosable {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x30d5a829_7fa4_4026_83bb_d75bae4ea99e);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IClosable_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Close: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeferral(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDeferral {
-    type Vtable = IDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDeferral {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd6269732_3b7f_46a7_b40b_4fdca2a2c693);
-}
+::windows_core::imp::com_interface!(IDeferral, IDeferral_Vtbl, 0xd6269732_3b7f_46a7_b40b_4fdca2a2c693);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDeferral_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Complete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeferralFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDeferralFactory {
-    type Vtable = IDeferralFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDeferralFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x65a1ecc5_3fb5_4832_8ca9_f061b281d13a);
-}
+::windows_core::imp::com_interface!(IDeferralFactory, IDeferralFactory_Vtbl, 0x65a1ecc5_3fb5_4832_8ca9_f061b281d13a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDeferralFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGetActivationFactory(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IGetActivationFactory, IGetActivationFactory_Vtbl, 0x4edb8ee2_96dd_49a7_94f7_4607ddab8e3c);
 impl IGetActivationFactory {
     pub fn GetActivationFactory(&self, activatableclassid: &::windows_core::HSTRING) -> ::windows_core::Result<::windows_core::IInspectable> {
         let this = self;
@@ -607,28 +569,13 @@ impl IGetActivationFactory {
 impl ::windows_core::RuntimeType for IGetActivationFactory {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IGetActivationFactory {
-    type Vtable = IGetActivationFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGetActivationFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4edb8ee2_96dd_49a7_94f7_4607ddab8e3c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGetActivationFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetActivationFactory: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, activatableclassid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGuidHelperStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGuidHelperStatics {
-    type Vtable = IGuidHelperStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGuidHelperStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x59c7966b_ae52_5283_ad7f_a1b9e9678add);
-}
+::windows_core::imp::com_interface!(IGuidHelperStatics, IGuidHelperStatics_Vtbl, 0x59c7966b_ae52_5283_ad7f_a1b9e9678add);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGuidHelperStatics_Vtbl {
@@ -637,9 +584,7 @@ pub struct IGuidHelperStatics_Vtbl {
     pub Empty: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
     pub Equals: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, target: &::windows_core::GUID, value: &::windows_core::GUID, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMemoryBuffer(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IMemoryBuffer, IMemoryBuffer_Vtbl, 0xfbc4dd2a_245b_11e4_af98_689423260cf8);
 impl IMemoryBuffer {
     pub fn CreateReference(&self) -> ::windows_core::Result<IMemoryBufferReference> {
         let this = self;
@@ -654,15 +599,9 @@ impl IMemoryBuffer {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IMemoryBuffer, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IClosable> for IMemoryBuffer {}
+::windows_core::imp::required_hierarchy!(IMemoryBuffer, IClosable);
 impl ::windows_core::RuntimeType for IMemoryBuffer {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IMemoryBuffer {
-    type Vtable = IMemoryBuffer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMemoryBuffer {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfbc4dd2a_245b_11e4_af98_689423260cf8);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -670,25 +609,14 @@ pub struct IMemoryBuffer_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateReference: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMemoryBufferFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMemoryBufferFactory {
-    type Vtable = IMemoryBufferFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMemoryBufferFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfbc4dd2b_245b_11e4_af98_689423260cf8);
-}
+::windows_core::imp::com_interface!(IMemoryBufferFactory, IMemoryBufferFactory_Vtbl, 0xfbc4dd2b_245b_11e4_af98_689423260cf8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMemoryBufferFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, capacity: u32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMemoryBufferReference(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IMemoryBufferReference, IMemoryBufferReference_Vtbl, 0xfbc4dd29_245b_11e4_af98_689423260cf8);
 impl IMemoryBufferReference {
     pub fn Capacity(&self) -> ::windows_core::Result<u32> {
         let this = self;
@@ -717,15 +645,9 @@ impl IMemoryBufferReference {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IMemoryBufferReference, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IClosable> for IMemoryBufferReference {}
+::windows_core::imp::required_hierarchy!(IMemoryBufferReference, IClosable);
 impl ::windows_core::RuntimeType for IMemoryBufferReference {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IMemoryBufferReference {
-    type Vtable = IMemoryBufferReference_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMemoryBufferReference {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfbc4dd29_245b_11e4_af98_689423260cf8);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -735,9 +657,7 @@ pub struct IMemoryBufferReference_Vtbl {
     pub Closed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveClosed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, cookie: EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPropertyValue(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IPropertyValue, IPropertyValue_Vtbl, 0x4bd682dd_7554_40e9_9a9b_82654ede7e62);
 impl IPropertyValue {
     pub fn Type(&self) -> ::windows_core::Result<PropertyType> {
         let this = self;
@@ -960,12 +880,6 @@ impl IPropertyValue {
 impl ::windows_core::RuntimeType for IPropertyValue {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IPropertyValue {
-    type Vtable = IPropertyValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPropertyValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4bd682dd_7554_40e9_9a9b_82654ede7e62);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPropertyValue_Vtbl {
@@ -1010,16 +924,7 @@ pub struct IPropertyValue_Vtbl {
     pub GetSizeArray: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value_array_size: *mut u32, value: *mut *mut Size) -> ::windows_core::HRESULT,
     pub GetRectArray: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value_array_size: *mut u32, value: *mut *mut Rect) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPropertyValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPropertyValueStatics {
-    type Vtable = IPropertyValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPropertyValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x629bdbc8_d932_4ff4_96b9_8d96c5c1e858);
-}
+::windows_core::imp::com_interface!(IPropertyValueStatics, IPropertyValueStatics_Vtbl, 0x629bdbc8_d932_4ff4_96b9_8d96c5c1e858);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPropertyValueStatics_Vtbl {
@@ -1296,7 +1201,9 @@ impl<T: ::windows_core::RuntimeType + 'static> IReference<T> {
 }
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IUnknown> for IReference<T> {}
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IInspectable> for IReference<T> {}
-impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IPropertyValue> for IReference<T> {}
+impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IPropertyValue> for IReference<T> {
+    const QUERY: bool = true;
+}
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for IReference<T> {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = { ::windows_core::imp::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{61c17706-2d65-11e0-9ae8-d48564015472}").push_slice(b";").push_other(T::SIGNATURE).push_slice(b")") };
 }
@@ -1548,7 +1455,9 @@ impl<T: ::windows_core::RuntimeType + 'static> IReferenceArray<T> {
 }
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IUnknown> for IReferenceArray<T> {}
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows_core::IInspectable> for IReferenceArray<T> {}
-impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IPropertyValue> for IReferenceArray<T> {}
+impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IPropertyValue> for IReferenceArray<T> {
+    const QUERY: bool = true;
+}
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for IReferenceArray<T> {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = { ::windows_core::imp::ConstBuffer::new().push_slice(b"pinterface(").push_slice(b"{61c17707-2d65-11e0-9ae8-d48564015472}").push_slice(b";").push_other(T::SIGNATURE).push_slice(b")") };
 }
@@ -1568,9 +1477,7 @@ where
     pub Value: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result_size__: *mut u32, result__: *mut *mut ::windows_core::AbiType<T>) -> ::windows_core::HRESULT,
     pub T: ::core::marker::PhantomData<T>,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStringable(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStringable, IStringable_Vtbl, 0x96369f54_8eb6_48f0_abce_c1b211e627c3);
 impl IStringable {
     pub fn ToString(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -1584,28 +1491,13 @@ impl IStringable {
 impl ::windows_core::RuntimeType for IStringable {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IStringable {
-    type Vtable = IStringable_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStringable {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x96369f54_8eb6_48f0_abce_c1b211e627c3);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStringable_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ToString: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUriEscapeStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUriEscapeStatics {
-    type Vtable = IUriEscapeStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUriEscapeStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc1d432ba_c824_4452_a7fd_512bc3bbe9a1);
-}
+::windows_core::imp::com_interface!(IUriEscapeStatics, IUriEscapeStatics_Vtbl, 0xc1d432ba_c824_4452_a7fd_512bc3bbe9a1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUriEscapeStatics_Vtbl {
@@ -1613,16 +1505,7 @@ pub struct IUriEscapeStatics_Vtbl {
     pub UnescapeComponent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, tounescape: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub EscapeComponent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, toescape: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUriRuntimeClass(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUriRuntimeClass {
-    type Vtable = IUriRuntimeClass_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUriRuntimeClass {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9e365e57_48b2_4160_956f_c7385120bbfc);
-}
+::windows_core::imp::com_interface!(IUriRuntimeClass, IUriRuntimeClass_Vtbl, 0x9e365e57_48b2_4160_956f_c7385120bbfc);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUriRuntimeClass_Vtbl {
@@ -1645,16 +1528,7 @@ pub struct IUriRuntimeClass_Vtbl {
     pub Equals: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, puri: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub CombineUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, relativeuri: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUriRuntimeClassFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUriRuntimeClassFactory {
-    type Vtable = IUriRuntimeClassFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUriRuntimeClassFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x44a9796f_723e_4fdf_a218_033e75b0c084);
-}
+::windows_core::imp::com_interface!(IUriRuntimeClassFactory, IUriRuntimeClassFactory_Vtbl, 0x44a9796f_723e_4fdf_a218_033e75b0c084);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUriRuntimeClassFactory_Vtbl {
@@ -1662,16 +1536,7 @@ pub struct IUriRuntimeClassFactory_Vtbl {
     pub CreateUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, uri: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateWithRelativeUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, baseuri: ::std::mem::MaybeUninit<::windows_core::HSTRING>, relativeuri: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUriRuntimeClassWithAbsoluteCanonicalUri(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUriRuntimeClassWithAbsoluteCanonicalUri {
-    type Vtable = IUriRuntimeClassWithAbsoluteCanonicalUri_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUriRuntimeClassWithAbsoluteCanonicalUri {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x758d9661_221c_480f_a339_50656673f46f);
-}
+::windows_core::imp::com_interface!(IUriRuntimeClassWithAbsoluteCanonicalUri, IUriRuntimeClassWithAbsoluteCanonicalUri_Vtbl, 0x758d9661_221c_480f_a339_50656673f46f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUriRuntimeClassWithAbsoluteCanonicalUri_Vtbl {
@@ -1679,9 +1544,7 @@ pub struct IUriRuntimeClassWithAbsoluteCanonicalUri_Vtbl {
     pub AbsoluteCanonicalUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub DisplayIri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWwwFormUrlDecoderEntry(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWwwFormUrlDecoderEntry, IWwwFormUrlDecoderEntry_Vtbl, 0x125e7431_f678_4e8e_b670_20a9b06c512d);
 impl IWwwFormUrlDecoderEntry {
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -1702,12 +1565,6 @@ impl IWwwFormUrlDecoderEntry {
 impl ::windows_core::RuntimeType for IWwwFormUrlDecoderEntry {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IWwwFormUrlDecoderEntry {
-    type Vtable = IWwwFormUrlDecoderEntry_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWwwFormUrlDecoderEntry {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x125e7431_f678_4e8e_b670_20a9b06c512d);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWwwFormUrlDecoderEntry_Vtbl {
@@ -1715,32 +1572,14 @@ pub struct IWwwFormUrlDecoderEntry_Vtbl {
     pub Name: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Value: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWwwFormUrlDecoderRuntimeClass(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWwwFormUrlDecoderRuntimeClass {
-    type Vtable = IWwwFormUrlDecoderRuntimeClass_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWwwFormUrlDecoderRuntimeClass {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd45a0451_f225_4542_9296_0e1df5d254df);
-}
+::windows_core::imp::com_interface!(IWwwFormUrlDecoderRuntimeClass, IWwwFormUrlDecoderRuntimeClass_Vtbl, 0xd45a0451_f225_4542_9296_0e1df5d254df);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWwwFormUrlDecoderRuntimeClass_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetFirstValueByName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWwwFormUrlDecoderRuntimeClassFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWwwFormUrlDecoderRuntimeClassFactory {
-    type Vtable = IWwwFormUrlDecoderRuntimeClassFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWwwFormUrlDecoderRuntimeClassFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5b8c6b3d_24ae_41b5_a1bf_f0c3d544845b);
-}
+::windows_core::imp::com_interface!(IWwwFormUrlDecoderRuntimeClassFactory, IWwwFormUrlDecoderRuntimeClassFactory_Vtbl, 0x5b8c6b3d_24ae_41b5_a1bf_f0c3d544845b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWwwFormUrlDecoderRuntimeClassFactory_Vtbl {
@@ -1787,7 +1626,7 @@ impl ::windows_core::RuntimeName for Deferral {
     const NAME: &'static str = "Windows.Foundation.Deferral";
 }
 ::windows_core::imp::interface_hierarchy!(Deferral, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IClosable> for Deferral {}
+::windows_core::imp::required_hierarchy!(Deferral, IClosable);
 unsafe impl ::core::marker::Send for Deferral {}
 unsafe impl ::core::marker::Sync for Deferral {}
 pub struct GuidHelper;
@@ -1859,8 +1698,7 @@ impl ::windows_core::RuntimeName for MemoryBuffer {
     const NAME: &'static str = "Windows.Foundation.MemoryBuffer";
 }
 ::windows_core::imp::interface_hierarchy!(MemoryBuffer, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IClosable> for MemoryBuffer {}
-impl ::windows_core::CanTryInto<IMemoryBuffer> for MemoryBuffer {}
+::windows_core::imp::required_hierarchy!(MemoryBuffer, IClosable, IMemoryBuffer);
 unsafe impl ::core::marker::Send for MemoryBuffer {}
 unsafe impl ::core::marker::Sync for MemoryBuffer {}
 pub struct PropertyValue;
@@ -2306,7 +2144,7 @@ impl ::windows_core::RuntimeName for Uri {
     const NAME: &'static str = "Windows.Foundation.Uri";
 }
 ::windows_core::imp::interface_hierarchy!(Uri, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IStringable> for Uri {}
+::windows_core::imp::required_hierarchy!(Uri, IStringable);
 unsafe impl ::core::marker::Send for Uri {}
 unsafe impl ::core::marker::Sync for Uri {}
 #[repr(transparent)]
@@ -2344,12 +2182,12 @@ impl WwwFormUrlDecoder {
     #[cfg(feature = "Foundation_Collections")]
     pub fn IndexOf<P0>(&self, value: P0, index: &mut u32) -> ::windows_core::Result<bool>
     where
-        P0: ::windows_core::TryIntoParam<IWwwFormUrlDecoderEntry>,
+        P0: ::windows_core::IntoParam<IWwwFormUrlDecoderEntry>,
     {
         let this = &::windows_core::ComInterface::cast::<Collections::IVectorView<IWwwFormUrlDecoderEntry>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).IndexOf)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi(), index, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).IndexOf)(::windows_core::Interface::as_raw(this), value.into_param().abi(), index, &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -2410,9 +2248,7 @@ impl ::core::iter::IntoIterator for &WwwFormUrlDecoder {
 }
 ::windows_core::imp::interface_hierarchy!(WwwFormUrlDecoder, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<Collections::IIterable<IWwwFormUrlDecoderEntry>> for WwwFormUrlDecoder {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<Collections::IVectorView<IWwwFormUrlDecoderEntry>> for WwwFormUrlDecoder {}
+::windows_core::imp::required_hierarchy!(WwwFormUrlDecoder, Collections::IIterable::<IWwwFormUrlDecoderEntry>, Collections::IVectorView::<IWwwFormUrlDecoderEntry>);
 unsafe impl ::core::marker::Send for WwwFormUrlDecoder {}
 unsafe impl ::core::marker::Sync for WwwFormUrlDecoder {}
 #[repr(transparent)]
@@ -2447,7 +2283,7 @@ impl ::windows_core::RuntimeName for WwwFormUrlDecoderEntry {
     const NAME: &'static str = "Windows.Foundation.WwwFormUrlDecoderEntry";
 }
 ::windows_core::imp::interface_hierarchy!(WwwFormUrlDecoderEntry, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IWwwFormUrlDecoderEntry> for WwwFormUrlDecoderEntry {}
+::windows_core::imp::required_hierarchy!(WwwFormUrlDecoderEntry, IWwwFormUrlDecoderEntry);
 unsafe impl ::core::marker::Send for WwwFormUrlDecoderEntry {}
 unsafe impl ::core::marker::Sync for WwwFormUrlDecoderEntry {}
 #[repr(transparent)]
@@ -2724,9 +2560,7 @@ impl ::core::default::Default for TimeSpan {
         unsafe { ::core::mem::zeroed() }
     }
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct AsyncActionCompletedHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(AsyncActionCompletedHandler, AsyncActionCompletedHandler_Vtbl, 0xa4ed5c81_76c9_40bd_8be6_b1d90fb20ae7);
 impl AsyncActionCompletedHandler {
     pub fn new<F: FnMut(::core::option::Option<&IAsyncAction>, AsyncStatus) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
         let com = AsyncActionCompletedHandlerBox::<F> { vtable: &AsyncActionCompletedHandlerBox::<F>::VTABLE, count: ::windows_core::imp::RefCount::new(1), invoke };
@@ -2734,10 +2568,10 @@ impl AsyncActionCompletedHandler {
     }
     pub fn Invoke<P0>(&self, asyncinfo: P0, asyncstatus: AsyncStatus) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAsyncAction>,
+        P0: ::windows_core::IntoParam<IAsyncAction>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), asyncinfo.try_into_param()?.abi(), asyncstatus).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), asyncinfo.into_param().abi(), asyncstatus).ok() }
     }
 }
 #[repr(C)]
@@ -2781,12 +2615,6 @@ impl<F: FnMut(::core::option::Option<&IAsyncAction>, AsyncStatus) -> ::windows_c
         ((*this).invoke)(::windows_core::from_raw_borrowed(&asyncinfo), asyncstatus).into()
     }
 }
-unsafe impl ::windows_core::Interface for AsyncActionCompletedHandler {
-    type Vtable = AsyncActionCompletedHandler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for AsyncActionCompletedHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa4ed5c81_76c9_40bd_8be6_b1d90fb20ae7);
-}
 impl ::windows_core::RuntimeType for AsyncActionCompletedHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -2798,7 +2626,7 @@ pub struct AsyncActionCompletedHandler_Vtbl {
 }
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct AsyncActionProgressHandler<TProgress>(pub ::windows_core::IUnknown, ::core::marker::PhantomData<TProgress>)
+pub struct AsyncActionProgressHandler<TProgress>(::windows_core::IUnknown, ::core::marker::PhantomData<TProgress>)
 where
     TProgress: ::windows_core::RuntimeType + 'static;
 impl<TProgress: ::windows_core::RuntimeType + 'static> AsyncActionProgressHandler<TProgress> {
@@ -2808,11 +2636,11 @@ impl<TProgress: ::windows_core::RuntimeType + 'static> AsyncActionProgressHandle
     }
     pub fn Invoke<P0, P1>(&self, asyncinfo: P0, progressinfo: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAsyncActionWithProgress<TProgress>>,
+        P0: ::windows_core::IntoParam<IAsyncActionWithProgress<TProgress>>,
         P1: ::windows_core::IntoParam<TProgress>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), asyncinfo.try_into_param()?.abi(), progressinfo.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), asyncinfo.into_param().abi(), progressinfo.into_param().abi()).ok() }
     }
 }
 #[repr(C)]
@@ -2881,7 +2709,7 @@ where
 }
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct AsyncActionWithProgressCompletedHandler<TProgress>(pub ::windows_core::IUnknown, ::core::marker::PhantomData<TProgress>)
+pub struct AsyncActionWithProgressCompletedHandler<TProgress>(::windows_core::IUnknown, ::core::marker::PhantomData<TProgress>)
 where
     TProgress: ::windows_core::RuntimeType + 'static;
 impl<TProgress: ::windows_core::RuntimeType + 'static> AsyncActionWithProgressCompletedHandler<TProgress> {
@@ -2891,10 +2719,10 @@ impl<TProgress: ::windows_core::RuntimeType + 'static> AsyncActionWithProgressCo
     }
     pub fn Invoke<P0>(&self, asyncinfo: P0, asyncstatus: AsyncStatus) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAsyncActionWithProgress<TProgress>>,
+        P0: ::windows_core::IntoParam<IAsyncActionWithProgress<TProgress>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), asyncinfo.try_into_param()?.abi(), asyncstatus).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), asyncinfo.into_param().abi(), asyncstatus).ok() }
     }
 }
 #[repr(C)]
@@ -2963,7 +2791,7 @@ where
 }
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct AsyncOperationCompletedHandler<TResult>(pub ::windows_core::IUnknown, ::core::marker::PhantomData<TResult>)
+pub struct AsyncOperationCompletedHandler<TResult>(::windows_core::IUnknown, ::core::marker::PhantomData<TResult>)
 where
     TResult: ::windows_core::RuntimeType + 'static;
 impl<TResult: ::windows_core::RuntimeType + 'static> AsyncOperationCompletedHandler<TResult> {
@@ -2973,10 +2801,10 @@ impl<TResult: ::windows_core::RuntimeType + 'static> AsyncOperationCompletedHand
     }
     pub fn Invoke<P0>(&self, asyncinfo: P0, asyncstatus: AsyncStatus) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAsyncOperation<TResult>>,
+        P0: ::windows_core::IntoParam<IAsyncOperation<TResult>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), asyncinfo.try_into_param()?.abi(), asyncstatus).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), asyncinfo.into_param().abi(), asyncstatus).ok() }
     }
 }
 #[repr(C)]
@@ -3045,7 +2873,7 @@ where
 }
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct AsyncOperationProgressHandler<TResult, TProgress>(pub ::windows_core::IUnknown, ::core::marker::PhantomData<TResult>, ::core::marker::PhantomData<TProgress>)
+pub struct AsyncOperationProgressHandler<TResult, TProgress>(::windows_core::IUnknown, ::core::marker::PhantomData<TResult>, ::core::marker::PhantomData<TProgress>)
 where
     TResult: ::windows_core::RuntimeType + 'static,
     TProgress: ::windows_core::RuntimeType + 'static;
@@ -3056,11 +2884,11 @@ impl<TResult: ::windows_core::RuntimeType + 'static, TProgress: ::windows_core::
     }
     pub fn Invoke<P0, P1>(&self, asyncinfo: P0, progressinfo: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAsyncOperationWithProgress<TResult, TProgress>>,
+        P0: ::windows_core::IntoParam<IAsyncOperationWithProgress<TResult, TProgress>>,
         P1: ::windows_core::IntoParam<TProgress>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), asyncinfo.try_into_param()?.abi(), progressinfo.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), asyncinfo.into_param().abi(), progressinfo.into_param().abi()).ok() }
     }
 }
 #[repr(C)]
@@ -3133,7 +2961,7 @@ where
 }
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct AsyncOperationWithProgressCompletedHandler<TResult, TProgress>(pub ::windows_core::IUnknown, ::core::marker::PhantomData<TResult>, ::core::marker::PhantomData<TProgress>)
+pub struct AsyncOperationWithProgressCompletedHandler<TResult, TProgress>(::windows_core::IUnknown, ::core::marker::PhantomData<TResult>, ::core::marker::PhantomData<TProgress>)
 where
     TResult: ::windows_core::RuntimeType + 'static,
     TProgress: ::windows_core::RuntimeType + 'static;
@@ -3144,10 +2972,10 @@ impl<TResult: ::windows_core::RuntimeType + 'static, TProgress: ::windows_core::
     }
     pub fn Invoke<P0>(&self, asyncinfo: P0, asyncstatus: AsyncStatus) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAsyncOperationWithProgress<TResult, TProgress>>,
+        P0: ::windows_core::IntoParam<IAsyncOperationWithProgress<TResult, TProgress>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), asyncinfo.try_into_param()?.abi(), asyncstatus).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Invoke)(::windows_core::Interface::as_raw(this), asyncinfo.into_param().abi(), asyncstatus).ok() }
     }
 }
 #[repr(C)]
@@ -3218,9 +3046,7 @@ where
     pub TResult: ::core::marker::PhantomData<TResult>,
     pub TProgress: ::core::marker::PhantomData<TProgress>,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct DeferralCompletedHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(DeferralCompletedHandler, DeferralCompletedHandler_Vtbl, 0xed32a372_f3c8_4faa_9cfb_470148da3888);
 impl DeferralCompletedHandler {
     pub fn new<F: FnMut() -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
         let com = DeferralCompletedHandlerBox::<F> { vtable: &DeferralCompletedHandlerBox::<F>::VTABLE, count: ::windows_core::imp::RefCount::new(1), invoke };
@@ -3272,12 +3098,6 @@ impl<F: FnMut() -> ::windows_core::Result<()> + ::core::marker::Send + 'static> 
         ((*this).invoke)().into()
     }
 }
-unsafe impl ::windows_core::Interface for DeferralCompletedHandler {
-    type Vtable = DeferralCompletedHandler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for DeferralCompletedHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xed32a372_f3c8_4faa_9cfb_470148da3888);
-}
 impl ::windows_core::RuntimeType for DeferralCompletedHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -3289,7 +3109,7 @@ pub struct DeferralCompletedHandler_Vtbl {
 }
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct EventHandler<T>(pub ::windows_core::IUnknown, ::core::marker::PhantomData<T>)
+pub struct EventHandler<T>(::windows_core::IUnknown, ::core::marker::PhantomData<T>)
 where
     T: ::windows_core::RuntimeType + 'static;
 impl<T: ::windows_core::RuntimeType + 'static> EventHandler<T> {
@@ -3372,7 +3192,7 @@ where
 }
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct TypedEventHandler<TSender, TResult>(pub ::windows_core::IUnknown, ::core::marker::PhantomData<TSender>, ::core::marker::PhantomData<TResult>)
+pub struct TypedEventHandler<TSender, TResult>(::windows_core::IUnknown, ::core::marker::PhantomData<TSender>, ::core::marker::PhantomData<TResult>)
 where
     TSender: ::windows_core::RuntimeType + 'static,
     TResult: ::windows_core::RuntimeType + 'static;

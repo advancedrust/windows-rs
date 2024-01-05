@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFindAllAccountsResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFindAllAccountsResult {
-    type Vtable = IFindAllAccountsResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFindAllAccountsResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa5812b5d_b72e_420c_86ab_aac0d7b7261f);
-}
+::windows_core::imp::com_interface!(IFindAllAccountsResult, IFindAllAccountsResult_Vtbl, 0xa5812b5d_b72e_420c_86ab_aac0d7b7261f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFindAllAccountsResult_Vtbl {
@@ -19,16 +10,7 @@ pub struct IFindAllAccountsResult_Vtbl {
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut FindAllWebAccountsStatus) -> ::windows_core::HRESULT,
     pub ProviderError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebAccountEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebAccountEventArgs {
-    type Vtable = IWebAccountEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebAccountEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6fb7037d_424e_44ec_977c_ef2415462a5a);
-}
+::windows_core::imp::com_interface!(IWebAccountEventArgs, IWebAccountEventArgs_Vtbl, 0x6fb7037d_424e_44ec_977c_ef2415462a5a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebAccountEventArgs_Vtbl {
@@ -38,16 +20,7 @@ pub struct IWebAccountEventArgs_Vtbl {
     #[cfg(not(feature = "Security_Credentials"))]
     Account: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebAccountMonitor(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebAccountMonitor {
-    type Vtable = IWebAccountMonitor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebAccountMonitor {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7445f5fd_aa9d_4619_8d5d_c138a4ede3e5);
-}
+::windows_core::imp::com_interface!(IWebAccountMonitor, IWebAccountMonitor_Vtbl, 0x7445f5fd_aa9d_4619_8d5d_c138a4ede3e5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebAccountMonitor_Vtbl {
@@ -59,16 +32,7 @@ pub struct IWebAccountMonitor_Vtbl {
     pub DefaultSignInAccountChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveDefaultSignInAccountChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebAccountMonitor2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebAccountMonitor2 {
-    type Vtable = IWebAccountMonitor2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebAccountMonitor2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa7adc1f8_24b8_4f01_9ae5_24545e71233a);
-}
+::windows_core::imp::com_interface!(IWebAccountMonitor2, IWebAccountMonitor2_Vtbl, 0xa7adc1f8_24b8_4f01_9ae5_24545e71233a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebAccountMonitor2_Vtbl {
@@ -76,16 +40,7 @@ pub struct IWebAccountMonitor2_Vtbl {
     pub AccountPictureUpdated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveAccountPictureUpdated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebAuthenticationCoreManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebAuthenticationCoreManagerStatics {
-    type Vtable = IWebAuthenticationCoreManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebAuthenticationCoreManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6aca7c92_a581_4479_9c10_752eff44fd34);
-}
+::windows_core::imp::com_interface!(IWebAuthenticationCoreManagerStatics, IWebAuthenticationCoreManagerStatics_Vtbl, 0x6aca7c92_a581_4479_9c10_752eff44fd34);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebAuthenticationCoreManagerStatics_Vtbl {
@@ -113,16 +68,7 @@ pub struct IWebAuthenticationCoreManagerStatics_Vtbl {
     #[cfg(not(feature = "Security_Credentials"))]
     FindAccountProviderWithAuthorityAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebAuthenticationCoreManagerStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebAuthenticationCoreManagerStatics2 {
-    type Vtable = IWebAuthenticationCoreManagerStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebAuthenticationCoreManagerStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf584184a_8b57_4820_b6a4_70a5b6fcf44a);
-}
+::windows_core::imp::com_interface!(IWebAuthenticationCoreManagerStatics2, IWebAuthenticationCoreManagerStatics2_Vtbl, 0xf584184a_8b57_4820_b6a4_70a5b6fcf44a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebAuthenticationCoreManagerStatics2_Vtbl {
@@ -132,16 +78,7 @@ pub struct IWebAuthenticationCoreManagerStatics2_Vtbl {
     #[cfg(not(all(feature = "Security_Credentials", feature = "System")))]
     FindAccountProviderWithAuthorityForUserAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebAuthenticationCoreManagerStatics3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebAuthenticationCoreManagerStatics3 {
-    type Vtable = IWebAuthenticationCoreManagerStatics3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebAuthenticationCoreManagerStatics3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2404eeb2_8924_4d93_ab3a_99688b419d56);
-}
+::windows_core::imp::com_interface!(IWebAuthenticationCoreManagerStatics3, IWebAuthenticationCoreManagerStatics3_Vtbl, 0x2404eeb2_8924_4d93_ab3a_99688b419d56);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebAuthenticationCoreManagerStatics3_Vtbl {
@@ -151,16 +88,7 @@ pub struct IWebAuthenticationCoreManagerStatics3_Vtbl {
     #[cfg(not(all(feature = "Foundation_Collections", feature = "Security_Credentials")))]
     CreateWebAccountMonitor: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebAuthenticationCoreManagerStatics4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebAuthenticationCoreManagerStatics4 {
-    type Vtable = IWebAuthenticationCoreManagerStatics4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebAuthenticationCoreManagerStatics4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x54e633fe_96e0_41e8_9832_1298897c2aaf);
-}
+::windows_core::imp::com_interface!(IWebAuthenticationCoreManagerStatics4, IWebAuthenticationCoreManagerStatics4_Vtbl, 0x54e633fe_96e0_41e8_9832_1298897c2aaf);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebAuthenticationCoreManagerStatics4_Vtbl {
@@ -186,16 +114,7 @@ pub struct IWebAuthenticationCoreManagerStatics4_Vtbl {
     #[cfg(not(all(feature = "Security_Credentials", feature = "System")))]
     FindSystemAccountProviderWithAuthorityForUserAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebProviderError(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebProviderError {
-    type Vtable = IWebProviderError_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebProviderError {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdb191bb1_50c5_4809_8dca_09c99410245c);
-}
+::windows_core::imp::com_interface!(IWebProviderError, IWebProviderError_Vtbl, 0xdb191bb1_50c5_4809_8dca_09c99410245c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebProviderError_Vtbl {
@@ -207,32 +126,14 @@ pub struct IWebProviderError_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Properties: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebProviderErrorFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebProviderErrorFactory {
-    type Vtable = IWebProviderErrorFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebProviderErrorFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe3c40a2d_89ef_4e37_847f_a8b9d5a32910);
-}
+::windows_core::imp::com_interface!(IWebProviderErrorFactory, IWebProviderErrorFactory_Vtbl, 0xe3c40a2d_89ef_4e37_847f_a8b9d5a32910);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebProviderErrorFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, errorcode: u32, errormessage: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebTokenRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebTokenRequest {
-    type Vtable = IWebTokenRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebTokenRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb77b4d68_adcb_4673_b364_0cf7b35caf97);
-}
+::windows_core::imp::com_interface!(IWebTokenRequest, IWebTokenRequest_Vtbl, 0xb77b4d68_adcb_4673_b364_0cf7b35caf97);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebTokenRequest_Vtbl {
@@ -249,16 +150,7 @@ pub struct IWebTokenRequest_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Properties: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebTokenRequest2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebTokenRequest2 {
-    type Vtable = IWebTokenRequest2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebTokenRequest2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd700c079_30c8_4397_9654_961c3be8b855);
-}
+::windows_core::imp::com_interface!(IWebTokenRequest2, IWebTokenRequest2_Vtbl, 0xd700c079_30c8_4397_9654_961c3be8b855);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebTokenRequest2_Vtbl {
@@ -268,16 +160,7 @@ pub struct IWebTokenRequest2_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     AppProperties: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebTokenRequest3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebTokenRequest3 {
-    type Vtable = IWebTokenRequest3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebTokenRequest3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5a755b51_3bb1_41a5_a63d_90bc32c7db9a);
-}
+::windows_core::imp::com_interface!(IWebTokenRequest3, IWebTokenRequest3_Vtbl, 0x5a755b51_3bb1_41a5_a63d_90bc32c7db9a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebTokenRequest3_Vtbl {
@@ -285,16 +168,7 @@ pub struct IWebTokenRequest3_Vtbl {
     pub CorrelationId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetCorrelationId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebTokenRequestFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebTokenRequestFactory {
-    type Vtable = IWebTokenRequestFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebTokenRequestFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6cf2141c_0ff0_4c67_b84f_99ddbe4a72c9);
-}
+::windows_core::imp::com_interface!(IWebTokenRequestFactory, IWebTokenRequestFactory_Vtbl, 0x6cf2141c_0ff0_4c67_b84f_99ddbe4a72c9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebTokenRequestFactory_Vtbl {
@@ -316,16 +190,7 @@ pub struct IWebTokenRequestFactory_Vtbl {
     #[cfg(not(feature = "Security_Credentials"))]
     CreateWithScope: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebTokenRequestResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebTokenRequestResult {
-    type Vtable = IWebTokenRequestResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebTokenRequestResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc12a8305_d1f8_4483_8d54_38fe292784ff);
-}
+::windows_core::imp::com_interface!(IWebTokenRequestResult, IWebTokenRequestResult_Vtbl, 0xc12a8305_d1f8_4483_8d54_38fe292784ff);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebTokenRequestResult_Vtbl {
@@ -338,16 +203,7 @@ pub struct IWebTokenRequestResult_Vtbl {
     pub ResponseError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub InvalidateCacheAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebTokenResponse(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebTokenResponse {
-    type Vtable = IWebTokenResponse_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebTokenResponse {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x67a7c5ca_83f6_44c6_a3b1_0eb69e41fa8a);
-}
+::windows_core::imp::com_interface!(IWebTokenResponse, IWebTokenResponse_Vtbl, 0x67a7c5ca_83f6_44c6_a3b1_0eb69e41fa8a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebTokenResponse_Vtbl {
@@ -363,16 +219,7 @@ pub struct IWebTokenResponse_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Properties: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebTokenResponseFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebTokenResponseFactory {
-    type Vtable = IWebTokenResponseFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebTokenResponseFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xab6bf7f8_5450_4ef6_97f7_052b0431c0f0);
-}
+::windows_core::imp::com_interface!(IWebTokenResponseFactory, IWebTokenResponseFactory_Vtbl, 0xab6bf7f8_5450_4ef6_97f7_052b0431c0f0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebTokenResponseFactory_Vtbl {
@@ -621,11 +468,11 @@ impl WebAuthenticationCoreManager {
     #[cfg(all(feature = "Foundation_Collections", feature = "Security_Credentials"))]
     pub fn CreateWebAccountMonitor<P0>(webaccounts: P0) -> ::windows_core::Result<WebAccountMonitor>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::super::Foundation::Collections::IIterable<super::super::super::Credentials::WebAccount>>,
+        P0: ::windows_core::IntoParam<super::super::super::super::Foundation::Collections::IIterable<super::super::super::Credentials::WebAccount>>,
     {
         Self::IWebAuthenticationCoreManagerStatics3(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateWebAccountMonitor)(::windows_core::Interface::as_raw(this), webaccounts.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateWebAccountMonitor)(::windows_core::Interface::as_raw(this), webaccounts.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Security_Credentials\"`"]

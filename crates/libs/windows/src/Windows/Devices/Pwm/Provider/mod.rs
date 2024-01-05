@@ -1,6 +1,4 @@
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPwmControllerProvider(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IPwmControllerProvider, IPwmControllerProvider_Vtbl, 0x1300593b_e2e3_40a4_b7d9_48dff0377a52);
 impl IPwmControllerProvider {
     pub fn PinCount(&self) -> ::windows_core::Result<i32> {
         let this = self;
@@ -62,12 +60,6 @@ impl IPwmControllerProvider {
 impl ::windows_core::RuntimeType for IPwmControllerProvider {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IPwmControllerProvider {
-    type Vtable = IPwmControllerProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPwmControllerProvider {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1300593b_e2e3_40a4_b7d9_48dff0377a52);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPwmControllerProvider_Vtbl {
@@ -83,9 +75,7 @@ pub struct IPwmControllerProvider_Vtbl {
     pub DisablePin: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pin: i32) -> ::windows_core::HRESULT,
     pub SetPulseParameters: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pin: i32, dutycycle: f64, invertpolarity: bool) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPwmProvider(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IPwmProvider, IPwmProvider_Vtbl, 0xa3301228_52f1_47b0_9349_66ba43d25902);
 impl IPwmProvider {
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -100,12 +90,6 @@ impl IPwmProvider {
 ::windows_core::imp::interface_hierarchy!(IPwmProvider, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for IPwmProvider {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IPwmProvider {
-    type Vtable = IPwmProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPwmProvider {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa3301228_52f1_47b0_9349_66ba43d25902);
 }
 #[repr(C)]
 #[doc(hidden)]

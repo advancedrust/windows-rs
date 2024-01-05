@@ -322,8 +322,9 @@ impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 
 {
 }
 impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static>
-    ::windows_core::CanTryInto<IIterable<IKeyValuePair<K, V>>> for IMapView<K, V>
+    ::windows_core::CanInto<IIterable<IKeyValuePair<K, V>>> for IMapView<K, V>
 {
+    const QUERY: bool = true;
 }
 impl<K: ::windows_core::RuntimeType + 'static, V: ::windows_core::RuntimeType + 'static>
     ::windows_core::RuntimeType for IMapView<K, V>

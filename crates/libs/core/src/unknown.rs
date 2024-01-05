@@ -15,6 +15,10 @@ pub struct IUnknown_Vtbl {
     pub Release: unsafe extern "system" fn(this: *mut std::ffi::c_void) -> u32,
 }
 
+// impl TypeKind for IUnknown {
+//     type TypeKind = ReferenceType;
+// }
+
 unsafe impl Interface for IUnknown {
     type Vtable = IUnknown_Vtbl;
 }

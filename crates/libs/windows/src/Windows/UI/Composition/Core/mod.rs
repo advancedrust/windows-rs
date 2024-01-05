@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositorController(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositorController {
-    type Vtable = ICompositorController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositorController {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2d75f35a_70a7_4395_ba2d_cef0b18399f9);
-}
+::windows_core::imp::com_interface!(ICompositorController, ICompositorController_Vtbl, 0x2d75f35a_70a7_4395_ba2d_cef0b18399f9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositorController_Vtbl {
@@ -79,6 +70,6 @@ impl ::windows_core::RuntimeName for CompositorController {
     const NAME: &'static str = "Windows.UI.Composition.Core.CompositorController";
 }
 ::windows_core::imp::interface_hierarchy!(CompositorController, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IClosable> for CompositorController {}
+::windows_core::imp::required_hierarchy!(CompositorController, super::super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for CompositorController {}
 unsafe impl ::core::marker::Sync for CompositorController {}

@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeviceAccountConfiguration(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDeviceAccountConfiguration {
-    type Vtable = IDeviceAccountConfiguration_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDeviceAccountConfiguration {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xad0123a3_fbdc_4d1b_be43_5a27ea4a1b63);
-}
+::windows_core::imp::com_interface!(IDeviceAccountConfiguration, IDeviceAccountConfiguration_Vtbl, 0xad0123a3_fbdc_4d1b_be43_5a27ea4a1b63);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDeviceAccountConfiguration_Vtbl {
@@ -45,16 +36,7 @@ pub struct IDeviceAccountConfiguration_Vtbl {
     pub OutgoingServerUsername: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetOutgoingServerUsername: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeviceAccountConfiguration2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDeviceAccountConfiguration2 {
-    type Vtable = IDeviceAccountConfiguration2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDeviceAccountConfiguration2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf2b2e5a6_728d_4a4a_8945_2bf8580136de);
-}
+::windows_core::imp::com_interface!(IDeviceAccountConfiguration2, IDeviceAccountConfiguration2_Vtbl, 0xf2b2e5a6_728d_4a4a_8945_2bf8580136de);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDeviceAccountConfiguration2_Vtbl {
@@ -128,16 +110,7 @@ pub struct IDeviceAccountConfiguration2_Vtbl {
     pub IsSyncScheduleManagedBySystem: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetIsSyncScheduleManagedBySystem: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccountSystemAccessManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccountSystemAccessManagerStatics {
-    type Vtable = IUserDataAccountSystemAccessManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccountSystemAccessManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9d6b11b9_cbe5_45f5_822b_c267b81dbdb6);
-}
+::windows_core::imp::com_interface!(IUserDataAccountSystemAccessManagerStatics, IUserDataAccountSystemAccessManagerStatics_Vtbl, 0x9d6b11b9_cbe5_45f5_822b_c267b81dbdb6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccountSystemAccessManagerStatics_Vtbl {
@@ -147,16 +120,7 @@ pub struct IUserDataAccountSystemAccessManagerStatics_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     AddAndShowDeviceAccountsAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccountSystemAccessManagerStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccountSystemAccessManagerStatics2 {
-    type Vtable = IUserDataAccountSystemAccessManagerStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccountSystemAccessManagerStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x943f854d_4b4e_439f_83d3_979b27c05ac7);
-}
+::windows_core::imp::com_interface!(IUserDataAccountSystemAccessManagerStatics2, IUserDataAccountSystemAccessManagerStatics2_Vtbl, 0x943f854d_4b4e_439f_83d3_979b27c05ac7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccountSystemAccessManagerStatics2_Vtbl {
@@ -706,11 +670,11 @@ impl UserDataAccountSystemAccessManager {
     #[cfg(feature = "Foundation_Collections")]
     pub fn AddAndShowDeviceAccountsAsync<P0>(accounts: P0) -> ::windows_core::Result<super::super::super::Foundation::IAsyncOperation<super::super::super::Foundation::Collections::IVectorView<::windows_core::HSTRING>>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::Collections::IIterable<DeviceAccountConfiguration>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::Collections::IIterable<DeviceAccountConfiguration>>,
     {
         Self::IUserDataAccountSystemAccessManagerStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).AddAndShowDeviceAccountsAsync)(::windows_core::Interface::as_raw(this), accounts.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).AddAndShowDeviceAccountsAsync)(::windows_core::Interface::as_raw(this), accounts.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     pub fn SuppressLocalAccountWithAccountAsync(userdataaccountid: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {

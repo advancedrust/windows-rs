@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAudioMediaFrame(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAudioMediaFrame {
-    type Vtable = IAudioMediaFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAudioMediaFrame {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa3a9feff_8021_441b_9a46_e7f0137b7981);
-}
+::windows_core::imp::com_interface!(IAudioMediaFrame, IAudioMediaFrame_Vtbl, 0xa3a9feff_8021_441b_9a46_e7f0137b7981);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAudioMediaFrame_Vtbl {
@@ -19,16 +10,7 @@ pub struct IAudioMediaFrame_Vtbl {
     AudioEncodingProperties: usize,
     pub GetAudioFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBufferMediaFrame(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBufferMediaFrame {
-    type Vtable = IBufferMediaFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBufferMediaFrame {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb5b153c7_9b84_4062_b79c_a365b2596854);
-}
+::windows_core::imp::com_interface!(IBufferMediaFrame, IBufferMediaFrame_Vtbl, 0xb5b153c7_9b84_4062_b79c_a365b2596854);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBufferMediaFrame_Vtbl {
@@ -39,16 +21,7 @@ pub struct IBufferMediaFrame_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     Buffer: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDepthMediaFrame(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDepthMediaFrame {
-    type Vtable = IDepthMediaFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDepthMediaFrame {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x47135e4f_8549_45c0_925b_80d35efdb10a);
-}
+::windows_core::imp::com_interface!(IDepthMediaFrame, IDepthMediaFrame_Vtbl, 0x47135e4f_8549_45c0_925b_80d35efdb10a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDepthMediaFrame_Vtbl {
@@ -61,16 +34,7 @@ pub struct IDepthMediaFrame_Vtbl {
     #[cfg(not(all(feature = "Media_Devices_Core", feature = "Perception_Spatial")))]
     TryCreateCoordinateMapper: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDepthMediaFrame2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDepthMediaFrame2 {
-    type Vtable = IDepthMediaFrame2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDepthMediaFrame2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6cca473d_c4a4_4176_b0cd_33eae3b35aa3);
-}
+::windows_core::imp::com_interface!(IDepthMediaFrame2, IDepthMediaFrame2_Vtbl, 0x6cca473d_c4a4_4176_b0cd_33eae3b35aa3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDepthMediaFrame2_Vtbl {
@@ -78,16 +42,7 @@ pub struct IDepthMediaFrame2_Vtbl {
     pub MaxReliableDepth: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
     pub MinReliableDepth: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDepthMediaFrameFormat(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDepthMediaFrameFormat {
-    type Vtable = IDepthMediaFrameFormat_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDepthMediaFrameFormat {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc312cf40_d729_453e_8780_2e04f140d28e);
-}
+::windows_core::imp::com_interface!(IDepthMediaFrameFormat, IDepthMediaFrameFormat_Vtbl, 0xc312cf40_d729_453e_8780_2e04f140d28e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDepthMediaFrameFormat_Vtbl {
@@ -95,16 +50,7 @@ pub struct IDepthMediaFrameFormat_Vtbl {
     pub VideoFormat: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub DepthScaleInMeters: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f64) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInfraredMediaFrame(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInfraredMediaFrame {
-    type Vtable = IInfraredMediaFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInfraredMediaFrame {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3fd13503_004b_4f0e_91ac_465299b41658);
-}
+::windows_core::imp::com_interface!(IInfraredMediaFrame, IInfraredMediaFrame_Vtbl, 0x3fd13503_004b_4f0e_91ac_465299b41658);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInfraredMediaFrame_Vtbl {
@@ -113,31 +59,13 @@ pub struct IInfraredMediaFrame_Vtbl {
     pub VideoMediaFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub IsIlluminated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameArrivedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameArrivedEventArgs {
-    type Vtable = IMediaFrameArrivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameArrivedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0b430add_a490_4435_ada1_9affd55239f7);
-}
+::windows_core::imp::com_interface!(IMediaFrameArrivedEventArgs, IMediaFrameArrivedEventArgs_Vtbl, 0x0b430add_a490_4435_ada1_9affd55239f7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameArrivedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameFormat(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameFormat {
-    type Vtable = IMediaFrameFormat_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameFormat {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x71902b4e_b279_4a97_a9db_bd5a2fb78f39);
-}
+::windows_core::imp::com_interface!(IMediaFrameFormat, IMediaFrameFormat_Vtbl, 0x71902b4e_b279_4a97_a9db_bd5a2fb78f39);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameFormat_Vtbl {
@@ -154,16 +82,7 @@ pub struct IMediaFrameFormat_Vtbl {
     Properties: usize,
     pub VideoFormat: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameFormat2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameFormat2 {
-    type Vtable = IMediaFrameFormat2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameFormat2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x63856340_5e87_4c10_86d1_6df097a6c6a8);
-}
+::windows_core::imp::com_interface!(IMediaFrameFormat2, IMediaFrameFormat2_Vtbl, 0x63856340_5e87_4c10_86d1_6df097a6c6a8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameFormat2_Vtbl {
@@ -173,16 +92,7 @@ pub struct IMediaFrameFormat2_Vtbl {
     #[cfg(not(feature = "Media_MediaProperties"))]
     AudioEncodingProperties: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameReader(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameReader {
-    type Vtable = IMediaFrameReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameReader {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe4c94395_2028_48ed_90b0_d1c1b162e24c);
-}
+::windows_core::imp::com_interface!(IMediaFrameReader, IMediaFrameReader_Vtbl, 0xe4c94395_2028_48ed_90b0_d1c1b162e24c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameReader_Vtbl {
@@ -193,16 +103,7 @@ pub struct IMediaFrameReader_Vtbl {
     pub StartAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub StopAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameReader2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameReader2 {
-    type Vtable = IMediaFrameReader2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameReader2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x871127b3_8531_4050_87cc_a13733cf3e9b);
-}
+::windows_core::imp::com_interface!(IMediaFrameReader2, IMediaFrameReader2_Vtbl, 0x871127b3_8531_4050_87cc_a13733cf3e9b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameReader2_Vtbl {
@@ -210,16 +111,7 @@ pub struct IMediaFrameReader2_Vtbl {
     pub SetAcquisitionMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: MediaFrameReaderAcquisitionMode) -> ::windows_core::HRESULT,
     pub AcquisitionMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MediaFrameReaderAcquisitionMode) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameReference(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameReference {
-    type Vtable = IMediaFrameReference_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameReference {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf6b88641_f0dc_4044_8dc9_961cedd05bad);
-}
+::windows_core::imp::com_interface!(IMediaFrameReference, IMediaFrameReference_Vtbl, 0xf6b88641_f0dc_4044_8dc9_961cedd05bad);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameReference_Vtbl {
@@ -239,32 +131,14 @@ pub struct IMediaFrameReference_Vtbl {
     #[cfg(not(feature = "Perception_Spatial"))]
     CoordinateSystem: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameReference2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameReference2 {
-    type Vtable = IMediaFrameReference2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameReference2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xddbc3ecc_d5b2_49ef_836a_947d989b80c1);
-}
+::windows_core::imp::com_interface!(IMediaFrameReference2, IMediaFrameReference2_Vtbl, 0xddbc3ecc_d5b2_49ef_836a_947d989b80c1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameReference2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub AudioMediaFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameSource(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameSource {
-    type Vtable = IMediaFrameSource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameSource {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd6782953_90db_46a8_8add_2aa884a8d253);
-}
+::windows_core::imp::com_interface!(IMediaFrameSource, IMediaFrameSource_Vtbl, 0xd6782953_90db_46a8_8add_2aa884a8d253);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameSource_Vtbl {
@@ -284,16 +158,7 @@ pub struct IMediaFrameSource_Vtbl {
     #[cfg(not(feature = "Media_Devices_Core"))]
     TryGetCameraIntrinsics: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameSourceController(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameSourceController {
-    type Vtable = IMediaFrameSourceController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameSourceController {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6d076635_316d_4b8f_b7b6_eeb04a8c6525);
-}
+::windows_core::imp::com_interface!(IMediaFrameSourceController, IMediaFrameSourceController_Vtbl, 0x6d076635_316d_4b8f_b7b6_eeb04a8c6525);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameSourceController_Vtbl {
@@ -305,16 +170,7 @@ pub struct IMediaFrameSourceController_Vtbl {
     #[cfg(not(feature = "Media_Devices"))]
     VideoDeviceController: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameSourceController2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameSourceController2 {
-    type Vtable = IMediaFrameSourceController2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameSourceController2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xefc49fd4_fcf2_4a03_b4e4_ac9628739bee);
-}
+::windows_core::imp::com_interface!(IMediaFrameSourceController2, IMediaFrameSourceController2_Vtbl, 0xefc49fd4_fcf2_4a03_b4e4_ac9628739bee);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameSourceController2_Vtbl {
@@ -322,16 +178,7 @@ pub struct IMediaFrameSourceController2_Vtbl {
     pub GetPropertyByExtendedIdAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, extendedPropertyId_array_size: u32, extendedpropertyid: *const u8, maxpropertyvaluesize: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetPropertyByExtendedIdAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, extendedPropertyId_array_size: u32, extendedpropertyid: *const u8, propertyValue_array_size: u32, propertyvalue: *const u8, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameSourceController3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameSourceController3 {
-    type Vtable = IMediaFrameSourceController3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameSourceController3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1f0cf815_2464_4651_b1e8_4a82dbdb54de);
-}
+::windows_core::imp::com_interface!(IMediaFrameSourceController3, IMediaFrameSourceController3_Vtbl, 0x1f0cf815_2464_4651_b1e8_4a82dbdb54de);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameSourceController3_Vtbl {
@@ -341,16 +188,7 @@ pub struct IMediaFrameSourceController3_Vtbl {
     #[cfg(not(feature = "Media_Devices"))]
     AudioDeviceController: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameSourceGetPropertyResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameSourceGetPropertyResult {
-    type Vtable = IMediaFrameSourceGetPropertyResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameSourceGetPropertyResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x088616c2_3a64_4bd5_bd2b_e7c898d2f37a);
-}
+::windows_core::imp::com_interface!(IMediaFrameSourceGetPropertyResult, IMediaFrameSourceGetPropertyResult_Vtbl, 0x088616c2_3a64_4bd5_bd2b_e7c898d2f37a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameSourceGetPropertyResult_Vtbl {
@@ -358,16 +196,7 @@ pub struct IMediaFrameSourceGetPropertyResult_Vtbl {
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MediaFrameSourceGetPropertyStatus) -> ::windows_core::HRESULT,
     pub Value: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameSourceGroup(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameSourceGroup {
-    type Vtable = IMediaFrameSourceGroup_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameSourceGroup {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7f605b87_4832_4b5f_ae3d_412faab37d34);
-}
+::windows_core::imp::com_interface!(IMediaFrameSourceGroup, IMediaFrameSourceGroup_Vtbl, 0x7f605b87_4832_4b5f_ae3d_412faab37d34);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameSourceGroup_Vtbl {
@@ -379,16 +208,7 @@ pub struct IMediaFrameSourceGroup_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     SourceInfos: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameSourceGroupStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameSourceGroupStatics {
-    type Vtable = IMediaFrameSourceGroupStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameSourceGroupStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1c48bfc5_436f_4508_94cf_d5d8b7326445);
-}
+::windows_core::imp::com_interface!(IMediaFrameSourceGroupStatics, IMediaFrameSourceGroupStatics_Vtbl, 0x1c48bfc5_436f_4508_94cf_d5d8b7326445);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameSourceGroupStatics_Vtbl {
@@ -400,16 +220,7 @@ pub struct IMediaFrameSourceGroupStatics_Vtbl {
     pub FromIdAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, id: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeviceSelector: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameSourceInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameSourceInfo {
-    type Vtable = IMediaFrameSourceInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameSourceInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x87bdc9cd_4601_408f_91cf_038318cd0af3);
-}
+::windows_core::imp::com_interface!(IMediaFrameSourceInfo, IMediaFrameSourceInfo_Vtbl, 0x87bdc9cd_4601_408f_91cf_038318cd0af3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameSourceInfo_Vtbl {
@@ -431,16 +242,7 @@ pub struct IMediaFrameSourceInfo_Vtbl {
     #[cfg(not(feature = "Perception_Spatial"))]
     CoordinateSystem: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameSourceInfo2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameSourceInfo2 {
-    type Vtable = IMediaFrameSourceInfo2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameSourceInfo2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x195a7855_6457_42c6_a769_19b65bd32e6e);
-}
+::windows_core::imp::com_interface!(IMediaFrameSourceInfo2, IMediaFrameSourceInfo2_Vtbl, 0x195a7855_6457_42c6_a769_19b65bd32e6e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameSourceInfo2_Vtbl {
@@ -451,16 +253,7 @@ pub struct IMediaFrameSourceInfo2_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     VideoProfileMediaDescription: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameSourceInfo3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameSourceInfo3 {
-    type Vtable = IMediaFrameSourceInfo3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameSourceInfo3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xca824ab6_66ea_5885_a2b6_26c0eeec3c7b);
-}
+::windows_core::imp::com_interface!(IMediaFrameSourceInfo3, IMediaFrameSourceInfo3_Vtbl, 0xca824ab6_66ea_5885_a2b6_26c0eeec3c7b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameSourceInfo3_Vtbl {
@@ -470,47 +263,20 @@ pub struct IMediaFrameSourceInfo3_Vtbl {
     #[cfg(not(all(feature = "Devices_Enumeration", feature = "UI_WindowManagement")))]
     GetRelativePanel: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMediaFrameSourceInfo4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMediaFrameSourceInfo4 {
-    type Vtable = IMediaFrameSourceInfo4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMediaFrameSourceInfo4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4817d721_85eb_470c_8f37_43ca5498e41d);
-}
+::windows_core::imp::com_interface!(IMediaFrameSourceInfo4, IMediaFrameSourceInfo4_Vtbl, 0x4817d721_85eb_470c_8f37_43ca5498e41d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMediaFrameSourceInfo4_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub IsShareable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMultiSourceMediaFrameArrivedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMultiSourceMediaFrameArrivedEventArgs {
-    type Vtable = IMultiSourceMediaFrameArrivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMultiSourceMediaFrameArrivedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x63115e01_cf51_48fd_aab0_6d693eb48127);
-}
+::windows_core::imp::com_interface!(IMultiSourceMediaFrameArrivedEventArgs, IMultiSourceMediaFrameArrivedEventArgs_Vtbl, 0x63115e01_cf51_48fd_aab0_6d693eb48127);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMultiSourceMediaFrameArrivedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMultiSourceMediaFrameReader(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMultiSourceMediaFrameReader {
-    type Vtable = IMultiSourceMediaFrameReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMultiSourceMediaFrameReader {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8d144402_f763_488d_98f2_b437bcf075e7);
-}
+::windows_core::imp::com_interface!(IMultiSourceMediaFrameReader, IMultiSourceMediaFrameReader_Vtbl, 0x8d144402_f763_488d_98f2_b437bcf075e7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMultiSourceMediaFrameReader_Vtbl {
@@ -521,16 +287,7 @@ pub struct IMultiSourceMediaFrameReader_Vtbl {
     pub StartAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub StopAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMultiSourceMediaFrameReader2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMultiSourceMediaFrameReader2 {
-    type Vtable = IMultiSourceMediaFrameReader2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMultiSourceMediaFrameReader2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xef5c8abd_fc5c_4c6b_9d81_3cb9cc637c26);
-}
+::windows_core::imp::com_interface!(IMultiSourceMediaFrameReader2, IMultiSourceMediaFrameReader2_Vtbl, 0xef5c8abd_fc5c_4c6b_9d81_3cb9cc637c26);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMultiSourceMediaFrameReader2_Vtbl {
@@ -538,32 +295,14 @@ pub struct IMultiSourceMediaFrameReader2_Vtbl {
     pub SetAcquisitionMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: MediaFrameReaderAcquisitionMode) -> ::windows_core::HRESULT,
     pub AcquisitionMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MediaFrameReaderAcquisitionMode) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMultiSourceMediaFrameReference(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMultiSourceMediaFrameReference {
-    type Vtable = IMultiSourceMediaFrameReference_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMultiSourceMediaFrameReference {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x21964b1a_7fe2_44d6_92e5_298e6d2810e9);
-}
+::windows_core::imp::com_interface!(IMultiSourceMediaFrameReference, IMultiSourceMediaFrameReference_Vtbl, 0x21964b1a_7fe2_44d6_92e5_298e6d2810e9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMultiSourceMediaFrameReference_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub TryGetFrameReferenceBySourceId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, sourceid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVideoMediaFrame(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVideoMediaFrame {
-    type Vtable = IVideoMediaFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVideoMediaFrame {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00dd4ccb_32bd_4fe1_a013_7cc13cf5dbcf);
-}
+::windows_core::imp::com_interface!(IVideoMediaFrame, IVideoMediaFrame_Vtbl, 0x00dd4ccb_32bd_4fe1_a013_7cc13cf5dbcf);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVideoMediaFrame_Vtbl {
@@ -586,16 +325,7 @@ pub struct IVideoMediaFrame_Vtbl {
     pub DepthMediaFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetVideoFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVideoMediaFrameFormat(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVideoMediaFrameFormat {
-    type Vtable = IVideoMediaFrameFormat_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVideoMediaFrameFormat {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x46027fc0_d71b_45c7_8f14_6d9a0ae604e4);
-}
+::windows_core::imp::com_interface!(IVideoMediaFrameFormat, IVideoMediaFrameFormat_Vtbl, 0x46027fc0_d71b_45c7_8f14_6d9a0ae604e4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVideoMediaFrameFormat_Vtbl {
@@ -982,7 +712,7 @@ impl ::windows_core::RuntimeName for MediaFrameReader {
     const NAME: &'static str = "Windows.Media.Capture.Frames.MediaFrameReader";
 }
 ::windows_core::imp::interface_hierarchy!(MediaFrameReader, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IClosable> for MediaFrameReader {}
+::windows_core::imp::required_hierarchy!(MediaFrameReader, super::super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for MediaFrameReader {}
 unsafe impl ::core::marker::Sync for MediaFrameReader {}
 #[repr(transparent)]
@@ -1074,7 +804,7 @@ impl ::windows_core::RuntimeName for MediaFrameReference {
     const NAME: &'static str = "Windows.Media.Capture.Frames.MediaFrameReference";
 }
 ::windows_core::imp::interface_hierarchy!(MediaFrameReference, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IClosable> for MediaFrameReference {}
+::windows_core::imp::required_hierarchy!(MediaFrameReference, super::super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for MediaFrameReference {}
 unsafe impl ::core::marker::Sync for MediaFrameReference {}
 #[repr(transparent)]
@@ -1195,12 +925,12 @@ impl MediaFrameSourceController {
     }
     pub fn GetPropertyByExtendedIdAsync<P0>(&self, extendedpropertyid: &[u8], maxpropertyvaluesize: P0) -> ::windows_core::Result<super::super::super::Foundation::IAsyncOperation<MediaFrameSourceGetPropertyResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<u32>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<u32>>,
     {
         let this = &::windows_core::ComInterface::cast::<IMediaFrameSourceController2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetPropertyByExtendedIdAsync)(::windows_core::Interface::as_raw(this), extendedpropertyid.len().try_into().unwrap(), extendedpropertyid.as_ptr(), maxpropertyvaluesize.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetPropertyByExtendedIdAsync)(::windows_core::Interface::as_raw(this), extendedpropertyid.len().try_into().unwrap(), extendedpropertyid.as_ptr(), maxpropertyvaluesize.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn SetPropertyByExtendedIdAsync(&self, extendedpropertyid: &[u8], propertyvalue: &[u8]) -> ::windows_core::Result<super::super::super::Foundation::IAsyncOperation<MediaFrameSourceSetPropertyStatus>> {
@@ -1534,7 +1264,7 @@ impl ::windows_core::RuntimeName for MultiSourceMediaFrameReader {
     const NAME: &'static str = "Windows.Media.Capture.Frames.MultiSourceMediaFrameReader";
 }
 ::windows_core::imp::interface_hierarchy!(MultiSourceMediaFrameReader, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IClosable> for MultiSourceMediaFrameReader {}
+::windows_core::imp::required_hierarchy!(MultiSourceMediaFrameReader, super::super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for MultiSourceMediaFrameReader {}
 unsafe impl ::core::marker::Sync for MultiSourceMediaFrameReader {}
 #[repr(transparent)]
@@ -1566,7 +1296,7 @@ impl ::windows_core::RuntimeName for MultiSourceMediaFrameReference {
     const NAME: &'static str = "Windows.Media.Capture.Frames.MultiSourceMediaFrameReference";
 }
 ::windows_core::imp::interface_hierarchy!(MultiSourceMediaFrameReference, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IClosable> for MultiSourceMediaFrameReference {}
+::windows_core::imp::required_hierarchy!(MultiSourceMediaFrameReference, super::super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for MultiSourceMediaFrameReference {}
 unsafe impl ::core::marker::Sync for MultiSourceMediaFrameReference {}
 #[repr(transparent)]

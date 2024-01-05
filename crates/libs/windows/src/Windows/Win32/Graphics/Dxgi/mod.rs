@@ -47,9 +47,7 @@ where
     let mut result__ = ::std::ptr::null_mut();
     DXGIGetDebugInterface1(flags, &T::IID, &mut result__).from_abi(result__)
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIAdapter(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIAdapter, IDXGIAdapter_Vtbl, 0x2411e7e1_12ac_4ccf_bd14_9798e8534dc0);
 impl IDXGIAdapter {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -85,12 +83,6 @@ impl IDXGIAdapter {
 ::windows_core::imp::interface_hierarchy!(IDXGIAdapter, ::windows_core::IUnknown, IDXGIObject);
 unsafe impl ::core::marker::Send for IDXGIAdapter {}
 unsafe impl ::core::marker::Sync for IDXGIAdapter {}
-unsafe impl ::windows_core::Interface for IDXGIAdapter {
-    type Vtable = IDXGIAdapter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIAdapter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2411e7e1_12ac_4ccf_bd14_9798e8534dc0);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIAdapter_Vtbl {
@@ -99,9 +91,7 @@ pub struct IDXGIAdapter_Vtbl {
     pub GetDesc: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdesc: *mut DXGI_ADAPTER_DESC) -> ::windows_core::HRESULT,
     pub CheckInterfaceSupport: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, interfacename: *const ::windows_core::GUID, pumdversion: *mut i64) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIAdapter1(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIAdapter1, IDXGIAdapter1_Vtbl, 0x29038f61_3839_4626_91fd_086879011a05);
 impl IDXGIAdapter1 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -140,21 +130,13 @@ impl IDXGIAdapter1 {
 ::windows_core::imp::interface_hierarchy!(IDXGIAdapter1, ::windows_core::IUnknown, IDXGIObject, IDXGIAdapter);
 unsafe impl ::core::marker::Send for IDXGIAdapter1 {}
 unsafe impl ::core::marker::Sync for IDXGIAdapter1 {}
-unsafe impl ::windows_core::Interface for IDXGIAdapter1 {
-    type Vtable = IDXGIAdapter1_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIAdapter1 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x29038f61_3839_4626_91fd_086879011a05);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIAdapter1_Vtbl {
     pub base__: IDXGIAdapter_Vtbl,
     pub GetDesc1: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdesc: *mut DXGI_ADAPTER_DESC1) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIAdapter2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIAdapter2, IDXGIAdapter2_Vtbl, 0x0aa1ae0a_fa0e_4b84_8644_e05ff8e5acb5);
 impl IDXGIAdapter2 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -196,21 +178,13 @@ impl IDXGIAdapter2 {
 ::windows_core::imp::interface_hierarchy!(IDXGIAdapter2, ::windows_core::IUnknown, IDXGIObject, IDXGIAdapter, IDXGIAdapter1);
 unsafe impl ::core::marker::Send for IDXGIAdapter2 {}
 unsafe impl ::core::marker::Sync for IDXGIAdapter2 {}
-unsafe impl ::windows_core::Interface for IDXGIAdapter2 {
-    type Vtable = IDXGIAdapter2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIAdapter2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0aa1ae0a_fa0e_4b84_8644_e05ff8e5acb5);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIAdapter2_Vtbl {
     pub base__: IDXGIAdapter1_Vtbl,
     pub GetDesc2: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdesc: *mut DXGI_ADAPTER_DESC2) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIAdapter3(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIAdapter3, IDXGIAdapter3_Vtbl, 0x645967a4_1392_4310_a798_8053ce3e93fd);
 impl IDXGIAdapter3 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -278,12 +252,6 @@ impl IDXGIAdapter3 {
 ::windows_core::imp::interface_hierarchy!(IDXGIAdapter3, ::windows_core::IUnknown, IDXGIObject, IDXGIAdapter, IDXGIAdapter1, IDXGIAdapter2);
 unsafe impl ::core::marker::Send for IDXGIAdapter3 {}
 unsafe impl ::core::marker::Sync for IDXGIAdapter3 {}
-unsafe impl ::windows_core::Interface for IDXGIAdapter3 {
-    type Vtable = IDXGIAdapter3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIAdapter3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x645967a4_1392_4310_a798_8053ce3e93fd);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIAdapter3_Vtbl {
@@ -295,9 +263,7 @@ pub struct IDXGIAdapter3_Vtbl {
     pub RegisterVideoMemoryBudgetChangeNotificationEvent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, hevent: super::super::Foundation::HANDLE, pdwcookie: *mut u32) -> ::windows_core::HRESULT,
     pub UnregisterVideoMemoryBudgetChangeNotification: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwcookie: u32),
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIAdapter4(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIAdapter4, IDXGIAdapter4_Vtbl, 0x3c8d99d1_4fbf_4181_a82c_af66bf7bd24e);
 impl IDXGIAdapter4 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -368,21 +334,13 @@ impl IDXGIAdapter4 {
 ::windows_core::imp::interface_hierarchy!(IDXGIAdapter4, ::windows_core::IUnknown, IDXGIObject, IDXGIAdapter, IDXGIAdapter1, IDXGIAdapter2, IDXGIAdapter3);
 unsafe impl ::core::marker::Send for IDXGIAdapter4 {}
 unsafe impl ::core::marker::Sync for IDXGIAdapter4 {}
-unsafe impl ::windows_core::Interface for IDXGIAdapter4 {
-    type Vtable = IDXGIAdapter4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIAdapter4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3c8d99d1_4fbf_4181_a82c_af66bf7bd24e);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIAdapter4_Vtbl {
     pub base__: IDXGIAdapter3_Vtbl,
     pub GetDesc3: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdesc: *mut DXGI_ADAPTER_DESC3) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIDebug(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIDebug, IDXGIDebug_Vtbl, 0x119e7452_de9e_40fe_8806_88f90c12b441);
 impl IDXGIDebug {
     pub unsafe fn ReportLiveObjects(&self, apiid: ::windows_core::GUID, flags: DXGI_DEBUG_RLO_FLAGS) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).ReportLiveObjects)(::windows_core::Interface::as_raw(self), ::core::mem::transmute(apiid), flags).ok()
@@ -391,21 +349,13 @@ impl IDXGIDebug {
 ::windows_core::imp::interface_hierarchy!(IDXGIDebug, ::windows_core::IUnknown);
 unsafe impl ::core::marker::Send for IDXGIDebug {}
 unsafe impl ::core::marker::Sync for IDXGIDebug {}
-unsafe impl ::windows_core::Interface for IDXGIDebug {
-    type Vtable = IDXGIDebug_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIDebug {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x119e7452_de9e_40fe_8806_88f90c12b441);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIDebug_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub ReportLiveObjects: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, apiid: ::windows_core::GUID, flags: DXGI_DEBUG_RLO_FLAGS) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIDebug1(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIDebug1, IDXGIDebug1_Vtbl, 0xc5a05f0c_16f2_4adf_9f4d_a8c4d58ac550);
 impl IDXGIDebug1 {
     pub unsafe fn ReportLiveObjects(&self, apiid: ::windows_core::GUID, flags: DXGI_DEBUG_RLO_FLAGS) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.ReportLiveObjects)(::windows_core::Interface::as_raw(self), ::core::mem::transmute(apiid), flags).ok()
@@ -423,12 +373,6 @@ impl IDXGIDebug1 {
 ::windows_core::imp::interface_hierarchy!(IDXGIDebug1, ::windows_core::IUnknown, IDXGIDebug);
 unsafe impl ::core::marker::Send for IDXGIDebug1 {}
 unsafe impl ::core::marker::Sync for IDXGIDebug1 {}
-unsafe impl ::windows_core::Interface for IDXGIDebug1 {
-    type Vtable = IDXGIDebug1_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIDebug1 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc5a05f0c_16f2_4adf_9f4d_a8c4d58ac550);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIDebug1_Vtbl {
@@ -437,9 +381,7 @@ pub struct IDXGIDebug1_Vtbl {
     pub DisableLeakTrackingForThread: unsafe extern "system" fn(this: *mut ::core::ffi::c_void),
     pub IsLeakTrackingEnabledForThread: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> super::super::Foundation::BOOL,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIDecodeSwapChain(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIDecodeSwapChain, IDXGIDecodeSwapChain_Vtbl, 0x2633066b_4514_4c7a_8fd8_12ea98059d18);
 impl IDXGIDecodeSwapChain {
     pub unsafe fn PresentBuffer(&self, buffertopresent: u32, syncinterval: u32, flags: u32) -> ::windows_core::HRESULT {
         (::windows_core::Interface::vtable(self).PresentBuffer)(::windows_core::Interface::as_raw(self), buffertopresent, syncinterval, flags)
@@ -474,12 +416,6 @@ impl IDXGIDecodeSwapChain {
 ::windows_core::imp::interface_hierarchy!(IDXGIDecodeSwapChain, ::windows_core::IUnknown);
 unsafe impl ::core::marker::Send for IDXGIDecodeSwapChain {}
 unsafe impl ::core::marker::Sync for IDXGIDecodeSwapChain {}
-unsafe impl ::windows_core::Interface for IDXGIDecodeSwapChain {
-    type Vtable = IDXGIDecodeSwapChain_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIDecodeSwapChain {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2633066b_4514_4c7a_8fd8_12ea98059d18);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIDecodeSwapChain_Vtbl {
@@ -494,9 +430,7 @@ pub struct IDXGIDecodeSwapChain_Vtbl {
     pub SetColorSpace: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, colorspace: DXGI_MULTIPLANE_OVERLAY_YCbCr_FLAGS) -> ::windows_core::HRESULT,
     pub GetColorSpace: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> DXGI_MULTIPLANE_OVERLAY_YCbCr_FLAGS,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIDevice(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIDevice, IDXGIDevice_Vtbl, 0x54ec77fa_1377_44e6_8c32_88fd5f44c84c);
 impl IDXGIDevice {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -540,12 +474,6 @@ impl IDXGIDevice {
 ::windows_core::imp::interface_hierarchy!(IDXGIDevice, ::windows_core::IUnknown, IDXGIObject);
 unsafe impl ::core::marker::Send for IDXGIDevice {}
 unsafe impl ::core::marker::Sync for IDXGIDevice {}
-unsafe impl ::windows_core::Interface for IDXGIDevice {
-    type Vtable = IDXGIDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIDevice {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x54ec77fa_1377_44e6_8c32_88fd5f44c84c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIDevice_Vtbl {
@@ -559,9 +487,7 @@ pub struct IDXGIDevice_Vtbl {
     pub SetGPUThreadPriority: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, priority: i32) -> ::windows_core::HRESULT,
     pub GetGPUThreadPriority: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppriority: *mut i32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIDevice1(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIDevice1, IDXGIDevice1_Vtbl, 0x77db970f_6276_48ba_ba28_070143b4392c);
 impl IDXGIDevice1 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -612,12 +538,6 @@ impl IDXGIDevice1 {
 ::windows_core::imp::interface_hierarchy!(IDXGIDevice1, ::windows_core::IUnknown, IDXGIObject, IDXGIDevice);
 unsafe impl ::core::marker::Send for IDXGIDevice1 {}
 unsafe impl ::core::marker::Sync for IDXGIDevice1 {}
-unsafe impl ::windows_core::Interface for IDXGIDevice1 {
-    type Vtable = IDXGIDevice1_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIDevice1 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x77db970f_6276_48ba_ba28_070143b4392c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIDevice1_Vtbl {
@@ -625,9 +545,7 @@ pub struct IDXGIDevice1_Vtbl {
     pub SetMaximumFrameLatency: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, maxlatency: u32) -> ::windows_core::HRESULT,
     pub GetMaximumFrameLatency: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pmaxlatency: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIDevice2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIDevice2, IDXGIDevice2_Vtbl, 0x05008617_fbfd_4051_a790_144884b4f6a9);
 impl IDXGIDevice2 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -690,12 +608,6 @@ impl IDXGIDevice2 {
 ::windows_core::imp::interface_hierarchy!(IDXGIDevice2, ::windows_core::IUnknown, IDXGIObject, IDXGIDevice, IDXGIDevice1);
 unsafe impl ::core::marker::Send for IDXGIDevice2 {}
 unsafe impl ::core::marker::Sync for IDXGIDevice2 {}
-unsafe impl ::windows_core::Interface for IDXGIDevice2 {
-    type Vtable = IDXGIDevice2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIDevice2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x05008617_fbfd_4051_a790_144884b4f6a9);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIDevice2_Vtbl {
@@ -704,9 +616,7 @@ pub struct IDXGIDevice2_Vtbl {
     pub ReclaimResources: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, numresources: u32, ppresources: *const *mut ::core::ffi::c_void, pdiscarded: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
     pub EnqueueSetEvent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, hevent: super::super::Foundation::HANDLE) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIDevice3(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIDevice3, IDXGIDevice3_Vtbl, 0x6007896c_3244_4afd_bf18_a6d3beda5023);
 impl IDXGIDevice3 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -772,21 +682,13 @@ impl IDXGIDevice3 {
 ::windows_core::imp::interface_hierarchy!(IDXGIDevice3, ::windows_core::IUnknown, IDXGIObject, IDXGIDevice, IDXGIDevice1, IDXGIDevice2);
 unsafe impl ::core::marker::Send for IDXGIDevice3 {}
 unsafe impl ::core::marker::Sync for IDXGIDevice3 {}
-unsafe impl ::windows_core::Interface for IDXGIDevice3 {
-    type Vtable = IDXGIDevice3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIDevice3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6007896c_3244_4afd_bf18_a6d3beda5023);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIDevice3_Vtbl {
     pub base__: IDXGIDevice2_Vtbl,
     pub Trim: unsafe extern "system" fn(this: *mut ::core::ffi::c_void),
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIDevice4(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIDevice4, IDXGIDevice4_Vtbl, 0x95b4f95f_d8da_4ca4_9ee6_3b76d5968a10);
 impl IDXGIDevice4 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -858,12 +760,6 @@ impl IDXGIDevice4 {
 ::windows_core::imp::interface_hierarchy!(IDXGIDevice4, ::windows_core::IUnknown, IDXGIObject, IDXGIDevice, IDXGIDevice1, IDXGIDevice2, IDXGIDevice3);
 unsafe impl ::core::marker::Send for IDXGIDevice4 {}
 unsafe impl ::core::marker::Sync for IDXGIDevice4 {}
-unsafe impl ::windows_core::Interface for IDXGIDevice4 {
-    type Vtable = IDXGIDevice4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIDevice4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x95b4f95f_d8da_4ca4_9ee6_3b76d5968a10);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIDevice4_Vtbl {
@@ -871,9 +767,7 @@ pub struct IDXGIDevice4_Vtbl {
     pub OfferResources1: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, numresources: u32, ppresources: *const *mut ::core::ffi::c_void, priority: DXGI_OFFER_RESOURCE_PRIORITY, flags: u32) -> ::windows_core::HRESULT,
     pub ReclaimResources1: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, numresources: u32, ppresources: *const *mut ::core::ffi::c_void, presults: *mut DXGI_RECLAIM_RESOURCE_RESULTS) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIDeviceSubObject(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIDeviceSubObject, IDXGIDeviceSubObject_Vtbl, 0x3d3e0379_f9de_4d58_bb6c_18d62992f1a6);
 impl IDXGIDeviceSubObject {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -905,21 +799,13 @@ impl IDXGIDeviceSubObject {
 ::windows_core::imp::interface_hierarchy!(IDXGIDeviceSubObject, ::windows_core::IUnknown, IDXGIObject);
 unsafe impl ::core::marker::Send for IDXGIDeviceSubObject {}
 unsafe impl ::core::marker::Sync for IDXGIDeviceSubObject {}
-unsafe impl ::windows_core::Interface for IDXGIDeviceSubObject {
-    type Vtable = IDXGIDeviceSubObject_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIDeviceSubObject {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3d3e0379_f9de_4d58_bb6c_18d62992f1a6);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIDeviceSubObject_Vtbl {
     pub base__: IDXGIObject_Vtbl,
     pub GetDevice: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppdevice: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIDisplayControl(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIDisplayControl, IDXGIDisplayControl_Vtbl, 0xea9dbf1a_c88e_4486_854a_98aa0138f30c);
 impl IDXGIDisplayControl {
     pub unsafe fn IsStereoEnabled(&self) -> super::super::Foundation::BOOL {
         (::windows_core::Interface::vtable(self).IsStereoEnabled)(::windows_core::Interface::as_raw(self))
@@ -934,12 +820,6 @@ impl IDXGIDisplayControl {
 ::windows_core::imp::interface_hierarchy!(IDXGIDisplayControl, ::windows_core::IUnknown);
 unsafe impl ::core::marker::Send for IDXGIDisplayControl {}
 unsafe impl ::core::marker::Sync for IDXGIDisplayControl {}
-unsafe impl ::windows_core::Interface for IDXGIDisplayControl {
-    type Vtable = IDXGIDisplayControl_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIDisplayControl {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xea9dbf1a_c88e_4486_854a_98aa0138f30c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIDisplayControl_Vtbl {
@@ -947,9 +827,7 @@ pub struct IDXGIDisplayControl_Vtbl {
     pub IsStereoEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> super::super::Foundation::BOOL,
     pub SetStereoEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enabled: super::super::Foundation::BOOL),
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIFactory(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIFactory, IDXGIFactory_Vtbl, 0x7b7166ec_21c7_44ae_b21a_c9ae321ae369);
 impl IDXGIFactory {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -1003,12 +881,6 @@ impl IDXGIFactory {
 ::windows_core::imp::interface_hierarchy!(IDXGIFactory, ::windows_core::IUnknown, IDXGIObject);
 unsafe impl ::core::marker::Send for IDXGIFactory {}
 unsafe impl ::core::marker::Sync for IDXGIFactory {}
-unsafe impl ::windows_core::Interface for IDXGIFactory {
-    type Vtable = IDXGIFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7b7166ec_21c7_44ae_b21a_c9ae321ae369);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIFactory_Vtbl {
@@ -1022,9 +894,7 @@ pub struct IDXGIFactory_Vtbl {
     CreateSwapChain: usize,
     pub CreateSoftwareAdapter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, module: super::super::Foundation::HMODULE, ppadapter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIFactory1(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIFactory1, IDXGIFactory1_Vtbl, 0x770aae78_f26f_4dba_a829_253c83d1b387);
 impl IDXGIFactory1 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -1085,12 +955,6 @@ impl IDXGIFactory1 {
 ::windows_core::imp::interface_hierarchy!(IDXGIFactory1, ::windows_core::IUnknown, IDXGIObject, IDXGIFactory);
 unsafe impl ::core::marker::Send for IDXGIFactory1 {}
 unsafe impl ::core::marker::Sync for IDXGIFactory1 {}
-unsafe impl ::windows_core::Interface for IDXGIFactory1 {
-    type Vtable = IDXGIFactory1_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIFactory1 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x770aae78_f26f_4dba_a829_253c83d1b387);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIFactory1_Vtbl {
@@ -1098,9 +962,7 @@ pub struct IDXGIFactory1_Vtbl {
     pub EnumAdapters1: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, adapter: u32, ppadapter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub IsCurrent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> super::super::Foundation::BOOL,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIFactory2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIFactory2, IDXGIFactory2_Vtbl, 0x50c83a1c_e072_4c48_87b0_3630fa36a6d0);
 impl IDXGIFactory2 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -1237,12 +1099,6 @@ impl IDXGIFactory2 {
 ::windows_core::imp::interface_hierarchy!(IDXGIFactory2, ::windows_core::IUnknown, IDXGIObject, IDXGIFactory, IDXGIFactory1);
 unsafe impl ::core::marker::Send for IDXGIFactory2 {}
 unsafe impl ::core::marker::Sync for IDXGIFactory2 {}
-unsafe impl ::windows_core::Interface for IDXGIFactory2 {
-    type Vtable = IDXGIFactory2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIFactory2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x50c83a1c_e072_4c48_87b0_3630fa36a6d0);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIFactory2_Vtbl {
@@ -1268,9 +1124,7 @@ pub struct IDXGIFactory2_Vtbl {
     #[cfg(not(feature = "Win32_Graphics_Dxgi_Common"))]
     CreateSwapChainForComposition: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIFactory3(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIFactory3, IDXGIFactory3_Vtbl, 0x25483823_cd46_4c7d_86ca_47aa95b837bd);
 impl IDXGIFactory3 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -1410,21 +1264,13 @@ impl IDXGIFactory3 {
 ::windows_core::imp::interface_hierarchy!(IDXGIFactory3, ::windows_core::IUnknown, IDXGIObject, IDXGIFactory, IDXGIFactory1, IDXGIFactory2);
 unsafe impl ::core::marker::Send for IDXGIFactory3 {}
 unsafe impl ::core::marker::Sync for IDXGIFactory3 {}
-unsafe impl ::windows_core::Interface for IDXGIFactory3 {
-    type Vtable = IDXGIFactory3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIFactory3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x25483823_cd46_4c7d_86ca_47aa95b837bd);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIFactory3_Vtbl {
     pub base__: IDXGIFactory2_Vtbl,
     pub GetCreationFlags: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> u32,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIFactory4(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIFactory4, IDXGIFactory4_Vtbl, 0x1bc6ea02_ef36_464f_bf0c_21ca39e5168a);
 impl IDXGIFactory4 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -1578,12 +1424,6 @@ impl IDXGIFactory4 {
 ::windows_core::imp::interface_hierarchy!(IDXGIFactory4, ::windows_core::IUnknown, IDXGIObject, IDXGIFactory, IDXGIFactory1, IDXGIFactory2, IDXGIFactory3);
 unsafe impl ::core::marker::Send for IDXGIFactory4 {}
 unsafe impl ::core::marker::Sync for IDXGIFactory4 {}
-unsafe impl ::windows_core::Interface for IDXGIFactory4 {
-    type Vtable = IDXGIFactory4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIFactory4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1bc6ea02_ef36_464f_bf0c_21ca39e5168a);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIFactory4_Vtbl {
@@ -1591,9 +1431,7 @@ pub struct IDXGIFactory4_Vtbl {
     pub EnumAdapterByLuid: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, adapterluid: super::super::Foundation::LUID, riid: *const ::windows_core::GUID, ppvadapter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub EnumWarpAdapter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppvadapter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIFactory5(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIFactory5, IDXGIFactory5_Vtbl, 0x7632e1f5_ee65_4dca_87fd_84cd75f8838d);
 impl IDXGIFactory5 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -1750,21 +1588,13 @@ impl IDXGIFactory5 {
 ::windows_core::imp::interface_hierarchy!(IDXGIFactory5, ::windows_core::IUnknown, IDXGIObject, IDXGIFactory, IDXGIFactory1, IDXGIFactory2, IDXGIFactory3, IDXGIFactory4);
 unsafe impl ::core::marker::Send for IDXGIFactory5 {}
 unsafe impl ::core::marker::Sync for IDXGIFactory5 {}
-unsafe impl ::windows_core::Interface for IDXGIFactory5 {
-    type Vtable = IDXGIFactory5_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIFactory5 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7632e1f5_ee65_4dca_87fd_84cd75f8838d);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIFactory5_Vtbl {
     pub base__: IDXGIFactory4_Vtbl,
     pub CheckFeatureSupport: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, feature: DXGI_FEATURE, pfeaturesupportdata: *mut ::core::ffi::c_void, featuresupportdatasize: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIFactory6(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIFactory6, IDXGIFactory6_Vtbl, 0xc1b6694f_ff09_44a9_b03c_77900a0a1d17);
 impl IDXGIFactory6 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -1928,21 +1758,13 @@ impl IDXGIFactory6 {
 ::windows_core::imp::interface_hierarchy!(IDXGIFactory6, ::windows_core::IUnknown, IDXGIObject, IDXGIFactory, IDXGIFactory1, IDXGIFactory2, IDXGIFactory3, IDXGIFactory4, IDXGIFactory5);
 unsafe impl ::core::marker::Send for IDXGIFactory6 {}
 unsafe impl ::core::marker::Sync for IDXGIFactory6 {}
-unsafe impl ::windows_core::Interface for IDXGIFactory6 {
-    type Vtable = IDXGIFactory6_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIFactory6 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc1b6694f_ff09_44a9_b03c_77900a0a1d17);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIFactory6_Vtbl {
     pub base__: IDXGIFactory5_Vtbl,
     pub EnumAdapterByGpuPreference: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, adapter: u32, gpupreference: DXGI_GPU_PREFERENCE, riid: *const ::windows_core::GUID, ppvadapter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIFactory7(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIFactory7, IDXGIFactory7_Vtbl, 0xa4966eed_76db_44da_84c1_ee9a7afb20a8);
 impl IDXGIFactory7 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -2116,12 +1938,6 @@ impl IDXGIFactory7 {
 ::windows_core::imp::interface_hierarchy!(IDXGIFactory7, ::windows_core::IUnknown, IDXGIObject, IDXGIFactory, IDXGIFactory1, IDXGIFactory2, IDXGIFactory3, IDXGIFactory4, IDXGIFactory5, IDXGIFactory6);
 unsafe impl ::core::marker::Send for IDXGIFactory7 {}
 unsafe impl ::core::marker::Sync for IDXGIFactory7 {}
-unsafe impl ::windows_core::Interface for IDXGIFactory7 {
-    type Vtable = IDXGIFactory7_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIFactory7 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa4966eed_76db_44da_84c1_ee9a7afb20a8);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIFactory7_Vtbl {
@@ -2129,9 +1945,7 @@ pub struct IDXGIFactory7_Vtbl {
     pub RegisterAdaptersChangedEvent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, hevent: super::super::Foundation::HANDLE, pdwcookie: *mut u32) -> ::windows_core::HRESULT,
     pub UnregisterAdaptersChangedEvent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dwcookie: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIFactoryMedia(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIFactoryMedia, IDXGIFactoryMedia_Vtbl, 0x41e7d1f2_a591_4f7b_a2e5_fa9c843e1c12);
 impl IDXGIFactoryMedia {
     #[doc = "Required features: `\"Win32_Graphics_Dxgi_Common\"`"]
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
@@ -2158,12 +1972,6 @@ impl IDXGIFactoryMedia {
 ::windows_core::imp::interface_hierarchy!(IDXGIFactoryMedia, ::windows_core::IUnknown);
 unsafe impl ::core::marker::Send for IDXGIFactoryMedia {}
 unsafe impl ::core::marker::Sync for IDXGIFactoryMedia {}
-unsafe impl ::windows_core::Interface for IDXGIFactoryMedia {
-    type Vtable = IDXGIFactoryMedia_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIFactoryMedia {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x41e7d1f2_a591_4f7b_a2e5_fa9c843e1c12);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIFactoryMedia_Vtbl {
@@ -2174,9 +1982,7 @@ pub struct IDXGIFactoryMedia_Vtbl {
     CreateSwapChainForCompositionSurfaceHandle: usize,
     pub CreateDecodeSwapChainForCompositionSurfaceHandle: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdevice: *mut ::core::ffi::c_void, hsurface: super::super::Foundation::HANDLE, pdesc: *const DXGI_DECODE_SWAP_CHAIN_DESC, pyuvdecodebuffers: *mut ::core::ffi::c_void, prestricttooutput: *mut ::core::ffi::c_void, ppswapchain: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIInfoQueue(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIInfoQueue, IDXGIInfoQueue_Vtbl, 0xd67441c7_672a_476f_9e82_cd55b44949ce);
 impl IDXGIInfoQueue {
     pub unsafe fn SetMessageCountLimit(&self, producer: ::windows_core::GUID, messagecountlimit: u64) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).SetMessageCountLimit)(::windows_core::Interface::as_raw(self), ::core::mem::transmute(producer), messagecountlimit).ok()
@@ -2311,12 +2117,6 @@ impl IDXGIInfoQueue {
 ::windows_core::imp::interface_hierarchy!(IDXGIInfoQueue, ::windows_core::IUnknown);
 unsafe impl ::core::marker::Send for IDXGIInfoQueue {}
 unsafe impl ::core::marker::Sync for IDXGIInfoQueue {}
-unsafe impl ::windows_core::Interface for IDXGIInfoQueue {
-    type Vtable = IDXGIInfoQueue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIInfoQueue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd67441c7_672a_476f_9e82_cd55b44949ce);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIInfoQueue_Vtbl {
@@ -2359,9 +2159,7 @@ pub struct IDXGIInfoQueue_Vtbl {
     pub SetMuteDebugOutput: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, producer: ::windows_core::GUID, bmute: super::super::Foundation::BOOL),
     pub GetMuteDebugOutput: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, producer: ::windows_core::GUID) -> super::super::Foundation::BOOL,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIKeyedMutex(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIKeyedMutex, IDXGIKeyedMutex_Vtbl, 0x9d8e1289_d7b3_465f_8126_250e349af85d);
 impl IDXGIKeyedMutex {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -2399,12 +2197,6 @@ impl IDXGIKeyedMutex {
 ::windows_core::imp::interface_hierarchy!(IDXGIKeyedMutex, ::windows_core::IUnknown, IDXGIObject, IDXGIDeviceSubObject);
 unsafe impl ::core::marker::Send for IDXGIKeyedMutex {}
 unsafe impl ::core::marker::Sync for IDXGIKeyedMutex {}
-unsafe impl ::windows_core::Interface for IDXGIKeyedMutex {
-    type Vtable = IDXGIKeyedMutex_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIKeyedMutex {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9d8e1289_d7b3_465f_8126_250e349af85d);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIKeyedMutex_Vtbl {
@@ -2412,9 +2204,7 @@ pub struct IDXGIKeyedMutex_Vtbl {
     pub AcquireSync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, key: u64, dwmilliseconds: u32) -> ::windows_core::HRESULT,
     pub ReleaseSync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, key: u64) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIObject(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIObject, IDXGIObject_Vtbl, 0xaec22fb8_76f3_4639_9be0_28eb43a67a2e);
 impl IDXGIObject {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -2439,12 +2229,6 @@ impl IDXGIObject {
 ::windows_core::imp::interface_hierarchy!(IDXGIObject, ::windows_core::IUnknown);
 unsafe impl ::core::marker::Send for IDXGIObject {}
 unsafe impl ::core::marker::Sync for IDXGIObject {}
-unsafe impl ::windows_core::Interface for IDXGIObject {
-    type Vtable = IDXGIObject_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIObject {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaec22fb8_76f3_4639_9be0_28eb43a67a2e);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIObject_Vtbl {
@@ -2454,9 +2238,7 @@ pub struct IDXGIObject_Vtbl {
     pub GetPrivateData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: *const ::windows_core::GUID, pdatasize: *mut u32, pdata: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetParent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppparent: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIOutput(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIOutput, IDXGIOutput_Vtbl, 0xae02eedb_c735_4690_8d52_5a8dc20213aa);
 impl IDXGIOutput {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -2542,12 +2324,6 @@ impl IDXGIOutput {
 ::windows_core::imp::interface_hierarchy!(IDXGIOutput, ::windows_core::IUnknown, IDXGIObject);
 unsafe impl ::core::marker::Send for IDXGIOutput {}
 unsafe impl ::core::marker::Sync for IDXGIOutput {}
-unsafe impl ::windows_core::Interface for IDXGIOutput {
-    type Vtable = IDXGIOutput_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIOutput {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xae02eedb_c735_4690_8d52_5a8dc20213aa);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIOutput_Vtbl {
@@ -2583,9 +2359,7 @@ pub struct IDXGIOutput_Vtbl {
     pub GetDisplaySurfaceData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdestination: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetFrameStatistics: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstats: *mut DXGI_FRAME_STATISTICS) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIOutput1(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIOutput1, IDXGIOutput1_Vtbl, 0x00cddea8_939b_4b83_a340_a685226666cc);
 impl IDXGIOutput1 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -2697,12 +2471,6 @@ impl IDXGIOutput1 {
 ::windows_core::imp::interface_hierarchy!(IDXGIOutput1, ::windows_core::IUnknown, IDXGIObject, IDXGIOutput);
 unsafe impl ::core::marker::Send for IDXGIOutput1 {}
 unsafe impl ::core::marker::Sync for IDXGIOutput1 {}
-unsafe impl ::windows_core::Interface for IDXGIOutput1 {
-    type Vtable = IDXGIOutput1_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIOutput1 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00cddea8_939b_4b83_a340_a685226666cc);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIOutput1_Vtbl {
@@ -2718,9 +2486,7 @@ pub struct IDXGIOutput1_Vtbl {
     pub GetDisplaySurfaceData1: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdestination: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub DuplicateOutput: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdevice: *mut ::core::ffi::c_void, ppoutputduplication: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIOutput2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIOutput2, IDXGIOutput2_Vtbl, 0x595e39d1_2724_4663_99b1_da969de28364);
 impl IDXGIOutput2 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -2835,21 +2601,13 @@ impl IDXGIOutput2 {
 ::windows_core::imp::interface_hierarchy!(IDXGIOutput2, ::windows_core::IUnknown, IDXGIObject, IDXGIOutput, IDXGIOutput1);
 unsafe impl ::core::marker::Send for IDXGIOutput2 {}
 unsafe impl ::core::marker::Sync for IDXGIOutput2 {}
-unsafe impl ::windows_core::Interface for IDXGIOutput2 {
-    type Vtable = IDXGIOutput2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIOutput2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x595e39d1_2724_4663_99b1_da969de28364);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIOutput2_Vtbl {
     pub base__: IDXGIOutput1_Vtbl,
     pub SupportsOverlays: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> super::super::Foundation::BOOL,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIOutput3(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIOutput3, IDXGIOutput3_Vtbl, 0x8a6bb301_7e7e_41f4_a8e0_5b32f7f99b18);
 impl IDXGIOutput3 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -2973,12 +2731,6 @@ impl IDXGIOutput3 {
 ::windows_core::imp::interface_hierarchy!(IDXGIOutput3, ::windows_core::IUnknown, IDXGIObject, IDXGIOutput, IDXGIOutput1, IDXGIOutput2);
 unsafe impl ::core::marker::Send for IDXGIOutput3 {}
 unsafe impl ::core::marker::Sync for IDXGIOutput3 {}
-unsafe impl ::windows_core::Interface for IDXGIOutput3 {
-    type Vtable = IDXGIOutput3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIOutput3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8a6bb301_7e7e_41f4_a8e0_5b32f7f99b18);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIOutput3_Vtbl {
@@ -2988,9 +2740,7 @@ pub struct IDXGIOutput3_Vtbl {
     #[cfg(not(feature = "Win32_Graphics_Dxgi_Common"))]
     CheckOverlaySupport: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIOutput4(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIOutput4, IDXGIOutput4_Vtbl, 0xdc7dca35_2196_414d_9f53_617884032a60);
 impl IDXGIOutput4 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -3123,12 +2873,6 @@ impl IDXGIOutput4 {
 ::windows_core::imp::interface_hierarchy!(IDXGIOutput4, ::windows_core::IUnknown, IDXGIObject, IDXGIOutput, IDXGIOutput1, IDXGIOutput2, IDXGIOutput3);
 unsafe impl ::core::marker::Send for IDXGIOutput4 {}
 unsafe impl ::core::marker::Sync for IDXGIOutput4 {}
-unsafe impl ::windows_core::Interface for IDXGIOutput4 {
-    type Vtable = IDXGIOutput4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIOutput4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdc7dca35_2196_414d_9f53_617884032a60);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIOutput4_Vtbl {
@@ -3138,9 +2882,7 @@ pub struct IDXGIOutput4_Vtbl {
     #[cfg(not(feature = "Win32_Graphics_Dxgi_Common"))]
     CheckOverlayColorSpaceSupport: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIOutput5(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIOutput5, IDXGIOutput5_Vtbl, 0x80a07424_ab52_42eb_833c_0c42fd282d98);
 impl IDXGIOutput5 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -3282,12 +3024,6 @@ impl IDXGIOutput5 {
 ::windows_core::imp::interface_hierarchy!(IDXGIOutput5, ::windows_core::IUnknown, IDXGIObject, IDXGIOutput, IDXGIOutput1, IDXGIOutput2, IDXGIOutput3, IDXGIOutput4);
 unsafe impl ::core::marker::Send for IDXGIOutput5 {}
 unsafe impl ::core::marker::Sync for IDXGIOutput5 {}
-unsafe impl ::windows_core::Interface for IDXGIOutput5 {
-    type Vtable = IDXGIOutput5_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIOutput5 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x80a07424_ab52_42eb_833c_0c42fd282d98);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIOutput5_Vtbl {
@@ -3297,9 +3033,7 @@ pub struct IDXGIOutput5_Vtbl {
     #[cfg(not(feature = "Win32_Graphics_Dxgi_Common"))]
     DuplicateOutput1: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIOutput6(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIOutput6, IDXGIOutput6_Vtbl, 0x068346e8_aaec_4b84_add7_137f513f77a1);
 impl IDXGIOutput6 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -3450,12 +3184,6 @@ impl IDXGIOutput6 {
 ::windows_core::imp::interface_hierarchy!(IDXGIOutput6, ::windows_core::IUnknown, IDXGIObject, IDXGIOutput, IDXGIOutput1, IDXGIOutput2, IDXGIOutput3, IDXGIOutput4, IDXGIOutput5);
 unsafe impl ::core::marker::Send for IDXGIOutput6 {}
 unsafe impl ::core::marker::Sync for IDXGIOutput6 {}
-unsafe impl ::windows_core::Interface for IDXGIOutput6 {
-    type Vtable = IDXGIOutput6_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIOutput6 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x068346e8_aaec_4b84_add7_137f513f77a1);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIOutput6_Vtbl {
@@ -3466,9 +3194,7 @@ pub struct IDXGIOutput6_Vtbl {
     GetDesc1: usize,
     pub CheckHardwareCompositionSupport: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pflags: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIOutputDuplication(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIOutputDuplication, IDXGIOutputDuplication_Vtbl, 0x191cfac3_a341_470d_b26e_a864f428319c);
 impl IDXGIOutputDuplication {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -3520,12 +3246,6 @@ impl IDXGIOutputDuplication {
 ::windows_core::imp::interface_hierarchy!(IDXGIOutputDuplication, ::windows_core::IUnknown, IDXGIObject);
 unsafe impl ::core::marker::Send for IDXGIOutputDuplication {}
 unsafe impl ::core::marker::Sync for IDXGIOutputDuplication {}
-unsafe impl ::windows_core::Interface for IDXGIOutputDuplication {
-    type Vtable = IDXGIOutputDuplication_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIOutputDuplication {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x191cfac3_a341_470d_b26e_a864f428319c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIOutputDuplication_Vtbl {
@@ -3542,9 +3262,7 @@ pub struct IDXGIOutputDuplication_Vtbl {
     pub UnMapDesktopSurface: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReleaseFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIResource(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIResource, IDXGIResource_Vtbl, 0x035f3ab4_482e_4e50_b41f_8a7f8bd8960b);
 impl IDXGIResource {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -3591,12 +3309,6 @@ impl IDXGIResource {
 ::windows_core::imp::interface_hierarchy!(IDXGIResource, ::windows_core::IUnknown, IDXGIObject, IDXGIDeviceSubObject);
 unsafe impl ::core::marker::Send for IDXGIResource {}
 unsafe impl ::core::marker::Sync for IDXGIResource {}
-unsafe impl ::windows_core::Interface for IDXGIResource {
-    type Vtable = IDXGIResource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIResource {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x035f3ab4_482e_4e50_b41f_8a7f8bd8960b);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIResource_Vtbl {
@@ -3606,9 +3318,7 @@ pub struct IDXGIResource_Vtbl {
     pub SetEvictionPriority: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, evictionpriority: u32) -> ::windows_core::HRESULT,
     pub GetEvictionPriority: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pevictionpriority: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGIResource1(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGIResource1, IDXGIResource1_Vtbl, 0x30961379_4609_4a41_998e_54fe567ee0c1);
 impl IDXGIResource1 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -3668,12 +3378,6 @@ impl IDXGIResource1 {
 ::windows_core::imp::interface_hierarchy!(IDXGIResource1, ::windows_core::IUnknown, IDXGIObject, IDXGIDeviceSubObject, IDXGIResource);
 unsafe impl ::core::marker::Send for IDXGIResource1 {}
 unsafe impl ::core::marker::Sync for IDXGIResource1 {}
-unsafe impl ::windows_core::Interface for IDXGIResource1 {
-    type Vtable = IDXGIResource1_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGIResource1 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x30961379_4609_4a41_998e_54fe567ee0c1);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGIResource1_Vtbl {
@@ -3684,9 +3388,7 @@ pub struct IDXGIResource1_Vtbl {
     #[cfg(not(feature = "Win32_Security"))]
     CreateSharedHandle: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGISurface(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGISurface, IDXGISurface_Vtbl, 0xcafcb56c_6ac3_4889_bf47_9e23bbd260ec);
 impl IDXGISurface {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -3729,12 +3431,6 @@ impl IDXGISurface {
 ::windows_core::imp::interface_hierarchy!(IDXGISurface, ::windows_core::IUnknown, IDXGIObject, IDXGIDeviceSubObject);
 unsafe impl ::core::marker::Send for IDXGISurface {}
 unsafe impl ::core::marker::Sync for IDXGISurface {}
-unsafe impl ::windows_core::Interface for IDXGISurface {
-    type Vtable = IDXGISurface_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGISurface {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcafcb56c_6ac3_4889_bf47_9e23bbd260ec);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGISurface_Vtbl {
@@ -3746,9 +3442,7 @@ pub struct IDXGISurface_Vtbl {
     pub Map: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plockedrect: *mut DXGI_MAPPED_RECT, mapflags: u32) -> ::windows_core::HRESULT,
     pub Unmap: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGISurface1(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGISurface1, IDXGISurface1_Vtbl, 0x4ae63092_6327_4c1b_80ae_bfe12ea32b86);
 impl IDXGISurface1 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -3803,12 +3497,6 @@ impl IDXGISurface1 {
 ::windows_core::imp::interface_hierarchy!(IDXGISurface1, ::windows_core::IUnknown, IDXGIObject, IDXGIDeviceSubObject, IDXGISurface);
 unsafe impl ::core::marker::Send for IDXGISurface1 {}
 unsafe impl ::core::marker::Sync for IDXGISurface1 {}
-unsafe impl ::windows_core::Interface for IDXGISurface1 {
-    type Vtable = IDXGISurface1_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGISurface1 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4ae63092_6327_4c1b_80ae_bfe12ea32b86);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGISurface1_Vtbl {
@@ -3819,9 +3507,7 @@ pub struct IDXGISurface1_Vtbl {
     GetDC: usize,
     pub ReleaseDC: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdirtyrect: *const super::super::Foundation::RECT) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGISurface2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGISurface2, IDXGISurface2_Vtbl, 0xaba496dd_b617_4cb8_a866_bc44d7eb1fa2);
 impl IDXGISurface2 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -3883,21 +3569,13 @@ impl IDXGISurface2 {
 ::windows_core::imp::interface_hierarchy!(IDXGISurface2, ::windows_core::IUnknown, IDXGIObject, IDXGIDeviceSubObject, IDXGISurface, IDXGISurface1);
 unsafe impl ::core::marker::Send for IDXGISurface2 {}
 unsafe impl ::core::marker::Sync for IDXGISurface2 {}
-unsafe impl ::windows_core::Interface for IDXGISurface2 {
-    type Vtable = IDXGISurface2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGISurface2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaba496dd_b617_4cb8_a866_bc44d7eb1fa2);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGISurface2_Vtbl {
     pub base__: IDXGISurface1_Vtbl,
     pub GetResource: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppparentresource: *mut *mut ::core::ffi::c_void, psubresourceindex: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGISwapChain(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGISwapChain, IDXGISwapChain_Vtbl, 0x310d36a0_d2e7_4c0a_aa04_6a9d23b8886a);
 impl IDXGISwapChain {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -3975,12 +3653,6 @@ impl IDXGISwapChain {
 ::windows_core::imp::interface_hierarchy!(IDXGISwapChain, ::windows_core::IUnknown, IDXGIObject, IDXGIDeviceSubObject);
 unsafe impl ::core::marker::Send for IDXGISwapChain {}
 unsafe impl ::core::marker::Sync for IDXGISwapChain {}
-unsafe impl ::windows_core::Interface for IDXGISwapChain {
-    type Vtable = IDXGISwapChain_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGISwapChain {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x310d36a0_d2e7_4c0a_aa04_6a9d23b8886a);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGISwapChain_Vtbl {
@@ -4005,9 +3677,7 @@ pub struct IDXGISwapChain_Vtbl {
     pub GetFrameStatistics: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstats: *mut DXGI_FRAME_STATISTICS) -> ::windows_core::HRESULT,
     pub GetLastPresentCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plastpresentcount: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGISwapChain1(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGISwapChain1, IDXGISwapChain1_Vtbl, 0x790a45f7_0d42_4876_983a_0a55cfe6f4aa);
 impl IDXGISwapChain1 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -4134,12 +3804,6 @@ impl IDXGISwapChain1 {
 ::windows_core::imp::interface_hierarchy!(IDXGISwapChain1, ::windows_core::IUnknown, IDXGIObject, IDXGIDeviceSubObject, IDXGISwapChain);
 unsafe impl ::core::marker::Send for IDXGISwapChain1 {}
 unsafe impl ::core::marker::Sync for IDXGISwapChain1 {}
-unsafe impl ::windows_core::Interface for IDXGISwapChain1 {
-    type Vtable = IDXGISwapChain1_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGISwapChain1 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x790a45f7_0d42_4876_983a_0a55cfe6f4aa);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGISwapChain1_Vtbl {
@@ -4168,9 +3832,7 @@ pub struct IDXGISwapChain1_Vtbl {
     #[cfg(not(feature = "Win32_Graphics_Dxgi_Common"))]
     GetRotation: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGISwapChain2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGISwapChain2, IDXGISwapChain2_Vtbl, 0xa8be2ac4_199f_4946_b331_79599fb98de7);
 impl IDXGISwapChain2 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -4319,12 +3981,6 @@ impl IDXGISwapChain2 {
 ::windows_core::imp::interface_hierarchy!(IDXGISwapChain2, ::windows_core::IUnknown, IDXGIObject, IDXGIDeviceSubObject, IDXGISwapChain, IDXGISwapChain1);
 unsafe impl ::core::marker::Send for IDXGISwapChain2 {}
 unsafe impl ::core::marker::Sync for IDXGISwapChain2 {}
-unsafe impl ::windows_core::Interface for IDXGISwapChain2 {
-    type Vtable = IDXGISwapChain2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGISwapChain2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa8be2ac4_199f_4946_b331_79599fb98de7);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGISwapChain2_Vtbl {
@@ -4337,9 +3993,7 @@ pub struct IDXGISwapChain2_Vtbl {
     pub SetMatrixTransform: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pmatrix: *const DXGI_MATRIX_3X2_F) -> ::windows_core::HRESULT,
     pub GetMatrixTransform: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pmatrix: *mut DXGI_MATRIX_3X2_F) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGISwapChain3(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGISwapChain3, IDXGISwapChain3_Vtbl, 0x94d99bdb_f1f8_4ab0_b236_7da0170edab1);
 impl IDXGISwapChain3 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -4507,12 +4161,6 @@ impl IDXGISwapChain3 {
 ::windows_core::imp::interface_hierarchy!(IDXGISwapChain3, ::windows_core::IUnknown, IDXGIObject, IDXGIDeviceSubObject, IDXGISwapChain, IDXGISwapChain1, IDXGISwapChain2);
 unsafe impl ::core::marker::Send for IDXGISwapChain3 {}
 unsafe impl ::core::marker::Sync for IDXGISwapChain3 {}
-unsafe impl ::windows_core::Interface for IDXGISwapChain3 {
-    type Vtable = IDXGISwapChain3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGISwapChain3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x94d99bdb_f1f8_4ab0_b236_7da0170edab1);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGISwapChain3_Vtbl {
@@ -4531,9 +4179,7 @@ pub struct IDXGISwapChain3_Vtbl {
     #[cfg(not(feature = "Win32_Graphics_Dxgi_Common"))]
     ResizeBuffers1: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGISwapChain4(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGISwapChain4, IDXGISwapChain4_Vtbl, 0x3d585d5a_bd4a_489e_b1f4_3dbcb6452ffb);
 impl IDXGISwapChain4 {
     pub unsafe fn SetPrivateData(&self, name: *const ::windows_core::GUID, datasize: u32, pdata: *const ::core::ffi::c_void) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.base__.base__.base__.base__.SetPrivateData)(::windows_core::Interface::as_raw(self), name, datasize, pdata).ok()
@@ -4704,21 +4350,13 @@ impl IDXGISwapChain4 {
 ::windows_core::imp::interface_hierarchy!(IDXGISwapChain4, ::windows_core::IUnknown, IDXGIObject, IDXGIDeviceSubObject, IDXGISwapChain, IDXGISwapChain1, IDXGISwapChain2, IDXGISwapChain3);
 unsafe impl ::core::marker::Send for IDXGISwapChain4 {}
 unsafe impl ::core::marker::Sync for IDXGISwapChain4 {}
-unsafe impl ::windows_core::Interface for IDXGISwapChain4 {
-    type Vtable = IDXGISwapChain4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGISwapChain4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3d585d5a_bd4a_489e_b1f4_3dbcb6452ffb);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGISwapChain4_Vtbl {
     pub base__: IDXGISwapChain3_Vtbl,
     pub SetHDRMetaData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, r#type: DXGI_HDR_METADATA_TYPE, size: u32, pmetadata: *const ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGISwapChainMedia(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGISwapChainMedia, IDXGISwapChainMedia_Vtbl, 0xdd95b90b_f05f_4f6a_bd65_25bfb264bd84);
 impl IDXGISwapChainMedia {
     pub unsafe fn GetFrameStatisticsMedia(&self, pstats: *mut DXGI_FRAME_STATISTICS_MEDIA) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).GetFrameStatisticsMedia)(::windows_core::Interface::as_raw(self), pstats).ok()
@@ -4733,12 +4371,6 @@ impl IDXGISwapChainMedia {
 ::windows_core::imp::interface_hierarchy!(IDXGISwapChainMedia, ::windows_core::IUnknown);
 unsafe impl ::core::marker::Send for IDXGISwapChainMedia {}
 unsafe impl ::core::marker::Sync for IDXGISwapChainMedia {}
-unsafe impl ::windows_core::Interface for IDXGISwapChainMedia {
-    type Vtable = IDXGISwapChainMedia_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGISwapChainMedia {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdd95b90b_f05f_4f6a_bd65_25bfb264bd84);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGISwapChainMedia_Vtbl {
@@ -4747,9 +4379,7 @@ pub struct IDXGISwapChainMedia_Vtbl {
     pub SetPresentDuration: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, duration: u32) -> ::windows_core::HRESULT,
     pub CheckPresentDurationSupport: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, desiredpresentduration: u32, pclosestsmallerpresentduration: *mut u32, pclosestlargerpresentduration: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDXGraphicsAnalysis(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDXGraphicsAnalysis, IDXGraphicsAnalysis_Vtbl, 0x9f251514_9d4d_4902_9d60_18988ab7d4b5);
 impl IDXGraphicsAnalysis {
     pub unsafe fn BeginCapture(&self) {
         (::windows_core::Interface::vtable(self).BeginCapture)(::windows_core::Interface::as_raw(self))
@@ -4759,12 +4389,6 @@ impl IDXGraphicsAnalysis {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDXGraphicsAnalysis, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDXGraphicsAnalysis {
-    type Vtable = IDXGraphicsAnalysis_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDXGraphicsAnalysis {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9f251514_9d4d_4902_9d60_18988ab7d4b5);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDXGraphicsAnalysis_Vtbl {

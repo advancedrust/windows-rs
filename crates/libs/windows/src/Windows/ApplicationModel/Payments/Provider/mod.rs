@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPaymentAppCanMakePaymentTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPaymentAppCanMakePaymentTriggerDetails {
-    type Vtable = IPaymentAppCanMakePaymentTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPaymentAppCanMakePaymentTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0ce201f0_8b93_4eb6_8c46_2e4a6c6a26f6);
-}
+::windows_core::imp::com_interface!(IPaymentAppCanMakePaymentTriggerDetails, IPaymentAppCanMakePaymentTriggerDetails_Vtbl, 0x0ce201f0_8b93_4eb6_8c46_2e4a6c6a26f6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPaymentAppCanMakePaymentTriggerDetails_Vtbl {
@@ -15,16 +6,7 @@ pub struct IPaymentAppCanMakePaymentTriggerDetails_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportCanMakePaymentResult: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPaymentAppManager(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPaymentAppManager {
-    type Vtable = IPaymentAppManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPaymentAppManager {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0e47aa53_8521_4969_a957_df2538a3a98f);
-}
+::windows_core::imp::com_interface!(IPaymentAppManager, IPaymentAppManager_Vtbl, 0x0e47aa53_8521_4969_a957_df2538a3a98f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPaymentAppManager_Vtbl {
@@ -35,32 +17,14 @@ pub struct IPaymentAppManager_Vtbl {
     RegisterAsync: usize,
     pub UnregisterAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPaymentAppManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPaymentAppManagerStatics {
-    type Vtable = IPaymentAppManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPaymentAppManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa341ac28_fc89_4406_b4d9_34e7fe79dfb6);
-}
+::windows_core::imp::com_interface!(IPaymentAppManagerStatics, IPaymentAppManagerStatics_Vtbl, 0xa341ac28_fc89_4406_b4d9_34e7fe79dfb6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPaymentAppManagerStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Current: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPaymentTransaction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPaymentTransaction {
-    type Vtable = IPaymentTransaction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPaymentTransaction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x62581da0_26a5_4e9b_a6eb_66606cf001d3);
-}
+::windows_core::imp::com_interface!(IPaymentTransaction, IPaymentTransaction_Vtbl, 0x62581da0_26a5_4e9b_a6eb_66606cf001d3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPaymentTransaction_Vtbl {
@@ -77,32 +41,14 @@ pub struct IPaymentTransaction_Vtbl {
     pub AcceptAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, paymenttoken: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Reject: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPaymentTransactionAcceptResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPaymentTransactionAcceptResult {
-    type Vtable = IPaymentTransactionAcceptResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPaymentTransactionAcceptResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x060e3276_d30c_4817_95a2_df7ae9273b56);
-}
+::windows_core::imp::com_interface!(IPaymentTransactionAcceptResult, IPaymentTransactionAcceptResult_Vtbl, 0x060e3276_d30c_4817_95a2_df7ae9273b56);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPaymentTransactionAcceptResult_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::PaymentRequestCompletionStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPaymentTransactionStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPaymentTransactionStatics {
-    type Vtable = IPaymentTransactionStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPaymentTransactionStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8d639750_ee0a_4df5_9b1e_1c0f9ec59881);
-}
+::windows_core::imp::com_interface!(IPaymentTransactionStatics, IPaymentTransactionStatics_Vtbl, 0x8d639750_ee0a_4df5_9b1e_1c0f9ec59881);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPaymentTransactionStatics_Vtbl {
@@ -151,12 +97,12 @@ impl PaymentAppManager {
     #[cfg(feature = "Foundation_Collections")]
     pub fn RegisterAsync<P0>(&self, supportedpaymentmethodids: P0) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).RegisterAsync)(::windows_core::Interface::as_raw(this), supportedpaymentmethodids.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).RegisterAsync)(::windows_core::Interface::as_raw(this), supportedpaymentmethodids.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn UnregisterAsync(&self) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction> {

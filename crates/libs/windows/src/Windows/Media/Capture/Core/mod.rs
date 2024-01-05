@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVariablePhotoCapturedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVariablePhotoCapturedEventArgs {
-    type Vtable = IVariablePhotoCapturedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVariablePhotoCapturedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd1eb4c5c_1b53_4e4a_8b5c_db7887ac949b);
-}
+::windows_core::imp::com_interface!(IVariablePhotoCapturedEventArgs, IVariablePhotoCapturedEventArgs_Vtbl, 0xd1eb4c5c_1b53_4e4a_8b5c_db7887ac949b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVariablePhotoCapturedEventArgs_Vtbl {
@@ -17,16 +8,7 @@ pub struct IVariablePhotoCapturedEventArgs_Vtbl {
     pub UsedFrameControllerIndex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CapturedFrameControlValues: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVariablePhotoSequenceCapture(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVariablePhotoSequenceCapture {
-    type Vtable = IVariablePhotoSequenceCapture_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVariablePhotoSequenceCapture {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd0112d1d_031e_4041_a6d6_bd742476a8ee);
-}
+::windows_core::imp::com_interface!(IVariablePhotoSequenceCapture, IVariablePhotoSequenceCapture_Vtbl, 0xd0112d1d_031e_4041_a6d6_bd742476a8ee);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVariablePhotoSequenceCapture_Vtbl {
@@ -39,16 +21,7 @@ pub struct IVariablePhotoSequenceCapture_Vtbl {
     pub Stopped: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveStopped: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVariablePhotoSequenceCapture2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVariablePhotoSequenceCapture2 {
-    type Vtable = IVariablePhotoSequenceCapture2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVariablePhotoSequenceCapture2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfe2c62bc_50b0_43e3_917c_e3b92798942f);
-}
+::windows_core::imp::com_interface!(IVariablePhotoSequenceCapture2, IVariablePhotoSequenceCapture2_Vtbl, 0xfe2c62bc_50b0_43e3_917c_e3b92798942f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVariablePhotoSequenceCapture2_Vtbl {

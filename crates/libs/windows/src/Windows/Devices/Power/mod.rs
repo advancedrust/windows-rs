@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBattery(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBattery {
-    type Vtable = IBattery_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBattery {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbc894fc6_0072_47c8_8b5d_614aaa7a437e);
-}
+::windows_core::imp::com_interface!(IBattery, IBattery_Vtbl, 0xbc894fc6_0072_47c8_8b5d_614aaa7a437e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBattery_Vtbl {
@@ -17,16 +8,7 @@ pub struct IBattery_Vtbl {
     pub ReportUpdated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveReportUpdated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBatteryReport(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBatteryReport {
-    type Vtable = IBatteryReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBatteryReport {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc9858c3a_4e13_420a_a8d0_24f18f395401);
-}
+::windows_core::imp::com_interface!(IBatteryReport, IBatteryReport_Vtbl, 0xc9858c3a_4e13_420a_a8d0_24f18f395401);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBatteryReport_Vtbl {
@@ -40,16 +22,7 @@ pub struct IBatteryReport_Vtbl {
     #[cfg(not(feature = "System_Power"))]
     Status: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBatteryStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBatteryStatics {
-    type Vtable = IBatteryStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBatteryStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x79cd72b6_9e5e_4452_bea6_dfcd541e597f);
-}
+::windows_core::imp::com_interface!(IBatteryStatics, IBatteryStatics_Vtbl, 0x79cd72b6_9e5e_4452_bea6_dfcd541e597f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBatteryStatics_Vtbl {

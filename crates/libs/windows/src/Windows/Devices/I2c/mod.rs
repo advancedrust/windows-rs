@@ -1,16 +1,7 @@
 #[cfg(feature = "Devices_I2c_Provider")]
 #[doc = "Required features: `\"Devices_I2c_Provider\"`"]
 pub mod Provider;
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct II2cConnectionSettings(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for II2cConnectionSettings {
-    type Vtable = II2cConnectionSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for II2cConnectionSettings {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf2db1307_ab6f_4639_a767_54536dc3460f);
-}
+::windows_core::imp::com_interface!(II2cConnectionSettings, II2cConnectionSettings_Vtbl, 0xf2db1307_ab6f_4639_a767_54536dc3460f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct II2cConnectionSettings_Vtbl {
@@ -22,48 +13,21 @@ pub struct II2cConnectionSettings_Vtbl {
     pub SharingMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut I2cSharingMode) -> ::windows_core::HRESULT,
     pub SetSharingMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: I2cSharingMode) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct II2cConnectionSettingsFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for II2cConnectionSettingsFactory {
-    type Vtable = II2cConnectionSettingsFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for II2cConnectionSettingsFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x81b586b3_9693_41b1_a243_ded4f6e66926);
-}
+::windows_core::imp::com_interface!(II2cConnectionSettingsFactory, II2cConnectionSettingsFactory_Vtbl, 0x81b586b3_9693_41b1_a243_ded4f6e66926);
 #[repr(C)]
 #[doc(hidden)]
 pub struct II2cConnectionSettingsFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, slaveaddress: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct II2cController(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for II2cController {
-    type Vtable = II2cController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for II2cController {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc48ab1b2_87a0_4166_8e3e_b4b8f97cd729);
-}
+::windows_core::imp::com_interface!(II2cController, II2cController_Vtbl, 0xc48ab1b2_87a0_4166_8e3e_b4b8f97cd729);
 #[repr(C)]
 #[doc(hidden)]
 pub struct II2cController_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetDevice: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, settings: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct II2cControllerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for II2cControllerStatics {
-    type Vtable = II2cControllerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for II2cControllerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x40fc0365_5f05_4e7e_84bd_100db8e0aec5);
-}
+::windows_core::imp::com_interface!(II2cControllerStatics, II2cControllerStatics_Vtbl, 0x40fc0365_5f05_4e7e_84bd_100db8e0aec5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct II2cControllerStatics_Vtbl {
@@ -74,16 +38,7 @@ pub struct II2cControllerStatics_Vtbl {
     GetControllersAsync: usize,
     pub GetDefaultAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct II2cDevice(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for II2cDevice {
-    type Vtable = II2cDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for II2cDevice {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8636c136_b9c5_4f70_9449_cc46dc6f57eb);
-}
+::windows_core::imp::com_interface!(II2cDevice, II2cDevice_Vtbl, 0x8636c136_b9c5_4f70_9449_cc46dc6f57eb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct II2cDevice_Vtbl {
@@ -97,9 +52,7 @@ pub struct II2cDevice_Vtbl {
     pub WriteRead: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, writeBuffer_array_size: u32, writebuffer: *const u8, readBuffer_array_size: u32, readbuffer: *mut u8) -> ::windows_core::HRESULT,
     pub WriteReadPartial: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, writeBuffer_array_size: u32, writebuffer: *const u8, readBuffer_array_size: u32, readbuffer: *mut u8, result__: *mut I2cTransferResult) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct II2cDeviceStatics(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(II2cDeviceStatics, II2cDeviceStatics_Vtbl, 0x91a33be3_7334_4512_96bc_fbae9459f5f6);
 impl II2cDeviceStatics {
     pub fn GetDeviceSelector(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -129,12 +82,6 @@ impl II2cDeviceStatics {
 ::windows_core::imp::interface_hierarchy!(II2cDeviceStatics, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for II2cDeviceStatics {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for II2cDeviceStatics {
-    type Vtable = II2cDeviceStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for II2cDeviceStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x91a33be3_7334_4512_96bc_fbae9459f5f6);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -226,11 +173,11 @@ impl I2cController {
     #[cfg(all(feature = "Devices_I2c_Provider", feature = "Foundation_Collections"))]
     pub fn GetControllersAsync<P0>(provider: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::super::Foundation::Collections::IVectorView<I2cController>>>
     where
-        P0: ::windows_core::TryIntoParam<Provider::II2cProvider>,
+        P0: ::windows_core::IntoParam<Provider::II2cProvider>,
     {
         Self::II2cControllerStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetControllersAsync)(::windows_core::Interface::as_raw(this), provider.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetControllersAsync)(::windows_core::Interface::as_raw(this), provider.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     pub fn GetDefaultAsync() -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<I2cController>> {
@@ -355,7 +302,7 @@ impl ::windows_core::RuntimeName for I2cDevice {
     const NAME: &'static str = "Windows.Devices.I2c.I2cDevice";
 }
 ::windows_core::imp::interface_hierarchy!(I2cDevice, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for I2cDevice {}
+::windows_core::imp::required_hierarchy!(I2cDevice, super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for I2cDevice {}
 unsafe impl ::core::marker::Sync for I2cDevice {}
 #[repr(transparent)]

@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpCacheDirectiveHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpCacheDirectiveHeaderValueCollection {
-    type Vtable = IHttpCacheDirectiveHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpCacheDirectiveHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9a586b89_d5d0_4fbe_bd9d_b5b3636811b4);
-}
+::windows_core::imp::com_interface!(IHttpCacheDirectiveHeaderValueCollection, IHttpCacheDirectiveHeaderValueCollection_Vtbl, 0x9a586b89_d5d0_4fbe_bd9d_b5b3636811b4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpCacheDirectiveHeaderValueCollection_Vtbl {
@@ -23,16 +14,7 @@ pub struct IHttpCacheDirectiveHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpChallengeHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpChallengeHeaderValue {
-    type Vtable = IHttpChallengeHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpChallengeHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x393361af_0f7d_4820_9fdd_a2b956eeaeab);
-}
+::windows_core::imp::com_interface!(IHttpChallengeHeaderValue, IHttpChallengeHeaderValue_Vtbl, 0x393361af_0f7d_4820_9fdd_a2b956eeaeab);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpChallengeHeaderValue_Vtbl {
@@ -44,16 +26,7 @@ pub struct IHttpChallengeHeaderValue_Vtbl {
     pub Scheme: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Token: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpChallengeHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpChallengeHeaderValueCollection {
-    type Vtable = IHttpChallengeHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpChallengeHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xca9e5f81_aee0_4353_a10b_e625babd64c2);
-}
+::windows_core::imp::com_interface!(IHttpChallengeHeaderValueCollection, IHttpChallengeHeaderValueCollection_Vtbl, 0xca9e5f81_aee0_4353_a10b_e625babd64c2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpChallengeHeaderValueCollection_Vtbl {
@@ -61,16 +34,7 @@ pub struct IHttpChallengeHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpChallengeHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpChallengeHeaderValueFactory {
-    type Vtable = IHttpChallengeHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpChallengeHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc452c451_d99c_40aa_9399_90eeb98fc613);
-}
+::windows_core::imp::com_interface!(IHttpChallengeHeaderValueFactory, IHttpChallengeHeaderValueFactory_Vtbl, 0xc452c451_d99c_40aa_9399_90eeb98fc613);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpChallengeHeaderValueFactory_Vtbl {
@@ -78,16 +42,7 @@ pub struct IHttpChallengeHeaderValueFactory_Vtbl {
     pub CreateFromScheme: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, scheme: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateFromSchemeWithToken: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, scheme: ::std::mem::MaybeUninit<::windows_core::HSTRING>, token: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpChallengeHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpChallengeHeaderValueStatics {
-    type Vtable = IHttpChallengeHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpChallengeHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf3d38a72_fc01_4d01_a008_fcb7c459d635);
-}
+::windows_core::imp::com_interface!(IHttpChallengeHeaderValueStatics, IHttpChallengeHeaderValueStatics_Vtbl, 0xf3d38a72_fc01_4d01_a008_fcb7c459d635);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpChallengeHeaderValueStatics_Vtbl {
@@ -95,32 +50,14 @@ pub struct IHttpChallengeHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, challengeheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpConnectionOptionHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpConnectionOptionHeaderValue {
-    type Vtable = IHttpConnectionOptionHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpConnectionOptionHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcb4af27a_4e90_45eb_8dcd_fd1408f4c44f);
-}
+::windows_core::imp::com_interface!(IHttpConnectionOptionHeaderValue, IHttpConnectionOptionHeaderValue_Vtbl, 0xcb4af27a_4e90_45eb_8dcd_fd1408f4c44f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpConnectionOptionHeaderValue_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Token: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpConnectionOptionHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpConnectionOptionHeaderValueCollection {
-    type Vtable = IHttpConnectionOptionHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpConnectionOptionHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe4f56c1d_5142_4e00_8e0f_019509337629);
-}
+::windows_core::imp::com_interface!(IHttpConnectionOptionHeaderValueCollection, IHttpConnectionOptionHeaderValueCollection_Vtbl, 0xe4f56c1d_5142_4e00_8e0f_019509337629);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpConnectionOptionHeaderValueCollection_Vtbl {
@@ -128,32 +65,14 @@ pub struct IHttpConnectionOptionHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpConnectionOptionHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpConnectionOptionHeaderValueFactory {
-    type Vtable = IHttpConnectionOptionHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpConnectionOptionHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd93ccc1e_0b7d_4c3f_a58d_a2a1bdeabc0a);
-}
+::windows_core::imp::com_interface!(IHttpConnectionOptionHeaderValueFactory, IHttpConnectionOptionHeaderValueFactory_Vtbl, 0xd93ccc1e_0b7d_4c3f_a58d_a2a1bdeabc0a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpConnectionOptionHeaderValueFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpConnectionOptionHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpConnectionOptionHeaderValueStatics {
-    type Vtable = IHttpConnectionOptionHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpConnectionOptionHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaaa75d37_a946_4b1f_85af_48b68b3c50bd);
-}
+::windows_core::imp::com_interface!(IHttpConnectionOptionHeaderValueStatics, IHttpConnectionOptionHeaderValueStatics_Vtbl, 0xaaa75d37_a946_4b1f_85af_48b68b3c50bd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpConnectionOptionHeaderValueStatics_Vtbl {
@@ -161,32 +80,14 @@ pub struct IHttpConnectionOptionHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, connectionoptionheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentCodingHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentCodingHeaderValue {
-    type Vtable = IHttpContentCodingHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentCodingHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbcf7f92a_9376_4d85_bccc_9f4f9acab434);
-}
+::windows_core::imp::com_interface!(IHttpContentCodingHeaderValue, IHttpContentCodingHeaderValue_Vtbl, 0xbcf7f92a_9376_4d85_bccc_9f4f9acab434);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentCodingHeaderValue_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ContentCoding: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentCodingHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentCodingHeaderValueCollection {
-    type Vtable = IHttpContentCodingHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentCodingHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7d221721_a6db_436e_8e83_91596192819c);
-}
+::windows_core::imp::com_interface!(IHttpContentCodingHeaderValueCollection, IHttpContentCodingHeaderValueCollection_Vtbl, 0x7d221721_a6db_436e_8e83_91596192819c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentCodingHeaderValueCollection_Vtbl {
@@ -194,32 +95,14 @@ pub struct IHttpContentCodingHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentCodingHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentCodingHeaderValueFactory {
-    type Vtable = IHttpContentCodingHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentCodingHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc53d2bd7_332b_4350_8510_2e67a2289a5a);
-}
+::windows_core::imp::com_interface!(IHttpContentCodingHeaderValueFactory, IHttpContentCodingHeaderValueFactory_Vtbl, 0xc53d2bd7_332b_4350_8510_2e67a2289a5a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentCodingHeaderValueFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, contentcoding: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentCodingHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentCodingHeaderValueStatics {
-    type Vtable = IHttpContentCodingHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentCodingHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x94d8602e_f9bf_42f7_aa46_ed272a41e212);
-}
+::windows_core::imp::com_interface!(IHttpContentCodingHeaderValueStatics, IHttpContentCodingHeaderValueStatics_Vtbl, 0x94d8602e_f9bf_42f7_aa46_ed272a41e212);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentCodingHeaderValueStatics_Vtbl {
@@ -227,16 +110,7 @@ pub struct IHttpContentCodingHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, contentcodingheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentCodingWithQualityHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentCodingWithQualityHeaderValue {
-    type Vtable = IHttpContentCodingWithQualityHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentCodingWithQualityHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x94531cd5_8b13_4d73_8651_f76b38f88495);
-}
+::windows_core::imp::com_interface!(IHttpContentCodingWithQualityHeaderValue, IHttpContentCodingWithQualityHeaderValue_Vtbl, 0x94531cd5_8b13_4d73_8651_f76b38f88495);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentCodingWithQualityHeaderValue_Vtbl {
@@ -244,16 +118,7 @@ pub struct IHttpContentCodingWithQualityHeaderValue_Vtbl {
     pub ContentCoding: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Quality: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentCodingWithQualityHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentCodingWithQualityHeaderValueCollection {
-    type Vtable = IHttpContentCodingWithQualityHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentCodingWithQualityHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7c0d753e_e899_4378_b5c8_412d820711cc);
-}
+::windows_core::imp::com_interface!(IHttpContentCodingWithQualityHeaderValueCollection, IHttpContentCodingWithQualityHeaderValueCollection_Vtbl, 0x7c0d753e_e899_4378_b5c8_412d820711cc);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentCodingWithQualityHeaderValueCollection_Vtbl {
@@ -261,16 +126,7 @@ pub struct IHttpContentCodingWithQualityHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentCodingWithQualityHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentCodingWithQualityHeaderValueFactory {
-    type Vtable = IHttpContentCodingWithQualityHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentCodingWithQualityHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc45eee1a_c553_46fc_ade2_d75c1d53df7b);
-}
+::windows_core::imp::com_interface!(IHttpContentCodingWithQualityHeaderValueFactory, IHttpContentCodingWithQualityHeaderValueFactory_Vtbl, 0xc45eee1a_c553_46fc_ade2_d75c1d53df7b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentCodingWithQualityHeaderValueFactory_Vtbl {
@@ -278,16 +134,7 @@ pub struct IHttpContentCodingWithQualityHeaderValueFactory_Vtbl {
     pub CreateFromValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, contentcoding: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateFromValueWithQuality: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, contentcoding: ::std::mem::MaybeUninit<::windows_core::HSTRING>, quality: f64, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentCodingWithQualityHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentCodingWithQualityHeaderValueStatics {
-    type Vtable = IHttpContentCodingWithQualityHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentCodingWithQualityHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe8c9357c_8f89_4801_8e75_4c9abfc3de71);
-}
+::windows_core::imp::com_interface!(IHttpContentCodingWithQualityHeaderValueStatics, IHttpContentCodingWithQualityHeaderValueStatics_Vtbl, 0xe8c9357c_8f89_4801_8e75_4c9abfc3de71);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentCodingWithQualityHeaderValueStatics_Vtbl {
@@ -295,16 +142,7 @@ pub struct IHttpContentCodingWithQualityHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, contentcodingwithqualityheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentDispositionHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentDispositionHeaderValue {
-    type Vtable = IHttpContentDispositionHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentDispositionHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf2a2eedc_2629_4b49_9908_96a168e9365e);
-}
+::windows_core::imp::com_interface!(IHttpContentDispositionHeaderValue, IHttpContentDispositionHeaderValue_Vtbl, 0xf2a2eedc_2629_4b49_9908_96a168e9365e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentDispositionHeaderValue_Vtbl {
@@ -324,32 +162,14 @@ pub struct IHttpContentDispositionHeaderValue_Vtbl {
     pub Size: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetSize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentDispositionHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentDispositionHeaderValueFactory {
-    type Vtable = IHttpContentDispositionHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentDispositionHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9915bbc4_456c_4e81_8295_b2ab3cbcf545);
-}
+::windows_core::imp::com_interface!(IHttpContentDispositionHeaderValueFactory, IHttpContentDispositionHeaderValueFactory_Vtbl, 0x9915bbc4_456c_4e81_8295_b2ab3cbcf545);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentDispositionHeaderValueFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dispositiontype: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentDispositionHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentDispositionHeaderValueStatics {
-    type Vtable = IHttpContentDispositionHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentDispositionHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x29c56067_5a37_46e4_b074_c5177d69ca66);
-}
+::windows_core::imp::com_interface!(IHttpContentDispositionHeaderValueStatics, IHttpContentDispositionHeaderValueStatics_Vtbl, 0x29c56067_5a37_46e4_b074_c5177d69ca66);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentDispositionHeaderValueStatics_Vtbl {
@@ -357,16 +177,7 @@ pub struct IHttpContentDispositionHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, contentdispositionheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentHeaderCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentHeaderCollection {
-    type Vtable = IHttpContentHeaderCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentHeaderCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x40612a44_47ae_4b7e_9124_69628b64aa18);
-}
+::windows_core::imp::com_interface!(IHttpContentHeaderCollection, IHttpContentHeaderCollection_Vtbl, 0x40612a44_47ae_4b7e_9124_69628b64aa18);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentHeaderCollection_Vtbl {
@@ -398,16 +209,7 @@ pub struct IHttpContentHeaderCollection_Vtbl {
     pub Append: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryAppendWithoutValidation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentRangeHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentRangeHeaderValue {
-    type Vtable = IHttpContentRangeHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentRangeHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x04d967d3_a4f6_495c_9530_8579fcba8aa9);
-}
+::windows_core::imp::com_interface!(IHttpContentRangeHeaderValue, IHttpContentRangeHeaderValue_Vtbl, 0x04d967d3_a4f6_495c_9530_8579fcba8aa9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentRangeHeaderValue_Vtbl {
@@ -418,16 +220,7 @@ pub struct IHttpContentRangeHeaderValue_Vtbl {
     pub Unit: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetUnit: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentRangeHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentRangeHeaderValueFactory {
-    type Vtable = IHttpContentRangeHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentRangeHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3f5bd691_a03c_4456_9a6f_ef27ecd03cae);
-}
+::windows_core::imp::com_interface!(IHttpContentRangeHeaderValueFactory, IHttpContentRangeHeaderValueFactory_Vtbl, 0x3f5bd691_a03c_4456_9a6f_ef27ecd03cae);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentRangeHeaderValueFactory_Vtbl {
@@ -436,16 +229,7 @@ pub struct IHttpContentRangeHeaderValueFactory_Vtbl {
     pub CreateFromRange: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, from: u64, to: u64, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateFromRangeWithLength: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, from: u64, to: u64, length: u64, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpContentRangeHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpContentRangeHeaderValueStatics {
-    type Vtable = IHttpContentRangeHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpContentRangeHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x80a346ca_174c_4fae_821c_134cd294aa38);
-}
+::windows_core::imp::com_interface!(IHttpContentRangeHeaderValueStatics, IHttpContentRangeHeaderValueStatics_Vtbl, 0x80a346ca_174c_4fae_821c_134cd294aa38);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpContentRangeHeaderValueStatics_Vtbl {
@@ -453,16 +237,7 @@ pub struct IHttpContentRangeHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, contentrangeheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpCookiePairHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpCookiePairHeaderValue {
-    type Vtable = IHttpCookiePairHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpCookiePairHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcbd46217_4b29_412b_bd90_b3d814ab8e1b);
-}
+::windows_core::imp::com_interface!(IHttpCookiePairHeaderValue, IHttpCookiePairHeaderValue_Vtbl, 0xcbd46217_4b29_412b_bd90_b3d814ab8e1b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpCookiePairHeaderValue_Vtbl {
@@ -471,16 +246,7 @@ pub struct IHttpCookiePairHeaderValue_Vtbl {
     pub Value: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpCookiePairHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpCookiePairHeaderValueCollection {
-    type Vtable = IHttpCookiePairHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpCookiePairHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf3f44350_581e_4ecc_9f59_e507d04f06e6);
-}
+::windows_core::imp::com_interface!(IHttpCookiePairHeaderValueCollection, IHttpCookiePairHeaderValueCollection_Vtbl, 0xf3f44350_581e_4ecc_9f59_e507d04f06e6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpCookiePairHeaderValueCollection_Vtbl {
@@ -488,16 +254,7 @@ pub struct IHttpCookiePairHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpCookiePairHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpCookiePairHeaderValueFactory {
-    type Vtable = IHttpCookiePairHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpCookiePairHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x635e326f_146f_4f56_aa21_2cb7d6d58b1e);
-}
+::windows_core::imp::com_interface!(IHttpCookiePairHeaderValueFactory, IHttpCookiePairHeaderValueFactory_Vtbl, 0x635e326f_146f_4f56_aa21_2cb7d6d58b1e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpCookiePairHeaderValueFactory_Vtbl {
@@ -505,16 +262,7 @@ pub struct IHttpCookiePairHeaderValueFactory_Vtbl {
     pub CreateFromName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateFromNameWithValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpCookiePairHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpCookiePairHeaderValueStatics {
-    type Vtable = IHttpCookiePairHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpCookiePairHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6e866d48_06af_4462_8158_99388d5dca81);
-}
+::windows_core::imp::com_interface!(IHttpCookiePairHeaderValueStatics, IHttpCookiePairHeaderValueStatics_Vtbl, 0x6e866d48_06af_4462_8158_99388d5dca81);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpCookiePairHeaderValueStatics_Vtbl {
@@ -522,16 +270,7 @@ pub struct IHttpCookiePairHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, cookiepairheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpCredentialsHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpCredentialsHeaderValue {
-    type Vtable = IHttpCredentialsHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpCredentialsHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc34cc3cb_542e_4177_a6c7_b674ce193fbf);
-}
+::windows_core::imp::com_interface!(IHttpCredentialsHeaderValue, IHttpCredentialsHeaderValue_Vtbl, 0xc34cc3cb_542e_4177_a6c7_b674ce193fbf);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpCredentialsHeaderValue_Vtbl {
@@ -543,16 +282,7 @@ pub struct IHttpCredentialsHeaderValue_Vtbl {
     pub Scheme: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Token: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpCredentialsHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpCredentialsHeaderValueFactory {
-    type Vtable = IHttpCredentialsHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpCredentialsHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf21d9e91_4d1c_4182_bfd1_34470a62f950);
-}
+::windows_core::imp::com_interface!(IHttpCredentialsHeaderValueFactory, IHttpCredentialsHeaderValueFactory_Vtbl, 0xf21d9e91_4d1c_4182_bfd1_34470a62f950);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpCredentialsHeaderValueFactory_Vtbl {
@@ -560,16 +290,7 @@ pub struct IHttpCredentialsHeaderValueFactory_Vtbl {
     pub CreateFromScheme: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, scheme: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateFromSchemeWithToken: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, scheme: ::std::mem::MaybeUninit<::windows_core::HSTRING>, token: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpCredentialsHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpCredentialsHeaderValueStatics {
-    type Vtable = IHttpCredentialsHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpCredentialsHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa69b2be6_ce8c_4443_a35a_1b727b131036);
-}
+::windows_core::imp::com_interface!(IHttpCredentialsHeaderValueStatics, IHttpCredentialsHeaderValueStatics_Vtbl, 0xa69b2be6_ce8c_4443_a35a_1b727b131036);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpCredentialsHeaderValueStatics_Vtbl {
@@ -577,16 +298,7 @@ pub struct IHttpCredentialsHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, credentialsheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpDateOrDeltaHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpDateOrDeltaHeaderValue {
-    type Vtable = IHttpDateOrDeltaHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpDateOrDeltaHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xeafcaa6a_c4dc_49e2_a27d_043adf5867a3);
-}
+::windows_core::imp::com_interface!(IHttpDateOrDeltaHeaderValue, IHttpDateOrDeltaHeaderValue_Vtbl, 0xeafcaa6a_c4dc_49e2_a27d_043adf5867a3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpDateOrDeltaHeaderValue_Vtbl {
@@ -594,16 +306,7 @@ pub struct IHttpDateOrDeltaHeaderValue_Vtbl {
     pub Date: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Delta: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpDateOrDeltaHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpDateOrDeltaHeaderValueStatics {
-    type Vtable = IHttpDateOrDeltaHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpDateOrDeltaHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7c2659a8_6672_4e90_9a9a_f39766f7f576);
-}
+::windows_core::imp::com_interface!(IHttpDateOrDeltaHeaderValueStatics, IHttpDateOrDeltaHeaderValueStatics_Vtbl, 0x7c2659a8_6672_4e90_9a9a_f39766f7f576);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpDateOrDeltaHeaderValueStatics_Vtbl {
@@ -611,16 +314,7 @@ pub struct IHttpDateOrDeltaHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, dateordeltaheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpExpectationHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpExpectationHeaderValue {
-    type Vtable = IHttpExpectationHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpExpectationHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4ce585cd_3a99_43af_a2e6_ec232fea9658);
-}
+::windows_core::imp::com_interface!(IHttpExpectationHeaderValue, IHttpExpectationHeaderValue_Vtbl, 0x4ce585cd_3a99_43af_a2e6_ec232fea9658);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpExpectationHeaderValue_Vtbl {
@@ -633,16 +327,7 @@ pub struct IHttpExpectationHeaderValue_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Parameters: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpExpectationHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpExpectationHeaderValueCollection {
-    type Vtable = IHttpExpectationHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpExpectationHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe78521b3_a0e2_4ac4_9e66_79706cb9fd58);
-}
+::windows_core::imp::com_interface!(IHttpExpectationHeaderValueCollection, IHttpExpectationHeaderValueCollection_Vtbl, 0xe78521b3_a0e2_4ac4_9e66_79706cb9fd58);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpExpectationHeaderValueCollection_Vtbl {
@@ -650,16 +335,7 @@ pub struct IHttpExpectationHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpExpectationHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpExpectationHeaderValueFactory {
-    type Vtable = IHttpExpectationHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpExpectationHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4ea275cb_d53e_4868_8856_1e21a5030dc0);
-}
+::windows_core::imp::com_interface!(IHttpExpectationHeaderValueFactory, IHttpExpectationHeaderValueFactory_Vtbl, 0x4ea275cb_d53e_4868_8856_1e21a5030dc0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpExpectationHeaderValueFactory_Vtbl {
@@ -667,16 +343,7 @@ pub struct IHttpExpectationHeaderValueFactory_Vtbl {
     pub CreateFromName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateFromNameWithValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpExpectationHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpExpectationHeaderValueStatics {
-    type Vtable = IHttpExpectationHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpExpectationHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3019abe2_cfe5_473b_a57f_fba5b14eb257);
-}
+::windows_core::imp::com_interface!(IHttpExpectationHeaderValueStatics, IHttpExpectationHeaderValueStatics_Vtbl, 0x3019abe2_cfe5_473b_a57f_fba5b14eb257);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpExpectationHeaderValueStatics_Vtbl {
@@ -684,16 +351,7 @@ pub struct IHttpExpectationHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, expectationheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpLanguageHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpLanguageHeaderValueCollection {
-    type Vtable = IHttpLanguageHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpLanguageHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9ebd7ca3_8219_44f6_9902_8c56dfd3340c);
-}
+::windows_core::imp::com_interface!(IHttpLanguageHeaderValueCollection, IHttpLanguageHeaderValueCollection_Vtbl, 0x9ebd7ca3_8219_44f6_9902_8c56dfd3340c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpLanguageHeaderValueCollection_Vtbl {
@@ -701,16 +359,7 @@ pub struct IHttpLanguageHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpLanguageRangeWithQualityHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpLanguageRangeWithQualityHeaderValue {
-    type Vtable = IHttpLanguageRangeWithQualityHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpLanguageRangeWithQualityHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7256e102_0080_4db4_a083_7de7b2e5ba4c);
-}
+::windows_core::imp::com_interface!(IHttpLanguageRangeWithQualityHeaderValue, IHttpLanguageRangeWithQualityHeaderValue_Vtbl, 0x7256e102_0080_4db4_a083_7de7b2e5ba4c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpLanguageRangeWithQualityHeaderValue_Vtbl {
@@ -718,16 +367,7 @@ pub struct IHttpLanguageRangeWithQualityHeaderValue_Vtbl {
     pub LanguageRange: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Quality: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpLanguageRangeWithQualityHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpLanguageRangeWithQualityHeaderValueCollection {
-    type Vtable = IHttpLanguageRangeWithQualityHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpLanguageRangeWithQualityHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x885d5abd_4b4f_480a_89ce_8aedcee6e3a0);
-}
+::windows_core::imp::com_interface!(IHttpLanguageRangeWithQualityHeaderValueCollection, IHttpLanguageRangeWithQualityHeaderValueCollection_Vtbl, 0x885d5abd_4b4f_480a_89ce_8aedcee6e3a0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpLanguageRangeWithQualityHeaderValueCollection_Vtbl {
@@ -735,16 +375,7 @@ pub struct IHttpLanguageRangeWithQualityHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpLanguageRangeWithQualityHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpLanguageRangeWithQualityHeaderValueFactory {
-    type Vtable = IHttpLanguageRangeWithQualityHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpLanguageRangeWithQualityHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7bb83970_780f_4c83_9fe4_dc3087f6bd55);
-}
+::windows_core::imp::com_interface!(IHttpLanguageRangeWithQualityHeaderValueFactory, IHttpLanguageRangeWithQualityHeaderValueFactory_Vtbl, 0x7bb83970_780f_4c83_9fe4_dc3087f6bd55);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpLanguageRangeWithQualityHeaderValueFactory_Vtbl {
@@ -752,16 +383,7 @@ pub struct IHttpLanguageRangeWithQualityHeaderValueFactory_Vtbl {
     pub CreateFromLanguageRange: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, languagerange: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateFromLanguageRangeWithQuality: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, languagerange: ::std::mem::MaybeUninit<::windows_core::HSTRING>, quality: f64, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpLanguageRangeWithQualityHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpLanguageRangeWithQualityHeaderValueStatics {
-    type Vtable = IHttpLanguageRangeWithQualityHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpLanguageRangeWithQualityHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2541e146_f308_46f5_b695_42f54024ec68);
-}
+::windows_core::imp::com_interface!(IHttpLanguageRangeWithQualityHeaderValueStatics, IHttpLanguageRangeWithQualityHeaderValueStatics_Vtbl, 0x2541e146_f308_46f5_b695_42f54024ec68);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpLanguageRangeWithQualityHeaderValueStatics_Vtbl {
@@ -769,16 +391,7 @@ pub struct IHttpLanguageRangeWithQualityHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, languagerangewithqualityheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpMediaTypeHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpMediaTypeHeaderValue {
-    type Vtable = IHttpMediaTypeHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpMediaTypeHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x16b28533_e728_4fcb_bdb0_08a431a14844);
-}
+::windows_core::imp::com_interface!(IHttpMediaTypeHeaderValue, IHttpMediaTypeHeaderValue_Vtbl, 0x16b28533_e728_4fcb_bdb0_08a431a14844);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpMediaTypeHeaderValue_Vtbl {
@@ -792,32 +405,14 @@ pub struct IHttpMediaTypeHeaderValue_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Parameters: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpMediaTypeHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpMediaTypeHeaderValueFactory {
-    type Vtable = IHttpMediaTypeHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpMediaTypeHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbed747a8_cd17_42dd_9367_ab9c5b56dd7d);
-}
+::windows_core::imp::com_interface!(IHttpMediaTypeHeaderValueFactory, IHttpMediaTypeHeaderValueFactory_Vtbl, 0xbed747a8_cd17_42dd_9367_ab9c5b56dd7d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpMediaTypeHeaderValueFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, mediatype: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpMediaTypeHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpMediaTypeHeaderValueStatics {
-    type Vtable = IHttpMediaTypeHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpMediaTypeHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe04d83df_1d41_4d8c_a2de_6fd2ed87399b);
-}
+::windows_core::imp::com_interface!(IHttpMediaTypeHeaderValueStatics, IHttpMediaTypeHeaderValueStatics_Vtbl, 0xe04d83df_1d41_4d8c_a2de_6fd2ed87399b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpMediaTypeHeaderValueStatics_Vtbl {
@@ -825,16 +420,7 @@ pub struct IHttpMediaTypeHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, mediatypeheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpMediaTypeWithQualityHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpMediaTypeWithQualityHeaderValue {
-    type Vtable = IHttpMediaTypeWithQualityHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpMediaTypeWithQualityHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x188d5e32_76be_44a0_b1cd_2074bded2dde);
-}
+::windows_core::imp::com_interface!(IHttpMediaTypeWithQualityHeaderValue, IHttpMediaTypeWithQualityHeaderValue_Vtbl, 0x188d5e32_76be_44a0_b1cd_2074bded2dde);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpMediaTypeWithQualityHeaderValue_Vtbl {
@@ -850,16 +436,7 @@ pub struct IHttpMediaTypeWithQualityHeaderValue_Vtbl {
     pub Quality: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetQuality: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpMediaTypeWithQualityHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpMediaTypeWithQualityHeaderValueCollection {
-    type Vtable = IHttpMediaTypeWithQualityHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpMediaTypeWithQualityHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3c0c6b73_1342_4587_a056_18d02ff67165);
-}
+::windows_core::imp::com_interface!(IHttpMediaTypeWithQualityHeaderValueCollection, IHttpMediaTypeWithQualityHeaderValueCollection_Vtbl, 0x3c0c6b73_1342_4587_a056_18d02ff67165);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpMediaTypeWithQualityHeaderValueCollection_Vtbl {
@@ -867,16 +444,7 @@ pub struct IHttpMediaTypeWithQualityHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpMediaTypeWithQualityHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpMediaTypeWithQualityHeaderValueFactory {
-    type Vtable = IHttpMediaTypeWithQualityHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpMediaTypeWithQualityHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4c6d20f4_9457_44e6_a323_d122b958780b);
-}
+::windows_core::imp::com_interface!(IHttpMediaTypeWithQualityHeaderValueFactory, IHttpMediaTypeWithQualityHeaderValueFactory_Vtbl, 0x4c6d20f4_9457_44e6_a323_d122b958780b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpMediaTypeWithQualityHeaderValueFactory_Vtbl {
@@ -884,16 +452,7 @@ pub struct IHttpMediaTypeWithQualityHeaderValueFactory_Vtbl {
     pub CreateFromMediaType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, mediatype: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateFromMediaTypeWithQuality: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, mediatype: ::std::mem::MaybeUninit<::windows_core::HSTRING>, quality: f64, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpMediaTypeWithQualityHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpMediaTypeWithQualityHeaderValueStatics {
-    type Vtable = IHttpMediaTypeWithQualityHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpMediaTypeWithQualityHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5b070cd9_b560_4fc8_9835_7e6c0a657b24);
-}
+::windows_core::imp::com_interface!(IHttpMediaTypeWithQualityHeaderValueStatics, IHttpMediaTypeWithQualityHeaderValueStatics_Vtbl, 0x5b070cd9_b560_4fc8_9835_7e6c0a657b24);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpMediaTypeWithQualityHeaderValueStatics_Vtbl {
@@ -901,16 +460,7 @@ pub struct IHttpMediaTypeWithQualityHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, mediatypewithqualityheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpMethodHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpMethodHeaderValueCollection {
-    type Vtable = IHttpMethodHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpMethodHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x43bc3ff4_6119_4adf_938c_34bfffcf92ed);
-}
+::windows_core::imp::com_interface!(IHttpMethodHeaderValueCollection, IHttpMethodHeaderValueCollection_Vtbl, 0x43bc3ff4_6119_4adf_938c_34bfffcf92ed);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpMethodHeaderValueCollection_Vtbl {
@@ -918,16 +468,7 @@ pub struct IHttpMethodHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpNameValueHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpNameValueHeaderValue {
-    type Vtable = IHttpNameValueHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpNameValueHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd8ba7463_5b9a_4d1b_93f9_aa5b44ecfddf);
-}
+::windows_core::imp::com_interface!(IHttpNameValueHeaderValue, IHttpNameValueHeaderValue_Vtbl, 0xd8ba7463_5b9a_4d1b_93f9_aa5b44ecfddf);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpNameValueHeaderValue_Vtbl {
@@ -936,16 +477,7 @@ pub struct IHttpNameValueHeaderValue_Vtbl {
     pub Value: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpNameValueHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpNameValueHeaderValueFactory {
-    type Vtable = IHttpNameValueHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpNameValueHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x770e2267_cbf8_4736_a925_93fbe10c7ca8);
-}
+::windows_core::imp::com_interface!(IHttpNameValueHeaderValueFactory, IHttpNameValueHeaderValueFactory_Vtbl, 0x770e2267_cbf8_4736_a925_93fbe10c7ca8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpNameValueHeaderValueFactory_Vtbl {
@@ -953,16 +485,7 @@ pub struct IHttpNameValueHeaderValueFactory_Vtbl {
     pub CreateFromName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateFromNameWithValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpNameValueHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpNameValueHeaderValueStatics {
-    type Vtable = IHttpNameValueHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpNameValueHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xffd4030f_1130_4152_8659_256909a9d115);
-}
+::windows_core::imp::com_interface!(IHttpNameValueHeaderValueStatics, IHttpNameValueHeaderValueStatics_Vtbl, 0xffd4030f_1130_4152_8659_256909a9d115);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpNameValueHeaderValueStatics_Vtbl {
@@ -970,16 +493,7 @@ pub struct IHttpNameValueHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, namevalueheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpProductHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpProductHeaderValue {
-    type Vtable = IHttpProductHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpProductHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf4feee03_ebd4_4160_b9ff_807c5183b6e6);
-}
+::windows_core::imp::com_interface!(IHttpProductHeaderValue, IHttpProductHeaderValue_Vtbl, 0xf4feee03_ebd4_4160_b9ff_807c5183b6e6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpProductHeaderValue_Vtbl {
@@ -987,16 +501,7 @@ pub struct IHttpProductHeaderValue_Vtbl {
     pub Name: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Version: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpProductHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpProductHeaderValueFactory {
-    type Vtable = IHttpProductHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpProductHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x611aa4f5_82bc_42fb_977b_dc00536e5e86);
-}
+::windows_core::imp::com_interface!(IHttpProductHeaderValueFactory, IHttpProductHeaderValueFactory_Vtbl, 0x611aa4f5_82bc_42fb_977b_dc00536e5e86);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpProductHeaderValueFactory_Vtbl {
@@ -1004,16 +509,7 @@ pub struct IHttpProductHeaderValueFactory_Vtbl {
     pub CreateFromName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, productname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateFromNameWithVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, productname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, productversion: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpProductHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpProductHeaderValueStatics {
-    type Vtable = IHttpProductHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpProductHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x90c33e29_befc_4337_be62_49f097975f53);
-}
+::windows_core::imp::com_interface!(IHttpProductHeaderValueStatics, IHttpProductHeaderValueStatics_Vtbl, 0x90c33e29_befc_4337_be62_49f097975f53);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpProductHeaderValueStatics_Vtbl {
@@ -1021,16 +517,7 @@ pub struct IHttpProductHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, productheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpProductInfoHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpProductInfoHeaderValue {
-    type Vtable = IHttpProductInfoHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpProductInfoHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1b1a8732_4c35_486a_966f_646489198e4d);
-}
+::windows_core::imp::com_interface!(IHttpProductInfoHeaderValue, IHttpProductInfoHeaderValue_Vtbl, 0x1b1a8732_4c35_486a_966f_646489198e4d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpProductInfoHeaderValue_Vtbl {
@@ -1038,16 +525,7 @@ pub struct IHttpProductInfoHeaderValue_Vtbl {
     pub Product: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Comment: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpProductInfoHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpProductInfoHeaderValueCollection {
-    type Vtable = IHttpProductInfoHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpProductInfoHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x877df74a_d69b_44f8_ad4f_453af9c42ed0);
-}
+::windows_core::imp::com_interface!(IHttpProductInfoHeaderValueCollection, IHttpProductInfoHeaderValueCollection_Vtbl, 0x877df74a_d69b_44f8_ad4f_453af9c42ed0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpProductInfoHeaderValueCollection_Vtbl {
@@ -1055,16 +533,7 @@ pub struct IHttpProductInfoHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpProductInfoHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpProductInfoHeaderValueFactory {
-    type Vtable = IHttpProductInfoHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpProductInfoHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x24220fbe_eabe_4464_b460_ec010b7c41e2);
-}
+::windows_core::imp::com_interface!(IHttpProductInfoHeaderValueFactory, IHttpProductInfoHeaderValueFactory_Vtbl, 0x24220fbe_eabe_4464_b460_ec010b7c41e2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpProductInfoHeaderValueFactory_Vtbl {
@@ -1072,16 +541,7 @@ pub struct IHttpProductInfoHeaderValueFactory_Vtbl {
     pub CreateFromComment: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, productcomment: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateFromNameWithVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, productname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, productversion: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpProductInfoHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpProductInfoHeaderValueStatics {
-    type Vtable = IHttpProductInfoHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpProductInfoHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdb7fd857_327a_4e73_81e5_7059a302b042);
-}
+::windows_core::imp::com_interface!(IHttpProductInfoHeaderValueStatics, IHttpProductInfoHeaderValueStatics_Vtbl, 0xdb7fd857_327a_4e73_81e5_7059a302b042);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpProductInfoHeaderValueStatics_Vtbl {
@@ -1089,16 +549,7 @@ pub struct IHttpProductInfoHeaderValueStatics_Vtbl {
     pub Parse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub TryParse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, productinfoheadervalue: *mut *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpRequestHeaderCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpRequestHeaderCollection {
-    type Vtable = IHttpRequestHeaderCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpRequestHeaderCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaf40329b_b544_469b_86b9_ac3d466fea36);
-}
+::windows_core::imp::com_interface!(IHttpRequestHeaderCollection, IHttpRequestHeaderCollection_Vtbl, 0xaf40329b_b544_469b_86b9_ac3d466fea36);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpRequestHeaderCollection_Vtbl {
@@ -1139,16 +590,7 @@ pub struct IHttpRequestHeaderCollection_Vtbl {
     pub Append: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryAppendWithoutValidation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpResponseHeaderCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpResponseHeaderCollection {
-    type Vtable = IHttpResponseHeaderCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpResponseHeaderCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7a990969_fa3f_41ed_aac6_bf957975c16b);
-}
+::windows_core::imp::com_interface!(IHttpResponseHeaderCollection, IHttpResponseHeaderCollection_Vtbl, 0x7a990969_fa3f_41ed_aac6_bf957975c16b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpResponseHeaderCollection_Vtbl {
@@ -1170,16 +612,7 @@ pub struct IHttpResponseHeaderCollection_Vtbl {
     pub Append: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryAppendWithoutValidation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpTransferCodingHeaderValue(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpTransferCodingHeaderValue {
-    type Vtable = IHttpTransferCodingHeaderValue_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpTransferCodingHeaderValue {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x436f32f9_3ded_42bd_b38a_5496a2511ce6);
-}
+::windows_core::imp::com_interface!(IHttpTransferCodingHeaderValue, IHttpTransferCodingHeaderValue_Vtbl, 0x436f32f9_3ded_42bd_b38a_5496a2511ce6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpTransferCodingHeaderValue_Vtbl {
@@ -1190,16 +623,7 @@ pub struct IHttpTransferCodingHeaderValue_Vtbl {
     Parameters: usize,
     pub Value: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpTransferCodingHeaderValueCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpTransferCodingHeaderValueCollection {
-    type Vtable = IHttpTransferCodingHeaderValueCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpTransferCodingHeaderValueCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x202c8c34_2c03_49b8_9665_73e27cb2fc79);
-}
+::windows_core::imp::com_interface!(IHttpTransferCodingHeaderValueCollection, IHttpTransferCodingHeaderValueCollection_Vtbl, 0x202c8c34_2c03_49b8_9665_73e27cb2fc79);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpTransferCodingHeaderValueCollection_Vtbl {
@@ -1207,32 +631,14 @@ pub struct IHttpTransferCodingHeaderValueCollection_Vtbl {
     pub ParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TryParseAdd: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpTransferCodingHeaderValueFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpTransferCodingHeaderValueFactory {
-    type Vtable = IHttpTransferCodingHeaderValueFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpTransferCodingHeaderValueFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbb62dffc_e361_4f08_8e4f_c9e723de703b);
-}
+::windows_core::imp::com_interface!(IHttpTransferCodingHeaderValueFactory, IHttpTransferCodingHeaderValueFactory_Vtbl, 0xbb62dffc_e361_4f08_8e4f_c9e723de703b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpTransferCodingHeaderValueFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, input: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IHttpTransferCodingHeaderValueStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IHttpTransferCodingHeaderValueStatics {
-    type Vtable = IHttpTransferCodingHeaderValueStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IHttpTransferCodingHeaderValueStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6ab8892a_1a98_4d32_a906_7470a9875ce5);
-}
+::windows_core::imp::com_interface!(IHttpTransferCodingHeaderValueStatics, IHttpTransferCodingHeaderValueStatics_Vtbl, 0x6ab8892a_1a98_4d32_a906_7470a9875ce5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IHttpTransferCodingHeaderValueStatics_Vtbl {
@@ -1253,10 +659,10 @@ impl HttpCacheDirectiveHeaderValueCollection {
     }
     pub fn SetMaxAge<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetMaxAge)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetMaxAge)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn MaxStale(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
         let this = self;
@@ -1267,10 +673,10 @@ impl HttpCacheDirectiveHeaderValueCollection {
     }
     pub fn SetMaxStale<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetMaxStale)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetMaxStale)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn MinFresh(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
         let this = self;
@@ -1281,10 +687,10 @@ impl HttpCacheDirectiveHeaderValueCollection {
     }
     pub fn SetMinFresh<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetMinFresh)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetMinFresh)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn SharedMaxAge(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>> {
         let this = self;
@@ -1295,10 +701,10 @@ impl HttpCacheDirectiveHeaderValueCollection {
     }
     pub fn SetSharedMaxAge<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSharedMaxAge)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSharedMaxAge)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ParseAdd(&self, input: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = self;
@@ -1457,10 +863,7 @@ impl ::core::iter::IntoIterator for &HttpCacheDirectiveHeaderValueCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpCacheDirectiveHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<HttpNameValueHeaderValue>> for HttpCacheDirectiveHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpCacheDirectiveHeaderValueCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<HttpNameValueHeaderValue>> for HttpCacheDirectiveHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpCacheDirectiveHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<HttpNameValueHeaderValue>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<HttpNameValueHeaderValue>);
 unsafe impl ::core::marker::Send for HttpCacheDirectiveHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpCacheDirectiveHeaderValueCollection {}
 #[repr(transparent)]
@@ -1545,7 +948,7 @@ impl ::windows_core::RuntimeName for HttpChallengeHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpChallengeHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpChallengeHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpChallengeHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpChallengeHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpChallengeHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpChallengeHeaderValue {}
 #[repr(transparent)]
@@ -1709,10 +1112,7 @@ impl ::core::iter::IntoIterator for &HttpChallengeHeaderValueCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpChallengeHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<HttpChallengeHeaderValue>> for HttpChallengeHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpChallengeHeaderValueCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<HttpChallengeHeaderValue>> for HttpChallengeHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpChallengeHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<HttpChallengeHeaderValue>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<HttpChallengeHeaderValue>);
 unsafe impl ::core::marker::Send for HttpChallengeHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpChallengeHeaderValueCollection {}
 #[repr(transparent)]
@@ -1775,7 +1175,7 @@ impl ::windows_core::RuntimeName for HttpConnectionOptionHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpConnectionOptionHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpConnectionOptionHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpConnectionOptionHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpConnectionOptionHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpConnectionOptionHeaderValue {}
 #[repr(transparent)]
@@ -1939,10 +1339,7 @@ impl ::core::iter::IntoIterator for &HttpConnectionOptionHeaderValueCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpConnectionOptionHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<HttpConnectionOptionHeaderValue>> for HttpConnectionOptionHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpConnectionOptionHeaderValueCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<HttpConnectionOptionHeaderValue>> for HttpConnectionOptionHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpConnectionOptionHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<HttpConnectionOptionHeaderValue>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<HttpConnectionOptionHeaderValue>);
 unsafe impl ::core::marker::Send for HttpConnectionOptionHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpConnectionOptionHeaderValueCollection {}
 #[repr(transparent)]
@@ -2005,7 +1402,7 @@ impl ::windows_core::RuntimeName for HttpContentCodingHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpContentCodingHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpContentCodingHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpContentCodingHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpContentCodingHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpContentCodingHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpContentCodingHeaderValue {}
 #[repr(transparent)]
@@ -2169,10 +1566,7 @@ impl ::core::iter::IntoIterator for &HttpContentCodingHeaderValueCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpContentCodingHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<HttpContentCodingHeaderValue>> for HttpContentCodingHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpContentCodingHeaderValueCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<HttpContentCodingHeaderValue>> for HttpContentCodingHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpContentCodingHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<HttpContentCodingHeaderValue>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<HttpContentCodingHeaderValue>);
 unsafe impl ::core::marker::Send for HttpContentCodingHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpContentCodingHeaderValueCollection {}
 #[repr(transparent)]
@@ -2248,7 +1642,7 @@ impl ::windows_core::RuntimeName for HttpContentCodingWithQualityHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpContentCodingWithQualityHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpContentCodingWithQualityHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpContentCodingWithQualityHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpContentCodingWithQualityHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpContentCodingWithQualityHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpContentCodingWithQualityHeaderValue {}
 #[repr(transparent)]
@@ -2412,10 +1806,7 @@ impl ::core::iter::IntoIterator for &HttpContentCodingWithQualityHeaderValueColl
 }
 ::windows_core::imp::interface_hierarchy!(HttpContentCodingWithQualityHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<HttpContentCodingWithQualityHeaderValue>> for HttpContentCodingWithQualityHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpContentCodingWithQualityHeaderValueCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<HttpContentCodingWithQualityHeaderValue>> for HttpContentCodingWithQualityHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpContentCodingWithQualityHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<HttpContentCodingWithQualityHeaderValue>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<HttpContentCodingWithQualityHeaderValue>);
 unsafe impl ::core::marker::Send for HttpContentCodingWithQualityHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpContentCodingWithQualityHeaderValueCollection {}
 #[repr(transparent)]
@@ -2484,10 +1875,10 @@ impl HttpContentDispositionHeaderValue {
     }
     pub fn SetSize<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<u64>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<u64>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSize)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSize)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Create(dispositiontype: &::windows_core::HSTRING) -> ::windows_core::Result<HttpContentDispositionHeaderValue> {
         Self::IHttpContentDispositionHeaderValueFactory(|this| unsafe {
@@ -2538,7 +1929,7 @@ impl ::windows_core::RuntimeName for HttpContentDispositionHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpContentDispositionHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpContentDispositionHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpContentDispositionHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpContentDispositionHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpContentDispositionHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpContentDispositionHeaderValue {}
 #[repr(transparent)]
@@ -2589,10 +1980,10 @@ impl HttpContentHeaderCollection {
     }
     pub fn SetContentLength<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<u64>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<u64>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetContentLength)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetContentLength)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ContentLocation(&self) -> ::windows_core::Result<super::super::super::Foundation::Uri> {
         let this = self;
@@ -2621,10 +2012,10 @@ impl HttpContentHeaderCollection {
     #[cfg(feature = "Storage_Streams")]
     pub fn SetContentMD5<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::super::Storage::Streams::IBuffer>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetContentMD5)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetContentMD5)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ContentRange(&self) -> ::windows_core::Result<HttpContentRangeHeaderValue> {
         let this = self;
@@ -2663,10 +2054,10 @@ impl HttpContentHeaderCollection {
     }
     pub fn SetExpires<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpires)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpires)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn LastModified(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>> {
         let this = self;
@@ -2677,10 +2068,10 @@ impl HttpContentHeaderCollection {
     }
     pub fn SetLastModified<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetLastModified)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetLastModified)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Append(&self, name: &::windows_core::HSTRING, value: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = self;
@@ -2797,10 +2188,7 @@ impl ::core::iter::IntoIterator for &HttpContentHeaderCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpContentHeaderCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>> for HttpContentHeaderCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>> for HttpContentHeaderCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpContentHeaderCollection {}
+::windows_core::imp::required_hierarchy!(HttpContentHeaderCollection, super::super::super::Foundation::Collections::IIterable::<super::super::super::Foundation::Collections::IKeyValuePair::<::windows_core::HSTRING, ::windows_core::HSTRING>>, super::super::super::Foundation::Collections::IMap::<::windows_core::HSTRING, ::windows_core::HSTRING>, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpContentHeaderCollection {}
 unsafe impl ::core::marker::Sync for HttpContentHeaderCollection {}
 #[repr(transparent)]
@@ -2900,7 +2288,7 @@ impl ::windows_core::RuntimeName for HttpContentRangeHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpContentRangeHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpContentRangeHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpContentRangeHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpContentRangeHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpContentRangeHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpContentRangeHeaderValue {}
 #[repr(transparent)]
@@ -2980,7 +2368,7 @@ impl ::windows_core::RuntimeName for HttpCookiePairHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpCookiePairHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpCookiePairHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpCookiePairHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpCookiePairHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpCookiePairHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpCookiePairHeaderValue {}
 #[repr(transparent)]
@@ -3144,10 +2532,7 @@ impl ::core::iter::IntoIterator for &HttpCookiePairHeaderValueCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpCookiePairHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<HttpCookiePairHeaderValue>> for HttpCookiePairHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpCookiePairHeaderValueCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<HttpCookiePairHeaderValue>> for HttpCookiePairHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpCookiePairHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<HttpCookiePairHeaderValue>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<HttpCookiePairHeaderValue>);
 unsafe impl ::core::marker::Send for HttpCookiePairHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpCookiePairHeaderValueCollection {}
 #[repr(transparent)]
@@ -3232,7 +2617,7 @@ impl ::windows_core::RuntimeName for HttpCredentialsHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpCredentialsHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpCredentialsHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpCredentialsHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpCredentialsHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpCredentialsHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpCredentialsHeaderValue {}
 #[repr(transparent)]
@@ -3291,7 +2676,7 @@ impl ::windows_core::RuntimeName for HttpDateOrDeltaHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpDateOrDeltaHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpDateOrDeltaHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpDateOrDeltaHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpDateOrDeltaHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpDateOrDeltaHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpDateOrDeltaHeaderValue {}
 #[repr(transparent)]
@@ -3380,7 +2765,7 @@ impl ::windows_core::RuntimeName for HttpExpectationHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpExpectationHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpExpectationHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpExpectationHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpExpectationHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpExpectationHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpExpectationHeaderValue {}
 #[repr(transparent)]
@@ -3544,10 +2929,7 @@ impl ::core::iter::IntoIterator for &HttpExpectationHeaderValueCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpExpectationHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<HttpExpectationHeaderValue>> for HttpExpectationHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpExpectationHeaderValueCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<HttpExpectationHeaderValue>> for HttpExpectationHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpExpectationHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<HttpExpectationHeaderValue>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<HttpExpectationHeaderValue>);
 unsafe impl ::core::marker::Send for HttpExpectationHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpExpectationHeaderValueCollection {}
 #[repr(transparent)]
@@ -3711,10 +3093,7 @@ impl ::core::iter::IntoIterator for &HttpLanguageHeaderValueCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpLanguageHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(all(feature = "Foundation_Collections", feature = "Globalization"))]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<super::super::super::Globalization::Language>> for HttpLanguageHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpLanguageHeaderValueCollection {}
-#[cfg(all(feature = "Foundation_Collections", feature = "Globalization"))]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<super::super::super::Globalization::Language>> for HttpLanguageHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpLanguageHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<super::super::super::Globalization::Language>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<super::super::super::Globalization::Language>);
 unsafe impl ::core::marker::Send for HttpLanguageHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpLanguageHeaderValueCollection {}
 #[repr(transparent)]
@@ -3790,7 +3169,7 @@ impl ::windows_core::RuntimeName for HttpLanguageRangeWithQualityHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpLanguageRangeWithQualityHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpLanguageRangeWithQualityHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpLanguageRangeWithQualityHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpLanguageRangeWithQualityHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpLanguageRangeWithQualityHeaderValue {}
 #[repr(transparent)]
@@ -3954,10 +3333,7 @@ impl ::core::iter::IntoIterator for &HttpLanguageRangeWithQualityHeaderValueColl
 }
 ::windows_core::imp::interface_hierarchy!(HttpLanguageRangeWithQualityHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<HttpLanguageRangeWithQualityHeaderValue>> for HttpLanguageRangeWithQualityHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpLanguageRangeWithQualityHeaderValueCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<HttpLanguageRangeWithQualityHeaderValue>> for HttpLanguageRangeWithQualityHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpLanguageRangeWithQualityHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<HttpLanguageRangeWithQualityHeaderValue>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<HttpLanguageRangeWithQualityHeaderValue>);
 unsafe impl ::core::marker::Send for HttpLanguageRangeWithQualityHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpLanguageRangeWithQualityHeaderValueCollection {}
 #[repr(transparent)]
@@ -4044,7 +3420,7 @@ impl ::windows_core::RuntimeName for HttpMediaTypeHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpMediaTypeHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpMediaTypeHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpMediaTypeHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpMediaTypeHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpMediaTypeHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpMediaTypeHeaderValue {}
 #[repr(transparent)]
@@ -4091,10 +3467,10 @@ impl HttpMediaTypeWithQualityHeaderValue {
     }
     pub fn SetQuality<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<f64>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<f64>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetQuality)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetQuality)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CreateFromMediaType(mediatype: &::windows_core::HSTRING) -> ::windows_core::Result<HttpMediaTypeWithQualityHeaderValue> {
         Self::IHttpMediaTypeWithQualityHeaderValueFactory(|this| unsafe {
@@ -4151,7 +3527,7 @@ impl ::windows_core::RuntimeName for HttpMediaTypeWithQualityHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpMediaTypeWithQualityHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpMediaTypeWithQualityHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpMediaTypeWithQualityHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpMediaTypeWithQualityHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpMediaTypeWithQualityHeaderValue {}
 #[repr(transparent)]
@@ -4315,10 +3691,7 @@ impl ::core::iter::IntoIterator for &HttpMediaTypeWithQualityHeaderValueCollecti
 }
 ::windows_core::imp::interface_hierarchy!(HttpMediaTypeWithQualityHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<HttpMediaTypeWithQualityHeaderValue>> for HttpMediaTypeWithQualityHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpMediaTypeWithQualityHeaderValueCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<HttpMediaTypeWithQualityHeaderValue>> for HttpMediaTypeWithQualityHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpMediaTypeWithQualityHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<HttpMediaTypeWithQualityHeaderValue>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<HttpMediaTypeWithQualityHeaderValue>);
 unsafe impl ::core::marker::Send for HttpMediaTypeWithQualityHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpMediaTypeWithQualityHeaderValueCollection {}
 #[repr(transparent)]
@@ -4482,10 +3855,7 @@ impl ::core::iter::IntoIterator for &HttpMethodHeaderValueCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpMethodHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<super::HttpMethod>> for HttpMethodHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpMethodHeaderValueCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<super::HttpMethod>> for HttpMethodHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpMethodHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<super::HttpMethod>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<super::HttpMethod>);
 unsafe impl ::core::marker::Send for HttpMethodHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpMethodHeaderValueCollection {}
 #[repr(transparent)]
@@ -4565,7 +3935,7 @@ impl ::windows_core::RuntimeName for HttpNameValueHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpNameValueHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpNameValueHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpNameValueHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpNameValueHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpNameValueHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpNameValueHeaderValue {}
 #[repr(transparent)]
@@ -4641,7 +4011,7 @@ impl ::windows_core::RuntimeName for HttpProductHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpProductHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpProductHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpProductHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpProductHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpProductHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpProductHeaderValue {}
 #[repr(transparent)]
@@ -4717,7 +4087,7 @@ impl ::windows_core::RuntimeName for HttpProductInfoHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpProductInfoHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpProductInfoHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpProductInfoHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpProductInfoHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpProductInfoHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpProductInfoHeaderValue {}
 #[repr(transparent)]
@@ -4881,10 +4251,7 @@ impl ::core::iter::IntoIterator for &HttpProductInfoHeaderValueCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpProductInfoHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<HttpProductInfoHeaderValue>> for HttpProductInfoHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpProductInfoHeaderValueCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<HttpProductInfoHeaderValue>> for HttpProductInfoHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpProductInfoHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<HttpProductInfoHeaderValue>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<HttpProductInfoHeaderValue>);
 unsafe impl ::core::marker::Send for HttpProductInfoHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpProductInfoHeaderValueCollection {}
 #[repr(transparent)]
@@ -4956,10 +4323,10 @@ impl HttpRequestHeaderCollection {
     }
     pub fn SetDate<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetDate)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetDate)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Expect(&self) -> ::windows_core::Result<HttpExpectationHeaderValueCollection> {
         let this = self;
@@ -5006,10 +4373,10 @@ impl HttpRequestHeaderCollection {
     }
     pub fn SetIfModifiedSince<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetIfModifiedSince)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetIfModifiedSince)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn IfUnmodifiedSince(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>> {
         let this = self;
@@ -5020,10 +4387,10 @@ impl HttpRequestHeaderCollection {
     }
     pub fn SetIfUnmodifiedSince<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetIfUnmodifiedSince)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetIfUnmodifiedSince)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn MaxForwards(&self) -> ::windows_core::Result<super::super::super::Foundation::IReference<u32>> {
         let this = self;
@@ -5034,10 +4401,10 @@ impl HttpRequestHeaderCollection {
     }
     pub fn SetMaxForwards<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<u32>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<u32>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetMaxForwards)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetMaxForwards)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ProxyAuthorization(&self) -> ::windows_core::Result<HttpCredentialsHeaderValue> {
         let this = self;
@@ -5196,10 +4563,7 @@ impl ::core::iter::IntoIterator for &HttpRequestHeaderCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpRequestHeaderCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>> for HttpRequestHeaderCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>> for HttpRequestHeaderCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpRequestHeaderCollection {}
+::windows_core::imp::required_hierarchy!(HttpRequestHeaderCollection, super::super::super::Foundation::Collections::IIterable::<super::super::super::Foundation::Collections::IKeyValuePair::<::windows_core::HSTRING, ::windows_core::HSTRING>>, super::super::super::Foundation::Collections::IMap::<::windows_core::HSTRING, ::windows_core::HSTRING>, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpRequestHeaderCollection {}
 unsafe impl ::core::marker::Sync for HttpRequestHeaderCollection {}
 #[repr(transparent)]
@@ -5215,10 +4579,10 @@ impl HttpResponseHeaderCollection {
     }
     pub fn SetAge<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::TimeSpan>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetAge)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetAge)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Allow(&self) -> ::windows_core::Result<HttpMethodHeaderValueCollection> {
         let this = self;
@@ -5250,10 +4614,10 @@ impl HttpResponseHeaderCollection {
     }
     pub fn SetDate<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::IReference<super::super::super::Foundation::DateTime>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetDate)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetDate)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Location(&self) -> ::windows_core::Result<super::super::super::Foundation::Uri> {
         let this = self;
@@ -5419,10 +4783,7 @@ impl ::core::iter::IntoIterator for &HttpResponseHeaderCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpResponseHeaderCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>> for HttpResponseHeaderCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>> for HttpResponseHeaderCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpResponseHeaderCollection {}
+::windows_core::imp::required_hierarchy!(HttpResponseHeaderCollection, super::super::super::Foundation::Collections::IIterable::<super::super::super::Foundation::Collections::IKeyValuePair::<::windows_core::HSTRING, ::windows_core::HSTRING>>, super::super::super::Foundation::Collections::IMap::<::windows_core::HSTRING, ::windows_core::HSTRING>, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpResponseHeaderCollection {}
 unsafe impl ::core::marker::Sync for HttpResponseHeaderCollection {}
 #[repr(transparent)]
@@ -5494,7 +4855,7 @@ impl ::windows_core::RuntimeName for HttpTransferCodingHeaderValue {
     const NAME: &'static str = "Windows.Web.Http.Headers.HttpTransferCodingHeaderValue";
 }
 ::windows_core::imp::interface_hierarchy!(HttpTransferCodingHeaderValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpTransferCodingHeaderValue {}
+::windows_core::imp::required_hierarchy!(HttpTransferCodingHeaderValue, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for HttpTransferCodingHeaderValue {}
 unsafe impl ::core::marker::Sync for HttpTransferCodingHeaderValue {}
 #[repr(transparent)]
@@ -5658,9 +5019,6 @@ impl ::core::iter::IntoIterator for &HttpTransferCodingHeaderValueCollection {
 }
 ::windows_core::imp::interface_hierarchy!(HttpTransferCodingHeaderValueCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<HttpTransferCodingHeaderValue>> for HttpTransferCodingHeaderValueCollection {}
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for HttpTransferCodingHeaderValueCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVector<HttpTransferCodingHeaderValue>> for HttpTransferCodingHeaderValueCollection {}
+::windows_core::imp::required_hierarchy!(HttpTransferCodingHeaderValueCollection, super::super::super::Foundation::Collections::IIterable::<HttpTransferCodingHeaderValue>, super::super::super::Foundation::IStringable, super::super::super::Foundation::Collections::IVector::<HttpTransferCodingHeaderValue>);
 unsafe impl ::core::marker::Send for HttpTransferCodingHeaderValueCollection {}
 unsafe impl ::core::marker::Sync for HttpTransferCodingHeaderValueCollection {}

@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGeolocationProvider(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGeolocationProvider {
-    type Vtable = IGeolocationProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGeolocationProvider {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe4cf071d_3f64_509f_8dc2_0b74a059829d);
-}
+::windows_core::imp::com_interface!(IGeolocationProvider, IGeolocationProvider_Vtbl, 0xe4cf071d_3f64_509f_8dc2_0b74a059829d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGeolocationProvider_Vtbl {

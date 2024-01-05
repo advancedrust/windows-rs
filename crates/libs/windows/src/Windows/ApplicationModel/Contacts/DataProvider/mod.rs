@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactDataProviderConnection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactDataProviderConnection {
-    type Vtable = IContactDataProviderConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactDataProviderConnection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1a398a52_8c9d_4d6f_a4e0_111e9a125a30);
-}
+::windows_core::imp::com_interface!(IContactDataProviderConnection, IContactDataProviderConnection_Vtbl, 0x1a398a52_8c9d_4d6f_a4e0_111e9a125a30);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactDataProviderConnection_Vtbl {
@@ -18,16 +9,7 @@ pub struct IContactDataProviderConnection_Vtbl {
     pub RemoveServerSearchReadBatchRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub Start: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactDataProviderConnection2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactDataProviderConnection2 {
-    type Vtable = IContactDataProviderConnection2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactDataProviderConnection2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa1d327b0_196c_4bfd_8f0f_c68d67f249d3);
-}
+::windows_core::imp::com_interface!(IContactDataProviderConnection2, IContactDataProviderConnection2_Vtbl, 0xa1d327b0_196c_4bfd_8f0f_c68d67f249d3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactDataProviderConnection2_Vtbl {
@@ -37,32 +19,14 @@ pub struct IContactDataProviderConnection2_Vtbl {
     pub DeleteContactRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveDeleteContactRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactDataProviderTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactDataProviderTriggerDetails {
-    type Vtable = IContactDataProviderTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactDataProviderTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x527104be_3c62_43c8_9ae7_db531685cd99);
-}
+::windows_core::imp::com_interface!(IContactDataProviderTriggerDetails, IContactDataProviderTriggerDetails_Vtbl, 0x527104be_3c62_43c8_9ae7_db531685cd99);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactDataProviderTriggerDetails_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Connection: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactListCreateOrUpdateContactRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactListCreateOrUpdateContactRequest {
-    type Vtable = IContactListCreateOrUpdateContactRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactListCreateOrUpdateContactRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb4af411f_c849_47d0_b119_91cf605b2f2a);
-}
+::windows_core::imp::com_interface!(IContactListCreateOrUpdateContactRequest, IContactListCreateOrUpdateContactRequest_Vtbl, 0xb4af411f_c849_47d0_b119_91cf605b2f2a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactListCreateOrUpdateContactRequest_Vtbl {
@@ -72,16 +36,7 @@ pub struct IContactListCreateOrUpdateContactRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, createdorupdatedcontact: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactListCreateOrUpdateContactRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactListCreateOrUpdateContactRequestEventArgs {
-    type Vtable = IContactListCreateOrUpdateContactRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactListCreateOrUpdateContactRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x851c1690_1a51_4b0c_aeef_1240ac5bed75);
-}
+::windows_core::imp::com_interface!(IContactListCreateOrUpdateContactRequestEventArgs, IContactListCreateOrUpdateContactRequestEventArgs_Vtbl, 0x851c1690_1a51_4b0c_aeef_1240ac5bed75);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactListCreateOrUpdateContactRequestEventArgs_Vtbl {
@@ -89,16 +44,7 @@ pub struct IContactListCreateOrUpdateContactRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactListDeleteContactRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactListDeleteContactRequest {
-    type Vtable = IContactListDeleteContactRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactListDeleteContactRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5e114687_ce03_4de5_8557_9ccf552d472a);
-}
+::windows_core::imp::com_interface!(IContactListDeleteContactRequest, IContactListDeleteContactRequest_Vtbl, 0x5e114687_ce03_4de5_8557_9ccf552d472a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactListDeleteContactRequest_Vtbl {
@@ -108,16 +54,7 @@ pub struct IContactListDeleteContactRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactListDeleteContactRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactListDeleteContactRequestEventArgs {
-    type Vtable = IContactListDeleteContactRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactListDeleteContactRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb22054a1_e8fa_4db5_9389_2d12ee7d15ee);
-}
+::windows_core::imp::com_interface!(IContactListDeleteContactRequestEventArgs, IContactListDeleteContactRequestEventArgs_Vtbl, 0xb22054a1_e8fa_4db5_9389_2d12ee7d15ee);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactListDeleteContactRequestEventArgs_Vtbl {
@@ -125,16 +62,7 @@ pub struct IContactListDeleteContactRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactListServerSearchReadBatchRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactListServerSearchReadBatchRequest {
-    type Vtable = IContactListServerSearchReadBatchRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactListServerSearchReadBatchRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xba776a97_4030_4925_9fb4_143b295e653b);
-}
+::windows_core::imp::com_interface!(IContactListServerSearchReadBatchRequest, IContactListServerSearchReadBatchRequest_Vtbl, 0xba776a97_4030_4925_9fb4_143b295e653b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactListServerSearchReadBatchRequest_Vtbl {
@@ -147,16 +75,7 @@ pub struct IContactListServerSearchReadBatchRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, batchstatus: super::ContactBatchStatus, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactListServerSearchReadBatchRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactListServerSearchReadBatchRequestEventArgs {
-    type Vtable = IContactListServerSearchReadBatchRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactListServerSearchReadBatchRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1a27e87b_69d7_4e4e_8042_861cba61471e);
-}
+::windows_core::imp::com_interface!(IContactListServerSearchReadBatchRequestEventArgs, IContactListServerSearchReadBatchRequestEventArgs_Vtbl, 0x1a27e87b_69d7_4e4e_8042_861cba61471e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactListServerSearchReadBatchRequestEventArgs_Vtbl {
@@ -164,16 +83,7 @@ pub struct IContactListServerSearchReadBatchRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactListSyncManagerSyncRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactListSyncManagerSyncRequest {
-    type Vtable = IContactListSyncManagerSyncRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactListSyncManagerSyncRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3c0e57a4_c4e7_4970_9a8f_9a66a2bb6c1a);
-}
+::windows_core::imp::com_interface!(IContactListSyncManagerSyncRequest, IContactListSyncManagerSyncRequest_Vtbl, 0x3c0e57a4_c4e7_4970_9a8f_9a66a2bb6c1a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactListSyncManagerSyncRequest_Vtbl {
@@ -182,16 +92,7 @@ pub struct IContactListSyncManagerSyncRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactListSyncManagerSyncRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactListSyncManagerSyncRequestEventArgs {
-    type Vtable = IContactListSyncManagerSyncRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactListSyncManagerSyncRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x158e4dac_446d_4f10_afc2_02683ec533a6);
-}
+::windows_core::imp::com_interface!(IContactListSyncManagerSyncRequestEventArgs, IContactListSyncManagerSyncRequestEventArgs_Vtbl, 0x158e4dac_446d_4f10_afc2_02683ec533a6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactListSyncManagerSyncRequestEventArgs_Vtbl {

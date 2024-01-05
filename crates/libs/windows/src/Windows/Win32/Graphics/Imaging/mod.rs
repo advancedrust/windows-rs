@@ -81,9 +81,7 @@ where
     ::windows_targets::link!("windowscodecs.dll" "system" fn WICSerializeMetadataContent(guidcontainerformat : *const ::windows_core::GUID, piwriter : * mut::core::ffi::c_void, dwpersistoptions : u32, pistream : * mut::core::ffi::c_void) -> ::windows_core::HRESULT);
     WICSerializeMetadataContent(guidcontainerformat, piwriter.into_param().abi(), dwpersistoptions, pistream.into_param().abi()).ok()
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmap(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmap, IWICBitmap_Vtbl, 0x00000121_a8f2_4877_ba0a_fd2b6645fb94);
 impl IWICBitmap {
     pub unsafe fn GetSize(&self, puiwidth: *mut u32, puiheight: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.GetSize)(::windows_core::Interface::as_raw(self), puiwidth, puiheight).ok()
@@ -119,12 +117,6 @@ impl IWICBitmap {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmap, ::windows_core::IUnknown, IWICBitmapSource);
-unsafe impl ::windows_core::Interface for IWICBitmap {
-    type Vtable = IWICBitmap_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmap {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000121_a8f2_4877_ba0a_fd2b6645fb94);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmap_Vtbl {
@@ -133,9 +125,7 @@ pub struct IWICBitmap_Vtbl {
     pub SetPalette: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pipalette: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetResolution: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dpix: f64, dpiy: f64) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapClipper(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapClipper, IWICBitmapClipper_Vtbl, 0xe4fbcf03_223d_4e81_9333_d635556dd1b5);
 impl IWICBitmapClipper {
     pub unsafe fn GetSize(&self, puiwidth: *mut u32, puiheight: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.GetSize)(::windows_core::Interface::as_raw(self), puiwidth, puiheight).ok()
@@ -164,21 +154,13 @@ impl IWICBitmapClipper {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapClipper, ::windows_core::IUnknown, IWICBitmapSource);
-unsafe impl ::windows_core::Interface for IWICBitmapClipper {
-    type Vtable = IWICBitmapClipper_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapClipper {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe4fbcf03_223d_4e81_9333_d635556dd1b5);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapClipper_Vtbl {
     pub base__: IWICBitmapSource_Vtbl,
     pub Initialize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pisource: *mut ::core::ffi::c_void, prc: *const WICRect) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapCodecInfo(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapCodecInfo, IWICBitmapCodecInfo_Vtbl, 0xe87a44c4_b76e_4c47_8b09_298eb12a2714);
 impl IWICBitmapCodecInfo {
     pub unsafe fn GetComponentType(&self) -> ::windows_core::Result<WICComponentType> {
         let mut result__ = ::std::mem::zeroed();
@@ -255,12 +237,6 @@ impl IWICBitmapCodecInfo {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapCodecInfo, ::windows_core::IUnknown, IWICComponentInfo);
-unsafe impl ::windows_core::Interface for IWICBitmapCodecInfo {
-    type Vtable = IWICBitmapCodecInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapCodecInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe87a44c4_b76e_4c47_8b09_298eb12a2714);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapCodecInfo_Vtbl {
@@ -278,30 +254,20 @@ pub struct IWICBitmapCodecInfo_Vtbl {
     pub DoesSupportMultiframe: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pfsupportmultiframe: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
     pub MatchesMimeType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, wzmimetype: ::windows_core::PCWSTR, pfmatches: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapCodecProgressNotification(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapCodecProgressNotification, IWICBitmapCodecProgressNotification_Vtbl, 0x64c1024e_c3cf_4462_8078_88c2b11c46d9);
 impl IWICBitmapCodecProgressNotification {
     pub unsafe fn RegisterProgressNotification(&self, pfnprogressnotification: PFNProgressNotification, pvdata: ::core::option::Option<*const ::core::ffi::c_void>, dwprogressflags: u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).RegisterProgressNotification)(::windows_core::Interface::as_raw(self), pfnprogressnotification, ::core::mem::transmute(pvdata.unwrap_or(::std::ptr::null())), dwprogressflags).ok()
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapCodecProgressNotification, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICBitmapCodecProgressNotification {
-    type Vtable = IWICBitmapCodecProgressNotification_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapCodecProgressNotification {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x64c1024e_c3cf_4462_8078_88c2b11c46d9);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapCodecProgressNotification_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub RegisterProgressNotification: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pfnprogressnotification: PFNProgressNotification, pvdata: *const ::core::ffi::c_void, dwprogressflags: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapDecoder(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapDecoder, IWICBitmapDecoder_Vtbl, 0x9edde9e7_8dee_47ea_99df_e6faf2ed44bf);
 impl IWICBitmapDecoder {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
     #[cfg(feature = "Win32_System_Com")]
@@ -359,12 +325,6 @@ impl IWICBitmapDecoder {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapDecoder, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICBitmapDecoder {
-    type Vtable = IWICBitmapDecoder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapDecoder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9edde9e7_8dee_47ea_99df_e6faf2ed44bf);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapDecoder_Vtbl {
@@ -387,9 +347,7 @@ pub struct IWICBitmapDecoder_Vtbl {
     pub GetFrameCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pcount: *mut u32) -> ::windows_core::HRESULT,
     pub GetFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, index: u32, ppibitmapframe: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapDecoderInfo(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapDecoderInfo, IWICBitmapDecoderInfo_Vtbl, 0xd8cd007f_d08f_4191_9bfc_236ea7f0e4b5);
 impl IWICBitmapDecoderInfo {
     pub unsafe fn GetComponentType(&self) -> ::windows_core::Result<WICComponentType> {
         let mut result__ = ::std::mem::zeroed();
@@ -482,12 +440,6 @@ impl IWICBitmapDecoderInfo {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapDecoderInfo, ::windows_core::IUnknown, IWICComponentInfo, IWICBitmapCodecInfo);
-unsafe impl ::windows_core::Interface for IWICBitmapDecoderInfo {
-    type Vtable = IWICBitmapDecoderInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapDecoderInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd8cd007f_d08f_4191_9bfc_236ea7f0e4b5);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapDecoderInfo_Vtbl {
@@ -499,9 +451,7 @@ pub struct IWICBitmapDecoderInfo_Vtbl {
     MatchesPattern: usize,
     pub CreateInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppibitmapdecoder: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapEncoder(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapEncoder, IWICBitmapEncoder_Vtbl, 0x00000103_a8f2_4877_ba0a_fd2b6645fb94);
 impl IWICBitmapEncoder {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
     #[cfg(feature = "Win32_System_Com")]
@@ -554,12 +504,6 @@ impl IWICBitmapEncoder {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapEncoder, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICBitmapEncoder {
-    type Vtable = IWICBitmapEncoder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapEncoder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000103_a8f2_4877_ba0a_fd2b6645fb94);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapEncoder_Vtbl {
@@ -581,9 +525,7 @@ pub struct IWICBitmapEncoder_Vtbl {
     pub Commit: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetMetadataQueryWriter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppimetadataquerywriter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapEncoderInfo(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapEncoderInfo, IWICBitmapEncoderInfo_Vtbl, 0x94c9b4ee_a09f_4f92_8a1e_4a9bce7e76fb);
 impl IWICBitmapEncoderInfo {
     pub unsafe fn GetComponentType(&self) -> ::windows_core::Result<WICComponentType> {
         let mut result__ = ::std::mem::zeroed();
@@ -664,21 +606,13 @@ impl IWICBitmapEncoderInfo {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapEncoderInfo, ::windows_core::IUnknown, IWICComponentInfo, IWICBitmapCodecInfo);
-unsafe impl ::windows_core::Interface for IWICBitmapEncoderInfo {
-    type Vtable = IWICBitmapEncoderInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapEncoderInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x94c9b4ee_a09f_4f92_8a1e_4a9bce7e76fb);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapEncoderInfo_Vtbl {
     pub base__: IWICBitmapCodecInfo_Vtbl,
     pub CreateInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppibitmapencoder: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapFlipRotator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapFlipRotator, IWICBitmapFlipRotator_Vtbl, 0x5009834f_2d6a_41ce_9e1b_17c5aff7a782);
 impl IWICBitmapFlipRotator {
     pub unsafe fn GetSize(&self, puiwidth: *mut u32, puiheight: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.GetSize)(::windows_core::Interface::as_raw(self), puiwidth, puiheight).ok()
@@ -707,21 +641,13 @@ impl IWICBitmapFlipRotator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapFlipRotator, ::windows_core::IUnknown, IWICBitmapSource);
-unsafe impl ::windows_core::Interface for IWICBitmapFlipRotator {
-    type Vtable = IWICBitmapFlipRotator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapFlipRotator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5009834f_2d6a_41ce_9e1b_17c5aff7a782);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapFlipRotator_Vtbl {
     pub base__: IWICBitmapSource_Vtbl,
     pub Initialize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pisource: *mut ::core::ffi::c_void, options: WICBitmapTransformOptions) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapFrameDecode(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapFrameDecode, IWICBitmapFrameDecode_Vtbl, 0x3b16811b_6a43_4ec9_a813_3d930c13b940);
 impl IWICBitmapFrameDecode {
     pub unsafe fn GetSize(&self, puiwidth: *mut u32, puiheight: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.GetSize)(::windows_core::Interface::as_raw(self), puiwidth, puiheight).ok()
@@ -755,12 +681,6 @@ impl IWICBitmapFrameDecode {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapFrameDecode, ::windows_core::IUnknown, IWICBitmapSource);
-unsafe impl ::windows_core::Interface for IWICBitmapFrameDecode {
-    type Vtable = IWICBitmapFrameDecode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapFrameDecode {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3b16811b_6a43_4ec9_a813_3d930c13b940);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapFrameDecode_Vtbl {
@@ -769,9 +689,7 @@ pub struct IWICBitmapFrameDecode_Vtbl {
     pub GetColorContexts: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ccount: u32, ppicolorcontexts: *mut *mut ::core::ffi::c_void, pcactualcount: *mut u32) -> ::windows_core::HRESULT,
     pub GetThumbnail: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppithumbnail: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapFrameEncode(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapFrameEncode, IWICBitmapFrameEncode_Vtbl, 0x00000105_a8f2_4877_ba0a_fd2b6645fb94);
 impl IWICBitmapFrameEncode {
     #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`"]
     #[cfg(feature = "Win32_System_Com_StructuredStorage")]
@@ -823,12 +741,6 @@ impl IWICBitmapFrameEncode {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapFrameEncode, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICBitmapFrameEncode {
-    type Vtable = IWICBitmapFrameEncode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapFrameEncode {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000105_a8f2_4877_ba0a_fd2b6645fb94);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapFrameEncode_Vtbl {
@@ -848,9 +760,7 @@ pub struct IWICBitmapFrameEncode_Vtbl {
     pub Commit: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetMetadataQueryWriter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppimetadataquerywriter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapLock(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapLock, IWICBitmapLock_Vtbl, 0x00000123_a8f2_4877_ba0a_fd2b6645fb94);
 impl IWICBitmapLock {
     pub unsafe fn GetSize(&self, puiwidth: *mut u32, puiheight: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).GetSize)(::windows_core::Interface::as_raw(self), puiwidth, puiheight).ok()
@@ -868,12 +778,6 @@ impl IWICBitmapLock {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapLock, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICBitmapLock {
-    type Vtable = IWICBitmapLock_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapLock {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000123_a8f2_4877_ba0a_fd2b6645fb94);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapLock_Vtbl {
@@ -883,9 +787,7 @@ pub struct IWICBitmapLock_Vtbl {
     pub GetDataPointer: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pcbbuffersize: *mut u32, ppbdata: *mut *mut u8) -> ::windows_core::HRESULT,
     pub GetPixelFormat: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppixelformat: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapScaler(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapScaler, IWICBitmapScaler_Vtbl, 0x00000302_a8f2_4877_ba0a_fd2b6645fb94);
 impl IWICBitmapScaler {
     pub unsafe fn GetSize(&self, puiwidth: *mut u32, puiheight: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.GetSize)(::windows_core::Interface::as_raw(self), puiwidth, puiheight).ok()
@@ -914,21 +816,13 @@ impl IWICBitmapScaler {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapScaler, ::windows_core::IUnknown, IWICBitmapSource);
-unsafe impl ::windows_core::Interface for IWICBitmapScaler {
-    type Vtable = IWICBitmapScaler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapScaler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000302_a8f2_4877_ba0a_fd2b6645fb94);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapScaler_Vtbl {
     pub base__: IWICBitmapSource_Vtbl,
     pub Initialize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pisource: *mut ::core::ffi::c_void, uiwidth: u32, uiheight: u32, mode: WICBitmapInterpolationMode) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapSource(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapSource, IWICBitmapSource_Vtbl, 0x00000120_a8f2_4877_ba0a_fd2b6645fb94);
 impl IWICBitmapSource {
     pub unsafe fn GetSize(&self, puiwidth: *mut u32, puiheight: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).GetSize)(::windows_core::Interface::as_raw(self), puiwidth, puiheight).ok()
@@ -951,12 +845,6 @@ impl IWICBitmapSource {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapSource, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICBitmapSource {
-    type Vtable = IWICBitmapSource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapSource {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000120_a8f2_4877_ba0a_fd2b6645fb94);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapSource_Vtbl {
@@ -967,9 +855,7 @@ pub struct IWICBitmapSource_Vtbl {
     pub CopyPalette: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pipalette: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CopyPixels: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, prc: *const WICRect, cbstride: u32, cbbuffersize: u32, pbbuffer: *mut u8) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICBitmapSourceTransform(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICBitmapSourceTransform, IWICBitmapSourceTransform_Vtbl, 0x3b16811b_6a43_4ec9_b713_3d5a0c13b940);
 impl IWICBitmapSourceTransform {
     pub unsafe fn CopyPixels(&self, prc: *const WICRect, uiwidth: u32, uiheight: u32, pguiddstformat: *const ::windows_core::GUID, dsttransform: WICBitmapTransformOptions, nstride: u32, pbbuffer: &mut [u8]) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).CopyPixels)(::windows_core::Interface::as_raw(self), prc, uiwidth, uiheight, pguiddstformat, dsttransform, nstride, pbbuffer.len().try_into().unwrap(), ::core::mem::transmute(pbbuffer.as_ptr())).ok()
@@ -986,12 +872,6 @@ impl IWICBitmapSourceTransform {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICBitmapSourceTransform, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICBitmapSourceTransform {
-    type Vtable = IWICBitmapSourceTransform_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICBitmapSourceTransform {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3b16811b_6a43_4ec9_b713_3d5a0c13b940);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICBitmapSourceTransform_Vtbl {
@@ -1001,9 +881,7 @@ pub struct IWICBitmapSourceTransform_Vtbl {
     pub GetClosestPixelFormat: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pguiddstformat: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
     pub DoesSupportTransform: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dsttransform: WICBitmapTransformOptions, pfissupported: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICColorContext(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICColorContext, IWICColorContext_Vtbl, 0x3c613a02_34b2_44ea_9a7c_45aea9c6fd6d);
 impl IWICColorContext {
     pub unsafe fn InitializeFromFilename<P0>(&self, wzfilename: P0) -> ::windows_core::Result<()>
     where
@@ -1030,12 +908,6 @@ impl IWICColorContext {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICColorContext, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICColorContext {
-    type Vtable = IWICColorContext_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICColorContext {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3c613a02_34b2_44ea_9a7c_45aea9c6fd6d);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICColorContext_Vtbl {
@@ -1047,9 +919,7 @@ pub struct IWICColorContext_Vtbl {
     pub GetProfileBytes: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, cbbuffer: u32, pbbuffer: *mut u8, pcbactual: *mut u32) -> ::windows_core::HRESULT,
     pub GetExifColorSpace: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pvalue: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICColorTransform(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICColorTransform, IWICColorTransform_Vtbl, 0xb66f034f_d0e2_40ab_b436_6de39e321a94);
 impl IWICColorTransform {
     pub unsafe fn GetSize(&self, puiwidth: *mut u32, puiheight: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.GetSize)(::windows_core::Interface::as_raw(self), puiwidth, puiheight).ok()
@@ -1080,21 +950,13 @@ impl IWICColorTransform {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICColorTransform, ::windows_core::IUnknown, IWICBitmapSource);
-unsafe impl ::windows_core::Interface for IWICColorTransform {
-    type Vtable = IWICColorTransform_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICColorTransform {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb66f034f_d0e2_40ab_b436_6de39e321a94);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICColorTransform_Vtbl {
     pub base__: IWICBitmapSource_Vtbl,
     pub Initialize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pibitmapsource: *mut ::core::ffi::c_void, picontextsource: *mut ::core::ffi::c_void, picontextdest: *mut ::core::ffi::c_void, pixelfmtdest: *const ::windows_core::GUID) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICComponentFactory(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICComponentFactory, IWICComponentFactory_Vtbl, 0x412d0c3a_9650_44fa_af5b_dd2a06c8e8fb);
 impl IWICComponentFactory {
     pub unsafe fn CreateDecoderFromFilename<P0>(&self, wzfilename: P0, pguidvendor: ::core::option::Option<*const ::windows_core::GUID>, dwdesiredaccess: super::super::Foundation::GENERIC_ACCESS_RIGHTS, metadataoptions: WICDecodeOptions) -> ::windows_core::Result<IWICBitmapDecoder>
     where
@@ -1285,12 +1147,6 @@ impl IWICComponentFactory {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICComponentFactory, ::windows_core::IUnknown, IWICImagingFactory);
-unsafe impl ::windows_core::Interface for IWICComponentFactory {
-    type Vtable = IWICComponentFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICComponentFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x412d0c3a_9650_44fa_af5b_dd2a06c8e8fb);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICComponentFactory_Vtbl {
@@ -1312,9 +1168,7 @@ pub struct IWICComponentFactory_Vtbl {
     #[cfg(not(all(feature = "Win32_System_Com_StructuredStorage", feature = "Win32_System_Variant")))]
     CreateEncoderPropertyBag: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICComponentInfo(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICComponentInfo, IWICComponentInfo_Vtbl, 0x23bc3f0a_698b_4357_886b_f24d50671334);
 impl IWICComponentInfo {
     pub unsafe fn GetComponentType(&self) -> ::windows_core::Result<WICComponentType> {
         let mut result__ = ::std::mem::zeroed();
@@ -1346,12 +1200,6 @@ impl IWICComponentInfo {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICComponentInfo, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICComponentInfo {
-    type Vtable = IWICComponentInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICComponentInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x23bc3f0a_698b_4357_886b_f24d50671334);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICComponentInfo_Vtbl {
@@ -1365,9 +1213,7 @@ pub struct IWICComponentInfo_Vtbl {
     pub GetSpecVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, cchspecversion: u32, wzspecversion: ::windows_core::PWSTR, pcchactual: *mut u32) -> ::windows_core::HRESULT,
     pub GetFriendlyName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, cchfriendlyname: u32, wzfriendlyname: ::windows_core::PWSTR, pcchactual: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICDdsDecoder(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICDdsDecoder, IWICDdsDecoder_Vtbl, 0x409cd537_8532_40cb_9774_e2feb2df4e9c);
 impl IWICDdsDecoder {
     #[doc = "Required features: `\"Win32_Graphics_Dxgi_Common\"`"]
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
@@ -1380,12 +1226,6 @@ impl IWICDdsDecoder {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICDdsDecoder, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICDdsDecoder {
-    type Vtable = IWICDdsDecoder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICDdsDecoder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x409cd537_8532_40cb_9774_e2feb2df4e9c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICDdsDecoder_Vtbl {
@@ -1396,9 +1236,7 @@ pub struct IWICDdsDecoder_Vtbl {
     GetParameters: usize,
     pub GetFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, arrayindex: u32, miplevel: u32, sliceindex: u32, ppibitmapframe: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICDdsEncoder(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICDdsEncoder, IWICDdsEncoder_Vtbl, 0x5cacdb4c_407e_41b3_b936_d0f010cd6732);
 impl IWICDdsEncoder {
     #[doc = "Required features: `\"Win32_Graphics_Dxgi_Common\"`"]
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
@@ -1415,12 +1253,6 @@ impl IWICDdsEncoder {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICDdsEncoder, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICDdsEncoder {
-    type Vtable = IWICDdsEncoder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICDdsEncoder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5cacdb4c_407e_41b3_b936_d0f010cd6732);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICDdsEncoder_Vtbl {
@@ -1435,9 +1267,7 @@ pub struct IWICDdsEncoder_Vtbl {
     GetParameters: usize,
     pub CreateNewFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppiframeencode: *mut *mut ::core::ffi::c_void, parrayindex: *mut u32, pmiplevel: *mut u32, psliceindex: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICDdsFrameDecode(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICDdsFrameDecode, IWICDdsFrameDecode_Vtbl, 0x3d4c0c61_18a4_41e4_bd80_481a4fc9f464);
 impl IWICDdsFrameDecode {
     pub unsafe fn GetSizeInBlocks(&self, pwidthinblocks: *mut u32, pheightinblocks: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).GetSizeInBlocks)(::windows_core::Interface::as_raw(self), pwidthinblocks, pheightinblocks).ok()
@@ -1453,12 +1283,6 @@ impl IWICDdsFrameDecode {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICDdsFrameDecode, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICDdsFrameDecode {
-    type Vtable = IWICDdsFrameDecode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICDdsFrameDecode {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3d4c0c61_18a4_41e4_bd80_481a4fc9f464);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICDdsFrameDecode_Vtbl {
@@ -1470,9 +1294,7 @@ pub struct IWICDdsFrameDecode_Vtbl {
     GetFormatInfo: usize,
     pub CopyBlocks: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, prcboundsinblocks: *const WICRect, cbstride: u32, cbbuffersize: u32, pbbuffer: *mut u8) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICDevelopRaw(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICDevelopRaw, IWICDevelopRaw_Vtbl, 0xfbec5e44_f7be_4b65_b7f8_c0c81fef026d);
 impl IWICDevelopRaw {
     pub unsafe fn GetSize(&self, puiwidth: *mut u32, puiheight: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.base__.GetSize)(::windows_core::Interface::as_raw(self), puiwidth, puiheight).ok()
@@ -1622,12 +1444,6 @@ impl IWICDevelopRaw {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICDevelopRaw, ::windows_core::IUnknown, IWICBitmapSource, IWICBitmapFrameDecode);
-unsafe impl ::windows_core::Interface for IWICDevelopRaw {
-    type Vtable = IWICDevelopRaw_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICDevelopRaw {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfbec5e44_f7be_4b65_b7f8_c0c81fef026d);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICDevelopRaw_Vtbl {
@@ -1668,30 +1484,20 @@ pub struct IWICDevelopRaw_Vtbl {
     pub GetRenderMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, prendermode: *mut WICRawRenderMode) -> ::windows_core::HRESULT,
     pub SetNotificationCallback: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pcallback: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICDevelopRawNotificationCallback(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICDevelopRawNotificationCallback, IWICDevelopRawNotificationCallback_Vtbl, 0x95c75a6e_3e8c_4ec2_85a8_aebcc551e59b);
 impl IWICDevelopRawNotificationCallback {
     pub unsafe fn Notify(&self, notificationmask: u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).Notify)(::windows_core::Interface::as_raw(self), notificationmask).ok()
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICDevelopRawNotificationCallback, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICDevelopRawNotificationCallback {
-    type Vtable = IWICDevelopRawNotificationCallback_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICDevelopRawNotificationCallback {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x95c75a6e_3e8c_4ec2_85a8_aebcc551e59b);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICDevelopRawNotificationCallback_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub Notify: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, notificationmask: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICEnumMetadataItem(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICEnumMetadataItem, IWICEnumMetadataItem_Vtbl, 0xdc2bb46d_3f07_481e_8625_220c4aedbb33);
 impl IWICEnumMetadataItem {
     #[doc = "Required features: `\"Win32_System_Com_StructuredStorage\"`, `\"Win32_System_Variant\"`"]
     #[cfg(all(feature = "Win32_System_Com_StructuredStorage", feature = "Win32_System_Variant"))]
@@ -1710,12 +1516,6 @@ impl IWICEnumMetadataItem {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICEnumMetadataItem, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICEnumMetadataItem {
-    type Vtable = IWICEnumMetadataItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICEnumMetadataItem {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdc2bb46d_3f07_481e_8625_220c4aedbb33);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICEnumMetadataItem_Vtbl {
@@ -1728,9 +1528,7 @@ pub struct IWICEnumMetadataItem_Vtbl {
     pub Reset: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppienummetadataitem: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICFastMetadataEncoder(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICFastMetadataEncoder, IWICFastMetadataEncoder_Vtbl, 0xb84e2c09_78c9_4ac4_8bd3_524ae1663a2f);
 impl IWICFastMetadataEncoder {
     pub unsafe fn Commit(&self) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).Commit)(::windows_core::Interface::as_raw(self)).ok()
@@ -1741,12 +1539,6 @@ impl IWICFastMetadataEncoder {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICFastMetadataEncoder, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICFastMetadataEncoder {
-    type Vtable = IWICFastMetadataEncoder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICFastMetadataEncoder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb84e2c09_78c9_4ac4_8bd3_524ae1663a2f);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICFastMetadataEncoder_Vtbl {
@@ -1754,9 +1546,7 @@ pub struct IWICFastMetadataEncoder_Vtbl {
     pub Commit: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetMetadataQueryWriter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppimetadataquerywriter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICFormatConverter(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICFormatConverter, IWICFormatConverter_Vtbl, 0x00000301_a8f2_4877_ba0a_fd2b6645fb94);
 impl IWICFormatConverter {
     pub unsafe fn GetSize(&self, puiwidth: *mut u32, puiheight: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.GetSize)(::windows_core::Interface::as_raw(self), puiwidth, puiheight).ok()
@@ -1790,12 +1580,6 @@ impl IWICFormatConverter {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICFormatConverter, ::windows_core::IUnknown, IWICBitmapSource);
-unsafe impl ::windows_core::Interface for IWICFormatConverter {
-    type Vtable = IWICFormatConverter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICFormatConverter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000301_a8f2_4877_ba0a_fd2b6645fb94);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICFormatConverter_Vtbl {
@@ -1803,9 +1587,7 @@ pub struct IWICFormatConverter_Vtbl {
     pub Initialize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pisource: *mut ::core::ffi::c_void, dstformat: *const ::windows_core::GUID, dither: WICBitmapDitherType, pipalette: *mut ::core::ffi::c_void, alphathresholdpercent: f64, palettetranslate: WICBitmapPaletteType) -> ::windows_core::HRESULT,
     pub CanConvert: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, srcpixelformat: *const ::windows_core::GUID, dstpixelformat: *const ::windows_core::GUID, pfcanconvert: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICFormatConverterInfo(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICFormatConverterInfo, IWICFormatConverterInfo_Vtbl, 0x9f34fb65_13f4_4f15_bc57_3726b5e53d9f);
 impl IWICFormatConverterInfo {
     pub unsafe fn GetComponentType(&self) -> ::windows_core::Result<WICComponentType> {
         let mut result__ = ::std::mem::zeroed();
@@ -1844,12 +1626,6 @@ impl IWICFormatConverterInfo {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICFormatConverterInfo, ::windows_core::IUnknown, IWICComponentInfo);
-unsafe impl ::windows_core::Interface for IWICFormatConverterInfo {
-    type Vtable = IWICFormatConverterInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICFormatConverterInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9f34fb65_13f4_4f15_bc57_3726b5e53d9f);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICFormatConverterInfo_Vtbl {
@@ -1857,9 +1633,7 @@ pub struct IWICFormatConverterInfo_Vtbl {
     pub GetPixelFormats: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, cformats: u32, ppixelformatguids: *mut ::windows_core::GUID, pcactual: *mut u32) -> ::windows_core::HRESULT,
     pub CreateInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppiconverter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICImagingFactory(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICImagingFactory, IWICImagingFactory_Vtbl, 0xec5ec8a9_c395_4314_9c77_54d7a935ff70);
 impl IWICImagingFactory {
     pub unsafe fn CreateDecoderFromFilename<P0>(&self, wzfilename: P0, pguidvendor: ::core::option::Option<*const ::windows_core::GUID>, dwdesiredaccess: super::super::Foundation::GENERIC_ACCESS_RIGHTS, metadataoptions: WICDecodeOptions) -> ::windows_core::Result<IWICBitmapDecoder>
     where
@@ -2001,12 +1775,6 @@ impl IWICImagingFactory {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICImagingFactory, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICImagingFactory {
-    type Vtable = IWICImagingFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICImagingFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xec5ec8a9_c395_4314_9c77_54d7a935ff70);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICImagingFactory_Vtbl {
@@ -2052,9 +1820,7 @@ pub struct IWICImagingFactory_Vtbl {
     pub CreateQueryWriter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, guidmetadataformat: *const ::windows_core::GUID, pguidvendor: *const ::windows_core::GUID, ppiquerywriter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateQueryWriterFromReader: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, piqueryreader: *mut ::core::ffi::c_void, pguidvendor: *const ::windows_core::GUID, ppiquerywriter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICJpegFrameDecode(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICJpegFrameDecode, IWICJpegFrameDecode_Vtbl, 0x8939f66e_c46a_4c21_a9d1_98b327ce1679);
 impl IWICJpegFrameDecode {
     pub unsafe fn DoesSupportIndexing(&self) -> ::windows_core::Result<super::super::Foundation::BOOL> {
         let mut result__ = ::std::mem::zeroed();
@@ -2095,12 +1861,6 @@ impl IWICJpegFrameDecode {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICJpegFrameDecode, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICJpegFrameDecode {
-    type Vtable = IWICJpegFrameDecode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICJpegFrameDecode {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8939f66e_c46a_4c21_a9d1_98b327ce1679);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICJpegFrameDecode_Vtbl {
@@ -2125,9 +1885,7 @@ pub struct IWICJpegFrameDecode_Vtbl {
     pub CopyScan: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, scanindex: u32, scanoffset: u32, cbscandata: u32, pbscandata: *mut u8, pcbscandataactual: *mut u32) -> ::windows_core::HRESULT,
     pub CopyMinimalStream: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, streamoffset: u32, cbstreamdata: u32, pbstreamdata: *mut u8, pcbstreamdataactual: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICJpegFrameEncode(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICJpegFrameEncode, IWICJpegFrameEncode_Vtbl, 0x2f0c601f_d2c6_468c_abfa_49495d983ed1);
 impl IWICJpegFrameEncode {
     #[doc = "Required features: `\"Win32_Graphics_Dxgi_Common\"`"]
     #[cfg(feature = "Win32_Graphics_Dxgi_Common")]
@@ -2149,12 +1907,6 @@ impl IWICJpegFrameEncode {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICJpegFrameEncode, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICJpegFrameEncode {
-    type Vtable = IWICJpegFrameEncode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICJpegFrameEncode {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2f0c601f_d2c6_468c_abfa_49495d983ed1);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICJpegFrameEncode_Vtbl {
@@ -2173,9 +1925,7 @@ pub struct IWICJpegFrameEncode_Vtbl {
     GetQuantizationTable: usize,
     pub WriteScan: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, cbscandata: u32, pbscandata: *const u8) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICMetadataBlockReader(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICMetadataBlockReader, IWICMetadataBlockReader_Vtbl, 0xfeaa2a8d_b3f3_43e4_b25c_d1de990a1ae1);
 impl IWICMetadataBlockReader {
     pub unsafe fn GetContainerFormat(&self) -> ::windows_core::Result<::windows_core::GUID> {
         let mut result__ = ::std::mem::zeroed();
@@ -2197,12 +1947,6 @@ impl IWICMetadataBlockReader {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICMetadataBlockReader, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICMetadataBlockReader {
-    type Vtable = IWICMetadataBlockReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICMetadataBlockReader {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfeaa2a8d_b3f3_43e4_b25c_d1de990a1ae1);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICMetadataBlockReader_Vtbl {
@@ -2215,9 +1959,7 @@ pub struct IWICMetadataBlockReader_Vtbl {
     #[cfg(not(feature = "Win32_System_Com"))]
     GetEnumerator: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICMetadataBlockWriter(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICMetadataBlockWriter, IWICMetadataBlockWriter_Vtbl, 0x08fb9676_b444_41e8_8dbe_6a53a542bff1);
 impl IWICMetadataBlockWriter {
     pub unsafe fn GetContainerFormat(&self) -> ::windows_core::Result<::windows_core::GUID> {
         let mut result__ = ::std::mem::zeroed();
@@ -2264,12 +2006,6 @@ impl IWICMetadataBlockWriter {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICMetadataBlockWriter, ::windows_core::IUnknown, IWICMetadataBlockReader);
-unsafe impl ::windows_core::Interface for IWICMetadataBlockWriter {
-    type Vtable = IWICMetadataBlockWriter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICMetadataBlockWriter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x08fb9676_b444_41e8_8dbe_6a53a542bff1);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICMetadataBlockWriter_Vtbl {
@@ -2280,9 +2016,7 @@ pub struct IWICMetadataBlockWriter_Vtbl {
     pub SetWriterByIndex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, nindex: u32, pimetadatawriter: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RemoveWriterByIndex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, nindex: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICMetadataHandlerInfo(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICMetadataHandlerInfo, IWICMetadataHandlerInfo_Vtbl, 0xaba958bf_c672_44d1_8d61_ce6df2e682c2);
 impl IWICMetadataHandlerInfo {
     pub unsafe fn GetComponentType(&self) -> ::windows_core::Result<WICComponentType> {
         let mut result__ = ::std::mem::zeroed();
@@ -2339,12 +2073,6 @@ impl IWICMetadataHandlerInfo {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICMetadataHandlerInfo, ::windows_core::IUnknown, IWICComponentInfo);
-unsafe impl ::windows_core::Interface for IWICMetadataHandlerInfo {
-    type Vtable = IWICMetadataHandlerInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICMetadataHandlerInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaba958bf_c672_44d1_8d61_ce6df2e682c2);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICMetadataHandlerInfo_Vtbl {
@@ -2357,9 +2085,7 @@ pub struct IWICMetadataHandlerInfo_Vtbl {
     pub DoesSupportPadding: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pfsupportspadding: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
     pub DoesRequireFixedSize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pffixedsize: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICMetadataQueryReader(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICMetadataQueryReader, IWICMetadataQueryReader_Vtbl, 0x30989668_e1c9_4597_b395_458eedb808df);
 impl IWICMetadataQueryReader {
     pub unsafe fn GetContainerFormat(&self) -> ::windows_core::Result<::windows_core::GUID> {
         let mut result__ = ::std::mem::zeroed();
@@ -2384,12 +2110,6 @@ impl IWICMetadataQueryReader {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICMetadataQueryReader, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICMetadataQueryReader {
-    type Vtable = IWICMetadataQueryReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICMetadataQueryReader {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x30989668_e1c9_4597_b395_458eedb808df);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICMetadataQueryReader_Vtbl {
@@ -2405,9 +2125,7 @@ pub struct IWICMetadataQueryReader_Vtbl {
     #[cfg(not(feature = "Win32_System_Com"))]
     GetEnumerator: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICMetadataQueryWriter(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICMetadataQueryWriter, IWICMetadataQueryWriter_Vtbl, 0xa721791a_0def_4d06_bd91_2118bf1db10b);
 impl IWICMetadataQueryWriter {
     pub unsafe fn GetContainerFormat(&self) -> ::windows_core::Result<::windows_core::GUID> {
         let mut result__ = ::std::mem::zeroed();
@@ -2446,12 +2164,6 @@ impl IWICMetadataQueryWriter {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICMetadataQueryWriter, ::windows_core::IUnknown, IWICMetadataQueryReader);
-unsafe impl ::windows_core::Interface for IWICMetadataQueryWriter {
-    type Vtable = IWICMetadataQueryWriter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICMetadataQueryWriter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa721791a_0def_4d06_bd91_2118bf1db10b);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICMetadataQueryWriter_Vtbl {
@@ -2462,9 +2174,7 @@ pub struct IWICMetadataQueryWriter_Vtbl {
     SetMetadataByName: usize,
     pub RemoveMetadataByName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, wzname: ::windows_core::PCWSTR) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICMetadataReader(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICMetadataReader, IWICMetadataReader_Vtbl, 0x9204fe99_d8fc_4fd5_a001_9536b067a899);
 impl IWICMetadataReader {
     pub unsafe fn GetMetadataFormat(&self) -> ::windows_core::Result<::windows_core::GUID> {
         let mut result__ = ::std::mem::zeroed();
@@ -2494,12 +2204,6 @@ impl IWICMetadataReader {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICMetadataReader, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICMetadataReader {
-    type Vtable = IWICMetadataReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICMetadataReader {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9204fe99_d8fc_4fd5_a001_9536b067a899);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICMetadataReader_Vtbl {
@@ -2517,9 +2221,7 @@ pub struct IWICMetadataReader_Vtbl {
     GetValue: usize,
     pub GetEnumerator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppienummetadata: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICMetadataReaderInfo(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICMetadataReaderInfo, IWICMetadataReaderInfo_Vtbl, 0xeebf1f5b_07c1_4447_a3ab_22acaf78a804);
 impl IWICMetadataReaderInfo {
     pub unsafe fn GetComponentType(&self) -> ::windows_core::Result<WICComponentType> {
         let mut result__ = ::std::mem::zeroed();
@@ -2592,12 +2294,6 @@ impl IWICMetadataReaderInfo {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICMetadataReaderInfo, ::windows_core::IUnknown, IWICComponentInfo, IWICMetadataHandlerInfo);
-unsafe impl ::windows_core::Interface for IWICMetadataReaderInfo {
-    type Vtable = IWICMetadataReaderInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICMetadataReaderInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xeebf1f5b_07c1_4447_a3ab_22acaf78a804);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICMetadataReaderInfo_Vtbl {
@@ -2609,9 +2305,7 @@ pub struct IWICMetadataReaderInfo_Vtbl {
     MatchesPattern: usize,
     pub CreateInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppireader: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICMetadataWriter(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICMetadataWriter, IWICMetadataWriter_Vtbl, 0xf7836e16_3be0_470b_86bb_160d0aecd7de);
 impl IWICMetadataWriter {
     pub unsafe fn GetMetadataFormat(&self) -> ::windows_core::Result<::windows_core::GUID> {
         let mut result__ = ::std::mem::zeroed();
@@ -2659,12 +2353,6 @@ impl IWICMetadataWriter {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICMetadataWriter, ::windows_core::IUnknown, IWICMetadataReader);
-unsafe impl ::windows_core::Interface for IWICMetadataWriter {
-    type Vtable = IWICMetadataWriter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICMetadataWriter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf7836e16_3be0_470b_86bb_160d0aecd7de);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICMetadataWriter_Vtbl {
@@ -2683,9 +2371,7 @@ pub struct IWICMetadataWriter_Vtbl {
     RemoveValue: usize,
     pub RemoveValueByIndex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, nindex: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICMetadataWriterInfo(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICMetadataWriterInfo, IWICMetadataWriterInfo_Vtbl, 0xb22e3fba_3925_4323_b5c1_9ebfc430f236);
 impl IWICMetadataWriterInfo {
     pub unsafe fn GetComponentType(&self) -> ::windows_core::Result<WICComponentType> {
         let mut result__ = ::std::mem::zeroed();
@@ -2749,12 +2435,6 @@ impl IWICMetadataWriterInfo {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICMetadataWriterInfo, ::windows_core::IUnknown, IWICComponentInfo, IWICMetadataHandlerInfo);
-unsafe impl ::windows_core::Interface for IWICMetadataWriterInfo {
-    type Vtable = IWICMetadataWriterInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICMetadataWriterInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb22e3fba_3925_4323_b5c1_9ebfc430f236);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICMetadataWriterInfo_Vtbl {
@@ -2762,9 +2442,7 @@ pub struct IWICMetadataWriterInfo_Vtbl {
     pub GetHeader: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, guidcontainerformat: *const ::windows_core::GUID, cbsize: u32, pheader: *mut WICMetadataHeader, pcbactual: *mut u32) -> ::windows_core::HRESULT,
     pub CreateInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppiwriter: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICPalette(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICPalette, IWICPalette_Vtbl, 0x00000040_a8f2_4877_ba0a_fd2b6645fb94);
 impl IWICPalette {
     pub unsafe fn InitializePredefined<P0>(&self, epalettetype: WICBitmapPaletteType, faddtransparentcolor: P0) -> ::windows_core::Result<()>
     where
@@ -2813,12 +2491,6 @@ impl IWICPalette {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICPalette, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICPalette {
-    type Vtable = IWICPalette_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICPalette {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000040_a8f2_4877_ba0a_fd2b6645fb94);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICPalette_Vtbl {
@@ -2834,11 +2506,8 @@ pub struct IWICPalette_Vtbl {
     pub IsGrayscale: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pfisgrayscale: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
     pub HasAlpha: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pfhasalpha: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
-#[doc = "Required features: `\"Win32_System_Com\"`"]
 #[cfg(feature = "Win32_System_Com")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICPersistStream(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICPersistStream, IWICPersistStream_Vtbl, 0x00675040_6908_45f8_86a3_49c7dfd6d9ad);
 #[cfg(feature = "Win32_System_Com")]
 impl IWICPersistStream {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -2896,14 +2565,6 @@ impl IWICPersistStream {
 #[cfg(feature = "Win32_System_Com")]
 ::windows_core::imp::interface_hierarchy!(IWICPersistStream, ::windows_core::IUnknown, super::super::System::Com::IPersist, super::super::System::Com::IPersistStream);
 #[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::Interface for IWICPersistStream {
-    type Vtable = IWICPersistStream_Vtbl;
-}
-#[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::ComInterface for IWICPersistStream {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00675040_6908_45f8_86a3_49c7dfd6d9ad);
-}
-#[cfg(feature = "Win32_System_Com")]
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICPersistStream_Vtbl {
@@ -2917,9 +2578,7 @@ pub struct IWICPersistStream_Vtbl {
     #[cfg(not(feature = "Win32_System_Com"))]
     SaveEx: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICPixelFormatInfo(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICPixelFormatInfo, IWICPixelFormatInfo_Vtbl, 0xe8eda601_3d48_431a_ab44_69059be88bbe);
 impl IWICPixelFormatInfo {
     pub unsafe fn GetComponentType(&self) -> ::windows_core::Result<WICComponentType> {
         let mut result__ = ::std::mem::zeroed();
@@ -2970,12 +2629,6 @@ impl IWICPixelFormatInfo {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICPixelFormatInfo, ::windows_core::IUnknown, IWICComponentInfo);
-unsafe impl ::windows_core::Interface for IWICPixelFormatInfo {
-    type Vtable = IWICPixelFormatInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICPixelFormatInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe8eda601_3d48_431a_ab44_69059be88bbe);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICPixelFormatInfo_Vtbl {
@@ -2986,9 +2639,7 @@ pub struct IWICPixelFormatInfo_Vtbl {
     pub GetChannelCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, puichannelcount: *mut u32) -> ::windows_core::HRESULT,
     pub GetChannelMask: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, uichannelindex: u32, cbmaskbuffer: u32, pbmaskbuffer: *mut u8, pcbactual: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICPixelFormatInfo2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICPixelFormatInfo2, IWICPixelFormatInfo2_Vtbl, 0xa9db33a2_af5f_43c7_b679_74f5984b5aa4);
 impl IWICPixelFormatInfo2 {
     pub unsafe fn GetComponentType(&self) -> ::windows_core::Result<WICComponentType> {
         let mut result__ = ::std::mem::zeroed();
@@ -3047,12 +2698,6 @@ impl IWICPixelFormatInfo2 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICPixelFormatInfo2, ::windows_core::IUnknown, IWICComponentInfo, IWICPixelFormatInfo);
-unsafe impl ::windows_core::Interface for IWICPixelFormatInfo2 {
-    type Vtable = IWICPixelFormatInfo2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICPixelFormatInfo2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa9db33a2_af5f_43c7_b679_74f5984b5aa4);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICPixelFormatInfo2_Vtbl {
@@ -3060,9 +2705,7 @@ pub struct IWICPixelFormatInfo2_Vtbl {
     pub SupportsTransparency: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pfsupportstransparency: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
     pub GetNumericRepresentation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pnumericrepresentation: *mut WICPixelFormatNumericRepresentation) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICPlanarBitmapFrameEncode(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICPlanarBitmapFrameEncode, IWICPlanarBitmapFrameEncode_Vtbl, 0xf928b7b8_2221_40c1_b72e_7e82f1974d1a);
 impl IWICPlanarBitmapFrameEncode {
     pub unsafe fn WritePixels(&self, linecount: u32, pplanes: &[WICBitmapPlane]) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).WritePixels)(::windows_core::Interface::as_raw(self), linecount, ::core::mem::transmute(pplanes.as_ptr()), pplanes.len().try_into().unwrap()).ok()
@@ -3072,12 +2715,6 @@ impl IWICPlanarBitmapFrameEncode {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICPlanarBitmapFrameEncode, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICPlanarBitmapFrameEncode {
-    type Vtable = IWICPlanarBitmapFrameEncode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICPlanarBitmapFrameEncode {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf928b7b8_2221_40c1_b72e_7e82f1974d1a);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICPlanarBitmapFrameEncode_Vtbl {
@@ -3085,9 +2722,7 @@ pub struct IWICPlanarBitmapFrameEncode_Vtbl {
     pub WritePixels: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, linecount: u32, pplanes: *const WICBitmapPlane, cplanes: u32) -> ::windows_core::HRESULT,
     pub WriteSource: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppplanes: *const *mut ::core::ffi::c_void, cplanes: u32, prcsource: *const WICRect) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICPlanarBitmapSourceTransform(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICPlanarBitmapSourceTransform, IWICPlanarBitmapSourceTransform_Vtbl, 0x3aff9cce_be95_4303_b927_e7d16ff4a613);
 impl IWICPlanarBitmapSourceTransform {
     pub unsafe fn DoesSupportTransform(&self, puiwidth: *mut u32, puiheight: *mut u32, dsttransform: WICBitmapTransformOptions, dstplanaroptions: WICPlanarOptions, pguiddstformats: *const ::windows_core::GUID, pplanedescriptions: *mut WICBitmapPlaneDescription, cplanes: u32, pfissupported: *mut super::super::Foundation::BOOL) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).DoesSupportTransform)(::windows_core::Interface::as_raw(self), puiwidth, puiheight, dsttransform, dstplanaroptions, pguiddstformats, pplanedescriptions, cplanes, pfissupported).ok()
@@ -3097,12 +2732,6 @@ impl IWICPlanarBitmapSourceTransform {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICPlanarBitmapSourceTransform, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICPlanarBitmapSourceTransform {
-    type Vtable = IWICPlanarBitmapSourceTransform_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICPlanarBitmapSourceTransform {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3aff9cce_be95_4303_b927_e7d16ff4a613);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICPlanarBitmapSourceTransform_Vtbl {
@@ -3110,9 +2739,7 @@ pub struct IWICPlanarBitmapSourceTransform_Vtbl {
     pub DoesSupportTransform: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, puiwidth: *mut u32, puiheight: *mut u32, dsttransform: WICBitmapTransformOptions, dstplanaroptions: WICPlanarOptions, pguiddstformats: *const ::windows_core::GUID, pplanedescriptions: *mut WICBitmapPlaneDescription, cplanes: u32, pfissupported: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
     pub CopyPixels: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, prcsource: *const WICRect, uiwidth: u32, uiheight: u32, dsttransform: WICBitmapTransformOptions, dstplanaroptions: WICPlanarOptions, pdstplanes: *const WICBitmapPlane, cplanes: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICPlanarFormatConverter(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICPlanarFormatConverter, IWICPlanarFormatConverter_Vtbl, 0xbebee9cb_83b0_4dcc_8132_b0aaa55eac96);
 impl IWICPlanarFormatConverter {
     pub unsafe fn GetSize(&self, puiwidth: *mut u32, puiheight: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.GetSize)(::windows_core::Interface::as_raw(self), puiwidth, puiheight).ok()
@@ -3145,12 +2772,6 @@ impl IWICPlanarFormatConverter {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICPlanarFormatConverter, ::windows_core::IUnknown, IWICBitmapSource);
-unsafe impl ::windows_core::Interface for IWICPlanarFormatConverter {
-    type Vtable = IWICPlanarFormatConverter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICPlanarFormatConverter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbebee9cb_83b0_4dcc_8132_b0aaa55eac96);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICPlanarFormatConverter_Vtbl {
@@ -3158,30 +2779,20 @@ pub struct IWICPlanarFormatConverter_Vtbl {
     pub Initialize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppplanes: *const *mut ::core::ffi::c_void, cplanes: u32, dstformat: *const ::windows_core::GUID, dither: WICBitmapDitherType, pipalette: *mut ::core::ffi::c_void, alphathresholdpercent: f64, palettetranslate: WICBitmapPaletteType) -> ::windows_core::HRESULT,
     pub CanConvert: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, psrcpixelformats: *const ::windows_core::GUID, csrcplanes: u32, dstpixelformat: *const ::windows_core::GUID, pfcanconvert: *mut super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICProgressCallback(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICProgressCallback, IWICProgressCallback_Vtbl, 0x4776f9cd_9517_45fa_bf24_e89c5ec5c60c);
 impl IWICProgressCallback {
     pub unsafe fn Notify(&self, uframenum: u32, operation: WICProgressOperation, dblprogress: f64) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).Notify)(::windows_core::Interface::as_raw(self), uframenum, operation, dblprogress).ok()
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICProgressCallback, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICProgressCallback {
-    type Vtable = IWICProgressCallback_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICProgressCallback {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4776f9cd_9517_45fa_bf24_e89c5ec5c60c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICProgressCallback_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub Notify: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, uframenum: u32, operation: WICProgressOperation, dblprogress: f64) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICProgressiveLevelControl(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICProgressiveLevelControl, IWICProgressiveLevelControl_Vtbl, 0xdaac296f_7aa5_4dbf_8d15_225c5976f891);
 impl IWICProgressiveLevelControl {
     pub unsafe fn GetLevelCount(&self) -> ::windows_core::Result<u32> {
         let mut result__ = ::std::mem::zeroed();
@@ -3196,12 +2807,6 @@ impl IWICProgressiveLevelControl {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICProgressiveLevelControl, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICProgressiveLevelControl {
-    type Vtable = IWICProgressiveLevelControl_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICProgressiveLevelControl {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdaac296f_7aa5_4dbf_8d15_225c5976f891);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICProgressiveLevelControl_Vtbl {
@@ -3210,11 +2815,8 @@ pub struct IWICProgressiveLevelControl_Vtbl {
     pub GetCurrentLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pnlevel: *mut u32) -> ::windows_core::HRESULT,
     pub SetCurrentLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, nlevel: u32) -> ::windows_core::HRESULT,
 }
-#[doc = "Required features: `\"Win32_System_Com\"`"]
 #[cfg(feature = "Win32_System_Com")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICStream(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICStream, IWICStream_Vtbl, 0x135ff860_22b7_4ddf_b0f6_218f4f299a43);
 #[cfg(feature = "Win32_System_Com")]
 impl IWICStream {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -3305,14 +2907,6 @@ impl IWICStream {
 #[cfg(feature = "Win32_System_Com")]
 ::windows_core::imp::interface_hierarchy!(IWICStream, ::windows_core::IUnknown, super::super::System::Com::ISequentialStream, super::super::System::Com::IStream);
 #[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::Interface for IWICStream {
-    type Vtable = IWICStream_Vtbl;
-}
-#[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::ComInterface for IWICStream {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x135ff860_22b7_4ddf_b0f6_218f4f299a43);
-}
-#[cfg(feature = "Win32_System_Com")]
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICStream_Vtbl {
@@ -3328,9 +2922,7 @@ pub struct IWICStream_Vtbl {
     #[cfg(not(feature = "Win32_System_Com"))]
     InitializeFromIStreamRegion: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWICStreamProvider(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWICStreamProvider, IWICStreamProvider_Vtbl, 0x449494bc_b468_4927_96d7_ba90d31ab505);
 impl IWICStreamProvider {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
     #[cfg(feature = "Win32_System_Com")]
@@ -3351,12 +2943,6 @@ impl IWICStreamProvider {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWICStreamProvider, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWICStreamProvider {
-    type Vtable = IWICStreamProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWICStreamProvider {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x449494bc_b468_4927_96d7_ba90d31ab505);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWICStreamProvider_Vtbl {

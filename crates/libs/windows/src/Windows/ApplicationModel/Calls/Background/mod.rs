@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneCallBlockedTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPhoneCallBlockedTriggerDetails {
-    type Vtable = IPhoneCallBlockedTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPhoneCallBlockedTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa4a690a2_e4c1_427f_864e_e470477ddb67);
-}
+::windows_core::imp::com_interface!(IPhoneCallBlockedTriggerDetails, IPhoneCallBlockedTriggerDetails_Vtbl, 0xa4a690a2_e4c1_427f_864e_e470477ddb67);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPhoneCallBlockedTriggerDetails_Vtbl {
@@ -16,19 +7,8 @@ pub struct IPhoneCallBlockedTriggerDetails_Vtbl {
     pub LineId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
     pub CallBlockedReason: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut PhoneCallBlockedReason) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
 #[cfg(feature = "deprecated")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneCallOriginDataRequestTriggerDetails(::windows_core::IUnknown);
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::Interface for IPhoneCallOriginDataRequestTriggerDetails {
-    type Vtable = IPhoneCallOriginDataRequestTriggerDetails_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for IPhoneCallOriginDataRequestTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6e9b5b3f_c54b_4e82_4cc9_e329a4184592);
-}
+::windows_core::imp::com_interface!(IPhoneCallOriginDataRequestTriggerDetails, IPhoneCallOriginDataRequestTriggerDetails_Vtbl, 0x6e9b5b3f_c54b_4e82_4cc9_e329a4184592);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -43,19 +23,8 @@ pub struct IPhoneCallOriginDataRequestTriggerDetails_Vtbl {
     #[cfg(not(feature = "deprecated"))]
     PhoneNumber: usize,
 }
-#[doc(hidden)]
 #[cfg(feature = "deprecated")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneIncomingCallDismissedTriggerDetails(::windows_core::IUnknown);
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::Interface for IPhoneIncomingCallDismissedTriggerDetails {
-    type Vtable = IPhoneIncomingCallDismissedTriggerDetails_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for IPhoneIncomingCallDismissedTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbad30276_83b6_5732_9c38_0c206546196a);
-}
+::windows_core::imp::com_interface!(IPhoneIncomingCallDismissedTriggerDetails, IPhoneIncomingCallDismissedTriggerDetails_Vtbl, 0xbad30276_83b6_5732_9c38_0c206546196a);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -86,16 +55,7 @@ pub struct IPhoneIncomingCallDismissedTriggerDetails_Vtbl {
     #[cfg(not(feature = "deprecated"))]
     Reason: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneIncomingCallNotificationTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPhoneIncomingCallNotificationTriggerDetails {
-    type Vtable = IPhoneIncomingCallNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPhoneIncomingCallNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2b0e6044_9b32_5d42_8222_d2812e39fb21);
-}
+::windows_core::imp::com_interface!(IPhoneIncomingCallNotificationTriggerDetails, IPhoneIncomingCallNotificationTriggerDetails_Vtbl, 0x2b0e6044_9b32_5d42_8222_d2812e39fb21);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPhoneIncomingCallNotificationTriggerDetails_Vtbl {
@@ -103,16 +63,7 @@ pub struct IPhoneIncomingCallNotificationTriggerDetails_Vtbl {
     pub LineId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
     pub CallId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneLineChangedTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPhoneLineChangedTriggerDetails {
-    type Vtable = IPhoneLineChangedTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPhoneLineChangedTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc6d321e7_d11d_40d8_b2b7_e40a01d66249);
-}
+::windows_core::imp::com_interface!(IPhoneLineChangedTriggerDetails, IPhoneLineChangedTriggerDetails_Vtbl, 0xc6d321e7_d11d_40d8_b2b7_e40a01d66249);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPhoneLineChangedTriggerDetails_Vtbl {
@@ -121,16 +72,7 @@ pub struct IPhoneLineChangedTriggerDetails_Vtbl {
     pub ChangeType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut PhoneLineChangeKind) -> ::windows_core::HRESULT,
     pub HasLinePropertyChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, lineproperty: PhoneLineProperties, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPhoneNewVoicemailMessageTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPhoneNewVoicemailMessageTriggerDetails {
-    type Vtable = IPhoneNewVoicemailMessageTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPhoneNewVoicemailMessageTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x13a8c01b_b831_48d3_8ba9_8d22a6580dcf);
-}
+::windows_core::imp::com_interface!(IPhoneNewVoicemailMessageTriggerDetails, IPhoneNewVoicemailMessageTriggerDetails_Vtbl, 0x13a8c01b_b831_48d3_8ba9_8d22a6580dcf);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPhoneNewVoicemailMessageTriggerDetails_Vtbl {

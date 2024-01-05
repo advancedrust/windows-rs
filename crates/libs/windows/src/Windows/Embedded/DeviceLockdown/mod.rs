@@ -1,29 +1,11 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeviceLockdownProfileInformation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDeviceLockdownProfileInformation {
-    type Vtable = IDeviceLockdownProfileInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDeviceLockdownProfileInformation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7980e14e_45b1_4a96_92fc_62756b739678);
-}
+::windows_core::imp::com_interface!(IDeviceLockdownProfileInformation, IDeviceLockdownProfileInformation_Vtbl, 0x7980e14e_45b1_4a96_92fc_62756b739678);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDeviceLockdownProfileInformation_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Name: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDeviceLockdownProfileStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDeviceLockdownProfileStatics {
-    type Vtable = IDeviceLockdownProfileStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDeviceLockdownProfileStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x622f6965_f9a8_41a1_a691_88cd80c7a069);
-}
+::windows_core::imp::com_interface!(IDeviceLockdownProfileStatics, IDeviceLockdownProfileStatics_Vtbl, 0x622f6965_f9a8_41a1_a691_88cd80c7a069);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDeviceLockdownProfileStatics_Vtbl {

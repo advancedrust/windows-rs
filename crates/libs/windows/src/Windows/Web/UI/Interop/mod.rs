@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebViewControlAcceleratorKeyPressedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebViewControlAcceleratorKeyPressedEventArgs {
-    type Vtable = IWebViewControlAcceleratorKeyPressedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebViewControlAcceleratorKeyPressedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x77a2a53e_7c74_437d_a290_3ac0d8cd5655);
-}
+::windows_core::imp::com_interface!(IWebViewControlAcceleratorKeyPressedEventArgs, IWebViewControlAcceleratorKeyPressedEventArgs_Vtbl, 0x77a2a53e_7c74_437d_a290_3ac0d8cd5655);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebViewControlAcceleratorKeyPressedEventArgs_Vtbl {
@@ -28,32 +19,14 @@ pub struct IWebViewControlAcceleratorKeyPressedEventArgs_Vtbl {
     pub Handled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetHandled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebViewControlMoveFocusRequestedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebViewControlMoveFocusRequestedEventArgs {
-    type Vtable = IWebViewControlMoveFocusRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebViewControlMoveFocusRequestedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6b2a340d_4bd0_405e_b7c1_1e72a492f446);
-}
+::windows_core::imp::com_interface!(IWebViewControlMoveFocusRequestedEventArgs, IWebViewControlMoveFocusRequestedEventArgs_Vtbl, 0x6b2a340d_4bd0_405e_b7c1_1e72a492f446);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebViewControlMoveFocusRequestedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Reason: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut WebViewControlMoveFocusReason) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebViewControlProcess(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebViewControlProcess {
-    type Vtable = IWebViewControlProcess_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebViewControlProcess {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x02c723ec_98d6_424a_b63e_c6136c36a0f2);
-}
+::windows_core::imp::com_interface!(IWebViewControlProcess, IWebViewControlProcess_Vtbl, 0x02c723ec_98d6_424a_b63e_c6136c36a0f2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebViewControlProcess_Vtbl {
@@ -70,32 +43,14 @@ pub struct IWebViewControlProcess_Vtbl {
     pub ProcessExited: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveProcessExited: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebViewControlProcessFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebViewControlProcessFactory {
-    type Vtable = IWebViewControlProcessFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebViewControlProcessFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x47b65cf9_a2d2_453c_b097_f6779d4b8e02);
-}
+::windows_core::imp::com_interface!(IWebViewControlProcessFactory, IWebViewControlProcessFactory_Vtbl, 0x47b65cf9_a2d2_453c_b097_f6779d4b8e02);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebViewControlProcessFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateWithOptions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, processoptions: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebViewControlProcessOptions(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebViewControlProcessOptions {
-    type Vtable = IWebViewControlProcessOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebViewControlProcessOptions {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1cca72a7_3bd6_4826_8261_6c8189505d89);
-}
+::windows_core::imp::com_interface!(IWebViewControlProcessOptions, IWebViewControlProcessOptions_Vtbl, 0x1cca72a7_3bd6_4826_8261_6c8189505d89);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebViewControlProcessOptions_Vtbl {
@@ -105,16 +60,7 @@ pub struct IWebViewControlProcessOptions_Vtbl {
     pub SetPrivateNetworkClientServerCapability: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: WebViewControlProcessCapabilityState) -> ::windows_core::HRESULT,
     pub PrivateNetworkClientServerCapability: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut WebViewControlProcessCapabilityState) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebViewControlSite(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebViewControlSite {
-    type Vtable = IWebViewControlSite_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebViewControlSite {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x133f47c6_12dc_4898_bd47_04967de648ba);
-}
+::windows_core::imp::com_interface!(IWebViewControlSite, IWebViewControlSite_Vtbl, 0x133f47c6_12dc_4898_bd47_04967de648ba);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebViewControlSite_Vtbl {
@@ -133,16 +79,7 @@ pub struct IWebViewControlSite_Vtbl {
     pub AcceleratorKeyPressed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveAcceleratorKeyPressed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWebViewControlSite2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWebViewControlSite2 {
-    type Vtable = IWebViewControlSite2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWebViewControlSite2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd13b2e3f_48ee_4730_8243_d2ed0c05606a);
-}
+::windows_core::imp::com_interface!(IWebViewControlSite2, IWebViewControlSite2_Vtbl, 0xd13b2e3f_48ee_4730_8243_d2ed0c05606a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWebViewControlSite2_Vtbl {
@@ -259,10 +196,10 @@ impl WebViewControl {
     pub fn NavigateToLocalStreamUri<P0, P1>(&self, source: P0, streamresolver: P1) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::Uri>,
-        P1: ::windows_core::TryIntoParam<super::super::IUriToStreamResolver>,
+        P1: ::windows_core::IntoParam<super::super::IUriToStreamResolver>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).NavigateToLocalStreamUri)(::windows_core::Interface::as_raw(this), source.into_param().abi(), streamresolver.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).NavigateToLocalStreamUri)(::windows_core::Interface::as_raw(this), source.into_param().abi(), streamresolver.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Web_Http\"`"]
     #[cfg(feature = "Web_Http")]
@@ -277,24 +214,24 @@ impl WebViewControl {
     #[cfg(feature = "Foundation_Collections")]
     pub fn InvokeScriptAsync<P0>(&self, scriptname: &::windows_core::HSTRING, arguments: P0) -> ::windows_core::Result<super::super::super::Foundation::IAsyncOperation<::windows_core::HSTRING>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).InvokeScriptAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(scriptname), arguments.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).InvokeScriptAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(scriptname), arguments.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn CapturePreviewToStreamAsync<P0>(&self, stream: P0) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Storage::Streams::IRandomAccessStream>,
+        P0: ::windows_core::IntoParam<super::super::super::Storage::Streams::IRandomAccessStream>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CapturePreviewToStreamAsync)(::windows_core::Interface::as_raw(this), stream.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CapturePreviewToStreamAsync)(::windows_core::Interface::as_raw(this), stream.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"ApplicationModel_DataTransfer\"`"]
@@ -677,8 +614,7 @@ impl ::windows_core::RuntimeName for WebViewControl {
     const NAME: &'static str = "Windows.Web.UI.Interop.WebViewControl";
 }
 ::windows_core::imp::interface_hierarchy!(WebViewControl, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::IWebViewControl> for WebViewControl {}
-impl ::windows_core::CanTryInto<super::IWebViewControl2> for WebViewControl {}
+::windows_core::imp::required_hierarchy!(WebViewControl, super::IWebViewControl, super::IWebViewControl2);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct WebViewControlAcceleratorKeyPressedEventArgs(::windows_core::IUnknown);

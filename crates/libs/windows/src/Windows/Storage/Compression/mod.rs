@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompressor(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompressor {
-    type Vtable = ICompressor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompressor {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0ac3645a_57ac_4ee1_b702_84d39d5424e0);
-}
+::windows_core::imp::com_interface!(ICompressor, ICompressor_Vtbl, 0x0ac3645a_57ac_4ee1_b702_84d39d5424e0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompressor_Vtbl {
@@ -18,16 +9,7 @@ pub struct ICompressor_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     DetachStream: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompressorFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompressorFactory {
-    type Vtable = ICompressorFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompressorFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5f3d96a4_2cfb_442c_a8ba_d7d11b039da0);
-}
+::windows_core::imp::com_interface!(ICompressorFactory, ICompressorFactory_Vtbl, 0x5f3d96a4_2cfb_442c_a8ba_d7d11b039da0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompressorFactory_Vtbl {
@@ -41,16 +23,7 @@ pub struct ICompressorFactory_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     CreateCompressorEx: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDecompressor(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDecompressor {
-    type Vtable = IDecompressor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDecompressor {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb883fe46_d68a_4c8b_ada0_4ee813fc5283);
-}
+::windows_core::imp::com_interface!(IDecompressor, IDecompressor_Vtbl, 0xb883fe46_d68a_4c8b_ada0_4ee813fc5283);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDecompressor_Vtbl {
@@ -60,16 +33,7 @@ pub struct IDecompressor_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     DetachStream: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDecompressorFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDecompressorFactory {
-    type Vtable = IDecompressorFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDecompressorFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5337e252_1da2_42e1_8834_0379d28d742f);
-}
+::windows_core::imp::com_interface!(IDecompressorFactory, IDecompressorFactory_Vtbl, 0x5337e252_1da2_42e1_8834_0379d28d742f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDecompressorFactory_Vtbl {
@@ -107,34 +71,34 @@ impl Compressor {
     #[cfg(feature = "Storage_Streams")]
     pub fn CreateCompressor<P0>(underlyingstream: P0) -> ::windows_core::Result<Compressor>
     where
-        P0: ::windows_core::TryIntoParam<super::Streams::IOutputStream>,
+        P0: ::windows_core::IntoParam<super::Streams::IOutputStream>,
     {
         Self::ICompressorFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateCompressor)(::windows_core::Interface::as_raw(this), underlyingstream.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateCompressor)(::windows_core::Interface::as_raw(this), underlyingstream.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn CreateCompressorEx<P0>(underlyingstream: P0, algorithm: CompressAlgorithm, blocksize: u32) -> ::windows_core::Result<Compressor>
     where
-        P0: ::windows_core::TryIntoParam<super::Streams::IOutputStream>,
+        P0: ::windows_core::IntoParam<super::Streams::IOutputStream>,
     {
         Self::ICompressorFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateCompressorEx)(::windows_core::Interface::as_raw(this), underlyingstream.try_into_param()?.abi(), algorithm, blocksize, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateCompressorEx)(::windows_core::Interface::as_raw(this), underlyingstream.into_param().abi(), algorithm, blocksize, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn WriteAsync<P0>(&self, buffer: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperationWithProgress<u32, u32>>
     where
-        P0: ::windows_core::TryIntoParam<super::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::Streams::IBuffer>,
     {
         let this = &::windows_core::ComInterface::cast::<super::Streams::IOutputStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteAsync)(::windows_core::Interface::as_raw(this), buffer.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteAsync)(::windows_core::Interface::as_raw(this), buffer.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -165,9 +129,8 @@ impl ::windows_core::RuntimeName for Compressor {
     const NAME: &'static str = "Windows.Storage.Compression.Compressor";
 }
 ::windows_core::imp::interface_hierarchy!(Compressor, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for Compressor {}
 #[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<super::Streams::IOutputStream> for Compressor {}
+::windows_core::imp::required_hierarchy!(Compressor, super::super::Foundation::IClosable, super::Streams::IOutputStream);
 unsafe impl ::core::marker::Send for Compressor {}
 unsafe impl ::core::marker::Sync for Compressor {}
 #[repr(transparent)]
@@ -191,23 +154,23 @@ impl Decompressor {
     #[cfg(feature = "Storage_Streams")]
     pub fn CreateDecompressor<P0>(underlyingstream: P0) -> ::windows_core::Result<Decompressor>
     where
-        P0: ::windows_core::TryIntoParam<super::Streams::IInputStream>,
+        P0: ::windows_core::IntoParam<super::Streams::IInputStream>,
     {
         Self::IDecompressorFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateDecompressor)(::windows_core::Interface::as_raw(this), underlyingstream.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateDecompressor)(::windows_core::Interface::as_raw(this), underlyingstream.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn ReadAsync<P0>(&self, buffer: P0, count: u32, options: super::Streams::InputStreamOptions) -> ::windows_core::Result<super::super::Foundation::IAsyncOperationWithProgress<super::Streams::IBuffer, u32>>
     where
-        P0: ::windows_core::TryIntoParam<super::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::Streams::IBuffer>,
     {
         let this = &::windows_core::ComInterface::cast::<super::Streams::IInputStream>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).ReadAsync)(::windows_core::Interface::as_raw(this), buffer.try_into_param()?.abi(), count, options, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).ReadAsync)(::windows_core::Interface::as_raw(this), buffer.into_param().abi(), count, options, &mut result__).from_abi(result__)
         }
     }
     #[doc(hidden)]
@@ -229,9 +192,8 @@ impl ::windows_core::RuntimeName for Decompressor {
     const NAME: &'static str = "Windows.Storage.Compression.Decompressor";
 }
 ::windows_core::imp::interface_hierarchy!(Decompressor, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for Decompressor {}
 #[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<super::Streams::IInputStream> for Decompressor {}
+::windows_core::imp::required_hierarchy!(Decompressor, super::super::Foundation::IClosable, super::Streams::IInputStream);
 unsafe impl ::core::marker::Send for Decompressor {}
 unsafe impl ::core::marker::Sync for Decompressor {}
 #[repr(transparent)]

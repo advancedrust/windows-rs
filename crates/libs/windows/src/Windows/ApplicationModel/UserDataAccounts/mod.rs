@@ -4,16 +4,7 @@ pub mod Provider;
 #[cfg(feature = "ApplicationModel_UserDataAccounts_SystemAccess")]
 #[doc = "Required features: `\"ApplicationModel_UserDataAccounts_SystemAccess\"`"]
 pub mod SystemAccess;
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccount(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccount {
-    type Vtable = IUserDataAccount_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccount {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb9c4367e_b348_4910_be94_4ad4bba6dea7);
-}
+::windows_core::imp::com_interface!(IUserDataAccount, IUserDataAccount_Vtbl, 0xb9c4367e_b348_4910_be94_4ad4bba6dea7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccount_Vtbl {
@@ -48,16 +39,7 @@ pub struct IUserDataAccount_Vtbl {
     #[cfg(not(all(feature = "ApplicationModel_Contacts", feature = "Foundation_Collections")))]
     FindContactAnnotationListsAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccount2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccount2 {
-    type Vtable = IUserDataAccount2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccount2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x078cd89f_de82_404b_8195_c8a3ac198f60);
-}
+::windows_core::imp::com_interface!(IUserDataAccount2, IUserDataAccount2_Vtbl, 0x078cd89f_de82_404b_8195_c8a3ac198f60);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccount2_Vtbl {
@@ -65,16 +47,7 @@ pub struct IUserDataAccount2_Vtbl {
     pub EnterpriseId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub IsProtectedUnderLock: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccount3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccount3 {
-    type Vtable = IUserDataAccount3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccount3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x01533845_6c43_4286_9d69_3e1709a1f266);
-}
+::windows_core::imp::com_interface!(IUserDataAccount3, IUserDataAccount3_Vtbl, 0x01533845_6c43_4286_9d69_3e1709a1f266);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccount3_Vtbl {
@@ -86,16 +59,7 @@ pub struct IUserDataAccount3_Vtbl {
     pub DisplayName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetDisplayName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccount4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccount4 {
-    type Vtable = IUserDataAccount4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccount4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc4315210_eae5_4f0a_a8b2_1cca115e008f);
-}
+::windows_core::imp::com_interface!(IUserDataAccount4, IUserDataAccount4_Vtbl, 0xc4315210_eae5_4f0a_a8b2_1cca115e008f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccount4_Vtbl {
@@ -121,16 +85,7 @@ pub struct IUserDataAccount4_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     SetIcon: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccountManagerForUser(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccountManagerForUser {
-    type Vtable = IUserDataAccountManagerForUser_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccountManagerForUser {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x56a6e8db_db8f_41ab_a65f_8c5971aac982);
-}
+::windows_core::imp::com_interface!(IUserDataAccountManagerForUser, IUserDataAccountManagerForUser_Vtbl, 0x56a6e8db_db8f_41ab_a65f_8c5971aac982);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccountManagerForUser_Vtbl {
@@ -141,16 +96,7 @@ pub struct IUserDataAccountManagerForUser_Vtbl {
     #[cfg(not(feature = "System"))]
     User: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccountManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccountManagerStatics {
-    type Vtable = IUserDataAccountManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccountManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0d9b89ea_1928_4a20_86d5_3c737f7dc3b0);
-}
+::windows_core::imp::com_interface!(IUserDataAccountManagerStatics, IUserDataAccountManagerStatics_Vtbl, 0x0d9b89ea_1928_4a20_86d5_3c737f7dc3b0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccountManagerStatics_Vtbl {
@@ -160,16 +106,7 @@ pub struct IUserDataAccountManagerStatics_Vtbl {
     pub ShowAccountSettingsAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, id: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ShowAccountErrorResolverAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, id: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccountManagerStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccountManagerStatics2 {
-    type Vtable = IUserDataAccountManagerStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccountManagerStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6a3ded88_316b_435e_b534_f7d4b4b7dba6);
-}
+::windows_core::imp::com_interface!(IUserDataAccountManagerStatics2, IUserDataAccountManagerStatics2_Vtbl, 0x6a3ded88_316b_435e_b534_f7d4b4b7dba6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccountManagerStatics2_Vtbl {
@@ -179,16 +116,7 @@ pub struct IUserDataAccountManagerStatics2_Vtbl {
     #[cfg(not(feature = "System"))]
     GetForUser: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccountStore(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccountStore {
-    type Vtable = IUserDataAccountStore_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccountStore {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2073b0ad_7d0a_4e76_bf45_2368f978a59a);
-}
+::windows_core::imp::com_interface!(IUserDataAccountStore, IUserDataAccountStore_Vtbl, 0x2073b0ad_7d0a_4e76_bf45_2368f978a59a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccountStore_Vtbl {
@@ -200,16 +128,7 @@ pub struct IUserDataAccountStore_Vtbl {
     pub GetAccountAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, id: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateAccountAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, userdisplayname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccountStore2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccountStore2 {
-    type Vtable = IUserDataAccountStore2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccountStore2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb1e0aef7_9560_4631_8af0_061d30161469);
-}
+::windows_core::imp::com_interface!(IUserDataAccountStore2, IUserDataAccountStore2_Vtbl, 0xb1e0aef7_9560_4631_8af0_061d30161469);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccountStore2_Vtbl {
@@ -218,32 +137,14 @@ pub struct IUserDataAccountStore2_Vtbl {
     pub StoreChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveStoreChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccountStore3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccountStore3 {
-    type Vtable = IUserDataAccountStore3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccountStore3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8142c094_f3c9_478b_b117_6585bebb6789);
-}
+::windows_core::imp::com_interface!(IUserDataAccountStore3, IUserDataAccountStore3_Vtbl, 0x8142c094_f3c9_478b_b117_6585bebb6789);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccountStore3_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateAccountWithPackageRelativeAppIdAndEnterpriseIdAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, userdisplayname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, packagerelativeappid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, enterpriseid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataAccountStoreChangedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataAccountStoreChangedEventArgs {
-    type Vtable = IUserDataAccountStoreChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataAccountStoreChangedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x84e3e2e5_8820_4512_b1f6_2e035be1072c);
-}
+::windows_core::imp::com_interface!(IUserDataAccountStoreChangedEventArgs, IUserDataAccountStoreChangedEventArgs_Vtbl, 0x84e3e2e5_8820_4512_b1f6_2e035be1072c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataAccountStoreChangedEventArgs_Vtbl {
@@ -443,10 +344,10 @@ impl UserDataAccount {
     #[cfg(feature = "Storage_Streams")]
     pub fn SetIcon<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::Streams::IRandomAccessStreamReference>,
+        P0: ::windows_core::IntoParam<super::super::Storage::Streams::IRandomAccessStreamReference>,
     {
         let this = &::windows_core::ComInterface::cast::<IUserDataAccount4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetIcon)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetIcon)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for UserDataAccount {

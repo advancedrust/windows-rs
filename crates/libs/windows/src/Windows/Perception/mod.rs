@@ -7,16 +7,7 @@ pub mod People;
 #[cfg(feature = "Perception_Spatial")]
 #[doc = "Required features: `\"Perception_Spatial\"`"]
 pub mod Spatial;
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPerceptionTimestamp(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPerceptionTimestamp {
-    type Vtable = IPerceptionTimestamp_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPerceptionTimestamp {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x87c24804_a22e_4adb_ba26_d78ef639bcf4);
-}
+::windows_core::imp::com_interface!(IPerceptionTimestamp, IPerceptionTimestamp_Vtbl, 0x87c24804_a22e_4adb_ba26_d78ef639bcf4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPerceptionTimestamp_Vtbl {
@@ -24,48 +15,21 @@ pub struct IPerceptionTimestamp_Vtbl {
     pub TargetTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::Foundation::DateTime) -> ::windows_core::HRESULT,
     pub PredictionAmount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPerceptionTimestamp2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPerceptionTimestamp2 {
-    type Vtable = IPerceptionTimestamp2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPerceptionTimestamp2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe354b7ed_2bd1_41b7_9ed0_74a15c354537);
-}
+::windows_core::imp::com_interface!(IPerceptionTimestamp2, IPerceptionTimestamp2_Vtbl, 0xe354b7ed_2bd1_41b7_9ed0_74a15c354537);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPerceptionTimestamp2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SystemRelativeTargetTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPerceptionTimestampHelperStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPerceptionTimestampHelperStatics {
-    type Vtable = IPerceptionTimestampHelperStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPerceptionTimestampHelperStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x47a611d4_a9df_4edc_855d_f4d339d967ac);
-}
+::windows_core::imp::com_interface!(IPerceptionTimestampHelperStatics, IPerceptionTimestampHelperStatics_Vtbl, 0x47a611d4_a9df_4edc_855d_f4d339d967ac);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPerceptionTimestampHelperStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub FromHistoricalTargetTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, targettime: super::Foundation::DateTime, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPerceptionTimestampHelperStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPerceptionTimestampHelperStatics2 {
-    type Vtable = IPerceptionTimestampHelperStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPerceptionTimestampHelperStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x73d1a7fe_3fb9_4571_87d4_3c920a5e86eb);
-}
+::windows_core::imp::com_interface!(IPerceptionTimestampHelperStatics2, IPerceptionTimestampHelperStatics2_Vtbl, 0x73d1a7fe_3fb9_4571_87d4_3c920a5e86eb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPerceptionTimestampHelperStatics2_Vtbl {

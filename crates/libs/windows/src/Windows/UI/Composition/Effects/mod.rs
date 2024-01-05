@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISceneLightingEffect(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISceneLightingEffect {
-    type Vtable = ISceneLightingEffect_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISceneLightingEffect {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x91bb5e52_95d1_4f8b_9a5a_6408b24b8c6a);
-}
+::windows_core::imp::com_interface!(ISceneLightingEffect, ISceneLightingEffect_Vtbl, 0x91bb5e52_95d1_4f8b_9a5a_6408b24b8c6a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISceneLightingEffect_Vtbl {
@@ -29,16 +20,7 @@ pub struct ISceneLightingEffect_Vtbl {
     pub SpecularShine: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetSpecularShine: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISceneLightingEffect2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISceneLightingEffect2 {
-    type Vtable = ISceneLightingEffect2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISceneLightingEffect2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9e270e81_72f0_4c5c_95f8_8a6e0024f409);
-}
+::windows_core::imp::com_interface!(ISceneLightingEffect2, ISceneLightingEffect2_Vtbl, 0x9e270e81_72f0_4c5c_95f8_8a6e0024f409);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISceneLightingEffect2_Vtbl {
@@ -107,10 +89,10 @@ impl SceneLightingEffect {
     #[cfg(feature = "Graphics_Effects")]
     pub fn SetNormalMapSource<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Graphics::Effects::IGraphicsEffectSource>,
+        P0: ::windows_core::IntoParam<super::super::super::Graphics::Effects::IGraphicsEffectSource>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetNormalMapSource)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetNormalMapSource)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn SpecularAmount(&self) -> ::windows_core::Result<f32> {
         let this = self;
@@ -160,9 +142,7 @@ impl ::windows_core::RuntimeName for SceneLightingEffect {
 }
 ::windows_core::imp::interface_hierarchy!(SceneLightingEffect, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Graphics_Effects")]
-impl ::windows_core::CanTryInto<super::super::super::Graphics::Effects::IGraphicsEffect> for SceneLightingEffect {}
-#[cfg(feature = "Graphics_Effects")]
-impl ::windows_core::CanTryInto<super::super::super::Graphics::Effects::IGraphicsEffectSource> for SceneLightingEffect {}
+::windows_core::imp::required_hierarchy!(SceneLightingEffect, super::super::super::Graphics::Effects::IGraphicsEffect, super::super::super::Graphics::Effects::IGraphicsEffectSource);
 unsafe impl ::core::marker::Send for SceneLightingEffect {}
 unsafe impl ::core::marker::Sync for SceneLightingEffect {}
 #[repr(transparent)]

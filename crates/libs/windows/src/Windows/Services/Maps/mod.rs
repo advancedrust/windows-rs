@@ -7,16 +7,7 @@ pub mod LocalSearch;
 #[cfg(feature = "Services_Maps_OfflineMaps")]
 #[doc = "Required features: `\"Services_Maps_OfflineMaps\"`"]
 pub mod OfflineMaps;
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IEnhancedWaypoint(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IEnhancedWaypoint {
-    type Vtable = IEnhancedWaypoint_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IEnhancedWaypoint {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xed268c74_5913_11e6_8b77_86f30ca893d3);
-}
+::windows_core::imp::com_interface!(IEnhancedWaypoint, IEnhancedWaypoint_Vtbl, 0xed268c74_5913_11e6_8b77_86f30ca893d3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IEnhancedWaypoint_Vtbl {
@@ -27,16 +18,7 @@ pub struct IEnhancedWaypoint_Vtbl {
     Point: usize,
     pub Kind: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut WaypointKind) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IEnhancedWaypointFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IEnhancedWaypointFactory {
-    type Vtable = IEnhancedWaypointFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IEnhancedWaypointFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaf868477_a2aa_46dd_b645_23b31b8aa6c7);
-}
+::windows_core::imp::com_interface!(IEnhancedWaypointFactory, IEnhancedWaypointFactory_Vtbl, 0xaf868477_a2aa_46dd_b645_23b31b8aa6c7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IEnhancedWaypointFactory_Vtbl {
@@ -46,16 +28,7 @@ pub struct IEnhancedWaypointFactory_Vtbl {
     #[cfg(not(feature = "Devices_Geolocation"))]
     Create: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IManeuverWarning(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IManeuverWarning {
-    type Vtable = IManeuverWarning_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IManeuverWarning {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc1a36d8a_2630_4378_9e4a_6e44253dceba);
-}
+::windows_core::imp::com_interface!(IManeuverWarning, IManeuverWarning_Vtbl, 0xc1a36d8a_2630_4378_9e4a_6e44253dceba);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IManeuverWarning_Vtbl {
@@ -63,16 +36,7 @@ pub struct IManeuverWarning_Vtbl {
     pub Kind: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ManeuverWarningKind) -> ::windows_core::HRESULT,
     pub Severity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ManeuverWarningSeverity) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapAddress(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapAddress {
-    type Vtable = IMapAddress_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapAddress {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcfa7a973_a3b4_4494_b3ff_cba94db69699);
-}
+::windows_core::imp::com_interface!(IMapAddress, IMapAddress_Vtbl, 0xcfa7a973_a3b4_4494_b3ff_cba94db69699);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapAddress_Vtbl {
@@ -93,32 +57,14 @@ pub struct IMapAddress_Vtbl {
     pub PostCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Continent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapAddress2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapAddress2 {
-    type Vtable = IMapAddress2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapAddress2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x75cd6df1_e5ad_45a9_bf40_6cf256c1dd13);
-}
+::windows_core::imp::com_interface!(IMapAddress2, IMapAddress2_Vtbl, 0x75cd6df1_e5ad_45a9_bf40_6cf256c1dd13);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapAddress2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub FormattedAddress: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapLocation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapLocation {
-    type Vtable = IMapLocation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapLocation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3c073f57_0da4_42e8_9ee2_a96fcf2371dc);
-}
+::windows_core::imp::com_interface!(IMapLocation, IMapLocation_Vtbl, 0x3c073f57_0da4_42e8_9ee2_a96fcf2371dc);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapLocation_Vtbl {
@@ -131,16 +77,7 @@ pub struct IMapLocation_Vtbl {
     pub Description: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Address: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapLocationFinderResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapLocationFinderResult {
-    type Vtable = IMapLocationFinderResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapLocationFinderResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x43f1f179_e8cc_45f6_bed2_54ccbf965d9a);
-}
+::windows_core::imp::com_interface!(IMapLocationFinderResult, IMapLocationFinderResult_Vtbl, 0x43f1f179_e8cc_45f6_bed2_54ccbf965d9a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapLocationFinderResult_Vtbl {
@@ -151,16 +88,7 @@ pub struct IMapLocationFinderResult_Vtbl {
     Locations: usize,
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MapLocationFinderStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapLocationFinderStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapLocationFinderStatics {
-    type Vtable = IMapLocationFinderStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapLocationFinderStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x318adb5d_1c5d_4f35_a2df_aaca94959517);
-}
+::windows_core::imp::com_interface!(IMapLocationFinderStatics, IMapLocationFinderStatics_Vtbl, 0x318adb5d_1c5d_4f35_a2df_aaca94959517);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapLocationFinderStatics_Vtbl {
@@ -178,16 +106,7 @@ pub struct IMapLocationFinderStatics_Vtbl {
     #[cfg(not(feature = "Devices_Geolocation"))]
     FindLocationsWithMaxCountAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapLocationFinderStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapLocationFinderStatics2 {
-    type Vtable = IMapLocationFinderStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapLocationFinderStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x959a8b96_6485_4dfd_851a_33ac317e3af6);
-}
+::windows_core::imp::com_interface!(IMapLocationFinderStatics2, IMapLocationFinderStatics2_Vtbl, 0x959a8b96_6485_4dfd_851a_33ac317e3af6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapLocationFinderStatics2_Vtbl {
@@ -197,16 +116,7 @@ pub struct IMapLocationFinderStatics2_Vtbl {
     #[cfg(not(feature = "Devices_Geolocation"))]
     FindLocationsAtWithAccuracyAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapManagerStatics {
-    type Vtable = IMapManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x37e3e515_82b4_4d54_8fd9_af2624b3011c);
-}
+::windows_core::imp::com_interface!(IMapManagerStatics, IMapManagerStatics_Vtbl, 0x37e3e515_82b4_4d54_8fd9_af2624b3011c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapManagerStatics_Vtbl {
@@ -214,16 +124,7 @@ pub struct IMapManagerStatics_Vtbl {
     pub ShowDownloadedMapsUI: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ShowMapsUpdateUI: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRoute(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRoute {
-    type Vtable = IMapRoute_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRoute {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfb07b732_584d_4583_9c60_641fea274349);
-}
+::windows_core::imp::com_interface!(IMapRoute, IMapRoute_Vtbl, 0xfb07b732_584d_4583_9c60_641fea274349);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRoute_Vtbl {
@@ -244,16 +145,7 @@ pub struct IMapRoute_Vtbl {
     Legs: usize,
     pub IsTrafficBased: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRoute2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRoute2 {
-    type Vtable = IMapRoute2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRoute2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd1c5d40c_2213_4ab0_a260_46b38169beac);
-}
+::windows_core::imp::com_interface!(IMapRoute2, IMapRoute2_Vtbl, 0xd1c5d40c_2213_4ab0_a260_46b38169beac);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRoute2_Vtbl {
@@ -261,16 +153,7 @@ pub struct IMapRoute2_Vtbl {
     pub ViolatedRestrictions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MapRouteRestrictions) -> ::windows_core::HRESULT,
     pub HasBlockedRoads: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRoute3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRoute3 {
-    type Vtable = IMapRoute3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRoute3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x858d1eae_f2ad_429f_bb37_cd21094ffc92);
-}
+::windows_core::imp::com_interface!(IMapRoute3, IMapRoute3_Vtbl, 0x858d1eae_f2ad_429f_bb37_cd21094ffc92);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRoute3_Vtbl {
@@ -278,32 +161,14 @@ pub struct IMapRoute3_Vtbl {
     pub DurationWithoutTraffic: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
     pub TrafficCongestion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut TrafficCongestion) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRoute4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRoute4 {
-    type Vtable = IMapRoute4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRoute4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x366c8ca5_3053_4fa1_80ff_d475f3ed1e6e);
-}
+::windows_core::imp::com_interface!(IMapRoute4, IMapRoute4_Vtbl, 0x366c8ca5_3053_4fa1_80ff_d475f3ed1e6e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRoute4_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub IsScenic: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRouteDrivingOptions(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRouteDrivingOptions {
-    type Vtable = IMapRouteDrivingOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRouteDrivingOptions {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6815364d_c6dc_4697_a452_b18f8f0b67a1);
-}
+::windows_core::imp::com_interface!(IMapRouteDrivingOptions, IMapRouteDrivingOptions_Vtbl, 0x6815364d_c6dc_4697_a452_b18f8f0b67a1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRouteDrivingOptions_Vtbl {
@@ -317,16 +182,7 @@ pub struct IMapRouteDrivingOptions_Vtbl {
     pub RouteRestrictions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MapRouteRestrictions) -> ::windows_core::HRESULT,
     pub SetRouteRestrictions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: MapRouteRestrictions) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRouteDrivingOptions2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRouteDrivingOptions2 {
-    type Vtable = IMapRouteDrivingOptions2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRouteDrivingOptions2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x35dc8670_c298_48d0_b5ad_825460645603);
-}
+::windows_core::imp::com_interface!(IMapRouteDrivingOptions2, IMapRouteDrivingOptions2_Vtbl, 0x35dc8670_c298_48d0_b5ad_825460645603);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRouteDrivingOptions2_Vtbl {
@@ -334,16 +190,7 @@ pub struct IMapRouteDrivingOptions2_Vtbl {
     pub DepartureTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetDepartureTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRouteFinderResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRouteFinderResult {
-    type Vtable = IMapRouteFinderResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRouteFinderResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa868a31a_9422_46ac_8ca1_b1614d4bfbe2);
-}
+::windows_core::imp::com_interface!(IMapRouteFinderResult, IMapRouteFinderResult_Vtbl, 0xa868a31a_9422_46ac_8ca1_b1614d4bfbe2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRouteFinderResult_Vtbl {
@@ -351,16 +198,7 @@ pub struct IMapRouteFinderResult_Vtbl {
     pub Route: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MapRouteFinderStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRouteFinderResult2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRouteFinderResult2 {
-    type Vtable = IMapRouteFinderResult2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRouteFinderResult2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x20709c6d_d90c_46c8_91c6_7d4be4efb215);
-}
+::windows_core::imp::com_interface!(IMapRouteFinderResult2, IMapRouteFinderResult2_Vtbl, 0x20709c6d_d90c_46c8_91c6_7d4be4efb215);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRouteFinderResult2_Vtbl {
@@ -370,16 +208,7 @@ pub struct IMapRouteFinderResult2_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     AlternateRoutes: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRouteFinderStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRouteFinderStatics {
-    type Vtable = IMapRouteFinderStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRouteFinderStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb8a5c50f_1c64_4c3a_81eb_1f7c152afbbb);
-}
+::windows_core::imp::com_interface!(IMapRouteFinderStatics, IMapRouteFinderStatics_Vtbl, 0xb8a5c50f_1c64_4c3a_81eb_1f7c152afbbb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRouteFinderStatics_Vtbl {
@@ -425,16 +254,7 @@ pub struct IMapRouteFinderStatics_Vtbl {
     #[cfg(not(all(feature = "Devices_Geolocation", feature = "Foundation_Collections")))]
     GetWalkingRouteFromWaypointsAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRouteFinderStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRouteFinderStatics2 {
-    type Vtable = IMapRouteFinderStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRouteFinderStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xafcc2c73_7760_49af_b3bd_baf135b703e1);
-}
+::windows_core::imp::com_interface!(IMapRouteFinderStatics2, IMapRouteFinderStatics2_Vtbl, 0xafcc2c73_7760_49af_b3bd_baf135b703e1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRouteFinderStatics2_Vtbl {
@@ -444,16 +264,7 @@ pub struct IMapRouteFinderStatics2_Vtbl {
     #[cfg(not(feature = "Devices_Geolocation"))]
     GetDrivingRouteWithOptionsAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRouteFinderStatics3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRouteFinderStatics3 {
-    type Vtable = IMapRouteFinderStatics3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRouteFinderStatics3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf6098134_5913_11e6_8b77_86f30ca893d3);
-}
+::windows_core::imp::com_interface!(IMapRouteFinderStatics3, IMapRouteFinderStatics3_Vtbl, 0xf6098134_5913_11e6_8b77_86f30ca893d3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRouteFinderStatics3_Vtbl {
@@ -467,16 +278,7 @@ pub struct IMapRouteFinderStatics3_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     GetDrivingRouteFromEnhancedWaypointsWithOptionsAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRouteLeg(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRouteLeg {
-    type Vtable = IMapRouteLeg_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRouteLeg {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x96f8b2f6_5bba_4d17_9db6_1a263fec7471);
-}
+::windows_core::imp::com_interface!(IMapRouteLeg, IMapRouteLeg_Vtbl, 0x96f8b2f6_5bba_4d17_9db6_1a263fec7471);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRouteLeg_Vtbl {
@@ -496,16 +298,7 @@ pub struct IMapRouteLeg_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Maneuvers: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRouteLeg2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRouteLeg2 {
-    type Vtable = IMapRouteLeg2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRouteLeg2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x02e2062d_c9c6_45b8_8e54_1a10b57a17e8);
-}
+::windows_core::imp::com_interface!(IMapRouteLeg2, IMapRouteLeg2_Vtbl, 0x02e2062d_c9c6_45b8_8e54_1a10b57a17e8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRouteLeg2_Vtbl {
@@ -513,16 +306,7 @@ pub struct IMapRouteLeg2_Vtbl {
     pub DurationWithoutTraffic: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
     pub TrafficCongestion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut TrafficCongestion) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRouteManeuver(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRouteManeuver {
-    type Vtable = IMapRouteManeuver_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRouteManeuver {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xed5c17f0_a6ab_4d65_a086_fa8a7e340df2);
-}
+::windows_core::imp::com_interface!(IMapRouteManeuver, IMapRouteManeuver_Vtbl, 0xed5c17f0_a6ab_4d65_a086_fa8a7e340df2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRouteManeuver_Vtbl {
@@ -537,16 +321,7 @@ pub struct IMapRouteManeuver_Vtbl {
     pub ExitNumber: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub ManeuverNotices: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MapManeuverNotices) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRouteManeuver2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRouteManeuver2 {
-    type Vtable = IMapRouteManeuver2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRouteManeuver2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5d7bcd9c_7c9b_41df_838b_eae21e4b05a9);
-}
+::windows_core::imp::com_interface!(IMapRouteManeuver2, IMapRouteManeuver2_Vtbl, 0x5d7bcd9c_7c9b_41df_838b_eae21e4b05a9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRouteManeuver2_Vtbl {
@@ -555,16 +330,7 @@ pub struct IMapRouteManeuver2_Vtbl {
     pub EndHeading: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f64) -> ::windows_core::HRESULT,
     pub StreetName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapRouteManeuver3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapRouteManeuver3 {
-    type Vtable = IMapRouteManeuver3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapRouteManeuver3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa6a138df_0483_4166_85be_b99336c11875);
-}
+::windows_core::imp::com_interface!(IMapRouteManeuver3, IMapRouteManeuver3_Vtbl, 0xa6a138df_0483_4166_85be_b99336c11875);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapRouteManeuver3_Vtbl {
@@ -574,16 +340,7 @@ pub struct IMapRouteManeuver3_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Warnings: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapServiceStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapServiceStatics {
-    type Vtable = IMapServiceStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapServiceStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0144ad85_c04c_4cdd_871a_a0726d097cd4);
-}
+::windows_core::imp::com_interface!(IMapServiceStatics, IMapServiceStatics_Vtbl, 0x0144ad85_c04c_4cdd_871a_a0726d097cd4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapServiceStatics_Vtbl {
@@ -591,48 +348,21 @@ pub struct IMapServiceStatics_Vtbl {
     pub SetServiceToken: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub ServiceToken: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapServiceStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapServiceStatics2 {
-    type Vtable = IMapServiceStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapServiceStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf8193eed_9c85_40a9_8896_0fc3fd2b7c2a);
-}
+::windows_core::imp::com_interface!(IMapServiceStatics2, IMapServiceStatics2_Vtbl, 0xf8193eed_9c85_40a9_8896_0fc3fd2b7c2a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapServiceStatics2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub WorldViewRegionCode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapServiceStatics3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapServiceStatics3 {
-    type Vtable = IMapServiceStatics3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapServiceStatics3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0a11ce20_63a7_4854_b355_d6dcda223d1b);
-}
+::windows_core::imp::com_interface!(IMapServiceStatics3, IMapServiceStatics3_Vtbl, 0x0a11ce20_63a7_4854_b355_d6dcda223d1b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapServiceStatics3_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub DataAttributions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IMapServiceStatics4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IMapServiceStatics4 {
-    type Vtable = IMapServiceStatics4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IMapServiceStatics4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x088a2862_6abc_420e_945f_4cfd89c67356);
-}
+::windows_core::imp::com_interface!(IMapServiceStatics4, IMapServiceStatics4_Vtbl, 0x088a2862_6abc_420e_945f_4cfd89c67356);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IMapServiceStatics4_Vtbl {
@@ -640,16 +370,7 @@ pub struct IMapServiceStatics4_Vtbl {
     pub SetDataUsagePreference: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: MapServiceDataUsagePreference) -> ::windows_core::HRESULT,
     pub DataUsagePreference: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut MapServiceDataUsagePreference) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPlaceInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPlaceInfo {
-    type Vtable = IPlaceInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPlaceInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9a0810b6_31c8_4f6a_9f18_950b4c38951a);
-}
+::windows_core::imp::com_interface!(IPlaceInfo, IPlaceInfo_Vtbl, 0x9a0810b6_31c8_4f6a_9f18_950b4c38951a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPlaceInfo_Vtbl {
@@ -667,16 +388,7 @@ pub struct IPlaceInfo_Vtbl {
     #[cfg(not(feature = "Devices_Geolocation"))]
     Geoshape: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPlaceInfoCreateOptions(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPlaceInfoCreateOptions {
-    type Vtable = IPlaceInfoCreateOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPlaceInfoCreateOptions {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcd33c125_67f1_4bb3_9907_ecce939b0399);
-}
+::windows_core::imp::com_interface!(IPlaceInfoCreateOptions, IPlaceInfoCreateOptions_Vtbl, 0xcd33c125_67f1_4bb3_9907_ecce939b0399);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPlaceInfoCreateOptions_Vtbl {
@@ -686,16 +398,7 @@ pub struct IPlaceInfoCreateOptions_Vtbl {
     pub SetDisplayAddress: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub DisplayAddress: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPlaceInfoStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPlaceInfoStatics {
-    type Vtable = IPlaceInfoStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPlaceInfoStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x82b9ff71_6cd0_48a4_afd9_5ed82097936b);
-}
+::windows_core::imp::com_interface!(IPlaceInfoStatics, IPlaceInfoStatics_Vtbl, 0x82b9ff71_6cd0_48a4_afd9_5ed82097936b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPlaceInfoStatics_Vtbl {
@@ -716,16 +419,7 @@ pub struct IPlaceInfoStatics_Vtbl {
     pub CreateFromMapLocation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, location: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub IsShowSupported: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPlaceInfoStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPlaceInfoStatics2 {
-    type Vtable = IPlaceInfoStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPlaceInfoStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x730f0249_4047_44a3_8f81_2550a5216370);
-}
+::windows_core::imp::com_interface!(IPlaceInfoStatics2, IPlaceInfoStatics2_Vtbl, 0x730f0249_4047_44a3_8f81_2550a5216370);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPlaceInfoStatics2_Vtbl {
@@ -1248,10 +942,10 @@ impl MapRouteDrivingOptions {
     }
     pub fn SetInitialHeading<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<f64>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<f64>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetInitialHeading)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetInitialHeading)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn RouteOptimization(&self) -> ::windows_core::Result<MapRouteOptimization> {
         let this = self;
@@ -1284,10 +978,10 @@ impl MapRouteDrivingOptions {
     }
     pub fn SetDepartureTime<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::DateTime>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::DateTime>>,
     {
         let this = &::windows_core::ComInterface::cast::<IMapRouteDrivingOptions2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetDepartureTime)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetDepartureTime)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for MapRouteDrivingOptions {
@@ -1359,44 +1053,44 @@ impl MapRouteFinder {
     #[cfg(all(feature = "Devices_Geolocation", feature = "Foundation_Collections"))]
     pub fn GetDrivingRouteFromWaypointsAsync<P0>(waypoints: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MapRouteFinderResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<super::super::Devices::Geolocation::Geopoint>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Devices::Geolocation::Geopoint>>,
     {
         Self::IMapRouteFinderStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetDrivingRouteFromWaypointsAsync)(::windows_core::Interface::as_raw(this), waypoints.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetDrivingRouteFromWaypointsAsync)(::windows_core::Interface::as_raw(this), waypoints.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Devices_Geolocation\"`, `\"Foundation_Collections\"`"]
     #[cfg(all(feature = "Devices_Geolocation", feature = "Foundation_Collections"))]
     pub fn GetDrivingRouteFromWaypointsAndOptimizationAsync<P0>(waypoints: P0, optimization: MapRouteOptimization) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MapRouteFinderResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<super::super::Devices::Geolocation::Geopoint>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Devices::Geolocation::Geopoint>>,
     {
         Self::IMapRouteFinderStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetDrivingRouteFromWaypointsAndOptimizationAsync)(::windows_core::Interface::as_raw(this), waypoints.try_into_param()?.abi(), optimization, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetDrivingRouteFromWaypointsAndOptimizationAsync)(::windows_core::Interface::as_raw(this), waypoints.into_param().abi(), optimization, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Devices_Geolocation\"`, `\"Foundation_Collections\"`"]
     #[cfg(all(feature = "Devices_Geolocation", feature = "Foundation_Collections"))]
     pub fn GetDrivingRouteFromWaypointsOptimizationAndRestrictionsAsync<P0>(waypoints: P0, optimization: MapRouteOptimization, restrictions: MapRouteRestrictions) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MapRouteFinderResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<super::super::Devices::Geolocation::Geopoint>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Devices::Geolocation::Geopoint>>,
     {
         Self::IMapRouteFinderStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetDrivingRouteFromWaypointsOptimizationAndRestrictionsAsync)(::windows_core::Interface::as_raw(this), waypoints.try_into_param()?.abi(), optimization, restrictions, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetDrivingRouteFromWaypointsOptimizationAndRestrictionsAsync)(::windows_core::Interface::as_raw(this), waypoints.into_param().abi(), optimization, restrictions, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Devices_Geolocation\"`, `\"Foundation_Collections\"`"]
     #[cfg(all(feature = "Devices_Geolocation", feature = "Foundation_Collections"))]
     pub fn GetDrivingRouteFromWaypointsOptimizationRestrictionsAndHeadingAsync<P0>(waypoints: P0, optimization: MapRouteOptimization, restrictions: MapRouteRestrictions, headingindegrees: f64) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MapRouteFinderResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<super::super::Devices::Geolocation::Geopoint>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Devices::Geolocation::Geopoint>>,
     {
         Self::IMapRouteFinderStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetDrivingRouteFromWaypointsOptimizationRestrictionsAndHeadingAsync)(::windows_core::Interface::as_raw(this), waypoints.try_into_param()?.abi(), optimization, restrictions, headingindegrees, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetDrivingRouteFromWaypointsOptimizationRestrictionsAndHeadingAsync)(::windows_core::Interface::as_raw(this), waypoints.into_param().abi(), optimization, restrictions, headingindegrees, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Devices_Geolocation\"`"]
@@ -1415,11 +1109,11 @@ impl MapRouteFinder {
     #[cfg(all(feature = "Devices_Geolocation", feature = "Foundation_Collections"))]
     pub fn GetWalkingRouteFromWaypointsAsync<P0>(waypoints: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MapRouteFinderResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<super::super::Devices::Geolocation::Geopoint>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Devices::Geolocation::Geopoint>>,
     {
         Self::IMapRouteFinderStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetWalkingRouteFromWaypointsAsync)(::windows_core::Interface::as_raw(this), waypoints.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetWalkingRouteFromWaypointsAsync)(::windows_core::Interface::as_raw(this), waypoints.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Devices_Geolocation\"`"]
@@ -1439,23 +1133,23 @@ impl MapRouteFinder {
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetDrivingRouteFromEnhancedWaypointsAsync<P0>(waypoints: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MapRouteFinderResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<EnhancedWaypoint>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<EnhancedWaypoint>>,
     {
         Self::IMapRouteFinderStatics3(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetDrivingRouteFromEnhancedWaypointsAsync)(::windows_core::Interface::as_raw(this), waypoints.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetDrivingRouteFromEnhancedWaypointsAsync)(::windows_core::Interface::as_raw(this), waypoints.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn GetDrivingRouteFromEnhancedWaypointsWithOptionsAsync<P0, P1>(waypoints: P0, options: P1) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<MapRouteFinderResult>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<EnhancedWaypoint>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<EnhancedWaypoint>>,
         P1: ::windows_core::IntoParam<MapRouteDrivingOptions>,
     {
         Self::IMapRouteFinderStatics3(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).GetDrivingRouteFromEnhancedWaypointsWithOptionsAsync)(::windows_core::Interface::as_raw(this), waypoints.try_into_param()?.abi(), options.into_param().abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).GetDrivingRouteFromEnhancedWaypointsWithOptionsAsync)(::windows_core::Interface::as_raw(this), waypoints.into_param().abi(), options.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc(hidden)]

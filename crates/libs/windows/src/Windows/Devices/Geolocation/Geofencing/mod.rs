@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGeofence(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGeofence {
-    type Vtable = IGeofence_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGeofence {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9c090823_edb8_47e0_8245_5bf61d321f2d);
-}
+::windows_core::imp::com_interface!(IGeofence, IGeofence_Vtbl, 0x9c090823_edb8_47e0_8245_5bf61d321f2d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGeofence_Vtbl {
@@ -20,16 +11,7 @@ pub struct IGeofence_Vtbl {
     pub Geoshape: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SingleUse: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGeofenceFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGeofenceFactory {
-    type Vtable = IGeofenceFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGeofenceFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x841f624b_325f_4b90_bca7_2b8022a93796);
-}
+::windows_core::imp::com_interface!(IGeofenceFactory, IGeofenceFactory_Vtbl, 0x841f624b_325f_4b90_bca7_2b8022a93796);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGeofenceFactory_Vtbl {
@@ -39,16 +21,7 @@ pub struct IGeofenceFactory_Vtbl {
     pub CreateWithMonitorStatesAndDwellTime: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, id: ::std::mem::MaybeUninit<::windows_core::HSTRING>, geoshape: *mut ::core::ffi::c_void, monitoredstates: MonitoredGeofenceStates, singleuse: bool, dwelltime: super::super::super::Foundation::TimeSpan, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateWithMonitorStatesDwellTimeStartTimeAndDuration: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, id: ::std::mem::MaybeUninit<::windows_core::HSTRING>, geoshape: *mut ::core::ffi::c_void, monitoredstates: MonitoredGeofenceStates, singleuse: bool, dwelltime: super::super::super::Foundation::TimeSpan, starttime: super::super::super::Foundation::DateTime, duration: super::super::super::Foundation::TimeSpan, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGeofenceMonitor(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGeofenceMonitor {
-    type Vtable = IGeofenceMonitor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGeofenceMonitor {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4c0f5f78_1c1f_4621_bbbd_833b92247226);
-}
+::windows_core::imp::com_interface!(IGeofenceMonitor, IGeofenceMonitor_Vtbl, 0x4c0f5f78_1c1f_4621_bbbd_833b92247226);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGeofenceMonitor_Vtbl {
@@ -68,32 +41,14 @@ pub struct IGeofenceMonitor_Vtbl {
     pub StatusChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, eventhandler: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveStatusChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGeofenceMonitorStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGeofenceMonitorStatics {
-    type Vtable = IGeofenceMonitorStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGeofenceMonitorStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2dd32fcf_7e75_4899_ace3_2bd0a65cce06);
-}
+::windows_core::imp::com_interface!(IGeofenceMonitorStatics, IGeofenceMonitorStatics_Vtbl, 0x2dd32fcf_7e75_4899_ace3_2bd0a65cce06);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGeofenceMonitorStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Current: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGeofenceStateChangeReport(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGeofenceStateChangeReport {
-    type Vtable = IGeofenceStateChangeReport_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGeofenceStateChangeReport {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9a243c18_2464_4c89_be05_b3ffff5babc5);
-}
+::windows_core::imp::com_interface!(IGeofenceStateChangeReport, IGeofenceStateChangeReport_Vtbl, 0x9a243c18_2464_4c89_be05_b3ffff5babc5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGeofenceStateChangeReport_Vtbl {
@@ -158,38 +113,38 @@ impl Geofence {
     }
     pub fn Create<P0>(id: &::windows_core::HSTRING, geoshape: P0) -> ::windows_core::Result<Geofence>
     where
-        P0: ::windows_core::TryIntoParam<super::IGeoshape>,
+        P0: ::windows_core::IntoParam<super::IGeoshape>,
     {
         Self::IGeofenceFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).Create)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(id), geoshape.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).Create)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(id), geoshape.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     pub fn CreateWithMonitorStates<P0>(id: &::windows_core::HSTRING, geoshape: P0, monitoredstates: MonitoredGeofenceStates, singleuse: bool) -> ::windows_core::Result<Geofence>
     where
-        P0: ::windows_core::TryIntoParam<super::IGeoshape>,
+        P0: ::windows_core::IntoParam<super::IGeoshape>,
     {
         Self::IGeofenceFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateWithMonitorStates)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(id), geoshape.try_into_param()?.abi(), monitoredstates, singleuse, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateWithMonitorStates)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(id), geoshape.into_param().abi(), monitoredstates, singleuse, &mut result__).from_abi(result__)
         })
     }
     pub fn CreateWithMonitorStatesAndDwellTime<P0>(id: &::windows_core::HSTRING, geoshape: P0, monitoredstates: MonitoredGeofenceStates, singleuse: bool, dwelltime: super::super::super::Foundation::TimeSpan) -> ::windows_core::Result<Geofence>
     where
-        P0: ::windows_core::TryIntoParam<super::IGeoshape>,
+        P0: ::windows_core::IntoParam<super::IGeoshape>,
     {
         Self::IGeofenceFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateWithMonitorStatesAndDwellTime)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(id), geoshape.try_into_param()?.abi(), monitoredstates, singleuse, dwelltime, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateWithMonitorStatesAndDwellTime)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(id), geoshape.into_param().abi(), monitoredstates, singleuse, dwelltime, &mut result__).from_abi(result__)
         })
     }
     pub fn CreateWithMonitorStatesDwellTimeStartTimeAndDuration<P0>(id: &::windows_core::HSTRING, geoshape: P0, monitoredstates: MonitoredGeofenceStates, singleuse: bool, dwelltime: super::super::super::Foundation::TimeSpan, starttime: super::super::super::Foundation::DateTime, duration: super::super::super::Foundation::TimeSpan) -> ::windows_core::Result<Geofence>
     where
-        P0: ::windows_core::TryIntoParam<super::IGeoshape>,
+        P0: ::windows_core::IntoParam<super::IGeoshape>,
     {
         Self::IGeofenceFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateWithMonitorStatesDwellTimeStartTimeAndDuration)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(id), geoshape.try_into_param()?.abi(), monitoredstates, singleuse, dwelltime, starttime, duration, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateWithMonitorStatesDwellTimeStartTimeAndDuration)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(id), geoshape.into_param().abi(), monitoredstates, singleuse, dwelltime, starttime, duration, &mut result__).from_abi(result__)
         })
     }
     #[doc(hidden)]

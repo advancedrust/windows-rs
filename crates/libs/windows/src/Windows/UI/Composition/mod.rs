@@ -16,16 +16,7 @@ pub mod Interactions;
 #[cfg(feature = "UI_Composition_Scenes")]
 #[doc = "Required features: `\"UI_Composition_Scenes\"`"]
 pub mod Scenes;
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAmbientLight(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAmbientLight {
-    type Vtable = IAmbientLight_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAmbientLight {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa48130a1_b7c4_46f7_b9bf_daf43a44e6ee);
-}
+::windows_core::imp::com_interface!(IAmbientLight, IAmbientLight_Vtbl, 0xa48130a1_b7c4_46f7_b9bf_daf43a44e6ee);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAmbientLight_Vtbl {
@@ -33,16 +24,7 @@ pub struct IAmbientLight_Vtbl {
     pub Color: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::Color) -> ::windows_core::HRESULT,
     pub SetColor: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: super::Color) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAmbientLight2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAmbientLight2 {
-    type Vtable = IAmbientLight2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAmbientLight2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3b64a6bf_5f97_4c94_86e5_042dd386b27d);
-}
+::windows_core::imp::com_interface!(IAmbientLight2, IAmbientLight2_Vtbl, 0x3b64a6bf_5f97_4c94_86e5_042dd386b27d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAmbientLight2_Vtbl {
@@ -50,16 +32,7 @@ pub struct IAmbientLight2_Vtbl {
     pub Intensity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetIntensity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAnimationController(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAnimationController {
-    type Vtable = IAnimationController_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAnimationController {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc934efd2_0722_4f5f_a4e2_9510f3d43bf7);
-}
+::windows_core::imp::com_interface!(IAnimationController, IAnimationController_Vtbl, 0xc934efd2_0722_4f5f_a4e2_9510f3d43bf7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAnimationController_Vtbl {
@@ -73,16 +46,7 @@ pub struct IAnimationController_Vtbl {
     pub Pause: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Resume: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAnimationControllerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAnimationControllerStatics {
-    type Vtable = IAnimationControllerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAnimationControllerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe71164df_651b_4800_b9e5_6a3bcfed3365);
-}
+::windows_core::imp::com_interface!(IAnimationControllerStatics, IAnimationControllerStatics_Vtbl, 0xe71164df_651b_4800_b9e5_6a3bcfed3365);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAnimationControllerStatics_Vtbl {
@@ -90,9 +54,7 @@ pub struct IAnimationControllerStatics_Vtbl {
     pub MaxPlaybackRate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub MinPlaybackRate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAnimationObject(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IAnimationObject, IAnimationObject_Vtbl, 0xe7141e0a_04b8_4fc5_a4dc_195392e57807);
 impl IAnimationObject {
     pub fn PopulatePropertyInfo<P0>(&self, propertyname: &::windows_core::HSTRING, propertyinfo: P0) -> ::windows_core::Result<()>
     where
@@ -106,28 +68,13 @@ impl IAnimationObject {
 impl ::windows_core::RuntimeType for IAnimationObject {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IAnimationObject {
-    type Vtable = IAnimationObject_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAnimationObject {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe7141e0a_04b8_4fc5_a4dc_195392e57807);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAnimationObject_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub PopulatePropertyInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, propertyname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, propertyinfo: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAnimationPropertyInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAnimationPropertyInfo {
-    type Vtable = IAnimationPropertyInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAnimationPropertyInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf4716f05_ed77_4e3c_b328_5c3985b3738f);
-}
+::windows_core::imp::com_interface!(IAnimationPropertyInfo, IAnimationPropertyInfo_Vtbl, 0xf4716f05_ed77_4e3c_b328_5c3985b3738f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAnimationPropertyInfo_Vtbl {
@@ -135,16 +82,7 @@ pub struct IAnimationPropertyInfo_Vtbl {
     pub AccessMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut AnimationPropertyAccessMode) -> ::windows_core::HRESULT,
     pub SetAccessMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: AnimationPropertyAccessMode) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAnimationPropertyInfo2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAnimationPropertyInfo2 {
-    type Vtable = IAnimationPropertyInfo2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAnimationPropertyInfo2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x591720b4_7472_5218_8b39_dffe615ae6da);
-}
+::windows_core::imp::com_interface!(IAnimationPropertyInfo2, IAnimationPropertyInfo2_Vtbl, 0x591720b4_7472_5218_8b39_dffe615ae6da);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAnimationPropertyInfo2_Vtbl {
@@ -152,16 +90,7 @@ pub struct IAnimationPropertyInfo2_Vtbl {
     pub GetResolvedCompositionObject: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetResolvedCompositionObjectProperty: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBackEasingFunction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBackEasingFunction {
-    type Vtable = IBackEasingFunction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBackEasingFunction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb8560da4_5e3c_545d_b263_7987a2bd27cb);
-}
+::windows_core::imp::com_interface!(IBackEasingFunction, IBackEasingFunction_Vtbl, 0xb8560da4_5e3c_545d_b263_7987a2bd27cb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBackEasingFunction_Vtbl {
@@ -169,32 +98,14 @@ pub struct IBackEasingFunction_Vtbl {
     pub Mode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut CompositionEasingFunctionMode) -> ::windows_core::HRESULT,
     pub Amplitude: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBooleanKeyFrameAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBooleanKeyFrameAnimation {
-    type Vtable = IBooleanKeyFrameAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBooleanKeyFrameAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x95e23a08_d1f4_4972_9770_3efe68d82e14);
-}
+::windows_core::imp::com_interface!(IBooleanKeyFrameAnimation, IBooleanKeyFrameAnimation_Vtbl, 0x95e23a08_d1f4_4972_9770_3efe68d82e14);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBooleanKeyFrameAnimation_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub InsertKeyFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, normalizedprogresskey: f32, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBounceEasingFunction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBounceEasingFunction {
-    type Vtable = IBounceEasingFunction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBounceEasingFunction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe7fdb44b_aad5_5174_9421_eef8b75a6a43);
-}
+::windows_core::imp::com_interface!(IBounceEasingFunction, IBounceEasingFunction_Vtbl, 0xe7fdb44b_aad5_5174_9421_eef8b75a6a43);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBounceEasingFunction_Vtbl {
@@ -203,16 +114,7 @@ pub struct IBounceEasingFunction_Vtbl {
     pub Bounces: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
     pub Bounciness: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBounceScalarNaturalMotionAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBounceScalarNaturalMotionAnimation {
-    type Vtable = IBounceScalarNaturalMotionAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBounceScalarNaturalMotionAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbaa30dcc_a633_4618_9b06_7f7c72c87cff);
-}
+::windows_core::imp::com_interface!(IBounceScalarNaturalMotionAnimation, IBounceScalarNaturalMotionAnimation_Vtbl, 0xbaa30dcc_a633_4618_9b06_7f7c72c87cff);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBounceScalarNaturalMotionAnimation_Vtbl {
@@ -222,16 +124,7 @@ pub struct IBounceScalarNaturalMotionAnimation_Vtbl {
     pub Restitution: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetRestitution: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBounceVector2NaturalMotionAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBounceVector2NaturalMotionAnimation {
-    type Vtable = IBounceVector2NaturalMotionAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBounceVector2NaturalMotionAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xda344196_2154_4b3c_88aa_47361204eccd);
-}
+::windows_core::imp::com_interface!(IBounceVector2NaturalMotionAnimation, IBounceVector2NaturalMotionAnimation_Vtbl, 0xda344196_2154_4b3c_88aa_47361204eccd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBounceVector2NaturalMotionAnimation_Vtbl {
@@ -241,16 +134,7 @@ pub struct IBounceVector2NaturalMotionAnimation_Vtbl {
     pub Restitution: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetRestitution: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBounceVector3NaturalMotionAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBounceVector3NaturalMotionAnimation {
-    type Vtable = IBounceVector3NaturalMotionAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBounceVector3NaturalMotionAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x47dabc31_10d3_4518_86f1_09caf742d113);
-}
+::windows_core::imp::com_interface!(IBounceVector3NaturalMotionAnimation, IBounceVector3NaturalMotionAnimation_Vtbl, 0x47dabc31_10d3_4518_86f1_09caf742d113);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBounceVector3NaturalMotionAnimation_Vtbl {
@@ -260,32 +144,14 @@ pub struct IBounceVector3NaturalMotionAnimation_Vtbl {
     pub Restitution: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetRestitution: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICircleEasingFunction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICircleEasingFunction {
-    type Vtable = ICircleEasingFunction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICircleEasingFunction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1e07222a_6f82_5a28_8748_2e92fc46ee2b);
-}
+::windows_core::imp::com_interface!(ICircleEasingFunction, ICircleEasingFunction_Vtbl, 0x1e07222a_6f82_5a28_8748_2e92fc46ee2b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICircleEasingFunction_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Mode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut CompositionEasingFunctionMode) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IColorKeyFrameAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IColorKeyFrameAnimation {
-    type Vtable = IColorKeyFrameAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IColorKeyFrameAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x93adb5e9_8e05_4593_84a3_dca152781e56);
-}
+::windows_core::imp::com_interface!(IColorKeyFrameAnimation, IColorKeyFrameAnimation_Vtbl, 0x93adb5e9_8e05_4593_84a3_dca152781e56);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IColorKeyFrameAnimation_Vtbl {
@@ -295,16 +161,7 @@ pub struct IColorKeyFrameAnimation_Vtbl {
     pub InsertKeyFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, normalizedprogresskey: f32, value: super::Color) -> ::windows_core::HRESULT,
     pub InsertKeyFrameWithEasingFunction: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, normalizedprogresskey: f32, value: super::Color, easingfunction: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionAnimation {
-    type Vtable = ICompositionAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x464c4c2c_1caa_4061_9b40_e13fde1503ca);
-}
+::windows_core::imp::com_interface!(ICompositionAnimation, ICompositionAnimation_Vtbl, 0x464c4c2c_1caa_4061_9b40_e13fde1503ca);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionAnimation_Vtbl {
@@ -339,16 +196,7 @@ pub struct ICompositionAnimation_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetVector4Parameter: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionAnimation2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionAnimation2 {
-    type Vtable = ICompositionAnimation2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionAnimation2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x369b603e_a80f_4948_93e3_ed23fb38c6cb);
-}
+::windows_core::imp::com_interface!(ICompositionAnimation2, ICompositionAnimation2_Vtbl, 0x369b603e_a80f_4948_93e3_ed23fb38c6cb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionAnimation2_Vtbl {
@@ -357,16 +205,7 @@ pub struct ICompositionAnimation2_Vtbl {
     pub Target: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetTarget: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionAnimation3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionAnimation3 {
-    type Vtable = ICompositionAnimation3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionAnimation3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd51e030d_7da4_4bd7_bc2d_f4517529f43a);
-}
+::windows_core::imp::com_interface!(ICompositionAnimation3, ICompositionAnimation3_Vtbl, 0xd51e030d_7da4_4bd7_bc2d_f4517529f43a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionAnimation3_Vtbl {
@@ -376,66 +215,31 @@ pub struct ICompositionAnimation3_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     InitialValueExpressions: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionAnimation4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionAnimation4 {
-    type Vtable = ICompositionAnimation4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionAnimation4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x770137be_76bc_4e23_bfed_fe9cc20f6ec9);
-}
+::windows_core::imp::com_interface!(ICompositionAnimation4, ICompositionAnimation4_Vtbl, 0x770137be_76bc_4e23_bfed_fe9cc20f6ec9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionAnimation4_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SetExpressionReferenceParameter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, parametername: ::std::mem::MaybeUninit<::windows_core::HSTRING>, source: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionAnimationBase(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ICompositionAnimationBase, ICompositionAnimationBase_Vtbl, 0x1c2c2999_e818_48d3_a6dd_d78c82f8ace9);
 impl ICompositionAnimationBase {}
 ::windows_core::imp::interface_hierarchy!(ICompositionAnimationBase, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for ICompositionAnimationBase {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for ICompositionAnimationBase {
-    type Vtable = ICompositionAnimationBase_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionAnimationBase {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1c2c2999_e818_48d3_a6dd_d78c82f8ace9);
 }
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionAnimationBase_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionAnimationFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionAnimationFactory {
-    type Vtable = ICompositionAnimationFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionAnimationFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x10f6c4fb_6e51_4c25_bbd3_586a9bec3ef4);
-}
+::windows_core::imp::com_interface!(ICompositionAnimationFactory, ICompositionAnimationFactory_Vtbl, 0x10f6c4fb_6e51_4c25_bbd3_586a9bec3ef4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionAnimationFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionAnimationGroup(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionAnimationGroup {
-    type Vtable = ICompositionAnimationGroup_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionAnimationGroup {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5e7cc90c_cd14_4e07_8a55_c72527aabdac);
-}
+::windows_core::imp::com_interface!(ICompositionAnimationGroup, ICompositionAnimationGroup_Vtbl, 0x5e7cc90c_cd14_4e07_8a55_c72527aabdac);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionAnimationGroup_Vtbl {
@@ -445,76 +249,31 @@ pub struct ICompositionAnimationGroup_Vtbl {
     pub Remove: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RemoveAll: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionBackdropBrush(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionBackdropBrush {
-    type Vtable = ICompositionBackdropBrush_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionBackdropBrush {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc5acae58_3898_499e_8d7f_224e91286a5d);
-}
+::windows_core::imp::com_interface!(ICompositionBackdropBrush, ICompositionBackdropBrush_Vtbl, 0xc5acae58_3898_499e_8d7f_224e91286a5d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionBackdropBrush_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionBatchCompletedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionBatchCompletedEventArgs {
-    type Vtable = ICompositionBatchCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionBatchCompletedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0d00dad0_9464_450a_a562_2e2698b0a812);
-}
+::windows_core::imp::com_interface!(ICompositionBatchCompletedEventArgs, ICompositionBatchCompletedEventArgs_Vtbl, 0x0d00dad0_9464_450a_a562_2e2698b0a812);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionBatchCompletedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionBrush(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionBrush {
-    type Vtable = ICompositionBrush_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionBrush {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xab0d7608_30c0_40e9_b568_b60a6bd1fb46);
-}
+::windows_core::imp::com_interface!(ICompositionBrush, ICompositionBrush_Vtbl, 0xab0d7608_30c0_40e9_b568_b60a6bd1fb46);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionBrush_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionBrushFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionBrushFactory {
-    type Vtable = ICompositionBrushFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionBrushFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xda53fb4c_4650_47c4_ad76_765379607ed6);
-}
+::windows_core::imp::com_interface!(ICompositionBrushFactory, ICompositionBrushFactory_Vtbl, 0xda53fb4c_4650_47c4_ad76_765379607ed6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionBrushFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionCapabilities(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionCapabilities {
-    type Vtable = ICompositionCapabilities_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionCapabilities {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8253353e_b517_48bc_b1e8_4b3561a2e181);
-}
+::windows_core::imp::com_interface!(ICompositionCapabilities, ICompositionCapabilities_Vtbl, 0x8253353e_b517_48bc_b1e8_4b3561a2e181);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionCapabilities_Vtbl {
@@ -524,47 +283,20 @@ pub struct ICompositionCapabilities_Vtbl {
     pub Changed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionCapabilitiesStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionCapabilitiesStatics {
-    type Vtable = ICompositionCapabilitiesStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionCapabilitiesStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf7b7a86e_6416_49e5_8ddf_afe949e20562);
-}
+::windows_core::imp::com_interface!(ICompositionCapabilitiesStatics, ICompositionCapabilitiesStatics_Vtbl, 0xf7b7a86e_6416_49e5_8ddf_afe949e20562);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionCapabilitiesStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetForCurrentView: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionClip(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionClip {
-    type Vtable = ICompositionClip_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionClip {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1ccd2a52_cfc7_4ace_9983_146bb8eb6a3c);
-}
+::windows_core::imp::com_interface!(ICompositionClip, ICompositionClip_Vtbl, 0x1ccd2a52_cfc7_4ace_9983_146bb8eb6a3c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionClip_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionClip2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionClip2 {
-    type Vtable = ICompositionClip2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionClip2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5893e069_3516_40e1_89e0_5ba924927235);
-}
+::windows_core::imp::com_interface!(ICompositionClip2, ICompositionClip2_Vtbl, 0x5893e069_3516_40e1_89e0_5ba924927235);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionClip2_Vtbl {
@@ -614,31 +346,13 @@ pub struct ICompositionClip2_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetTransformMatrix: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionClipFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionClipFactory {
-    type Vtable = ICompositionClipFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionClipFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb9484caf_20c7_4aed_ac4a_9c78ba1302cf);
-}
+::windows_core::imp::com_interface!(ICompositionClipFactory, ICompositionClipFactory_Vtbl, 0xb9484caf_20c7_4aed_ac4a_9c78ba1302cf);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionClipFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionColorBrush(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionColorBrush {
-    type Vtable = ICompositionColorBrush_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionColorBrush {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2b264c5e_bf35_4831_8642_cf70c20fff2f);
-}
+::windows_core::imp::com_interface!(ICompositionColorBrush, ICompositionColorBrush_Vtbl, 0x2b264c5e_bf35_4831_8642_cf70c20fff2f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionColorBrush_Vtbl {
@@ -646,16 +360,7 @@ pub struct ICompositionColorBrush_Vtbl {
     pub Color: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::Color) -> ::windows_core::HRESULT,
     pub SetColor: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: super::Color) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionColorGradientStop(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionColorGradientStop {
-    type Vtable = ICompositionColorGradientStop_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionColorGradientStop {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6f00ca92_c801_4e41_9a8f_a53e20f57778);
-}
+::windows_core::imp::com_interface!(ICompositionColorGradientStop, ICompositionColorGradientStop_Vtbl, 0x6f00ca92_c801_4e41_9a8f_a53e20f57778);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionColorGradientStop_Vtbl {
@@ -665,31 +370,13 @@ pub struct ICompositionColorGradientStop_Vtbl {
     pub Offset: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetOffset: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionColorGradientStopCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionColorGradientStopCollection {
-    type Vtable = ICompositionColorGradientStopCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionColorGradientStopCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9f1d20ec_7b04_4b1d_90bc_9fa32c0cfd26);
-}
+::windows_core::imp::com_interface!(ICompositionColorGradientStopCollection, ICompositionColorGradientStopCollection_Vtbl, 0x9f1d20ec_7b04_4b1d_90bc_9fa32c0cfd26);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionColorGradientStopCollection_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionCommitBatch(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionCommitBatch {
-    type Vtable = ICompositionCommitBatch_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionCommitBatch {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0d00dad0_ca07_4400_8c8e_cb5db08559cc);
-}
+::windows_core::imp::com_interface!(ICompositionCommitBatch, ICompositionCommitBatch_Vtbl, 0x0d00dad0_ca07_4400_8c8e_cb5db08559cc);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionCommitBatch_Vtbl {
@@ -699,16 +386,7 @@ pub struct ICompositionCommitBatch_Vtbl {
     pub Completed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveCompleted: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionContainerShape(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionContainerShape {
-    type Vtable = ICompositionContainerShape_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionContainerShape {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4f5e859b_2e5b_44a8_982c_aa0f69c16059);
-}
+::windows_core::imp::com_interface!(ICompositionContainerShape, ICompositionContainerShape_Vtbl, 0x4f5e859b_2e5b_44a8_982c_aa0f69c16059);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionContainerShape_Vtbl {
@@ -718,16 +396,7 @@ pub struct ICompositionContainerShape_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Shapes: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionDrawingSurface(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionDrawingSurface {
-    type Vtable = ICompositionDrawingSurface_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionDrawingSurface {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa166c300_fad0_4d11_9e67_e433162ff49e);
-}
+::windows_core::imp::com_interface!(ICompositionDrawingSurface, ICompositionDrawingSurface_Vtbl, 0xa166c300_fad0_4d11_9e67_e433162ff49e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionDrawingSurface_Vtbl {
@@ -742,16 +411,7 @@ pub struct ICompositionDrawingSurface_Vtbl {
     PixelFormat: usize,
     pub Size: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::Size) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionDrawingSurface2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionDrawingSurface2 {
-    type Vtable = ICompositionDrawingSurface2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionDrawingSurface2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfad0e88b_e354_44e8_8e3d_c4880d5a213f);
-}
+::windows_core::imp::com_interface!(ICompositionDrawingSurface2, ICompositionDrawingSurface2_Vtbl, 0xfad0e88b_e354_44e8_8e3d_c4880d5a213f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionDrawingSurface2_Vtbl {
@@ -781,61 +441,25 @@ pub struct ICompositionDrawingSurface2_Vtbl {
     #[cfg(not(feature = "Graphics"))]
     ScrollRectWithClip: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionDrawingSurfaceFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionDrawingSurfaceFactory {
-    type Vtable = ICompositionDrawingSurfaceFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionDrawingSurfaceFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9497b00a_312d_46b9_9db3_412fd79464c8);
-}
+::windows_core::imp::com_interface!(ICompositionDrawingSurfaceFactory, ICompositionDrawingSurfaceFactory_Vtbl, 0x9497b00a_312d_46b9_9db3_412fd79464c8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionDrawingSurfaceFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionEasingFunction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionEasingFunction {
-    type Vtable = ICompositionEasingFunction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionEasingFunction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5145e356_bf79_4ea8_8cc2_6b5b472e6c9a);
-}
+::windows_core::imp::com_interface!(ICompositionEasingFunction, ICompositionEasingFunction_Vtbl, 0x5145e356_bf79_4ea8_8cc2_6b5b472e6c9a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionEasingFunction_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionEasingFunctionFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionEasingFunctionFactory {
-    type Vtable = ICompositionEasingFunctionFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionEasingFunctionFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x60840774_3da0_4949_8200_7206c00190a0);
-}
+::windows_core::imp::com_interface!(ICompositionEasingFunctionFactory, ICompositionEasingFunctionFactory_Vtbl, 0x60840774_3da0_4949_8200_7206c00190a0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionEasingFunctionFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionEasingFunctionStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionEasingFunctionStatics {
-    type Vtable = ICompositionEasingFunctionStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionEasingFunctionStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x17a766b6_2936_53ea_b5af_c642f4a61083);
-}
+::windows_core::imp::com_interface!(ICompositionEasingFunctionStatics, ICompositionEasingFunctionStatics_Vtbl, 0x17a766b6_2936_53ea_b5af_c642f4a61083);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionEasingFunctionStatics_Vtbl {
@@ -855,16 +479,7 @@ pub struct ICompositionEasingFunctionStatics_Vtbl {
     pub CreatePowerEasingFunction: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, owner: *mut ::core::ffi::c_void, mode: CompositionEasingFunctionMode, power: f32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateSineEasingFunction: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, owner: *mut ::core::ffi::c_void, mode: CompositionEasingFunctionMode, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionEffectBrush(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionEffectBrush {
-    type Vtable = ICompositionEffectBrush_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionEffectBrush {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbf7f795e_83cc_44bf_a447_3e3c071789ec);
-}
+::windows_core::imp::com_interface!(ICompositionEffectBrush, ICompositionEffectBrush_Vtbl, 0xbf7f795e_83cc_44bf_a447_3e3c071789ec);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionEffectBrush_Vtbl {
@@ -872,16 +487,7 @@ pub struct ICompositionEffectBrush_Vtbl {
     pub GetSourceParameter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetSourceParameter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, source: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionEffectFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionEffectFactory {
-    type Vtable = ICompositionEffectFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionEffectFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbe5624af_ba7e_4510_9850_41c0b4ff74df);
-}
+::windows_core::imp::com_interface!(ICompositionEffectFactory, ICompositionEffectFactory_Vtbl, 0xbe5624af_ba7e_4510_9850_41c0b4ff74df);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionEffectFactory_Vtbl {
@@ -890,48 +496,21 @@ pub struct ICompositionEffectFactory_Vtbl {
     pub ExtendedError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
     pub LoadStatus: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut CompositionEffectFactoryLoadStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionEffectSourceParameter(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionEffectSourceParameter {
-    type Vtable = ICompositionEffectSourceParameter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionEffectSourceParameter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x858ab13a_3292_4e4e_b3bb_2b6c6544a6ee);
-}
+::windows_core::imp::com_interface!(ICompositionEffectSourceParameter, ICompositionEffectSourceParameter_Vtbl, 0x858ab13a_3292_4e4e_b3bb_2b6c6544a6ee);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionEffectSourceParameter_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Name: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionEffectSourceParameterFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionEffectSourceParameterFactory {
-    type Vtable = ICompositionEffectSourceParameterFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionEffectSourceParameterFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb3d9f276_aba3_4724_acf3_d0397464db1c);
-}
+::windows_core::imp::com_interface!(ICompositionEffectSourceParameterFactory, ICompositionEffectSourceParameterFactory_Vtbl, 0xb3d9f276_aba3_4724_acf3_d0397464db1c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionEffectSourceParameterFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionEllipseGeometry(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionEllipseGeometry {
-    type Vtable = ICompositionEllipseGeometry_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionEllipseGeometry {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4801f884_f6ad_4b93_afa9_897b64e57b1f);
-}
+::windows_core::imp::com_interface!(ICompositionEllipseGeometry, ICompositionEllipseGeometry_Vtbl, 0x4801f884_f6ad_4b93_afa9_897b64e57b1f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionEllipseGeometry_Vtbl {
@@ -953,16 +532,7 @@ pub struct ICompositionEllipseGeometry_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetRadius: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionGeometricClip(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionGeometricClip {
-    type Vtable = ICompositionGeometricClip_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionGeometricClip {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc840b581_81c9_4444_a2c1_ccaece3a50e5);
-}
+::windows_core::imp::com_interface!(ICompositionGeometricClip, ICompositionGeometricClip_Vtbl, 0xc840b581_81c9_4444_a2c1_ccaece3a50e5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionGeometricClip_Vtbl {
@@ -972,16 +542,7 @@ pub struct ICompositionGeometricClip_Vtbl {
     pub ViewBox: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetViewBox: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionGeometry(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionGeometry {
-    type Vtable = ICompositionGeometry_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionGeometry {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe985217c_6a17_4207_abd8_5fd3dd612a9d);
-}
+::windows_core::imp::com_interface!(ICompositionGeometry, ICompositionGeometry_Vtbl, 0xe985217c_6a17_4207_abd8_5fd3dd612a9d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionGeometry_Vtbl {
@@ -993,31 +554,13 @@ pub struct ICompositionGeometry_Vtbl {
     pub TrimStart: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetTrimStart: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionGeometryFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionGeometryFactory {
-    type Vtable = ICompositionGeometryFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionGeometryFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbffebfe1_8c25_480b_9f56_fed6b288055d);
-}
+::windows_core::imp::com_interface!(ICompositionGeometryFactory, ICompositionGeometryFactory_Vtbl, 0xbffebfe1_8c25_480b_9f56_fed6b288055d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionGeometryFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionGradientBrush(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionGradientBrush {
-    type Vtable = ICompositionGradientBrush_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionGradientBrush {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1d9709e0_ffc6_4c0e_a9ab_34144d4c9098);
-}
+::windows_core::imp::com_interface!(ICompositionGradientBrush, ICompositionGradientBrush_Vtbl, 0x1d9709e0_ffc6_4c0e_a9ab_34144d4c9098);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionGradientBrush_Vtbl {
@@ -1072,16 +615,7 @@ pub struct ICompositionGradientBrush_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetTransformMatrix: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionGradientBrush2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionGradientBrush2 {
-    type Vtable = ICompositionGradientBrush2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionGradientBrush2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x899dd5a1_b4c7_4b33_a1b6_264addc26d10);
-}
+::windows_core::imp::com_interface!(ICompositionGradientBrush2, ICompositionGradientBrush2_Vtbl, 0x899dd5a1_b4c7_4b33_a1b6_264addc26d10);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionGradientBrush2_Vtbl {
@@ -1089,31 +623,13 @@ pub struct ICompositionGradientBrush2_Vtbl {
     pub MappingMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut CompositionMappingMode) -> ::windows_core::HRESULT,
     pub SetMappingMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: CompositionMappingMode) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionGradientBrushFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionGradientBrushFactory {
-    type Vtable = ICompositionGradientBrushFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionGradientBrushFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x56d765d7_f189_48c9_9c8d_94daf1bec010);
-}
+::windows_core::imp::com_interface!(ICompositionGradientBrushFactory, ICompositionGradientBrushFactory_Vtbl, 0x56d765d7_f189_48c9_9c8d_94daf1bec010);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionGradientBrushFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionGraphicsDevice(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionGraphicsDevice {
-    type Vtable = ICompositionGraphicsDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionGraphicsDevice {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfb22c6e1_80a2_4667_9936_dbeaf6eefe95);
-}
+::windows_core::imp::com_interface!(ICompositionGraphicsDevice, ICompositionGraphicsDevice_Vtbl, 0xfb22c6e1_80a2_4667_9936_dbeaf6eefe95);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionGraphicsDevice_Vtbl {
@@ -1125,16 +641,7 @@ pub struct ICompositionGraphicsDevice_Vtbl {
     pub RenderingDeviceReplaced: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveRenderingDeviceReplaced: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionGraphicsDevice2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionGraphicsDevice2 {
-    type Vtable = ICompositionGraphicsDevice2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionGraphicsDevice2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0fb8bdf6_c0f0_4bcc_9fb8_084982490d7d);
-}
+::windows_core::imp::com_interface!(ICompositionGraphicsDevice2, ICompositionGraphicsDevice2_Vtbl, 0x0fb8bdf6_c0f0_4bcc_9fb8_084982490d7d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionGraphicsDevice2_Vtbl {
@@ -1148,16 +655,7 @@ pub struct ICompositionGraphicsDevice2_Vtbl {
     #[cfg(not(feature = "Graphics_DirectX"))]
     CreateVirtualDrawingSurface: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionGraphicsDevice3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionGraphicsDevice3 {
-    type Vtable = ICompositionGraphicsDevice3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionGraphicsDevice3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x37f67514_d3ef_49d1_b69d_0d8eabeb3626);
-}
+::windows_core::imp::com_interface!(ICompositionGraphicsDevice3, ICompositionGraphicsDevice3_Vtbl, 0x37f67514_d3ef_49d1_b69d_0d8eabeb3626);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionGraphicsDevice3_Vtbl {
@@ -1168,16 +666,7 @@ pub struct ICompositionGraphicsDevice3_Vtbl {
     CreateMipmapSurface: usize,
     pub Trim: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionGraphicsDevice4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionGraphicsDevice4 {
-    type Vtable = ICompositionGraphicsDevice4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionGraphicsDevice4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5a73bff9_a97f_4cf5_ba46_98ef358e71b1);
-}
+::windows_core::imp::com_interface!(ICompositionGraphicsDevice4, ICompositionGraphicsDevice4_Vtbl, 0x5a73bff9_a97f_4cf5_ba46_98ef358e71b1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionGraphicsDevice4_Vtbl {
@@ -1187,48 +676,21 @@ pub struct ICompositionGraphicsDevice4_Vtbl {
     #[cfg(not(feature = "Graphics_DirectX"))]
     CaptureAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionLight(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionLight {
-    type Vtable = ICompositionLight_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionLight {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x41a6d7c2_2e5d_4bc1_b09e_8f0a03e3d8d3);
-}
+::windows_core::imp::com_interface!(ICompositionLight, ICompositionLight_Vtbl, 0x41a6d7c2_2e5d_4bc1_b09e_8f0a03e3d8d3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionLight_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Targets: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionLight2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionLight2 {
-    type Vtable = ICompositionLight2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionLight2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa7bcda72_f35d_425d_9b98_23f4205f6669);
-}
+::windows_core::imp::com_interface!(ICompositionLight2, ICompositionLight2_Vtbl, 0xa7bcda72_f35d_425d_9b98_23f4205f6669);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionLight2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ExclusionsFromTargets: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionLight3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionLight3 {
-    type Vtable = ICompositionLight3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionLight3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4b0b00e4_df07_4959_b7a4_4f7e4233f838);
-}
+::windows_core::imp::com_interface!(ICompositionLight3, ICompositionLight3_Vtbl, 0x4b0b00e4_df07_4959_b7a4_4f7e4233f838);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionLight3_Vtbl {
@@ -1236,31 +698,13 @@ pub struct ICompositionLight3_Vtbl {
     pub IsEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetIsEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionLightFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionLightFactory {
-    type Vtable = ICompositionLightFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionLightFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x069cf306_da3c_4b44_838a_5e03d51ace55);
-}
+::windows_core::imp::com_interface!(ICompositionLightFactory, ICompositionLightFactory_Vtbl, 0x069cf306_da3c_4b44_838a_5e03d51ace55);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionLightFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionLineGeometry(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionLineGeometry {
-    type Vtable = ICompositionLineGeometry_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionLineGeometry {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdd7615a4_0c9a_4b67_8dce_440a5bf9cdec);
-}
+::windows_core::imp::com_interface!(ICompositionLineGeometry, ICompositionLineGeometry_Vtbl, 0xdd7615a4_0c9a_4b67_8dce_440a5bf9cdec);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionLineGeometry_Vtbl {
@@ -1282,16 +726,7 @@ pub struct ICompositionLineGeometry_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetEnd: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionLinearGradientBrush(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionLinearGradientBrush {
-    type Vtable = ICompositionLinearGradientBrush_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionLinearGradientBrush {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x983bc519_a9db_413c_a2d8_2a9056fc525e);
-}
+::windows_core::imp::com_interface!(ICompositionLinearGradientBrush, ICompositionLinearGradientBrush_Vtbl, 0x983bc519_a9db_413c_a2d8_2a9056fc525e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionLinearGradientBrush_Vtbl {
@@ -1313,16 +748,7 @@ pub struct ICompositionLinearGradientBrush_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetStartPoint: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionMaskBrush(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionMaskBrush {
-    type Vtable = ICompositionMaskBrush_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionMaskBrush {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x522cf09e_be6b_4f41_be49_f9226d471b4a);
-}
+::windows_core::imp::com_interface!(ICompositionMaskBrush, ICompositionMaskBrush_Vtbl, 0x522cf09e_be6b_4f41_be49_f9226d471b4a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionMaskBrush_Vtbl {
@@ -1332,16 +758,7 @@ pub struct ICompositionMaskBrush_Vtbl {
     pub Source: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetSource: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionMipmapSurface(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionMipmapSurface {
-    type Vtable = ICompositionMipmapSurface_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionMipmapSurface {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4863675c_cf4a_4b1c_9ece_c5ec0c2b2fe6);
-}
+::windows_core::imp::com_interface!(ICompositionMipmapSurface, ICompositionMipmapSurface_Vtbl, 0x4863675c_cf4a_4b1c_9ece_c5ec0c2b2fe6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionMipmapSurface_Vtbl {
@@ -1361,16 +778,7 @@ pub struct ICompositionMipmapSurface_Vtbl {
     SizeInt32: usize,
     pub GetDrawingSurfaceForLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, level: u32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionNineGridBrush(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionNineGridBrush {
-    type Vtable = ICompositionNineGridBrush_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionNineGridBrush {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf25154e4_bc8c_4be7_b80f_8685b83c0186);
-}
+::windows_core::imp::com_interface!(ICompositionNineGridBrush, ICompositionNineGridBrush_Vtbl, 0xf25154e4_bc8c_4be7_b80f_8685b83c0186);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionNineGridBrush_Vtbl {
@@ -1400,16 +808,7 @@ pub struct ICompositionNineGridBrush_Vtbl {
     pub SetInsetScales: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, scale: f32) -> ::windows_core::HRESULT,
     pub SetInsetScalesWithValues: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, left: f32, top: f32, right: f32, bottom: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionObject(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionObject {
-    type Vtable = ICompositionObject_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionObject {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbcb4ad45_7609_4550_934f_16002a68fded);
-}
+::windows_core::imp::com_interface!(ICompositionObject, ICompositionObject_Vtbl, 0xbcb4ad45_7609_4550_934f_16002a68fded);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionObject_Vtbl {
@@ -1423,16 +822,7 @@ pub struct ICompositionObject_Vtbl {
     pub StartAnimation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, propertyname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, animation: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub StopAnimation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, propertyname: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionObject2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionObject2 {
-    type Vtable = ICompositionObject2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionObject2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xef874ea1_5cff_4b68_9e30_a1519d08ba03);
-}
+::windows_core::imp::com_interface!(ICompositionObject2, ICompositionObject2_Vtbl, 0xef874ea1_5cff_4b68_9e30_a1519d08ba03);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionObject2_Vtbl {
@@ -1444,16 +834,7 @@ pub struct ICompositionObject2_Vtbl {
     pub StartAnimationGroup: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub StopAnimationGroup: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionObject3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionObject3 {
-    type Vtable = ICompositionObject3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionObject3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4bc27925_dacd_4cf2_98b1_986b76e7ebe6);
-}
+::windows_core::imp::com_interface!(ICompositionObject3, ICompositionObject3_Vtbl, 0x4bc27925_dacd_4cf2_98b1_986b76e7ebe6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionObject3_Vtbl {
@@ -1463,63 +844,27 @@ pub struct ICompositionObject3_Vtbl {
     #[cfg(not(feature = "System"))]
     DispatcherQueue: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionObject4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionObject4 {
-    type Vtable = ICompositionObject4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionObject4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0bb3784c_346b_4a7c_966b_7310966553d5);
-}
+::windows_core::imp::com_interface!(ICompositionObject4, ICompositionObject4_Vtbl, 0x0bb3784c_346b_4a7c_966b_7310966553d5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionObject4_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub TryGetAnimationController: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, propertyname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionObject5(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionObject5 {
-    type Vtable = ICompositionObject5_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionObject5 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1d7f391b_a130_5265_a62b_60b8e668965a);
-}
+::windows_core::imp::com_interface!(ICompositionObject5, ICompositionObject5_Vtbl, 0x1d7f391b_a130_5265_a62b_60b8e668965a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionObject5_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub StartAnimationWithController: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, propertyname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, animation: *mut ::core::ffi::c_void, animationcontroller: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionObjectFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionObjectFactory {
-    type Vtable = ICompositionObjectFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionObjectFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x51205c5e_558a_4f2a_8d39_37bfe1e20ddd);
-}
+::windows_core::imp::com_interface!(ICompositionObjectFactory, ICompositionObjectFactory_Vtbl, 0x51205c5e_558a_4f2a_8d39_37bfe1e20ddd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionObjectFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionObjectStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionObjectStatics {
-    type Vtable = ICompositionObjectStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionObjectStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc1ed052f_1ba2_44ba_a904_6a882a0a5adb);
-}
+::windows_core::imp::com_interface!(ICompositionObjectStatics, ICompositionObjectStatics_Vtbl, 0xc1ed052f_1ba2_44ba_a904_6a882a0a5adb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionObjectStatics_Vtbl {
@@ -1527,31 +872,13 @@ pub struct ICompositionObjectStatics_Vtbl {
     pub StartAnimationWithIAnimationObject: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, target: *mut ::core::ffi::c_void, propertyname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, animation: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub StartAnimationGroupWithIAnimationObject: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, target: *mut ::core::ffi::c_void, animation: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionPath(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionPath {
-    type Vtable = ICompositionPath_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionPath {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x66da1d5f_2e10_4f22_8a06_0a8151919e60);
-}
+::windows_core::imp::com_interface!(ICompositionPath, ICompositionPath_Vtbl, 0x66da1d5f_2e10_4f22_8a06_0a8151919e60);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionPath_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionPathFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionPathFactory {
-    type Vtable = ICompositionPathFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionPathFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9c1e8c6a_0f33_4751_9437_eb3fb9d3ab07);
-}
+::windows_core::imp::com_interface!(ICompositionPathFactory, ICompositionPathFactory_Vtbl, 0x9c1e8c6a_0f33_4751_9437_eb3fb9d3ab07);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionPathFactory_Vtbl {
@@ -1561,16 +888,7 @@ pub struct ICompositionPathFactory_Vtbl {
     #[cfg(not(feature = "Graphics"))]
     Create: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionPathGeometry(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionPathGeometry {
-    type Vtable = ICompositionPathGeometry_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionPathGeometry {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0b6a417e_2c77_4c23_af5e_6304c147bb61);
-}
+::windows_core::imp::com_interface!(ICompositionPathGeometry, ICompositionPathGeometry_Vtbl, 0x0b6a417e_2c77_4c23_af5e_6304c147bb61);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionPathGeometry_Vtbl {
@@ -1578,16 +896,7 @@ pub struct ICompositionPathGeometry_Vtbl {
     pub Path: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetPath: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionProjectedShadow(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionProjectedShadow {
-    type Vtable = ICompositionProjectedShadow_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionProjectedShadow {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x285b8e72_4328_523f_bcf2_5557c52c3b25);
-}
+::windows_core::imp::com_interface!(ICompositionProjectedShadow, ICompositionProjectedShadow_Vtbl, 0x285b8e72_4328_523f_bcf2_5557c52c3b25);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionProjectedShadow_Vtbl {
@@ -1603,16 +912,7 @@ pub struct ICompositionProjectedShadow_Vtbl {
     pub SetMinBlurRadius: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
     pub Receivers: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionProjectedShadowCaster(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionProjectedShadowCaster {
-    type Vtable = ICompositionProjectedShadowCaster_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionProjectedShadowCaster {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb1d7d426_1e36_5a62_be56_a16112fdd148);
-}
+::windows_core::imp::com_interface!(ICompositionProjectedShadowCaster, ICompositionProjectedShadowCaster_Vtbl, 0xb1d7d426_1e36_5a62_be56_a16112fdd148);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionProjectedShadowCaster_Vtbl {
@@ -1622,16 +922,7 @@ pub struct ICompositionProjectedShadowCaster_Vtbl {
     pub CastingVisual: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetCastingVisual: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionProjectedShadowCasterCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionProjectedShadowCasterCollection {
-    type Vtable = ICompositionProjectedShadowCasterCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionProjectedShadowCasterCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd2525c0c_e07f_58a3_ac91_37f73ee91740);
-}
+::windows_core::imp::com_interface!(ICompositionProjectedShadowCasterCollection, ICompositionProjectedShadowCasterCollection_Vtbl, 0xd2525c0c_e07f_58a3_ac91_37f73ee91740);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionProjectedShadowCasterCollection_Vtbl {
@@ -1644,32 +935,14 @@ pub struct ICompositionProjectedShadowCasterCollection_Vtbl {
     pub Remove: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, caster: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RemoveAll: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionProjectedShadowCasterCollectionStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionProjectedShadowCasterCollectionStatics {
-    type Vtable = ICompositionProjectedShadowCasterCollectionStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionProjectedShadowCasterCollectionStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x56fbb136_e94f_5299_ab5b_6e15e38bd899);
-}
+::windows_core::imp::com_interface!(ICompositionProjectedShadowCasterCollectionStatics, ICompositionProjectedShadowCasterCollectionStatics_Vtbl, 0x56fbb136_e94f_5299_ab5b_6e15e38bd899);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionProjectedShadowCasterCollectionStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub MaxRespectedCasters: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionProjectedShadowReceiver(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionProjectedShadowReceiver {
-    type Vtable = ICompositionProjectedShadowReceiver_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionProjectedShadowReceiver {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1377985a_6a49_536a_9be4_a96a8e5298a9);
-}
+::windows_core::imp::com_interface!(ICompositionProjectedShadowReceiver, ICompositionProjectedShadowReceiver_Vtbl, 0x1377985a_6a49_536a_9be4_a96a8e5298a9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionProjectedShadowReceiver_Vtbl {
@@ -1677,16 +950,7 @@ pub struct ICompositionProjectedShadowReceiver_Vtbl {
     pub ReceivingVisual: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetReceivingVisual: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionProjectedShadowReceiverUnorderedCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionProjectedShadowReceiverUnorderedCollection {
-    type Vtable = ICompositionProjectedShadowReceiverUnorderedCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionProjectedShadowReceiverUnorderedCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x02b3e3b7_27d2_599f_ac4b_ab787cdde6fd);
-}
+::windows_core::imp::com_interface!(ICompositionProjectedShadowReceiverUnorderedCollection, ICompositionProjectedShadowReceiverUnorderedCollection_Vtbl, 0x02b3e3b7_27d2_599f_ac4b_ab787cdde6fd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionProjectedShadowReceiverUnorderedCollection_Vtbl {
@@ -1696,16 +960,7 @@ pub struct ICompositionProjectedShadowReceiverUnorderedCollection_Vtbl {
     pub Remove: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RemoveAll: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionPropertySet(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionPropertySet {
-    type Vtable = ICompositionPropertySet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionPropertySet {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc9d6d202_5f67_4453_9117_9eadd430d3c2);
-}
+::windows_core::imp::com_interface!(ICompositionPropertySet, ICompositionPropertySet_Vtbl, 0xc9d6d202_5f67_4453_9117_9eadd430d3c2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionPropertySet_Vtbl {
@@ -1763,16 +1018,7 @@ pub struct ICompositionPropertySet_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     TryGetVector4: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionPropertySet2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionPropertySet2 {
-    type Vtable = ICompositionPropertySet2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionPropertySet2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xde80731e_a211_4455_8880_7d0f3f6a44fd);
-}
+::windows_core::imp::com_interface!(ICompositionPropertySet2, ICompositionPropertySet2_Vtbl, 0xde80731e_a211_4455_8880_7d0f3f6a44fd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionPropertySet2_Vtbl {
@@ -1780,16 +1026,7 @@ pub struct ICompositionPropertySet2_Vtbl {
     pub InsertBoolean: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, propertyname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value: bool) -> ::windows_core::HRESULT,
     pub TryGetBoolean: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, propertyname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value: *mut bool, result__: *mut CompositionGetValueStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionRadialGradientBrush(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionRadialGradientBrush {
-    type Vtable = ICompositionRadialGradientBrush_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionRadialGradientBrush {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3d3b50c5_e3fa_4ce2_b9fc_3ee12561788f);
-}
+::windows_core::imp::com_interface!(ICompositionRadialGradientBrush, ICompositionRadialGradientBrush_Vtbl, 0x3d3b50c5_e3fa_4ce2_b9fc_3ee12561788f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionRadialGradientBrush_Vtbl {
@@ -1819,16 +1056,7 @@ pub struct ICompositionRadialGradientBrush_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetGradientOriginOffset: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionRectangleGeometry(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionRectangleGeometry {
-    type Vtable = ICompositionRectangleGeometry_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionRectangleGeometry {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0cd51428_5356_4246_aecf_7a0b76975400);
-}
+::windows_core::imp::com_interface!(ICompositionRectangleGeometry, ICompositionRectangleGeometry_Vtbl, 0x0cd51428_5356_4246_aecf_7a0b76975400);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionRectangleGeometry_Vtbl {
@@ -1850,16 +1078,7 @@ pub struct ICompositionRectangleGeometry_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetSize: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionRoundedRectangleGeometry(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionRoundedRectangleGeometry {
-    type Vtable = ICompositionRoundedRectangleGeometry_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionRoundedRectangleGeometry {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8770c822_1d50_4b8b_b013_7c9a0e46935f);
-}
+::windows_core::imp::com_interface!(ICompositionRoundedRectangleGeometry, ICompositionRoundedRectangleGeometry_Vtbl, 0x8770c822_1d50_4b8b_b013_7c9a0e46935f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionRoundedRectangleGeometry_Vtbl {
@@ -1889,16 +1108,7 @@ pub struct ICompositionRoundedRectangleGeometry_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetSize: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionScopedBatch(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionScopedBatch {
-    type Vtable = ICompositionScopedBatch_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionScopedBatch {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0d00dad0_fb07_46fd_8c72_6280d1a3d1dd);
-}
+::windows_core::imp::com_interface!(ICompositionScopedBatch, ICompositionScopedBatch_Vtbl, 0x0d00dad0_fb07_46fd_8c72_6280d1a3d1dd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionScopedBatch_Vtbl {
@@ -1911,46 +1121,19 @@ pub struct ICompositionScopedBatch_Vtbl {
     pub Completed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveCompleted: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionShadow(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionShadow {
-    type Vtable = ICompositionShadow_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionShadow {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x329e52e2_4335_49cc_b14a_37782d10f0c4);
-}
+::windows_core::imp::com_interface!(ICompositionShadow, ICompositionShadow_Vtbl, 0x329e52e2_4335_49cc_b14a_37782d10f0c4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionShadow_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionShadowFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionShadowFactory {
-    type Vtable = ICompositionShadowFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionShadowFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x221f492f_dcba_4b91_999e_1dc217a01530);
-}
+::windows_core::imp::com_interface!(ICompositionShadowFactory, ICompositionShadowFactory_Vtbl, 0x221f492f_dcba_4b91_999e_1dc217a01530);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionShadowFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionShape(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionShape {
-    type Vtable = ICompositionShape_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionShape {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb47ce2f7_9a88_42c4_9e87_2e500ca8688c);
-}
+::windows_core::imp::com_interface!(ICompositionShape, ICompositionShape_Vtbl, 0xb47ce2f7_9a88_42c4_9e87_2e500ca8688c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionShape_Vtbl {
@@ -1992,31 +1175,13 @@ pub struct ICompositionShape_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetTransformMatrix: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionShapeFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionShapeFactory {
-    type Vtable = ICompositionShapeFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionShapeFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1dfc36d0_b05a_44ef_82b0_12118bcd4cd0);
-}
+::windows_core::imp::com_interface!(ICompositionShapeFactory, ICompositionShapeFactory_Vtbl, 0x1dfc36d0_b05a_44ef_82b0_12118bcd4cd0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionShapeFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionSpriteShape(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionSpriteShape {
-    type Vtable = ICompositionSpriteShape_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionSpriteShape {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x401b61bb_0007_4363_b1f3_6bcc003fb83e);
-}
+::windows_core::imp::com_interface!(ICompositionSpriteShape, ICompositionSpriteShape_Vtbl, 0x401b61bb_0007_4363_b1f3_6bcc003fb83e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionSpriteShape_Vtbl {
@@ -2048,9 +1213,7 @@ pub struct ICompositionSpriteShape_Vtbl {
     pub StrokeThickness: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetStrokeThickness: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionSupportsSystemBackdrop(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ICompositionSupportsSystemBackdrop, ICompositionSupportsSystemBackdrop_Vtbl, 0x397dafe4_b6c2_5bb9_951d_f5707de8b7bc);
 impl ICompositionSupportsSystemBackdrop {
     pub fn SystemBackdrop(&self) -> ::windows_core::Result<CompositionBrush> {
         let this = self;
@@ -2061,21 +1224,15 @@ impl ICompositionSupportsSystemBackdrop {
     }
     pub fn SetSystemBackdrop<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionBrush>,
+        P0: ::windows_core::IntoParam<CompositionBrush>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSystemBackdrop)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSystemBackdrop)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
 ::windows_core::imp::interface_hierarchy!(ICompositionSupportsSystemBackdrop, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for ICompositionSupportsSystemBackdrop {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for ICompositionSupportsSystemBackdrop {
-    type Vtable = ICompositionSupportsSystemBackdrop_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionSupportsSystemBackdrop {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x397dafe4_b6c2_5bb9_951d_f5707de8b7bc);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -2084,35 +1241,18 @@ pub struct ICompositionSupportsSystemBackdrop_Vtbl {
     pub SystemBackdrop: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetSystemBackdrop: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionSurface(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ICompositionSurface, ICompositionSurface_Vtbl, 0x1527540d_42c7_47a6_a408_668f79a90dfb);
 impl ICompositionSurface {}
 ::windows_core::imp::interface_hierarchy!(ICompositionSurface, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for ICompositionSurface {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for ICompositionSurface {
-    type Vtable = ICompositionSurface_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionSurface {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1527540d_42c7_47a6_a408_668f79a90dfb);
 }
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionSurface_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionSurfaceBrush(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionSurfaceBrush {
-    type Vtable = ICompositionSurfaceBrush_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionSurfaceBrush {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xad016d79_1e4c_4c0d_9c29_83338c87c162);
-}
+::windows_core::imp::com_interface!(ICompositionSurfaceBrush, ICompositionSurfaceBrush_Vtbl, 0xad016d79_1e4c_4c0d_9c29_83338c87c162);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionSurfaceBrush_Vtbl {
@@ -2128,16 +1268,7 @@ pub struct ICompositionSurfaceBrush_Vtbl {
     pub VerticalAlignmentRatio: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetVerticalAlignmentRatio: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionSurfaceBrush2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionSurfaceBrush2 {
-    type Vtable = ICompositionSurfaceBrush2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionSurfaceBrush2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd27174d5_64f5_4692_9dc7_71b61d7e5880);
-}
+::windows_core::imp::com_interface!(ICompositionSurfaceBrush2, ICompositionSurfaceBrush2_Vtbl, 0xd27174d5_64f5_4692_9dc7_71b61d7e5880);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionSurfaceBrush2_Vtbl {
@@ -2187,16 +1318,7 @@ pub struct ICompositionSurfaceBrush2_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetTransformMatrix: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionSurfaceBrush3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionSurfaceBrush3 {
-    type Vtable = ICompositionSurfaceBrush3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionSurfaceBrush3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x550bb289_1fe0_42e5_8195_1eefa87ff08e);
-}
+::windows_core::imp::com_interface!(ICompositionSurfaceBrush3, ICompositionSurfaceBrush3_Vtbl, 0x550bb289_1fe0_42e5_8195_1eefa87ff08e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionSurfaceBrush3_Vtbl {
@@ -2204,9 +1326,7 @@ pub struct ICompositionSurfaceBrush3_Vtbl {
     pub SnapToPixels: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetSnapToPixels: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionSurfaceFacade(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ICompositionSurfaceFacade, ICompositionSurfaceFacade_Vtbl, 0xe01622c8_2332_55c7_8868_a7312c5c229d);
 impl ICompositionSurfaceFacade {
     pub fn GetRealSurface(&self) -> ::windows_core::Result<ICompositionSurface> {
         let this = self;
@@ -2220,28 +1340,13 @@ impl ICompositionSurfaceFacade {
 impl ::windows_core::RuntimeType for ICompositionSurfaceFacade {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for ICompositionSurfaceFacade {
-    type Vtable = ICompositionSurfaceFacade_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionSurfaceFacade {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe01622c8_2332_55c7_8868_a7312c5c229d);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionSurfaceFacade_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetRealSurface: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionTarget(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionTarget {
-    type Vtable = ICompositionTarget_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionTarget {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa1bea8ba_d726_4663_8129_6b5e7927ffa6);
-}
+::windows_core::imp::com_interface!(ICompositionTarget, ICompositionTarget_Vtbl, 0xa1bea8ba_d726_4663_8129_6b5e7927ffa6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionTarget_Vtbl {
@@ -2249,31 +1354,13 @@ pub struct ICompositionTarget_Vtbl {
     pub Root: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetRoot: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionTargetFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionTargetFactory {
-    type Vtable = ICompositionTargetFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionTargetFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x93cd9d2b_8516_4b14_a8ce_f49e2119ec42);
-}
+::windows_core::imp::com_interface!(ICompositionTargetFactory, ICompositionTargetFactory_Vtbl, 0x93cd9d2b_8516_4b14_a8ce_f49e2119ec42);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionTargetFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionTexture(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionTexture {
-    type Vtable = ICompositionTexture_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionTexture {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x347d03a0_1c0a_4c0b_b232_8570b2b1a4ea);
-}
+::windows_core::imp::com_interface!(ICompositionTexture, ICompositionTexture_Vtbl, 0x347d03a0_1c0a_4c0b_b232_8570b2b1a4ea);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionTexture_Vtbl {
@@ -2303,61 +1390,25 @@ pub struct ICompositionTexture_Vtbl {
     #[cfg(not(feature = "Graphics_DirectX"))]
     SetColorSpace: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionTextureFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionTextureFactory {
-    type Vtable = ICompositionTextureFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionTextureFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x09d9523d_471c_5ab5_b053_b568ee46ebfb);
-}
+::windows_core::imp::com_interface!(ICompositionTextureFactory, ICompositionTextureFactory_Vtbl, 0x09d9523d_471c_5ab5_b053_b568ee46ebfb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionTextureFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionTransform(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionTransform {
-    type Vtable = ICompositionTransform_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionTransform {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7cd54529_fbed_4112_abc5_185906dd927c);
-}
+::windows_core::imp::com_interface!(ICompositionTransform, ICompositionTransform_Vtbl, 0x7cd54529_fbed_4112_abc5_185906dd927c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionTransform_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionTransformFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionTransformFactory {
-    type Vtable = ICompositionTransformFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionTransformFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaaaeca26_c149_517a_8f72_6bff7a65ce08);
-}
+::windows_core::imp::com_interface!(ICompositionTransformFactory, ICompositionTransformFactory_Vtbl, 0xaaaeca26_c149_517a_8f72_6bff7a65ce08);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionTransformFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionViewBox(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionViewBox {
-    type Vtable = ICompositionViewBox_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionViewBox {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb440bf07_068f_4537_84c6_4ecbe019e1f4);
-}
+::windows_core::imp::com_interface!(ICompositionViewBox, ICompositionViewBox_Vtbl, 0xb440bf07_068f_4537_84c6_4ecbe019e1f4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionViewBox_Vtbl {
@@ -2385,16 +1436,7 @@ pub struct ICompositionViewBox_Vtbl {
     pub VerticalAlignmentRatio: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetVerticalAlignmentRatio: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionVirtualDrawingSurface(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionVirtualDrawingSurface {
-    type Vtable = ICompositionVirtualDrawingSurface_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionVirtualDrawingSurface {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa9c384db_8740_4f94_8b9d_b68521e7863d);
-}
+::windows_core::imp::com_interface!(ICompositionVirtualDrawingSurface, ICompositionVirtualDrawingSurface_Vtbl, 0xa9c384db_8740_4f94_8b9d_b68521e7863d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionVirtualDrawingSurface_Vtbl {
@@ -2404,31 +1446,13 @@ pub struct ICompositionVirtualDrawingSurface_Vtbl {
     #[cfg(not(feature = "Graphics"))]
     Trim: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionVirtualDrawingSurfaceFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionVirtualDrawingSurfaceFactory {
-    type Vtable = ICompositionVirtualDrawingSurfaceFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionVirtualDrawingSurfaceFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6766106c_d56b_4a49_b1df_5076a0620768);
-}
+::windows_core::imp::com_interface!(ICompositionVirtualDrawingSurfaceFactory, ICompositionVirtualDrawingSurfaceFactory_Vtbl, 0x6766106c_d56b_4a49_b1df_5076a0620768);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionVirtualDrawingSurfaceFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositionVisualSurface(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositionVisualSurface {
-    type Vtable = ICompositionVisualSurface_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositionVisualSurface {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb224d803_4f6e_4a3f_8cae_3dc1cda74fc6);
-}
+::windows_core::imp::com_interface!(ICompositionVisualSurface, ICompositionVisualSurface_Vtbl, 0xb224d803_4f6e_4a3f_8cae_3dc1cda74fc6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositionVisualSurface_Vtbl {
@@ -2452,16 +1476,7 @@ pub struct ICompositionVisualSurface_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetSourceSize: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositor(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositor {
-    type Vtable = ICompositor_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositor {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb403ca50_7f8c_4e83_985f_cc45060036d8);
-}
+::windows_core::imp::com_interface!(ICompositor, ICompositor_Vtbl, 0xb403ca50_7f8c_4e83_985f_cc45060036d8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositor_Vtbl {
@@ -2500,16 +1515,7 @@ pub struct ICompositor_Vtbl {
     pub CreateVector4KeyFrameAnimation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetCommitBatch: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, batchtype: CompositionBatchTypes, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositor2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositor2 {
-    type Vtable = ICompositor2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositor2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x735081dc_5e24_45da_a38f_e32cc349a9a0);
-}
+::windows_core::imp::com_interface!(ICompositor2, ICompositor2_Vtbl, 0x735081dc_5e24_45da_a38f_e32cc349a9a0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositor2_Vtbl {
@@ -2528,32 +1534,14 @@ pub struct ICompositor2_Vtbl {
     pub CreateStepEasingFunction: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateStepEasingFunctionWithStepCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, stepcount: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositor3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositor3 {
-    type Vtable = ICompositor3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositor3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc9dd8ef0_6eb1_4e3c_a658_675d9c64d4ab);
-}
+::windows_core::imp::com_interface!(ICompositor3, ICompositor3_Vtbl, 0xc9dd8ef0_6eb1_4e3c_a658_675d9c64d4ab);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositor3_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateHostBackdropBrush: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositor4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositor4 {
-    type Vtable = ICompositor4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositor4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xae47e78a_7910_4425_a482_a05b758adce9);
-}
+::windows_core::imp::com_interface!(ICompositor4, ICompositor4_Vtbl, 0xae47e78a_7910_4425_a482_a05b758adce9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositor4_Vtbl {
@@ -2565,16 +1553,7 @@ pub struct ICompositor4_Vtbl {
     pub CreateSpringVector2Animation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateSpringVector3Animation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositor5(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositor5 {
-    type Vtable = ICompositor5_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositor5 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x48ea31ad_7fcd_4076_a79c_90cc4b852c9b);
-}
+::windows_core::imp::com_interface!(ICompositor5, ICompositor5_Vtbl, 0x48ea31ad_7fcd_4076_a79c_90cc4b852c9b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositor5_Vtbl {
@@ -2600,16 +1579,7 @@ pub struct ICompositor5_Vtbl {
     pub CreateViewBox: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RequestCommitAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositor6(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositor6 {
-    type Vtable = ICompositor6_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositor6 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7a38b2bd_cec8_4eeb_830f_d8d07aedebc3);
-}
+::windows_core::imp::com_interface!(ICompositor6, ICompositor6_Vtbl, 0x7a38b2bd_cec8_4eeb_830f_d8d07aedebc3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositor6_Vtbl {
@@ -2620,16 +1590,7 @@ pub struct ICompositor6_Vtbl {
     pub CreateRedirectVisualWithSourceVisual: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, source: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateBooleanKeyFrameAnimation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositor7(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositor7 {
-    type Vtable = ICompositor7_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositor7 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd3483fad_9a12_53ba_bfc8_88b7ff7977c6);
-}
+::windows_core::imp::com_interface!(ICompositor7, ICompositor7_Vtbl, 0xd3483fad_9a12_53ba_bfc8_88b7ff7977c6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositor7_Vtbl {
@@ -2646,32 +1607,14 @@ pub struct ICompositor7_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     CreateRectangleClipWithSidesAndRadius: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositor8(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositor8 {
-    type Vtable = ICompositor8_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositor8 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9a0bdee2_fe7b_5f62_a366_9cf8effe2112);
-}
+::windows_core::imp::com_interface!(ICompositor8, ICompositor8_Vtbl, 0x9a0bdee2_fe7b_5f62_a366_9cf8effe2112);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositor8_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateAnimationController: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositorStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositorStatics {
-    type Vtable = ICompositorStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositorStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x080db93e_121e_4d97_8b74_1dfcf91987ea);
-}
+::windows_core::imp::com_interface!(ICompositorStatics, ICompositorStatics_Vtbl, 0x080db93e_121e_4d97_8b74_1dfcf91987ea);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositorStatics_Vtbl {
@@ -2679,32 +1622,14 @@ pub struct ICompositorStatics_Vtbl {
     pub MaxGlobalPlaybackRate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub MinGlobalPlaybackRate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositorWithBlurredWallpaperBackdropBrush(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositorWithBlurredWallpaperBackdropBrush {
-    type Vtable = ICompositorWithBlurredWallpaperBackdropBrush_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositorWithBlurredWallpaperBackdropBrush {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0d8fb190_f122_5b8d_9fdd_543b0d8eb7f3);
-}
+::windows_core::imp::com_interface!(ICompositorWithBlurredWallpaperBackdropBrush, ICompositorWithBlurredWallpaperBackdropBrush_Vtbl, 0x0d8fb190_f122_5b8d_9fdd_543b0d8eb7f3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositorWithBlurredWallpaperBackdropBrush_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub TryCreateBlurredWallpaperBackdropBrush: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositorWithProjectedShadow(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositorWithProjectedShadow {
-    type Vtable = ICompositorWithProjectedShadow_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositorWithProjectedShadow {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa2e6330e_8a60_5a38_bb85_b44ea901677c);
-}
+::windows_core::imp::com_interface!(ICompositorWithProjectedShadow, ICompositorWithProjectedShadow_Vtbl, 0xa2e6330e_8a60_5a38_bb85_b44ea901677c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositorWithProjectedShadow_Vtbl {
@@ -2713,79 +1638,34 @@ pub struct ICompositorWithProjectedShadow_Vtbl {
     pub CreateProjectedShadow: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateProjectedShadowReceiver: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositorWithRadialGradient(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositorWithRadialGradient {
-    type Vtable = ICompositorWithRadialGradient_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositorWithRadialGradient {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x98b9c1a7_8e71_4b53_b4a8_69ba5d19dc5b);
-}
+::windows_core::imp::com_interface!(ICompositorWithRadialGradient, ICompositorWithRadialGradient_Vtbl, 0x98b9c1a7_8e71_4b53_b4a8_69ba5d19dc5b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositorWithRadialGradient_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateRadialGradientBrush: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICompositorWithVisualSurface(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICompositorWithVisualSurface {
-    type Vtable = ICompositorWithVisualSurface_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICompositorWithVisualSurface {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcfa1658b_0123_4551_8891_89bdcc40322b);
-}
+::windows_core::imp::com_interface!(ICompositorWithVisualSurface, ICompositorWithVisualSurface_Vtbl, 0xcfa1658b_0123_4551_8891_89bdcc40322b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICompositorWithVisualSurface_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateVisualSurface: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContainerVisual(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContainerVisual {
-    type Vtable = IContainerVisual_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContainerVisual {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x02f6bc74_ed20_4773_afe6_d49b4a93db32);
-}
+::windows_core::imp::com_interface!(IContainerVisual, IContainerVisual_Vtbl, 0x02f6bc74_ed20_4773_afe6_d49b4a93db32);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContainerVisual_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Children: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContainerVisualFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContainerVisualFactory {
-    type Vtable = IContainerVisualFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContainerVisualFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0363a65b_c7da_4d9a_95f4_69b5c8df670b);
-}
+::windows_core::imp::com_interface!(IContainerVisualFactory, IContainerVisualFactory_Vtbl, 0x0363a65b_c7da_4d9a_95f4_69b5c8df670b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContainerVisualFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICubicBezierEasingFunction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICubicBezierEasingFunction {
-    type Vtable = ICubicBezierEasingFunction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICubicBezierEasingFunction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x32350666_c1e8_44f9_96b8_c98acf0ae698);
-}
+::windows_core::imp::com_interface!(ICubicBezierEasingFunction, ICubicBezierEasingFunction_Vtbl, 0x32350666_c1e8_44f9_96b8_c98acf0ae698);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICubicBezierEasingFunction_Vtbl {
@@ -2799,16 +1679,7 @@ pub struct ICubicBezierEasingFunction_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     ControlPoint2: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDelegatedInkTrailVisual(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDelegatedInkTrailVisual {
-    type Vtable = IDelegatedInkTrailVisual_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDelegatedInkTrailVisual {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x856e60b1_e1ab_5b23_8e3d_d513f221c998);
-}
+::windows_core::imp::com_interface!(IDelegatedInkTrailVisual, IDelegatedInkTrailVisual_Vtbl, 0x856e60b1_e1ab_5b23_8e3d_d513f221c998);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDelegatedInkTrailVisual_Vtbl {
@@ -2818,16 +1689,7 @@ pub struct IDelegatedInkTrailVisual_Vtbl {
     pub RemoveTrailPoints: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, generationid: u32) -> ::windows_core::HRESULT,
     pub StartNewTrail: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, color: super::Color) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDelegatedInkTrailVisualStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDelegatedInkTrailVisualStatics {
-    type Vtable = IDelegatedInkTrailVisualStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDelegatedInkTrailVisualStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0daf6bd5_42c6_555c_9267_e0ac663af836);
-}
+::windows_core::imp::com_interface!(IDelegatedInkTrailVisualStatics, IDelegatedInkTrailVisualStatics_Vtbl, 0x0daf6bd5_42c6_555c_9267_e0ac663af836);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDelegatedInkTrailVisualStatics_Vtbl {
@@ -2835,16 +1697,7 @@ pub struct IDelegatedInkTrailVisualStatics_Vtbl {
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, compositor: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateForSwapChain: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, compositor: *mut ::core::ffi::c_void, swapchain: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDistantLight(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDistantLight {
-    type Vtable = IDistantLight_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDistantLight {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x318cfafc_5ce3_4b55_ab5d_07a00353ac99);
-}
+::windows_core::imp::com_interface!(IDistantLight, IDistantLight_Vtbl, 0x318cfafc_5ce3_4b55_ab5d_07a00353ac99);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDistantLight_Vtbl {
@@ -2862,16 +1715,7 @@ pub struct IDistantLight_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetDirection: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDistantLight2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDistantLight2 {
-    type Vtable = IDistantLight2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDistantLight2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdbcdaa1c_294b_48d7_b60e_76df64aa392b);
-}
+::windows_core::imp::com_interface!(IDistantLight2, IDistantLight2_Vtbl, 0xdbcdaa1c_294b_48d7_b60e_76df64aa392b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDistantLight2_Vtbl {
@@ -2879,16 +1723,7 @@ pub struct IDistantLight2_Vtbl {
     pub Intensity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetIntensity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDropShadow(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDropShadow {
-    type Vtable = IDropShadow_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDropShadow {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcb977c07_a154_4851_85e7_a8924c84fad8);
-}
+::windows_core::imp::com_interface!(IDropShadow, IDropShadow_Vtbl, 0xcb977c07_a154_4851_85e7_a8924c84fad8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDropShadow_Vtbl {
@@ -2910,16 +1745,7 @@ pub struct IDropShadow_Vtbl {
     pub Opacity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetOpacity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDropShadow2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDropShadow2 {
-    type Vtable = IDropShadow2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDropShadow2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6c4218bc_15b9_4c2d_8d4a_0767df11977a);
-}
+::windows_core::imp::com_interface!(IDropShadow2, IDropShadow2_Vtbl, 0x6c4218bc_15b9_4c2d_8d4a_0767df11977a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDropShadow2_Vtbl {
@@ -2927,16 +1753,7 @@ pub struct IDropShadow2_Vtbl {
     pub SourcePolicy: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut CompositionDropShadowSourcePolicy) -> ::windows_core::HRESULT,
     pub SetSourcePolicy: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: CompositionDropShadowSourcePolicy) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IElasticEasingFunction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IElasticEasingFunction {
-    type Vtable = IElasticEasingFunction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IElasticEasingFunction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x66de6285_054e_5594_8475_c22cb51f1bd5);
-}
+::windows_core::imp::com_interface!(IElasticEasingFunction, IElasticEasingFunction_Vtbl, 0x66de6285_054e_5594_8475_c22cb51f1bd5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IElasticEasingFunction_Vtbl {
@@ -2945,16 +1762,7 @@ pub struct IElasticEasingFunction_Vtbl {
     pub Oscillations: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
     pub Springiness: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IExponentialEasingFunction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IExponentialEasingFunction {
-    type Vtable = IExponentialEasingFunction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IExponentialEasingFunction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6f7d1a51_98d2_5638_a34a_00486554c750);
-}
+::windows_core::imp::com_interface!(IExponentialEasingFunction, IExponentialEasingFunction_Vtbl, 0x6f7d1a51_98d2_5638_a34a_00486554c750);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IExponentialEasingFunction_Vtbl {
@@ -2962,16 +1770,7 @@ pub struct IExponentialEasingFunction_Vtbl {
     pub Mode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut CompositionEasingFunctionMode) -> ::windows_core::HRESULT,
     pub Exponent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IExpressionAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IExpressionAnimation {
-    type Vtable = IExpressionAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IExpressionAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6acc5431_7d3d_4bf3_abb6_f44bdc4888c1);
-}
+::windows_core::imp::com_interface!(IExpressionAnimation, IExpressionAnimation_Vtbl, 0x6acc5431_7d3d_4bf3_abb6_f44bdc4888c1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IExpressionAnimation_Vtbl {
@@ -2979,31 +1778,13 @@ pub struct IExpressionAnimation_Vtbl {
     pub Expression: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetExpression: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IImplicitAnimationCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IImplicitAnimationCollection {
-    type Vtable = IImplicitAnimationCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IImplicitAnimationCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0598a3ff_0a92_4c9d_a427_b25519250dbf);
-}
+::windows_core::imp::com_interface!(IImplicitAnimationCollection, IImplicitAnimationCollection_Vtbl, 0x0598a3ff_0a92_4c9d_a427_b25519250dbf);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IImplicitAnimationCollection_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInsetClip(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInsetClip {
-    type Vtable = IInsetClip_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInsetClip {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1e73e647_84c7_477a_b474_5880e0442e15);
-}
+::windows_core::imp::com_interface!(IInsetClip, IInsetClip_Vtbl, 0x1e73e647_84c7_477a_b474_5880e0442e15);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInsetClip_Vtbl {
@@ -3017,16 +1798,7 @@ pub struct IInsetClip_Vtbl {
     pub TopInset: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetTopInset: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKeyFrameAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKeyFrameAnimation {
-    type Vtable = IKeyFrameAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKeyFrameAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x126e7f22_3ae9_4540_9a8a_deae8a4a4a84);
-}
+::windows_core::imp::com_interface!(IKeyFrameAnimation, IKeyFrameAnimation_Vtbl, 0x126e7f22_3ae9_4540_9a8a_deae8a4a4a84);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKeyFrameAnimation_Vtbl {
@@ -3045,16 +1817,7 @@ pub struct IKeyFrameAnimation_Vtbl {
     pub InsertExpressionKeyFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, normalizedprogresskey: f32, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub InsertExpressionKeyFrameWithEasingFunction: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, normalizedprogresskey: f32, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>, easingfunction: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKeyFrameAnimation2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKeyFrameAnimation2 {
-    type Vtable = IKeyFrameAnimation2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKeyFrameAnimation2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf4b488bb_2940_4ec0_a41a_eb6d801a2f18);
-}
+::windows_core::imp::com_interface!(IKeyFrameAnimation2, IKeyFrameAnimation2_Vtbl, 0xf4b488bb_2940_4ec0_a41a_eb6d801a2f18);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKeyFrameAnimation2_Vtbl {
@@ -3062,16 +1825,7 @@ pub struct IKeyFrameAnimation2_Vtbl {
     pub Direction: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut AnimationDirection) -> ::windows_core::HRESULT,
     pub SetDirection: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: AnimationDirection) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKeyFrameAnimation3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKeyFrameAnimation3 {
-    type Vtable = IKeyFrameAnimation3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKeyFrameAnimation3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x845bf0b4_d8de_462f_8753_c80d43c6ff5a);
-}
+::windows_core::imp::com_interface!(IKeyFrameAnimation3, IKeyFrameAnimation3_Vtbl, 0x845bf0b4_d8de_462f_8753_c80d43c6ff5a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKeyFrameAnimation3_Vtbl {
@@ -3079,31 +1833,13 @@ pub struct IKeyFrameAnimation3_Vtbl {
     pub DelayBehavior: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut AnimationDelayBehavior) -> ::windows_core::HRESULT,
     pub SetDelayBehavior: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: AnimationDelayBehavior) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKeyFrameAnimationFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKeyFrameAnimationFactory {
-    type Vtable = IKeyFrameAnimationFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKeyFrameAnimationFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbf0803f8_712a_4fc1_8c87_970859ed8d2e);
-}
+::windows_core::imp::com_interface!(IKeyFrameAnimationFactory, IKeyFrameAnimationFactory_Vtbl, 0xbf0803f8_712a_4fc1_8c87_970859ed8d2e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKeyFrameAnimationFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILayerVisual(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILayerVisual {
-    type Vtable = ILayerVisual_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILayerVisual {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaf843985_0444_4887_8e83_b40b253f822c);
-}
+::windows_core::imp::com_interface!(ILayerVisual, ILayerVisual_Vtbl, 0xaf843985_0444_4887_8e83_b40b253f822c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILayerVisual_Vtbl {
@@ -3111,16 +1847,7 @@ pub struct ILayerVisual_Vtbl {
     pub Effect: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetEffect: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILayerVisual2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILayerVisual2 {
-    type Vtable = ILayerVisual2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILayerVisual2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x98f9aeeb_6f23_49f1_90b1_1f59a14fbce3);
-}
+::windows_core::imp::com_interface!(ILayerVisual2, ILayerVisual2_Vtbl, 0x98f9aeeb_6f23_49f1_90b1_1f59a14fbce3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILayerVisual2_Vtbl {
@@ -3128,31 +1855,13 @@ pub struct ILayerVisual2_Vtbl {
     pub Shadow: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetShadow: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILinearEasingFunction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILinearEasingFunction {
-    type Vtable = ILinearEasingFunction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILinearEasingFunction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9400975a_c7a6_46b3_acf7_1a268a0a117d);
-}
+::windows_core::imp::com_interface!(ILinearEasingFunction, ILinearEasingFunction_Vtbl, 0x9400975a_c7a6_46b3_acf7_1a268a0a117d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILinearEasingFunction_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INaturalMotionAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INaturalMotionAnimation {
-    type Vtable = INaturalMotionAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INaturalMotionAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x438de12d_769b_4821_a949_284a6547e873);
-}
+::windows_core::imp::com_interface!(INaturalMotionAnimation, INaturalMotionAnimation_Vtbl, 0x438de12d_769b_4821_a949_284a6547e873);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INaturalMotionAnimation_Vtbl {
@@ -3164,31 +1873,13 @@ pub struct INaturalMotionAnimation_Vtbl {
     pub StopBehavior: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut AnimationStopBehavior) -> ::windows_core::HRESULT,
     pub SetStopBehavior: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: AnimationStopBehavior) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INaturalMotionAnimationFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INaturalMotionAnimationFactory {
-    type Vtable = INaturalMotionAnimationFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INaturalMotionAnimationFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf53acb06_cf6a_4387_a3fe_5221f3e7e0e0);
-}
+::windows_core::imp::com_interface!(INaturalMotionAnimationFactory, INaturalMotionAnimationFactory_Vtbl, 0xf53acb06_cf6a_4387_a3fe_5221f3e7e0e0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INaturalMotionAnimationFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPathKeyFrameAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPathKeyFrameAnimation {
-    type Vtable = IPathKeyFrameAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPathKeyFrameAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9d0d18c9_1576_4b3f_be60_1d5031f5e71b);
-}
+::windows_core::imp::com_interface!(IPathKeyFrameAnimation, IPathKeyFrameAnimation_Vtbl, 0x9d0d18c9_1576_4b3f_be60_1d5031f5e71b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPathKeyFrameAnimation_Vtbl {
@@ -3196,16 +1887,7 @@ pub struct IPathKeyFrameAnimation_Vtbl {
     pub InsertKeyFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, normalizedprogresskey: f32, path: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub InsertKeyFrameWithEasingFunction: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, normalizedprogresskey: f32, path: *mut ::core::ffi::c_void, easingfunction: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPointLight(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPointLight {
-    type Vtable = IPointLight_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPointLight {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb18545b3_0c5a_4ab0_bedc_4f3546948272);
-}
+::windows_core::imp::com_interface!(IPointLight, IPointLight_Vtbl, 0xb18545b3_0c5a_4ab0_bedc_4f3546948272);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPointLight_Vtbl {
@@ -3229,16 +1911,7 @@ pub struct IPointLight_Vtbl {
     pub QuadraticAttenuation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetQuadraticAttenuation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPointLight2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPointLight2 {
-    type Vtable = IPointLight2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPointLight2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xefe98f2c_0678_4f69_b164_a810d995bcb7);
-}
+::windows_core::imp::com_interface!(IPointLight2, IPointLight2_Vtbl, 0xefe98f2c_0678_4f69_b164_a810d995bcb7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPointLight2_Vtbl {
@@ -3246,16 +1919,7 @@ pub struct IPointLight2_Vtbl {
     pub Intensity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetIntensity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPointLight3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPointLight3 {
-    type Vtable = IPointLight3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPointLight3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4c0a8367_d4e9_468a_87ae_7ba43ab29485);
-}
+::windows_core::imp::com_interface!(IPointLight3, IPointLight3_Vtbl, 0x4c0a8367_d4e9_468a_87ae_7ba43ab29485);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPointLight3_Vtbl {
@@ -3265,16 +1929,7 @@ pub struct IPointLight3_Vtbl {
     pub MaxAttenuationCutoff: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetMaxAttenuationCutoff: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPowerEasingFunction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPowerEasingFunction {
-    type Vtable = IPowerEasingFunction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPowerEasingFunction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc3ff53d6_138b_5815_891a_b7f615ccc563);
-}
+::windows_core::imp::com_interface!(IPowerEasingFunction, IPowerEasingFunction_Vtbl, 0xc3ff53d6_138b_5815_891a_b7f615ccc563);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPowerEasingFunction_Vtbl {
@@ -3282,16 +1937,7 @@ pub struct IPowerEasingFunction_Vtbl {
     pub Mode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut CompositionEasingFunctionMode) -> ::windows_core::HRESULT,
     pub Power: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IQuaternionKeyFrameAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IQuaternionKeyFrameAnimation {
-    type Vtable = IQuaternionKeyFrameAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IQuaternionKeyFrameAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x404e5835_ecf6_4240_8520_671279cf36bc);
-}
+::windows_core::imp::com_interface!(IQuaternionKeyFrameAnimation, IQuaternionKeyFrameAnimation_Vtbl, 0x404e5835_ecf6_4240_8520_671279cf36bc);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IQuaternionKeyFrameAnimation_Vtbl {
@@ -3305,16 +1951,7 @@ pub struct IQuaternionKeyFrameAnimation_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     InsertKeyFrameWithEasingFunction: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IRectangleClip(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IRectangleClip {
-    type Vtable = IRectangleClip_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IRectangleClip {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb3e7549e_00b4_5b53_8be8_353f6c433101);
-}
+::windows_core::imp::com_interface!(IRectangleClip, IRectangleClip_Vtbl, 0xb3e7549e_00b4_5b53_8be8_353f6c433101);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IRectangleClip_Vtbl {
@@ -3360,16 +1997,7 @@ pub struct IRectangleClip_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetTopRightRadius: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IRedirectVisual(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IRedirectVisual {
-    type Vtable = IRedirectVisual_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IRedirectVisual {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8cc6e340_8b75_5422_b06f_09ffe9f8617e);
-}
+::windows_core::imp::com_interface!(IRedirectVisual, IRedirectVisual_Vtbl, 0x8cc6e340_8b75_5422_b06f_09ffe9f8617e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IRedirectVisual_Vtbl {
@@ -3377,32 +2005,14 @@ pub struct IRedirectVisual_Vtbl {
     pub Source: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetSource: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IRenderingDeviceReplacedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IRenderingDeviceReplacedEventArgs {
-    type Vtable = IRenderingDeviceReplacedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IRenderingDeviceReplacedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3a31ac7d_28bf_4e7a_8524_71679d480f38);
-}
+::windows_core::imp::com_interface!(IRenderingDeviceReplacedEventArgs, IRenderingDeviceReplacedEventArgs_Vtbl, 0x3a31ac7d_28bf_4e7a_8524_71679d480f38);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IRenderingDeviceReplacedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GraphicsDevice: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IScalarKeyFrameAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IScalarKeyFrameAnimation {
-    type Vtable = IScalarKeyFrameAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IScalarKeyFrameAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xae288fa9_252c_4b95_a725_bf85e38000a1);
-}
+::windows_core::imp::com_interface!(IScalarKeyFrameAnimation, IScalarKeyFrameAnimation_Vtbl, 0xae288fa9_252c_4b95_a725_bf85e38000a1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IScalarKeyFrameAnimation_Vtbl {
@@ -3410,16 +2020,7 @@ pub struct IScalarKeyFrameAnimation_Vtbl {
     pub InsertKeyFrame: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, normalizedprogresskey: f32, value: f32) -> ::windows_core::HRESULT,
     pub InsertKeyFrameWithEasingFunction: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, normalizedprogresskey: f32, value: f32, easingfunction: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IScalarNaturalMotionAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IScalarNaturalMotionAnimation {
-    type Vtable = IScalarNaturalMotionAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IScalarNaturalMotionAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x94a94581_bf92_495b_b5bd_d2c659430737);
-}
+::windows_core::imp::com_interface!(IScalarNaturalMotionAnimation, IScalarNaturalMotionAnimation_Vtbl, 0x94a94581_bf92_495b_b5bd_d2c659430737);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IScalarNaturalMotionAnimation_Vtbl {
@@ -3431,31 +2032,13 @@ pub struct IScalarNaturalMotionAnimation_Vtbl {
     pub InitialVelocity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetInitialVelocity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IScalarNaturalMotionAnimationFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IScalarNaturalMotionAnimationFactory {
-    type Vtable = IScalarNaturalMotionAnimationFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IScalarNaturalMotionAnimationFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x835aa4fc_671c_41dd_af48_ae8def8b1529);
-}
+::windows_core::imp::com_interface!(IScalarNaturalMotionAnimationFactory, IScalarNaturalMotionAnimationFactory_Vtbl, 0x835aa4fc_671c_41dd_af48_ae8def8b1529);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IScalarNaturalMotionAnimationFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IShapeVisual(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IShapeVisual {
-    type Vtable = IShapeVisual_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IShapeVisual {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf2bd13c3_ba7e_4b0f_9126_ffb7536b8176);
-}
+::windows_core::imp::com_interface!(IShapeVisual, IShapeVisual_Vtbl, 0xf2bd13c3_ba7e_4b0f_9126_ffb7536b8176);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IShapeVisual_Vtbl {
@@ -3467,32 +2050,14 @@ pub struct IShapeVisual_Vtbl {
     pub ViewBox: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetViewBox: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISineEasingFunction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISineEasingFunction {
-    type Vtable = ISineEasingFunction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISineEasingFunction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf1b518bf_9563_5474_bd13_44b2df4b1d58);
-}
+::windows_core::imp::com_interface!(ISineEasingFunction, ISineEasingFunction_Vtbl, 0xf1b518bf_9563_5474_bd13_44b2df4b1d58);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISineEasingFunction_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Mode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut CompositionEasingFunctionMode) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISpotLight(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISpotLight {
-    type Vtable = ISpotLight_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISpotLight {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5a9fe273_44a1_4f95_a422_8fa5116bdb44);
-}
+::windows_core::imp::com_interface!(ISpotLight, ISpotLight_Vtbl, 0x5a9fe273_44a1_4f95_a422_8fa5116bdb44);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISpotLight_Vtbl {
@@ -3534,16 +2099,7 @@ pub struct ISpotLight_Vtbl {
     pub QuadraticAttenuation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetQuadraticAttenuation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISpotLight2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISpotLight2 {
-    type Vtable = ISpotLight2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISpotLight2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x64ee615e_0686_4dea_a9e8_bc3a8c701459);
-}
+::windows_core::imp::com_interface!(ISpotLight2, ISpotLight2_Vtbl, 0x64ee615e_0686_4dea_a9e8_bc3a8c701459);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISpotLight2_Vtbl {
@@ -3553,16 +2109,7 @@ pub struct ISpotLight2_Vtbl {
     pub OuterConeIntensity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetOuterConeIntensity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISpotLight3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISpotLight3 {
-    type Vtable = ISpotLight3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISpotLight3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe4d03eea_131f_480e_859e_b82705b74360);
-}
+::windows_core::imp::com_interface!(ISpotLight3, ISpotLight3_Vtbl, 0xe4d03eea_131f_480e_859e_b82705b74360);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISpotLight3_Vtbl {
@@ -3572,16 +2119,7 @@ pub struct ISpotLight3_Vtbl {
     pub MaxAttenuationCutoff: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
     pub SetMaxAttenuationCutoff: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: f32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISpringScalarNaturalMotionAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISpringScalarNaturalMotionAnimation {
-    type Vtable = ISpringScalarNaturalMotionAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISpringScalarNaturalMotionAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0572a95f_37f9_4fbe_b87b_5cd03a89501c);
-}
+::windows_core::imp::com_interface!(ISpringScalarNaturalMotionAnimation, ISpringScalarNaturalMotionAnimation_Vtbl, 0x0572a95f_37f9_4fbe_b87b_5cd03a89501c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISpringScalarNaturalMotionAnimation_Vtbl {
@@ -3591,16 +2129,7 @@ pub struct ISpringScalarNaturalMotionAnimation_Vtbl {
     pub Period: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
     pub SetPeriod: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: super::super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISpringVector2NaturalMotionAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISpringVector2NaturalMotionAnimation {
-    type Vtable = ISpringVector2NaturalMotionAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISpringVector2NaturalMotionAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x23f494b5_ee73_4f0f_a423_402b946df4b3);
-}
+::windows_core::imp::com_interface!(ISpringVector2NaturalMotionAnimation, ISpringVector2NaturalMotionAnimation_Vtbl, 0x23f494b5_ee73_4f0f_a423_402b946df4b3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISpringVector2NaturalMotionAnimation_Vtbl {
@@ -3610,16 +2139,7 @@ pub struct ISpringVector2NaturalMotionAnimation_Vtbl {
     pub Period: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
     pub SetPeriod: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: super::super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISpringVector3NaturalMotionAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISpringVector3NaturalMotionAnimation {
-    type Vtable = ISpringVector3NaturalMotionAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISpringVector3NaturalMotionAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6c8749df_d57b_4794_8e2d_cecb11e194e5);
-}
+::windows_core::imp::com_interface!(ISpringVector3NaturalMotionAnimation, ISpringVector3NaturalMotionAnimation_Vtbl, 0x6c8749df_d57b_4794_8e2d_cecb11e194e5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISpringVector3NaturalMotionAnimation_Vtbl {
@@ -3629,16 +2149,7 @@ pub struct ISpringVector3NaturalMotionAnimation_Vtbl {
     pub Period: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
     pub SetPeriod: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: super::super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISpriteVisual(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISpriteVisual {
-    type Vtable = ISpriteVisual_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISpriteVisual {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x08e05581_1ad1_4f97_9757_402d76e4233b);
-}
+::windows_core::imp::com_interface!(ISpriteVisual, ISpriteVisual_Vtbl, 0x08e05581_1ad1_4f97_9757_402d76e4233b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISpriteVisual_Vtbl {
@@ -3646,16 +2157,7 @@ pub struct ISpriteVisual_Vtbl {
     pub Brush: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetBrush: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISpriteVisual2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISpriteVisual2 {
-    type Vtable = ISpriteVisual2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISpriteVisual2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x588c9664_997a_4850_91fe_53cb58f81ce9);
-}
+::windows_core::imp::com_interface!(ISpriteVisual2, ISpriteVisual2_Vtbl, 0x588c9664_997a_4850_91fe_53cb58f81ce9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISpriteVisual2_Vtbl {
@@ -3663,16 +2165,7 @@ pub struct ISpriteVisual2_Vtbl {
     pub Shadow: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetShadow: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStepEasingFunction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStepEasingFunction {
-    type Vtable = IStepEasingFunction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStepEasingFunction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd0caa74b_560c_4a0b_a5f6_206ca8c3ecd6);
-}
+::windows_core::imp::com_interface!(IStepEasingFunction, IStepEasingFunction_Vtbl, 0xd0caa74b_560c_4a0b_a5f6_206ca8c3ecd6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStepEasingFunction_Vtbl {
@@ -3688,16 +2181,7 @@ pub struct IStepEasingFunction_Vtbl {
     pub StepCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
     pub SetStepCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: i32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVector2KeyFrameAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVector2KeyFrameAnimation {
-    type Vtable = IVector2KeyFrameAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVector2KeyFrameAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdf414515_4e29_4f11_b55e_bf2a6eb36294);
-}
+::windows_core::imp::com_interface!(IVector2KeyFrameAnimation, IVector2KeyFrameAnimation_Vtbl, 0xdf414515_4e29_4f11_b55e_bf2a6eb36294);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVector2KeyFrameAnimation_Vtbl {
@@ -3711,16 +2195,7 @@ pub struct IVector2KeyFrameAnimation_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     InsertKeyFrameWithEasingFunction: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVector2NaturalMotionAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVector2NaturalMotionAnimation {
-    type Vtable = IVector2NaturalMotionAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVector2NaturalMotionAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0f3e0b7d_e512_479d_a00c_77c93a30a395);
-}
+::windows_core::imp::com_interface!(IVector2NaturalMotionAnimation, IVector2NaturalMotionAnimation_Vtbl, 0x0f3e0b7d_e512_479d_a00c_77c93a30a395);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVector2NaturalMotionAnimation_Vtbl {
@@ -3750,31 +2225,13 @@ pub struct IVector2NaturalMotionAnimation_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetInitialVelocity: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVector2NaturalMotionAnimationFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVector2NaturalMotionAnimationFactory {
-    type Vtable = IVector2NaturalMotionAnimationFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVector2NaturalMotionAnimationFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8c74ff61_0761_48a2_bddb_6afcc52b89d8);
-}
+::windows_core::imp::com_interface!(IVector2NaturalMotionAnimationFactory, IVector2NaturalMotionAnimationFactory_Vtbl, 0x8c74ff61_0761_48a2_bddb_6afcc52b89d8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVector2NaturalMotionAnimationFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVector3KeyFrameAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVector3KeyFrameAnimation {
-    type Vtable = IVector3KeyFrameAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVector3KeyFrameAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc8039daa_a281_43c2_a73d_b68e3c533c40);
-}
+::windows_core::imp::com_interface!(IVector3KeyFrameAnimation, IVector3KeyFrameAnimation_Vtbl, 0xc8039daa_a281_43c2_a73d_b68e3c533c40);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVector3KeyFrameAnimation_Vtbl {
@@ -3788,16 +2245,7 @@ pub struct IVector3KeyFrameAnimation_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     InsertKeyFrameWithEasingFunction: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVector3NaturalMotionAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVector3NaturalMotionAnimation {
-    type Vtable = IVector3NaturalMotionAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVector3NaturalMotionAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9c17042c_e2ca_45ad_969e_4e78b7b9ad41);
-}
+::windows_core::imp::com_interface!(IVector3NaturalMotionAnimation, IVector3NaturalMotionAnimation_Vtbl, 0x9c17042c_e2ca_45ad_969e_4e78b7b9ad41);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVector3NaturalMotionAnimation_Vtbl {
@@ -3827,31 +2275,13 @@ pub struct IVector3NaturalMotionAnimation_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetInitialVelocity: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVector3NaturalMotionAnimationFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVector3NaturalMotionAnimationFactory {
-    type Vtable = IVector3NaturalMotionAnimationFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVector3NaturalMotionAnimationFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x21a81d2f_0880_457b_ac87_b609018c876d);
-}
+::windows_core::imp::com_interface!(IVector3NaturalMotionAnimationFactory, IVector3NaturalMotionAnimationFactory_Vtbl, 0x21a81d2f_0880_457b_ac87_b609018c876d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVector3NaturalMotionAnimationFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVector4KeyFrameAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVector4KeyFrameAnimation {
-    type Vtable = IVector4KeyFrameAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVector4KeyFrameAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2457945b_addd_4385_9606_b6a3d5e4e1b9);
-}
+::windows_core::imp::com_interface!(IVector4KeyFrameAnimation, IVector4KeyFrameAnimation_Vtbl, 0x2457945b_addd_4385_9606_b6a3d5e4e1b9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVector4KeyFrameAnimation_Vtbl {
@@ -3865,16 +2295,7 @@ pub struct IVector4KeyFrameAnimation_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     InsertKeyFrameWithEasingFunction: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVisual(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVisual {
-    type Vtable = IVisual_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVisual {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x117e202d_a859_4c89_873b_c2aa566788e3);
-}
+::windows_core::imp::com_interface!(IVisual, IVisual_Vtbl, 0x117e202d_a859_4c89_873b_c2aa566788e3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVisual_Vtbl {
@@ -3961,16 +2382,7 @@ pub struct IVisual_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetTransformMatrix: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVisual2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVisual2 {
-    type Vtable = IVisual2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVisual2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3052b611_56c3_4c3e_8bf3_f6e1ad473f06);
-}
+::windows_core::imp::com_interface!(IVisual2, IVisual2_Vtbl, 0x3052b611_56c3_4c3e_8bf3_f6e1ad473f06);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVisual2_Vtbl {
@@ -3994,16 +2406,7 @@ pub struct IVisual2_Vtbl {
     #[cfg(not(feature = "Foundation_Numerics"))]
     SetRelativeSizeAdjustment: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVisual3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVisual3 {
-    type Vtable = IVisual3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVisual3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x30be580d_f4b6_4ab7_80dd_3738cbac9f2c);
-}
+::windows_core::imp::com_interface!(IVisual3, IVisual3_Vtbl, 0x30be580d_f4b6_4ab7_80dd_3738cbac9f2c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVisual3_Vtbl {
@@ -4011,16 +2414,7 @@ pub struct IVisual3_Vtbl {
     pub IsHitTestVisible: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetIsHitTestVisible: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVisual4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVisual4 {
-    type Vtable = IVisual4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVisual4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9476bf11_e24b_5bf9_9ebe_6274109b2711);
-}
+::windows_core::imp::com_interface!(IVisual4, IVisual4_Vtbl, 0x9476bf11_e24b_5bf9_9ebe_6274109b2711);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVisual4_Vtbl {
@@ -4028,16 +2422,7 @@ pub struct IVisual4_Vtbl {
     pub IsPixelSnappingEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetIsPixelSnappingEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVisualCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVisualCollection {
-    type Vtable = IVisualCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVisualCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8b745505_fd3e_4a98_84a8_e949468c6bcb);
-}
+::windows_core::imp::com_interface!(IVisualCollection, IVisualCollection_Vtbl, 0x8b745505_fd3e_4a98_84a8_e949468c6bcb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVisualCollection_Vtbl {
@@ -4050,28 +2435,18 @@ pub struct IVisualCollection_Vtbl {
     pub Remove: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, child: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RemoveAll: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVisualElement(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IVisualElement, IVisualElement_Vtbl, 0x01e64612_1d82_42f4_8e3f_a722ded33fc7);
 impl IVisualElement {}
 ::windows_core::imp::interface_hierarchy!(IVisualElement, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for IVisualElement {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IVisualElement {
-    type Vtable = IVisualElement_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVisualElement {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x01e64612_1d82_42f4_8e3f_a722ded33fc7);
 }
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVisualElement_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVisualElement2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IVisualElement2, IVisualElement2_Vtbl, 0x993ae8a0_6057_5e40_918c_e06e0b7e7c64);
 impl IVisualElement2 {
     pub fn GetVisualInternal(&self) -> ::windows_core::Result<Visual> {
         let this = self;
@@ -4085,43 +2460,19 @@ impl IVisualElement2 {
 impl ::windows_core::RuntimeType for IVisualElement2 {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IVisualElement2 {
-    type Vtable = IVisualElement2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVisualElement2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x993ae8a0_6057_5e40_918c_e06e0b7e7c64);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVisualElement2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetVisualInternal: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVisualFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVisualFactory {
-    type Vtable = IVisualFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVisualFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xad0ff93e_b502_4eb5_87b4_9a38a71d0137);
-}
+::windows_core::imp::com_interface!(IVisualFactory, IVisualFactory_Vtbl, 0xad0ff93e_b502_4eb5_87b4_9a38a71d0137);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVisualFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IVisualUnorderedCollection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IVisualUnorderedCollection {
-    type Vtable = IVisualUnorderedCollection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IVisualUnorderedCollection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x338faa70_54c8_40a7_8029_c9ceeb0aa250);
-}
+::windows_core::imp::com_interface!(IVisualUnorderedCollection, IVisualUnorderedCollection_Vtbl, 0x338faa70_54c8_40a7_8029_c9ceeb0aa250);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IVisualUnorderedCollection_Vtbl {
@@ -4218,10 +2569,10 @@ impl AmbientLight {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -4254,17 +2605,17 @@ impl AmbientLight {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -4284,11 +2635,11 @@ impl AmbientLight {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for AmbientLight {
@@ -4304,10 +2655,7 @@ impl ::windows_core::RuntimeName for AmbientLight {
     const NAME: &'static str = "Windows.UI.Composition.AmbientLight";
 }
 ::windows_core::imp::interface_hierarchy!(AmbientLight, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for AmbientLight {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for AmbientLight {}
-impl ::windows_core::CanTryInto<CompositionLight> for AmbientLight {}
-impl ::windows_core::CanTryInto<CompositionObject> for AmbientLight {}
+::windows_core::imp::required_hierarchy!(AmbientLight, IAnimationObject, super::super::Foundation::IClosable, CompositionLight, CompositionObject);
 unsafe impl ::core::marker::Send for AmbientLight {}
 unsafe impl ::core::marker::Sync for AmbientLight {}
 #[repr(transparent)]
@@ -4403,10 +2751,10 @@ impl AnimationController {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -4439,17 +2787,17 @@ impl AnimationController {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -4469,11 +2817,11 @@ impl AnimationController {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc(hidden)]
     pub fn IAnimationControllerStatics<R, F: FnOnce(&IAnimationControllerStatics) -> ::windows_core::Result<R>>(callback: F) -> ::windows_core::Result<R> {
@@ -4494,9 +2842,7 @@ impl ::windows_core::RuntimeName for AnimationController {
     const NAME: &'static str = "Windows.UI.Composition.AnimationController";
 }
 ::windows_core::imp::interface_hierarchy!(AnimationController, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for AnimationController {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for AnimationController {}
-impl ::windows_core::CanTryInto<CompositionObject> for AnimationController {}
+::windows_core::imp::required_hierarchy!(AnimationController, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for AnimationController {}
 unsafe impl ::core::marker::Sync for AnimationController {}
 #[repr(transparent)]
@@ -4564,10 +2910,10 @@ impl AnimationPropertyInfo {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -4600,17 +2946,17 @@ impl AnimationPropertyInfo {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -4630,11 +2976,11 @@ impl AnimationPropertyInfo {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for AnimationPropertyInfo {
@@ -4650,9 +2996,7 @@ impl ::windows_core::RuntimeName for AnimationPropertyInfo {
     const NAME: &'static str = "Windows.UI.Composition.AnimationPropertyInfo";
 }
 ::windows_core::imp::interface_hierarchy!(AnimationPropertyInfo, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for AnimationPropertyInfo {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for AnimationPropertyInfo {}
-impl ::windows_core::CanTryInto<CompositionObject> for AnimationPropertyInfo {}
+::windows_core::imp::required_hierarchy!(AnimationPropertyInfo, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for AnimationPropertyInfo {}
 unsafe impl ::core::marker::Sync for AnimationPropertyInfo {}
 #[repr(transparent)]
@@ -4709,10 +3053,10 @@ impl BackEasingFunction {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -4745,17 +3089,17 @@ impl BackEasingFunction {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -4775,11 +3119,11 @@ impl BackEasingFunction {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for BackEasingFunction {
@@ -4795,10 +3139,7 @@ impl ::windows_core::RuntimeName for BackEasingFunction {
     const NAME: &'static str = "Windows.UI.Composition.BackEasingFunction";
 }
 ::windows_core::imp::interface_hierarchy!(BackEasingFunction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for BackEasingFunction {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for BackEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionEasingFunction> for BackEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionObject> for BackEasingFunction {}
+::windows_core::imp::required_hierarchy!(BackEasingFunction, IAnimationObject, super::super::Foundation::IClosable, CompositionEasingFunction, CompositionObject);
 unsafe impl ::core::marker::Send for BackEasingFunction {}
 unsafe impl ::core::marker::Sync for BackEasingFunction {}
 #[repr(transparent)]
@@ -4852,10 +3193,10 @@ impl BooleanKeyFrameAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -4905,10 +3246,10 @@ impl BooleanKeyFrameAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -4935,10 +3276,10 @@ impl BooleanKeyFrameAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -4971,17 +3312,17 @@ impl BooleanKeyFrameAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -5001,11 +3342,11 @@ impl BooleanKeyFrameAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayTime(&self) -> ::windows_core::Result<super::super::Foundation::TimeSpan> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
@@ -5075,10 +3416,10 @@ impl BooleanKeyFrameAnimation {
     }
     pub fn InsertExpressionKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: &::windows_core::HSTRING, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.into_param().abi()).ok() }
     }
     pub fn Direction(&self) -> ::windows_core::Result<AnimationDirection> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation2>(self)?;
@@ -5116,12 +3457,7 @@ impl ::windows_core::RuntimeName for BooleanKeyFrameAnimation {
     const NAME: &'static str = "Windows.UI.Composition.BooleanKeyFrameAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(BooleanKeyFrameAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for BooleanKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for BooleanKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for BooleanKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<KeyFrameAnimation> for BooleanKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for BooleanKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for BooleanKeyFrameAnimation {}
+::windows_core::imp::required_hierarchy!(BooleanKeyFrameAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, KeyFrameAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for BooleanKeyFrameAnimation {}
 unsafe impl ::core::marker::Sync for BooleanKeyFrameAnimation {}
 #[repr(transparent)]
@@ -5185,10 +3521,10 @@ impl BounceEasingFunction {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -5221,17 +3557,17 @@ impl BounceEasingFunction {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -5251,11 +3587,11 @@ impl BounceEasingFunction {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for BounceEasingFunction {
@@ -5271,10 +3607,7 @@ impl ::windows_core::RuntimeName for BounceEasingFunction {
     const NAME: &'static str = "Windows.UI.Composition.BounceEasingFunction";
 }
 ::windows_core::imp::interface_hierarchy!(BounceEasingFunction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for BounceEasingFunction {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for BounceEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionEasingFunction> for BounceEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionObject> for BounceEasingFunction {}
+::windows_core::imp::required_hierarchy!(BounceEasingFunction, IAnimationObject, super::super::Foundation::IClosable, CompositionEasingFunction, CompositionObject);
 unsafe impl ::core::marker::Send for BounceEasingFunction {}
 unsafe impl ::core::marker::Sync for BounceEasingFunction {}
 #[repr(transparent)]
@@ -5346,10 +3679,10 @@ impl BounceScalarNaturalMotionAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -5399,10 +3732,10 @@ impl BounceScalarNaturalMotionAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -5429,10 +3762,10 @@ impl BounceScalarNaturalMotionAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -5465,17 +3798,17 @@ impl BounceScalarNaturalMotionAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -5495,11 +3828,11 @@ impl BounceScalarNaturalMotionAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayBehavior(&self) -> ::windows_core::Result<AnimationDelayBehavior> {
         let this = &::windows_core::ComInterface::cast::<INaturalMotionAnimation>(self)?;
@@ -5543,10 +3876,10 @@ impl BounceScalarNaturalMotionAnimation {
     }
     pub fn SetFinalValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<f32>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<f32>>,
     {
         let this = &::windows_core::ComInterface::cast::<IScalarNaturalMotionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn InitialValue(&self) -> ::windows_core::Result<super::super::Foundation::IReference<f32>> {
         let this = &::windows_core::ComInterface::cast::<IScalarNaturalMotionAnimation>(self)?;
@@ -5557,10 +3890,10 @@ impl BounceScalarNaturalMotionAnimation {
     }
     pub fn SetInitialValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<f32>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<f32>>,
     {
         let this = &::windows_core::ComInterface::cast::<IScalarNaturalMotionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn InitialVelocity(&self) -> ::windows_core::Result<f32> {
         let this = &::windows_core::ComInterface::cast::<IScalarNaturalMotionAnimation>(self)?;
@@ -5587,13 +3920,7 @@ impl ::windows_core::RuntimeName for BounceScalarNaturalMotionAnimation {
     const NAME: &'static str = "Windows.UI.Composition.BounceScalarNaturalMotionAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(BounceScalarNaturalMotionAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for BounceScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for BounceScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for BounceScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<ScalarNaturalMotionAnimation> for BounceScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<NaturalMotionAnimation> for BounceScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for BounceScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for BounceScalarNaturalMotionAnimation {}
+::windows_core::imp::required_hierarchy!(BounceScalarNaturalMotionAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, ScalarNaturalMotionAnimation, NaturalMotionAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for BounceScalarNaturalMotionAnimation {}
 unsafe impl ::core::marker::Sync for BounceScalarNaturalMotionAnimation {}
 #[repr(transparent)]
@@ -5665,10 +3992,10 @@ impl BounceVector2NaturalMotionAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -5718,10 +4045,10 @@ impl BounceVector2NaturalMotionAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -5748,10 +4075,10 @@ impl BounceVector2NaturalMotionAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -5784,17 +4111,17 @@ impl BounceVector2NaturalMotionAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -5814,11 +4141,11 @@ impl BounceVector2NaturalMotionAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayBehavior(&self) -> ::windows_core::Result<AnimationDelayBehavior> {
         let this = &::windows_core::ComInterface::cast::<INaturalMotionAnimation>(self)?;
@@ -5866,10 +4193,10 @@ impl BounceVector2NaturalMotionAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetFinalValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector2>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector2>>,
     {
         let this = &::windows_core::ComInterface::cast::<IVector2NaturalMotionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -5884,10 +4211,10 @@ impl BounceVector2NaturalMotionAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetInitialValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector2>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector2>>,
     {
         let this = &::windows_core::ComInterface::cast::<IVector2NaturalMotionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -5918,13 +4245,7 @@ impl ::windows_core::RuntimeName for BounceVector2NaturalMotionAnimation {
     const NAME: &'static str = "Windows.UI.Composition.BounceVector2NaturalMotionAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(BounceVector2NaturalMotionAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for BounceVector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for BounceVector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for BounceVector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<Vector2NaturalMotionAnimation> for BounceVector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<NaturalMotionAnimation> for BounceVector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for BounceVector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for BounceVector2NaturalMotionAnimation {}
+::windows_core::imp::required_hierarchy!(BounceVector2NaturalMotionAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, Vector2NaturalMotionAnimation, NaturalMotionAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for BounceVector2NaturalMotionAnimation {}
 unsafe impl ::core::marker::Sync for BounceVector2NaturalMotionAnimation {}
 #[repr(transparent)]
@@ -5996,10 +4317,10 @@ impl BounceVector3NaturalMotionAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -6049,10 +4370,10 @@ impl BounceVector3NaturalMotionAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -6079,10 +4400,10 @@ impl BounceVector3NaturalMotionAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -6115,17 +4436,17 @@ impl BounceVector3NaturalMotionAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -6145,11 +4466,11 @@ impl BounceVector3NaturalMotionAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayBehavior(&self) -> ::windows_core::Result<AnimationDelayBehavior> {
         let this = &::windows_core::ComInterface::cast::<INaturalMotionAnimation>(self)?;
@@ -6197,10 +4518,10 @@ impl BounceVector3NaturalMotionAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetFinalValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector3>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector3>>,
     {
         let this = &::windows_core::ComInterface::cast::<IVector3NaturalMotionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -6215,10 +4536,10 @@ impl BounceVector3NaturalMotionAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetInitialValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector3>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector3>>,
     {
         let this = &::windows_core::ComInterface::cast::<IVector3NaturalMotionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -6249,13 +4570,7 @@ impl ::windows_core::RuntimeName for BounceVector3NaturalMotionAnimation {
     const NAME: &'static str = "Windows.UI.Composition.BounceVector3NaturalMotionAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(BounceVector3NaturalMotionAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for BounceVector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for BounceVector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for BounceVector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<Vector3NaturalMotionAnimation> for BounceVector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<NaturalMotionAnimation> for BounceVector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for BounceVector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for BounceVector3NaturalMotionAnimation {}
+::windows_core::imp::required_hierarchy!(BounceVector3NaturalMotionAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, Vector3NaturalMotionAnimation, NaturalMotionAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for BounceVector3NaturalMotionAnimation {}
 unsafe impl ::core::marker::Sync for BounceVector3NaturalMotionAnimation {}
 #[repr(transparent)]
@@ -6305,10 +4620,10 @@ impl CircleEasingFunction {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -6341,17 +4656,17 @@ impl CircleEasingFunction {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -6371,11 +4686,11 @@ impl CircleEasingFunction {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CircleEasingFunction {
@@ -6391,10 +4706,7 @@ impl ::windows_core::RuntimeName for CircleEasingFunction {
     const NAME: &'static str = "Windows.UI.Composition.CircleEasingFunction";
 }
 ::windows_core::imp::interface_hierarchy!(CircleEasingFunction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CircleEasingFunction {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CircleEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionEasingFunction> for CircleEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionObject> for CircleEasingFunction {}
+::windows_core::imp::required_hierarchy!(CircleEasingFunction, IAnimationObject, super::super::Foundation::IClosable, CompositionEasingFunction, CompositionObject);
 unsafe impl ::core::marker::Send for CircleEasingFunction {}
 unsafe impl ::core::marker::Sync for CircleEasingFunction {}
 #[repr(transparent)]
@@ -6429,10 +4741,10 @@ impl ColorKeyFrameAnimation {
     }
     pub fn InsertKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: super::Color, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, value, easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, value, easingfunction.into_param().abi()).ok() }
     }
     pub fn ClearAllParameters(&self) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -6466,10 +4778,10 @@ impl ColorKeyFrameAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -6519,10 +4831,10 @@ impl ColorKeyFrameAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -6549,10 +4861,10 @@ impl ColorKeyFrameAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -6585,17 +4897,17 @@ impl ColorKeyFrameAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -6615,11 +4927,11 @@ impl ColorKeyFrameAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayTime(&self) -> ::windows_core::Result<super::super::Foundation::TimeSpan> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
@@ -6689,10 +5001,10 @@ impl ColorKeyFrameAnimation {
     }
     pub fn InsertExpressionKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: &::windows_core::HSTRING, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.into_param().abi()).ok() }
     }
     pub fn Direction(&self) -> ::windows_core::Result<AnimationDirection> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation2>(self)?;
@@ -6730,12 +5042,7 @@ impl ::windows_core::RuntimeName for ColorKeyFrameAnimation {
     const NAME: &'static str = "Windows.UI.Composition.ColorKeyFrameAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(ColorKeyFrameAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for ColorKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for ColorKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for ColorKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<KeyFrameAnimation> for ColorKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for ColorKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for ColorKeyFrameAnimation {}
+::windows_core::imp::required_hierarchy!(ColorKeyFrameAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, KeyFrameAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for ColorKeyFrameAnimation {}
 unsafe impl ::core::marker::Sync for ColorKeyFrameAnimation {}
 #[repr(transparent)]
@@ -6785,10 +5092,10 @@ impl CompositionAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = self;
@@ -6838,10 +5145,10 @@ impl CompositionAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -6868,10 +5175,10 @@ impl CompositionAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -6904,17 +5211,17 @@ impl CompositionAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -6934,11 +5241,11 @@ impl CompositionAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionAnimation {
@@ -6954,10 +5261,7 @@ impl ::windows_core::RuntimeName for CompositionAnimation {
     const NAME: &'static str = "Windows.UI.Composition.CompositionAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for CompositionAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionAnimation {}
+::windows_core::imp::required_hierarchy!(CompositionAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionAnimation {}
 unsafe impl ::core::marker::Sync for CompositionAnimation {}
 #[repr(transparent)]
@@ -6984,17 +5288,17 @@ impl CompositionAnimationGroup {
     }
     pub fn Add<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Add)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Add)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Remove<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn RemoveAll(&self) -> ::windows_core::Result<()> {
         let this = self;
@@ -7025,10 +5329,10 @@ impl CompositionAnimationGroup {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -7061,17 +5365,17 @@ impl CompositionAnimationGroup {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -7091,11 +5395,11 @@ impl CompositionAnimationGroup {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -7136,12 +5440,8 @@ impl ::core::iter::IntoIterator for &CompositionAnimationGroup {
     }
 }
 ::windows_core::imp::interface_hierarchy!(CompositionAnimationGroup, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionAnimationGroup {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionAnimationGroup {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for CompositionAnimationGroup {}
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IIterable<CompositionAnimation>> for CompositionAnimationGroup {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionAnimationGroup {}
+::windows_core::imp::required_hierarchy!(CompositionAnimationGroup, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, super::super::Foundation::Collections::IIterable::<CompositionAnimation>, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionAnimationGroup {}
 unsafe impl ::core::marker::Sync for CompositionAnimationGroup {}
 #[repr(transparent)]
@@ -7184,10 +5484,10 @@ impl CompositionBackdropBrush {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -7220,17 +5520,17 @@ impl CompositionBackdropBrush {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -7250,11 +5550,11 @@ impl CompositionBackdropBrush {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionBackdropBrush {
@@ -7270,10 +5570,7 @@ impl ::windows_core::RuntimeName for CompositionBackdropBrush {
     const NAME: &'static str = "Windows.UI.Composition.CompositionBackdropBrush";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionBackdropBrush, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionBackdropBrush {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionBackdropBrush {}
-impl ::windows_core::CanTryInto<CompositionBrush> for CompositionBackdropBrush {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionBackdropBrush {}
+::windows_core::imp::required_hierarchy!(CompositionBackdropBrush, IAnimationObject, super::super::Foundation::IClosable, CompositionBrush, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionBackdropBrush {}
 unsafe impl ::core::marker::Sync for CompositionBackdropBrush {}
 #[repr(transparent)]
@@ -7316,10 +5613,10 @@ impl CompositionBatchCompletedEventArgs {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -7352,17 +5649,17 @@ impl CompositionBatchCompletedEventArgs {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -7382,11 +5679,11 @@ impl CompositionBatchCompletedEventArgs {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionBatchCompletedEventArgs {
@@ -7402,9 +5699,7 @@ impl ::windows_core::RuntimeName for CompositionBatchCompletedEventArgs {
     const NAME: &'static str = "Windows.UI.Composition.CompositionBatchCompletedEventArgs";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionBatchCompletedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionBatchCompletedEventArgs {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionBatchCompletedEventArgs {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionBatchCompletedEventArgs {}
+::windows_core::imp::required_hierarchy!(CompositionBatchCompletedEventArgs, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionBatchCompletedEventArgs {}
 unsafe impl ::core::marker::Sync for CompositionBatchCompletedEventArgs {}
 #[repr(transparent)]
@@ -7447,10 +5742,10 @@ impl CompositionBrush {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -7483,17 +5778,17 @@ impl CompositionBrush {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -7513,11 +5808,11 @@ impl CompositionBrush {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionBrush {
@@ -7533,9 +5828,7 @@ impl ::windows_core::RuntimeName for CompositionBrush {
     const NAME: &'static str = "Windows.UI.Composition.CompositionBrush";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionBrush, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionBrush {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionBrush {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionBrush {}
+::windows_core::imp::required_hierarchy!(CompositionBrush, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionBrush {}
 unsafe impl ::core::marker::Sync for CompositionBrush {}
 #[repr(transparent)]
@@ -7734,10 +6027,10 @@ impl CompositionClip {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -7770,17 +6063,17 @@ impl CompositionClip {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -7800,11 +6093,11 @@ impl CompositionClip {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionClip {
@@ -7820,9 +6113,7 @@ impl ::windows_core::RuntimeName for CompositionClip {
     const NAME: &'static str = "Windows.UI.Composition.CompositionClip";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionClip, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionClip {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionClip {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionClip {}
+::windows_core::imp::required_hierarchy!(CompositionClip, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionClip {}
 unsafe impl ::core::marker::Sync for CompositionClip {}
 #[repr(transparent)]
@@ -7876,10 +6167,10 @@ impl CompositionColorBrush {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -7912,17 +6203,17 @@ impl CompositionColorBrush {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -7942,11 +6233,11 @@ impl CompositionColorBrush {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionColorBrush {
@@ -7962,10 +6253,7 @@ impl ::windows_core::RuntimeName for CompositionColorBrush {
     const NAME: &'static str = "Windows.UI.Composition.CompositionColorBrush";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionColorBrush, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionColorBrush {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionColorBrush {}
-impl ::windows_core::CanTryInto<CompositionBrush> for CompositionColorBrush {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionColorBrush {}
+::windows_core::imp::required_hierarchy!(CompositionColorBrush, IAnimationObject, super::super::Foundation::IClosable, CompositionBrush, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionColorBrush {}
 unsafe impl ::core::marker::Sync for CompositionColorBrush {}
 #[repr(transparent)]
@@ -8030,10 +6318,10 @@ impl CompositionColorGradientStop {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -8066,17 +6354,17 @@ impl CompositionColorGradientStop {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -8096,11 +6384,11 @@ impl CompositionColorGradientStop {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionColorGradientStop {
@@ -8116,9 +6404,7 @@ impl ::windows_core::RuntimeName for CompositionColorGradientStop {
     const NAME: &'static str = "Windows.UI.Composition.CompositionColorGradientStop";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionColorGradientStop, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionColorGradientStop {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionColorGradientStop {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionColorGradientStop {}
+::windows_core::imp::required_hierarchy!(CompositionColorGradientStop, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionColorGradientStop {}
 unsafe impl ::core::marker::Sync for CompositionColorGradientStop {}
 #[repr(transparent)]
@@ -8264,9 +6550,7 @@ impl ::core::iter::IntoIterator for &CompositionColorGradientStopCollection {
 }
 ::windows_core::imp::interface_hierarchy!(CompositionColorGradientStopCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IIterable<CompositionColorGradientStop>> for CompositionColorGradientStopCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IVector<CompositionColorGradientStop>> for CompositionColorGradientStopCollection {}
+::windows_core::imp::required_hierarchy!(CompositionColorGradientStopCollection, super::super::Foundation::Collections::IIterable::<CompositionColorGradientStop>, super::super::Foundation::Collections::IVector::<CompositionColorGradientStop>);
 unsafe impl ::core::marker::Send for CompositionColorGradientStopCollection {}
 unsafe impl ::core::marker::Sync for CompositionColorGradientStopCollection {}
 #[repr(transparent)]
@@ -8337,10 +6621,10 @@ impl CompositionCommitBatch {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -8373,17 +6657,17 @@ impl CompositionCommitBatch {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -8403,11 +6687,11 @@ impl CompositionCommitBatch {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionCommitBatch {
@@ -8423,9 +6707,7 @@ impl ::windows_core::RuntimeName for CompositionCommitBatch {
     const NAME: &'static str = "Windows.UI.Composition.CompositionCommitBatch";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionCommitBatch, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionCommitBatch {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionCommitBatch {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionCommitBatch {}
+::windows_core::imp::required_hierarchy!(CompositionCommitBatch, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionCommitBatch {}
 unsafe impl ::core::marker::Sync for CompositionCommitBatch {}
 #[repr(transparent)]
@@ -8477,10 +6759,10 @@ impl CompositionContainerShape {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -8513,17 +6795,17 @@ impl CompositionContainerShape {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -8543,11 +6825,11 @@ impl CompositionContainerShape {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -8645,10 +6927,7 @@ impl ::windows_core::RuntimeName for CompositionContainerShape {
     const NAME: &'static str = "Windows.UI.Composition.CompositionContainerShape";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionContainerShape, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionContainerShape {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionContainerShape {}
-impl ::windows_core::CanTryInto<CompositionShape> for CompositionContainerShape {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionContainerShape {}
+::windows_core::imp::required_hierarchy!(CompositionContainerShape, IAnimationObject, super::super::Foundation::IClosable, CompositionShape, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionContainerShape {}
 unsafe impl ::core::marker::Sync for CompositionContainerShape {}
 #[repr(transparent)]
@@ -8755,10 +7034,10 @@ impl CompositionDrawingSurface {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -8791,17 +7070,17 @@ impl CompositionDrawingSurface {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -8821,11 +7100,11 @@ impl CompositionDrawingSurface {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionDrawingSurface {
@@ -8841,10 +7120,7 @@ impl ::windows_core::RuntimeName for CompositionDrawingSurface {
     const NAME: &'static str = "Windows.UI.Composition.CompositionDrawingSurface";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionDrawingSurface, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionDrawingSurface {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionDrawingSurface {}
-impl ::windows_core::CanTryInto<ICompositionSurface> for CompositionDrawingSurface {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionDrawingSurface {}
+::windows_core::imp::required_hierarchy!(CompositionDrawingSurface, IAnimationObject, super::super::Foundation::IClosable, ICompositionSurface, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionDrawingSurface {}
 unsafe impl ::core::marker::Sync for CompositionDrawingSurface {}
 #[repr(transparent)]
@@ -8988,10 +7264,10 @@ impl CompositionEasingFunction {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -9024,17 +7300,17 @@ impl CompositionEasingFunction {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -9054,11 +7330,11 @@ impl CompositionEasingFunction {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc(hidden)]
     pub fn ICompositionEasingFunctionStatics<R, F: FnOnce(&ICompositionEasingFunctionStatics) -> ::windows_core::Result<R>>(callback: F) -> ::windows_core::Result<R> {
@@ -9079,9 +7355,7 @@ impl ::windows_core::RuntimeName for CompositionEasingFunction {
     const NAME: &'static str = "Windows.UI.Composition.CompositionEasingFunction";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionEasingFunction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionEasingFunction {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionEasingFunction {}
+::windows_core::imp::required_hierarchy!(CompositionEasingFunction, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionEasingFunction {}
 unsafe impl ::core::marker::Sync for CompositionEasingFunction {}
 #[repr(transparent)]
@@ -9108,10 +7382,10 @@ impl CompositionEffectBrush {
     }
     pub fn SetSourceParameter<P0>(&self, name: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionBrush>,
+        P0: ::windows_core::IntoParam<CompositionBrush>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSourceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(name), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSourceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(name), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -9138,10 +7412,10 @@ impl CompositionEffectBrush {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -9174,17 +7448,17 @@ impl CompositionEffectBrush {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -9204,11 +7478,11 @@ impl CompositionEffectBrush {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionEffectBrush {
@@ -9224,10 +7498,7 @@ impl ::windows_core::RuntimeName for CompositionEffectBrush {
     const NAME: &'static str = "Windows.UI.Composition.CompositionEffectBrush";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionEffectBrush, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionEffectBrush {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionEffectBrush {}
-impl ::windows_core::CanTryInto<CompositionBrush> for CompositionEffectBrush {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionEffectBrush {}
+::windows_core::imp::required_hierarchy!(CompositionEffectBrush, IAnimationObject, super::super::Foundation::IClosable, CompositionBrush, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionEffectBrush {}
 unsafe impl ::core::marker::Sync for CompositionEffectBrush {}
 #[repr(transparent)]
@@ -9291,10 +7562,10 @@ impl CompositionEffectFactory {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -9327,17 +7598,17 @@ impl CompositionEffectFactory {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -9357,11 +7628,11 @@ impl CompositionEffectFactory {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionEffectFactory {
@@ -9377,9 +7648,7 @@ impl ::windows_core::RuntimeName for CompositionEffectFactory {
     const NAME: &'static str = "Windows.UI.Composition.CompositionEffectFactory";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionEffectFactory, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionEffectFactory {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionEffectFactory {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionEffectFactory {}
+::windows_core::imp::required_hierarchy!(CompositionEffectFactory, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionEffectFactory {}
 unsafe impl ::core::marker::Sync for CompositionEffectFactory {}
 #[repr(transparent)]
@@ -9419,7 +7688,7 @@ impl ::windows_core::RuntimeName for CompositionEffectSourceParameter {
 }
 ::windows_core::imp::interface_hierarchy!(CompositionEffectSourceParameter, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Graphics_Effects")]
-impl ::windows_core::CanTryInto<super::super::Graphics::Effects::IGraphicsEffectSource> for CompositionEffectSourceParameter {}
+::windows_core::imp::required_hierarchy!(CompositionEffectSourceParameter, super::super::Graphics::Effects::IGraphicsEffectSource);
 unsafe impl ::core::marker::Send for CompositionEffectSourceParameter {}
 unsafe impl ::core::marker::Sync for CompositionEffectSourceParameter {}
 #[repr(transparent)]
@@ -9525,10 +7794,10 @@ impl CompositionEllipseGeometry {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -9561,17 +7830,17 @@ impl CompositionEllipseGeometry {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -9591,11 +7860,11 @@ impl CompositionEllipseGeometry {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionEllipseGeometry {
@@ -9611,10 +7880,7 @@ impl ::windows_core::RuntimeName for CompositionEllipseGeometry {
     const NAME: &'static str = "Windows.UI.Composition.CompositionEllipseGeometry";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionEllipseGeometry, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionEllipseGeometry {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionEllipseGeometry {}
-impl ::windows_core::CanTryInto<CompositionGeometry> for CompositionEllipseGeometry {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionEllipseGeometry {}
+::windows_core::imp::required_hierarchy!(CompositionEllipseGeometry, IAnimationObject, super::super::Foundation::IClosable, CompositionGeometry, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionEllipseGeometry {}
 unsafe impl ::core::marker::Sync for CompositionEllipseGeometry {}
 #[repr(transparent)]
@@ -9738,10 +8004,10 @@ impl CompositionGeometricClip {
     }
     pub fn SetGeometry<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionGeometry>,
+        P0: ::windows_core::IntoParam<CompositionGeometry>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetGeometry)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetGeometry)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ViewBox(&self) -> ::windows_core::Result<CompositionViewBox> {
         let this = self;
@@ -9782,10 +8048,10 @@ impl CompositionGeometricClip {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -9818,17 +8084,17 @@ impl CompositionGeometricClip {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -9848,11 +8114,11 @@ impl CompositionGeometricClip {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionGeometricClip {
@@ -9868,10 +8134,7 @@ impl ::windows_core::RuntimeName for CompositionGeometricClip {
     const NAME: &'static str = "Windows.UI.Composition.CompositionGeometricClip";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionGeometricClip, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionGeometricClip {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionGeometricClip {}
-impl ::windows_core::CanTryInto<CompositionClip> for CompositionGeometricClip {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionGeometricClip {}
+::windows_core::imp::required_hierarchy!(CompositionGeometricClip, IAnimationObject, super::super::Foundation::IClosable, CompositionClip, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionGeometricClip {}
 unsafe impl ::core::marker::Sync for CompositionGeometricClip {}
 #[repr(transparent)]
@@ -9947,10 +8210,10 @@ impl CompositionGeometry {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -9983,17 +8246,17 @@ impl CompositionGeometry {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -10013,11 +8276,11 @@ impl CompositionGeometry {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionGeometry {
@@ -10033,9 +8296,7 @@ impl ::windows_core::RuntimeName for CompositionGeometry {
     const NAME: &'static str = "Windows.UI.Composition.CompositionGeometry";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionGeometry, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionGeometry {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionGeometry {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionGeometry {}
+::windows_core::imp::required_hierarchy!(CompositionGeometry, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionGeometry {}
 unsafe impl ::core::marker::Sync for CompositionGeometry {}
 #[repr(transparent)]
@@ -10215,10 +8476,10 @@ impl CompositionGradientBrush {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -10251,17 +8512,17 @@ impl CompositionGradientBrush {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -10281,11 +8542,11 @@ impl CompositionGradientBrush {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionGradientBrush {
@@ -10301,10 +8562,7 @@ impl ::windows_core::RuntimeName for CompositionGradientBrush {
     const NAME: &'static str = "Windows.UI.Composition.CompositionGradientBrush";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionGradientBrush, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionGradientBrush {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionGradientBrush {}
-impl ::windows_core::CanTryInto<CompositionBrush> for CompositionGradientBrush {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionGradientBrush {}
+::windows_core::imp::required_hierarchy!(CompositionGradientBrush, IAnimationObject, super::super::Foundation::IClosable, CompositionBrush, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionGradientBrush {}
 unsafe impl ::core::marker::Sync for CompositionGradientBrush {}
 #[repr(transparent)]
@@ -10380,12 +8638,12 @@ impl CompositionGraphicsDevice {
     #[cfg(feature = "Graphics_DirectX")]
     pub fn CaptureAsync<P0>(&self, capturevisual: P0, size: super::super::Graphics::SizeInt32, pixelformat: super::super::Graphics::DirectX::DirectXPixelFormat, alphamode: super::super::Graphics::DirectX::DirectXAlphaMode, sdrboost: f32) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<ICompositionSurface>>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionGraphicsDevice4>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CaptureAsync)(::windows_core::Interface::as_raw(this), capturevisual.try_into_param()?.abi(), size, pixelformat, alphamode, sdrboost, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CaptureAsync)(::windows_core::Interface::as_raw(this), capturevisual.into_param().abi(), size, pixelformat, alphamode, sdrboost, &mut result__).from_abi(result__)
         }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
@@ -10413,10 +8671,10 @@ impl CompositionGraphicsDevice {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -10449,17 +8707,17 @@ impl CompositionGraphicsDevice {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -10479,11 +8737,11 @@ impl CompositionGraphicsDevice {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionGraphicsDevice {
@@ -10499,9 +8757,7 @@ impl ::windows_core::RuntimeName for CompositionGraphicsDevice {
     const NAME: &'static str = "Windows.UI.Composition.CompositionGraphicsDevice";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionGraphicsDevice, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionGraphicsDevice {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionGraphicsDevice {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionGraphicsDevice {}
+::windows_core::imp::required_hierarchy!(CompositionGraphicsDevice, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionGraphicsDevice {}
 unsafe impl ::core::marker::Sync for CompositionGraphicsDevice {}
 #[repr(transparent)]
@@ -10569,10 +8825,10 @@ impl CompositionLight {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -10605,17 +8861,17 @@ impl CompositionLight {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -10635,11 +8891,11 @@ impl CompositionLight {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionLight {
@@ -10655,9 +8911,7 @@ impl ::windows_core::RuntimeName for CompositionLight {
     const NAME: &'static str = "Windows.UI.Composition.CompositionLight";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionLight, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionLight {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionLight {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionLight {}
+::windows_core::imp::required_hierarchy!(CompositionLight, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionLight {}
 unsafe impl ::core::marker::Sync for CompositionLight {}
 #[repr(transparent)]
@@ -10763,10 +9017,10 @@ impl CompositionLineGeometry {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -10799,17 +9053,17 @@ impl CompositionLineGeometry {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -10829,11 +9083,11 @@ impl CompositionLineGeometry {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionLineGeometry {
@@ -10849,10 +9103,7 @@ impl ::windows_core::RuntimeName for CompositionLineGeometry {
     const NAME: &'static str = "Windows.UI.Composition.CompositionLineGeometry";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionLineGeometry, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionLineGeometry {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionLineGeometry {}
-impl ::windows_core::CanTryInto<CompositionGeometry> for CompositionLineGeometry {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionLineGeometry {}
+::windows_core::imp::required_hierarchy!(CompositionLineGeometry, IAnimationObject, super::super::Foundation::IClosable, CompositionGeometry, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionLineGeometry {}
 unsafe impl ::core::marker::Sync for CompositionLineGeometry {}
 #[repr(transparent)]
@@ -11062,10 +9313,10 @@ impl CompositionLinearGradientBrush {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -11098,17 +9349,17 @@ impl CompositionLinearGradientBrush {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -11128,11 +9379,11 @@ impl CompositionLinearGradientBrush {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionLinearGradientBrush {
@@ -11148,11 +9399,7 @@ impl ::windows_core::RuntimeName for CompositionLinearGradientBrush {
     const NAME: &'static str = "Windows.UI.Composition.CompositionLinearGradientBrush";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionLinearGradientBrush, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionLinearGradientBrush {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionLinearGradientBrush {}
-impl ::windows_core::CanTryInto<CompositionGradientBrush> for CompositionLinearGradientBrush {}
-impl ::windows_core::CanTryInto<CompositionBrush> for CompositionLinearGradientBrush {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionLinearGradientBrush {}
+::windows_core::imp::required_hierarchy!(CompositionLinearGradientBrush, IAnimationObject, super::super::Foundation::IClosable, CompositionGradientBrush, CompositionBrush, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionLinearGradientBrush {}
 unsafe impl ::core::marker::Sync for CompositionLinearGradientBrush {}
 #[repr(transparent)]
@@ -11179,10 +9426,10 @@ impl CompositionMaskBrush {
     }
     pub fn SetMask<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionBrush>,
+        P0: ::windows_core::IntoParam<CompositionBrush>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetMask)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetMask)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Source(&self) -> ::windows_core::Result<CompositionBrush> {
         let this = self;
@@ -11193,10 +9440,10 @@ impl CompositionMaskBrush {
     }
     pub fn SetSource<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionBrush>,
+        P0: ::windows_core::IntoParam<CompositionBrush>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSource)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSource)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -11223,10 +9470,10 @@ impl CompositionMaskBrush {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -11259,17 +9506,17 @@ impl CompositionMaskBrush {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -11289,11 +9536,11 @@ impl CompositionMaskBrush {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionMaskBrush {
@@ -11309,10 +9556,7 @@ impl ::windows_core::RuntimeName for CompositionMaskBrush {
     const NAME: &'static str = "Windows.UI.Composition.CompositionMaskBrush";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionMaskBrush, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionMaskBrush {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionMaskBrush {}
-impl ::windows_core::CanTryInto<CompositionBrush> for CompositionMaskBrush {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionMaskBrush {}
+::windows_core::imp::required_hierarchy!(CompositionMaskBrush, IAnimationObject, super::super::Foundation::IClosable, CompositionBrush, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionMaskBrush {}
 unsafe impl ::core::marker::Sync for CompositionMaskBrush {}
 #[repr(transparent)]
@@ -11396,10 +9640,10 @@ impl CompositionMipmapSurface {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -11432,17 +9676,17 @@ impl CompositionMipmapSurface {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -11462,11 +9706,11 @@ impl CompositionMipmapSurface {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionMipmapSurface {
@@ -11482,10 +9726,7 @@ impl ::windows_core::RuntimeName for CompositionMipmapSurface {
     const NAME: &'static str = "Windows.UI.Composition.CompositionMipmapSurface";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionMipmapSurface, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionMipmapSurface {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionMipmapSurface {}
-impl ::windows_core::CanTryInto<ICompositionSurface> for CompositionMipmapSurface {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionMipmapSurface {}
+::windows_core::imp::required_hierarchy!(CompositionMipmapSurface, IAnimationObject, super::super::Foundation::IClosable, ICompositionSurface, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionMipmapSurface {}
 unsafe impl ::core::marker::Sync for CompositionMipmapSurface {}
 #[repr(transparent)]
@@ -11589,10 +9830,10 @@ impl CompositionNineGridBrush {
     }
     pub fn SetSource<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionBrush>,
+        P0: ::windows_core::IntoParam<CompositionBrush>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSource)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSource)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn TopInset(&self) -> ::windows_core::Result<f32> {
         let this = self;
@@ -11657,10 +9898,10 @@ impl CompositionNineGridBrush {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -11693,17 +9934,17 @@ impl CompositionNineGridBrush {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -11723,11 +9964,11 @@ impl CompositionNineGridBrush {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionNineGridBrush {
@@ -11743,10 +9984,7 @@ impl ::windows_core::RuntimeName for CompositionNineGridBrush {
     const NAME: &'static str = "Windows.UI.Composition.CompositionNineGridBrush";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionNineGridBrush, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionNineGridBrush {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionNineGridBrush {}
-impl ::windows_core::CanTryInto<CompositionBrush> for CompositionNineGridBrush {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionNineGridBrush {}
+::windows_core::imp::required_hierarchy!(CompositionNineGridBrush, IAnimationObject, super::super::Foundation::IClosable, CompositionBrush, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionNineGridBrush {}
 unsafe impl ::core::marker::Sync for CompositionNineGridBrush {}
 #[repr(transparent)]
@@ -11789,10 +10027,10 @@ impl CompositionObject {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = self;
@@ -11825,17 +10063,17 @@ impl CompositionObject {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -11855,25 +10093,25 @@ impl CompositionObject {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn StartAnimationWithIAnimationObject<P0, P1>(target: P0, propertyname: &::windows_core::HSTRING, animation: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
-        P1: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
+        P1: ::windows_core::IntoParam<CompositionAnimation>,
     {
-        Self::ICompositionObjectStatics(|this| unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithIAnimationObject)(::windows_core::Interface::as_raw(this), target.try_into_param()?.abi(), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() })
+        Self::ICompositionObjectStatics(|this| unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithIAnimationObject)(::windows_core::Interface::as_raw(this), target.into_param().abi(), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() })
     }
     pub fn StartAnimationGroupWithIAnimationObject<P0, P1>(target: P0, animation: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
-        P1: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
+        P1: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
-        Self::ICompositionObjectStatics(|this| unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroupWithIAnimationObject)(::windows_core::Interface::as_raw(this), target.try_into_param()?.abi(), animation.try_into_param()?.abi()).ok() })
+        Self::ICompositionObjectStatics(|this| unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroupWithIAnimationObject)(::windows_core::Interface::as_raw(this), target.into_param().abi(), animation.into_param().abi()).ok() })
     }
     #[doc(hidden)]
     pub fn ICompositionObjectStatics<R, F: FnOnce(&ICompositionObjectStatics) -> ::windows_core::Result<R>>(callback: F) -> ::windows_core::Result<R> {
@@ -11894,8 +10132,7 @@ impl ::windows_core::RuntimeName for CompositionObject {
     const NAME: &'static str = "Windows.UI.Composition.CompositionObject";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionObject, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionObject {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionObject {}
+::windows_core::imp::required_hierarchy!(CompositionObject, IAnimationObject, super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for CompositionObject {}
 unsafe impl ::core::marker::Sync for CompositionObject {}
 #[repr(transparent)]
@@ -11906,11 +10143,11 @@ impl CompositionPath {
     #[cfg(feature = "Graphics")]
     pub fn Create<P0>(source: P0) -> ::windows_core::Result<CompositionPath>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Graphics::IGeometrySource2D>,
+        P0: ::windows_core::IntoParam<super::super::Graphics::IGeometrySource2D>,
     {
         Self::ICompositionPathFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).Create)(::windows_core::Interface::as_raw(this), source.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).Create)(::windows_core::Interface::as_raw(this), source.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc(hidden)]
@@ -11933,7 +10170,7 @@ impl ::windows_core::RuntimeName for CompositionPath {
 }
 ::windows_core::imp::interface_hierarchy!(CompositionPath, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Graphics")]
-impl ::windows_core::CanTryInto<super::super::Graphics::IGeometrySource2D> for CompositionPath {}
+::windows_core::imp::required_hierarchy!(CompositionPath, super::super::Graphics::IGeometrySource2D);
 unsafe impl ::core::marker::Send for CompositionPath {}
 unsafe impl ::core::marker::Sync for CompositionPath {}
 #[repr(transparent)]
@@ -12009,10 +10246,10 @@ impl CompositionPathGeometry {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -12045,17 +10282,17 @@ impl CompositionPathGeometry {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -12075,11 +10312,11 @@ impl CompositionPathGeometry {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Path(&self) -> ::windows_core::Result<CompositionPath> {
         let this = self;
@@ -12109,10 +10346,7 @@ impl ::windows_core::RuntimeName for CompositionPathGeometry {
     const NAME: &'static str = "Windows.UI.Composition.CompositionPathGeometry";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionPathGeometry, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionPathGeometry {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionPathGeometry {}
-impl ::windows_core::CanTryInto<CompositionGeometry> for CompositionPathGeometry {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionPathGeometry {}
+::windows_core::imp::required_hierarchy!(CompositionPathGeometry, IAnimationObject, super::super::Foundation::IClosable, CompositionGeometry, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionPathGeometry {}
 unsafe impl ::core::marker::Sync for CompositionPathGeometry {}
 #[repr(transparent)]
@@ -12155,10 +10389,10 @@ impl CompositionProjectedShadow {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -12191,17 +10425,17 @@ impl CompositionProjectedShadow {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -12221,11 +10455,11 @@ impl CompositionProjectedShadow {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn BlurRadiusMultiplier(&self) -> ::windows_core::Result<f32> {
         let this = self;
@@ -12254,10 +10488,10 @@ impl CompositionProjectedShadow {
     }
     pub fn SetLightSource<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionLight>,
+        P0: ::windows_core::IntoParam<CompositionLight>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetLightSource)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetLightSource)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn MaxBlurRadius(&self) -> ::windows_core::Result<f32> {
         let this = self;
@@ -12302,9 +10536,7 @@ impl ::windows_core::RuntimeName for CompositionProjectedShadow {
     const NAME: &'static str = "Windows.UI.Composition.CompositionProjectedShadow";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionProjectedShadow, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionProjectedShadow {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionProjectedShadow {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionProjectedShadow {}
+::windows_core::imp::required_hierarchy!(CompositionProjectedShadow, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionProjectedShadow {}
 unsafe impl ::core::marker::Sync for CompositionProjectedShadow {}
 #[repr(transparent)]
@@ -12347,10 +10579,10 @@ impl CompositionProjectedShadowCaster {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -12383,17 +10615,17 @@ impl CompositionProjectedShadowCaster {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -12413,11 +10645,11 @@ impl CompositionProjectedShadowCaster {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Brush(&self) -> ::windows_core::Result<CompositionBrush> {
         let this = self;
@@ -12428,10 +10660,10 @@ impl CompositionProjectedShadowCaster {
     }
     pub fn SetBrush<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionBrush>,
+        P0: ::windows_core::IntoParam<CompositionBrush>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetBrush)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetBrush)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CastingVisual(&self) -> ::windows_core::Result<Visual> {
         let this = self;
@@ -12442,10 +10674,10 @@ impl CompositionProjectedShadowCaster {
     }
     pub fn SetCastingVisual<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetCastingVisual)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetCastingVisual)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionProjectedShadowCaster {
@@ -12461,9 +10693,7 @@ impl ::windows_core::RuntimeName for CompositionProjectedShadowCaster {
     const NAME: &'static str = "Windows.UI.Composition.CompositionProjectedShadowCaster";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionProjectedShadowCaster, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionProjectedShadowCaster {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionProjectedShadowCaster {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionProjectedShadowCaster {}
+::windows_core::imp::required_hierarchy!(CompositionProjectedShadowCaster, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionProjectedShadowCaster {}
 unsafe impl ::core::marker::Sync for CompositionProjectedShadowCaster {}
 #[repr(transparent)]
@@ -12506,10 +10736,10 @@ impl CompositionProjectedShadowCasterCollection {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -12542,17 +10772,17 @@ impl CompositionProjectedShadowCasterCollection {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -12572,11 +10802,11 @@ impl CompositionProjectedShadowCasterCollection {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Count(&self) -> ::windows_core::Result<i32> {
         let this = self;
@@ -12676,11 +10906,8 @@ impl ::core::iter::IntoIterator for &CompositionProjectedShadowCasterCollection 
     }
 }
 ::windows_core::imp::interface_hierarchy!(CompositionProjectedShadowCasterCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionProjectedShadowCasterCollection {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionProjectedShadowCasterCollection {}
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IIterable<CompositionProjectedShadowCaster>> for CompositionProjectedShadowCasterCollection {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionProjectedShadowCasterCollection {}
+::windows_core::imp::required_hierarchy!(CompositionProjectedShadowCasterCollection, IAnimationObject, super::super::Foundation::IClosable, super::super::Foundation::Collections::IIterable::<CompositionProjectedShadowCaster>, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionProjectedShadowCasterCollection {}
 unsafe impl ::core::marker::Sync for CompositionProjectedShadowCasterCollection {}
 #[repr(transparent)]
@@ -12723,10 +10950,10 @@ impl CompositionProjectedShadowReceiver {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -12759,17 +10986,17 @@ impl CompositionProjectedShadowReceiver {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -12789,11 +11016,11 @@ impl CompositionProjectedShadowReceiver {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn ReceivingVisual(&self) -> ::windows_core::Result<Visual> {
         let this = self;
@@ -12804,10 +11031,10 @@ impl CompositionProjectedShadowReceiver {
     }
     pub fn SetReceivingVisual<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetReceivingVisual)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReceivingVisual)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionProjectedShadowReceiver {
@@ -12823,9 +11050,7 @@ impl ::windows_core::RuntimeName for CompositionProjectedShadowReceiver {
     const NAME: &'static str = "Windows.UI.Composition.CompositionProjectedShadowReceiver";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionProjectedShadowReceiver, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionProjectedShadowReceiver {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionProjectedShadowReceiver {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionProjectedShadowReceiver {}
+::windows_core::imp::required_hierarchy!(CompositionProjectedShadowReceiver, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionProjectedShadowReceiver {}
 unsafe impl ::core::marker::Sync for CompositionProjectedShadowReceiver {}
 #[repr(transparent)]
@@ -12868,10 +11093,10 @@ impl CompositionProjectedShadowReceiverUnorderedCollection {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -12904,17 +11129,17 @@ impl CompositionProjectedShadowReceiverUnorderedCollection {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -12934,11 +11159,11 @@ impl CompositionProjectedShadowReceiverUnorderedCollection {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Add<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
@@ -13004,11 +11229,8 @@ impl ::core::iter::IntoIterator for &CompositionProjectedShadowReceiverUnordered
     }
 }
 ::windows_core::imp::interface_hierarchy!(CompositionProjectedShadowReceiverUnorderedCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionProjectedShadowReceiverUnorderedCollection {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionProjectedShadowReceiverUnorderedCollection {}
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IIterable<CompositionProjectedShadowReceiver>> for CompositionProjectedShadowReceiverUnorderedCollection {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionProjectedShadowReceiverUnorderedCollection {}
+::windows_core::imp::required_hierarchy!(CompositionProjectedShadowReceiverUnorderedCollection, IAnimationObject, super::super::Foundation::IClosable, super::super::Foundation::Collections::IIterable::<CompositionProjectedShadowReceiver>, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionProjectedShadowReceiverUnorderedCollection {}
 unsafe impl ::core::marker::Sync for CompositionProjectedShadowReceiverUnorderedCollection {}
 #[repr(transparent)]
@@ -13051,10 +11273,10 @@ impl CompositionPropertySet {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -13087,17 +11309,17 @@ impl CompositionPropertySet {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -13117,11 +11339,11 @@ impl CompositionPropertySet {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn InsertColor(&self, propertyname: &::windows_core::HSTRING, value: super::Color) -> ::windows_core::Result<()> {
         let this = self;
@@ -13260,9 +11482,7 @@ impl ::windows_core::RuntimeName for CompositionPropertySet {
     const NAME: &'static str = "Windows.UI.Composition.CompositionPropertySet";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionPropertySet, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionPropertySet {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionPropertySet {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionPropertySet {}
+::windows_core::imp::required_hierarchy!(CompositionPropertySet, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionPropertySet {}
 unsafe impl ::core::marker::Sync for CompositionPropertySet {}
 #[repr(transparent)]
@@ -13442,10 +11662,10 @@ impl CompositionRadialGradientBrush {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -13478,17 +11698,17 @@ impl CompositionRadialGradientBrush {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -13508,11 +11728,11 @@ impl CompositionRadialGradientBrush {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -13573,11 +11793,7 @@ impl ::windows_core::RuntimeName for CompositionRadialGradientBrush {
     const NAME: &'static str = "Windows.UI.Composition.CompositionRadialGradientBrush";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionRadialGradientBrush, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionRadialGradientBrush {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionRadialGradientBrush {}
-impl ::windows_core::CanTryInto<CompositionGradientBrush> for CompositionRadialGradientBrush {}
-impl ::windows_core::CanTryInto<CompositionBrush> for CompositionRadialGradientBrush {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionRadialGradientBrush {}
+::windows_core::imp::required_hierarchy!(CompositionRadialGradientBrush, IAnimationObject, super::super::Foundation::IClosable, CompositionGradientBrush, CompositionBrush, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionRadialGradientBrush {}
 unsafe impl ::core::marker::Sync for CompositionRadialGradientBrush {}
 #[repr(transparent)]
@@ -13653,10 +11869,10 @@ impl CompositionRectangleGeometry {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -13689,17 +11905,17 @@ impl CompositionRectangleGeometry {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -13719,11 +11935,11 @@ impl CompositionRectangleGeometry {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -13769,10 +11985,7 @@ impl ::windows_core::RuntimeName for CompositionRectangleGeometry {
     const NAME: &'static str = "Windows.UI.Composition.CompositionRectangleGeometry";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionRectangleGeometry, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionRectangleGeometry {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionRectangleGeometry {}
-impl ::windows_core::CanTryInto<CompositionGeometry> for CompositionRectangleGeometry {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionRectangleGeometry {}
+::windows_core::imp::required_hierarchy!(CompositionRectangleGeometry, IAnimationObject, super::super::Foundation::IClosable, CompositionGeometry, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionRectangleGeometry {}
 unsafe impl ::core::marker::Sync for CompositionRectangleGeometry {}
 #[repr(transparent)]
@@ -13848,10 +12061,10 @@ impl CompositionRoundedRectangleGeometry {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -13884,17 +12097,17 @@ impl CompositionRoundedRectangleGeometry {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -13914,11 +12127,11 @@ impl CompositionRoundedRectangleGeometry {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -13979,10 +12192,7 @@ impl ::windows_core::RuntimeName for CompositionRoundedRectangleGeometry {
     const NAME: &'static str = "Windows.UI.Composition.CompositionRoundedRectangleGeometry";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionRoundedRectangleGeometry, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionRoundedRectangleGeometry {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionRoundedRectangleGeometry {}
-impl ::windows_core::CanTryInto<CompositionGeometry> for CompositionRoundedRectangleGeometry {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionRoundedRectangleGeometry {}
+::windows_core::imp::required_hierarchy!(CompositionRoundedRectangleGeometry, IAnimationObject, super::super::Foundation::IClosable, CompositionGeometry, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionRoundedRectangleGeometry {}
 unsafe impl ::core::marker::Sync for CompositionRoundedRectangleGeometry {}
 #[repr(transparent)]
@@ -14025,10 +12235,10 @@ impl CompositionScopedBatch {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -14061,17 +12271,17 @@ impl CompositionScopedBatch {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -14091,11 +12301,11 @@ impl CompositionScopedBatch {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn IsActive(&self) -> ::windows_core::Result<bool> {
         let this = self;
@@ -14151,9 +12361,7 @@ impl ::windows_core::RuntimeName for CompositionScopedBatch {
     const NAME: &'static str = "Windows.UI.Composition.CompositionScopedBatch";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionScopedBatch, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionScopedBatch {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionScopedBatch {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionScopedBatch {}
+::windows_core::imp::required_hierarchy!(CompositionScopedBatch, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionScopedBatch {}
 unsafe impl ::core::marker::Sync for CompositionScopedBatch {}
 #[repr(transparent)]
@@ -14196,10 +12404,10 @@ impl CompositionShadow {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -14232,17 +12440,17 @@ impl CompositionShadow {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -14262,11 +12470,11 @@ impl CompositionShadow {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionShadow {
@@ -14282,9 +12490,7 @@ impl ::windows_core::RuntimeName for CompositionShadow {
     const NAME: &'static str = "Windows.UI.Composition.CompositionShadow";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionShadow, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionShadow {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionShadow {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionShadow {}
+::windows_core::imp::required_hierarchy!(CompositionShadow, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionShadow {}
 unsafe impl ::core::marker::Sync for CompositionShadow {}
 #[repr(transparent)]
@@ -14327,10 +12533,10 @@ impl CompositionShape {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -14363,17 +12569,17 @@ impl CompositionShape {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -14393,11 +12599,11 @@ impl CompositionShape {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -14495,9 +12701,7 @@ impl ::windows_core::RuntimeName for CompositionShape {
     const NAME: &'static str = "Windows.UI.Composition.CompositionShape";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionShape, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionShape {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionShape {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionShape {}
+::windows_core::imp::required_hierarchy!(CompositionShape, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionShape {}
 unsafe impl ::core::marker::Sync for CompositionShape {}
 #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -14543,10 +12747,10 @@ impl CompositionShapeCollection {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -14579,17 +12783,17 @@ impl CompositionShapeCollection {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -14609,11 +12813,11 @@ impl CompositionShapeCollection {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -14655,31 +12859,31 @@ impl CompositionShapeCollection {
     #[cfg(feature = "Foundation_Collections")]
     pub fn IndexOf<P0>(&self, value: P0, index: &mut u32) -> ::windows_core::Result<bool>
     where
-        P0: ::windows_core::TryIntoParam<CompositionShape>,
+        P0: ::windows_core::IntoParam<CompositionShape>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).IndexOf)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi(), index, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).IndexOf)(::windows_core::Interface::as_raw(this), value.into_param().abi(), index, &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn SetAt<P0>(&self, index: u32, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionShape>,
+        P0: ::windows_core::IntoParam<CompositionShape>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetAt)(::windows_core::Interface::as_raw(this), index, value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetAt)(::windows_core::Interface::as_raw(this), index, value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn InsertAt<P0>(&self, index: u32, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionShape>,
+        P0: ::windows_core::IntoParam<CompositionShape>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertAt)(::windows_core::Interface::as_raw(this), index, value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertAt)(::windows_core::Interface::as_raw(this), index, value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -14691,10 +12895,10 @@ impl CompositionShapeCollection {
     #[cfg(feature = "Foundation_Collections")]
     pub fn Append<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionShape>,
+        P0: ::windows_core::IntoParam<CompositionShape>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Append)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Append)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -14759,15 +12963,7 @@ impl ::core::iter::IntoIterator for &CompositionShapeCollection {
 #[cfg(feature = "Foundation_Collections")]
 ::windows_core::imp::interface_hierarchy!(CompositionShapeCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionShapeCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionShapeCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IIterable<CompositionShape>> for CompositionShapeCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IVector<CompositionShape>> for CompositionShapeCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionShapeCollection {}
+::windows_core::imp::required_hierarchy!(CompositionShapeCollection, IAnimationObject, super::super::Foundation::IClosable, super::super::Foundation::Collections::IIterable::<CompositionShape>, super::super::Foundation::Collections::IVector::<CompositionShape>, CompositionObject);
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::core::marker::Send for CompositionShapeCollection {}
 #[cfg(feature = "Foundation_Collections")]
@@ -14812,10 +13008,10 @@ impl CompositionSpriteShape {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -14848,17 +13044,17 @@ impl CompositionSpriteShape {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -14878,11 +13074,11 @@ impl CompositionSpriteShape {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -14975,10 +13171,10 @@ impl CompositionSpriteShape {
     }
     pub fn SetFillBrush<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionBrush>,
+        P0: ::windows_core::IntoParam<CompositionBrush>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetFillBrush)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetFillBrush)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Geometry(&self) -> ::windows_core::Result<CompositionGeometry> {
         let this = self;
@@ -14989,10 +13185,10 @@ impl CompositionSpriteShape {
     }
     pub fn SetGeometry<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionGeometry>,
+        P0: ::windows_core::IntoParam<CompositionGeometry>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetGeometry)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetGeometry)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn IsStrokeNonScaling(&self) -> ::windows_core::Result<bool> {
         let this = self;
@@ -15014,10 +13210,10 @@ impl CompositionSpriteShape {
     }
     pub fn SetStrokeBrush<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionBrush>,
+        P0: ::windows_core::IntoParam<CompositionBrush>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetStrokeBrush)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetStrokeBrush)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -15119,10 +13315,7 @@ impl ::windows_core::RuntimeName for CompositionSpriteShape {
     const NAME: &'static str = "Windows.UI.Composition.CompositionSpriteShape";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionSpriteShape, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionSpriteShape {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionSpriteShape {}
-impl ::windows_core::CanTryInto<CompositionShape> for CompositionSpriteShape {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionSpriteShape {}
+::windows_core::imp::required_hierarchy!(CompositionSpriteShape, IAnimationObject, super::super::Foundation::IClosable, CompositionShape, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionSpriteShape {}
 unsafe impl ::core::marker::Sync for CompositionSpriteShape {}
 #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -15168,10 +13361,10 @@ impl CompositionStrokeDashArray {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -15204,17 +13397,17 @@ impl CompositionStrokeDashArray {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -15234,11 +13427,11 @@ impl CompositionStrokeDashArray {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -15372,15 +13565,7 @@ impl ::core::iter::IntoIterator for &CompositionStrokeDashArray {
 #[cfg(feature = "Foundation_Collections")]
 ::windows_core::imp::interface_hierarchy!(CompositionStrokeDashArray, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionStrokeDashArray {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionStrokeDashArray {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IIterable<f32>> for CompositionStrokeDashArray {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IVector<f32>> for CompositionStrokeDashArray {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionStrokeDashArray {}
+::windows_core::imp::required_hierarchy!(CompositionStrokeDashArray, IAnimationObject, super::super::Foundation::IClosable, super::super::Foundation::Collections::IIterable::<f32>, super::super::Foundation::Collections::IVector::<f32>, CompositionObject);
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::core::marker::Send for CompositionStrokeDashArray {}
 #[cfg(feature = "Foundation_Collections")]
@@ -15425,10 +13610,10 @@ impl CompositionSurfaceBrush {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -15461,17 +13646,17 @@ impl CompositionSurfaceBrush {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -15491,11 +13676,11 @@ impl CompositionSurfaceBrush {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn BitmapInterpolationMode(&self) -> ::windows_core::Result<CompositionBitmapInterpolationMode> {
         let this = self;
@@ -15539,10 +13724,10 @@ impl CompositionSurfaceBrush {
     }
     pub fn SetSurface<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionSurface>,
+        P0: ::windows_core::IntoParam<ICompositionSurface>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSurface)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSurface)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn VerticalAlignmentRatio(&self) -> ::windows_core::Result<f32> {
         let this = self;
@@ -15677,10 +13862,7 @@ impl ::windows_core::RuntimeName for CompositionSurfaceBrush {
     const NAME: &'static str = "Windows.UI.Composition.CompositionSurfaceBrush";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionSurfaceBrush, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionSurfaceBrush {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionSurfaceBrush {}
-impl ::windows_core::CanTryInto<CompositionBrush> for CompositionSurfaceBrush {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionSurfaceBrush {}
+::windows_core::imp::required_hierarchy!(CompositionSurfaceBrush, IAnimationObject, super::super::Foundation::IClosable, CompositionBrush, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionSurfaceBrush {}
 unsafe impl ::core::marker::Sync for CompositionSurfaceBrush {}
 #[repr(transparent)]
@@ -15723,10 +13905,10 @@ impl CompositionTarget {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -15759,17 +13941,17 @@ impl CompositionTarget {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -15789,11 +13971,11 @@ impl CompositionTarget {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Root(&self) -> ::windows_core::Result<Visual> {
         let this = self;
@@ -15804,10 +13986,10 @@ impl CompositionTarget {
     }
     pub fn SetRoot<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetRoot)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetRoot)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionTarget {
@@ -15823,9 +14005,7 @@ impl ::windows_core::RuntimeName for CompositionTarget {
     const NAME: &'static str = "Windows.UI.Composition.CompositionTarget";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionTarget, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionTarget {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionTarget {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionTarget {}
+::windows_core::imp::required_hierarchy!(CompositionTarget, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionTarget {}
 unsafe impl ::core::marker::Sync for CompositionTarget {}
 #[repr(transparent)]
@@ -15868,10 +14048,10 @@ impl CompositionTexture {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -15904,17 +14084,17 @@ impl CompositionTexture {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -15934,11 +14114,11 @@ impl CompositionTexture {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Graphics\"`"]
     #[cfg(feature = "Graphics")]
@@ -15999,10 +14179,7 @@ impl ::windows_core::RuntimeName for CompositionTexture {
     const NAME: &'static str = "Windows.UI.Composition.CompositionTexture";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionTexture, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionTexture {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionTexture {}
-impl ::windows_core::CanTryInto<ICompositionSurface> for CompositionTexture {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionTexture {}
+::windows_core::imp::required_hierarchy!(CompositionTexture, IAnimationObject, super::super::Foundation::IClosable, ICompositionSurface, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionTexture {}
 unsafe impl ::core::marker::Sync for CompositionTexture {}
 #[repr(transparent)]
@@ -16045,10 +14222,10 @@ impl CompositionTransform {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -16081,17 +14258,17 @@ impl CompositionTransform {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -16111,11 +14288,11 @@ impl CompositionTransform {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for CompositionTransform {
@@ -16131,9 +14308,7 @@ impl ::windows_core::RuntimeName for CompositionTransform {
     const NAME: &'static str = "Windows.UI.Composition.CompositionTransform";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionTransform, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionTransform {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionTransform {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionTransform {}
+::windows_core::imp::required_hierarchy!(CompositionTransform, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionTransform {}
 unsafe impl ::core::marker::Sync for CompositionTransform {}
 #[repr(transparent)]
@@ -16176,10 +14351,10 @@ impl CompositionViewBox {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -16212,17 +14387,17 @@ impl CompositionViewBox {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -16242,11 +14417,11 @@ impl CompositionViewBox {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn HorizontalAlignmentRatio(&self) -> ::windows_core::Result<f32> {
         let this = self;
@@ -16325,9 +14500,7 @@ impl ::windows_core::RuntimeName for CompositionViewBox {
     const NAME: &'static str = "Windows.UI.Composition.CompositionViewBox";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionViewBox, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionViewBox {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionViewBox {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionViewBox {}
+::windows_core::imp::required_hierarchy!(CompositionViewBox, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionViewBox {}
 unsafe impl ::core::marker::Sync for CompositionViewBox {}
 #[repr(transparent)]
@@ -16434,10 +14607,10 @@ impl CompositionVirtualDrawingSurface {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -16470,17 +14643,17 @@ impl CompositionVirtualDrawingSurface {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -16500,11 +14673,11 @@ impl CompositionVirtualDrawingSurface {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Graphics\"`"]
     #[cfg(feature = "Graphics")]
@@ -16526,11 +14699,7 @@ impl ::windows_core::RuntimeName for CompositionVirtualDrawingSurface {
     const NAME: &'static str = "Windows.UI.Composition.CompositionVirtualDrawingSurface";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionVirtualDrawingSurface, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionVirtualDrawingSurface {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionVirtualDrawingSurface {}
-impl ::windows_core::CanTryInto<ICompositionSurface> for CompositionVirtualDrawingSurface {}
-impl ::windows_core::CanTryInto<CompositionDrawingSurface> for CompositionVirtualDrawingSurface {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionVirtualDrawingSurface {}
+::windows_core::imp::required_hierarchy!(CompositionVirtualDrawingSurface, IAnimationObject, super::super::Foundation::IClosable, ICompositionSurface, CompositionDrawingSurface, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionVirtualDrawingSurface {}
 unsafe impl ::core::marker::Sync for CompositionVirtualDrawingSurface {}
 #[repr(transparent)]
@@ -16573,10 +14742,10 @@ impl CompositionVisualSurface {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -16609,17 +14778,17 @@ impl CompositionVisualSurface {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -16639,11 +14808,11 @@ impl CompositionVisualSurface {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn SourceVisual(&self) -> ::windows_core::Result<Visual> {
         let this = self;
@@ -16654,10 +14823,10 @@ impl CompositionVisualSurface {
     }
     pub fn SetSourceVisual<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSourceVisual)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSourceVisual)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -16703,10 +14872,7 @@ impl ::windows_core::RuntimeName for CompositionVisualSurface {
     const NAME: &'static str = "Windows.UI.Composition.CompositionVisualSurface";
 }
 ::windows_core::imp::interface_hierarchy!(CompositionVisualSurface, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CompositionVisualSurface {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CompositionVisualSurface {}
-impl ::windows_core::CanTryInto<ICompositionSurface> for CompositionVisualSurface {}
-impl ::windows_core::CanTryInto<CompositionObject> for CompositionVisualSurface {}
+::windows_core::imp::required_hierarchy!(CompositionVisualSurface, IAnimationObject, super::super::Foundation::IClosable, ICompositionSurface, CompositionObject);
 unsafe impl ::core::marker::Send for CompositionVisualSurface {}
 unsafe impl ::core::marker::Sync for CompositionVisualSurface {}
 #[repr(transparent)]
@@ -16765,25 +14931,25 @@ impl Compositor {
     #[cfg(feature = "Graphics_Effects")]
     pub fn CreateEffectFactory<P0>(&self, graphicseffect: P0) -> ::windows_core::Result<CompositionEffectFactory>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Graphics::Effects::IGraphicsEffect>,
+        P0: ::windows_core::IntoParam<super::super::Graphics::Effects::IGraphicsEffect>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateEffectFactory)(::windows_core::Interface::as_raw(this), graphicseffect.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateEffectFactory)(::windows_core::Interface::as_raw(this), graphicseffect.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Graphics_Effects\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Graphics_Effects"))]
     pub fn CreateEffectFactoryWithProperties<P0, P1>(&self, graphicseffect: P0, animatableproperties: P1) -> ::windows_core::Result<CompositionEffectFactory>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Graphics::Effects::IGraphicsEffect>,
-        P1: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::Graphics::Effects::IGraphicsEffect>,
+        P1: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateEffectFactoryWithProperties)(::windows_core::Interface::as_raw(this), graphicseffect.try_into_param()?.abi(), animatableproperties.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateEffectFactoryWithProperties)(::windows_core::Interface::as_raw(this), graphicseffect.into_param().abi(), animatableproperties.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateExpressionAnimation(&self) -> ::windows_core::Result<ExpressionAnimation> {
@@ -16865,12 +15031,12 @@ impl Compositor {
     }
     pub fn CreateSurfaceBrushWithSurface<P0>(&self, surface: P0) -> ::windows_core::Result<CompositionSurfaceBrush>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionSurface>,
+        P0: ::windows_core::IntoParam<ICompositionSurface>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateSurfaceBrushWithSurface)(::windows_core::Interface::as_raw(this), surface.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateSurfaceBrushWithSurface)(::windows_core::Interface::as_raw(this), surface.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateTargetForCurrentView(&self) -> ::windows_core::Result<CompositionTarget> {
@@ -17166,12 +15332,12 @@ impl Compositor {
     }
     pub fn CreateSpriteShapeWithGeometry<P0>(&self, geometry: P0) -> ::windows_core::Result<CompositionSpriteShape>
     where
-        P0: ::windows_core::TryIntoParam<CompositionGeometry>,
+        P0: ::windows_core::IntoParam<CompositionGeometry>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositor5>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateSpriteShapeWithGeometry)(::windows_core::Interface::as_raw(this), geometry.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateSpriteShapeWithGeometry)(::windows_core::Interface::as_raw(this), geometry.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateViewBox(&self) -> ::windows_core::Result<CompositionViewBox> {
@@ -17197,12 +15363,12 @@ impl Compositor {
     }
     pub fn CreateGeometricClipWithGeometry<P0>(&self, geometry: P0) -> ::windows_core::Result<CompositionGeometricClip>
     where
-        P0: ::windows_core::TryIntoParam<CompositionGeometry>,
+        P0: ::windows_core::IntoParam<CompositionGeometry>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositor6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateGeometricClipWithGeometry)(::windows_core::Interface::as_raw(this), geometry.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateGeometricClipWithGeometry)(::windows_core::Interface::as_raw(this), geometry.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateRedirectVisual(&self) -> ::windows_core::Result<RedirectVisual> {
@@ -17214,12 +15380,12 @@ impl Compositor {
     }
     pub fn CreateRedirectVisualWithSourceVisual<P0>(&self, source: P0) -> ::windows_core::Result<RedirectVisual>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositor6>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateRedirectVisualWithSourceVisual)(::windows_core::Interface::as_raw(this), source.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateRedirectVisualWithSourceVisual)(::windows_core::Interface::as_raw(this), source.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CreateBooleanKeyFrameAnimation(&self) -> ::windows_core::Result<BooleanKeyFrameAnimation> {
@@ -17348,7 +15514,7 @@ impl ::windows_core::RuntimeName for Compositor {
     const NAME: &'static str = "Windows.UI.Composition.Compositor";
 }
 ::windows_core::imp::interface_hierarchy!(Compositor, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for Compositor {}
+::windows_core::imp::required_hierarchy!(Compositor, super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for Compositor {}
 unsafe impl ::core::marker::Sync for Compositor {}
 #[repr(transparent)]
@@ -17391,10 +15557,10 @@ impl ContainerVisual {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -17427,17 +15593,17 @@ impl ContainerVisual {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -17457,11 +15623,11 @@ impl ContainerVisual {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Children(&self) -> ::windows_core::Result<VisualCollection> {
         let this = self;
@@ -17531,10 +15697,10 @@ impl ContainerVisual {
     }
     pub fn SetClip<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionClip>,
+        P0: ::windows_core::IntoParam<CompositionClip>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CompositeMode(&self) -> ::windows_core::Result<CompositionCompositeMode> {
         let this = &::windows_core::ComInterface::cast::<IVisual>(self)?;
@@ -17697,10 +15863,10 @@ impl ContainerVisual {
     }
     pub fn SetParentForTransform<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -17768,10 +15934,7 @@ impl ::windows_core::RuntimeName for ContainerVisual {
     const NAME: &'static str = "Windows.UI.Composition.ContainerVisual";
 }
 ::windows_core::imp::interface_hierarchy!(ContainerVisual, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for ContainerVisual {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for ContainerVisual {}
-impl ::windows_core::CanTryInto<Visual> for ContainerVisual {}
-impl ::windows_core::CanTryInto<CompositionObject> for ContainerVisual {}
+::windows_core::imp::required_hierarchy!(ContainerVisual, IAnimationObject, super::super::Foundation::IClosable, Visual, CompositionObject);
 unsafe impl ::core::marker::Send for ContainerVisual {}
 unsafe impl ::core::marker::Sync for ContainerVisual {}
 #[repr(transparent)]
@@ -17814,10 +15977,10 @@ impl CubicBezierEasingFunction {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -17850,17 +16013,17 @@ impl CubicBezierEasingFunction {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -17880,11 +16043,11 @@ impl CubicBezierEasingFunction {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -17918,10 +16081,7 @@ impl ::windows_core::RuntimeName for CubicBezierEasingFunction {
     const NAME: &'static str = "Windows.UI.Composition.CubicBezierEasingFunction";
 }
 ::windows_core::imp::interface_hierarchy!(CubicBezierEasingFunction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for CubicBezierEasingFunction {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for CubicBezierEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionEasingFunction> for CubicBezierEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionObject> for CubicBezierEasingFunction {}
+::windows_core::imp::required_hierarchy!(CubicBezierEasingFunction, IAnimationObject, super::super::Foundation::IClosable, CompositionEasingFunction, CompositionObject);
 unsafe impl ::core::marker::Send for CubicBezierEasingFunction {}
 unsafe impl ::core::marker::Sync for CubicBezierEasingFunction {}
 #[repr(transparent)]
@@ -17964,10 +16124,10 @@ impl DelegatedInkTrailVisual {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -18000,17 +16160,17 @@ impl DelegatedInkTrailVisual {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -18030,11 +16190,11 @@ impl DelegatedInkTrailVisual {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn AddTrailPoints(&self, inkpoints: &[InkTrailPoint]) -> ::windows_core::Result<u32> {
         let this = self;
@@ -18070,11 +16230,11 @@ impl DelegatedInkTrailVisual {
     pub fn CreateForSwapChain<P0, P1>(compositor: P0, swapchain: P1) -> ::windows_core::Result<DelegatedInkTrailVisual>
     where
         P0: ::windows_core::IntoParam<Compositor>,
-        P1: ::windows_core::TryIntoParam<ICompositionSurface>,
+        P1: ::windows_core::IntoParam<ICompositionSurface>,
     {
         Self::IDelegatedInkTrailVisualStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateForSwapChain)(::windows_core::Interface::as_raw(this), compositor.into_param().abi(), swapchain.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateForSwapChain)(::windows_core::Interface::as_raw(this), compositor.into_param().abi(), swapchain.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
@@ -18138,10 +16298,10 @@ impl DelegatedInkTrailVisual {
     }
     pub fn SetClip<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionClip>,
+        P0: ::windows_core::IntoParam<CompositionClip>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CompositeMode(&self) -> ::windows_core::Result<CompositionCompositeMode> {
         let this = &::windows_core::ComInterface::cast::<IVisual>(self)?;
@@ -18304,10 +16464,10 @@ impl DelegatedInkTrailVisual {
     }
     pub fn SetParentForTransform<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -18380,10 +16540,7 @@ impl ::windows_core::RuntimeName for DelegatedInkTrailVisual {
     const NAME: &'static str = "Windows.UI.Composition.DelegatedInkTrailVisual";
 }
 ::windows_core::imp::interface_hierarchy!(DelegatedInkTrailVisual, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for DelegatedInkTrailVisual {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for DelegatedInkTrailVisual {}
-impl ::windows_core::CanTryInto<Visual> for DelegatedInkTrailVisual {}
-impl ::windows_core::CanTryInto<CompositionObject> for DelegatedInkTrailVisual {}
+::windows_core::imp::required_hierarchy!(DelegatedInkTrailVisual, IAnimationObject, super::super::Foundation::IClosable, Visual, CompositionObject);
 unsafe impl ::core::marker::Send for DelegatedInkTrailVisual {}
 unsafe impl ::core::marker::Sync for DelegatedInkTrailVisual {}
 #[repr(transparent)]
@@ -18451,10 +16608,10 @@ impl DistantLight {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -18487,17 +16644,17 @@ impl DistantLight {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -18517,11 +16674,11 @@ impl DistantLight {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Color(&self) -> ::windows_core::Result<super::Color> {
         let this = self;
@@ -18543,10 +16700,10 @@ impl DistantLight {
     }
     pub fn SetCoordinateSpace<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetCoordinateSpace)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetCoordinateSpace)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -18588,10 +16745,7 @@ impl ::windows_core::RuntimeName for DistantLight {
     const NAME: &'static str = "Windows.UI.Composition.DistantLight";
 }
 ::windows_core::imp::interface_hierarchy!(DistantLight, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for DistantLight {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for DistantLight {}
-impl ::windows_core::CanTryInto<CompositionLight> for DistantLight {}
-impl ::windows_core::CanTryInto<CompositionObject> for DistantLight {}
+::windows_core::imp::required_hierarchy!(DistantLight, IAnimationObject, super::super::Foundation::IClosable, CompositionLight, CompositionObject);
 unsafe impl ::core::marker::Send for DistantLight {}
 unsafe impl ::core::marker::Sync for DistantLight {}
 #[repr(transparent)]
@@ -18634,10 +16788,10 @@ impl DropShadow {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -18670,17 +16824,17 @@ impl DropShadow {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -18700,11 +16854,11 @@ impl DropShadow {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn BlurRadius(&self) -> ::windows_core::Result<f32> {
         let this = self;
@@ -18737,10 +16891,10 @@ impl DropShadow {
     }
     pub fn SetMask<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionBrush>,
+        P0: ::windows_core::IntoParam<CompositionBrush>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetMask)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetMask)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -18793,10 +16947,7 @@ impl ::windows_core::RuntimeName for DropShadow {
     const NAME: &'static str = "Windows.UI.Composition.DropShadow";
 }
 ::windows_core::imp::interface_hierarchy!(DropShadow, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for DropShadow {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for DropShadow {}
-impl ::windows_core::CanTryInto<CompositionShadow> for DropShadow {}
-impl ::windows_core::CanTryInto<CompositionObject> for DropShadow {}
+::windows_core::imp::required_hierarchy!(DropShadow, IAnimationObject, super::super::Foundation::IClosable, CompositionShadow, CompositionObject);
 unsafe impl ::core::marker::Send for DropShadow {}
 unsafe impl ::core::marker::Sync for DropShadow {}
 #[repr(transparent)]
@@ -18839,10 +16990,10 @@ impl ElasticEasingFunction {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -18875,17 +17026,17 @@ impl ElasticEasingFunction {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -18905,11 +17056,11 @@ impl ElasticEasingFunction {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Mode(&self) -> ::windows_core::Result<CompositionEasingFunctionMode> {
         let this = self;
@@ -18946,10 +17097,7 @@ impl ::windows_core::RuntimeName for ElasticEasingFunction {
     const NAME: &'static str = "Windows.UI.Composition.ElasticEasingFunction";
 }
 ::windows_core::imp::interface_hierarchy!(ElasticEasingFunction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for ElasticEasingFunction {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for ElasticEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionEasingFunction> for ElasticEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionObject> for ElasticEasingFunction {}
+::windows_core::imp::required_hierarchy!(ElasticEasingFunction, IAnimationObject, super::super::Foundation::IClosable, CompositionEasingFunction, CompositionObject);
 unsafe impl ::core::marker::Send for ElasticEasingFunction {}
 unsafe impl ::core::marker::Sync for ElasticEasingFunction {}
 #[repr(transparent)]
@@ -18992,10 +17140,10 @@ impl ExponentialEasingFunction {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -19028,17 +17176,17 @@ impl ExponentialEasingFunction {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -19058,11 +17206,11 @@ impl ExponentialEasingFunction {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Mode(&self) -> ::windows_core::Result<CompositionEasingFunctionMode> {
         let this = self;
@@ -19092,10 +17240,7 @@ impl ::windows_core::RuntimeName for ExponentialEasingFunction {
     const NAME: &'static str = "Windows.UI.Composition.ExponentialEasingFunction";
 }
 ::windows_core::imp::interface_hierarchy!(ExponentialEasingFunction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for ExponentialEasingFunction {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for ExponentialEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionEasingFunction> for ExponentialEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionObject> for ExponentialEasingFunction {}
+::windows_core::imp::required_hierarchy!(ExponentialEasingFunction, IAnimationObject, super::super::Foundation::IClosable, CompositionEasingFunction, CompositionObject);
 unsafe impl ::core::marker::Send for ExponentialEasingFunction {}
 unsafe impl ::core::marker::Sync for ExponentialEasingFunction {}
 #[repr(transparent)]
@@ -19145,10 +17290,10 @@ impl ExpressionAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -19198,10 +17343,10 @@ impl ExpressionAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -19228,10 +17373,10 @@ impl ExpressionAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -19264,17 +17409,17 @@ impl ExpressionAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -19294,11 +17439,11 @@ impl ExpressionAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Expression(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -19325,11 +17470,7 @@ impl ::windows_core::RuntimeName for ExpressionAnimation {
     const NAME: &'static str = "Windows.UI.Composition.ExpressionAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(ExpressionAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for ExpressionAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for ExpressionAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for ExpressionAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for ExpressionAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for ExpressionAnimation {}
+::windows_core::imp::required_hierarchy!(ExpressionAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for ExpressionAnimation {}
 unsafe impl ::core::marker::Sync for ExpressionAnimation {}
 #[repr(transparent)]
@@ -19372,10 +17513,10 @@ impl ImplicitAnimationCollection {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -19408,17 +17549,17 @@ impl ImplicitAnimationCollection {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -19438,11 +17579,11 @@ impl ImplicitAnimationCollection {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -19493,12 +17634,12 @@ impl ImplicitAnimationCollection {
     #[cfg(feature = "Foundation_Collections")]
     pub fn Insert<P0>(&self, key: &::windows_core::HSTRING, value: P0) -> ::windows_core::Result<bool>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ICompositionAnimationBase>>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).Insert)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), value.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).Insert)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), value.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -19543,13 +17684,8 @@ impl ::core::iter::IntoIterator for &ImplicitAnimationCollection {
     }
 }
 ::windows_core::imp::interface_hierarchy!(ImplicitAnimationCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for ImplicitAnimationCollection {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for ImplicitAnimationCollection {}
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ICompositionAnimationBase>>> for ImplicitAnimationCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ICompositionAnimationBase>> for ImplicitAnimationCollection {}
-impl ::windows_core::CanTryInto<CompositionObject> for ImplicitAnimationCollection {}
+::windows_core::imp::required_hierarchy!(ImplicitAnimationCollection, IAnimationObject, super::super::Foundation::IClosable, super::super::Foundation::Collections::IIterable::<super::super::Foundation::Collections::IKeyValuePair::<::windows_core::HSTRING, ICompositionAnimationBase>>, super::super::Foundation::Collections::IMap::<::windows_core::HSTRING, ICompositionAnimationBase>, CompositionObject);
 unsafe impl ::core::marker::Send for ImplicitAnimationCollection {}
 unsafe impl ::core::marker::Sync for ImplicitAnimationCollection {}
 #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -19595,10 +17731,10 @@ impl InitialValueExpressionCollection {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -19631,17 +17767,17 @@ impl InitialValueExpressionCollection {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -19661,11 +17797,11 @@ impl InitialValueExpressionCollection {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -19769,15 +17905,7 @@ impl ::core::iter::IntoIterator for &InitialValueExpressionCollection {
 #[cfg(feature = "Foundation_Collections")]
 ::windows_core::imp::interface_hierarchy!(InitialValueExpressionCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<IAnimationObject> for InitialValueExpressionCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for InitialValueExpressionCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>> for InitialValueExpressionCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::HSTRING>> for InitialValueExpressionCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<CompositionObject> for InitialValueExpressionCollection {}
+::windows_core::imp::required_hierarchy!(InitialValueExpressionCollection, IAnimationObject, super::super::Foundation::IClosable, super::super::Foundation::Collections::IIterable::<super::super::Foundation::Collections::IKeyValuePair::<::windows_core::HSTRING, ::windows_core::HSTRING>>, super::super::Foundation::Collections::IMap::<::windows_core::HSTRING, ::windows_core::HSTRING>, CompositionObject);
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::core::marker::Send for InitialValueExpressionCollection {}
 #[cfg(feature = "Foundation_Collections")]
@@ -19919,10 +18047,10 @@ impl InsetClip {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -19955,17 +18083,17 @@ impl InsetClip {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -19985,11 +18113,11 @@ impl InsetClip {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn BottomInset(&self) -> ::windows_core::Result<f32> {
         let this = self;
@@ -20049,10 +18177,7 @@ impl ::windows_core::RuntimeName for InsetClip {
     const NAME: &'static str = "Windows.UI.Composition.InsetClip";
 }
 ::windows_core::imp::interface_hierarchy!(InsetClip, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for InsetClip {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for InsetClip {}
-impl ::windows_core::CanTryInto<CompositionClip> for InsetClip {}
-impl ::windows_core::CanTryInto<CompositionObject> for InsetClip {}
+::windows_core::imp::required_hierarchy!(InsetClip, IAnimationObject, super::super::Foundation::IClosable, CompositionClip, CompositionObject);
 unsafe impl ::core::marker::Send for InsetClip {}
 unsafe impl ::core::marker::Sync for InsetClip {}
 #[repr(transparent)]
@@ -20102,10 +18227,10 @@ impl KeyFrameAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -20155,10 +18280,10 @@ impl KeyFrameAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -20185,10 +18310,10 @@ impl KeyFrameAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -20221,17 +18346,17 @@ impl KeyFrameAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -20251,11 +18376,11 @@ impl KeyFrameAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayTime(&self) -> ::windows_core::Result<super::super::Foundation::TimeSpan> {
         let this = self;
@@ -20325,10 +18450,10 @@ impl KeyFrameAnimation {
     }
     pub fn InsertExpressionKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: &::windows_core::HSTRING, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.into_param().abi()).ok() }
     }
     pub fn Direction(&self) -> ::windows_core::Result<AnimationDirection> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation2>(self)?;
@@ -20366,11 +18491,7 @@ impl ::windows_core::RuntimeName for KeyFrameAnimation {
     const NAME: &'static str = "Windows.UI.Composition.KeyFrameAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(KeyFrameAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for KeyFrameAnimation {}
+::windows_core::imp::required_hierarchy!(KeyFrameAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for KeyFrameAnimation {}
 unsafe impl ::core::marker::Sync for KeyFrameAnimation {}
 #[repr(transparent)]
@@ -20413,10 +18534,10 @@ impl LayerVisual {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -20449,17 +18570,17 @@ impl LayerVisual {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -20479,11 +18600,11 @@ impl LayerVisual {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Children(&self) -> ::windows_core::Result<VisualCollection> {
         let this = &::windows_core::ComInterface::cast::<IContainerVisual>(self)?;
@@ -20515,10 +18636,10 @@ impl LayerVisual {
     }
     pub fn SetShadow<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionShadow>,
+        P0: ::windows_core::IntoParam<CompositionShadow>,
     {
         let this = &::windows_core::ComInterface::cast::<ILayerVisual2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetShadow)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetShadow)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -20581,10 +18702,10 @@ impl LayerVisual {
     }
     pub fn SetClip<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionClip>,
+        P0: ::windows_core::IntoParam<CompositionClip>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CompositeMode(&self) -> ::windows_core::Result<CompositionCompositeMode> {
         let this = &::windows_core::ComInterface::cast::<IVisual>(self)?;
@@ -20747,10 +18868,10 @@ impl LayerVisual {
     }
     pub fn SetParentForTransform<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -20818,11 +18939,7 @@ impl ::windows_core::RuntimeName for LayerVisual {
     const NAME: &'static str = "Windows.UI.Composition.LayerVisual";
 }
 ::windows_core::imp::interface_hierarchy!(LayerVisual, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for LayerVisual {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for LayerVisual {}
-impl ::windows_core::CanTryInto<ContainerVisual> for LayerVisual {}
-impl ::windows_core::CanTryInto<Visual> for LayerVisual {}
-impl ::windows_core::CanTryInto<CompositionObject> for LayerVisual {}
+::windows_core::imp::required_hierarchy!(LayerVisual, IAnimationObject, super::super::Foundation::IClosable, ContainerVisual, Visual, CompositionObject);
 unsafe impl ::core::marker::Send for LayerVisual {}
 unsafe impl ::core::marker::Sync for LayerVisual {}
 #[repr(transparent)]
@@ -20865,10 +18982,10 @@ impl LinearEasingFunction {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -20901,17 +19018,17 @@ impl LinearEasingFunction {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -20931,11 +19048,11 @@ impl LinearEasingFunction {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for LinearEasingFunction {
@@ -20951,10 +19068,7 @@ impl ::windows_core::RuntimeName for LinearEasingFunction {
     const NAME: &'static str = "Windows.UI.Composition.LinearEasingFunction";
 }
 ::windows_core::imp::interface_hierarchy!(LinearEasingFunction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for LinearEasingFunction {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for LinearEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionEasingFunction> for LinearEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionObject> for LinearEasingFunction {}
+::windows_core::imp::required_hierarchy!(LinearEasingFunction, IAnimationObject, super::super::Foundation::IClosable, CompositionEasingFunction, CompositionObject);
 unsafe impl ::core::marker::Send for LinearEasingFunction {}
 unsafe impl ::core::marker::Sync for LinearEasingFunction {}
 #[repr(transparent)]
@@ -21004,10 +19118,10 @@ impl NaturalMotionAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -21057,10 +19171,10 @@ impl NaturalMotionAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -21087,10 +19201,10 @@ impl NaturalMotionAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -21123,17 +19237,17 @@ impl NaturalMotionAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -21153,11 +19267,11 @@ impl NaturalMotionAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayBehavior(&self) -> ::windows_core::Result<AnimationDelayBehavior> {
         let this = self;
@@ -21206,11 +19320,7 @@ impl ::windows_core::RuntimeName for NaturalMotionAnimation {
     const NAME: &'static str = "Windows.UI.Composition.NaturalMotionAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(NaturalMotionAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for NaturalMotionAnimation {}
+::windows_core::imp::required_hierarchy!(NaturalMotionAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for NaturalMotionAnimation {}
 unsafe impl ::core::marker::Sync for NaturalMotionAnimation {}
 #[repr(transparent)]
@@ -21260,10 +19370,10 @@ impl PathKeyFrameAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -21313,10 +19423,10 @@ impl PathKeyFrameAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -21343,10 +19453,10 @@ impl PathKeyFrameAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -21379,17 +19489,17 @@ impl PathKeyFrameAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -21409,11 +19519,11 @@ impl PathKeyFrameAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayTime(&self) -> ::windows_core::Result<super::super::Foundation::TimeSpan> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
@@ -21483,10 +19593,10 @@ impl PathKeyFrameAnimation {
     }
     pub fn InsertExpressionKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: &::windows_core::HSTRING, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.into_param().abi()).ok() }
     }
     pub fn Direction(&self) -> ::windows_core::Result<AnimationDirection> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation2>(self)?;
@@ -21520,10 +19630,10 @@ impl PathKeyFrameAnimation {
     pub fn InsertKeyFrameWithEasingFunction<P0, P1>(&self, normalizedprogresskey: f32, path: P0, easingfunction: P1) -> ::windows_core::Result<()>
     where
         P0: ::windows_core::IntoParam<CompositionPath>,
-        P1: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P1: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, path.into_param().abi(), easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, path.into_param().abi(), easingfunction.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for PathKeyFrameAnimation {
@@ -21539,12 +19649,7 @@ impl ::windows_core::RuntimeName for PathKeyFrameAnimation {
     const NAME: &'static str = "Windows.UI.Composition.PathKeyFrameAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(PathKeyFrameAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for PathKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for PathKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for PathKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<KeyFrameAnimation> for PathKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for PathKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for PathKeyFrameAnimation {}
+::windows_core::imp::required_hierarchy!(PathKeyFrameAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, KeyFrameAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for PathKeyFrameAnimation {}
 unsafe impl ::core::marker::Sync for PathKeyFrameAnimation {}
 #[repr(transparent)]
@@ -21612,10 +19717,10 @@ impl PointLight {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -21648,17 +19753,17 @@ impl PointLight {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -21678,11 +19783,11 @@ impl PointLight {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Color(&self) -> ::windows_core::Result<super::Color> {
         let this = self;
@@ -21715,10 +19820,10 @@ impl PointLight {
     }
     pub fn SetCoordinateSpace<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetCoordinateSpace)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetCoordinateSpace)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn LinearAttenuation(&self) -> ::windows_core::Result<f32> {
         let this = self;
@@ -21804,10 +19909,7 @@ impl ::windows_core::RuntimeName for PointLight {
     const NAME: &'static str = "Windows.UI.Composition.PointLight";
 }
 ::windows_core::imp::interface_hierarchy!(PointLight, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for PointLight {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for PointLight {}
-impl ::windows_core::CanTryInto<CompositionLight> for PointLight {}
-impl ::windows_core::CanTryInto<CompositionObject> for PointLight {}
+::windows_core::imp::required_hierarchy!(PointLight, IAnimationObject, super::super::Foundation::IClosable, CompositionLight, CompositionObject);
 unsafe impl ::core::marker::Send for PointLight {}
 unsafe impl ::core::marker::Sync for PointLight {}
 #[repr(transparent)]
@@ -21850,10 +19952,10 @@ impl PowerEasingFunction {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -21886,17 +19988,17 @@ impl PowerEasingFunction {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -21916,11 +20018,11 @@ impl PowerEasingFunction {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Mode(&self) -> ::windows_core::Result<CompositionEasingFunctionMode> {
         let this = self;
@@ -21950,10 +20052,7 @@ impl ::windows_core::RuntimeName for PowerEasingFunction {
     const NAME: &'static str = "Windows.UI.Composition.PowerEasingFunction";
 }
 ::windows_core::imp::interface_hierarchy!(PowerEasingFunction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for PowerEasingFunction {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for PowerEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionEasingFunction> for PowerEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionObject> for PowerEasingFunction {}
+::windows_core::imp::required_hierarchy!(PowerEasingFunction, IAnimationObject, super::super::Foundation::IClosable, CompositionEasingFunction, CompositionObject);
 unsafe impl ::core::marker::Send for PowerEasingFunction {}
 unsafe impl ::core::marker::Sync for PowerEasingFunction {}
 #[repr(transparent)]
@@ -22003,10 +20102,10 @@ impl QuaternionKeyFrameAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -22056,10 +20155,10 @@ impl QuaternionKeyFrameAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -22086,10 +20185,10 @@ impl QuaternionKeyFrameAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -22122,17 +20221,17 @@ impl QuaternionKeyFrameAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -22152,11 +20251,11 @@ impl QuaternionKeyFrameAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayTime(&self) -> ::windows_core::Result<super::super::Foundation::TimeSpan> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
@@ -22226,10 +20325,10 @@ impl QuaternionKeyFrameAnimation {
     }
     pub fn InsertExpressionKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: &::windows_core::HSTRING, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.into_param().abi()).ok() }
     }
     pub fn Direction(&self) -> ::windows_core::Result<AnimationDirection> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation2>(self)?;
@@ -22263,10 +20362,10 @@ impl QuaternionKeyFrameAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn InsertKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: super::super::Foundation::Numerics::Quaternion, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, value, easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, value, easingfunction.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for QuaternionKeyFrameAnimation {
@@ -22282,12 +20381,7 @@ impl ::windows_core::RuntimeName for QuaternionKeyFrameAnimation {
     const NAME: &'static str = "Windows.UI.Composition.QuaternionKeyFrameAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(QuaternionKeyFrameAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for QuaternionKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for QuaternionKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for QuaternionKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<KeyFrameAnimation> for QuaternionKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for QuaternionKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for QuaternionKeyFrameAnimation {}
+::windows_core::imp::required_hierarchy!(QuaternionKeyFrameAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, KeyFrameAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for QuaternionKeyFrameAnimation {}
 unsafe impl ::core::marker::Sync for QuaternionKeyFrameAnimation {}
 #[repr(transparent)]
@@ -22427,10 +20521,10 @@ impl RectangleClip {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -22463,17 +20557,17 @@ impl RectangleClip {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -22493,11 +20587,11 @@ impl RectangleClip {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Bottom(&self) -> ::windows_core::Result<f32> {
         let this = self;
@@ -22617,10 +20711,7 @@ impl ::windows_core::RuntimeName for RectangleClip {
     const NAME: &'static str = "Windows.UI.Composition.RectangleClip";
 }
 ::windows_core::imp::interface_hierarchy!(RectangleClip, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for RectangleClip {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for RectangleClip {}
-impl ::windows_core::CanTryInto<CompositionClip> for RectangleClip {}
-impl ::windows_core::CanTryInto<CompositionObject> for RectangleClip {}
+::windows_core::imp::required_hierarchy!(RectangleClip, IAnimationObject, super::super::Foundation::IClosable, CompositionClip, CompositionObject);
 unsafe impl ::core::marker::Send for RectangleClip {}
 unsafe impl ::core::marker::Sync for RectangleClip {}
 #[repr(transparent)]
@@ -22663,10 +20754,10 @@ impl RedirectVisual {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -22699,17 +20790,17 @@ impl RedirectVisual {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -22729,11 +20820,11 @@ impl RedirectVisual {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Children(&self) -> ::windows_core::Result<VisualCollection> {
         let this = &::windows_core::ComInterface::cast::<IContainerVisual>(self)?;
@@ -22751,10 +20842,10 @@ impl RedirectVisual {
     }
     pub fn SetSource<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSource)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSource)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -22817,10 +20908,10 @@ impl RedirectVisual {
     }
     pub fn SetClip<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionClip>,
+        P0: ::windows_core::IntoParam<CompositionClip>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CompositeMode(&self) -> ::windows_core::Result<CompositionCompositeMode> {
         let this = &::windows_core::ComInterface::cast::<IVisual>(self)?;
@@ -22983,10 +21074,10 @@ impl RedirectVisual {
     }
     pub fn SetParentForTransform<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -23054,11 +21145,7 @@ impl ::windows_core::RuntimeName for RedirectVisual {
     const NAME: &'static str = "Windows.UI.Composition.RedirectVisual";
 }
 ::windows_core::imp::interface_hierarchy!(RedirectVisual, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for RedirectVisual {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for RedirectVisual {}
-impl ::windows_core::CanTryInto<ContainerVisual> for RedirectVisual {}
-impl ::windows_core::CanTryInto<Visual> for RedirectVisual {}
-impl ::windows_core::CanTryInto<CompositionObject> for RedirectVisual {}
+::windows_core::imp::required_hierarchy!(RedirectVisual, IAnimationObject, super::super::Foundation::IClosable, ContainerVisual, Visual, CompositionObject);
 unsafe impl ::core::marker::Send for RedirectVisual {}
 unsafe impl ::core::marker::Sync for RedirectVisual {}
 #[repr(transparent)]
@@ -23101,10 +21188,10 @@ impl RenderingDeviceReplacedEventArgs {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -23137,17 +21224,17 @@ impl RenderingDeviceReplacedEventArgs {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -23167,11 +21254,11 @@ impl RenderingDeviceReplacedEventArgs {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn GraphicsDevice(&self) -> ::windows_core::Result<CompositionGraphicsDevice> {
         let this = self;
@@ -23194,9 +21281,7 @@ impl ::windows_core::RuntimeName for RenderingDeviceReplacedEventArgs {
     const NAME: &'static str = "Windows.UI.Composition.RenderingDeviceReplacedEventArgs";
 }
 ::windows_core::imp::interface_hierarchy!(RenderingDeviceReplacedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for RenderingDeviceReplacedEventArgs {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for RenderingDeviceReplacedEventArgs {}
-impl ::windows_core::CanTryInto<CompositionObject> for RenderingDeviceReplacedEventArgs {}
+::windows_core::imp::required_hierarchy!(RenderingDeviceReplacedEventArgs, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for RenderingDeviceReplacedEventArgs {}
 unsafe impl ::core::marker::Sync for RenderingDeviceReplacedEventArgs {}
 #[repr(transparent)]
@@ -23246,10 +21331,10 @@ impl ScalarKeyFrameAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -23299,10 +21384,10 @@ impl ScalarKeyFrameAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -23329,10 +21414,10 @@ impl ScalarKeyFrameAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -23365,17 +21450,17 @@ impl ScalarKeyFrameAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -23395,11 +21480,11 @@ impl ScalarKeyFrameAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayTime(&self) -> ::windows_core::Result<super::super::Foundation::TimeSpan> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
@@ -23469,10 +21554,10 @@ impl ScalarKeyFrameAnimation {
     }
     pub fn InsertExpressionKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: &::windows_core::HSTRING, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.into_param().abi()).ok() }
     }
     pub fn Direction(&self) -> ::windows_core::Result<AnimationDirection> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation2>(self)?;
@@ -23502,10 +21587,10 @@ impl ScalarKeyFrameAnimation {
     }
     pub fn InsertKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: f32, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, value, easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, value, easingfunction.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for ScalarKeyFrameAnimation {
@@ -23521,12 +21606,7 @@ impl ::windows_core::RuntimeName for ScalarKeyFrameAnimation {
     const NAME: &'static str = "Windows.UI.Composition.ScalarKeyFrameAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(ScalarKeyFrameAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for ScalarKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for ScalarKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for ScalarKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<KeyFrameAnimation> for ScalarKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for ScalarKeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for ScalarKeyFrameAnimation {}
+::windows_core::imp::required_hierarchy!(ScalarKeyFrameAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, KeyFrameAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for ScalarKeyFrameAnimation {}
 unsafe impl ::core::marker::Sync for ScalarKeyFrameAnimation {}
 #[repr(transparent)]
@@ -23576,10 +21656,10 @@ impl ScalarNaturalMotionAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -23629,10 +21709,10 @@ impl ScalarNaturalMotionAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -23659,10 +21739,10 @@ impl ScalarNaturalMotionAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -23695,17 +21775,17 @@ impl ScalarNaturalMotionAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -23725,11 +21805,11 @@ impl ScalarNaturalMotionAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayBehavior(&self) -> ::windows_core::Result<AnimationDelayBehavior> {
         let this = &::windows_core::ComInterface::cast::<INaturalMotionAnimation>(self)?;
@@ -23773,10 +21853,10 @@ impl ScalarNaturalMotionAnimation {
     }
     pub fn SetFinalValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<f32>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<f32>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn InitialValue(&self) -> ::windows_core::Result<super::super::Foundation::IReference<f32>> {
         let this = self;
@@ -23787,10 +21867,10 @@ impl ScalarNaturalMotionAnimation {
     }
     pub fn SetInitialValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<f32>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<f32>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn InitialVelocity(&self) -> ::windows_core::Result<f32> {
         let this = self;
@@ -23817,12 +21897,7 @@ impl ::windows_core::RuntimeName for ScalarNaturalMotionAnimation {
     const NAME: &'static str = "Windows.UI.Composition.ScalarNaturalMotionAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(ScalarNaturalMotionAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for ScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for ScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for ScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<NaturalMotionAnimation> for ScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for ScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for ScalarNaturalMotionAnimation {}
+::windows_core::imp::required_hierarchy!(ScalarNaturalMotionAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, NaturalMotionAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for ScalarNaturalMotionAnimation {}
 unsafe impl ::core::marker::Sync for ScalarNaturalMotionAnimation {}
 #[repr(transparent)]
@@ -23865,10 +21940,10 @@ impl ShapeVisual {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -23901,17 +21976,17 @@ impl ShapeVisual {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -23931,11 +22006,11 @@ impl ShapeVisual {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Children(&self) -> ::windows_core::Result<VisualCollection> {
         let this = &::windows_core::ComInterface::cast::<IContainerVisual>(self)?;
@@ -24028,10 +22103,10 @@ impl ShapeVisual {
     }
     pub fn SetClip<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionClip>,
+        P0: ::windows_core::IntoParam<CompositionClip>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CompositeMode(&self) -> ::windows_core::Result<CompositionCompositeMode> {
         let this = &::windows_core::ComInterface::cast::<IVisual>(self)?;
@@ -24194,10 +22269,10 @@ impl ShapeVisual {
     }
     pub fn SetParentForTransform<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -24265,11 +22340,7 @@ impl ::windows_core::RuntimeName for ShapeVisual {
     const NAME: &'static str = "Windows.UI.Composition.ShapeVisual";
 }
 ::windows_core::imp::interface_hierarchy!(ShapeVisual, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for ShapeVisual {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for ShapeVisual {}
-impl ::windows_core::CanTryInto<ContainerVisual> for ShapeVisual {}
-impl ::windows_core::CanTryInto<Visual> for ShapeVisual {}
-impl ::windows_core::CanTryInto<CompositionObject> for ShapeVisual {}
+::windows_core::imp::required_hierarchy!(ShapeVisual, IAnimationObject, super::super::Foundation::IClosable, ContainerVisual, Visual, CompositionObject);
 unsafe impl ::core::marker::Send for ShapeVisual {}
 unsafe impl ::core::marker::Sync for ShapeVisual {}
 #[repr(transparent)]
@@ -24312,10 +22383,10 @@ impl SineEasingFunction {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -24348,17 +22419,17 @@ impl SineEasingFunction {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -24378,11 +22449,11 @@ impl SineEasingFunction {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Mode(&self) -> ::windows_core::Result<CompositionEasingFunctionMode> {
         let this = self;
@@ -24405,10 +22476,7 @@ impl ::windows_core::RuntimeName for SineEasingFunction {
     const NAME: &'static str = "Windows.UI.Composition.SineEasingFunction";
 }
 ::windows_core::imp::interface_hierarchy!(SineEasingFunction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for SineEasingFunction {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for SineEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionEasingFunction> for SineEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionObject> for SineEasingFunction {}
+::windows_core::imp::required_hierarchy!(SineEasingFunction, IAnimationObject, super::super::Foundation::IClosable, CompositionEasingFunction, CompositionObject);
 unsafe impl ::core::marker::Send for SineEasingFunction {}
 unsafe impl ::core::marker::Sync for SineEasingFunction {}
 #[repr(transparent)]
@@ -24476,10 +22544,10 @@ impl SpotLight {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -24512,17 +22580,17 @@ impl SpotLight {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -24542,11 +22610,11 @@ impl SpotLight {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn ConstantAttenuation(&self) -> ::windows_core::Result<f32> {
         let this = self;
@@ -24568,10 +22636,10 @@ impl SpotLight {
     }
     pub fn SetCoordinateSpace<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetCoordinateSpace)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetCoordinateSpace)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -24749,10 +22817,7 @@ impl ::windows_core::RuntimeName for SpotLight {
     const NAME: &'static str = "Windows.UI.Composition.SpotLight";
 }
 ::windows_core::imp::interface_hierarchy!(SpotLight, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for SpotLight {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for SpotLight {}
-impl ::windows_core::CanTryInto<CompositionLight> for SpotLight {}
-impl ::windows_core::CanTryInto<CompositionObject> for SpotLight {}
+::windows_core::imp::required_hierarchy!(SpotLight, IAnimationObject, super::super::Foundation::IClosable, CompositionLight, CompositionObject);
 unsafe impl ::core::marker::Send for SpotLight {}
 unsafe impl ::core::marker::Sync for SpotLight {}
 #[repr(transparent)]
@@ -24802,10 +22867,10 @@ impl SpringScalarNaturalMotionAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -24855,10 +22920,10 @@ impl SpringScalarNaturalMotionAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -24885,10 +22950,10 @@ impl SpringScalarNaturalMotionAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -24921,17 +22986,17 @@ impl SpringScalarNaturalMotionAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -24951,11 +23016,11 @@ impl SpringScalarNaturalMotionAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayBehavior(&self) -> ::windows_core::Result<AnimationDelayBehavior> {
         let this = &::windows_core::ComInterface::cast::<INaturalMotionAnimation>(self)?;
@@ -24999,10 +23064,10 @@ impl SpringScalarNaturalMotionAnimation {
     }
     pub fn SetFinalValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<f32>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<f32>>,
     {
         let this = &::windows_core::ComInterface::cast::<IScalarNaturalMotionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn InitialValue(&self) -> ::windows_core::Result<super::super::Foundation::IReference<f32>> {
         let this = &::windows_core::ComInterface::cast::<IScalarNaturalMotionAnimation>(self)?;
@@ -25013,10 +23078,10 @@ impl SpringScalarNaturalMotionAnimation {
     }
     pub fn SetInitialValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<f32>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<f32>>,
     {
         let this = &::windows_core::ComInterface::cast::<IScalarNaturalMotionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn InitialVelocity(&self) -> ::windows_core::Result<f32> {
         let this = &::windows_core::ComInterface::cast::<IScalarNaturalMotionAnimation>(self)?;
@@ -25065,13 +23130,7 @@ impl ::windows_core::RuntimeName for SpringScalarNaturalMotionAnimation {
     const NAME: &'static str = "Windows.UI.Composition.SpringScalarNaturalMotionAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(SpringScalarNaturalMotionAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for SpringScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for SpringScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for SpringScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<ScalarNaturalMotionAnimation> for SpringScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<NaturalMotionAnimation> for SpringScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for SpringScalarNaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for SpringScalarNaturalMotionAnimation {}
+::windows_core::imp::required_hierarchy!(SpringScalarNaturalMotionAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, ScalarNaturalMotionAnimation, NaturalMotionAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for SpringScalarNaturalMotionAnimation {}
 unsafe impl ::core::marker::Sync for SpringScalarNaturalMotionAnimation {}
 #[repr(transparent)]
@@ -25121,10 +23180,10 @@ impl SpringVector2NaturalMotionAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -25174,10 +23233,10 @@ impl SpringVector2NaturalMotionAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -25204,10 +23263,10 @@ impl SpringVector2NaturalMotionAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -25240,17 +23299,17 @@ impl SpringVector2NaturalMotionAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -25270,11 +23329,11 @@ impl SpringVector2NaturalMotionAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayBehavior(&self) -> ::windows_core::Result<AnimationDelayBehavior> {
         let this = &::windows_core::ComInterface::cast::<INaturalMotionAnimation>(self)?;
@@ -25344,10 +23403,10 @@ impl SpringVector2NaturalMotionAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetFinalValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector2>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector2>>,
     {
         let this = &::windows_core::ComInterface::cast::<IVector2NaturalMotionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -25362,10 +23421,10 @@ impl SpringVector2NaturalMotionAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetInitialValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector2>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector2>>,
     {
         let this = &::windows_core::ComInterface::cast::<IVector2NaturalMotionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -25396,13 +23455,7 @@ impl ::windows_core::RuntimeName for SpringVector2NaturalMotionAnimation {
     const NAME: &'static str = "Windows.UI.Composition.SpringVector2NaturalMotionAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(SpringVector2NaturalMotionAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for SpringVector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for SpringVector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for SpringVector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<Vector2NaturalMotionAnimation> for SpringVector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<NaturalMotionAnimation> for SpringVector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for SpringVector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for SpringVector2NaturalMotionAnimation {}
+::windows_core::imp::required_hierarchy!(SpringVector2NaturalMotionAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, Vector2NaturalMotionAnimation, NaturalMotionAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for SpringVector2NaturalMotionAnimation {}
 unsafe impl ::core::marker::Sync for SpringVector2NaturalMotionAnimation {}
 #[repr(transparent)]
@@ -25452,10 +23505,10 @@ impl SpringVector3NaturalMotionAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -25505,10 +23558,10 @@ impl SpringVector3NaturalMotionAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -25535,10 +23588,10 @@ impl SpringVector3NaturalMotionAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -25571,17 +23624,17 @@ impl SpringVector3NaturalMotionAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -25601,11 +23654,11 @@ impl SpringVector3NaturalMotionAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayBehavior(&self) -> ::windows_core::Result<AnimationDelayBehavior> {
         let this = &::windows_core::ComInterface::cast::<INaturalMotionAnimation>(self)?;
@@ -25675,10 +23728,10 @@ impl SpringVector3NaturalMotionAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetFinalValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector3>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector3>>,
     {
         let this = &::windows_core::ComInterface::cast::<IVector3NaturalMotionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -25693,10 +23746,10 @@ impl SpringVector3NaturalMotionAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetInitialValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector3>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector3>>,
     {
         let this = &::windows_core::ComInterface::cast::<IVector3NaturalMotionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -25727,13 +23780,7 @@ impl ::windows_core::RuntimeName for SpringVector3NaturalMotionAnimation {
     const NAME: &'static str = "Windows.UI.Composition.SpringVector3NaturalMotionAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(SpringVector3NaturalMotionAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for SpringVector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for SpringVector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for SpringVector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<Vector3NaturalMotionAnimation> for SpringVector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<NaturalMotionAnimation> for SpringVector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for SpringVector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for SpringVector3NaturalMotionAnimation {}
+::windows_core::imp::required_hierarchy!(SpringVector3NaturalMotionAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, Vector3NaturalMotionAnimation, NaturalMotionAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for SpringVector3NaturalMotionAnimation {}
 unsafe impl ::core::marker::Sync for SpringVector3NaturalMotionAnimation {}
 #[repr(transparent)]
@@ -25776,10 +23823,10 @@ impl SpriteVisual {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -25812,17 +23859,17 @@ impl SpriteVisual {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -25842,11 +23889,11 @@ impl SpriteVisual {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn Children(&self) -> ::windows_core::Result<VisualCollection> {
         let this = &::windows_core::ComInterface::cast::<IContainerVisual>(self)?;
@@ -25864,10 +23911,10 @@ impl SpriteVisual {
     }
     pub fn SetBrush<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionBrush>,
+        P0: ::windows_core::IntoParam<CompositionBrush>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetBrush)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetBrush)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Shadow(&self) -> ::windows_core::Result<CompositionShadow> {
         let this = &::windows_core::ComInterface::cast::<ISpriteVisual2>(self)?;
@@ -25878,10 +23925,10 @@ impl SpriteVisual {
     }
     pub fn SetShadow<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionShadow>,
+        P0: ::windows_core::IntoParam<CompositionShadow>,
     {
         let this = &::windows_core::ComInterface::cast::<ISpriteVisual2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetShadow)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetShadow)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -25944,10 +23991,10 @@ impl SpriteVisual {
     }
     pub fn SetClip<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionClip>,
+        P0: ::windows_core::IntoParam<CompositionClip>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CompositeMode(&self) -> ::windows_core::Result<CompositionCompositeMode> {
         let this = &::windows_core::ComInterface::cast::<IVisual>(self)?;
@@ -26110,10 +24157,10 @@ impl SpriteVisual {
     }
     pub fn SetParentForTransform<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -26181,11 +24228,7 @@ impl ::windows_core::RuntimeName for SpriteVisual {
     const NAME: &'static str = "Windows.UI.Composition.SpriteVisual";
 }
 ::windows_core::imp::interface_hierarchy!(SpriteVisual, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for SpriteVisual {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for SpriteVisual {}
-impl ::windows_core::CanTryInto<ContainerVisual> for SpriteVisual {}
-impl ::windows_core::CanTryInto<Visual> for SpriteVisual {}
-impl ::windows_core::CanTryInto<CompositionObject> for SpriteVisual {}
+::windows_core::imp::required_hierarchy!(SpriteVisual, IAnimationObject, super::super::Foundation::IClosable, ContainerVisual, Visual, CompositionObject);
 unsafe impl ::core::marker::Send for SpriteVisual {}
 unsafe impl ::core::marker::Sync for SpriteVisual {}
 #[repr(transparent)]
@@ -26228,10 +24271,10 @@ impl StepEasingFunction {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -26264,17 +24307,17 @@ impl StepEasingFunction {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -26294,11 +24337,11 @@ impl StepEasingFunction {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn FinalStep(&self) -> ::windows_core::Result<i32> {
         let this = self;
@@ -26369,10 +24412,7 @@ impl ::windows_core::RuntimeName for StepEasingFunction {
     const NAME: &'static str = "Windows.UI.Composition.StepEasingFunction";
 }
 ::windows_core::imp::interface_hierarchy!(StepEasingFunction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for StepEasingFunction {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for StepEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionEasingFunction> for StepEasingFunction {}
-impl ::windows_core::CanTryInto<CompositionObject> for StepEasingFunction {}
+::windows_core::imp::required_hierarchy!(StepEasingFunction, IAnimationObject, super::super::Foundation::IClosable, CompositionEasingFunction, CompositionObject);
 unsafe impl ::core::marker::Send for StepEasingFunction {}
 unsafe impl ::core::marker::Sync for StepEasingFunction {}
 #[repr(transparent)]
@@ -26422,10 +24462,10 @@ impl Vector2KeyFrameAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -26475,10 +24515,10 @@ impl Vector2KeyFrameAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -26505,10 +24545,10 @@ impl Vector2KeyFrameAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -26541,17 +24581,17 @@ impl Vector2KeyFrameAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -26571,11 +24611,11 @@ impl Vector2KeyFrameAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayTime(&self) -> ::windows_core::Result<super::super::Foundation::TimeSpan> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
@@ -26645,10 +24685,10 @@ impl Vector2KeyFrameAnimation {
     }
     pub fn InsertExpressionKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: &::windows_core::HSTRING, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.into_param().abi()).ok() }
     }
     pub fn Direction(&self) -> ::windows_core::Result<AnimationDirection> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation2>(self)?;
@@ -26682,10 +24722,10 @@ impl Vector2KeyFrameAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn InsertKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: super::super::Foundation::Numerics::Vector2, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, value, easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, value, easingfunction.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for Vector2KeyFrameAnimation {
@@ -26701,12 +24741,7 @@ impl ::windows_core::RuntimeName for Vector2KeyFrameAnimation {
     const NAME: &'static str = "Windows.UI.Composition.Vector2KeyFrameAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(Vector2KeyFrameAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for Vector2KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for Vector2KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for Vector2KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<KeyFrameAnimation> for Vector2KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for Vector2KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for Vector2KeyFrameAnimation {}
+::windows_core::imp::required_hierarchy!(Vector2KeyFrameAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, KeyFrameAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for Vector2KeyFrameAnimation {}
 unsafe impl ::core::marker::Sync for Vector2KeyFrameAnimation {}
 #[repr(transparent)]
@@ -26756,10 +24791,10 @@ impl Vector2NaturalMotionAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -26809,10 +24844,10 @@ impl Vector2NaturalMotionAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -26839,10 +24874,10 @@ impl Vector2NaturalMotionAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -26875,17 +24910,17 @@ impl Vector2NaturalMotionAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -26905,11 +24940,11 @@ impl Vector2NaturalMotionAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayBehavior(&self) -> ::windows_core::Result<AnimationDelayBehavior> {
         let this = &::windows_core::ComInterface::cast::<INaturalMotionAnimation>(self)?;
@@ -26957,10 +24992,10 @@ impl Vector2NaturalMotionAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetFinalValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector2>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector2>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -26975,10 +25010,10 @@ impl Vector2NaturalMotionAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetInitialValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector2>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector2>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -27009,12 +25044,7 @@ impl ::windows_core::RuntimeName for Vector2NaturalMotionAnimation {
     const NAME: &'static str = "Windows.UI.Composition.Vector2NaturalMotionAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(Vector2NaturalMotionAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for Vector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for Vector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for Vector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<NaturalMotionAnimation> for Vector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for Vector2NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for Vector2NaturalMotionAnimation {}
+::windows_core::imp::required_hierarchy!(Vector2NaturalMotionAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, NaturalMotionAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for Vector2NaturalMotionAnimation {}
 unsafe impl ::core::marker::Sync for Vector2NaturalMotionAnimation {}
 #[repr(transparent)]
@@ -27064,10 +25094,10 @@ impl Vector3KeyFrameAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -27117,10 +25147,10 @@ impl Vector3KeyFrameAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -27147,10 +25177,10 @@ impl Vector3KeyFrameAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -27183,17 +25213,17 @@ impl Vector3KeyFrameAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -27213,11 +25243,11 @@ impl Vector3KeyFrameAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayTime(&self) -> ::windows_core::Result<super::super::Foundation::TimeSpan> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
@@ -27287,10 +25317,10 @@ impl Vector3KeyFrameAnimation {
     }
     pub fn InsertExpressionKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: &::windows_core::HSTRING, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.into_param().abi()).ok() }
     }
     pub fn Direction(&self) -> ::windows_core::Result<AnimationDirection> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation2>(self)?;
@@ -27324,10 +25354,10 @@ impl Vector3KeyFrameAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn InsertKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: super::super::Foundation::Numerics::Vector3, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, value, easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, value, easingfunction.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for Vector3KeyFrameAnimation {
@@ -27343,12 +25373,7 @@ impl ::windows_core::RuntimeName for Vector3KeyFrameAnimation {
     const NAME: &'static str = "Windows.UI.Composition.Vector3KeyFrameAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(Vector3KeyFrameAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for Vector3KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for Vector3KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for Vector3KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<KeyFrameAnimation> for Vector3KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for Vector3KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for Vector3KeyFrameAnimation {}
+::windows_core::imp::required_hierarchy!(Vector3KeyFrameAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, KeyFrameAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for Vector3KeyFrameAnimation {}
 unsafe impl ::core::marker::Sync for Vector3KeyFrameAnimation {}
 #[repr(transparent)]
@@ -27398,10 +25423,10 @@ impl Vector3NaturalMotionAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -27451,10 +25476,10 @@ impl Vector3NaturalMotionAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -27481,10 +25506,10 @@ impl Vector3NaturalMotionAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -27517,17 +25542,17 @@ impl Vector3NaturalMotionAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -27547,11 +25572,11 @@ impl Vector3NaturalMotionAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayBehavior(&self) -> ::windows_core::Result<AnimationDelayBehavior> {
         let this = &::windows_core::ComInterface::cast::<INaturalMotionAnimation>(self)?;
@@ -27599,10 +25624,10 @@ impl Vector3NaturalMotionAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetFinalValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector3>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector3>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetFinalValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -27617,10 +25642,10 @@ impl Vector3NaturalMotionAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn SetInitialValue<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector3>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<super::super::Foundation::Numerics::Vector3>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetInitialValue)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -27651,12 +25676,7 @@ impl ::windows_core::RuntimeName for Vector3NaturalMotionAnimation {
     const NAME: &'static str = "Windows.UI.Composition.Vector3NaturalMotionAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(Vector3NaturalMotionAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for Vector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for Vector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for Vector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<NaturalMotionAnimation> for Vector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for Vector3NaturalMotionAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for Vector3NaturalMotionAnimation {}
+::windows_core::imp::required_hierarchy!(Vector3NaturalMotionAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, NaturalMotionAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for Vector3NaturalMotionAnimation {}
 unsafe impl ::core::marker::Sync for Vector3NaturalMotionAnimation {}
 #[repr(transparent)]
@@ -27706,10 +25726,10 @@ impl Vector4KeyFrameAnimation {
     }
     pub fn SetReferenceParameter<P0>(&self, key: &::windows_core::HSTRING, compositionobject: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionObject>,
+        P0: ::windows_core::IntoParam<CompositionObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(key), compositionobject.into_param().abi()).ok() }
     }
     pub fn SetScalarParameter(&self, key: &::windows_core::HSTRING, value: f32) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation>(self)?;
@@ -27759,10 +25779,10 @@ impl Vector4KeyFrameAnimation {
     }
     pub fn SetExpressionReferenceParameter<P0>(&self, parametername: &::windows_core::HSTRING, source: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IAnimationObject>,
+        P0: ::windows_core::IntoParam<IAnimationObject>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionAnimation4>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetExpressionReferenceParameter)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(parametername), source.into_param().abi()).ok() }
     }
     pub fn Compositor(&self) -> ::windows_core::Result<Compositor> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -27789,10 +25809,10 @@ impl Vector4KeyFrameAnimation {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -27825,17 +25845,17 @@ impl Vector4KeyFrameAnimation {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -27855,11 +25875,11 @@ impl Vector4KeyFrameAnimation {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     pub fn DelayTime(&self) -> ::windows_core::Result<super::super::Foundation::TimeSpan> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
@@ -27929,10 +25949,10 @@ impl Vector4KeyFrameAnimation {
     }
     pub fn InsertExpressionKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: &::windows_core::HSTRING, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertExpressionKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, ::core::mem::transmute_copy(value), easingfunction.into_param().abi()).ok() }
     }
     pub fn Direction(&self) -> ::windows_core::Result<AnimationDirection> {
         let this = &::windows_core::ComInterface::cast::<IKeyFrameAnimation2>(self)?;
@@ -27966,10 +25986,10 @@ impl Vector4KeyFrameAnimation {
     #[cfg(feature = "Foundation_Numerics")]
     pub fn InsertKeyFrameWithEasingFunction<P0>(&self, normalizedprogresskey: f32, value: super::super::Foundation::Numerics::Vector4, easingfunction: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionEasingFunction>,
+        P0: ::windows_core::IntoParam<CompositionEasingFunction>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, value, easingfunction.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertKeyFrameWithEasingFunction)(::windows_core::Interface::as_raw(this), normalizedprogresskey, value, easingfunction.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for Vector4KeyFrameAnimation {
@@ -27985,12 +26005,7 @@ impl ::windows_core::RuntimeName for Vector4KeyFrameAnimation {
     const NAME: &'static str = "Windows.UI.Composition.Vector4KeyFrameAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(Vector4KeyFrameAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for Vector4KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for Vector4KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<ICompositionAnimationBase> for Vector4KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<KeyFrameAnimation> for Vector4KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionAnimation> for Vector4KeyFrameAnimation {}
-impl ::windows_core::CanTryInto<CompositionObject> for Vector4KeyFrameAnimation {}
+::windows_core::imp::required_hierarchy!(Vector4KeyFrameAnimation, IAnimationObject, super::super::Foundation::IClosable, ICompositionAnimationBase, KeyFrameAnimation, CompositionAnimation, CompositionObject);
 unsafe impl ::core::marker::Send for Vector4KeyFrameAnimation {}
 unsafe impl ::core::marker::Sync for Vector4KeyFrameAnimation {}
 #[repr(transparent)]
@@ -28033,10 +26048,10 @@ impl Visual {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -28069,17 +26084,17 @@ impl Visual {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -28099,11 +26114,11 @@ impl Visual {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -28166,10 +26181,10 @@ impl Visual {
     }
     pub fn SetClip<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionClip>,
+        P0: ::windows_core::IntoParam<CompositionClip>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetClip)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CompositeMode(&self) -> ::windows_core::Result<CompositionCompositeMode> {
         let this = self;
@@ -28332,10 +26347,10 @@ impl Visual {
     }
     pub fn SetParentForTransform<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = &::windows_core::ComInterface::cast::<IVisual2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetParentForTransform)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Numerics\"`"]
     #[cfg(feature = "Foundation_Numerics")]
@@ -28403,9 +26418,7 @@ impl ::windows_core::RuntimeName for Visual {
     const NAME: &'static str = "Windows.UI.Composition.Visual";
 }
 ::windows_core::imp::interface_hierarchy!(Visual, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for Visual {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for Visual {}
-impl ::windows_core::CanTryInto<CompositionObject> for Visual {}
+::windows_core::imp::required_hierarchy!(Visual, IAnimationObject, super::super::Foundation::IClosable, CompositionObject);
 unsafe impl ::core::marker::Send for Visual {}
 unsafe impl ::core::marker::Sync for Visual {}
 #[repr(transparent)]
@@ -28448,10 +26461,10 @@ impl VisualCollection {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -28484,17 +26497,17 @@ impl VisualCollection {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -28514,11 +26527,11 @@ impl VisualCollection {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -28538,40 +26551,40 @@ impl VisualCollection {
     }
     pub fn InsertAbove<P0, P1>(&self, newchild: P0, sibling: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
-        P1: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
+        P1: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertAbove)(::windows_core::Interface::as_raw(this), newchild.try_into_param()?.abi(), sibling.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertAbove)(::windows_core::Interface::as_raw(this), newchild.into_param().abi(), sibling.into_param().abi()).ok() }
     }
     pub fn InsertAtBottom<P0>(&self, newchild: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertAtBottom)(::windows_core::Interface::as_raw(this), newchild.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertAtBottom)(::windows_core::Interface::as_raw(this), newchild.into_param().abi()).ok() }
     }
     pub fn InsertAtTop<P0>(&self, newchild: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertAtTop)(::windows_core::Interface::as_raw(this), newchild.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertAtTop)(::windows_core::Interface::as_raw(this), newchild.into_param().abi()).ok() }
     }
     pub fn InsertBelow<P0, P1>(&self, newchild: P0, sibling: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
-        P1: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
+        P1: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).InsertBelow)(::windows_core::Interface::as_raw(this), newchild.try_into_param()?.abi(), sibling.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).InsertBelow)(::windows_core::Interface::as_raw(this), newchild.into_param().abi(), sibling.into_param().abi()).ok() }
     }
     pub fn Remove<P0>(&self, child: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), child.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), child.into_param().abi()).ok() }
     }
     pub fn RemoveAll(&self) -> ::windows_core::Result<()> {
         let this = self;
@@ -28607,11 +26620,8 @@ impl ::core::iter::IntoIterator for &VisualCollection {
     }
 }
 ::windows_core::imp::interface_hierarchy!(VisualCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for VisualCollection {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for VisualCollection {}
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IIterable<Visual>> for VisualCollection {}
-impl ::windows_core::CanTryInto<CompositionObject> for VisualCollection {}
+::windows_core::imp::required_hierarchy!(VisualCollection, IAnimationObject, super::super::Foundation::IClosable, super::super::Foundation::Collections::IIterable::<Visual>, CompositionObject);
 unsafe impl ::core::marker::Send for VisualCollection {}
 unsafe impl ::core::marker::Sync for VisualCollection {}
 #[repr(transparent)]
@@ -28654,10 +26664,10 @@ impl VisualUnorderedCollection {
     }
     pub fn StartAnimation<P0>(&self, propertyname: &::windows_core::HSTRING, animation: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimation)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi()).ok() }
     }
     pub fn StopAnimation(&self, propertyname: &::windows_core::HSTRING) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject>(self)?;
@@ -28690,17 +26700,17 @@ impl VisualUnorderedCollection {
     }
     pub fn StartAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn StopAnimationGroup<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ICompositionAnimationBase>,
+        P0: ::windows_core::IntoParam<ICompositionAnimationBase>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StopAnimationGroup)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"System\"`"]
     #[cfg(feature = "System")]
@@ -28720,11 +26730,11 @@ impl VisualUnorderedCollection {
     }
     pub fn StartAnimationWithController<P0, P1>(&self, propertyname: &::windows_core::HSTRING, animation: P0, animationcontroller: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<CompositionAnimation>,
+        P0: ::windows_core::IntoParam<CompositionAnimation>,
         P1: ::windows_core::IntoParam<AnimationController>,
     {
         let this = &::windows_core::ComInterface::cast::<ICompositionObject5>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.try_into_param()?.abi(), animationcontroller.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).StartAnimationWithController)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(propertyname), animation.into_param().abi(), animationcontroller.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
@@ -28744,17 +26754,17 @@ impl VisualUnorderedCollection {
     }
     pub fn Add<P0>(&self, newvisual: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Add)(::windows_core::Interface::as_raw(this), newvisual.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Add)(::windows_core::Interface::as_raw(this), newvisual.into_param().abi()).ok() }
     }
     pub fn Remove<P0>(&self, visual: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<Visual>,
+        P0: ::windows_core::IntoParam<Visual>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), visual.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).Remove)(::windows_core::Interface::as_raw(this), visual.into_param().abi()).ok() }
     }
     pub fn RemoveAll(&self) -> ::windows_core::Result<()> {
         let this = self;
@@ -28790,11 +26800,8 @@ impl ::core::iter::IntoIterator for &VisualUnorderedCollection {
     }
 }
 ::windows_core::imp::interface_hierarchy!(VisualUnorderedCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IAnimationObject> for VisualUnorderedCollection {}
-impl ::windows_core::CanTryInto<super::super::Foundation::IClosable> for VisualUnorderedCollection {}
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IIterable<Visual>> for VisualUnorderedCollection {}
-impl ::windows_core::CanTryInto<CompositionObject> for VisualUnorderedCollection {}
+::windows_core::imp::required_hierarchy!(VisualUnorderedCollection, IAnimationObject, super::super::Foundation::IClosable, super::super::Foundation::Collections::IIterable::<Visual>, CompositionObject);
 unsafe impl ::core::marker::Send for VisualUnorderedCollection {}
 unsafe impl ::core::marker::Sync for VisualUnorderedCollection {}
 #[repr(transparent)]

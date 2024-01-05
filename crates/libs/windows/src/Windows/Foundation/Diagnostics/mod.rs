@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAsyncCausalityTracerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAsyncCausalityTracerStatics {
-    type Vtable = IAsyncCausalityTracerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAsyncCausalityTracerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x50850b26_267e_451b_a890_ab6a370245ee);
-}
+::windows_core::imp::com_interface!(IAsyncCausalityTracerStatics, IAsyncCausalityTracerStatics_Vtbl, 0x50850b26_267e_451b_a890_ab6a370245ee);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAsyncCausalityTracerStatics_Vtbl {
@@ -20,16 +11,7 @@ pub struct IAsyncCausalityTracerStatics_Vtbl {
     pub TracingStatusChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveTracingStatusChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, cookie: super::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IErrorDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IErrorDetails {
-    type Vtable = IErrorDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IErrorDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x378cbb01_2cc9_428f_8c55_2c990d463e8f);
-}
+::windows_core::imp::com_interface!(IErrorDetails, IErrorDetails_Vtbl, 0x378cbb01_2cc9_428f_8c55_2c990d463e8f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IErrorDetails_Vtbl {
@@ -38,25 +20,14 @@ pub struct IErrorDetails_Vtbl {
     pub LongDescription: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub HelpUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IErrorDetailsStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IErrorDetailsStatics {
-    type Vtable = IErrorDetailsStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IErrorDetailsStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb7703750_0b1d_46c8_aa0e_4b8178e4fce9);
-}
+::windows_core::imp::com_interface!(IErrorDetailsStatics, IErrorDetailsStatics_Vtbl, 0xb7703750_0b1d_46c8_aa0e_4b8178e4fce9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IErrorDetailsStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateFromHResultAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, errorcode: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IErrorReportingSettings(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IErrorReportingSettings, IErrorReportingSettings_Vtbl, 0x16369792_b03e_4ba1_8bb8_d28f4ab4d2c0);
 impl IErrorReportingSettings {
     pub fn SetErrorOptions(&self, value: ErrorOptions) -> ::windows_core::Result<()> {
         let this = self;
@@ -74,12 +45,6 @@ impl IErrorReportingSettings {
 impl ::windows_core::RuntimeType for IErrorReportingSettings {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IErrorReportingSettings {
-    type Vtable = IErrorReportingSettings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IErrorReportingSettings {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x16369792_b03e_4ba1_8bb8_d28f4ab4d2c0);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IErrorReportingSettings_Vtbl {
@@ -87,9 +52,7 @@ pub struct IErrorReportingSettings_Vtbl {
     pub SetErrorOptions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ErrorOptions) -> ::windows_core::HRESULT,
     pub GetErrorOptions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ErrorOptions) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFileLoggingSession(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IFileLoggingSession, IFileLoggingSession_Vtbl, 0x24c74216_fed2_404c_895f_1f9699cb02f7);
 impl IFileLoggingSession {
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -100,24 +63,24 @@ impl IFileLoggingSession {
     }
     pub fn AddLoggingChannel<P0>(&self, loggingchannel: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.into_param().abi()).ok() }
     }
     pub fn AddLoggingChannelWithLevel<P0>(&self, loggingchannel: P0, maxlevel: LoggingLevel) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannelWithLevel)(::windows_core::Interface::as_raw(this), loggingchannel.try_into_param()?.abi(), maxlevel).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannelWithLevel)(::windows_core::Interface::as_raw(this), loggingchannel.into_param().abi(), maxlevel).ok() }
     }
     pub fn RemoveLoggingChannel<P0>(&self, loggingchannel: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).RemoveLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).RemoveLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Storage\"`"]
     #[cfg(feature = "Storage")]
@@ -148,15 +111,9 @@ impl IFileLoggingSession {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IFileLoggingSession, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::IClosable> for IFileLoggingSession {}
+::windows_core::imp::required_hierarchy!(IFileLoggingSession, super::IClosable);
 impl ::windows_core::RuntimeType for IFileLoggingSession {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IFileLoggingSession {
-    type Vtable = IFileLoggingSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFileLoggingSession {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x24c74216_fed2_404c_895f_1f9699cb02f7);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -173,32 +130,14 @@ pub struct IFileLoggingSession_Vtbl {
     pub LogFileGenerated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveLogFileGenerated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFileLoggingSessionFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFileLoggingSessionFactory {
-    type Vtable = IFileLoggingSessionFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFileLoggingSessionFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xeea08dce_8447_4daa_9133_12eb46f697d4);
-}
+::windows_core::imp::com_interface!(IFileLoggingSessionFactory, IFileLoggingSessionFactory_Vtbl, 0xeea08dce_8447_4daa_9133_12eb46f697d4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFileLoggingSessionFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILogFileGeneratedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILogFileGeneratedEventArgs {
-    type Vtable = ILogFileGeneratedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILogFileGeneratedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x269e976f_0d38_4c1a_b53f_b395d881df84);
-}
+::windows_core::imp::com_interface!(ILogFileGeneratedEventArgs, ILogFileGeneratedEventArgs_Vtbl, 0x269e976f_0d38_4c1a_b53f_b395d881df84);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILogFileGeneratedEventArgs_Vtbl {
@@ -208,16 +147,7 @@ pub struct ILogFileGeneratedEventArgs_Vtbl {
     #[cfg(not(feature = "Storage"))]
     File: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingActivity(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILoggingActivity {
-    type Vtable = ILoggingActivity_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingActivity {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbc032941_b766_4cb5_9848_97ac6ba6d60c);
-}
+::windows_core::imp::com_interface!(ILoggingActivity, ILoggingActivity_Vtbl, 0xbc032941_b766_4cb5_9848_97ac6ba6d60c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingActivity_Vtbl {
@@ -225,16 +155,7 @@ pub struct ILoggingActivity_Vtbl {
     pub Name: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Id: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingActivity2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILoggingActivity2 {
-    type Vtable = ILoggingActivity2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingActivity2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x26c29808_6322_456a_af82_80c8642f178b);
-}
+::windows_core::imp::com_interface!(ILoggingActivity2, ILoggingActivity2_Vtbl, 0x26c29808_6322_456a_af82_80c8642f178b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingActivity2_Vtbl {
@@ -244,16 +165,7 @@ pub struct ILoggingActivity2_Vtbl {
     pub StopActivityWithFields: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, stopeventname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, fields: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub StopActivityWithFieldsAndOptions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, stopeventname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, fields: *mut ::core::ffi::c_void, options: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingActivityFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILoggingActivityFactory {
-    type Vtable = ILoggingActivityFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingActivityFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6b33b483_e10a_4c58_97d5_10fb451074fb);
-}
+::windows_core::imp::com_interface!(ILoggingActivityFactory, ILoggingActivityFactory_Vtbl, 0x6b33b483_e10a_4c58_97d5_10fb451074fb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingActivityFactory_Vtbl {
@@ -261,9 +173,7 @@ pub struct ILoggingActivityFactory_Vtbl {
     pub CreateLoggingActivity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, activityname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, loggingchannel: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateLoggingActivityWithLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, activityname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, loggingchannel: *mut ::core::ffi::c_void, level: LoggingLevel, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingChannel(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ILoggingChannel, ILoggingChannel_Vtbl, 0xe9a50343_11d7_4f01_b5ca_cf495278c0a8);
 impl ILoggingChannel {
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -322,15 +232,9 @@ impl ILoggingChannel {
     }
 }
 ::windows_core::imp::interface_hierarchy!(ILoggingChannel, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::IClosable> for ILoggingChannel {}
+::windows_core::imp::required_hierarchy!(ILoggingChannel, super::IClosable);
 impl ::windows_core::RuntimeType for ILoggingChannel {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for ILoggingChannel {
-    type Vtable = ILoggingChannel_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingChannel {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe9a50343_11d7_4f01_b5ca_cf495278c0a8);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -346,32 +250,14 @@ pub struct ILoggingChannel_Vtbl {
     pub LoggingEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveLoggingEnabled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingChannel2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILoggingChannel2 {
-    type Vtable = ILoggingChannel2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingChannel2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9f4c3cf3_0bac_45a5_9e33_baf3f3a246a5);
-}
+::windows_core::imp::com_interface!(ILoggingChannel2, ILoggingChannel2_Vtbl, 0x9f4c3cf3_0bac_45a5_9e33_baf3f3a246a5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingChannel2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Id: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingChannelFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILoggingChannelFactory {
-    type Vtable = ILoggingChannelFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingChannelFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4edc5b9c_af80_4a9b_b0dc_398f9ae5207b);
-}
+::windows_core::imp::com_interface!(ILoggingChannelFactory, ILoggingChannelFactory_Vtbl, 0x4edc5b9c_af80_4a9b_b0dc_398f9ae5207b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingChannelFactory_Vtbl {
@@ -381,16 +267,7 @@ pub struct ILoggingChannelFactory_Vtbl {
     #[cfg(not(feature = "deprecated"))]
     Create: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingChannelFactory2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILoggingChannelFactory2 {
-    type Vtable = ILoggingChannelFactory2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingChannelFactory2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4c6ef5dd_3b27_4dc9_99f0_299c6e4603a1);
-}
+::windows_core::imp::com_interface!(ILoggingChannelFactory2, ILoggingChannelFactory2_Vtbl, 0x4c6ef5dd_3b27_4dc9_99f0_299c6e4603a1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingChannelFactory2_Vtbl {
@@ -398,16 +275,7 @@ pub struct ILoggingChannelFactory2_Vtbl {
     pub CreateWithOptions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, options: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateWithOptionsAndId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, options: *mut ::core::ffi::c_void, id: ::windows_core::GUID, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingChannelOptions(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILoggingChannelOptions {
-    type Vtable = ILoggingChannelOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingChannelOptions {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc3e847ff_0ebb_4a53_8c54_dec24926cb2c);
-}
+::windows_core::imp::com_interface!(ILoggingChannelOptions, ILoggingChannelOptions_Vtbl, 0xc3e847ff_0ebb_4a53_8c54_dec24926cb2c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingChannelOptions_Vtbl {
@@ -415,32 +283,14 @@ pub struct ILoggingChannelOptions_Vtbl {
     pub Group: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
     pub SetGroup: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::windows_core::GUID) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingChannelOptionsFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILoggingChannelOptionsFactory {
-    type Vtable = ILoggingChannelOptionsFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingChannelOptionsFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa93151da_7faf_4191_8755_5e86dc65d896);
-}
+::windows_core::imp::com_interface!(ILoggingChannelOptionsFactory, ILoggingChannelOptionsFactory_Vtbl, 0xa93151da_7faf_4191_8755_5e86dc65d896);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingChannelOptionsFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, group: ::windows_core::GUID, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingFields(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILoggingFields {
-    type Vtable = ILoggingFields_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingFields {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd7f6b7af_762d_4579_83bd_52c23bc333bc);
-}
+::windows_core::imp::com_interface!(ILoggingFields, ILoggingFields_Vtbl, 0xd7f6b7af_762d_4579_83bd_52c23bc333bc);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingFields_Vtbl {
@@ -561,16 +411,7 @@ pub struct ILoggingFields_Vtbl {
     pub AddRectArrayWithFormat: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value_array_size: u32, value: *const super::Rect, format: LoggingFieldFormat) -> ::windows_core::HRESULT,
     pub AddRectArrayWithFormatAndTags: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value_array_size: u32, value: *const super::Rect, format: LoggingFieldFormat, tags: i32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingOptions(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILoggingOptions {
-    type Vtable = ILoggingOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingOptions {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x90bc7850_0192_4f5d_ac26_006adaca12d8);
-}
+::windows_core::imp::com_interface!(ILoggingOptions, ILoggingOptions_Vtbl, 0x90bc7850_0192_4f5d_ac26_006adaca12d8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingOptions_Vtbl {
@@ -588,25 +429,14 @@ pub struct ILoggingOptions_Vtbl {
     pub RelatedActivityId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::GUID) -> ::windows_core::HRESULT,
     pub SetRelatedActivityId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::windows_core::GUID) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingOptionsFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILoggingOptionsFactory {
-    type Vtable = ILoggingOptionsFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingOptionsFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd713c6cb_98ab_464b_9f22_a3268478368a);
-}
+::windows_core::imp::com_interface!(ILoggingOptionsFactory, ILoggingOptionsFactory_Vtbl, 0xd713c6cb_98ab_464b_9f22_a3268478368a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingOptionsFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateWithKeywords: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, keywords: i64, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingSession(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ILoggingSession, ILoggingSession_Vtbl, 0x6221f306_9380_4ad7_baf5_41ea9310d768);
 impl ILoggingSession {
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -619,34 +449,34 @@ impl ILoggingSession {
     #[cfg(feature = "Storage")]
     pub fn SaveToFileAsync<P0>(&self, folder: P0, filename: &::windows_core::HSTRING) -> ::windows_core::Result<super::IAsyncOperation<super::super::Storage::StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::IStorageFolder>,
+        P0: ::windows_core::IntoParam<super::super::Storage::IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).SaveToFileAsync)(::windows_core::Interface::as_raw(this), folder.try_into_param()?.abi(), ::core::mem::transmute_copy(filename), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).SaveToFileAsync)(::windows_core::Interface::as_raw(this), folder.into_param().abi(), ::core::mem::transmute_copy(filename), &mut result__).from_abi(result__)
         }
     }
     pub fn AddLoggingChannel<P0>(&self, loggingchannel: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.into_param().abi()).ok() }
     }
     pub fn AddLoggingChannelWithLevel<P0>(&self, loggingchannel: P0, maxlevel: LoggingLevel) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannelWithLevel)(::windows_core::Interface::as_raw(this), loggingchannel.try_into_param()?.abi(), maxlevel).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannelWithLevel)(::windows_core::Interface::as_raw(this), loggingchannel.into_param().abi(), maxlevel).ok() }
     }
     pub fn RemoveLoggingChannel<P0>(&self, loggingchannel: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).RemoveLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).RemoveLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.into_param().abi()).ok() }
     }
     pub fn Close(&self) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<super::IClosable>(self)?;
@@ -654,15 +484,9 @@ impl ILoggingSession {
     }
 }
 ::windows_core::imp::interface_hierarchy!(ILoggingSession, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::IClosable> for ILoggingSession {}
+::windows_core::imp::required_hierarchy!(ILoggingSession, super::IClosable);
 impl ::windows_core::RuntimeType for ILoggingSession {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for ILoggingSession {
-    type Vtable = ILoggingSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingSession {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6221f306_9380_4ad7_baf5_41ea9310d768);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -677,25 +501,14 @@ pub struct ILoggingSession_Vtbl {
     pub AddLoggingChannelWithLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, loggingchannel: *mut ::core::ffi::c_void, maxlevel: LoggingLevel) -> ::windows_core::HRESULT,
     pub RemoveLoggingChannel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, loggingchannel: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingSessionFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILoggingSessionFactory {
-    type Vtable = ILoggingSessionFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingSessionFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4e937ee5_58fd_45e0_8c2f_a132eff95c1e);
-}
+::windows_core::imp::com_interface!(ILoggingSessionFactory, ILoggingSessionFactory_Vtbl, 0x4e937ee5_58fd_45e0_8c2f_a132eff95c1e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingSessionFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILoggingTarget(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ILoggingTarget, ILoggingTarget_Vtbl, 0x65f16c35_e388_4e26_b17a_f51cd3a83916);
 impl ILoggingTarget {
     pub fn IsEnabled(&self) -> ::windows_core::Result<bool> {
         let this = self;
@@ -787,12 +600,6 @@ impl ILoggingTarget {
 impl ::windows_core::RuntimeType for ILoggingTarget {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for ILoggingTarget {
-    type Vtable = ILoggingTarget_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILoggingTarget {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x65f16c35_e388_4e26_b17a_f51cd3a83916);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILoggingTarget_Vtbl {
@@ -809,16 +616,7 @@ pub struct ILoggingTarget_Vtbl {
     pub StartActivityWithFieldsAndLevel: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, starteventname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, fields: *mut ::core::ffi::c_void, level: LoggingLevel, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub StartActivityWithFieldsAndOptions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, starteventname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, fields: *mut ::core::ffi::c_void, level: LoggingLevel, options: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ITracingStatusChangedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ITracingStatusChangedEventArgs {
-    type Vtable = ITracingStatusChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ITracingStatusChangedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x410b7711_ff3b_477f_9c9a_d2efda302dc3);
-}
+::windows_core::imp::com_interface!(ITracingStatusChangedEventArgs, ITracingStatusChangedEventArgs_Vtbl, 0x410b7711_ff3b_477f_9c9a_d2efda302dc3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ITracingStatusChangedEventArgs_Vtbl {
@@ -933,24 +731,24 @@ impl FileLoggingSession {
     }
     pub fn AddLoggingChannel<P0>(&self, loggingchannel: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.into_param().abi()).ok() }
     }
     pub fn AddLoggingChannelWithLevel<P0>(&self, loggingchannel: P0, maxlevel: LoggingLevel) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannelWithLevel)(::windows_core::Interface::as_raw(this), loggingchannel.try_into_param()?.abi(), maxlevel).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannelWithLevel)(::windows_core::Interface::as_raw(this), loggingchannel.into_param().abi(), maxlevel).ok() }
     }
     pub fn RemoveLoggingChannel<P0>(&self, loggingchannel: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).RemoveLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).RemoveLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Storage\"`"]
     #[cfg(feature = "Storage")]
@@ -1000,8 +798,7 @@ impl ::windows_core::RuntimeName for FileLoggingSession {
     const NAME: &'static str = "Windows.Foundation.Diagnostics.FileLoggingSession";
 }
 ::windows_core::imp::interface_hierarchy!(FileLoggingSession, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::IClosable> for FileLoggingSession {}
-impl ::windows_core::CanTryInto<IFileLoggingSession> for FileLoggingSession {}
+::windows_core::imp::required_hierarchy!(FileLoggingSession, super::IClosable, IFileLoggingSession);
 unsafe impl ::core::marker::Send for FileLoggingSession {}
 unsafe impl ::core::marker::Sync for FileLoggingSession {}
 #[repr(transparent)]
@@ -1083,20 +880,20 @@ impl LoggingActivity {
     }
     pub fn CreateLoggingActivity<P0>(activityname: &::windows_core::HSTRING, loggingchannel: P0) -> ::windows_core::Result<LoggingActivity>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         Self::ILoggingActivityFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateLoggingActivity)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(activityname), loggingchannel.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateLoggingActivity)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(activityname), loggingchannel.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     pub fn CreateLoggingActivityWithLevel<P0>(activityname: &::windows_core::HSTRING, loggingchannel: P0, level: LoggingLevel) -> ::windows_core::Result<LoggingActivity>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         Self::ILoggingActivityFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateLoggingActivityWithLevel)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(activityname), loggingchannel.try_into_param()?.abi(), level, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateLoggingActivityWithLevel)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(activityname), loggingchannel.into_param().abi(), level, &mut result__).from_abi(result__)
         })
     }
     pub fn IsEnabled(&self) -> ::windows_core::Result<bool> {
@@ -1203,8 +1000,7 @@ impl ::windows_core::RuntimeName for LoggingActivity {
     const NAME: &'static str = "Windows.Foundation.Diagnostics.LoggingActivity";
 }
 ::windows_core::imp::interface_hierarchy!(LoggingActivity, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::IClosable> for LoggingActivity {}
-impl ::windows_core::CanTryInto<ILoggingTarget> for LoggingActivity {}
+::windows_core::imp::required_hierarchy!(LoggingActivity, super::IClosable, ILoggingTarget);
 unsafe impl ::core::marker::Send for LoggingActivity {}
 unsafe impl ::core::marker::Sync for LoggingActivity {}
 #[repr(transparent)]
@@ -1408,9 +1204,7 @@ impl ::windows_core::RuntimeName for LoggingChannel {
     const NAME: &'static str = "Windows.Foundation.Diagnostics.LoggingChannel";
 }
 ::windows_core::imp::interface_hierarchy!(LoggingChannel, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::IClosable> for LoggingChannel {}
-impl ::windows_core::CanTryInto<ILoggingChannel> for LoggingChannel {}
-impl ::windows_core::CanTryInto<ILoggingTarget> for LoggingChannel {}
+::windows_core::imp::required_hierarchy!(LoggingChannel, super::IClosable, ILoggingChannel, ILoggingTarget);
 unsafe impl ::core::marker::Send for LoggingChannel {}
 unsafe impl ::core::marker::Sync for LoggingChannel {}
 #[repr(transparent)]
@@ -2072,34 +1866,34 @@ impl LoggingSession {
     #[cfg(feature = "Storage")]
     pub fn SaveToFileAsync<P0>(&self, folder: P0, filename: &::windows_core::HSTRING) -> ::windows_core::Result<super::IAsyncOperation<super::super::Storage::StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Storage::IStorageFolder>,
+        P0: ::windows_core::IntoParam<super::super::Storage::IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).SaveToFileAsync)(::windows_core::Interface::as_raw(this), folder.try_into_param()?.abi(), ::core::mem::transmute_copy(filename), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).SaveToFileAsync)(::windows_core::Interface::as_raw(this), folder.into_param().abi(), ::core::mem::transmute_copy(filename), &mut result__).from_abi(result__)
         }
     }
     pub fn AddLoggingChannel<P0>(&self, loggingchannel: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.into_param().abi()).ok() }
     }
     pub fn AddLoggingChannelWithLevel<P0>(&self, loggingchannel: P0, maxlevel: LoggingLevel) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannelWithLevel)(::windows_core::Interface::as_raw(this), loggingchannel.try_into_param()?.abi(), maxlevel).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).AddLoggingChannelWithLevel)(::windows_core::Interface::as_raw(this), loggingchannel.into_param().abi(), maxlevel).ok() }
     }
     pub fn RemoveLoggingChannel<P0>(&self, loggingchannel: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ILoggingChannel>,
+        P0: ::windows_core::IntoParam<ILoggingChannel>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).RemoveLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).RemoveLoggingChannel)(::windows_core::Interface::as_raw(this), loggingchannel.into_param().abi()).ok() }
     }
     pub fn Create(name: &::windows_core::HSTRING) -> ::windows_core::Result<LoggingSession> {
         Self::ILoggingSessionFactory(|this| unsafe {
@@ -2126,8 +1920,7 @@ impl ::windows_core::RuntimeName for LoggingSession {
     const NAME: &'static str = "Windows.Foundation.Diagnostics.LoggingSession";
 }
 ::windows_core::imp::interface_hierarchy!(LoggingSession, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::IClosable> for LoggingSession {}
-impl ::windows_core::CanTryInto<ILoggingSession> for LoggingSession {}
+::windows_core::imp::required_hierarchy!(LoggingSession, super::IClosable, ILoggingSession);
 unsafe impl ::core::marker::Send for LoggingSession {}
 unsafe impl ::core::marker::Sync for LoggingSession {}
 #[repr(transparent)]
@@ -2166,7 +1959,7 @@ impl ::windows_core::RuntimeName for RuntimeBrokerErrorSettings {
     const NAME: &'static str = "Windows.Foundation.Diagnostics.RuntimeBrokerErrorSettings";
 }
 ::windows_core::imp::interface_hierarchy!(RuntimeBrokerErrorSettings, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IErrorReportingSettings> for RuntimeBrokerErrorSettings {}
+::windows_core::imp::required_hierarchy!(RuntimeBrokerErrorSettings, IErrorReportingSettings);
 unsafe impl ::core::marker::Send for RuntimeBrokerErrorSettings {}
 unsafe impl ::core::marker::Sync for RuntimeBrokerErrorSettings {}
 #[repr(transparent)]

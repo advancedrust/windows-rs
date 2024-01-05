@@ -1,3 +1,4 @@
+//use crate::{TypeKind, ReferenceType, ComInterface};
 use crate::ComInterface;
 
 // A streamlined version of the IActivationFactory interface used by WinRT class factories used internally by the windows crate
@@ -20,6 +21,10 @@ pub struct IGenericFactory_Vtbl {
     pub base__: crate::IInspectable_Vtbl,
     pub ActivateInstance: unsafe extern "system" fn(this: *mut std::ffi::c_void, instance: *mut *mut std::ffi::c_void) -> crate::HRESULT,
 }
+
+// impl TypeKind for IGenericFactory {
+//     type TypeKind = ReferenceType;
+// }
 
 unsafe impl crate::Interface for IGenericFactory {
     type Vtable = IGenericFactory_Vtbl;

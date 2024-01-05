@@ -142,9 +142,8 @@ fn gen_winrt_abi_args(writer: &Writer, params: &[metadata::SignatureParam]) -> T
                 } else {
                     quote! { #name.len().try_into().unwrap(), ::core::mem::transmute(#name.as_ptr()), }
                 }
-            } else if metadata::type_is_non_exclusive_winrt_interface(&param.ty) {
-                quote! { #name.try_into_param()?.abi(), }
-            } else if metadata::type_is_borrowed(&param.ty) {
+                // TODO: simplify these calls?
+            } else if metadata::type_is_non_exclusive_winrt_interface(&param.ty)  || metadata::type_is_borrowed(&param.ty) {
                 quote! { #name.into_param().abi(), }
             } else if metadata::type_is_blittable(&param.ty) {
                 if param.ty.is_const_ref() {

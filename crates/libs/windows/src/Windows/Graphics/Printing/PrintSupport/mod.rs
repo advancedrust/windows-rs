@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportExtensionSession(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportExtensionSession {
-    type Vtable = IPrintSupportExtensionSession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportExtensionSession {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xeea45f1a_f4c6_54b3_a0b8_a559839aa4c3);
-}
+::windows_core::imp::com_interface!(IPrintSupportExtensionSession, IPrintSupportExtensionSession_Vtbl, 0xeea45f1a_f4c6_54b3_a0b8_a559839aa4c3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportExtensionSession_Vtbl {
@@ -22,16 +13,7 @@ pub struct IPrintSupportExtensionSession_Vtbl {
     pub RemovePrintDeviceCapabilitiesChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub Start: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportExtensionSession2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportExtensionSession2 {
-    type Vtable = IPrintSupportExtensionSession2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportExtensionSession2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x10fa8c11_6de8_5765_8fcf_e716e0f27ed1);
-}
+::windows_core::imp::com_interface!(IPrintSupportExtensionSession2, IPrintSupportExtensionSession2_Vtbl, 0x10fa8c11_6de8_5765_8fcf_e716e0f27ed1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportExtensionSession2_Vtbl {
@@ -39,32 +21,14 @@ pub struct IPrintSupportExtensionSession2_Vtbl {
     pub PrinterSelected: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemovePrinterSelected: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportExtensionTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportExtensionTriggerDetails {
-    type Vtable = IPrintSupportExtensionTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportExtensionTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xae083711_9b09_55d1_a0ae_2a14c5f83d6a);
-}
+::windows_core::imp::com_interface!(IPrintSupportExtensionTriggerDetails, IPrintSupportExtensionTriggerDetails_Vtbl, 0xae083711_9b09_55d1_a0ae_2a14c5f83d6a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportExtensionTriggerDetails_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Session: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportPrintDeviceCapabilitiesChangedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportPrintDeviceCapabilitiesChangedEventArgs {
-    type Vtable = IPrintSupportPrintDeviceCapabilitiesChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportPrintDeviceCapabilitiesChangedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x15969bf0_9028_5722_8a37_7d7c34b41dd6);
-}
+::windows_core::imp::com_interface!(IPrintSupportPrintDeviceCapabilitiesChangedEventArgs, IPrintSupportPrintDeviceCapabilitiesChangedEventArgs_Vtbl, 0x15969bf0_9028_5722_8a37_7d7c34b41dd6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportPrintDeviceCapabilitiesChangedEventArgs_Vtbl {
@@ -79,16 +43,7 @@ pub struct IPrintSupportPrintDeviceCapabilitiesChangedEventArgs_Vtbl {
     UpdatePrintDeviceCapabilities: usize,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportPrintDeviceCapabilitiesChangedEventArgs2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportPrintDeviceCapabilitiesChangedEventArgs2 {
-    type Vtable = IPrintSupportPrintDeviceCapabilitiesChangedEventArgs2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportPrintDeviceCapabilitiesChangedEventArgs2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x469df9e7_fd07_5eeb_a07d_9fcc67f089ba);
-}
+::windows_core::imp::com_interface!(IPrintSupportPrintDeviceCapabilitiesChangedEventArgs2, IPrintSupportPrintDeviceCapabilitiesChangedEventArgs2_Vtbl, 0x469df9e7_fd07_5eeb_a07d_9fcc67f089ba);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportPrintDeviceCapabilitiesChangedEventArgs2_Vtbl {
@@ -108,31 +63,13 @@ pub struct IPrintSupportPrintDeviceCapabilitiesChangedEventArgs2_Vtbl {
     UpdatePrintDeviceResources: usize,
     pub SetPrintDeviceCapabilitiesUpdatePolicy: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, updatepolicy: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportPrintDeviceCapabilitiesUpdatePolicy(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportPrintDeviceCapabilitiesUpdatePolicy {
-    type Vtable = IPrintSupportPrintDeviceCapabilitiesUpdatePolicy_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportPrintDeviceCapabilitiesUpdatePolicy {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5f5fc025_8c35_5529_8038_8cdc3634bbcd);
-}
+::windows_core::imp::com_interface!(IPrintSupportPrintDeviceCapabilitiesUpdatePolicy, IPrintSupportPrintDeviceCapabilitiesUpdatePolicy_Vtbl, 0x5f5fc025_8c35_5529_8038_8cdc3634bbcd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportPrintDeviceCapabilitiesUpdatePolicy_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportPrintDeviceCapabilitiesUpdatePolicyStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportPrintDeviceCapabilitiesUpdatePolicyStatics {
-    type Vtable = IPrintSupportPrintDeviceCapabilitiesUpdatePolicyStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportPrintDeviceCapabilitiesUpdatePolicyStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3d9e1a70_7c39_551f_aa1f_f8ca35b3119e);
-}
+::windows_core::imp::com_interface!(IPrintSupportPrintDeviceCapabilitiesUpdatePolicyStatics, IPrintSupportPrintDeviceCapabilitiesUpdatePolicyStatics_Vtbl, 0x3d9e1a70_7c39_551f_aa1f_f8ca35b3119e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportPrintDeviceCapabilitiesUpdatePolicyStatics_Vtbl {
@@ -140,16 +77,7 @@ pub struct IPrintSupportPrintDeviceCapabilitiesUpdatePolicyStatics_Vtbl {
     pub CreatePeriodicRefresh: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, updateperiod: super::super::super::Foundation::TimeSpan, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreatePrintJobRefresh: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, numberofjobs: u32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportPrintTicketElement(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportPrintTicketElement {
-    type Vtable = IPrintSupportPrintTicketElement_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportPrintTicketElement {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4b2a4489_730d_5be7_80e6_8332941abf13);
-}
+::windows_core::imp::com_interface!(IPrintSupportPrintTicketElement, IPrintSupportPrintTicketElement_Vtbl, 0x4b2a4489_730d_5be7_80e6_8332941abf13);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportPrintTicketElement_Vtbl {
@@ -159,16 +87,7 @@ pub struct IPrintSupportPrintTicketElement_Vtbl {
     pub NamespaceUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetNamespaceUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportPrintTicketValidationRequestedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportPrintTicketValidationRequestedEventArgs {
-    type Vtable = IPrintSupportPrintTicketValidationRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportPrintTicketValidationRequestedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x338e4e69_db55_55c7_8338_ef64680a8f90);
-}
+::windows_core::imp::com_interface!(IPrintSupportPrintTicketValidationRequestedEventArgs, IPrintSupportPrintTicketValidationRequestedEventArgs_Vtbl, 0x338e4e69_db55_55c7_8338_ef64680a8f90);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportPrintTicketValidationRequestedEventArgs_Vtbl {
@@ -180,16 +99,7 @@ pub struct IPrintSupportPrintTicketValidationRequestedEventArgs_Vtbl {
     pub SetPrintTicketValidationStatus: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, status: WorkflowPrintTicketValidationStatus) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportPrinterSelectedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportPrinterSelectedEventArgs {
-    type Vtable = IPrintSupportPrinterSelectedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportPrinterSelectedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7b1cb7d9_a8a4_5c09_adb2_66165f817977);
-}
+::windows_core::imp::com_interface!(IPrintSupportPrinterSelectedEventArgs, IPrintSupportPrinterSelectedEventArgs_Vtbl, 0x7b1cb7d9_a8a4_5c09_adb2_66165f817977);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportPrinterSelectedEventArgs_Vtbl {
@@ -221,16 +131,7 @@ pub struct IPrintSupportPrinterSelectedEventArgs_Vtbl {
     SetAdaptiveCard: usize,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportSessionInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportSessionInfo {
-    type Vtable = IPrintSupportSessionInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportSessionInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x852149af_777d_53e9_9ee9_45d3f4b5be9c);
-}
+::windows_core::imp::com_interface!(IPrintSupportSessionInfo, IPrintSupportSessionInfo_Vtbl, 0x852149af_777d_53e9_9ee9_45d3f4b5be9c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportSessionInfo_Vtbl {
@@ -244,16 +145,7 @@ pub struct IPrintSupportSessionInfo_Vtbl {
     #[cfg(not(feature = "Devices_Printers"))]
     Printer: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportSettingsActivatedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportSettingsActivatedEventArgs {
-    type Vtable = IPrintSupportSettingsActivatedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportSettingsActivatedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1e1b565e_a013_55ea_9b8c_eea39d9fb6c1);
-}
+::windows_core::imp::com_interface!(IPrintSupportSettingsActivatedEventArgs, IPrintSupportSettingsActivatedEventArgs_Vtbl, 0x1e1b565e_a013_55ea_9b8c_eea39d9fb6c1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportSettingsActivatedEventArgs_Vtbl {
@@ -261,16 +153,7 @@ pub struct IPrintSupportSettingsActivatedEventArgs_Vtbl {
     pub Session: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPrintSupportSettingsUISession(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPrintSupportSettingsUISession {
-    type Vtable = IPrintSupportSettingsUISession_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPrintSupportSettingsUISession {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc6da2251_83c3_55e4_a0f8_5de8b062adbf);
-}
+::windows_core::imp::com_interface!(IPrintSupportSettingsUISession, IPrintSupportSettingsUISession_Vtbl, 0xc6da2251_83c3_55e4_a0f8_5de8b062adbf);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPrintSupportSettingsUISession_Vtbl {
@@ -422,10 +305,10 @@ impl PrintSupportPrintDeviceCapabilitiesChangedEventArgs {
     #[cfg(feature = "Foundation_Collections")]
     pub fn SetSupportedPdlPassthroughContentTypes<P0>(&self, supportedpdlcontenttypes: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         let this = &::windows_core::ComInterface::cast::<IPrintSupportPrintDeviceCapabilitiesChangedEventArgs2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).SetSupportedPdlPassthroughContentTypes)(::windows_core::Interface::as_raw(this), supportedpdlcontenttypes.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSupportedPdlPassthroughContentTypes)(::windows_core::Interface::as_raw(this), supportedpdlcontenttypes.into_param().abi()).ok() }
     }
     pub fn ResourceLanguage(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = &::windows_core::ComInterface::cast::<IPrintSupportPrintDeviceCapabilitiesChangedEventArgs2>(self)?;
@@ -636,19 +519,19 @@ impl PrintSupportPrinterSelectedEventArgs {
     #[cfg(feature = "Foundation_Collections")]
     pub fn SetAdditionalFeatures<P0>(&self, features: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::Collections::IIterable<PrintSupportPrintTicketElement>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::Collections::IIterable<PrintSupportPrintTicketElement>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetAdditionalFeatures)(::windows_core::Interface::as_raw(this), features.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetAdditionalFeatures)(::windows_core::Interface::as_raw(this), features.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn SetAdditionalParameters<P0>(&self, parameters: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Foundation::Collections::IIterable<PrintSupportPrintTicketElement>>,
+        P0: ::windows_core::IntoParam<super::super::super::Foundation::Collections::IIterable<PrintSupportPrintTicketElement>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetAdditionalParameters)(::windows_core::Interface::as_raw(this), parameters.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetAdditionalParameters)(::windows_core::Interface::as_raw(this), parameters.into_param().abi()).ok() }
     }
     pub fn AllowedAdditionalFeaturesAndParametersCount(&self) -> ::windows_core::Result<u32> {
         let this = self;
@@ -661,10 +544,10 @@ impl PrintSupportPrinterSelectedEventArgs {
     #[cfg(feature = "UI_Shell")]
     pub fn SetAdaptiveCard<P0>(&self, adaptivecard: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::UI::Shell::IAdaptiveCard>,
+        P0: ::windows_core::IntoParam<super::super::super::UI::Shell::IAdaptiveCard>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetAdaptiveCard)(::windows_core::Interface::as_raw(this), adaptivecard.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetAdaptiveCard)(::windows_core::Interface::as_raw(this), adaptivecard.into_param().abi()).ok() }
     }
     pub fn GetDeferral(&self) -> ::windows_core::Result<super::super::super::Foundation::Deferral> {
         let this = self;
@@ -796,9 +679,7 @@ impl ::windows_core::RuntimeName for PrintSupportSettingsActivatedEventArgs {
 }
 ::windows_core::imp::interface_hierarchy!(PrintSupportSettingsActivatedEventArgs, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::super::ApplicationModel::Activation::IActivatedEventArgs> for PrintSupportSettingsActivatedEventArgs {}
-#[cfg(feature = "ApplicationModel_Activation")]
-impl ::windows_core::CanTryInto<super::super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser> for PrintSupportSettingsActivatedEventArgs {}
+::windows_core::imp::required_hierarchy!(PrintSupportSettingsActivatedEventArgs, super::super::super::ApplicationModel::Activation::IActivatedEventArgs, super::super::super::ApplicationModel::Activation::IActivatedEventArgsWithUser);
 unsafe impl ::core::marker::Send for PrintSupportSettingsActivatedEventArgs {}
 unsafe impl ::core::marker::Sync for PrintSupportSettingsActivatedEventArgs {}
 #[repr(transparent)]

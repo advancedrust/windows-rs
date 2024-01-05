@@ -322,11 +322,8 @@ where
     ::windows_targets::link!("winhttp.dll" "system" fn WinHttpWriteProxySettings(hsession : *const ::core::ffi::c_void, fforceupdate : super::super::Foundation:: BOOL, pwinhttpproxysettings : *const WINHTTP_PROXY_SETTINGS) -> u32);
     WinHttpWriteProxySettings(hsession, fforceupdate.into_param().abi(), pwinhttpproxysettings)
 }
-#[doc = "Required features: `\"Win32_System_Com\"`"]
 #[cfg(feature = "Win32_System_Com")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWinHttpRequest(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWinHttpRequest, IWinHttpRequest_Vtbl, 0x016fe2ec_b2c8_45f8_b23b_39e53a75396b);
 #[cfg(feature = "Win32_System_Com")]
 impl IWinHttpRequest {
     #[doc = "Required features: `\"Win32_System_Com\"`, `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
@@ -433,14 +430,6 @@ impl IWinHttpRequest {
 #[cfg(feature = "Win32_System_Com")]
 ::windows_core::imp::interface_hierarchy!(IWinHttpRequest, ::windows_core::IUnknown, super::super::System::Com::IDispatch);
 #[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::Interface for IWinHttpRequest {
-    type Vtable = IWinHttpRequest_Vtbl;
-}
-#[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::ComInterface for IWinHttpRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x016fe2ec_b2c8_45f8_b23b_39e53a75396b);
-}
-#[cfg(feature = "Win32_System_Com")]
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWinHttpRequest_Vtbl {
@@ -489,9 +478,7 @@ pub struct IWinHttpRequest_Vtbl {
     pub SetClientCertificate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, clientcertificate: ::std::mem::MaybeUninit<::windows_core::BSTR>) -> ::windows_core::HRESULT,
     pub SetAutoLogonPolicy: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, autologonpolicy: WinHttpRequestAutoLogonPolicy) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWinHttpRequestEvents(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWinHttpRequestEvents, IWinHttpRequestEvents_Vtbl, 0xf97f4e15_b787_4212_80d1_d380cbbf982e);
 impl IWinHttpRequestEvents {
     pub unsafe fn OnResponseStart<P0>(&self, status: i32, contenttype: P0)
     where
@@ -515,12 +502,6 @@ impl IWinHttpRequestEvents {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWinHttpRequestEvents, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWinHttpRequestEvents {
-    type Vtable = IWinHttpRequestEvents_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWinHttpRequestEvents {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf97f4e15_b787_4212_80d1_d380cbbf982e);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWinHttpRequestEvents_Vtbl {

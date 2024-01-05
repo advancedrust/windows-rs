@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IIndexedResourceCandidate(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IIndexedResourceCandidate {
-    type Vtable = IIndexedResourceCandidate_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IIndexedResourceCandidate {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0e619ef3_faec_4414_a9d7_54acd5953f29);
-}
+::windows_core::imp::com_interface!(IIndexedResourceCandidate, IIndexedResourceCandidate_Vtbl, 0x0e619ef3_faec_4414_a9d7_54acd5953f29);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IIndexedResourceCandidate_Vtbl {
@@ -25,16 +16,7 @@ pub struct IIndexedResourceCandidate_Vtbl {
     pub ValueAsString: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub GetQualifierValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, qualifiername: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IIndexedResourceQualifier(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IIndexedResourceQualifier {
-    type Vtable = IIndexedResourceQualifier_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IIndexedResourceQualifier {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdae3bb9b_d304_497f_a168_a340042c8adb);
-}
+::windows_core::imp::com_interface!(IIndexedResourceQualifier, IIndexedResourceQualifier_Vtbl, 0xdae3bb9b_d304_497f_a168_a340042c8adb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IIndexedResourceQualifier_Vtbl {
@@ -42,19 +24,8 @@ pub struct IIndexedResourceQualifier_Vtbl {
     pub QualifierName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub QualifierValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
 #[cfg(feature = "deprecated")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IResourceIndexer(::windows_core::IUnknown);
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::Interface for IResourceIndexer {
-    type Vtable = IResourceIndexer_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for IResourceIndexer {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2d4cf9a5_e32f_4ab2_8748_96350a016da3);
-}
+::windows_core::imp::com_interface!(IResourceIndexer, IResourceIndexer_Vtbl, 0x2d4cf9a5_e32f_4ab2_8748_96350a016da3);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -69,19 +40,8 @@ pub struct IResourceIndexer_Vtbl {
     #[cfg(not(all(feature = "Foundation_Collections", feature = "deprecated")))]
     IndexFileContentsAsync: usize,
 }
-#[doc(hidden)]
 #[cfg(feature = "deprecated")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IResourceIndexerFactory(::windows_core::IUnknown);
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::Interface for IResourceIndexerFactory {
-    type Vtable = IResourceIndexerFactory_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for IResourceIndexerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb8de3f09_31cd_4d97_bd30_8d39f742bc61);
-}
+::windows_core::imp::com_interface!(IResourceIndexerFactory, IResourceIndexerFactory_Vtbl, 0xb8de3f09_31cd_4d97_bd30_8d39f742bc61);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -92,19 +52,8 @@ pub struct IResourceIndexerFactory_Vtbl {
     #[cfg(not(feature = "deprecated"))]
     CreateResourceIndexer: usize,
 }
-#[doc(hidden)]
 #[cfg(feature = "deprecated")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IResourceIndexerFactory2(::windows_core::IUnknown);
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::Interface for IResourceIndexerFactory2 {
-    type Vtable = IResourceIndexerFactory2_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for IResourceIndexerFactory2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6040f18d_d5e5_4b60_9201_cd279cbcfed9);
-}
+::windows_core::imp::com_interface!(IResourceIndexerFactory2, IResourceIndexerFactory2_Vtbl, 0x6040f18d_d5e5_4b60_9201_cd279cbcfed9);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]

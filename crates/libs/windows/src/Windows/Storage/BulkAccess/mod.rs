@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFileInformationFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFileInformationFactory {
-    type Vtable = IFileInformationFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFileInformationFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x401d88be_960f_4d6d_a7d0_1a3861e76c83);
-}
+::windows_core::imp::com_interface!(IFileInformationFactory, IFileInformationFactory_Vtbl, 0x401d88be_960f_4d6d_a7d0_1a3861e76c83);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFileInformationFactory_Vtbl {
@@ -40,16 +31,7 @@ pub struct IFileInformationFactory_Vtbl {
     pub GetVirtualizedFilesVector: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetVirtualizedFoldersVector: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFileInformationFactoryFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFileInformationFactoryFactory {
-    type Vtable = IFileInformationFactoryFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFileInformationFactoryFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x84ea0e7d_e4a2_4f00_8afa_af5e0f826bd5);
-}
+::windows_core::imp::com_interface!(IFileInformationFactoryFactory, IFileInformationFactoryFactory_Vtbl, 0x84ea0e7d_e4a2_4f00_8afa_af5e0f826bd5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFileInformationFactoryFactory_Vtbl {
@@ -71,9 +53,7 @@ pub struct IFileInformationFactoryFactory_Vtbl {
     #[cfg(not(all(feature = "Storage_FileProperties", feature = "Storage_Search")))]
     CreateWithModeAndSizeAndOptionsAndFlags: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageItemInformation(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStorageItemInformation, IStorageItemInformation_Vtbl, 0x87a5cb8b_8972_4f40_8de0_d86fb179d8fa);
 impl IStorageItemInformation {
     #[doc = "Required features: `\"Storage_FileProperties\"`"]
     #[cfg(feature = "Storage_FileProperties")]
@@ -162,12 +142,6 @@ impl IStorageItemInformation {
 impl ::windows_core::RuntimeType for IStorageItemInformation {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IStorageItemInformation {
-    type Vtable = IStorageItemInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageItemInformation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x87a5cb8b_8972_4f40_8de0_d86fb179d8fa);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageItemInformation_Vtbl {
@@ -255,82 +229,82 @@ impl FileInformation {
     }
     pub fn CopyOverloadDefaultNameAndOptions<P0>(&self, destinationfolder: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<super::IStorageFolder>,
+        P0: ::windows_core::IntoParam<super::IStorageFolder>,
     {
         let this = &::windows_core::ComInterface::cast::<super::IStorageFile>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CopyOverloadDefaultNameAndOptions)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CopyOverloadDefaultNameAndOptions)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CopyOverloadDefaultOptions<P0>(&self, destinationfolder: P0, desirednewname: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<super::IStorageFolder>,
+        P0: ::windows_core::IntoParam<super::IStorageFolder>,
     {
         let this = &::windows_core::ComInterface::cast::<super::IStorageFile>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CopyOverloadDefaultOptions)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), ::core::mem::transmute_copy(desirednewname), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CopyOverloadDefaultOptions)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), ::core::mem::transmute_copy(desirednewname), &mut result__).from_abi(result__)
         }
     }
     pub fn CopyOverload<P0>(&self, destinationfolder: P0, desirednewname: &::windows_core::HSTRING, option: super::NameCollisionOption) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<super::StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<super::IStorageFolder>,
+        P0: ::windows_core::IntoParam<super::IStorageFolder>,
     {
         let this = &::windows_core::ComInterface::cast::<super::IStorageFile>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CopyOverload)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), ::core::mem::transmute_copy(desirednewname), option, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CopyOverload)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), ::core::mem::transmute_copy(desirednewname), option, &mut result__).from_abi(result__)
         }
     }
     pub fn CopyAndReplaceAsync<P0>(&self, filetoreplace: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::IStorageFile>,
+        P0: ::windows_core::IntoParam<super::IStorageFile>,
     {
         let this = &::windows_core::ComInterface::cast::<super::IStorageFile>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CopyAndReplaceAsync)(::windows_core::Interface::as_raw(this), filetoreplace.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CopyAndReplaceAsync)(::windows_core::Interface::as_raw(this), filetoreplace.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn MoveOverloadDefaultNameAndOptions<P0>(&self, destinationfolder: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::IStorageFolder>,
+        P0: ::windows_core::IntoParam<super::IStorageFolder>,
     {
         let this = &::windows_core::ComInterface::cast::<super::IStorageFile>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).MoveOverloadDefaultNameAndOptions)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).MoveOverloadDefaultNameAndOptions)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn MoveOverloadDefaultOptions<P0>(&self, destinationfolder: P0, desirednewname: &::windows_core::HSTRING) -> ::windows_core::Result<super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::IStorageFolder>,
+        P0: ::windows_core::IntoParam<super::IStorageFolder>,
     {
         let this = &::windows_core::ComInterface::cast::<super::IStorageFile>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).MoveOverloadDefaultOptions)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), ::core::mem::transmute_copy(desirednewname), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).MoveOverloadDefaultOptions)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), ::core::mem::transmute_copy(desirednewname), &mut result__).from_abi(result__)
         }
     }
     pub fn MoveOverload<P0>(&self, destinationfolder: P0, desirednewname: &::windows_core::HSTRING, option: super::NameCollisionOption) -> ::windows_core::Result<super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::IStorageFolder>,
+        P0: ::windows_core::IntoParam<super::IStorageFolder>,
     {
         let this = &::windows_core::ComInterface::cast::<super::IStorageFile>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).MoveOverload)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), ::core::mem::transmute_copy(desirednewname), option, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).MoveOverload)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), ::core::mem::transmute_copy(desirednewname), option, &mut result__).from_abi(result__)
         }
     }
     pub fn MoveAndReplaceAsync<P0>(&self, filetoreplace: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::IStorageFile>,
+        P0: ::windows_core::IntoParam<super::IStorageFile>,
     {
         let this = &::windows_core::ComInterface::cast::<super::IStorageFile>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).MoveAndReplaceAsync)(::windows_core::Interface::as_raw(this), filetoreplace.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).MoveAndReplaceAsync)(::windows_core::Interface::as_raw(this), filetoreplace.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -437,12 +411,12 @@ impl FileInformation {
     }
     pub fn IsEqual<P0>(&self, item: P0) -> ::windows_core::Result<bool>
     where
-        P0: ::windows_core::TryIntoParam<super::IStorageItem>,
+        P0: ::windows_core::IntoParam<super::IStorageItem>,
     {
         let this = &::windows_core::ComInterface::cast::<super::IStorageItem2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).IsEqual)(::windows_core::Interface::as_raw(this), item.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).IsEqual)(::windows_core::Interface::as_raw(this), item.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_FileProperties\"`"]
@@ -606,17 +580,7 @@ impl ::windows_core::RuntimeName for FileInformation {
 }
 ::windows_core::imp::interface_hierarchy!(FileInformation, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<super::Streams::IInputStreamReference> for FileInformation {}
-#[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<super::Streams::IRandomAccessStreamReference> for FileInformation {}
-impl ::windows_core::CanTryInto<super::IStorageFile> for FileInformation {}
-impl ::windows_core::CanTryInto<super::IStorageFile2> for FileInformation {}
-impl ::windows_core::CanTryInto<super::IStorageFilePropertiesWithAvailability> for FileInformation {}
-impl ::windows_core::CanTryInto<super::IStorageItem> for FileInformation {}
-impl ::windows_core::CanTryInto<super::IStorageItem2> for FileInformation {}
-impl ::windows_core::CanTryInto<IStorageItemInformation> for FileInformation {}
-impl ::windows_core::CanTryInto<super::IStorageItemProperties> for FileInformation {}
-impl ::windows_core::CanTryInto<super::IStorageItemPropertiesWithProvider> for FileInformation {}
+::windows_core::imp::required_hierarchy!(FileInformation, super::Streams::IInputStreamReference, super::Streams::IRandomAccessStreamReference, super::IStorageFile, super::IStorageFile2, super::IStorageFilePropertiesWithAvailability, super::IStorageItem, super::IStorageItem2, IStorageItemInformation, super::IStorageItemProperties, super::IStorageItemPropertiesWithProvider);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct FileInformationFactory(::windows_core::IUnknown);
@@ -700,44 +664,44 @@ impl FileInformationFactory {
     #[cfg(all(feature = "Storage_FileProperties", feature = "Storage_Search"))]
     pub fn CreateWithMode<P0>(queryresult: P0, mode: super::FileProperties::ThumbnailMode) -> ::windows_core::Result<FileInformationFactory>
     where
-        P0: ::windows_core::TryIntoParam<super::Search::IStorageQueryResultBase>,
+        P0: ::windows_core::IntoParam<super::Search::IStorageQueryResultBase>,
     {
         Self::IFileInformationFactoryFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateWithMode)(::windows_core::Interface::as_raw(this), queryresult.try_into_param()?.abi(), mode, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateWithMode)(::windows_core::Interface::as_raw(this), queryresult.into_param().abi(), mode, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_FileProperties\"`, `\"Storage_Search\"`"]
     #[cfg(all(feature = "Storage_FileProperties", feature = "Storage_Search"))]
     pub fn CreateWithModeAndSize<P0>(queryresult: P0, mode: super::FileProperties::ThumbnailMode, requestedthumbnailsize: u32) -> ::windows_core::Result<FileInformationFactory>
     where
-        P0: ::windows_core::TryIntoParam<super::Search::IStorageQueryResultBase>,
+        P0: ::windows_core::IntoParam<super::Search::IStorageQueryResultBase>,
     {
         Self::IFileInformationFactoryFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateWithModeAndSize)(::windows_core::Interface::as_raw(this), queryresult.try_into_param()?.abi(), mode, requestedthumbnailsize, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateWithModeAndSize)(::windows_core::Interface::as_raw(this), queryresult.into_param().abi(), mode, requestedthumbnailsize, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_FileProperties\"`, `\"Storage_Search\"`"]
     #[cfg(all(feature = "Storage_FileProperties", feature = "Storage_Search"))]
     pub fn CreateWithModeAndSizeAndOptions<P0>(queryresult: P0, mode: super::FileProperties::ThumbnailMode, requestedthumbnailsize: u32, thumbnailoptions: super::FileProperties::ThumbnailOptions) -> ::windows_core::Result<FileInformationFactory>
     where
-        P0: ::windows_core::TryIntoParam<super::Search::IStorageQueryResultBase>,
+        P0: ::windows_core::IntoParam<super::Search::IStorageQueryResultBase>,
     {
         Self::IFileInformationFactoryFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateWithModeAndSizeAndOptions)(::windows_core::Interface::as_raw(this), queryresult.try_into_param()?.abi(), mode, requestedthumbnailsize, thumbnailoptions, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateWithModeAndSizeAndOptions)(::windows_core::Interface::as_raw(this), queryresult.into_param().abi(), mode, requestedthumbnailsize, thumbnailoptions, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_FileProperties\"`, `\"Storage_Search\"`"]
     #[cfg(all(feature = "Storage_FileProperties", feature = "Storage_Search"))]
     pub fn CreateWithModeAndSizeAndOptionsAndFlags<P0>(queryresult: P0, mode: super::FileProperties::ThumbnailMode, requestedthumbnailsize: u32, thumbnailoptions: super::FileProperties::ThumbnailOptions, delayload: bool) -> ::windows_core::Result<FileInformationFactory>
     where
-        P0: ::windows_core::TryIntoParam<super::Search::IStorageQueryResultBase>,
+        P0: ::windows_core::IntoParam<super::Search::IStorageQueryResultBase>,
     {
         Self::IFileInformationFactoryFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateWithModeAndSizeAndOptionsAndFlags)(::windows_core::Interface::as_raw(this), queryresult.try_into_param()?.abi(), mode, requestedthumbnailsize, thumbnailoptions, delayload, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateWithModeAndSizeAndOptionsAndFlags)(::windows_core::Interface::as_raw(this), queryresult.into_param().abi(), mode, requestedthumbnailsize, thumbnailoptions, delayload, &mut result__).from_abi(result__)
         })
     }
     #[doc(hidden)]
@@ -1094,12 +1058,12 @@ impl FolderInformation {
     }
     pub fn IsEqual<P0>(&self, item: P0) -> ::windows_core::Result<bool>
     where
-        P0: ::windows_core::TryIntoParam<super::IStorageItem>,
+        P0: ::windows_core::IntoParam<super::IStorageItem>,
     {
         let this = &::windows_core::ComInterface::cast::<super::IStorageItem2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).IsEqual)(::windows_core::Interface::as_raw(this), item.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).IsEqual)(::windows_core::Interface::as_raw(this), item.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_FileProperties\"`"]
@@ -1262,14 +1226,7 @@ impl ::windows_core::RuntimeName for FolderInformation {
     const NAME: &'static str = "Windows.Storage.BulkAccess.FolderInformation";
 }
 ::windows_core::imp::interface_hierarchy!(FolderInformation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::IStorageFolder> for FolderInformation {}
-impl ::windows_core::CanTryInto<super::IStorageFolder2> for FolderInformation {}
 #[cfg(feature = "Storage_Search")]
-impl ::windows_core::CanTryInto<super::Search::IStorageFolderQueryOperations> for FolderInformation {}
-impl ::windows_core::CanTryInto<super::IStorageItem> for FolderInformation {}
-impl ::windows_core::CanTryInto<super::IStorageItem2> for FolderInformation {}
-impl ::windows_core::CanTryInto<IStorageItemInformation> for FolderInformation {}
-impl ::windows_core::CanTryInto<super::IStorageItemProperties> for FolderInformation {}
-impl ::windows_core::CanTryInto<super::IStorageItemPropertiesWithProvider> for FolderInformation {}
+::windows_core::imp::required_hierarchy!(FolderInformation, super::IStorageFolder, super::IStorageFolder2, super::Search::IStorageFolderQueryOperations, super::IStorageItem, super::IStorageItem2, IStorageItemInformation, super::IStorageItemProperties, super::IStorageItemPropertiesWithProvider);
 #[cfg(feature = "implement")]
 ::core::include!("impl.rs");

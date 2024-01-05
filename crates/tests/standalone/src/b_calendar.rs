@@ -1142,13 +1142,13 @@ impl Calendar {
         languages: P0,
     ) -> ::windows_core::Result<Calendar>
     where
-        P0: ::windows_core::TryIntoParam<IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<IIterable<::windows_core::HSTRING>>,
     {
         Self::ICalendarFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateCalendarDefaultCalendarAndClock)(
                 ::windows_core::Interface::as_raw(this),
-                languages.try_into_param()?.abi(),
+                languages.into_param().abi(),
                 &mut result__,
             )
             .from_abi(result__)
@@ -1160,13 +1160,13 @@ impl Calendar {
         clock: &::windows_core::HSTRING,
     ) -> ::windows_core::Result<Calendar>
     where
-        P0: ::windows_core::TryIntoParam<IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<IIterable<::windows_core::HSTRING>>,
     {
         Self::ICalendarFactory(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateCalendar)(
                 ::windows_core::Interface::as_raw(this),
-                languages.try_into_param()?.abi(),
+                languages.into_param().abi(),
                 ::core::mem::transmute_copy(calendar),
                 ::core::mem::transmute_copy(clock),
                 &mut result__,
@@ -1181,13 +1181,13 @@ impl Calendar {
         timezoneid: &::windows_core::HSTRING,
     ) -> ::windows_core::Result<Calendar>
     where
-        P0: ::windows_core::TryIntoParam<IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<IIterable<::windows_core::HSTRING>>,
     {
         Self::ICalendarFactory2(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
             (::windows_core::Interface::vtable(this).CreateCalendarWithTimeZone)(
                 ::windows_core::Interface::as_raw(this),
-                languages.try_into_param()?.abi(),
+                languages.into_param().abi(),
                 ::core::mem::transmute_copy(calendar),
                 ::core::mem::transmute_copy(clock),
                 ::core::mem::transmute_copy(timezoneid),
@@ -1348,17 +1348,11 @@ impl ::windows_core::RuntimeType for DayOfWeek {
     const SIGNATURE: ::windows_core::imp::ConstBuffer =
         ::windows_core::imp::ConstBuffer::from_slice(b"enum(Windows.Globalization.DayOfWeek;i4)");
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICalendar(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICalendar {
-    type Vtable = ICalendar_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICalendar {
-    const IID: ::windows_core::GUID =
-        ::windows_core::GUID::from_u128(0xca30221d_86d9_40fb_a26b_d44eb7cf08ea);
-}
+::windows_core::imp::com_interface!(
+    ICalendar,
+    ICalendar_Vtbl,
+    0xca30221d_86d9_40fb_a26b_d44eb7cf08ea
+);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICalendar_Vtbl {
@@ -1766,17 +1760,11 @@ pub struct ICalendar_Vtbl {
         result__: *mut bool,
     ) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICalendarFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICalendarFactory {
-    type Vtable = ICalendarFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICalendarFactory {
-    const IID: ::windows_core::GUID =
-        ::windows_core::GUID::from_u128(0x83f58412_e56b_4c75_a66e_0f63d57758a6);
-}
+::windows_core::imp::com_interface!(
+    ICalendarFactory,
+    ICalendarFactory_Vtbl,
+    0x83f58412_e56b_4c75_a66e_0f63d57758a6
+);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICalendarFactory_Vtbl {
@@ -1795,17 +1783,11 @@ pub struct ICalendarFactory_Vtbl {
         result__: *mut *mut ::core::ffi::c_void,
     ) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICalendarFactory2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICalendarFactory2 {
-    type Vtable = ICalendarFactory2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICalendarFactory2 {
-    const IID: ::windows_core::GUID =
-        ::windows_core::GUID::from_u128(0xb44b378c_ca7e_4590_9e72_ea2bec1a5115);
-}
+::windows_core::imp::com_interface!(
+    ICalendarFactory2,
+    ICalendarFactory2_Vtbl,
+    0xb44b378c_ca7e_4590_9e72_ea2bec1a5115
+);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICalendarFactory2_Vtbl {
@@ -2011,17 +1993,11 @@ where
     ) -> ::windows_core::HRESULT,
     pub T: ::core::marker::PhantomData<T>,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ITimeZoneOnCalendar(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ITimeZoneOnCalendar {
-    type Vtable = ITimeZoneOnCalendar_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ITimeZoneOnCalendar {
-    const IID: ::windows_core::GUID =
-        ::windows_core::GUID::from_u128(0xbb3c25e5_46cf_4317_a3f5_02621ad54478);
-}
+::windows_core::imp::com_interface!(
+    ITimeZoneOnCalendar,
+    ITimeZoneOnCalendar_Vtbl,
+    0xbb3c25e5_46cf_4317_a3f5_02621ad54478
+);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ITimeZoneOnCalendar_Vtbl {
@@ -2127,9 +2103,10 @@ impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<::windows
     for IVectorView<T>
 {
 }
-impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanTryInto<IIterable<T>>
+impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::CanInto<IIterable<T>>
     for IVectorView<T>
 {
+    const QUERY: bool = true;
 }
 impl<T: ::windows_core::RuntimeType + 'static> ::windows_core::RuntimeType for IVectorView<T> {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = {

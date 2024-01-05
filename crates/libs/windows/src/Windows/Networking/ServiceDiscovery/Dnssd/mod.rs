@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDnssdRegistrationResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDnssdRegistrationResult {
-    type Vtable = IDnssdRegistrationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDnssdRegistrationResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3d786ad2_e606_5350_73ea_7e97f066162f);
-}
+::windows_core::imp::com_interface!(IDnssdRegistrationResult, IDnssdRegistrationResult_Vtbl, 0x3d786ad2_e606_5350_73ea_7e97f066162f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDnssdRegistrationResult_Vtbl {
@@ -16,16 +7,7 @@ pub struct IDnssdRegistrationResult_Vtbl {
     pub IPAddress: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub HasInstanceNameChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDnssdServiceInstance(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDnssdServiceInstance {
-    type Vtable = IDnssdServiceInstance_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDnssdServiceInstance {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe246db7e_98a5_4ca1_b9e4_c253d33c35ff);
-}
+::windows_core::imp::com_interface!(IDnssdServiceInstance, IDnssdServiceInstance_Vtbl, 0xe246db7e_98a5_4ca1_b9e4_c253d33c35ff);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDnssdServiceInstance_Vtbl {
@@ -61,32 +43,14 @@ pub struct IDnssdServiceInstance_Vtbl {
     #[cfg(not(all(feature = "Networking_Connectivity", feature = "Networking_Sockets")))]
     RegisterDatagramSocketAsync2: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDnssdServiceInstanceFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDnssdServiceInstanceFactory {
-    type Vtable = IDnssdServiceInstanceFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDnssdServiceInstanceFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6cb061a1_c478_4331_9684_4af2186c0a2b);
-}
+::windows_core::imp::com_interface!(IDnssdServiceInstanceFactory, IDnssdServiceInstanceFactory_Vtbl, 0x6cb061a1_c478_4331_9684_4af2186c0a2b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDnssdServiceInstanceFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Create: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, dnssdserviceinstancename: ::std::mem::MaybeUninit<::windows_core::HSTRING>, hostname: *mut ::core::ffi::c_void, port: u16, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDnssdServiceWatcher(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDnssdServiceWatcher {
-    type Vtable = IDnssdServiceWatcher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDnssdServiceWatcher {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcc34d9c1_db7d_4b69_983d_c6f83f205682);
-}
+::windows_core::imp::com_interface!(IDnssdServiceWatcher, IDnssdServiceWatcher_Vtbl, 0xcc34d9c1_db7d_4b69_983d_c6f83f205682);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDnssdServiceWatcher_Vtbl {
@@ -154,7 +118,7 @@ impl ::windows_core::RuntimeName for DnssdRegistrationResult {
     const NAME: &'static str = "Windows.Networking.ServiceDiscovery.Dnssd.DnssdRegistrationResult";
 }
 ::windows_core::imp::interface_hierarchy!(DnssdRegistrationResult, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for DnssdRegistrationResult {}
+::windows_core::imp::required_hierarchy!(DnssdRegistrationResult, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for DnssdRegistrationResult {}
 unsafe impl ::core::marker::Sync for DnssdRegistrationResult {}
 #[repr(transparent)]
@@ -313,7 +277,7 @@ impl ::windows_core::RuntimeName for DnssdServiceInstance {
     const NAME: &'static str = "Windows.Networking.ServiceDiscovery.Dnssd.DnssdServiceInstance";
 }
 ::windows_core::imp::interface_hierarchy!(DnssdServiceInstance, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IStringable> for DnssdServiceInstance {}
+::windows_core::imp::required_hierarchy!(DnssdServiceInstance, super::super::super::Foundation::IStringable);
 unsafe impl ::core::marker::Send for DnssdServiceInstance {}
 unsafe impl ::core::marker::Sync for DnssdServiceInstance {}
 #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -407,9 +371,7 @@ impl ::core::iter::IntoIterator for &DnssdServiceInstanceCollection {
 #[cfg(feature = "Foundation_Collections")]
 ::windows_core::imp::interface_hierarchy!(DnssdServiceInstanceCollection, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IIterable<DnssdServiceInstance>> for DnssdServiceInstanceCollection {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::super::Foundation::Collections::IVectorView<DnssdServiceInstance>> for DnssdServiceInstanceCollection {}
+::windows_core::imp::required_hierarchy!(DnssdServiceInstanceCollection, super::super::super::Foundation::Collections::IIterable::<DnssdServiceInstance>, super::super::super::Foundation::Collections::IVectorView::<DnssdServiceInstance>);
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::core::marker::Send for DnssdServiceInstanceCollection {}
 #[cfg(feature = "Foundation_Collections")]

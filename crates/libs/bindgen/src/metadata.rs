@@ -535,6 +535,30 @@ fn type_is_copyable(ty: &Type) -> bool {
     }
 }
 
+// pub fn type_non_com_interface(ty: &Type) -> bool {
+//     match ty {
+//         Type::TypeDef(row, _) => type_def_non_com_interface(*row),
+//         _ => false,
+//     }
+// }
+
+// pub fn type_def_non_com_interface(row: TypeDef) -> bool {
+//     match row.kind() {
+//         TypeKind::Interface => {
+//             if row.flags().contains(TypeAttributes::WindowsRuntime) {
+//                 false
+//             } else {
+//                 if type_def_vtables(row).first() == Some(&Type::IUnknown) {
+//                      false
+//                 } else {
+//                     true
+//                 }
+//             }
+//         }
+//         _ => false,
+//     }
+// }
+
 pub fn type_def_is_blittable(row: TypeDef) -> bool {
     match row.kind() {
         TypeKind::Struct => {
@@ -546,6 +570,7 @@ pub fn type_def_is_blittable(row: TypeDef) -> bool {
         }
         TypeKind::Enum => true,
         TypeKind::Delegate => !row.flags().contains(TypeAttributes::WindowsRuntime),
+        //TypeKind::Interface => type_def_non_com_interface(row),
         _ => false,
     }
 }

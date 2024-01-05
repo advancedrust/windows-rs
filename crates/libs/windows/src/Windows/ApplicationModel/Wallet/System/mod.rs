@@ -1,16 +1,5 @@
-#[doc(hidden)]
 #[cfg(feature = "deprecated")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWalletItemSystemStore(::windows_core::IUnknown);
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::Interface for IWalletItemSystemStore {
-    type Vtable = IWalletItemSystemStore_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for IWalletItemSystemStore {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x522e2bff_96a2_4a17_8d19_fe1d9f837561);
-}
+::windows_core::imp::com_interface!(IWalletItemSystemStore, IWalletItemSystemStore_Vtbl, 0x522e2bff_96a2_4a17_8d19_fe1d9f837561);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -37,19 +26,8 @@ pub struct IWalletItemSystemStore_Vtbl {
     #[cfg(not(feature = "deprecated"))]
     LaunchAppForItemAsync: usize,
 }
-#[doc(hidden)]
 #[cfg(feature = "deprecated")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWalletItemSystemStore2(::windows_core::IUnknown);
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::Interface for IWalletItemSystemStore2 {
-    type Vtable = IWalletItemSystemStore2_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for IWalletItemSystemStore2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf98d3a4e_be00_4fdd_9734_6c113c1ac1cb);
-}
+::windows_core::imp::com_interface!(IWalletItemSystemStore2, IWalletItemSystemStore2_Vtbl, 0xf98d3a4e_be00_4fdd_9734_6c113c1ac1cb);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -64,19 +42,8 @@ pub struct IWalletItemSystemStore2_Vtbl {
     #[cfg(not(feature = "deprecated"))]
     RemoveItemsChanged: usize,
 }
-#[doc(hidden)]
 #[cfg(feature = "deprecated")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWalletManagerSystemStatics(::windows_core::IUnknown);
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::Interface for IWalletManagerSystemStatics {
-    type Vtable = IWalletManagerSystemStatics_Vtbl;
-}
-#[cfg(feature = "deprecated")]
-unsafe impl ::windows_core::ComInterface for IWalletManagerSystemStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbee8eb89_2634_4b9a_8b23_ee8903c91fe0);
-}
+::windows_core::imp::com_interface!(IWalletManagerSystemStatics, IWalletManagerSystemStatics_Vtbl, 0xbee8eb89_2634_4b9a_8b23_ee8903c91fe0);
 #[cfg(feature = "deprecated")]
 #[repr(C)]
 #[doc(hidden)]
@@ -119,12 +86,12 @@ impl WalletItemSystemStore {
     #[cfg(all(feature = "Storage_Streams", feature = "deprecated"))]
     pub fn ImportItemAsync<P0>(&self, stream: P0) -> ::windows_core::Result<super::super::super::Foundation::IAsyncOperation<super::WalletItem>>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Storage::Streams::IRandomAccessStreamReference>,
+        P0: ::windows_core::IntoParam<super::super::super::Storage::Streams::IRandomAccessStreamReference>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).ImportItemAsync)(::windows_core::Interface::as_raw(this), stream.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).ImportItemAsync)(::windows_core::Interface::as_raw(this), stream.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"deprecated\"`"]

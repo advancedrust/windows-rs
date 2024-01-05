@@ -1,6 +1,4 @@
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcCertificateEnumerator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcCertificateEnumerator, IOpcCertificateEnumerator_Vtbl, 0x85131937_8f24_421f_b439_59ab24d140b8);
 impl IOpcCertificateEnumerator {
     pub unsafe fn MoveNext(&self) -> ::windows_core::Result<super::super::super::Foundation::BOOL> {
         let mut result__ = ::std::mem::zeroed();
@@ -22,12 +20,6 @@ impl IOpcCertificateEnumerator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcCertificateEnumerator, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcCertificateEnumerator {
-    type Vtable = IOpcCertificateEnumerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcCertificateEnumerator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x85131937_8f24_421f_b439_59ab24d140b8);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcCertificateEnumerator_Vtbl {
@@ -40,9 +32,7 @@ pub struct IOpcCertificateEnumerator_Vtbl {
     GetCurrent: usize,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, copy: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcCertificateSet(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcCertificateSet, IOpcCertificateSet_Vtbl, 0x56ea4325_8e2d_4167_b1a4_e486d24c8fa7);
 impl IOpcCertificateSet {
     #[doc = "Required features: `\"Win32_Security_Cryptography\"`"]
     #[cfg(feature = "Win32_Security_Cryptography")]
@@ -60,12 +50,6 @@ impl IOpcCertificateSet {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcCertificateSet, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcCertificateSet {
-    type Vtable = IOpcCertificateSet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcCertificateSet {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x56ea4325_8e2d_4167_b1a4_e486d24c8fa7);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcCertificateSet_Vtbl {
@@ -80,9 +64,7 @@ pub struct IOpcCertificateSet_Vtbl {
     Remove: usize,
     pub GetEnumerator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, certificateenumerator: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcDigitalSignature(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcDigitalSignature, IOpcDigitalSignature_Vtbl, 0x52ab21dd_1cd0_4949_bc80_0c1232d00cb4);
 impl IOpcDigitalSignature {
     pub unsafe fn GetNamespaces(&self, prefixes: *mut *mut ::windows_core::PWSTR, namespaces: *mut *mut ::windows_core::PWSTR, count: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).GetNamespaces)(::windows_core::Interface::as_raw(self), prefixes, namespaces, count).ok()
@@ -145,12 +127,6 @@ impl IOpcDigitalSignature {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcDigitalSignature, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcDigitalSignature {
-    type Vtable = IOpcDigitalSignature_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcDigitalSignature {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x52ab21dd_1cd0_4949_bc80_0c1232d00cb4);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcDigitalSignature_Vtbl {
@@ -174,9 +150,7 @@ pub struct IOpcDigitalSignature_Vtbl {
     pub GetCustomObjectEnumerator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, customobjectenumerator: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetSignatureXml: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, signaturexml: *mut *mut u8, count: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcDigitalSignatureEnumerator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcDigitalSignatureEnumerator, IOpcDigitalSignatureEnumerator_Vtbl, 0x967b6882_0ba3_4358_b9e7_b64c75063c5e);
 impl IOpcDigitalSignatureEnumerator {
     pub unsafe fn MoveNext(&self) -> ::windows_core::Result<super::super::super::Foundation::BOOL> {
         let mut result__ = ::std::mem::zeroed();
@@ -196,12 +170,6 @@ impl IOpcDigitalSignatureEnumerator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcDigitalSignatureEnumerator, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcDigitalSignatureEnumerator {
-    type Vtable = IOpcDigitalSignatureEnumerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcDigitalSignatureEnumerator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x967b6882_0ba3_4358_b9e7_b64c75063c5e);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcDigitalSignatureEnumerator_Vtbl {
@@ -211,9 +179,7 @@ pub struct IOpcDigitalSignatureEnumerator_Vtbl {
     pub GetCurrent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, digitalsignature: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, copy: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcDigitalSignatureManager(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcDigitalSignatureManager, IOpcDigitalSignatureManager_Vtbl, 0xd5e62a0b_696d_462f_94df_72e33cef2659);
 impl IOpcDigitalSignatureManager {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
     #[cfg(feature = "Win32_System_Com")]
@@ -274,12 +240,6 @@ impl IOpcDigitalSignatureManager {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcDigitalSignatureManager, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcDigitalSignatureManager {
-    type Vtable = IOpcDigitalSignatureManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcDigitalSignatureManager {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd5e62a0b_696d_462f_94df_72e33cef2659);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcDigitalSignatureManager_Vtbl {
@@ -311,9 +271,7 @@ pub struct IOpcDigitalSignatureManager_Vtbl {
     #[cfg(not(feature = "Win32_System_Com"))]
     ReplaceSignatureXml: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcFactory(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcFactory, IOpcFactory_Vtbl, 0x6d0b4446_cd73_4ab3_94f4_8ccdf6116154);
 impl IOpcFactory {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
     #[cfg(feature = "Win32_System_Com")]
@@ -370,12 +328,6 @@ impl IOpcFactory {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcFactory, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcFactory {
-    type Vtable = IOpcFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6d0b4446_cd73_4ab3_94f4_8ccdf6116154);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcFactory_Vtbl {
@@ -403,9 +355,7 @@ pub struct IOpcFactory_Vtbl {
     WritePackageToStream: usize,
     pub CreateDigitalSignatureManager: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, package: *mut ::core::ffi::c_void, signaturemanager: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcPackage(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcPackage, IOpcPackage_Vtbl, 0x42195949_3b79_4fc8_89c6_fc7fb979ee70);
 impl IOpcPackage {
     pub unsafe fn GetPartSet(&self) -> ::windows_core::Result<IOpcPartSet> {
         let mut result__ = ::std::mem::zeroed();
@@ -417,12 +367,6 @@ impl IOpcPackage {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcPackage, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcPackage {
-    type Vtable = IOpcPackage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcPackage {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x42195949_3b79_4fc8_89c6_fc7fb979ee70);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcPackage_Vtbl {
@@ -430,9 +374,7 @@ pub struct IOpcPackage_Vtbl {
     pub GetPartSet: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, partset: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetRelationshipSet: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, relationshipset: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcPart(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcPart, IOpcPart_Vtbl, 0x42195949_3b79_4fc8_89c6_fc7fb979ee71);
 impl IOpcPart {
     pub unsafe fn GetRelationshipSet(&self) -> ::windows_core::Result<IOpcRelationshipSet> {
         let mut result__ = ::std::mem::zeroed();
@@ -460,12 +402,6 @@ impl IOpcPart {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcPart, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcPart {
-    type Vtable = IOpcPart_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcPart {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x42195949_3b79_4fc8_89c6_fc7fb979ee71);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcPart_Vtbl {
@@ -482,9 +418,7 @@ pub struct IOpcPart_Vtbl {
     pub GetContentType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, contenttype: *mut ::windows_core::PWSTR) -> ::windows_core::HRESULT,
     pub GetCompressionOptions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, compressionoptions: *mut OPC_COMPRESSION_OPTIONS) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcPartEnumerator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcPartEnumerator, IOpcPartEnumerator_Vtbl, 0x42195949_3b79_4fc8_89c6_fc7fb979ee75);
 impl IOpcPartEnumerator {
     pub unsafe fn MoveNext(&self) -> ::windows_core::Result<super::super::super::Foundation::BOOL> {
         let mut result__ = ::std::mem::zeroed();
@@ -504,12 +438,6 @@ impl IOpcPartEnumerator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcPartEnumerator, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcPartEnumerator {
-    type Vtable = IOpcPartEnumerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcPartEnumerator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x42195949_3b79_4fc8_89c6_fc7fb979ee75);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcPartEnumerator_Vtbl {
@@ -519,9 +447,7 @@ pub struct IOpcPartEnumerator_Vtbl {
     pub GetCurrent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, part: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, copy: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcPartSet(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcPartSet, IOpcPartSet_Vtbl, 0x42195949_3b79_4fc8_89c6_fc7fb979ee73);
 impl IOpcPartSet {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
     #[cfg(feature = "Win32_System_Com")]
@@ -565,12 +491,6 @@ impl IOpcPartSet {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcPartSet, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcPartSet {
-    type Vtable = IOpcPartSet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcPartSet {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x42195949_3b79_4fc8_89c6_fc7fb979ee73);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcPartSet_Vtbl {
@@ -593,11 +513,8 @@ pub struct IOpcPartSet_Vtbl {
     PartExists: usize,
     pub GetEnumerator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, partenumerator: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc = "Required features: `\"Win32_System_Com\"`"]
 #[cfg(feature = "Win32_System_Com")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcPartUri(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcPartUri, IOpcPartUri_Vtbl, 0x7d3babe7_88b2_46ba_85cb_4203cb016c87);
 #[cfg(feature = "Win32_System_Com")]
 impl IOpcPartUri {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -797,14 +714,6 @@ impl IOpcPartUri {
 #[cfg(feature = "Win32_System_Com")]
 ::windows_core::imp::interface_hierarchy!(IOpcPartUri, ::windows_core::IUnknown, super::super::super::System::Com::IUri, IOpcUri);
 #[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::Interface for IOpcPartUri {
-    type Vtable = IOpcPartUri_Vtbl;
-}
-#[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::ComInterface for IOpcPartUri {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7d3babe7_88b2_46ba_85cb_4203cb016c87);
-}
-#[cfg(feature = "Win32_System_Com")]
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcPartUri_Vtbl {
@@ -819,9 +728,7 @@ pub struct IOpcPartUri_Vtbl {
     GetSourceUri: usize,
     pub IsRelationshipsPartUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, isrelationshipuri: *mut super::super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcRelationship(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcRelationship, IOpcRelationship_Vtbl, 0x42195949_3b79_4fc8_89c6_fc7fb979ee72);
 impl IOpcRelationship {
     pub unsafe fn GetId(&self) -> ::windows_core::Result<::windows_core::PWSTR> {
         let mut result__ = ::std::mem::zeroed();
@@ -849,12 +756,6 @@ impl IOpcRelationship {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcRelationship, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcRelationship {
-    type Vtable = IOpcRelationship_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcRelationship {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x42195949_3b79_4fc8_89c6_fc7fb979ee72);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcRelationship_Vtbl {
@@ -871,9 +772,7 @@ pub struct IOpcRelationship_Vtbl {
     GetTargetUri: usize,
     pub GetTargetMode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, targetmode: *mut OPC_URI_TARGET_MODE) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcRelationshipEnumerator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcRelationshipEnumerator, IOpcRelationshipEnumerator_Vtbl, 0x42195949_3b79_4fc8_89c6_fc7fb979ee76);
 impl IOpcRelationshipEnumerator {
     pub unsafe fn MoveNext(&self) -> ::windows_core::Result<super::super::super::Foundation::BOOL> {
         let mut result__ = ::std::mem::zeroed();
@@ -893,12 +792,6 @@ impl IOpcRelationshipEnumerator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcRelationshipEnumerator, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcRelationshipEnumerator {
-    type Vtable = IOpcRelationshipEnumerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcRelationshipEnumerator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x42195949_3b79_4fc8_89c6_fc7fb979ee76);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcRelationshipEnumerator_Vtbl {
@@ -908,9 +801,7 @@ pub struct IOpcRelationshipEnumerator_Vtbl {
     pub GetCurrent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, relationship: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, copy: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcRelationshipSelector(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcRelationshipSelector, IOpcRelationshipSelector_Vtbl, 0xf8f26c7f_b28f_4899_84c8_5d5639ede75f);
 impl IOpcRelationshipSelector {
     pub unsafe fn GetSelectorType(&self) -> ::windows_core::Result<OPC_RELATIONSHIP_SELECTOR> {
         let mut result__ = ::std::mem::zeroed();
@@ -922,12 +813,6 @@ impl IOpcRelationshipSelector {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcRelationshipSelector, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcRelationshipSelector {
-    type Vtable = IOpcRelationshipSelector_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcRelationshipSelector {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf8f26c7f_b28f_4899_84c8_5d5639ede75f);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcRelationshipSelector_Vtbl {
@@ -935,9 +820,7 @@ pub struct IOpcRelationshipSelector_Vtbl {
     pub GetSelectorType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, selector: *mut OPC_RELATIONSHIP_SELECTOR) -> ::windows_core::HRESULT,
     pub GetSelectionCriterion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, selectioncriterion: *mut ::windows_core::PWSTR) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcRelationshipSelectorEnumerator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcRelationshipSelectorEnumerator, IOpcRelationshipSelectorEnumerator_Vtbl, 0x5e50a181_a91b_48ac_88d2_bca3d8f8c0b1);
 impl IOpcRelationshipSelectorEnumerator {
     pub unsafe fn MoveNext(&self) -> ::windows_core::Result<super::super::super::Foundation::BOOL> {
         let mut result__ = ::std::mem::zeroed();
@@ -957,12 +840,6 @@ impl IOpcRelationshipSelectorEnumerator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcRelationshipSelectorEnumerator, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcRelationshipSelectorEnumerator {
-    type Vtable = IOpcRelationshipSelectorEnumerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcRelationshipSelectorEnumerator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5e50a181_a91b_48ac_88d2_bca3d8f8c0b1);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcRelationshipSelectorEnumerator_Vtbl {
@@ -972,9 +849,7 @@ pub struct IOpcRelationshipSelectorEnumerator_Vtbl {
     pub GetCurrent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, relationshipselector: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, copy: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcRelationshipSelectorSet(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcRelationshipSelectorSet, IOpcRelationshipSelectorSet_Vtbl, 0x6e34c269_a4d3_47c0_b5c4_87ff2b3b6136);
 impl IOpcRelationshipSelectorSet {
     pub unsafe fn Create<P0>(&self, selector: OPC_RELATIONSHIP_SELECTOR, selectioncriterion: P0) -> ::windows_core::Result<IOpcRelationshipSelector>
     where
@@ -995,12 +870,6 @@ impl IOpcRelationshipSelectorSet {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcRelationshipSelectorSet, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcRelationshipSelectorSet {
-    type Vtable = IOpcRelationshipSelectorSet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcRelationshipSelectorSet {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6e34c269_a4d3_47c0_b5c4_87ff2b3b6136);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcRelationshipSelectorSet_Vtbl {
@@ -1009,9 +878,7 @@ pub struct IOpcRelationshipSelectorSet_Vtbl {
     pub Delete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, relationshipselector: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetEnumerator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, relationshipselectorenumerator: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcRelationshipSet(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcRelationshipSet, IOpcRelationshipSet_Vtbl, 0x42195949_3b79_4fc8_89c6_fc7fb979ee74);
 impl IOpcRelationshipSet {
     pub unsafe fn GetRelationship<P0>(&self, relationshipidentifier: P0) -> ::windows_core::Result<IOpcRelationship>
     where
@@ -1063,12 +930,6 @@ impl IOpcRelationshipSet {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcRelationshipSet, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcRelationshipSet {
-    type Vtable = IOpcRelationshipSet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcRelationshipSet {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x42195949_3b79_4fc8_89c6_fc7fb979ee74);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcRelationshipSet_Vtbl {
@@ -1087,30 +948,20 @@ pub struct IOpcRelationshipSet_Vtbl {
     #[cfg(not(feature = "Win32_System_Com"))]
     GetRelationshipsContentStream: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSignatureCustomObject(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSignatureCustomObject, IOpcSignatureCustomObject_Vtbl, 0x5d77a19e_62c1_44e7_becd_45da5ae51a56);
 impl IOpcSignatureCustomObject {
     pub unsafe fn GetXml(&self, xmlmarkup: *mut *mut u8, count: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).GetXml)(::windows_core::Interface::as_raw(self), xmlmarkup, count).ok()
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSignatureCustomObject, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSignatureCustomObject {
-    type Vtable = IOpcSignatureCustomObject_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSignatureCustomObject {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5d77a19e_62c1_44e7_becd_45da5ae51a56);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSignatureCustomObject_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub GetXml: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, xmlmarkup: *mut *mut u8, count: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSignatureCustomObjectEnumerator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSignatureCustomObjectEnumerator, IOpcSignatureCustomObjectEnumerator_Vtbl, 0x5ee4fe1d_e1b0_4683_8079_7ea0fcf80b4c);
 impl IOpcSignatureCustomObjectEnumerator {
     pub unsafe fn MoveNext(&self) -> ::windows_core::Result<super::super::super::Foundation::BOOL> {
         let mut result__ = ::std::mem::zeroed();
@@ -1130,12 +981,6 @@ impl IOpcSignatureCustomObjectEnumerator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSignatureCustomObjectEnumerator, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSignatureCustomObjectEnumerator {
-    type Vtable = IOpcSignatureCustomObjectEnumerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSignatureCustomObjectEnumerator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5ee4fe1d_e1b0_4683_8079_7ea0fcf80b4c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSignatureCustomObjectEnumerator_Vtbl {
@@ -1145,9 +990,7 @@ pub struct IOpcSignatureCustomObjectEnumerator_Vtbl {
     pub GetCurrent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, customobject: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, copy: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSignatureCustomObjectSet(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSignatureCustomObjectSet, IOpcSignatureCustomObjectSet_Vtbl, 0x8f792ac5_7947_4e11_bc3d_2659ff046ae1);
 impl IOpcSignatureCustomObjectSet {
     pub unsafe fn Create(&self, xmlmarkup: &[u8]) -> ::windows_core::Result<IOpcSignatureCustomObject> {
         let mut result__ = ::std::mem::zeroed();
@@ -1165,12 +1008,6 @@ impl IOpcSignatureCustomObjectSet {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSignatureCustomObjectSet, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSignatureCustomObjectSet {
-    type Vtable = IOpcSignatureCustomObjectSet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSignatureCustomObjectSet {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8f792ac5_7947_4e11_bc3d_2659ff046ae1);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSignatureCustomObjectSet_Vtbl {
@@ -1179,9 +1016,7 @@ pub struct IOpcSignatureCustomObjectSet_Vtbl {
     pub Delete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, customobject: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetEnumerator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, customobjectenumerator: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSignaturePartReference(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSignaturePartReference, IOpcSignaturePartReference_Vtbl, 0xe24231ca_59f4_484e_b64b_36eeda36072c);
 impl IOpcSignaturePartReference {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1206,12 +1041,6 @@ impl IOpcSignaturePartReference {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSignaturePartReference, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSignaturePartReference {
-    type Vtable = IOpcSignaturePartReference_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSignaturePartReference {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe24231ca_59f4_484e_b64b_36eeda36072c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSignaturePartReference_Vtbl {
@@ -1225,9 +1054,7 @@ pub struct IOpcSignaturePartReference_Vtbl {
     pub GetDigestValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, digestvalue: *mut *mut u8, count: *mut u32) -> ::windows_core::HRESULT,
     pub GetTransformMethod: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, transformmethod: *mut OPC_CANONICALIZATION_METHOD) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSignaturePartReferenceEnumerator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSignaturePartReferenceEnumerator, IOpcSignaturePartReferenceEnumerator_Vtbl, 0x80eb1561_8c77_49cf_8266_459b356ee99a);
 impl IOpcSignaturePartReferenceEnumerator {
     pub unsafe fn MoveNext(&self) -> ::windows_core::Result<super::super::super::Foundation::BOOL> {
         let mut result__ = ::std::mem::zeroed();
@@ -1247,12 +1074,6 @@ impl IOpcSignaturePartReferenceEnumerator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSignaturePartReferenceEnumerator, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSignaturePartReferenceEnumerator {
-    type Vtable = IOpcSignaturePartReferenceEnumerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSignaturePartReferenceEnumerator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x80eb1561_8c77_49cf_8266_459b356ee99a);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSignaturePartReferenceEnumerator_Vtbl {
@@ -1262,9 +1083,7 @@ pub struct IOpcSignaturePartReferenceEnumerator_Vtbl {
     pub GetCurrent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, partreference: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, copy: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSignaturePartReferenceSet(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSignaturePartReferenceSet, IOpcSignaturePartReferenceSet_Vtbl, 0x6c9fe28c_ecd9_4b22_9d36_7fdde670fec0);
 impl IOpcSignaturePartReferenceSet {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1288,12 +1107,6 @@ impl IOpcSignaturePartReferenceSet {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSignaturePartReferenceSet, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSignaturePartReferenceSet {
-    type Vtable = IOpcSignaturePartReferenceSet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSignaturePartReferenceSet {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6c9fe28c_ecd9_4b22_9d36_7fdde670fec0);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSignaturePartReferenceSet_Vtbl {
@@ -1305,9 +1118,7 @@ pub struct IOpcSignaturePartReferenceSet_Vtbl {
     pub Delete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, partreference: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetEnumerator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, partreferenceenumerator: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSignatureReference(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSignatureReference, IOpcSignatureReference_Vtbl, 0x1b47005e_3011_4edc_be6f_0f65e5ab0342);
 impl IOpcSignatureReference {
     pub unsafe fn GetId(&self) -> ::windows_core::Result<::windows_core::PWSTR> {
         let mut result__ = ::std::mem::zeroed();
@@ -1336,12 +1147,6 @@ impl IOpcSignatureReference {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSignatureReference, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSignatureReference {
-    type Vtable = IOpcSignatureReference_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSignatureReference {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1b47005e_3011_4edc_be6f_0f65e5ab0342);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSignatureReference_Vtbl {
@@ -1356,9 +1161,7 @@ pub struct IOpcSignatureReference_Vtbl {
     pub GetDigestMethod: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, digestmethod: *mut ::windows_core::PWSTR) -> ::windows_core::HRESULT,
     pub GetDigestValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, digestvalue: *mut *mut u8, count: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSignatureReferenceEnumerator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSignatureReferenceEnumerator, IOpcSignatureReferenceEnumerator_Vtbl, 0xcfa59a45_28b1_4868_969e_fa8097fdc12a);
 impl IOpcSignatureReferenceEnumerator {
     pub unsafe fn MoveNext(&self) -> ::windows_core::Result<super::super::super::Foundation::BOOL> {
         let mut result__ = ::std::mem::zeroed();
@@ -1378,12 +1181,6 @@ impl IOpcSignatureReferenceEnumerator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSignatureReferenceEnumerator, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSignatureReferenceEnumerator {
-    type Vtable = IOpcSignatureReferenceEnumerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSignatureReferenceEnumerator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcfa59a45_28b1_4868_969e_fa8097fdc12a);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSignatureReferenceEnumerator_Vtbl {
@@ -1393,9 +1190,7 @@ pub struct IOpcSignatureReferenceEnumerator_Vtbl {
     pub GetCurrent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reference: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, copy: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSignatureReferenceSet(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSignatureReferenceSet, IOpcSignatureReferenceSet_Vtbl, 0xf3b02d31_ab12_42dd_9e2f_2b16761c3c1e);
 impl IOpcSignatureReferenceSet {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1421,12 +1216,6 @@ impl IOpcSignatureReferenceSet {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSignatureReferenceSet, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSignatureReferenceSet {
-    type Vtable = IOpcSignatureReferenceSet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSignatureReferenceSet {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf3b02d31_ab12_42dd_9e2f_2b16761c3c1e);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSignatureReferenceSet_Vtbl {
@@ -1438,9 +1227,7 @@ pub struct IOpcSignatureReferenceSet_Vtbl {
     pub Delete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reference: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetEnumerator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, referenceenumerator: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSignatureRelationshipReference(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSignatureRelationshipReference, IOpcSignatureRelationshipReference_Vtbl, 0x57babac6_9d4a_4e50_8b86_e5d4051eae7c);
 impl IOpcSignatureRelationshipReference {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1469,12 +1256,6 @@ impl IOpcSignatureRelationshipReference {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSignatureRelationshipReference, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSignatureRelationshipReference {
-    type Vtable = IOpcSignatureRelationshipReference_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSignatureRelationshipReference {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x57babac6_9d4a_4e50_8b86_e5d4051eae7c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSignatureRelationshipReference_Vtbl {
@@ -1489,9 +1270,7 @@ pub struct IOpcSignatureRelationshipReference_Vtbl {
     pub GetRelationshipSigningOption: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, relationshipsigningoption: *mut OPC_RELATIONSHIPS_SIGNING_OPTION) -> ::windows_core::HRESULT,
     pub GetRelationshipSelectorEnumerator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, selectorenumerator: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSignatureRelationshipReferenceEnumerator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSignatureRelationshipReferenceEnumerator, IOpcSignatureRelationshipReferenceEnumerator_Vtbl, 0x773ba3e4_f021_48e4_aa04_9816db5d3495);
 impl IOpcSignatureRelationshipReferenceEnumerator {
     pub unsafe fn MoveNext(&self) -> ::windows_core::Result<super::super::super::Foundation::BOOL> {
         let mut result__ = ::std::mem::zeroed();
@@ -1511,12 +1290,6 @@ impl IOpcSignatureRelationshipReferenceEnumerator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSignatureRelationshipReferenceEnumerator, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSignatureRelationshipReferenceEnumerator {
-    type Vtable = IOpcSignatureRelationshipReferenceEnumerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSignatureRelationshipReferenceEnumerator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x773ba3e4_f021_48e4_aa04_9816db5d3495);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSignatureRelationshipReferenceEnumerator_Vtbl {
@@ -1526,9 +1299,7 @@ pub struct IOpcSignatureRelationshipReferenceEnumerator_Vtbl {
     pub GetCurrent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, relationshipreference: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, copy: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSignatureRelationshipReferenceSet(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSignatureRelationshipReferenceSet, IOpcSignatureRelationshipReferenceSet_Vtbl, 0x9f863ca5_3631_404c_828d_807e0715069b);
 impl IOpcSignatureRelationshipReferenceSet {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
     #[cfg(feature = "Win32_System_Com")]
@@ -1557,12 +1328,6 @@ impl IOpcSignatureRelationshipReferenceSet {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSignatureRelationshipReferenceSet, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSignatureRelationshipReferenceSet {
-    type Vtable = IOpcSignatureRelationshipReferenceSet_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSignatureRelationshipReferenceSet {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9f863ca5_3631_404c_828d_807e0715069b);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSignatureRelationshipReferenceSet_Vtbl {
@@ -1575,9 +1340,7 @@ pub struct IOpcSignatureRelationshipReferenceSet_Vtbl {
     pub Delete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, relationshipreference: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetEnumerator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, relationshipreferenceenumerator: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcSigningOptions(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcSigningOptions, IOpcSigningOptions_Vtbl, 0x50d2d6a5_7aeb_46c0_b241_43ab0e9b407e);
 impl IOpcSigningOptions {
     pub unsafe fn GetSignatureId(&self) -> ::windows_core::Result<::windows_core::PWSTR> {
         let mut result__ = ::std::mem::zeroed();
@@ -1659,12 +1422,6 @@ impl IOpcSigningOptions {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IOpcSigningOptions, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpcSigningOptions {
-    type Vtable = IOpcSigningOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpcSigningOptions {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x50d2d6a5_7aeb_46c0_b241_43ab0e9b407e);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpcSigningOptions_Vtbl {
@@ -1693,11 +1450,8 @@ pub struct IOpcSigningOptions_Vtbl {
     #[cfg(not(feature = "Win32_System_Com"))]
     SetSignaturePartName: usize,
 }
-#[doc = "Required features: `\"Win32_System_Com\"`"]
 #[cfg(feature = "Win32_System_Com")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpcUri(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IOpcUri, IOpcUri_Vtbl, 0xbc9c1b9b_d62c_49eb_aef0_3b4e0b28ebed);
 #[cfg(feature = "Win32_System_Com")]
 impl IOpcUri {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
@@ -1877,14 +1631,6 @@ impl IOpcUri {
 }
 #[cfg(feature = "Win32_System_Com")]
 ::windows_core::imp::interface_hierarchy!(IOpcUri, ::windows_core::IUnknown, super::super::super::System::Com::IUri);
-#[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::Interface for IOpcUri {
-    type Vtable = IOpcUri_Vtbl;
-}
-#[cfg(feature = "Win32_System_Com")]
-unsafe impl ::windows_core::ComInterface for IOpcUri {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbc9c1b9b_d62c_49eb_aef0_3b4e0b28ebed);
-}
 #[cfg(feature = "Win32_System_Com")]
 #[repr(C)]
 #[doc(hidden)]

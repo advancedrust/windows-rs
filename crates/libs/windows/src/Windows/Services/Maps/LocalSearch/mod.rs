@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILocalCategoriesStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILocalCategoriesStatics {
-    type Vtable = ILocalCategoriesStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILocalCategoriesStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf49399f5_8261_4321_9974_ef92d49a8dca);
-}
+::windows_core::imp::com_interface!(ILocalCategoriesStatics, ILocalCategoriesStatics_Vtbl, 0xf49399f5_8261_4321_9974_ef92d49a8dca);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILocalCategoriesStatics_Vtbl {
@@ -21,16 +12,7 @@ pub struct ILocalCategoriesStatics_Vtbl {
     pub SeeDo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Shop: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILocalLocation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILocalLocation {
-    type Vtable = ILocalLocation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILocalLocation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbb0fe9ab_4502_4f2c_94a9_0d60de0e2163);
-}
+::windows_core::imp::com_interface!(ILocalLocation, ILocalLocation_Vtbl, 0xbb0fe9ab_4502_4f2c_94a9_0d60de0e2163);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILocalLocation_Vtbl {
@@ -46,16 +28,7 @@ pub struct ILocalLocation_Vtbl {
     pub PhoneNumber: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub DataAttribution: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILocalLocation2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILocalLocation2 {
-    type Vtable = ILocalLocation2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILocalLocation2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6e9e307c_ecb5_4ffc_bb8c_ba50ba8c2dc6);
-}
+::windows_core::imp::com_interface!(ILocalLocation2, ILocalLocation2_Vtbl, 0x6e9e307c_ecb5_4ffc_bb8c_ba50ba8c2dc6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILocalLocation2_Vtbl {
@@ -67,16 +40,7 @@ pub struct ILocalLocation2_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     HoursOfOperation: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILocalLocationFinderResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILocalLocationFinderResult {
-    type Vtable = ILocalLocationFinderResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILocalLocationFinderResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd09b6cc6_f338_4191_9fd8_5440b9a68f52);
-}
+::windows_core::imp::com_interface!(ILocalLocationFinderResult, ILocalLocationFinderResult_Vtbl, 0xd09b6cc6_f338_4191_9fd8_5440b9a68f52);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILocalLocationFinderResult_Vtbl {
@@ -87,16 +51,7 @@ pub struct ILocalLocationFinderResult_Vtbl {
     LocalLocations: usize,
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut LocalLocationFinderStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILocalLocationFinderStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILocalLocationFinderStatics {
-    type Vtable = ILocalLocationFinderStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILocalLocationFinderStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd2ef7344_a0de_48ca_81a8_07c7dcfd37ab);
-}
+::windows_core::imp::com_interface!(ILocalLocationFinderStatics, ILocalLocationFinderStatics_Vtbl, 0xd2ef7344_a0de_48ca_81a8_07c7dcfd37ab);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILocalLocationFinderStatics_Vtbl {
@@ -106,16 +61,7 @@ pub struct ILocalLocationFinderStatics_Vtbl {
     #[cfg(not(feature = "Devices_Geolocation"))]
     FindLocalLocationsAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILocalLocationHoursOfOperationItem(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILocalLocationHoursOfOperationItem {
-    type Vtable = ILocalLocationHoursOfOperationItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILocalLocationHoursOfOperationItem {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x23548c72_a1c7_43f1_a4f0_1091c39ec640);
-}
+::windows_core::imp::com_interface!(ILocalLocationHoursOfOperationItem, ILocalLocationHoursOfOperationItem_Vtbl, 0x23548c72_a1c7_43f1_a4f0_1091c39ec640);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILocalLocationHoursOfOperationItem_Vtbl {
@@ -127,16 +73,7 @@ pub struct ILocalLocationHoursOfOperationItem_Vtbl {
     pub Start: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
     pub Span: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILocalLocationRatingInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILocalLocationRatingInfo {
-    type Vtable = ILocalLocationRatingInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILocalLocationRatingInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcb1dab56_3354_4311_8bc0_a2d4d5eb806e);
-}
+::windows_core::imp::com_interface!(ILocalLocationRatingInfo, ILocalLocationRatingInfo_Vtbl, 0xcb1dab56_3354_4311_8bc0_a2d4d5eb806e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILocalLocationRatingInfo_Vtbl {
@@ -145,16 +82,7 @@ pub struct ILocalLocationRatingInfo_Vtbl {
     pub RatingCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ProviderIdentifier: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPlaceInfoHelperStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPlaceInfoHelperStatics {
-    type Vtable = IPlaceInfoHelperStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPlaceInfoHelperStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdd1ca9a7_a9c6_491b_bc09_e80fcea48ee6);
-}
+::windows_core::imp::com_interface!(IPlaceInfoHelperStatics, IPlaceInfoHelperStatics_Vtbl, 0xdd1ca9a7_a9c6_491b_bc09_e80fcea48ee6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPlaceInfoHelperStatics_Vtbl {

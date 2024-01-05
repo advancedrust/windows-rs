@@ -30,13 +30,15 @@ pub fn wide_trim_end(mut wide: &[u16]) -> &[u16] {
     wide
 }
 
+// TODO: test what the perf impact would be to make these proc macros. That would also allow them to support generic interfaces.
+
 #[doc(hidden)]
 #[macro_export]
 macro_rules! interface_hierarchy {
-    ($child:ty, $parent:ty) => {
+    ($child:ident, $parent:ty) => {
         impl ::windows_core::CanInto<$parent> for $child {}
     };
-    ($child:ty, $first:ty, $($rest:ty),+) => {
+    ($child:ident, $first:ty, $($rest:ty),+) => {
         $crate::imp::interface_hierarchy!($child, $first);
         $crate::imp::interface_hierarchy!($child, $($rest),+);
     };
@@ -44,3 +46,59 @@ macro_rules! interface_hierarchy {
 
 #[doc(hidden)]
 pub use interface_hierarchy;
+
+#[doc(hidden)]
+#[macro_export]
+macro_rules! required_hierarchy {
+    ($child:ident, $parent:ty) => {
+        impl ::windows_core::CanInto<$parent> for $child { const QUERY: bool = true; }
+    };
+    ($child:ident, $first:ty, $($rest:ty),+) => {
+        $crate::imp::required_hierarchy!($child, $first);
+        $crate::imp::required_hierarchy!($child, $($rest),+);
+    };
+}
+
+#[doc(hidden)]
+pub use required_hierarchy;
+
+#[doc(hidden)]
+#[macro_export]
+macro_rules! interface {
+    ($name:ident, $vtbl:ident) => {
+        #[repr(transparent)]
+        #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
+        pub struct $name(::std::ptr::NonNull<::std::ffi::c_void>);
+        // impl ::windows_core::TypeKind for $name {
+        //     type TypeKind = ::windows_core::CopyType;
+        // }
+        unsafe impl ::windows_core::Interface for $name {
+            type Vtable = $vtbl;
+        }
+    };
+}
+
+#[doc(hidden)]
+pub use interface;
+
+#[doc(hidden)]
+#[macro_export]
+macro_rules! com_interface {
+    ($name:ident, $vtbl:ident, $iid:literal) => {
+        #[repr(transparent)]
+        #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
+        pub struct $name(::windows_core::IUnknown);
+        // impl ::windows_core::TypeKind for $name {
+        //     type TypeKind = ::windows_core::ReferenceType;
+        // }
+        unsafe impl ::windows_core::Interface for $name {
+            type Vtable = $vtbl;
+        }
+        unsafe impl ::windows_core::ComInterface for $name {
+            const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128($iid);
+        }
+    };
+}
+
+#[doc(hidden)]
+pub use com_interface;

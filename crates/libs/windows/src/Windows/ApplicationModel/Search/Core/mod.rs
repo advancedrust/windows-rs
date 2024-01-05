@@ -1,28 +1,10 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IRequestingFocusOnKeyboardInputEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IRequestingFocusOnKeyboardInputEventArgs {
-    type Vtable = IRequestingFocusOnKeyboardInputEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IRequestingFocusOnKeyboardInputEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa1195f27_b1a7_41a2_879d_6a68687e5985);
-}
+::windows_core::imp::com_interface!(IRequestingFocusOnKeyboardInputEventArgs, IRequestingFocusOnKeyboardInputEventArgs_Vtbl, 0xa1195f27_b1a7_41a2_879d_6a68687e5985);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IRequestingFocusOnKeyboardInputEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISearchSuggestion(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISearchSuggestion {
-    type Vtable = ISearchSuggestion_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISearchSuggestion {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5b5554b0_1527_437b_95c5_8d18d2b8af55);
-}
+::windows_core::imp::com_interface!(ISearchSuggestion, ISearchSuggestion_Vtbl, 0x5b5554b0_1527_437b_95c5_8d18d2b8af55);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISearchSuggestion_Vtbl {
@@ -37,16 +19,7 @@ pub struct ISearchSuggestion_Vtbl {
     Image: usize,
     pub ImageAlternateText: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISearchSuggestionManager(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISearchSuggestionManager {
-    type Vtable = ISearchSuggestionManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISearchSuggestionManager {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3f0c50a1_cb9d_497b_b500_3c04ac959ad2);
-}
+::windows_core::imp::com_interface!(ISearchSuggestionManager, ISearchSuggestionManager_Vtbl, 0x3f0c50a1_cb9d_497b_b500_3c04ac959ad2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISearchSuggestionManager_Vtbl {
@@ -71,16 +44,7 @@ pub struct ISearchSuggestionManager_Vtbl {
     pub RequestingFocusOnKeyboardInput: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveRequestingFocusOnKeyboardInput: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISearchSuggestionsRequestedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISearchSuggestionsRequestedEventArgs {
-    type Vtable = ISearchSuggestionsRequestedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISearchSuggestionsRequestedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6fd519e5_9e7e_4ab4_8be3_c76b1bd4344a);
-}
+::windows_core::imp::com_interface!(ISearchSuggestionsRequestedEventArgs, ISearchSuggestionsRequestedEventArgs_Vtbl, 0x6fd519e5_9e7e_4ab4_8be3_c76b1bd4344a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISearchSuggestionsRequestedEventArgs_Vtbl {

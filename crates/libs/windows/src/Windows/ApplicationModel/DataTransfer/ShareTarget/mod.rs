@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IQuickLink(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IQuickLink {
-    type Vtable = IQuickLink_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IQuickLink {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x603e4308_f0be_4adc_acc9_8b27ab9cf556);
-}
+::windows_core::imp::com_interface!(IQuickLink, IQuickLink_Vtbl, 0x603e4308_f0be_4adc_acc9_8b27ab9cf556);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IQuickLink_Vtbl {
@@ -33,16 +24,7 @@ pub struct IQuickLink_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     SupportedFileTypes: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IShareOperation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IShareOperation {
-    type Vtable = IShareOperation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IShareOperation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2246bab8_d0f8_41c1_a82a_4137db6504fb);
-}
+::windows_core::imp::com_interface!(IShareOperation, IShareOperation_Vtbl, 0x2246bab8_d0f8_41c1_a82a_4137db6504fb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IShareOperation_Vtbl {
@@ -57,32 +39,14 @@ pub struct IShareOperation_Vtbl {
     pub ReportCompleted: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IShareOperation2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IShareOperation2 {
-    type Vtable = IShareOperation2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IShareOperation2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0ffb97c1_9778_4a09_8e5b_cb5e482d0555);
-}
+::windows_core::imp::com_interface!(IShareOperation2, IShareOperation2_Vtbl, 0x0ffb97c1_9778_4a09_8e5b_cb5e482d0555);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IShareOperation2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub DismissUI: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IShareOperation3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IShareOperation3 {
-    type Vtable = IShareOperation3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IShareOperation3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5ef6b382_b7a7_4571_a2a6_994a034988b2);
-}
+::windows_core::imp::com_interface!(IShareOperation3, IShareOperation3_Vtbl, 0x5ef6b382_b7a7_4571_a2a6_994a034988b2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IShareOperation3_Vtbl {

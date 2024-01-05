@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAnimationDescription(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAnimationDescription {
-    type Vtable = IAnimationDescription_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAnimationDescription {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7d11a549_be3d_41de_b081_05c149962f9b);
-}
+::windows_core::imp::com_interface!(IAnimationDescription, IAnimationDescription_Vtbl, 0x7d11a549_be3d_41de_b081_05c149962f9b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAnimationDescription_Vtbl {
@@ -21,32 +12,14 @@ pub struct IAnimationDescription_Vtbl {
     pub DelayLimit: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::TimeSpan) -> ::windows_core::HRESULT,
     pub ZOrder: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAnimationDescriptionFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAnimationDescriptionFactory {
-    type Vtable = IAnimationDescriptionFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAnimationDescriptionFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc6e27abe_c1fb_48b5_9271_ecc70ac86ef0);
-}
+::windows_core::imp::com_interface!(IAnimationDescriptionFactory, IAnimationDescriptionFactory_Vtbl, 0xc6e27abe_c1fb_48b5_9271_ecc70ac86ef0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAnimationDescriptionFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, effect: AnimationEffect, target: AnimationEffectTarget, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOpacityAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOpacityAnimation {
-    type Vtable = IOpacityAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOpacityAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x803aabe5_ee7e_455f_84e9_2506afb8d2b4);
-}
+::windows_core::imp::com_interface!(IOpacityAnimation, IOpacityAnimation_Vtbl, 0x803aabe5_ee7e_455f_84e9_2506afb8d2b4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOpacityAnimation_Vtbl {
@@ -54,9 +27,7 @@ pub struct IOpacityAnimation_Vtbl {
     pub InitialOpacity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub FinalOpacity: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPropertyAnimation(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IPropertyAnimation, IPropertyAnimation_Vtbl, 0x3a01b4da_4d8c_411e_b615_1ade683a9903);
 impl IPropertyAnimation {
     pub fn Type(&self) -> ::windows_core::Result<PropertyAnimationType> {
         let this = self;
@@ -98,12 +69,6 @@ impl IPropertyAnimation {
 impl ::windows_core::RuntimeType for IPropertyAnimation {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IPropertyAnimation {
-    type Vtable = IPropertyAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPropertyAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3a01b4da_4d8c_411e_b615_1ade683a9903);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPropertyAnimation_Vtbl {
@@ -114,16 +79,7 @@ pub struct IPropertyAnimation_Vtbl {
     pub Control1: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::Point) -> ::windows_core::HRESULT,
     pub Control2: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::Point) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IScaleAnimation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IScaleAnimation {
-    type Vtable = IScaleAnimation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IScaleAnimation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x023552c7_71ab_428c_9c9f_d31780964995);
-}
+::windows_core::imp::com_interface!(IScaleAnimation, IScaleAnimation_Vtbl, 0x023552c7_71ab_428c_9c9f_d31780964995);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IScaleAnimation_Vtbl {
@@ -269,7 +225,7 @@ impl ::windows_core::RuntimeName for OpacityAnimation {
     const NAME: &'static str = "Windows.UI.Core.AnimationMetrics.OpacityAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(OpacityAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IPropertyAnimation> for OpacityAnimation {}
+::windows_core::imp::required_hierarchy!(OpacityAnimation, IPropertyAnimation);
 unsafe impl ::core::marker::Send for OpacityAnimation {}
 unsafe impl ::core::marker::Sync for OpacityAnimation {}
 #[repr(transparent)]
@@ -325,7 +281,7 @@ impl ::windows_core::RuntimeName for PropertyAnimation {
     const NAME: &'static str = "Windows.UI.Core.AnimationMetrics.PropertyAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(PropertyAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IPropertyAnimation> for PropertyAnimation {}
+::windows_core::imp::required_hierarchy!(PropertyAnimation, IPropertyAnimation);
 unsafe impl ::core::marker::Send for PropertyAnimation {}
 unsafe impl ::core::marker::Sync for PropertyAnimation {}
 #[repr(transparent)]
@@ -416,7 +372,7 @@ impl ::windows_core::RuntimeName for ScaleAnimation {
     const NAME: &'static str = "Windows.UI.Core.AnimationMetrics.ScaleAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(ScaleAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IPropertyAnimation> for ScaleAnimation {}
+::windows_core::imp::required_hierarchy!(ScaleAnimation, IPropertyAnimation);
 unsafe impl ::core::marker::Send for ScaleAnimation {}
 unsafe impl ::core::marker::Sync for ScaleAnimation {}
 #[repr(transparent)]
@@ -472,7 +428,7 @@ impl ::windows_core::RuntimeName for TranslationAnimation {
     const NAME: &'static str = "Windows.UI.Core.AnimationMetrics.TranslationAnimation";
 }
 ::windows_core::imp::interface_hierarchy!(TranslationAnimation, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IPropertyAnimation> for TranslationAnimation {}
+::windows_core::imp::required_hierarchy!(TranslationAnimation, IPropertyAnimation);
 unsafe impl ::core::marker::Send for TranslationAnimation {}
 unsafe impl ::core::marker::Sync for TranslationAnimation {}
 #[repr(transparent)]

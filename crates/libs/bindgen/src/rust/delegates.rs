@@ -68,12 +68,23 @@ fn gen_win_delegate(writer: &Writer, def: metadata::TypeDef) -> TokenStream {
     let invoke = winrt_methods::writer(writer, def, generics, metadata::InterfaceKind::Default, method, &mut MethodNames::new(), &mut MethodNames::new());
     let invoke_upcall = winrt_methods::gen_upcall(writer, &signature, quote! { ((*this).invoke) });
 
-    let mut tokens = quote! {
-        #doc
-        #features
-        #[repr(transparent)]
-        #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-        pub struct #ident(pub ::windows_core::IUnknown, #phantoms) where #constraints;
+    let mut tokens = if generics.is_empty() {
+        let iid = writer.guid_literal(metadata::type_def_guid(def));
+        quote! {
+            #features
+            ::windows_core::imp::com_interface!(#ident, #vtbl, #iid);
+        }
+    } else {
+        quote! {
+            #doc
+            #features
+            #[repr(transparent)]
+            #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
+            pub struct #ident(::windows_core::IUnknown, #phantoms) where #constraints;
+        }
+    };
+
+    tokens.combine(&quote! {
         #features
         impl<#constraints> #ident {
             pub fn new<#fn_constraint>(invoke: F) -> Self {
@@ -145,7 +156,7 @@ fn gen_win_delegate(writer: &Writer, def: metadata::TypeDef) -> TokenStream {
                 #invoke_upcall
             }
         }
-    };
+    });
 
     tokens.combine(&writer.interface_trait(def, generics, &ident, &constraints, &features, true));
     tokens.combine(&writer.interface_winrt_trait(def, generics, &ident, &constraints, &phantoms, &features));

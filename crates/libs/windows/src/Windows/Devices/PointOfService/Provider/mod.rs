@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerDisableScannerRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerDisableScannerRequest {
-    type Vtable = IBarcodeScannerDisableScannerRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerDisableScannerRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x88ecf7c0_37b9_4275_8e77_c8e52ae5a9c8);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerDisableScannerRequest, IBarcodeScannerDisableScannerRequest_Vtbl, 0x88ecf7c0_37b9_4275_8e77_c8e52ae5a9c8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerDisableScannerRequest_Vtbl {
@@ -15,16 +6,7 @@ pub struct IBarcodeScannerDisableScannerRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerDisableScannerRequest2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerDisableScannerRequest2 {
-    type Vtable = IBarcodeScannerDisableScannerRequest2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerDisableScannerRequest2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xccdfe625_65c3_4ccc_b457_f39c7a9ea60d);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerDisableScannerRequest2, IBarcodeScannerDisableScannerRequest2_Vtbl, 0xccdfe625_65c3_4ccc_b457_f39c7a9ea60d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerDisableScannerRequest2_Vtbl {
@@ -32,16 +14,7 @@ pub struct IBarcodeScannerDisableScannerRequest2_Vtbl {
     pub ReportFailedWithFailedReasonAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedWithFailedReasonAndDescriptionAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, failedreasondescription: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerDisableScannerRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerDisableScannerRequestEventArgs {
-    type Vtable = IBarcodeScannerDisableScannerRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerDisableScannerRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7006e142_e802_46f5_b604_352a15ce9232);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerDisableScannerRequestEventArgs, IBarcodeScannerDisableScannerRequestEventArgs_Vtbl, 0x7006e142_e802_46f5_b604_352a15ce9232);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerDisableScannerRequestEventArgs_Vtbl {
@@ -49,16 +22,7 @@ pub struct IBarcodeScannerDisableScannerRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerEnableScannerRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerEnableScannerRequest {
-    type Vtable = IBarcodeScannerEnableScannerRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerEnableScannerRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc0b3e9ba_816a_452b_bd77_b7e453ec446d);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerEnableScannerRequest, IBarcodeScannerEnableScannerRequest_Vtbl, 0xc0b3e9ba_816a_452b_bd77_b7e453ec446d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerEnableScannerRequest_Vtbl {
@@ -66,16 +30,7 @@ pub struct IBarcodeScannerEnableScannerRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerEnableScannerRequest2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerEnableScannerRequest2 {
-    type Vtable = IBarcodeScannerEnableScannerRequest2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerEnableScannerRequest2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x71a4f2a8_9905_41ac_9121_b645916a84a1);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerEnableScannerRequest2, IBarcodeScannerEnableScannerRequest2_Vtbl, 0x71a4f2a8_9905_41ac_9121_b645916a84a1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerEnableScannerRequest2_Vtbl {
@@ -83,16 +38,7 @@ pub struct IBarcodeScannerEnableScannerRequest2_Vtbl {
     pub ReportFailedWithFailedReasonAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedWithFailedReasonAndDescriptionAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, failedreasondescription: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerEnableScannerRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerEnableScannerRequestEventArgs {
-    type Vtable = IBarcodeScannerEnableScannerRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerEnableScannerRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x956c9419_7b4e_4451_8c41_8e10cfbc5b41);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerEnableScannerRequestEventArgs, IBarcodeScannerEnableScannerRequestEventArgs_Vtbl, 0x956c9419_7b4e_4451_8c41_8e10cfbc5b41);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerEnableScannerRequestEventArgs_Vtbl {
@@ -100,16 +46,7 @@ pub struct IBarcodeScannerEnableScannerRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerFrameReader(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerFrameReader {
-    type Vtable = IBarcodeScannerFrameReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerFrameReader {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdbc72b07_64c3_482b_93c8_65fb33c22208);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerFrameReader, IBarcodeScannerFrameReader_Vtbl, 0xdbc72b07_64c3_482b_93c8_65fb33c22208);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerFrameReader_Vtbl {
@@ -121,32 +58,14 @@ pub struct IBarcodeScannerFrameReader_Vtbl {
     pub FrameArrived: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveFrameArrived: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerFrameReaderFrameArrivedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerFrameReaderFrameArrivedEventArgs {
-    type Vtable = IBarcodeScannerFrameReaderFrameArrivedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerFrameReaderFrameArrivedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb0bbd604_54fd_436d_8629_712e787223dd);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerFrameReaderFrameArrivedEventArgs, IBarcodeScannerFrameReaderFrameArrivedEventArgs_Vtbl, 0xb0bbd604_54fd_436d_8629_712e787223dd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerFrameReaderFrameArrivedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerGetSymbologyAttributesRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerGetSymbologyAttributesRequest {
-    type Vtable = IBarcodeScannerGetSymbologyAttributesRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerGetSymbologyAttributesRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9774c46a_58e4_4c5f_b8e9_e41467632700);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerGetSymbologyAttributesRequest, IBarcodeScannerGetSymbologyAttributesRequest_Vtbl, 0x9774c46a_58e4_4c5f_b8e9_e41467632700);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerGetSymbologyAttributesRequest_Vtbl {
@@ -155,16 +74,7 @@ pub struct IBarcodeScannerGetSymbologyAttributesRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, attributes: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerGetSymbologyAttributesRequest2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerGetSymbologyAttributesRequest2 {
-    type Vtable = IBarcodeScannerGetSymbologyAttributesRequest2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerGetSymbologyAttributesRequest2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6a6a2b13_75a8_49fb_b852_bfb93d760af7);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerGetSymbologyAttributesRequest2, IBarcodeScannerGetSymbologyAttributesRequest2_Vtbl, 0x6a6a2b13_75a8_49fb_b852_bfb93d760af7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerGetSymbologyAttributesRequest2_Vtbl {
@@ -172,16 +82,7 @@ pub struct IBarcodeScannerGetSymbologyAttributesRequest2_Vtbl {
     pub ReportFailedWithFailedReasonAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedWithFailedReasonAndDescriptionAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, failedreasondescription: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerGetSymbologyAttributesRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerGetSymbologyAttributesRequestEventArgs {
-    type Vtable = IBarcodeScannerGetSymbologyAttributesRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerGetSymbologyAttributesRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7f89de3e_fb5d_493c_b402_356b24d574a6);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerGetSymbologyAttributesRequestEventArgs, IBarcodeScannerGetSymbologyAttributesRequestEventArgs_Vtbl, 0x7f89de3e_fb5d_493c_b402_356b24d574a6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerGetSymbologyAttributesRequestEventArgs_Vtbl {
@@ -189,16 +90,7 @@ pub struct IBarcodeScannerGetSymbologyAttributesRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerHideVideoPreviewRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerHideVideoPreviewRequest {
-    type Vtable = IBarcodeScannerHideVideoPreviewRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerHideVideoPreviewRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfa4ebe7f_6670_40e1_b90b_bb10d8d425fa);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerHideVideoPreviewRequest, IBarcodeScannerHideVideoPreviewRequest_Vtbl, 0xfa4ebe7f_6670_40e1_b90b_bb10d8d425fa);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerHideVideoPreviewRequest_Vtbl {
@@ -206,16 +98,7 @@ pub struct IBarcodeScannerHideVideoPreviewRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerHideVideoPreviewRequest2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerHideVideoPreviewRequest2 {
-    type Vtable = IBarcodeScannerHideVideoPreviewRequest2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerHideVideoPreviewRequest2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7e28435d_9814_431d_a2f2_d6248c5ad4b5);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerHideVideoPreviewRequest2, IBarcodeScannerHideVideoPreviewRequest2_Vtbl, 0x7e28435d_9814_431d_a2f2_d6248c5ad4b5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerHideVideoPreviewRequest2_Vtbl {
@@ -223,16 +106,7 @@ pub struct IBarcodeScannerHideVideoPreviewRequest2_Vtbl {
     pub ReportFailedWithFailedReasonAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedWithFailedReasonAndDescriptionAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, failedreasondescription: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerHideVideoPreviewRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerHideVideoPreviewRequestEventArgs {
-    type Vtable = IBarcodeScannerHideVideoPreviewRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerHideVideoPreviewRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x16a281fc_d6be_4bc7_9df1_33741f3eadea);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerHideVideoPreviewRequestEventArgs, IBarcodeScannerHideVideoPreviewRequestEventArgs_Vtbl, 0x16a281fc_d6be_4bc7_9df1_33741f3eadea);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerHideVideoPreviewRequestEventArgs_Vtbl {
@@ -240,16 +114,7 @@ pub struct IBarcodeScannerHideVideoPreviewRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerProviderConnection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerProviderConnection {
-    type Vtable = IBarcodeScannerProviderConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerProviderConnection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb44acbed_0b3a_4fa3_86c5_491ea30780eb);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerProviderConnection, IBarcodeScannerProviderConnection_Vtbl, 0xb44acbed_0b3a_4fa3_86c5_491ea30780eb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerProviderConnection_Vtbl {
@@ -288,16 +153,7 @@ pub struct IBarcodeScannerProviderConnection_Vtbl {
     pub HideVideoPreviewRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveHideVideoPreviewRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerProviderConnection2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerProviderConnection2 {
-    type Vtable = IBarcodeScannerProviderConnection2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerProviderConnection2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbe9b53cd_1134_418c_a06b_04423a73f3d7);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerProviderConnection2, IBarcodeScannerProviderConnection2_Vtbl, 0xbe9b53cd_1134_418c_a06b_04423a73f3d7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerProviderConnection2_Vtbl {
@@ -312,32 +168,14 @@ pub struct IBarcodeScannerProviderConnection2_Vtbl {
     #[cfg(not(feature = "Graphics_Imaging"))]
     CreateFrameReaderWithFormatAndSizeAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerProviderTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerProviderTriggerDetails {
-    type Vtable = IBarcodeScannerProviderTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerProviderTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x50856d82_24e3_48ce_99c7_70aac1cbc9f7);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerProviderTriggerDetails, IBarcodeScannerProviderTriggerDetails_Vtbl, 0x50856d82_24e3_48ce_99c7_70aac1cbc9f7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerProviderTriggerDetails_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Connection: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerSetActiveSymbologiesRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerSetActiveSymbologiesRequest {
-    type Vtable = IBarcodeScannerSetActiveSymbologiesRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerSetActiveSymbologiesRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdb3f32b9_f7da_41a1_9f79_07bcd95f0bdf);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerSetActiveSymbologiesRequest, IBarcodeScannerSetActiveSymbologiesRequest_Vtbl, 0xdb3f32b9_f7da_41a1_9f79_07bcd95f0bdf);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerSetActiveSymbologiesRequest_Vtbl {
@@ -349,16 +187,7 @@ pub struct IBarcodeScannerSetActiveSymbologiesRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerSetActiveSymbologiesRequest2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerSetActiveSymbologiesRequest2 {
-    type Vtable = IBarcodeScannerSetActiveSymbologiesRequest2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerSetActiveSymbologiesRequest2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf5ff6edf_fa9a_4749_b11b_e8fccb75bc6b);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerSetActiveSymbologiesRequest2, IBarcodeScannerSetActiveSymbologiesRequest2_Vtbl, 0xf5ff6edf_fa9a_4749_b11b_e8fccb75bc6b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerSetActiveSymbologiesRequest2_Vtbl {
@@ -366,16 +195,7 @@ pub struct IBarcodeScannerSetActiveSymbologiesRequest2_Vtbl {
     pub ReportFailedWithFailedReasonAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedWithFailedReasonAndDescriptionAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, failedreasondescription: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerSetActiveSymbologiesRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerSetActiveSymbologiesRequestEventArgs {
-    type Vtable = IBarcodeScannerSetActiveSymbologiesRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerSetActiveSymbologiesRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x06305afa_7bf6_4d52_801a_330272f60ae1);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerSetActiveSymbologiesRequestEventArgs, IBarcodeScannerSetActiveSymbologiesRequestEventArgs_Vtbl, 0x06305afa_7bf6_4d52_801a_330272f60ae1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerSetActiveSymbologiesRequestEventArgs_Vtbl {
@@ -383,16 +203,7 @@ pub struct IBarcodeScannerSetActiveSymbologiesRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerSetSymbologyAttributesRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerSetSymbologyAttributesRequest {
-    type Vtable = IBarcodeScannerSetSymbologyAttributesRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerSetSymbologyAttributesRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x32fb814f_a37f_48b0_acea_dce1480f12ae);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerSetSymbologyAttributesRequest, IBarcodeScannerSetSymbologyAttributesRequest_Vtbl, 0x32fb814f_a37f_48b0_acea_dce1480f12ae);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerSetSymbologyAttributesRequest_Vtbl {
@@ -402,16 +213,7 @@ pub struct IBarcodeScannerSetSymbologyAttributesRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerSetSymbologyAttributesRequest2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerSetSymbologyAttributesRequest2 {
-    type Vtable = IBarcodeScannerSetSymbologyAttributesRequest2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerSetSymbologyAttributesRequest2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdffbbfc1_dba8_4b77_be1e_b56cd72f65b3);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerSetSymbologyAttributesRequest2, IBarcodeScannerSetSymbologyAttributesRequest2_Vtbl, 0xdffbbfc1_dba8_4b77_be1e_b56cd72f65b3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerSetSymbologyAttributesRequest2_Vtbl {
@@ -419,16 +221,7 @@ pub struct IBarcodeScannerSetSymbologyAttributesRequest2_Vtbl {
     pub ReportFailedWithFailedReasonAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedWithFailedReasonAndDescriptionAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, failedreasondescription: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerSetSymbologyAttributesRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerSetSymbologyAttributesRequestEventArgs {
-    type Vtable = IBarcodeScannerSetSymbologyAttributesRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerSetSymbologyAttributesRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb2b89809_9824_47d4_85bd_d0077baa7bd2);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerSetSymbologyAttributesRequestEventArgs, IBarcodeScannerSetSymbologyAttributesRequestEventArgs_Vtbl, 0xb2b89809_9824_47d4_85bd_d0077baa7bd2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerSetSymbologyAttributesRequestEventArgs_Vtbl {
@@ -436,16 +229,7 @@ pub struct IBarcodeScannerSetSymbologyAttributesRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerStartSoftwareTriggerRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerStartSoftwareTriggerRequest {
-    type Vtable = IBarcodeScannerStartSoftwareTriggerRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerStartSoftwareTriggerRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe3fa7b27_ff62_4454_af4a_cb6144a3e3f7);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerStartSoftwareTriggerRequest, IBarcodeScannerStartSoftwareTriggerRequest_Vtbl, 0xe3fa7b27_ff62_4454_af4a_cb6144a3e3f7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerStartSoftwareTriggerRequest_Vtbl {
@@ -453,16 +237,7 @@ pub struct IBarcodeScannerStartSoftwareTriggerRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerStartSoftwareTriggerRequest2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerStartSoftwareTriggerRequest2 {
-    type Vtable = IBarcodeScannerStartSoftwareTriggerRequest2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerStartSoftwareTriggerRequest2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xeb72a25c_6658_4765_a68e_327482653deb);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerStartSoftwareTriggerRequest2, IBarcodeScannerStartSoftwareTriggerRequest2_Vtbl, 0xeb72a25c_6658_4765_a68e_327482653deb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerStartSoftwareTriggerRequest2_Vtbl {
@@ -470,16 +245,7 @@ pub struct IBarcodeScannerStartSoftwareTriggerRequest2_Vtbl {
     pub ReportFailedWithFailedReasonAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedWithFailedReasonAndDescriptionAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, failedreasondescription: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerStartSoftwareTriggerRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerStartSoftwareTriggerRequestEventArgs {
-    type Vtable = IBarcodeScannerStartSoftwareTriggerRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerStartSoftwareTriggerRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2305d843_c88f_4f3b_8c3b_d3df071051ec);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerStartSoftwareTriggerRequestEventArgs, IBarcodeScannerStartSoftwareTriggerRequestEventArgs_Vtbl, 0x2305d843_c88f_4f3b_8c3b_d3df071051ec);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerStartSoftwareTriggerRequestEventArgs_Vtbl {
@@ -487,16 +253,7 @@ pub struct IBarcodeScannerStartSoftwareTriggerRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerStopSoftwareTriggerRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerStopSoftwareTriggerRequest {
-    type Vtable = IBarcodeScannerStopSoftwareTriggerRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerStopSoftwareTriggerRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6f9faf35_e287_4ca8_b70d_5a91d694f668);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerStopSoftwareTriggerRequest, IBarcodeScannerStopSoftwareTriggerRequest_Vtbl, 0x6f9faf35_e287_4ca8_b70d_5a91d694f668);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerStopSoftwareTriggerRequest_Vtbl {
@@ -504,16 +261,7 @@ pub struct IBarcodeScannerStopSoftwareTriggerRequest_Vtbl {
     pub ReportCompletedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerStopSoftwareTriggerRequest2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerStopSoftwareTriggerRequest2 {
-    type Vtable = IBarcodeScannerStopSoftwareTriggerRequest2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerStopSoftwareTriggerRequest2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcb57c5dd_fe50_49f8_a0b4_bdc230814da2);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerStopSoftwareTriggerRequest2, IBarcodeScannerStopSoftwareTriggerRequest2_Vtbl, 0xcb57c5dd_fe50_49f8_a0b4_bdc230814da2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerStopSoftwareTriggerRequest2_Vtbl {
@@ -521,16 +269,7 @@ pub struct IBarcodeScannerStopSoftwareTriggerRequest2_Vtbl {
     pub ReportFailedWithFailedReasonAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ReportFailedWithFailedReasonAndDescriptionAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, reason: i32, failedreasondescription: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerStopSoftwareTriggerRequestEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerStopSoftwareTriggerRequestEventArgs {
-    type Vtable = IBarcodeScannerStopSoftwareTriggerRequestEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerStopSoftwareTriggerRequestEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xeac34450_4eb7_481a_9273_147a273b99b8);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerStopSoftwareTriggerRequestEventArgs, IBarcodeScannerStopSoftwareTriggerRequestEventArgs_Vtbl, 0xeac34450_4eb7_481a_9273_147a273b99b8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerStopSoftwareTriggerRequestEventArgs_Vtbl {
@@ -538,16 +277,7 @@ pub struct IBarcodeScannerStopSoftwareTriggerRequestEventArgs_Vtbl {
     pub Request: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeScannerVideoFrame(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeScannerVideoFrame {
-    type Vtable = IBarcodeScannerVideoFrame_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeScannerVideoFrame {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7e585248_9df7_4121_a175_801d8000112e);
-}
+::windows_core::imp::com_interface!(IBarcodeScannerVideoFrame, IBarcodeScannerVideoFrame_Vtbl, 0x7e585248_9df7_4121_a175_801d8000112e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeScannerVideoFrame_Vtbl {
@@ -563,16 +293,7 @@ pub struct IBarcodeScannerVideoFrame_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     PixelData: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBarcodeSymbologyAttributesBuilder(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBarcodeSymbologyAttributesBuilder {
-    type Vtable = IBarcodeSymbologyAttributesBuilder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBarcodeSymbologyAttributesBuilder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc57b0cbf_e4f5_40b9_84cf_e63fbaea42b4);
-}
+::windows_core::imp::com_interface!(IBarcodeSymbologyAttributesBuilder, IBarcodeSymbologyAttributesBuilder_Vtbl, 0xc57b0cbf_e4f5_40b9_84cf_e63fbaea42b4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBarcodeSymbologyAttributesBuilder_Vtbl {
@@ -813,7 +534,7 @@ impl ::windows_core::RuntimeName for BarcodeScannerFrameReader {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerFrameReader";
 }
 ::windows_core::imp::interface_hierarchy!(BarcodeScannerFrameReader, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IClosable> for BarcodeScannerFrameReader {}
+::windows_core::imp::required_hierarchy!(BarcodeScannerFrameReader, super::super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for BarcodeScannerFrameReader {}
 unsafe impl ::core::marker::Sync for BarcodeScannerFrameReader {}
 #[repr(transparent)]
@@ -1274,7 +995,7 @@ impl ::windows_core::RuntimeName for BarcodeScannerProviderConnection {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerProviderConnection";
 }
 ::windows_core::imp::interface_hierarchy!(BarcodeScannerProviderConnection, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IClosable> for BarcodeScannerProviderConnection {}
+::windows_core::imp::required_hierarchy!(BarcodeScannerProviderConnection, super::super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for BarcodeScannerProviderConnection {}
 unsafe impl ::core::marker::Sync for BarcodeScannerProviderConnection {}
 #[repr(transparent)]
@@ -1709,7 +1430,7 @@ impl ::windows_core::RuntimeName for BarcodeScannerVideoFrame {
     const NAME: &'static str = "Windows.Devices.PointOfService.Provider.BarcodeScannerVideoFrame";
 }
 ::windows_core::imp::interface_hierarchy!(BarcodeScannerVideoFrame, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::super::super::Foundation::IClosable> for BarcodeScannerVideoFrame {}
+::windows_core::imp::required_hierarchy!(BarcodeScannerVideoFrame, super::super::super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for BarcodeScannerVideoFrame {}
 unsafe impl ::core::marker::Sync for BarcodeScannerVideoFrame {}
 #[repr(transparent)]

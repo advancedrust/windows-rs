@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDialApp(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDialApp {
-    type Vtable = IDialApp_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDialApp {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x555ffbd3_45b7_49f3_bbd7_302db6084646);
-}
+::windows_core::imp::com_interface!(IDialApp, IDialApp_Vtbl, 0x555ffbd3_45b7_49f3_bbd7_302db6084646);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDialApp_Vtbl {
@@ -17,16 +8,7 @@ pub struct IDialApp_Vtbl {
     pub StopAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetAppStateAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDialAppStateDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDialAppStateDetails {
-    type Vtable = IDialAppStateDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDialAppStateDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xddc4a4a1_f5de_400d_bea4_8c8466bb2961);
-}
+::windows_core::imp::com_interface!(IDialAppStateDetails, IDialAppStateDetails_Vtbl, 0xddc4a4a1_f5de_400d_bea4_8c8466bb2961);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDialAppStateDetails_Vtbl {
@@ -34,16 +16,7 @@ pub struct IDialAppStateDetails_Vtbl {
     pub State: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut DialAppState) -> ::windows_core::HRESULT,
     pub FullXml: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDialDevice(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDialDevice {
-    type Vtable = IDialDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDialDevice {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfff0edaf_759f_41d2_a20a_7f29ce0b3784);
-}
+::windows_core::imp::com_interface!(IDialDevice, IDialDevice_Vtbl, 0xfff0edaf_759f_41d2_a20a_7f29ce0b3784);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDialDevice_Vtbl {
@@ -51,16 +24,7 @@ pub struct IDialDevice_Vtbl {
     pub Id: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub GetDialApp: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, appname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDialDevice2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDialDevice2 {
-    type Vtable = IDialDevice2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDialDevice2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbab7f3d5_5bfb_4eba_8b32_b57c5c5ee5c9);
-}
+::windows_core::imp::com_interface!(IDialDevice2, IDialDevice2_Vtbl, 0xbab7f3d5_5bfb_4eba_8b32_b57c5c5ee5c9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDialDevice2_Vtbl {
@@ -71,16 +35,7 @@ pub struct IDialDevice2_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     Thumbnail: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDialDevicePicker(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDialDevicePicker {
-    type Vtable = IDialDevicePicker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDialDevicePicker {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xba7e520a_ff59_4f4b_bdac_d89f495ad6e1);
-}
+::windows_core::imp::com_interface!(IDialDevicePicker, IDialDevicePicker_Vtbl, 0xba7e520a_ff59_4f4b_bdac_d89f495ad6e1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDialDevicePicker_Vtbl {
@@ -109,16 +64,7 @@ pub struct IDialDevicePicker_Vtbl {
     pub Hide: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetDisplayStatus: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, device: *mut ::core::ffi::c_void, status: DialDeviceDisplayStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDialDevicePickerFilter(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDialDevicePickerFilter {
-    type Vtable = IDialDevicePickerFilter_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDialDevicePickerFilter {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc17c93ba_86c0_485d_b8d6_0f9a8f641590);
-}
+::windows_core::imp::com_interface!(IDialDevicePickerFilter, IDialDevicePickerFilter_Vtbl, 0xc17c93ba_86c0_485d_b8d6_0f9a8f641590);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDialDevicePickerFilter_Vtbl {
@@ -128,32 +74,14 @@ pub struct IDialDevicePickerFilter_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     SupportedAppNames: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDialDeviceSelectedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDialDeviceSelectedEventArgs {
-    type Vtable = IDialDeviceSelectedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDialDeviceSelectedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x480b92ad_ac76_47eb_9c06_a19304da0247);
-}
+::windows_core::imp::com_interface!(IDialDeviceSelectedEventArgs, IDialDeviceSelectedEventArgs_Vtbl, 0x480b92ad_ac76_47eb_9c06_a19304da0247);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDialDeviceSelectedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SelectedDialDevice: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDialDeviceStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDialDeviceStatics {
-    type Vtable = IDialDeviceStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDialDeviceStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaa69cc95_01f8_4758_8461_2bbd1cdc3cf3);
-}
+::windows_core::imp::com_interface!(IDialDeviceStatics, IDialDeviceStatics_Vtbl, 0xaa69cc95_01f8_4758_8461_2bbd1cdc3cf3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDialDeviceStatics_Vtbl {
@@ -165,32 +93,14 @@ pub struct IDialDeviceStatics_Vtbl {
     #[cfg(not(feature = "Devices_Enumeration"))]
     DeviceInfoSupportsDialAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDialDisconnectButtonClickedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDialDisconnectButtonClickedEventArgs {
-    type Vtable = IDialDisconnectButtonClickedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDialDisconnectButtonClickedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x52765152_9c81_4e55_adc2_0ebe99cde3b6);
-}
+::windows_core::imp::com_interface!(IDialDisconnectButtonClickedEventArgs, IDialDisconnectButtonClickedEventArgs_Vtbl, 0x52765152_9c81_4e55_adc2_0ebe99cde3b6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDialDisconnectButtonClickedEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Device: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDialReceiverApp(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDialReceiverApp {
-    type Vtable = IDialReceiverApp_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDialReceiverApp {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfd3e7c57_5045_470e_b304_4dd9b13e7d11);
-}
+::windows_core::imp::com_interface!(IDialReceiverApp, IDialReceiverApp_Vtbl, 0xfd3e7c57_5045_470e_b304_4dd9b13e7d11);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDialReceiverApp_Vtbl {
@@ -204,32 +114,14 @@ pub struct IDialReceiverApp_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     SetAdditionalDataAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDialReceiverApp2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDialReceiverApp2 {
-    type Vtable = IDialReceiverApp2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDialReceiverApp2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x530c5805_9130_42ac_a504_1977dcb2ea8a);
-}
+::windows_core::imp::com_interface!(IDialReceiverApp2, IDialReceiverApp2_Vtbl, 0x530c5805_9130_42ac_a504_1977dcb2ea8a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDialReceiverApp2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetUniqueDeviceNameAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDialReceiverAppStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDialReceiverAppStatics {
-    type Vtable = IDialReceiverAppStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDialReceiverAppStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x53183a3c_4c36_4d02_b28a_f2a9da38ec52);
-}
+::windows_core::imp::com_interface!(IDialReceiverAppStatics, IDialReceiverAppStatics_Vtbl, 0x53183a3c_4c36_4d02_b28a_f2a9da38ec52);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDialReceiverAppStatics_Vtbl {
@@ -618,12 +510,12 @@ impl DialReceiverApp {
     #[cfg(feature = "Foundation_Collections")]
     pub fn SetAdditionalDataAsync<P0>(&self, additionaldata: P0) -> ::windows_core::Result<super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::Collections::IIterable<super::super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::HSTRING>>>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).SetAdditionalDataAsync)(::windows_core::Interface::as_raw(this), additionaldata.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).SetAdditionalDataAsync)(::windows_core::Interface::as_raw(this), additionaldata.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn GetUniqueDeviceNameAsync(&self) -> ::windows_core::Result<super::super::Foundation::IAsyncOperation<::windows_core::HSTRING>> {

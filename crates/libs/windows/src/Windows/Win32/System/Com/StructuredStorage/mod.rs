@@ -997,9 +997,7 @@ where
     ::windows_targets::link!("ole32.dll" "system" fn WriteFmtUserTypeStg(pstg : * mut::core::ffi::c_void, cf : u16, lpszusertype : ::windows_core::PCWSTR) -> ::windows_core::HRESULT);
     WriteFmtUserTypeStg(pstg.into_param().abi(), cf, lpszusertype.into_param().abi()).ok()
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDirectWriterLock(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDirectWriterLock, IDirectWriterLock_Vtbl, 0x0e6d4d92_6738_11cf_9608_00aa00680db4);
 impl IDirectWriterLock {
     pub unsafe fn WaitForWriteAccess(&self, dwtimeout: u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).WaitForWriteAccess)(::windows_core::Interface::as_raw(self), dwtimeout).ok()
@@ -1012,12 +1010,6 @@ impl IDirectWriterLock {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDirectWriterLock, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDirectWriterLock {
-    type Vtable = IDirectWriterLock_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDirectWriterLock {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0e6d4d92_6738_11cf_9608_00aa00680db4);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDirectWriterLock_Vtbl {
@@ -1026,9 +1018,7 @@ pub struct IDirectWriterLock_Vtbl {
     pub ReleaseWriteAccess: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub HaveWriteAccess: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IEnumSTATPROPSETSTG(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IEnumSTATPROPSETSTG, IEnumSTATPROPSETSTG_Vtbl, 0x0000013b_0000_0000_c000_000000000046);
 impl IEnumSTATPROPSETSTG {
     pub unsafe fn Next(&self, rgelt: &mut [STATPROPSETSTG], pceltfetched: ::core::option::Option<*mut u32>) -> ::windows_core::HRESULT {
         (::windows_core::Interface::vtable(self).Next)(::windows_core::Interface::as_raw(self), rgelt.len().try_into().unwrap(), ::core::mem::transmute(rgelt.as_ptr()), ::core::mem::transmute(pceltfetched.unwrap_or(::std::ptr::null_mut())))
@@ -1045,12 +1035,6 @@ impl IEnumSTATPROPSETSTG {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IEnumSTATPROPSETSTG, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IEnumSTATPROPSETSTG {
-    type Vtable = IEnumSTATPROPSETSTG_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IEnumSTATPROPSETSTG {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0000013b_0000_0000_c000_000000000046);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IEnumSTATPROPSETSTG_Vtbl {
@@ -1060,9 +1044,7 @@ pub struct IEnumSTATPROPSETSTG_Vtbl {
     pub Reset: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenum: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IEnumSTATPROPSTG(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IEnumSTATPROPSTG, IEnumSTATPROPSTG_Vtbl, 0x00000139_0000_0000_c000_000000000046);
 impl IEnumSTATPROPSTG {
     #[doc = "Required features: `\"Win32_System_Variant\"`"]
     #[cfg(feature = "Win32_System_Variant")]
@@ -1081,12 +1063,6 @@ impl IEnumSTATPROPSTG {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IEnumSTATPROPSTG, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IEnumSTATPROPSTG {
-    type Vtable = IEnumSTATPROPSTG_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IEnumSTATPROPSTG {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000139_0000_0000_c000_000000000046);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IEnumSTATPROPSTG_Vtbl {
@@ -1099,9 +1075,7 @@ pub struct IEnumSTATPROPSTG_Vtbl {
     pub Reset: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenum: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IEnumSTATSTG(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IEnumSTATSTG, IEnumSTATSTG_Vtbl, 0x0000000d_0000_0000_c000_000000000046);
 impl IEnumSTATSTG {
     pub unsafe fn Next(&self, rgelt: &mut [super::STATSTG], pceltfetched: ::core::option::Option<*mut u32>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).Next)(::windows_core::Interface::as_raw(self), rgelt.len().try_into().unwrap(), ::core::mem::transmute(rgelt.as_ptr()), ::core::mem::transmute(pceltfetched.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -1118,12 +1092,6 @@ impl IEnumSTATSTG {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IEnumSTATSTG, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IEnumSTATSTG {
-    type Vtable = IEnumSTATSTG_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IEnumSTATSTG {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0000000d_0000_0000_c000_000000000046);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IEnumSTATSTG_Vtbl {
@@ -1133,9 +1101,7 @@ pub struct IEnumSTATSTG_Vtbl {
     pub Reset: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Clone: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenum: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFillLockBytes(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IFillLockBytes, IFillLockBytes_Vtbl, 0x99caf010_415e_11cf_8814_00aa00b569f5);
 impl IFillLockBytes {
     pub unsafe fn FillAppend(&self, pv: *const ::core::ffi::c_void, cb: u32) -> ::windows_core::Result<u32> {
         let mut result__ = ::std::mem::zeroed();
@@ -1156,12 +1122,6 @@ impl IFillLockBytes {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IFillLockBytes, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFillLockBytes {
-    type Vtable = IFillLockBytes_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFillLockBytes {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x99caf010_415e_11cf_8814_00aa00b569f5);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFillLockBytes_Vtbl {
@@ -1171,9 +1131,7 @@ pub struct IFillLockBytes_Vtbl {
     pub SetFillSize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ulsize: u64) -> ::windows_core::HRESULT,
     pub Terminate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, bcanceled: super::super::super::Foundation::BOOL) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILayoutStorage(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ILayoutStorage, ILayoutStorage_Vtbl, 0x0e6d4d90_6738_11cf_9608_00aa00680db4);
 impl ILayoutStorage {
     pub unsafe fn LayoutScript(&self, pstoragelayout: &[super::StorageLayout], glfinterleavedflag: u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).LayoutScript)(::windows_core::Interface::as_raw(self), ::core::mem::transmute(pstoragelayout.as_ptr()), pstoragelayout.len().try_into().unwrap(), glfinterleavedflag).ok()
@@ -1198,12 +1156,6 @@ impl ILayoutStorage {
     }
 }
 ::windows_core::imp::interface_hierarchy!(ILayoutStorage, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILayoutStorage {
-    type Vtable = ILayoutStorage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILayoutStorage {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0e6d4d90_6738_11cf_9608_00aa00680db4);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILayoutStorage_Vtbl {
@@ -1214,9 +1166,7 @@ pub struct ILayoutStorage_Vtbl {
     pub ReLayoutDocfile: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pwcsnewdfname: ::windows_core::PCWSTR) -> ::windows_core::HRESULT,
     pub ReLayoutDocfileOnILockBytes: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pilockbytes: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILockBytes(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ILockBytes, ILockBytes_Vtbl, 0x0000000a_0000_0000_c000_000000000046);
 impl ILockBytes {
     pub unsafe fn ReadAt(&self, uloffset: u64, pv: *mut ::core::ffi::c_void, cb: u32, pcbread: ::core::option::Option<*mut u32>) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).ReadAt)(::windows_core::Interface::as_raw(self), uloffset, pv, cb, ::core::mem::transmute(pcbread.unwrap_or(::std::ptr::null_mut()))).ok()
@@ -1241,12 +1191,6 @@ impl ILockBytes {
     }
 }
 ::windows_core::imp::interface_hierarchy!(ILockBytes, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILockBytes {
-    type Vtable = ILockBytes_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILockBytes {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0000000a_0000_0000_c000_000000000046);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILockBytes_Vtbl {
@@ -1259,9 +1203,7 @@ pub struct ILockBytes_Vtbl {
     pub UnlockRegion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, liboffset: u64, cb: u64, dwlocktype: u32) -> ::windows_core::HRESULT,
     pub Stat: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstatstg: *mut super::STATSTG, grfstatflag: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPersistStorage(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IPersistStorage, IPersistStorage_Vtbl, 0x0000010a_0000_0000_c000_000000000046);
 impl IPersistStorage {
     pub unsafe fn GetClassID(&self) -> ::windows_core::Result<::windows_core::GUID> {
         let mut result__ = ::std::mem::zeroed();
@@ -1300,12 +1242,6 @@ impl IPersistStorage {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IPersistStorage, ::windows_core::IUnknown, super::IPersist);
-unsafe impl ::windows_core::Interface for IPersistStorage {
-    type Vtable = IPersistStorage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPersistStorage {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0000010a_0000_0000_c000_000000000046);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPersistStorage_Vtbl {
@@ -1317,9 +1253,7 @@ pub struct IPersistStorage_Vtbl {
     pub SaveCompleted: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstgnew: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub HandsOffStorage: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPropertyBag(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IPropertyBag, IPropertyBag_Vtbl, 0x55272a00_42cb_11ce_8135_00aa004bb851);
 impl IPropertyBag {
     #[doc = "Required features: `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
     #[cfg(all(feature = "Win32_System_Ole", feature = "Win32_System_Variant"))]
@@ -1340,12 +1274,6 @@ impl IPropertyBag {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IPropertyBag, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPropertyBag {
-    type Vtable = IPropertyBag_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPropertyBag {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x55272a00_42cb_11ce_8135_00aa004bb851);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPropertyBag_Vtbl {
@@ -1359,9 +1287,7 @@ pub struct IPropertyBag_Vtbl {
     #[cfg(not(all(feature = "Win32_System_Ole", feature = "Win32_System_Variant")))]
     Write: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPropertyBag2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IPropertyBag2, IPropertyBag2_Vtbl, 0x22f55882_280b_11d0_a8a9_00a0c90c2004);
 impl IPropertyBag2 {
     #[doc = "Required features: `\"Win32_System_Ole\"`, `\"Win32_System_Variant\"`"]
     #[cfg(all(feature = "Win32_System_Ole", feature = "Win32_System_Variant"))]
@@ -1395,12 +1321,6 @@ impl IPropertyBag2 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IPropertyBag2, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPropertyBag2 {
-    type Vtable = IPropertyBag2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPropertyBag2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x22f55882_280b_11d0_a8a9_00a0c90c2004);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPropertyBag2_Vtbl {
@@ -1420,9 +1340,7 @@ pub struct IPropertyBag2_Vtbl {
     GetPropertyInfo: usize,
     pub LoadObject: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstrname: ::windows_core::PCWSTR, dwhint: u32, punkobject: *mut ::core::ffi::c_void, perrlog: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPropertySetStorage(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IPropertySetStorage, IPropertySetStorage_Vtbl, 0x0000013a_0000_0000_c000_000000000046);
 impl IPropertySetStorage {
     pub unsafe fn Create(&self, rfmtid: *const ::windows_core::GUID, pclsid: *const ::windows_core::GUID, grfflags: u32, grfmode: u32) -> ::windows_core::Result<IPropertyStorage> {
         let mut result__ = ::std::mem::zeroed();
@@ -1441,12 +1359,6 @@ impl IPropertySetStorage {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IPropertySetStorage, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPropertySetStorage {
-    type Vtable = IPropertySetStorage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPropertySetStorage {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0000013a_0000_0000_c000_000000000046);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPropertySetStorage_Vtbl {
@@ -1456,9 +1368,7 @@ pub struct IPropertySetStorage_Vtbl {
     pub Delete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, rfmtid: *const ::windows_core::GUID) -> ::windows_core::HRESULT,
     pub Enum: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppenum: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPropertyStorage(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IPropertyStorage, IPropertyStorage_Vtbl, 0x00000138_0000_0000_c000_000000000046);
 impl IPropertyStorage {
     #[doc = "Required features: `\"Win32_System_Variant\"`"]
     #[cfg(feature = "Win32_System_Variant")]
@@ -1503,12 +1413,6 @@ impl IPropertyStorage {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IPropertyStorage, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPropertyStorage {
-    type Vtable = IPropertyStorage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPropertyStorage {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000138_0000_0000_c000_000000000046);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPropertyStorage_Vtbl {
@@ -1532,9 +1436,7 @@ pub struct IPropertyStorage_Vtbl {
     pub SetClass: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, clsid: *const ::windows_core::GUID) -> ::windows_core::HRESULT,
     pub Stat: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pstatpsstg: *mut STATPROPSETSTG) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IRootStorage(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IRootStorage, IRootStorage_Vtbl, 0x00000012_0000_0000_c000_000000000046);
 impl IRootStorage {
     pub unsafe fn SwitchToFile<P0>(&self, pszfile: P0) -> ::windows_core::Result<()>
     where
@@ -1544,21 +1446,13 @@ impl IRootStorage {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IRootStorage, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IRootStorage {
-    type Vtable = IRootStorage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IRootStorage {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00000012_0000_0000_c000_000000000046);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IRootStorage_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub SwitchToFile: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pszfile: ::windows_core::PCWSTR) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorage(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStorage, IStorage_Vtbl, 0x0000000b_0000_0000_c000_000000000046);
 impl IStorage {
     pub unsafe fn CreateStream<P0>(&self, pwcsname: P0, grfmode: super::STGM, reserved1: u32, reserved2: u32) -> ::windows_core::Result<super::IStream>
     where
@@ -1643,12 +1537,6 @@ impl IStorage {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IStorage, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorage {
-    type Vtable = IStorage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorage {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0000000b_0000_0000_c000_000000000046);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorage_Vtbl {

@@ -1,6 +1,4 @@
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISoftwareBitmapNative(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISoftwareBitmapNative, ISoftwareBitmapNative_Vtbl, 0x94bc8415_04ea_4b2e_af13_4de95aa898eb);
 impl ISoftwareBitmapNative {
     pub unsafe fn GetData<T>(&self) -> ::windows_core::Result<T>
     where
@@ -11,21 +9,13 @@ impl ISoftwareBitmapNative {
     }
 }
 ::windows_core::imp::interface_hierarchy!(ISoftwareBitmapNative, ::windows_core::IUnknown, ::windows_core::IInspectable);
-unsafe impl ::windows_core::Interface for ISoftwareBitmapNative {
-    type Vtable = ISoftwareBitmapNative_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISoftwareBitmapNative {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x94bc8415_04ea_4b2e_af13_4de95aa898eb);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISoftwareBitmapNative_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppv: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISoftwareBitmapNativeFactory(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISoftwareBitmapNativeFactory, ISoftwareBitmapNativeFactory_Vtbl, 0xc3c181ec_2914_4791_af02_02d224a10b43);
 impl ISoftwareBitmapNativeFactory {
     #[doc = "Required features: `\"Win32_Graphics_Imaging\"`"]
     #[cfg(feature = "Win32_Graphics_Imaging")]
@@ -51,12 +41,6 @@ impl ISoftwareBitmapNativeFactory {
     }
 }
 ::windows_core::imp::interface_hierarchy!(ISoftwareBitmapNativeFactory, ::windows_core::IUnknown, ::windows_core::IInspectable);
-unsafe impl ::windows_core::Interface for ISoftwareBitmapNativeFactory {
-    type Vtable = ISoftwareBitmapNativeFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISoftwareBitmapNativeFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc3c181ec_2914_4791_af02_02d224a10b43);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISoftwareBitmapNativeFactory_Vtbl {

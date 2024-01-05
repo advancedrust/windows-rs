@@ -19,9 +19,7 @@ where
     let mut result__ = ::std::ptr::null_mut();
     DxcCreateInstance2(pmalloc.into_param().abi(), rclsid, &T::IID, &mut result__).from_abi(result__)
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcAssembler(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcAssembler, IDxcAssembler_Vtbl, 0x091f7a26_1c1f_4948_904b_e6e3a8a771d5);
 impl IDxcAssembler {
     pub unsafe fn AssembleToContainer<P0>(&self, pshader: P0) -> ::windows_core::Result<IDxcOperationResult>
     where
@@ -32,21 +30,13 @@ impl IDxcAssembler {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcAssembler, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcAssembler {
-    type Vtable = IDxcAssembler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcAssembler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x091f7a26_1c1f_4948_904b_e6e3a8a771d5);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcAssembler_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub AssembleToContainer: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pshader: *mut ::core::ffi::c_void, ppresult: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcBlob(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcBlob, IDxcBlob_Vtbl, 0x8ba5fb08_5195_40e2_ac58_0d989c3a0102);
 impl IDxcBlob {
     pub unsafe fn GetBufferPointer(&self) -> *mut ::core::ffi::c_void {
         (::windows_core::Interface::vtable(self).GetBufferPointer)(::windows_core::Interface::as_raw(self))
@@ -56,12 +46,6 @@ impl IDxcBlob {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcBlob, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcBlob {
-    type Vtable = IDxcBlob_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcBlob {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8ba5fb08_5195_40e2_ac58_0d989c3a0102);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcBlob_Vtbl {
@@ -69,9 +53,7 @@ pub struct IDxcBlob_Vtbl {
     pub GetBufferPointer: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> *mut ::core::ffi::c_void,
     pub GetBufferSize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcBlobEncoding(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcBlobEncoding, IDxcBlobEncoding_Vtbl, 0x7241d424_2646_4191_97c0_98e96e42fc68);
 impl IDxcBlobEncoding {
     pub unsafe fn GetBufferPointer(&self) -> *mut ::core::ffi::c_void {
         (::windows_core::Interface::vtable(self).base__.GetBufferPointer)(::windows_core::Interface::as_raw(self))
@@ -84,21 +66,13 @@ impl IDxcBlobEncoding {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcBlobEncoding, ::windows_core::IUnknown, IDxcBlob);
-unsafe impl ::windows_core::Interface for IDxcBlobEncoding {
-    type Vtable = IDxcBlobEncoding_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcBlobEncoding {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7241d424_2646_4191_97c0_98e96e42fc68);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcBlobEncoding_Vtbl {
     pub base__: IDxcBlob_Vtbl,
     pub GetEncoding: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pknown: *mut super::super::super::Foundation::BOOL, pcodepage: *mut DXC_CP) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcBlobUtf16(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcBlobUtf16, IDxcBlobUtf16_Vtbl, 0xa3f84eab_0faa_497e_a39c_ee6ed60b2d84);
 impl IDxcBlobUtf16 {
     pub unsafe fn GetBufferPointer(&self) -> *mut ::core::ffi::c_void {
         (::windows_core::Interface::vtable(self).base__.base__.GetBufferPointer)(::windows_core::Interface::as_raw(self))
@@ -117,12 +91,6 @@ impl IDxcBlobUtf16 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcBlobUtf16, ::windows_core::IUnknown, IDxcBlob, IDxcBlobEncoding);
-unsafe impl ::windows_core::Interface for IDxcBlobUtf16 {
-    type Vtable = IDxcBlobUtf16_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcBlobUtf16 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa3f84eab_0faa_497e_a39c_ee6ed60b2d84);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcBlobUtf16_Vtbl {
@@ -130,9 +98,7 @@ pub struct IDxcBlobUtf16_Vtbl {
     pub GetStringPointer: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::PCWSTR,
     pub GetStringLength: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcBlobUtf8(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcBlobUtf8, IDxcBlobUtf8_Vtbl, 0x3da636c9_ba71_4024_a301_30cbf125305b);
 impl IDxcBlobUtf8 {
     pub unsafe fn GetBufferPointer(&self) -> *mut ::core::ffi::c_void {
         (::windows_core::Interface::vtable(self).base__.base__.GetBufferPointer)(::windows_core::Interface::as_raw(self))
@@ -151,12 +117,6 @@ impl IDxcBlobUtf8 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcBlobUtf8, ::windows_core::IUnknown, IDxcBlob, IDxcBlobEncoding);
-unsafe impl ::windows_core::Interface for IDxcBlobUtf8 {
-    type Vtable = IDxcBlobUtf8_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcBlobUtf8 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3da636c9_ba71_4024_a301_30cbf125305b);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcBlobUtf8_Vtbl {
@@ -164,9 +124,7 @@ pub struct IDxcBlobUtf8_Vtbl {
     pub GetStringPointer: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::PCSTR,
     pub GetStringLength: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcCompiler(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcCompiler, IDxcCompiler_Vtbl, 0x8c210bf3_011f_4422_8d70_6f9acb8db617);
 impl IDxcCompiler {
     pub unsafe fn Compile<P0, P1, P2, P3, P4>(&self, psource: P0, psourcename: P1, pentrypoint: P2, ptargetprofile: P3, parguments: ::core::option::Option<&[::windows_core::PCWSTR]>, pdefines: &[DxcDefine], pincludehandler: P4) -> ::windows_core::Result<IDxcOperationResult>
     where
@@ -197,12 +155,6 @@ impl IDxcCompiler {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcCompiler, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcCompiler {
-    type Vtable = IDxcCompiler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcCompiler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8c210bf3_011f_4422_8d70_6f9acb8db617);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcCompiler_Vtbl {
@@ -211,9 +163,7 @@ pub struct IDxcCompiler_Vtbl {
     pub Preprocess: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, psource: *mut ::core::ffi::c_void, psourcename: ::windows_core::PCWSTR, parguments: *const ::windows_core::PCWSTR, argcount: u32, pdefines: *const DxcDefine, definecount: u32, pincludehandler: *mut ::core::ffi::c_void, ppresult: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Disassemble: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, psource: *mut ::core::ffi::c_void, ppdisassembly: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcCompiler2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcCompiler2, IDxcCompiler2_Vtbl, 0xa005a9d9_b8bb_4594_b5c9_0e633bec4d37);
 impl IDxcCompiler2 {
     pub unsafe fn Compile<P0, P1, P2, P3, P4>(&self, psource: P0, psourcename: P1, pentrypoint: P2, ptargetprofile: P3, parguments: ::core::option::Option<&[::windows_core::PCWSTR]>, pdefines: &[DxcDefine], pincludehandler: P4) -> ::windows_core::Result<IDxcOperationResult>
     where
@@ -269,21 +219,13 @@ impl IDxcCompiler2 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcCompiler2, ::windows_core::IUnknown, IDxcCompiler);
-unsafe impl ::windows_core::Interface for IDxcCompiler2 {
-    type Vtable = IDxcCompiler2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcCompiler2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa005a9d9_b8bb_4594_b5c9_0e633bec4d37);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcCompiler2_Vtbl {
     pub base__: IDxcCompiler_Vtbl,
     pub CompileWithDebug: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, psource: *mut ::core::ffi::c_void, psourcename: ::windows_core::PCWSTR, pentrypoint: ::windows_core::PCWSTR, ptargetprofile: ::windows_core::PCWSTR, parguments: *const ::windows_core::PCWSTR, argcount: u32, pdefines: *const DxcDefine, definecount: u32, pincludehandler: *mut ::core::ffi::c_void, ppresult: *mut *mut ::core::ffi::c_void, ppdebugblobname: *mut ::windows_core::PWSTR, ppdebugblob: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcCompiler3(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcCompiler3, IDxcCompiler3_Vtbl, 0x228b4687_5a6a_4730_900c_9702b2203f54);
 impl IDxcCompiler3 {
     pub unsafe fn Compile<P0, T>(&self, psource: *const DxcBuffer, parguments: ::core::option::Option<&[::windows_core::PCWSTR]>, pincludehandler: P0) -> ::windows_core::Result<T>
     where
@@ -302,12 +244,6 @@ impl IDxcCompiler3 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcCompiler3, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcCompiler3 {
-    type Vtable = IDxcCompiler3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcCompiler3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x228b4687_5a6a_4730_900c_9702b2203f54);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcCompiler3_Vtbl {
@@ -315,9 +251,7 @@ pub struct IDxcCompiler3_Vtbl {
     pub Compile: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, psource: *const DxcBuffer, parguments: *const ::windows_core::PCWSTR, argcount: u32, pincludehandler: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, ppresult: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Disassemble: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pobject: *const DxcBuffer, riid: *const ::windows_core::GUID, ppresult: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcCompilerArgs(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcCompilerArgs, IDxcCompilerArgs_Vtbl, 0x73effe2a_70dc_45f8_9690_eff64c02429d);
 impl IDxcCompilerArgs {
     pub unsafe fn GetArguments(&self) -> *mut ::windows_core::PCWSTR {
         (::windows_core::Interface::vtable(self).GetArguments)(::windows_core::Interface::as_raw(self))
@@ -336,12 +270,6 @@ impl IDxcCompilerArgs {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcCompilerArgs, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcCompilerArgs {
-    type Vtable = IDxcCompilerArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcCompilerArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x73effe2a_70dc_45f8_9690_eff64c02429d);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcCompilerArgs_Vtbl {
@@ -352,9 +280,7 @@ pub struct IDxcCompilerArgs_Vtbl {
     pub AddArgumentsUTF8: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, parguments: *const ::windows_core::PCSTR, argcount: u32) -> ::windows_core::HRESULT,
     pub AddDefines: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pdefines: *const DxcDefine, definecount: u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcContainerBuilder(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcContainerBuilder, IDxcContainerBuilder_Vtbl, 0x334b1f50_2292_4b35_99a1_25588d8c17fe);
 impl IDxcContainerBuilder {
     pub unsafe fn Load<P0>(&self, pdxilcontainerheader: P0) -> ::windows_core::Result<()>
     where
@@ -377,12 +303,6 @@ impl IDxcContainerBuilder {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcContainerBuilder, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcContainerBuilder {
-    type Vtable = IDxcContainerBuilder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcContainerBuilder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x334b1f50_2292_4b35_99a1_25588d8c17fe);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcContainerBuilder_Vtbl {
@@ -392,9 +312,7 @@ pub struct IDxcContainerBuilder_Vtbl {
     pub RemovePart: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, fourcc: u32) -> ::windows_core::HRESULT,
     pub SerializeContainer: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppresult: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcContainerReflection(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcContainerReflection, IDxcContainerReflection_Vtbl, 0xd2c21b26_8350_4bdc_976a_331ce6f4c54c);
 impl IDxcContainerReflection {
     pub unsafe fn Load<P0>(&self, pcontainer: P0) -> ::windows_core::Result<()>
     where
@@ -423,12 +341,6 @@ impl IDxcContainerReflection {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcContainerReflection, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcContainerReflection {
-    type Vtable = IDxcContainerReflection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcContainerReflection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd2c21b26_8350_4bdc_976a_331ce6f4c54c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcContainerReflection_Vtbl {
@@ -440,9 +352,7 @@ pub struct IDxcContainerReflection_Vtbl {
     pub FindFirstPartKind: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, kind: u32, presult: *mut u32) -> ::windows_core::HRESULT,
     pub GetPartReflection: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, idx: u32, iid: *const ::windows_core::GUID, ppvobject: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcExtraOutputs(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcExtraOutputs, IDxcExtraOutputs_Vtbl, 0x319b37a2_a5c2_494a_a5de_4801b2faf989);
 impl IDxcExtraOutputs {
     pub unsafe fn GetOutputCount(&self) -> u32 {
         (::windows_core::Interface::vtable(self).GetOutputCount)(::windows_core::Interface::as_raw(self))
@@ -455,12 +365,6 @@ impl IDxcExtraOutputs {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcExtraOutputs, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcExtraOutputs {
-    type Vtable = IDxcExtraOutputs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcExtraOutputs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x319b37a2_a5c2_494a_a5de_4801b2faf989);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcExtraOutputs_Vtbl {
@@ -468,9 +372,7 @@ pub struct IDxcExtraOutputs_Vtbl {
     pub GetOutputCount: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> u32,
     pub GetOutput: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, uindex: u32, iid: *const ::windows_core::GUID, ppvobject: *mut *mut ::core::ffi::c_void, ppoutputtype: *mut *mut ::core::ffi::c_void, ppoutputname: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcIncludeHandler(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcIncludeHandler, IDxcIncludeHandler_Vtbl, 0x7f61fc7d_950d_467f_b3e3_3c02fb49187c);
 impl IDxcIncludeHandler {
     pub unsafe fn LoadSource<P0>(&self, pfilename: P0) -> ::windows_core::Result<IDxcBlob>
     where
@@ -481,21 +383,13 @@ impl IDxcIncludeHandler {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcIncludeHandler, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcIncludeHandler {
-    type Vtable = IDxcIncludeHandler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcIncludeHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7f61fc7d_950d_467f_b3e3_3c02fb49187c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcIncludeHandler_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub LoadSource: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pfilename: ::windows_core::PCWSTR, ppincludesource: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcLibrary(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcLibrary, IDxcLibrary_Vtbl, 0xe5204dc7_d18c_4c3c_bdfb_851673980fe7);
 impl IDxcLibrary {
     #[doc = "Required features: `\"Win32_System_Com\"`"]
     #[cfg(feature = "Win32_System_Com")]
@@ -565,12 +459,6 @@ impl IDxcLibrary {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcLibrary, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcLibrary {
-    type Vtable = IDxcLibrary_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcLibrary {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe5204dc7_d18c_4c3c_bdfb_851673980fe7);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcLibrary_Vtbl {
@@ -595,9 +483,7 @@ pub struct IDxcLibrary_Vtbl {
     pub GetBlobAsUtf8: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pblob: *mut ::core::ffi::c_void, pblobencoding: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetBlobAsUtf16: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pblob: *mut ::core::ffi::c_void, pblobencoding: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcLinker(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcLinker, IDxcLinker_Vtbl, 0xf1b5be2a_62dd_4327_a1c2_42ac1e1e78e6);
 impl IDxcLinker {
     pub unsafe fn RegisterLibrary<P0, P1>(&self, plibname: P0, plib: P1) -> ::windows_core::Result<()>
     where
@@ -616,12 +502,6 @@ impl IDxcLinker {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcLinker, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcLinker {
-    type Vtable = IDxcLinker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcLinker {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf1b5be2a_62dd_4327_a1c2_42ac1e1e78e6);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcLinker_Vtbl {
@@ -629,9 +509,7 @@ pub struct IDxcLinker_Vtbl {
     pub RegisterLibrary: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, plibname: ::windows_core::PCWSTR, plib: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Link: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pentryname: ::windows_core::PCWSTR, ptargetprofile: ::windows_core::PCWSTR, plibnames: *const ::windows_core::PCWSTR, libcount: u32, parguments: *const ::windows_core::PCWSTR, argcount: u32, ppresult: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcOperationResult(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcOperationResult, IDxcOperationResult_Vtbl, 0xcedb484a_d4e9_445a_b991_ca21ca157dc2);
 impl IDxcOperationResult {
     pub unsafe fn GetStatus(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
         let mut result__ = ::std::mem::zeroed();
@@ -647,12 +525,6 @@ impl IDxcOperationResult {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcOperationResult, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcOperationResult {
-    type Vtable = IDxcOperationResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcOperationResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcedb484a_d4e9_445a_b991_ca21ca157dc2);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcOperationResult_Vtbl {
@@ -661,9 +533,7 @@ pub struct IDxcOperationResult_Vtbl {
     pub GetResult: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppresult: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetErrorBuffer: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pperrors: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcOptimizer(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcOptimizer, IDxcOptimizer_Vtbl, 0x25740e2e_9cba_401b_9119_4fb42f39f270);
 impl IDxcOptimizer {
     pub unsafe fn GetAvailablePassCount(&self) -> ::windows_core::Result<u32> {
         let mut result__ = ::std::mem::zeroed();
@@ -681,12 +551,6 @@ impl IDxcOptimizer {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcOptimizer, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcOptimizer {
-    type Vtable = IDxcOptimizer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcOptimizer {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x25740e2e_9cba_401b_9119_4fb42f39f270);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcOptimizer_Vtbl {
@@ -695,9 +559,7 @@ pub struct IDxcOptimizer_Vtbl {
     pub GetAvailablePass: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, index: u32, ppresult: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RunOptimizer: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pblob: *mut ::core::ffi::c_void, ppoptions: *const ::windows_core::PCWSTR, optioncount: u32, poutputmodule: *mut *mut ::core::ffi::c_void, ppoutputtext: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcOptimizerPass(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcOptimizerPass, IDxcOptimizerPass_Vtbl, 0xae2cd79f_cc22_453f_9b6b_b124e7a5204c);
 impl IDxcOptimizerPass {
     pub unsafe fn GetOptionName(&self) -> ::windows_core::Result<::windows_core::PWSTR> {
         let mut result__ = ::std::mem::zeroed();
@@ -721,12 +583,6 @@ impl IDxcOptimizerPass {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcOptimizerPass, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcOptimizerPass {
-    type Vtable = IDxcOptimizerPass_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcOptimizerPass {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xae2cd79f_cc22_453f_9b6b_b124e7a5204c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcOptimizerPass_Vtbl {
@@ -737,9 +593,7 @@ pub struct IDxcOptimizerPass_Vtbl {
     pub GetOptionArgName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, argindex: u32, ppresult: *mut ::windows_core::PWSTR) -> ::windows_core::HRESULT,
     pub GetOptionArgDescription: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, argindex: u32, ppresult: *mut ::windows_core::PWSTR) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcPdbUtils(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcPdbUtils, IDxcPdbUtils_Vtbl, 0xe6c9647e_9d6a_4c3b_b94c_524b5a6c343d);
 impl IDxcPdbUtils {
     pub unsafe fn Load<P0>(&self, ppdbordxil: P0) -> ::windows_core::Result<()>
     where
@@ -842,12 +696,6 @@ impl IDxcPdbUtils {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcPdbUtils, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcPdbUtils {
-    type Vtable = IDxcPdbUtils_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcPdbUtils {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe6c9647e_9d6a_4c3b_b94c_524b5a6c343d);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcPdbUtils_Vtbl {
@@ -877,9 +725,7 @@ pub struct IDxcPdbUtils_Vtbl {
     pub OverrideArgs: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pargpairs: *const DxcArgPair, unumargpairs: u32) -> ::windows_core::HRESULT,
     pub OverrideRootSignature: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, prootsignature: ::windows_core::PCWSTR) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcResult(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcResult, IDxcResult_Vtbl, 0x58346cda_dde7_4497_9461_6f87af5e0659);
 impl IDxcResult {
     pub unsafe fn GetStatus(&self) -> ::windows_core::Result<::windows_core::HRESULT> {
         let mut result__ = ::std::mem::zeroed();
@@ -913,12 +759,6 @@ impl IDxcResult {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcResult, ::windows_core::IUnknown, IDxcOperationResult);
-unsafe impl ::windows_core::Interface for IDxcResult {
-    type Vtable = IDxcResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x58346cda_dde7_4497_9461_6f87af5e0659);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcResult_Vtbl {
@@ -929,9 +769,7 @@ pub struct IDxcResult_Vtbl {
     pub GetOutputByIndex: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, index: u32) -> DXC_OUT_KIND,
     pub PrimaryOutput: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> DXC_OUT_KIND,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcUtils(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcUtils, IDxcUtils_Vtbl, 0x4605c4cb_2019_492a_ada4_65f20bb7d67f);
 impl IDxcUtils {
     pub unsafe fn CreateBlobFromBlob<P0>(&self, pblob: P0, offset: u32, length: u32) -> ::windows_core::Result<IDxcBlob>
     where
@@ -1014,12 +852,6 @@ impl IDxcUtils {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcUtils, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcUtils {
-    type Vtable = IDxcUtils_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcUtils {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4605c4cb_2019_492a_ada4_65f20bb7d67f);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcUtils_Vtbl {
@@ -1044,9 +876,7 @@ pub struct IDxcUtils_Vtbl {
     pub BuildArguments: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, psourcename: ::windows_core::PCWSTR, pentrypoint: ::windows_core::PCWSTR, ptargetprofile: ::windows_core::PCWSTR, parguments: *const ::windows_core::PCWSTR, argcount: u32, pdefines: *const DxcDefine, definecount: u32, ppargs: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetPDBContents: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, ppdbblob: *mut ::core::ffi::c_void, pphash: *mut *mut ::core::ffi::c_void, ppcontainer: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcValidator(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcValidator, IDxcValidator_Vtbl, 0xa6e82bd2_1fd7_4826_9811_2857e797f49a);
 impl IDxcValidator {
     pub unsafe fn Validate<P0>(&self, pshader: P0, flags: u32) -> ::windows_core::Result<IDxcOperationResult>
     where
@@ -1057,21 +887,13 @@ impl IDxcValidator {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcValidator, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcValidator {
-    type Vtable = IDxcValidator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcValidator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa6e82bd2_1fd7_4826_9811_2857e797f49a);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcValidator_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub Validate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pshader: *mut ::core::ffi::c_void, flags: u32, ppresult: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcValidator2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcValidator2, IDxcValidator2_Vtbl, 0x458e1fd1_b1b2_4750_a6e1_9c10f03bed92);
 impl IDxcValidator2 {
     pub unsafe fn Validate<P0>(&self, pshader: P0, flags: u32) -> ::windows_core::Result<IDxcOperationResult>
     where
@@ -1089,21 +911,13 @@ impl IDxcValidator2 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcValidator2, ::windows_core::IUnknown, IDxcValidator);
-unsafe impl ::windows_core::Interface for IDxcValidator2 {
-    type Vtable = IDxcValidator2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcValidator2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x458e1fd1_b1b2_4750_a6e1_9c10f03bed92);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcValidator2_Vtbl {
     pub base__: IDxcValidator_Vtbl,
     pub ValidateWithDebug: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pshader: *mut ::core::ffi::c_void, flags: u32, poptdebugbitcode: *const DxcBuffer, ppresult: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcVersionInfo(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcVersionInfo, IDxcVersionInfo_Vtbl, 0xb04f5b50_2059_4f12_a8ff_a1e0cde1cc7e);
 impl IDxcVersionInfo {
     pub unsafe fn GetVersion(&self, pmajor: *mut u32, pminor: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).GetVersion)(::windows_core::Interface::as_raw(self), pmajor, pminor).ok()
@@ -1114,12 +928,6 @@ impl IDxcVersionInfo {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcVersionInfo, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcVersionInfo {
-    type Vtable = IDxcVersionInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcVersionInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb04f5b50_2059_4f12_a8ff_a1e0cde1cc7e);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcVersionInfo_Vtbl {
@@ -1127,9 +935,7 @@ pub struct IDxcVersionInfo_Vtbl {
     pub GetVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pmajor: *mut u32, pminor: *mut u32) -> ::windows_core::HRESULT,
     pub GetFlags: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pflags: *mut u32) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcVersionInfo2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcVersionInfo2, IDxcVersionInfo2_Vtbl, 0xfb6904c4_42f0_4b62_9c46_983af7da7c83);
 impl IDxcVersionInfo2 {
     pub unsafe fn GetVersion(&self, pmajor: *mut u32, pminor: *mut u32) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).base__.GetVersion)(::windows_core::Interface::as_raw(self), pmajor, pminor).ok()
@@ -1143,21 +949,13 @@ impl IDxcVersionInfo2 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcVersionInfo2, ::windows_core::IUnknown, IDxcVersionInfo);
-unsafe impl ::windows_core::Interface for IDxcVersionInfo2 {
-    type Vtable = IDxcVersionInfo2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcVersionInfo2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfb6904c4_42f0_4b62_9c46_983af7da7c83);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcVersionInfo2_Vtbl {
     pub base__: IDxcVersionInfo_Vtbl,
     pub GetCommitInfo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, pcommitcount: *mut u32, pcommithash: *mut *mut i8) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDxcVersionInfo3(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IDxcVersionInfo3, IDxcVersionInfo3_Vtbl, 0x5e13e843_9d25_473c_9ad2_03b2d0b44b1e);
 impl IDxcVersionInfo3 {
     pub unsafe fn GetCustomVersionString(&self) -> ::windows_core::Result<*mut i8> {
         let mut result__ = ::std::mem::zeroed();
@@ -1165,12 +963,6 @@ impl IDxcVersionInfo3 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IDxcVersionInfo3, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDxcVersionInfo3 {
-    type Vtable = IDxcVersionInfo3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDxcVersionInfo3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5e13e843_9d25_473c_9ad2_03b2d0b44b1e);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDxcVersionInfo3_Vtbl {

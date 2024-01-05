@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPreviewBuildsManager(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPreviewBuildsManager {
-    type Vtable = IPreviewBuildsManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPreviewBuildsManager {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfa07dd61_7e4f_59f7_7c9f_def9051c5f62);
-}
+::windows_core::imp::com_interface!(IPreviewBuildsManager, IPreviewBuildsManager_Vtbl, 0xfa07dd61_7e4f_59f7_7c9f_def9051c5f62);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPreviewBuildsManager_Vtbl {
@@ -17,16 +8,7 @@ pub struct IPreviewBuildsManager_Vtbl {
     pub GetCurrentState: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SyncAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPreviewBuildsManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPreviewBuildsManagerStatics {
-    type Vtable = IPreviewBuildsManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPreviewBuildsManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3e422887_b112_5a70_7da1_97d78d32aa29);
-}
+::windows_core::imp::com_interface!(IPreviewBuildsManagerStatics, IPreviewBuildsManagerStatics_Vtbl, 0x3e422887_b112_5a70_7da1_97d78d32aa29);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPreviewBuildsManagerStatics_Vtbl {
@@ -34,16 +16,7 @@ pub struct IPreviewBuildsManagerStatics_Vtbl {
     pub GetDefault: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub IsSupported: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPreviewBuildsState(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPreviewBuildsState {
-    type Vtable = IPreviewBuildsState_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPreviewBuildsState {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa2f2903e_b223_5f63_7546_3e8eac070a2e);
-}
+::windows_core::imp::com_interface!(IPreviewBuildsState, IPreviewBuildsState_Vtbl, 0xa2f2903e_b223_5f63_7546_3e8eac070a2e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPreviewBuildsState_Vtbl {
@@ -53,16 +26,7 @@ pub struct IPreviewBuildsState_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Properties: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdate(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdate {
-    type Vtable = IWindowsUpdate_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdate {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc3c88dd7_0ef3_52b2_a9ad_66bfc6bd9582);
-}
+::windows_core::imp::com_interface!(IWindowsUpdate, IWindowsUpdate_Vtbl, 0xc3c88dd7_0ef3_52b2_a9ad_66bfc6bd9582);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdate_Vtbl {
@@ -92,16 +56,7 @@ pub struct IWindowsUpdate_Vtbl {
     pub GetPropertyValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, propertyname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub AcceptEula: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateActionCompletedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateActionCompletedEventArgs {
-    type Vtable = IWindowsUpdateActionCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateActionCompletedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2c44b950_a655_5321_aec1_aee762922131);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateActionCompletedEventArgs, IWindowsUpdateActionCompletedEventArgs_Vtbl, 0x2c44b950_a655_5321_aec1_aee762922131);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateActionCompletedEventArgs_Vtbl {
@@ -111,16 +66,7 @@ pub struct IWindowsUpdateActionCompletedEventArgs_Vtbl {
     pub Succeeded: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub ExtendedError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateActionProgress(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateActionProgress {
-    type Vtable = IWindowsUpdateActionProgress_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateActionProgress {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x83b22d8a_4bb0_549f_ba39_59724882d137);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateActionProgress, IWindowsUpdateActionProgress_Vtbl, 0x83b22d8a_4bb0_549f_ba39_59724882d137);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateActionProgress_Vtbl {
@@ -128,16 +74,7 @@ pub struct IWindowsUpdateActionProgress_Vtbl {
     pub Action: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Progress: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut f64) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateActionResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateActionResult {
-    type Vtable = IWindowsUpdateActionResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateActionResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe6692c62_f697_51b7_ab7f_e73e5e688f12);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateActionResult, IWindowsUpdateActionResult_Vtbl, 0xe6692c62_f697_51b7_ab7f_e73e5e688f12);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateActionResult_Vtbl {
@@ -147,16 +84,7 @@ pub struct IWindowsUpdateActionResult_Vtbl {
     pub ExtendedError: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::windows_core::HRESULT) -> ::windows_core::HRESULT,
     pub Action: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateAdministrator(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateAdministrator {
-    type Vtable = IWindowsUpdateAdministrator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateAdministrator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7a60181c_ba1e_5cf9_aa65_304120b73d72);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateAdministrator, IWindowsUpdateAdministrator_Vtbl, 0x7a60181c_ba1e_5cf9_aa65_304120b73d72);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateAdministrator_Vtbl {
@@ -171,16 +99,7 @@ pub struct IWindowsUpdateAdministrator_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     GetUpdates: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateAdministratorStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateAdministratorStatics {
-    type Vtable = IWindowsUpdateAdministratorStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateAdministratorStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x013e6d36_ef69_53bc_8db8_c403bca550ed);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateAdministratorStatics, IWindowsUpdateAdministratorStatics_Vtbl, 0x013e6d36_ef69_53bc_8db8_c403bca550ed);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateAdministratorStatics_Vtbl {
@@ -192,16 +111,7 @@ pub struct IWindowsUpdateAdministratorStatics_Vtbl {
     pub RequestRestart: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, restartoptions: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub CancelRestartRequest: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, requestrestarttoken: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateApprovalData(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateApprovalData {
-    type Vtable = IWindowsUpdateApprovalData_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateApprovalData {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xaadf5bfd_84db_59bc_85e2_ad4fc1f62f7c);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateApprovalData, IWindowsUpdateApprovalData_Vtbl, 0xaadf5bfd_84db_59bc_85e2_ad4fc1f62f7c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateApprovalData_Vtbl {
@@ -217,16 +127,7 @@ pub struct IWindowsUpdateApprovalData_Vtbl {
     pub OptOutOfAutoReboot: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetOptOutOfAutoReboot: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateAttentionRequiredInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateAttentionRequiredInfo {
-    type Vtable = IWindowsUpdateAttentionRequiredInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateAttentionRequiredInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x44df2579_74d3_5ffa_b6ce_09e187e1e0ed);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateAttentionRequiredInfo, IWindowsUpdateAttentionRequiredInfo_Vtbl, 0x44df2579_74d3_5ffa_b6ce_09e187e1e0ed);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateAttentionRequiredInfo_Vtbl {
@@ -234,16 +135,7 @@ pub struct IWindowsUpdateAttentionRequiredInfo_Vtbl {
     pub Reason: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut WindowsUpdateAttentionRequiredReason) -> ::windows_core::HRESULT,
     pub Timestamp: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateAttentionRequiredReasonChangedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateAttentionRequiredReasonChangedEventArgs {
-    type Vtable = IWindowsUpdateAttentionRequiredReasonChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateAttentionRequiredReasonChangedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0627abca_dbb8_524a_b1d2_d9df004eeb31);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateAttentionRequiredReasonChangedEventArgs, IWindowsUpdateAttentionRequiredReasonChangedEventArgs_Vtbl, 0x0627abca_dbb8_524a_b1d2_d9df004eeb31);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateAttentionRequiredReasonChangedEventArgs_Vtbl {
@@ -251,16 +143,7 @@ pub struct IWindowsUpdateAttentionRequiredReasonChangedEventArgs_Vtbl {
     pub Update: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Reason: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut WindowsUpdateAttentionRequiredReason) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateGetAdministratorResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateGetAdministratorResult {
-    type Vtable = IWindowsUpdateGetAdministratorResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateGetAdministratorResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbb39ffc4_2c42_5b1c_8995_343341c92c50);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateGetAdministratorResult, IWindowsUpdateGetAdministratorResult_Vtbl, 0xbb39ffc4_2c42_5b1c_8995_343341c92c50);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateGetAdministratorResult_Vtbl {
@@ -268,16 +151,7 @@ pub struct IWindowsUpdateGetAdministratorResult_Vtbl {
     pub Administrator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut WindowsUpdateAdministratorStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateItem(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateItem {
-    type Vtable = IWindowsUpdateItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateItem {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb222e44a_49b6_59bf_a033_ef617cd73a98);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateItem, IWindowsUpdateItem_Vtbl, 0xb222e44a_49b6_59bf_a033_ef617cd73a98);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateItem_Vtbl {
@@ -291,16 +165,7 @@ pub struct IWindowsUpdateItem_Vtbl {
     pub Category: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Operation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateManager(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateManager {
-    type Vtable = IWindowsUpdateManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateManager {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5dd966c0_a71a_5602_bbd0_09a70e4573fa);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateManager, IWindowsUpdateManager_Vtbl, 0x5dd966c0_a71a_5602_bbd0_09a70e4573fa);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateManager_Vtbl {
@@ -334,32 +199,14 @@ pub struct IWindowsUpdateManager_Vtbl {
     GetMostRecentCompletedUpdatesAsync: usize,
     pub StartScan: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, userinitiated: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateManagerFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateManagerFactory {
-    type Vtable = IWindowsUpdateManagerFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateManagerFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1b394df8_decb_5f44_b47c_6ccf3bcfdb37);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateManagerFactory, IWindowsUpdateManagerFactory_Vtbl, 0x1b394df8_decb_5f44_b47c_6ccf3bcfdb37);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateManagerFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, clientid: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateProgressChangedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateProgressChangedEventArgs {
-    type Vtable = IWindowsUpdateProgressChangedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateProgressChangedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbbfbdeeb_94c8_5aa7_b0fb_66c67c233b0a);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateProgressChangedEventArgs, IWindowsUpdateProgressChangedEventArgs_Vtbl, 0xbbfbdeeb_94c8_5aa7_b0fb_66c67c233b0a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateProgressChangedEventArgs_Vtbl {
@@ -367,16 +214,7 @@ pub struct IWindowsUpdateProgressChangedEventArgs_Vtbl {
     pub Update: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ActionProgress: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateRestartRequestOptions(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateRestartRequestOptions {
-    type Vtable = IWindowsUpdateRestartRequestOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateRestartRequestOptions {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x38cfb7d3_4188_5222_905c_6c4443c951ee);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateRestartRequestOptions, IWindowsUpdateRestartRequestOptions_Vtbl, 0x38cfb7d3_4188_5222_905c_6c4443c951ee);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateRestartRequestOptions_Vtbl {
@@ -396,32 +234,14 @@ pub struct IWindowsUpdateRestartRequestOptions_Vtbl {
     pub OptOutOfAutoReboot: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetOptOutOfAutoReboot: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateRestartRequestOptionsFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateRestartRequestOptionsFactory {
-    type Vtable = IWindowsUpdateRestartRequestOptionsFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateRestartRequestOptionsFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x75f41d04_0e17_50d0_8c15_6b9d0539b3a9);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateRestartRequestOptionsFactory, IWindowsUpdateRestartRequestOptionsFactory_Vtbl, 0x75f41d04_0e17_50d0_8c15_6b9d0539b3a9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateRestartRequestOptionsFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateInstance: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, title: ::std::mem::MaybeUninit<::windows_core::HSTRING>, description: ::std::mem::MaybeUninit<::windows_core::HSTRING>, moreinfourl: *mut ::core::ffi::c_void, compliancedeadlineindays: i32, compliancegraceperiodindays: i32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWindowsUpdateScanCompletedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWindowsUpdateScanCompletedEventArgs {
-    type Vtable = IWindowsUpdateScanCompletedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWindowsUpdateScanCompletedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x95b6953e_ba5c_5fe8_b115_12de184a6bb0);
-}
+::windows_core::imp::com_interface!(IWindowsUpdateScanCompletedEventArgs, IWindowsUpdateScanCompletedEventArgs_Vtbl, 0x95b6953e_ba5c_5fe8_b115_12de184a6bb0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWindowsUpdateScanCompletedEventArgs_Vtbl {
@@ -953,10 +773,10 @@ impl WindowsUpdateApprovalData {
     }
     pub fn SetSeeker<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<bool>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<bool>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSeeker)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSeeker)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn AllowDownloadOnMetered(&self) -> ::windows_core::Result<super::super::Foundation::IReference<bool>> {
         let this = self;
@@ -967,10 +787,10 @@ impl WindowsUpdateApprovalData {
     }
     pub fn SetAllowDownloadOnMetered<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<bool>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<bool>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetAllowDownloadOnMetered)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetAllowDownloadOnMetered)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ComplianceDeadlineInDays(&self) -> ::windows_core::Result<super::super::Foundation::IReference<i32>> {
         let this = self;
@@ -981,10 +801,10 @@ impl WindowsUpdateApprovalData {
     }
     pub fn SetComplianceDeadlineInDays<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<i32>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<i32>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetComplianceDeadlineInDays)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetComplianceDeadlineInDays)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn ComplianceGracePeriodInDays(&self) -> ::windows_core::Result<super::super::Foundation::IReference<i32>> {
         let this = self;
@@ -995,10 +815,10 @@ impl WindowsUpdateApprovalData {
     }
     pub fn SetComplianceGracePeriodInDays<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<i32>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<i32>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetComplianceGracePeriodInDays)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetComplianceGracePeriodInDays)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn OptOutOfAutoReboot(&self) -> ::windows_core::Result<super::super::Foundation::IReference<bool>> {
         let this = self;
@@ -1009,10 +829,10 @@ impl WindowsUpdateApprovalData {
     }
     pub fn SetOptOutOfAutoReboot<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::Foundation::IReference<bool>>,
+        P0: ::windows_core::IntoParam<super::super::Foundation::IReference<bool>>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetOptOutOfAutoReboot)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetOptOutOfAutoReboot)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
 }
 impl ::windows_core::RuntimeType for WindowsUpdateApprovalData {

@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactPickerUI(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactPickerUI {
-    type Vtable = IContactPickerUI_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactPickerUI {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe2cc1366_cf66_43c4_a96a_a5a112db4746);
-}
+::windows_core::imp::com_interface!(IContactPickerUI, IContactPickerUI_Vtbl, 0xe2cc1366_cf66_43c4_a96a_a5a112db4746);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactPickerUI_Vtbl {
@@ -26,16 +17,7 @@ pub struct IContactPickerUI_Vtbl {
     pub ContactRemoved: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveContactRemoved: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactPickerUI2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactPickerUI2 {
-    type Vtable = IContactPickerUI2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactPickerUI2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6e449e28_7b25_4999_9b0b_875400a1e8c8);
-}
+::windows_core::imp::com_interface!(IContactPickerUI2, IContactPickerUI2_Vtbl, 0x6e449e28_7b25_4999_9b0b_875400a1e8c8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactPickerUI2_Vtbl {
@@ -46,16 +28,7 @@ pub struct IContactPickerUI2_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     DesiredFieldsWithContactFieldType: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IContactRemovedEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IContactRemovedEventArgs {
-    type Vtable = IContactRemovedEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IContactRemovedEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6f354338_3302_4d13_ad8d_adcc0ff9e47c);
-}
+::windows_core::imp::com_interface!(IContactRemovedEventArgs, IContactRemovedEventArgs_Vtbl, 0x6f354338_3302_4d13_ad8d_adcc0ff9e47c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IContactRemovedEventArgs_Vtbl {

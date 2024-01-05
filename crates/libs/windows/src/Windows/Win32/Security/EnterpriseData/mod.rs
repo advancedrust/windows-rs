@@ -94,9 +94,7 @@ where
     ::windows_targets::link!("efswrt.dll" "system" fn UnprotectFile(fileorfolderpath : ::windows_core::PCWSTR, options : *const FILE_UNPROTECT_OPTIONS) -> ::windows_core::HRESULT);
     UnprotectFile(fileorfolderpath.into_param().abi(), ::core::mem::transmute(options.unwrap_or(::std::ptr::null()))).ok()
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IProtectionPolicyManagerInterop(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IProtectionPolicyManagerInterop, IProtectionPolicyManagerInterop_Vtbl, 0x4652651d_c1fe_4ba1_9f0a_c0f56596f721);
 impl IProtectionPolicyManagerInterop {
     pub unsafe fn RequestAccessForWindowAsync<P0, T>(&self, appwindow: P0, sourceidentity: &::windows_core::HSTRING, targetidentity: &::windows_core::HSTRING) -> ::windows_core::Result<T>
     where
@@ -116,12 +114,6 @@ impl IProtectionPolicyManagerInterop {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IProtectionPolicyManagerInterop, ::windows_core::IUnknown, ::windows_core::IInspectable);
-unsafe impl ::windows_core::Interface for IProtectionPolicyManagerInterop {
-    type Vtable = IProtectionPolicyManagerInterop_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IProtectionPolicyManagerInterop {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4652651d_c1fe_4ba1_9f0a_c0f56596f721);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IProtectionPolicyManagerInterop_Vtbl {
@@ -129,9 +121,7 @@ pub struct IProtectionPolicyManagerInterop_Vtbl {
     pub RequestAccessForWindowAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, appwindow: super::super::Foundation::HWND, sourceidentity: ::std::mem::MaybeUninit<::windows_core::HSTRING>, targetidentity: ::std::mem::MaybeUninit<::windows_core::HSTRING>, riid: *const ::windows_core::GUID, asyncoperation: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub GetForWindow: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, appwindow: super::super::Foundation::HWND, riid: *const ::windows_core::GUID, result: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IProtectionPolicyManagerInterop2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IProtectionPolicyManagerInterop2, IProtectionPolicyManagerInterop2_Vtbl, 0x157cfbe4_a78d_4156_b384_61fdac41e686);
 impl IProtectionPolicyManagerInterop2 {
     pub unsafe fn RequestAccessForAppWithWindowAsync<P0, T>(&self, appwindow: P0, sourceidentity: &::windows_core::HSTRING, apppackagefamilyname: &::windows_core::HSTRING) -> ::windows_core::Result<T>
     where
@@ -179,12 +169,6 @@ impl IProtectionPolicyManagerInterop2 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IProtectionPolicyManagerInterop2, ::windows_core::IUnknown, ::windows_core::IInspectable);
-unsafe impl ::windows_core::Interface for IProtectionPolicyManagerInterop2 {
-    type Vtable = IProtectionPolicyManagerInterop2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IProtectionPolicyManagerInterop2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x157cfbe4_a78d_4156_b384_61fdac41e686);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IProtectionPolicyManagerInterop2_Vtbl {
@@ -195,9 +179,7 @@ pub struct IProtectionPolicyManagerInterop2_Vtbl {
     pub RequestAccessForAppWithAuditingInfoForWindowAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, appwindow: super::super::Foundation::HWND, sourceidentity: ::std::mem::MaybeUninit<::windows_core::HSTRING>, apppackagefamilyname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, auditinfounk: *mut ::core::ffi::c_void, riid: *const ::windows_core::GUID, asyncoperation: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RequestAccessForAppWithMessageForWindowAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, appwindow: super::super::Foundation::HWND, sourceidentity: ::std::mem::MaybeUninit<::windows_core::HSTRING>, apppackagefamilyname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, auditinfounk: *mut ::core::ffi::c_void, messagefromapp: ::std::mem::MaybeUninit<::windows_core::HSTRING>, riid: *const ::windows_core::GUID, asyncoperation: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IProtectionPolicyManagerInterop3(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IProtectionPolicyManagerInterop3, IProtectionPolicyManagerInterop3_Vtbl, 0xc1c03933_b398_4d93_b0fd_2972adf802c2);
 impl IProtectionPolicyManagerInterop3 {
     pub unsafe fn RequestAccessWithBehaviorForWindowAsync<P0, P1, T>(&self, appwindow: P0, sourceidentity: &::windows_core::HSTRING, targetidentity: &::windows_core::HSTRING, auditinfounk: P1, messagefromapp: &::windows_core::HSTRING, behavior: u32) -> ::windows_core::Result<T>
     where
@@ -259,12 +241,6 @@ impl IProtectionPolicyManagerInterop3 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IProtectionPolicyManagerInterop3, ::windows_core::IUnknown, ::windows_core::IInspectable);
-unsafe impl ::windows_core::Interface for IProtectionPolicyManagerInterop3 {
-    type Vtable = IProtectionPolicyManagerInterop3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IProtectionPolicyManagerInterop3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc1c03933_b398_4d93_b0fd_2972adf802c2);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IProtectionPolicyManagerInterop3_Vtbl {

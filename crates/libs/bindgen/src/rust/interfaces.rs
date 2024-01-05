@@ -24,35 +24,40 @@ fn gen_sys_interface(def: metadata::TypeDef) -> TokenStream {
 fn gen_win_interface(writer: &Writer, def: metadata::TypeDef) -> TokenStream {
     let generics = &metadata::type_def_generics(def);
     let ident = writer.type_def_name(def, generics);
+    let vtbl_ident = writer.type_def_vtbl_name(def, generics);
     let is_exclusive = metadata::type_def_is_exclusive(def);
     let phantoms = writer.generic_phantoms(generics);
     let constraints = writer.generic_constraints(generics);
     let cfg = cfg::type_def_cfg(def, &[]);
-    let doc = writer.cfg_doc(&cfg);
+    //let doc = writer.cfg_doc(&cfg);
     let features = writer.cfg_features(&cfg);
     let interfaces = metadata::type_interfaces(&metadata::Type::TypeDef(def, generics.to_vec()));
     let vtables = metadata::type_def_vtables(def);
     let has_unknown_base = matches!(vtables.first(), Some(metadata::Type::IUnknown));
 
-    let mut tokens = if is_exclusive {
-        quote! { #[doc(hidden)] }
-    } else {
-        quote! { #doc }
-    };
+    let mut tokens = 
+        quote! {  }
+    ;
 
     if has_unknown_base {
-        tokens.combine(&quote! {
-            #features
-            #[repr(transparent)]
-            #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-            pub struct #ident(::windows_core::IUnknown, #phantoms) where #constraints;
-        });
+        if generics.is_empty() {
+            let iid = writer.guid_literal(metadata::type_def_guid(def));
+            tokens.combine(&quote! {
+                #features
+                ::windows_core::imp::com_interface!(#ident, #vtbl_ident, #iid);
+            });
+        } else {
+            tokens.combine(&quote! {
+                #features
+                #[repr(transparent)]
+                #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
+                pub struct #ident(::windows_core::IUnknown, #phantoms) where #constraints;
+            });
+        }
     } else {
         tokens.combine(&quote! {
             #features
-            #[repr(transparent)]
-            #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-            pub struct #ident(::std::ptr::NonNull<::std::ffi::c_void>);
+            ::windows_core::imp::interface!(#ident, #vtbl_ident);
         });
     }
 
@@ -127,15 +132,32 @@ fn gen_win_interface(writer: &Writer, def: metadata::TypeDef) -> TokenStream {
             }
         }
 
-        if def.flags().contains(metadata::TypeAttributes::WindowsRuntime) {
+        if def.flags().contains(metadata::TypeAttributes::WindowsRuntime) && !interfaces.is_empty() {
+            if generics.is_empty() {
+            let mut hierarchy = format!("::windows_core::imp::required_hierarchy!({ident}");
+            let mut hierarchy_cfg = cfg.clone();
+
+            for interface in &interfaces {
+                let into = writer.type_name(&interface.ty);
+
+                write!(&mut hierarchy, ", {into}").unwrap();
+                hierarchy_cfg = hierarchy_cfg.union(&cfg::type_cfg(&interface.ty));
+            }
+
+            hierarchy.push_str(");");
+            tokens.combine(&writer.cfg_features(&hierarchy_cfg));
+            tokens.push_str(&hierarchy);
+        }
+        else {
             for interface in &interfaces {
                 let into = writer.type_name(&interface.ty);
                 let cfg = writer.cfg_features(&cfg.union(&cfg::type_cfg(&interface.ty)));
                 tokens.combine(&quote! {
                     #cfg
-                    impl<#constraints> ::windows_core::CanTryInto<#into> for #ident {}
+                    impl<#constraints> ::windows_core::CanInto<#into> for #ident { const QUERY: bool = true; }
                 });
             }
+        }
         }
 
         tokens.combine(&writer.interface_winrt_trait(def, generics, &ident, &constraints, &phantoms, &features));

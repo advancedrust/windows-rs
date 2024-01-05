@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationAttribute(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationAttribute {
-    type Vtable = ISyndicationAttribute_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationAttribute {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x71e8f969_526e_4001_9a91_e84f83161ab1);
-}
+::windows_core::imp::com_interface!(ISyndicationAttribute, ISyndicationAttribute_Vtbl, 0x71e8f969_526e_4001_9a91_e84f83161ab1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationAttribute_Vtbl {
@@ -19,32 +10,14 @@ pub struct ISyndicationAttribute_Vtbl {
     pub Value: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetValue: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationAttributeFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationAttributeFactory {
-    type Vtable = ISyndicationAttributeFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationAttributeFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x624f1599_ed3e_420f_be86_640414886e4b);
-}
+::windows_core::imp::com_interface!(ISyndicationAttributeFactory, ISyndicationAttributeFactory_Vtbl, 0x624f1599_ed3e_420f_be86_640414886e4b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationAttributeFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateSyndicationAttribute: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, attributename: ::std::mem::MaybeUninit<::windows_core::HSTRING>, attributenamespace: ::std::mem::MaybeUninit<::windows_core::HSTRING>, attributevalue: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationCategory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationCategory {
-    type Vtable = ISyndicationCategory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationCategory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8715626f_0cba_4a7f_89ff_ecb5281423b6);
-}
+::windows_core::imp::com_interface!(ISyndicationCategory, ISyndicationCategory_Vtbl, 0x8715626f_0cba_4a7f_89ff_ecb5281423b6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationCategory_Vtbl {
@@ -56,16 +29,7 @@ pub struct ISyndicationCategory_Vtbl {
     pub Term: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetTerm: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationCategoryFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationCategoryFactory {
-    type Vtable = ISyndicationCategoryFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationCategoryFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xab42802f_49e0_4525_8ab2_ab45c02528ff);
-}
+::windows_core::imp::com_interface!(ISyndicationCategoryFactory, ISyndicationCategoryFactory_Vtbl, 0xab42802f_49e0_4525_8ab2_ab45c02528ff);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationCategoryFactory_Vtbl {
@@ -73,9 +37,7 @@ pub struct ISyndicationCategoryFactory_Vtbl {
     pub CreateSyndicationCategory: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, term: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateSyndicationCategoryEx: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, term: ::std::mem::MaybeUninit<::windows_core::HSTRING>, scheme: ::std::mem::MaybeUninit<::windows_core::HSTRING>, label: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationClient(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISyndicationClient, ISyndicationClient_Vtbl, 0x9e18a9b7_7249_4b45_b229_7df895a5a1f5);
 impl ISyndicationClient {
     #[doc = "Required features: `\"Security_Credentials\"`"]
     #[cfg(feature = "Security_Credentials")]
@@ -165,12 +127,6 @@ impl ISyndicationClient {
 impl ::windows_core::RuntimeType for ISyndicationClient {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for ISyndicationClient {
-    type Vtable = ISyndicationClient_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationClient {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9e18a9b7_7249_4b45_b229_7df895a5a1f5);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationClient_Vtbl {
@@ -200,16 +156,7 @@ pub struct ISyndicationClient_Vtbl {
     pub SetRequestHeader: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub RetrieveFeedAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, uri: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationClientFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationClientFactory {
-    type Vtable = ISyndicationClientFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationClientFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2ec4b32c_a79b_4114_b29a_05dffbafb9a4);
-}
+::windows_core::imp::com_interface!(ISyndicationClientFactory, ISyndicationClientFactory_Vtbl, 0x2ec4b32c_a79b_4114_b29a_05dffbafb9a4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationClientFactory_Vtbl {
@@ -219,16 +166,7 @@ pub struct ISyndicationClientFactory_Vtbl {
     #[cfg(not(feature = "Security_Credentials"))]
     CreateSyndicationClient: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationContent(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationContent {
-    type Vtable = ISyndicationContent_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationContent {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4641fefe_0e55_40d0_b8d0_6a2ccba9fc7c);
-}
+::windows_core::imp::com_interface!(ISyndicationContent, ISyndicationContent_Vtbl, 0x4641fefe_0e55_40d0_b8d0_6a2ccba9fc7c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationContent_Vtbl {
@@ -236,16 +174,7 @@ pub struct ISyndicationContent_Vtbl {
     pub SourceUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetSourceUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationContentFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationContentFactory {
-    type Vtable = ISyndicationContentFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationContentFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3d2fbb93_9520_4173_9388_7e2df324a8a0);
-}
+::windows_core::imp::com_interface!(ISyndicationContentFactory, ISyndicationContentFactory_Vtbl, 0x3d2fbb93_9520_4173_9388_7e2df324a8a0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationContentFactory_Vtbl {
@@ -253,32 +182,14 @@ pub struct ISyndicationContentFactory_Vtbl {
     pub CreateSyndicationContent: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, text: ::std::mem::MaybeUninit<::windows_core::HSTRING>, r#type: SyndicationTextType, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateSyndicationContentWithSourceUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, sourceuri: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationErrorStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationErrorStatics {
-    type Vtable = ISyndicationErrorStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationErrorStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1fbb2361_45c7_4833_8aa0_be5f3b58a7f4);
-}
+::windows_core::imp::com_interface!(ISyndicationErrorStatics, ISyndicationErrorStatics_Vtbl, 0x1fbb2361_45c7_4833_8aa0_be5f3b58a7f4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationErrorStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetStatus: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, hresult: i32, result__: *mut SyndicationErrorStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationFeed(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationFeed {
-    type Vtable = ISyndicationFeed_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationFeed {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7ffe3cd2_5b66_4d62_8403_1bc10d910d6b);
-}
+::windows_core::imp::com_interface!(ISyndicationFeed, ISyndicationFeed_Vtbl, 0x7ffe3cd2_5b66_4d62_8403_1bc10d910d6b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationFeed_Vtbl {
@@ -330,32 +241,14 @@ pub struct ISyndicationFeed_Vtbl {
     #[cfg(not(feature = "Data_Xml_Dom"))]
     LoadFromXml: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationFeedFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationFeedFactory {
-    type Vtable = ISyndicationFeedFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationFeedFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x23472232_8be9_48b7_8934_6205131d9357);
-}
+::windows_core::imp::com_interface!(ISyndicationFeedFactory, ISyndicationFeedFactory_Vtbl, 0x23472232_8be9_48b7_8934_6205131d9357);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationFeedFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateSyndicationFeed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, title: ::std::mem::MaybeUninit<::windows_core::HSTRING>, subtitle: ::std::mem::MaybeUninit<::windows_core::HSTRING>, uri: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationGenerator(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationGenerator {
-    type Vtable = ISyndicationGenerator_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationGenerator {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9768b379_fb2b_4f6d_b41c_088a5868825c);
-}
+::windows_core::imp::com_interface!(ISyndicationGenerator, ISyndicationGenerator_Vtbl, 0x9768b379_fb2b_4f6d_b41c_088a5868825c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationGenerator_Vtbl {
@@ -367,32 +260,14 @@ pub struct ISyndicationGenerator_Vtbl {
     pub Version: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationGeneratorFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationGeneratorFactory {
-    type Vtable = ISyndicationGeneratorFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationGeneratorFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa34083e3_1e26_4dbc_ba9d_1ab84beff97b);
-}
+::windows_core::imp::com_interface!(ISyndicationGeneratorFactory, ISyndicationGeneratorFactory_Vtbl, 0xa34083e3_1e26_4dbc_ba9d_1ab84beff97b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationGeneratorFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateSyndicationGenerator: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, text: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationItem(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationItem {
-    type Vtable = ISyndicationItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationItem {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x548db883_c384_45c1_8ae8_a378c4ec486c);
-}
+::windows_core::imp::com_interface!(ISyndicationItem, ISyndicationItem_Vtbl, 0x548db883_c384_45c1_8ae8_a378c4ec486c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationItem_Vtbl {
@@ -441,32 +316,14 @@ pub struct ISyndicationItem_Vtbl {
     #[cfg(not(feature = "Data_Xml_Dom"))]
     LoadFromXml: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationItemFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationItemFactory {
-    type Vtable = ISyndicationItemFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationItemFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x251d434f_7db8_487a_85e4_10d191e66ebb);
-}
+::windows_core::imp::com_interface!(ISyndicationItemFactory, ISyndicationItemFactory_Vtbl, 0x251d434f_7db8_487a_85e4_10d191e66ebb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationItemFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateSyndicationItem: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, title: ::std::mem::MaybeUninit<::windows_core::HSTRING>, content: *mut ::core::ffi::c_void, uri: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationLink(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationLink {
-    type Vtable = ISyndicationLink_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationLink {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x27553abd_a10e_41b5_86bd_9759086eb0c5);
-}
+::windows_core::imp::com_interface!(ISyndicationLink, ISyndicationLink_Vtbl, 0x27553abd_a10e_41b5_86bd_9759086eb0c5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationLink_Vtbl {
@@ -484,16 +341,7 @@ pub struct ISyndicationLink_Vtbl {
     pub ResourceLanguage: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetResourceLanguage: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationLinkFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationLinkFactory {
-    type Vtable = ISyndicationLinkFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationLinkFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5ed863d4_5535_48ac_98d4_c190995080b3);
-}
+::windows_core::imp::com_interface!(ISyndicationLinkFactory, ISyndicationLinkFactory_Vtbl, 0x5ed863d4_5535_48ac_98d4_c190995080b3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationLinkFactory_Vtbl {
@@ -501,9 +349,7 @@ pub struct ISyndicationLinkFactory_Vtbl {
     pub CreateSyndicationLink: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, uri: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateSyndicationLinkEx: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, uri: *mut ::core::ffi::c_void, relationship: ::std::mem::MaybeUninit<::windows_core::HSTRING>, title: ::std::mem::MaybeUninit<::windows_core::HSTRING>, mediatype: ::std::mem::MaybeUninit<::windows_core::HSTRING>, length: u32, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationNode(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISyndicationNode, ISyndicationNode_Vtbl, 0x753cef78_51f8_45c0_a9f5_f1719dec3fb2);
 impl ISyndicationNode {
     pub fn NodeName(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -595,12 +441,6 @@ impl ISyndicationNode {
 impl ::windows_core::RuntimeType for ISyndicationNode {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for ISyndicationNode {
-    type Vtable = ISyndicationNode_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationNode {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x753cef78_51f8_45c0_a9f5_f1719dec3fb2);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationNode_Vtbl {
@@ -628,32 +468,14 @@ pub struct ISyndicationNode_Vtbl {
     #[cfg(not(feature = "Data_Xml_Dom"))]
     GetXmlDocument: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationNodeFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationNodeFactory {
-    type Vtable = ISyndicationNodeFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationNodeFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x12902188_4acb_49a8_b777_a5eb92e18a79);
-}
+::windows_core::imp::com_interface!(ISyndicationNodeFactory, ISyndicationNodeFactory_Vtbl, 0x12902188_4acb_49a8_b777_a5eb92e18a79);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationNodeFactory_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CreateSyndicationNode: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, nodename: ::std::mem::MaybeUninit<::windows_core::HSTRING>, nodenamespace: ::std::mem::MaybeUninit<::windows_core::HSTRING>, nodevalue: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationPerson(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationPerson {
-    type Vtable = ISyndicationPerson_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationPerson {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfa1ee5da_a7c6_4517_a096_0143faf29327);
-}
+::windows_core::imp::com_interface!(ISyndicationPerson, ISyndicationPerson_Vtbl, 0xfa1ee5da_a7c6_4517_a096_0143faf29327);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationPerson_Vtbl {
@@ -665,16 +487,7 @@ pub struct ISyndicationPerson_Vtbl {
     pub Uri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SetUri: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationPersonFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationPersonFactory {
-    type Vtable = ISyndicationPersonFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationPersonFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdcf4886d_229d_4b58_a49b_f3d2f0f5c99f);
-}
+::windows_core::imp::com_interface!(ISyndicationPersonFactory, ISyndicationPersonFactory_Vtbl, 0xdcf4886d_229d_4b58_a49b_f3d2f0f5c99f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationPersonFactory_Vtbl {
@@ -682,9 +495,7 @@ pub struct ISyndicationPersonFactory_Vtbl {
     pub CreateSyndicationPerson: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateSyndicationPersonEx: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, email: ::std::mem::MaybeUninit<::windows_core::HSTRING>, uri: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationText(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ISyndicationText, ISyndicationText_Vtbl, 0xb9cc5e80_313a_4091_a2a6_243e0ee923f9);
 impl ISyndicationText {
     pub fn Text(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -813,15 +624,9 @@ impl ISyndicationText {
     }
 }
 ::windows_core::imp::interface_hierarchy!(ISyndicationText, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISyndicationNode> for ISyndicationText {}
+::windows_core::imp::required_hierarchy!(ISyndicationText, ISyndicationNode);
 impl ::windows_core::RuntimeType for ISyndicationText {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for ISyndicationText {
-    type Vtable = ISyndicationText_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationText {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb9cc5e80_313a_4091_a2a6_243e0ee923f9);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -840,16 +645,7 @@ pub struct ISyndicationText_Vtbl {
     #[cfg(not(feature = "Data_Xml_Dom"))]
     SetXml: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISyndicationTextFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISyndicationTextFactory {
-    type Vtable = ISyndicationTextFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISyndicationTextFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xee7342f7_11c6_4b25_ab62_e596bd162946);
-}
+::windows_core::imp::com_interface!(ISyndicationTextFactory, ISyndicationTextFactory_Vtbl, 0xee7342f7_11c6_4b25_ab62_e596bd162946);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISyndicationTextFactory_Vtbl {
@@ -1088,7 +884,7 @@ impl ::windows_core::RuntimeName for SyndicationCategory {
     const NAME: &'static str = "Windows.Web.Syndication.SyndicationCategory";
 }
 ::windows_core::imp::interface_hierarchy!(SyndicationCategory, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISyndicationNode> for SyndicationCategory {}
+::windows_core::imp::required_hierarchy!(SyndicationCategory, ISyndicationNode);
 unsafe impl ::core::marker::Send for SyndicationCategory {}
 unsafe impl ::core::marker::Sync for SyndicationCategory {}
 #[repr(transparent)]
@@ -1215,7 +1011,7 @@ impl ::windows_core::RuntimeName for SyndicationClient {
     const NAME: &'static str = "Windows.Web.Syndication.SyndicationClient";
 }
 ::windows_core::imp::interface_hierarchy!(SyndicationClient, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISyndicationClient> for SyndicationClient {}
+::windows_core::imp::required_hierarchy!(SyndicationClient, ISyndicationClient);
 unsafe impl ::core::marker::Send for SyndicationClient {}
 unsafe impl ::core::marker::Sync for SyndicationClient {}
 #[repr(transparent)]
@@ -1402,8 +1198,7 @@ impl ::windows_core::RuntimeName for SyndicationContent {
     const NAME: &'static str = "Windows.Web.Syndication.SyndicationContent";
 }
 ::windows_core::imp::interface_hierarchy!(SyndicationContent, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISyndicationNode> for SyndicationContent {}
-impl ::windows_core::CanTryInto<ISyndicationText> for SyndicationContent {}
+::windows_core::imp::required_hierarchy!(SyndicationContent, ISyndicationNode, ISyndicationText);
 unsafe impl ::core::marker::Send for SyndicationContent {}
 unsafe impl ::core::marker::Sync for SyndicationContent {}
 pub struct SyndicationError;
@@ -1552,10 +1347,10 @@ impl SyndicationFeed {
     }
     pub fn SetRights<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ISyndicationText>,
+        P0: ::windows_core::IntoParam<ISyndicationText>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetRights)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetRights)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Subtitle(&self) -> ::windows_core::Result<ISyndicationText> {
         let this = self;
@@ -1566,10 +1361,10 @@ impl SyndicationFeed {
     }
     pub fn SetSubtitle<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ISyndicationText>,
+        P0: ::windows_core::IntoParam<ISyndicationText>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSubtitle)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSubtitle)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Title(&self) -> ::windows_core::Result<ISyndicationText> {
         let this = self;
@@ -1580,10 +1375,10 @@ impl SyndicationFeed {
     }
     pub fn SetTitle<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ISyndicationText>,
+        P0: ::windows_core::IntoParam<ISyndicationText>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetTitle)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetTitle)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn FirstUri(&self) -> ::windows_core::Result<super::super::Foundation::Uri> {
         let this = self;
@@ -1746,7 +1541,7 @@ impl ::windows_core::RuntimeName for SyndicationFeed {
     const NAME: &'static str = "Windows.Web.Syndication.SyndicationFeed";
 }
 ::windows_core::imp::interface_hierarchy!(SyndicationFeed, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISyndicationNode> for SyndicationFeed {}
+::windows_core::imp::required_hierarchy!(SyndicationFeed, ISyndicationNode);
 unsafe impl ::core::marker::Send for SyndicationFeed {}
 unsafe impl ::core::marker::Sync for SyndicationFeed {}
 #[repr(transparent)]
@@ -1906,7 +1701,7 @@ impl ::windows_core::RuntimeName for SyndicationGenerator {
     const NAME: &'static str = "Windows.Web.Syndication.SyndicationGenerator";
 }
 ::windows_core::imp::interface_hierarchy!(SyndicationGenerator, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISyndicationNode> for SyndicationGenerator {}
+::windows_core::imp::required_hierarchy!(SyndicationGenerator, ISyndicationNode);
 unsafe impl ::core::marker::Send for SyndicationGenerator {}
 unsafe impl ::core::marker::Sync for SyndicationGenerator {}
 #[repr(transparent)]
@@ -2012,10 +1807,10 @@ impl SyndicationItem {
     }
     pub fn SetRights<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ISyndicationText>,
+        P0: ::windows_core::IntoParam<ISyndicationText>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetRights)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetRights)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Source(&self) -> ::windows_core::Result<SyndicationFeed> {
         let this = self;
@@ -2040,10 +1835,10 @@ impl SyndicationItem {
     }
     pub fn SetSummary<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ISyndicationText>,
+        P0: ::windows_core::IntoParam<ISyndicationText>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSummary)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSummary)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn Title(&self) -> ::windows_core::Result<ISyndicationText> {
         let this = self;
@@ -2054,10 +1849,10 @@ impl SyndicationItem {
     }
     pub fn SetTitle<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<ISyndicationText>,
+        P0: ::windows_core::IntoParam<ISyndicationText>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetTitle)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetTitle)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     pub fn CommentsUri(&self) -> ::windows_core::Result<super::super::Foundation::Uri> {
         let this = self;
@@ -2228,7 +2023,7 @@ impl ::windows_core::RuntimeName for SyndicationItem {
     const NAME: &'static str = "Windows.Web.Syndication.SyndicationItem";
 }
 ::windows_core::imp::interface_hierarchy!(SyndicationItem, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISyndicationNode> for SyndicationItem {}
+::windows_core::imp::required_hierarchy!(SyndicationItem, ISyndicationNode);
 unsafe impl ::core::marker::Send for SyndicationItem {}
 unsafe impl ::core::marker::Sync for SyndicationItem {}
 #[repr(transparent)]
@@ -2433,7 +2228,7 @@ impl ::windows_core::RuntimeName for SyndicationLink {
     const NAME: &'static str = "Windows.Web.Syndication.SyndicationLink";
 }
 ::windows_core::imp::interface_hierarchy!(SyndicationLink, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISyndicationNode> for SyndicationLink {}
+::windows_core::imp::required_hierarchy!(SyndicationLink, ISyndicationNode);
 unsafe impl ::core::marker::Send for SyndicationLink {}
 unsafe impl ::core::marker::Sync for SyndicationLink {}
 #[repr(transparent)]
@@ -2557,7 +2352,7 @@ impl ::windows_core::RuntimeName for SyndicationNode {
     const NAME: &'static str = "Windows.Web.Syndication.SyndicationNode";
 }
 ::windows_core::imp::interface_hierarchy!(SyndicationNode, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISyndicationNode> for SyndicationNode {}
+::windows_core::imp::required_hierarchy!(SyndicationNode, ISyndicationNode);
 unsafe impl ::core::marker::Send for SyndicationNode {}
 unsafe impl ::core::marker::Sync for SyndicationNode {}
 #[repr(transparent)]
@@ -2726,7 +2521,7 @@ impl ::windows_core::RuntimeName for SyndicationPerson {
     const NAME: &'static str = "Windows.Web.Syndication.SyndicationPerson";
 }
 ::windows_core::imp::interface_hierarchy!(SyndicationPerson, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISyndicationNode> for SyndicationPerson {}
+::windows_core::imp::required_hierarchy!(SyndicationPerson, ISyndicationNode);
 unsafe impl ::core::marker::Send for SyndicationPerson {}
 unsafe impl ::core::marker::Sync for SyndicationPerson {}
 #[repr(transparent)]
@@ -2896,8 +2691,7 @@ impl ::windows_core::RuntimeName for SyndicationText {
     const NAME: &'static str = "Windows.Web.Syndication.SyndicationText";
 }
 ::windows_core::imp::interface_hierarchy!(SyndicationText, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<ISyndicationNode> for SyndicationText {}
-impl ::windows_core::CanTryInto<ISyndicationText> for SyndicationText {}
+::windows_core::imp::required_hierarchy!(SyndicationText, ISyndicationNode, ISyndicationText);
 unsafe impl ::core::marker::Send for SyndicationText {}
 unsafe impl ::core::marker::Sync for SyndicationText {}
 #[repr(transparent)]

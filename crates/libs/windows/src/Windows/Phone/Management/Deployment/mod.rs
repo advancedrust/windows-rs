@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IEnterprise(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IEnterprise {
-    type Vtable = IEnterprise_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IEnterprise {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x96592f8d_856c_4426_a947_b06307718078);
-}
+::windows_core::imp::com_interface!(IEnterprise, IEnterprise_Vtbl, 0x96592f8d_856c_4426_a947_b06307718078);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IEnterprise_Vtbl {
@@ -19,16 +10,7 @@ pub struct IEnterprise_Vtbl {
     pub EnrollmentValidTo: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::DateTime) -> ::windows_core::HRESULT,
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut EnterpriseStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IEnterpriseEnrollmentManager(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IEnterpriseEnrollmentManager {
-    type Vtable = IEnterpriseEnrollmentManager_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IEnterpriseEnrollmentManager {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x20f9f390_2c69_41d8_88e6_e4b3884026cb);
-}
+::windows_core::imp::com_interface!(IEnterpriseEnrollmentManager, IEnterpriseEnrollmentManager_Vtbl, 0x20f9f390_2c69_41d8_88e6_e4b3884026cb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IEnterpriseEnrollmentManager_Vtbl {
@@ -42,16 +24,7 @@ pub struct IEnterpriseEnrollmentManager_Vtbl {
     pub RequestEnrollmentAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enrollmenttoken: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RequestUnenrollmentAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, enterprise: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IEnterpriseEnrollmentResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IEnterpriseEnrollmentResult {
-    type Vtable = IEnterpriseEnrollmentResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IEnterpriseEnrollmentResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9ff71ce6_90db_4342_b326_1729aa91301c);
-}
+::windows_core::imp::com_interface!(IEnterpriseEnrollmentResult, IEnterpriseEnrollmentResult_Vtbl, 0x9ff71ce6_90db_4342_b326_1729aa91301c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IEnterpriseEnrollmentResult_Vtbl {
@@ -59,16 +32,7 @@ pub struct IEnterpriseEnrollmentResult_Vtbl {
     pub EnrolledEnterprise: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut EnterpriseEnrollmentStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInstallationManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInstallationManagerStatics {
-    type Vtable = IInstallationManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInstallationManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x929aa738_8d49_42ac_80c9_b4ad793c43f2);
-}
+::windows_core::imp::com_interface!(IInstallationManagerStatics, IInstallationManagerStatics_Vtbl, 0x929aa738_8d49_42ac_80c9_b4ad793c43f2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInstallationManagerStatics_Vtbl {
@@ -88,16 +52,7 @@ pub struct IInstallationManagerStatics_Vtbl {
     #[cfg(not(all(feature = "ApplicationModel", feature = "Foundation_Collections")))]
     FindPackages: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IInstallationManagerStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IInstallationManagerStatics2 {
-    type Vtable = IInstallationManagerStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IInstallationManagerStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7c6c2cbd_fa4a_4c8e_ab97_d959452f19e5);
-}
+::windows_core::imp::com_interface!(IInstallationManagerStatics2, IInstallationManagerStatics2_Vtbl, 0x7c6c2cbd_fa4a_4c8e_ab97_d959452f19e5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IInstallationManagerStatics2_Vtbl {
@@ -115,16 +70,7 @@ pub struct IInstallationManagerStatics2_Vtbl {
     #[cfg(not(all(feature = "ApplicationModel", feature = "Foundation_Collections")))]
     FindPackagesByNamePublisher: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageInstallResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageInstallResult {
-    type Vtable = IPackageInstallResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageInstallResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x33e8eed5_0f7e_4473_967c_7d6e1c0e7de1);
-}
+::windows_core::imp::com_interface!(IPackageInstallResult, IPackageInstallResult_Vtbl, 0x33e8eed5_0f7e_4473_967c_7d6e1c0e7de1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageInstallResult_Vtbl {
@@ -135,16 +81,7 @@ pub struct IPackageInstallResult_Vtbl {
     #[cfg(not(feature = "Management_Deployment"))]
     InstallState: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPackageInstallResult2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPackageInstallResult2 {
-    type Vtable = IPackageInstallResult2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPackageInstallResult2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7149d909_3ff9_41ed_a717_2bc65ffc61d2);
-}
+::windows_core::imp::com_interface!(IPackageInstallResult2, IPackageInstallResult2_Vtbl, 0x7149d909_3ff9_41ed_a717_2bc65ffc61d2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPackageInstallResult2_Vtbl {
@@ -349,11 +286,11 @@ impl InstallationManager {
     pub fn RegisterPackageAsync<P0, P1>(manifesturi: P0, dependencypackageuris: P1, deploymentoptions: super::super::super::Management::Deployment::DeploymentOptions) -> ::windows_core::Result<super::super::super::Foundation::IAsyncOperationWithProgress<PackageInstallResult, u32>>
     where
         P0: ::windows_core::IntoParam<super::super::super::Foundation::Uri>,
-        P1: ::windows_core::TryIntoParam<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Uri>>,
+        P1: ::windows_core::IntoParam<super::super::super::Foundation::Collections::IIterable<super::super::super::Foundation::Uri>>,
     {
         Self::IInstallationManagerStatics2(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).RegisterPackageAsync)(::windows_core::Interface::as_raw(this), manifesturi.into_param().abi(), dependencypackageuris.try_into_param()?.abi(), deploymentoptions, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).RegisterPackageAsync)(::windows_core::Interface::as_raw(this), manifesturi.into_param().abi(), dependencypackageuris.into_param().abi(), deploymentoptions, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"ApplicationModel\"`, `\"Foundation_Collections\"`"]

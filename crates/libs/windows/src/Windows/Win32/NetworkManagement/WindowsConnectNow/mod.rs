@@ -1,6 +1,4 @@
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWCNConnectNotify(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWCNConnectNotify, IWCNConnectNotify_Vtbl, 0xc100be9f_d33a_4a4b_bf23_bbef4663d017);
 impl IWCNConnectNotify {
     pub unsafe fn ConnectSucceeded(&self) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).ConnectSucceeded)(::windows_core::Interface::as_raw(self)).ok()
@@ -10,12 +8,6 @@ impl IWCNConnectNotify {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWCNConnectNotify, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWCNConnectNotify {
-    type Vtable = IWCNConnectNotify_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWCNConnectNotify {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc100be9f_d33a_4a4b_bf23_bbef4663d017);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWCNConnectNotify_Vtbl {
@@ -23,9 +15,7 @@ pub struct IWCNConnectNotify_Vtbl {
     pub ConnectSucceeded: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub ConnectFailed: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, hrfailure: ::windows_core::HRESULT) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IWCNDevice(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IWCNDevice, IWCNDevice_Vtbl, 0xc100be9c_d33a_4a4b_bf23_bbef4663d017);
 impl IWCNDevice {
     pub unsafe fn SetPassword(&self, r#type: WCN_PASSWORD_TYPE, pbpassword: &[u8]) -> ::windows_core::Result<()> {
         (::windows_core::Interface::vtable(self).SetPassword)(::windows_core::Interface::as_raw(self), r#type, pbpassword.len().try_into().unwrap(), ::core::mem::transmute(pbpassword.as_ptr())).ok()
@@ -80,12 +70,6 @@ impl IWCNDevice {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IWCNDevice, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IWCNDevice {
-    type Vtable = IWCNDevice_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IWCNDevice {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc100be9c_d33a_4a4b_bf23_bbef4663d017);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IWCNDevice_Vtbl {

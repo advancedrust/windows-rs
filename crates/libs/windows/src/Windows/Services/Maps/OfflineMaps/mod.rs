@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOfflineMapPackage(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOfflineMapPackage {
-    type Vtable = IOfflineMapPackage_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOfflineMapPackage {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa797673b_a5b5_4144_b525_e68c8862664b);
-}
+::windows_core::imp::com_interface!(IOfflineMapPackage, IOfflineMapPackage_Vtbl, 0xa797673b_a5b5_4144_b525_e68c8862664b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOfflineMapPackage_Vtbl {
@@ -20,16 +11,7 @@ pub struct IOfflineMapPackage_Vtbl {
     pub StatusChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RequestStartDownloadAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOfflineMapPackageQueryResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOfflineMapPackageQueryResult {
-    type Vtable = IOfflineMapPackageQueryResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOfflineMapPackageQueryResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x55585411_39e1_4e41_a4e1_5f4872bee199);
-}
+::windows_core::imp::com_interface!(IOfflineMapPackageQueryResult, IOfflineMapPackageQueryResult_Vtbl, 0x55585411_39e1_4e41_a4e1_5f4872bee199);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOfflineMapPackageQueryResult_Vtbl {
@@ -40,32 +22,14 @@ pub struct IOfflineMapPackageQueryResult_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     Packages: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOfflineMapPackageStartDownloadResult(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOfflineMapPackageStartDownloadResult {
-    type Vtable = IOfflineMapPackageStartDownloadResult_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOfflineMapPackageStartDownloadResult {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd965b918_d4d6_4afe_9378_3ec71ef11c3d);
-}
+::windows_core::imp::com_interface!(IOfflineMapPackageStartDownloadResult, IOfflineMapPackageStartDownloadResult_Vtbl, 0xd965b918_d4d6_4afe_9378_3ec71ef11c3d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOfflineMapPackageStartDownloadResult_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Status: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut OfflineMapPackageStartDownloadStatus) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IOfflineMapPackageStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IOfflineMapPackageStatics {
-    type Vtable = IOfflineMapPackageStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IOfflineMapPackageStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x185e7922_a831_4ab0_941f_6998fa929285);
-}
+::windows_core::imp::com_interface!(IOfflineMapPackageStatics, IOfflineMapPackageStatics_Vtbl, 0x185e7922_a831_4ab0_941f_6998fa929285);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IOfflineMapPackageStatics_Vtbl {

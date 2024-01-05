@@ -122,12 +122,16 @@ fn gen_class(writer: &Writer, def: metadata::TypeDef) -> TokenStream {
     }
 }
 
-fn gen_conversions(writer: &Writer, def: metadata::TypeDef, name: &TokenStream, interfaces: &[metadata::Interface], cfg: &cfg::Cfg) -> TokenStream {
+fn gen_conversions(writer: &Writer, def: metadata::TypeDef, ident: &TokenStream, interfaces: &[metadata::Interface], cfg: &cfg::Cfg) -> TokenStream {
     let features = writer.cfg_features(cfg);
     let mut tokens = quote! {
         #features
-        ::windows_core::imp::interface_hierarchy!(#name, ::windows_core::IUnknown, ::windows_core::IInspectable);
+        ::windows_core::imp::interface_hierarchy!(#ident, ::windows_core::IUnknown, ::windows_core::IInspectable);
     };
+
+    let mut hierarchy = format!("::windows_core::imp::required_hierarchy!({ident}");
+    let mut hierarchy_cfg = cfg.clone();
+    let mut hierarchy_added = false;
 
     for interface in interfaces {
         if type_is_exclusive(&interface.ty) {
@@ -139,22 +143,22 @@ fn gen_conversions(writer: &Writer, def: metadata::TypeDef, name: &TokenStream, 
         }
 
         let into = writer.type_name(&interface.ty);
-        let features = writer.cfg_features(&cfg.union(&cfg::type_cfg(&interface.ty)));
-
-        tokens.combine(&quote! {
-            #features
-            impl ::windows_core::CanTryInto<#into> for #name {}
-        });
+        write!(&mut hierarchy, ", {into}").unwrap();
+        hierarchy_cfg = hierarchy_cfg.union(&cfg::type_cfg(&interface.ty));
+        hierarchy_added = true;
     }
 
     for def in metadata::type_def_bases(def) {
         let into = writer.type_def_name(def, &[]);
-        let features = writer.cfg_features(&cfg.union(&cfg::type_def_cfg(def, &[])));
+        write!(&mut hierarchy, ", {into}").unwrap();
+        hierarchy_cfg = hierarchy_cfg.union(&cfg::type_def_cfg(def, &[]));
+        hierarchy_added = true;
+    }
 
-        tokens.combine(&quote! {
-            #features
-            impl ::windows_core::CanTryInto<#into> for #name {}
-        });
+    if hierarchy_added {
+    hierarchy.push_str(");");
+    tokens.combine(&writer.cfg_features(&hierarchy_cfg));
+    tokens.push_str(&hierarchy);
     }
 
     tokens

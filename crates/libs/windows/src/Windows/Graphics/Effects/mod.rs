@@ -1,6 +1,4 @@
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGraphicsEffect(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IGraphicsEffect, IGraphicsEffect_Vtbl, 0xcb51c0ce_8fe6_4636_b202_861faa07d8f3);
 impl IGraphicsEffect {
     pub fn Name(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -15,15 +13,9 @@ impl IGraphicsEffect {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IGraphicsEffect, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IGraphicsEffectSource> for IGraphicsEffect {}
+::windows_core::imp::required_hierarchy!(IGraphicsEffect, IGraphicsEffectSource);
 impl ::windows_core::RuntimeType for IGraphicsEffect {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IGraphicsEffect {
-    type Vtable = IGraphicsEffect_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGraphicsEffect {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcb51c0ce_8fe6_4636_b202_861faa07d8f3);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -32,19 +24,11 @@ pub struct IGraphicsEffect_Vtbl {
     pub Name: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub SetName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGraphicsEffectSource(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IGraphicsEffectSource, IGraphicsEffectSource_Vtbl, 0x2d8f9ddc_4339_4eb9_9216_f9deb75658a2);
 impl IGraphicsEffectSource {}
 ::windows_core::imp::interface_hierarchy!(IGraphicsEffectSource, ::windows_core::IUnknown, ::windows_core::IInspectable);
 impl ::windows_core::RuntimeType for IGraphicsEffectSource {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IGraphicsEffectSource {
-    type Vtable = IGraphicsEffectSource_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGraphicsEffectSource {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2d8f9ddc_4339_4eb9_9216_f9deb75658a2);
 }
 #[repr(C)]
 #[doc(hidden)]

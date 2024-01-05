@@ -1,28 +1,10 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICoreAppWindowPreview(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICoreAppWindowPreview {
-    type Vtable = ICoreAppWindowPreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICoreAppWindowPreview {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa4f6e665_365e_5fde_87a5_9543c3a15aa8);
-}
+::windows_core::imp::com_interface!(ICoreAppWindowPreview, ICoreAppWindowPreview_Vtbl, 0xa4f6e665_365e_5fde_87a5_9543c3a15aa8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICoreAppWindowPreview_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICoreAppWindowPreviewStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICoreAppWindowPreviewStatics {
-    type Vtable = ICoreAppWindowPreviewStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICoreAppWindowPreviewStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x33ac21be_423b_5db6_8a8e_4dc87353b75b);
-}
+::windows_core::imp::com_interface!(ICoreAppWindowPreviewStatics, ICoreAppWindowPreviewStatics_Vtbl, 0x33ac21be_423b_5db6_8a8e_4dc87353b75b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICoreAppWindowPreviewStatics_Vtbl {
@@ -32,16 +14,7 @@ pub struct ICoreAppWindowPreviewStatics_Vtbl {
     #[cfg(not(feature = "UI_WindowManagement"))]
     GetIdFromWindow: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemNavigationCloseRequestedPreviewEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemNavigationCloseRequestedPreviewEventArgs {
-    type Vtable = ISystemNavigationCloseRequestedPreviewEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemNavigationCloseRequestedPreviewEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x83d00de1_cbe5_4f31_8414_361da046518f);
-}
+::windows_core::imp::com_interface!(ISystemNavigationCloseRequestedPreviewEventArgs, ISystemNavigationCloseRequestedPreviewEventArgs_Vtbl, 0x83d00de1_cbe5_4f31_8414_361da046518f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemNavigationCloseRequestedPreviewEventArgs_Vtbl {
@@ -50,16 +23,7 @@ pub struct ISystemNavigationCloseRequestedPreviewEventArgs_Vtbl {
     pub SetHandled: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemNavigationManagerPreview(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemNavigationManagerPreview {
-    type Vtable = ISystemNavigationManagerPreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemNavigationManagerPreview {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xec5f0488_6425_4777_a536_cb5634427f0d);
-}
+::windows_core::imp::com_interface!(ISystemNavigationManagerPreview, ISystemNavigationManagerPreview_Vtbl, 0xec5f0488_6425_4777_a536_cb5634427f0d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemNavigationManagerPreview_Vtbl {
@@ -67,16 +31,7 @@ pub struct ISystemNavigationManagerPreview_Vtbl {
     pub CloseRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveCloseRequested: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemNavigationManagerPreviewStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemNavigationManagerPreviewStatics {
-    type Vtable = ISystemNavigationManagerPreviewStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemNavigationManagerPreviewStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0e971360_df74_4bce_84cb_bd1181ac0a71);
-}
+::windows_core::imp::com_interface!(ISystemNavigationManagerPreviewStatics, ISystemNavigationManagerPreviewStatics_Vtbl, 0x0e971360_df74_4bce_84cb_bd1181ac0a71);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemNavigationManagerPreviewStatics_Vtbl {

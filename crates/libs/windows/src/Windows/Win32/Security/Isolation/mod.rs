@@ -86,9 +86,7 @@ pub unsafe fn IsProcessInWDAGContainer(reserved: *const ::core::ffi::c_void) -> 
     let mut result__ = ::std::mem::zeroed();
     IsProcessInWDAGContainer(reserved, &mut result__).from_abi(result__)
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IIsolatedAppLauncher(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IIsolatedAppLauncher, IIsolatedAppLauncher_Vtbl, 0xf686878f_7b42_4cc4_96fb_f4f3b6e3d24d);
 impl IIsolatedAppLauncher {
     pub unsafe fn Launch<P0, P1>(&self, appusermodelid: P0, arguments: P1, telemetryparameters: *const IsolatedAppLauncherTelemetryParameters) -> ::windows_core::Result<()>
     where
@@ -99,12 +97,6 @@ impl IIsolatedAppLauncher {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IIsolatedAppLauncher, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IIsolatedAppLauncher {
-    type Vtable = IIsolatedAppLauncher_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IIsolatedAppLauncher {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf686878f_7b42_4cc4_96fb_f4f3b6e3d24d);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IIsolatedAppLauncher_Vtbl {

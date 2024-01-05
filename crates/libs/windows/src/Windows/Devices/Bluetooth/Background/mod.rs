@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBluetoothLEAdvertisementPublisherTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBluetoothLEAdvertisementPublisherTriggerDetails {
-    type Vtable = IBluetoothLEAdvertisementPublisherTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBluetoothLEAdvertisementPublisherTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x610eca86_3480_41c9_a918_7ddadf207e00);
-}
+::windows_core::imp::com_interface!(IBluetoothLEAdvertisementPublisherTriggerDetails, IBluetoothLEAdvertisementPublisherTriggerDetails_Vtbl, 0x610eca86_3480_41c9_a918_7ddadf207e00);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBluetoothLEAdvertisementPublisherTriggerDetails_Vtbl {
@@ -18,32 +9,14 @@ pub struct IBluetoothLEAdvertisementPublisherTriggerDetails_Vtbl {
     Status: usize,
     pub Error: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::BluetoothError) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBluetoothLEAdvertisementPublisherTriggerDetails2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBluetoothLEAdvertisementPublisherTriggerDetails2 {
-    type Vtable = IBluetoothLEAdvertisementPublisherTriggerDetails2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBluetoothLEAdvertisementPublisherTriggerDetails2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd4a3d025_c601_42d6_9829_4ccb3f5cd77f);
-}
+::windows_core::imp::com_interface!(IBluetoothLEAdvertisementPublisherTriggerDetails2, IBluetoothLEAdvertisementPublisherTriggerDetails2_Vtbl, 0xd4a3d025_c601_42d6_9829_4ccb3f5cd77f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBluetoothLEAdvertisementPublisherTriggerDetails2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SelectedTransmitPowerLevelInDBm: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IBluetoothLEAdvertisementWatcherTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IBluetoothLEAdvertisementWatcherTriggerDetails {
-    type Vtable = IBluetoothLEAdvertisementWatcherTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IBluetoothLEAdvertisementWatcherTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa7db5ad7_2257_4e69_9784_fee645c1dce0);
-}
+::windows_core::imp::com_interface!(IBluetoothLEAdvertisementWatcherTriggerDetails, IBluetoothLEAdvertisementWatcherTriggerDetails_Vtbl, 0xa7db5ad7_2257_4e69_9784_fee645c1dce0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IBluetoothLEAdvertisementWatcherTriggerDetails_Vtbl {
@@ -55,16 +28,7 @@ pub struct IBluetoothLEAdvertisementWatcherTriggerDetails_Vtbl {
     Advertisements: usize,
     pub SignalStrengthFilter: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGattCharacteristicNotificationTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGattCharacteristicNotificationTriggerDetails {
-    type Vtable = IGattCharacteristicNotificationTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGattCharacteristicNotificationTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9ba03b18_0fec_436a_93b1_f46c697532a2);
-}
+::windows_core::imp::com_interface!(IGattCharacteristicNotificationTriggerDetails, IGattCharacteristicNotificationTriggerDetails_Vtbl, 0x9ba03b18_0fec_436a_93b1_f46c697532a2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGattCharacteristicNotificationTriggerDetails_Vtbl {
@@ -78,16 +42,7 @@ pub struct IGattCharacteristicNotificationTriggerDetails_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     Value: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGattCharacteristicNotificationTriggerDetails2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGattCharacteristicNotificationTriggerDetails2 {
-    type Vtable = IGattCharacteristicNotificationTriggerDetails2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGattCharacteristicNotificationTriggerDetails2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x727a50dc_949d_454a_b192_983467e3d50f);
-}
+::windows_core::imp::com_interface!(IGattCharacteristicNotificationTriggerDetails2, IGattCharacteristicNotificationTriggerDetails2_Vtbl, 0x727a50dc_949d_454a_b192_983467e3d50f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGattCharacteristicNotificationTriggerDetails2_Vtbl {
@@ -99,16 +54,7 @@ pub struct IGattCharacteristicNotificationTriggerDetails2_Vtbl {
     #[cfg(not(all(feature = "Devices_Bluetooth_GenericAttributeProfile", feature = "Foundation_Collections")))]
     ValueChangedEvents: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGattServiceProviderConnection(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGattServiceProviderConnection {
-    type Vtable = IGattServiceProviderConnection_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGattServiceProviderConnection {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7fa1b9b9_2f13_40b5_9582_8eb78e98ef13);
-}
+::windows_core::imp::com_interface!(IGattServiceProviderConnection, IGattServiceProviderConnection_Vtbl, 0x7fa1b9b9_2f13_40b5_9582_8eb78e98ef13);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGattServiceProviderConnection_Vtbl {
@@ -120,16 +66,7 @@ pub struct IGattServiceProviderConnection_Vtbl {
     Service: usize,
     pub Start: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGattServiceProviderConnectionStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGattServiceProviderConnectionStatics {
-    type Vtable = IGattServiceProviderConnectionStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGattServiceProviderConnectionStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3d509f4b_0b0e_4466_b8cd_6ebdda1fa17d);
-}
+::windows_core::imp::com_interface!(IGattServiceProviderConnectionStatics, IGattServiceProviderConnectionStatics_Vtbl, 0x3d509f4b_0b0e_4466_b8cd_6ebdda1fa17d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGattServiceProviderConnectionStatics_Vtbl {
@@ -139,32 +76,14 @@ pub struct IGattServiceProviderConnectionStatics_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     AllServices: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGattServiceProviderTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGattServiceProviderTriggerDetails {
-    type Vtable = IGattServiceProviderTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGattServiceProviderTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xae8c0625_05ff_4afb_b16a_de95f3cf0158);
-}
+::windows_core::imp::com_interface!(IGattServiceProviderTriggerDetails, IGattServiceProviderTriggerDetails_Vtbl, 0xae8c0625_05ff_4afb_b16a_de95f3cf0158);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGattServiceProviderTriggerDetails_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Connection: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IRfcommConnectionTriggerDetails(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IRfcommConnectionTriggerDetails {
-    type Vtable = IRfcommConnectionTriggerDetails_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IRfcommConnectionTriggerDetails {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf922734d_2e3c_4efc_ab59_fc5cf96f97e3);
-}
+::windows_core::imp::com_interface!(IRfcommConnectionTriggerDetails, IRfcommConnectionTriggerDetails_Vtbl, 0xf922734d_2e3c_4efc_ab59_fc5cf96f97e3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IRfcommConnectionTriggerDetails_Vtbl {
@@ -176,16 +95,7 @@ pub struct IRfcommConnectionTriggerDetails_Vtbl {
     pub Incoming: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub RemoteDevice: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IRfcommInboundConnectionInformation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IRfcommInboundConnectionInformation {
-    type Vtable = IRfcommInboundConnectionInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IRfcommInboundConnectionInformation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6d3e75a8_5429_4059_92e3_1e8b65528707);
-}
+::windows_core::imp::com_interface!(IRfcommInboundConnectionInformation, IRfcommInboundConnectionInformation_Vtbl, 0x6d3e75a8_5429_4059_92e3_1e8b65528707);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IRfcommInboundConnectionInformation_Vtbl {
@@ -209,16 +119,7 @@ pub struct IRfcommInboundConnectionInformation_Vtbl {
     pub ServiceCapabilities: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::BluetoothServiceCapabilities) -> ::windows_core::HRESULT,
     pub SetServiceCapabilities: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: super::BluetoothServiceCapabilities) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IRfcommOutboundConnectionInformation(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IRfcommOutboundConnectionInformation {
-    type Vtable = IRfcommOutboundConnectionInformation_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IRfcommOutboundConnectionInformation {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb091227b_f434_4cb0_99b1_4ab8cedaedd7);
-}
+::windows_core::imp::com_interface!(IRfcommOutboundConnectionInformation, IRfcommOutboundConnectionInformation_Vtbl, 0xb091227b_f434_4cb0_99b1_4ab8cedaedd7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IRfcommOutboundConnectionInformation_Vtbl {
@@ -519,10 +420,10 @@ impl RfcommInboundConnectionInformation {
     #[cfg(feature = "Storage_Streams")]
     pub fn SetSdpRecord<P0>(&self, value: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::super::Storage::Streams::IBuffer>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).SetSdpRecord)(::windows_core::Interface::as_raw(this), value.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).SetSdpRecord)(::windows_core::Interface::as_raw(this), value.into_param().abi()).ok() }
     }
     #[doc = "Required features: `\"Devices_Bluetooth_Rfcomm\"`"]
     #[cfg(feature = "Devices_Bluetooth_Rfcomm")]

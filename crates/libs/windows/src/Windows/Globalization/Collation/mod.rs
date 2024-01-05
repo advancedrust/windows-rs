@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICharacterGrouping(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICharacterGrouping {
-    type Vtable = ICharacterGrouping_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICharacterGrouping {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfae761bb_805d_4bb0_95bb_c1f7c3e8eb8e);
-}
+::windows_core::imp::com_interface!(ICharacterGrouping, ICharacterGrouping_Vtbl, 0xfae761bb_805d_4bb0_95bb_c1f7c3e8eb8e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICharacterGrouping_Vtbl {
@@ -15,32 +6,14 @@ pub struct ICharacterGrouping_Vtbl {
     pub First: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Label: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICharacterGroupings(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICharacterGroupings {
-    type Vtable = ICharacterGroupings_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICharacterGroupings {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb8d20a75_d4cf_4055_80e5_ce169c226496);
-}
+::windows_core::imp::com_interface!(ICharacterGroupings, ICharacterGroupings_Vtbl, 0xb8d20a75_d4cf_4055_80e5_ce169c226496);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICharacterGroupings_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Lookup: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, text: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICharacterGroupingsFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICharacterGroupingsFactory {
-    type Vtable = ICharacterGroupingsFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICharacterGroupingsFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x99ea9fd9_886d_4401_9f98_69c82d4c2f78);
-}
+::windows_core::imp::com_interface!(ICharacterGroupingsFactory, ICharacterGroupingsFactory_Vtbl, 0x99ea9fd9_886d_4401_9f98_69c82d4c2f78);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICharacterGroupingsFactory_Vtbl {
@@ -189,8 +162,6 @@ impl ::core::iter::IntoIterator for &CharacterGroupings {
 }
 ::windows_core::imp::interface_hierarchy!(CharacterGroupings, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IIterable<CharacterGrouping>> for CharacterGroupings {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::super::Foundation::Collections::IVectorView<CharacterGrouping>> for CharacterGroupings {}
+::windows_core::imp::required_hierarchy!(CharacterGroupings, super::super::Foundation::Collections::IIterable::<CharacterGrouping>, super::super::Foundation::Collections::IVectorView::<CharacterGrouping>);
 unsafe impl ::core::marker::Send for CharacterGroupings {}
 unsafe impl ::core::marker::Sync for CharacterGroupings {}

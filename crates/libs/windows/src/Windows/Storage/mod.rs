@@ -22,16 +22,7 @@ pub mod Search;
 #[cfg(feature = "Storage_Streams")]
 #[doc = "Required features: `\"Storage_Streams\"`"]
 pub mod Streams;
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppDataPaths(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppDataPaths {
-    type Vtable = IAppDataPaths_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppDataPaths {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7301d60a_79a2_48c9_9ec0_3fda092f79e1);
-}
+::windows_core::imp::com_interface!(IAppDataPaths, IAppDataPaths_Vtbl, 0x7301d60a_79a2_48c9_9ec0_3fda092f79e1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppDataPaths_Vtbl {
@@ -46,16 +37,7 @@ pub struct IAppDataPaths_Vtbl {
     pub ProgramData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub RoamingAppData: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IAppDataPathsStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IAppDataPathsStatics {
-    type Vtable = IAppDataPathsStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IAppDataPathsStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xd8eb2afe_a9d9_4b14_b999_e3921379d903);
-}
+::windows_core::imp::com_interface!(IAppDataPathsStatics, IAppDataPathsStatics_Vtbl, 0xd8eb2afe_a9d9_4b14_b999_e3921379d903);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IAppDataPathsStatics_Vtbl {
@@ -66,16 +48,7 @@ pub struct IAppDataPathsStatics_Vtbl {
     GetForUser: usize,
     pub GetDefault: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IApplicationData(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IApplicationData {
-    type Vtable = IApplicationData_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IApplicationData {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc3da6fb7_b744_4b45_b0b8_223a0938d0dc);
-}
+::windows_core::imp::com_interface!(IApplicationData, IApplicationData_Vtbl, 0xc3da6fb7_b744_4b45_b0b8_223a0938d0dc);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IApplicationData_Vtbl {
@@ -94,32 +67,14 @@ pub struct IApplicationData_Vtbl {
     pub SignalDataChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RoamingStorageQuota: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u64) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IApplicationData2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IApplicationData2 {
-    type Vtable = IApplicationData2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IApplicationData2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9e65cd69_0ba3_4e32_be29_b02de6607638);
-}
+::windows_core::imp::com_interface!(IApplicationData2, IApplicationData2_Vtbl, 0x9e65cd69_0ba3_4e32_be29_b02de6607638);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IApplicationData2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub LocalCacheFolder: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IApplicationData3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IApplicationData3 {
-    type Vtable = IApplicationData3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IApplicationData3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdc222cf4_2772_4c1d_aa2c_c9f743ade8d1);
-}
+::windows_core::imp::com_interface!(IApplicationData3, IApplicationData3_Vtbl, 0xdc222cf4_2772_4c1d_aa2c_c9f743ade8d1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IApplicationData3_Vtbl {
@@ -128,16 +83,7 @@ pub struct IApplicationData3_Vtbl {
     pub ClearPublisherCacheFolderAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, foldername: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub SharedLocalFolder: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IApplicationDataContainer(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IApplicationDataContainer {
-    type Vtable = IApplicationDataContainer_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IApplicationDataContainer {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc5aefd1e_f467_40ba_8566_ab640a441e1d);
-}
+::windows_core::imp::com_interface!(IApplicationDataContainer, IApplicationDataContainer_Vtbl, 0xc5aefd1e_f467_40ba_8566_ab640a441e1d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IApplicationDataContainer_Vtbl {
@@ -155,32 +101,14 @@ pub struct IApplicationDataContainer_Vtbl {
     pub CreateContainer: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, disposition: ApplicationDataCreateDisposition, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub DeleteContainer: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IApplicationDataStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IApplicationDataStatics {
-    type Vtable = IApplicationDataStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IApplicationDataStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5612147b_e843_45e3_94d8_06169e3c8e17);
-}
+::windows_core::imp::com_interface!(IApplicationDataStatics, IApplicationDataStatics_Vtbl, 0x5612147b_e843_45e3_94d8_06169e3c8e17);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IApplicationDataStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Current: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IApplicationDataStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IApplicationDataStatics2 {
-    type Vtable = IApplicationDataStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IApplicationDataStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcd606211_cf49_40a4_a47c_c7f0dbba8107);
-}
+::windows_core::imp::com_interface!(IApplicationDataStatics2, IApplicationDataStatics2_Vtbl, 0xcd606211_cf49_40a4_a47c_c7f0dbba8107);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IApplicationDataStatics2_Vtbl {
@@ -190,16 +118,7 @@ pub struct IApplicationDataStatics2_Vtbl {
     #[cfg(not(feature = "System"))]
     GetForUserAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ICachedFileManagerStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ICachedFileManagerStatics {
-    type Vtable = ICachedFileManagerStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ICachedFileManagerStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8ffc224a_e782_495d_b614_654c4f0b2370);
-}
+::windows_core::imp::com_interface!(ICachedFileManagerStatics, ICachedFileManagerStatics_Vtbl, 0x8ffc224a_e782_495d_b614_654c4f0b2370);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ICachedFileManagerStatics_Vtbl {
@@ -210,16 +129,7 @@ pub struct ICachedFileManagerStatics_Vtbl {
     #[cfg(not(feature = "Storage_Provider"))]
     CompleteUpdatesAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDownloadsFolderStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDownloadsFolderStatics {
-    type Vtable = IDownloadsFolderStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDownloadsFolderStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x27862ed0_404e_47df_a1e2_e37308be7b37);
-}
+::windows_core::imp::com_interface!(IDownloadsFolderStatics, IDownloadsFolderStatics_Vtbl, 0x27862ed0_404e_47df_a1e2_e37308be7b37);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDownloadsFolderStatics_Vtbl {
@@ -229,16 +139,7 @@ pub struct IDownloadsFolderStatics_Vtbl {
     pub CreateFileWithCollisionOptionAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, desiredname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, option: CreationCollisionOption, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateFolderWithCollisionOptionAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, desiredname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, option: CreationCollisionOption, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IDownloadsFolderStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IDownloadsFolderStatics2 {
-    type Vtable = IDownloadsFolderStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IDownloadsFolderStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe93045bd_8ef8_4f8e_8d15_ac0e265f390d);
-}
+::windows_core::imp::com_interface!(IDownloadsFolderStatics2, IDownloadsFolderStatics2_Vtbl, 0xe93045bd_8ef8_4f8e_8d15_ac0e265f390d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IDownloadsFolderStatics2_Vtbl {
@@ -260,16 +161,7 @@ pub struct IDownloadsFolderStatics2_Vtbl {
     #[cfg(not(feature = "System"))]
     CreateFolderForUserWithCollisionOptionAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IFileIOStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IFileIOStatics {
-    type Vtable = IFileIOStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IFileIOStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x887411eb_7f54_4732_a5f0_5e43e3b8c2f5);
-}
+::windows_core::imp::com_interface!(IFileIOStatics, IFileIOStatics_Vtbl, 0x887411eb_7f54_4732_a5f0_5e43e3b8c2f5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IFileIOStatics_Vtbl {
@@ -323,64 +215,28 @@ pub struct IFileIOStatics_Vtbl {
     WriteBufferAsync: usize,
     pub WriteBytesAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, file: *mut ::core::ffi::c_void, buffer_array_size: u32, buffer: *const u8, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKnownFoldersCameraRollStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKnownFoldersCameraRollStatics {
-    type Vtable = IKnownFoldersCameraRollStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKnownFoldersCameraRollStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5d115e66_27e8_492f_b8e5_2f90896cd4cd);
-}
+::windows_core::imp::com_interface!(IKnownFoldersCameraRollStatics, IKnownFoldersCameraRollStatics_Vtbl, 0x5d115e66_27e8_492f_b8e5_2f90896cd4cd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKnownFoldersCameraRollStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub CameraRoll: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKnownFoldersPlaylistsStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKnownFoldersPlaylistsStatics {
-    type Vtable = IKnownFoldersPlaylistsStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKnownFoldersPlaylistsStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdad5ecd6_306f_4d6a_b496_46ba8eb106ce);
-}
+::windows_core::imp::com_interface!(IKnownFoldersPlaylistsStatics, IKnownFoldersPlaylistsStatics_Vtbl, 0xdad5ecd6_306f_4d6a_b496_46ba8eb106ce);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKnownFoldersPlaylistsStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Playlists: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKnownFoldersSavedPicturesStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKnownFoldersSavedPicturesStatics {
-    type Vtable = IKnownFoldersSavedPicturesStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKnownFoldersSavedPicturesStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x055c93ea_253d_467c_b6ca_a97da1e9a18d);
-}
+::windows_core::imp::com_interface!(IKnownFoldersSavedPicturesStatics, IKnownFoldersSavedPicturesStatics_Vtbl, 0x055c93ea_253d_467c_b6ca_a97da1e9a18d);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKnownFoldersSavedPicturesStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub SavedPictures: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKnownFoldersStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKnownFoldersStatics {
-    type Vtable = IKnownFoldersStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKnownFoldersStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5a2a7520_4802_452d_9ad9_4351ada7ec35);
-}
+::windows_core::imp::com_interface!(IKnownFoldersStatics, IKnownFoldersStatics_Vtbl, 0x5a2a7520_4802_452d_9ad9_4351ada7ec35);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKnownFoldersStatics_Vtbl {
@@ -393,16 +249,7 @@ pub struct IKnownFoldersStatics_Vtbl {
     pub RemovableDevices: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub MediaServerDevices: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKnownFoldersStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKnownFoldersStatics2 {
-    type Vtable = IKnownFoldersStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKnownFoldersStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x194bd0cd_cf6e_4d07_9d53_e9163a2536e9);
-}
+::windows_core::imp::com_interface!(IKnownFoldersStatics2, IKnownFoldersStatics2_Vtbl, 0x194bd0cd_cf6e_4d07_9d53_e9163a2536e9);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKnownFoldersStatics2_Vtbl {
@@ -411,16 +258,7 @@ pub struct IKnownFoldersStatics2_Vtbl {
     pub AppCaptures: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub RecordedCalls: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKnownFoldersStatics3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKnownFoldersStatics3 {
-    type Vtable = IKnownFoldersStatics3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKnownFoldersStatics3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc5194341_9742_4ed5_823d_fc1401148764);
-}
+::windows_core::imp::com_interface!(IKnownFoldersStatics3, IKnownFoldersStatics3_Vtbl, 0xc5194341_9742_4ed5_823d_fc1401148764);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKnownFoldersStatics3_Vtbl {
@@ -430,16 +268,7 @@ pub struct IKnownFoldersStatics3_Vtbl {
     #[cfg(not(feature = "System"))]
     GetFolderForUserAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IKnownFoldersStatics4(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IKnownFoldersStatics4 {
-    type Vtable = IKnownFoldersStatics4_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IKnownFoldersStatics4 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1722e6bf_9ff9_4b21_bed5_90ecb13a192e);
-}
+::windows_core::imp::com_interface!(IKnownFoldersStatics4, IKnownFoldersStatics4_Vtbl, 0x1722e6bf_9ff9_4b21_bed5_90ecb13a192e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IKnownFoldersStatics4_Vtbl {
@@ -451,16 +280,7 @@ pub struct IKnownFoldersStatics4_Vtbl {
     RequestAccessForUserAsync: usize,
     pub GetFolderAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, folderid: KnownFolderId, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPathIOStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPathIOStatics {
-    type Vtable = IPathIOStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPathIOStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0f2f3758_8ec7_4381_922b_8f6c07d288f3);
-}
+::windows_core::imp::com_interface!(IPathIOStatics, IPathIOStatics_Vtbl, 0x0f2f3758_8ec7_4381_922b_8f6c07d288f3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPathIOStatics_Vtbl {
@@ -514,32 +334,14 @@ pub struct IPathIOStatics_Vtbl {
     WriteBufferAsync: usize,
     pub WriteBytesAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, absolutepath: ::std::mem::MaybeUninit<::windows_core::HSTRING>, buffer_array_size: u32, buffer: *const u8, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISetVersionDeferral(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISetVersionDeferral {
-    type Vtable = ISetVersionDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISetVersionDeferral {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x033508a2_781a_437a_b078_3f32badcfe47);
-}
+::windows_core::imp::com_interface!(ISetVersionDeferral, ISetVersionDeferral_Vtbl, 0x033508a2_781a_437a_b078_3f32badcfe47);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISetVersionDeferral_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Complete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISetVersionRequest(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISetVersionRequest {
-    type Vtable = ISetVersionRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISetVersionRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb9c76b9b_1056_4e69_8330_162619956f9b);
-}
+::windows_core::imp::com_interface!(ISetVersionRequest, ISetVersionRequest_Vtbl, 0xb9c76b9b_1056_4e69_8330_162619956f9b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISetVersionRequest_Vtbl {
@@ -548,9 +350,7 @@ pub struct ISetVersionRequest_Vtbl {
     pub DesiredVersion: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u32) -> ::windows_core::HRESULT,
     pub GetDeferral: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageFile(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStorageFile, IStorageFile_Vtbl, 0xfa3f6186_4214_428c_a64c_14c9ac7315ea);
 impl IStorageFile {
     pub fn FileType(&self) -> ::windows_core::Result<::windows_core::HSTRING> {
         let this = self;
@@ -584,82 +384,82 @@ impl IStorageFile {
     }
     pub fn CopyOverloadDefaultNameAndOptions<P0>(&self, destinationfolder: P0) -> ::windows_core::Result<super::Foundation::IAsyncOperation<StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFolder>,
+        P0: ::windows_core::IntoParam<IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CopyOverloadDefaultNameAndOptions)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CopyOverloadDefaultNameAndOptions)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CopyOverloadDefaultOptions<P0>(&self, destinationfolder: P0, desirednewname: &::windows_core::HSTRING) -> ::windows_core::Result<super::Foundation::IAsyncOperation<StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFolder>,
+        P0: ::windows_core::IntoParam<IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CopyOverloadDefaultOptions)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), ::core::mem::transmute_copy(desirednewname), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CopyOverloadDefaultOptions)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), ::core::mem::transmute_copy(desirednewname), &mut result__).from_abi(result__)
         }
     }
     pub fn CopyOverload<P0>(&self, destinationfolder: P0, desirednewname: &::windows_core::HSTRING, option: NameCollisionOption) -> ::windows_core::Result<super::Foundation::IAsyncOperation<StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFolder>,
+        P0: ::windows_core::IntoParam<IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CopyOverload)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), ::core::mem::transmute_copy(desirednewname), option, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CopyOverload)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), ::core::mem::transmute_copy(desirednewname), option, &mut result__).from_abi(result__)
         }
     }
     pub fn CopyAndReplaceAsync<P0>(&self, filetoreplace: P0) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CopyAndReplaceAsync)(::windows_core::Interface::as_raw(this), filetoreplace.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CopyAndReplaceAsync)(::windows_core::Interface::as_raw(this), filetoreplace.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn MoveOverloadDefaultNameAndOptions<P0>(&self, destinationfolder: P0) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFolder>,
+        P0: ::windows_core::IntoParam<IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).MoveOverloadDefaultNameAndOptions)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).MoveOverloadDefaultNameAndOptions)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn MoveOverloadDefaultOptions<P0>(&self, destinationfolder: P0, desirednewname: &::windows_core::HSTRING) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFolder>,
+        P0: ::windows_core::IntoParam<IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).MoveOverloadDefaultOptions)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), ::core::mem::transmute_copy(desirednewname), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).MoveOverloadDefaultOptions)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), ::core::mem::transmute_copy(desirednewname), &mut result__).from_abi(result__)
         }
     }
     pub fn MoveOverload<P0>(&self, destinationfolder: P0, desirednewname: &::windows_core::HSTRING, option: NameCollisionOption) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFolder>,
+        P0: ::windows_core::IntoParam<IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).MoveOverload)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), ::core::mem::transmute_copy(desirednewname), option, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).MoveOverload)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), ::core::mem::transmute_copy(desirednewname), option, &mut result__).from_abi(result__)
         }
     }
     pub fn MoveAndReplaceAsync<P0>(&self, filetoreplace: P0) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).MoveAndReplaceAsync)(::windows_core::Interface::as_raw(this), filetoreplace.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).MoveAndReplaceAsync)(::windows_core::Interface::as_raw(this), filetoreplace.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -755,18 +555,9 @@ impl IStorageFile {
 }
 ::windows_core::imp::interface_hierarchy!(IStorageFile, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<Streams::IInputStreamReference> for IStorageFile {}
-#[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<Streams::IRandomAccessStreamReference> for IStorageFile {}
-impl ::windows_core::CanTryInto<IStorageItem> for IStorageFile {}
+::windows_core::imp::required_hierarchy!(IStorageFile, Streams::IInputStreamReference, Streams::IRandomAccessStreamReference, IStorageItem);
 impl ::windows_core::RuntimeType for IStorageFile {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IStorageFile {
-    type Vtable = IStorageFile_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageFile {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfa3f6186_4214_428c_a64c_14c9ac7315ea);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -788,9 +579,7 @@ pub struct IStorageFile_Vtbl {
     pub MoveOverload: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, destinationfolder: *mut ::core::ffi::c_void, desirednewname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, option: NameCollisionOption, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub MoveAndReplaceAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, filetoreplace: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageFile2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStorageFile2, IStorageFile2_Vtbl, 0x954e4bcf_0a77_42fb_b777_c2ed58a52e44);
 impl IStorageFile2 {
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
@@ -813,12 +602,6 @@ impl IStorageFile2 {
 impl ::windows_core::RuntimeType for IStorageFile2 {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IStorageFile2 {
-    type Vtable = IStorageFile2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageFile2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x954e4bcf_0a77_42fb_b777_c2ed58a52e44);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageFile2_Vtbl {
@@ -829,9 +612,7 @@ pub struct IStorageFile2_Vtbl {
     OpenWithOptionsAsync: usize,
     pub OpenTransactedWriteWithOptionsAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, options: StorageOpenOptions, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageFilePropertiesWithAvailability(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStorageFilePropertiesWithAvailability, IStorageFilePropertiesWithAvailability_Vtbl, 0xafcbbe9b_582b_4133_9648_e44ca46ee491);
 impl IStorageFilePropertiesWithAvailability {
     pub fn IsAvailable(&self) -> ::windows_core::Result<bool> {
         let this = self;
@@ -845,28 +626,13 @@ impl IStorageFilePropertiesWithAvailability {
 impl ::windows_core::RuntimeType for IStorageFilePropertiesWithAvailability {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IStorageFilePropertiesWithAvailability {
-    type Vtable = IStorageFilePropertiesWithAvailability_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageFilePropertiesWithAvailability {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xafcbbe9b_582b_4133_9648_e44ca46ee491);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageFilePropertiesWithAvailability_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub IsAvailable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageFileStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageFileStatics {
-    type Vtable = IStorageFileStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageFileStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5984c710_daf2_43c8_8bb4_a4d3eacfd03f);
-}
+::windows_core::imp::com_interface!(IStorageFileStatics, IStorageFileStatics_Vtbl, 0x5984c710_daf2_43c8_8bb4_a4d3eacfd03f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageFileStatics_Vtbl {
@@ -890,16 +656,7 @@ pub struct IStorageFileStatics_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     ReplaceWithStreamedFileFromUriAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageFileStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageFileStatics2 {
-    type Vtable = IStorageFileStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageFileStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5c76a781_212e_4af9_8f04_740cae108974);
-}
+::windows_core::imp::com_interface!(IStorageFileStatics2, IStorageFileStatics2_Vtbl, 0x5c76a781_212e_4af9_8f04_740cae108974);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageFileStatics2_Vtbl {
@@ -909,9 +666,7 @@ pub struct IStorageFileStatics2_Vtbl {
     #[cfg(not(feature = "System"))]
     GetFileFromPathForUserAsync: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageFolder(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStorageFolder, IStorageFolder_Vtbl, 0x72d1cb78_b3ef_4f75_a80b_6fd9dae2944b);
 impl IStorageFolder {
     pub fn CreateFileAsyncOverloadDefaultOptions(&self, desiredname: &::windows_core::HSTRING) -> ::windows_core::Result<super::Foundation::IAsyncOperation<StorageFile>> {
         let this = self;
@@ -1063,15 +818,9 @@ impl IStorageFolder {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IStorageFolder, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IStorageItem> for IStorageFolder {}
+::windows_core::imp::required_hierarchy!(IStorageFolder, IStorageItem);
 impl ::windows_core::RuntimeType for IStorageFolder {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IStorageFolder {
-    type Vtable = IStorageFolder_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageFolder {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x72d1cb78_b3ef_4f75_a80b_6fd9dae2944b);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -1097,9 +846,7 @@ pub struct IStorageFolder_Vtbl {
     #[cfg(not(feature = "Foundation_Collections"))]
     GetItemsAsyncOverloadDefaultStartAndCount: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageFolder2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStorageFolder2, IStorageFolder2_Vtbl, 0xe827e8b9_08d9_4a8e_a0ac_fe5ed3cbbbd3);
 impl IStorageFolder2 {
     pub fn TryGetItemAsync(&self, name: &::windows_core::HSTRING) -> ::windows_core::Result<super::Foundation::IAsyncOperation<IStorageItem>> {
         let this = self;
@@ -1113,60 +860,27 @@ impl IStorageFolder2 {
 impl ::windows_core::RuntimeType for IStorageFolder2 {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IStorageFolder2 {
-    type Vtable = IStorageFolder2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageFolder2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe827e8b9_08d9_4a8e_a0ac_fe5ed3cbbbd3);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageFolder2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub TryGetItemAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, name: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageFolder3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageFolder3 {
-    type Vtable = IStorageFolder3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageFolder3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9f617899_bde1_4124_aeb3_b06ad96f98d4);
-}
+::windows_core::imp::com_interface!(IStorageFolder3, IStorageFolder3_Vtbl, 0x9f617899_bde1_4124_aeb3_b06ad96f98d4);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageFolder3_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub TryGetChangeTracker: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageFolderStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageFolderStatics {
-    type Vtable = IStorageFolderStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageFolderStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x08f327ff_85d5_48b9_aee9_28511e339f9f);
-}
+::windows_core::imp::com_interface!(IStorageFolderStatics, IStorageFolderStatics_Vtbl, 0x08f327ff_85d5_48b9_aee9_28511e339f9f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageFolderStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetFolderFromPathAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, path: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageFolderStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageFolderStatics2 {
-    type Vtable = IStorageFolderStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageFolderStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb4656dc3_71d2_467d_8b29_371f0f62bf6f);
-}
+::windows_core::imp::com_interface!(IStorageFolderStatics2, IStorageFolderStatics2_Vtbl, 0xb4656dc3_71d2_467d_8b29_371f0f62bf6f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageFolderStatics2_Vtbl {
@@ -1176,9 +890,7 @@ pub struct IStorageFolderStatics2_Vtbl {
     #[cfg(not(feature = "System"))]
     GetFolderFromPathForUserAsync: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageItem(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStorageItem, IStorageItem_Vtbl, 0x4207a996_ca2f_42f7_bde8_8b10457a7f30);
 impl IStorageItem {
     pub fn RenameAsyncOverloadDefaultOptions(&self, desiredname: &::windows_core::HSTRING) -> ::windows_core::Result<super::Foundation::IAsyncAction> {
         let this = self;
@@ -1257,12 +969,6 @@ impl IStorageItem {
 impl ::windows_core::RuntimeType for IStorageItem {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IStorageItem {
-    type Vtable = IStorageItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageItem {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4207a996_ca2f_42f7_bde8_8b10457a7f30);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageItem_Vtbl {
@@ -1281,9 +987,7 @@ pub struct IStorageItem_Vtbl {
     pub DateCreated: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut super::Foundation::DateTime) -> ::windows_core::HRESULT,
     pub IsOfType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, r#type: StorageItemTypes, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageItem2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStorageItem2, IStorageItem2_Vtbl, 0x53f926d2_083c_4283_b45b_81c007237e44);
 impl IStorageItem2 {
     pub fn GetParentAsync(&self) -> ::windows_core::Result<super::Foundation::IAsyncOperation<StorageFolder>> {
         let this = self;
@@ -1294,12 +998,12 @@ impl IStorageItem2 {
     }
     pub fn IsEqual<P0>(&self, item: P0) -> ::windows_core::Result<bool>
     where
-        P0: ::windows_core::TryIntoParam<IStorageItem>,
+        P0: ::windows_core::IntoParam<IStorageItem>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).IsEqual)(::windows_core::Interface::as_raw(this), item.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).IsEqual)(::windows_core::Interface::as_raw(this), item.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn RenameAsyncOverloadDefaultOptions(&self, desiredname: &::windows_core::HSTRING) -> ::windows_core::Result<super::Foundation::IAsyncAction> {
@@ -1376,15 +1080,9 @@ impl IStorageItem2 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IStorageItem2, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IStorageItem> for IStorageItem2 {}
+::windows_core::imp::required_hierarchy!(IStorageItem2, IStorageItem);
 impl ::windows_core::RuntimeType for IStorageItem2 {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IStorageItem2 {
-    type Vtable = IStorageItem2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageItem2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x53f926d2_083c_4283_b45b_81c007237e44);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -1393,9 +1091,7 @@ pub struct IStorageItem2_Vtbl {
     pub GetParentAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub IsEqual: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, item: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageItemProperties(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStorageItemProperties, IStorageItemProperties_Vtbl, 0x86664478_8029_46fe_a789_1c2f3e2ffb5c);
 impl IStorageItemProperties {
     #[doc = "Required features: `\"Storage_FileProperties\"`, `\"Storage_Streams\"`"]
     #[cfg(all(feature = "Storage_FileProperties", feature = "Storage_Streams"))]
@@ -1459,12 +1155,6 @@ impl IStorageItemProperties {
 impl ::windows_core::RuntimeType for IStorageItemProperties {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IStorageItemProperties {
-    type Vtable = IStorageItemProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageItemProperties {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x86664478_8029_46fe_a789_1c2f3e2ffb5c);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageItemProperties_Vtbl {
@@ -1489,9 +1179,7 @@ pub struct IStorageItemProperties_Vtbl {
     #[cfg(not(feature = "Storage_FileProperties"))]
     Properties: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageItemProperties2(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStorageItemProperties2, IStorageItemProperties2_Vtbl, 0x8e86a951_04b9_4bd2_929d_fef3f71621d0);
 impl IStorageItemProperties2 {
     #[doc = "Required features: `\"Storage_FileProperties\"`, `\"Storage_Streams\"`"]
     #[cfg(all(feature = "Storage_FileProperties", feature = "Storage_Streams"))]
@@ -1579,15 +1267,9 @@ impl IStorageItemProperties2 {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IStorageItemProperties2, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IStorageItemProperties> for IStorageItemProperties2 {}
+::windows_core::imp::required_hierarchy!(IStorageItemProperties2, IStorageItemProperties);
 impl ::windows_core::RuntimeType for IStorageItemProperties2 {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IStorageItemProperties2 {
-    type Vtable = IStorageItemProperties2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageItemProperties2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8e86a951_04b9_4bd2_929d_fef3f71621d0);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -1606,9 +1288,7 @@ pub struct IStorageItemProperties2_Vtbl {
     #[cfg(not(all(feature = "Storage_FileProperties", feature = "Storage_Streams")))]
     GetScaledImageAsThumbnailAsync: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageItemPropertiesWithProvider(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStorageItemPropertiesWithProvider, IStorageItemPropertiesWithProvider_Vtbl, 0x861bf39b_6368_4dee_b40e_74684a5ce714);
 impl IStorageItemPropertiesWithProvider {
     pub fn Provider(&self) -> ::windows_core::Result<StorageProvider> {
         let this = self;
@@ -1676,15 +1356,9 @@ impl IStorageItemPropertiesWithProvider {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IStorageItemPropertiesWithProvider, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IStorageItemProperties> for IStorageItemPropertiesWithProvider {}
+::windows_core::imp::required_hierarchy!(IStorageItemPropertiesWithProvider, IStorageItemProperties);
 impl ::windows_core::RuntimeType for IStorageItemPropertiesWithProvider {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
-}
-unsafe impl ::windows_core::Interface for IStorageItemPropertiesWithProvider {
-    type Vtable = IStorageItemPropertiesWithProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageItemPropertiesWithProvider {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x861bf39b_6368_4dee_b40e_74684a5ce714);
 }
 #[repr(C)]
 #[doc(hidden)]
@@ -1692,16 +1366,7 @@ pub struct IStorageItemPropertiesWithProvider_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Provider: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibrary(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibrary {
-    type Vtable = IStorageLibrary_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibrary {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1edd7103_0e5e_4d6c_b5e8_9318983d6a03);
-}
+::windows_core::imp::com_interface!(IStorageLibrary, IStorageLibrary_Vtbl, 0x1edd7103_0e5e_4d6c_b5e8_9318983d6a03);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibrary_Vtbl {
@@ -1716,48 +1381,21 @@ pub struct IStorageLibrary_Vtbl {
     pub DefinitionChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveDefinitionChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, eventcookie: super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibrary2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibrary2 {
-    type Vtable = IStorageLibrary2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibrary2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5b0ce348_fcb3_4031_afb0_a68d7bd44534);
-}
+::windows_core::imp::com_interface!(IStorageLibrary2, IStorageLibrary2_Vtbl, 0x5b0ce348_fcb3_4031_afb0_a68d7bd44534);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibrary2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ChangeTracker: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibrary3(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibrary3 {
-    type Vtable = IStorageLibrary3_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibrary3 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x8a281291_2154_4201_8113_d2c05ce1ad23);
-}
+::windows_core::imp::com_interface!(IStorageLibrary3, IStorageLibrary3_Vtbl, 0x8a281291_2154_4201_8113_d2c05ce1ad23);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibrary3_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub AreFolderSuggestionsAvailableAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryChange(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryChange {
-    type Vtable = IStorageLibraryChange_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryChange {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x00980b23_2be2_4909_aa48_159f5203a51e);
-}
+::windows_core::imp::com_interface!(IStorageLibraryChange, IStorageLibraryChange_Vtbl, 0x00980b23_2be2_4909_aa48_159f5203a51e);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryChange_Vtbl {
@@ -1768,16 +1406,7 @@ pub struct IStorageLibraryChange_Vtbl {
     pub IsOfType: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, r#type: StorageItemTypes, result__: *mut bool) -> ::windows_core::HRESULT,
     pub GetStorageItemAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryChangeReader(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryChangeReader {
-    type Vtable = IStorageLibraryChangeReader_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryChangeReader {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf205bc83_fca2_41f9_8954_ee2e991eb96f);
-}
+::windows_core::imp::com_interface!(IStorageLibraryChangeReader, IStorageLibraryChangeReader_Vtbl, 0xf205bc83_fca2_41f9_8954_ee2e991eb96f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryChangeReader_Vtbl {
@@ -1788,32 +1417,14 @@ pub struct IStorageLibraryChangeReader_Vtbl {
     ReadBatchAsync: usize,
     pub AcceptChangesAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryChangeReader2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryChangeReader2 {
-    type Vtable = IStorageLibraryChangeReader2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryChangeReader2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xabf4868b_fbcc_4a4f_999e_e7ab7c646dbe);
-}
+::windows_core::imp::com_interface!(IStorageLibraryChangeReader2, IStorageLibraryChangeReader2_Vtbl, 0xabf4868b_fbcc_4a4f_999e_e7ab7c646dbe);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryChangeReader2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetLastChangeId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u64) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryChangeTracker(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryChangeTracker {
-    type Vtable = IStorageLibraryChangeTracker_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryChangeTracker {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x9e157316_6073_44f6_9681_7492d1286c90);
-}
+::windows_core::imp::com_interface!(IStorageLibraryChangeTracker, IStorageLibraryChangeTracker_Vtbl, 0x9e157316_6073_44f6_9681_7492d1286c90);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryChangeTracker_Vtbl {
@@ -1822,16 +1433,7 @@ pub struct IStorageLibraryChangeTracker_Vtbl {
     pub Enable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Reset: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryChangeTracker2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryChangeTracker2 {
-    type Vtable = IStorageLibraryChangeTracker2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryChangeTracker2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xcd051c3b_0f9f_42f9_8fb3_158d82e13821);
-}
+::windows_core::imp::com_interface!(IStorageLibraryChangeTracker2, IStorageLibraryChangeTracker2_Vtbl, 0xcd051c3b_0f9f_42f9_8fb3_158d82e13821);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryChangeTracker2_Vtbl {
@@ -1839,16 +1441,7 @@ pub struct IStorageLibraryChangeTracker2_Vtbl {
     pub EnableWithOptions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, options: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Disable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryChangeTrackerOptions(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryChangeTrackerOptions {
-    type Vtable = IStorageLibraryChangeTrackerOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryChangeTrackerOptions {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xbb52bcd4_1a6d_59c0_ad2a_823a20532483);
-}
+::windows_core::imp::com_interface!(IStorageLibraryChangeTrackerOptions, IStorageLibraryChangeTrackerOptions_Vtbl, 0xbb52bcd4_1a6d_59c0_ad2a_823a20532483);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryChangeTrackerOptions_Vtbl {
@@ -1856,63 +1449,27 @@ pub struct IStorageLibraryChangeTrackerOptions_Vtbl {
     pub TrackChangeDetails: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetTrackChangeDetails: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryLastChangeId(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryLastChangeId {
-    type Vtable = IStorageLibraryLastChangeId_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryLastChangeId {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x5281826a_bbe1_53bc_82ca_81cc7f039329);
-}
+::windows_core::imp::com_interface!(IStorageLibraryLastChangeId, IStorageLibraryLastChangeId_Vtbl, 0x5281826a_bbe1_53bc_82ca_81cc7f039329);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryLastChangeId_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryLastChangeIdStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryLastChangeIdStatics {
-    type Vtable = IStorageLibraryLastChangeIdStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryLastChangeIdStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x81a49128_2ca3_5309_b0d1_cf0788e40762);
-}
+::windows_core::imp::com_interface!(IStorageLibraryLastChangeIdStatics, IStorageLibraryLastChangeIdStatics_Vtbl, 0x81a49128_2ca3_5309_b0d1_cf0788e40762);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryLastChangeIdStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Unknown: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut u64) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryStatics {
-    type Vtable = IStorageLibraryStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4208a6db_684a_49c6_9e59_90121ee050d6);
-}
+::windows_core::imp::com_interface!(IStorageLibraryStatics, IStorageLibraryStatics_Vtbl, 0x4208a6db_684a_49c6_9e59_90121ee050d6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetLibraryAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, libraryid: KnownLibraryId, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageLibraryStatics2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageLibraryStatics2 {
-    type Vtable = IStorageLibraryStatics2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageLibraryStatics2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xffb08ddc_fa75_4695_b9d1_7f81f97832e3);
-}
+::windows_core::imp::com_interface!(IStorageLibraryStatics2, IStorageLibraryStatics2_Vtbl, 0xffb08ddc_fa75_4695_b9d1_7f81f97832e3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageLibraryStatics2_Vtbl {
@@ -1922,16 +1479,7 @@ pub struct IStorageLibraryStatics2_Vtbl {
     #[cfg(not(feature = "System"))]
     GetLibraryForUserAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageProvider(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageProvider {
-    type Vtable = IStorageProvider_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageProvider {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe705eed4_d478_47d6_ba46_1a8ebe114a20);
-}
+::windows_core::imp::com_interface!(IStorageProvider, IStorageProvider_Vtbl, 0xe705eed4_d478_47d6_ba46_1a8ebe114a20);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageProvider_Vtbl {
@@ -1939,32 +1487,14 @@ pub struct IStorageProvider_Vtbl {
     pub Id: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub DisplayName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageProvider2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageProvider2 {
-    type Vtable = IStorageProvider2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageProvider2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x010d1917_3404_414b_9fd7_cd44472eaa39);
-}
+::windows_core::imp::com_interface!(IStorageProvider2, IStorageProvider2_Vtbl, 0x010d1917_3404_414b_9fd7_cd44472eaa39);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageProvider2_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub IsPropertySupportedForPartialFileAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, propertycanonicalname: ::std::mem::MaybeUninit<::windows_core::HSTRING>, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStorageStreamTransaction(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IStorageStreamTransaction {
-    type Vtable = IStorageStreamTransaction_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStorageStreamTransaction {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf67cf363_a53d_4d94_ae2c_67232d93acdd);
-}
+::windows_core::imp::com_interface!(IStorageStreamTransaction, IStorageStreamTransaction_Vtbl, 0xf67cf363_a53d_4d94_ae2c_67232d93acdd);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStorageStreamTransaction_Vtbl {
@@ -1975,9 +1505,7 @@ pub struct IStorageStreamTransaction_Vtbl {
     Stream: usize,
     pub CommitAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IStreamedFileDataRequest(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IStreamedFileDataRequest, IStreamedFileDataRequest_Vtbl, 0x1673fcce_dabd_4d50_beee_180b8a8191b6);
 impl IStreamedFileDataRequest {
     pub fn FailAndClose(&self, failuremode: StreamedFileFailureMode) -> ::windows_core::Result<()> {
         let this = self;
@@ -1988,44 +1516,20 @@ impl IStreamedFileDataRequest {
 impl ::windows_core::RuntimeType for IStreamedFileDataRequest {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
-unsafe impl ::windows_core::Interface for IStreamedFileDataRequest {
-    type Vtable = IStreamedFileDataRequest_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IStreamedFileDataRequest {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1673fcce_dabd_4d50_beee_180b8a8191b6);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IStreamedFileDataRequest_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub FailAndClose: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, failuremode: StreamedFileFailureMode) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemAudioProperties(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemAudioProperties {
-    type Vtable = ISystemAudioProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemAudioProperties {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3f8f38b7_308c_47e1_924d_8645348e5db7);
-}
+::windows_core::imp::com_interface!(ISystemAudioProperties, ISystemAudioProperties_Vtbl, 0x3f8f38b7_308c_47e1_924d_8645348e5db7);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemAudioProperties_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub EncodingBitrate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemDataPaths(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemDataPaths {
-    type Vtable = ISystemDataPaths_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemDataPaths {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe32abf70_d8fa_45ec_a942_d2e26fb60ba5);
-}
+::windows_core::imp::com_interface!(ISystemDataPaths, ISystemDataPaths_Vtbl, 0xe32abf70_d8fa_45ec_a942_d2e26fb60ba5);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemDataPaths_Vtbl {
@@ -2047,32 +1551,14 @@ pub struct ISystemDataPaths_Vtbl {
     pub UserProfiles: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Windows: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemDataPathsStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemDataPathsStatics {
-    type Vtable = ISystemDataPathsStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemDataPathsStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe0f96fd0_9920_4bca_b379_f96fdf7caad8);
-}
+::windows_core::imp::com_interface!(ISystemDataPathsStatics, ISystemDataPathsStatics_Vtbl, 0xe0f96fd0_9920_4bca_b379_f96fdf7caad8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemDataPathsStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetDefault: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemGPSProperties(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemGPSProperties {
-    type Vtable = ISystemGPSProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemGPSProperties {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xc0f46eb4_c174_481a_bc25_921986f6a6f3);
-}
+::windows_core::imp::com_interface!(ISystemGPSProperties, ISystemGPSProperties_Vtbl, 0xc0f46eb4_c174_481a_bc25_921986f6a6f3);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemGPSProperties_Vtbl {
@@ -2080,16 +1566,7 @@ pub struct ISystemGPSProperties_Vtbl {
     pub LatitudeDecimal: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub LongitudeDecimal: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemImageProperties(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemImageProperties {
-    type Vtable = ISystemImageProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemImageProperties {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x011b2e30_8b39_4308_bea1_e8aa61e47826);
-}
+::windows_core::imp::com_interface!(ISystemImageProperties, ISystemImageProperties_Vtbl, 0x011b2e30_8b39_4308_bea1_e8aa61e47826);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemImageProperties_Vtbl {
@@ -2097,16 +1574,7 @@ pub struct ISystemImageProperties_Vtbl {
     pub HorizontalSize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub VerticalSize: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemMediaProperties(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemMediaProperties {
-    type Vtable = ISystemMediaProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemMediaProperties {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa42b3316_8415_40dc_8c44_98361d235430);
-}
+::windows_core::imp::com_interface!(ISystemMediaProperties, ISystemMediaProperties_Vtbl, 0xa42b3316_8415_40dc_8c44_98361d235430);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemMediaProperties_Vtbl {
@@ -2118,16 +1586,7 @@ pub struct ISystemMediaProperties_Vtbl {
     pub Writer: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Year: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemMusicProperties(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemMusicProperties {
-    type Vtable = ISystemMusicProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemMusicProperties {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb47988d5_67af_4bc3_8d39_5b89022026a1);
-}
+::windows_core::imp::com_interface!(ISystemMusicProperties, ISystemMusicProperties_Vtbl, 0xb47988d5_67af_4bc3_8d39_5b89022026a1);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemMusicProperties_Vtbl {
@@ -2141,16 +1600,7 @@ pub struct ISystemMusicProperties_Vtbl {
     pub Genre: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TrackNumber: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemPhotoProperties(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemPhotoProperties {
-    type Vtable = ISystemPhotoProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemPhotoProperties {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x4734fc3d_ab21_4424_b735_f4353a56c8fc);
-}
+::windows_core::imp::com_interface!(ISystemPhotoProperties, ISystemPhotoProperties_Vtbl, 0x4734fc3d_ab21_4424_b735_f4353a56c8fc);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemPhotoProperties_Vtbl {
@@ -2161,16 +1611,7 @@ pub struct ISystemPhotoProperties_Vtbl {
     pub Orientation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub PeopleNames: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemProperties(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemProperties {
-    type Vtable = ISystemProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemProperties {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x917a71c1_85f3_4dd1_b001_a50bfd21c8d2);
-}
+::windows_core::imp::com_interface!(ISystemProperties, ISystemProperties_Vtbl, 0x917a71c1_85f3_4dd1_b001_a50bfd21c8d2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemProperties_Vtbl {
@@ -2189,16 +1630,7 @@ pub struct ISystemProperties_Vtbl {
     pub Video: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Image: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISystemVideoProperties(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISystemVideoProperties {
-    type Vtable = ISystemVideoProperties_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISystemVideoProperties {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2040f715_67f8_4322_9b80_4fa9fefb83e8);
-}
+::windows_core::imp::com_interface!(ISystemVideoProperties, ISystemVideoProperties_Vtbl, 0x2040f715_67f8_4322_9b80_4fa9fefb83e8);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISystemVideoProperties_Vtbl {
@@ -2209,16 +1641,7 @@ pub struct ISystemVideoProperties_Vtbl {
     pub Orientation: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub TotalBitrate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataPaths(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataPaths {
-    type Vtable = IUserDataPaths_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataPaths {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf9c53912_abc4_46ff_8a2b_dc9d7fa6e52f);
-}
+::windows_core::imp::com_interface!(IUserDataPaths, IUserDataPaths_Vtbl, 0xf9c53912_abc4_46ff_8a2b_dc9d7fa6e52f);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataPaths_Vtbl {
@@ -2243,16 +1666,7 @@ pub struct IUserDataPaths_Vtbl {
     pub Templates: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub Videos: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IUserDataPathsStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IUserDataPathsStatics {
-    type Vtable = IUserDataPathsStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IUserDataPathsStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x01b29def_e062_48a1_8b0c_f2c7a9ca56c0);
-}
+::windows_core::imp::com_interface!(IUserDataPathsStatics, IUserDataPathsStatics_Vtbl, 0x01b29def_e062_48a1_8b0c_f2c7a9ca56c0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IUserDataPathsStatics_Vtbl {
@@ -2536,7 +1950,7 @@ impl ::windows_core::RuntimeName for ApplicationData {
     const NAME: &'static str = "Windows.Storage.ApplicationData";
 }
 ::windows_core::imp::interface_hierarchy!(ApplicationData, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::Foundation::IClosable> for ApplicationData {}
+::windows_core::imp::required_hierarchy!(ApplicationData, super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for ApplicationData {}
 unsafe impl ::core::marker::Sync for ApplicationData {}
 #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -2676,13 +2090,7 @@ impl ::core::iter::IntoIterator for &ApplicationDataCompositeValue {
 #[cfg(feature = "Foundation_Collections")]
 ::windows_core::imp::interface_hierarchy!(ApplicationDataCompositeValue, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::Foundation::Collections::IIterable<super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> for ApplicationDataCompositeValue {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>> for ApplicationDataCompositeValue {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::Foundation::Collections::IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>> for ApplicationDataCompositeValue {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::Foundation::Collections::IPropertySet> for ApplicationDataCompositeValue {}
+::windows_core::imp::required_hierarchy!(ApplicationDataCompositeValue, super::Foundation::Collections::IIterable::<super::Foundation::Collections::IKeyValuePair::<::windows_core::HSTRING, ::windows_core::IInspectable>>, super::Foundation::Collections::IMap::<::windows_core::HSTRING, ::windows_core::IInspectable>, super::Foundation::Collections::IObservableMap::<::windows_core::HSTRING, ::windows_core::IInspectable>, super::Foundation::Collections::IPropertySet);
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::core::marker::Send for ApplicationDataCompositeValue {}
 #[cfg(feature = "Foundation_Collections")]
@@ -2752,7 +2160,7 @@ impl ::windows_core::RuntimeName for ApplicationDataContainer {
     const NAME: &'static str = "Windows.Storage.ApplicationDataContainer";
 }
 ::windows_core::imp::interface_hierarchy!(ApplicationDataContainer, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::Foundation::IClosable> for ApplicationDataContainer {}
+::windows_core::imp::required_hierarchy!(ApplicationDataContainer, super::Foundation::IClosable);
 unsafe impl ::core::marker::Send for ApplicationDataContainer {}
 unsafe impl ::core::marker::Sync for ApplicationDataContainer {}
 #[doc = "Required features: `\"Foundation_Collections\"`"]
@@ -2885,13 +2293,7 @@ impl ::core::iter::IntoIterator for &ApplicationDataContainerSettings {
 #[cfg(feature = "Foundation_Collections")]
 ::windows_core::imp::interface_hierarchy!(ApplicationDataContainerSettings, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::Foundation::Collections::IIterable<super::Foundation::Collections::IKeyValuePair<::windows_core::HSTRING, ::windows_core::IInspectable>>> for ApplicationDataContainerSettings {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::Foundation::Collections::IMap<::windows_core::HSTRING, ::windows_core::IInspectable>> for ApplicationDataContainerSettings {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::Foundation::Collections::IObservableMap<::windows_core::HSTRING, ::windows_core::IInspectable>> for ApplicationDataContainerSettings {}
-#[cfg(feature = "Foundation_Collections")]
-impl ::windows_core::CanTryInto<super::Foundation::Collections::IPropertySet> for ApplicationDataContainerSettings {}
+::windows_core::imp::required_hierarchy!(ApplicationDataContainerSettings, super::Foundation::Collections::IIterable::<super::Foundation::Collections::IKeyValuePair::<::windows_core::HSTRING, ::windows_core::IInspectable>>, super::Foundation::Collections::IMap::<::windows_core::HSTRING, ::windows_core::IInspectable>, super::Foundation::Collections::IObservableMap::<::windows_core::HSTRING, ::windows_core::IInspectable>, super::Foundation::Collections::IPropertySet);
 #[cfg(feature = "Foundation_Collections")]
 unsafe impl ::core::marker::Send for ApplicationDataContainerSettings {}
 #[cfg(feature = "Foundation_Collections")]
@@ -2900,19 +2302,19 @@ pub struct CachedFileManager;
 impl CachedFileManager {
     pub fn DeferUpdates<P0>(file: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
-        Self::ICachedFileManagerStatics(|this| unsafe { (::windows_core::Interface::vtable(this).DeferUpdates)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi()).ok() })
+        Self::ICachedFileManagerStatics(|this| unsafe { (::windows_core::Interface::vtable(this).DeferUpdates)(::windows_core::Interface::as_raw(this), file.into_param().abi()).ok() })
     }
     #[doc = "Required features: `\"Storage_Provider\"`"]
     #[cfg(feature = "Storage_Provider")]
     pub fn CompleteUpdatesAsync<P0>(file: P0) -> ::windows_core::Result<super::Foundation::IAsyncOperation<Provider::FileUpdateStatus>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         Self::ICachedFileManagerStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CompleteUpdatesAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CompleteUpdatesAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc(hidden)]
@@ -3012,164 +2414,164 @@ pub struct FileIO;
 impl FileIO {
     pub fn ReadTextAsync<P0>(file: P0) -> ::windows_core::Result<super::Foundation::IAsyncOperation<::windows_core::HSTRING>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).ReadTextAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).ReadTextAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn ReadTextWithEncodingAsync<P0>(file: P0, encoding: Streams::UnicodeEncoding) -> ::windows_core::Result<super::Foundation::IAsyncOperation<::windows_core::HSTRING>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).ReadTextWithEncodingAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), encoding, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).ReadTextWithEncodingAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), encoding, &mut result__).from_abi(result__)
         })
     }
     pub fn WriteTextAsync<P0>(file: P0, contents: &::windows_core::HSTRING) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteTextAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), ::core::mem::transmute_copy(contents), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteTextAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), ::core::mem::transmute_copy(contents), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn WriteTextWithEncodingAsync<P0>(file: P0, contents: &::windows_core::HSTRING, encoding: Streams::UnicodeEncoding) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteTextWithEncodingAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), ::core::mem::transmute_copy(contents), encoding, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteTextWithEncodingAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), ::core::mem::transmute_copy(contents), encoding, &mut result__).from_abi(result__)
         })
     }
     pub fn AppendTextAsync<P0>(file: P0, contents: &::windows_core::HSTRING) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).AppendTextAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), ::core::mem::transmute_copy(contents), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).AppendTextAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), ::core::mem::transmute_copy(contents), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn AppendTextWithEncodingAsync<P0>(file: P0, contents: &::windows_core::HSTRING, encoding: Streams::UnicodeEncoding) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).AppendTextWithEncodingAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), ::core::mem::transmute_copy(contents), encoding, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).AppendTextWithEncodingAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), ::core::mem::transmute_copy(contents), encoding, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn ReadLinesAsync<P0>(file: P0) -> ::windows_core::Result<super::Foundation::IAsyncOperation<super::Foundation::Collections::IVector<::windows_core::HSTRING>>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).ReadLinesAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).ReadLinesAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Storage_Streams\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Storage_Streams"))]
     pub fn ReadLinesWithEncodingAsync<P0>(file: P0, encoding: Streams::UnicodeEncoding) -> ::windows_core::Result<super::Foundation::IAsyncOperation<super::Foundation::Collections::IVector<::windows_core::HSTRING>>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).ReadLinesWithEncodingAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), encoding, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).ReadLinesWithEncodingAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), encoding, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn WriteLinesAsync<P0, P1>(file: P0, lines: P1) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
-        P1: ::windows_core::TryIntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
+        P1: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteLinesAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), lines.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteLinesAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), lines.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Storage_Streams\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Storage_Streams"))]
     pub fn WriteLinesWithEncodingAsync<P0, P1>(file: P0, lines: P1, encoding: Streams::UnicodeEncoding) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
-        P1: ::windows_core::TryIntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
+        P1: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteLinesWithEncodingAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), lines.try_into_param()?.abi(), encoding, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteLinesWithEncodingAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), lines.into_param().abi(), encoding, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn AppendLinesAsync<P0, P1>(file: P0, lines: P1) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
-        P1: ::windows_core::TryIntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
+        P1: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).AppendLinesAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), lines.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).AppendLinesAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), lines.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Storage_Streams\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Storage_Streams"))]
     pub fn AppendLinesWithEncodingAsync<P0, P1>(file: P0, lines: P1, encoding: Streams::UnicodeEncoding) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
-        P1: ::windows_core::TryIntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
+        P1: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).AppendLinesWithEncodingAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), lines.try_into_param()?.abi(), encoding, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).AppendLinesWithEncodingAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), lines.into_param().abi(), encoding, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn ReadBufferAsync<P0>(file: P0) -> ::windows_core::Result<super::Foundation::IAsyncOperation<Streams::IBuffer>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).ReadBufferAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).ReadBufferAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn WriteBufferAsync<P0, P1>(file: P0, buffer: P1) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
-        P1: ::windows_core::TryIntoParam<Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
+        P1: ::windows_core::IntoParam<Streams::IBuffer>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteBufferAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), buffer.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteBufferAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), buffer.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     pub fn WriteBytesAsync<P0>(file: P0, buffer: &[u8]) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         Self::IFileIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteBytesAsync)(::windows_core::Interface::as_raw(this), file.try_into_param()?.abi(), buffer.len().try_into().unwrap(), buffer.as_ptr(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteBytesAsync)(::windows_core::Interface::as_raw(this), file.into_param().abi(), buffer.len().try_into().unwrap(), buffer.as_ptr(), &mut result__).from_abi(result__)
         })
     }
     #[doc(hidden)]
@@ -3398,44 +2800,44 @@ impl PathIO {
     #[cfg(feature = "Foundation_Collections")]
     pub fn WriteLinesAsync<P0>(absolutepath: &::windows_core::HSTRING, lines: P0) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::IPathIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteLinesAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(absolutepath), lines.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteLinesAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(absolutepath), lines.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Storage_Streams\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Storage_Streams"))]
     pub fn WriteLinesWithEncodingAsync<P0>(absolutepath: &::windows_core::HSTRING, lines: P0, encoding: Streams::UnicodeEncoding) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::IPathIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteLinesWithEncodingAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(absolutepath), lines.try_into_param()?.abi(), encoding, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteLinesWithEncodingAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(absolutepath), lines.into_param().abi(), encoding, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Foundation_Collections\"`"]
     #[cfg(feature = "Foundation_Collections")]
     pub fn AppendLinesAsync<P0>(absolutepath: &::windows_core::HSTRING, lines: P0) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::IPathIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).AppendLinesAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(absolutepath), lines.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).AppendLinesAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(absolutepath), lines.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Foundation_Collections\"`, `\"Storage_Streams\"`"]
     #[cfg(all(feature = "Foundation_Collections", feature = "Storage_Streams"))]
     pub fn AppendLinesWithEncodingAsync<P0>(absolutepath: &::windows_core::HSTRING, lines: P0, encoding: Streams::UnicodeEncoding) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
+        P0: ::windows_core::IntoParam<super::Foundation::Collections::IIterable<::windows_core::HSTRING>>,
     {
         Self::IPathIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).AppendLinesWithEncodingAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(absolutepath), lines.try_into_param()?.abi(), encoding, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).AppendLinesWithEncodingAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(absolutepath), lines.into_param().abi(), encoding, &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -3450,11 +2852,11 @@ impl PathIO {
     #[cfg(feature = "Storage_Streams")]
     pub fn WriteBufferAsync<P0>(absolutepath: &::windows_core::HSTRING, buffer: P0) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<Streams::IBuffer>,
     {
         Self::IPathIOStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteBufferAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(absolutepath), buffer.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteBufferAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(absolutepath), buffer.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     pub fn WriteBytesAsync(absolutepath: &::windows_core::HSTRING, buffer: &[u8]) -> ::windows_core::Result<super::Foundation::IAsyncAction> {
@@ -3591,82 +2993,82 @@ impl StorageFile {
     }
     pub fn CopyOverloadDefaultNameAndOptions<P0>(&self, destinationfolder: P0) -> ::windows_core::Result<super::Foundation::IAsyncOperation<StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFolder>,
+        P0: ::windows_core::IntoParam<IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CopyOverloadDefaultNameAndOptions)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CopyOverloadDefaultNameAndOptions)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn CopyOverloadDefaultOptions<P0>(&self, destinationfolder: P0, desirednewname: &::windows_core::HSTRING) -> ::windows_core::Result<super::Foundation::IAsyncOperation<StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFolder>,
+        P0: ::windows_core::IntoParam<IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CopyOverloadDefaultOptions)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), ::core::mem::transmute_copy(desirednewname), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CopyOverloadDefaultOptions)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), ::core::mem::transmute_copy(desirednewname), &mut result__).from_abi(result__)
         }
     }
     pub fn CopyOverload<P0>(&self, destinationfolder: P0, desirednewname: &::windows_core::HSTRING, option: NameCollisionOption) -> ::windows_core::Result<super::Foundation::IAsyncOperation<StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFolder>,
+        P0: ::windows_core::IntoParam<IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CopyOverload)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), ::core::mem::transmute_copy(desirednewname), option, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CopyOverload)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), ::core::mem::transmute_copy(desirednewname), option, &mut result__).from_abi(result__)
         }
     }
     pub fn CopyAndReplaceAsync<P0>(&self, filetoreplace: P0) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CopyAndReplaceAsync)(::windows_core::Interface::as_raw(this), filetoreplace.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CopyAndReplaceAsync)(::windows_core::Interface::as_raw(this), filetoreplace.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn MoveOverloadDefaultNameAndOptions<P0>(&self, destinationfolder: P0) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFolder>,
+        P0: ::windows_core::IntoParam<IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).MoveOverloadDefaultNameAndOptions)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).MoveOverloadDefaultNameAndOptions)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn MoveOverloadDefaultOptions<P0>(&self, destinationfolder: P0, desirednewname: &::windows_core::HSTRING) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFolder>,
+        P0: ::windows_core::IntoParam<IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).MoveOverloadDefaultOptions)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), ::core::mem::transmute_copy(desirednewname), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).MoveOverloadDefaultOptions)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), ::core::mem::transmute_copy(desirednewname), &mut result__).from_abi(result__)
         }
     }
     pub fn MoveOverload<P0>(&self, destinationfolder: P0, desirednewname: &::windows_core::HSTRING, option: NameCollisionOption) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFolder>,
+        P0: ::windows_core::IntoParam<IStorageFolder>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).MoveOverload)(::windows_core::Interface::as_raw(this), destinationfolder.try_into_param()?.abi(), ::core::mem::transmute_copy(desirednewname), option, &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).MoveOverload)(::windows_core::Interface::as_raw(this), destinationfolder.into_param().abi(), ::core::mem::transmute_copy(desirednewname), option, &mut result__).from_abi(result__)
         }
     }
     pub fn MoveAndReplaceAsync<P0>(&self, filetoreplace: P0) -> ::windows_core::Result<super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).MoveAndReplaceAsync)(::windows_core::Interface::as_raw(this), filetoreplace.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).MoveAndReplaceAsync)(::windows_core::Interface::as_raw(this), filetoreplace.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -3712,24 +3114,24 @@ impl StorageFile {
     pub fn CreateStreamedFileAsync<P0, P1>(displaynamewithextension: &::windows_core::HSTRING, datarequested: P0, thumbnail: P1) -> ::windows_core::Result<super::Foundation::IAsyncOperation<StorageFile>>
     where
         P0: ::windows_core::IntoParam<StreamedFileDataRequestedHandler>,
-        P1: ::windows_core::TryIntoParam<Streams::IRandomAccessStreamReference>,
+        P1: ::windows_core::IntoParam<Streams::IRandomAccessStreamReference>,
     {
         Self::IStorageFileStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateStreamedFileAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(displaynamewithextension), datarequested.into_param().abi(), thumbnail.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateStreamedFileAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(displaynamewithextension), datarequested.into_param().abi(), thumbnail.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn ReplaceWithStreamedFileAsync<P0, P1, P2>(filetoreplace: P0, datarequested: P1, thumbnail: P2) -> ::windows_core::Result<super::Foundation::IAsyncOperation<StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
         P1: ::windows_core::IntoParam<StreamedFileDataRequestedHandler>,
-        P2: ::windows_core::TryIntoParam<Streams::IRandomAccessStreamReference>,
+        P2: ::windows_core::IntoParam<Streams::IRandomAccessStreamReference>,
     {
         Self::IStorageFileStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).ReplaceWithStreamedFileAsync)(::windows_core::Interface::as_raw(this), filetoreplace.try_into_param()?.abi(), datarequested.into_param().abi(), thumbnail.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).ReplaceWithStreamedFileAsync)(::windows_core::Interface::as_raw(this), filetoreplace.into_param().abi(), datarequested.into_param().abi(), thumbnail.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -3737,24 +3139,24 @@ impl StorageFile {
     pub fn CreateStreamedFileFromUriAsync<P0, P1>(displaynamewithextension: &::windows_core::HSTRING, uri: P0, thumbnail: P1) -> ::windows_core::Result<super::Foundation::IAsyncOperation<StorageFile>>
     where
         P0: ::windows_core::IntoParam<super::Foundation::Uri>,
-        P1: ::windows_core::TryIntoParam<Streams::IRandomAccessStreamReference>,
+        P1: ::windows_core::IntoParam<Streams::IRandomAccessStreamReference>,
     {
         Self::IStorageFileStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).CreateStreamedFileFromUriAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(displaynamewithextension), uri.into_param().abi(), thumbnail.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).CreateStreamedFileFromUriAsync)(::windows_core::Interface::as_raw(this), ::core::mem::transmute_copy(displaynamewithextension), uri.into_param().abi(), thumbnail.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
     #[cfg(feature = "Storage_Streams")]
     pub fn ReplaceWithStreamedFileFromUriAsync<P0, P1, P2>(filetoreplace: P0, uri: P1, thumbnail: P2) -> ::windows_core::Result<super::Foundation::IAsyncOperation<StorageFile>>
     where
-        P0: ::windows_core::TryIntoParam<IStorageFile>,
+        P0: ::windows_core::IntoParam<IStorageFile>,
         P1: ::windows_core::IntoParam<super::Foundation::Uri>,
-        P2: ::windows_core::TryIntoParam<Streams::IRandomAccessStreamReference>,
+        P2: ::windows_core::IntoParam<Streams::IRandomAccessStreamReference>,
     {
         Self::IStorageFileStatics(|this| unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).ReplaceWithStreamedFileFromUriAsync)(::windows_core::Interface::as_raw(this), filetoreplace.try_into_param()?.abi(), uri.into_param().abi(), thumbnail.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).ReplaceWithStreamedFileFromUriAsync)(::windows_core::Interface::as_raw(this), filetoreplace.into_param().abi(), uri.into_param().abi(), thumbnail.into_param().abi(), &mut result__).from_abi(result__)
         })
     }
     #[doc = "Required features: `\"System\"`"]
@@ -3849,12 +3251,12 @@ impl StorageFile {
     }
     pub fn IsEqual<P0>(&self, item: P0) -> ::windows_core::Result<bool>
     where
-        P0: ::windows_core::TryIntoParam<IStorageItem>,
+        P0: ::windows_core::IntoParam<IStorageItem>,
     {
         let this = &::windows_core::ComInterface::cast::<IStorageItem2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).IsEqual)(::windows_core::Interface::as_raw(this), item.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).IsEqual)(::windows_core::Interface::as_raw(this), item.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_FileProperties\"`, `\"Storage_Streams\"`"]
@@ -3973,17 +3375,7 @@ impl ::windows_core::RuntimeName for StorageFile {
 }
 ::windows_core::imp::interface_hierarchy!(StorageFile, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<Streams::IInputStreamReference> for StorageFile {}
-#[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<Streams::IRandomAccessStreamReference> for StorageFile {}
-impl ::windows_core::CanTryInto<IStorageFile> for StorageFile {}
-impl ::windows_core::CanTryInto<IStorageFile2> for StorageFile {}
-impl ::windows_core::CanTryInto<IStorageFilePropertiesWithAvailability> for StorageFile {}
-impl ::windows_core::CanTryInto<IStorageItem> for StorageFile {}
-impl ::windows_core::CanTryInto<IStorageItem2> for StorageFile {}
-impl ::windows_core::CanTryInto<IStorageItemProperties> for StorageFile {}
-impl ::windows_core::CanTryInto<IStorageItemProperties2> for StorageFile {}
-impl ::windows_core::CanTryInto<IStorageItemPropertiesWithProvider> for StorageFile {}
+::windows_core::imp::required_hierarchy!(StorageFile, Streams::IInputStreamReference, Streams::IRandomAccessStreamReference, IStorageFile, IStorageFile2, IStorageFilePropertiesWithAvailability, IStorageItem, IStorageItem2, IStorageItemProperties, IStorageItemProperties2, IStorageItemPropertiesWithProvider);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct StorageFolder(::windows_core::IUnknown);
@@ -4341,12 +3733,12 @@ impl StorageFolder {
     }
     pub fn IsEqual<P0>(&self, item: P0) -> ::windows_core::Result<bool>
     where
-        P0: ::windows_core::TryIntoParam<IStorageItem>,
+        P0: ::windows_core::IntoParam<IStorageItem>,
     {
         let this = &::windows_core::ComInterface::cast::<IStorageItem2>(self)?;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).IsEqual)(::windows_core::Interface::as_raw(this), item.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).IsEqual)(::windows_core::Interface::as_raw(this), item.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_FileProperties\"`, `\"Storage_Streams\"`"]
@@ -4464,15 +3856,8 @@ impl ::windows_core::RuntimeName for StorageFolder {
     const NAME: &'static str = "Windows.Storage.StorageFolder";
 }
 ::windows_core::imp::interface_hierarchy!(StorageFolder, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<IStorageFolder> for StorageFolder {}
-impl ::windows_core::CanTryInto<IStorageFolder2> for StorageFolder {}
 #[cfg(feature = "Storage_Search")]
-impl ::windows_core::CanTryInto<Search::IStorageFolderQueryOperations> for StorageFolder {}
-impl ::windows_core::CanTryInto<IStorageItem> for StorageFolder {}
-impl ::windows_core::CanTryInto<IStorageItem2> for StorageFolder {}
-impl ::windows_core::CanTryInto<IStorageItemProperties> for StorageFolder {}
-impl ::windows_core::CanTryInto<IStorageItemProperties2> for StorageFolder {}
-impl ::windows_core::CanTryInto<IStorageItemPropertiesWithProvider> for StorageFolder {}
+::windows_core::imp::required_hierarchy!(StorageFolder, IStorageFolder, IStorageFolder2, Search::IStorageFolderQueryOperations, IStorageItem, IStorageItem2, IStorageItemProperties, IStorageItemProperties2, IStorageItemPropertiesWithProvider);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct StorageLibrary(::windows_core::IUnknown);
@@ -4869,7 +4254,7 @@ impl ::windows_core::RuntimeName for StorageStreamTransaction {
     const NAME: &'static str = "Windows.Storage.StorageStreamTransaction";
 }
 ::windows_core::imp::interface_hierarchy!(StorageStreamTransaction, ::windows_core::IUnknown, ::windows_core::IInspectable);
-impl ::windows_core::CanTryInto<super::Foundation::IClosable> for StorageStreamTransaction {}
+::windows_core::imp::required_hierarchy!(StorageStreamTransaction, super::Foundation::IClosable);
 #[doc = "Required features: `\"Storage_Streams\"`"]
 #[cfg(feature = "Storage_Streams")]
 #[repr(transparent)]
@@ -4885,12 +4270,12 @@ impl StreamedFileDataRequest {
     #[cfg(feature = "Storage_Streams")]
     pub fn WriteAsync<P0>(&self, buffer: P0) -> ::windows_core::Result<super::Foundation::IAsyncOperationWithProgress<u32, u32>>
     where
-        P0: ::windows_core::TryIntoParam<Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<Streams::IBuffer>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).WriteAsync)(::windows_core::Interface::as_raw(this), buffer.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).WriteAsync)(::windows_core::Interface::as_raw(this), buffer.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     #[doc = "Required features: `\"Storage_Streams\"`"]
@@ -4926,11 +4311,7 @@ impl ::windows_core::RuntimeName for StreamedFileDataRequest {
 #[cfg(feature = "Storage_Streams")]
 ::windows_core::imp::interface_hierarchy!(StreamedFileDataRequest, ::windows_core::IUnknown, ::windows_core::IInspectable);
 #[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<super::Foundation::IClosable> for StreamedFileDataRequest {}
-#[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<Streams::IOutputStream> for StreamedFileDataRequest {}
-#[cfg(feature = "Storage_Streams")]
-impl ::windows_core::CanTryInto<IStreamedFileDataRequest> for StreamedFileDataRequest {}
+::windows_core::imp::required_hierarchy!(StreamedFileDataRequest, super::Foundation::IClosable, Streams::IOutputStream, IStreamedFileDataRequest);
 #[repr(transparent)]
 #[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
 pub struct SystemAudioProperties(::windows_core::IUnknown);
@@ -6074,9 +5455,7 @@ impl ::core::fmt::Debug for StreamedFileFailureMode {
 impl ::windows_core::RuntimeType for StreamedFileFailureMode {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::from_slice(b"enum(Windows.Storage.StreamedFileFailureMode;i4)");
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ApplicationDataSetVersionHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(ApplicationDataSetVersionHandler, ApplicationDataSetVersionHandler_Vtbl, 0xa05791e6_cc9f_4687_acab_a364fd785463);
 impl ApplicationDataSetVersionHandler {
     pub fn new<F: FnMut(::core::option::Option<&SetVersionRequest>) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
         let com = ApplicationDataSetVersionHandlerBox::<F> { vtable: &ApplicationDataSetVersionHandlerBox::<F>::VTABLE, count: ::windows_core::imp::RefCount::new(1), invoke };
@@ -6131,12 +5510,6 @@ impl<F: FnMut(::core::option::Option<&SetVersionRequest>) -> ::windows_core::Res
         ((*this).invoke)(::windows_core::from_raw_borrowed(&setversionrequest)).into()
     }
 }
-unsafe impl ::windows_core::Interface for ApplicationDataSetVersionHandler {
-    type Vtable = ApplicationDataSetVersionHandler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ApplicationDataSetVersionHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xa05791e6_cc9f_4687_acab_a364fd785463);
-}
 impl ::windows_core::RuntimeType for ApplicationDataSetVersionHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();
 }
@@ -6146,11 +5519,8 @@ pub struct ApplicationDataSetVersionHandler_Vtbl {
     pub base__: ::windows_core::IUnknown_Vtbl,
     pub Invoke: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, setversionrequest: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc = "Required features: `\"Storage_Streams\"`"]
 #[cfg(feature = "Storage_Streams")]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct StreamedFileDataRequestedHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(StreamedFileDataRequestedHandler, StreamedFileDataRequestedHandler_Vtbl, 0xfef6a824_2fe1_4d07_a35b_b77c50b5f4cc);
 #[cfg(feature = "Storage_Streams")]
 impl StreamedFileDataRequestedHandler {
     pub fn new<F: FnMut(::core::option::Option<&StreamedFileDataRequest>) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
@@ -6209,14 +5579,6 @@ impl<F: FnMut(::core::option::Option<&StreamedFileDataRequest>) -> ::windows_cor
         let this = this as *mut *mut ::core::ffi::c_void as *mut Self;
         ((*this).invoke)(::windows_core::from_raw_borrowed(&stream)).into()
     }
-}
-#[cfg(feature = "Storage_Streams")]
-unsafe impl ::windows_core::Interface for StreamedFileDataRequestedHandler {
-    type Vtable = StreamedFileDataRequestedHandler_Vtbl;
-}
-#[cfg(feature = "Storage_Streams")]
-unsafe impl ::windows_core::ComInterface for StreamedFileDataRequestedHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xfef6a824_2fe1_4d07_a35b_b77c50b5f4cc);
 }
 #[cfg(feature = "Storage_Streams")]
 impl ::windows_core::RuntimeType for StreamedFileDataRequestedHandler {

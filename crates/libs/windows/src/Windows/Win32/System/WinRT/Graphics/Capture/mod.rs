@@ -1,6 +1,4 @@
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGraphicsCaptureItemInterop(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IGraphicsCaptureItemInterop, IGraphicsCaptureItemInterop_Vtbl, 0x3628e81b_3cac_4c60_b7f4_23ce0e0c3356);
 impl IGraphicsCaptureItemInterop {
     pub unsafe fn CreateForWindow<P0, T>(&self, window: P0) -> ::windows_core::Result<T>
     where
@@ -22,12 +20,6 @@ impl IGraphicsCaptureItemInterop {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IGraphicsCaptureItemInterop, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGraphicsCaptureItemInterop {
-    type Vtable = IGraphicsCaptureItemInterop_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGraphicsCaptureItemInterop {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x3628e81b_3cac_4c60_b7f4_23ce0e0c3356);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGraphicsCaptureItemInterop_Vtbl {

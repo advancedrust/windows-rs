@@ -1,13 +1,4 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILockApplicationHost(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILockApplicationHost {
-    type Vtable = ILockApplicationHost_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILockApplicationHost {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x38ee31ad_d94f_4e7c_81fa_4f4436506281);
-}
+::windows_core::imp::com_interface!(ILockApplicationHost, ILockApplicationHost_Vtbl, 0x38ee31ad_d94f_4e7c_81fa_4f4436506281);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILockApplicationHost_Vtbl {
@@ -16,32 +7,14 @@ pub struct ILockApplicationHost_Vtbl {
     pub Unlocking: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveUnlocking: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILockApplicationHostStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILockApplicationHostStatics {
-    type Vtable = ILockApplicationHostStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILockApplicationHostStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf48fab8e_23d7_4e63_96a1_666ff52d3b2c);
-}
+::windows_core::imp::com_interface!(ILockApplicationHostStatics, ILockApplicationHostStatics_Vtbl, 0xf48fab8e_23d7_4e63_96a1_666ff52d3b2c);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILockApplicationHostStatics_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub GetForCurrentView: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILockScreenBadge(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILockScreenBadge {
-    type Vtable = ILockScreenBadge_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILockScreenBadge {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe95105d9_2bff_4db0_9b4f_3824778b9c9a);
-}
+::windows_core::imp::com_interface!(ILockScreenBadge, ILockScreenBadge_Vtbl, 0xe95105d9_2bff_4db0_9b4f_3824778b9c9a);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILockScreenBadge_Vtbl {
@@ -58,16 +31,7 @@ pub struct ILockScreenBadge_Vtbl {
     pub AutomationName: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut ::std::mem::MaybeUninit<::windows_core::HSTRING>) -> ::windows_core::HRESULT,
     pub LaunchApp: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILockScreenInfo(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILockScreenInfo {
-    type Vtable = ILockScreenInfo_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILockScreenInfo {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xf59aa65c_9711_4dc9_a630_95b6cb8cdad0);
-}
+::windows_core::imp::com_interface!(ILockScreenInfo, ILockScreenInfo_Vtbl, 0xf59aa65c_9711_4dc9_a630_95b6cb8cdad0);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILockScreenInfo_Vtbl {
@@ -97,32 +61,14 @@ pub struct ILockScreenInfo_Vtbl {
     #[cfg(not(feature = "Storage_Streams"))]
     AlarmIcon: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILockScreenUnlockingDeferral(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILockScreenUnlockingDeferral {
-    type Vtable = ILockScreenUnlockingDeferral_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILockScreenUnlockingDeferral {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x7e7d1ad6_5203_43e7_9bd6_7c3947d1e3fe);
-}
+::windows_core::imp::com_interface!(ILockScreenUnlockingDeferral, ILockScreenUnlockingDeferral_Vtbl, 0x7e7d1ad6_5203_43e7_9bd6_7c3947d1e3fe);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILockScreenUnlockingDeferral_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub Complete: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ILockScreenUnlockingEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ILockScreenUnlockingEventArgs {
-    type Vtable = ILockScreenUnlockingEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ILockScreenUnlockingEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x44e6c007_75fb_4abb_9f8b_824748900c71);
-}
+::windows_core::imp::com_interface!(ILockScreenUnlockingEventArgs, ILockScreenUnlockingEventArgs_Vtbl, 0x44e6c007_75fb_4abb_9f8b_824748900c71);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ILockScreenUnlockingEventArgs_Vtbl {

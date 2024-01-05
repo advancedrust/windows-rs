@@ -1,29 +1,11 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INotePlacementChangedPreviewEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INotePlacementChangedPreviewEventArgs {
-    type Vtable = INotePlacementChangedPreviewEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INotePlacementChangedPreviewEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x491d57b7_f780_4e7f_a939_9a4caf965214);
-}
+::windows_core::imp::com_interface!(INotePlacementChangedPreviewEventArgs, INotePlacementChangedPreviewEventArgs_Vtbl, 0x491d57b7_f780_4e7f_a939_9a4caf965214);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INotePlacementChangedPreviewEventArgs_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub ViewId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INoteVisibilityChangedPreviewEventArgs(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INoteVisibilityChangedPreviewEventArgs {
-    type Vtable = INoteVisibilityChangedPreviewEventArgs_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INoteVisibilityChangedPreviewEventArgs {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0e34649e_3815_4ff6_83b3_a14d17120e24);
-}
+::windows_core::imp::com_interface!(INoteVisibilityChangedPreviewEventArgs, INoteVisibilityChangedPreviewEventArgs_Vtbl, 0x0e34649e_3815_4ff6_83b3_a14d17120e24);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INoteVisibilityChangedPreviewEventArgs_Vtbl {
@@ -31,16 +13,7 @@ pub struct INoteVisibilityChangedPreviewEventArgs_Vtbl {
     pub ViewId: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut i32) -> ::windows_core::HRESULT,
     pub IsVisible: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INotesWindowManagerPreview(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INotesWindowManagerPreview {
-    type Vtable = INotesWindowManagerPreview_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INotesWindowManagerPreview {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xdc2ac23e_4850_4f13_9cc7_ff487efdfcde);
-}
+::windows_core::imp::com_interface!(INotesWindowManagerPreview, INotesWindowManagerPreview_Vtbl, 0xdc2ac23e_4850_4f13_9cc7_ff487efdfcde);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INotesWindowManagerPreview_Vtbl {
@@ -70,16 +43,7 @@ pub struct INotesWindowManagerPreview_Vtbl {
     pub NoteVisibilityChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, result__: *mut super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
     pub RemoveNoteVisibilityChanged: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, token: super::super::super::Foundation::EventRegistrationToken) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INotesWindowManagerPreview2(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INotesWindowManagerPreview2 {
-    type Vtable = INotesWindowManagerPreview2_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INotesWindowManagerPreview2 {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xedfe864a_1f54_4b09_9823_ff477f6fa3bc);
-}
+::windows_core::imp::com_interface!(INotesWindowManagerPreview2, INotesWindowManagerPreview2_Vtbl, 0xedfe864a_1f54_4b09_9823_ff477f6fa3bc);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INotesWindowManagerPreview2_Vtbl {
@@ -95,16 +59,7 @@ pub struct INotesWindowManagerPreview2_Vtbl {
     #[cfg(not(feature = "Graphics_Imaging"))]
     SetThumbnailImageForTaskSwitcherAsync: usize,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INotesWindowManagerPreviewShowNoteOptions(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INotesWindowManagerPreviewShowNoteOptions {
-    type Vtable = INotesWindowManagerPreviewShowNoteOptions_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INotesWindowManagerPreviewShowNoteOptions {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x886b09d6_a6ae_4007_a56d_1ca70c84c0d2);
-}
+::windows_core::imp::com_interface!(INotesWindowManagerPreviewShowNoteOptions, INotesWindowManagerPreviewShowNoteOptions_Vtbl, 0x886b09d6_a6ae_4007_a56d_1ca70c84c0d2);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INotesWindowManagerPreviewShowNoteOptions_Vtbl {
@@ -112,16 +67,7 @@ pub struct INotesWindowManagerPreviewShowNoteOptions_Vtbl {
     pub ShowWithFocus: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut bool) -> ::windows_core::HRESULT,
     pub SetShowWithFocus: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, value: bool) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct INotesWindowManagerPreviewStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for INotesWindowManagerPreviewStatics {
-    type Vtable = INotesWindowManagerPreviewStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for INotesWindowManagerPreviewStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x6668cc88_0a8e_4127_a38e_995445868a78);
-}
+::windows_core::imp::com_interface!(INotesWindowManagerPreviewStatics, INotesWindowManagerPreviewStatics_Vtbl, 0x6668cc88_0a8e_4127_a38e_995445868a78);
 #[repr(C)]
 #[doc(hidden)]
 pub struct INotesWindowManagerPreviewStatics_Vtbl {
@@ -212,10 +158,10 @@ impl NotesWindowManagerPreview {
     #[cfg(feature = "Storage_Streams")]
     pub fn ShowNoteWithPlacement<P0>(&self, noteviewid: i32, data: P0) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::super::Storage::Streams::IBuffer>,
     {
         let this = self;
-        unsafe { (::windows_core::Interface::vtable(this).ShowNoteWithPlacement)(::windows_core::Interface::as_raw(this), noteviewid, data.try_into_param()?.abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).ShowNoteWithPlacement)(::windows_core::Interface::as_raw(this), noteviewid, data.into_param().abi()).ok() }
     }
     pub fn HideNote(&self, noteviewid: i32) -> ::windows_core::Result<()> {
         let this = self;
@@ -245,12 +191,12 @@ impl NotesWindowManagerPreview {
     #[cfg(feature = "Storage_Streams")]
     pub fn SetNotesThumbnailAsync<P0>(&self, thumbnail: P0) -> ::windows_core::Result<super::super::super::Foundation::IAsyncAction>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::super::Storage::Streams::IBuffer>,
     {
         let this = self;
         unsafe {
             let mut result__ = ::std::mem::zeroed();
-            (::windows_core::Interface::vtable(this).SetNotesThumbnailAsync)(::windows_core::Interface::as_raw(this), thumbnail.try_into_param()?.abi(), &mut result__).from_abi(result__)
+            (::windows_core::Interface::vtable(this).SetNotesThumbnailAsync)(::windows_core::Interface::as_raw(this), thumbnail.into_param().abi(), &mut result__).from_abi(result__)
         }
     }
     pub fn SystemLockStateChanged<P0>(&self, handler: P0) -> ::windows_core::Result<super::super::super::Foundation::EventRegistrationToken>
@@ -306,11 +252,11 @@ impl NotesWindowManagerPreview {
     #[cfg(feature = "Storage_Streams")]
     pub fn ShowNoteWithPlacementWithOptions<P0, P1>(&self, noteviewid: i32, data: P0, options: P1) -> ::windows_core::Result<()>
     where
-        P0: ::windows_core::TryIntoParam<super::super::super::Storage::Streams::IBuffer>,
+        P0: ::windows_core::IntoParam<super::super::super::Storage::Streams::IBuffer>,
         P1: ::windows_core::IntoParam<NotesWindowManagerPreviewShowNoteOptions>,
     {
         let this = &::windows_core::ComInterface::cast::<INotesWindowManagerPreview2>(self)?;
-        unsafe { (::windows_core::Interface::vtable(this).ShowNoteWithPlacementWithOptions)(::windows_core::Interface::as_raw(this), noteviewid, data.try_into_param()?.abi(), options.into_param().abi()).ok() }
+        unsafe { (::windows_core::Interface::vtable(this).ShowNoteWithPlacementWithOptions)(::windows_core::Interface::as_raw(this), noteviewid, data.into_param().abi(), options.into_param().abi()).ok() }
     }
     pub fn SetFocusToPreviousView(&self) -> ::windows_core::Result<()> {
         let this = &::windows_core::ComInterface::cast::<INotesWindowManagerPreview2>(self)?;

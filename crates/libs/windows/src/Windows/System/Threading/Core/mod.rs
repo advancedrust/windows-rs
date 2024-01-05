@@ -1,29 +1,11 @@
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPreallocatedWorkItem(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPreallocatedWorkItem {
-    type Vtable = IPreallocatedWorkItem_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPreallocatedWorkItem {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xb6daa9fc_bc5b_401a_a8b2_6e754d14daa6);
-}
+::windows_core::imp::com_interface!(IPreallocatedWorkItem, IPreallocatedWorkItem_Vtbl, 0xb6daa9fc_bc5b_401a_a8b2_6e754d14daa6);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPreallocatedWorkItem_Vtbl {
     pub base__: ::windows_core::IInspectable_Vtbl,
     pub RunAsync: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IPreallocatedWorkItemFactory(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IPreallocatedWorkItemFactory {
-    type Vtable = IPreallocatedWorkItemFactory_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IPreallocatedWorkItemFactory {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0xe3d32b45_dfea_469b_82c5_f6e3cefdeafb);
-}
+::windows_core::imp::com_interface!(IPreallocatedWorkItemFactory, IPreallocatedWorkItemFactory_Vtbl, 0xe3d32b45_dfea_469b_82c5_f6e3cefdeafb);
 #[repr(C)]
 #[doc(hidden)]
 pub struct IPreallocatedWorkItemFactory_Vtbl {
@@ -32,16 +14,7 @@ pub struct IPreallocatedWorkItemFactory_Vtbl {
     pub CreateWorkItemWithPriority: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, priority: super::WorkItemPriority, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub CreateWorkItemWithPriorityAndOptions: unsafe extern "system" fn(this: *mut ::core::ffi::c_void, handler: *mut ::core::ffi::c_void, priority: super::WorkItemPriority, options: super::WorkItemOptions, result__: *mut *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISignalNotifier(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISignalNotifier {
-    type Vtable = ISignalNotifier_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISignalNotifier {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x14285e06_63a7_4713_b6d9_62f64b56fb8b);
-}
+::windows_core::imp::com_interface!(ISignalNotifier, ISignalNotifier_Vtbl, 0x14285e06_63a7_4713_b6d9_62f64b56fb8b);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISignalNotifier_Vtbl {
@@ -49,16 +22,7 @@ pub struct ISignalNotifier_Vtbl {
     pub Enable: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
     pub Terminate: unsafe extern "system" fn(this: *mut ::core::ffi::c_void) -> ::windows_core::HRESULT,
 }
-#[doc(hidden)]
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct ISignalNotifierStatics(::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for ISignalNotifierStatics {
-    type Vtable = ISignalNotifierStatics_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for ISignalNotifierStatics {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x1c4e4566_8400_46d3_a115_7d0c0dfc9f62);
-}
+::windows_core::imp::com_interface!(ISignalNotifierStatics, ISignalNotifierStatics_Vtbl, 0x1c4e4566_8400_46d3_a115_7d0c0dfc9f62);
 #[repr(C)]
 #[doc(hidden)]
 pub struct ISignalNotifierStatics_Vtbl {
@@ -196,9 +160,7 @@ impl ::windows_core::RuntimeName for SignalNotifier {
 ::windows_core::imp::interface_hierarchy!(SignalNotifier, ::windows_core::IUnknown, ::windows_core::IInspectable);
 unsafe impl ::core::marker::Send for SignalNotifier {}
 unsafe impl ::core::marker::Sync for SignalNotifier {}
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct SignalHandler(pub ::windows_core::IUnknown);
+::windows_core::imp::com_interface!(SignalHandler, SignalHandler_Vtbl, 0x923c402e_4721_440e_9dda_55b6f2e07710);
 impl SignalHandler {
     pub fn new<F: FnMut(::core::option::Option<&SignalNotifier>, bool) -> ::windows_core::Result<()> + ::core::marker::Send + 'static>(invoke: F) -> Self {
         let com = SignalHandlerBox::<F> { vtable: &SignalHandlerBox::<F>::VTABLE, count: ::windows_core::imp::RefCount::new(1), invoke };
@@ -252,12 +214,6 @@ impl<F: FnMut(::core::option::Option<&SignalNotifier>, bool) -> ::windows_core::
         let this = this as *mut *mut ::core::ffi::c_void as *mut Self;
         ((*this).invoke)(::windows_core::from_raw_borrowed(&signalnotifier), timedout).into()
     }
-}
-unsafe impl ::windows_core::Interface for SignalHandler {
-    type Vtable = SignalHandler_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for SignalHandler {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x923c402e_4721_440e_9dda_55b6f2e07710);
 }
 impl ::windows_core::RuntimeType for SignalHandler {
     const SIGNATURE: ::windows_core::imp::ConstBuffer = ::windows_core::imp::ConstBuffer::for_interface::<Self>();

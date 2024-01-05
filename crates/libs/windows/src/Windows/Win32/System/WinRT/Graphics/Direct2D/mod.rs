@@ -1,6 +1,4 @@
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGeometrySource2DInterop(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IGeometrySource2DInterop, IGeometrySource2DInterop_Vtbl, 0x0657af73_53fd_47cf_84ff_c8492d2a80a3);
 impl IGeometrySource2DInterop {
     #[doc = "Required features: `\"Win32_Graphics_Direct2D\"`"]
     #[cfg(feature = "Win32_Graphics_Direct2D")]
@@ -19,12 +17,6 @@ impl IGeometrySource2DInterop {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IGeometrySource2DInterop, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGeometrySource2DInterop {
-    type Vtable = IGeometrySource2DInterop_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGeometrySource2DInterop {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x0657af73_53fd_47cf_84ff_c8492d2a80a3);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGeometrySource2DInterop_Vtbl {
@@ -38,9 +30,7 @@ pub struct IGeometrySource2DInterop_Vtbl {
     #[cfg(not(feature = "Win32_Graphics_Direct2D"))]
     TryGetGeometryUsingFactory: usize,
 }
-#[repr(transparent)]
-#[derive(::core::cmp::PartialEq, ::core::cmp::Eq, ::core::fmt::Debug, ::core::clone::Clone)]
-pub struct IGraphicsEffectD2D1Interop(::windows_core::IUnknown);
+::windows_core::imp::com_interface!(IGraphicsEffectD2D1Interop, IGraphicsEffectD2D1Interop_Vtbl, 0x2fc57384_a068_44d7_a331_30982fcf7177);
 impl IGraphicsEffectD2D1Interop {
     pub unsafe fn GetEffectId(&self) -> ::windows_core::Result<::windows_core::GUID> {
         let mut result__ = ::std::mem::zeroed();
@@ -74,12 +64,6 @@ impl IGraphicsEffectD2D1Interop {
     }
 }
 ::windows_core::imp::interface_hierarchy!(IGraphicsEffectD2D1Interop, ::windows_core::IUnknown);
-unsafe impl ::windows_core::Interface for IGraphicsEffectD2D1Interop {
-    type Vtable = IGraphicsEffectD2D1Interop_Vtbl;
-}
-unsafe impl ::windows_core::ComInterface for IGraphicsEffectD2D1Interop {
-    const IID: ::windows_core::GUID = ::windows_core::GUID::from_u128(0x2fc57384_a068_44d7_a331_30982fcf7177);
-}
 #[repr(C)]
 #[doc(hidden)]
 pub struct IGraphicsEffectD2D1Interop_Vtbl {
