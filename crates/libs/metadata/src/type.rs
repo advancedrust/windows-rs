@@ -149,7 +149,12 @@ impl Type {
 
     /// Returns `true` if the `Type` is a pointer.
     pub fn is_pointer(&self) -> bool {
-        matches!(self, Type::ConstPtr(_, _) | Type::MutPtr(_, _))
+        match self {
+            Type::ConstPtr(_, _) |
+            Type::MutPtr(_, _) => true,
+            Type::PrimitiveOrEnum(primitive, _) => primitive.is_pointer(),
+            _ => false,
+        }
     }
 
     /// Returns `true` if the `Type` is unsigned.

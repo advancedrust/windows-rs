@@ -170,7 +170,16 @@ impl Writer {
             metadata::Type::WinrtArray(ty) => self.type_name(ty),
             metadata::Type::WinrtArrayRef(ty) => self.type_name(ty),
             metadata::Type::ConstRef(ty) => self.type_name(ty),
-            metadata::Type::PrimitiveOrEnum(_, ty) => self.type_name(ty),
+            metadata::Type::PrimitiveOrEnum(primitive, ty) => {
+                let pointers = match **primitive {
+                    metadata::Type::MutPtr(_, pointers) => mut_ptrs(pointers),
+                    metadata::Type::ConstPtr(_, pointers) => const_ptrs(pointers),
+                    _ => quote! {},
+                };
+
+                let ty = self.type_name(ty);
+                quote! { #pointers #ty }
+            }
             rest => unimplemented!("{rest:?}"),
         }
     }
